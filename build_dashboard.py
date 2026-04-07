@@ -955,7 +955,11 @@ function switchSubTab(name) {
   event.target.classList.add('active');
   document.getElementById('subtab-' + name).classList.add('active');
   if (name === 'stocks') renderStockTable();
-  if (name === 'byAccount') initAccounts();
+  if (name === 'byAccount') {
+    initAccounts();
+    // Always re-render account treemap when subtab becomes visible
+    renderAcctTreemap();
+  }
 }
 
 // ===== Tab switching =====
@@ -1045,6 +1049,18 @@ function filterStockTable() { renderStockTable(); }
 // ===== ACCOUNTS =====
 let currentAccount = null;
 let accountsInited = false;
+
+function renderAcctTreemap() {
+  if (!currentAccount) return;
+  const data = ACCOUNTS[currentAccount].treemap;
+  if (!data || data.length === 0) return;
+  setTimeout(function() {
+    var el = document.getElementById('acctTreemapContainer');
+    if (el && el.offsetWidth > 0) {
+      renderTreemapInContainer('acctTreemapContainer', data, 'acctTmTooltip');
+    }
+  }, 200);
+}
 function initAccounts() {
   const sel = document.getElementById('accountSelector');
   if (!sel) return;
@@ -1201,11 +1217,7 @@ function renderAccount(acc) {
   renderAccountTable();
 
   // Render account treemap after DOM is ready
-  if (data.treemap && data.treemap.length > 0) {
-    setTimeout(() => {
-      renderTreemapInContainer('acctTreemapContainer', data.treemap, 'acctTmTooltip');
-    }, 50);
-  }
+  renderAcctTreemap();
 }
 
 // ===== TOP WINNERS/LOSERS CHARTS =====
