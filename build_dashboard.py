@@ -3,7 +3,7 @@
 import json
 import math
 from collections import defaultdict
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, date
 
 with open("/Users/r/Documents/Claude/stock-dashboard/transactions.json", encoding="utf-8") as f:
     all_txs = json.load(f)
@@ -159,6 +159,8 @@ def calc_xirr(cashflows, guess=0.1):
     return rate if -1 < rate < 10 else None
 
 
+today_str = date.today().strftime("%Y-%m-%d")
+
 # ===== Compute per account, per stock =====
 account_stock_data = defaultdict(lambda: defaultdict(list))
 for tx in txs:
@@ -196,7 +198,12 @@ for account in sorted(account_stock_data.keys()):
             }
 
     account_cashflows.sort(key=lambda x: x[0])
-    irr = calc_xirr(account_cashflows)
+    # Add current market value of holdings for IRR
+    irr_account_cf = list(account_cashflows)
+    for stock, h in holdings.items():
+        cp = current_prices.get(stock, h["avg_price"])
+        irr_account_cf.append((today_str, h["qty"] * cp))
+    irr = calc_xirr(irr_account_cf)
 
     account_summaries[account] = {
         "stocks": stocks_data,
@@ -220,7 +227,12 @@ for tx in txs:
 stock_summaries = {}
 for stock, trades in sorted(stock_all_data.items()):
     m = calc_stock_metrics(trades)
-    irr = calc_xirr(m["cashflows"])
+    # Add current market value as virtual cashflow for IRR calculation
+    irr_cashflows = list(m["cashflows"])
+    if m["current_qty"] > 0:
+        cp = current_prices.get(stock, m["avg_buy_price"])
+        irr_cashflows.append((today_str, m["current_qty"] * cp))
+    irr = calc_xirr(irr_cashflows)
     net_pnl = m["realized_pnl"] + m["total_dividends"]
     roi = (net_pnl / m["total_invested"] * 100) if m["total_invested"] > 0 else 0
     stock_summaries[stock] = {
@@ -256,34 +268,54 @@ for stock, m in stock_summaries.items():
         }
 
 all_cashflows.sort(key=lambda x: x[0])
-overall_irr = calc_xirr(all_cashflows)
+# Add current market value of all holdings for IRR
+irr_all_cf = list(all_cashflows)
+for stock, h in overall_holdings.items():
+    cp = current_prices.get(stock, h["avg_price"])
+    irr_all_cf.append((today_str, h["qty"] * cp))
+overall_irr = calc_xirr(irr_all_cf)
 
 # ===== Timeline data for chart =====
-monthly_data = defaultdict(lambda: {"invested": 0, "returned": 0, "pnl": 0, "dividends": 0})
+monthly_data = defaultdict(lambda: {"invested": 0, "returned": 0, "pnl": 0, "dividends": 0, "buy_count": 0, "sell_count": 0})
 for tx in txs:
     month = tx["date"][:7]
     if tx["type"] == "buy":
         monthly_data[month]["invested"] += tx["amount"]
+        monthly_data[month]["buy_count"] += 1
     elif tx["type"] == "sell":
         monthly_data[month]["returned"] += tx["amount"]
+        monthly_data[month]["sell_count"] += 1
     elif tx["type"] == "dividend":
         monthly_data[month]["dividends"] += tx["amount"]
+
+# Approximate monthly realized pnl as returned - invested for that month
+for m in monthly_data:
+    monthly_data[m]["pnl"] = monthly_data[m]["returned"] - monthly_data[m]["invested"]
 
 months_sorted = sorted(monthly_data.keys())
 cum_invested = 0
 cum_returned = 0
 cum_dividends = 0
+cum_pnl = 0
 timeline = []
 for m in months_sorted:
     d = monthly_data[m]
     cum_invested += d["invested"]
     cum_returned += d["returned"]
     cum_dividends += d["dividends"]
+    cum_pnl += d["pnl"]
     timeline.append({
         "month": m,
+        "invested": d["invested"],
+        "returned": d["returned"],
+        "dividends": d["dividends"],
+        "realized_pnl": d["pnl"],
+        "buy_count": d["buy_count"],
+        "sell_count": d["sell_count"],
         "cum_invested": cum_invested,
         "cum_returned": cum_returned,
         "cum_dividends": cum_dividends,
+        "cum_pnl": cum_pnl,
         "net_cashflow": cum_returned + cum_dividends - cum_invested,
     })
 
@@ -346,6 +378,34 @@ for acc, data in account_summaries.items():
         s["weight"] = round(s["market_value"] / total_mv * 100, 1) if total_mv > 0 and s["market_value"] > 0 else 0
 
     stocks_list.sort(key=lambda x: abs(x["net_pnl"]), reverse=True)
+
+    # Build treemap data for this account's holdings
+    account_treemap = []
+    holdings = data["holdings"]
+    acct_total_mv = 0
+    for stock, h in holdings.items():
+        cp = current_prices.get(stock, h["avg_price"])
+        mv = h["qty"] * cp
+        acct_total_mv += mv
+    for stock, h in holdings.items():
+        cp = current_prices.get(stock, h["avg_price"])
+        mv = h["qty"] * cp
+        cost = h["cost"]
+        ret = ((mv - cost) / cost * 100) if cost > 0 else 0
+        weight = (mv / acct_total_mv * 100) if acct_total_mv > 0 else 0
+        account_treemap.append({
+            "name": stock,
+            "market_value": mv,
+            "return_pct": round(ret, 1),
+            "qty": h["qty"],
+            "avg_price": h["avg_price"],
+            "current_price": cp,
+            "cost": cost,
+            "unrealized_pnl": mv - cost,
+            "weight": round(weight, 1),
+        })
+    account_treemap.sort(key=lambda x: x["market_value"], reverse=True)
+
     js_account_data[acc] = {
         "stocks": stocks_list,
         "total_invested": data["total_invested"],
@@ -357,6 +417,7 @@ for acc, data in account_summaries.items():
         "irr": round(data["irr"] * 100, 1) if data["irr"] else None,
         "holdings": data["holdings"],
         "num_trades": data["num_trades"],
+        "treemap": account_treemap,
     }
 
 js_stock_data = []
@@ -415,6 +476,27 @@ js_overall = {
     "total_unrealized": total_unrealized,
 }
 
+# Build treemap data for holdings
+treemap_data = []
+for stock, h in overall_holdings.items():
+    cp = current_prices.get(stock, h["avg_price"])
+    mv = h["qty"] * cp
+    cost = h["cost"]
+    unrealized_ret = ((mv - cost) / cost * 100) if cost > 0 else 0
+    weight = (mv / total_market_value * 100) if total_market_value > 0 else 0
+    treemap_data.append({
+        "name": stock,
+        "market_value": mv,
+        "weight": round(weight, 1),
+        "return_pct": round(unrealized_ret, 1),
+        "qty": h["qty"],
+        "avg_price": h["avg_price"],
+        "current_price": cp,
+        "cost": cost,
+        "unrealized_pnl": mv - cost,
+    })
+treemap_data.sort(key=lambda x: x["market_value"], reverse=True)
+
 html = f"""<!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -425,75 +507,136 @@ html = f"""<!DOCTYPE html>
 <style>
 :root {{
   --bg: #0f1117;
+  --bg2: #141620;
   --card: #1a1d29;
+  --card-hover: #1f2233;
   --border: #2a2d3a;
+  --border-light: #353849;
   --text: #e1e4eb;
   --text-dim: #8b8fa3;
+  --text-muted: #5d6177;
   --accent: #6366f1;
+  --accent-dim: rgba(99,102,241,0.15);
   --positive: #22c55e;
+  --positive-dim: rgba(34,197,94,0.12);
   --negative: #ef4444;
+  --negative-dim: rgba(239,68,68,0.12);
   --warn: #f59e0b;
 }}
 * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; }}
-.container {{ max-width: 1400px; margin: 0 auto; padding: 20px; }}
-h1 {{ font-size: 1.8rem; font-weight: 700; margin-bottom: 8px; }}
-.subtitle {{ color: var(--text-dim); margin-bottom: 24px; font-size: 0.9rem; }}
-.tabs {{ display: flex; gap: 4px; margin-bottom: 24px; background: var(--card); border-radius: 12px; padding: 4px; border: 1px solid var(--border); }}
-.tab {{ padding: 10px 20px; border-radius: 8px; cursor: pointer; font-size: 0.9rem; font-weight: 500; color: var(--text-dim); transition: all 0.2s; border: none; background: none; }}
-.tab:hover {{ color: var(--text); }}
-.tab.active {{ background: var(--accent); color: white; }}
-.tab-content {{ display: none; }}
+body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; -webkit-font-smoothing: antialiased; }}
+.container {{ max-width: 1440px; margin: 0 auto; padding: 20px; }}
+h1 {{ font-size: 1.8rem; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.02em; }}
+.subtitle {{ color: var(--text-dim); margin-bottom: 24px; font-size: 0.88rem; }}
+.tabs {{ display: flex; gap: 4px; margin-bottom: 24px; background: var(--card); border-radius: 12px; padding: 4px; border: 1px solid var(--border); width: fit-content; }}
+.tab {{ padding: 10px 24px; border-radius: 8px; cursor: pointer; font-size: 0.9rem; font-weight: 600; color: var(--text-dim); transition: all 0.25s ease; border: none; background: none; }}
+.tab:hover {{ color: var(--text); background: rgba(255,255,255,0.03); }}
+.tab.active {{ background: var(--accent); color: white; box-shadow: 0 2px 8px rgba(99,102,241,0.3); }}
+.tab-content {{ display: none; animation: fadeIn 0.3s ease; }}
 .tab-content.active {{ display: block; }}
+@keyframes fadeIn {{ from {{ opacity: 0; transform: translateY(4px); }} to {{ opacity: 1; transform: translateY(0); }} }}
 
-.kpi-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 24px; }}
-.kpi {{ background: var(--card); border-radius: 12px; padding: 20px; border: 1px solid var(--border); }}
-.kpi-label {{ font-size: 0.8rem; color: var(--text-dim); margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.5px; }}
-.kpi-value {{ font-size: 1.5rem; font-weight: 700; }}
-.kpi-sub {{ font-size: 0.8rem; color: var(--text-dim); margin-top: 4px; }}
+/* === Sub-tabs === */
+.sub-tabs {{ display: flex; gap: 4px; margin-bottom: 16px; }}
+.sub-tab {{ padding: 6px 18px; border-radius: 6px; cursor: pointer; font-size: 0.85rem; font-weight: 600; color: var(--text-dim); border: 1px solid var(--border); background: var(--card); transition: all 0.2s; }}
+.sub-tab:hover {{ color: var(--text); border-color: var(--accent); }}
+.sub-tab.active {{ background: var(--accent-dim); color: var(--accent); border-color: var(--accent); }}
+.subtab-content {{ display: none; }}
+.subtab-content.active {{ display: block; }}
+
+/* === KPI Cards === */
+.kpi-row {{ display: grid; gap: 14px; margin-bottom: 14px; }}
+.kpi-row.primary {{ grid-template-columns: repeat(4, 1fr); }}
+.kpi-row.secondary {{ grid-template-columns: repeat(4, 1fr); }}
+.kpi {{ background: var(--card); border-radius: 12px; padding: 18px 20px; border: 1px solid var(--border); transition: border-color 0.2s, transform 0.2s; }}
+.kpi:hover {{ border-color: var(--border-light); transform: translateY(-1px); }}
+.kpi.border-positive {{ border-image: linear-gradient(135deg, var(--positive-dim), transparent 60%) 1; }}
+.kpi.border-negative {{ border-image: linear-gradient(135deg, var(--negative-dim), transparent 60%) 1; }}
+.kpi-label {{ font-size: 0.75rem; color: var(--text-dim); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.6px; font-weight: 600; }}
+.kpi-value {{ font-size: 1.7rem; font-weight: 700; font-feature-settings: 'tnum'; letter-spacing: -0.02em; }}
+.kpi-value.compact {{ font-size: 1.3rem; }}
+.kpi-sub {{ font-size: 0.78rem; color: var(--text-dim); margin-top: 4px; font-feature-settings: 'tnum'; }}
 .positive {{ color: var(--positive); }}
 .negative {{ color: var(--negative); }}
 
-.card {{ background: var(--card); border-radius: 12px; padding: 20px; border: 1px solid var(--border); margin-bottom: 20px; }}
-.card-title {{ font-size: 1.1rem; font-weight: 600; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }}
+/* === Cards === */
+.card {{ background: var(--card); border-radius: 12px; padding: 20px; border: 1px solid var(--border); margin-bottom: 20px; transition: border-color 0.2s; }}
+.card:hover {{ border-color: var(--border-light); }}
+.card-title {{ font-size: 1.05rem; font-weight: 600; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }}
 .chart-container {{ position: relative; height: 350px; }}
 
-table {{ width: 100%; border-collapse: collapse; font-size: 0.85rem; }}
-th {{ text-align: left; padding: 10px 12px; border-bottom: 2px solid var(--border); color: var(--text-dim); font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer; user-select: none; white-space: nowrap; }}
+/* === Treemap === */
+.treemap-container {{ position: relative; width: 100%; height: 420px; border-radius: 8px; overflow: hidden; }}
+.treemap-container.acct-treemap {{ height: 320px; }}
+.treemap-cell {{ position: absolute; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: default; transition: filter 0.15s; border: 1px solid rgba(0,0,0,0.3); }}
+.treemap-cell:hover {{ filter: brightness(1.15); z-index: 2; }}
+.treemap-cell .name {{ font-weight: 700; font-size: 0.82rem; color: #fff; text-shadow: 0 1px 3px rgba(0,0,0,0.6); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 95%; text-align: center; }}
+.treemap-cell .pct {{ font-weight: 600; font-size: 0.75rem; color: rgba(255,255,255,0.9); text-shadow: 0 1px 3px rgba(0,0,0,0.6); }}
+.treemap-cell .val {{ font-size: 0.65rem; color: rgba(255,255,255,0.7); text-shadow: 0 1px 3px rgba(0,0,0,0.6); margin-top: 1px; }}
+.treemap-cell.small .name {{ font-size: 0.7rem; }}
+.treemap-cell.small .pct {{ font-size: 0.65rem; }}
+.treemap-cell.small .val {{ display: none; }}
+.treemap-cell.tiny .name {{ font-size: 0.6rem; }}
+.treemap-cell.tiny .pct {{ display: none; }}
+.treemap-cell.tiny .val {{ display: none; }}
+
+/* === Tables === */
+table {{ width: 100%; border-collapse: collapse; font-size: 0.84rem; }}
+thead {{ position: sticky; top: 0; z-index: 5; }}
+th {{ text-align: left; padding: 10px 12px; background: var(--card); border-bottom: 2px solid var(--border); color: var(--text-dim); font-weight: 600; font-size: 0.73rem; text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer; user-select: none; white-space: nowrap; backdrop-filter: blur(8px); }}
 th:hover {{ color: var(--text); }}
 th.sort-asc::after {{ content: ' \\25B2'; font-size: 0.6rem; }}
 th.sort-desc::after {{ content: ' \\25BC'; font-size: 0.6rem; }}
-td {{ padding: 10px 12px; border-bottom: 1px solid var(--border); white-space: nowrap; }}
-tr:hover td {{ background: rgba(99, 102, 241, 0.05); }}
+td {{ padding: 9px 12px; border-bottom: 1px solid var(--border); white-space: nowrap; font-feature-settings: 'tnum'; font-variant-numeric: tabular-nums; }}
+tr:nth-child(even) td {{ background: rgba(255,255,255,0.015); }}
+tr:hover td {{ background: rgba(99, 102, 241, 0.06); }}
 .text-right {{ text-align: right; }}
 .text-center {{ text-align: center; }}
+.mono {{ font-family: 'SF Mono', 'Cascadia Code', 'Consolas', monospace; font-size: 0.82rem; }}
 
+/* === Holdings grid === */
 .holdings-grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }}
-.holding-card {{ background: rgba(99,102,241,0.08); border-radius: 10px; padding: 14px; border: 1px solid rgba(99,102,241,0.15); }}
+.holding-card {{ background: rgba(99,102,241,0.08); border-radius: 10px; padding: 14px; border: 1px solid rgba(99,102,241,0.15); transition: border-color 0.2s; }}
+.holding-card:hover {{ border-color: rgba(99,102,241,0.3); }}
 .holding-name {{ font-weight: 600; font-size: 0.9rem; margin-bottom: 6px; }}
-.holding-detail {{ font-size: 0.8rem; color: var(--text-dim); }}
+.holding-detail {{ font-size: 0.8rem; color: var(--text-dim); font-feature-settings: 'tnum'; }}
 
+/* === Account selector === */
 .account-selector {{ display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }}
-.account-btn {{ padding: 6px 16px; border-radius: 20px; cursor: pointer; font-size: 0.85rem; border: 1px solid var(--border); background: var(--card); color: var(--text-dim); transition: all 0.2s; }}
+.account-btn {{ padding: 6px 16px; border-radius: 20px; cursor: pointer; font-size: 0.85rem; font-weight: 500; border: 1px solid var(--border); background: var(--card); color: var(--text-dim); transition: all 0.2s; }}
 .account-btn:hover {{ border-color: var(--accent); color: var(--text); }}
-.account-btn.active {{ background: var(--accent); color: white; border-color: var(--accent); }}
+.account-btn.active {{ background: var(--accent); color: white; border-color: var(--accent); box-shadow: 0 2px 8px rgba(99,102,241,0.25); }}
 
-.search-box {{ background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 8px 14px; color: var(--text); font-size: 0.9rem; width: 250px; }}
-.search-box::placeholder {{ color: var(--text-dim); }}
-.search-box:focus {{ outline: none; border-color: var(--accent); }}
-
+/* === Toolbar === */
+.search-box {{ background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; padding: 8px 14px; color: var(--text); font-size: 0.9rem; width: 260px; transition: border-color 0.2s; }}
+.search-box::placeholder {{ color: var(--text-muted); }}
+.search-box:focus {{ outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(99,102,241,0.1); }}
 .toolbar {{ display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 16px; }}
 .filter-group {{ display: flex; gap: 4px; }}
-.filter-btn {{ padding: 5px 14px; border-radius: 16px; cursor: pointer; font-size: 0.8rem; border: 1px solid var(--border); background: var(--card); color: var(--text-dim); transition: all 0.2s; }}
+.filter-btn {{ padding: 5px 14px; border-radius: 16px; cursor: pointer; font-size: 0.8rem; font-weight: 500; border: 1px solid var(--border); background: var(--card); color: var(--text-dim); transition: all 0.2s; }}
 .filter-btn:hover {{ border-color: var(--accent); color: var(--text); }}
 .filter-btn.active {{ background: var(--accent); color: white; border-color: var(--accent); }}
-.result-count {{ font-size: 0.8rem; color: var(--text-dim); margin-left: auto; }}
+.result-count {{ font-size: 0.8rem; color: var(--text-dim); margin-left: auto; font-feature-settings: 'tnum'; }}
+
+/* === Tooltip === */
+.tm-tooltip {{ position: fixed; pointer-events: none; background: rgba(15,17,23,0.95); border: 1px solid var(--border-light); border-radius: 8px; padding: 10px 14px; font-size: 0.82rem; color: var(--text); z-index: 1000; backdrop-filter: blur(8px); box-shadow: 0 4px 16px rgba(0,0,0,0.4); display: none; max-width: 280px; }}
+.tm-tooltip .tt-name {{ font-weight: 700; margin-bottom: 4px; font-size: 0.9rem; }}
+.tm-tooltip .tt-row {{ display: flex; justify-content: space-between; gap: 16px; font-feature-settings: 'tnum'; }}
+.tm-tooltip .tt-label {{ color: var(--text-dim); }}
 
 @media (max-width: 768px) {{
-  .kpi-grid {{ grid-template-columns: repeat(2, 1fr); }}
-  .tabs {{ overflow-x: auto; }}
+  .kpi-row.primary, .kpi-row.secondary {{ grid-template-columns: repeat(2, 1fr); }}
+  .tabs {{ overflow-x: auto; width: 100%; }}
   table {{ font-size: 0.75rem; }}
   td, th {{ padding: 6px 8px; }}
+  .treemap-container {{ height: 300px; }}
+  .treemap-container.acct-treemap {{ height: 240px; }}
+  .search-box {{ width: 180px; }}
+}}
+@media (max-width: 480px) {{
+  .kpi-row.primary, .kpi-row.secondary {{ grid-template-columns: 1fr 1fr; }}
+  .kpi-value {{ font-size: 1.3rem; }}
+  .kpi-value.compact {{ font-size: 1.1rem; }}
 }}
 </style>
 </head>
@@ -503,73 +646,63 @@ tr:hover td {{ background: rgba(99, 102, 241, 0.05); }}
 <p class="subtitle">NH투자증권 {len([a for a in account_summaries if a.startswith('NH')])}개 계좌 + 토스증권 1개 계좌 | {min(tx['date'] for tx in txs)} ~ {max(tx['date'] for tx in txs)} | 총 {len(txs):,}건</p>
 
 <div class="tabs">
-  <button class="tab active" onclick="switchTab('overall')">전체 종합</button>
-  <button class="tab" onclick="switchTab('accounts')">계좌별</button>
-  <button class="tab" onclick="switchTab('stocks')">종목별</button>
-  <button class="tab" onclick="switchTab('timeline')">추이</button>
+  <button class="tab active" onclick="switchTab('dashboard')">대시보드</button>
+  <button class="tab" onclick="switchTab('portfolio')">포트폴리오</button>
+  <button class="tab" onclick="switchTab('analysis')">분석</button>
 </div>
 
-<!-- ===== OVERALL TAB ===== -->
-<div id="tab-overall" class="tab-content active">
-  <div class="kpi-grid">
-    <div class="kpi">
-      <div class="kpi-label">총 매수금액</div>
-      <div class="kpi-value">{fmt_num(overall_invested)}</div>
-      <div class="kpi-sub">{len(stock_summaries)}종목 거래</div>
-    </div>
-    <div class="kpi">
-      <div class="kpi-label">총 매도금액</div>
-      <div class="kpi-value">{fmt_num(overall_returned)}</div>
-    </div>
-    <div class="kpi">
-      <div class="kpi-label">실현 손익</div>
-      <div class="kpi-value {pnl_class(overall_realized_pnl)}">{fmt_num(overall_realized_pnl)}</div>
-      <div class="kpi-sub">수수료 {fmt_num(overall_fees)} + 세금 {fmt_num(overall_tax)}</div>
-    </div>
-    <div class="kpi">
-      <div class="kpi-label">배당금</div>
-      <div class="kpi-value positive">{fmt_num(overall_dividends)}</div>
-    </div>
-    <div class="kpi">
-      <div class="kpi-label">순손익 (실현+배당)</div>
-      <div class="kpi-value {pnl_class(overall_net_pnl)}">{fmt_num(overall_net_pnl)}</div>
-      <div class="kpi-sub">ROI {overall_roi:.1f}%</div>
-    </div>
-    <div class="kpi">
-      <div class="kpi-label">IRR (연환산)</div>
-      <div class="kpi-value {pnl_class(overall_irr or 0)}">{fmt_pct(overall_irr/100) if overall_irr else 'N/A'}</div>
-    </div>
+<!-- ===== DASHBOARD TAB ===== -->
+<div id="tab-dashboard" class="tab-content active">
+  <!-- Primary KPIs -->
+  <div class="kpi-row primary">
     <div class="kpi">
       <div class="kpi-label">보유 평가금액</div>
       <div class="kpi-value">{fmt_num(total_market_value)}</div>
       <div class="kpi-sub">{len(overall_holdings)}종목 보유중</div>
     </div>
-    <div class="kpi">
+    <div class="kpi {"border-positive" if total_unrealized >= 0 else "border-negative"}">
       <div class="kpi-label">평가손익 (미실현)</div>
       <div class="kpi-value {pnl_class(total_unrealized)}">{fmt_num(total_unrealized)}</div>
+      <div class="kpi-sub {pnl_class(total_unrealized)}">{(total_unrealized / sum(h['cost'] for h in overall_holdings.values()) * 100) if sum(h['cost'] for h in overall_holdings.values()) > 0 else 0:+.1f}%</div>
+    </div>
+    <div class="kpi {"border-positive" if overall_realized_pnl >= 0 else "border-negative"}">
+      <div class="kpi-label">실현 손익</div>
+      <div class="kpi-value {pnl_class(overall_realized_pnl)}">{fmt_num(overall_realized_pnl)}</div>
+      <div class="kpi-sub">수수료 {fmt_num(overall_fees)} + 세금 {fmt_num(overall_tax)}</div>
+    </div>
+    <div class="kpi {"border-positive" if overall_net_pnl >= 0 else "border-negative"}">
+      <div class="kpi-label">총손익 (실현+배당)</div>
+      <div class="kpi-value {pnl_class(overall_net_pnl)}">{fmt_num(overall_net_pnl)}</div>
+      <div class="kpi-sub {pnl_class(overall_net_pnl)}">ROI {overall_roi:+.1f}%</div>
+    </div>
+  </div>
+  <!-- Secondary KPIs -->
+  <div class="kpi-row secondary" style="margin-bottom:24px;">
+    <div class="kpi">
+      <div class="kpi-label">총 매수금액</div>
+      <div class="kpi-value compact">{fmt_num(overall_invested)}</div>
+      <div class="kpi-sub">{len(stock_summaries)}종목 거래</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">총 매도금액</div>
+      <div class="kpi-value compact">{fmt_num(overall_returned)}</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">배당금</div>
+      <div class="kpi-value compact positive">{fmt_num(overall_dividends)}</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">IRR (연환산)</div>
+      <div class="kpi-value compact {pnl_class(overall_irr or 0)}">{fmt_pct(overall_irr) if overall_irr else 'N/A'}</div>
     </div>
   </div>
 
+  <!-- Treemap -->
   <div class="card">
-    <div class="card-title">현재 보유 종목</div>
-    <div class="holdings-grid">
-"""
-
-for stock, h in sorted(overall_holdings.items(), key=lambda x: x[1]["qty"] * current_prices.get(x[0], x[1]["avg_price"]), reverse=True):
-    cp = current_prices.get(stock, h["avg_price"])
-    mv = h["qty"] * cp
-    pnl = mv - h["cost"]
-    pnl_pct = (pnl / h["cost"] * 100) if h["cost"] > 0 else 0
-    weight = (mv / total_market_value * 100) if total_market_value > 0 else 0
-    html += f"""      <div class="holding-card">
-        <div class="holding-name">{stock} <span style="font-size:0.75rem;color:var(--text-dim)">{weight:.1f}%</span></div>
-        <div class="holding-detail">{h['qty']:,}주 x {cp:,}원</div>
-        <div class="holding-detail">평가 {fmt_num(mv)} <span class="{pnl_class(pnl)}">{pnl_pct:+.1f}%</span></div>
-      </div>
-"""
-
-html += """    </div>
+    <div class="card-title">포트폴리오 구성 (평가금액 기준)</div>
+    <div class="treemap-container" id="treemapContainer"></div>
   </div>
+  <div class="tm-tooltip" id="tmTooltip"></div>
 
   <div class="card">
     <div class="card-title">손익 TOP 종목</div>
@@ -586,70 +719,89 @@ html += """    </div>
   </div>
 </div>
 
-<!-- ===== ACCOUNTS TAB ===== -->
-<div id="tab-accounts" class="tab-content">
-  <div class="account-selector" id="accountSelector"></div>
-  <div id="accountDetail"></div>
+<!-- ===== PORTFOLIO TAB ===== -->
+<div id="tab-portfolio" class="tab-content">
+  <div class="sub-tabs">
+    <button class="sub-tab active" onclick="switchSubTab('stocks')">종목별</button>
+    <button class="sub-tab" onclick="switchSubTab('byAccount')">계좌별</button>
+  </div>
+
+  <!-- Sub-tab: Stocks -->
+  <div id="subtab-stocks" class="subtab-content active">
+    <div class="toolbar">
+      <input type="text" class="search-box" id="stockSearch" placeholder="종목명 검색..." oninput="filterStockTable()">
+      <div class="filter-group">
+        <button class="filter-btn active" onclick="setStockFilter('all', this)">전체</button>
+        <button class="filter-btn" onclick="setStockFilter('profit', this)">수익</button>
+        <button class="filter-btn" onclick="setStockFilter('loss', this)">손실</button>
+        <button class="filter-btn" onclick="setStockFilter('holding', this)">보유중</button>
+        <button class="filter-btn" onclick="setStockFilter('closed', this)">청산</button>
+      </div>
+      <span class="result-count" id="stockResultCount"></span>
+    </div>
+    <div class="card">
+      <div class="card-title">종목별 실적 (전체 계좌 합산)</div>
+      <div style="overflow-x: auto;">
+        <table id="stockTable">
+          <thead>
+            <tr>
+              <th data-col="name" data-type="string">종목명</th>
+              <th data-col="invested" data-type="number" class="text-right">매수금액</th>
+              <th data-col="returned" data-type="number" class="text-right">매도금액</th>
+              <th data-col="realized_pnl" data-type="number" class="text-right">실현손익</th>
+              <th data-col="dividends" data-type="number" class="text-right">배당</th>
+              <th data-col="net_pnl" data-type="number" class="text-right">순손익</th>
+              <th data-col="roi" data-type="number" class="text-right">ROI</th>
+              <th data-col="irr" data-type="number" class="text-right">IRR</th>
+              <th data-col="current_qty" data-type="number" class="text-right">보유수량</th>
+              <th data-col="current_price" data-type="number" class="text-right">현재가</th>
+              <th data-col="market_value" data-type="number" class="text-right">평가금액</th>
+              <th data-col="unrealized_pnl" data-type="number" class="text-right">평가손익</th>
+              <th data-col="weight" data-type="number" class="text-right">비중</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sub-tab: By Account -->
+  <div id="subtab-byAccount" class="subtab-content">
+    <div class="account-selector" id="accountSelector"></div>
+    <div id="accountDetail"></div>
+  </div>
 </div>
 
-<!-- ===== STOCKS TAB ===== -->
-<div id="tab-stocks" class="tab-content">
-  <div class="toolbar">
-    <input type="text" class="search-box" id="stockSearch" placeholder="종목명 검색..." oninput="filterStockTable()">
-    <div class="filter-group">
-      <button class="filter-btn active" onclick="setStockFilter('all', this)">전체</button>
-      <button class="filter-btn" onclick="setStockFilter('profit', this)">수익</button>
-      <button class="filter-btn" onclick="setStockFilter('loss', this)">손실</button>
-      <button class="filter-btn" onclick="setStockFilter('holding', this)">보유중</button>
-      <button class="filter-btn" onclick="setStockFilter('closed', this)">청산</button>
-    </div>
-    <span class="result-count" id="stockResultCount"></span>
-  </div>
-  <div class="card">
-    <div class="card-title">종목별 실적 (전체 계좌 합산)</div>
-    <div style="overflow-x: auto;">
-      <table id="stockTable">
-        <thead>
-          <tr>
-            <th data-col="name" data-type="string">종목명</th>
-            <th data-col="invested" data-type="number" class="text-right">매수금액</th>
-            <th data-col="returned" data-type="number" class="text-right">매도금액</th>
-            <th data-col="realized_pnl" data-type="number" class="text-right">실현손익</th>
-            <th data-col="dividends" data-type="number" class="text-right">배당</th>
-            <th data-col="net_pnl" data-type="number" class="text-right">순손익</th>
-            <th data-col="roi" data-type="number" class="text-right">ROI</th>
-            <th data-col="irr" data-type="number" class="text-right">IRR</th>
-            <th data-col="current_qty" data-type="number" class="text-right">보유수량</th>
-            <th data-col="current_price" data-type="number" class="text-right">현재가</th>
-            <th data-col="market_value" data-type="number" class="text-right">평가금액</th>
-            <th data-col="unrealized_pnl" data-type="number" class="text-right">평가손익</th>
-            <th data-col="weight" data-type="number" class="text-right">비중</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-  </div>
-</div>
-
-<!-- ===== TIMELINE TAB ===== -->
-<div id="tab-timeline" class="tab-content">
+<!-- ===== ANALYSIS TAB ===== -->
+<div id="tab-analysis" class="tab-content">
   <div class="card">
     <div class="card-title">월별 투자/회수 추이</div>
     <div class="chart-container"><canvas id="timelineChart"></canvas></div>
   </div>
   <div class="card">
+    <div class="card-title">누적 투자 vs 회수 vs 배당</div>
+    <div class="chart-container"><canvas id="cumCompareChart"></canvas></div>
+  </div>
+  <div class="card">
     <div class="card-title">누적 순현금흐름</div>
     <div class="chart-container"><canvas id="cashflowChart"></canvas></div>
   </div>
+  <div class="card">
+    <div class="card-title">월별 배당금</div>
+    <div class="chart-container"><canvas id="dividendChart"></canvas></div>
+  </div>
 </div>
 </div>
+
+<div class="tm-tooltip" id="acctTmTooltip"></div>
 
 <script>
 const ACCOUNTS = """ + json.dumps(js_account_data, ensure_ascii=False) + """;
 const STOCKS = """ + json.dumps(js_stock_data, ensure_ascii=False) + """;
 const OVERALL = """ + json.dumps(js_overall, ensure_ascii=False) + """;
 const TIMELINE = """ + json.dumps(timeline, ensure_ascii=False) + """;
+const TREEMAP_DATA = """ + json.dumps(treemap_data, ensure_ascii=False) + """;
 
 function fmt(n) {
   if (n == null) return 'N/A';
@@ -659,15 +811,162 @@ function fmt(n) {
 }
 function pnlCls(v) { return v > 0 ? 'positive' : v < 0 ? 'negative' : ''; }
 
-// Tab switching
+// ===== TREEMAP =====
+function getTreemapColor(retPct) {
+  const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
+  const t = clamp(retPct / 30, -1, 1);
+  if (t >= 0) {
+    const r = Math.round(30 + (1 - t) * 20);
+    const g = Math.round(80 + t * 120);
+    const b = Math.round(30 + (1 - t) * 20);
+    return `rgb(${r},${g},${b})`;
+  } else {
+    const at = -t;
+    const r = Math.round(80 + at * 140);
+    const g = Math.round(30 + (1 - at) * 30);
+    const b = Math.round(30 + (1 - at) * 20);
+    return `rgb(${r},${g},${b})`;
+  }
+}
+
+function squarify(items, x, y, w, h) {
+  if (items.length === 0) return [];
+  const totalVal = items.reduce((s, it) => s + it.market_value, 0);
+  if (totalVal <= 0) return [];
+  const rects = [];
+
+  function doLayout(items, x, y, w, h) {
+    if (items.length === 0) return;
+    if (items.length === 1) {
+      rects.push({ ...items[0], x, y, w, h });
+      return;
+    }
+    const total = items.reduce((s, it) => s + it.market_value, 0);
+    const isHoriz = w >= h;
+    let rowItems = [items[0]];
+    let rowSum = items[0].market_value;
+
+    function worstAspect(row, rowSum) {
+      const side = isHoriz ? h : w;
+      const rowFrac = rowSum / total;
+      const rowLen = isHoriz ? w * rowFrac : h * rowFrac;
+      if (rowLen <= 0) return Infinity;
+      let worst = 0;
+      row.forEach(it => {
+        const frac = it.market_value / rowSum;
+        const cellLen = side * frac;
+        const aspect = Math.max(rowLen / cellLen, cellLen / rowLen);
+        worst = Math.max(worst, aspect);
+      });
+      return worst;
+    }
+
+    for (let i = 1; i < items.length; i++) {
+      const curWorst = worstAspect(rowItems, rowSum);
+      const newRow = [...rowItems, items[i]];
+      const newSum = rowSum + items[i].market_value;
+      const newWorst = worstAspect(newRow, newSum);
+      if (newWorst <= curWorst) {
+        rowItems = newRow;
+        rowSum = newSum;
+      } else {
+        break;
+      }
+    }
+
+    const rowFrac = rowSum / total;
+    const remaining = items.slice(rowItems.length);
+
+    let offset = 0;
+    if (isHoriz) {
+      const rowW = w * rowFrac;
+      rowItems.forEach(it => {
+        const cellFrac = it.market_value / rowSum;
+        const cellH = h * cellFrac;
+        rects.push({ ...it, x: x, y: y + offset, w: rowW, h: cellH });
+        offset += cellH;
+      });
+      doLayout(remaining, x + rowW, y, w - rowW, h);
+    } else {
+      const rowH = h * rowFrac;
+      rowItems.forEach(it => {
+        const cellFrac = it.market_value / rowSum;
+        const cellW = w * cellFrac;
+        rects.push({ ...it, x: x + offset, y: y, w: cellW, h: rowH });
+        offset += cellW;
+      });
+      doLayout(remaining, x, y + rowH, w, h - rowH);
+    }
+  }
+
+  doLayout(items, x, y, w, h);
+  return rects;
+}
+
+function renderTreemapInContainer(containerId, data, tooltipId) {
+  const container = document.getElementById(containerId);
+  if (!container || !data || data.length === 0) return;
+  const W = container.clientWidth;
+  const H = container.clientHeight;
+  if (W <= 0 || H <= 0) return;
+  const rects = squarify(data, 0, 0, W, H);
+  const tooltip = document.getElementById(tooltipId);
+
+  container.innerHTML = rects.map(r => {
+    const sizeClass = (r.w < 60 || r.h < 40) ? 'tiny' : (r.w < 100 || r.h < 55) ? 'small' : '';
+    return `<div class="treemap-cell ${sizeClass}" style="left:${r.x}px;top:${r.y}px;width:${r.w}px;height:${r.h}px;background:${getTreemapColor(r.return_pct)}"
+      data-name="${r.name}" data-ret="${r.return_pct}" data-mv="${r.market_value}" data-qty="${r.qty}" data-cp="${r.current_price}" data-cost="${r.cost}" data-upnl="${r.unrealized_pnl}" data-weight="${r.weight || 0}">
+      <span class="name">${r.name}</span>
+      <span class="pct">${r.return_pct >= 0 ? '+' : ''}${r.return_pct.toFixed(1)}%</span>
+      <span class="val">${fmt(r.market_value)}</span>
+    </div>`;
+  }).join('');
+
+  container.querySelectorAll('.treemap-cell').forEach(cell => {
+    cell.addEventListener('mouseenter', e => {
+      const d = cell.dataset;
+      tooltip.innerHTML = `<div class="tt-name">${d.name}</div>
+        <div class="tt-row"><span class="tt-label">평가금액</span><span>${fmt(+d.mv)}</span></div>
+        <div class="tt-row"><span class="tt-label">수량</span><span>${(+d.qty).toLocaleString()}주</span></div>
+        <div class="tt-row"><span class="tt-label">현재가</span><span>${fmt(+d.cp)}</span></div>
+        <div class="tt-row"><span class="tt-label">원가</span><span>${fmt(+d.cost)}</span></div>
+        <div class="tt-row"><span class="tt-label">평가손익</span><span class="${pnlCls(+d.upnl)}">${fmt(+d.upnl)} (${(+d.ret) >= 0 ? '+' : ''}${d.ret}%)</span></div>
+        <div class="tt-row"><span class="tt-label">비중</span><span>${d.weight}%</span></div>`;
+      tooltip.style.display = 'block';
+    });
+    cell.addEventListener('mousemove', e => {
+      tooltip.style.left = (e.clientX + 12) + 'px';
+      tooltip.style.top = (e.clientY + 12) + 'px';
+    });
+    cell.addEventListener('mouseleave', () => {
+      tooltip.style.display = 'none';
+    });
+  });
+}
+
+function renderTreemap() {
+  renderTreemapInContainer('treemapContainer', TREEMAP_DATA, 'tmTooltip');
+}
+
+// ===== Sub-tab switching =====
+function switchSubTab(name) {
+  document.querySelectorAll('.sub-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.subtab-content').forEach(t => t.classList.remove('active'));
+  event.target.classList.add('active');
+  document.getElementById('subtab-' + name).classList.add('active');
+  if (name === 'stocks') renderStockTable();
+  if (name === 'byAccount') initAccounts();
+}
+
+// ===== Tab switching =====
 function switchTab(name) {
   document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
   document.querySelectorAll('.tab').forEach(el => el.classList.remove('active'));
   document.getElementById('tab-' + name).classList.add('active');
   event.target.classList.add('active');
-  if (name === 'timeline') initTimeline();
-  if (name === 'stocks') renderStockTable();
-  if (name === 'accounts') initAccounts();
+  if (name === 'analysis') initAnalysis();
+  if (name === 'portfolio') { renderStockTable(); initAccounts(); }
+  if (name === 'dashboard') { setTimeout(renderTreemap, 50); }
 }
 
 // ===== STOCK TABLE =====
@@ -678,7 +977,7 @@ let stockData = [...STOCKS];
 
 function setStockFilter(filter, btn) {
   stockFilter = filter;
-  document.querySelectorAll('#tab-stocks .filter-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('#subtab-stocks .filter-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   renderStockTable();
 }
@@ -695,7 +994,9 @@ function applyStockFilter(data) {
 
 function renderStockTable() {
   const tbody = document.querySelector('#stockTable tbody');
-  const search = document.getElementById('stockSearch').value.toLowerCase();
+  if (!tbody) return;
+  const searchEl = document.getElementById('stockSearch');
+  const search = searchEl ? searchEl.value.toLowerCase() : '';
   let data = stockData.filter(s => s.name.toLowerCase().includes(search));
   data = applyStockFilter(data);
   data.sort((a, b) => {
@@ -709,18 +1010,18 @@ function renderStockTable() {
   tbody.innerHTML = data.map(s => `
     <tr>
       <td><strong>${s.name}</strong></td>
-      <td class="text-right">${fmt(s.invested)}</td>
-      <td class="text-right">${fmt(s.returned)}</td>
-      <td class="text-right ${pnlCls(s.realized_pnl)}">${fmt(s.realized_pnl)}</td>
-      <td class="text-right">${s.dividends > 0 ? fmt(s.dividends) : '-'}</td>
-      <td class="text-right ${pnlCls(s.net_pnl)}"><strong>${fmt(s.net_pnl)}</strong></td>
-      <td class="text-right ${pnlCls(s.roi)}">${s.roi.toFixed(1)}%</td>
-      <td class="text-right ${pnlCls(s.irr)}">${s.irr != null ? s.irr.toFixed(1) + '%' : '-'}</td>
-      <td class="text-right">${s.current_qty > 0 ? s.current_qty.toLocaleString() : '-'}</td>
-      <td class="text-right">${s.current_qty > 0 ? fmt(s.current_price) : '-'}</td>
-      <td class="text-right">${s.market_value > 0 ? '<strong>' + fmt(s.market_value) + '</strong>' : '-'}</td>
-      <td class="text-right ${pnlCls(s.unrealized_pnl)}">${s.current_qty > 0 ? fmt(s.unrealized_pnl) : '-'}</td>
-      <td class="text-right">${s.weight > 0 ? s.weight.toFixed(1) + '%' : '-'}</td>
+      <td class="text-right mono">${fmt(s.invested)}</td>
+      <td class="text-right mono">${fmt(s.returned)}</td>
+      <td class="text-right mono ${pnlCls(s.realized_pnl)}">${fmt(s.realized_pnl)}</td>
+      <td class="text-right mono">${s.dividends > 0 ? fmt(s.dividends) : '-'}</td>
+      <td class="text-right mono ${pnlCls(s.net_pnl)}"><strong>${fmt(s.net_pnl)}</strong></td>
+      <td class="text-right mono ${pnlCls(s.roi)}">${s.roi.toFixed(1)}%</td>
+      <td class="text-right mono ${pnlCls(s.irr)}">${s.irr != null ? s.irr.toFixed(1) + '%' : '-'}</td>
+      <td class="text-right mono">${s.current_qty > 0 ? s.current_qty.toLocaleString() : '-'}</td>
+      <td class="text-right mono">${s.current_qty > 0 ? fmt(s.current_price) : '-'}</td>
+      <td class="text-right mono">${s.market_value > 0 ? '<strong>' + fmt(s.market_value) + '</strong>' : '-'}</td>
+      <td class="text-right mono ${pnlCls(s.unrealized_pnl)}">${s.current_qty > 0 ? fmt(s.unrealized_pnl) : '-'}</td>
+      <td class="text-right mono">${s.weight > 0 ? s.weight.toFixed(1) + '%' : '-'}</td>
     </tr>
   `).join('');
 
@@ -743,9 +1044,12 @@ function filterStockTable() { renderStockTable(); }
 
 // ===== ACCOUNTS =====
 let currentAccount = null;
+let accountsInited = false;
 function initAccounts() {
   const sel = document.getElementById('accountSelector');
+  if (!sel) return;
   if (sel.children.length > 0) return;
+  accountsInited = true;
   Object.keys(ACCOUNTS).forEach((acc, i) => {
     const btn = document.createElement('button');
     btn.className = 'account-btn' + (i === 0 ? ' active' : '');
@@ -799,18 +1103,18 @@ function renderAccountTable() {
   if (!tbody) return;
   tbody.innerHTML = stocks.map(s => `<tr>
     <td><strong>${s.name}</strong></td>
-    <td class="text-right">${fmt(s.invested)}</td>
-    <td class="text-right">${fmt(s.returned)}</td>
-    <td class="text-right ${pnlCls(s.realized_pnl)}">${fmt(s.realized_pnl)}</td>
-    <td class="text-right">${s.dividends > 0 ? fmt(s.dividends) : '-'}</td>
-    <td class="text-right ${pnlCls(s.net_pnl)}"><strong>${fmt(s.net_pnl)}</strong></td>
-    <td class="text-right ${pnlCls(s.roi)}">${s.roi.toFixed(1)}%</td>
-    <td class="text-right ${pnlCls(s.irr)}">${s.irr != null ? s.irr.toFixed(1) + '%' : '-'}</td>
-    <td class="text-right">${s.current_qty > 0 ? s.current_qty.toLocaleString() + '주' : '-'}</td>
-    <td class="text-right">${s.current_qty > 0 ? fmt(s.current_price) : '-'}</td>
-    <td class="text-right">${s.market_value > 0 ? '<strong>' + fmt(s.market_value) + '</strong>' : '-'}</td>
-    <td class="text-right ${pnlCls(s.unrealized_pnl)}">${s.current_qty > 0 ? fmt(s.unrealized_pnl) : '-'}</td>
-    <td class="text-right">${s.weight > 0 ? s.weight.toFixed(1) + '%' : '-'}</td>
+    <td class="text-right mono">${fmt(s.invested)}</td>
+    <td class="text-right mono">${fmt(s.returned)}</td>
+    <td class="text-right mono ${pnlCls(s.realized_pnl)}">${fmt(s.realized_pnl)}</td>
+    <td class="text-right mono">${s.dividends > 0 ? fmt(s.dividends) : '-'}</td>
+    <td class="text-right mono ${pnlCls(s.net_pnl)}"><strong>${fmt(s.net_pnl)}</strong></td>
+    <td class="text-right mono ${pnlCls(s.roi)}">${s.roi.toFixed(1)}%</td>
+    <td class="text-right mono ${pnlCls(s.irr)}">${s.irr != null ? s.irr.toFixed(1) + '%' : '-'}</td>
+    <td class="text-right mono">${s.current_qty > 0 ? s.current_qty.toLocaleString() + '주' : '-'}</td>
+    <td class="text-right mono">${s.current_qty > 0 ? fmt(s.current_price) : '-'}</td>
+    <td class="text-right mono">${s.market_value > 0 ? '<strong>' + fmt(s.market_value) + '</strong>' : '-'}</td>
+    <td class="text-right mono ${pnlCls(s.unrealized_pnl)}">${s.current_qty > 0 ? fmt(s.unrealized_pnl) : '-'}</td>
+    <td class="text-right mono">${s.weight > 0 ? s.weight.toFixed(1) + '%' : '-'}</td>
   </tr>`).join('');
 
   document.querySelectorAll('#acctStockTable th').forEach(th => {
@@ -836,6 +1140,7 @@ function renderAccount(acc) {
   acctFilter = 'all';
   const data = ACCOUNTS[acc];
   const detail = document.getElementById('accountDetail');
+  if (!detail) return;
   const netPnl = data.realized_pnl + data.dividends;
   const roi = data.total_invested > 0 ? (netPnl / data.total_invested * 100).toFixed(1) : 0;
 
@@ -848,15 +1153,23 @@ function renderAccount(acc) {
     holdingsHtml += '</div></div>';
   }
 
+  let treemapHtml = '';
+  if (data.treemap && data.treemap.length > 0) {
+    treemapHtml = '<div class="card"><div class="card-title">포트폴리오 구성 (평가금액 기준)</div><div class="treemap-container acct-treemap" id="acctTreemapContainer"></div></div>';
+  }
+
   detail.innerHTML = `
-    <div class="kpi-grid">
+    <div class="kpi-row primary">
       <div class="kpi"><div class="kpi-label">매수금액</div><div class="kpi-value">${fmt(data.total_invested)}</div><div class="kpi-sub">${data.num_trades}건 거래</div></div>
       <div class="kpi"><div class="kpi-label">매도금액</div><div class="kpi-value">${fmt(data.total_returned)}</div></div>
       <div class="kpi"><div class="kpi-label">실현손익</div><div class="kpi-value ${pnlCls(data.realized_pnl)}">${fmt(data.realized_pnl)}</div></div>
       <div class="kpi"><div class="kpi-label">배당</div><div class="kpi-value">${fmt(data.dividends)}</div></div>
-      <div class="kpi"><div class="kpi-label">순손익</div><div class="kpi-value ${pnlCls(netPnl)}">${fmt(netPnl)}</div><div class="kpi-sub">ROI ${roi}%</div></div>
-      <div class="kpi"><div class="kpi-label">IRR</div><div class="kpi-value ${pnlCls(data.irr)}">${data.irr != null ? data.irr.toFixed(1) + '%' : 'N/A'}</div></div>
     </div>
+    <div class="kpi-row secondary" style="margin-bottom:20px;">
+      <div class="kpi"><div class="kpi-label">순손익</div><div class="kpi-value compact ${pnlCls(netPnl)}">${fmt(netPnl)}</div><div class="kpi-sub">ROI ${roi}%</div></div>
+      <div class="kpi"><div class="kpi-label">IRR</div><div class="kpi-value compact ${pnlCls(data.irr)}">${data.irr != null ? data.irr.toFixed(1) + '%' : 'N/A'}</div></div>
+    </div>
+    ${treemapHtml}
     ${holdingsHtml}
     <div class="card">
       <div class="card-title">종목별 실적</div>
@@ -886,6 +1199,13 @@ function renderAccount(acc) {
   `;
   bindAcctTableSort();
   renderAccountTable();
+
+  // Render account treemap after DOM is ready
+  if (data.treemap && data.treemap.length > 0) {
+    setTimeout(() => {
+      renderTreemapInContainer('acctTreemapContainer', data.treemap, 'acctTmTooltip');
+    }, 50);
+  }
 }
 
 // ===== TOP WINNERS/LOSERS CHARTS =====
@@ -921,26 +1241,27 @@ function initOverallCharts() {
   new Chart(document.getElementById('topLosersChart'), chartOpts(losers, '#ef4444'));
 }
 
-// ===== TIMELINE =====
-let timelineInited = false;
-function initTimeline() {
-  if (timelineInited) return;
-  timelineInited = true;
+// ===== ANALYSIS (TIMELINE) =====
+let analysisInited = false;
+function initAnalysis() {
+  if (analysisInited) return;
+  analysisInited = true;
 
+  // Chart 1: Monthly buy/sell bars
   new Chart(document.getElementById('timelineChart'), {
     type: 'bar',
     data: {
       labels: TIMELINE.map(t => t.month),
       datasets: [
-        { label: '매수', data: TIMELINE.map(t => -t.cum_invested + (TIMELINE[TIMELINE.indexOf(t)-1]?.cum_invested || 0) === 0 ? 0 : t.cum_invested - (TIMELINE[TIMELINE.indexOf(t)-1]?.cum_invested || 0)),
-          backgroundColor: '#ef444488', borderColor: '#ef4444', borderWidth: 1 },
-        { label: '매도', data: TIMELINE.map((t,i) => t.cum_returned - (TIMELINE[i-1]?.cum_returned || 0)),
-          backgroundColor: '#22c55e88', borderColor: '#22c55e', borderWidth: 1 },
+        { label: '매수', data: TIMELINE.map(t => t.invested),
+          backgroundColor: '#ef444488', borderColor: '#ef4444', borderWidth: 1, borderRadius: 3 },
+        { label: '매도', data: TIMELINE.map(t => t.returned),
+          backgroundColor: '#22c55e88', borderColor: '#22c55e', borderWidth: 1, borderRadius: 3 },
       ]
     },
     options: {
       responsive: true, maintainAspectRatio: false,
-      plugins: { tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': ' + fmt(ctx.raw) } } },
+      plugins: { legend: { labels: { color: '#e1e4eb' } }, tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': ' + fmt(ctx.raw) } } },
       scales: {
         x: { ticks: { color: '#8b8fa3', maxRotation: 45 }, grid: { display: false } },
         y: { ticks: { callback: v => fmt(v), color: '#8b8fa3' }, grid: { color: '#2a2d3a' } }
@@ -948,6 +1269,55 @@ function initTimeline() {
     }
   });
 
+  // Chart 2: Cumulative invested vs returned vs dividends
+  new Chart(document.getElementById('cumCompareChart'), {
+    type: 'line',
+    data: {
+      labels: TIMELINE.map(t => t.month),
+      datasets: [
+        {
+          label: '누적 매수',
+          data: TIMELINE.map(t => t.cum_invested),
+          borderColor: '#ef4444',
+          backgroundColor: 'rgba(239,68,68,0.08)',
+          fill: true,
+          tension: 0.3,
+          pointRadius: 0,
+          borderWidth: 2,
+        },
+        {
+          label: '누적 매도',
+          data: TIMELINE.map(t => t.cum_returned),
+          borderColor: '#22c55e',
+          backgroundColor: 'rgba(34,197,94,0.08)',
+          fill: true,
+          tension: 0.3,
+          pointRadius: 0,
+          borderWidth: 2,
+        },
+        {
+          label: '누적 배당',
+          data: TIMELINE.map(t => t.cum_dividends),
+          borderColor: '#6366f1',
+          backgroundColor: 'rgba(99,102,241,0.08)',
+          fill: true,
+          tension: 0.3,
+          pointRadius: 0,
+          borderWidth: 2,
+        },
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { labels: { color: '#e1e4eb' } }, tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': ' + fmt(ctx.raw) } } },
+      scales: {
+        x: { ticks: { color: '#8b8fa3', maxRotation: 45 }, grid: { display: false } },
+        y: { ticks: { callback: v => fmt(v), color: '#8b8fa3' }, grid: { color: '#2a2d3a' } }
+      }
+    }
+  });
+
+  // Chart 3: Cumulative net cashflow
   new Chart(document.getElementById('cashflowChart'), {
     type: 'line',
     data: {
@@ -964,7 +1334,32 @@ function initTimeline() {
     },
     options: {
       responsive: true, maintainAspectRatio: false,
-      plugins: { tooltip: { callbacks: { label: ctx => fmt(ctx.raw) + '원' } } },
+      plugins: { legend: { labels: { color: '#e1e4eb' } }, tooltip: { callbacks: { label: ctx => fmt(ctx.raw) + '원' } } },
+      scales: {
+        x: { ticks: { color: '#8b8fa3', maxRotation: 45 }, grid: { display: false } },
+        y: { ticks: { callback: v => fmt(v), color: '#8b8fa3' }, grid: { color: '#2a2d3a' } }
+      }
+    }
+  });
+
+  // Chart 4: Monthly dividends (only months with dividends > 0)
+  const divMonths = TIMELINE.filter(t => t.dividends > 0);
+  new Chart(document.getElementById('dividendChart'), {
+    type: 'bar',
+    data: {
+      labels: divMonths.map(t => t.month),
+      datasets: [{
+        label: '배당금',
+        data: divMonths.map(t => t.dividends),
+        backgroundColor: 'rgba(99,102,241,0.6)',
+        borderColor: '#6366f1',
+        borderWidth: 1,
+        borderRadius: 4,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => fmt(ctx.raw) + '원' } } },
       scales: {
         x: { ticks: { color: '#8b8fa3', maxRotation: 45 }, grid: { display: false } },
         y: { ticks: { callback: v => fmt(v), color: '#8b8fa3' }, grid: { color: '#2a2d3a' } }
@@ -976,6 +1371,17 @@ function initTimeline() {
 // Init
 initOverallCharts();
 renderStockTable();
+renderTreemap();
+// Re-render treemaps on resize
+window.addEventListener('resize', () => {
+  clearTimeout(window._tmResize);
+  window._tmResize = setTimeout(() => {
+    renderTreemap();
+    if (currentAccount && document.getElementById('acctTreemapContainer')) {
+      renderTreemapInContainer('acctTreemapContainer', ACCOUNTS[currentAccount].treemap, 'acctTmTooltip');
+    }
+  }, 200);
+});
 </script>
 </body>
 </html>"""
@@ -983,4 +1389,4 @@ renderStockTable();
 with open("/Users/r/Documents/Claude/stock-dashboard/index.html", "w", encoding="utf-8") as f:
     f.write(html)
 print("Dashboard saved to index.html")
-print(f"Overall: invested={fmt_num(overall_invested)}, returned={fmt_num(overall_returned)}, pnl={fmt_num(overall_net_pnl)}, IRR={fmt_pct(overall_irr/100) if overall_irr else 'N/A'}")
+print(f"Overall: invested={fmt_num(overall_invested)}, returned={fmt_num(overall_returned)}, pnl={fmt_num(overall_net_pnl)}, IRR={fmt_pct(overall_irr) if overall_irr else 'N/A'}")
