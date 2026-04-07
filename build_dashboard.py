@@ -11,14 +11,48 @@ with open("/Users/r/Documents/Claude/stock-dashboard/transactions.json", encodin
 # Load current prices
 import os
 prices_file = "/Users/r/Documents/Claude/stock-dashboard/prices.json"
-current_prices = {}
+current_prices = {}  # stock name -> price in KRW
+usd_price_stocks = set()  # stocks whose prices are in USD (need exchange rate conversion)
 if os.path.exists(prices_file):
     with open(prices_file, encoding="utf-8") as f:
         raw_prices = json.load(f)
-        current_prices = {k: v["price"] for k, v in raw_prices.items()}
+        for k, v in raw_prices.items():
+            current_prices[k] = v["price"]
+            if v.get("nation") and v["nation"] != "KOR":
+                usd_price_stocks.add(k)
 
-# Filter to KRW transactions: buy/sell/dividend with amount > 0, plus all transfers
-txs = [tx for tx in all_txs if tx["currency"] == "KRW" and (tx["amount"] > 0 or tx["type"] in ("transfer_in", "transfer_out"))]
+# Filter transactions: buy/sell/dividend/loan_interest with amount > 0, plus all transfers
+# USD transactions have amounts already in KRW (converted at trade-time exchange rate)
+txs = [tx for tx in all_txs if tx["amount"] > 0 or tx["type"] in ("transfer_in", "transfer_out")]
+
+# ===== Cash flow / Leverage metrics =====
+cash_flow_types = {"deposit", "withdrawal", "loan_in", "loan_out", "lending_fee"}
+cash_txs = [tx for tx in all_txs if tx["type"] in cash_flow_types]
+
+# ===== Exchange rate for USD holdings valuation =====
+def fetch_usd_krw():
+    """Fetch current USD/KRW exchange rate."""
+    import urllib.request
+    try:
+        url = "https://api.stock.naver.com/marketindex/exchange/FX_USDKRW"
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=5) as resp:
+            data = json.load(resp)
+            rate_str = data.get("exchangeInfo", data).get("closePrice", "0").replace(",", "")
+            return float(rate_str)
+    except Exception:
+        return 1400.0  # fallback
+
+usd_krw = fetch_usd_krw()
+print(f"USD/KRW: {usd_krw:,.2f}")
+
+
+def get_krw_price(stock, fallback=0):
+    """Get current price in KRW (converts USD prices using exchange rate)."""
+    price = current_prices.get(stock, fallback)
+    if stock in usd_price_stocks:
+        return price * usd_krw
+    return price
 
 # ===== Per-Stock Per-Account calculations =====
 # Track positions using FIFO
@@ -162,10 +196,14 @@ def calc_xirr(cashflows, guess=0.1):
 today_str = date.today().strftime("%Y-%m-%d")
 
 # ===== Compute per account, per stock =====
+# Split 토스 into KRW/USD sub-accounts for separate view
 account_stock_data = defaultdict(lambda: defaultdict(list))
 for tx in txs:
     if tx["type"] in ["buy", "sell", "dividend", "transfer_in", "transfer_out"]:
-        account_stock_data[tx["account"]][tx["stock"]].append(tx)
+        acc = tx["account"]
+        if acc == "토스":
+            acc = "토스(KRW)" if tx["currency"] == "KRW" else "토스(USD)"
+        account_stock_data[acc][tx["stock"]].append(tx)
 
 # Per-account summary
 account_summaries = {}
@@ -197,11 +235,25 @@ for account in sorted(account_stock_data.keys()):
                 "cost": m["current_cost"],
             }
 
+    # Calculate loan interest for this account
+    account_loan_interest = sum(
+        tx["amount"] for tx in txs
+        if tx["type"] == "loan_interest" and tx["account"] == account
+    )
+    # Calculate cash flow metrics for this account
+    acct_deposits = sum(tx["amount"] for tx in cash_txs if tx["type"] == "deposit" and tx["account"] == account)
+    acct_withdrawals = sum(tx["amount"] for tx in cash_txs if tx["type"] == "withdrawal" and tx["account"] == account)
+    acct_loan_in = sum(tx["amount"] for tx in cash_txs if tx["type"] == "loan_in" and tx["account"] == account)
+    acct_loan_out = sum(tx["amount"] for tx in cash_txs if tx["type"] == "loan_out" and tx["account"] == account)
+    acct_lending_fee = sum(tx["amount"] for tx in cash_txs if tx["type"] == "lending_fee" and tx["account"] == account)
+    acct_net_deposit = acct_deposits - acct_withdrawals
+    acct_loan_balance = acct_loan_in - acct_loan_out
+
     account_cashflows.sort(key=lambda x: x[0])
     # Add current market value of holdings for IRR
     irr_account_cf = list(account_cashflows)
     for stock, h in holdings.items():
-        cp = current_prices.get(stock, h["avg_price"])
+        cp = get_krw_price(stock, h["avg_price"])
         irr_account_cf.append((today_str, h["qty"] * cp))
     irr = calc_xirr(irr_account_cf)
 
@@ -213,6 +265,12 @@ for account in sorted(account_stock_data.keys()):
         "dividends": account_dividends,
         "fees": account_fees,
         "tax": account_tax,
+        "loan_interest": account_loan_interest,
+        "net_deposit": acct_net_deposit,
+        "loan_balance": acct_loan_balance,
+        "lending_fee": acct_lending_fee,
+        "total_deposits": acct_deposits,
+        "total_withdrawals": acct_withdrawals,
         "irr": irr,
         "holdings": holdings,
         "num_trades": sum(len(t) for t in account_stock_data[account].values()),
@@ -230,7 +288,7 @@ for stock, trades in sorted(stock_all_data.items()):
     # Add current market value as virtual cashflow for IRR calculation
     irr_cashflows = list(m["cashflows"])
     if m["current_qty"] > 0:
-        cp = current_prices.get(stock, m["avg_buy_price"])
+        cp = get_krw_price(stock, m["avg_buy_price"])
         irr_cashflows.append((today_str, m["current_qty"] * cp))
     irr = calc_xirr(irr_cashflows)
     net_pnl = m["realized_pnl"] + m["total_dividends"]
@@ -251,6 +309,16 @@ overall_dividends = 0
 overall_fees = 0
 overall_tax = 0
 overall_holdings = {}
+overall_loan_interest = sum(
+    tx["amount"] for tx in txs if tx["type"] == "loan_interest"
+)
+overall_deposits = sum(tx["amount"] for tx in cash_txs if tx["type"] == "deposit")
+overall_withdrawals = sum(tx["amount"] for tx in cash_txs if tx["type"] == "withdrawal")
+overall_net_deposit = overall_deposits - overall_withdrawals
+overall_loan_in = sum(tx["amount"] for tx in cash_txs if tx["type"] == "loan_in")
+overall_loan_out = sum(tx["amount"] for tx in cash_txs if tx["type"] == "loan_out")
+overall_loan_balance = overall_loan_in - overall_loan_out
+overall_lending_fee = sum(tx["amount"] for tx in cash_txs if tx["type"] == "lending_fee")
 
 for stock, m in stock_summaries.items():
     overall_invested += m["total_invested"]
@@ -271,7 +339,7 @@ all_cashflows.sort(key=lambda x: x[0])
 # Add current market value of all holdings for IRR
 irr_all_cf = list(all_cashflows)
 for stock, h in overall_holdings.items():
-    cp = current_prices.get(stock, h["avg_price"])
+    cp = get_krw_price(stock, h["avg_price"])
     irr_all_cf.append((today_str, h["qty"] * cp))
 overall_irr = calc_xirr(irr_all_cf)
 
@@ -368,7 +436,7 @@ for acc, data in account_summaries.items():
         })
     # Add current price / market value to each stock
     for s in stocks_list:
-        cp = current_prices.get(s["name"], s["avg_price"] if s["current_qty"] > 0 else 0)
+        cp = get_krw_price(s["name"], s["avg_price"] if s["current_qty"] > 0 else 0)
         s["current_price"] = cp
         s["market_value"] = s["current_qty"] * cp if s["current_qty"] > 0 else 0
         s["unrealized_pnl"] = s["market_value"] - s["cost"] if s["current_qty"] > 0 else 0
@@ -384,11 +452,11 @@ for acc, data in account_summaries.items():
     holdings = data["holdings"]
     acct_total_mv = 0
     for stock, h in holdings.items():
-        cp = current_prices.get(stock, h["avg_price"])
+        cp = get_krw_price(stock, h["avg_price"])
         mv = h["qty"] * cp
         acct_total_mv += mv
     for stock, h in holdings.items():
-        cp = current_prices.get(stock, h["avg_price"])
+        cp = get_krw_price(stock, h["avg_price"])
         mv = h["qty"] * cp
         cost = h["cost"]
         ret = ((mv - cost) / cost * 100) if cost > 0 else 0
@@ -414,6 +482,12 @@ for acc, data in account_summaries.items():
         "dividends": data["dividends"],
         "fees": data["fees"],
         "tax": data["tax"],
+        "loan_interest": data["loan_interest"],
+        "net_deposit": data["net_deposit"],
+        "loan_balance": data["loan_balance"],
+        "lending_fee": data["lending_fee"],
+        "total_deposits": data["total_deposits"],
+        "total_withdrawals": data["total_withdrawals"],
         "irr": round(data["irr"] * 100, 1) if data["irr"] else None,
         "holdings": data["holdings"],
         "num_trades": data["num_trades"],
@@ -439,7 +513,7 @@ for stock, m in stock_summaries.items():
     })
 # Add current price / market value
 for s in js_stock_data:
-    cp = current_prices.get(s["name"], s["avg_price"] if s["current_qty"] > 0 else 0)
+    cp = get_krw_price(s["name"], s["avg_price"] if s["current_qty"] > 0 else 0)
     s["current_price"] = cp
     s["market_value"] = s["current_qty"] * cp if s["current_qty"] > 0 else 0
     s["unrealized_pnl"] = s["market_value"] - s["cost"] if s["current_qty"] > 0 else 0
@@ -454,7 +528,7 @@ overall_net_pnl = overall_realized_pnl + overall_dividends
 overall_roi = (overall_net_pnl / overall_invested * 100) if overall_invested > 0 else 0
 
 total_market_value = sum(
-    h["qty"] * current_prices.get(stock, h["avg_price"])
+    h["qty"] * get_krw_price(stock, h["avg_price"])
     for stock, h in overall_holdings.items()
 )
 total_unrealized = total_market_value - sum(h["cost"] for h in overall_holdings.values())
@@ -469,6 +543,12 @@ js_overall = {
     "irr": round(overall_irr * 100, 1) if overall_irr else None,
     "fees": overall_fees,
     "tax": overall_tax,
+    "loan_interest": overall_loan_interest,
+    "net_deposit": overall_net_deposit,
+    "loan_balance": overall_loan_balance,
+    "lending_fee": overall_lending_fee,
+    "total_deposits": overall_deposits,
+    "total_withdrawals": overall_withdrawals,
     "holdings": overall_holdings,
     "num_stocks": len(stock_summaries),
     "num_accounts": len(account_summaries),
@@ -479,7 +559,7 @@ js_overall = {
 # Build treemap data for holdings
 treemap_data = []
 for stock, h in overall_holdings.items():
-    cp = current_prices.get(stock, h["avg_price"])
+    cp = get_krw_price(stock, h["avg_price"])
     mv = h["qty"] * cp
     cost = h["cost"]
     unrealized_ret = ((mv - cost) / cost * 100) if cost > 0 else 0
@@ -547,7 +627,7 @@ h1 {{ font-size: 1.8rem; font-weight: 700; margin-bottom: 8px; letter-spacing: -
 /* === KPI Cards === */
 .kpi-row {{ display: grid; gap: 14px; margin-bottom: 14px; }}
 .kpi-row.primary {{ grid-template-columns: repeat(4, 1fr); }}
-.kpi-row.secondary {{ grid-template-columns: repeat(4, 1fr); }}
+.kpi-row.secondary {{ grid-template-columns: repeat(5, 1fr); }}
 .kpi {{ background: var(--card); border-radius: 12px; padding: 18px 20px; border: 1px solid var(--border); transition: border-color 0.2s, transform 0.2s; }}
 .kpi:hover {{ border-color: var(--border-light); transform: translateY(-1px); }}
 .kpi.border-positive {{ border-image: linear-gradient(135deg, var(--positive-dim), transparent 60%) 1; }}
@@ -625,7 +705,8 @@ tr:hover td {{ background: rgba(99, 102, 241, 0.06); }}
 .tm-tooltip .tt-label {{ color: var(--text-dim); }}
 
 @media (max-width: 768px) {{
-  .kpi-row.primary, .kpi-row.secondary {{ grid-template-columns: repeat(2, 1fr); }}
+  .kpi-row.primary {{ grid-template-columns: repeat(2, 1fr); }}
+  .kpi-row.secondary {{ grid-template-columns: repeat(3, 1fr); }}
   .tabs {{ overflow-x: auto; width: 100%; }}
   table {{ font-size: 0.75rem; }}
   td, th {{ padding: 6px 8px; }}
@@ -639,11 +720,9 @@ tr:hover td {{ background: rgba(99, 102, 241, 0.06); }}
   .kpi-value.compact {{ font-size: 1.1rem; }}
 }}
 </style>
-</head>
-<body>
 <div class="container">
 <h1>주식 통합 대시보드</h1>
-<p class="subtitle">NH투자증권 {len([a for a in account_summaries if a.startswith('NH')])}개 계좌 + 토스증권 1개 계좌 | {min(tx['date'] for tx in txs)} ~ {max(tx['date'] for tx in txs)} | 총 {len(txs):,}건</p>
+<p class="subtitle">NH투자증권 {len([a for a in account_summaries if a.startswith('NH')])}개 계좌 + 토스증권 1개 계좌 (KRW+USD) | {min(tx['date'] for tx in txs)} ~ {max(tx['date'] for tx in txs)} | 총 {len(txs):,}건 | USD/KRW {usd_krw:,.0f}</p>
 
 <div class="tabs">
   <button class="tab active" onclick="switchTab('dashboard')">대시보드</button>
@@ -694,6 +773,39 @@ tr:hover td {{ background: rgba(99, 102, 241, 0.06); }}
     <div class="kpi">
       <div class="kpi-label">IRR (연환산)</div>
       <div class="kpi-value compact {pnl_class(overall_irr or 0)}">{fmt_pct(overall_irr) if overall_irr else 'N/A'}</div>
+    </div>
+    <div class="kpi border-negative">
+      <div class="kpi-label">대출이자 비용</div>
+      <div class="kpi-value compact negative">{fmt_num(overall_loan_interest)}</div>
+      <div class="kpi-sub">실질 순수익 <span class="{pnl_class(overall_net_pnl - overall_loan_interest)}">{fmt_num(overall_net_pnl - overall_loan_interest)}</span></div>
+    </div>
+  </div>
+  <!-- Leverage / Cash Flow KPIs -->
+  <div class="kpi-row secondary" style="margin-bottom:24px;">
+    <div class="kpi">
+      <div class="kpi-label">순입금액</div>
+      <div class="kpi-value compact {pnl_class(-overall_net_deposit)}">{fmt_num(overall_net_deposit)}</div>
+      <div class="kpi-sub">입금 {fmt_num(overall_deposits)} / 출금 {fmt_num(overall_withdrawals)}</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">현재 대출잔액</div>
+      <div class="kpi-value compact {"negative" if overall_loan_balance > 0 else ""}">{fmt_num(overall_loan_balance)}</div>
+      <div class="kpi-sub">레버리지 {total_market_value / max(total_market_value - overall_loan_balance, 1):.2f}x</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">대여수수료 수입</div>
+      <div class="kpi-value compact positive">{fmt_num(overall_lending_fee)}</div>
+      <div class="kpi-sub">순금융비용 <span class="negative">{fmt_num(overall_loan_interest - overall_lending_fee)}</span></div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">자기자본 수익률</div>
+      <div class="kpi-value compact {pnl_class(overall_net_pnl)}">{((overall_net_pnl - overall_loan_interest) / max(overall_deposits, 1) * 100):+.1f}%</div>
+      <div class="kpi-sub">순수익 {fmt_num(overall_net_pnl - overall_loan_interest)} / 총입금 {fmt_num(overall_deposits)}</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">총 대출회전</div>
+      <div class="kpi-value compact">{fmt_num(overall_loan_in)}</div>
+      <div class="kpi-sub">상환 {fmt_num(overall_loan_out)}</div>
     </div>
   </div>
 
@@ -1184,7 +1296,13 @@ function renderAccount(acc) {
     <div class="kpi-row secondary" style="margin-bottom:20px;">
       <div class="kpi"><div class="kpi-label">순손익</div><div class="kpi-value compact ${pnlCls(netPnl)}">${fmt(netPnl)}</div><div class="kpi-sub">ROI ${roi}%</div></div>
       <div class="kpi"><div class="kpi-label">IRR</div><div class="kpi-value compact ${pnlCls(data.irr)}">${data.irr != null ? data.irr.toFixed(1) + '%' : 'N/A'}</div></div>
+      ${data.loan_interest > 0 ? `<div class="kpi"><div class="kpi-label">대출이자</div><div class="kpi-value compact negative">${fmt(data.loan_interest)}</div><div class="kpi-sub">대여수수료 +${fmt(data.lending_fee || 0)}</div></div>` : ''}
     </div>
+    ${data.total_deposits > 0 ? `<div class="kpi-row secondary" style="margin-bottom:20px;">
+      <div class="kpi"><div class="kpi-label">순입금액</div><div class="kpi-value compact">${fmt(data.net_deposit)}</div><div class="kpi-sub">입금 ${fmt(data.total_deposits)} / 출금 ${fmt(data.total_withdrawals)}</div></div>
+      <div class="kpi"><div class="kpi-label">대출잔액</div><div class="kpi-value compact ${data.loan_balance > 0 ? 'negative' : ''}">${fmt(data.loan_balance)}</div></div>
+      ${data.loan_interest > 0 ? `<div class="kpi"><div class="kpi-label">실질 순수익</div><div class="kpi-value compact ${pnlCls(netPnl - data.loan_interest + (data.lending_fee || 0))}">${fmt(netPnl - data.loan_interest + (data.lending_fee || 0))}</div><div class="kpi-sub">손익 - 이자 + 대여수수료</div></div>` : ''}
+    </div>` : ''}
     ${treemapHtml}
     ${holdingsHtml}
     <div class="card">

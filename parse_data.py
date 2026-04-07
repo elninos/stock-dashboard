@@ -136,6 +136,144 @@ def parse_nh_excel(folder_path, account_name):
                 "tax": tax,
                 "currency": "KRW",
             })
+        # Capture 대여배당금 (lending dividend - treat as dividend for the stock)
+        lending_div = df[df["상세내용"] == "대여배당금입금"].copy()
+        for _, row in lending_div.iterrows():
+            amount = float(row["거래금액"]) if pd.notna(row["거래금액"]) else 0
+            if amount <= 0:
+                continue
+            transactions.append({
+                "date": str(row["실거래일자"]).replace(".", "-"),
+                "account": account_name,
+                "broker": "NH투자증권",
+                "type": "dividend",
+                "stock": str(row["종목명"]) if pd.notna(row["종목명"]) else "Unknown",
+                "qty": 0,
+                "price": 0,
+                "amount": amount,
+                "fee": 0,
+                "tax": 0,
+                "currency": "KRW",
+            })
+        # Capture 주식담보대출 이자 (loan interest payments)
+        interest_rows = df[df["상세내용"].str.contains("이자", na=False)].copy()
+        for _, row in interest_rows.iterrows():
+            amount = float(row["거래금액"]) if pd.notna(row["거래금액"]) else 0
+            if amount <= 0:
+                continue
+            transactions.append({
+                "date": str(row["실거래일자"]).replace(".", "-"),
+                "account": account_name,
+                "broker": "NH투자증권",
+                "type": "loan_interest",
+                "stock": str(row["종목명"]) if pd.notna(row["종목명"]) else "",
+                "qty": 0,
+                "price": 0,
+                "amount": amount,
+                "fee": 0,
+                "tax": 0,
+                "currency": "KRW",
+            })
+        # Capture 입출금 (cash deposits/withdrawals)
+        deposit_types = ["입금", "대체입금", "이체입금", "타행이체입금"]
+        withdrawal_types = ["출금", "대체출금", "이체출금", "타행이체출금", "은행이체출금", "오픈뱅킹출금이체"]
+        # Loan classification: order matters (longer/more specific patterns first)
+        # loan_out patterns (repayment - reduces balance)
+        loan_out_exact = [
+            "수익증권담보대출현금상환(",   # 수익증권담보 상환
+            "현금상환(",                   # 주식담보 상환
+            "예탁증권담보대출취소(",       # 대출취소 = 잔액 감소
+            "수익증권담보대출취소(",       # 대출취소 = 잔액 감소
+            "신용대출매도(",               # 반대매매 = 상환
+        ]
+        # loan_in patterns (disbursement - increases balance)
+        loan_in_exact = [
+            "수익증권담보대출현금상환취소(",  # 상환취소 = 잔액 복원
+            "현금상환취소(",                  # 상환취소 = 잔액 복원
+            "예탁증권담보대출(",              # 주식담보 대출
+            "수익증권담보대출(",              # 수익증권담보 대출
+        ]
+        # Build lending position timeline for fee allocation
+        lending_events = []
+        for _, row in df[df["상세내용"].isin(["대여출고", "대여상환입고"])].iterrows():
+            stock = str(row["종목명"]) if pd.notna(row["종목명"]) else None
+            if not stock:
+                continue
+            qty = int(row["수량"]) if pd.notna(row["수량"]) else 0
+            dt = str(row["실거래일자"]).replace(".", "-")
+            delta = qty if row["상세내용"] == "대여출고" else -qty
+            lending_events.append((dt, stock, delta))
+        lending_events.sort(key=lambda x: x[0])
+
+        for _, row in df.iterrows():
+            detail = str(row["상세내용"]) if pd.notna(row["상세내용"]) else ""
+            amount = float(row["거래금액"]) if pd.notna(row["거래금액"]) else 0
+            settled = float(row["정산금액"]) if pd.notna(row.get("정산금액")) else 0
+            val = settled if settled > 0 else amount
+            if val <= 0:
+                continue
+            tx_type = None
+            if detail in deposit_types:
+                tx_type = "deposit"
+            elif detail in withdrawal_types:
+                tx_type = "withdrawal"
+            elif any(detail.startswith(k) for k in loan_out_exact):
+                tx_type = "loan_out"
+            elif any(detail.startswith(k) for k in loan_in_exact):
+                tx_type = "loan_in"
+            elif detail == "대여수수료입금":
+                # Allocate lending fee to stocks
+                stock_name = str(row["종목명"]) if pd.notna(row["종목명"]) else None
+                fee_date = str(row["실거래일자"]).replace(".", "-")
+                if stock_name:
+                    # Already has stock name
+                    transactions.append({
+                        "date": fee_date, "account": account_name,
+                        "broker": "NH투자증권", "type": "lending_fee",
+                        "stock": stock_name, "qty": 0, "price": 0,
+                        "amount": val, "fee": 0, "tax": 0, "currency": "KRW",
+                    })
+                else:
+                    # Allocate by active lending positions
+                    positions = {}
+                    for evt_date, evt_stock, delta in lending_events:
+                        if evt_date <= fee_date:
+                            positions[evt_stock] = positions.get(evt_stock, 0) + delta
+                    active = {k: v for k, v in positions.items() if v > 0}
+                    total_lent = sum(active.values())
+                    if total_lent > 0:
+                        for stk, qty in active.items():
+                            alloc = val * qty / total_lent
+                            transactions.append({
+                                "date": fee_date, "account": account_name,
+                                "broker": "NH투자증권", "type": "lending_fee",
+                                "stock": stk, "qty": 0, "price": 0,
+                                "amount": round(alloc), "fee": 0, "tax": 0,
+                                "currency": "KRW",
+                            })
+                    else:
+                        transactions.append({
+                            "date": fee_date, "account": account_name,
+                            "broker": "NH투자증권", "type": "lending_fee",
+                            "stock": "", "qty": 0, "price": 0,
+                            "amount": val, "fee": 0, "tax": 0, "currency": "KRW",
+                        })
+                continue
+            if tx_type is None:
+                continue
+            transactions.append({
+                "date": str(row["실거래일자"]).replace(".", "-"),
+                "account": account_name,
+                "broker": "NH투자증권",
+                "type": tx_type,
+                "stock": "",
+                "qty": 0,
+                "price": 0,
+                "amount": val,
+                "fee": 0,
+                "tax": 0,
+                "currency": "KRW",
+            })
     return transactions
 
 
@@ -216,6 +354,7 @@ def parse_toss_pdfs():
 
                 # Stock name: may have code like (A239890) or (US75734B1008) or (CA09173B1076) or (MHY...)
                 stock_name = re.sub(r"\([A-Z][A-Z0-9]+\)$", "", stock_line).strip()
+                stock_name = stock_name.replace("\xa0", " ")  # Fix non-breaking space from PDF
                 # Foreign stock: any code NOT starting with A (Korean codes start with A)
                 foreign_code = re.search(r"\(([A-Z]{2}[A-Z0-9]+)\)", stock_line)
                 has_foreign_code = bool(foreign_code and not foreign_code.group(1).startswith("A"))
@@ -235,11 +374,14 @@ def parse_toss_pdfs():
                     # Skip dollar amounts
                     if val.startswith("($") or val.startswith("($ "):
                         continue
-                    try:
-                        num_val = float(val.replace(",", ""))
-                        raw_nums.append(num_val)
-                    except ValueError:
-                        continue
+                    # Handle space-separated numbers on one line (e.g. "1,392.70 25.751804")
+                    parts = val.split()
+                    for part in parts:
+                        try:
+                            num_val = float(part.replace(",", ""))
+                            raw_nums.append(num_val)
+                        except ValueError:
+                            continue
 
                 if is_usd or has_foreign_code:
                     # USD format: exchange_rate, qty, amount_krw, price_krw, fee_krw, tax_krw, loan_krw, balance_qty, cash_krw
