@@ -97,6 +97,45 @@ def parse_nh_excel(folder_path, account_name):
             # This is the cash outflow for rights issue, not a stock buy
             # The stock comes in later as 유상주 입고
             # Skip to avoid double-counting (유상주 입고 already captured above)
+
+        # Capture 청산출고 (SPAC liquidation - stock removal) + 분배금입금 (liquidation proceeds)
+        liquidation_out = df[df["상세내용"] == "청산출고"].copy()
+        for _, row in liquidation_out.iterrows():
+            if pd.isna(row["종목명"]) or int(row["수량"]) == 0:
+                continue
+            transactions.append({
+                "date": str(row["실거래일자"]).replace(".", "-"),
+                "account": account_name,
+                "broker": "NH투자증권",
+                "type": "transfer_out",
+                "stock": str(row["종목명"]),
+                "qty": int(row["수량"]),
+                "price": 0,
+                "amount": 0,
+                "fee": 0,
+                "tax": 0,
+                "currency": "KRW",
+            })
+
+        liquidation_in = df[df["상세내용"] == "분배금입금"].copy()
+        for _, row in liquidation_in.iterrows():
+            if pd.isna(row["종목명"]):
+                continue
+            amount = float(row["정산금액"]) if pd.notna(row["정산금액"]) else 0
+            tax = float(row["세금"]) if pd.notna(row["세금"]) else 0
+            transactions.append({
+                "date": str(row["실거래일자"]).replace(".", "-"),
+                "account": account_name,
+                "broker": "NH투자증권",
+                "type": "sell",
+                "stock": str(row["종목명"]),
+                "qty": int(row["수량"]) if pd.notna(row["수량"]) else 0,
+                "price": 0,
+                "amount": amount,
+                "fee": 0,
+                "tax": tax,
+                "currency": "KRW",
+            })
     return transactions
 
 

@@ -3237,6 +3237,32 @@
     "currency": "KRW"
   },
   {
+    "date": "2018-01-24",
+    "account": "NH01",
+    "broker": "NH투자증권",
+    "type": "transfer_out",
+    "stock": "엔에이치SL스팩",
+    "qty": 5000,
+    "price": 0,
+    "amount": 0,
+    "fee": 0,
+    "tax": 0,
+    "currency": "KRW"
+  },
+  {
+    "date": "2018-01-24",
+    "account": "NH01",
+    "broker": "NH투자증권",
+    "type": "sell",
+    "stock": "엔에이치SL스팩",
+    "qty": 5000,
+    "price": 0,
+    "amount": 10427370.0,
+    "fee": 0,
+    "tax": 45930.0,
+    "currency": "KRW"
+  },
+  {
     "date": "2018-01-26",
     "account": "NH01",
     "broker": "NH투자증권",
