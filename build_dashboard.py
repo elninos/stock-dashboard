@@ -779,13 +779,13 @@ html = f"""<!DOCTYPE html>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
 :root {{
-  --bg: #0f1117;
-  --bg2: #141620;
-  --card: #1a1d29;
-  --card-hover: #1f2233;
-  --border: #2a2d3a;
-  --border-light: #353849;
-  --text: #e1e4eb;
+  --bg: #070810;
+  --bg2: #0c0e17;
+  --card: #111420;
+  --card-hover: #171a29;
+  --border: #272b40;
+  --border-light: #363b55;
+  --text: #e2e5ed;
   --text-dim: #8b8fa3;
   --text-muted: #5d6177;
   --accent: #6366f1;
@@ -836,7 +836,7 @@ h1 {{ font-size: 1.8rem; font-weight: 700; margin-bottom: 8px; letter-spacing: -
 .card {{ background: var(--card); border-radius: 12px; padding: 20px; border: 1px solid var(--border); margin-bottom: 20px; transition: border-color 0.2s; }}
 .card:hover {{ border-color: var(--border-light); }}
 .card-title {{ font-size: 1.05rem; font-weight: 600; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }}
-.chart-container {{ position: relative; height: 350px; }}
+.chart-container {{ position: relative; height: 220px; overflow: hidden; background: rgba(0,0,0,0.15); border-radius: 8px; }}
 
 /* === Treemap === */
 .treemap-container {{ position: relative; width: 100%; height: 420px; border-radius: 8px; overflow: hidden; }}
@@ -912,8 +912,62 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
 .detail-toggle::-webkit-details-marker {{ display: none; }}
 .detail-content {{ animation: fadeIn 0.3s ease; }}
 
+/* === Dashboard Hero Header === */
+.dashboard-header {{
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 20px 24px; margin-bottom: 20px;
+  background: linear-gradient(135deg, rgba(99,102,241,0.12) 0%, rgba(99,102,241,0.03) 60%, transparent 100%);
+  border-radius: 16px; border: 1px solid var(--border);
+  position: relative; overflow: hidden;
+}}
+.dashboard-header::before {{
+  content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
+  background: linear-gradient(to bottom, #818cf8, #6366f1, #4f46e5); border-radius: 4px 0 0 4px;
+}}
+.header-brand {{ font-size: 1.05rem; font-weight: 700; letter-spacing: -0.02em; display: flex; align-items: center; gap: 8px; }}
+.header-brand-icon {{ font-size: 1.3rem; }}
+.header-meta-text {{ font-size: 0.73rem; color: var(--text-dim); margin-top: 4px; line-height: 1.5; }}
+.header-center {{ text-align: center; }}
+.header-pv-label {{ font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin-bottom: 2px; }}
+.header-pv-value {{ font-size: 2.5rem; font-weight: 800; letter-spacing: -0.04em; line-height: 1.05; }}
+.header-pv-sub {{ font-size: 0.84rem; font-weight: 600; margin-top: 3px; }}
+.header-right {{ display: flex; align-items: center; gap: 20px; }}
+.header-stat {{ text-align: center; }}
+.header-stat-label {{ font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600; margin-bottom: 3px; }}
+.header-stat-value {{ font-size: 1.15rem; font-weight: 700; }}
+.header-divider {{ width: 1px; height: 36px; background: var(--border); }}
+.header-refresh-btn {{
+  padding: 8px 16px; border: 1px solid var(--border-light); border-radius: 8px;
+  background: rgba(99,102,241,0.08); color: var(--text-dim); cursor: pointer;
+  font-size: 0.8rem; font-weight: 600; transition: all 0.2s; white-space: nowrap;
+}}
+.header-refresh-btn:hover {{ color: var(--accent); border-color: var(--accent); background: var(--accent-dim); }}
+.header-refresh-btn:disabled {{ opacity: 0.5; cursor: not-allowed; }}
+
+/* === Card improvements === */
+.card {{ box-shadow: 0 4px 20px rgba(0,0,0,0.4); }}
+.card:hover {{ box-shadow: 0 6px 28px rgba(0,0,0,0.5); border-color: var(--border-light); }}
+.card-title {{ border-left: 3px solid var(--accent); padding-left: 10px; }}
+
+/* === KPI improvement: glow on positive/negative === */
+.kpi.border-positive {{ box-shadow: 0 0 0 1px rgba(34,197,94,0.25), inset 0 0 40px rgba(34,197,94,0.03); }}
+.kpi.border-negative {{ box-shadow: 0 0 0 1px rgba(239,68,68,0.25), inset 0 0 40px rgba(239,68,68,0.03); }}
+
+/* === Chart fix: prevent canvas overflow === */
+.chart-container canvas {{ max-height: 350px; }}
+
+/* === Info bar (below tabs) === */
+.info-bar {{
+  display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  padding: 8px 14px; background: var(--card); border-radius: 8px;
+  border: 1px solid var(--border); margin-bottom: 20px; font-size: 0.78rem; color: var(--text-dim);
+}}
+.info-bar-item {{ display: flex; align-items: center; gap: 6px; }}
+.info-bar-dot {{ width: 6px; height: 6px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }}
+
 @media (max-width: 900px) {{
   #treemapNationGrid {{ grid-template-columns: 1fr !important; }}
+  .dashboard-header {{ flex-wrap: wrap; gap: 16px; }}
 }}
 @media (max-width: 768px) {{
   .kpi-row.primary {{ grid-template-columns: repeat(2, 1fr); }}
@@ -924,6 +978,7 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
   .treemap-container {{ height: 300px; }}
   .treemap-container.acct-treemap {{ height: 240px; }}
   .search-box {{ width: 180px; }}
+  .header-center {{ display: none; }}
 }}
 @media (max-width: 480px) {{
   .kpi-row.primary, .kpi-row.secondary {{ grid-template-columns: 1fr 1fr; }}
@@ -931,14 +986,47 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
   .kpi-value.compact {{ font-size: 1.1rem; }}
 }}
 </style>
+</head>
+<body>
 <div class="container">
-<h1>주식 통합 대시보드</h1>
-<p class="subtitle">
-  NH투자증권 + 나무증권 + 토스증권 ({len(account_summaries)}개 계좌) | {min(tx['date'] for tx in txs)} ~ {max(tx['date'] for tx in txs)} | 총 {len(txs):,}건<br>
-  USD {usd_krw:,.0f}원 · JPY {jpy_krw:,.2f}원 |
-  가격 업데이트: <span id="prices-updated-at">{prices_updated_at or '알 수 없음'}</span>
-  <button id="refresh-btn" onclick="refreshPrices()" title="네이버에서 현재가 새로고침" style="margin-left:8px;padding:3px 12px;font-size:0.78rem;cursor:pointer;border:1px solid var(--border-light);border-radius:6px;background:var(--card);color:var(--text-dim);vertical-align:middle;transition:all 0.2s;" onmouseover="this.style.color='var(--text)';this.style.borderColor='var(--accent)'" onmouseout="this.style.color='var(--text-dim)';this.style.borderColor='var(--border-light)'">⟳ 새로고침</button>
-</p>
+<div class="dashboard-header">
+  <div>
+    <div class="header-brand"><span class="header-brand-icon">📊</span> 주식 포트폴리오</div>
+    <div class="header-meta-text">
+      NH · 나무 · 토스 &nbsp;·&nbsp; {len(account_summaries)}개 계좌<br>
+      {min(tx['date'] for tx in txs)[:7]} ~ {max(tx['date'] for tx in txs)[:7]} &nbsp;·&nbsp; {len(txs):,}건
+    </div>
+  </div>
+  <div class="header-center">
+    <div class="header-pv-label">총 평가자산</div>
+    <div class="header-pv-value">{fmt_num(total_market_value)}</div>
+    <div class="header-pv-sub {pnl_class(total_unrealized)}">{fmt_num(total_unrealized)} ({(total_unrealized / max(sum(h['cost'] for h in overall_holdings.values()), 1) * 100):+.1f}%)</div>
+  </div>
+  <div class="header-right">
+    <div class="header-stat">
+      <div class="header-stat-label">실현손익</div>
+      <div class="header-stat-value {pnl_class(overall_net_pnl)}">{fmt_num(overall_net_pnl)}</div>
+    </div>
+    <div class="header-divider"></div>
+    <div class="header-stat">
+      <div class="header-stat-label">IRR</div>
+      <div class="header-stat-value {pnl_class(overall_irr or 0)}">{fmt_pct(overall_irr) if overall_irr else 'N/A'}</div>
+    </div>
+    <div class="header-divider"></div>
+    <div class="header-stat">
+      <div class="header-stat-label">환율</div>
+      <div class="header-stat-value" style="font-size:0.85rem;">USD {usd_krw:,.0f}</div>
+    </div>
+    <div class="header-divider"></div>
+    <button id="refresh-btn" class="header-refresh-btn" onclick="refreshPrices()" title="네이버에서 현재가 새로고침">⟳ 새로고침</button>
+  </div>
+</div>
+
+<div class="info-bar">
+  <div class="info-bar-item"><span class="info-bar-dot"></span><span>가격 업데이트: <strong><span id="prices-updated-at">{prices_updated_at or '알 수 없음'}</span></strong></span></div>
+  <div class="info-bar-item"><span class="info-bar-dot" style="background:var(--text-muted)"></span><span>JPY {jpy_krw:,.2f}원</span></div>
+  <div class="info-bar-item"><span class="info-bar-dot" style="background:var(--text-muted)"></span><span>승률 {win_rate:.0f}% ({win_count}/{total_traded_count}종목)</span></div>
+</div>
 
 <div class="tabs">
   <button class="tab active" onclick="switchTab('dashboard')">대시보드</button>
