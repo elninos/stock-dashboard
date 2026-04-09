@@ -1,5 +1,4 @@
 .claude/
 __pycache__/
 *.pyc
-_deploy/
 .wrangler/
