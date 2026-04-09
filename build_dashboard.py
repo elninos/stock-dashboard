@@ -684,6 +684,9 @@ for acc, data in account_summaries.items():
         "holdings": data["holdings"],
         "num_trades": data["num_trades"],
         "treemap": account_treemap,
+        "total_market_value": round(sum(item["market_value"] for item in account_treemap)),
+        "total_cost": round(sum(item["cost"] for item in account_treemap)),
+        "num_holdings": len(data["holdings"]),
     }
 
 js_stock_data = []
@@ -912,6 +915,94 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
 .detail-toggle::-webkit-details-marker {{ display: none; }}
 .detail-content {{ animation: fadeIn 0.3s ease; }}
 
+/* === Account Summary Cards === */
+.acct-summary-grid {{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}}
+.acct-card {{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}}
+.acct-card:hover {{
+  border-color: var(--border-light);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.35);
+}}
+.acct-card::before {{
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--accent);
+  opacity: 0.6;
+}}
+.acct-card.has-loan::before {{
+  background: var(--negative);
+}}
+.acct-name {{
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}}
+.acct-badge {{
+  font-size: 0.65rem;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: rgba(239,68,68,0.15);
+  color: var(--negative);
+  font-weight: 600;
+}}
+.acct-mv {{
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 3px;
+}}
+.acct-pnl-row {{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+}}
+.acct-upnl {{
+  font-size: 0.8rem;
+  font-weight: 600;
+}}
+.acct-upnl-pct {{
+  font-size: 0.75rem;
+}}
+.acct-meta {{
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  padding-top: 7px;
+  margin-top: 2px;
+}}
+.acct-meta-item {{
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}}
+.acct-meta-item strong {{
+  color: var(--text-dim);
+  font-size: 0.78rem;
+}}
 /* === Dashboard Hero Header === */
 .dashboard-header {{
   display: flex; align-items: center; justify-content: space-between;
@@ -1060,6 +1151,9 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
       <div class="kpi-sub">ROI {overall_roi:+.1f}% · {len(stock_summaries)}종목 거래</div>
     </div>
   </div>
+
+  <!-- 계좌별 현황 -->
+  <div class="acct-summary-grid" id="acctSummaryGrid"></div>
 
   <!-- 상세 지표: 접기/펼치기 -->
   <details class="detail-section" style="margin-bottom: 24px;">
@@ -2186,10 +2280,83 @@ function renderBriefing() {
   document.getElementById('briefingContent').innerHTML = html || '<p style="color:var(--text-dim)">해당 날짜에 포스트가 없습니다.</p>';
 }
 
+// ===== ACCOUNT SUMMARY (Dashboard) =====
+function renderAccountSummary() {
+  const grid = document.getElementById('acctSummaryGrid');
+  if (!grid) return;
+
+  grid.innerHTML = Object.entries(ACCOUNTS).map(([name, acct]) => {
+    const mv = acct.total_market_value || 0;
+    const cost = acct.total_cost || 0;
+    const upnl = mv - cost;
+    const upnlPct = cost > 0 ? (upnl / cost * 100) : 0;
+    const netPnl = acct.realized_pnl + acct.dividends;
+    const hasLoan = acct.loan_balance > 0;
+    const upnlCls = pnlCls(upnl);
+
+    // 브로커/계좌 이름 파싱 (NH01 → NH · 01)
+    const match = name.match(/^([^\d]+)(\d+)$/);
+    const broker = match ? match[1] : name;
+    const num = match ? match[2] : '';
+
+    return `<div class="acct-card${hasLoan ? ' has-loan' : ''}" onclick="switchToPortfolioAccount('${name}')">
+      <div class="acct-name">
+        <span>${broker}<span style="color:var(--text-muted);font-weight:400"> ${num}</span></span>
+        ${hasLoan ? `<span class="acct-badge">대출 ${fmt(acct.loan_balance)}</span>` : `<span style="font-size:0.65rem;color:var(--text-muted)">${acct.num_holdings}종목</span>`}
+      </div>
+      <div class="acct-mv">${mv > 0 ? fmt(mv) : '<span style="color:var(--text-muted);font-size:1rem">미보유</span>'}</div>
+      <div class="acct-pnl-row">
+        <span class="acct-upnl ${upnlCls}">${mv > 0 ? (upnl >= 0 ? '+' : '') + fmt(upnl) : ''}</span>
+        <span class="acct-upnl-pct ${upnlCls}">${mv > 0 ? (upnlPct >= 0 ? '+' : '') + upnlPct.toFixed(1) + '%' : ''}</span>
+      </div>
+      <div class="acct-meta">
+        <div class="acct-meta-item">
+          <span>실현손익</span>
+          <strong class="${pnlCls(netPnl)}">${fmt(netPnl)}</strong>
+        </div>
+        <div class="acct-meta-item" style="text-align:center">
+          <span>IRR</span>
+          <strong class="${pnlCls(acct.irr)}">${acct.irr != null ? acct.irr.toFixed(1) + '%' : 'N/A'}</strong>
+        </div>
+        <div class="acct-meta-item" style="text-align:right">
+          <span>거래</span>
+          <strong>${acct.num_trades}건</strong>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function switchToPortfolioAccount(accName) {
+  // 포트폴리오 탭 → 계좌별 → 해당 계좌로 이동
+  document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(el => el.classList.remove('active'));
+  document.getElementById('tab-portfolio').classList.add('active');
+  document.querySelector('.tab[onclick*="portfolio"]').classList.add('active');
+  // 서브탭 → 계좌별
+  document.querySelectorAll('.sub-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.subtab-content').forEach(t => t.classList.remove('active'));
+  document.querySelector('.sub-tab[onclick*="byAccount"]').classList.add('active');
+  document.getElementById('subtab-byAccount').classList.add('active');
+  initAccounts();
+  // 해당 계좌 선택
+  const btns = document.querySelectorAll('#accountSelector .account-btn');
+  btns.forEach(btn => {
+    btn.classList.remove('active');
+    if (btn.textContent.startsWith(accName + ' ')) {
+      btn.classList.add('active');
+      renderAccount(accName);
+    }
+  });
+  renderAcctTreemap();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
 // Init
 initOverallCharts();
 renderStockTable();
 renderTreemap();
+renderAccountSummary();
 // Re-render treemaps on resize
 window.addEventListener('resize', () => {
   clearTimeout(window._tmResize);
