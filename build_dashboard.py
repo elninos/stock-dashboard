@@ -17,6 +17,13 @@ briefing_data = {}
 if os.path.exists(briefing_file):
     with open(briefing_file, encoding="utf-8") as f:
         briefing_data = json.load(f)
+
+# Load briefing summary (period-based AI summaries)
+briefing_summary_file = "/Users/r/Documents/Claude/stock-dashboard/briefing_summary.json"
+briefing_summary = {}
+if os.path.exists(briefing_summary_file):
+    with open(briefing_summary_file, encoding="utf-8") as f:
+        briefing_summary = json.load(f)
 prices_file = "/Users/r/Documents/Claude/stock-dashboard/prices.json"
 current_prices = {}  # stock name -> price (in original currency)
 prices_updated_at = None
@@ -1387,14 +1394,32 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
 
 <!-- ===== BRIEFING TAB ===== -->
 <div id="tab-briefing" class="tab-content">
-  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; flex-wrap:wrap; gap:10px;">
-    <div style="display:flex; align-items:center; gap:12px;">
-      <select id="briefingDateSelect" onchange="renderBriefing()" style="background:var(--card); color:var(--text); border:1px solid var(--border); border-radius:8px; padding:8px 14px; font-size:0.9rem;"></select>
-      <span id="briefingSourceCount" style="color:var(--text-dim); font-size:0.85rem;"></span>
-    </div>
-    <div class="filter-group" id="briefingSourceFilter"></div>
+  <!-- Period selector -->
+  <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:20px; flex-wrap:wrap; gap:12px;">
+    <div class="filter-group" id="briefingPeriodFilter"></div>
+    <span id="briefingUpdatedAt" style="color:var(--text-dim); font-size:0.8rem;"></span>
   </div>
-  <div id="briefingContent"></div>
+
+  <!-- Summary section -->
+  <div id="briefingSummarySection"></div>
+
+  <!-- Raw posts toggle -->
+  <div style="margin-top:24px;">
+    <button onclick="toggleRawPosts()" id="rawPostsToggleBtn"
+      style="background:none; border:1px solid var(--border); color:var(--text-dim); border-radius:8px; padding:7px 16px; font-size:0.82rem; cursor:pointer;">
+      ▶ 채널별 원문 보기
+    </button>
+    <div id="rawPostsSection" style="display:none; margin-top:16px;">
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:12px; flex-wrap:wrap; gap:10px;">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <select id="briefingDateSelect" onchange="renderRawPosts()" style="background:var(--card); color:var(--text); border:1px solid var(--border); border-radius:8px; padding:7px 12px; font-size:0.85rem;"></select>
+          <span id="briefingSourceCount" style="color:var(--text-dim); font-size:0.82rem;"></span>
+        </div>
+        <div class="filter-group" id="briefingSourceFilter"></div>
+      </div>
+      <div id="briefingContent"></div>
+    </div>
+  </div>
 </div>
 
 <div class="tm-tooltip" id="acctTmTooltip"></div>
@@ -1406,6 +1431,7 @@ const OVERALL = """ + json.dumps(js_overall, ensure_ascii=False) + """;
 const TIMELINE = """ + json.dumps(timeline, ensure_ascii=False) + """;
 const TREEMAP_DATA = """ + json.dumps(treemap_data, ensure_ascii=False) + """;
 const BRIEFING = """ + json.dumps(briefing_data, ensure_ascii=False) + """;
+const BRIEFING_SUMMARY = """ + json.dumps(briefing_summary, ensure_ascii=False) + """;
 const STOCK_CODES = """ + json.dumps({name: v["code"] for name, v in raw_prices.items() if not name.startswith("_") and "code" in v}, ensure_ascii=False) + """;
 const STOCK_NATIONS = """ + json.dumps({name: v.get("nation","KOR") for name, v in raw_prices.items() if not name.startswith("_") and "code" in v}, ensure_ascii=False) + """;
 
@@ -2237,27 +2263,141 @@ function initAnalysis() {
 }
 
 // ===== BRIEFING TAB =====
-let briefingInited = false;
+const BRIEFING_PERIODS = [
+  { key: 'daily',    label: '오늘' },
+  { key: 'weekly',   label: '1주' },
+  { key: 'biweekly', label: '2주' },
+  { key: 'monthly',  label: '1달' },
+];
+let briefingActivePeriod = 'daily';
+let rawPostsVisible = false;
+let briefingRawInited = false;
 let briefingActiveFilter = 'all';
 
 function initBriefing() {
-  const sel = document.getElementById('briefingDateSelect');
-  if (!briefingInited) {
+  // Build period selector
+  const pf = document.getElementById('briefingPeriodFilter');
+  pf.innerHTML = BRIEFING_PERIODS.map(p =>
+    `<button class="filter-btn ${p.key === briefingActivePeriod ? 'active' : ''}"
+       onclick="setBriefingPeriod('${p.key}', this)">${p.label}</button>`
+  ).join('');
+
+  // Updated-at
+  if (BRIEFING_SUMMARY.updated_at) {
+    const dt = new Date(BRIEFING_SUMMARY.updated_at);
+    document.getElementById('briefingUpdatedAt').textContent =
+      '업데이트 ' + dt.toLocaleDateString('ko-KR', {month:'numeric',day:'numeric'}) + ' ' +
+      dt.toLocaleTimeString('ko-KR', {hour:'2-digit',minute:'2-digit'});
+  }
+
+  renderBriefingSummary();
+}
+
+function setBriefingPeriod(key, btn) {
+  briefingActivePeriod = key;
+  document.querySelectorAll('#briefingPeriodFilter .filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderBriefingSummary();
+}
+
+function sentimentBadge(s) {
+  const map = { positive: ['#22c55e','#052e16','▲ 긍정'], negative: ['#ef4444','#2d0c0c','▼ 부정'], neutral: ['#8b8fa3','#1a1b24','— 중립'] };
+  const [color, bg, label] = map[s] || map.neutral;
+  return `<span style="background:${bg}; color:${color}; border:1px solid ${color}40; border-radius:4px; padding:2px 8px; font-size:0.72rem; font-weight:600;">${label}</span>`;
+}
+
+function renderBriefingSummary() {
+  const data = BRIEFING_SUMMARY[briefingActivePeriod];
+  const el = document.getElementById('briefingSummarySection');
+  if (!data) {
+    el.innerHTML = '<p style="color:var(--text-dim)">해당 기간 요약 데이터가 없습니다.</p>';
+    return;
+  }
+
+  let html = '';
+
+  // Market overview card
+  if (data.market_summary) {
+    html += `<div class="card" style="margin-bottom:16px; border-left:3px solid var(--accent);">
+      <div class="card-title" style="margin-bottom:8px;">
+        시장 개요
+        <span style="font-size:0.78rem; color:var(--text-dim); font-weight:400; margin-left:8px;">${data.period || ''}</span>
+      </div>
+      <p style="font-size:0.87rem; line-height:1.7; color:var(--text); margin:0;">${data.market_summary}</p>
+    </div>`;
+  }
+
+  // Themes
+  const themes = data.themes || [];
+  if (themes.length > 0) {
+    html += `<div style="margin-bottom:6px; font-size:0.8rem; color:var(--text-dim); font-weight:600; letter-spacing:.05em; text-transform:uppercase;">핵심 테마 · ${themes.length}개</div>`;
+    html += `<div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap:12px; margin-bottom:20px;">`;
+    themes.forEach((t, i) => {
+      const channels = (t.mentioned_in || []).map(c =>
+        `<span style="background:rgba(99,102,241,0.12); color:#a5b4fc; border-radius:4px; padding:1px 7px; font-size:0.72rem;">${c}</span>`
+      ).join(' ');
+      html += `<div class="card" style="margin-bottom:0; border-top:2px solid ${t.sentiment==='positive'?'#22c55e':t.sentiment==='negative'?'#ef4444':'#8b8fa3'};">
+        <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:8px; margin-bottom:8px;">
+          <div style="font-size:0.88rem; font-weight:600; line-height:1.4;">${t.title}</div>
+          ${sentimentBadge(t.sentiment)}
+        </div>
+        <p style="font-size:0.82rem; line-height:1.65; color:var(--text-dim); margin:0 0 10px;">${t.summary}</p>
+        <div style="display:flex; flex-wrap:wrap; gap:4px;">${channels}</div>
+      </div>`;
+    });
+    html += `</div>`;
+  }
+
+  // Key stocks
+  const stocks = data.stocks || [];
+  if (stocks.length > 0) {
+    html += `<div class="card">
+      <div class="card-title" style="margin-bottom:12px;">주목 종목</div>
+      <div style="display:flex; flex-wrap:wrap; gap:10px;">`;
+    stocks.forEach(s => {
+      const pct = s.price_change_pct;
+      const pctStr = pct != null ? (pct >= 0 ? `<span style="color:#22c55e">+${pct.toFixed(1)}%</span>` : `<span style="color:#ef4444">${pct.toFixed(1)}%</span>`) : '';
+      const chs = (s.channels || []).map(c =>
+        `<span style="color:var(--text-muted); font-size:0.7rem;">${c}</span>`
+      ).join(', ');
+      html += `<div style="background:var(--bg2); border:1px solid var(--border); border-radius:10px; padding:10px 14px; min-width:130px;">
+        <div style="font-size:0.88rem; font-weight:600; margin-bottom:2px;">${s.name}</div>
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
+          <span style="font-size:0.75rem; color:var(--text-dim);">언급 ${s.mention_count}회</span>
+          ${pctStr}
+        </div>
+        <div style="font-size:0.72rem; color:var(--text-muted); line-height:1.4;">${chs}</div>
+      </div>`;
+    });
+    html += `</div></div>`;
+  }
+
+  el.innerHTML = html;
+}
+
+function toggleRawPosts() {
+  rawPostsVisible = !rawPostsVisible;
+  const sec = document.getElementById('rawPostsSection');
+  const btn = document.getElementById('rawPostsToggleBtn');
+  sec.style.display = rawPostsVisible ? 'block' : 'none';
+  btn.textContent = (rawPostsVisible ? '▼' : '▶') + ' 채널별 원문 보기';
+  if (rawPostsVisible && !briefingRawInited) {
+    const sel = document.getElementById('briefingDateSelect');
     const dates = Object.keys(BRIEFING).sort().reverse();
     sel.innerHTML = dates.map(d => `<option value="${d}">${d}</option>`).join('');
-    briefingInited = true;
+    briefingRawInited = true;
+    renderRawPosts();
   }
-  renderBriefing();
 }
 
 function setBriefingFilter(name, btn) {
   briefingActiveFilter = name;
   document.querySelectorAll('#briefingSourceFilter .filter-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
-  renderBriefing();
+  renderRawPosts();
 }
 
-function renderBriefing() {
+function renderRawPosts() {
   const sel = document.getElementById('briefingDateSelect');
   const dateKey = sel.value;
   const day = BRIEFING[dateKey];
@@ -2273,56 +2413,41 @@ function renderBriefing() {
   const allActive = briefingActiveFilter === 'all' ? 'active' : '';
   let filterHtml = `<button class="filter-btn ${allActive}" onclick="setBriefingFilter('all', this)">전체</button>`;
   sources.forEach(s => {
-    const active = briefingActiveFilter === s.id ? 'active' : '';
+    const active = briefingActiveFilter === (s.id || s.name) ? 'active' : '';
     filterHtml += `<button class="filter-btn ${active}" onclick="setBriefingFilter('${s.id || s.name}', this)">${s.name}</button>`;
   });
   filterDiv.innerHTML = filterHtml;
 
-  // Count
   const totalPosts = sources.reduce((sum, s) => sum + (s.posts || []).length, 0);
   document.getElementById('briefingSourceCount').textContent = `${sources.length}개 채널 · ${totalPosts}개 포스트`;
 
-  // Filter sources
   const filtered = briefingActiveFilter === 'all' ? sources : sources.filter(s => (s.id || s.name) === briefingActiveFilter);
 
   let html = '';
   filtered.forEach(src => {
     const posts = src.posts || [];
     if (posts.length === 0) return;
-
     const channelUrl = src.channel_url || src.url || '#';
     html += `<div class="card">`;
-    html += `<div class="card-title">`;
-    html += `<a href="${channelUrl}" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:none;">${src.name}</a>`;
-    html += `<span style="font-size:0.75rem; color:var(--text-muted); font-weight:400; margin-left:8px;">${src.category || ''} · ${posts.length}개</span>`;
-    html += `</div>`;
-
+    html += `<div class="card-title"><a href="${channelUrl}" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:none;">${src.name}</a>`;
+    html += `<span style="font-size:0.75rem; color:var(--text-muted); font-weight:400; margin-left:8px;">${src.category || ''} · ${posts.length}개</span></div>`;
     posts.forEach(p => {
       const time = p.time ? `<span style="color:var(--text-muted); font-size:0.75rem; min-width:40px;">${p.time}</span>` : '';
       const text = (p.text || '').replace(/\\n/g, '<br>');
-
-      // Build link buttons
       let linkHtml = '';
-      if (p.post_url) {
-        linkHtml += `<a href="${p.post_url}" target="_blank" rel="noopener" style="color:var(--accent); font-size:0.75rem; text-decoration:none; margin-right:8px;">원문</a>`;
-      }
-      (p.links || []).forEach((lnk, i) => {
+      if (p.post_url) linkHtml += `<a href="${p.post_url}" target="_blank" rel="noopener" style="color:var(--accent); font-size:0.75rem; text-decoration:none; margin-right:8px;">원문</a>`;
+      (p.links || []).forEach(lnk => {
         if (lnk === p.post_url) return;
-        if (lnk.includes('t.me/' + (src.id || '---'))) return; // skip self-channel links
+        if (lnk.includes('t.me/' + (src.id || '---'))) return;
         const domain = lnk.replace(/https?:\\/\\/([^/]+).*/, '$1').replace('www.', '');
         linkHtml += `<a href="${lnk}" target="_blank" rel="noopener" style="color:var(--text-dim); font-size:0.75rem; text-decoration:none; margin-right:8px;">${domain}</a>`;
       });
-
       html += `<div style="display:flex; gap:10px; padding:10px 0; border-bottom:1px solid var(--border); align-items:flex-start;">`;
       html += time;
-      html += `<div style="flex:1; min-width:0;">`;
-      html += `<div style="font-size:0.85rem; line-height:1.6; word-break:break-word;">${text}</div>`;
-      if (linkHtml) {
-        html += `<div style="margin-top:6px;">${linkHtml}</div>`;
-      }
+      html += `<div style="flex:1; min-width:0;"><div style="font-size:0.85rem; line-height:1.6; word-break:break-word;">${text}</div>`;
+      if (linkHtml) html += `<div style="margin-top:6px;">${linkHtml}</div>`;
       html += `</div></div>`;
     });
-
     html += `</div>`;
   });
 
