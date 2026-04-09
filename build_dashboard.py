@@ -918,7 +918,7 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
 /* === Account Summary Cards === */
 .acct-summary-grid {{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 10px;
   margin-bottom: 20px;
 }}
@@ -926,82 +926,131 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 10px;
-  padding: 14px 16px;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  padding: 12px 14px 10px;
+  transition: border-color 0.2s, transform 0.15s, box-shadow 0.2s;
   cursor: pointer;
   position: relative;
   overflow: hidden;
 }}
 .acct-card:hover {{
-  border-color: var(--border-light);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.35);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
 }}
+.acct-card.has-loan {{
+  border-color: rgba(239,68,68,0.25);
+}}
+.acct-card.has-loan:hover {{
+  border-color: var(--negative);
+}}
+/* 브로커별 컬러 구분 - 상단 accent 바 */
 .acct-card::before {{
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0;
-  height: 2px;
-  background: var(--accent);
-  opacity: 0.6;
+  height: 3px;
+  border-radius: 10px 10px 0 0;
 }}
-.acct-card.has-loan::before {{
-  background: var(--negative);
-}}
-.acct-name {{
-  font-size: 0.78rem;
-  font-weight: 700;
-  color: var(--text-dim);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-bottom: 8px;
+.acct-card.broker-nh::before    {{ background: #3b82f6; }}
+.acct-card.broker-namu::before  {{ background: #8b5cf6; }}
+.acct-card.broker-toss::before  {{ background: #06b6d4; }}
+.acct-card.has-loan::before     {{ background: linear-gradient(90deg, #ef4444, #f97316); }}
+
+/* 계좌 헤더 */
+.acct-header {{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
 }}
-.acct-badge {{
+.acct-broker-tag {{
   font-size: 0.65rem;
-  padding: 1px 6px;
-  border-radius: 4px;
-  background: rgba(239,68,68,0.15);
-  color: var(--negative);
-  font-weight: 600;
-}}
-.acct-mv {{
-  font-size: 1.35rem;
   font-weight: 700;
-  letter-spacing: -0.02em;
-  margin-bottom: 3px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 4px;
 }}
-.acct-pnl-row {{
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+.acct-card.broker-nh    .acct-broker-tag {{ background: rgba(59,130,246,0.15); color: #60a5fa; }}
+.acct-card.broker-namu  .acct-broker-tag {{ background: rgba(139,92,246,0.15); color: #a78bfa; }}
+.acct-card.broker-toss  .acct-broker-tag {{ background: rgba(6,182,212,0.15);  color: #22d3ee; }}
+.acct-card.has-loan     .acct-broker-tag {{ background: rgba(239,68,68,0.12);  color: #f87171; }}
+.acct-acct-id {{
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}}
+
+/* 평가금액 */
+.acct-mv {{
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 2px;
+}}
+.acct-mv.empty {{
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
   margin-bottom: 8px;
 }}
+
+/* 평가손익 행 */
+.acct-pnl-row {{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+}}
 .acct-upnl {{
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 600;
 }}
 .acct-upnl-pct {{
   font-size: 0.75rem;
+  font-weight: 500;
+  opacity: 0.85;
 }}
-.acct-meta {{
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.72rem;
-  color: var(--text-muted);
+.acct-upnl-bar {{
+  flex: 1;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--border);
+  overflow: hidden;
+  margin-left: 4px;
+}}
+.acct-upnl-bar-fill {{
+  height: 100%;
+  border-radius: 2px;
+  min-width: 2px;
+}}
+
+/* 하단 지표 2열 */
+.acct-stats {{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 4px;
   border-top: 1px solid var(--border);
-  padding-top: 7px;
-  margin-top: 2px;
+  padding-top: 8px;
 }}
-.acct-meta-item {{
+.acct-stat {{
   display: flex;
   flex-direction: column;
   gap: 1px;
 }}
-.acct-meta-item strong {{
-  color: var(--text-dim);
-  font-size: 0.78rem;
+.acct-stat-label {{
+  font-size: 0.62rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  font-weight: 600;
+}}
+.acct-stat-val {{
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text);
+  font-feature-settings: 'tnum';
 }}
 /* === Dashboard Hero Header === */
 .dashboard-header {{
@@ -2285,6 +2334,9 @@ function renderAccountSummary() {
   const grid = document.getElementById('acctSummaryGrid');
   if (!grid) return;
 
+  // 전체 평가금액 (비중 bar 계산용)
+  const totalMv = Object.values(ACCOUNTS).reduce((s, a) => s + (a.total_market_value || 0), 0);
+
   grid.innerHTML = Object.entries(ACCOUNTS).map(([name, acct]) => {
     const mv = acct.total_market_value || 0;
     const cost = acct.total_cost || 0;
@@ -2293,34 +2345,61 @@ function renderAccountSummary() {
     const netPnl = acct.realized_pnl + acct.dividends;
     const hasLoan = acct.loan_balance > 0;
     const upnlCls = pnlCls(upnl);
+    const mvWeight = totalMv > 0 ? (mv / totalMv * 100) : 0;
 
-    // 브로커/계좌 이름 파싱 (NH01 → NH · 01)
-    const match = name.match(/^([^\d]+)(\d+)$/);
-    const broker = match ? match[1] : name;
-    const num = match ? match[2] : '';
+    // 계좌명 정리: "01.NH01"→"NH01", "나무01"→broker=나무/id=01
+    const cleanName = name.replace(/^\d+\./, '');
+    let brokerLabel, acctId, brokerClass;
+    if (cleanName.startsWith('NH') || cleanName.startsWith('nh')) {
+      brokerLabel = 'NH'; acctId = cleanName.slice(2); brokerClass = 'broker-nh';
+    } else if (cleanName.startsWith('\uB098\uBB34')) {  // 나무
+      brokerLabel = '\uB098\uBB34'; acctId = cleanName.slice(2); brokerClass = 'broker-namu';
+    } else if (cleanName.startsWith('\uD1A0\uC2A4')) {  // 토스
+      brokerLabel = '\uD1A0\uC2A4'; acctId = ''; brokerClass = 'broker-toss';
+    } else {
+      brokerLabel = cleanName; acctId = ''; brokerClass = 'broker-namu';
+    }
 
-    return `<div class="acct-card${hasLoan ? ' has-loan' : ''}" onclick="switchToPortfolioAccount('${name}')">
-      <div class="acct-name">
-        <span>${broker}<span style="color:var(--text-muted);font-weight:400"> ${num}</span></span>
-        ${hasLoan ? `<span class="acct-badge">대출 ${fmt(acct.loan_balance)}</span>` : `<span style="font-size:0.65rem;color:var(--text-muted)">${acct.num_holdings}종목</span>`}
+    // 손익 bar 너비 (최대 100%, upnl % 기준 ±30% → 0~100%)
+    const barPct = Math.min(Math.abs(upnlPct) / 30 * 100, 100);
+    const barColor = upnl >= 0 ? 'var(--positive)' : 'var(--negative)';
+
+    const loanBadge = hasLoan
+      ? `<span style="font-size:0.62rem;font-weight:600;color:var(--negative)">대출 ${fmt(acct.loan_balance)}</span>`
+      : `<span class="acct-acct-id">${acct.num_holdings}종목</span>`;
+
+    const mvHtml = mv > 0
+      ? `<div class="acct-mv">${fmt(mv)}</div>
+         <div class="acct-pnl-row">
+           <span class="acct-upnl ${upnlCls}">${upnl >= 0 ? '+' : ''}${fmt(upnl)}</span>
+           <span class="acct-upnl-pct ${upnlCls}">${upnlPct >= 0 ? '+' : ''}${upnlPct.toFixed(1)}%</span>
+           <div class="acct-upnl-bar"><div class="acct-upnl-bar-fill" style="width:${barPct}%;background:${barColor};"></div></div>
+         </div>`
+      : `<div class="acct-mv empty">미보유</div>
+         <div class="acct-pnl-row"></div>`;
+
+    return `<div class="acct-card ${brokerClass}${hasLoan ? ' has-loan' : ''}" onclick="switchToPortfolioAccount('${name}')">
+      <div class="acct-header">
+        <span class="acct-broker-tag">${brokerLabel}${acctId ? ' ' + acctId : ''}</span>
+        ${loanBadge}
       </div>
-      <div class="acct-mv">${mv > 0 ? fmt(mv) : '<span style="color:var(--text-muted);font-size:1rem">미보유</span>'}</div>
-      <div class="acct-pnl-row">
-        <span class="acct-upnl ${upnlCls}">${mv > 0 ? (upnl >= 0 ? '+' : '') + fmt(upnl) : ''}</span>
-        <span class="acct-upnl-pct ${upnlCls}">${mv > 0 ? (upnlPct >= 0 ? '+' : '') + upnlPct.toFixed(1) + '%' : ''}</span>
-      </div>
-      <div class="acct-meta">
-        <div class="acct-meta-item">
-          <span>실현손익</span>
-          <strong class="${pnlCls(netPnl)}">${fmt(netPnl)}</strong>
+      ${mvHtml}
+      <div class="acct-stats">
+        <div class="acct-stat">
+          <span class="acct-stat-label">실현손익</span>
+          <span class="acct-stat-val ${pnlCls(netPnl)}">${netPnl >= 0 ? '+' : ''}${fmt(netPnl)}</span>
         </div>
-        <div class="acct-meta-item" style="text-align:center">
-          <span>IRR</span>
-          <strong class="${pnlCls(acct.irr)}">${acct.irr != null ? acct.irr.toFixed(1) + '%' : 'N/A'}</strong>
+        <div class="acct-stat" style="text-align:right">
+          <span class="acct-stat-label">IRR</span>
+          <span class="acct-stat-val ${pnlCls(acct.irr)}">${acct.irr != null ? (acct.irr >= 0 ? '+' : '') + acct.irr.toFixed(1) + '%' : 'N/A'}</span>
         </div>
-        <div class="acct-meta-item" style="text-align:right">
-          <span>거래</span>
-          <strong>${acct.num_trades}건</strong>
+        <div class="acct-stat">
+          <span class="acct-stat-label">비중</span>
+          <span class="acct-stat-val">${mvWeight.toFixed(1)}%</span>
+        </div>
+        <div class="acct-stat" style="text-align:right">
+          <span class="acct-stat-label">거래</span>
+          <span class="acct-stat-val">${acct.num_trades}건</span>
         </div>
       </div>
     </div>`;
