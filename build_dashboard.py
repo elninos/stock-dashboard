@@ -589,10 +589,6 @@ win_rate = (win_count / total_traded_count * 100) if total_traded_count > 0 else
 def fmt_num(n):
     if n is None:
         return "N/A"
-    if abs(n) >= 1e8:
-        return f"{n/1e8:.1f}억"
-    if abs(n) >= 1e4:
-        return f"{n/1e4:,.0f}만"
     return f"{n:,.0f}"
 
 
@@ -1504,9 +1500,7 @@ async function refreshPrices() {
 
 function fmt(n) {
   if (n == null) return 'N/A';
-  if (Math.abs(n) >= 1e8) return (n/1e8).toFixed(1) + '억';
-  if (Math.abs(n) >= 1e4) return (n/1e4).toLocaleString('ko-KR', {maximumFractionDigits:0}) + '만';
-  return n.toLocaleString('ko-KR');
+  return Math.round(n).toLocaleString('ko-KR');
 }
 function pnlCls(v) { return v > 0 ? 'positive' : v < 0 ? 'negative' : ''; }
 
