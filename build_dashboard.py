@@ -572,6 +572,13 @@ for m in months_sorted:
     })
 
 
+# === Win rate ===
+win_count = sum(1 for m in stock_summaries.values() if m.get("net_pnl", 0) > 0)
+loss_count = sum(1 for m in stock_summaries.values() if m.get("net_pnl", 0) < 0)
+total_traded_count = win_count + loss_count
+win_rate = (win_count / total_traded_count * 100) if total_traded_count > 0 else 0
+
+
 def fmt_num(n):
     if n is None:
         return "N/A"
@@ -905,6 +912,9 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
 .detail-toggle::-webkit-details-marker {{ display: none; }}
 .detail-content {{ animation: fadeIn 0.3s ease; }}
 
+@media (max-width: 900px) {{
+  #treemapNationGrid {{ grid-template-columns: 1fr !important; }}
+}}
 @media (max-width: 768px) {{
   .kpi-row.primary {{ grid-template-columns: repeat(2, 1fr); }}
   .kpi-row.secondary {{ grid-template-columns: repeat(3, 1fr); }}
@@ -927,7 +937,7 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
   NH투자증권 + 나무증권 + 토스증권 ({len(account_summaries)}개 계좌) | {min(tx['date'] for tx in txs)} ~ {max(tx['date'] for tx in txs)} | 총 {len(txs):,}건<br>
   USD {usd_krw:,.0f}원 · JPY {jpy_krw:,.2f}원 |
   가격 업데이트: <span id="prices-updated-at">{prices_updated_at or '알 수 없음'}</span>
-  <button id="refresh-btn" onclick="refreshPrices()" title="네이버에서 현재가 새로고침" style="margin-left:8px;padding:2px 10px;font-size:0.8rem;cursor:pointer;border:1px solid #aaa;border-radius:4px;background:#f5f5f5;">⟳ 새로고침</button>
+  <button id="refresh-btn" onclick="refreshPrices()" title="네이버에서 현재가 새로고침" style="margin-left:8px;padding:3px 12px;font-size:0.78rem;cursor:pointer;border:1px solid var(--border-light);border-radius:6px;background:var(--card);color:var(--text-dim);vertical-align:middle;transition:all 0.2s;" onmouseover="this.style.color='var(--text)';this.style.borderColor='var(--accent)'" onmouseout="this.style.color='var(--text-dim)';this.style.borderColor='var(--border-light)'">⟳ 새로고침</button>
 </p>
 
 <div class="tabs">
@@ -992,7 +1002,7 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
           <div class="kpi-sub">레버리지 {total_market_value / max(total_market_value - overall_loan_balance, 1):.2f}x</div>
         </div>
       </div>
-      <div class="kpi-row secondary">
+      <div class="kpi-row secondary" style="grid-template-columns: repeat(6, 1fr);">
         <div class="kpi border-negative">
           <div class="kpi-label">대출이자</div>
           <div class="kpi-value compact negative">{fmt_num(overall_loan_interest)}</div>
@@ -1014,6 +1024,11 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
           <div class="kpi-label">자기자본 수익률</div>
           <div class="kpi-value compact {pnl_class(overall_net_pnl - overall_loan_interest)}">{((overall_net_pnl - overall_loan_interest) / max(overall_deposits, 1) * 100):+.1f}%</div>
         </div>
+        <div class="kpi">
+          <div class="kpi-label">승률 (Win Rate)</div>
+          <div class="kpi-value compact">{win_rate:.0f}%</div>
+          <div class="kpi-sub">수익 {win_count} / 손실 {loss_count}종목</div>
+        </div>
       </div>
     </div>
   </details>
@@ -1024,17 +1039,24 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
     <div class="chart-container"><canvas id="dashAssetChart"></canvas></div>
   </div>
 
-  <!-- Treemap -->
-  <div class="card">
-    <div class="card-title">포트폴리오 구성 (평가금액 기준)</div>
-    <div class="treemap-filters" id="treemapFilters">
-      <button class="tf-btn active" onclick="filterTreemap('all')">전체</button>
-      <button class="tf-btn" onclick="filterTreemap('KOR')">한국</button>
-      <button class="tf-btn" onclick="filterTreemap('USA')">미국</button>
-      <button class="tf-btn" onclick="filterTreemap('JPN')">일본</button>
-      <button class="tf-btn" onclick="filterTreemap('other')">기타</button>
+  <!-- Treemap + Nation Donut side by side -->
+  <div style="display:grid;grid-template-columns:1fr 300px;gap:16px;margin-bottom:20px;align-items:start;">
+    <div class="card" style="margin-bottom:0;">
+      <div class="card-title">포트폴리오 구성 (평가금액 기준)</div>
+      <div class="treemap-filters" id="treemapFilters">
+        <button class="tf-btn active" onclick="filterTreemap('all')">전체</button>
+        <button class="tf-btn" onclick="filterTreemap('KOR')">한국</button>
+        <button class="tf-btn" onclick="filterTreemap('USA')">미국</button>
+        <button class="tf-btn" onclick="filterTreemap('JPN')">일본</button>
+        <button class="tf-btn" onclick="filterTreemap('other')">기타</button>
+      </div>
+      <div class="treemap-container" id="treemapContainer"></div>
     </div>
-    <div class="treemap-container" id="treemapContainer"></div>
+    <div class="card" style="margin-bottom:0;">
+      <div class="card-title">국가별 배분</div>
+      <div style="position:relative;height:340px;"><canvas id="nationDonutChart"></canvas></div>
+      <div id="nationDonutStats" style="margin-top:8px;font-size:0.78rem;color:var(--text-dim);"></div>
+    </div>
   </div>
   <div class="tm-tooltip" id="tmTooltip"></div>
 
@@ -1740,6 +1762,56 @@ function initOverallCharts() {
 
   new Chart(document.getElementById('topWinnersChart'), chartOpts(winners, '#22c55e'));
   new Chart(document.getElementById('topLosersChart'), chartOpts(losers, '#ef4444'));
+
+  // Nation donut chart
+  const nationLabel = { 'KOR': '한국', 'USA': '미국', 'JPN': '일본', 'CHN': '중국', 'HKG': '홍콩' };
+  const nationColorMap = { '한국': '#6366f1', '미국': '#f59e0b', '일본': '#22c55e', '중국': '#ef4444', '홍콩': '#ec4899', '기타': '#8b8fa3' };
+  const nationMv = {};
+  for (const item of TREEMAP_DATA) {
+    const label = nationLabel[item.nation] || '기타';
+    nationMv[label] = (nationMv[label] || 0) + item.market_value;
+  }
+  const nationEntries = Object.entries(nationMv).sort((a,b) => b[1]-a[1]);
+  const totalMv = nationEntries.reduce((s,e) => s+e[1], 0);
+  // Stats below donut
+  const statsEl = document.getElementById('nationDonutStats');
+  if (statsEl) {
+    statsEl.innerHTML = nationEntries.map(([name, mv]) =>
+      `<div style="display:flex;justify-content:space-between;padding:3px 0;border-bottom:1px solid var(--border);">
+        <span><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${nationColorMap[name]||'#8b8fa3'};margin-right:6px;"></span>${name}</span>
+        <span style="font-feature-settings:'tnum'">${fmt(mv)} <span style="color:var(--text-muted)">(${(mv/totalMv*100).toFixed(1)}%)</span></span>
+      </div>`
+    ).join('');
+  }
+  new Chart(document.getElementById('nationDonutChart'), {
+    type: 'doughnut',
+    data: {
+      labels: nationEntries.map(e => e[0]),
+      datasets: [{
+        data: nationEntries.map(e => e[1]),
+        backgroundColor: nationEntries.map(e => nationColorMap[e[0]] || '#8b8fa3'),
+        borderWidth: 3,
+        borderColor: '#1a1d29',
+        hoverOffset: 8,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      cutout: '62%',
+      plugins: {
+        legend: { position: 'bottom', labels: { color: '#e1e4eb', font: { size: 11 }, padding: 10, boxWidth: 12 } },
+        tooltip: {
+          callbacks: {
+            label: ctx => {
+              const total = ctx.dataset.data.reduce((a,b) => a+b, 0);
+              const pct = (ctx.raw / total * 100).toFixed(1);
+              return ' ' + ctx.label + ': ' + fmt(ctx.raw) + ' (' + pct + '%)';
+            }
+          }
+        }
+      }
+    }
+  });
 }
 
 // ===== ANALYSIS (TIMELINE) =====
