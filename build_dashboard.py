@@ -1367,6 +1367,46 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
 
 <!-- ===== ANALYSIS TAB ===== -->
 <div id="tab-analysis" class="tab-content">
+
+<!-- Period analysis section -->
+<div class="card" style="margin-bottom:20px;">
+  <div class="card-title">기간별 분석</div>
+
+  <!-- Period preset buttons -->
+  <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:16px;">
+    <div class="filter-group" id="periodPresets">
+      <button class="filter-btn active" onclick="setPeriodPreset('1w',this)">이번 주</button>
+      <button class="filter-btn" onclick="setPeriodPreset('1m',this)">이번 달</button>
+      <button class="filter-btn" onclick="setPeriodPreset('3m',this)">3개월</button>
+      <button class="filter-btn" onclick="setPeriodPreset('ytd',this)">올해</button>
+      <button class="filter-btn" onclick="setPeriodPreset('1y',this)">1년</button>
+      <button class="filter-btn" onclick="setPeriodPreset('all',this)">전체</button>
+    </div>
+    <div style="display:flex; align-items:center; gap:6px; margin-left:8px;">
+      <input type="date" id="periodStart" onchange="renderPeriodAnalysis()"
+        style="border:1px solid var(--border); border-radius:6px; padding:5px 10px; font-size:0.83rem; background:var(--card); color:var(--text);">
+      <span style="color:var(--text-muted);">~</span>
+      <input type="date" id="periodEnd" onchange="renderPeriodAnalysis()"
+        style="border:1px solid var(--border); border-radius:6px; padding:5px 10px; font-size:0.83rem; background:var(--card); color:var(--text);">
+    </div>
+  </div>
+
+  <!-- Summary KPIs -->
+  <div id="periodKpis" style="display:grid; grid-template-columns:repeat(5,1fr); gap:12px; margin-bottom:20px;"></div>
+
+  <!-- Portfolio diff + trade list (two columns) -->
+  <div style="display:grid; grid-template-columns:280px 1fr; gap:20px; align-items:start;">
+    <div>
+      <div style="font-size:0.75rem; font-weight:700; color:var(--text-muted); letter-spacing:.06em; text-transform:uppercase; margin-bottom:8px;">포트폴리오 변동</div>
+      <div id="periodPortfolioDiff"></div>
+    </div>
+    <div>
+      <div style="font-size:0.75rem; font-weight:700; color:var(--text-muted); letter-spacing:.06em; text-transform:uppercase; margin-bottom:8px;">거래 내역</div>
+      <div id="periodTrades" style="max-height:320px; overflow-y:auto;"></div>
+    </div>
+  </div>
+</div>
+
   <div class="card">
     <div class="card-title">월별 투자/회수 추이</div>
     <div class="chart-container"><canvas id="timelineChart"></canvas></div>
@@ -1430,6 +1470,11 @@ const TIMELINE = """ + json.dumps(timeline, ensure_ascii=False) + """;
 const TREEMAP_DATA = """ + json.dumps(treemap_data, ensure_ascii=False) + """;
 const BRIEFING = """ + json.dumps(briefing_data, ensure_ascii=False) + """;
 const BRIEFING_SUMMARY = """ + json.dumps(briefing_summary, ensure_ascii=False) + """;
+const TXS = """ + json.dumps([
+    {"d": tx["date"], "t": tx["type"], "s": tx.get("stock",""), "a": round(tx.get("amount",0)), "q": round(tx.get("qty",0),4), "acc": tx.get("account","")}
+    for tx in all_txs
+    if tx["type"] in ("buy","sell","dividend","fee","tax","lending_fee")
+], ensure_ascii=False) + """;
 const STOCK_CODES = """ + json.dumps({name: v["code"] for name, v in raw_prices.items() if not name.startswith("_") and "code" in v}, ensure_ascii=False) + """;
 const STOCK_NATIONS = """ + json.dumps({name: v.get("nation","KOR") for name, v in raw_prices.items() if not name.startswith("_") and "code" in v}, ensure_ascii=False) + """;
 
@@ -1688,6 +1733,7 @@ function switchTab(name) {
   if (name === 'analysis') initAnalysis();
   if (name === 'portfolio') { renderStockTable(); initAccounts(); }
   if (name === 'dashboard') { setTimeout(renderTreemap, 50); }
+  if (name === 'analysis') initPeriodAnalysis();
   if (name === 'briefing') initBriefing();
 }
 
@@ -2269,6 +2315,151 @@ function initAnalysis() {
       }
     }
   });
+}
+
+// ===== PERIOD ANALYSIS =====
+let periodAnalysisInited = false;
+function initPeriodAnalysis() {
+  if (periodAnalysisInited) return;
+  periodAnalysisInited = true;
+  // Default: 이번 달
+  const btn = document.querySelector('#periodPresets .filter-btn:nth-child(2)');
+  if (btn) setPeriodPreset('1m', btn);
+}
+
+function setPeriodPreset(preset, btn) {
+  document.querySelectorAll('#periodPresets .filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const today = new Date();
+  const fmt = d => d.toISOString().slice(0,10);
+  let start;
+  if (preset === '1w') {
+    start = new Date(today); start.setDate(today.getDate() - 7);
+  } else if (preset === '1m') {
+    start = new Date(today); start.setMonth(today.getMonth() - 1);
+  } else if (preset === '3m') {
+    start = new Date(today); start.setMonth(today.getMonth() - 3);
+  } else if (preset === 'ytd') {
+    start = new Date(today.getFullYear(), 0, 1);
+  } else if (preset === '1y') {
+    start = new Date(today); start.setFullYear(today.getFullYear() - 1);
+  } else {
+    start = new Date('2000-01-01');
+  }
+  document.getElementById('periodStart').value = fmt(start);
+  document.getElementById('periodEnd').value = fmt(today);
+  renderPeriodAnalysis();
+}
+
+function renderPeriodAnalysis() {
+  const startVal = document.getElementById('periodStart').value;
+  const endVal   = document.getElementById('periodEnd').value;
+  if (!startVal || !endVal) return;
+
+  // Filter transactions in range
+  const inRange = TXS.filter(tx => tx.d >= startVal && tx.d <= endVal);
+
+  // Compute holdings at start and end from ALL transactions
+  function holdingsAt(date) {
+    const h = {};
+    for (const tx of TXS) {
+      if (tx.d > date) break;
+      if (!tx.s) continue;
+      if (!h[tx.s]) h[tx.s] = 0;
+      if (tx.t === 'buy')  h[tx.s] += tx.q;
+      if (tx.t === 'sell') h[tx.s] -= tx.q;
+    }
+    return h;
+  }
+
+  // Summary stats
+  let buys=0, sells=0, divs=0, fees=0;
+  const typeMap = {'buy':'매수','sell':'매도','dividend':'배당','fee':'수수료','tax':'세금','lending_fee':'대주료'};
+  for (const tx of inRange) {
+    if (tx.t === 'buy')          buys += tx.a;
+    else if (tx.t === 'sell')    sells += tx.a;
+    else if (tx.t === 'dividend') divs += tx.a;
+    else if (tx.t === 'fee' || tx.t === 'tax' || tx.t === 'lending_fee') fees += tx.a;
+  }
+  const netCash = sells + divs - buys - fees;
+
+  // KPIs
+  const fmt = v => (v < 0 ? '-' : '') + Math.abs(v).toLocaleString('ko-KR') + '원';
+  const kpiDefs = [
+    { label:'매수', value: buys, cls:'negative' },
+    { label:'매도', value: sells, cls:'positive' },
+    { label:'배당', value: divs, cls:'positive' },
+    { label:'순현금흐름', value: netCash, cls: netCash>=0?'positive':'negative' },
+    { label:'거래건수', value: inRange.length, raw:true },
+  ];
+  document.getElementById('periodKpis').innerHTML = kpiDefs.map(k => `
+    <div style="background:var(--bg2); border:1px solid var(--border); border-radius:10px; padding:14px 16px;">
+      <div style="font-size:0.72rem; color:var(--text-muted); font-weight:600; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px;">${k.label}</div>
+      <div style="font-size:1.15rem; font-weight:700;" class="${k.raw?'':k.cls}">${k.raw ? k.value.toLocaleString('ko-KR') : fmt(k.value)}</div>
+    </div>`).join('');
+
+  // Portfolio diff: holdings before start vs at end
+  // Get day before start
+  const startDateAdj = new Date(startVal);
+  startDateAdj.setDate(startDateAdj.getDate() - 1);
+  const startAdj = startDateAdj.toISOString().slice(0,10);
+  const hStart = holdingsAt(startAdj);
+  const hEnd   = holdingsAt(endVal);
+
+  const allStocks = new Set([...Object.keys(hStart), ...Object.keys(hEnd)]);
+  const added=[], removed=[], changed=[];
+  for (const s of allStocks) {
+    const qs = hStart[s] || 0;
+    const qe = hEnd[s]   || 0;
+    if (qs <= 0 && qe > 0)      added.push({s, qs, qe});
+    else if (qs > 0 && qe <= 0) removed.push({s, qs, qe});
+    else if (Math.abs(qe - qs) > 0.001) changed.push({s, qs, qe, d: qe - qs});
+  }
+
+  let diffHtml = '';
+  if (added.length) {
+    diffHtml += `<div style="font-size:0.75rem; font-weight:600; color:var(--positive); margin-bottom:4px;">신규 편입 +${added.length}</div>`;
+    diffHtml += added.map(x => `<div style="font-size:0.82rem; padding:3px 0; border-bottom:1px solid var(--border); display:flex; justify-content:space-between;"><span>${x.s}</span><span style="color:var(--positive)">${x.qe.toLocaleString('ko-KR')}주</span></div>`).join('');
+  }
+  if (removed.length) {
+    diffHtml += `<div style="font-size:0.75rem; font-weight:600; color:var(--negative); margin-top:8px; margin-bottom:4px;">청산 -${removed.length}</div>`;
+    diffHtml += removed.map(x => `<div style="font-size:0.82rem; padding:3px 0; border-bottom:1px solid var(--border); display:flex; justify-content:space-between;"><span>${x.s}</span><span style="color:var(--negative)">${x.qs.toLocaleString('ko-KR')}주→0</span></div>`).join('');
+  }
+  if (changed.length) {
+    diffHtml += `<div style="font-size:0.75rem; font-weight:600; color:var(--text-dim); margin-top:8px; margin-bottom:4px;">수량 변화 ${changed.length}종목</div>`;
+    diffHtml += changed.map(x => `<div style="font-size:0.82rem; padding:3px 0; border-bottom:1px solid var(--border); display:flex; justify-content:space-between;"><span>${x.s}</span><span style="${x.d>0?'color:var(--positive)':'color:var(--negative)'}">${x.d>0?'+':''}${x.d.toLocaleString('ko-KR')}주</span></div>`).join('');
+  }
+  if (!diffHtml) diffHtml = '<div style="font-size:0.82rem; color:var(--text-muted);">변동 없음</div>';
+  document.getElementById('periodPortfolioDiff').innerHTML = diffHtml;
+
+  // Trade list
+  const sorted = [...inRange].sort((a,b) => b.d.localeCompare(a.d));
+  const typeColor = {'buy':'var(--negative)','sell':'var(--positive)','dividend':'#1a56db','fee':'var(--text-muted)','tax':'var(--text-muted)','lending_fee':'var(--text-muted)'};
+  let tradeHtml = '';
+  if (sorted.length === 0) {
+    tradeHtml = '<div style="font-size:0.82rem; color:var(--text-muted);">해당 기간 거래 없음</div>';
+  } else {
+    tradeHtml = `<table style="width:100%; border-collapse:collapse; font-size:0.82rem;">
+      <thead><tr style="border-bottom:2px solid var(--border);">
+        <th style="text-align:left; padding:6px 10px; color:var(--text-muted); font-size:0.72rem; text-transform:uppercase; font-weight:600;">날짜</th>
+        <th style="text-align:left; padding:6px 10px; color:var(--text-muted); font-size:0.72rem; text-transform:uppercase; font-weight:600;">종목</th>
+        <th style="text-align:left; padding:6px 10px; color:var(--text-muted); font-size:0.72rem; text-transform:uppercase; font-weight:600;">유형</th>
+        <th style="text-align:right; padding:6px 10px; color:var(--text-muted); font-size:0.72rem; text-transform:uppercase; font-weight:600;">금액</th>
+        <th style="text-align:right; padding:6px 10px; color:var(--text-muted); font-size:0.72rem; text-transform:uppercase; font-weight:600;">수량</th>
+        <th style="text-align:left; padding:6px 10px; color:var(--text-muted); font-size:0.72rem; text-transform:uppercase; font-weight:600;">계좌</th>
+      </tr></thead><tbody>`;
+    tradeHtml += sorted.map(tx => `
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:7px 10px; color:var(--text-dim);">${tx.d}</td>
+        <td style="padding:7px 10px; font-weight:600;">${tx.s || '─'}</td>
+        <td style="padding:7px 10px;"><span style="color:${typeColor[tx.t]||'var(--text)'}; font-weight:600; font-size:0.78rem;">${typeMap[tx.t]||tx.t}</span></td>
+        <td style="padding:7px 10px; text-align:right; font-feature-settings:'tnum';">${tx.a ? tx.a.toLocaleString('ko-KR') : '─'}</td>
+        <td style="padding:7px 10px; text-align:right; font-feature-settings:'tnum';">${tx.q ? tx.q.toLocaleString('ko-KR') : '─'}</td>
+        <td style="padding:7px 10px; font-size:0.77rem; color:var(--text-muted);">${tx.acc || '─'}</td>
+      </tr>`).join('');
+    tradeHtml += '</tbody></table>';
+  }
+  document.getElementById('periodTrades').innerHTML = tradeHtml;
 }
 
 // ===== BRIEFING TAB =====
