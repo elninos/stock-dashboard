@@ -1,0 +1,285 @@
+{
+  "daily": {
+    "date": "2026-04-08",
+    "market_summary": "이란-미국 휴전 협상이 진행 중이나 호르무즈 해협 리스크가 지속되며 공포탐욕지수 23(Extreme Fear)을 기록. 삼성전자 1Q26 영업이익 57.2조원 어닝 서프라이즈(컨센 +49%)로 반도체 섹터 재평가 흐름. 방산 섹터는 골드만/JPM 동시 목표가 대폭 상향으로 슈퍼사이클 확인. 전쟁 추경 26.2조 금요일 합의 처리 예정으로 내수 부양 기대감도 공존.",
+    "themes": [
+      {
+        "title": "반도체 어닝 서프라이즈 & AI 밸류체인",
+        "summary": "삼성전자 1Q26 영업익 57.2조(QoQ +185%), NAND 분기 영업익 10조 돌파. DDR4 이하 구형 D램 가격 QoQ +45~50%. 삼성전기 엔비디아 그록3 LPU용 FC-BGA 퍼스트벤더 확보, SK하이닉스 MS/구글과 장기 메모리 공급계약 협상 중.",
+        "sentiment": "positive",
+        "mentioned_in": [
+          "시장 이야기 by 제이슨",
+          "도PB의 생존투자",
+          "그로쓰리서치"
+        ]
+      },
+      {
+        "title": "방위산업 슈퍼사이클",
+        "summary": "한화에어로 JPM 목표가 190만원, LIG D&A 110만원(+86%)으로 대폭 상향. 글로벌 분쟁 장기화로 유럽/중동/미국으로 한국 방산 수출 다변화 가속. 골드만/JPM 동시 커버리지.",
+        "sentiment": "positive",
+        "mentioned_in": [
+          "시장 이야기 by 제이슨",
+          "스파르탄 리서치"
+        ]
+      },
+      {
+        "title": "이란-미국 분쟁 & 호르무즈 리스크",
+        "summary": "트럼프 2주 휴전 발표에도 이란은 호르무즈 해협 통제권 유지 의지. 호르무즈 소형 기뢰 설치 보도. 한국은 원유 70% 호르무즈 의존으로 비전투국 중 최대 피해국 평가.",
+        "sentiment": "negative",
+        "mentioned_in": [
+          "도PB의 생존투자",
+          "스파르탄 리서치",
+          "그로쓰리서치"
+        ]
+      },
+      {
+        "title": "고유가 & 스태그플레이션 우려",
+        "summary": "WTI $112.96, 브렌트 $109.7. 유가 $100 시 한국 성장률 -0.3%p/물가 +1.1%p. 헬륨(반도체 소재) 카타르 의존 64.7%로 가격 +40%. OECD 한국 성장률 주요국 중 최대폭 하향.",
+        "sentiment": "negative",
+        "mentioned_in": [
+          "도PB의 생존투자",
+          "그로쓰리서치",
+          "스파르탄 리서치"
+        ]
+      },
+      {
+        "title": "전쟁 추경 & 내수 부양",
+        "summary": "26.2조 추경안 4/10 합의처리 예정. 지역화폐 발행규모 28.8조(역대 최대) 전망. 고유가 지원금 등 내수 부양책 포함.",
+        "sentiment": "positive",
+        "mentioned_in": [
+          "스파르탄 리서치"
+        ]
+      },
+      {
+        "title": "K-바이오 글로벌 확장",
+        "summary": "셀트리온 트룩시마 미국 점유율 35.8% 1위 달성(K-바이오 최초). 바이오솔루션 카티라이프 서울대병원 공급 시작. 비만치료제 시장에서 노보노디스크 vs 릴리 경쟁 심화.",
+        "sentiment": "positive",
+        "mentioned_in": [
+          "그로쓰리서치"
+        ]
+      },
+      {
+        "title": "이란 휴전 후 재건/원전 테마",
+        "summary": "DL이앤씨 상승VI 발동, SMR 후속 수주 준비. 현대건설 재건 테마 수혜. 휴전 시 재건/원전/반도체를 핵심 관심 섹터로 제시.",
+        "sentiment": "positive",
+        "mentioned_in": [
+          "스파르탄 리서치"
+        ]
+      }
+    ],
+    "stocks": [
+      {
+        "name": "삼성전자",
+        "ticker": "005930",
+        "mention_count": 6,
+        "channels": [
+          "시장 이야기 by 제이슨",
+          "도PB의 생존투자",
+          "그로쓰리서치"
+        ],
+        "context": "1Q26 영업이익 57.2조원 어닝 서프라이즈. 골드만 목표가 285,000원(상승여력 45%). NAND 분기 영업익 10조 돌파.",
+        "sentiment": "positive"
+      },
+      {
+        "name": "삼성전기",
+        "ticker": "009150",
+        "mention_count": 4,
+        "channels": [
+          "시장 이야기 by 제이슨",
+          "그로쓰리서치"
+        ],
+        "context": "JPM 목표가 550,000원 대폭 상향. 그록3 LPU용 FC-BGA 퍼스트벤더 확보. MLCC+기판 모두 가격 인상 흐름.",
+        "sentiment": "positive"
+      },
+      {
+        "name": "한화에어로스페이스",
+        "ticker": "012450",
+        "mention_count": 4,
+        "channels": [
+          "시장 이야기 by 제이슨",
+          "스파르탄 리서치"
+        ],
+        "context": "JPM 목표가 190만원 상향. 유럽/중동/미국 수출 다변화. 풍산 방산부문 11억달러 인수 추진.",
+        "sentiment": "positive"
+      },
+      {
+        "name": "LIG D&A",
+        "ticker": "079550",
+        "mention_count": 3,
+        "channels": [
+          "시장 이야기 by 제이슨",
+          "스파르탄 리서치"
+        ],
+        "context": "JPM 목표가 59만→110만원(+86%) 대폭 상향. 천궁-II 중동/유럽 수출 모멘텀 가속화.",
+        "sentiment": "positive"
+      },
+      {
+        "name": "셀트리온",
+        "ticker": "068270",
+        "mention_count": 3,
+        "channels": [
+          "그로쓰리서치"
+        ],
+        "context": "트룩시마 미국 점유율 35.8% 1위 달성(K-바이오 최초). 북미 매출 3000억+(YoY +40%).",
+        "sentiment": "positive"
+      },
+      {
+        "name": "SK하이닉스",
+        "ticker": "000660",
+        "mention_count": 2,
+        "channels": [
+          "그로쓰리서치"
+        ],
+        "context": "MS/구글과 장기 메모리 공급계약 협상 중. AI 빅테크 밸류체인 강화.",
+        "sentiment": "positive"
+      },
+      {
+        "name": "HD현대중공업",
+        "ticker": "329180",
+        "mention_count": 2,
+        "channels": [
+          "시장 이야기 by 제이슨"
+        ],
+        "context": "JPM 매수, 목표가 730,000원. 미국 해군 MRO/건조 투자 및 중동 호위함 수주 기대. 현재 주가 조정은 좋은 진입 시점.",
+        "sentiment": "positive"
+      },
+      {
+        "name": "현대로템",
+        "ticker": "064350",
+        "mention_count": 2,
+        "channels": [
+          "시장 이야기 by 제이슨"
+        ],
+        "context": "골드만 매수 유지, 목표가 280,000원. 이라크향 신규 수주 기대감.",
+        "sentiment": "positive"
+      },
+      {
+        "name": "코나아이",
+        "ticker": "052400",
+        "mention_count": 3,
+        "channels": [
+          "스파르탄 리서치"
+        ],
+        "context": "전쟁 추경으로 지역화폐 발행 28.8조(역대 최대). 영업이익 +20% 서프라이즈 여지. 대주주 장내매수.",
+        "sentiment": "positive"
+      },
+      {
+        "name": "DL이앤씨",
+        "ticker": "375500",
+        "mention_count": 2,
+        "channels": [
+          "스파르탄 리서치"
+        ],
+        "context": "상승VI 발동. SMR 후속 수주 준비 중 해외 진출 전망. 재건/원전 테마 수혜.",
+        "sentiment": "positive"
+      },
+      {
+        "name": "바이오솔루션",
+        "ticker": "086820",
+        "mention_count": 2,
+        "channels": [
+          "그로쓰리서치"
+        ],
+        "context": "카티라이프 서울대병원 공급 시작, 연골재생 적응증 확대. 후속 파이프라인 임상 진입.",
+        "sentiment": "positive"
+      },
+      {
+        "name": "LG전자",
+        "ticker": "066570",
+        "mention_count": 1,
+        "channels": [
+          "시장 이야기 by 제이슨"
+        ],
+        "context": "골드만 중립 유지. 1Q26 영업이익 1.7조 서프라이즈이나 목표가 수준이라 상승여력 거의 없음.",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "사피엔반도체",
+        "ticker": "410960",
+        "mention_count": 1,
+        "channels": [
+          "그로쓰리서치"
+        ],
+        "context": "미국 빅테크 AR글라스용 칩 23억 수주. 양산 단계 진입 신호.",
+        "sentiment": "positive"
+      },
+      {
+        "name": "현대건설",
+        "ticker": "000720",
+        "mention_count": 1,
+        "channels": [
+          "스파르탄 리서치"
+        ],
+        "context": "재건 테마 수혜주. 한화투자증권 리포트 공유.",
+        "sentiment": "positive"
+      },
+      {
+        "name": "한국전력",
+        "ticker": "015760",
+        "mention_count": 1,
+        "channels": [
+          "스파르탄 리서치"
+        ],
+        "context": "유가 하락 시 수혜 종목으로 단기 관심.",
+        "sentiment": "positive"
+      },
+      {
+        "name": "노보노디스크",
+        "ticker": "NVO",
+        "mention_count": 2,
+        "channels": [
+          "그로쓰리서치"
+        ],
+        "context": "Wegovy HD 7.2mg FDA 승인/출시. 체중감량 18.7%로 Zepbound 대비 소폭 열세, 용량 내성 약점.",
+        "sentiment": "neutral"
+      }
+    ],
+    "macro": {
+      "us": "나스닥 200일선 하회 기술적 약세 지속. Fed Watch 큰 변화 없으나 금리인하 확률 축소. 델타항공 등 실적 시즌 시작.",
+      "kr": "공포탐욕지수 23(Extreme Fear). 외국인 순매도 2.2조(삼성전자 5,950억). 전쟁 추경 26.2조 합의처리 예정. OECD 성장률 주요국 중 최대 하향.",
+      "global": "WTI $112.96, 브렌트 $109.7 고유가 지속. 이란-미국 2주 휴전 합의했으나 호르무즈 리스크 상존. 갈륨 가격 2배, 헬륨 +40%로 소재 공급망 불안."
+    },
+    "key_numbers": [
+      {
+        "label": "삼성전자 1Q OP",
+        "value": "57.2조원",
+        "change": "+49% vs 컨센",
+        "source": "제이슨/그로쓰"
+      },
+      {
+        "label": "Fear & Greed",
+        "value": "23",
+        "change": "Extreme Fear",
+        "source": "도PB"
+      },
+      {
+        "label": "WTI 유가",
+        "value": "$112.96",
+        "change": "",
+        "source": "도PB"
+      },
+      {
+        "label": "외인 순매도",
+        "value": "2.2조",
+        "change": "-5,950억 삼전",
+        "source": "도PB"
+      },
+      {
+        "label": "전쟁 추경",
+        "value": "26.2조",
+        "change": "4/10 합의처리",
+        "source": "스파르탄"
+      },
+      {
+        "label": "DRAM 가격",
+        "value": "",
+        "change": "+103% QoQ",
+        "source": "제이슨"
+      }
+    ]
+  },
+  "weekly": null,
+  "biweekly": null,
+  "monthly": null,
+  "updated_at": "2026-04-08T16:00:00"
+}
