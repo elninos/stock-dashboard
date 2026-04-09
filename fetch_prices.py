@@ -6,6 +6,7 @@ import time
 import urllib.request
 import urllib.error
 import urllib.parse
+from datetime import datetime
 
 PRICES_FILE = os.path.join(os.path.dirname(__file__), "prices.json")
 TRANSACTIONS_FILE = os.path.join(os.path.dirname(__file__), "transactions.json")
@@ -183,7 +184,8 @@ def main():
             print(f"  FAIL {name} ({code})")
         time.sleep(0.2)
 
-    # Save
+    # Save with timestamp
+    prices["_updated_at"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     with open(PRICES_FILE, "w", encoding="utf-8") as f:
         json.dump(prices, f, ensure_ascii=False, indent=2)
 

@@ -19,10 +19,14 @@ if os.path.exists(briefing_file):
         briefing_data = json.load(f)
 prices_file = "/Users/r/Documents/Claude/stock-dashboard/prices.json"
 current_prices = {}  # stock name -> price (in original currency)
+prices_updated_at = None
 if os.path.exists(prices_file):
     with open(prices_file, encoding="utf-8") as f:
         raw_prices = json.load(f)
+        prices_updated_at = raw_prices.get("_updated_at")
         for k, v in raw_prices.items():
+            if k.startswith("_"):
+                continue
             current_prices[k] = v["price"]
 
 # NOTE: txs and cash_txs are created AFTER USD normalization below
@@ -101,6 +105,8 @@ if os.path.exists(prices_file):
     with open(prices_file, encoding="utf-8") as f:
         raw_p = json.load(f)
         for k, v in raw_p.items():
+            if k.startswith("_") or not isinstance(v, dict):
+                continue
             nation = v.get("nation", "KOR")
             stock_currency_map[k] = NATION_CURRENCY.get(nation, "USD")
             stock_nation_map[k] = nation
@@ -917,7 +923,12 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
 </style>
 <div class="container">
 <h1>주식 통합 대시보드</h1>
-<p class="subtitle">NH투자증권 + 나무증권 + 토스증권 ({len(account_summaries)}개 계좌) | {min(tx['date'] for tx in txs)} ~ {max(tx['date'] for tx in txs)} | 총 {len(txs):,}건 | USD {usd_krw:,.0f}원 · JPY {jpy_krw:,.2f}원 | 빌드: {datetime.now().strftime('%Y-%m-%d %H:%M')}</p>
+<p class="subtitle">
+  NH투자증권 + 나무증권 + 토스증권 ({len(account_summaries)}개 계좌) | {min(tx['date'] for tx in txs)} ~ {max(tx['date'] for tx in txs)} | 총 {len(txs):,}건<br>
+  USD {usd_krw:,.0f}원 · JPY {jpy_krw:,.2f}원 |
+  가격 업데이트: <span id="prices-updated-at">{prices_updated_at or '알 수 없음'}</span>
+  <button id="refresh-btn" onclick="refreshPrices()" title="네이버에서 현재가 새로고침" style="margin-left:8px;padding:2px 10px;font-size:0.8rem;cursor:pointer;border:1px solid #aaa;border-radius:4px;background:#f5f5f5;">⟳ 새로고침</button>
+</p>
 
 <div class="tabs">
   <button class="tab active" onclick="switchTab('dashboard')">대시보드</button>
@@ -1142,6 +1153,60 @@ const OVERALL = """ + json.dumps(js_overall, ensure_ascii=False) + """;
 const TIMELINE = """ + json.dumps(timeline, ensure_ascii=False) + """;
 const TREEMAP_DATA = """ + json.dumps(treemap_data, ensure_ascii=False) + """;
 const BRIEFING = """ + json.dumps(briefing_data, ensure_ascii=False) + """;
+const STOCK_CODES = """ + json.dumps({name: v["code"] for name, v in raw_prices.items() if not name.startswith("_") and "code" in v}, ensure_ascii=False) + """;
+const STOCK_NATIONS = """ + json.dumps({name: v.get("nation","KOR") for name, v in raw_prices.items() if not name.startswith("_") and "code" in v}, ensure_ascii=False) + """;
+
+async function refreshPrices() {
+  const btn = document.getElementById('refresh-btn');
+  btn.textContent = '⟳ 조회 중...';
+  btn.disabled = true;
+  const now = new Date();
+  let updated = 0, failed = 0;
+  const newPrices = {};
+
+  for (const [name, code] of Object.entries(STOCK_CODES)) {
+    try {
+      const url = `https://m.stock.naver.com/api/stock/${code}/basic`;
+      const r = await fetch(url);
+      if (!r.ok) { failed++; continue; }
+      const d = await r.json();
+      const priceStr = (d.closePrice || '0').replace(/,/g, '');
+      const price = parseFloat(priceStr);
+      if (!price) { failed++; continue; }
+      newPrices[name] = price;
+      updated++;
+    } catch(e) { failed++; }
+  }
+
+  // Update STOCKS (포트폴리오 탭 데이터)
+  for (const s of STOCKS) {
+    if (newPrices[s.name] != null) {
+      s.current_price = newPrices[s.name];
+      s.current_value = s.shares * newPrices[s.name];
+      s.pnl = s.current_value - s.cost;
+    }
+  }
+  // Update per-account stocks
+  for (const acct of Object.values(ACCOUNTS)) {
+    for (const s of (acct.stocks || [])) {
+      if (newPrices[s.name] != null) {
+        s.current_price = newPrices[s.name];
+        s.current_value = s.shares * newPrices[s.name];
+        s.pnl = s.current_value - s.cost;
+      }
+    }
+  }
+
+  const ts = now.toLocaleString('ko-KR', {timeZone:'Asia/Seoul'}) + ' (실시간)';
+  document.getElementById('prices-updated-at').textContent = ts;
+  btn.textContent = `⟳ 새로고침 (${updated}건)`;
+  btn.disabled = false;
+
+  // Re-render current view
+  const activeTab = document.querySelector('.tab-content.active')?.id;
+  if (activeTab === 'tab-portfolio') renderPortfolio();
+  if (activeTab === 'tab-dashboard') renderDashboard();
+}
 
 function fmt(n) {
   if (n == null) return 'N/A';

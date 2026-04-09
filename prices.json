@@ -471,17 +471,17 @@
   },
   "레딧": {
     "code": "RDDT",
-    "price": 138.96,
+    "price": 138.01,
     "nation": "USA"
   },
   "비트팜스": {
     "code": "KEEL",
-    "price": 2.13,
+    "price": 2.12,
     "nation": "USA"
   },
   "알리바바 그룹 홀딩스 ADR": {
     "code": "BABA",
-    "price": 127.18,
+    "price": 127.34,
     "nation": "USA"
   },
   "융기실리콘자재": {
@@ -521,12 +521,12 @@
   },
   "리얼티 인컴": {
     "code": "O",
-    "price": 63.48,
+    "price": 63.49,
     "nation": "USA"
   },
   "셀시어스 홀딩스": {
     "code": "CELH",
-    "price": 36.42,
+    "price": 36.46,
     "nation": "USA"
   },
   "캐스터 마리타임": {
@@ -536,7 +536,7 @@
   },
   "프로셰어즈 QQQ 3배 ETF": {
     "code": "TQQQ",
-    "price": 48.75,
+    "price": 48.68,
     "nation": "USA"
   },
   "하이맥스 테크놀로지스": {
@@ -551,17 +551,17 @@
   },
   "AMD(어드밴스드 마이크로 디바이시스)": {
     "code": "AMD",
-    "price": 235.72,
+    "price": 235.5,
     "nation": "USA"
   },
   "AT&T": {
     "code": "T",
-    "price": 26.98,
+    "price": 26.93,
     "nation": "USA"
   },
   "GLOBAL X BLOCKCHAIN ETF": {
     "code": "BKCH",
-    "price": 64.53,
+    "price": 64.49,
     "nation": "USA"
   },
   "HB솔루션": {
@@ -571,7 +571,7 @@
   },
   "HSBC 홀딩스 ADR": {
     "code": "HSBC",
-    "price": 90.53,
+    "price": 90.58,
     "nation": "USA"
   },
   "JYP Ent.": {
@@ -581,7 +581,7 @@
   },
   "L3 해리스 테크놀러지": {
     "code": "LHX",
-    "price": 363.37,
+    "price": 363.2,
     "nation": "USA"
   },
   "PI첨단소재": {
@@ -606,7 +606,7 @@
   },
   "TSMC(타이완반도체제조)": {
     "code": "TSM",
-    "price": 365.99,
+    "price": 365.7,
     "nation": "USA"
   },
   "VF": {
@@ -616,7 +616,7 @@
   },
   "Virgin Galactic Holdings": {
     "code": "SPCE",
-    "price": 3.0,
+    "price": 3.02,
     "nation": "USA"
   },
   "국일제지": {
@@ -641,7 +641,7 @@
   },
   "뉴스케일 파워": {
     "code": "SMR",
-    "price": 9.79,
+    "price": 9.73,
     "nation": "USA"
   },
   "다날": {
@@ -681,7 +681,7 @@
   },
   "로빈후드": {
     "code": "HOOD",
-    "price": 71.88,
+    "price": 71.58,
     "nation": "USA"
   },
   "리노공업": {
@@ -696,7 +696,7 @@
   },
   "마이크로소프트": {
     "code": "MSFT",
-    "price": 371.31,
+    "price": 371.33,
     "nation": "USA"
   },
   "메디포스트": {
@@ -706,7 +706,7 @@
   },
   "바이두 ADR": {
     "code": "BIDU",
-    "price": 108.83,
+    "price": 108.61,
     "nation": "USA"
   },
   "바이오인프라생명과학": {
@@ -721,7 +721,7 @@
   },
   "버라이존": {
     "code": "VZ",
-    "price": 47.49,
+    "price": 47.42,
     "nation": "USA"
   },
   "보로노이": {
@@ -741,7 +741,7 @@
   },
   "비자": {
     "code": "V",
-    "price": 308.94,
+    "price": 308.65,
     "nation": "USA"
   },
   "비트맥스": {
@@ -761,7 +761,7 @@
   },
   "슈뢰딩거": {
     "code": "SDGR",
-    "price": 11.42,
+    "price": 11.4,
     "nation": "USA"
   },
   "스톤브릿지벤처스": {
@@ -771,12 +771,12 @@
   },
   "시저스 엔터테인먼트": {
     "code": "CZR",
-    "price": 26.5,
+    "price": 26.54,
     "nation": "USA"
   },
   "써클 인터넷 그룹": {
     "code": "CRCL",
-    "price": 91.17,
+    "price": 90.57,
     "nation": "USA"
   },
   "씨젠": {
@@ -786,17 +786,17 @@
   },
   "알파벳 Class A": {
     "code": "GOOGL",
-    "price": 318.71,
+    "price": 318.92,
     "nation": "USA"
   },
   "애플": {
     "code": "AAPL",
-    "price": 259.1,
+    "price": 259.06,
     "nation": "USA"
   },
   "에볼러스": {
     "code": "EOLS",
-    "price": 4.18,
+    "price": 4.2,
     "nation": "USA"
   },
   "에브리봇": {
@@ -821,7 +821,7 @@
   },
   "엑슨 모빌": {
     "code": "XOM",
-    "price": 155.19,
+    "price": 154.4,
     "nation": "USA"
   },
   "엔피": {
@@ -851,7 +851,7 @@
   },
   "월트 디즈니": {
     "code": "DIS",
-    "price": 99.03,
+    "price": 99.11,
     "nation": "USA"
   },
   "위지윅스튜디오": {
@@ -861,12 +861,12 @@
   },
   "유나이티드 스테이츠 앤티모니": {
     "code": "UAMY",
-    "price": 8.97,
+    "price": 8.99,
     "nation": "USA"
   },
   "유니티소프트웨어": {
     "code": "U",
-    "price": 21.67,
+    "price": 21.61,
     "nation": "USA"
   },
   "유진로봇": {
@@ -886,12 +886,12 @@
   },
   "제이피모간체이스": {
     "code": "JPM",
-    "price": 310.81,
+    "price": 310.61,
     "nation": "USA"
   },
   "차지포인트 홀딩스": {
     "code": "CHPT",
-    "price": 5.24,
+    "price": 5.21,
     "nation": "USA"
   },
   "초록뱀미디어": {
@@ -906,17 +906,17 @@
   },
   "퀀텀스케이프": {
     "code": "QS",
-    "price": 6.3,
+    "price": 6.29,
     "nation": "USA"
   },
   "크레도 테크놀로지 그룹 홀딩": {
     "code": "CRDO",
-    "price": 109.02,
+    "price": 108.89,
     "nation": "USA"
   },
   "테슬라": {
     "code": "TSLA",
-    "price": 347.75,
+    "price": 346.76,
     "nation": "USA"
   },
   "티이엠씨": {
@@ -931,12 +931,12 @@
   },
   "팔란티어 테크놀로지스": {
     "code": "PLTR",
-    "price": 131.56,
+    "price": 130.37,
     "nation": "USA"
   },
   "페이팔 홀딩스": {
     "code": "PYPL",
-    "price": 45.75,
+    "price": 45.76,
     "nation": "USA"
   },
   "프롬바이오": {
@@ -946,17 +946,17 @@
   },
   "플러그 파워": {
     "code": "PLUG",
-    "price": 2.83,
+    "price": 2.84,
     "nation": "USA"
   },
   "플레이티카 홀딩": {
     "code": "PLTK",
-    "price": 3.15,
+    "price": 3.13,
     "nation": "USA"
   },
   "피그마": {
     "code": "FIG",
-    "price": 19.18,
+    "price": 19.02,
     "nation": "USA"
   },
   "한컴라이프케어": {
@@ -988,5 +988,6 @@
     "code": "8136",
     "price": 984.2,
     "nation": "JPN"
-  }
+  },
+  "_updated_at": "2026-04-10 01:33:17"
 }
