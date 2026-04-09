@@ -1388,7 +1388,6 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
     <div class="chart-container"><canvas id="dividendChart"></canvas></div>
   </div>
 </div>
-</div>
 
 <!-- ===== BRIEFING TAB ===== -->
 <div id="tab-briefing" class="tab-content">
@@ -1418,6 +1417,7 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
       <div id="briefingContent"></div>
     </div>
   </div>
+</div>
 </div>
 
 <div class="tm-tooltip" id="acctTmTooltip"></div>
@@ -2323,62 +2323,80 @@ function renderBriefingSummary() {
     return;
   }
 
+  const sentimentColor = { positive:'#0a7c59', negative:'#c81e1e', neutral:'#6b7280' };
+  const sentimentLabel = { positive:'▲ 긍정', negative:'▼ 부정', neutral:'─ 중립' };
+  const sentimentBg   = { positive:'rgba(10,124,89,0.08)', negative:'rgba(200,30,30,0.08)', neutral:'rgba(107,114,128,0.08)' };
+
   let html = '';
 
-  // Market overview card
+  // ── 시장 개요 ──────────────────────────────────────────────
   if (data.market_summary) {
-    html += `<div class="card" style="margin-bottom:16px; border-left:3px solid var(--accent);">
-      <div class="card-title" style="margin-bottom:8px;">
-        시장 개요
-        <span style="font-size:0.78rem; color:var(--text-dim); font-weight:400; margin-left:8px;">${data.period || ''}</span>
+    html += `
+    <div class="card" style="margin-bottom:20px; border-left:3px solid var(--accent); padding:20px 24px;">
+      <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
+        <span style="font-size:0.95rem; font-weight:700; color:var(--text);">시장 개요</span>
+        <span style="font-size:0.78rem; color:var(--text-muted); background:var(--bg); border:1px solid var(--border); border-radius:20px; padding:2px 10px;">${data.period || ''}</span>
       </div>
-      <p style="font-size:0.87rem; line-height:1.7; color:var(--text); margin:0;">${data.market_summary}</p>
+      <p style="font-size:0.9rem; line-height:1.8; color:var(--text); margin:0;">${data.market_summary}</p>
     </div>`;
   }
 
-  // Themes
+  // ── 핵심 테마 ──────────────────────────────────────────────
   const themes = data.themes || [];
   if (themes.length > 0) {
-    html += `<div style="margin-bottom:6px; font-size:0.8rem; color:var(--text-dim); font-weight:600; letter-spacing:.05em; text-transform:uppercase;">핵심 테마 · ${themes.length}개</div>`;
-    html += `<div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap:12px; margin-bottom:20px;">`;
-    themes.forEach((t, i) => {
+    html += `
+    <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
+      <span style="font-size:0.75rem; font-weight:700; color:var(--text-muted); letter-spacing:.08em; text-transform:uppercase;">핵심 테마</span>
+      <span style="font-size:0.75rem; font-weight:600; color:var(--text-muted);">· ${themes.length}개</span>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-bottom:24px;">`;
+
+    themes.forEach(t => {
+      const sc = sentimentColor[t.sentiment] || sentimentColor.neutral;
+      const sl = sentimentLabel[t.sentiment] || sentimentLabel.neutral;
+      const sb = sentimentBg[t.sentiment]   || sentimentBg.neutral;
       const channels = (t.mentioned_in || []).map(c =>
-        `<span style="background:rgba(26,86,219,0.08); color:#1a56db; border-radius:4px; padding:1px 7px; font-size:0.72rem;">${c}</span>`
-      ).join(' ');
-      html += `<div class="card" style="margin-bottom:0; border-top:2px solid ${t.sentiment==='positive'?'#0a7c59':t.sentiment==='negative'?'#c81e1e':'#8898aa'};">
-        <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:8px; margin-bottom:8px;">
-          <div style="font-size:0.88rem; font-weight:600; line-height:1.4;">${t.title}</div>
-          ${sentimentBadge(t.sentiment)}
+        `<span style="display:inline-flex; align-items:center; background:rgba(26,86,219,0.07); color:#1a56db; border-radius:4px; padding:2px 8px; font-size:0.71rem; font-weight:500;">${c}</span>`
+      ).join('');
+
+      html += `
+      <div class="card" style="margin-bottom:0; padding:18px 20px; display:flex; flex-direction:column; gap:0;">
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+          <span style="font-size:0.72rem; font-weight:700; letter-spacing:.04em; color:${sc}; background:${sb}; border-radius:4px; padding:3px 9px;">${sl}</span>
         </div>
-        <p style="font-size:0.82rem; line-height:1.65; color:var(--text-dim); margin:0 0 10px;">${t.summary}</p>
-        <div style="display:flex; flex-wrap:wrap; gap:4px;">${channels}</div>
+        <div style="font-size:0.92rem; font-weight:700; line-height:1.4; color:var(--text); margin-bottom:10px;">${t.title}</div>
+        <p style="font-size:0.83rem; line-height:1.7; color:var(--text-dim); margin:0 0 14px; flex:1;">${t.summary}</p>
+        <div style="display:flex; flex-wrap:wrap; gap:4px; border-top:1px solid var(--border); padding-top:10px;">${channels}</div>
       </div>`;
     });
     html += `</div>`;
   }
 
-  // Key stocks
+  // ── 주목 종목 ──────────────────────────────────────────────
   const stocks = data.stocks || [];
   if (stocks.length > 0) {
-    html += `<div class="card">
-      <div class="card-title" style="margin-bottom:12px;">주목 종목</div>
-      <div style="display:flex; flex-wrap:wrap; gap:10px;">`;
-    stocks.forEach(s => {
+    const stockItems = stocks.map(s => {
       const pct = s.price_change_pct;
-      const pctStr = pct != null ? (pct >= 0 ? `<span style="color:#0a7c59">+${pct.toFixed(1)}%</span>` : `<span style="color:#c81e1e">${pct.toFixed(1)}%</span>`) : '';
-      const chs = (s.channels || []).map(c =>
-        `<span style="color:var(--text-muted); font-size:0.7rem;">${c}</span>`
-      ).join(', ');
-      html += `<div style="background:var(--bg2); border:1px solid var(--border); border-radius:10px; padding:10px 14px; min-width:130px;">
-        <div style="font-size:0.88rem; font-weight:600; margin-bottom:2px;">${s.name}</div>
-        <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
-          <span style="font-size:0.75rem; color:var(--text-dim);">언급 ${s.mention_count}회</span>
-          ${pctStr}
+      const pctHtml = pct != null
+        ? `<span style="font-size:0.75rem; font-weight:600; color:${pct>=0?'#0a7c59':'#c81e1e'}">${pct>=0?'+':''}${pct.toFixed(1)}%</span>`
+        : '';
+      const chs = (s.channels || []).join(' · ');
+      return `
+      <div style="display:flex; flex-direction:column; padding:12px 16px; background:var(--bg2); border:1px solid var(--border); border-radius:10px; min-width:150px; gap:4px;">
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:8px;">
+          <span style="font-size:0.9rem; font-weight:700; color:var(--text);">${s.name}</span>
+          ${pctHtml}
         </div>
-        <div style="font-size:0.72rem; color:var(--text-muted); line-height:1.4;">${chs}</div>
+        <div style="font-size:0.75rem; color:var(--text-muted);">언급 <b style="color:var(--accent);">${s.mention_count}</b>회</div>
+        <div style="font-size:0.71rem; color:var(--text-muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title="${chs}">${chs}</div>
       </div>`;
-    });
-    html += `</div></div>`;
+    }).join('');
+
+    html += `
+    <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
+      <span style="font-size:0.75rem; font-weight:700; color:var(--text-muted); letter-spacing:.08em; text-transform:uppercase;">주목 종목</span>
+    </div>
+    <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:8px;">${stockItems}</div>`;
   }
 
   el.innerHTML = html;
