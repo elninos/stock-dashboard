@@ -108,9 +108,88 @@ def fetch_telegram_posts(url: str, channel_id: str = "") -> list[dict]:
     return results
 
 
+def fetch_naver_rss(rss_url: str) -> list[dict]:
+    """Fetch posts from a Naver blog RSS feed."""
+    req = urllib.request.Request(rss_url, headers={
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+        "Accept-Language": "ko-KR,ko;q=0.9",
+    })
+    try:
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            xml = resp.read().decode("utf-8", errors="replace")
+    except Exception as e:
+        print(f"  [ERROR] Failed to fetch RSS {rss_url}: {e}")
+        return []
+
+    from email.utils import parsedate_to_datetime
+    results = []
+
+    # Extract each <item>
+    items = re.findall(r"<item>(.*?)</item>", xml, re.DOTALL)
+    for item in items:
+        # Title
+        title_match = re.search(r"<title><!\[CDATA\[(.*?)\]\]></title>", item, re.DOTALL)
+        title = title_match.group(1).strip() if title_match else ""
+
+        # Link
+        link_match = re.search(r"<link><!\[CDATA\[(.*?)\]\]></link>", item, re.DOTALL)
+        link = link_match.group(1).strip() if link_match else ""
+        # Clean tracking params for display
+        link_clean = re.sub(r"\?fromRss=.*", "", link)
+
+        # Description (truncated content)
+        desc_match = re.search(r"<description><!\[CDATA\[(.*?)\]\]></description>", item, re.DOTALL)
+        desc_raw = desc_match.group(1) if desc_match else ""
+        # Strip img tags and other HTML
+        desc = re.sub(r"<img[^>]+/>", "", desc_raw)
+        desc = _strip_html(desc).strip()
+
+        # Tags
+        tag_match = re.search(r"<tag><!\[CDATA\[(.*?)\]\]></tag>", item, re.DOTALL)
+        tags = tag_match.group(1).strip() if tag_match else ""
+
+        # Date
+        date_match = re.search(r"<pubDate>(.*?)</pubDate>", item, re.DOTALL)
+        post_date = ""
+        post_time = ""
+        if date_match:
+            try:
+                from datetime import timezone, timedelta
+                dt = parsedate_to_datetime(date_match.group(1).strip())
+                kst = timezone(timedelta(hours=9))
+                dt_kst = dt.astimezone(kst)
+                post_date = dt_kst.strftime("%Y-%m-%d")
+                post_time = dt_kst.strftime("%H:%M")
+            except Exception:
+                pass
+
+        if not title or not desc:
+            continue
+
+        # Compose text: title + content
+        full_text = f"[{title}]\n\n{desc}"
+        if tags:
+            full_text += f"\n\n#태그: {tags}"
+
+        results.append({
+            "date": post_date,
+            "time": post_time,
+            "text": full_text[:3000],
+            "links": [link_clean] if link_clean else [],
+            "post_url": link_clean,
+        })
+
+    return results
+
+
 def fetch_blog_posts(url: str) -> list[dict]:
-    """Fetch posts from a blog (Naver blog, etc). To be implemented."""
-    # TODO: Naver blog RSS or scraping
+    """Fetch posts from a blog via RSS (Naver blog supported)."""
+    # Detect Naver blog and use RSS
+    naver_match = re.search(r"blog\.naver\.com/([^/?#]+)", url)
+    if naver_match:
+        blog_id = naver_match.group(1)
+        rss_url = f"https://rss.blog.naver.com/{blog_id}"
+        return fetch_naver_rss(rss_url)
     return []
 
 

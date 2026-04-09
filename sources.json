@@ -29,6 +29,35 @@
       "enabled": true
     }
   ],
-  "blog": [],
+  "blog": [
+    {
+      "name": "카이에 블로그",
+      "id": "cahier",
+      "url": "https://blog.naver.com/cahier",
+      "category": "반도체/AI 심층 분석",
+      "enabled": true
+    },
+    {
+      "name": "안아줘 투자이야기",
+      "id": "ehgur06",
+      "url": "https://blog.naver.com/ehgur06",
+      "category": "투자 아이디어",
+      "enabled": true
+    },
+    {
+      "name": "Seung's 투자와 생각",
+      "id": "tmdejr1267",
+      "url": "https://blog.naver.com/tmdejr1267",
+      "category": "산업/바이오 분석",
+      "enabled": true
+    },
+    {
+      "name": "KK Kontemporaries",
+      "id": "kk_kontemp",
+      "url": "https://blog.naver.com/kk_kontemp",
+      "category": "매크로 분석",
+      "enabled": true
+    }
+  ],
   "rss": []
 }
