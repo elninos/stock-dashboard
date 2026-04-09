@@ -10,24 +10,23 @@ with open("/Users/r/Documents/Claude/stock-dashboard/transactions.json", encodin
 
 # Load current prices
 import os
+
+# Load briefing data
+briefing_file = "/Users/r/Documents/Claude/stock-dashboard/briefing.json"
+briefing_data = {}
+if os.path.exists(briefing_file):
+    with open(briefing_file, encoding="utf-8") as f:
+        briefing_data = json.load(f)
 prices_file = "/Users/r/Documents/Claude/stock-dashboard/prices.json"
-current_prices = {}  # stock name -> price in KRW
-usd_price_stocks = set()  # stocks whose prices are in USD (need exchange rate conversion)
+current_prices = {}  # stock name -> price (in original currency)
 if os.path.exists(prices_file):
     with open(prices_file, encoding="utf-8") as f:
         raw_prices = json.load(f)
         for k, v in raw_prices.items():
             current_prices[k] = v["price"]
-            if v.get("nation") and v["nation"] != "KOR":
-                usd_price_stocks.add(k)
 
-# Filter transactions: buy/sell/dividend/loan_interest with amount > 0, plus all transfers
-# USD transactions have amounts already in KRW (converted at trade-time exchange rate)
-txs = [tx for tx in all_txs if tx["amount"] > 0 or tx["type"] in ("transfer_in", "transfer_out")]
-
-# ===== Cash flow / Leverage metrics =====
+# NOTE: txs and cash_txs are created AFTER USD normalization below
 cash_flow_types = {"deposit", "withdrawal", "loan_in", "loan_out", "lending_fee"}
-cash_txs = [tx for tx in all_txs if tx["type"] in cash_flow_types]
 
 # ===== Exchange rate for USD holdings valuation =====
 def fetch_usd_krw():
@@ -44,15 +43,75 @@ def fetch_usd_krw():
         return 1400.0  # fallback
 
 usd_krw = fetch_usd_krw()
-print(f"USD/KRW: {usd_krw:,.2f}")
+
+def fetch_jpy_krw():
+    """Fetch current JPY/KRW exchange rate (100 JPY → KRW)."""
+    import urllib.request
+    try:
+        url = "https://api.stock.naver.com/marketindex/exchange/FX_JPYKRW"
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=5) as resp:
+            data = json.load(resp)
+            rate_str = data.get("exchangeInfo", data).get("closePrice", "0").replace(",", "")
+            # Naver returns rate per 100 JPY
+            return float(rate_str) / 100.0
+    except Exception:
+        return 9.5  # fallback ~9.5 KRW per 1 JPY
+
+jpy_krw = fetch_jpy_krw()
+
+def fetch_cny_krw():
+    """Fetch current CNY/KRW exchange rate."""
+    import urllib.request
+    try:
+        url = "https://api.stock.naver.com/marketindex/exchange/FX_CNYKRW"
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=5) as resp:
+            data = json.load(resp)
+            rate_str = data.get("exchangeInfo", data).get("closePrice", "0").replace(",", "")
+            return float(rate_str)
+    except Exception:
+        return 200.0  # fallback
+
+def fetch_hkd_krw():
+    """Fetch current HKD/KRW exchange rate."""
+    import urllib.request
+    try:
+        url = "https://api.stock.naver.com/marketindex/exchange/FX_HKDKRW"
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=5) as resp:
+            data = json.load(resp)
+            rate_str = data.get("exchangeInfo", data).get("closePrice", "0").replace(",", "")
+            return float(rate_str)
+    except Exception:
+        return 190.0  # fallback
+
+cny_krw = fetch_cny_krw()
+hkd_krw = fetch_hkd_krw()
+print(f"USD/KRW: {usd_krw:,.2f}, JPY/KRW: {jpy_krw:,.4f}, CNY/KRW: {cny_krw:,.2f}, HKD/KRW: {hkd_krw:,.2f}")
+
+# Build currency mapping from prices.json nation info
+# nation → currency: KOR→KRW, USA→USD, JPN→JPY, CHN→CNY, HKG→HKD
+NATION_CURRENCY = {"KOR": "KRW", "USA": "USD", "JPN": "JPY", "CHN": "CNY", "HKG": "HKD"}
+FX_RATES = {"KRW": 1, "USD": usd_krw, "JPY": jpy_krw, "CNY": cny_krw, "HKD": hkd_krw}
+
+stock_currency_map = {}  # stock -> "KRW" | "USD" | "JPY" | "CNY" | "HKD"
+stock_nation_map = {}    # stock -> "KOR" | "USA" | "JPN" | "CHN" | "HKG"
+if os.path.exists(prices_file):
+    with open(prices_file, encoding="utf-8") as f:
+        raw_p = json.load(f)
+        for k, v in raw_p.items():
+            nation = v.get("nation", "KOR")
+            stock_currency_map[k] = NATION_CURRENCY.get(nation, "USD")
+            stock_nation_map[k] = nation
 
 
 def get_krw_price(stock, fallback=0):
-    """Get current price in KRW (converts USD prices using exchange rate)."""
+    """Get current price in KRW (converts foreign prices using exchange rate)."""
     price = current_prices.get(stock, fallback)
-    if stock in usd_price_stocks:
-        return price * usd_krw
-    return price
+    cur = stock_currency_map.get(stock, "KRW")
+    rate = FX_RATES.get(cur, 1)
+    return price * rate
 
 # ===== Per-Stock Per-Account calculations =====
 # Track positions using FIFO
@@ -195,14 +254,47 @@ def calc_xirr(cashflows, guess=0.1):
 
 today_str = date.today().strftime("%Y-%m-%d")
 
+# ===== Normalize foreign currency transactions to KRW =====
+# 토스 USD: amounts already in KRW (trade-time rate from PDF)
+# 나무증권 USD/JPY: amounts in original currency, need conversion
+# NH투자증권: amounts in original currency but marked as KRW — detect by stock_currency_map
+for tx in all_txs:
+    if tx["broker"] == "나무증권":
+        if tx["currency"] == "USD":
+            tx["amount"] = round(tx["amount"] * usd_krw)
+            tx["price"] = round(tx["price"] * usd_krw)
+            tx["fee"] = round(tx["fee"] * usd_krw)
+            tx["tax"] = round(tx["tax"] * usd_krw)
+            tx["currency"] = "KRW(USD)"
+        elif tx["currency"] == "JPY":
+            tx["amount"] = round(tx["amount"] * jpy_krw)
+            tx["price"] = round(tx["price"] * jpy_krw)
+            tx["fee"] = round(tx["fee"] * jpy_krw)
+            tx["tax"] = round(tx["tax"] * jpy_krw)
+            tx["currency"] = "KRW(JPY)"
+    elif tx["broker"] == "NH투자증권" and tx["currency"] == "KRW":
+        # NH 간략 format has no currency info — detect foreign stocks via stock_currency_map
+        stock_cur = stock_currency_map.get(tx.get("stock", ""), "KRW")
+        if stock_cur != "KRW" and tx["type"] in ("buy", "sell", "dividend", "transfer_in", "transfer_out"):
+            rate = FX_RATES.get(stock_cur, 1)
+            tx["amount"] = round(tx["amount"] * rate)
+            tx["price"] = round(tx["price"] * rate)
+            tx["fee"] = round(tx["fee"] * rate)
+            tx["tax"] = round(tx["tax"] * rate)
+            tx["currency"] = f"KRW({stock_cur})"
+
+# Build filtered lists AFTER USD normalization
+cash_txs = [tx for tx in all_txs if tx["type"] in cash_flow_types]
+
+# Re-filter after normalization
+txs = [tx for tx in all_txs if tx["amount"] > 0 or tx["type"] in ("transfer_in", "transfer_out")]
+
 # ===== Compute per account, per stock =====
-# Split 토스 into KRW/USD sub-accounts for separate view
+# All amounts are already converted to KRW — no sub-account splitting needed
 account_stock_data = defaultdict(lambda: defaultdict(list))
 for tx in txs:
     if tx["type"] in ["buy", "sell", "dividend", "transfer_in", "transfer_out"]:
         acc = tx["account"]
-        if acc == "토스":
-            acc = "토스(KRW)" if tx["currency"] == "KRW" else "토스(USD)"
         account_stock_data[acc][tx["stock"]].append(tx)
 
 # Per-account summary
@@ -253,7 +345,7 @@ for account in sorted(account_stock_data.keys()):
     # Add current market value of holdings for IRR
     irr_account_cf = list(account_cashflows)
     for stock, h in holdings.items():
-        cp = get_krw_price(stock, h["avg_price"])
+        cp = get_krw_price(stock, 0)
         irr_account_cf.append((today_str, h["qty"] * cp))
     irr = calc_xirr(irr_account_cf)
 
@@ -339,7 +431,7 @@ all_cashflows.sort(key=lambda x: x[0])
 # Add current market value of all holdings for IRR
 irr_all_cf = list(all_cashflows)
 for stock, h in overall_holdings.items():
-    cp = get_krw_price(stock, h["avg_price"])
+    cp = get_krw_price(stock, 0)
     irr_all_cf.append((today_str, h["qty"] * cp))
 overall_irr = calc_xirr(irr_all_cf)
 
@@ -360,7 +452,88 @@ for tx in txs:
 for m in monthly_data:
     monthly_data[m]["pnl"] = monthly_data[m]["returned"] - monthly_data[m]["invested"]
 
+# ===== Monthly portfolio holdings tracking (for total asset value timeline) =====
+# Track holdings (qty per stock) over time using FIFO, compute month-end values
+# Sort all stock transactions by date
+stock_txs_sorted = sorted(
+    [tx for tx in txs if tx["type"] in ("buy", "sell", "transfer_in", "transfer_out")],
+    key=lambda x: x["date"]
+)
+
+# Build month-end holdings snapshots
+monthly_holdings = {}  # month -> {stock: qty}
+current_holdings = defaultdict(int)  # stock -> qty
+current_cost_basis = defaultdict(float)  # stock -> total cost
+stock_buys_fifo = defaultdict(list)  # stock -> [(qty, price)]
+
+for tx in stock_txs_sorted:
+    month = tx["date"][:7]
+    stock = tx["stock"]
+    if tx["type"] == "buy":
+        current_holdings[stock] += tx["qty"]
+        current_cost_basis[stock] += tx["amount"]
+        stock_buys_fifo[stock].append({"qty": tx["qty"], "price": tx["price"]})
+    elif tx["type"] == "sell":
+        current_holdings[stock] -= tx["qty"]
+        # FIFO cost removal
+        remaining = tx["qty"]
+        while remaining > 0 and stock_buys_fifo[stock]:
+            b = stock_buys_fifo[stock][0]
+            take = min(remaining, b["qty"])
+            current_cost_basis[stock] -= take * b["price"]
+            b["qty"] -= take
+            remaining -= take
+            if b["qty"] == 0:
+                stock_buys_fifo[stock].pop(0)
+        if current_holdings[stock] <= 0:
+            current_holdings[stock] = 0
+            current_cost_basis[stock] = 0
+    elif tx["type"] == "transfer_in":
+        current_holdings[stock] += tx["qty"]
+        current_cost_basis[stock] += tx["qty"] * tx["price"]
+        stock_buys_fifo[stock].append({"qty": tx["qty"], "price": tx["price"]})
+    elif tx["type"] == "transfer_out":
+        current_holdings[stock] -= tx["qty"]
+        remaining = tx["qty"]
+        while remaining > 0 and stock_buys_fifo[stock]:
+            b = stock_buys_fifo[stock][0]
+            take = min(remaining, b["qty"])
+            current_cost_basis[stock] -= take * b["price"]
+            b["qty"] -= take
+            remaining -= take
+            if b["qty"] == 0:
+                stock_buys_fifo[stock].pop(0)
+        if current_holdings[stock] <= 0:
+            current_holdings[stock] = 0
+            current_cost_basis[stock] = 0
+    # Snapshot at each month
+    monthly_holdings[month] = {
+        "holdings": {s: q for s, q in current_holdings.items() if q > 0},
+        "cost_basis": {s: c for s, c in current_cost_basis.items() if current_holdings[s] > 0},
+    }
+
+# Compute month-end total asset value:
+# - Historical months: use cost basis (no historical prices available)
+# - Last month: use current market prices
 months_sorted = sorted(monthly_data.keys())
+current_month = months_sorted[-1] if months_sorted else ""
+
+month_end_values = {}
+for m in months_sorted:
+    snap = monthly_holdings.get(m)
+    if not snap:
+        month_end_values[m] = 0
+        continue
+    if m == current_month:
+        # Use market prices for current month
+        total = 0
+        for stock, qty in snap["holdings"].items():
+            total += qty * get_krw_price(stock, snap["cost_basis"].get(stock, 0) / max(qty, 1))
+        month_end_values[m] = round(total)
+    else:
+        # Use cost basis for historical months
+        month_end_values[m] = round(sum(snap["cost_basis"].values()))
+
 cum_invested = 0
 cum_returned = 0
 cum_dividends = 0
@@ -372,6 +545,9 @@ for m in months_sorted:
     cum_returned += d["returned"]
     cum_dividends += d["dividends"]
     cum_pnl += d["pnl"]
+    holdings_value = month_end_values.get(m, 0)
+    # Total asset = 보유주식 평가액 + 누적 회수 + 누적 배당 (= 내가 가진 총 가치)
+    total_asset = holdings_value + cum_returned + cum_dividends
     timeline.append({
         "month": m,
         "invested": d["invested"],
@@ -385,6 +561,8 @@ for m in months_sorted:
         "cum_dividends": cum_dividends,
         "cum_pnl": cum_pnl,
         "net_cashflow": cum_returned + cum_dividends - cum_invested,
+        "holdings_value": holdings_value,
+        "total_asset": total_asset,
     })
 
 
@@ -436,7 +614,7 @@ for acc, data in account_summaries.items():
         })
     # Add current price / market value to each stock
     for s in stocks_list:
-        cp = get_krw_price(s["name"], s["avg_price"] if s["current_qty"] > 0 else 0)
+        cp = get_krw_price(s["name"], 0)
         s["current_price"] = cp
         s["market_value"] = s["current_qty"] * cp if s["current_qty"] > 0 else 0
         s["unrealized_pnl"] = s["market_value"] - s["cost"] if s["current_qty"] > 0 else 0
@@ -452,11 +630,11 @@ for acc, data in account_summaries.items():
     holdings = data["holdings"]
     acct_total_mv = 0
     for stock, h in holdings.items():
-        cp = get_krw_price(stock, h["avg_price"])
+        cp = get_krw_price(stock, 0)
         mv = h["qty"] * cp
         acct_total_mv += mv
     for stock, h in holdings.items():
-        cp = get_krw_price(stock, h["avg_price"])
+        cp = get_krw_price(stock, 0)
         mv = h["qty"] * cp
         cost = h["cost"]
         ret = ((mv - cost) / cost * 100) if cost > 0 else 0
@@ -471,6 +649,7 @@ for acc, data in account_summaries.items():
             "cost": cost,
             "unrealized_pnl": mv - cost,
             "weight": round(weight, 1),
+            "nation": stock_nation_map.get(stock, "KOR"),
         })
     account_treemap.sort(key=lambda x: x["market_value"], reverse=True)
 
@@ -513,7 +692,7 @@ for stock, m in stock_summaries.items():
     })
 # Add current price / market value
 for s in js_stock_data:
-    cp = get_krw_price(s["name"], s["avg_price"] if s["current_qty"] > 0 else 0)
+    cp = get_krw_price(s["name"], 0)
     s["current_price"] = cp
     s["market_value"] = s["current_qty"] * cp if s["current_qty"] > 0 else 0
     s["unrealized_pnl"] = s["market_value"] - s["cost"] if s["current_qty"] > 0 else 0
@@ -528,7 +707,7 @@ overall_net_pnl = overall_realized_pnl + overall_dividends
 overall_roi = (overall_net_pnl / overall_invested * 100) if overall_invested > 0 else 0
 
 total_market_value = sum(
-    h["qty"] * get_krw_price(stock, h["avg_price"])
+    h["qty"] * get_krw_price(stock, 0)
     for stock, h in overall_holdings.items()
 )
 total_unrealized = total_market_value - sum(h["cost"] for h in overall_holdings.values())
@@ -559,7 +738,7 @@ js_overall = {
 # Build treemap data for holdings
 treemap_data = []
 for stock, h in overall_holdings.items():
-    cp = get_krw_price(stock, h["avg_price"])
+    cp = get_krw_price(stock, 0)
     mv = h["qty"] * cp
     cost = h["cost"]
     unrealized_ret = ((mv - cost) / cost * 100) if cost > 0 else 0
@@ -574,6 +753,7 @@ for stock, h in overall_holdings.items():
         "current_price": cp,
         "cost": cost,
         "unrealized_pnl": mv - cost,
+        "nation": stock_nation_map.get(stock, "KOR"),
     })
 treemap_data.sort(key=lambda x: x["market_value"], reverse=True)
 
@@ -651,14 +831,20 @@ h1 {{ font-size: 1.8rem; font-weight: 700; margin-bottom: 8px; letter-spacing: -
 .treemap-cell {{ position: absolute; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: default; transition: filter 0.15s; border: 1px solid rgba(0,0,0,0.3); }}
 .treemap-cell:hover {{ filter: brightness(1.15); z-index: 2; }}
 .treemap-cell .name {{ font-weight: 700; font-size: 0.82rem; color: #fff; text-shadow: 0 1px 3px rgba(0,0,0,0.6); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 95%; text-align: center; }}
-.treemap-cell .pct {{ font-weight: 600; font-size: 0.75rem; color: rgba(255,255,255,0.9); text-shadow: 0 1px 3px rgba(0,0,0,0.6); }}
-.treemap-cell .val {{ font-size: 0.65rem; color: rgba(255,255,255,0.7); text-shadow: 0 1px 3px rgba(0,0,0,0.6); margin-top: 1px; }}
+.treemap-cell .pct {{ font-weight: 600; font-size: 0.75rem; color: rgba(255,255,255,0.9); text-shadow: 0 1px 3px rgba(0,0,0,0.6); opacity: 0; transition: opacity 0.2s; }}
+.treemap-cell .val {{ font-size: 0.65rem; color: rgba(255,255,255,0.7); text-shadow: 0 1px 3px rgba(0,0,0,0.6); margin-top: 1px; opacity: 0; transition: opacity 0.2s; }}
+.treemap-cell:hover .pct, .treemap-cell:hover .val {{ opacity: 1; }}
 .treemap-cell.small .name {{ font-size: 0.7rem; }}
 .treemap-cell.small .pct {{ font-size: 0.65rem; }}
 .treemap-cell.small .val {{ display: none; }}
 .treemap-cell.tiny .name {{ font-size: 0.6rem; }}
 .treemap-cell.tiny .pct {{ display: none; }}
 .treemap-cell.tiny .val {{ display: none; }}
+.treemap-filters {{ display: flex; gap: 4px; margin-bottom: 8px; }}
+.treemap-filters .tf-btn {{ padding: 4px 14px; border-radius: 6px; font-size: 0.78rem; font-weight: 600; color: var(--text-dim); border: 1px solid var(--border); background: var(--card); cursor: pointer; transition: all 0.2s; }}
+.treemap-filters .tf-btn:hover {{ color: var(--text); border-color: var(--accent); }}
+.treemap-filters .tf-btn.active {{ background: var(--accent-dim); color: var(--accent); border-color: var(--accent); }}
+.treemap-cell.dimmed {{ opacity: 0.15; }}
 
 /* === Tables === */
 table {{ width: 100%; border-collapse: collapse; font-size: 0.84rem; }}
@@ -704,6 +890,15 @@ tr:hover td {{ background: rgba(99, 102, 241, 0.06); }}
 .tm-tooltip .tt-row {{ display: flex; justify-content: space-between; gap: 16px; font-feature-settings: 'tnum'; }}
 .tm-tooltip .tt-label {{ color: var(--text-dim); }}
 
+/* === Detail toggle === */
+.detail-section {{ }}
+.detail-toggle {{ cursor: pointer; color: var(--text-dim); font-size: 0.85rem; font-weight: 600; padding: 10px 0; list-style: none; display: flex; align-items: center; gap: 6px; transition: color 0.2s; }}
+.detail-toggle:hover {{ color: var(--text); }}
+.detail-toggle::before {{ content: '▸'; font-size: 0.75rem; transition: transform 0.2s; }}
+details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
+.detail-toggle::-webkit-details-marker {{ display: none; }}
+.detail-content {{ animation: fadeIn 0.3s ease; }}
+
 @media (max-width: 768px) {{
   .kpi-row.primary {{ grid-template-columns: repeat(2, 1fr); }}
   .kpi-row.secondary {{ grid-template-columns: repeat(3, 1fr); }}
@@ -722,96 +917,112 @@ tr:hover td {{ background: rgba(99, 102, 241, 0.06); }}
 </style>
 <div class="container">
 <h1>주식 통합 대시보드</h1>
-<p class="subtitle">NH투자증권 {len([a for a in account_summaries if a.startswith('NH')])}개 계좌 + 토스증권 1개 계좌 (KRW+USD) | {min(tx['date'] for tx in txs)} ~ {max(tx['date'] for tx in txs)} | 총 {len(txs):,}건 | USD/KRW {usd_krw:,.0f}</p>
+<p class="subtitle">NH투자증권 + 나무증권 + 토스증권 ({len(account_summaries)}개 계좌) | {min(tx['date'] for tx in txs)} ~ {max(tx['date'] for tx in txs)} | 총 {len(txs):,}건 | USD {usd_krw:,.0f}원 · JPY {jpy_krw:,.2f}원 | 빌드: {datetime.now().strftime('%Y-%m-%d %H:%M')}</p>
 
 <div class="tabs">
   <button class="tab active" onclick="switchTab('dashboard')">대시보드</button>
   <button class="tab" onclick="switchTab('portfolio')">포트폴리오</button>
   <button class="tab" onclick="switchTab('analysis')">분석</button>
+  <button class="tab" onclick="switchTab('briefing')">시장 브리핑</button>
 </div>
 
 <!-- ===== DASHBOARD TAB ===== -->
 <div id="tab-dashboard" class="tab-content active">
-  <!-- Primary KPIs -->
+  <!-- Hero KPIs: 핵심 4개만 크게 -->
   <div class="kpi-row primary">
     <div class="kpi">
       <div class="kpi-label">보유 평가금액</div>
       <div class="kpi-value">{fmt_num(total_market_value)}</div>
-      <div class="kpi-sub">{len(overall_holdings)}종목 보유중</div>
+      <div class="kpi-sub">{len(overall_holdings)}종목 보유 · 원금 {fmt_num(sum(h['cost'] for h in overall_holdings.values()))}</div>
     </div>
     <div class="kpi {"border-positive" if total_unrealized >= 0 else "border-negative"}">
-      <div class="kpi-label">평가손익 (미실현)</div>
+      <div class="kpi-label">평가손익</div>
       <div class="kpi-value {pnl_class(total_unrealized)}">{fmt_num(total_unrealized)}</div>
       <div class="kpi-sub {pnl_class(total_unrealized)}">{(total_unrealized / sum(h['cost'] for h in overall_holdings.values()) * 100) if sum(h['cost'] for h in overall_holdings.values()) > 0 else 0:+.1f}%</div>
     </div>
-    <div class="kpi {"border-positive" if overall_realized_pnl >= 0 else "border-negative"}">
-      <div class="kpi-label">실현 손익</div>
-      <div class="kpi-value {pnl_class(overall_realized_pnl)}">{fmt_num(overall_realized_pnl)}</div>
-      <div class="kpi-sub">수수료 {fmt_num(overall_fees)} + 세금 {fmt_num(overall_tax)}</div>
-    </div>
     <div class="kpi {"border-positive" if overall_net_pnl >= 0 else "border-negative"}">
-      <div class="kpi-label">총손익 (실현+배당)</div>
+      <div class="kpi-label">실현손익 + 배당</div>
       <div class="kpi-value {pnl_class(overall_net_pnl)}">{fmt_num(overall_net_pnl)}</div>
-      <div class="kpi-sub {pnl_class(overall_net_pnl)}">ROI {overall_roi:+.1f}%</div>
-    </div>
-  </div>
-  <!-- Secondary KPIs -->
-  <div class="kpi-row secondary" style="margin-bottom:24px;">
-    <div class="kpi">
-      <div class="kpi-label">총 매수금액</div>
-      <div class="kpi-value compact">{fmt_num(overall_invested)}</div>
-      <div class="kpi-sub">{len(stock_summaries)}종목 거래</div>
-    </div>
-    <div class="kpi">
-      <div class="kpi-label">총 매도금액</div>
-      <div class="kpi-value compact">{fmt_num(overall_returned)}</div>
-    </div>
-    <div class="kpi">
-      <div class="kpi-label">배당금</div>
-      <div class="kpi-value compact positive">{fmt_num(overall_dividends)}</div>
+      <div class="kpi-sub">실현 {fmt_num(overall_realized_pnl)} + 배당 {fmt_num(overall_dividends)}</div>
     </div>
     <div class="kpi">
       <div class="kpi-label">IRR (연환산)</div>
-      <div class="kpi-value compact {pnl_class(overall_irr or 0)}">{fmt_pct(overall_irr) if overall_irr else 'N/A'}</div>
-    </div>
-    <div class="kpi border-negative">
-      <div class="kpi-label">대출이자 비용</div>
-      <div class="kpi-value compact negative">{fmt_num(overall_loan_interest)}</div>
-      <div class="kpi-sub">실질 순수익 <span class="{pnl_class(overall_net_pnl - overall_loan_interest)}">{fmt_num(overall_net_pnl - overall_loan_interest)}</span></div>
+      <div class="kpi-value {pnl_class(overall_irr or 0)}">{fmt_pct(overall_irr) if overall_irr else 'N/A'}</div>
+      <div class="kpi-sub">ROI {overall_roi:+.1f}% · {len(stock_summaries)}종목 거래</div>
     </div>
   </div>
-  <!-- Leverage / Cash Flow KPIs -->
-  <div class="kpi-row secondary" style="margin-bottom:24px;">
-    <div class="kpi">
-      <div class="kpi-label">순입금액</div>
-      <div class="kpi-value compact {pnl_class(-overall_net_deposit)}">{fmt_num(overall_net_deposit)}</div>
-      <div class="kpi-sub">입금 {fmt_num(overall_deposits)} / 출금 {fmt_num(overall_withdrawals)}</div>
+
+  <!-- 상세 지표: 접기/펼치기 -->
+  <details class="detail-section" style="margin-bottom: 24px;">
+    <summary class="detail-toggle">상세 지표 보기</summary>
+    <div class="detail-content">
+      <div class="kpi-row secondary" style="margin-top:14px;">
+        <div class="kpi">
+          <div class="kpi-label">총 매수</div>
+          <div class="kpi-value compact">{fmt_num(overall_invested)}</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">총 매도</div>
+          <div class="kpi-value compact">{fmt_num(overall_returned)}</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">수수료 + 세금</div>
+          <div class="kpi-value compact negative">{fmt_num(overall_fees + overall_tax)}</div>
+          <div class="kpi-sub">수수료 {fmt_num(overall_fees)} · 세금 {fmt_num(overall_tax)}</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">순입금</div>
+          <div class="kpi-value compact">{fmt_num(overall_net_deposit)}</div>
+          <div class="kpi-sub">입금 {fmt_num(overall_deposits)} / 출금 {fmt_num(overall_withdrawals)}</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">대출잔액</div>
+          <div class="kpi-value compact {"negative" if overall_loan_balance > 0 else ""}">{fmt_num(overall_loan_balance)}</div>
+          <div class="kpi-sub">레버리지 {total_market_value / max(total_market_value - overall_loan_balance, 1):.2f}x</div>
+        </div>
+      </div>
+      <div class="kpi-row secondary">
+        <div class="kpi border-negative">
+          <div class="kpi-label">대출이자</div>
+          <div class="kpi-value compact negative">{fmt_num(overall_loan_interest)}</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">대여수수료</div>
+          <div class="kpi-value compact positive">{fmt_num(overall_lending_fee)}</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">순금융비용</div>
+          <div class="kpi-value compact negative">{fmt_num(overall_loan_interest - overall_lending_fee)}</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">실질 순수익</div>
+          <div class="kpi-value compact {pnl_class(overall_net_pnl - overall_loan_interest + overall_lending_fee)}">{fmt_num(overall_net_pnl - overall_loan_interest + overall_lending_fee)}</div>
+          <div class="kpi-sub">손익 - 이자 + 대여수수료</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">자기자본 수익률</div>
+          <div class="kpi-value compact {pnl_class(overall_net_pnl - overall_loan_interest)}">{((overall_net_pnl - overall_loan_interest) / max(overall_deposits, 1) * 100):+.1f}%</div>
+        </div>
+      </div>
     </div>
-    <div class="kpi">
-      <div class="kpi-label">현재 대출잔액</div>
-      <div class="kpi-value compact {"negative" if overall_loan_balance > 0 else ""}">{fmt_num(overall_loan_balance)}</div>
-      <div class="kpi-sub">레버리지 {total_market_value / max(total_market_value - overall_loan_balance, 1):.2f}x</div>
-    </div>
-    <div class="kpi">
-      <div class="kpi-label">대여수수료 수입</div>
-      <div class="kpi-value compact positive">{fmt_num(overall_lending_fee)}</div>
-      <div class="kpi-sub">순금융비용 <span class="negative">{fmt_num(overall_loan_interest - overall_lending_fee)}</span></div>
-    </div>
-    <div class="kpi">
-      <div class="kpi-label">자기자본 수익률</div>
-      <div class="kpi-value compact {pnl_class(overall_net_pnl)}">{((overall_net_pnl - overall_loan_interest) / max(overall_deposits, 1) * 100):+.1f}%</div>
-      <div class="kpi-sub">순수익 {fmt_num(overall_net_pnl - overall_loan_interest)} / 총입금 {fmt_num(overall_deposits)}</div>
-    </div>
-    <div class="kpi">
-      <div class="kpi-label">총 대출회전</div>
-      <div class="kpi-value compact">{fmt_num(overall_loan_in)}</div>
-      <div class="kpi-sub">상환 {fmt_num(overall_loan_out)}</div>
-    </div>
+  </details>
+
+  <!-- Asset chart on dashboard -->
+  <div class="card">
+    <div class="card-title">총 평가자산 추이</div>
+    <div class="chart-container"><canvas id="dashAssetChart"></canvas></div>
   </div>
 
   <!-- Treemap -->
   <div class="card">
     <div class="card-title">포트폴리오 구성 (평가금액 기준)</div>
+    <div class="treemap-filters" id="treemapFilters">
+      <button class="tf-btn active" onclick="filterTreemap('all')">전체</button>
+      <button class="tf-btn" onclick="filterTreemap('KOR')">한국</button>
+      <button class="tf-btn" onclick="filterTreemap('USA')">미국</button>
+      <button class="tf-btn" onclick="filterTreemap('JPN')">일본</button>
+      <button class="tf-btn" onclick="filterTreemap('other')">기타</button>
+    </div>
     <div class="treemap-container" id="treemapContainer"></div>
   </div>
   <div class="tm-tooltip" id="tmTooltip"></div>
@@ -892,6 +1103,10 @@ tr:hover td {{ background: rgba(99, 102, 241, 0.06); }}
     <div class="chart-container"><canvas id="timelineChart"></canvas></div>
   </div>
   <div class="card">
+    <div class="card-title">총 평가자산 vs 누적 투자</div>
+    <div class="chart-container"><canvas id="totalAssetChart"></canvas></div>
+  </div>
+  <div class="card">
     <div class="card-title">누적 투자 vs 회수 vs 배당</div>
     <div class="chart-container"><canvas id="cumCompareChart"></canvas></div>
   </div>
@@ -906,6 +1121,18 @@ tr:hover td {{ background: rgba(99, 102, 241, 0.06); }}
 </div>
 </div>
 
+<!-- ===== BRIEFING TAB ===== -->
+<div id="tab-briefing" class="tab-content">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; flex-wrap:wrap; gap:10px;">
+    <div style="display:flex; align-items:center; gap:12px;">
+      <select id="briefingDateSelect" onchange="renderBriefing()" style="background:var(--card); color:var(--text); border:1px solid var(--border); border-radius:8px; padding:8px 14px; font-size:0.9rem;"></select>
+      <span id="briefingSourceCount" style="color:var(--text-dim); font-size:0.85rem;"></span>
+    </div>
+    <div class="filter-group" id="briefingSourceFilter"></div>
+  </div>
+  <div id="briefingContent"></div>
+</div>
+
 <div class="tm-tooltip" id="acctTmTooltip"></div>
 
 <script>
@@ -914,6 +1141,7 @@ const STOCKS = """ + json.dumps(js_stock_data, ensure_ascii=False) + """;
 const OVERALL = """ + json.dumps(js_overall, ensure_ascii=False) + """;
 const TIMELINE = """ + json.dumps(timeline, ensure_ascii=False) + """;
 const TREEMAP_DATA = """ + json.dumps(treemap_data, ensure_ascii=False) + """;
+const BRIEFING = """ + json.dumps(briefing_data, ensure_ascii=False) + """;
 
 function fmt(n) {
   if (n == null) return 'N/A';
@@ -1027,7 +1255,7 @@ function renderTreemapInContainer(containerId, data, tooltipId) {
   container.innerHTML = rects.map(r => {
     const sizeClass = (r.w < 60 || r.h < 40) ? 'tiny' : (r.w < 100 || r.h < 55) ? 'small' : '';
     return `<div class="treemap-cell ${sizeClass}" style="left:${r.x}px;top:${r.y}px;width:${r.w}px;height:${r.h}px;background:${getTreemapColor(r.return_pct)}"
-      data-name="${r.name}" data-ret="${r.return_pct}" data-mv="${r.market_value}" data-qty="${r.qty}" data-cp="${r.current_price}" data-cost="${r.cost}" data-upnl="${r.unrealized_pnl}" data-weight="${r.weight || 0}">
+      data-name="${r.name}" data-ret="${r.return_pct}" data-mv="${r.market_value}" data-qty="${r.qty}" data-cp="${r.current_price}" data-cost="${r.cost}" data-upnl="${r.unrealized_pnl}" data-weight="${r.weight || 0}" data-nation="${r.nation || 'KOR'}">
       <span class="name">${r.name}</span>
       <span class="pct">${r.return_pct >= 0 ? '+' : ''}${r.return_pct.toFixed(1)}%</span>
       <span class="val">${fmt(r.market_value)}</span>
@@ -1056,8 +1284,32 @@ function renderTreemapInContainer(containerId, data, tooltipId) {
   });
 }
 
+let currentTreemapFilter = 'all';
 function renderTreemap() {
   renderTreemapInContainer('treemapContainer', TREEMAP_DATA, 'tmTooltip');
+  filterTreemap(currentTreemapFilter, true);
+}
+function filterTreemap(nation, skipRender) {
+  currentTreemapFilter = nation;
+  document.querySelectorAll('#treemapFilters .tf-btn').forEach(b => b.classList.remove('active'));
+  event && event.target && event.target.classList.add('active');
+  if (!event || !event.target) {
+    document.querySelectorAll('#treemapFilters .tf-btn').forEach(b => {
+      if ((nation === 'all' && b.textContent === '전체') ||
+          (nation === 'KOR' && b.textContent === '한국') ||
+          (nation === 'USA' && b.textContent === '미국') ||
+          (nation === 'JPN' && b.textContent === '일본') ||
+          (nation === 'other' && b.textContent === '기타'))
+        b.classList.add('active');
+    });
+  }
+  const otherNations = new Set(['CHN', 'HKG']);
+  document.querySelectorAll('#treemapContainer .treemap-cell').forEach(cell => {
+    const n = cell.dataset.nation;
+    if (nation === 'all') { cell.classList.remove('dimmed'); }
+    else if (nation === 'other') { cell.classList.toggle('dimmed', !otherNations.has(n)); }
+    else { cell.classList.toggle('dimmed', n !== nation); }
+  });
 }
 
 // ===== Sub-tab switching =====
@@ -1083,6 +1335,7 @@ function switchTab(name) {
   if (name === 'analysis') initAnalysis();
   if (name === 'portfolio') { renderStockTable(); initAccounts(); }
   if (name === 'dashboard') { setTimeout(renderTreemap, 50); }
+  if (name === 'briefing') initBriefing();
 }
 
 // ===== STOCK TABLE =====
@@ -1339,6 +1592,59 @@ function renderAccount(acc) {
 }
 
 // ===== TOP WINNERS/LOSERS CHARTS =====
+// Dashboard asset chart (always visible on dashboard tab)
+new Chart(document.getElementById('dashAssetChart'), {
+  type: 'line',
+  data: {
+    labels: TIMELINE.map(t => t.month),
+    datasets: [
+      {
+        label: '총 평가자산',
+        data: TIMELINE.map(t => t.total_asset),
+        borderColor: '#f59e0b',
+        backgroundColor: 'rgba(245,158,11,0.08)',
+        fill: true,
+        tension: 0.3,
+        pointRadius: 0,
+        borderWidth: 2.5,
+      },
+      {
+        label: '누적 투자금',
+        data: TIMELINE.map(t => t.cum_invested),
+        borderColor: '#ef4444',
+        backgroundColor: 'rgba(239,68,68,0.03)',
+        fill: false,
+        tension: 0.3,
+        pointRadius: 0,
+        borderWidth: 2,
+        borderDash: [5, 3],
+      },
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: { labels: { color: '#e1e4eb' } },
+      tooltip: {
+        callbacks: {
+          label: ctx => ctx.dataset.label + ': ' + fmt(ctx.raw),
+          afterBody: function(items) {
+            const idx = items[0].dataIndex;
+            const t = TIMELINE[idx];
+            const pnl = t.total_asset - t.cum_invested;
+            const pnlPct = t.cum_invested > 0 ? (pnl / t.cum_invested * 100).toFixed(1) : '0.0';
+            return '손익: ' + fmt(pnl) + ' (' + pnlPct + '%)';
+          }
+        }
+      }
+    },
+    scales: {
+      x: { ticks: { color: '#8b8fa3', maxRotation: 45 }, grid: { display: false } },
+      y: { ticks: { callback: v => fmt(v), color: '#8b8fa3' }, grid: { color: '#2a2d3a' } }
+    }
+  }
+});
+
 function initOverallCharts() {
   const winners = STOCKS.filter(s => s.net_pnl > 0).sort((a,b) => b.net_pnl - a.net_pnl).slice(0, 10);
   const losers = STOCKS.filter(s => s.net_pnl < 0).sort((a,b) => a.net_pnl - b.net_pnl).slice(0, 10);
@@ -1392,6 +1698,70 @@ function initAnalysis() {
     options: {
       responsive: true, maintainAspectRatio: false,
       plugins: { legend: { labels: { color: '#e1e4eb' } }, tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': ' + fmt(ctx.raw) } } },
+      scales: {
+        x: { ticks: { color: '#8b8fa3', maxRotation: 45 }, grid: { display: false } },
+        y: { ticks: { callback: v => fmt(v), color: '#8b8fa3' }, grid: { color: '#2a2d3a' } }
+      }
+    }
+  });
+
+  // Chart: Total Asset vs Cumulative Invested
+  new Chart(document.getElementById('totalAssetChart'), {
+    type: 'line',
+    data: {
+      labels: TIMELINE.map(t => t.month),
+      datasets: [
+        {
+          label: '총 평가자산',
+          data: TIMELINE.map(t => t.total_asset),
+          borderColor: '#f59e0b',
+          backgroundColor: 'rgba(245,158,11,0.10)',
+          fill: true,
+          tension: 0.3,
+          pointRadius: 0,
+          borderWidth: 2.5,
+        },
+        {
+          label: '누적 투자금',
+          data: TIMELINE.map(t => t.cum_invested),
+          borderColor: '#ef4444',
+          backgroundColor: 'rgba(239,68,68,0.05)',
+          fill: true,
+          tension: 0.3,
+          pointRadius: 0,
+          borderWidth: 2,
+          borderDash: [5, 3],
+        },
+        {
+          label: '보유주식 평가액',
+          data: TIMELINE.map(t => t.holdings_value),
+          borderColor: '#22c55e',
+          backgroundColor: 'rgba(34,197,94,0.05)',
+          fill: false,
+          tension: 0.3,
+          pointRadius: 0,
+          borderWidth: 1.5,
+          borderDash: [3, 3],
+        },
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { labels: { color: '#e1e4eb' } },
+        tooltip: {
+          callbacks: {
+            label: ctx => ctx.dataset.label + ': ' + fmt(ctx.raw),
+            afterBody: function(items) {
+              const idx = items[0].dataIndex;
+              const t = TIMELINE[idx];
+              const pnl = t.total_asset - t.cum_invested;
+              const pnlPct = t.cum_invested > 0 ? (pnl / t.cum_invested * 100).toFixed(1) : '0.0';
+              return '손익: ' + fmt(pnl) + ' (' + pnlPct + '%)';
+            }
+          }
+        }
+      },
       scales: {
         x: { ticks: { color: '#8b8fa3', maxRotation: 45 }, grid: { display: false } },
         y: { ticks: { callback: v => fmt(v), color: '#8b8fa3' }, grid: { color: '#2a2d3a' } }
@@ -1496,6 +1866,99 @@ function initAnalysis() {
       }
     }
   });
+}
+
+// ===== BRIEFING TAB =====
+let briefingInited = false;
+let briefingActiveFilter = 'all';
+
+function initBriefing() {
+  const sel = document.getElementById('briefingDateSelect');
+  if (!briefingInited) {
+    const dates = Object.keys(BRIEFING).sort().reverse();
+    sel.innerHTML = dates.map(d => `<option value="${d}">${d}</option>`).join('');
+    briefingInited = true;
+  }
+  renderBriefing();
+}
+
+function setBriefingFilter(name, btn) {
+  briefingActiveFilter = name;
+  document.querySelectorAll('#briefingSourceFilter .filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderBriefing();
+}
+
+function renderBriefing() {
+  const sel = document.getElementById('briefingDateSelect');
+  const dateKey = sel.value;
+  const day = BRIEFING[dateKey];
+  if (!day) {
+    document.getElementById('briefingContent').innerHTML = '<p style="color:var(--text-dim)">브리핑 데이터가 없습니다.</p>';
+    return;
+  }
+
+  const sources = day.sources || [];
+
+  // Build source filter buttons
+  const filterDiv = document.getElementById('briefingSourceFilter');
+  const allActive = briefingActiveFilter === 'all' ? 'active' : '';
+  let filterHtml = `<button class="filter-btn ${allActive}" onclick="setBriefingFilter('all', this)">전체</button>`;
+  sources.forEach(s => {
+    const active = briefingActiveFilter === s.id ? 'active' : '';
+    filterHtml += `<button class="filter-btn ${active}" onclick="setBriefingFilter('${s.id || s.name}', this)">${s.name}</button>`;
+  });
+  filterDiv.innerHTML = filterHtml;
+
+  // Count
+  const totalPosts = sources.reduce((sum, s) => sum + (s.posts || []).length, 0);
+  document.getElementById('briefingSourceCount').textContent = `${sources.length}개 채널 · ${totalPosts}개 포스트`;
+
+  // Filter sources
+  const filtered = briefingActiveFilter === 'all' ? sources : sources.filter(s => (s.id || s.name) === briefingActiveFilter);
+
+  let html = '';
+  filtered.forEach(src => {
+    const posts = src.posts || [];
+    if (posts.length === 0) return;
+
+    const channelUrl = src.channel_url || src.url || '#';
+    html += `<div class="card">`;
+    html += `<div class="card-title">`;
+    html += `<a href="${channelUrl}" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:none;">${src.name}</a>`;
+    html += `<span style="font-size:0.75rem; color:var(--text-muted); font-weight:400; margin-left:8px;">${src.category || ''} · ${posts.length}개</span>`;
+    html += `</div>`;
+
+    posts.forEach(p => {
+      const time = p.time ? `<span style="color:var(--text-muted); font-size:0.75rem; min-width:40px;">${p.time}</span>` : '';
+      const text = (p.text || '').replace(/\\n/g, '<br>');
+
+      // Build link buttons
+      let linkHtml = '';
+      if (p.post_url) {
+        linkHtml += `<a href="${p.post_url}" target="_blank" rel="noopener" style="color:var(--accent); font-size:0.75rem; text-decoration:none; margin-right:8px;">원문</a>`;
+      }
+      (p.links || []).forEach((lnk, i) => {
+        if (lnk === p.post_url) return;
+        if (lnk.includes('t.me/' + (src.id || '---'))) return; // skip self-channel links
+        const domain = lnk.replace(/https?:\\/\\/([^/]+).*/, '$1').replace('www.', '');
+        linkHtml += `<a href="${lnk}" target="_blank" rel="noopener" style="color:var(--text-dim); font-size:0.75rem; text-decoration:none; margin-right:8px;">${domain}</a>`;
+      });
+
+      html += `<div style="display:flex; gap:10px; padding:10px 0; border-bottom:1px solid var(--border); align-items:flex-start;">`;
+      html += time;
+      html += `<div style="flex:1; min-width:0;">`;
+      html += `<div style="font-size:0.85rem; line-height:1.6; word-break:break-word;">${text}</div>`;
+      if (linkHtml) {
+        html += `<div style="margin-top:6px;">${linkHtml}</div>`;
+      }
+      html += `</div></div>`;
+    });
+
+    html += `</div>`;
+  });
+
+  document.getElementById('briefingContent').innerHTML = html || '<p style="color:var(--text-dim)">해당 날짜에 포스트가 없습니다.</p>';
 }
 
 // Init

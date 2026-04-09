@@ -164,8 +164,14 @@ def main():
             # Foreign stock: try Naver first, then Yahoo fallback
             price = fetch_naver_foreign_price(code)
             if price is None:
-                # Yahoo fallback: use ticker directly for US, add suffix for others
-                yahoo_ticker = code
+                # Yahoo fallback: add exchange suffix by nation
+                yahoo_suffix = {
+                    "JPN": ".T",    # Tokyo
+                    "CHN": ".SS",   # Shanghai
+                    "HKG": ".HK",   # Hong Kong
+                }
+                suffix = yahoo_suffix.get(nation, "")
+                yahoo_ticker = code + suffix if suffix and not code.endswith(suffix) else code
                 price = fetch_yahoo_price(yahoo_ticker)
 
         if price:

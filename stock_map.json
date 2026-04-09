@@ -144,11 +144,6 @@
     "nation": "KOR",
     "market": "코스닥"
   },
-  "뉴스케일파워": {
-    "code": "SMR",
-    "nation": "USA",
-    "market": "뉴욕 거래소"
-  },
   "대한광통신": {
     "code": "010170",
     "nation": "KOR",
@@ -514,11 +509,6 @@
     "nation": "KOR",
     "market": "코스닥"
   },
-  "팔란티어": {
-    "code": "PLTR",
-    "nation": "USA",
-    "market": "나스닥 증권거래소"
-  },
   "퓨쳐켐": {
     "code": "220100",
     "nation": "KOR",
@@ -623,5 +613,595 @@
     "code": "HIMX",
     "nation": "USA",
     "market": "나스닥 증권거래소"
+  },
+  "AMD(어드밴스드 마이크로 디바이시스)": {
+    "code": "AMD",
+    "nation": "USA",
+    "market": "나스닥 증권거래소"
+  },
+  "ASML 홀딩(ADR)": {
+    "code": "",
+    "nation": "",
+    "market": "NOT_FOUND"
+  },
+  "AT&T": {
+    "code": "T",
+    "nation": "USA",
+    "market": "뉴욕 거래소"
+  },
+  "Bakkt Holdings": {
+    "code": "",
+    "nation": "",
+    "market": "NOT_FOUND"
+  },
+  "DiDi Global Inc ADR": {
+    "code": "",
+    "nation": "",
+    "market": "NOT_FOUND"
+  },
+  "GLOBAL X BLOCKCHAIN ETF": {
+    "code": "BKCH",
+    "nation": "USA",
+    "market": "나스닥 증권거래소"
+  },
+  "HB솔루션": {
+    "code": "297890",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "HSBC 홀딩스 ADR": {
+    "code": "HSBC",
+    "nation": "USA",
+    "market": "뉴욕 거래소"
+  },
+  "INVESCO 태양광 ETF": {
+    "code": "",
+    "nation": "",
+    "market": "NOT_FOUND"
+  },
+  "Ivanhoe Capital": {
+    "code": "",
+    "nation": "",
+    "market": "NOT_FOUND"
+  },
+  "JYP Ent.": {
+    "code": "035900",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "L3 해리스 테크놀러지": {
+    "code": "LHX",
+    "nation": "USA",
+    "market": "뉴욕 거래소"
+  },
+  "LY 주식회사": {
+    "code": "4689",
+    "nation": "JPN",
+    "market": "도쿄 거래소"
+  },
+  "Maxar Technologies Inc.": {
+    "code": "",
+    "nation": "",
+    "market": "NOT_FOUND"
+  },
+  "Meiwu Tech Co": {
+    "code": "",
+    "nation": "",
+    "market": "NOT_FOUND"
+  },
+  "Naked Brand Grp": {
+    "code": "",
+    "nation": "",
+    "market": "NOT_FOUND"
+  },
+  "PI첨단소재": {
+    "code": "178920",
+    "nation": "KOR",
+    "market": "코스피"
+  },
+  "SK아이이테크놀로지": {
+    "code": "361610",
+    "nation": "KOR",
+    "market": "코스피"
+  },
+  "SK에코플랜트": {
+    "code": "",
+    "nation": "",
+    "market": "NOT_FOUND"
+  },
+  "SPDR S&P500 ETF": {
+    "code": "",
+    "nation": "",
+    "market": "NOT_FOUND"
+  },
+  "SPDR 금융 ETF": {
+    "code": "",
+    "nation": "",
+    "market": "NOT_FOUND"
+  },
+  "Sundial Growers": {
+    "code": "",
+    "nation": "",
+    "market": "NOT_FOUND"
+  },
+  "TIGER 미국S&P500": {
+    "code": "360750",
+    "nation": "KOR",
+    "market": "코스피"
+  },
+  "TIGER 미국나스닥100": {
+    "code": "133690",
+    "nation": "KOR",
+    "market": "코스피"
+  },
+  "TSMC(타이완반도체제조)": {
+    "code": "TSM",
+    "nation": "USA",
+    "market": "뉴욕 거래소"
+  },
+  "VF": {
+    "code": "VFC",
+    "nation": "USA",
+    "market": "뉴욕 거래소"
+  },
+  "VPC Impact Acqsn": {
+    "code": "",
+    "nation": "",
+    "market": "NOT_FOUND"
+  },
+  "Virgin Galactic Holdings": {
+    "code": "SPCE",
+    "nation": "USA",
+    "market": "뉴욕 거래소"
+  },
+  "국일제지": {
+    "code": "078130",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "글로벌엑스 블록체인 ETF": {
+    "code": "",
+    "nation": "",
+    "market": "NOT_FOUND"
+  },
+  "나노 디멘션 ADR": {
+    "code": "NNDM",
+    "nation": "USA",
+    "market": "나스닥 증권거래소"
+  },
+  "네오위즈": {
+    "code": "095660",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "넥슨 재팬": {
+    "code": "3659",
+    "nation": "JPN",
+    "market": "도쿄 거래소"
+  },
+  "녹십자엠에스": {
+    "code": "142280",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "뉴스케일 파워": {
+    "code": "SMR",
+    "nation": "USA",
+    "market": "뉴욕 거래소"
+  },
+  "다날": {
+    "code": "064260",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "더블유스코프": {
+    "code": "6619",
+    "nation": "JPN",
+    "market": "도쿄 거래소"
+  },
+  "덱스터": {
+    "code": "206560",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "두산로보틱스": {
+    "code": "454910",
+    "nation": "KOR",
+    "market": "코스피"
+  },
+  "두산퓨얼셀": {
+    "code": "336260",
+    "nation": "KOR",
+    "market": "코스피"
+  },
+  "디렉시온 미국 금융주 3배 ETF": {
+    "code": "",
+    "nation": "",
+    "market": "NOT_FOUND"
+  },
+  "디렉시온 반도체 3배 ETF": {
+    "code": "",
+    "nation": "",
+    "market": "NOT_FOUND"
+  },
+  "디앤디파마텍": {
+    "code": "347850",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "램테크놀러지": {
+    "code": "171010",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "레이크머티리얼즈": {
+    "code": "281740",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "로빈후드": {
+    "code": "HOOD",
+    "nation": "USA",
+    "market": "나스닥 증권거래소"
+  },
+  "리노공업": {
+    "code": "058470",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "마이크로디지탈": {
+    "code": "305090",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "마이크로소프트": {
+    "code": "MSFT",
+    "nation": "USA",
+    "market": "나스닥 증권거래소"
+  },
+  "맥스로텍": {
+    "code": "",
+    "nation": "",
+    "market": "NOT_FOUND"
+  },
+  "메디포스트": {
+    "code": "078160",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "바이두 ADR": {
+    "code": "BIDU",
+    "nation": "USA",
+    "market": "나스닥 증권거래소"
+  },
+  "바이오인프라생명과학": {
+    "code": "266470",
+    "nation": null,
+    "market": "코넥스"
+  },
+  "발라드 파워 시스템즈": {
+    "code": "BLDP",
+    "nation": "USA",
+    "market": "나스닥 증권거래소"
+  },
+  "뱅가드 FTSE 신흥국 주식 ETF": {
+    "code": "",
+    "nation": "",
+    "market": "NOT_FOUND"
+  },
+  "버라이존": {
+    "code": "VZ",
+    "nation": "USA",
+    "market": "뉴욕 거래소"
+  },
+  "보로노이": {
+    "code": "310210",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "비보존 제약": {
+    "code": "082800",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "비욘드 미트": {
+    "code": "BYND",
+    "nation": "USA",
+    "market": "나스닥 증권거래소"
+  },
+  "비자": {
+    "code": "V",
+    "nation": "USA",
+    "market": "뉴욕 거래소"
+  },
+  "비트맥스": {
+    "code": "377030",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "산리오": {
+    "code": "8136",
+    "nation": "JPN",
+    "market": "도쿄 거래소"
+  },
+  "삼영엠텍": {
+    "code": "054540",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "상신이디피": {
+    "code": "091580",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "슈뢰딩거": {
+    "code": "SDGR",
+    "nation": "USA",
+    "market": "나스닥 증권거래소"
+  },
+  "스톤브릿지벤처스": {
+    "code": "330730",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "시저스 엔터테인먼트": {
+    "code": "CZR",
+    "nation": "USA",
+    "market": "나스닥 증권거래소"
+  },
+  "써클 인터넷 그룹": {
+    "code": "CRCL",
+    "nation": "USA",
+    "market": "뉴욕 거래소"
+  },
+  "씨젠": {
+    "code": "096530",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "아이셰어즈 20+년 미국 국채 ETF": {
+    "code": "",
+    "nation": "",
+    "market": "NOT_FOUND"
+  },
+  "아이셰어즈 20+년 미국채 엔화 환헤지 ETF": {
+    "code": "",
+    "nation": "",
+    "market": "NOT_FOUND"
+  },
+  "아이셰어즈 MSCI 중국 ETF": {
+    "code": "",
+    "nation": "",
+    "market": "NOT_FOUND"
+  },
+  "아이셰어즈 US 의료기기 ETF": {
+    "code": "",
+    "nation": "",
+    "market": "NOT_FOUND"
+  },
+  "아이셰어즈 글로벌 클린 에너지 ETF": {
+    "code": "",
+    "nation": "",
+    "market": "NOT_FOUND"
+  },
+  "아크 유전공학 혁신 ETF": {
+    "code": "",
+    "nation": "",
+    "market": "NOT_FOUND"
+  },
+  "아크 혁신기업 ETF": {
+    "code": "",
+    "nation": "",
+    "market": "NOT_FOUND"
+  },
+  "알파벳 Class A": {
+    "code": "GOOGL",
+    "nation": "USA",
+    "market": "나스닥 증권거래소"
+  },
+  "애플": {
+    "code": "AAPL",
+    "nation": "USA",
+    "market": "나스닥 증권거래소"
+  },
+  "에볼러스": {
+    "code": "EOLS",
+    "nation": "USA",
+    "market": "나스닥 증권거래소"
+  },
+  "에브리봇": {
+    "code": "270660",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "에스티팜": {
+    "code": "237690",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "에이팩트": {
+    "code": "200470",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "에코프로": {
+    "code": "086520",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "엑슨 모빌": {
+    "code": "XOM",
+    "nation": "USA",
+    "market": "뉴욕 거래소"
+  },
+  "엔씨소프트": {
+    "code": "036570",
+    "nation": "KOR",
+    "market": "코스피"
+  },
+  "엔에이치스팩20호": {
+    "code": "",
+    "nation": "",
+    "market": "NOT_FOUND"
+  },
+  "엔피": {
+    "code": "291230",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "오픈도어 테크놀로지스": {
+    "code": "OPEN",
+    "nation": "USA",
+    "market": "나스닥 증권거래소"
+  },
+  "와이씨켐": {
+    "code": "112290",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "우리벤처파트너스": {
+    "code": "",
+    "nation": "",
+    "market": "NOT_FOUND"
+  },
+  "원익피앤이": {
+    "code": "217820",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "원준": {
+    "code": "382840",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "월트 디즈니": {
+    "code": "DIS",
+    "nation": "USA",
+    "market": "뉴욕 거래소"
+  },
+  "위지윅스튜디오": {
+    "code": "299900",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "유나이티드 스테이츠 앤티모니": {
+    "code": "UAMY",
+    "nation": "USA",
+    "market": "뉴욕 거래소"
+  },
+  "유니티소프트웨어": {
+    "code": "U",
+    "nation": "USA",
+    "market": "뉴욕 거래소"
+  },
+  "유진로봇": {
+    "code": "056080",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "이지트로닉스": {
+    "code": "377330",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "인스코비": {
+    "code": "006490",
+    "nation": "KOR",
+    "market": "코스피"
+  },
+  "제이피모간체이스": {
+    "code": "JPM",
+    "nation": "USA",
+    "market": "뉴욕 거래소"
+  },
+  "차지포인트 홀딩스": {
+    "code": "CHPT",
+    "nation": "USA",
+    "market": "뉴욕 거래소"
+  },
+  "초록뱀미디어": {
+    "code": "047820",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "카카오뱅크": {
+    "code": "323410",
+    "nation": "KOR",
+    "market": "코스피"
+  },
+  "콘텐트리중앙": {
+    "code": "036420",
+    "nation": "KOR",
+    "market": "코스피"
+  },
+  "퀀텀스케이프": {
+    "code": "QS",
+    "nation": "USA",
+    "market": "나스닥 증권거래소"
+  },
+  "크레도 테크놀로지 그룹 홀딩": {
+    "code": "CRDO",
+    "nation": "USA",
+    "market": "나스닥 증권거래소"
+  },
+  "테슬라": {
+    "code": "TSLA",
+    "nation": "USA",
+    "market": "나스닥 증권거래소"
+  },
+  "티이엠씨": {
+    "code": "425040",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "파두": {
+    "code": "440110",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "팔란티어 테크놀로지스": {
+    "code": "PLTR",
+    "nation": "USA",
+    "market": "나스닥 증권거래소"
+  },
+  "페이팔 홀딩스": {
+    "code": "PYPL",
+    "nation": "USA",
+    "market": "나스닥 증권거래소"
+  },
+  "프롬바이오": {
+    "code": "377220",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "플러그 파워": {
+    "code": "PLUG",
+    "nation": "USA",
+    "market": "나스닥 증권거래소"
+  },
+  "플레이티카 홀딩": {
+    "code": "PLTK",
+    "nation": "USA",
+    "market": "나스닥 증권거래소"
+  },
+  "피그마": {
+    "code": "FIG",
+    "nation": "USA",
+    "market": "뉴욕 거래소"
+  },
+  "하이록코리아": {
+    "code": "013030",
+    "nation": "KOR",
+    "market": "코스닥"
+  },
+  "한컴라이프케어": {
+    "code": "372910",
+    "nation": "KOR",
+    "market": "코스피"
+  },
+  "현대바이오": {
+    "code": "048410",
+    "nation": "KOR",
+    "market": "코스닥"
   }
 }

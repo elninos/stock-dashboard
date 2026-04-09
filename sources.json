@@ -1,0 +1,34 @@
+{
+  "telegram": [
+    {
+      "name": "시장 이야기 by 제이슨",
+      "id": "bumgore",
+      "url": "https://t.me/s/bumgore",
+      "category": "증권사 리포트",
+      "enabled": true
+    },
+    {
+      "name": "도PB의 생존투자",
+      "id": "survival_DoPB",
+      "url": "https://t.me/s/survival_DoPB",
+      "category": "매크로/트레이딩",
+      "enabled": true
+    },
+    {
+      "name": "그로쓰리서치",
+      "id": "growthresearch",
+      "url": "https://t.me/s/growthresearch",
+      "category": "산업/기술 분석",
+      "enabled": true
+    },
+    {
+      "name": "스파르탄 리서치",
+      "id": "SpartanResearch",
+      "url": "https://t.me/s/SpartanResearch",
+      "category": "매크로/크립토",
+      "enabled": true
+    }
+  ],
+  "blog": [],
+  "rss": []
+}
