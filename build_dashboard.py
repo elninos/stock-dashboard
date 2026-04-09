@@ -789,32 +789,32 @@ html = f"""<!DOCTYPE html>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
 :root {{
-  --bg: #070810;
-  --bg2: #0c0e17;
-  --card: #111420;
-  --card-hover: #171a29;
-  --border: #272b40;
-  --border-light: #363b55;
-  --text: #e2e5ed;
-  --text-dim: #8b8fa3;
-  --text-muted: #5d6177;
-  --accent: #6366f1;
-  --accent-dim: rgba(99,102,241,0.15);
-  --positive: #22c55e;
-  --positive-dim: rgba(34,197,94,0.12);
-  --negative: #ef4444;
-  --negative-dim: rgba(239,68,68,0.12);
-  --warn: #f59e0b;
+  --bg: #eef1f7;
+  --bg2: #f8f9fc;
+  --card: #ffffff;
+  --card-hover: #fafbff;
+  --border: #dde3ee;
+  --border-light: #c4cedd;
+  --text: #0f172a;
+  --text-dim: #4a5568;
+  --text-muted: #8898aa;
+  --accent: #1a56db;
+  --accent-dim: rgba(26,86,219,0.08);
+  --positive: #0a7c59;
+  --positive-dim: rgba(10,124,89,0.07);
+  --negative: #c81e1e;
+  --negative-dim: rgba(200,30,30,0.07);
+  --warn: #b45309;
 }}
 * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; -webkit-font-smoothing: antialiased; }}
+body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; -webkit-font-smoothing: antialiased; color: var(--text); }}
 .container {{ max-width: 1440px; margin: 0 auto; padding: 20px; }}
 h1 {{ font-size: 1.8rem; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.02em; }}
 .subtitle {{ color: var(--text-dim); margin-bottom: 24px; font-size: 0.88rem; }}
-.tabs {{ display: flex; gap: 4px; margin-bottom: 24px; background: var(--card); border-radius: 12px; padding: 4px; border: 1px solid var(--border); width: fit-content; }}
+.tabs {{ display: flex; gap: 4px; margin-bottom: 24px; background: var(--card); border-radius: 12px; padding: 4px; border: 1px solid var(--border); width: fit-content; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }}
 .tab {{ padding: 10px 24px; border-radius: 8px; cursor: pointer; font-size: 0.9rem; font-weight: 600; color: var(--text-dim); transition: all 0.25s ease; border: none; background: none; }}
-.tab:hover {{ color: var(--text); background: rgba(255,255,255,0.03); }}
-.tab.active {{ background: var(--accent); color: white; box-shadow: 0 2px 8px rgba(99,102,241,0.3); }}
+.tab:hover {{ color: var(--text); background: rgba(0,0,0,0.04); }}
+.tab.active {{ background: var(--accent); color: white; box-shadow: 0 2px 8px rgba(26,86,219,0.25); }}
 .tab-content {{ display: none; animation: fadeIn 0.3s ease; }}
 .tab-content.active {{ display: block; }}
 @keyframes fadeIn {{ from {{ opacity: 0; transform: translateY(4px); }} to {{ opacity: 1; transform: translateY(0); }} }}
@@ -831,7 +831,7 @@ h1 {{ font-size: 1.8rem; font-weight: 700; margin-bottom: 8px; letter-spacing: -
 .kpi-row {{ display: grid; gap: 14px; margin-bottom: 14px; }}
 .kpi-row.primary {{ grid-template-columns: repeat(4, 1fr); }}
 .kpi-row.secondary {{ grid-template-columns: repeat(5, 1fr); }}
-.kpi {{ background: var(--card); border-radius: 12px; padding: 18px 20px; border: 1px solid var(--border); transition: border-color 0.2s, transform 0.2s; }}
+.kpi {{ background: var(--card); border-radius: 12px; padding: 18px 20px; border: 1px solid var(--border); transition: border-color 0.2s, transform 0.2s; box-shadow: 0 1px 3px rgba(0,0,0,0.07); }}
 .kpi:hover {{ border-color: var(--border-light); transform: translateY(-1px); }}
 .kpi.border-positive {{ border-image: linear-gradient(135deg, var(--positive-dim), transparent 60%) 1; }}
 .kpi.border-negative {{ border-image: linear-gradient(135deg, var(--negative-dim), transparent 60%) 1; }}
@@ -846,7 +846,7 @@ h1 {{ font-size: 1.8rem; font-weight: 700; margin-bottom: 8px; letter-spacing: -
 .card {{ background: var(--card); border-radius: 12px; padding: 20px; border: 1px solid var(--border); margin-bottom: 20px; transition: border-color 0.2s; }}
 .card:hover {{ border-color: var(--border-light); }}
 .card-title {{ font-size: 1.05rem; font-weight: 600; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }}
-.chart-container {{ position: relative; height: 220px; overflow: hidden; background: rgba(0,0,0,0.15); border-radius: 8px; }}
+.chart-container {{ position: relative; height: 220px; overflow: hidden; background: rgba(26,86,219,0.03); border-radius: 8px; }}
 
 /* === Treemap === */
 .treemap-container {{ position: relative; width: 100%; height: 420px; border-radius: 8px; overflow: hidden; }}
@@ -877,15 +877,15 @@ th:hover {{ color: var(--text); }}
 th.sort-asc::after {{ content: ' \\25B2'; font-size: 0.6rem; }}
 th.sort-desc::after {{ content: ' \\25BC'; font-size: 0.6rem; }}
 td {{ padding: 9px 12px; border-bottom: 1px solid var(--border); white-space: nowrap; font-feature-settings: 'tnum'; font-variant-numeric: tabular-nums; }}
-tr:nth-child(even) td {{ background: rgba(255,255,255,0.015); }}
-tr:hover td {{ background: rgba(99, 102, 241, 0.06); }}
+tr:nth-child(even) td {{ background: rgba(26,86,219,0.025); }}
+tr:hover td {{ background: rgba(26,86,219,0.05); }}
 .text-right {{ text-align: right; }}
 .text-center {{ text-align: center; }}
 .mono {{ font-family: 'SF Mono', 'Cascadia Code', 'Consolas', monospace; font-size: 0.82rem; }}
 
 /* === Holdings grid === */
 .holdings-grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }}
-.holding-card {{ background: rgba(99,102,241,0.08); border-radius: 10px; padding: 14px; border: 1px solid rgba(99,102,241,0.15); transition: border-color 0.2s; }}
+.holding-card {{ background: rgba(26,86,219,0.06); border-radius: 10px; padding: 14px; border: 1px solid rgba(26,86,219,0.15); transition: border-color 0.2s; }}
 .holding-card:hover {{ border-color: rgba(99,102,241,0.3); }}
 .holding-name {{ font-weight: 600; font-size: 0.9rem; margin-bottom: 6px; }}
 .holding-detail {{ font-size: 0.8rem; color: var(--text-dim); font-feature-settings: 'tnum'; }}
@@ -899,7 +899,7 @@ tr:hover td {{ background: rgba(99, 102, 241, 0.06); }}
 /* === Toolbar === */
 .search-box {{ background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; padding: 8px 14px; color: var(--text); font-size: 0.9rem; width: 260px; transition: border-color 0.2s; }}
 .search-box::placeholder {{ color: var(--text-muted); }}
-.search-box:focus {{ outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(99,102,241,0.1); }}
+.search-box:focus {{ outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(26,86,219,0.12); }}
 .toolbar {{ display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 16px; }}
 .filter-group {{ display: flex; gap: 4px; }}
 .filter-btn {{ padding: 5px 14px; border-radius: 16px; cursor: pointer; font-size: 0.8rem; font-weight: 500; border: 1px solid var(--border); background: var(--card); color: var(--text-dim); transition: all 0.2s; }}
@@ -908,7 +908,7 @@ tr:hover td {{ background: rgba(99, 102, 241, 0.06); }}
 .result-count {{ font-size: 0.8rem; color: var(--text-dim); margin-left: auto; font-feature-settings: 'tnum'; }}
 
 /* === Tooltip === */
-.tm-tooltip {{ position: fixed; pointer-events: none; background: rgba(15,17,23,0.95); border: 1px solid var(--border-light); border-radius: 8px; padding: 10px 14px; font-size: 0.82rem; color: var(--text); z-index: 1000; backdrop-filter: blur(8px); box-shadow: 0 4px 16px rgba(0,0,0,0.4); display: none; max-width: 280px; }}
+.tm-tooltip {{ position: fixed; pointer-events: none; background: #ffffff; border: 1px solid var(--border-light); border-radius: 8px; padding: 10px 14px; font-size: 0.82rem; color: var(--text); z-index: 1000; backdrop-filter: blur(8px); box-shadow: 0 8px 24px rgba(0,0,0,0.12), 0 2px 8px rgba(0,0,0,0.08); display: none; max-width: 280px; }}
 .tm-tooltip .tt-name {{ font-weight: 700; margin-bottom: 4px; font-size: 0.9rem; }}
 .tm-tooltip .tt-row {{ display: flex; justify-content: space-between; gap: 16px; font-feature-settings: 'tnum'; }}
 .tm-tooltip .tt-label {{ color: var(--text-dim); }}
@@ -942,10 +942,10 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
 .acct-card:hover {{
   border-color: var(--accent);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
 }}
 .acct-card.has-loan {{
-  border-color: rgba(239,68,68,0.25);
+  border-color: rgba(200,30,30,0.3);
 }}
 .acct-card.has-loan:hover {{
   border-color: var(--negative);
@@ -978,10 +978,10 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
   padding: 2px 7px;
   border-radius: 4px;
 }}
-.acct-card.broker-nh    .acct-broker-tag {{ background: rgba(59,130,246,0.15); color: #60a5fa; }}
-.acct-card.broker-namu  .acct-broker-tag {{ background: rgba(139,92,246,0.15); color: #a78bfa; }}
-.acct-card.broker-toss  .acct-broker-tag {{ background: rgba(6,182,212,0.15);  color: #22d3ee; }}
-.acct-card.has-loan     .acct-broker-tag {{ background: rgba(239,68,68,0.12);  color: #f87171; }}
+.acct-card.broker-nh    .acct-broker-tag {{ background: rgba(59,130,246,0.12); color: #1d4ed8; }}
+.acct-card.broker-namu  .acct-broker-tag {{ background: rgba(139,92,246,0.12); color: #7c3aed; }}
+.acct-card.broker-toss  .acct-broker-tag {{ background: rgba(6,182,212,0.12);  color: #0369a1; }}
+.acct-card.has-loan     .acct-broker-tag {{ background: rgba(200,30,30,0.10);  color: #b91c1c; }}
 .acct-acct-id {{
   font-size: 0.72rem;
   color: var(--text-muted);
@@ -1063,13 +1063,14 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
 .dashboard-header {{
   display: flex; align-items: center; justify-content: space-between;
   padding: 20px 24px; margin-bottom: 20px;
-  background: linear-gradient(135deg, rgba(99,102,241,0.12) 0%, rgba(99,102,241,0.03) 60%, transparent 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #f5f7ff 100%);
   border-radius: 16px; border: 1px solid var(--border);
   position: relative; overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 }}
 .dashboard-header::before {{
   content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
-  background: linear-gradient(to bottom, #818cf8, #6366f1, #4f46e5); border-radius: 4px 0 0 4px;
+  background: linear-gradient(to bottom, #3b82f6, #1a56db, #1e40af); border-radius: 4px 0 0 4px;
 }}
 .header-brand {{ font-size: 1.05rem; font-weight: 700; letter-spacing: -0.02em; display: flex; align-items: center; gap: 8px; }}
 .header-brand-icon {{ font-size: 1.3rem; }}
@@ -1085,20 +1086,20 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
 .header-divider {{ width: 1px; height: 36px; background: var(--border); }}
 .header-refresh-btn {{
   padding: 8px 16px; border: 1px solid var(--border-light); border-radius: 8px;
-  background: rgba(99,102,241,0.08); color: var(--text-dim); cursor: pointer;
+  background: rgba(26,86,219,0.06); color: var(--text-dim); cursor: pointer;
   font-size: 0.8rem; font-weight: 600; transition: all 0.2s; white-space: nowrap;
 }}
 .header-refresh-btn:hover {{ color: var(--accent); border-color: var(--accent); background: var(--accent-dim); }}
 .header-refresh-btn:disabled {{ opacity: 0.5; cursor: not-allowed; }}
 
 /* === Card improvements === */
-.card {{ box-shadow: 0 4px 20px rgba(0,0,0,0.4); }}
-.card:hover {{ box-shadow: 0 6px 28px rgba(0,0,0,0.5); border-color: var(--border-light); }}
+.card {{ box-shadow: 0 1px 4px rgba(0,0,0,0.07), 0 4px 12px rgba(0,0,0,0.04); }}
+.card:hover {{ box-shadow: 0 4px 16px rgba(0,0,0,0.10); border-color: var(--border-light); }}
 .card-title {{ border-left: 3px solid var(--accent); padding-left: 10px; }}
 
-/* === KPI improvement: glow on positive/negative === */
-.kpi.border-positive {{ box-shadow: 0 0 0 1px rgba(34,197,94,0.25), inset 0 0 40px rgba(34,197,94,0.03); }}
-.kpi.border-negative {{ box-shadow: 0 0 0 1px rgba(239,68,68,0.25), inset 0 0 40px rgba(239,68,68,0.03); }}
+/* === KPI improvement: border highlight on positive/negative === */
+.kpi.border-positive {{ box-shadow: 0 1px 3px rgba(0,0,0,0.07), 0 0 0 1px rgba(10,124,89,0.2); }}
+.kpi.border-negative {{ box-shadow: 0 1px 3px rgba(0,0,0,0.07), 0 0 0 1px rgba(200,30,30,0.2); }}
 
 /* === Chart fix: prevent canvas overflow === */
 .chart-container canvas {{ max-height: 350px; }}
@@ -1108,6 +1109,7 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
   display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
   padding: 8px 14px; background: var(--card); border-radius: 8px;
   border: 1px solid var(--border); margin-bottom: 20px; font-size: 0.78rem; color: var(--text-dim);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 }}
 .info-bar-item {{ display: flex; align-items: center; gap: 6px; }}
 .info-bar-dot {{ width: 6px; height: 6px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }}
@@ -1434,6 +1436,19 @@ const BRIEFING = """ + json.dumps(briefing_data, ensure_ascii=False) + """;
 const BRIEFING_SUMMARY = """ + json.dumps(briefing_summary, ensure_ascii=False) + """;
 const STOCK_CODES = """ + json.dumps({name: v["code"] for name, v in raw_prices.items() if not name.startswith("_") and "code" in v}, ensure_ascii=False) + """;
 const STOCK_NATIONS = """ + json.dumps({name: v.get("nation","KOR") for name, v in raw_prices.items() if not name.startswith("_") and "code" in v}, ensure_ascii=False) + """;
+
+// Light theme Chart.js defaults
+Chart.defaults.color = '#4a5568';
+Chart.defaults.borderColor = '#dde3ee';
+Chart.defaults.font.family = "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif";
+Chart.defaults.font.size = 11;
+Chart.defaults.plugins.legend.labels.color = '#0f172a';
+Chart.defaults.plugins.tooltip.backgroundColor = '#ffffff';
+Chart.defaults.plugins.tooltip.titleColor = '#0f172a';
+Chart.defaults.plugins.tooltip.bodyColor = '#4a5568';
+Chart.defaults.plugins.tooltip.borderColor = '#dde3ee';
+Chart.defaults.plugins.tooltip.borderWidth = 1;
+Chart.defaults.plugins.tooltip.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
 
 async function refreshPrices() {
   const btn = document.getElementById('refresh-btn');
@@ -1945,8 +1960,8 @@ new Chart(document.getElementById('dashAssetChart'), {
       {
         label: '총 평가자산',
         data: TIMELINE.map(t => t.total_asset),
-        borderColor: '#f59e0b',
-        backgroundColor: 'rgba(245,158,11,0.08)',
+        borderColor: '#1a56db',
+        backgroundColor: 'rgba(26,86,219,0.07)',
         fill: true,
         tension: 0.3,
         pointRadius: 0,
@@ -1955,7 +1970,7 @@ new Chart(document.getElementById('dashAssetChart'), {
       {
         label: '누적 투자금',
         data: TIMELINE.map(t => t.cum_invested),
-        borderColor: '#ef4444',
+        borderColor: '#94a3b8',
         backgroundColor: 'rgba(239,68,68,0.03)',
         fill: false,
         tension: 0.3,
@@ -1968,7 +1983,7 @@ new Chart(document.getElementById('dashAssetChart'), {
   options: {
     responsive: true, maintainAspectRatio: false,
     plugins: {
-      legend: { labels: { color: '#e1e4eb' } },
+      legend: { labels: { color: '#0f172a' } },
       tooltip: {
         callbacks: {
           label: ctx => ctx.dataset.label + ': ' + fmt(ctx.raw),
@@ -1983,8 +1998,8 @@ new Chart(document.getElementById('dashAssetChart'), {
       }
     },
     scales: {
-      x: { ticks: { color: '#8b8fa3', maxRotation: 45 }, grid: { display: false } },
-      y: { ticks: { callback: v => fmt(v), color: '#8b8fa3' }, grid: { color: '#2a2d3a' } }
+      x: { ticks: { color: '#4a5568', maxRotation: 45 }, grid: { display: false } },
+      y: { ticks: { callback: v => fmt(v), color: '#4a5568' }, grid: { color: 'rgba(0,0,0,0.06)' } }
     }
   }
 });
@@ -2011,14 +2026,14 @@ function initOverallCharts() {
       plugins: { legend: { display: false },
         tooltip: { callbacks: { label: ctx => fmt(ctx.raw) + '원' } } },
       scales: {
-        x: { ticks: { callback: v => fmt(v), color: '#8b8fa3' }, grid: { color: '#2a2d3a' } },
-        y: { ticks: { color: '#e1e4eb', font: { size: 11 } }, grid: { display: false } }
+        x: { ticks: { callback: v => fmt(v), color: '#4a5568' }, grid: { color: 'rgba(0,0,0,0.06)' } },
+        y: { ticks: { color: '#0f172a', font: { size: 11 } }, grid: { display: false } }
       }
     }
   });
 
-  new Chart(document.getElementById('topWinnersChart'), chartOpts(winners, '#22c55e'));
-  new Chart(document.getElementById('topLosersChart'), chartOpts(losers, '#ef4444'));
+  new Chart(document.getElementById('topWinnersChart'), chartOpts(winners, '#0a7c59'));
+  new Chart(document.getElementById('topLosersChart'), chartOpts(losers, '#c81e1e'));
 
   // Nation donut chart
   const nationLabel = { 'KOR': '한국', 'USA': '미국', 'JPN': '일본', 'CHN': '중국', 'HKG': '홍콩' };
@@ -2048,7 +2063,7 @@ function initOverallCharts() {
         data: nationEntries.map(e => e[1]),
         backgroundColor: nationEntries.map(e => nationColorMap[e[0]] || '#8b8fa3'),
         borderWidth: 3,
-        borderColor: '#1a1d29',
+        borderColor: '#ffffff',
         hoverOffset: 8,
       }]
     },
@@ -2056,7 +2071,7 @@ function initOverallCharts() {
       responsive: true, maintainAspectRatio: false,
       cutout: '62%',
       plugins: {
-        legend: { position: 'bottom', labels: { color: '#e1e4eb', font: { size: 11 }, padding: 10, boxWidth: 12 } },
+        legend: { position: 'bottom', labels: { color: '#0f172a', font: { size: 11 }, padding: 10, boxWidth: 12 } },
         tooltip: {
           callbacks: {
             label: ctx => {
@@ -2091,10 +2106,10 @@ function initAnalysis() {
     },
     options: {
       responsive: true, maintainAspectRatio: false,
-      plugins: { legend: { labels: { color: '#e1e4eb' } }, tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': ' + fmt(ctx.raw) } } },
+      plugins: { legend: { labels: { color: '#0f172a' } }, tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': ' + fmt(ctx.raw) } } },
       scales: {
-        x: { ticks: { color: '#8b8fa3', maxRotation: 45 }, grid: { display: false } },
-        y: { ticks: { callback: v => fmt(v), color: '#8b8fa3' }, grid: { color: '#2a2d3a' } }
+        x: { ticks: { color: '#4a5568', maxRotation: 45 }, grid: { display: false } },
+        y: { ticks: { callback: v => fmt(v), color: '#4a5568' }, grid: { color: 'rgba(0,0,0,0.06)' } }
       }
     }
   });
@@ -2108,8 +2123,8 @@ function initAnalysis() {
         {
           label: '총 평가자산',
           data: TIMELINE.map(t => t.total_asset),
-          borderColor: '#f59e0b',
-          backgroundColor: 'rgba(245,158,11,0.10)',
+          borderColor: '#1a56db',
+          backgroundColor: 'rgba(26,86,219,0.07)',
           fill: true,
           tension: 0.3,
           pointRadius: 0,
@@ -2118,8 +2133,8 @@ function initAnalysis() {
         {
           label: '누적 투자금',
           data: TIMELINE.map(t => t.cum_invested),
-          borderColor: '#ef4444',
-          backgroundColor: 'rgba(239,68,68,0.05)',
+          borderColor: '#94a3b8',
+          backgroundColor: 'rgba(148,163,184,0.05)',
           fill: true,
           tension: 0.3,
           pointRadius: 0,
@@ -2129,8 +2144,8 @@ function initAnalysis() {
         {
           label: '보유주식 평가액',
           data: TIMELINE.map(t => t.holdings_value),
-          borderColor: '#22c55e',
-          backgroundColor: 'rgba(34,197,94,0.05)',
+          borderColor: '#0a7c59',
+          backgroundColor: 'rgba(10,124,89,0.05)',
           fill: false,
           tension: 0.3,
           pointRadius: 0,
@@ -2142,7 +2157,7 @@ function initAnalysis() {
     options: {
       responsive: true, maintainAspectRatio: false,
       plugins: {
-        legend: { labels: { color: '#e1e4eb' } },
+        legend: { labels: { color: '#0f172a' } },
         tooltip: {
           callbacks: {
             label: ctx => ctx.dataset.label + ': ' + fmt(ctx.raw),
@@ -2157,8 +2172,8 @@ function initAnalysis() {
         }
       },
       scales: {
-        x: { ticks: { color: '#8b8fa3', maxRotation: 45 }, grid: { display: false } },
-        y: { ticks: { callback: v => fmt(v), color: '#8b8fa3' }, grid: { color: '#2a2d3a' } }
+        x: { ticks: { color: '#4a5568', maxRotation: 45 }, grid: { display: false } },
+        y: { ticks: { callback: v => fmt(v), color: '#4a5568' }, grid: { color: 'rgba(0,0,0,0.06)' } }
       }
     }
   });
@@ -2172,8 +2187,8 @@ function initAnalysis() {
         {
           label: '누적 매수',
           data: TIMELINE.map(t => t.cum_invested),
-          borderColor: '#ef4444',
-          backgroundColor: 'rgba(239,68,68,0.08)',
+          borderColor: '#c81e1e',
+          backgroundColor: 'rgba(200,30,30,0.08)',
           fill: true,
           tension: 0.3,
           pointRadius: 0,
@@ -2182,8 +2197,8 @@ function initAnalysis() {
         {
           label: '누적 매도',
           data: TIMELINE.map(t => t.cum_returned),
-          borderColor: '#22c55e',
-          backgroundColor: 'rgba(34,197,94,0.08)',
+          borderColor: '#0a7c59',
+          backgroundColor: 'rgba(10,124,89,0.08)',
           fill: true,
           tension: 0.3,
           pointRadius: 0,
@@ -2192,8 +2207,8 @@ function initAnalysis() {
         {
           label: '누적 배당',
           data: TIMELINE.map(t => t.cum_dividends),
-          borderColor: '#6366f1',
-          backgroundColor: 'rgba(99,102,241,0.08)',
+          borderColor: '#1a56db',
+          backgroundColor: 'rgba(26,86,219,0.08)',
           fill: true,
           tension: 0.3,
           pointRadius: 0,
@@ -2203,10 +2218,10 @@ function initAnalysis() {
     },
     options: {
       responsive: true, maintainAspectRatio: false,
-      plugins: { legend: { labels: { color: '#e1e4eb' } }, tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': ' + fmt(ctx.raw) } } },
+      plugins: { legend: { labels: { color: '#0f172a' } }, tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': ' + fmt(ctx.raw) } } },
       scales: {
-        x: { ticks: { color: '#8b8fa3', maxRotation: 45 }, grid: { display: false } },
-        y: { ticks: { callback: v => fmt(v), color: '#8b8fa3' }, grid: { color: '#2a2d3a' } }
+        x: { ticks: { color: '#4a5568', maxRotation: 45 }, grid: { display: false } },
+        y: { ticks: { callback: v => fmt(v), color: '#4a5568' }, grid: { color: 'rgba(0,0,0,0.06)' } }
       }
     }
   });
@@ -2219,8 +2234,8 @@ function initAnalysis() {
       datasets: [{
         label: '누적 순현금흐름',
         data: TIMELINE.map(t => t.net_cashflow),
-        borderColor: '#6366f1',
-        backgroundColor: 'rgba(99,102,241,0.1)',
+        borderColor: '#1a56db',
+        backgroundColor: 'rgba(26,86,219,0.1)',
         fill: true,
         tension: 0.3,
         pointRadius: 0,
@@ -2228,10 +2243,10 @@ function initAnalysis() {
     },
     options: {
       responsive: true, maintainAspectRatio: false,
-      plugins: { legend: { labels: { color: '#e1e4eb' } }, tooltip: { callbacks: { label: ctx => fmt(ctx.raw) + '원' } } },
+      plugins: { legend: { labels: { color: '#0f172a' } }, tooltip: { callbacks: { label: ctx => fmt(ctx.raw) + '원' } } },
       scales: {
-        x: { ticks: { color: '#8b8fa3', maxRotation: 45 }, grid: { display: false } },
-        y: { ticks: { callback: v => fmt(v), color: '#8b8fa3' }, grid: { color: '#2a2d3a' } }
+        x: { ticks: { color: '#4a5568', maxRotation: 45 }, grid: { display: false } },
+        y: { ticks: { callback: v => fmt(v), color: '#4a5568' }, grid: { color: 'rgba(0,0,0,0.06)' } }
       }
     }
   });
@@ -2245,8 +2260,8 @@ function initAnalysis() {
       datasets: [{
         label: '배당금',
         data: divMonths.map(t => t.dividends),
-        backgroundColor: 'rgba(99,102,241,0.6)',
-        borderColor: '#6366f1',
+        backgroundColor: 'rgba(26,86,219,0.6)',
+        borderColor: '#1a56db',
         borderWidth: 1,
         borderRadius: 4,
       }]
@@ -2255,8 +2270,8 @@ function initAnalysis() {
       responsive: true, maintainAspectRatio: false,
       plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => fmt(ctx.raw) + '원' } } },
       scales: {
-        x: { ticks: { color: '#8b8fa3', maxRotation: 45 }, grid: { display: false } },
-        y: { ticks: { callback: v => fmt(v), color: '#8b8fa3' }, grid: { color: '#2a2d3a' } }
+        x: { ticks: { color: '#4a5568', maxRotation: 45 }, grid: { display: false } },
+        y: { ticks: { callback: v => fmt(v), color: '#4a5568' }, grid: { color: 'rgba(0,0,0,0.06)' } }
       }
     }
   });
@@ -2301,7 +2316,7 @@ function setBriefingPeriod(key, btn) {
 }
 
 function sentimentBadge(s) {
-  const map = { positive: ['#22c55e','#052e16','▲ 긍정'], negative: ['#ef4444','#2d0c0c','▼ 부정'], neutral: ['#8b8fa3','#1a1b24','— 중립'] };
+  const map = { positive: ['#0a7c59','rgba(10,124,89,0.08)','▲ 긍정'], negative: ['#c81e1e','rgba(200,30,30,0.08)','▼ 부정'], neutral: ['#4a5568','rgba(74,85,104,0.08)','— 중립'] };
   const [color, bg, label] = map[s] || map.neutral;
   return `<span style="background:${bg}; color:${color}; border:1px solid ${color}40; border-radius:4px; padding:2px 8px; font-size:0.72rem; font-weight:600;">${label}</span>`;
 }
@@ -2334,9 +2349,9 @@ function renderBriefingSummary() {
     html += `<div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap:12px; margin-bottom:20px;">`;
     themes.forEach((t, i) => {
       const channels = (t.mentioned_in || []).map(c =>
-        `<span style="background:rgba(99,102,241,0.12); color:#a5b4fc; border-radius:4px; padding:1px 7px; font-size:0.72rem;">${c}</span>`
+        `<span style="background:rgba(26,86,219,0.08); color:#1a56db; border-radius:4px; padding:1px 7px; font-size:0.72rem;">${c}</span>`
       ).join(' ');
-      html += `<div class="card" style="margin-bottom:0; border-top:2px solid ${t.sentiment==='positive'?'#22c55e':t.sentiment==='negative'?'#ef4444':'#8b8fa3'};">
+      html += `<div class="card" style="margin-bottom:0; border-top:2px solid ${t.sentiment==='positive'?'#0a7c59':t.sentiment==='negative'?'#c81e1e':'#8898aa'};">
         <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:8px; margin-bottom:8px;">
           <div style="font-size:0.88rem; font-weight:600; line-height:1.4;">${t.title}</div>
           ${sentimentBadge(t.sentiment)}
@@ -2356,7 +2371,7 @@ function renderBriefingSummary() {
       <div style="display:flex; flex-wrap:wrap; gap:10px;">`;
     stocks.forEach(s => {
       const pct = s.price_change_pct;
-      const pctStr = pct != null ? (pct >= 0 ? `<span style="color:#22c55e">+${pct.toFixed(1)}%</span>` : `<span style="color:#ef4444">${pct.toFixed(1)}%</span>`) : '';
+      const pctStr = pct != null ? (pct >= 0 ? `<span style="color:#0a7c59">+${pct.toFixed(1)}%</span>` : `<span style="color:#c81e1e">${pct.toFixed(1)}%</span>`) : '';
       const chs = (s.channels || []).map(c =>
         `<span style="color:var(--text-muted); font-size:0.7rem;">${c}</span>`
       ).join(', ');
