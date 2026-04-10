@@ -2571,6 +2571,41 @@ function renderPeriodAnalysis() {
         d.fees  ? `<span style="color:var(--text-muted); font-size:0.78rem;">비용 ${fmt(d.fees)}</span>` : '',
       ].filter(Boolean).join('');
       const netColor = net >= 0 ? 'var(--positive)' : 'var(--negative)';
+
+      // ── 집계 summary 계산 ──
+      const buyTxs  = d.trades.filter(t => t.t === 'buy');
+      const sellTxs = d.trades.filter(t => t.t === 'sell');
+      const buyQty  = buyTxs.reduce((s, t) => s + t.q, 0);
+      const sellQty = sellTxs.reduce((s, t) => s + t.q, 0);
+      const avgBuy  = buyQty  > 0 ? d.buys  / buyQty  : 0;
+      const avgSell = sellQty > 0 ? d.sells / sellQty : 0;
+      // 기간 내 실현손익 추정: 매도 시 평균 매수가 기준 (동일 기간 내 매수 있는 경우만)
+      const matchedQty = Math.min(buyQty, sellQty);
+      const realizedEst = matchedQty > 0 && buyQty > 0
+        ? (avgSell - avgBuy) * matchedQty
+        : (sellQty > 0 && buyQty === 0 ? d.sells : 0); // 기간 전 매수분 매도: 매도액만 표시
+
+      // summary 셀 helper
+      const sumCell = (label, val, subLabel, subVal, color) => `
+        <div style="text-align:center; padding:10px 8px; border-right:1px solid var(--border);">
+          <div style="font-size:0.68rem; color:var(--text-muted); font-weight:600; text-transform:uppercase; letter-spacing:.04em; margin-bottom:4px;">${label}</div>
+          <div style="font-size:0.88rem; font-weight:700; color:${color}; font-feature-settings:'tnum';">${val}</div>
+          ${subVal !== null ? `<div style="font-size:0.72rem; color:var(--text-muted); margin-top:2px;">${subLabel} ${subVal}</div>` : ''}
+        </div>`;
+
+      const summaryCols = [
+        d.buys  ? sumCell('매수', `${fmt(d.buys)}`, `${buyQty.toLocaleString('ko-KR')}주 avg`, avgBuy > 0 ? avgBuy.toLocaleString('ko-KR', {maximumFractionDigits:0})+'원' : '─', 'var(--negative)') : '',
+        d.sells ? sumCell('매도', `${fmt(d.sells)}`, `${sellQty.toLocaleString('ko-KR')}주 avg`, avgSell > 0 ? avgSell.toLocaleString('ko-KR', {maximumFractionDigits:0})+'원' : '─', 'var(--positive)') : '',
+        d.divs  ? sumCell('배당', `${fmt(d.divs)}`, null, null, '#1a56db') : '',
+        (d.buys && d.sells) ? sumCell('avg 차익/주', avgSell > 0 && avgBuy > 0 ? `${(avgSell-avgBuy>=0?'+':'')}${(avgSell-avgBuy).toLocaleString('ko-KR',{maximumFractionDigits:0})}원` : '─', matchedQty > 0 ? `${matchedQty.toLocaleString('ko-KR')}주 기준` : '', '', (avgSell-avgBuy) >= 0 ? 'var(--positive)' : 'var(--negative)') : '',
+        sumCell('순현금', `${net>=0?'+':''}${fmt(net)}`, null, null, net >= 0 ? 'var(--positive)' : 'var(--negative)'),
+      ].filter(Boolean);
+
+      const summaryBar = `
+        <div style="display:grid; grid-template-columns:repeat(${summaryCols.length},1fr); border-bottom:1px solid var(--border); background:var(--bg);">
+          ${summaryCols.join('')}
+        </div>`;
+
       const rows = d.trades.map(tx => `
         <tr style="border-top:1px solid var(--border);">
           <td style="padding:6px 14px; color:var(--text-dim); white-space:nowrap; font-size:0.8rem;">${tx.d}</td>
@@ -2589,6 +2624,7 @@ function renderPeriodAnalysis() {
           <span id="stockArrow_${idx}" style="color:var(--text-muted); font-size:0.8rem;">▾</span>
         </div>
         <div id="stockTrades_${idx}" style="display:none;">
+          ${summaryBar}
           <table style="width:100%; border-collapse:collapse;"><tbody>${rows}</tbody></table>
         </div>
       </div>`;

@@ -1,0 +1,1203 @@
+{
+  "_updated": "2026-04-10",
+  "_key_dates": {
+    "mtd": "2026-03-31",
+    "qtd": "2026-03-31",
+    "ytd": "2025-12-31",
+    "t12m": "2025-04-09"
+  },
+  "2025-04-09": {
+    "portfolio_value": 517550827,
+    "stocks": {
+      "HPSP": {
+        "qty": 2,
+        "price_native": 22100,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 22100,
+        "value_krw": 44200,
+        "note": "krx_2025-04-09"
+      },
+      "SK바이오팜": {
+        "qty": 240.0,
+        "price_native": 95400,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 95400,
+        "value_krw": 22896000,
+        "note": "krx_2025-04-09"
+      },
+      "글로벌엑스 중국 클린 에너지 ETF(HKD)": {
+        "qty": 50,
+        "price_native": 66.8054,
+        "currency": "HKD",
+        "fx_rate": 191.2665,
+        "price_krw": 12778,
+        "value_krw": 638882,
+        "note": "yf_2025-04-09"
+      },
+      "노바텍": {
+        "qty": 1,
+        "price_native": 20600,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 20600,
+        "value_krw": 20600,
+        "note": "krx_2025-04-09"
+      },
+      "뉴스케일 파워": {
+        "qty": 225.0,
+        "price_native": 16.06,
+        "currency": "USD",
+        "fx_rate": 1486.13,
+        "price_krw": 23867,
+        "value_krw": 5370131,
+        "note": "yf_2025-04-09"
+      },
+      "두산에너빌리티": {
+        "qty": 21,
+        "price_native": 20150,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 20150,
+        "value_krw": 423150,
+        "note": "krx_2025-04-09"
+      },
+      "디렉시온 반도체 3배 ETF": {
+        "qty": 295,
+        "price_native": 22.7085,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 23,
+        "value_krw": 6699,
+        "note": "no_code→cost"
+      },
+      "레딧": {
+        "qty": 58.0,
+        "price_native": 110.86,
+        "currency": "USD",
+        "fx_rate": 1486.13,
+        "price_krw": 164752,
+        "value_krw": 9555638,
+        "note": "yf_2025-04-09"
+      },
+      "레이크머티리얼즈": {
+        "qty": 510.0,
+        "price_native": 12030,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 12030,
+        "value_krw": 6135300,
+        "note": "krx_2025-04-09"
+      },
+      "리가켐바이오": {
+        "qty": 20,
+        "price_native": 93700,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 93700,
+        "value_krw": 1874000,
+        "note": "krx_2025-04-09"
+      },
+      "마이크로디지탈": {
+        "qty": 3.0,
+        "price_native": 8980,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 8980,
+        "value_krw": 26940,
+        "note": "krx_2025-04-09"
+      },
+      "마이크로소프트": {
+        "qty": 20,
+        "price_native": 387.5233,
+        "currency": "USD",
+        "fx_rate": 1486.13,
+        "price_krw": 575910,
+        "value_krw": 11518200,
+        "note": "yf_2025-04-09"
+      },
+      "비덴트": {
+        "qty": 300,
+        "price_native": 3320,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 3320,
+        "value_krw": 996000,
+        "note": "krx_2025-04-09"
+      },
+      "비트코인 전략 2배 ETF": {
+        "qty": 476,
+        "price_native": 55.0168,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 55,
+        "value_krw": 26188,
+        "note": "no_code→cost"
+      },
+      "산리오": {
+        "qty": 100.0,
+        "price_native": 1124.2816,
+        "currency": "JPY",
+        "fx_rate": 10.1929,
+        "price_krw": 11460,
+        "value_krw": 1145969,
+        "note": "yf_2025-04-09"
+      },
+      "삼천당제약": {
+        "qty": 58,
+        "price_native": 146400,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 146400,
+        "value_krw": 8491200,
+        "note": "krx_2025-04-09"
+      },
+      "슈뢰딩거": {
+        "qty": 54,
+        "price_native": 19.52,
+        "currency": "USD",
+        "fx_rate": 1486.13,
+        "price_krw": 29009,
+        "value_krw": 1566500,
+        "note": "yf_2025-04-09"
+      },
+      "스톤브릿지벤처스": {
+        "qty": 600.0,
+        "price_native": 3740,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 3740,
+        "value_krw": 2244000,
+        "note": "krx_2025-04-09"
+      },
+      "쏘닉스": {
+        "qty": 5,
+        "price_native": 2155,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 2155,
+        "value_krw": 10775,
+        "note": "krx_2025-04-09"
+      },
+      "아미코젠": {
+        "qty": 200,
+        "price_native": 3100,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 3100,
+        "value_krw": 620000,
+        "note": "krx_2025-04-09"
+      },
+      "아스트": {
+        "qty": 1,
+        "price_native": 522,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 522,
+        "value_krw": 522,
+        "note": "krx_2025-04-09"
+      },
+      "아이센스": {
+        "qty": 200,
+        "price_native": 13200,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 13200,
+        "value_krw": 2640000,
+        "note": "krx_2025-04-09"
+      },
+      "알파벳 Class A": {
+        "qty": 50,
+        "price_native": 158.1616,
+        "currency": "USD",
+        "fx_rate": 1486.13,
+        "price_krw": 235049,
+        "value_krw": 11752435,
+        "note": "yf_2025-04-09"
+      },
+      "에볼러스": {
+        "qty": 210,
+        "price_native": 10.37,
+        "currency": "USD",
+        "fx_rate": 1486.13,
+        "price_krw": 15411,
+        "value_krw": 3236345,
+        "note": "yf_2025-04-09"
+      },
+      "에스아이리소스": {
+        "qty": 1,
+        "price_native": 247,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 247,
+        "value_krw": 247,
+        "note": "krx_2025-04-09"
+      },
+      "에이티넘인베스트": {
+        "qty": 550,
+        "price_native": 2090,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 2090,
+        "value_krw": 1149500,
+        "note": "krx_2025-04-09"
+      },
+      "에이피알": {
+        "qty": 100.0,
+        "price_native": 62900,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 62900,
+        "value_krw": 6290000,
+        "note": "krx_2025-04-09"
+      },
+      "우성아이비": {
+        "qty": 3106,
+        "price_native": -1060.9897,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": -1061,
+        "value_krw": -3295434,
+        "note": "no_code→cost"
+      },
+      "원익피앤이": {
+        "qty": 12,
+        "price_native": 1822,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 1822,
+        "value_krw": 21864,
+        "note": "krx_2025-04-09"
+      },
+      "원준": {
+        "qty": 1,
+        "price_native": 7910,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 7910,
+        "value_krw": 7910,
+        "note": "krx_2025-04-09"
+      },
+      "융기실리콘자재": {
+        "qty": 688.0,
+        "price_native": 14.71,
+        "currency": "CNY",
+        "fx_rate": 1300.0,
+        "price_krw": 19123,
+        "value_krw": 13156624,
+        "note": "yf_2025-04-09"
+      },
+      "크래프톤": {
+        "qty": 55.0,
+        "price_native": 354500,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 354500,
+        "value_krw": 19497500,
+        "note": "krx_2025-04-09"
+      },
+      "통위": {
+        "qty": 300.0,
+        "price_native": 17.2,
+        "currency": "CNY",
+        "fx_rate": 1300.0,
+        "price_krw": 22360,
+        "value_krw": 6708000,
+        "note": "yf_2025-04-09"
+      },
+      "티에프이": {
+        "qty": 200.0,
+        "price_native": 15810,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 15810,
+        "value_krw": 3162000,
+        "note": "krx_2025-04-09"
+      },
+      "파마리서치": {
+        "qty": 1080.0,
+        "price_native": 321000,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 321000,
+        "value_krw": 346680000,
+        "note": "krx_2025-04-09"
+      },
+      "파크시스템스": {
+        "qty": 90,
+        "price_native": 184500,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 184500,
+        "value_krw": 16605000,
+        "note": "krx_2025-04-09"
+      },
+      "프로셰어즈 QQQ 3배 ETF": {
+        "qty": 150.0,
+        "price_native": 26.1224,
+        "currency": "USD",
+        "fx_rate": 1486.13,
+        "price_krw": 38821,
+        "value_krw": 5823192,
+        "note": "yf_2025-04-09"
+      },
+      "필옵틱스": {
+        "qty": 5,
+        "price_native": 28950,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 28950,
+        "value_krw": 144750,
+        "note": "krx_2025-04-09"
+      },
+      "하이록코리아": {
+        "qty": 400,
+        "price_native": 25900,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 25900,
+        "value_krw": 10360000,
+        "note": "krx_2025-04-09"
+      }
+    }
+  },
+  "2025-12-31": {
+    "portfolio_value": 898712386,
+    "stocks": {
+      "GST": {
+        "qty": 1.0,
+        "price_native": 28850,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 28850,
+        "value_krw": 28850,
+        "note": "krx_2025-12-30"
+      },
+      "HPSP": {
+        "qty": 2,
+        "price_native": 33500,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 33500,
+        "value_krw": 67000,
+        "note": "krx_2025-12-30"
+      },
+      "LS머트리얼즈": {
+        "qty": 1500,
+        "price_native": 12180,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 12180,
+        "value_krw": 18270000,
+        "note": "krx_2025-12-30"
+      },
+      "NAVER": {
+        "qty": 300,
+        "price_native": 242500,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 242500,
+        "value_krw": 72750000,
+        "note": "krx_2025-12-30"
+      },
+      "SK바이오팜": {
+        "qty": 200.0,
+        "price_native": 124600,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 124600,
+        "value_krw": 24920000,
+        "note": "krx_2025-12-30"
+      },
+      "글로벌엑스 중국 클린 에너지 ETF(HKD)": {
+        "qty": 50,
+        "price_native": 90.1086,
+        "currency": "HKD",
+        "fx_rate": 184.8082,
+        "price_krw": 16653,
+        "value_krw": 832640,
+        "note": "yf_2025-12-31"
+      },
+      "노바텍": {
+        "qty": 1,
+        "price_native": 20050,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 20050,
+        "value_krw": 20050,
+        "note": "krx_2025-12-30"
+      },
+      "뉴스케일 파워": {
+        "qty": 439.0,
+        "price_native": 14.17,
+        "currency": "USD",
+        "fx_rate": 1437.91,
+        "price_krw": 20375,
+        "value_krw": 8944706,
+        "note": "yf_2025-12-31"
+      },
+      "대한광통신": {
+        "qty": 4705.0,
+        "price_native": 2132,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 2132,
+        "value_krw": 10031060,
+        "note": "krx_2025-12-30"
+      },
+      "두산": {
+        "qty": 75.0,
+        "price_native": 781000,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 781000,
+        "value_krw": 58575000,
+        "note": "krx_2025-12-30"
+      },
+      "두산에너빌리티": {
+        "qty": 21,
+        "price_native": 75300,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 75300,
+        "value_krw": 1581300,
+        "note": "krx_2025-12-30"
+      },
+      "리노공업": {
+        "qty": 22.0,
+        "price_native": 60300,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 60300,
+        "value_krw": 1326600,
+        "note": "krx_2025-12-30"
+      },
+      "마이크로소프트": {
+        "qty": 20,
+        "price_native": 482.5187,
+        "currency": "USD",
+        "fx_rate": 1437.91,
+        "price_krw": 693818,
+        "value_krw": 13876369,
+        "note": "yf_2025-12-31"
+      },
+      "보로노이": {
+        "qty": 43,
+        "price_native": 217500,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 217500,
+        "value_krw": 9352500,
+        "note": "krx_2025-12-30"
+      },
+      "비덴트": {
+        "qty": 300,
+        "price_native": 3320,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 3320,
+        "value_krw": 996000,
+        "note": "krx_2025-12-30"
+      },
+      "비트코인 전략 2배 ETF": {
+        "qty": 71,
+        "price_native": 51.2817,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 51,
+        "value_krw": 3641,
+        "note": "no_code→cost"
+      },
+      "비트팜스": {
+        "qty": 355.0,
+        "price_native": 2.35,
+        "currency": "USD",
+        "fx_rate": 1437.91,
+        "price_krw": 3379,
+        "value_krw": 1199576,
+        "note": "yf_2025-12-31"
+      },
+      "산리오": {
+        "qty": 100.0,
+        "price_native": 976.9095,
+        "currency": "JPY",
+        "fx_rate": 9.1935,
+        "price_krw": 8981,
+        "value_krw": 898122,
+        "note": "yf_2025-12-30"
+      },
+      "삼성SDI": {
+        "qty": 35.0,
+        "price_native": 269500,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 269500,
+        "value_krw": 9432500,
+        "note": "krx_2025-12-30"
+      },
+      "삼천당제약": {
+        "qty": 97,
+        "price_native": 232500,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 232500,
+        "value_krw": 22552500,
+        "note": "krx_2025-12-30"
+      },
+      "셀시어스 홀딩스": {
+        "qty": 100.0,
+        "price_native": 45.74,
+        "currency": "USD",
+        "fx_rate": 1437.91,
+        "price_krw": 65770,
+        "value_krw": 6577000,
+        "note": "yf_2025-12-31"
+      },
+      "실리콘투": {
+        "qty": 110.0,
+        "price_native": 38650,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 38650,
+        "value_krw": 4251500,
+        "note": "krx_2025-12-30"
+      },
+      "쏘닉스": {
+        "qty": 5,
+        "price_native": 1680,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 1680,
+        "value_krw": 8400,
+        "note": "krx_2025-12-30"
+      },
+      "아미코젠": {
+        "qty": 200,
+        "price_native": 1782,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 1782,
+        "value_krw": 356400,
+        "note": "krx_2025-12-30"
+      },
+      "아스트": {
+        "qty": 1,
+        "price_native": 587,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 587,
+        "value_krw": 587,
+        "note": "krx_2025-12-30"
+      },
+      "아이센스": {
+        "qty": 200,
+        "price_native": 15900,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 15900,
+        "value_krw": 3180000,
+        "note": "krx_2025-12-30"
+      },
+      "알파벳 Class A": {
+        "qty": 50,
+        "price_native": 312.7798,
+        "currency": "USD",
+        "fx_rate": 1437.91,
+        "price_krw": 449749,
+        "value_krw": 22487460,
+        "note": "yf_2025-12-31"
+      },
+      "에스아이리소스": {
+        "qty": 1,
+        "price_native": 252,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 252,
+        "value_krw": 252,
+        "note": "krx_2025-12-30"
+      },
+      "에이티넘인베스트": {
+        "qty": 550,
+        "price_native": 2870,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 2870,
+        "value_krw": 1578500,
+        "note": "krx_2025-12-30"
+      },
+      "에이피알": {
+        "qty": 181.0,
+        "price_native": 231000,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 231000,
+        "value_krw": 41811000,
+        "note": "krx_2025-12-30"
+      },
+      "오스코텍": {
+        "qty": 100.0,
+        "price_native": 45200,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 45200,
+        "value_krw": 4520000,
+        "note": "krx_2025-12-30"
+      },
+      "우성아이비": {
+        "qty": 3106,
+        "price_native": -1060.9897,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": -1061,
+        "value_krw": -3295434,
+        "note": "no_code→cost"
+      },
+      "원익피앤이": {
+        "qty": 12,
+        "price_native": 3640,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 3640,
+        "value_krw": 43680,
+        "note": "krx_2025-12-30"
+      },
+      "원준": {
+        "qty": 1,
+        "price_native": 7680,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 7680,
+        "value_krw": 7680,
+        "note": "krx_2025-12-30"
+      },
+      "융기실리콘자재": {
+        "qty": 688.0,
+        "price_native": 18.2,
+        "currency": "CNY",
+        "fx_rate": 1300.0,
+        "price_krw": 23660,
+        "value_krw": 16278080,
+        "note": "yf_2025-12-31"
+      },
+      "이오테크닉스": {
+        "qty": 76,
+        "price_native": 272000,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 272000,
+        "value_krw": 20672000,
+        "note": "krx_2025-12-30"
+      },
+      "토모큐브": {
+        "qty": 868.0,
+        "price_native": 51000,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 51000,
+        "value_krw": 44268000,
+        "note": "krx_2025-12-30"
+      },
+      "통위": {
+        "qty": 300.0,
+        "price_native": 20.52,
+        "currency": "CNY",
+        "fx_rate": 1300.0,
+        "price_krw": 26676,
+        "value_krw": 8002800,
+        "note": "yf_2025-12-31"
+      },
+      "파마리서치": {
+        "qty": 1070.0,
+        "price_native": 403000,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 403000,
+        "value_krw": 431210000,
+        "note": "krx_2025-12-30"
+      },
+      "파크시스템스": {
+        "qty": 150,
+        "price_native": 209000,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 209000,
+        "value_krw": 31350000,
+        "note": "krx_2025-12-30"
+      },
+      "프로셰어즈 QQQ 3배 ETF": {
+        "qty": 10,
+        "price_native": 52.633,
+        "currency": "USD",
+        "fx_rate": 1437.91,
+        "price_krw": 75682,
+        "value_krw": 756815,
+        "note": "yf_2025-12-31"
+      },
+      "필옵틱스": {
+        "qty": 205,
+        "price_native": 43850,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 43850,
+        "value_krw": 8989250,
+        "note": "krx_2025-12-30"
+      }
+    }
+  },
+  "2026-03-31": {
+    "portfolio_value": 899945640,
+    "stocks": {
+      "HPSP": {
+        "qty": 2,
+        "price_native": 40900,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 40900,
+        "value_krw": 81800,
+        "note": "krx_2026-03-31"
+      },
+      "KODEX 코스닥150레버리지": {
+        "qty": 1250.0,
+        "price_native": 14120,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 14120,
+        "value_krw": 17650000,
+        "note": "krx_2026-03-31"
+      },
+      "LS머트리얼즈": {
+        "qty": 500,
+        "price_native": 17620,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 17620,
+        "value_krw": 8810000,
+        "note": "krx_2026-03-31"
+      },
+      "NAVER": {
+        "qty": 200,
+        "price_native": 201500,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 201500,
+        "value_krw": 40300000,
+        "note": "krx_2026-03-31"
+      },
+      "RF머트리얼즈": {
+        "qty": 898.0,
+        "price_native": 61900,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 61900,
+        "value_krw": 55586200,
+        "note": "krx_2026-03-31"
+      },
+      "SK바이오팜": {
+        "qty": 200.0,
+        "price_native": 94800,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 94800,
+        "value_krw": 18960000,
+        "note": "krx_2026-03-31"
+      },
+      "SK하이닉스": {
+        "qty": 6,
+        "price_native": 807000,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 807000,
+        "value_krw": 4842000,
+        "note": "krx_2026-03-31"
+      },
+      "TIME K바이오액티브": {
+        "qty": 1000.0,
+        "price_native": 18940,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 18940,
+        "value_krw": 18940000,
+        "note": "krx_2026-03-31"
+      },
+      "TIME 차이나AI테크액티브": {
+        "qty": 400.0,
+        "price_native": 15770,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 15770,
+        "value_krw": 6308000,
+        "note": "krx_2026-03-31"
+      },
+      "글로벌엑스 중국 클린 에너지 ETF(HKD)": {
+        "qty": 50,
+        "price_native": 112.5,
+        "currency": "HKD",
+        "fx_rate": 193.4888,
+        "price_krw": 21767,
+        "value_krw": 1088374,
+        "note": "yf_2026-03-31"
+      },
+      "노바텍": {
+        "qty": 1,
+        "price_native": 20650,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 20650,
+        "value_krw": 20650,
+        "note": "krx_2026-03-31"
+      },
+      "뉴스케일 파워": {
+        "qty": 402.0,
+        "price_native": 10.84,
+        "currency": "USD",
+        "fx_rate": 1516.13,
+        "price_krw": 16435,
+        "value_krw": 6606809,
+        "note": "yf_2026-03-31"
+      },
+      "대한광통신": {
+        "qty": 7189.0,
+        "price_native": 7240,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 7240,
+        "value_krw": 52048360,
+        "note": "krx_2026-03-31"
+      },
+      "두산": {
+        "qty": 75.0,
+        "price_native": 1026000,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 1026000,
+        "value_krw": 76950000,
+        "note": "krx_2026-03-31"
+      },
+      "두산에너빌리티": {
+        "qty": 21,
+        "price_native": 91800,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 91800,
+        "value_krw": 1927800,
+        "note": "krx_2026-03-31"
+      },
+      "로빈후드": {
+        "qty": 120.0,
+        "price_native": 69.3,
+        "currency": "USD",
+        "fx_rate": 1516.13,
+        "price_krw": 105068,
+        "value_krw": 12608137,
+        "note": "yf_2026-03-31"
+      },
+      "로켓 랩": {
+        "qty": 83,
+        "price_native": 64.22,
+        "currency": "USD",
+        "fx_rate": 1516.13,
+        "price_krw": 97366,
+        "value_krw": 8081367,
+        "note": "yf_2026-03-31"
+      },
+      "리노공업": {
+        "qty": 22.0,
+        "price_native": 94400,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 94400,
+        "value_krw": 2076800,
+        "note": "krx_2026-03-31"
+      },
+      "마이크로소프트": {
+        "qty": 21,
+        "price_native": 370.17,
+        "currency": "USD",
+        "fx_rate": 1516.13,
+        "price_krw": 561226,
+        "value_krw": 11785743,
+        "note": "yf_2026-03-31"
+      },
+      "보로노이": {
+        "qty": 53,
+        "price_native": 307000,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 307000,
+        "value_krw": 16271000,
+        "note": "krx_2026-03-31"
+      },
+      "비덴트": {
+        "qty": 300,
+        "price_native": 3320,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 3320,
+        "value_krw": 996000,
+        "note": "krx_2026-03-31"
+      },
+      "비트코인 전략 2배 ETF": {
+        "qty": 250,
+        "price_native": 1814.68,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 1815,
+        "value_krw": 453670,
+        "note": "no_code→cost"
+      },
+      "비트팜스": {
+        "qty": 5.0,
+        "price_native": 1.95,
+        "currency": "USD",
+        "fx_rate": 1516.13,
+        "price_krw": 2956,
+        "value_krw": 14782,
+        "note": "yf_2026-03-31"
+      },
+      "산리오": {
+        "qty": 100.0,
+        "price_native": 979.2,
+        "currency": "JPY",
+        "fx_rate": 9.4849,
+        "price_krw": 9288,
+        "value_krw": 928761,
+        "note": "yf_2026-03-31"
+      },
+      "삼양엔씨켐": {
+        "qty": 220.0,
+        "price_native": 15300,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 15300,
+        "value_krw": 3366000,
+        "note": "krx_2026-03-31"
+      },
+      "셀시어스 홀딩스": {
+        "qty": 101.0,
+        "price_native": 35.48,
+        "currency": "USD",
+        "fx_rate": 1516.13,
+        "price_krw": 53792,
+        "value_krw": 5433022,
+        "note": "yf_2026-03-31"
+      },
+      "셀트리온": {
+        "qty": 26.0,
+        "price_native": 197200,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 197200,
+        "value_krw": 5127200,
+        "note": "krx_2026-03-31"
+      },
+      "쏘닉스": {
+        "qty": 5,
+        "price_native": 3125,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 3125,
+        "value_krw": 15625,
+        "note": "krx_2026-03-31"
+      },
+      "아미코젠": {
+        "qty": 200,
+        "price_native": 1625,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 1625,
+        "value_krw": 325000,
+        "note": "krx_2026-03-31"
+      },
+      "아스트": {
+        "qty": 1,
+        "price_native": 702,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 702,
+        "value_krw": 702,
+        "note": "krx_2026-03-31"
+      },
+      "아이센스": {
+        "qty": 200,
+        "price_native": 18890,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 18890,
+        "value_krw": 3778000,
+        "note": "krx_2026-03-31"
+      },
+      "아이언디바이스": {
+        "qty": 1000.0,
+        "price_native": 3190,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 3190,
+        "value_krw": 3190000,
+        "note": "krx_2026-03-31"
+      },
+      "알파벳 Class A": {
+        "qty": 40,
+        "price_native": 287.56,
+        "currency": "USD",
+        "fx_rate": 1516.13,
+        "price_krw": 435978,
+        "value_krw": 17439134,
+        "note": "yf_2026-03-31"
+      },
+      "에스아이리소스": {
+        "qty": 1,
+        "price_native": 240,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 240,
+        "value_krw": 240,
+        "note": "krx_2026-03-31"
+      },
+      "에이티넘인베스트": {
+        "qty": 550,
+        "price_native": 2925,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 2925,
+        "value_krw": 1608750,
+        "note": "krx_2026-03-31"
+      },
+      "에이피알": {
+        "qty": 51.0,
+        "price_native": 337000,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 337000,
+        "value_krw": 17187000,
+        "note": "krx_2026-03-31"
+      },
+      "오스코텍": {
+        "qty": 308.0,
+        "price_native": 50600,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 50600,
+        "value_krw": 15584800,
+        "note": "krx_2026-03-31"
+      },
+      "우성아이비": {
+        "qty": 3106,
+        "price_native": -1060.9897,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": -1061,
+        "value_krw": -3295434,
+        "note": "no_code→cost"
+      },
+      "원익피앤이": {
+        "qty": 12,
+        "price_native": 2955,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 2955,
+        "value_krw": 35460,
+        "note": "krx_2026-03-31"
+      },
+      "원준": {
+        "qty": 1,
+        "price_native": 8460,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 8460,
+        "value_krw": 8460,
+        "note": "krx_2026-03-31"
+      },
+      "유나이티드 스테이츠 앤티모니": {
+        "qty": 667.0,
+        "price_native": 8.73,
+        "currency": "USD",
+        "fx_rate": 1516.13,
+        "price_krw": 13236,
+        "value_krw": 8828289,
+        "note": "yf_2026-03-31"
+      },
+      "융기실리콘자재": {
+        "qty": 688.0,
+        "price_native": 17.54,
+        "currency": "CNY",
+        "fx_rate": 1300.0,
+        "price_krw": 22802,
+        "value_krw": 15687776,
+        "note": "yf_2026-03-31"
+      },
+      "이오테크닉스": {
+        "qty": 41,
+        "price_native": 384500,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 384500,
+        "value_krw": 15764500,
+        "note": "krx_2026-03-31"
+      },
+      "크레도 테크놀로지 그룹 홀딩": {
+        "qty": 40.0,
+        "price_native": 93.87,
+        "currency": "USD",
+        "fx_rate": 1516.13,
+        "price_krw": 142319,
+        "value_krw": 5692765,
+        "note": "yf_2026-03-31"
+      },
+      "토모큐브": {
+        "qty": 918.0,
+        "price_native": 53600,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 53600,
+        "value_krw": 49204800,
+        "note": "krx_2026-03-31"
+      },
+      "통위": {
+        "qty": 300.0,
+        "price_native": 16.52,
+        "currency": "CNY",
+        "fx_rate": 1300.0,
+        "price_krw": 21476,
+        "value_krw": 6442800,
+        "note": "yf_2026-03-31"
+      },
+      "파마리서치": {
+        "qty": 1035.0,
+        "price_native": 299000,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 299000,
+        "value_krw": 309465000,
+        "note": "krx_2026-03-31"
+      },
+      "파크시스템스": {
+        "qty": 150,
+        "price_native": 234500,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 234500,
+        "value_krw": 35175000,
+        "note": "krx_2026-03-31"
+      },
+      "프로셰어즈 QQQ 3배 ETF": {
+        "qty": 208,
+        "price_native": 41.68,
+        "currency": "USD",
+        "fx_rate": 1516.13,
+        "price_krw": 63192,
+        "value_krw": 13143998,
+        "note": "yf_2026-03-31"
+      },
+      "필옵틱스": {
+        "qty": 205,
+        "price_native": 36100,
+        "currency": "KRW",
+        "fx_rate": 1.0,
+        "price_krw": 36100,
+        "value_krw": 7400500,
+        "note": "krx_2026-03-31"
+      }
+    }
+  }
+}
