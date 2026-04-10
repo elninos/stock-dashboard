@@ -1401,8 +1401,14 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
       <div id="periodPortfolioDiff"></div>
     </div>
     <div>
-      <div style="font-size:0.75rem; font-weight:700; color:var(--text-muted); letter-spacing:.06em; text-transform:uppercase; margin-bottom:8px;">거래 내역</div>
-      <div id="periodTrades" style="max-height:320px; overflow-y:auto;"></div>
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
+        <div style="font-size:0.75rem; font-weight:700; color:var(--text-muted); letter-spacing:.06em; text-transform:uppercase;">거래 내역</div>
+        <div class="filter-group" id="tradeViewToggle">
+          <button class="filter-btn active" onclick="setTradeView('all',this)">전체</button>
+          <button class="filter-btn" onclick="setTradeView('stock',this)">종목별</button>
+        </div>
+      </div>
+      <div id="periodTrades" style="max-height:420px; overflow-y:auto;"></div>
     </div>
   </div>
 </div>
@@ -2319,6 +2325,23 @@ function initAnalysis() {
 
 // ===== PERIOD ANALYSIS =====
 let periodAnalysisInited = false;
+let tradeViewMode = 'all';
+
+function setTradeView(mode, btn) {
+  tradeViewMode = mode;
+  document.querySelectorAll('#tradeViewToggle .filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderPeriodAnalysis();
+}
+
+function toggleStockTrades(idx) {
+  const el = document.getElementById('stockTrades_' + idx);
+  const arrow = document.getElementById('stockArrow_' + idx);
+  if (!el) return;
+  const open = el.style.display !== 'none';
+  el.style.display = open ? 'none' : 'block';
+  if (arrow) arrow.textContent = open ? '▾' : '▴';
+}
 function initPeriodAnalysis() {
   if (periodAnalysisInited) return;
   periodAnalysisInited = true;
@@ -2438,7 +2461,58 @@ function renderPeriodAnalysis() {
   let tradeHtml = '';
   if (sorted.length === 0) {
     tradeHtml = '<div style="font-size:0.82rem; color:var(--text-muted);">해당 기간 거래 없음</div>';
+  } else if (tradeViewMode === 'stock') {
+    // ── 종목별 grouped view ──
+    // Build stock map ordered by total traded amount desc
+    const stockOrder = [];
+    const stockMap = {};
+    for (const tx of sorted) {
+      const key = tx.s || '(기타)';
+      if (!stockMap[key]) { stockMap[key] = { buys:0, sells:0, divs:0, fees:0, count:0, trades:[] }; stockOrder.push(key); }
+      stockMap[key].trades.push(tx);
+      stockMap[key].count++;
+      if (tx.t === 'buy')      stockMap[key].buys  += tx.a;
+      else if (tx.t === 'sell')     stockMap[key].sells += tx.a;
+      else if (tx.t === 'dividend') stockMap[key].divs  += tx.a;
+      else                          stockMap[key].fees  += tx.a;
+    }
+    // Sort by total volume (buys+sells) desc
+    stockOrder.sort((a, b) => (stockMap[b].buys + stockMap[b].sells) - (stockMap[a].buys + stockMap[a].sells));
+
+    tradeHtml = stockOrder.map((stock, idx) => {
+      const d = stockMap[stock];
+      const net = d.sells + d.divs - d.buys - d.fees;
+      const chips = [
+        d.buys  ? `<span style="color:var(--negative); font-size:0.78rem;">매수 ${fmt(d.buys)}</span>`  : '',
+        d.sells ? `<span style="color:var(--positive); font-size:0.78rem;">매도 ${fmt(d.sells)}</span>` : '',
+        d.divs  ? `<span style="color:#1a56db;        font-size:0.78rem;">배당 ${fmt(d.divs)}</span>`  : '',
+        d.fees  ? `<span style="color:var(--text-muted); font-size:0.78rem;">비용 ${fmt(d.fees)}</span>` : '',
+      ].filter(Boolean).join('');
+      const netColor = net >= 0 ? 'var(--positive)' : 'var(--negative)';
+      const rows = d.trades.map(tx => `
+        <tr style="border-top:1px solid var(--border);">
+          <td style="padding:6px 14px; color:var(--text-dim); white-space:nowrap; font-size:0.8rem;">${tx.d}</td>
+          <td style="padding:6px 10px;"><span style="color:${typeColor[tx.t]||'var(--text)'}; font-weight:600; font-size:0.76rem;">${typeMap[tx.t]||tx.t}</span></td>
+          <td style="padding:6px 10px; text-align:right; font-feature-settings:'tnum'; font-size:0.8rem;">${tx.a ? tx.a.toLocaleString('ko-KR') : '─'}</td>
+          <td style="padding:6px 10px; text-align:right; font-feature-settings:'tnum'; font-size:0.8rem; color:var(--text-dim);">${tx.q ? tx.q.toLocaleString('ko-KR')+'주' : '─'}</td>
+          <td style="padding:6px 14px; font-size:0.75rem; color:var(--text-muted);">${tx.acc || '─'}</td>
+        </tr>`).join('');
+      return `
+      <div style="border:1px solid var(--border); border-radius:8px; margin-bottom:6px; overflow:hidden;">
+        <div onclick="toggleStockTrades(${idx})" style="display:flex; align-items:center; gap:10px; padding:10px 14px; cursor:pointer; background:var(--bg2); user-select:none;">
+          <span style="font-weight:700; font-size:0.88rem; min-width:80px;">${stock}</span>
+          <span style="display:flex; gap:10px; flex:1; flex-wrap:wrap;">${chips}</span>
+          <span style="font-size:0.8rem; font-weight:600; color:${netColor}; white-space:nowrap;">${net>=0?'+':''}${fmt(net)}</span>
+          <span style="font-size:0.72rem; color:var(--text-muted); white-space:nowrap;">${d.count}건</span>
+          <span id="stockArrow_${idx}" style="color:var(--text-muted); font-size:0.8rem;">▾</span>
+        </div>
+        <div id="stockTrades_${idx}" style="display:none;">
+          <table style="width:100%; border-collapse:collapse;"><tbody>${rows}</tbody></table>
+        </div>
+      </div>`;
+    }).join('');
   } else {
+    // ── 전체 flat view ──
     tradeHtml = `<table style="width:100%; border-collapse:collapse; font-size:0.82rem;">
       <thead><tr style="border-bottom:2px solid var(--border);">
         <th style="text-align:left; padding:6px 10px; color:var(--text-muted); font-size:0.72rem; text-transform:uppercase; font-weight:600;">날짜</th>
