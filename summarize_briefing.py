@@ -118,6 +118,7 @@ JSON 형식:
       "title": "테마명",
       "summary": "테마 설명 (2-3문장)",
       "sentiment": "positive/negative/neutral",
+      "related_stocks": ["종목명1", "종목명2"],
       "mentioned_in": ["채널명1", "채널명2"]{multi_day_fields}
     }}
   ],

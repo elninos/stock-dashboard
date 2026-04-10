@@ -2741,6 +2741,9 @@ function renderBriefingSummary() {
       const channels = (t.mentioned_in || []).map(c =>
         `<span style="display:inline-flex; align-items:center; background:rgba(26,86,219,0.07); color:#1a56db; border-radius:4px; padding:2px 8px; font-size:0.71rem; font-weight:500;">${c}</span>`
       ).join('');
+      const relStocks = (t.related_stocks || []).map(s =>
+        `<span style="display:inline-flex; align-items:center; background:rgba(10,124,89,0.08); color:#0a7c59; border-radius:4px; padding:2px 8px; font-size:0.71rem; font-weight:600;">📈 ${s}</span>`
+      ).join('');
 
       html += `
       <div class="card" style="margin-bottom:0; padding:18px 20px; display:flex; flex-direction:column; gap:0;">
@@ -2749,6 +2752,7 @@ function renderBriefingSummary() {
         </div>
         <div style="font-size:0.92rem; font-weight:700; line-height:1.4; color:var(--text); margin-bottom:10px;">${t.title}</div>
         <p style="font-size:0.83rem; line-height:1.7; color:var(--text-dim); margin:0 0 14px; flex:1;">${t.summary}</p>
+        ${relStocks ? `<div style="display:flex; flex-wrap:wrap; gap:4px; margin-bottom:8px;">${relStocks}</div>` : ''}
         <div style="display:flex; flex-wrap:wrap; gap:4px; border-top:1px solid var(--border); padding-top:10px;">${channels}</div>
       </div>`;
     });
