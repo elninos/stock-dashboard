@@ -579,6 +579,48 @@ for m in months_sorted:
     })
 
 
+# ===== Period performance (MTD / QTD / YTD / T12M) =====
+_today_dt = date.today()
+_this_year  = str(_today_dt.year)
+_this_month = _today_dt.strftime('%Y-%m')
+_q_num      = (_today_dt.month - 1) // 3 + 1
+_q_start    = f"{_this_year}-{(_q_num-1)*3+1:02d}"
+_ytd_base   = f"{_today_dt.year - 1}-12"          # Dec of prev year
+_t12m_start = (_today_dt.replace(day=1) - timedelta(days=1)).replace(
+    year=_today_dt.year - 1).strftime('%Y-%m')    # same month, prev year
+
+def _tl_sum(start_m, end_m):
+    rows = [t for t in timeline if start_m <= t['month'] <= end_m]
+    return dict(
+        realized  = sum(t['realized_pnl'] for t in rows),
+        dividends = sum(t['dividends'] for t in rows),
+        invested  = sum(t['invested'] for t in rows),
+        returned  = sum(t['returned'] for t in rows),
+    )
+
+def _mv_at(month_str):
+    for t in timeline:
+        if t['month'] == month_str:
+            return t['holdings_value']
+    return 0
+
+def _make_period(label, start_m, base_month):
+    s = _tl_sum(start_m, _this_month)
+    income = s['realized'] + s['dividends']
+    base_mv = _mv_at(base_month)
+    # Approximate period return: income / starting cost basis
+    income_pct = (income / base_mv * 100) if base_mv > 0 else 0
+    return dict(label=label, income=income, realized=s['realized'],
+                dividends=s['dividends'], income_pct=income_pct,
+                invested=s['invested'], returned=s['returned'])
+
+period_perf = {
+    'mtd' : _make_period('이번 달',   _this_month, f"{_today_dt.year}-{(_today_dt.month-2)%12+1:02d}" if _today_dt.month > 1 else _ytd_base),
+    'qtd' : _make_period('이번 분기', _q_start,    f"{_this_year}-{(_q_num-1)*3:02d}" if _q_num > 1 else _ytd_base),
+    'ytd' : _make_period('올해 YTD',  f"{_this_year}-01", _ytd_base),
+    't12m': _make_period('최근 1년',  _t12m_start, _t12m_start),
+}
+
 # === Win rate ===
 win_count = sum(1 for m in stock_summaries.values() if m.get("net_pnl", 0) > 0)
 loss_count = sum(1 for m in stock_summaries.values() if m.get("net_pnl", 0) < 0)
@@ -1207,68 +1249,18 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
     </div>
   </div>
 
+  <!-- 기간별 성과 -->
+  <div class="kpi-row secondary" style="grid-template-columns:repeat(4,1fr); margin-bottom:16px;">
+    {"".join(f'''
+    <div class="kpi {"border-positive" if p["income"] >= 0 else "border-negative"}">
+      <div class="kpi-label">{p["label"]}</div>
+      <div class="kpi-value compact {pnl_class(p["income"])}">{fmt_num(p["income"])}</div>
+      <div class="kpi-sub">실현 {fmt_num(p["realized"])} · 배당 {fmt_num(p["dividends"])}</div>
+    </div>''' for p in period_perf.values())}
+  </div>
+
   <!-- 계좌별 현황 -->
   <div class="acct-summary-grid" id="acctSummaryGrid"></div>
-
-  <!-- 상세 지표: 접기/펼치기 -->
-  <details class="detail-section" style="margin-bottom: 24px;">
-    <summary class="detail-toggle">상세 지표 보기</summary>
-    <div class="detail-content">
-      <div class="kpi-row secondary" style="margin-top:14px;">
-        <div class="kpi">
-          <div class="kpi-label">총 매수</div>
-          <div class="kpi-value compact">{fmt_num(overall_invested)}</div>
-        </div>
-        <div class="kpi">
-          <div class="kpi-label">총 매도</div>
-          <div class="kpi-value compact">{fmt_num(overall_returned)}</div>
-        </div>
-        <div class="kpi">
-          <div class="kpi-label">수수료 + 세금</div>
-          <div class="kpi-value compact negative">{fmt_num(overall_fees + overall_tax)}</div>
-          <div class="kpi-sub">수수료 {fmt_num(overall_fees)} · 세금 {fmt_num(overall_tax)}</div>
-        </div>
-        <div class="kpi">
-          <div class="kpi-label">순입금</div>
-          <div class="kpi-value compact">{fmt_num(overall_net_deposit)}</div>
-          <div class="kpi-sub">입금 {fmt_num(overall_deposits)} / 출금 {fmt_num(overall_withdrawals)}</div>
-        </div>
-        <div class="kpi">
-          <div class="kpi-label">대출잔액</div>
-          <div class="kpi-value compact {"negative" if overall_loan_balance > 0 else ""}">{fmt_num(overall_loan_balance)}</div>
-          <div class="kpi-sub">레버리지 {total_market_value / max(total_market_value - overall_loan_balance, 1):.2f}x</div>
-        </div>
-      </div>
-      <div class="kpi-row secondary" style="grid-template-columns: repeat(6, 1fr);">
-        <div class="kpi border-negative">
-          <div class="kpi-label">대출이자</div>
-          <div class="kpi-value compact negative">{fmt_num(overall_loan_interest)}</div>
-        </div>
-        <div class="kpi">
-          <div class="kpi-label">대여수수료</div>
-          <div class="kpi-value compact positive">{fmt_num(overall_lending_fee)}</div>
-        </div>
-        <div class="kpi">
-          <div class="kpi-label">순금융비용</div>
-          <div class="kpi-value compact negative">{fmt_num(overall_loan_interest - overall_lending_fee)}</div>
-        </div>
-        <div class="kpi">
-          <div class="kpi-label">실질 순수익</div>
-          <div class="kpi-value compact {pnl_class(overall_net_pnl - overall_loan_interest + overall_lending_fee)}">{fmt_num(overall_net_pnl - overall_loan_interest + overall_lending_fee)}</div>
-          <div class="kpi-sub">손익 - 이자 + 대여수수료</div>
-        </div>
-        <div class="kpi">
-          <div class="kpi-label">자기자본 수익률</div>
-          <div class="kpi-value compact {pnl_class(overall_net_pnl - overall_loan_interest)}">{((overall_net_pnl - overall_loan_interest) / max(overall_deposits, 1) * 100):+.1f}%</div>
-        </div>
-        <div class="kpi">
-          <div class="kpi-label">승률 (Win Rate)</div>
-          <div class="kpi-value compact">{win_rate:.0f}%</div>
-          <div class="kpi-sub">수익 {win_count} / 손실 {loss_count}종목</div>
-        </div>
-      </div>
-    </div>
-  </details>
 
   <!-- Asset chart on dashboard -->
   <div class="card">
@@ -1368,6 +1360,64 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
 
 <!-- ===== ANALYSIS TAB ===== -->
 <div id="tab-analysis" class="tab-content">
+
+<!-- 종합 통계 -->
+<div class="card" style="margin-bottom:20px;">
+  <div class="card-title">종합 통계</div>
+  <div class="kpi-row secondary" style="margin-bottom:12px;">
+    <div class="kpi">
+      <div class="kpi-label">총 매수</div>
+      <div class="kpi-value compact">{fmt_num(overall_invested)}</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">총 매도</div>
+      <div class="kpi-value compact">{fmt_num(overall_returned)}</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">수수료 + 세금</div>
+      <div class="kpi-value compact negative">{fmt_num(overall_fees + overall_tax)}</div>
+      <div class="kpi-sub">수수료 {fmt_num(overall_fees)} · 세금 {fmt_num(overall_tax)}</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">순입금</div>
+      <div class="kpi-value compact">{fmt_num(overall_net_deposit)}</div>
+      <div class="kpi-sub">입금 {fmt_num(overall_deposits)} / 출금 {fmt_num(overall_withdrawals)}</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">대출잔액</div>
+      <div class="kpi-value compact {"negative" if overall_loan_balance > 0 else ""}">{fmt_num(overall_loan_balance)}</div>
+      <div class="kpi-sub">레버리지 {total_market_value / max(total_market_value - overall_loan_balance, 1):.2f}x</div>
+    </div>
+  </div>
+  <div class="kpi-row secondary" style="grid-template-columns: repeat(6, 1fr);">
+    <div class="kpi border-negative">
+      <div class="kpi-label">대출이자</div>
+      <div class="kpi-value compact negative">{fmt_num(overall_loan_interest)}</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">대여수수료</div>
+      <div class="kpi-value compact positive">{fmt_num(overall_lending_fee)}</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">순금융비용</div>
+      <div class="kpi-value compact negative">{fmt_num(overall_loan_interest - overall_lending_fee)}</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">실질 순수익</div>
+      <div class="kpi-value compact {pnl_class(overall_net_pnl - overall_loan_interest + overall_lending_fee)}">{fmt_num(overall_net_pnl - overall_loan_interest + overall_lending_fee)}</div>
+      <div class="kpi-sub">손익 - 이자 + 대여수수료</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">자기자본 수익률</div>
+      <div class="kpi-value compact {pnl_class(overall_net_pnl - overall_loan_interest)}">{((overall_net_pnl - overall_loan_interest) / max(overall_deposits, 1) * 100):+.1f}%</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">승률 (Win Rate)</div>
+      <div class="kpi-value compact">{win_rate:.0f}%</div>
+      <div class="kpi-sub">수익 {win_count} / 손실 {loss_count}종목</div>
+    </div>
+  </div>
+</div>
 
 <!-- Period analysis section -->
 <div class="card" style="margin-bottom:20px;">
