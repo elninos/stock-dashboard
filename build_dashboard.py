@@ -921,7 +921,6 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
 /* === Account Summary Cards === */
 .acct-summary-grid {{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 10px;
   margin-bottom: 20px;
 }}
@@ -2764,6 +2763,18 @@ function renderRawPosts() {
 function renderAccountSummary() {
   const grid = document.getElementById('acctSummaryGrid');
   if (!grid) return;
+
+  // 계좌 수에 따라 균등 분배되는 컬럼 수 계산
+  // 목표: 모든 행이 최대 1개 차이 나도록
+  const n = Object.keys(ACCOUNTS).length;
+  let cols;
+  if (n <= 5) {
+    cols = n;                                          // 1행
+  } else {
+    const targetRows = Math.max(2, Math.round(n / 5)); // 행 수 (5개/행 기준)
+    cols = Math.ceil(n / targetRows);                  // 균등 컬럼 수
+  }
+  grid.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
 
   // 전체 평가금액 (비중 bar 계산용)
   const totalMv = Object.values(ACCOUNTS).reduce((s, a) => s + (a.total_market_value || 0), 0);
