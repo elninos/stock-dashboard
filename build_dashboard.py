@@ -1071,10 +1071,12 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
 .header-brand {{ font-size: 1.05rem; font-weight: 700; letter-spacing: -0.02em; display: flex; align-items: center; gap: 8px; }}
 .header-brand-icon {{ font-size: 1.3rem; }}
 .header-meta-text {{ font-size: 0.73rem; color: var(--text-dim); margin-top: 4px; line-height: 1.5; }}
-.header-center {{ text-align: center; }}
+.header-center {{ text-align: center; cursor: pointer; user-select: none; }}
 .header-pv-label {{ font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin-bottom: 2px; }}
 .header-pv-value {{ font-size: 2.5rem; font-weight: 800; letter-spacing: -0.04em; line-height: 1.05; }}
 .header-pv-sub {{ font-size: 0.84rem; font-weight: 600; margin-top: 3px; }}
+.pv-blur {{ filter: blur(9px); transition: filter 0.2s ease; user-select: none; }}
+.pv-blur:hover {{ filter: blur(6px); }}
 .header-right {{ display: flex; align-items: center; gap: 20px; }}
 .header-stat {{ text-align: center; }}
 .header-stat-label {{ font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600; margin-bottom: 3px; }}
@@ -1142,15 +1144,15 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
       {min(tx['date'] for tx in txs)[:7]} ~ {max(tx['date'] for tx in txs)[:7]} &nbsp;·&nbsp; {len(txs):,}건
     </div>
   </div>
-  <div class="header-center">
-    <div class="header-pv-label">총 평가자산</div>
-    <div class="header-pv-value">{fmt_num(total_market_value)}</div>
-    <div class="header-pv-sub {pnl_class(total_unrealized)}">{fmt_num(total_unrealized)} ({(total_unrealized / max(sum(h['cost'] for h in overall_holdings.values()), 1) * 100):+.1f}%)</div>
+  <div class="header-center" onclick="toggleAmounts()" title="클릭하여 금액 표시/숨김">
+    <div class="header-pv-label">총 평가자산 &nbsp;<span id="amountEye" style="opacity:0.45; font-size:0.7rem; letter-spacing:0; text-transform:none; font-weight:400;">👁</span></div>
+    <div class="header-pv-value pv-blur" id="pvMain">{fmt_num(total_market_value)}</div>
+    <div class="header-pv-sub {pnl_class(total_unrealized)} pv-blur" id="pvSub">{fmt_num(total_unrealized)} ({(total_unrealized / max(sum(h['cost'] for h in overall_holdings.values()), 1) * 100):+.1f}%)</div>
   </div>
   <div class="header-right">
     <div class="header-stat">
       <div class="header-stat-label">실현손익</div>
-      <div class="header-stat-value {pnl_class(overall_net_pnl)}">{fmt_num(overall_net_pnl)}</div>
+      <div class="header-stat-value {pnl_class(overall_net_pnl)} pv-blur" id="pvPnl">{fmt_num(overall_net_pnl)}</div>
     </div>
     <div class="header-divider"></div>
     <div class="header-stat">
@@ -1728,6 +1730,18 @@ function switchSubTab(name) {
     // Always re-render account treemap when subtab becomes visible
     renderAcctTreemap();
   }
+}
+
+// ===== Amount visibility toggle =====
+let amountsHidden = true;
+function toggleAmounts() {
+  amountsHidden = !amountsHidden;
+  document.querySelectorAll('.pv-blur').forEach(el => {
+    el.style.filter = amountsHidden ? '' : 'none';
+    el.style.userSelect = amountsHidden ? '' : 'text';
+  });
+  const eye = document.getElementById('amountEye');
+  if (eye) eye.textContent = amountsHidden ? '👁' : '🙈';
 }
 
 // ===== Tab switching =====
