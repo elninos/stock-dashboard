@@ -32,8 +32,9 @@ jobs:
         run: |
           cp index.html _deploy/
           cp loan_timeline.html _deploy/
-          cp briefing.html _deploy/
+          cp briefing.html _deploy/ 2>/dev/null || true
           cp briefing_summary.json _deploy/
+          cp -r functions _deploy/ 2>/dev/null || true
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3

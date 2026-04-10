@@ -50,6 +50,8 @@ jobs:
           cp index.html _deploy/
           cp loan_timeline.html _deploy/ 2>/dev/null || true
           cp briefing_summary.json _deploy/
+          # Pages Functions: functions/ 디렉토리를 _deploy에 포함
+          cp -r functions _deploy/
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3

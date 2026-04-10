@@ -25,6 +25,12 @@ if os.path.exists(briefing_summary_file):
     with open(briefing_summary_file, encoding="utf-8") as f:
         briefing_summary = json.load(f)
 prices_file = "/Users/r/Documents/Claude/stock-dashboard/prices.json"
+stock_map_file = "/Users/r/Documents/Claude/stock-dashboard/stock_map.json"
+stock_map_data = {}
+if os.path.exists(stock_map_file):
+    with open(stock_map_file, encoding="utf-8") as f:
+        stock_map_data = json.load(f)
+
 current_prices = {}  # stock name -> price (in original currency)
 prices_updated_at = None
 if os.path.exists(prices_file):
@@ -1539,10 +1545,18 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
 
 <!-- ===== BRIEFING TAB ===== -->
 <div id="tab-briefing" class="tab-content">
-  <!-- Period selector -->
+  <!-- Period selector + 업데이트 버튼 -->
   <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:20px; flex-wrap:wrap; gap:12px;">
     <div class="filter-group" id="briefingPeriodFilter"></div>
-    <span id="briefingUpdatedAt" style="color:var(--text-dim); font-size:0.8rem;"></span>
+    <div style="display:flex; align-items:center; gap:10px;">
+      <span id="briefingUpdatedAt" style="color:var(--text-dim); font-size:0.8rem;"></span>
+      <button id="briefing-update-btn" onclick="triggerBriefingUpdate()"
+        style="padding:6px 14px; border:1px solid var(--border-light); border-radius:8px;
+               background:rgba(10,124,89,0.07); color:var(--text-dim); cursor:pointer;
+               font-size:0.78rem; font-weight:600; transition:all 0.2s; white-space:nowrap;">
+        ⟳ 브리핑 업데이트
+      </button>
+    </div>
   </div>
 
   <!-- Summary section -->
@@ -1585,6 +1599,8 @@ const TXS = """ + json.dumps([
 ], ensure_ascii=False) + """;
 const STOCK_CODES = """ + json.dumps({name: v["code"] for name, v in raw_prices.items() if not name.startswith("_") and "code" in v}, ensure_ascii=False) + """;
 const STOCK_NATIONS = """ + json.dumps({name: v.get("nation","KOR") for name, v in raw_prices.items() if not name.startswith("_") and "code" in v}, ensure_ascii=False) + """;
+const STOCK_MARKET = """ + json.dumps({name: v.get("market","") for name, v in stock_map_data.items()}, ensure_ascii=False) + """;
+const FX = """ + json.dumps({"USD": round(usd_krw,2), "JPY": round(jpy_krw,4), "CNY": round(cny_krw,2), "HKD": round(hkd_krw,2), "KRW": 1}, ensure_ascii=False) + """;
 
 // Light theme Chart.js defaults
 Chart.defaults.color = '#4a5568';
@@ -1599,56 +1615,127 @@ Chart.defaults.plugins.tooltip.borderColor = '#dde3ee';
 Chart.defaults.plugins.tooltip.borderWidth = 1;
 Chart.defaults.plugins.tooltip.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
 
+// ── 현재가 실시간 업데이트 ──────────────────────────────────────
+
+function _yahooTicker(code, nation) {
+  if (!code) return null;
+  if (nation === 'KOR') {
+    const mkt = STOCK_MARKET[Object.keys(STOCK_CODES).find(n => STOCK_CODES[n] === code)] || '';
+    return code + (mkt === '코스닥' ? '.KQ' : '.KS');
+  }
+  if (nation === 'JPN') return code + '.T';
+  return code;  // USA ticker, HKG (2809.HK), CHN (601012.SS) already correct
+}
+
+function _fxRate(nation) {
+  const cur = {KOR:'KRW', USA:'USD', JPN:'JPY', CHN:'CNY', HKG:'HKD'}[nation] || 'KRW';
+  return FX[cur] || 1;
+}
+
+async function _fetchNaverPrice(code) {
+  try {
+    const r = await fetch(`https://m.stock.naver.com/api/stock/${code}/basic`);
+    if (!r.ok) return null;
+    const d = await r.json();
+    const p = parseFloat((d.closePrice || '0').replace(/,/g,''));
+    return p > 0 ? p : null;
+  } catch { return null; }
+}
+
+async function _fetchYahooPrice(ticker) {
+  try {
+    const r = await fetch(`https://query1.finance.yahoo.com/v8/finance/chart/${ticker}?range=1d&interval=1d`);
+    if (!r.ok) return null;
+    const d = await r.json();
+    const p = d?.chart?.result?.[0]?.meta?.regularMarketPrice;
+    return p > 0 ? p : null;
+  } catch { return null; }
+}
+
+async function _fetchOneKRW(name) {
+  const code   = STOCK_CODES[name];
+  const nation = STOCK_NATIONS[name] || 'KOR';
+  if (!code) return null;
+
+  let price = null;
+
+  if (nation === 'KOR') {
+    // Naver 먼저 (CORS 가능 시), 실패 시 Yahoo fallback
+    price = await _fetchNaverPrice(code);
+    if (!price) price = await _fetchYahooPrice(_yahooTicker(code, nation));
+  } else {
+    // 해외: Yahoo Finance (환율 변환 필요)
+    const ticker = _yahooTicker(code, nation);
+    const raw = await _fetchYahooPrice(ticker);
+    if (raw) price = Math.round(raw * _fxRate(nation));
+  }
+
+  return price;  // KRW 환산가
+}
+
 async function refreshPrices() {
   const btn = document.getElementById('refresh-btn');
   btn.textContent = '⟳ 조회 중...';
   btn.disabled = true;
-  const now = new Date();
-  let updated = 0, failed = 0;
+
+  // 보유 중인 종목만 갱신 (청산 종목은 스킵)
+  const heldNames = [...new Set(STOCKS.filter(s => s.current_qty > 0).map(s => s.name))];
+
+  // 병렬 fetch
+  const results = await Promise.allSettled(
+    heldNames.map(name => _fetchOneKRW(name).then(p => ({name, p})))
+  );
+
   const newPrices = {};
-
-  for (const [name, code] of Object.entries(STOCK_CODES)) {
-    try {
-      const url = `https://m.stock.naver.com/api/stock/${code}/basic`;
-      const r = await fetch(url);
-      if (!r.ok) { failed++; continue; }
-      const d = await r.json();
-      const priceStr = (d.closePrice || '0').replace(/,/g, '');
-      const price = parseFloat(priceStr);
-      if (!price) { failed++; continue; }
-      newPrices[name] = price;
+  let updated = 0;
+  for (const r of results) {
+    if (r.status === 'fulfilled' && r.value.p) {
+      newPrices[r.value.name] = r.value.p;
       updated++;
-    } catch(e) { failed++; }
+    }
   }
 
-  // Update STOCKS (포트폴리오 탭 데이터)
+  // STOCKS 배열 갱신 (current_price, market_value, unrealized_pnl)
   for (const s of STOCKS) {
-    if (newPrices[s.name] != null) {
-      s.current_price = newPrices[s.name];
-      s.current_value = s.shares * newPrices[s.name];
-      s.pnl = s.current_value - s.cost;
-    }
-  }
-  // Update per-account stocks
-  for (const acct of Object.values(ACCOUNTS)) {
-    for (const s of (acct.stocks || [])) {
-      if (newPrices[s.name] != null) {
-        s.current_price = newPrices[s.name];
-        s.current_value = s.shares * newPrices[s.name];
-        s.pnl = s.current_value - s.cost;
-      }
-    }
+    if (newPrices[s.name] == null) continue;
+    s.current_price = newPrices[s.name];
+    s.market_value  = s.current_qty > 0 ? Math.round(s.current_qty * newPrices[s.name]) : 0;
+    s.unrealized_pnl = s.current_qty > 0 ? s.market_value - s.cost : 0;
   }
 
-  const ts = now.toLocaleString('ko-KR', {timeZone:'Asia/Seoul'}) + ' (실시간)';
-  document.getElementById('prices-updated-at').textContent = ts;
-  btn.textContent = `⟳ 새로고침 (${updated}건)`;
+  // 비중 재계산
+  const totalMV = STOCKS.reduce((sum, s) => sum + (s.market_value || 0), 0);
+  for (const s of STOCKS) {
+    s.weight = totalMV > 0 && s.market_value > 0 ? +(s.market_value / totalMV * 100).toFixed(1) : 0;
+  }
+
+  // 헤더 KPI 갱신
+  const heldStocks  = STOCKS.filter(s => s.current_qty > 0);
+  const newTotalMV  = heldStocks.reduce((s, x) => s + x.market_value, 0);
+  const newCost     = heldStocks.reduce((s, x) => s + x.cost, 0);
+  const newUnreal   = newTotalMV - newCost;
+  const newUnrealPct = newCost > 0 ? (newUnreal / newCost * 100) : 0;
+  const fmtH = v => (v < 0 ? '-' : '') + Math.abs(Math.round(v)).toLocaleString('ko-KR') + '원';
+
+  const pvMain = document.getElementById('pvMain');
+  const pvSub  = document.getElementById('pvSub');
+  if (pvMain) pvMain.textContent = fmtH(newTotalMV);
+  if (pvSub)  {
+    pvSub.textContent = fmtH(newUnreal) + ' (' + (newUnrealPct >= 0 ? '+' : '') + newUnrealPct.toFixed(1) + '%)';
+    pvSub.className = 'header-pv-sub pv-blur ' + (newUnreal >= 0 ? 'positive' : 'negative');
+  }
+
+  // 업데이트 시각
+  const ts = new Date().toLocaleTimeString('ko-KR', {hour:'2-digit', minute:'2-digit'}) + ' 실시간';
+  const tsEl = document.getElementById('prices-updated-at');
+  if (tsEl) tsEl.textContent = ts;
+
+  btn.textContent = `⟳ 새로고침 (${updated}/${heldNames.length})`;
   btn.disabled = false;
 
-  // Re-render current view
-  const activeTab = document.querySelector('.tab-content.active')?.id;
-  if (activeTab === 'tab-portfolio') renderPortfolio();
-  if (activeTab === 'tab-dashboard') renderDashboard();
+  // 현재 탭 재렌더
+  if (document.getElementById('subtab-stocks')?.classList.contains('active')) renderStockTable();
+  if (document.getElementById('subtab-byAccount')?.classList.contains('active') && currentAccount) renderAcctTreemap();
 }
 
 function fmt(n) {
@@ -2925,6 +3012,45 @@ let briefingActivePeriod = 'daily';
 let rawPostsVisible = false;
 let briefingRawInited = false;
 let briefingActiveFilter = 'all';
+
+async function triggerBriefingUpdate() {
+  const btn = document.getElementById('briefing-update-btn');
+  btn.disabled = true;
+  btn.textContent = '⟳ 요청 중...';
+
+  try {
+    const resp = await fetch('/trigger-briefing', { method: 'POST' });
+    const data = await resp.json();
+    if (data.ok) {
+      btn.textContent = '✓ 요청 완료';
+      btn.style.color = 'var(--positive)';
+      btn.style.borderColor = 'var(--positive)';
+      // 3분 후 안내
+      setTimeout(() => {
+        btn.textContent = '⟳ 새로고침하면 최신 데이터';
+        btn.style.color = '';
+        btn.style.borderColor = '';
+        btn.disabled = false;
+      }, 3000);
+    } else {
+      btn.textContent = '✗ 실패 — 설정 확인 필요';
+      btn.style.color = 'var(--negative)';
+      setTimeout(() => {
+        btn.textContent = '⟳ 브리핑 업데이트';
+        btn.style.color = '';
+        btn.disabled = false;
+      }, 4000);
+    }
+  } catch(e) {
+    btn.textContent = '✗ 오류';
+    btn.style.color = 'var(--negative)';
+    setTimeout(() => {
+      btn.textContent = '⟳ 브리핑 업데이트';
+      btn.style.color = '';
+      btn.disabled = false;
+    }, 3000);
+  }
+}
 
 function initBriefing() {
   // Build period selector
