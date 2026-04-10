@@ -1464,20 +1464,30 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
   <!-- Summary KPIs -->
   <div id="periodKpis" style="display:grid; grid-template-columns:repeat(5,1fr); gap:12px; margin-bottom:20px;"></div>
 
-  <!-- Portfolio diff + trade list (two columns) -->
-  <div style="display:grid; grid-template-columns:280px 1fr; gap:20px; align-items:start;">
+  <!-- Portfolio diff + Weight change (two columns) -->
+  <div style="display:grid; grid-template-columns:220px 1fr; gap:20px; align-items:start; margin-bottom:16px;">
     <div>
-      <div style="font-size:0.75rem; font-weight:700; color:var(--text-muted); letter-spacing:.06em; text-transform:uppercase; margin-bottom:8px;">포트폴리오 변동</div>
+      <div style="font-size:0.72rem; font-weight:700; color:var(--text-muted); letter-spacing:.06em; text-transform:uppercase; margin-bottom:8px;">포트폴리오 변동</div>
       <div id="periodPortfolioDiff"></div>
     </div>
     <div>
-      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
-        <div style="font-size:0.75rem; font-weight:700; color:var(--text-muted); letter-spacing:.06em; text-transform:uppercase;">거래 내역</div>
-        <div class="filter-group" id="tradeViewToggle">
-          <button class="filter-btn active" onclick="setTradeView('all',this)">전체</button>
-          <button class="filter-btn" onclick="setTradeView('stock',this)">종목별</button>
-        </div>
+      <div style="font-size:0.72rem; font-weight:700; color:var(--text-muted); letter-spacing:.06em; text-transform:uppercase; margin-bottom:8px;">비중 변화 <span style="font-size:0.65rem; font-weight:400; opacity:.7;">(현재가 기준 추정)</span></div>
+      <div id="periodWeightChange"></div>
+    </div>
+  </div>
+
+  <!-- Collapsible trade list -->
+  <div style="border-top:1px solid var(--border);">
+    <div onclick="togglePeriodTrades()" style="cursor:pointer; display:flex; align-items:center; gap:8px; padding:10px 0 8px; user-select:none;">
+      <span id="periodTradesArrow" style="font-size:0.72rem; color:var(--text-muted);">▶</span>
+      <span style="font-size:0.72rem; font-weight:700; color:var(--text-muted); letter-spacing:.06em; text-transform:uppercase;">거래 내역</span>
+      <span id="periodTradesCount" style="font-size:0.75rem; color:var(--text-muted);"></span>
+      <div style="margin-left:auto;" class="filter-group" id="tradeViewToggle" onclick="event.stopPropagation()">
+        <button class="filter-btn active" onclick="setTradeView('all',this)">전체</button>
+        <button class="filter-btn" onclick="setTradeView('stock',this)">종목별</button>
       </div>
+    </div>
+    <div id="periodTradesContainer" style="display:none;">
       <div id="periodTrades" style="max-height:420px; overflow-y:auto;"></div>
     </div>
   </div>
@@ -2537,6 +2547,62 @@ function renderPeriodAnalysis() {
   if (!diffHtml) diffHtml = '<div style="font-size:0.82rem; color:var(--text-muted);">변동 없음</div>';
   document.getElementById('periodPortfolioDiff').innerHTML = diffHtml;
 
+  // ── 비중 변화 ──────────────────────────────────────────────
+  const priceMap = {};
+  for (const s of STOCKS) if (s.current_price > 0) priceMap[s.name] = s.current_price;
+
+  // Compute portfolio values at start/end using current prices as proxy
+  const heldNames = new Set([
+    ...Object.keys(hStart).filter(s => (hStart[s]||0) > 0.001),
+    ...Object.keys(hEnd).filter(s => (hEnd[s]||0) > 0.001)
+  ]);
+  let totalStartVal = 0, totalEndVal = 0;
+  for (const s of heldNames) {
+    const p = priceMap[s] || 0;
+    totalStartVal += (hStart[s]||0) * p;
+    totalEndVal   += (hEnd[s]||0)   * p;
+  }
+
+  const wData = [];
+  for (const s of heldNames) {
+    const p = priceMap[s] || 0;
+    if (p === 0) continue;
+    const qs = hStart[s]||0, qe = hEnd[s]||0;
+    const ws = totalStartVal > 0 ? qs*p/totalStartVal*100 : 0;
+    const we = totalEndVal   > 0 ? qe*p/totalEndVal*100   : 0;
+    if (ws < 0.05 && we < 0.05) continue;  // skip negligible
+    wData.push({s, qs, qe, ws, we, diff: we - ws});
+  }
+  wData.sort((a, b) => Math.max(b.ws, b.we) - Math.max(a.ws, a.we));
+  const topW = wData.slice(0, 16);
+  const maxW = topW.reduce((m, x) => Math.max(m, x.ws, x.we), 0.1);
+
+  const weightRows = topW.map(x => {
+    const barS = x.ws / maxW * 100;
+    const barE = x.we / maxW * 100;
+    const dc = x.diff > 0.15 ? 'var(--positive)' : x.diff < -0.15 ? 'var(--negative)' : 'var(--text-muted)';
+    const dStr = Math.abs(x.diff) < 0.05 ? '─' : (x.diff > 0 ? '+' : '') + x.diff.toFixed(1) + '%p';
+    const endColor = x.we > 0 ? (x.diff >= 0 ? 'rgba(10,124,89,0.65)' : 'rgba(200,30,30,0.55)') : 'transparent';
+    return `<div style="display:flex; align-items:center; gap:7px; padding:4px 0; border-bottom:1px solid var(--border);">
+      <span style="width:76px; font-size:0.78rem; font-weight:600; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; flex-shrink:0;" title="${x.s}">${x.s}</span>
+      <div style="flex:1; position:relative; height:13px; background:var(--bg2); border-radius:3px; overflow:hidden;">
+        <div style="position:absolute; inset:0; width:${barS}%; background:rgba(148,163,184,0.45); border-radius:3px;"></div>
+        <div style="position:absolute; inset:0; width:${barE}%; background:${endColor}; border-radius:3px;"></div>
+      </div>
+      <span style="width:30px; text-align:right; font-size:0.71rem; color:var(--text-dim); flex-shrink:0;">${x.we.toFixed(1)}%</span>
+      <span style="width:40px; text-align:right; font-size:0.71rem; font-weight:700; color:${dc}; flex-shrink:0;">${dStr}</span>
+    </div>`;
+  }).join('');
+
+  const legend = `<div style="display:flex; gap:14px; margin-bottom:7px; font-size:0.68rem; color:var(--text-muted);">
+    <span style="display:flex;align-items:center;gap:4px;"><span style="display:inline-block;width:10px;height:8px;background:rgba(148,163,184,0.45);border-radius:2px;"></span>기간 전</span>
+    <span style="display:flex;align-items:center;gap:4px;"><span style="display:inline-block;width:10px;height:8px;background:rgba(10,124,89,0.65);border-radius:2px;"></span>기간 후 (증가)</span>
+    <span style="display:flex;align-items:center;gap:4px;"><span style="display:inline-block;width:10px;height:8px;background:rgba(200,30,30,0.55);border-radius:2px;"></span>기간 후 (감소)</span>
+  </div>`;
+  document.getElementById('periodWeightChange').innerHTML = topW.length === 0
+    ? '<div style="font-size:0.82rem; color:var(--text-muted); padding:8px 0;">비중 데이터 없음 (가격 정보 필요)</div>'
+    : legend + weightRows;
+
   // Trade list
   const sorted = [...inRange].sort((a,b) => b.d.localeCompare(a.d));
   const typeColor = {'buy':'var(--negative)','sell':'var(--positive)','dividend':'#1a56db','fee':'var(--text-muted)','tax':'var(--text-muted)','lending_fee':'var(--text-muted)'};
@@ -2652,6 +2718,19 @@ function renderPeriodAnalysis() {
     tradeHtml += '</tbody></table>';
   }
   document.getElementById('periodTrades').innerHTML = tradeHtml;
+
+  // Update trade count badge
+  const countEl = document.getElementById('periodTradesCount');
+  if (countEl) countEl.textContent = sorted.length > 0 ? `(${sorted.length}건)` : '';
+}
+
+let periodTradesOpen = false;
+function togglePeriodTrades() {
+  periodTradesOpen = !periodTradesOpen;
+  const container = document.getElementById('periodTradesContainer');
+  const arrow     = document.getElementById('periodTradesArrow');
+  if (container) container.style.display = periodTradesOpen ? 'block' : 'none';
+  if (arrow)     arrow.textContent = periodTradesOpen ? '▼' : '▶';
 }
 
 // ===== BRIEFING TAB =====
