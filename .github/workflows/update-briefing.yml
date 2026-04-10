@@ -1,0 +1,58 @@
+name: Auto Update Briefing
+
+on:
+  schedule:
+    - cron: '0 1 * * 1-5'    # 평일 오전 10시 KST (UTC 01:00) — 전날 저녁~오전 포스트
+    - cron: '0 10 * * 1-5'   # 평일 오후 7시 KST (UTC 10:00) — 당일 포스트 + AI 요약
+  workflow_dispatch:          # 수동 실행 가능
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      deployments: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install anthropic
+
+      - name: Fetch briefing posts
+        run: python fetch_briefing.py
+
+      - name: Generate AI summary
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python summarize_briefing.py
+
+      - name: Build dashboard
+        run: python build_dashboard.py
+
+      - name: Copy built files to _deploy
+        run: |
+          cp index.html _deploy/
+          cp loan_timeline.html _deploy/ 2>/dev/null || true
+          cp briefing_summary.json _deploy/
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy _deploy --project-name=stock-dashboard
+
+      - name: Commit updated files to repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add briefing.json briefing_summary.json _deploy/
+          git diff --cached --quiet || git commit -m "Auto briefing update $(date '+%Y-%m-%d %H:%M') KST"
+          git push

@@ -27,6 +27,41 @@
       "url": "https://t.me/s/SpartanResearch",
       "category": "매크로/크립토",
       "enabled": true
+    },
+    {
+      "name": "디티커",
+      "id": "d_ticker",
+      "url": "https://t.me/s/d_ticker",
+      "category": "매매 신호/트레이딩",
+      "enabled": true
+    },
+    {
+      "name": "월스트리트 캣츠",
+      "id": "wallstreet_cats_stock",
+      "url": "https://t.me/s/wallstreet_cats_stock",
+      "category": "미국 시장 분석",
+      "enabled": true
+    },
+    {
+      "name": "여의도 랩",
+      "id": "Yeouido_Lab",
+      "url": "https://t.me/s/Yeouido_Lab",
+      "category": "국내 시장/종목 분석",
+      "enabled": true
+    },
+    {
+      "name": "액티브 ETF 알림",
+      "id": "active_etf_alert_bot",
+      "url": "https://t.me/s/active_etf_alert_bot",
+      "category": "ETF 매매 동향",
+      "enabled": true
+    },
+    {
+      "name": "KK Kontemporaries (텔레그램)",
+      "id": "kkkontemp",
+      "url": "https://t.me/s/kkkontemp",
+      "category": "매크로 분석",
+      "enabled": true
     }
   ],
   "blog": [

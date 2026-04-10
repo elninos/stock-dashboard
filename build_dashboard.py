@@ -1256,12 +1256,23 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
     <div class="kpi {"border-positive" if overall_net_pnl >= 0 else "border-negative"}">
       <div class="kpi-label">실현손익 + 배당</div>
       <div class="kpi-value {pnl_class(overall_net_pnl)}">{fmt_num(overall_net_pnl)}</div>
-      <div class="kpi-sub">실현 {fmt_num(overall_realized_pnl)} + 배당 {fmt_num(overall_dividends)}</div>
+      <div class="kpi-sub" style="display:flex;gap:10px;margin-top:6px;">
+        <span><span style="font-size:0.7rem;color:var(--text-muted);display:block;margin-bottom:1px;">실현</span><span class="{pnl_class(overall_realized_pnl)}" style="font-size:0.82rem;font-weight:600;">{fmt_num(overall_realized_pnl)}</span></span>
+        <span style="color:var(--border);font-size:1rem;align-self:center;">│</span>
+        <span><span style="font-size:0.7rem;color:var(--text-muted);display:block;margin-bottom:1px;">배당</span><span style="color:#1a56db;font-size:0.82rem;font-weight:600;">{fmt_num(overall_dividends)}</span></span>
+      </div>
     </div>
     <div class="kpi">
       <div class="kpi-label">IRR (연환산)</div>
       <div class="kpi-value {pnl_class(overall_irr or 0)}">{fmt_pct(overall_irr) if overall_irr else 'N/A'}</div>
-      <div class="kpi-sub">ROI {overall_roi:+.1f}% · {len(stock_summaries)}종목 거래</div>
+      <div class="kpi-sub" style="display:flex; flex-direction:column; gap:3px; margin-top:6px;">
+        <span>단순수익률 <strong>{overall_roi:+.1f}%</strong></span>
+        <span style="display:flex; align-items:center; gap:6px;">
+          <span style="font-size:0.92rem; font-weight:700; color:var(--text);">{len(stock_summaries)}</span><span>종목 매매</span>
+          <span style="color:var(--border);">│</span>
+          <span style="font-size:0.92rem; font-weight:700; color:var(--text);">{len(overall_holdings)}</span><span>보유중</span>
+        </span>
+      </div>
     </div>
   </div>
 
@@ -1332,14 +1343,20 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
 
   <!-- Sub-tab: Stocks -->
   <div id="subtab-stocks" class="subtab-content active">
+    <!-- Portfolio composition treemap -->
+    <div class="card" style="margin-bottom:16px;">
+      <div class="card-title" style="margin-bottom:8px;">포트폴리오 구성 (보유 종목 · 평가금액 기준)</div>
+      <div class="treemap-container" id="stocksTreemapContainer" style="height:200px;"></div>
+      <div class="tm-tooltip" id="stocksTmTooltip"></div>
+    </div>
     <div class="toolbar">
       <input type="text" class="search-box" id="stockSearch" placeholder="종목명 검색..." oninput="filterStockTable()">
       <div class="filter-group">
-        <button class="filter-btn active" onclick="setStockFilter('all', this)">전체</button>
-        <button class="filter-btn" onclick="setStockFilter('profit', this)">수익</button>
-        <button class="filter-btn" onclick="setStockFilter('loss', this)">손실</button>
-        <button class="filter-btn" onclick="setStockFilter('holding', this)">보유중</button>
-        <button class="filter-btn" onclick="setStockFilter('closed', this)">청산</button>
+        <button class="filter-btn" data-filter="all" onclick="setStockFilter('all', this)">전체</button>
+        <button class="filter-btn" data-filter="profit" onclick="setStockFilter('profit', this)">수익</button>
+        <button class="filter-btn" data-filter="loss" onclick="setStockFilter('loss', this)">손실</button>
+        <button class="filter-btn active" data-filter="holding" onclick="setStockFilter('holding', this)">보유중</button>
+        <button class="filter-btn" data-filter="closed" onclick="setStockFilter('closed', this)">청산</button>
       </div>
       <span class="result-count" id="stockResultCount"></span>
     </div>
@@ -1462,7 +1479,9 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
   </div>
 
   <!-- Summary KPIs -->
-  <div id="periodKpis" style="display:grid; grid-template-columns:repeat(5,1fr); gap:12px; margin-bottom:20px;"></div>
+  <div id="periodKpis" style="display:grid; grid-template-columns:repeat(5,1fr); gap:12px; margin-bottom:8px;"></div>
+  <!-- Trading pattern stats -->
+  <div id="periodPattern" style="display:grid; grid-template-columns:repeat(5,1fr); gap:8px; margin-bottom:16px;"></div>
 
   <!-- Portfolio diff + Weight change (two columns) -->
   <div style="display:grid; grid-template-columns:220px 1fr; gap:20px; align-items:start; margin-bottom:16px;">
@@ -1471,7 +1490,10 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
       <div id="periodPortfolioDiff"></div>
     </div>
     <div>
-      <div style="font-size:0.72rem; font-weight:700; color:var(--text-muted); letter-spacing:.06em; text-transform:uppercase; margin-bottom:8px;">비중 변화 <span style="font-size:0.65rem; font-weight:400; opacity:.7;">(현재가 기준 추정)</span></div>
+      <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px; flex-wrap:wrap;">
+        <span style="font-size:0.72rem; font-weight:700; color:var(--text-muted); letter-spacing:.06em; text-transform:uppercase;">비중 변화 <span style="font-size:0.65rem; font-weight:400; opacity:.7;">(현재가 기준 추정)</span></span>
+        <div id="weightAccFilter" class="filter-group" style="margin-left:auto;"></div>
+      </div>
       <div id="periodWeightChange"></div>
     </div>
   </div>
@@ -1494,11 +1516,11 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
 </div>
 
   <div class="card">
-    <div class="card-title">월별 투자/회수 추이</div>
+    <div class="card-title">월별 매수/매도 <span style="font-size:0.72rem;font-weight:400;color:var(--text-muted);">— 선: 월 순현금흐름(매도-매수)</span></div>
     <div class="chart-container"><canvas id="timelineChart"></canvas></div>
   </div>
   <div class="card">
-    <div class="card-title">총 평가자산 vs 누적 투자</div>
+    <div class="card-title">누적 손익 추이 <span style="font-size:0.72rem;font-weight:400;color:var(--text-muted);">(총 평가자산 - 누적 투자금)</span></div>
     <div class="chart-container"><canvas id="totalAssetChart"></canvas></div>
   </div>
   <div class="card">
@@ -1773,6 +1795,14 @@ function renderTreemap() {
   renderTreemapInContainer('treemapContainer', TREEMAP_DATA, 'tmTooltip');
   filterTreemap(currentTreemapFilter, true);
 }
+
+let stocksTreemapInited = false;
+function renderStocksTreemap() {
+  const el = document.getElementById('stocksTreemapContainer');
+  if (!el || el.offsetWidth === 0) return;
+  renderTreemapInContainer('stocksTreemapContainer', TREEMAP_DATA, 'stocksTmTooltip');
+  stocksTreemapInited = true;
+}
 function filterTreemap(nation, skipRender) {
   currentTreemapFilter = nation;
   document.querySelectorAll('#treemapFilters .tf-btn').forEach(b => b.classList.remove('active'));
@@ -1802,7 +1832,7 @@ function switchSubTab(name) {
   document.querySelectorAll('.subtab-content').forEach(t => t.classList.remove('active'));
   event.target.classList.add('active');
   document.getElementById('subtab-' + name).classList.add('active');
-  if (name === 'stocks') renderStockTable();
+  if (name === 'stocks') { renderStockTable(); setTimeout(renderStocksTreemap, 50); }
   if (name === 'byAccount') {
     initAccounts();
     // Always re-render account treemap when subtab becomes visible
@@ -1829,7 +1859,7 @@ function switchTab(name) {
   document.getElementById('tab-' + name).classList.add('active');
   event.target.classList.add('active');
   if (name === 'analysis') initAnalysis();
-  if (name === 'portfolio') { renderStockTable(); initAccounts(); }
+  if (name === 'portfolio') { renderStockTable(); initAccounts(); setTimeout(renderStocksTreemap, 50); }
   if (name === 'dashboard') { setTimeout(renderTreemap, 50); }
   if (name === 'analysis') initPeriodAnalysis();
   if (name === 'briefing') initBriefing();
@@ -1838,7 +1868,7 @@ function switchTab(name) {
 // ===== STOCK TABLE =====
 let stockSortCol = 'net_pnl';
 let stockSortDir = 'desc';
-let stockFilter = 'all';
+let stockFilter = 'holding';
 let stockData = [...STOCKS];
 
 function setStockFilter(filter, btn) {
@@ -1907,6 +1937,22 @@ document.querySelectorAll('#stockTable th').forEach(th => {
 });
 
 function filterStockTable() { renderStockTable(); }
+
+function updateFilterCounts() {
+  const FILTER_LABELS = { all:'전체', profit:'수익', loss:'손실', holding:'보유중', closed:'청산' };
+  const counts = {
+    all:     STOCKS.length,
+    profit:  STOCKS.filter(s => s.net_pnl > 0).length,
+    loss:    STOCKS.filter(s => s.net_pnl < 0).length,
+    holding: STOCKS.filter(s => s.current_qty > 0).length,
+    closed:  STOCKS.filter(s => s.current_qty === 0).length,
+  };
+  document.querySelectorAll('#subtab-stocks .filter-btn[data-filter]').forEach(btn => {
+    const f = btn.dataset.filter;
+    if (counts[f] !== undefined)
+      btn.textContent = FILTER_LABELS[f] + ' ' + counts[f];
+  });
+}
 
 // ===== ACCOUNTS =====
 let currentAccount = null;
@@ -2237,74 +2283,38 @@ function initAnalysis() {
       labels: TIMELINE.map(t => t.month),
       datasets: [
         { label: '매수', data: TIMELINE.map(t => t.invested),
-          backgroundColor: '#ef444488', borderColor: '#ef4444', borderWidth: 1, borderRadius: 3 },
+          backgroundColor: 'rgba(239,68,68,0.45)', borderColor: '#ef4444', borderWidth: 1, borderRadius: 3,
+          yAxisID: 'y' },
         { label: '매도', data: TIMELINE.map(t => t.returned),
-          backgroundColor: '#22c55e88', borderColor: '#22c55e', borderWidth: 1, borderRadius: 3 },
-      ]
-    },
-    options: {
-      responsive: true, maintainAspectRatio: false,
-      plugins: { legend: { labels: { color: '#0f172a' } }, tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': ' + fmt(ctx.raw) } } },
-      scales: {
-        x: { ticks: { color: '#4a5568', maxRotation: 45 }, grid: { display: false } },
-        y: { ticks: { callback: v => fmt(v), color: '#4a5568' }, grid: { color: 'rgba(0,0,0,0.06)' } }
-      }
-    }
-  });
-
-  // Chart: Total Asset vs Cumulative Invested
-  new Chart(document.getElementById('totalAssetChart'), {
-    type: 'line',
-    data: {
-      labels: TIMELINE.map(t => t.month),
-      datasets: [
-        {
-          label: '총 평가자산',
-          data: TIMELINE.map(t => t.total_asset),
+          backgroundColor: 'rgba(34,197,94,0.45)', borderColor: '#22c55e', borderWidth: 1, borderRadius: 3,
+          yAxisID: 'y' },
+        { label: '순현금흐름',
+          data: TIMELINE.map(t => t.returned - t.invested),
+          type: 'line',
           borderColor: '#1a56db',
-          backgroundColor: 'rgba(26,86,219,0.07)',
-          fill: true,
-          tension: 0.3,
-          pointRadius: 0,
-          borderWidth: 2.5,
-        },
-        {
-          label: '누적 투자금',
-          data: TIMELINE.map(t => t.cum_invested),
-          borderColor: '#94a3b8',
-          backgroundColor: 'rgba(148,163,184,0.05)',
-          fill: true,
-          tension: 0.3,
-          pointRadius: 0,
+          backgroundColor: 'rgba(26,86,219,0.0)',
+          pointRadius: 2,
+          pointHoverRadius: 5,
           borderWidth: 2,
-          borderDash: [5, 3],
-        },
-        {
-          label: '보유주식 평가액',
-          data: TIMELINE.map(t => t.holdings_value),
-          borderColor: '#0a7c59',
-          backgroundColor: 'rgba(10,124,89,0.05)',
-          fill: false,
           tension: 0.3,
-          pointRadius: 0,
-          borderWidth: 1.5,
-          borderDash: [3, 3],
+          yAxisID: 'y',
+          pointBackgroundColor: TIMELINE.map(t => (t.returned - t.invested) >= 0 ? '#0a7c59' : '#c81e1e'),
+          segment: { borderColor: ctx => (ctx.p1.parsed.y >= 0 ? '#0a7c59' : '#c81e1e') },
         },
       ]
     },
     options: {
       responsive: true, maintainAspectRatio: false,
       plugins: {
-        legend: { labels: { color: '#0f172a' } },
+        legend: { labels: { color: '#0f172a', boxWidth: 12, padding: 14 } },
         tooltip: {
           callbacks: {
             label: ctx => ctx.dataset.label + ': ' + fmt(ctx.raw),
-            afterBody: function(items) {
+            afterBody: items => {
               const idx = items[0].dataIndex;
               const t = TIMELINE[idx];
-              const pnl = t.total_asset - t.cum_invested;
-              const pnlPct = t.cum_invested > 0 ? (pnl / t.cum_invested * 100).toFixed(1) : '0.0';
-              return '손익: ' + fmt(pnl) + ' (' + pnlPct + '%)';
+              const net = t.returned - t.invested;
+              return net !== 0 ? ['순: ' + (net > 0 ? '+' : '') + fmt(net)] : [];
             }
           }
         }
@@ -2312,6 +2322,72 @@ function initAnalysis() {
       scales: {
         x: { ticks: { color: '#4a5568', maxRotation: 45 }, grid: { display: false } },
         y: { ticks: { callback: v => fmt(v), color: '#4a5568' }, grid: { color: 'rgba(0,0,0,0.06)' } }
+      }
+    }
+  });
+
+  // Chart: Cumulative PnL (total_asset - cum_invested)
+  const pnlData = TIMELINE.map(t => t.total_asset - t.cum_invested);
+  const pnlColors = pnlData.map(v => v >= 0 ? 'rgba(10,124,89,0.12)' : 'rgba(200,30,30,0.1)');
+  new Chart(document.getElementById('totalAssetChart'), {
+    type: 'line',
+    data: {
+      labels: TIMELINE.map(t => t.month),
+      datasets: [
+        {
+          label: '누적 손익',
+          data: pnlData,
+          borderColor: pnlData[pnlData.length-1] >= 0 ? '#0a7c59' : '#c81e1e',
+          backgroundColor: function(ctx) {
+            const chart = ctx.chart;
+            const {ctx: c, chartArea} = chart;
+            if (!chartArea) return 'rgba(10,124,89,0.1)';
+            const grad = c.createLinearGradient(0, chartArea.top, 0, chartArea.bottom);
+            grad.addColorStop(0, 'rgba(10,124,89,0.18)');
+            grad.addColorStop(1, 'rgba(10,124,89,0.01)');
+            return grad;
+          },
+          fill: true,
+          tension: 0.35,
+          pointRadius: 0,
+          pointHoverRadius: 5,
+          borderWidth: 2.5,
+        },
+        {
+          label: '누적 투자금',
+          data: TIMELINE.map(t => t.cum_invested),
+          borderColor: 'rgba(148,163,184,0.0)',
+          backgroundColor: 'rgba(0,0,0,0)',
+          fill: false,
+          pointRadius: 0,
+          borderWidth: 0,
+          hidden: true,
+        },
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: ctx => '누적 손익: ' + fmt(ctx.raw),
+            afterLabel: function(ctx) {
+              const idx = ctx.dataIndex;
+              const t = TIMELINE[idx];
+              const pct = t.cum_invested > 0 ? ((t.total_asset - t.cum_invested) / t.cum_invested * 100).toFixed(1) : '0.0';
+              return ['투자원금: ' + fmt(t.cum_invested), '수익률: ' + (ctx.raw >= 0 ? '+' : '') + pct + '%'];
+            }
+          }
+        }
+      },
+      scales: {
+        x: { ticks: { color: '#4a5568', maxRotation: 45 }, grid: { display: false } },
+        y: {
+          ticks: { callback: v => fmt(v), color: '#4a5568' },
+          grid: { color: 'rgba(0,0,0,0.06)' },
+          afterDataLimits(scale) { /* ensure 0 is visible */ if (scale.min > 0) scale.min = 0; if (scale.max < 0) scale.max = 0; }
+        }
       }
     }
   });
@@ -2498,7 +2574,7 @@ function renderPeriodAnalysis() {
   }
   const netCash = sells + divs - buys - fees;
 
-  // KPIs
+  // ── KPIs (row 1: 금액) ──────────────────────────────────────
   const fmt = v => (v < 0 ? '-' : '') + Math.abs(v).toLocaleString('ko-KR') + '원';
   const kpiDefs = [
     { label:'매수', value: buys, cls:'negative' },
@@ -2511,6 +2587,44 @@ function renderPeriodAnalysis() {
     <div style="background:var(--bg2); border:1px solid var(--border); border-radius:10px; padding:14px 16px;">
       <div style="font-size:0.72rem; color:var(--text-muted); font-weight:600; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px;">${k.label}</div>
       <div style="font-size:1.15rem; font-weight:700;" class="${k.raw?'':k.cls}">${k.raw ? k.value.toLocaleString('ko-KR') : fmt(k.value)}</div>
+    </div>`).join('');
+
+  // ── 매매 패턴 (row 2) ─────────────────────────────────────
+  const buyTxs  = inRange.filter(tx => tx.t === 'buy');
+  const sellTxs = inRange.filter(tx => tx.t === 'sell');
+  const buyStocks  = new Set(buyTxs.map(tx => tx.s).filter(Boolean));
+  const sellStocks = new Set(sellTxs.map(tx => tx.s).filter(Boolean));
+  const allTraded  = new Set([...buyStocks, ...sellStocks]);
+  const avgBuy  = buyTxs.length  > 0 ? buys  / buyTxs.length  : 0;
+  const avgSell = sellTxs.length > 0 ? sells / sellTxs.length : 0;
+
+  // Top stock by buy amount
+  const buyAmtByStock = {};
+  for (const tx of buyTxs) { buyAmtByStock[tx.s] = (buyAmtByStock[tx.s]||0) + tx.a; }
+  const topBuy = Object.entries(buyAmtByStock).sort((a,b)=>b[1]-a[1])[0];
+
+  // Top stock by sell amount
+  const sellAmtByStock = {};
+  for (const tx of sellTxs) { sellAmtByStock[tx.s] = (sellAmtByStock[tx.s]||0) + tx.a; }
+  const topSell = Object.entries(sellAmtByStock).sort((a,b)=>b[1]-a[1])[0];
+
+  const patternCards = [
+    { label:'매매 종목 수',  value: allTraded.size + '종목',
+      sub: `매수 ${buyStocks.size}·매도 ${sellStocks.size}` },
+    { label:'매수 횟수',     value: buyTxs.length + '회',
+      sub: avgBuy > 0 ? '평균 ' + Math.round(avgBuy/10000).toLocaleString() + '만원' : '-' },
+    { label:'매도 횟수',     value: sellTxs.length + '회',
+      sub: avgSell > 0 ? '평균 ' + Math.round(avgSell/10000).toLocaleString() + '만원' : '-' },
+    { label:'최다 매수',     value: topBuy  ? topBuy[0]  : '-',
+      sub: topBuy  ? Math.round(topBuy[1] /10000).toLocaleString()+'만원' : '' },
+    { label:'최다 매도',     value: topSell ? topSell[0] : '-',
+      sub: topSell ? Math.round(topSell[1]/10000).toLocaleString()+'만원' : '' },
+  ];
+  document.getElementById('periodPattern').innerHTML = patternCards.map(k => `
+    <div style="background:var(--bg2); border:1px solid var(--border); border-radius:8px; padding:10px 14px;">
+      <div style="font-size:0.67rem; color:var(--text-muted); font-weight:600; text-transform:uppercase; letter-spacing:.05em; margin-bottom:4px;">${k.label}</div>
+      <div style="font-size:0.97rem; font-weight:700; color:var(--text);">${k.value}</div>
+      ${k.sub ? `<div style="font-size:0.71rem; color:var(--text-muted); margin-top:2px;">${k.sub}</div>` : ''}
     </div>`).join('');
 
   // Portfolio diff: holdings before start vs at end
@@ -2548,60 +2662,23 @@ function renderPeriodAnalysis() {
   document.getElementById('periodPortfolioDiff').innerHTML = diffHtml;
 
   // ── 비중 변화 ──────────────────────────────────────────────
-  const priceMap = {};
-  for (const s of STOCKS) if (s.current_price > 0) priceMap[s.name] = s.current_price;
+  _wStartAdj = startAdj;
+  _wEndVal = endVal;
 
-  // Compute portfolio values at start/end using current prices as proxy
-  const heldNames = new Set([
-    ...Object.keys(hStart).filter(s => (hStart[s]||0) > 0.001),
-    ...Object.keys(hEnd).filter(s => (hEnd[s]||0) > 0.001)
-  ]);
-  let totalStartVal = 0, totalEndVal = 0;
-  for (const s of heldNames) {
-    const p = priceMap[s] || 0;
-    totalStartVal += (hStart[s]||0) * p;
-    totalEndVal   += (hEnd[s]||0)   * p;
+  // Build account filter buttons
+  const allAccts = [...new Set(TXS.filter(tx => tx.s && (tx.t === 'buy' || tx.t === 'sell')).map(tx => tx.acc))].sort();
+  const wFilterEl = document.getElementById('weightAccFilter');
+  if (wFilterEl) {
+    if (allAccts.length > 1) {
+      wFilterEl.innerHTML = ['all', ...allAccts].map((a, i) =>
+        `<button class="filter-btn${i===0?' active':''}" onclick="setWeightAcc('${a}',this)">${a === 'all' ? '전체' : a}</button>`
+      ).join('');
+      wFilterEl.style.display = '';
+    } else {
+      wFilterEl.style.display = 'none';
+    }
   }
-
-  const wData = [];
-  for (const s of heldNames) {
-    const p = priceMap[s] || 0;
-    if (p === 0) continue;
-    const qs = hStart[s]||0, qe = hEnd[s]||0;
-    const ws = totalStartVal > 0 ? qs*p/totalStartVal*100 : 0;
-    const we = totalEndVal   > 0 ? qe*p/totalEndVal*100   : 0;
-    if (ws < 0.05 && we < 0.05) continue;  // skip negligible
-    wData.push({s, qs, qe, ws, we, diff: we - ws});
-  }
-  wData.sort((a, b) => Math.max(b.ws, b.we) - Math.max(a.ws, a.we));
-  const topW = wData.slice(0, 16);
-  const maxW = topW.reduce((m, x) => Math.max(m, x.ws, x.we), 0.1);
-
-  const weightRows = topW.map(x => {
-    const barS = x.ws / maxW * 100;
-    const barE = x.we / maxW * 100;
-    const dc = x.diff > 0.15 ? 'var(--positive)' : x.diff < -0.15 ? 'var(--negative)' : 'var(--text-muted)';
-    const dStr = Math.abs(x.diff) < 0.05 ? '─' : (x.diff > 0 ? '+' : '') + x.diff.toFixed(1) + '%p';
-    const endColor = x.we > 0 ? (x.diff >= 0 ? 'rgba(10,124,89,0.65)' : 'rgba(200,30,30,0.55)') : 'transparent';
-    return `<div style="display:flex; align-items:center; gap:7px; padding:4px 0; border-bottom:1px solid var(--border);">
-      <span style="width:76px; font-size:0.78rem; font-weight:600; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; flex-shrink:0;" title="${x.s}">${x.s}</span>
-      <div style="flex:1; position:relative; height:13px; background:var(--bg2); border-radius:3px; overflow:hidden;">
-        <div style="position:absolute; inset:0; width:${barS}%; background:rgba(148,163,184,0.45); border-radius:3px;"></div>
-        <div style="position:absolute; inset:0; width:${barE}%; background:${endColor}; border-radius:3px;"></div>
-      </div>
-      <span style="width:30px; text-align:right; font-size:0.71rem; color:var(--text-dim); flex-shrink:0;">${x.we.toFixed(1)}%</span>
-      <span style="width:40px; text-align:right; font-size:0.71rem; font-weight:700; color:${dc}; flex-shrink:0;">${dStr}</span>
-    </div>`;
-  }).join('');
-
-  const legend = `<div style="display:flex; gap:14px; margin-bottom:7px; font-size:0.68rem; color:var(--text-muted);">
-    <span style="display:flex;align-items:center;gap:4px;"><span style="display:inline-block;width:10px;height:8px;background:rgba(148,163,184,0.45);border-radius:2px;"></span>기간 전</span>
-    <span style="display:flex;align-items:center;gap:4px;"><span style="display:inline-block;width:10px;height:8px;background:rgba(10,124,89,0.65);border-radius:2px;"></span>기간 후 (증가)</span>
-    <span style="display:flex;align-items:center;gap:4px;"><span style="display:inline-block;width:10px;height:8px;background:rgba(200,30,30,0.55);border-radius:2px;"></span>기간 후 (감소)</span>
-  </div>`;
-  document.getElementById('periodWeightChange').innerHTML = topW.length === 0
-    ? '<div style="font-size:0.82rem; color:var(--text-muted); padding:8px 0;">비중 데이터 없음 (가격 정보 필요)</div>'
-    : legend + weightRows;
+  renderWeightChange('all');
 
   // Trade list
   const sorted = [...inRange].sort((a,b) => b.d.localeCompare(a.d));
@@ -2722,6 +2799,110 @@ function renderPeriodAnalysis() {
   // Update trade count badge
   const countEl = document.getElementById('periodTradesCount');
   if (countEl) countEl.textContent = sorted.length > 0 ? `(${sorted.length}건)` : '';
+}
+
+// ── 비중 변화: account filter state & helpers ─────────────────
+let _wStartAdj = '', _wEndVal = '';
+
+function holdingsAtAcct(date, acct) {
+  const h = {};
+  for (const tx of TXS) {
+    if (tx.d > date) break;
+    if (!tx.s) continue;
+    if (acct !== 'all' && tx.acc !== acct) continue;
+    if (!h[tx.s]) h[tx.s] = 0;
+    if (tx.t === 'buy')  h[tx.s] += tx.q;
+    if (tx.t === 'sell') h[tx.s] -= tx.q;
+  }
+  return h;
+}
+
+function setWeightAcc(acct, btn) {
+  document.querySelectorAll('#weightAccFilter .filter-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  renderWeightChange(acct);
+}
+
+function renderWeightChange(acct) {
+  const hS = holdingsAtAcct(_wStartAdj, acct);
+  const hE = holdingsAtAcct(_wEndVal, acct);
+
+  const priceMap = {};
+  for (const s of STOCKS) if (s.current_price > 0) priceMap[s.name] = s.current_price;
+
+  const heldNames = new Set([
+    ...Object.keys(hS).filter(s => (hS[s]||0) > 0.001),
+    ...Object.keys(hE).filter(s => (hE[s]||0) > 0.001)
+  ]);
+  let totalStartVal = 0, totalEndVal = 0;
+  for (const s of heldNames) {
+    const p = priceMap[s] || 0;
+    totalStartVal += (hS[s]||0) * p;
+    totalEndVal   += (hE[s]||0) * p;
+  }
+
+  const wData = [];
+  for (const s of heldNames) {
+    const p = priceMap[s] || 0;
+    if (p === 0) continue;
+    const qs = hS[s]||0, qe = hE[s]||0;
+    const ws = totalStartVal > 0 ? qs*p/totalStartVal*100 : 0;
+    const we = totalEndVal   > 0 ? qe*p/totalEndVal*100   : 0;
+    if (ws < 0.05 && we < 0.05) continue;
+    wData.push({s, qs, qe, ws, we, diff: we - ws});
+  }
+  wData.sort((a, b) => Math.max(b.ws, b.we) - Math.max(a.ws, a.we));
+  const topW = wData.slice(0, 16);
+  const maxW = topW.reduce((m, x) => Math.max(m, x.ws, x.we), 0.1);
+
+  const weightRows = topW.map((x, i) => {
+    const barS = x.ws / maxW * 100;
+    const barE = x.we / maxW * 100;
+    const isPos = x.diff > 0.15, isNeg = x.diff < -0.15;
+    const dc = isPos ? 'var(--positive)' : isNeg ? 'var(--negative)' : 'var(--text-muted)';
+    const arrow = isPos ? '▲' : isNeg ? '▼' : '';
+    const dStr = Math.abs(x.diff) < 0.05
+      ? '<span style="color:var(--text-muted);">─</span>'
+      : `<span style="display:inline-flex;align-items:center;gap:2px;padding:1px 6px;border-radius:4px;background:${isPos ? 'rgba(10,124,89,0.1)' : 'rgba(200,30,30,0.1)'};">${arrow} ${(x.diff > 0 ? '+' : '') + x.diff.toFixed(1)}%p</span>`;
+    const endBarColor = x.we > 0 ? (isPos ? 'rgba(10,124,89,0.6)' : isNeg ? 'rgba(200,30,30,0.55)' : 'rgba(148,163,184,0.55)') : 'transparent';
+    const endPctColor = isPos ? 'var(--positive)' : isNeg ? 'var(--negative)' : 'var(--text-dim)';
+    const rowBg = i % 2 === 1 ? 'background:var(--bg2);' : '';
+    return `<tr style="${rowBg}">
+      <td style="padding:6px 8px 6px 6px; font-size:0.79rem; font-weight:600; white-space:nowrap; max-width:82px; overflow:hidden; text-overflow:ellipsis;" title="${x.s}">${x.s}</td>
+      <td style="padding:6px 6px; width:28%; vertical-align:middle;">
+        <div style="display:flex; align-items:center; gap:5px;">
+          <div style="flex:1; height:12px; background:rgba(148,163,184,0.15); border-radius:3px; overflow:hidden; position:relative;">
+            <div style="position:absolute; inset:0; width:${barS}%; background:rgba(148,163,184,0.5); border-radius:3px;"></div>
+          </div>
+          <span style="font-size:0.73rem; color:var(--text-dim); width:34px; text-align:right; flex-shrink:0;">${x.ws.toFixed(1)}%</span>
+        </div>
+      </td>
+      <td style="padding:6px 6px; width:28%; vertical-align:middle;">
+        <div style="display:flex; align-items:center; gap:5px;">
+          <div style="flex:1; height:12px; background:rgba(148,163,184,0.15); border-radius:3px; overflow:hidden; position:relative;">
+            <div style="position:absolute; inset:0; width:${barE}%; background:${endBarColor}; border-radius:3px;"></div>
+          </div>
+          <span style="font-size:0.73rem; font-weight:${isPos || isNeg ? '700' : '400'}; color:${endPctColor}; width:34px; text-align:right; flex-shrink:0;">${x.we.toFixed(1)}%</span>
+        </div>
+      </td>
+      <td style="padding:6px 6px 6px 4px; font-size:0.72rem; font-weight:700; color:${dc}; text-align:right; white-space:nowrap;">${dStr}</td>
+    </tr>`;
+  }).join('');
+
+  const weightTable = topW.length === 0
+    ? '<div style="font-size:0.82rem; color:var(--text-muted); padding:8px 0;">비중 데이터 없음 (가격 정보 필요)</div>'
+    : `<table style="width:100%; border-collapse:collapse; border-radius:6px; overflow:hidden;">
+        <thead>
+          <tr style="background:var(--bg2); border-bottom:2px solid var(--border);">
+            <th style="padding:5px 8px 5px 6px; font-size:0.68rem; font-weight:700; color:var(--text-muted); text-align:left; letter-spacing:.05em; text-transform:uppercase;">종목</th>
+            <th style="padding:5px 6px; font-size:0.68rem; font-weight:700; color:var(--text-muted); text-align:left; letter-spacing:.05em; text-transform:uppercase;">기간 전</th>
+            <th style="padding:5px 6px; font-size:0.68rem; font-weight:700; color:var(--text-muted); text-align:left; letter-spacing:.05em; text-transform:uppercase;">기간 후</th>
+            <th style="padding:5px 6px 5px 4px; font-size:0.68rem; font-weight:700; color:var(--text-muted); text-align:right; letter-spacing:.05em; text-transform:uppercase;">변화</th>
+          </tr>
+        </thead>
+        <tbody>${weightRows}</tbody>
+      </table>`;
+  document.getElementById('periodWeightChange').innerHTML = weightTable;
 }
 
 let periodTradesOpen = false;
@@ -3064,6 +3245,7 @@ function switchToPortfolioAccount(accName) {
 // Init
 initOverallCharts();
 renderStockTable();
+updateFilterCounts();
 renderTreemap();
 renderAccountSummary();
 // Re-render treemaps on resize
