@@ -1,163 +1,280 @@
 #!/usr/bin/env python3
-"""Fetch monthly closing prices for all stocks (2014~now) using pykrx + yfinance.
-Outputs historical_prices.json: {stock_name: {"2024-01": price, "2024-02": price, ...}}
 """
-import json
-import os
-import time
-from datetime import datetime
+기준일별 포트폴리오 평가금액 계산 (기간별 수익률용)
 
-DIR = os.path.dirname(__file__)
-STOCK_MAP_FILE = os.path.join(DIR, "stock_map.json")
-TRANSACTIONS_FILE = os.path.join(DIR, "transactions.json")
-OUTPUT_FILE = os.path.join(DIR, "historical_prices.json")
+기준일: 전월말, 전분기말, 전년말(YTD), 1년 전(T12M)
+각 기준일에 보유 중이던 종목의 종가를 조회해서 포트폴리오 가치를 계산한다.
+- 한국주식: pykrx
+- 해외주식: yfinance
+- 환율: yfinance (KRW=X 등)
 
-START_DATE = "20140101"
-END_DATE = datetime.now().strftime("%Y%m%d")
+Output: historical_portfolio_values.json
+{
+  "_updated": "2026-04-10",
+  "_key_dates": {"ytd": "2025-12-31", "qtd": "2026-03-31", ...},
+  "2025-12-31": {"portfolio_value": 950000000, "stocks": {...}},
+  ...
+}
 
+Usage:
+  python3 fetch_historical_prices.py            # 오늘 날짜 기준 계산 (캐시 있으면 스킵)
+  python3 fetch_historical_prices.py --force    # 강제 재계산
+"""
 
-def get_active_stocks():
-    """Find stocks that were actually held (had buys) from transactions."""
-    with open(TRANSACTIONS_FILE, encoding="utf-8") as f:
-        txs = json.load(f)
-    stocks = set()
-    for tx in txs:
-        if tx["type"] in ("buy", "sell", "transfer_in", "transfer_out") and tx["stock"]:
-            stocks.add(tx["stock"])
-    stocks.discard("")
-    stocks.discard("Unknown")
-    return stocks
+import json, os, sys, time
+from collections import defaultdict
+from datetime import datetime, timedelta, date
 
+BASE_DIR    = os.path.dirname(os.path.abspath(__file__))
+TXS_FILE    = os.path.join(BASE_DIR, "transactions.json")
+PRICES_FILE = os.path.join(BASE_DIR, "prices.json")
+OUTPUT_FILE = os.path.join(BASE_DIR, "historical_portfolio_values.json")
 
-def fetch_kr_monthly(code, name):
-    """Fetch Korean stock monthly closing prices via pykrx."""
-    from pykrx import stock as krx
+# 환율 코드 (→ KRW)
+FX_TICKERS = {
+    "USD": "KRW=X",
+    "JPY": "JPYKRW=X",
+    "HKD": "HKDKRW=X",
+    "CNY": "CNYKRW=X",
+}
+NATION_CURRENCY = {
+    "KOR": "KRW", "USA": "USD", "JPN": "JPY",
+    "HKG": "HKD", "CHN": "CNY",
+}
+YAHOO_SUFFIX = {"JPN": ".T", "CHN": ".SS", "HKG": ".HK", "USA": ""}
+
+# ───────────────────────── 기준일 계산 ─────────────────────────
+
+def get_key_dates():
+    today = date.today()
+    y = today.year
+    q = (today.month - 1) // 3 + 1
+
+    # 전월말
+    mtd_base = today.replace(day=1) - timedelta(days=1)
+
+    # 전분기말
+    q_start_month = (q - 1) * 3 + 1
+    if q_start_month == 1:
+        qtd_base = date(y - 1, 12, 31)
+    else:
+        qtd_base = date(y, q_start_month, 1) - timedelta(days=1)
+
+    # 전년말 (YTD 기준)
+    ytd_base = date(y - 1, 12, 31)
+
+    # 1년 전 전날 (T12M 기준)
     try:
-        df = krx.get_market_ohlcv_by_date(START_DATE, END_DATE, code)
-        if df.empty:
-            return {}
-        monthly = df.resample("ME").last()
-        result = {}
-        for date, row in monthly.iterrows():
-            mk = date.strftime("%Y-%m")
-            price = int(row["종가"])
-            if price > 0:
-                result[mk] = price
-        return result
-    except Exception as e:
-        print(f"    ERROR {name} ({code}): {e}")
-        return {}
+        t12m_base = today.replace(year=y - 1) - timedelta(days=1)
+    except ValueError:
+        t12m_base = today.replace(year=y - 1, day=28) - timedelta(days=1)
 
+    return {"mtd": mtd_base, "qtd": qtd_base, "ytd": ytd_base, "t12m": t12m_base}
 
-def fetch_foreign_monthly(code, name):
-    """Fetch foreign stock monthly closing prices via yfinance."""
-    import yfinance as yf
-    try:
-        ticker = yf.Ticker(code)
-        hist = ticker.history(start="2014-01-01", interval="1mo")
-        if hist.empty:
-            # Try daily and resample
-            hist = ticker.history(start="2014-01-01", interval="1d")
-            if hist.empty:
-                return {}
-            hist = hist.resample("ME").last()
-        result = {}
-        for date, row in hist.iterrows():
-            mk = date.strftime("%Y-%m")
-            price = round(float(row["Close"]), 2)
-            if price > 0:
-                result[mk] = price
-        return result
-    except Exception as e:
-        print(f"    ERROR {name} ({code}): {e}")
-        return {}
+# ───────────────────────── FIFO 보유량 재구성 ─────────────────────────
 
-
-def fetch_jpn_monthly(code, name):
-    """Fetch Japanese stock via yfinance with .T suffix."""
-    suffix = ".T" if not code.endswith(".T") else ""
-    return fetch_foreign_monthly(code + suffix, name)
-
-
-def main():
-    with open(STOCK_MAP_FILE, encoding="utf-8") as f:
-        stock_map = json.load(f)
-
-    active_stocks = get_active_stocks()
-    print(f"Active stocks: {len(active_stocks)}")
-
-    # Load existing data to resume
-    historical = {}
-    if os.path.exists(OUTPUT_FILE):
-        with open(OUTPUT_FILE, encoding="utf-8") as f:
-            historical = json.load(f)
-
-    kr_stocks = []
-    foreign_stocks = []
-    skipped = []
-
-    for name in sorted(active_stocks):
-        info = stock_map.get(name)
-        if not info or not info.get("code"):
-            skipped.append(name)
+def build_holdings_at(txs_sorted, target_date_str):
+    """target_date_str 당일 종가 기준 보유 종목 {name: {qty, cost, fifo}}"""
+    holdings = defaultdict(lambda: {"qty": 0.0, "cost": 0.0, "fifo": []})
+    for tx in txs_sorted:
+        if tx["date"] > target_date_str:
+            break
+        stock = tx.get("stock", "")
+        if not stock or tx["type"] not in ("buy", "sell", "transfer_in", "transfer_out"):
             continue
-        if name in historical and len(historical[name]) > 0:
-            continue  # Already fetched
-        nation = info.get("nation", "")
-        if nation == "KOR":
-            kr_stocks.append((name, info["code"]))
-        else:
-            foreign_stocks.append((name, info["code"], nation))
+        h = holdings[stock]
+        if tx["type"] in ("buy", "transfer_in"):
+            qty   = tx.get("qty", 0)
+            price = tx.get("price", 0) or (tx.get("amount", 0) / qty if qty else 0)
+            h["qty"]  += qty
+            h["cost"] += tx.get("amount", qty * price)
+            h["fifo"].append({"qty": qty, "price": price})
+        else:  # sell / transfer_out
+            qty = tx.get("qty", 0)
+            rem = qty
+            while rem > 0 and h["fifo"]:
+                b    = h["fifo"][0]
+                take = min(rem, b["qty"])
+                h["cost"] -= take * b["price"]
+                b["qty"]  -= take
+                rem       -= take
+                if b["qty"] == 0:
+                    h["fifo"].pop(0)
+            h["qty"] -= qty
+            if h["qty"] <= 0:
+                h["qty"] = 0; h["cost"] = 0; h["fifo"] = []
 
-    print(f"To fetch: {len(kr_stocks)} KR, {len(foreign_stocks)} foreign")
-    print(f"Already fetched: {len(historical)}")
-    if skipped:
-        print(f"Skipped (no code): {len(skipped)}")
+    return {n: h for n, h in holdings.items() if h["qty"] > 0.001}
 
-    # Fetch Korean stocks via pykrx
-    if kr_stocks:
-        print(f"\n=== Korean stocks ({len(kr_stocks)}) ===")
-        for i, (name, code) in enumerate(kr_stocks):
-            print(f"  [{i+1}/{len(kr_stocks)}] {name} ({code})...", end=" ", flush=True)
-            data = fetch_kr_monthly(code, name)
-            if data:
-                historical[name] = data
-                print(f"OK ({len(data)} months)")
+# ───────────────────────── 가격 조회 ─────────────────────────
+
+def krx_price_at(krx, code, target: date):
+    """pykrx로 기준일 또는 직전 거래일 종가 반환"""
+    for i in range(10):
+        d = target - timedelta(days=i)
+        d_str = d.strftime("%Y%m%d")
+        try:
+            df = krx.get_market_ohlcv_by_date(d_str, d_str, code)
+            if not df.empty and int(df["종가"].iloc[-1]) > 0:
+                return int(df["종가"].iloc[-1]), d
+        except Exception:
+            pass
+        time.sleep(0.15)
+    return None, None
+
+def yf_price_at(ticker_str, target: date):
+    """yfinance로 기준일 또는 직전 거래일 종가 반환"""
+    import yfinance as yf
+    start = (target - timedelta(days=14)).strftime("%Y-%m-%d")
+    end   = (target + timedelta(days=1)).strftime("%Y-%m-%d")
+    try:
+        df = yf.download(ticker_str, start=start, end=end,
+                         progress=False, auto_adjust=True)
+        if not df.empty:
+            close = df["Close"].iloc[-1]
+            if hasattr(close, "iloc"):
+                close = float(close.iloc[0])
             else:
-                print("EMPTY")
-            time.sleep(0.5)
+                close = float(close)
+            return round(close, 4), df.index[-1].date()
+    except Exception:
+        pass
+    return None, None
 
-            # Save periodically
-            if (i + 1) % 20 == 0:
-                with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-                    json.dump(historical, f, ensure_ascii=False, indent=2)
+def fx_rate_at(currency, target: date, fx_cache):
+    """기준일 환율 (→ KRW). 캐시 활용."""
+    if currency == "KRW":
+        return 1.0
+    key = f"{currency}_{target}"
+    if key in fx_cache:
+        return fx_cache[key]
+    ticker_str = FX_TICKERS.get(currency)
+    if not ticker_str:
+        return 1300.0
+    price, _ = yf_price_at(ticker_str, target)
+    rate = price if price else None
+    fx_cache[key] = rate
+    return rate
 
-    # Fetch foreign stocks via yfinance
-    if foreign_stocks:
-        print(f"\n=== Foreign stocks ({len(foreign_stocks)}) ===")
-        for i, (name, code, nation) in enumerate(foreign_stocks):
-            print(f"  [{i+1}/{len(foreign_stocks)}] {name} ({code})...", end=" ", flush=True)
-            if nation == "JPN":
-                data = fetch_jpn_monthly(code, name)
+# ───────────────────────── 메인 ─────────────────────────
+
+def main(force=False):
+    today_str = date.today().strftime("%Y-%m-%d")
+
+    # 캐시 유효 체크
+    if not force and os.path.exists(OUTPUT_FILE):
+        with open(OUTPUT_FILE, encoding="utf-8") as f:
+            existing = json.load(f)
+        if existing.get("_updated") == today_str:
+            print("✓ 오늘 이미 계산됨. 스킵 (--force로 강제 재계산)")
+            return
+
+    print("=== 기준일별 포트폴리오 평가금액 계산 ===\n")
+
+    with open(TXS_FILE, encoding="utf-8") as f:
+        txs = sorted(json.load(f), key=lambda x: x["date"])
+
+    with open(PRICES_FILE, encoding="utf-8") as f:
+        prices_meta = json.load(f)
+
+    key_dates = get_key_dates()
+    # 중복 날짜 제거 (예: mtd==qtd이면 한 번만 계산)
+    unique_dates = {}
+    for label, d in key_dates.items():
+        unique_dates[d.strftime("%Y-%m-%d")] = d
+
+    print("기준일:")
+    for label, d in key_dates.items():
+        print(f"  {label:6s}: {d.strftime('%Y-%m-%d')}")
+    print()
+
+    try:
+        from pykrx import stock as krx
+    except ImportError:
+        print("ERROR: pykrx 미설치. pip3 install pykrx")
+        sys.exit(1)
+
+    output = {
+        "_updated": today_str,
+        "_key_dates": {k: v.strftime("%Y-%m-%d") for k, v in key_dates.items()},
+    }
+    fx_cache = {}
+
+    for date_str, target_date in sorted(unique_dates.items()):
+        print(f"{'─'*60}")
+        print(f"[{date_str}] 보유 종목 재구성 중...")
+
+        holdings = build_holdings_at(txs, date_str)
+        print(f"  보유 {len(holdings)}종목\n")
+
+        total_value  = 0
+        stocks_detail = {}
+        failed = []
+
+        for stock_name, h in sorted(holdings.items()):
+            meta   = prices_meta.get(stock_name, {})
+            if not isinstance(meta, dict):
+                meta = {}
+            code   = meta.get("code", "")
+            nation = meta.get("nation") or "KOR"
+
+            price_native = None
+            actual_date  = None
+
+            if not code:
+                price_native = h["cost"] / h["qty"] if h["qty"] > 0 else 0
+                note = "no_code→cost"
+            elif nation == "KOR":
+                price_native, actual_date = krx_price_at(krx, code, target_date)
+                note = f"krx_{actual_date}" if actual_date else "krx_fail"
             else:
-                data = fetch_foreign_monthly(code, name)
-            if data:
-                historical[name] = data
-                print(f"OK ({len(data)} months)")
-            else:
-                print("EMPTY")
-            time.sleep(0.3)
+                suffix     = YAHOO_SUFFIX.get(nation, "")
+                ticker_str = code if code.endswith(suffix) else code + suffix
+                price_native, actual_date = yf_price_at(ticker_str, target_date)
+                note = f"yf_{actual_date}" if actual_date else "yf_fail"
 
-    # Final save
+            if price_native is None:
+                price_native = h["cost"] / h["qty"] if h["qty"] > 0 else 0
+                note = "fallback→cost"
+                failed.append(stock_name)
+
+            currency = NATION_CURRENCY.get(nation, "USD")
+            fx = fx_rate_at(currency, target_date, fx_cache)
+            if fx is None:
+                fx = 1300.0
+                print(f"  ⚠ {currency}/KRW 환율 조회 실패, 1300원으로 대체")
+
+            price_krw = price_native * fx
+            value_krw = price_krw * h["qty"]
+            total_value += value_krw
+
+            stocks_detail[stock_name] = {
+                "qty":          round(h["qty"], 4),
+                "price_native": round(price_native, 4),
+                "currency":     currency,
+                "fx_rate":      round(fx, 4),
+                "price_krw":    round(price_krw),
+                "value_krw":    round(value_krw),
+                "note":         note,
+            }
+
+            status = "✓" if "fail" not in note and "cost" not in note else "△"
+            print(f"  {status} {stock_name}: {h['qty']:.2f}주 × {price_krw:,.0f}원 = {value_krw:,.0f}원  [{note}]")
+
+        if failed:
+            print(f"\n  ⚠ 가격 조회 실패 (취득단가 대체): {', '.join(failed)}")
+
+        output[date_str] = {
+            "portfolio_value": round(total_value),
+            "stocks": stocks_detail,
+        }
+        print(f"\n  → 포트폴리오 평가금액: {total_value:,.0f}원")
+
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(historical, f, ensure_ascii=False, indent=2)
-
-    # Summary
-    total_with_data = sum(1 for v in historical.values() if v)
-    print(f"\n=== Summary ===")
-    print(f"Total stocks with history: {total_with_data}")
-    print(f"Saved to {OUTPUT_FILE}")
+        json.dump(output, f, ensure_ascii=False, indent=2)
+    print(f"\n✓ 저장 완료: {OUTPUT_FILE}")
 
 
 if __name__ == "__main__":
-    main()
+    force = "--force" in sys.argv
+    main(force)

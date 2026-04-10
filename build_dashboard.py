@@ -580,14 +580,23 @@ for m in months_sorted:
 
 
 # ===== Period performance (MTD / QTD / YTD / T12M) =====
-_today_dt = date.today()
+_today_dt   = date.today()
 _this_year  = str(_today_dt.year)
 _this_month = _today_dt.strftime('%Y-%m')
 _q_num      = (_today_dt.month - 1) // 3 + 1
-_q_start    = f"{_this_year}-{(_q_num-1)*3+1:02d}"
-_ytd_base   = f"{_today_dt.year - 1}-12"          # Dec of prev year
-_t12m_start = (_today_dt.replace(day=1) - timedelta(days=1)).replace(
-    year=_today_dt.year - 1).strftime('%Y-%m')    # same month, prev year
+_q_start_m  = f"{_this_year}-{(_q_num-1)*3+1:02d}"
+
+# Load historical portfolio values (from fetch_historical_prices.py)
+_hist_pv_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'historical_portfolio_values.json')
+_hist_pv = {}
+_hist_key_dates = {}
+if os.path.exists(_hist_pv_file):
+    with open(_hist_pv_file, encoding='utf-8') as _f:
+        _hist_data = json.load(_f)
+    _hist_key_dates = _hist_data.get('_key_dates', {})
+    for _ds, _entry in _hist_data.items():
+        if not _ds.startswith('_') and isinstance(_entry, dict):
+            _hist_pv[_ds] = _entry.get('portfolio_value', 0)
 
 def _tl_sum(start_m, end_m):
     rows = [t for t in timeline if start_m <= t['month'] <= end_m]
@@ -598,28 +607,27 @@ def _tl_sum(start_m, end_m):
         returned  = sum(t['returned'] for t in rows),
     )
 
-def _mv_at(month_str):
-    for t in timeline:
-        if t['month'] == month_str:
-            return t['holdings_value']
-    return 0
-
-def _make_period(label, start_m, base_month):
+def _make_period(label, start_m, hist_key):
+    """period_perf 계산 — total_market_value 정의 후 호출해야 함"""
     s = _tl_sum(start_m, _this_month)
-    income = s['realized'] + s['dividends']
-    base_mv = _mv_at(base_month)
-    # Approximate period return: income / starting cost basis
-    income_pct = (income / base_mv * 100) if base_mv > 0 else 0
-    return dict(label=label, income=income, realized=s['realized'],
-                dividends=s['dividends'], income_pct=income_pct,
+    income    = s['realized'] + s['dividends']
+    base_date = _hist_key_dates.get(hist_key, '')
+    base_mv   = _hist_pv.get(base_date, 0)
+    if base_mv > 0:
+        net_invested = s['invested'] - s['returned'] - s['dividends']
+        total_gain   = total_market_value - base_mv - net_invested
+        return_pct   = total_gain / base_mv * 100
+        unrealized   = total_gain - income
+        has_hist     = True
+    else:
+        total_gain = income; unrealized = 0
+        return_pct = 0;      has_hist   = False
+    return dict(label=label, total_gain=total_gain, income=income,
+                realized=s['realized'], dividends=s['dividends'],
+                unrealized=unrealized, return_pct=return_pct,
+                has_hist=has_hist, base_date=base_date, base_mv=base_mv,
                 invested=s['invested'], returned=s['returned'])
-
-period_perf = {
-    'mtd' : _make_period('이번 달',   _this_month, f"{_today_dt.year}-{(_today_dt.month-2)%12+1:02d}" if _today_dt.month > 1 else _ytd_base),
-    'qtd' : _make_period('이번 분기', _q_start,    f"{_this_year}-{(_q_num-1)*3:02d}" if _q_num > 1 else _ytd_base),
-    'ytd' : _make_period('올해 YTD',  f"{_this_year}-01", _ytd_base),
-    't12m': _make_period('최근 1년',  _t12m_start, _t12m_start),
-}
+# period_perf는 total_market_value 계산 이후에 정의됨 (아래 참조)
 
 # === Win rate ===
 win_count = sum(1 for m in stock_summaries.values() if m.get("net_pnl", 0) > 0)
@@ -772,6 +780,14 @@ total_market_value = sum(
     for stock, h in overall_holdings.items()
 )
 total_unrealized = total_market_value - sum(h["cost"] for h in overall_holdings.values())
+
+# period_perf: total_market_value 확정 이후 계산
+period_perf = {
+    'mtd' : _make_period('이번 달',   _this_month,   'mtd'),
+    'qtd' : _make_period('이번 분기', _q_start_m,    'qtd'),
+    'ytd' : _make_period('올해 YTD',  f"{_this_year}-01", 'ytd'),
+    't12m': _make_period('최근 1년',  _hist_key_dates.get('t12m', '')[:7] if _hist_key_dates.get('t12m') else _this_month, 't12m'),
+}
 
 js_overall = {
     "total_invested": overall_invested,
@@ -1252,10 +1268,13 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
   <!-- 기간별 성과 -->
   <div class="kpi-row secondary" style="grid-template-columns:repeat(4,1fr); margin-bottom:16px;">
     {"".join(f'''
-    <div class="kpi {"border-positive" if p["income"] >= 0 else "border-negative"}">
-      <div class="kpi-label">{p["label"]}</div>
-      <div class="kpi-value compact {pnl_class(p["income"])}">{fmt_num(p["income"])}</div>
-      <div class="kpi-sub">실현 {fmt_num(p["realized"])} · 배당 {fmt_num(p["dividends"])}</div>
+    <div class="kpi {"border-positive" if p["total_gain"] >= 0 else "border-negative"}">
+      <div class="kpi-label" style="display:flex;justify-content:space-between;align-items:center;">
+        <span>{p["label"]}</span>
+        {"<span style='font-size:0.78rem;font-weight:700;" + ("color:var(--positive)" if p["return_pct"]>=0 else "color:var(--negative)") + ";'>" + f'{p["return_pct"]:+.1f}%</span>' if p["has_hist"] else ""}
+      </div>
+      <div class="kpi-value compact {pnl_class(p["total_gain"])}">{fmt_num(p["total_gain"])}</div>
+      <div class="kpi-sub">{"평가 " + fmt_num(p["unrealized"]) + " · " if p["has_hist"] else ""}실현 {fmt_num(p["realized"])} · 배당 {fmt_num(p["dividends"])}</div>
     </div>''' for p in period_perf.values())}
   </div>
 
