@@ -439,12 +439,17 @@ for stock, m in stock_summaries.items():
     overall_fees += m["total_fees"]
     overall_tax += m["total_tax"]
     all_cashflows.extend(m["cashflows"])
-    if m["current_qty"] > 0:
-        overall_holdings[stock] = {
-            "qty": m["current_qty"],
-            "avg_price": m["avg_buy_price"],
-            "cost": m["current_cost"],
-        }
+
+# Build overall_holdings from per-account summaries (correct FIFO per account)
+# stock_summaries mixes all accounts in one FIFO stream → cost basis corrupted by inter-account transfers
+for acc_data in account_summaries.values():
+    for stock, h in acc_data["holdings"].items():
+        if stock not in overall_holdings:
+            overall_holdings[stock] = {"qty": 0, "cost": 0.0}
+        overall_holdings[stock]["qty"] += h["qty"]
+        overall_holdings[stock]["cost"] += h["cost"]
+for stock, h in overall_holdings.items():
+    h["avg_price"] = round(h["cost"] / h["qty"]) if h["qty"] > 0 else 0
 
 all_cashflows.sort(key=lambda x: x[0])
 # Add current market value of all holdings for IRR
@@ -1854,7 +1859,9 @@ function renderTreemapInContainer(containerId, data, tooltipId) {
   const W = container.clientWidth;
   const H = container.clientHeight;
   if (W <= 0 || H <= 0) return;
-  const rects = squarify(data, 0, 0, W, H);
+  // Filter out items with no current price (market_value=0) to avoid squarify artifacts
+  const filteredData = data.filter(d => d.market_value > 0);
+  const rects = squarify(filteredData, 0, 0, W, H);
   const tooltip = document.getElementById(tooltipId);
 
   container.innerHTML = rects.map(r => {
