@@ -1243,7 +1243,7 @@ body.mask-on .amt {{ filter: blur(8px); user-select: none; }}
   <div class="info-bar-item"><span class="info-bar-dot"></span><span>가격 업데이트: <strong><span id="prices-updated-at">{prices_updated_at or '알 수 없음'}</span></strong></span></div>
   <div class="info-bar-item"><span class="info-bar-dot" style="background:var(--text-muted)"></span><span>JPY {jpy_krw:,.2f}원</span></div>
   <div class="info-bar-item"><span class="info-bar-dot" style="background:var(--text-muted)"></span><span>승률 {win_rate:.0f}% ({win_count}/{total_traded_count}종목)</span></div>
-  <div class="info-bar-item" style="margin-left:auto;"><span style="color:var(--text-muted); font-size:0.73rem;">빌드: {date.today().isoformat()}</span></div>
+  <div class="info-bar-item" style="margin-left:auto;"><span style="color:var(--text-muted); font-size:0.73rem;">빌드: {datetime.now().strftime('%Y-%m-%d %H:%M')}</span></div>
 </div>
 
 <div class="tabs">
