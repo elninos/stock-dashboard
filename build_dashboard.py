@@ -1140,6 +1140,11 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
 .header-pv-sub {{ font-size: 0.84rem; font-weight: 600; margin-top: 3px; }}
 .pv-blur {{ filter: blur(9px); transition: filter 0.2s ease; user-select: none; }}
 .pv-blur:hover {{ filter: blur(6px); }}
+.amt {{ transition: filter 0.2s ease; }}
+body.mask-on .amt {{ filter: blur(8px); user-select: none; }}
+.mask-btn {{ padding: 8px 14px; border: 1px solid var(--border-light); border-radius: 8px;
+  background: rgba(26,86,219,0.06); color: var(--text-dim); cursor: pointer;
+  font-size: 0.8rem; font-weight: 600; transition: all 0.2s; white-space: nowrap; }}
 .header-right {{ display: flex; align-items: center; gap: 20px; }}
 .header-stat {{ text-align: center; }}
 .header-stat-label {{ font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600; margin-bottom: 3px; }}
@@ -1228,6 +1233,8 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
       <div class="header-stat-value" style="font-size:0.85rem;">USD {usd_krw:,.0f}</div>
     </div>
     <div class="header-divider"></div>
+    <button id="mask-btn" class="mask-btn" onclick="toggleMask()" title="거래금액·수량 숨김/표시">🔒 숨김</button>
+    <div class="header-divider"></div>
     <button id="refresh-btn" class="header-refresh-btn" onclick="refreshPrices()" title="네이버에서 현재가 새로고침">⟳ 새로고침</button>
   </div>
 </div>
@@ -1236,6 +1243,7 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
   <div class="info-bar-item"><span class="info-bar-dot"></span><span>가격 업데이트: <strong><span id="prices-updated-at">{prices_updated_at or '알 수 없음'}</span></strong></span></div>
   <div class="info-bar-item"><span class="info-bar-dot" style="background:var(--text-muted)"></span><span>JPY {jpy_krw:,.2f}원</span></div>
   <div class="info-bar-item"><span class="info-bar-dot" style="background:var(--text-muted)"></span><span>승률 {win_rate:.0f}% ({win_count}/{total_traded_count}종목)</span></div>
+  <div class="info-bar-item" style="margin-left:auto;"><span style="color:var(--text-muted); font-size:0.73rem;">빌드: {date.today().isoformat()}</span></div>
 </div>
 
 <div class="tabs">
@@ -1345,6 +1353,7 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
   <div class="sub-tabs">
     <button class="sub-tab active" onclick="switchSubTab('stocks')">종목별</button>
     <button class="sub-tab" onclick="switchSubTab('byAccount')">계좌별</button>
+    <button class="sub-tab" onclick="switchSubTab('period')">기간별 분석</button>
   </div>
 
   <!-- Sub-tab: Stocks -->
@@ -1398,69 +1407,9 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
     <div class="account-selector" id="accountSelector"></div>
     <div id="accountDetail"></div>
   </div>
-</div>
 
-<!-- ===== ANALYSIS TAB ===== -->
-<div id="tab-analysis" class="tab-content">
-
-<!-- 종합 통계 -->
-<div class="card" style="margin-bottom:20px;">
-  <div class="card-title">종합 통계</div>
-  <div class="kpi-row secondary" style="margin-bottom:12px;">
-    <div class="kpi">
-      <div class="kpi-label">총 매수</div>
-      <div class="kpi-value compact">{fmt_num(overall_invested)}</div>
-    </div>
-    <div class="kpi">
-      <div class="kpi-label">총 매도</div>
-      <div class="kpi-value compact">{fmt_num(overall_returned)}</div>
-    </div>
-    <div class="kpi">
-      <div class="kpi-label">수수료 + 세금</div>
-      <div class="kpi-value compact negative">{fmt_num(overall_fees + overall_tax)}</div>
-      <div class="kpi-sub">수수료 {fmt_num(overall_fees)} · 세금 {fmt_num(overall_tax)}</div>
-    </div>
-    <div class="kpi">
-      <div class="kpi-label">순입금</div>
-      <div class="kpi-value compact">{fmt_num(overall_net_deposit)}</div>
-      <div class="kpi-sub">입금 {fmt_num(overall_deposits)} / 출금 {fmt_num(overall_withdrawals)}</div>
-    </div>
-    <div class="kpi">
-      <div class="kpi-label">대출잔액</div>
-      <div class="kpi-value compact {"negative" if overall_loan_balance > 0 else ""}">{fmt_num(overall_loan_balance)}</div>
-      <div class="kpi-sub">레버리지 {total_market_value / max(total_market_value - overall_loan_balance, 1):.2f}x</div>
-    </div>
-  </div>
-  <div class="kpi-row secondary" style="grid-template-columns: repeat(6, 1fr);">
-    <div class="kpi border-negative">
-      <div class="kpi-label">대출이자</div>
-      <div class="kpi-value compact negative">{fmt_num(overall_loan_interest)}</div>
-    </div>
-    <div class="kpi">
-      <div class="kpi-label">대여수수료</div>
-      <div class="kpi-value compact positive">{fmt_num(overall_lending_fee)}</div>
-    </div>
-    <div class="kpi">
-      <div class="kpi-label">순금융비용</div>
-      <div class="kpi-value compact negative">{fmt_num(overall_loan_interest - overall_lending_fee)}</div>
-    </div>
-    <div class="kpi">
-      <div class="kpi-label">실질 순수익</div>
-      <div class="kpi-value compact {pnl_class(overall_net_pnl - overall_loan_interest + overall_lending_fee)}">{fmt_num(overall_net_pnl - overall_loan_interest + overall_lending_fee)}</div>
-      <div class="kpi-sub">손익 - 이자 + 대여수수료</div>
-    </div>
-    <div class="kpi">
-      <div class="kpi-label">자기자본 수익률</div>
-      <div class="kpi-value compact {pnl_class(overall_net_pnl - overall_loan_interest)}">{((overall_net_pnl - overall_loan_interest) / max(overall_deposits, 1) * 100):+.1f}%</div>
-    </div>
-    <div class="kpi">
-      <div class="kpi-label">승률 (Win Rate)</div>
-      <div class="kpi-value compact">{win_rate:.0f}%</div>
-      <div class="kpi-sub">수익 {win_count} / 손실 {loss_count}종목</div>
-    </div>
-  </div>
-</div>
-
+  <!-- Sub-tab: Period Analysis -->
+  <div id="subtab-period" class="subtab-content">
 <!-- Period analysis section -->
 <div class="card" style="margin-bottom:20px;">
   <div class="card-title">기간별 분석</div>
@@ -1517,6 +1466,69 @@ details[open] .detail-toggle::before {{ transform: rotate(90deg); }}
     </div>
     <div id="periodTradesContainer" style="display:none;">
       <div id="periodTrades" style="max-height:420px; overflow-y:auto;"></div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+<!-- ===== ANALYSIS TAB ===== -->
+<div id="tab-analysis" class="tab-content">
+
+<!-- 종합 통계 -->
+<div class="card" style="margin-bottom:20px;">
+  <div class="card-title">종합 통계</div>
+  <div class="kpi-row secondary" style="margin-bottom:12px;">
+    <div class="kpi">
+      <div class="kpi-label">총 매수</div>
+      <div class="kpi-value compact amt">{fmt_num(overall_invested)}</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">총 매도</div>
+      <div class="kpi-value compact amt">{fmt_num(overall_returned)}</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">수수료 + 세금</div>
+      <div class="kpi-value compact negative amt">{fmt_num(overall_fees + overall_tax)}</div>
+      <div class="kpi-sub">수수료 {fmt_num(overall_fees)} · 세금 {fmt_num(overall_tax)}</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">순입금</div>
+      <div class="kpi-value compact amt">{fmt_num(overall_net_deposit)}</div>
+      <div class="kpi-sub">입금 {fmt_num(overall_deposits)} / 출금 {fmt_num(overall_withdrawals)}</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">대출잔액</div>
+      <div class="kpi-value compact amt {"negative" if overall_loan_balance > 0 else ""}">{fmt_num(overall_loan_balance)}</div>
+      <div class="kpi-sub">레버리지 {total_market_value / max(total_market_value - overall_loan_balance, 1):.2f}x</div>
+    </div>
+  </div>
+  <div class="kpi-row secondary" style="grid-template-columns: repeat(6, 1fr);">
+    <div class="kpi border-negative">
+      <div class="kpi-label">대출이자</div>
+      <div class="kpi-value compact negative amt">{fmt_num(overall_loan_interest)}</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">대여수수료</div>
+      <div class="kpi-value compact positive amt">{fmt_num(overall_lending_fee)}</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">순금융비용</div>
+      <div class="kpi-value compact negative">{fmt_num(overall_loan_interest - overall_lending_fee)}</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">실질 순수익</div>
+      <div class="kpi-value compact {pnl_class(overall_net_pnl - overall_loan_interest + overall_lending_fee)}">{fmt_num(overall_net_pnl - overall_loan_interest + overall_lending_fee)}</div>
+      <div class="kpi-sub">손익 - 이자 + 대여수수료</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">자기자본 수익률</div>
+      <div class="kpi-value compact {pnl_class(overall_net_pnl - overall_loan_interest)}">{((overall_net_pnl - overall_loan_interest) / max(overall_deposits, 1) * 100):+.1f}%</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">승률 (Win Rate)</div>
+      <div class="kpi-value compact">{win_rate:.0f}%</div>
+      <div class="kpi-sub">수익 {win_count} / 손실 {loss_count}종목</div>
     </div>
   </div>
 </div>
@@ -1925,10 +1937,12 @@ function switchSubTab(name) {
     // Always re-render account treemap when subtab becomes visible
     renderAcctTreemap();
   }
+  if (name === 'period') { initPeriodAnalysis(); }
 }
 
 // ===== Amount visibility toggle =====
 let amountsHidden = true;
+let maskOn = false;
 function toggleAmounts() {
   amountsHidden = !amountsHidden;
   document.querySelectorAll('.pv-blur').forEach(el => {
@@ -1938,6 +1952,12 @@ function toggleAmounts() {
   const eye = document.getElementById('amountEye');
   if (eye) eye.textContent = amountsHidden ? '👁' : '🙈';
 }
+function toggleMask() {
+  maskOn = !maskOn;
+  document.body.classList.toggle('mask-on', maskOn);
+  const btn = document.getElementById('mask-btn');
+  if (btn) { btn.textContent = maskOn ? '🔓 표시' : '🔒 숨김'; btn.style.background = maskOn ? 'rgba(200,30,30,0.08)' : ''; }
+}
 
 // ===== Tab switching =====
 function switchTab(name) {
@@ -1945,10 +1965,12 @@ function switchTab(name) {
   document.querySelectorAll('.tab').forEach(el => el.classList.remove('active'));
   document.getElementById('tab-' + name).classList.add('active');
   event.target.classList.add('active');
-  if (name === 'analysis') initAnalysis();
-  if (name === 'portfolio') { renderStockTable(); initAccounts(); setTimeout(renderStocksTreemap, 50); }
+  if (name === 'analysis') { initAnalysis(); }
+  if (name === 'portfolio') {
+    renderStockTable(); initAccounts(); setTimeout(renderStocksTreemap, 50);
+    if (document.getElementById('subtab-period')?.classList.contains('active')) initPeriodAnalysis();
+  }
   if (name === 'dashboard') { setTimeout(renderTreemap, 50); }
-  if (name === 'analysis') initPeriodAnalysis();
   if (name === 'briefing') initBriefing();
 }
 
@@ -1993,17 +2015,17 @@ function renderStockTable() {
   tbody.innerHTML = data.map(s => `
     <tr>
       <td><strong>${s.name}</strong></td>
-      <td class="text-right mono">${fmt(s.invested)}</td>
-      <td class="text-right mono">${fmt(s.returned)}</td>
-      <td class="text-right mono ${pnlCls(s.realized_pnl)}">${fmt(s.realized_pnl)}</td>
-      <td class="text-right mono">${s.dividends > 0 ? fmt(s.dividends) : '-'}</td>
-      <td class="text-right mono ${pnlCls(s.net_pnl)}"><strong>${fmt(s.net_pnl)}</strong></td>
+      <td class="text-right mono amt">${fmt(s.invested)}</td>
+      <td class="text-right mono amt">${fmt(s.returned)}</td>
+      <td class="text-right mono amt ${pnlCls(s.realized_pnl)}">${fmt(s.realized_pnl)}</td>
+      <td class="text-right mono amt">${s.dividends > 0 ? fmt(s.dividends) : '-'}</td>
+      <td class="text-right mono amt ${pnlCls(s.net_pnl)}"><strong>${fmt(s.net_pnl)}</strong></td>
       <td class="text-right mono ${pnlCls(s.roi)}">${s.roi.toFixed(1)}%</td>
       <td class="text-right mono ${pnlCls(s.irr)}">${s.irr != null ? s.irr.toFixed(1) + '%' : '-'}</td>
-      <td class="text-right mono">${s.current_qty > 0 ? s.current_qty.toLocaleString() : '-'}</td>
+      <td class="text-right mono amt">${s.current_qty > 0 ? s.current_qty.toLocaleString() : '-'}</td>
       <td class="text-right mono">${s.current_qty > 0 ? fmt(s.current_price) : '-'}</td>
-      <td class="text-right mono">${s.market_value > 0 ? '<strong>' + fmt(s.market_value) + '</strong>' : '-'}</td>
-      <td class="text-right mono ${pnlCls(s.unrealized_pnl)}">${s.current_qty > 0 ? fmt(s.unrealized_pnl) : '-'}</td>
+      <td class="text-right mono amt">${s.market_value > 0 ? '<strong>' + fmt(s.market_value) + '</strong>' : '-'}</td>
+      <td class="text-right mono amt ${pnlCls(s.unrealized_pnl)}">${s.current_qty > 0 ? fmt(s.unrealized_pnl) : '-'}</td>
       <td class="text-right mono">${s.weight > 0 ? s.weight.toFixed(1) + '%' : '-'}</td>
     </tr>
   `).join('');
@@ -2114,17 +2136,17 @@ function renderAccountTable() {
   if (!tbody) return;
   tbody.innerHTML = stocks.map(s => `<tr>
     <td><strong>${s.name}</strong></td>
-    <td class="text-right mono">${fmt(s.invested)}</td>
-    <td class="text-right mono">${fmt(s.returned)}</td>
-    <td class="text-right mono ${pnlCls(s.realized_pnl)}">${fmt(s.realized_pnl)}</td>
-    <td class="text-right mono">${s.dividends > 0 ? fmt(s.dividends) : '-'}</td>
-    <td class="text-right mono ${pnlCls(s.net_pnl)}"><strong>${fmt(s.net_pnl)}</strong></td>
+    <td class="text-right mono amt">${fmt(s.invested)}</td>
+    <td class="text-right mono amt">${fmt(s.returned)}</td>
+    <td class="text-right mono amt ${pnlCls(s.realized_pnl)}">${fmt(s.realized_pnl)}</td>
+    <td class="text-right mono amt">${s.dividends > 0 ? fmt(s.dividends) : '-'}</td>
+    <td class="text-right mono amt ${pnlCls(s.net_pnl)}"><strong>${fmt(s.net_pnl)}</strong></td>
     <td class="text-right mono ${pnlCls(s.roi)}">${s.roi.toFixed(1)}%</td>
     <td class="text-right mono ${pnlCls(s.irr)}">${s.irr != null ? s.irr.toFixed(1) + '%' : '-'}</td>
-    <td class="text-right mono">${s.current_qty > 0 ? s.current_qty.toLocaleString() + '주' : '-'}</td>
+    <td class="text-right mono amt">${s.current_qty > 0 ? s.current_qty.toLocaleString() + '주' : '-'}</td>
     <td class="text-right mono">${s.current_qty > 0 ? fmt(s.current_price) : '-'}</td>
-    <td class="text-right mono">${s.market_value > 0 ? '<strong>' + fmt(s.market_value) + '</strong>' : '-'}</td>
-    <td class="text-right mono ${pnlCls(s.unrealized_pnl)}">${s.current_qty > 0 ? fmt(s.unrealized_pnl) : '-'}</td>
+    <td class="text-right mono amt">${s.market_value > 0 ? '<strong>' + fmt(s.market_value) + '</strong>' : '-'}</td>
+    <td class="text-right mono amt ${pnlCls(s.unrealized_pnl)}">${s.current_qty > 0 ? fmt(s.unrealized_pnl) : '-'}</td>
     <td class="text-right mono">${s.weight > 0 ? s.weight.toFixed(1) + '%' : '-'}</td>
   </tr>`).join('');
 
@@ -2159,7 +2181,7 @@ function renderAccount(acc) {
   if (Object.keys(data.holdings).length > 0) {
     holdingsHtml = '<div class="card"><div class="card-title">보유 종목</div><div class="holdings-grid">';
     Object.entries(data.holdings).sort((a,b) => b[1].cost - a[1].cost).forEach(([stock, h]) => {
-      holdingsHtml += `<div class="holding-card"><div class="holding-name">${stock}</div><div class="holding-detail">${h.qty.toLocaleString()}주 x ${h.avg_price.toLocaleString()}원</div><div class="holding-detail">원가 ${fmt(h.cost)}</div></div>`;
+      holdingsHtml += `<div class="holding-card"><div class="holding-name">${stock}</div><div class="holding-detail"><span class="amt">${h.qty.toLocaleString()}주</span> x ${h.avg_price.toLocaleString()}원</div><div class="holding-detail">원가 <span class="amt">${fmt(h.cost)}</span></div></div>`;
     });
     holdingsHtml += '</div></div>';
   }
@@ -2171,10 +2193,10 @@ function renderAccount(acc) {
 
   detail.innerHTML = `
     <div class="kpi-row primary">
-      <div class="kpi"><div class="kpi-label">매수금액</div><div class="kpi-value">${fmt(data.total_invested)}</div><div class="kpi-sub">${data.num_trades}건 거래</div></div>
-      <div class="kpi"><div class="kpi-label">매도금액</div><div class="kpi-value">${fmt(data.total_returned)}</div></div>
-      <div class="kpi"><div class="kpi-label">실현손익</div><div class="kpi-value ${pnlCls(data.realized_pnl)}">${fmt(data.realized_pnl)}</div></div>
-      <div class="kpi"><div class="kpi-label">배당</div><div class="kpi-value">${fmt(data.dividends)}</div></div>
+      <div class="kpi"><div class="kpi-label">매수금액</div><div class="kpi-value amt">${fmt(data.total_invested)}</div><div class="kpi-sub">${data.num_trades}건 거래</div></div>
+      <div class="kpi"><div class="kpi-label">매도금액</div><div class="kpi-value amt">${fmt(data.total_returned)}</div></div>
+      <div class="kpi"><div class="kpi-label">실현손익</div><div class="kpi-value amt ${pnlCls(data.realized_pnl)}">${fmt(data.realized_pnl)}</div></div>
+      <div class="kpi"><div class="kpi-label">배당</div><div class="kpi-value amt">${fmt(data.dividends)}</div></div>
     </div>
     <div class="kpi-row secondary" style="margin-bottom:20px;">
       <div class="kpi"><div class="kpi-label">순손익</div><div class="kpi-value compact ${pnlCls(netPnl)}">${fmt(netPnl)}</div><div class="kpi-sub">ROI ${roi}%</div></div>
