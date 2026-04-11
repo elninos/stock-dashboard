@@ -3391,4 +3391,11 @@ window.addEventListener('resize', () => {
 with open("/Users/r/Documents/Claude/stock-dashboard/index.html", "w", encoding="utf-8") as f:
     f.write(html)
 print("Dashboard saved to index.html")
+
+# Auto-copy to _deploy/ for deployment
+import shutil
+deploy_path = "/Users/r/Documents/Claude/stock-dashboard/_deploy/index.html"
+shutil.copy("/Users/r/Documents/Claude/stock-dashboard/index.html", deploy_path)
+print(f"Copied to _deploy/index.html")
+
 print(f"Overall: invested={fmt_num(overall_invested)}, returned={fmt_num(overall_returned)}, pnl={fmt_num(overall_net_pnl)}, IRR={fmt_pct(overall_irr) if overall_irr else 'N/A'}")
