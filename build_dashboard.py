@@ -1422,11 +1422,11 @@ body.mask-on .amt {{ filter: blur(8px); user-select: none; }}
   <!-- Period preset buttons -->
   <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:16px;">
     <div class="filter-group" id="periodPresets">
-      <button class="filter-btn active" onclick="setPeriodPreset('1w',this)">이번 주</button>
-      <button class="filter-btn" onclick="setPeriodPreset('1m',this)">이번 달</button>
-      <button class="filter-btn" onclick="setPeriodPreset('3m',this)">3개월</button>
+      <button class="filter-btn" onclick="setPeriodPreset('today',this)">오늘</button>
+      <button class="filter-btn" onclick="setPeriodPreset('1w',this)">이번 주</button>
+      <button class="filter-btn active" onclick="setPeriodPreset('1m',this)">이번 달</button>
+      <button class="filter-btn" onclick="setPeriodPreset('1q',this)">이번 분기</button>
       <button class="filter-btn" onclick="setPeriodPreset('ytd',this)">올해</button>
-      <button class="filter-btn" onclick="setPeriodPreset('1y',this)">1년</button>
       <button class="filter-btn" onclick="setPeriodPreset('all',this)">전체</button>
     </div>
     <div style="display:flex; align-items:center; gap:6px; margin-left:8px;">
@@ -2630,7 +2630,7 @@ function initPeriodAnalysis() {
   if (periodAnalysisInited) return;
   periodAnalysisInited = true;
   // Default: 이번 달
-  const btn = document.querySelector('#periodPresets .filter-btn:nth-child(2)');
+  const btn = document.querySelector('#periodPresets .filter-btn:nth-child(3)');
   if (btn) setPeriodPreset('1m', btn);
 }
 
@@ -2640,16 +2640,22 @@ function setPeriodPreset(preset, btn) {
   const today = new Date();
   const fmt = d => d.toISOString().slice(0,10);
   let start;
-  if (preset === '1w') {
-    start = new Date(today); start.setDate(today.getDate() - 7);
+  if (preset === 'today') {
+    start = new Date(today);
+  } else if (preset === '1w') {
+    // 이번 주 월요일
+    const day = today.getDay(); // 0=일, 1=월 ... 6=토
+    const diffToMon = (day === 0) ? -6 : 1 - day;
+    start = new Date(today); start.setDate(today.getDate() + diffToMon);
   } else if (preset === '1m') {
-    start = new Date(today); start.setMonth(today.getMonth() - 1);
-  } else if (preset === '3m') {
-    start = new Date(today); start.setMonth(today.getMonth() - 3);
+    // 이번 달 1일
+    start = new Date(today.getFullYear(), today.getMonth(), 1);
+  } else if (preset === '1q') {
+    // 이번 분기 첫날 (1Q=1/1, 2Q=4/1, 3Q=7/1, 4Q=10/1)
+    const qStartMonth = Math.floor(today.getMonth() / 3) * 3;
+    start = new Date(today.getFullYear(), qStartMonth, 1);
   } else if (preset === 'ytd') {
     start = new Date(today.getFullYear(), 0, 1);
-  } else if (preset === '1y') {
-    start = new Date(today); start.setFullYear(today.getFullYear() - 1);
   } else {
     start = new Date('2000-01-01');
   }
