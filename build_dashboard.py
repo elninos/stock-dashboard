@@ -1299,7 +1299,7 @@ body.mask-on .amt {{ filter: blur(8px); user-select: none; }}
         {"<span style='font-size:0.78rem;font-weight:700;" + ("color:var(--positive)" if p["return_pct"]>=0 else "color:var(--negative)") + ";'>" + f'{p["return_pct"]:+.1f}%</span>' if p["has_hist"] else ""}
       </div>
       <div class="kpi-value compact {pnl_class(p["total_gain"])} amt">{fmt_num(p["total_gain"])}</div>
-      <div class="kpi-sub">{"평가 <span class=\'amt\'>" + fmt_num(p["unrealized"]) + "</span> · " if p["has_hist"] else ""}실현 <span class="amt">{fmt_num(p["realized"])}</span> · 배당 <span class="amt">{fmt_num(p["dividends"])}</span></div>
+      <div class="kpi-sub amt">{"평가 " + fmt_num(p["unrealized"]) + " · " if p["has_hist"] else ""}실현 {fmt_num(p["realized"])} · 배당 {fmt_num(p["dividends"])}</div>
     </div>''' for p in period_perf.values())}
   </div>
 
