@@ -1247,9 +1247,9 @@ body.mask-on .amt {{ filter: blur(8px); user-select: none; }}
 </div>
 
 <div class="tabs">
-  <button class="tab active" onclick="switchTab('dashboard')">대시보드</button>
+  <button class="tab active" onclick="switchTab('dashboard')">현황</button>
   <button class="tab" onclick="switchTab('portfolio')">포트폴리오</button>
-  <button class="tab" onclick="switchTab('analysis')">분석</button>
+  <button class="tab" onclick="switchTab('analysis')">통계</button>
   <button class="tab" onclick="switchTab('briefing')">시장 브리핑</button>
 </div>
 
@@ -1259,21 +1259,21 @@ body.mask-on .amt {{ filter: blur(8px); user-select: none; }}
   <div class="kpi-row primary">
     <div class="kpi">
       <div class="kpi-label">보유 평가금액</div>
-      <div class="kpi-value">{fmt_num(total_market_value)}</div>
-      <div class="kpi-sub">{len(overall_holdings)}종목 보유 · 원금 {fmt_num(sum(h['cost'] for h in overall_holdings.values()))}</div>
+      <div class="kpi-value amt">{fmt_num(total_market_value)}</div>
+      <div class="kpi-sub">{len(overall_holdings)}종목 보유 · 원금 <span class="amt">{fmt_num(sum(h['cost'] for h in overall_holdings.values()))}</span></div>
     </div>
     <div class="kpi {"border-positive" if total_unrealized >= 0 else "border-negative"}">
       <div class="kpi-label">평가손익</div>
-      <div class="kpi-value {pnl_class(total_unrealized)}">{fmt_num(total_unrealized)}</div>
+      <div class="kpi-value {pnl_class(total_unrealized)} amt">{fmt_num(total_unrealized)}</div>
       <div class="kpi-sub {pnl_class(total_unrealized)}">{(total_unrealized / sum(h['cost'] for h in overall_holdings.values()) * 100) if sum(h['cost'] for h in overall_holdings.values()) > 0 else 0:+.1f}%</div>
     </div>
     <div class="kpi {"border-positive" if overall_net_pnl >= 0 else "border-negative"}">
       <div class="kpi-label">실현손익 + 배당</div>
-      <div class="kpi-value {pnl_class(overall_net_pnl)}">{fmt_num(overall_net_pnl)}</div>
+      <div class="kpi-value {pnl_class(overall_net_pnl)} amt">{fmt_num(overall_net_pnl)}</div>
       <div class="kpi-sub" style="display:flex;gap:10px;margin-top:6px;">
-        <span><span style="font-size:0.7rem;color:var(--text-muted);display:block;margin-bottom:1px;">실현</span><span class="{pnl_class(overall_realized_pnl)}" style="font-size:0.82rem;font-weight:600;">{fmt_num(overall_realized_pnl)}</span></span>
+        <span><span style="font-size:0.7rem;color:var(--text-muted);display:block;margin-bottom:1px;">실현</span><span class="{pnl_class(overall_realized_pnl)} amt" style="font-size:0.82rem;font-weight:600;">{fmt_num(overall_realized_pnl)}</span></span>
         <span style="color:var(--border);font-size:1rem;align-self:center;">│</span>
-        <span><span style="font-size:0.7rem;color:var(--text-muted);display:block;margin-bottom:1px;">배당</span><span style="color:#1a56db;font-size:0.82rem;font-weight:600;">{fmt_num(overall_dividends)}</span></span>
+        <span><span style="font-size:0.7rem;color:var(--text-muted);display:block;margin-bottom:1px;">배당</span><span class="amt" style="color:#1a56db;font-size:0.82rem;font-weight:600;">{fmt_num(overall_dividends)}</span></span>
       </div>
     </div>
     <div class="kpi">
@@ -1298,8 +1298,8 @@ body.mask-on .amt {{ filter: blur(8px); user-select: none; }}
         <span>{p["label"]}</span>
         {"<span style='font-size:0.78rem;font-weight:700;" + ("color:var(--positive)" if p["return_pct"]>=0 else "color:var(--negative)") + ";'>" + f'{p["return_pct"]:+.1f}%</span>' if p["has_hist"] else ""}
       </div>
-      <div class="kpi-value compact {pnl_class(p["total_gain"])}">{fmt_num(p["total_gain"])}</div>
-      <div class="kpi-sub">{"평가 " + fmt_num(p["unrealized"]) + " · " if p["has_hist"] else ""}실현 {fmt_num(p["realized"])} · 배당 {fmt_num(p["dividends"])}</div>
+      <div class="kpi-value compact {pnl_class(p["total_gain"])} amt">{fmt_num(p["total_gain"])}</div>
+      <div class="kpi-sub">{"평가 <span class=\'amt\'>" + fmt_num(p["unrealized"]) + "</span> · " if p["has_hist"] else ""}실현 <span class="amt">{fmt_num(p["realized"])}</span> · 배당 <span class="amt">{fmt_num(p["dividends"])}</span></div>
     </div>''' for p in period_perf.values())}
   </div>
 
@@ -1514,11 +1514,11 @@ body.mask-on .amt {{ filter: blur(8px); user-select: none; }}
     </div>
     <div class="kpi">
       <div class="kpi-label">순금융비용</div>
-      <div class="kpi-value compact negative">{fmt_num(overall_loan_interest - overall_lending_fee)}</div>
+      <div class="kpi-value compact negative amt">{fmt_num(overall_loan_interest - overall_lending_fee)}</div>
     </div>
     <div class="kpi">
       <div class="kpi-label">실질 순수익</div>
-      <div class="kpi-value compact {pnl_class(overall_net_pnl - overall_loan_interest + overall_lending_fee)}">{fmt_num(overall_net_pnl - overall_loan_interest + overall_lending_fee)}</div>
+      <div class="kpi-value compact {pnl_class(overall_net_pnl - overall_loan_interest + overall_lending_fee)} amt">{fmt_num(overall_net_pnl - overall_loan_interest + overall_lending_fee)}</div>
       <div class="kpi-sub">손익 - 이자 + 대여수수료</div>
     </div>
     <div class="kpi">
@@ -1871,11 +1871,11 @@ function renderTreemapInContainer(containerId, data, tooltipId) {
     cell.addEventListener('mouseenter', e => {
       const d = cell.dataset;
       tooltip.innerHTML = `<div class="tt-name">${d.name}</div>
-        <div class="tt-row"><span class="tt-label">평가금액</span><span>${fmt(+d.mv)}</span></div>
-        <div class="tt-row"><span class="tt-label">수량</span><span>${(+d.qty).toLocaleString()}주</span></div>
+        <div class="tt-row"><span class="tt-label">평가금액</span><span class="amt">${fmt(+d.mv)}</span></div>
+        <div class="tt-row"><span class="tt-label">수량</span><span class="amt">${(+d.qty).toLocaleString()}주</span></div>
         <div class="tt-row"><span class="tt-label">현재가</span><span>${fmt(+d.cp)}</span></div>
-        <div class="tt-row"><span class="tt-label">원가</span><span>${fmt(+d.cost)}</span></div>
-        <div class="tt-row"><span class="tt-label">평가손익</span><span class="${pnlCls(+d.upnl)}">${fmt(+d.upnl)} (${(+d.ret) >= 0 ? '+' : ''}${d.ret}%)</span></div>
+        <div class="tt-row"><span class="tt-label">원가</span><span class="amt">${fmt(+d.cost)}</span></div>
+        <div class="tt-row"><span class="tt-label">평가손익</span><span class="${pnlCls(+d.upnl)} amt">${fmt(+d.upnl)} (${(+d.ret) >= 0 ? '+' : ''}${d.ret}%)</span></div>
         <div class="tt-row"><span class="tt-label">비중</span><span>${d.weight}%</span></div>`;
       tooltip.style.display = 'block';
     });
@@ -2199,14 +2199,14 @@ function renderAccount(acc) {
       <div class="kpi"><div class="kpi-label">배당</div><div class="kpi-value amt">${fmt(data.dividends)}</div></div>
     </div>
     <div class="kpi-row secondary" style="margin-bottom:20px;">
-      <div class="kpi"><div class="kpi-label">순손익</div><div class="kpi-value compact ${pnlCls(netPnl)}">${fmt(netPnl)}</div><div class="kpi-sub">ROI ${roi}%</div></div>
+      <div class="kpi"><div class="kpi-label">순손익</div><div class="kpi-value compact ${pnlCls(netPnl)} amt">${fmt(netPnl)}</div><div class="kpi-sub">ROI ${roi}%</div></div>
       <div class="kpi"><div class="kpi-label">IRR</div><div class="kpi-value compact ${pnlCls(data.irr)}">${data.irr != null ? data.irr.toFixed(1) + '%' : 'N/A'}</div></div>
-      ${data.loan_interest > 0 ? `<div class="kpi"><div class="kpi-label">대출이자</div><div class="kpi-value compact negative">${fmt(data.loan_interest)}</div><div class="kpi-sub">대여수수료 +${fmt(data.lending_fee || 0)}</div></div>` : ''}
+      ${data.loan_interest > 0 ? `<div class="kpi"><div class="kpi-label">대출이자</div><div class="kpi-value compact negative amt">${fmt(data.loan_interest)}</div><div class="kpi-sub">대여수수료 +<span class="amt">${fmt(data.lending_fee || 0)}</span></div></div>` : ''}
     </div>
     ${data.total_deposits > 0 ? `<div class="kpi-row secondary" style="margin-bottom:20px;">
-      <div class="kpi"><div class="kpi-label">순입금액</div><div class="kpi-value compact">${fmt(data.net_deposit)}</div><div class="kpi-sub">입금 ${fmt(data.total_deposits)} / 출금 ${fmt(data.total_withdrawals)}</div></div>
-      <div class="kpi"><div class="kpi-label">대출잔액</div><div class="kpi-value compact ${data.loan_balance > 0 ? 'negative' : ''}">${fmt(data.loan_balance)}</div></div>
-      ${data.loan_interest > 0 ? `<div class="kpi"><div class="kpi-label">실질 순수익</div><div class="kpi-value compact ${pnlCls(netPnl - data.loan_interest + (data.lending_fee || 0))}">${fmt(netPnl - data.loan_interest + (data.lending_fee || 0))}</div><div class="kpi-sub">손익 - 이자 + 대여수수료</div></div>` : ''}
+      <div class="kpi"><div class="kpi-label">순입금액</div><div class="kpi-value compact amt">${fmt(data.net_deposit)}</div><div class="kpi-sub">입금 <span class="amt">${fmt(data.total_deposits)}</span> / 출금 <span class="amt">${fmt(data.total_withdrawals)}</span></div></div>
+      <div class="kpi"><div class="kpi-label">대출잔액</div><div class="kpi-value compact ${data.loan_balance > 0 ? 'negative' : ''} amt">${fmt(data.loan_balance)}</div></div>
+      ${data.loan_interest > 0 ? `<div class="kpi"><div class="kpi-label">실질 순수익</div><div class="kpi-value compact ${pnlCls(netPnl - data.loan_interest + (data.lending_fee || 0))} amt">${fmt(netPnl - data.loan_interest + (data.lending_fee || 0))}</div><div class="kpi-sub">손익 - 이자 + 대여수수료</div></div>` : ''}
     </div>` : ''}
     ${treemapHtml}
     ${holdingsHtml}
@@ -2344,7 +2344,7 @@ function initOverallCharts() {
     statsEl.innerHTML = nationEntries.map(([name, mv]) =>
       `<div style="display:flex;justify-content:space-between;padding:3px 0;border-bottom:1px solid var(--border);">
         <span><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${nationColorMap[name]||'#8b8fa3'};margin-right:6px;"></span>${name}</span>
-        <span style="font-feature-settings:'tnum'">${fmt(mv)} <span style="color:var(--text-muted)">(${(mv/totalMv*100).toFixed(1)}%)</span></span>
+        <span style="font-feature-settings:'tnum'"><span class="amt">${fmt(mv)}</span> <span style="color:var(--text-muted)">(${(mv/totalMv*100).toFixed(1)}%)</span></span>
       </div>`
     ).join('');
   }
@@ -2695,7 +2695,7 @@ function renderPeriodAnalysis() {
   document.getElementById('periodKpis').innerHTML = kpiDefs.map(k => `
     <div style="background:var(--bg2); border:1px solid var(--border); border-radius:10px; padding:14px 16px;">
       <div style="font-size:0.72rem; color:var(--text-muted); font-weight:600; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px;">${k.label}</div>
-      <div style="font-size:1.15rem; font-weight:700;" class="${k.raw?'':k.cls}">${k.raw ? k.value.toLocaleString('ko-KR') : fmt(k.value)}</div>
+      <div style="font-size:1.15rem; font-weight:700;" class="${k.raw?'':k.cls+' amt'}">${k.raw ? k.value.toLocaleString('ko-KR') : fmt(k.value)}</div>
     </div>`).join('');
 
   // ── 매매 패턴 (row 2) ─────────────────────────────────────
@@ -3324,13 +3324,13 @@ function renderAccountSummary() {
     const barColor = upnl >= 0 ? 'var(--positive)' : 'var(--negative)';
 
     const loanBadge = hasLoan
-      ? `<span style="font-size:0.62rem;font-weight:600;color:var(--negative)">대출 ${fmt(acct.loan_balance)}</span>`
+      ? `<span style="font-size:0.62rem;font-weight:600;color:var(--negative)">대출 <span class="amt">${fmt(acct.loan_balance)}</span></span>`
       : `<span class="acct-acct-id">${acct.num_holdings}종목</span>`;
 
     const mvHtml = mv > 0
-      ? `<div class="acct-mv">${fmt(mv)}</div>
+      ? `<div class="acct-mv amt">${fmt(mv)}</div>
          <div class="acct-pnl-row">
-           <span class="acct-upnl ${upnlCls}">${upnl >= 0 ? '+' : ''}${fmt(upnl)}</span>
+           <span class="acct-upnl ${upnlCls} amt">${upnl >= 0 ? '+' : ''}${fmt(upnl)}</span>
            <span class="acct-upnl-pct ${upnlCls}">${upnlPct >= 0 ? '+' : ''}${upnlPct.toFixed(1)}%</span>
            <div class="acct-upnl-bar"><div class="acct-upnl-bar-fill" style="width:${barPct}%;background:${barColor};"></div></div>
          </div>`
@@ -3346,7 +3346,7 @@ function renderAccountSummary() {
       <div class="acct-stats">
         <div class="acct-stat">
           <span class="acct-stat-label">실현손익</span>
-          <span class="acct-stat-val ${pnlCls(netPnl)}">${netPnl >= 0 ? '+' : ''}${fmt(netPnl)}</span>
+          <span class="acct-stat-val ${pnlCls(netPnl)} amt">${netPnl >= 0 ? '+' : ''}${fmt(netPnl)}</span>
         </div>
         <div class="acct-stat" style="text-align:right">
           <span class="acct-stat-label">IRR</span>
