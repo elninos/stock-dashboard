@@ -24,6 +24,14 @@ briefing_summary = {}
 if os.path.exists(briefing_summary_file):
     with open(briefing_summary_file, encoding="utf-8") as f:
         briefing_summary = json.load(f)
+
+# Load stock news (AI-summarized news per held stock)
+stock_news_file = "/Users/r/Documents/Claude/stock-dashboard/stock_news.json"
+stock_news_data = {}
+if os.path.exists(stock_news_file):
+    with open(stock_news_file, encoding="utf-8") as f:
+        stock_news_data = json.load(f)
+
 prices_file = "/Users/r/Documents/Claude/stock-dashboard/prices.json"
 stock_map_file = "/Users/r/Documents/Claude/stock-dashboard/stock_map.json"
 stock_map_data = {}
@@ -1175,6 +1183,33 @@ body.mask-on .amt {{ filter: blur(8px); user-select: none; }}
 /* === Chart fix: prevent canvas overflow === */
 .chart-container canvas {{ max-height: 350px; }}
 
+/* === News Tab === */
+.news-card {{
+  background: var(--card); border-radius: 12px; border: 1px solid var(--border);
+  padding: 16px; display: flex; flex-direction: column; gap: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06); transition: box-shadow 0.2s;
+}}
+.news-card:hover {{ box-shadow: 0 4px 12px rgba(0,0,0,0.1); }}
+.news-card-header {{ display: flex; align-items: center; justify-content: space-between; gap: 8px; }}
+.news-stock-name {{ font-weight: 700; font-size: 0.95rem; color: var(--text); }}
+.news-sentiment {{ font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 20px; flex-shrink: 0; }}
+.news-sentiment.positive {{ background: rgba(16,185,129,0.12); color: #059669; }}
+.news-sentiment.negative {{ background: rgba(239,68,68,0.12); color: #dc2626; }}
+.news-sentiment.neutral {{ background: rgba(107,114,128,0.1); color: #6b7280; }}
+.news-summary {{ font-size: 0.83rem; color: var(--text-dim); line-height: 1.55; }}
+.news-keywords {{ display: flex; flex-wrap: wrap; gap: 5px; }}
+.news-keyword {{ background: var(--accent-dim); color: var(--accent); font-size: 0.72rem; font-weight: 600; padding: 2px 8px; border-radius: 12px; }}
+.news-notable {{ font-size: 0.79rem; color: var(--text-dim); border-left: 3px solid var(--accent); padding-left: 8px; font-style: italic; }}
+.news-articles {{ display: none; margin-top: 4px; border-top: 1px solid var(--border); padding-top: 10px; }}
+.news-articles.open {{ display: block; }}
+.news-article-item {{ padding: 5px 0; border-bottom: 1px solid var(--border-light); }}
+.news-article-item:last-child {{ border-bottom: none; }}
+.news-article-item a {{ color: var(--accent); font-size: 0.78rem; text-decoration: none; line-height: 1.4; display: block; }}
+.news-article-item a:hover {{ text-decoration: underline; }}
+.news-article-meta {{ font-size: 0.7rem; color: var(--text-dim); margin-top: 1px; }}
+.news-toggle-btn {{ background: none; border: 1px solid var(--border); border-radius: 6px; color: var(--text-dim); font-size: 0.75rem; cursor: pointer; padding: 4px 10px; margin-top: 2px; transition: all 0.15s; }}
+.news-toggle-btn:hover {{ border-color: var(--accent); color: var(--accent); }}
+
 /* === Info bar (below tabs) === */
 .info-bar {{
   display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
@@ -1255,6 +1290,7 @@ body.mask-on .amt {{ filter: blur(8px); user-select: none; }}
   <button class="tab active" onclick="switchTab('dashboard')">현황</button>
   <button class="tab" onclick="switchTab('portfolio')">포트폴리오</button>
   <button class="tab" onclick="switchTab('analysis')">통계</button>
+  <button class="tab" onclick="switchTab('news')">뉴스</button>
   <button class="tab" onclick="switchTab('briefing')">시장 브리핑</button>
 </div>
 
@@ -1560,6 +1596,22 @@ body.mask-on .amt {{ filter: blur(8px); user-select: none; }}
   </div>
 </div>
 
+<!-- ===== NEWS TAB ===== -->
+<div id="tab-news" class="tab-content">
+  <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:20px; flex-wrap:wrap; gap:12px;">
+    <div style="display:flex; align-items:center; gap:10px;">
+      <div class="filter-group" id="newsSentimentFilter">
+        <button class="filter-btn active" data-filter="all" onclick="filterNews('all',this)">전체</button>
+        <button class="filter-btn" data-filter="positive" onclick="filterNews('positive',this)">🟢 긍정</button>
+        <button class="filter-btn" data-filter="negative" onclick="filterNews('negative',this)">🔴 부정</button>
+        <button class="filter-btn" data-filter="neutral" onclick="filterNews('neutral',this)">⚪ 중립</button>
+      </div>
+    </div>
+    <span id="newsUpdatedAt" style="color:var(--text-dim); font-size:0.8rem;"></span>
+  </div>
+  <div id="newsGrid" style="display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:16px;"></div>
+</div>
+
 <!-- ===== BRIEFING TAB ===== -->
 <div id="tab-briefing" class="tab-content">
   <!-- Period selector + 업데이트 버튼 -->
@@ -1609,6 +1661,7 @@ const TIMELINE = """ + json.dumps(timeline, ensure_ascii=False) + """;
 const TREEMAP_DATA = """ + json.dumps(treemap_data, ensure_ascii=False) + """;
 const BRIEFING = """ + json.dumps(briefing_data, ensure_ascii=False) + """;
 const BRIEFING_SUMMARY = """ + json.dumps(briefing_summary, ensure_ascii=False) + """;
+const STOCK_NEWS = """ + json.dumps(stock_news_data, ensure_ascii=False) + """;
 const TXS = """ + json.dumps([
     {"d": tx["date"], "t": tx["type"], "s": tx.get("stock",""), "a": round(tx.get("amount",0)), "q": round(tx.get("qty",0),4), "acc": tx.get("account","")}
     for tx in all_txs
@@ -1979,6 +2032,7 @@ function switchTab(name) {
   }
   if (name === 'dashboard') { setTimeout(renderTreemap, 50); }
   if (name === 'briefing') initBriefing();
+  if (name === 'news') initNewsTab();
 }
 
 // ===== STOCK TABLE =====
@@ -3034,6 +3088,81 @@ function togglePeriodTrades() {
   const arrow     = document.getElementById('periodTradesArrow');
   if (container) container.style.display = periodTradesOpen ? 'block' : 'none';
   if (arrow)     arrow.textContent = periodTradesOpen ? '▼' : '▶';
+}
+
+// ===== NEWS TAB =====
+let newsFilter = 'all';
+let newsInited = false;
+
+function initNewsTab() {
+  if (!STOCK_NEWS || !STOCK_NEWS.stocks) return;
+  const updatedEl = document.getElementById('newsUpdatedAt');
+  if (updatedEl && STOCK_NEWS.updated_at) {
+    updatedEl.textContent = '업데이트: ' + STOCK_NEWS.updated_at.replace('T', ' ').slice(0, 16);
+  }
+  renderNewsGrid();
+  newsInited = true;
+}
+
+function filterNews(filter, btn) {
+  newsFilter = filter;
+  document.querySelectorAll('#newsSentimentFilter .filter-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  renderNewsGrid();
+}
+
+function renderNewsGrid() {
+  const grid = document.getElementById('newsGrid');
+  if (!grid || !STOCK_NEWS || !STOCK_NEWS.stocks) return;
+
+  const stocks = STOCK_NEWS.stocks;
+  // Sort: has_news first, then by sentiment priority
+  const sentimentOrder = { negative: 0, positive: 1, neutral: 2 };
+  const entries = Object.entries(stocks)
+    .filter(([, d]) => d.has_news)
+    .filter(([, d]) => newsFilter === 'all' || d.sentiment === newsFilter)
+    .sort((a, b) => (sentimentOrder[a[1].sentiment] ?? 3) - (sentimentOrder[b[1].sentiment] ?? 3));
+
+  if (entries.length === 0) {
+    grid.innerHTML = '<div style="color:var(--text-dim); font-size:0.9rem; padding:20px;">해당 조건의 뉴스가 없습니다.</div>';
+    return;
+  }
+
+  grid.innerHTML = entries.map(([stock, d]) => {
+    const sentLabel = d.sentiment === 'positive' ? '🟢 긍정' : d.sentiment === 'negative' ? '🔴 부정' : '⚪ 중립';
+    const keywords = (d.keywords || []).map(k => `<span class="news-keyword">${k}</span>`).join('');
+    const notable = d.notable ? `<div class="news-notable">${d.notable}</div>` : '';
+    const articles = (d.articles || []).slice(0, 8).map(a =>
+      `<div class="news-article-item">
+        <a href="${a.link || '#'}" target="_blank" rel="noopener noreferrer">${a.title}</a>
+        <div class="news-article-meta">${a.date || ''} · ${a.source || ''}</div>
+      </div>`
+    ).join('');
+    const cardId = 'news-' + stock.replace(/[^a-zA-Z0-9]/g, '_');
+    return `<div class="news-card">
+      <div class="news-card-header">
+        <span class="news-stock-name">${stock}</span>
+        <span class="news-sentiment ${d.sentiment}">${sentLabel}</span>
+      </div>
+      ${d.summary ? `<div class="news-summary">${d.summary}</div>` : ''}
+      ${d.sentiment_reason ? `<div style="font-size:0.76rem; color:var(--text-dim); padding:3px 8px; background:var(--bg); border-radius:6px;">${d.sentiment_reason}</div>` : ''}
+      ${keywords ? `<div class="news-keywords">${keywords}</div>` : ''}
+      ${notable}
+      <div>
+        <button class="news-toggle-btn" onclick="toggleNewsArticles('${cardId}', this)">
+          ▶ 기사 ${d.article_count}건 보기
+        </button>
+        <div class="news-articles" id="${cardId}">${articles}</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function toggleNewsArticles(id, btn) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const isOpen = el.classList.toggle('open');
+  btn.textContent = isOpen ? '▼ 기사 접기' : `▶ 기사 보기`;
 }
 
 // ===== BRIEFING TAB =====
