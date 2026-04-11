@@ -401,7 +401,7 @@ body.mask-on .amt { filter: blur(8px); user-select: none; }
   <div class="info-bar-item"><span class="info-bar-dot"></span><span>가격 업데이트: <strong><span id="prices-updated-at">2026-04-10 01:33:17</span></strong></span></div>
   <div class="info-bar-item"><span class="info-bar-dot" style="background:var(--text-muted)"></span><span>JPY 9.33원</span></div>
   <div class="info-bar-item"><span class="info-bar-dot" style="background:var(--text-muted)"></span><span>승률 72% (158/220종목)</span></div>
-  <div class="info-bar-item" style="margin-left:auto;"><span style="color:var(--text-muted); font-size:0.73rem;">빌드: 2026-04-12 01:40</span></div>
+  <div class="info-bar-item" style="margin-left:auto;"><span style="color:var(--text-muted); font-size:0.73rem;">빌드: 2026-04-12 01:43</span></div>
 </div>
 
 <div class="tabs">
@@ -1041,7 +1041,7 @@ function renderTreemapInContainer(containerId, data, tooltipId) {
       data-name="${r.name}" data-ret="${r.return_pct}" data-mv="${r.market_value}" data-qty="${r.qty}" data-cp="${r.current_price}" data-cost="${r.cost}" data-upnl="${r.unrealized_pnl}" data-weight="${r.weight || 0}" data-nation="${r.nation || 'KOR'}">
       <span class="name">${r.name}</span>
       <span class="pct">${r.return_pct >= 0 ? '+' : ''}${r.return_pct.toFixed(1)}%</span>
-      <span class="val">${fmt(r.market_value)}</span>
+      <span class="val amt">${fmt(r.market_value)}</span>
     </div>`;
   }).join('');
 

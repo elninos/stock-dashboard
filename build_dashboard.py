@@ -1863,7 +1863,7 @@ function renderTreemapInContainer(containerId, data, tooltipId) {
       data-name="${r.name}" data-ret="${r.return_pct}" data-mv="${r.market_value}" data-qty="${r.qty}" data-cp="${r.current_price}" data-cost="${r.cost}" data-upnl="${r.unrealized_pnl}" data-weight="${r.weight || 0}" data-nation="${r.nation || 'KOR'}">
       <span class="name">${r.name}</span>
       <span class="pct">${r.return_pct >= 0 ? '+' : ''}${r.return_pct.toFixed(1)}%</span>
-      <span class="val">${fmt(r.market_value)}</span>
+      <span class="val amt">${fmt(r.market_value)}</span>
     </div>`;
   }).join('');
 
