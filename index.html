@@ -428,7 +428,7 @@ body.mask-on .amt { filter: blur(8px); user-select: none; }
   <div class="info-bar-item"><span class="info-bar-dot"></span><span>가격 업데이트: <strong><span id="prices-updated-at">2026-04-10 01:33:17</span></strong></span></div>
   <div class="info-bar-item"><span class="info-bar-dot" style="background:var(--text-muted)"></span><span>JPY 9.33원</span></div>
   <div class="info-bar-item"><span class="info-bar-dot" style="background:var(--text-muted)"></span><span>승률 72% (158/220종목)</span></div>
-  <div class="info-bar-item" style="margin-left:auto;"><span style="color:var(--text-muted); font-size:0.73rem;">빌드: 2026-04-12 10:38</span></div>
+  <div class="info-bar-item" style="margin-left:auto;"><span style="color:var(--text-muted); font-size:0.73rem;">빌드: 2026-04-12 10:42</span></div>
 </div>
 
 <div class="tabs">
@@ -1977,27 +1977,38 @@ function renderPeriodAnalysis() {
   const hEnd   = holdingsAt(endVal);
 
   const allStocks = new Set([...Object.keys(hStart), ...Object.keys(hEnd)]);
-  const added=[], removed=[], changed=[];
+  const added=[], removed=[], bought=[], sold=[];
   for (const s of allStocks) {
     const qs = hStart[s] || 0;
     const qe = hEnd[s]   || 0;
-    if (qs <= 0 && qe > 0)      added.push({s, qs, qe});
-    else if (qs > 0 && qe <= 0) removed.push({s, qs, qe});
-    else if (Math.abs(qe - qs) > 0.001) changed.push({s, qs, qe, d: qe - qs});
+    if (qs <= 0 && qe > 0)           added.push({s, qs, qe});
+    else if (qs > 0 && qe <= 0)      removed.push({s, qs, qe});
+    else if (qe - qs > 0.001)        bought.push({s, qs, qe, d: qe - qs});
+    else if (qs - qe > 0.001)        sold.push({s, qs, qe, d: qe - qs});
   }
+
+  const diffRow = (x, color, label) =>
+    `<div style="font-size:0.82rem; padding:3px 0; border-bottom:1px solid var(--border); display:flex; justify-content:space-between; align-items:center;">
+      <span>${x.s}</span>
+      <span class="amt" style="color:${color}; font-size:0.78rem;">${label(x)}</span>
+    </div>`;
 
   let diffHtml = '';
   if (added.length) {
-    diffHtml += `<div style="font-size:0.75rem; font-weight:600; color:var(--positive); margin-bottom:4px;">신규 편입 +${added.length}</div>`;
-    diffHtml += added.map(x => `<div style="font-size:0.82rem; padding:3px 0; border-bottom:1px solid var(--border); display:flex; justify-content:space-between;"><span>${x.s}</span><span class="amt" style="color:var(--positive)">${x.qe.toLocaleString('ko-KR')}주</span></div>`).join('');
+    diffHtml += `<div style="font-size:0.75rem; font-weight:600; color:var(--positive); margin-bottom:4px;">🆕 신규 편입 ${added.length}</div>`;
+    diffHtml += added.map(x => diffRow(x, 'var(--positive)', x => `+${x.qe.toLocaleString('ko-KR')}주`)).join('');
+  }
+  if (bought.length) {
+    diffHtml += `<div style="font-size:0.75rem; font-weight:600; color:var(--negative); margin-top:8px; margin-bottom:4px;">📈 추가 매수 ${bought.length}</div>`;
+    diffHtml += bought.map(x => diffRow(x, 'var(--negative)', x => `+${x.d.toLocaleString('ko-KR')}주 (→${x.qe.toLocaleString('ko-KR')}주)`)).join('');
+  }
+  if (sold.length) {
+    diffHtml += `<div style="font-size:0.75rem; font-weight:600; color:var(--positive); margin-top:8px; margin-bottom:4px;">📉 일부 매도 ${sold.length}</div>`;
+    diffHtml += sold.map(x => diffRow(x, 'var(--positive)', x => `${x.d.toLocaleString('ko-KR')}주 (→${x.qe.toLocaleString('ko-KR')}주)`)).join('');
   }
   if (removed.length) {
-    diffHtml += `<div style="font-size:0.75rem; font-weight:600; color:var(--negative); margin-top:8px; margin-bottom:4px;">청산 -${removed.length}</div>`;
-    diffHtml += removed.map(x => `<div style="font-size:0.82rem; padding:3px 0; border-bottom:1px solid var(--border); display:flex; justify-content:space-between;"><span>${x.s}</span><span class="amt" style="color:var(--negative)">${x.qs.toLocaleString('ko-KR')}주→0</span></div>`).join('');
-  }
-  if (changed.length) {
-    diffHtml += `<div style="font-size:0.75rem; font-weight:600; color:var(--text-dim); margin-top:8px; margin-bottom:4px;">수량 변화 ${changed.length}종목</div>`;
-    diffHtml += changed.map(x => `<div style="font-size:0.82rem; padding:3px 0; border-bottom:1px solid var(--border); display:flex; justify-content:space-between;"><span>${x.s}</span><span class="amt" style="${x.d>0?'color:var(--positive)':'color:var(--negative)'}">${x.d>0?'+':''}${x.d.toLocaleString('ko-KR')}주</span></div>`).join('');
+    diffHtml += `<div style="font-size:0.75rem; font-weight:600; color:var(--negative); margin-top:8px; margin-bottom:4px;">🔴 청산 ${removed.length}</div>`;
+    diffHtml += removed.map(x => diffRow(x, 'var(--negative)', x => `${x.qs.toLocaleString('ko-KR')}주→0`)).join('');
   }
   if (!diffHtml) diffHtml = '<div style="font-size:0.82rem; color:var(--text-muted);">변동 없음</div>';
   document.getElementById('periodPortfolioDiff').innerHTML = diffHtml;
