@@ -2824,15 +2824,15 @@ function renderPeriodAnalysis() {
   let diffHtml = '';
   if (added.length) {
     diffHtml += `<div style="font-size:0.75rem; font-weight:600; color:var(--positive); margin-bottom:4px;">신규 편입 +${added.length}</div>`;
-    diffHtml += added.map(x => `<div style="font-size:0.82rem; padding:3px 0; border-bottom:1px solid var(--border); display:flex; justify-content:space-between;"><span>${x.s}</span><span style="color:var(--positive)">${x.qe.toLocaleString('ko-KR')}주</span></div>`).join('');
+    diffHtml += added.map(x => `<div style="font-size:0.82rem; padding:3px 0; border-bottom:1px solid var(--border); display:flex; justify-content:space-between;"><span>${x.s}</span><span class="amt" style="color:var(--positive)">${x.qe.toLocaleString('ko-KR')}주</span></div>`).join('');
   }
   if (removed.length) {
     diffHtml += `<div style="font-size:0.75rem; font-weight:600; color:var(--negative); margin-top:8px; margin-bottom:4px;">청산 -${removed.length}</div>`;
-    diffHtml += removed.map(x => `<div style="font-size:0.82rem; padding:3px 0; border-bottom:1px solid var(--border); display:flex; justify-content:space-between;"><span>${x.s}</span><span style="color:var(--negative)">${x.qs.toLocaleString('ko-KR')}주→0</span></div>`).join('');
+    diffHtml += removed.map(x => `<div style="font-size:0.82rem; padding:3px 0; border-bottom:1px solid var(--border); display:flex; justify-content:space-between;"><span>${x.s}</span><span class="amt" style="color:var(--negative)">${x.qs.toLocaleString('ko-KR')}주→0</span></div>`).join('');
   }
   if (changed.length) {
     diffHtml += `<div style="font-size:0.75rem; font-weight:600; color:var(--text-dim); margin-top:8px; margin-bottom:4px;">수량 변화 ${changed.length}종목</div>`;
-    diffHtml += changed.map(x => `<div style="font-size:0.82rem; padding:3px 0; border-bottom:1px solid var(--border); display:flex; justify-content:space-between;"><span>${x.s}</span><span style="${x.d>0?'color:var(--positive)':'color:var(--negative)'}">${x.d>0?'+':''}${x.d.toLocaleString('ko-KR')}주</span></div>`).join('');
+    diffHtml += changed.map(x => `<div style="font-size:0.82rem; padding:3px 0; border-bottom:1px solid var(--border); display:flex; justify-content:space-between;"><span>${x.s}</span><span class="amt" style="${x.d>0?'color:var(--positive)':'color:var(--negative)'}">${x.d>0?'+':''}${x.d.toLocaleString('ko-KR')}주</span></div>`).join('');
   }
   if (!diffHtml) diffHtml = '<div style="font-size:0.82rem; color:var(--text-muted);">변동 없음</div>';
   document.getElementById('periodPortfolioDiff').innerHTML = diffHtml;
@@ -2913,11 +2913,11 @@ function renderPeriodAnalysis() {
         </div>`;
 
       const summaryCols = [
-        d.buys  ? sumCell('매수', `${fmt(d.buys)}`, `${buyQty.toLocaleString('ko-KR')}주 avg`, avgBuy > 0 ? avgBuy.toLocaleString('ko-KR', {maximumFractionDigits:0})+'원' : '─', 'var(--negative)') : '',
-        d.sells ? sumCell('매도', `${fmt(d.sells)}`, `${sellQty.toLocaleString('ko-KR')}주 avg`, avgSell > 0 ? avgSell.toLocaleString('ko-KR', {maximumFractionDigits:0})+'원' : '─', 'var(--positive)') : '',
+        d.buys  ? sumCell('매수', `<span class="amt">${fmt(d.buys)}</span>`, `<span class="amt">${buyQty.toLocaleString('ko-KR')}주</span> avg`, avgBuy > 0 ? avgBuy.toLocaleString('ko-KR', {maximumFractionDigits:0})+'원' : '─', 'var(--negative)') : '',
+        d.sells ? sumCell('매도', `<span class="amt">${fmt(d.sells)}</span>`, `<span class="amt">${sellQty.toLocaleString('ko-KR')}주</span> avg`, avgSell > 0 ? avgSell.toLocaleString('ko-KR', {maximumFractionDigits:0})+'원' : '─', 'var(--positive)') : '',
         d.divs  ? sumCell('배당', `${fmt(d.divs)}`, null, null, '#1a56db') : '',
-        (d.buys && d.sells) ? sumCell('avg 차익/주', avgSell > 0 && avgBuy > 0 ? `${(avgSell-avgBuy>=0?'+':'')}${(avgSell-avgBuy).toLocaleString('ko-KR',{maximumFractionDigits:0})}원` : '─', matchedQty > 0 ? `${matchedQty.toLocaleString('ko-KR')}주 기준` : '', '', (avgSell-avgBuy) >= 0 ? 'var(--positive)' : 'var(--negative)') : '',
-        sumCell('순현금', `${net>=0?'+':''}${fmt(net)}`, null, null, net >= 0 ? 'var(--positive)' : 'var(--negative)'),
+        (d.buys && d.sells) ? sumCell('avg 차익/주', avgSell > 0 && avgBuy > 0 ? `${(avgSell-avgBuy>=0?'+':'')}${(avgSell-avgBuy).toLocaleString('ko-KR',{maximumFractionDigits:0})}원` : '─', matchedQty > 0 ? `<span class="amt">${matchedQty.toLocaleString('ko-KR')}주</span> 기준` : '', '', (avgSell-avgBuy) >= 0 ? 'var(--positive)' : 'var(--negative)') : '',
+        sumCell('순현금', `<span class="amt">${net>=0?'+':''}${fmt(net)}</span>`, null, null, net >= 0 ? 'var(--positive)' : 'var(--negative)'),
       ].filter(Boolean);
 
       const summaryBar = `
@@ -2929,8 +2929,8 @@ function renderPeriodAnalysis() {
         <tr style="border-top:1px solid var(--border);">
           <td style="padding:6px 14px; color:var(--text-dim); white-space:nowrap; font-size:0.8rem;">${tx.d}</td>
           <td style="padding:6px 10px;"><span style="color:${typeColor[tx.t]||'var(--text)'}; font-weight:600; font-size:0.76rem;">${typeMap[tx.t]||tx.t}</span></td>
-          <td style="padding:6px 10px; text-align:right; font-feature-settings:'tnum'; font-size:0.8rem;">${tx.a ? tx.a.toLocaleString('ko-KR') : '─'}</td>
-          <td style="padding:6px 10px; text-align:right; font-feature-settings:'tnum'; font-size:0.8rem; color:var(--text-dim);">${tx.q ? tx.q.toLocaleString('ko-KR')+'주' : '─'}</td>
+          <td style="padding:6px 10px; text-align:right; font-feature-settings:'tnum'; font-size:0.8rem;" class="amt">${tx.a ? tx.a.toLocaleString('ko-KR') : '─'}</td>
+          <td style="padding:6px 10px; text-align:right; font-feature-settings:'tnum'; font-size:0.8rem; color:var(--text-dim);" class="amt">${tx.q ? tx.q.toLocaleString('ko-KR')+'주' : '─'}</td>
           <td style="padding:6px 14px; font-size:0.75rem; color:var(--text-muted);">${tx.acc || '─'}</td>
         </tr>`).join('');
       return `
@@ -2964,8 +2964,8 @@ function renderPeriodAnalysis() {
         <td style="padding:7px 10px; color:var(--text-dim);">${tx.d}</td>
         <td style="padding:7px 10px; font-weight:600;">${tx.s || '─'}</td>
         <td style="padding:7px 10px;"><span style="color:${typeColor[tx.t]||'var(--text)'}; font-weight:600; font-size:0.78rem;">${typeMap[tx.t]||tx.t}</span></td>
-        <td style="padding:7px 10px; text-align:right; font-feature-settings:'tnum';">${tx.a ? tx.a.toLocaleString('ko-KR') : '─'}</td>
-        <td style="padding:7px 10px; text-align:right; font-feature-settings:'tnum';">${tx.q ? tx.q.toLocaleString('ko-KR') : '─'}</td>
+        <td style="padding:7px 10px; text-align:right; font-feature-settings:'tnum';" class="amt">${tx.a ? tx.a.toLocaleString('ko-KR') : '─'}</td>
+        <td style="padding:7px 10px; text-align:right; font-feature-settings:'tnum';" class="amt">${tx.q ? tx.q.toLocaleString('ko-KR') : '─'}</td>
         <td style="padding:7px 10px; font-size:0.77rem; color:var(--text-muted);">${tx.acc || '─'}</td>
       </tr>`).join('');
     tradeHtml += '</tbody></table>';
