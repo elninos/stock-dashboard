@@ -2002,7 +2002,7 @@ function switchSubTab(name) {
 
 // ===== Amount visibility toggle =====
 let amountsHidden = true;
-let maskOn = false;
+let maskOn = true;
 function toggleAmounts() {
   amountsHidden = !amountsHidden;
   document.querySelectorAll('.pv-blur').forEach(el => {
@@ -3544,6 +3544,10 @@ function switchToPortfolioAccount(accName) {
 }
 
 // Init
+// Apply default mask state
+document.body.classList.toggle('mask-on', maskOn);
+const _maskBtn = document.getElementById('mask-btn');
+if (_maskBtn) { _maskBtn.textContent = maskOn ? '🔓 표시' : '🔒 숨김'; _maskBtn.style.background = maskOn ? 'rgba(200,30,30,0.08)' : ''; }
 initOverallCharts();
 renderStockTable();
 updateFilterCounts();

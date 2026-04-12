@@ -428,7 +428,7 @@ body.mask-on .amt { filter: blur(8px); user-select: none; }
   <div class="info-bar-item"><span class="info-bar-dot"></span><span>가격 업데이트: <strong><span id="prices-updated-at">2026-04-10 01:33:17</span></strong></span></div>
   <div class="info-bar-item"><span class="info-bar-dot" style="background:var(--text-muted)"></span><span>JPY 9.33원</span></div>
   <div class="info-bar-item"><span class="info-bar-dot" style="background:var(--text-muted)"></span><span>승률 72% (158/220종목)</span></div>
-  <div class="info-bar-item" style="margin-left:auto;"><span style="color:var(--text-muted); font-size:0.73rem;">빌드: 2026-04-12 10:42</span></div>
+  <div class="info-bar-item" style="margin-left:auto;"><span style="color:var(--text-muted); font-size:0.73rem;">빌드: 2026-04-12 10:45</span></div>
 </div>
 
 <div class="tabs">
@@ -1167,7 +1167,7 @@ function switchSubTab(name) {
 
 // ===== Amount visibility toggle =====
 let amountsHidden = true;
-let maskOn = false;
+let maskOn = true;
 function toggleAmounts() {
   amountsHidden = !amountsHidden;
   document.querySelectorAll('.pv-blur').forEach(el => {
@@ -2709,6 +2709,10 @@ function switchToPortfolioAccount(accName) {
 }
 
 // Init
+// Apply default mask state
+document.body.classList.toggle('mask-on', maskOn);
+const _maskBtn = document.getElementById('mask-btn');
+if (_maskBtn) { _maskBtn.textContent = maskOn ? '🔓 표시' : '🔒 숨김'; _maskBtn.style.background = maskOn ? 'rgba(200,30,30,0.08)' : ''; }
 initOverallCharts();
 renderStockTable();
 updateFilterCounts();
