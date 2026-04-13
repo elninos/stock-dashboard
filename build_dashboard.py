@@ -2,38 +2,38 @@
 """Build interactive HTML dashboard from parsed transactions."""
 import json
 import math
+import os
 from collections import defaultdict
 from datetime import datetime, timedelta, date
 
-with open("/Users/r/Documents/Claude/stock-dashboard/transactions.json", encoding="utf-8") as f:
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+with open(os.path.join(BASE_DIR, "transactions.json"), encoding="utf-8") as f:
     all_txs = json.load(f)
 
-# Load current prices
-import os
-
 # Load briefing data
-briefing_file = "/Users/r/Documents/Claude/stock-dashboard/briefing.json"
+briefing_file = os.path.join(BASE_DIR, "briefing.json")
 briefing_data = {}
 if os.path.exists(briefing_file):
     with open(briefing_file, encoding="utf-8") as f:
         briefing_data = json.load(f)
 
 # Load briefing summary (period-based AI summaries)
-briefing_summary_file = "/Users/r/Documents/Claude/stock-dashboard/briefing_summary.json"
+briefing_summary_file = os.path.join(BASE_DIR, "briefing_summary.json")
 briefing_summary = {}
 if os.path.exists(briefing_summary_file):
     with open(briefing_summary_file, encoding="utf-8") as f:
         briefing_summary = json.load(f)
 
 # Load stock news (AI-summarized news per held stock)
-stock_news_file = "/Users/r/Documents/Claude/stock-dashboard/stock_news.json"
+stock_news_file = os.path.join(BASE_DIR, "stock_news.json")
 stock_news_data = {}
 if os.path.exists(stock_news_file):
     with open(stock_news_file, encoding="utf-8") as f:
         stock_news_data = json.load(f)
 
-prices_file = "/Users/r/Documents/Claude/stock-dashboard/prices.json"
-stock_map_file = "/Users/r/Documents/Claude/stock-dashboard/stock_map.json"
+prices_file = os.path.join(BASE_DIR, "prices.json")
+stock_map_file = os.path.join(BASE_DIR, "stock_map.json")
 stock_map_data = {}
 if os.path.exists(stock_map_file):
     with open(stock_map_file, encoding="utf-8") as f:
@@ -3567,14 +3567,15 @@ window.addEventListener('resize', () => {
 </body>
 </html>"""
 
-with open("/Users/r/Documents/Claude/stock-dashboard/index.html", "w", encoding="utf-8") as f:
+output_path = os.path.join(BASE_DIR, "index.html")
+with open(output_path, "w", encoding="utf-8") as f:
     f.write(html)
 print("Dashboard saved to index.html")
 
 # Auto-copy to _deploy/ for deployment
 import shutil
-deploy_path = "/Users/r/Documents/Claude/stock-dashboard/_deploy/index.html"
-shutil.copy("/Users/r/Documents/Claude/stock-dashboard/index.html", deploy_path)
+deploy_path = os.path.join(BASE_DIR, "_deploy", "index.html")
+shutil.copy(output_path, deploy_path)
 print(f"Copied to _deploy/index.html")
 
 print(f"Overall: invested={fmt_num(overall_invested)}, returned={fmt_num(overall_returned)}, pnl={fmt_num(overall_net_pnl)}, IRR={fmt_pct(overall_irr) if overall_irr else 'N/A'}")
