@@ -32,7 +32,11 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install anthropic
+        run: pip install anthropic pykrx yfinance
+
+      - name: Fetch historical prices
+        run: python fetch_historical_prices.py
+        continue-on-error: true
 
       - name: Fetch briefing posts
         run: python fetch_briefing.py
@@ -74,6 +78,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add briefing.json briefing_summary.json stock_news.json stock_news_raw.json _deploy/
+          git add briefing.json briefing_summary.json stock_news.json stock_news_raw.json historical_portfolio_values.json _deploy/
           git diff --cached --quiet || git commit -m "Auto briefing+news update $(date '+%Y-%m-%d %H:%M') KST"
           git push
