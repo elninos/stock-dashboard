@@ -11,3 +11,6 @@ _deploy/functions/
 # 민감 데이터 (Cloudflare KV에 저장)
 transactions.json
 historical_portfolio_values.json
+# 빌드 결과물 (Cloudflare Pages로 배포, git 추적 불필요)
+index.html
+loan_timeline.html
