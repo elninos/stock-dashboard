@@ -1203,5 +1203,25 @@
     "code": "048410",
     "nation": "KOR",
     "market": "코스닥"
+  },
+  "뉴스케일파워": {
+    "code": "SMR",
+    "nation": "USA",
+    "market": "뉴욕 거래소"
+  },
+  "킬 인프라스트럭처": {
+    "code": "KEEL",
+    "nation": "USA",
+    "market": "나스닥 증권거래소"
+  },
+  "팔란티어": {
+    "code": "PLTR",
+    "nation": "USA",
+    "market": "나스닥 증권거래소"
+  },
+  "하이맥스 테크놀로지스 ADR": {
+    "code": "HIMX",
+    "nation": "USA",
+    "market": "나스닥 증권거래소"
   }
 }
