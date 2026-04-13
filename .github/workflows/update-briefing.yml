@@ -31,7 +31,7 @@ jobs:
 
       - name: Download sensitive data from KV
         env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_KV_TOKEN }}
         run: |
           wrangler kv key get "transactions" \
             --namespace-id "6db9cbb95a4f4723bd0f26fb84214269" --remote > transactions.json
@@ -79,7 +79,7 @@ jobs:
 
       - name: Upload updated historical portfolio to KV
         env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_KV_TOKEN }}
         run: |
           wrangler kv key put "historical_portfolio" \
             --namespace-id "6db9cbb95a4f4723bd0f26fb84214269" \
