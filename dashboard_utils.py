@@ -2,22 +2,23 @@
 
 No global state — all functions take explicit arguments.
 """
-import json
-import urllib.request
 from datetime import datetime
+
+from config import TIMEOUT_SHORT
+from http_client import http_get_json
 
 
 # ===== Exchange rates =====
 
 def fetch_fx_rate(pair: str, fallback: float, divisor: float = 1.0) -> float:
     """Fetch KRW rate for a currency pair from Naver Finance API."""
+    url = f"https://api.stock.naver.com/marketindex/exchange/FX_{pair}KRW"
+    data = http_get_json(url, timeout=TIMEOUT_SHORT)
+    if data is None:
+        return fallback
     try:
-        url = f"https://api.stock.naver.com/marketindex/exchange/FX_{pair}KRW"
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=5) as resp:
-            data = json.load(resp)
-            rate_str = data.get("exchangeInfo", data).get("closePrice", "0").replace(",", "")
-            return float(rate_str) / divisor
+        rate_str = data.get("exchangeInfo", data).get("closePrice", "0").replace(",", "")
+        return float(rate_str) / divisor
     except Exception:
         return fallback
 

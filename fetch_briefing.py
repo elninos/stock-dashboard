@@ -3,7 +3,7 @@
 import os
 import re
 import sys
-from datetime import datetime, date
+from datetime import datetime, date, timezone, timedelta
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -58,7 +58,6 @@ def fetch_telegram_posts(url: str, channel_id: str = "") -> list[dict]:
             try:
                 dt = datetime.fromisoformat(dt_match.group(1).replace("Z", "+00:00"))
                 # Convert to KST (UTC+9)
-                from datetime import timezone, timedelta
                 kst = timezone(timedelta(hours=9))
                 dt_kst = dt.astimezone(kst)
                 post_date = dt_kst.strftime("%Y-%m-%d")
@@ -143,7 +142,6 @@ def fetch_naver_rss(rss_url: str) -> list[dict]:
         post_time = ""
         if date_match:
             try:
-                from datetime import timezone, timedelta
                 dt = parsedate_to_datetime(date_match.group(1).strip())
                 kst = timezone(timedelta(hours=9))
                 dt_kst = dt.astimezone(kst)

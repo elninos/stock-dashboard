@@ -17,68 +17,40 @@ from config import FX_FALLBACK, TRANSACTIONS_FILE, PRICES_FILE, STOCK_MAP_FILE, 
 from file_io import load_json, now_kst
 
 KST = timezone(timedelta(hours=9))
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-with open(os.path.join(BASE_DIR, "transactions.json"), encoding="utf-8") as f:
-    all_txs = json.load(f)
+all_txs = load_json(TRANSACTIONS_FILE, default=[])
 
 # Load briefing data
-briefing_file = os.path.join(BASE_DIR, "briefing.json")
-briefing_data = {}
-if os.path.exists(briefing_file):
-    with open(briefing_file, encoding="utf-8") as f:
-        briefing_data = json.load(f)
+briefing_data = load_json(BRIEFING_FILE, default={})
 
 # Load briefing summary (period-based AI summaries)
-briefing_summary_file = os.path.join(BASE_DIR, "briefing_summary.json")
-briefing_summary = {}
-if os.path.exists(briefing_summary_file):
-    with open(briefing_summary_file, encoding="utf-8") as f:
-        briefing_summary = json.load(f)
+briefing_summary = load_json(BRIEFING_SUMMARY_FILE, default={})
 
 # Load stock news (AI-summarized news per held stock)
-stock_news_file = os.path.join(BASE_DIR, "stock_news.json")
-stock_news_data = {}
-if os.path.exists(stock_news_file):
-    with open(stock_news_file, encoding="utf-8") as f:
-        stock_news_data = json.load(f)
+stock_news_data = load_json(STOCK_NEWS_FILE, default={})
 
 # Load historical portfolio values (date → portfolio_value)
 # Maps YYYY-MM → portfolio_value using the latest date in each month
-hist_pv_file = os.path.join(BASE_DIR, "historical_portfolio_values.json")
+_hpv_data = load_json(HIST_PORTFOLIO_FILE, default={})
 hist_month_map = {}  # YYYY-MM -> portfolio_value
-if os.path.exists(hist_pv_file):
-    with open(hist_pv_file, encoding="utf-8") as f:
-        _hpv_data = json.load(f)
-    for _ds, _entry in _hpv_data.items():
-        if not _ds.startswith('_') and isinstance(_entry, dict):
-            _month = _ds[:7]  # YYYY-MM
-            _pv = _entry.get('portfolio_value', 0)
-            # Keep the latest date's value for each month
-            if _pv and (_month not in hist_month_map or _ds > hist_month_map.get(_month + '_date', '')):
-                hist_month_map[_month] = _pv
-                hist_month_map[_month + '_date'] = _ds
-    # Remove helper keys
-    for k in [k for k in hist_month_map if k.endswith('_date')]:
-        del hist_month_map[k]
+for _ds, _entry in _hpv_data.items():
+    if not _ds.startswith('_') and isinstance(_entry, dict):
+        _month = _ds[:7]  # YYYY-MM
+        _pv = _entry.get('portfolio_value', 0)
+        # Keep the latest date's value for each month
+        if _pv and (_month not in hist_month_map or _ds > hist_month_map.get(_month + '_date', '')):
+            hist_month_map[_month] = _pv
+            hist_month_map[_month + '_date'] = _ds
+# Remove helper keys
+for k in [k for k in hist_month_map if k.endswith('_date')]:
+    del hist_month_map[k]
 
-prices_file = os.path.join(BASE_DIR, "prices.json")
-stock_map_file = os.path.join(BASE_DIR, "stock_map.json")
-stock_map_data = {}
-if os.path.exists(stock_map_file):
-    with open(stock_map_file, encoding="utf-8") as f:
-        stock_map_data = json.load(f)
+stock_map_data = load_json(STOCK_MAP_FILE, default={})
 
+# Load prices once, extract both current prices and currency mapping
+__raw_prices = load_json(PRICES_FILE, default={})
 current_prices = {}  # stock name -> price (in original currency)
-prices_updated_at = None
-if os.path.exists(prices_file):
-    with open(prices_file, encoding="utf-8") as f:
-        raw_prices = json.load(f)
-        prices_updated_at = raw_prices.get("_updated_at")
-        for k, v in raw_prices.items():
-            if k.startswith("_"):
-                continue
-            current_prices[k] = v["price"]
+prices_updated_at = __raw_prices.get("_updated_at")
 
 # NOTE: txs and cash_txs are created AFTER USD normalization below
 cash_flow_types = {"deposit", "withdrawal", "loan_in", "loan_out", "lending_fee"}
@@ -97,15 +69,13 @@ FX_RATES = {"KRW": 1, "USD": usd_krw, "JPY": jpy_krw, "CNY": cny_krw, "HKD": hkd
 
 stock_currency_map = {}  # stock -> "KRW" | "USD" | "JPY" | "CNY" | "HKD"
 stock_nation_map = {}    # stock -> "KOR" | "USA" | "JPN" | "CHN" | "HKG"
-if os.path.exists(prices_file):
-    with open(prices_file, encoding="utf-8") as f:
-        raw_p = json.load(f)
-        for k, v in raw_p.items():
-            if k.startswith("_") or not isinstance(v, dict):
-                continue
-            nation = v.get("nation", "KOR")
-            stock_currency_map[k] = NATION_CURRENCY.get(nation, "USD")
-            stock_nation_map[k] = nation
+for k, v in __raw_prices.items():
+    if k.startswith("_") or not isinstance(v, dict):
+        continue
+    current_prices[k] = v["price"]
+    nation = v.get("nation", "KOR")
+    stock_currency_map[k] = NATION_CURRENCY.get(nation, "USD")
+    stock_nation_map[k] = nation
 
 
 def get_krw_price(stock, fallback=0):
@@ -449,7 +419,7 @@ _q_start_m  = f"{_this_year}-{(_q_num-1)*3+1:02d}"
 _hist_pv = hist_month_map  # alias for _make_period compatibility — but _make_period uses date keys
 _hist_key_dates = {}
 _hist_pv_exact = {}  # date → portfolio_value for exact-date lookups
-if os.path.exists(hist_pv_file):
+if _hpv_data:
     _hist_key_dates = _hpv_data.get('_key_dates', {})
     for _ds, _entry in _hpv_data.items():
         if not _ds.startswith('_') and isinstance(_entry, dict):
@@ -1504,11 +1474,11 @@ const TXS = """ + json.dumps([
     for tx in all_txs
     if tx["type"] in ("buy","sell","dividend","fee","tax","lending_fee")
 ], ensure_ascii=False) + """;
-const STOCK_CODES = """ + json.dumps({name: v["code"] for name, v in raw_prices.items() if not name.startswith("_") and "code" in v}, ensure_ascii=False) + """;
-const STOCK_NATIONS = """ + json.dumps({name: v.get("nation","KOR") for name, v in raw_prices.items() if not name.startswith("_") and "code" in v}, ensure_ascii=False) + """;
+const STOCK_CODES = """ + json.dumps({name: v["code"] for name, v in _raw_prices.items() if not name.startswith("_") and "code" in v}, ensure_ascii=False) + """;
+const STOCK_NATIONS = """ + json.dumps({name: v.get("nation","KOR") for name, v in _raw_prices.items() if not name.startswith("_") and "code" in v}, ensure_ascii=False) + """;
 const STOCK_MARKET = """ + json.dumps({
-    name: (raw_prices.get(name) or {}).get("market","") or stock_map_data.get(name,{}).get("market","")
-    for name in set(list(raw_prices.keys()) + list(stock_map_data.keys()))
+    name: (_raw_prices.get(name) or {}).get("market","") or stock_map_data.get(name,{}).get("market","")
+    for name in set(list(_raw_prices.keys()) + list(stock_map_data.keys()))
     if not name.startswith("_")
 }, ensure_ascii=False) + """;
 const FX = """ + json.dumps({"USD": round(usd_krw,2), "JPY": round(jpy_krw,4), "CNY": round(cny_krw,2), "HKD": round(hkd_krw,2), "KRW": 1}, ensure_ascii=False) + """;
