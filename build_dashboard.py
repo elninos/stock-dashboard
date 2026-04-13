@@ -33,6 +33,25 @@ if os.path.exists(stock_news_file):
     with open(stock_news_file, encoding="utf-8") as f:
         stock_news_data = json.load(f)
 
+# Load historical portfolio values (date → portfolio_value)
+# Maps YYYY-MM → portfolio_value using the latest date in each month
+hist_pv_file = os.path.join(BASE_DIR, "historical_portfolio_values.json")
+hist_month_map = {}  # YYYY-MM -> portfolio_value
+if os.path.exists(hist_pv_file):
+    with open(hist_pv_file, encoding="utf-8") as f:
+        _hpv_data = json.load(f)
+    for _ds, _entry in _hpv_data.items():
+        if not _ds.startswith('_') and isinstance(_entry, dict):
+            _month = _ds[:7]  # YYYY-MM
+            _pv = _entry.get('portfolio_value', 0)
+            # Keep the latest date's value for each month
+            if _pv and (_month not in hist_month_map or _ds > hist_month_map.get(_month + '_date', '')):
+                hist_month_map[_month] = _pv
+                hist_month_map[_month + '_date'] = _ds
+    # Remove helper keys
+    for k in [k for k in hist_month_map if k.endswith('_date')]:
+        del hist_month_map[k]
+
 prices_file = os.path.join(BASE_DIR, "prices.json")
 stock_map_file = os.path.join(BASE_DIR, "stock_map.json")
 stock_map_data = {}
@@ -564,8 +583,11 @@ for m in months_sorted:
             total += qty * get_krw_price(stock, snap["cost_basis"].get(stock, 0) / max(qty, 1))
         month_end_values[m] = round(total)
     else:
-        # Use cost basis for historical months
-        month_end_values[m] = round(sum(snap["cost_basis"].values()))
+        # Use historical portfolio value if available, else fall back to cost basis
+        if m in hist_month_map and hist_month_map[m] > 0:
+            month_end_values[m] = hist_month_map[m]
+        else:
+            month_end_values[m] = round(sum(snap["cost_basis"].values()))
 
 cum_invested = 0
 cum_returned = 0
@@ -606,17 +628,15 @@ _this_month = _today_dt.strftime('%Y-%m')
 _q_num      = (_today_dt.month - 1) // 3 + 1
 _q_start_m  = f"{_this_year}-{(_q_num-1)*3+1:02d}"
 
-# Load historical portfolio values (from fetch_historical_prices.py)
-_hist_pv_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'historical_portfolio_values.json')
-_hist_pv = {}
+# Load key dates for period performance calculations (reuse already-loaded _hpv_data)
+_hist_pv = hist_month_map  # alias for _make_period compatibility — but _make_period uses date keys
 _hist_key_dates = {}
-if os.path.exists(_hist_pv_file):
-    with open(_hist_pv_file, encoding='utf-8') as _f:
-        _hist_data = json.load(_f)
-    _hist_key_dates = _hist_data.get('_key_dates', {})
-    for _ds, _entry in _hist_data.items():
+_hist_pv_exact = {}  # date → portfolio_value for exact-date lookups
+if os.path.exists(hist_pv_file):
+    _hist_key_dates = _hpv_data.get('_key_dates', {})
+    for _ds, _entry in _hpv_data.items():
         if not _ds.startswith('_') and isinstance(_entry, dict):
-            _hist_pv[_ds] = _entry.get('portfolio_value', 0)
+            _hist_pv_exact[_ds] = _entry.get('portfolio_value', 0)
 
 def _tl_sum(start_m, end_m):
     rows = [t for t in timeline if start_m <= t['month'] <= end_m]
@@ -632,7 +652,7 @@ def _make_period(label, start_m, hist_key):
     s = _tl_sum(start_m, _this_month)
     income    = s['realized'] + s['dividends']
     base_date = _hist_key_dates.get(hist_key, '')
-    base_mv   = _hist_pv.get(base_date, 0)
+    base_mv   = _hist_pv_exact.get(base_date, 0)
     if base_mv > 0:
         net_invested = s['invested'] - s['returned'] - s['dividends']
         total_gain   = total_market_value - base_mv - net_invested
@@ -3339,20 +3359,32 @@ function renderBriefingSummary() {
       const relStocks = (t.related_stocks || []).map(s =>
         `<span style="display:inline-flex; align-items:center; background:rgba(10,124,89,0.08); color:#0a7c59; border-radius:4px; padding:2px 8px; font-size:0.71rem; font-weight:600;">📈 ${s}</span>`
       ).join('');
+      const daysBadge = t.days_active > 1
+        ? `<span style="font-size:0.68rem; background:rgba(26,86,219,0.1); color:#1a56db; border-radius:4px; padding:2px 7px; font-weight:600;">${t.days_active}일 지속</span>`
+        : '';
+      const evolutionHtml = t.evolution
+        ? `<div style="font-size:0.77rem; color:var(--text-muted); background:var(--bg); border-radius:6px; padding:7px 10px; margin-bottom:10px; border-left:2px solid var(--accent); line-height:1.5;">📊 ${t.evolution}</div>`
+        : '';
 
       html += `
       <div class="card" style="margin-bottom:0; padding:18px 20px; display:flex; flex-direction:column; gap:0;">
-        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px; flex-wrap:wrap; gap:6px;">
           <span style="font-size:0.72rem; font-weight:700; letter-spacing:.04em; color:${sc}; background:${sb}; border-radius:4px; padding:3px 9px;">${sl}</span>
+          ${daysBadge}
         </div>
         <div style="font-size:0.92rem; font-weight:700; line-height:1.4; color:var(--text); margin-bottom:10px;">${t.title}</div>
-        <p style="font-size:0.83rem; line-height:1.7; color:var(--text-dim); margin:0 0 14px; flex:1;">${t.summary}</p>
+        <p style="font-size:0.83rem; line-height:1.7; color:var(--text-dim); margin:0 0 10px; flex:1;">${t.summary}</p>
+        ${evolutionHtml}
         ${relStocks ? `<div style="display:flex; flex-wrap:wrap; gap:4px; margin-bottom:8px;">${relStocks}</div>` : ''}
         <div style="display:flex; flex-wrap:wrap; gap:4px; border-top:1px solid var(--border); padding-top:10px;">${channels}</div>
       </div>`;
     });
     html += `</div>`;
   }
+
+  // ── 핵심 테마 (days_active / evolution 추가) ──────────────────
+  // 위 themes.forEach 에서 이미 렌더링 중 — evolution 필드만 카드에 추가
+  // (기존 forEach를 아래로 대체)
 
   // ── 주목 종목 ──────────────────────────────────────────────
   const stocks = data.stocks || [];
@@ -3363,14 +3395,21 @@ function renderBriefingSummary() {
         ? `<span style="font-size:0.75rem; font-weight:600; color:${pct>=0?'#0a7c59':'#c81e1e'}">${pct>=0?'+':''}${pct.toFixed(1)}%</span>`
         : '';
       const chs = (s.channels || []).join(' · ');
+      const daysBadge = s.days_mentioned > 1
+        ? `<span style="font-size:0.68rem; background:rgba(26,86,219,0.1); color:#1a56db; border-radius:4px; padding:1px 6px; font-weight:600;">${s.days_mentioned}일 연속</span>`
+        : '';
       return `
       <div style="display:flex; flex-direction:column; padding:12px 16px; background:var(--bg2); border:1px solid var(--border); border-radius:10px; min-width:150px; gap:4px;">
         <div style="display:flex; align-items:center; justify-content:space-between; gap:8px;">
           <span style="font-size:0.9rem; font-weight:700; color:var(--text);">${s.name}</span>
           ${pctHtml}
         </div>
-        <div style="font-size:0.75rem; color:var(--text-muted);">언급 <b style="color:var(--accent);">${s.mention_count}</b>회</div>
-        <div style="font-size:0.71rem; color:var(--text-muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title="${chs}">${chs}</div>
+        <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+          <div style="font-size:0.75rem; color:var(--text-muted);">언급 <b style="color:var(--accent);">${s.mention_count}</b>회</div>
+          ${daysBadge}
+        </div>
+        <div style="font-size:0.71rem; color:var(--text-muted); overflow:hidden; text-overflow:ellipsis; white-space:nowrap;" title="${chs}">${chs}</div>
+        ${s.context ? `<div style="font-size:0.76rem; color:var(--text-dim); line-height:1.5; margin-top:2px;">${s.context}</div>` : ''}
       </div>`;
     }).join('');
 
@@ -3378,7 +3417,57 @@ function renderBriefingSummary() {
     <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
       <span style="font-size:0.75rem; font-weight:700; color:var(--text-muted); letter-spacing:.08em; text-transform:uppercase;">주목 종목</span>
     </div>
-    <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:8px;">${stockItems}</div>`;
+    <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:24px;">${stockItems}</div>`;
+  }
+
+  // ── 매크로 ─────────────────────────────────────────────────
+  const macro = data.macro || {};
+  if (macro.kr || macro.us || macro.global) {
+    const macroItems = [
+      { key: 'kr',     label: '🇰🇷 한국', text: macro.kr },
+      { key: 'us',     label: '🇺🇸 미국', text: macro.us },
+      { key: 'global', label: '🌐 글로벌', text: macro.global },
+    ].filter(m => m.text);
+
+    html += `
+    <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
+      <span style="font-size:0.75rem; font-weight:700; color:var(--text-muted); letter-spacing:.08em; text-transform:uppercase;">매크로</span>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-bottom:24px;">
+      ${macroItems.map(m => `
+      <div class="card" style="margin:0; padding:16px 18px;">
+        <div style="font-size:0.78rem; font-weight:700; color:var(--text-dim); margin-bottom:8px;">${m.label}</div>
+        <p style="font-size:0.83rem; line-height:1.7; color:var(--text); margin:0;">${m.text}</p>
+      </div>`).join('')}
+    </div>`;
+  }
+
+  // ── 주요 지표 ───────────────────────────────────────────────
+  const keyNums = data.key_numbers || [];
+  if (keyNums.length > 0) {
+    const rows = keyNums.map(k => `
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:9px 14px; font-weight:600; font-size:0.85rem;">${k.label}</td>
+        <td style="padding:9px 14px; font-size:0.85rem; font-feature-settings:'tnum'; text-align:right; font-weight:700;">${k.value}</td>
+        <td style="padding:9px 14px; font-size:0.8rem; color:var(--text-muted); text-align:right;">${k.change || ''}</td>
+        <td style="padding:9px 14px; font-size:0.75rem; color:var(--text-muted);">${k.source || ''}</td>
+      </tr>`).join('');
+
+    html += `
+    <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
+      <span style="font-size:0.75rem; font-weight:700; color:var(--text-muted); letter-spacing:.08em; text-transform:uppercase;">주요 지표</span>
+    </div>
+    <div class="card" style="margin-bottom:24px; padding:0; overflow:hidden;">
+      <table style="width:100%; border-collapse:collapse;">
+        <thead><tr style="border-bottom:2px solid var(--border); background:var(--bg2);">
+          <th style="padding:8px 14px; text-align:left; font-size:0.72rem; color:var(--text-muted); font-weight:600; text-transform:uppercase;">지표</th>
+          <th style="padding:8px 14px; text-align:right; font-size:0.72rem; color:var(--text-muted); font-weight:600; text-transform:uppercase;">값</th>
+          <th style="padding:8px 14px; text-align:right; font-size:0.72rem; color:var(--text-muted); font-weight:600; text-transform:uppercase;">변동</th>
+          <th style="padding:8px 14px; text-align:left; font-size:0.72rem; color:var(--text-muted); font-weight:600; text-transform:uppercase;">출처</th>
+        </tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
   }
 
   el.innerHTML = html;
