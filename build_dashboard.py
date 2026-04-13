@@ -6,6 +6,15 @@ import os
 from collections import defaultdict
 from datetime import datetime, timedelta, date, timezone
 
+from dashboard_utils import (
+    fetch_fx_rate,
+    calc_stock_metrics,
+    calc_xirr,
+    fmt_num,
+    fmt_pct,
+    pnl_class,
+)
+
 KST = timezone(timedelta(hours=9))
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -73,66 +82,11 @@ if os.path.exists(prices_file):
 # NOTE: txs and cash_txs are created AFTER USD normalization below
 cash_flow_types = {"deposit", "withdrawal", "loan_in", "loan_out", "lending_fee"}
 
-# ===== Exchange rate for USD holdings valuation =====
-def fetch_usd_krw():
-    """Fetch current USD/KRW exchange rate."""
-    import urllib.request
-    try:
-        url = "https://api.stock.naver.com/marketindex/exchange/FX_USDKRW"
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=5) as resp:
-            data = json.load(resp)
-            rate_str = data.get("exchangeInfo", data).get("closePrice", "0").replace(",", "")
-            return float(rate_str)
-    except Exception:
-        return 1400.0  # fallback
-
-usd_krw = fetch_usd_krw()
-
-def fetch_jpy_krw():
-    """Fetch current JPY/KRW exchange rate (100 JPY → KRW)."""
-    import urllib.request
-    try:
-        url = "https://api.stock.naver.com/marketindex/exchange/FX_JPYKRW"
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=5) as resp:
-            data = json.load(resp)
-            rate_str = data.get("exchangeInfo", data).get("closePrice", "0").replace(",", "")
-            # Naver returns rate per 100 JPY
-            return float(rate_str) / 100.0
-    except Exception:
-        return 9.5  # fallback ~9.5 KRW per 1 JPY
-
-jpy_krw = fetch_jpy_krw()
-
-def fetch_cny_krw():
-    """Fetch current CNY/KRW exchange rate."""
-    import urllib.request
-    try:
-        url = "https://api.stock.naver.com/marketindex/exchange/FX_CNYKRW"
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=5) as resp:
-            data = json.load(resp)
-            rate_str = data.get("exchangeInfo", data).get("closePrice", "0").replace(",", "")
-            return float(rate_str)
-    except Exception:
-        return 200.0  # fallback
-
-def fetch_hkd_krw():
-    """Fetch current HKD/KRW exchange rate."""
-    import urllib.request
-    try:
-        url = "https://api.stock.naver.com/marketindex/exchange/FX_HKDKRW"
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=5) as resp:
-            data = json.load(resp)
-            rate_str = data.get("exchangeInfo", data).get("closePrice", "0").replace(",", "")
-            return float(rate_str)
-    except Exception:
-        return 190.0  # fallback
-
-cny_krw = fetch_cny_krw()
-hkd_krw = fetch_hkd_krw()
+# ===== Exchange rates =====
+usd_krw = fetch_fx_rate("USD", fallback=1400.0)
+jpy_krw = fetch_fx_rate("JPY", fallback=9.5, divisor=100.0)  # Naver returns per 100 JPY
+cny_krw = fetch_fx_rate("CNY", fallback=200.0)
+hkd_krw = fetch_fx_rate("HKD", fallback=190.0)
 print(f"USD/KRW: {usd_krw:,.2f}, JPY/KRW: {jpy_krw:,.4f}, CNY/KRW: {cny_krw:,.2f}, HKD/KRW: {hkd_krw:,.2f}")
 
 # Build currency mapping from prices.json nation info
@@ -161,144 +115,6 @@ def get_krw_price(stock, fallback=0):
     return price * rate
 
 # ===== Per-Stock Per-Account calculations =====
-# Track positions using FIFO
-def calc_stock_metrics(trades):
-    """Calculate metrics for a list of buy/sell trades for one stock in one account."""
-    buys = []  # [(qty, price, date)]
-    total_invested = 0
-    total_returned = 0
-    total_fees = 0
-    total_tax = 0
-    total_dividends = 0
-    realized_pnl = 0
-    cashflows = []  # (date, amount) for IRR - negative=outflow, positive=inflow
-    current_qty = 0
-    current_cost = 0  # total cost basis of current holdings
-
-    for tx in sorted(trades, key=lambda x: x["date"]):
-        if tx["type"] == "buy":
-            buys.append({"qty": tx["qty"], "price": tx["price"], "date": tx["date"]})
-            cost = tx["amount"] + tx["fee"]
-            total_invested += tx["amount"]
-            total_fees += tx["fee"]
-            current_qty += tx["qty"]
-            current_cost += cost
-            cashflows.append((tx["date"], -cost))
-        elif tx["type"] == "sell":
-            sell_qty = tx["qty"]
-            sell_amount = tx["amount"] - tx["fee"] - tx["tax"]
-            total_returned += tx["amount"]
-            total_fees += tx["fee"]
-            total_tax += tx["tax"]
-
-            # FIFO cost basis
-            cost_basis = 0
-            remaining = sell_qty
-            while remaining > 0 and buys:
-                b = buys[0]
-                take = min(remaining, b["qty"])
-                cost_basis += take * b["price"]
-                b["qty"] -= take
-                remaining -= take
-                if b["qty"] == 0:
-                    buys.pop(0)
-
-            realized_pnl += (tx["amount"] - cost_basis - tx["fee"] - tx["tax"])
-            current_qty -= sell_qty
-            if current_qty > 0 and total_invested > 0:
-                current_cost = sum(b["qty"] * b["price"] for b in buys)
-            else:
-                current_cost = 0
-            cashflows.append((tx["date"], sell_amount))
-        elif tx["type"] == "transfer_out":
-            # Stock moved OUT of this account — remove from FIFO like a sell but no cash
-            out_qty = tx["qty"]
-            remaining = out_qty
-            while remaining > 0 and buys:
-                b = buys[0]
-                take = min(remaining, b["qty"])
-                b["qty"] -= take
-                remaining -= take
-                if b["qty"] == 0:
-                    buys.pop(0)
-            current_qty -= out_qty
-            if current_qty > 0:
-                current_cost = sum(b["qty"] * b["price"] for b in buys)
-            else:
-                current_cost = 0
-        elif tx["type"] == "transfer_in":
-            # Stock moved IN — add to FIFO at the transfer price (or 0 if unknown)
-            price = tx["price"] if tx["price"] > 0 else 0
-            buys.append({"qty": tx["qty"], "price": price, "date": tx["date"]})
-            current_qty += tx["qty"]
-            current_cost += tx["qty"] * price
-        elif tx["type"] == "dividend":
-            total_dividends += tx["amount"]
-            cashflows.append((tx["date"], tx["amount"]))
-
-    # Clamp negative positions to 0 (missing historical buy data)
-    if current_qty < 0:
-        current_qty = 0
-        current_cost = 0
-        buys = []
-
-    avg_buy_price = 0
-    if current_qty > 0 and buys:
-        total_buy_qty = sum(b["qty"] for b in buys)
-        avg_buy_price = sum(b["qty"] * b["price"] for b in buys) / total_buy_qty if total_buy_qty > 0 else 0
-
-    return {
-        "current_qty": current_qty,
-        "avg_buy_price": round(avg_buy_price),
-        "current_cost": round(current_cost),
-        "total_invested": round(total_invested),
-        "total_returned": round(total_returned),
-        "realized_pnl": round(realized_pnl),
-        "total_dividends": round(total_dividends),
-        "total_fees": round(total_fees),
-        "total_tax": round(total_tax),
-        "cashflows": cashflows,
-    }
-
-
-def calc_xirr(cashflows, guess=0.1):
-    """Calculate XIRR from list of (date_str, amount) tuples."""
-    if not cashflows or len(cashflows) < 2:
-        return None
-    # Need at least one negative and one positive
-    has_neg = any(cf[1] < 0 for cf in cashflows)
-    has_pos = any(cf[1] > 0 for cf in cashflows)
-    if not has_neg or not has_pos:
-        return None
-
-    dates = [datetime.strptime(cf[0], "%Y-%m-%d") for cf in cashflows]
-    amounts = [cf[1] for cf in cashflows]
-    d0 = dates[0]
-    days = [(d - d0).days / 365.25 for d in dates]
-
-    def npv(rate):
-        return sum(a / (1 + rate) ** t for a, t in zip(amounts, days))
-
-    def dnpv(rate):
-        return sum(-t * a / (1 + rate) ** (t + 1) for a, t in zip(amounts, days))
-
-    rate = guess
-    for _ in range(200):
-        n = npv(rate)
-        d = dnpv(rate)
-        if abs(d) < 1e-12:
-            break
-        new_rate = rate - n / d
-        if abs(new_rate - rate) < 1e-8:
-            return new_rate
-        rate = new_rate
-        if rate < -0.99:
-            rate = -0.99
-        if rate > 10:
-            return None
-    return rate if -1 < rate < 10 else None
-
-
 today_str = date.today().strftime("%Y-%m-%d")
 
 # ===== Normalize foreign currency transactions to KRW =====
@@ -674,24 +490,6 @@ win_count = sum(1 for m in stock_summaries.values() if m.get("net_pnl", 0) > 0)
 loss_count = sum(1 for m in stock_summaries.values() if m.get("net_pnl", 0) < 0)
 total_traded_count = win_count + loss_count
 win_rate = (win_count / total_traded_count * 100) if total_traded_count > 0 else 0
-
-
-def fmt_num(n):
-    if n is None:
-        return "N/A"
-    return f"{n:,.0f}"
-
-
-def fmt_pct(n):
-    if n is None:
-        return "N/A"
-    return f"{n*100:.1f}%" if isinstance(n, float) and abs(n) < 100 else f"{n:.1f}%"
-
-
-def pnl_class(v):
-    if v > 0: return "positive"
-    if v < 0: return "negative"
-    return ""
 
 
 # ===== Build HTML =====
@@ -1240,6 +1038,7 @@ body.mask-on .amt {{ filter: blur(8px); user-select: none; }}
 }}
 .info-bar-item {{ display: flex; align-items: center; gap: 6px; }}
 .info-bar-dot {{ width: 6px; height: 6px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }}
+.info-bar-dot.muted {{ background: var(--text-muted); }}
 
 @media (max-width: 900px) {{
   #treemapNationGrid {{ grid-template-columns: 1fr !important; }}
@@ -1261,6 +1060,22 @@ body.mask-on .amt {{ filter: blur(8px); user-select: none; }}
   .kpi-value {{ font-size: 1.3rem; }}
   .kpi-value.compact {{ font-size: 1.1rem; }}
 }}
+/* === Utility classes === */
+.section-label {{ font-size: 0.75rem; font-weight: 700; color: var(--text-muted); letter-spacing: .08em; text-transform: uppercase; }}
+.section-label-sm {{ font-size: 0.72rem; font-weight: 700; color: var(--text-muted); letter-spacing: .06em; text-transform: uppercase; }}
+.th-l {{ text-align: left; padding: 6px 10px; color: var(--text-muted); font-size: 0.72rem; text-transform: uppercase; font-weight: 600; }}
+.th-r {{ text-align: right; padding: 6px 10px; color: var(--text-muted); font-size: 0.72rem; text-transform: uppercase; font-weight: 600; }}
+.th-l8 {{ padding: 8px 14px; text-align: left; font-size: 0.72rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; }}
+.th-r8 {{ padding: 8px 14px; text-align: right; font-size: 0.72rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; }}
+.td-num {{ padding: 7px 10px; text-align: right; font-feature-settings: 'tnum'; }}
+.flex-row {{ display: flex; align-items: center; gap: 8px; }}
+.flex-between {{ display: flex; align-items: center; justify-content: space-between; }}
+.ml-auto {{ margin-left: auto; }}
+.mb-20 {{ margin-bottom: 20px; }}
+.text-dim {{ color: var(--text-dim); }}
+.text-muted {{ color: var(--text-muted); }}
+.tbl-full {{ width: 100%; border-collapse: collapse; }}
+.overflow-x {{ overflow-x: auto; }}
 </style>
 </head>
 <body>
@@ -1302,9 +1117,9 @@ body.mask-on .amt {{ filter: blur(8px); user-select: none; }}
 
 <div class="info-bar">
   <div class="info-bar-item"><span class="info-bar-dot"></span><span>가격 업데이트: <strong><span id="prices-updated-at">{prices_updated_at or '알 수 없음'}</span></strong></span></div>
-  <div class="info-bar-item"><span class="info-bar-dot" style="background:var(--text-muted)"></span><span>JPY {jpy_krw:,.2f}원</span></div>
-  <div class="info-bar-item"><span class="info-bar-dot" style="background:var(--text-muted)"></span><span>승률 {win_rate:.0f}% ({win_count}/{total_traded_count}종목)</span></div>
-  <div class="info-bar-item" style="margin-left:auto;"><span style="color:var(--text-muted); font-size:0.73rem;">빌드: {datetime.now(tz=KST).strftime('%Y-%m-%d %H:%M')} KST</span></div>
+  <div class="info-bar-item"><span class="info-bar-dot muted"></span><span>JPY {jpy_krw:,.2f}원</span></div>
+  <div class="info-bar-item"><span class="info-bar-dot muted"></span><span>승률 {win_rate:.0f}% ({win_count}/{total_traded_count}종목)</span></div>
+  <div class="info-bar-item" class="ml-auto"><span style="color:var(--text-muted); font-size:0.73rem;">빌드: {datetime.now(tz=KST).strftime('%Y-%m-%d %H:%M')} KST</span></div>
 </div>
 
 <div class="tabs">
@@ -1439,7 +1254,7 @@ body.mask-on .amt {{ filter: blur(8px); user-select: none; }}
     </div>
     <div class="card">
       <div class="card-title">종목별 실적 (전체 계좌 합산)</div>
-      <div style="overflow-x: auto;">
+      <div class="overflow-x">
         <table id="stockTable">
           <thead>
             <tr>
@@ -1473,7 +1288,7 @@ body.mask-on .amt {{ filter: blur(8px); user-select: none; }}
   <!-- Sub-tab: Period Analysis -->
   <div id="subtab-period" class="subtab-content">
 <!-- Period analysis section -->
-<div class="card" style="margin-bottom:20px;">
+<div class="card" class="mb-20">
   <div class="card-title">기간별 분석</div>
 
   <!-- Period preset buttons -->
@@ -1489,7 +1304,7 @@ body.mask-on .amt {{ filter: blur(8px); user-select: none; }}
     <div style="display:flex; align-items:center; gap:6px; margin-left:8px;">
       <input type="date" id="periodStart" onchange="renderPeriodAnalysis()"
         style="border:1px solid var(--border); border-radius:6px; padding:5px 10px; font-size:0.83rem; background:var(--card); color:var(--text);">
-      <span style="color:var(--text-muted);">~</span>
+      <span class="text-muted">~</span>
       <input type="date" id="periodEnd" onchange="renderPeriodAnalysis()"
         style="border:1px solid var(--border); border-radius:6px; padding:5px 10px; font-size:0.83rem; background:var(--card); color:var(--text);">
     </div>
@@ -1508,8 +1323,8 @@ body.mask-on .amt {{ filter: blur(8px); user-select: none; }}
     </div>
     <div>
       <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px; flex-wrap:wrap;">
-        <span style="font-size:0.72rem; font-weight:700; color:var(--text-muted); letter-spacing:.06em; text-transform:uppercase;">비중 변화 <span style="font-size:0.65rem; font-weight:400; opacity:.7;">(현재가 기준 추정)</span></span>
-        <div id="weightAccFilter" class="filter-group" style="margin-left:auto;"></div>
+        <span class="section-label-sm">비중 변화 <span style="font-size:0.65rem; font-weight:400; opacity:.7;">(현재가 기준 추정)</span></span>
+        <div id="weightAccFilter" class="filter-group" class="ml-auto"></div>
       </div>
       <div id="periodWeightChange"></div>
     </div>
@@ -1519,9 +1334,9 @@ body.mask-on .amt {{ filter: blur(8px); user-select: none; }}
   <div style="border-top:1px solid var(--border);">
     <div onclick="togglePeriodTrades()" style="cursor:pointer; display:flex; align-items:center; gap:8px; padding:10px 0 8px; user-select:none;">
       <span id="periodTradesArrow" style="font-size:0.72rem; color:var(--text-muted);">▶</span>
-      <span style="font-size:0.72rem; font-weight:700; color:var(--text-muted); letter-spacing:.06em; text-transform:uppercase;">거래 내역</span>
+      <span class="section-label-sm">거래 내역</span>
       <span id="periodTradesCount" style="font-size:0.75rem; color:var(--text-muted);"></span>
-      <div style="margin-left:auto;" class="filter-group" id="tradeViewToggle" onclick="event.stopPropagation()">
+      <div class="ml-auto" class="filter-group" id="tradeViewToggle" onclick="event.stopPropagation()">
         <button class="filter-btn active" onclick="setTradeView('all',this)">전체</button>
         <button class="filter-btn" onclick="setTradeView('stock',this)">종목별</button>
       </div>
@@ -1538,7 +1353,7 @@ body.mask-on .amt {{ filter: blur(8px); user-select: none; }}
 <div id="tab-analysis" class="tab-content">
 
 <!-- 종합 통계 -->
-<div class="card" style="margin-bottom:20px;">
+<div class="card" class="mb-20">
   <div class="card-title">종합 통계</div>
   <div class="kpi-row secondary" style="margin-bottom:12px;">
     <div class="kpi">
@@ -1690,7 +1505,11 @@ const TXS = """ + json.dumps([
 ], ensure_ascii=False) + """;
 const STOCK_CODES = """ + json.dumps({name: v["code"] for name, v in raw_prices.items() if not name.startswith("_") and "code" in v}, ensure_ascii=False) + """;
 const STOCK_NATIONS = """ + json.dumps({name: v.get("nation","KOR") for name, v in raw_prices.items() if not name.startswith("_") and "code" in v}, ensure_ascii=False) + """;
-const STOCK_MARKET = """ + json.dumps({name: v.get("market","") for name, v in stock_map_data.items()}, ensure_ascii=False) + """;
+const STOCK_MARKET = """ + json.dumps({
+    name: (raw_prices.get(name) or {}).get("market","") or stock_map_data.get(name,{}).get("market","")
+    for name in set(list(raw_prices.keys()) + list(stock_map_data.keys()))
+    if not name.startswith("_")
+}, ensure_ascii=False) + """;
 const FX = """ + json.dumps({"USD": round(usd_krw,2), "JPY": round(jpy_krw,4), "CNY": round(cny_krw,2), "HKD": round(hkd_krw,2), "KRW": 1}, ensure_ascii=False) + """;
 
 // Light theme Chart.js defaults
@@ -2313,12 +2132,12 @@ function renderAccount(acc) {
       <div class="kpi"><div class="kpi-label">실현손익</div><div class="kpi-value amt ${pnlCls(data.realized_pnl)}">${fmt(data.realized_pnl)}</div></div>
       <div class="kpi"><div class="kpi-label">배당</div><div class="kpi-value amt">${fmt(data.dividends)}</div></div>
     </div>
-    <div class="kpi-row secondary" style="margin-bottom:20px;">
+    <div class="kpi-row secondary" class="mb-20">
       <div class="kpi"><div class="kpi-label">순손익</div><div class="kpi-value compact ${pnlCls(netPnl)} amt">${fmt(netPnl)}</div><div class="kpi-sub">ROI ${roi}%</div></div>
       <div class="kpi"><div class="kpi-label">IRR</div><div class="kpi-value compact ${pnlCls(data.irr)}">${data.irr != null ? data.irr.toFixed(1) + '%' : 'N/A'}</div></div>
       ${data.loan_interest > 0 ? `<div class="kpi"><div class="kpi-label">대출이자</div><div class="kpi-value compact negative amt">${fmt(data.loan_interest)}</div><div class="kpi-sub">대여수수료 +<span class="amt">${fmt(data.lending_fee || 0)}</span></div></div>` : ''}
     </div>
-    ${data.total_deposits > 0 ? `<div class="kpi-row secondary" style="margin-bottom:20px;">
+    ${data.total_deposits > 0 ? `<div class="kpi-row secondary" class="mb-20">
       <div class="kpi"><div class="kpi-label">순입금액</div><div class="kpi-value compact amt">${fmt(data.net_deposit)}</div><div class="kpi-sub">입금 <span class="amt">${fmt(data.total_deposits)}</span> / 출금 <span class="amt">${fmt(data.total_withdrawals)}</span></div></div>
       <div class="kpi"><div class="kpi-label">대출잔액</div><div class="kpi-value compact ${data.loan_balance > 0 ? 'negative' : ''} amt">${fmt(data.loan_balance)}</div></div>
       ${data.loan_interest > 0 ? `<div class="kpi"><div class="kpi-label">실질 순수익</div><div class="kpi-value compact ${pnlCls(netPnl - data.loan_interest + (data.lending_fee || 0))} amt">${fmt(netPnl - data.loan_interest + (data.lending_fee || 0))}</div><div class="kpi-sub">손익 - 이자 + 대여수수료</div></div>` : ''}
@@ -2338,7 +2157,7 @@ function renderAccount(acc) {
         </div>
         <span class="result-count" id="acctResultCount"></span>
       </div>
-      <div style="overflow-x: auto;">
+      <div class="overflow-x">
         <table id="acctStockTable">
           <thead><tr>
             <th data-col="name">종목명</th><th data-col="invested" class="text-right">매수금액</th><th data-col="returned" class="text-right">매도금액</th>
@@ -3009,7 +2828,7 @@ function renderPeriodAnalysis() {
         </div>
         <div id="stockTrades_${idx}" style="display:none;">
           ${summaryBar}
-          <table style="width:100%; border-collapse:collapse;"><tbody>${rows}</tbody></table>
+          <table class="tbl-full"><tbody>${rows}</tbody></table>
         </div>
       </div>`;
     }).join('');
@@ -3017,20 +2836,20 @@ function renderPeriodAnalysis() {
     // ── 전체 flat view ──
     tradeHtml = `<table style="width:100%; border-collapse:collapse; font-size:0.82rem;">
       <thead><tr style="border-bottom:2px solid var(--border);">
-        <th style="text-align:left; padding:6px 10px; color:var(--text-muted); font-size:0.72rem; text-transform:uppercase; font-weight:600;">날짜</th>
-        <th style="text-align:left; padding:6px 10px; color:var(--text-muted); font-size:0.72rem; text-transform:uppercase; font-weight:600;">종목</th>
-        <th style="text-align:left; padding:6px 10px; color:var(--text-muted); font-size:0.72rem; text-transform:uppercase; font-weight:600;">유형</th>
-        <th style="text-align:right; padding:6px 10px; color:var(--text-muted); font-size:0.72rem; text-transform:uppercase; font-weight:600;">금액</th>
-        <th style="text-align:right; padding:6px 10px; color:var(--text-muted); font-size:0.72rem; text-transform:uppercase; font-weight:600;">수량</th>
-        <th style="text-align:left; padding:6px 10px; color:var(--text-muted); font-size:0.72rem; text-transform:uppercase; font-weight:600;">계좌</th>
+        <th class="th-l">날짜</th>
+        <th class="th-l">종목</th>
+        <th class="th-l">유형</th>
+        <th class="th-r">금액</th>
+        <th class="th-r">수량</th>
+        <th class="th-l">계좌</th>
       </tr></thead><tbody>`;
     tradeHtml += sorted.map(tx => `
       <tr style="border-bottom:1px solid var(--border);">
         <td style="padding:7px 10px; color:var(--text-dim);">${tx.d}</td>
         <td style="padding:7px 10px; font-weight:600;">${tx.s || '─'}</td>
         <td style="padding:7px 10px;"><span style="color:${typeColor[tx.t]||'var(--text)'}; font-weight:600; font-size:0.78rem;">${typeMap[tx.t]||tx.t}</span></td>
-        <td style="padding:7px 10px; text-align:right; font-feature-settings:'tnum';" class="amt">${tx.a ? tx.a.toLocaleString('ko-KR') : '─'}</td>
-        <td style="padding:7px 10px; text-align:right; font-feature-settings:'tnum';" class="amt">${tx.q ? tx.q.toLocaleString('ko-KR') : '─'}</td>
+        <td class="td-num" class="amt">${tx.a ? tx.a.toLocaleString('ko-KR') : '─'}</td>
+        <td class="td-num" class="amt">${tx.q ? tx.q.toLocaleString('ko-KR') : '─'}</td>
         <td style="padding:7px 10px; font-size:0.77rem; color:var(--text-muted);">${tx.acc || '─'}</td>
       </tr>`).join('');
     tradeHtml += '</tbody></table>';
@@ -3103,7 +2922,7 @@ function renderWeightChange(acct) {
     const dc = isPos ? 'var(--positive)' : isNeg ? 'var(--negative)' : 'var(--text-muted)';
     const arrow = isPos ? '▲' : isNeg ? '▼' : '';
     const dStr = Math.abs(x.diff) < 0.05
-      ? '<span style="color:var(--text-muted);">─</span>'
+      ? '<span class="text-muted">─</span>'
       : `<span style="display:inline-flex;align-items:center;gap:2px;padding:1px 6px;border-radius:4px;background:${isPos ? 'rgba(10,124,89,0.1)' : 'rgba(200,30,30,0.1)'};">${arrow} ${(x.diff > 0 ? '+' : '') + x.diff.toFixed(1)}%p</span>`;
     const endBarColor = x.we > 0 ? (isPos ? 'rgba(10,124,89,0.6)' : isNeg ? 'rgba(200,30,30,0.55)' : 'rgba(148,163,184,0.55)') : 'transparent';
     const endPctColor = isPos ? 'var(--positive)' : isNeg ? 'var(--negative)' : 'var(--text-dim)';
@@ -3317,7 +3136,7 @@ function renderBriefingSummary() {
   const data = BRIEFING_SUMMARY[briefingActivePeriod];
   const el = document.getElementById('briefingSummarySection');
   if (!data) {
-    el.innerHTML = '<p style="color:var(--text-dim)">해당 기간 요약 데이터가 없습니다.</p>';
+    el.innerHTML = '<p class="text-dim">해당 기간 요약 데이터가 없습니다.</p>';
     return;
   }
 
@@ -3344,7 +3163,7 @@ function renderBriefingSummary() {
   if (themes.length > 0) {
     html += `
     <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
-      <span style="font-size:0.75rem; font-weight:700; color:var(--text-muted); letter-spacing:.08em; text-transform:uppercase;">핵심 테마</span>
+      <span class="section-label">핵심 테마</span>
       <span style="font-size:0.75rem; font-weight:600; color:var(--text-muted);">· ${themes.length}개</span>
     </div>
     <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-bottom:24px;">`;
@@ -3415,7 +3234,7 @@ function renderBriefingSummary() {
 
     html += `
     <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
-      <span style="font-size:0.75rem; font-weight:700; color:var(--text-muted); letter-spacing:.08em; text-transform:uppercase;">주목 종목</span>
+      <span class="section-label">주목 종목</span>
     </div>
     <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:24px;">${stockItems}</div>`;
   }
@@ -3431,7 +3250,7 @@ function renderBriefingSummary() {
 
     html += `
     <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
-      <span style="font-size:0.75rem; font-weight:700; color:var(--text-muted); letter-spacing:.08em; text-transform:uppercase;">매크로</span>
+      <span class="section-label">매크로</span>
     </div>
     <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-bottom:24px;">
       ${macroItems.map(m => `
@@ -3455,15 +3274,15 @@ function renderBriefingSummary() {
 
     html += `
     <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
-      <span style="font-size:0.75rem; font-weight:700; color:var(--text-muted); letter-spacing:.08em; text-transform:uppercase;">주요 지표</span>
+      <span class="section-label">주요 지표</span>
     </div>
     <div class="card" style="margin-bottom:24px; padding:0; overflow:hidden;">
-      <table style="width:100%; border-collapse:collapse;">
+      <table class="tbl-full">
         <thead><tr style="border-bottom:2px solid var(--border); background:var(--bg2);">
-          <th style="padding:8px 14px; text-align:left; font-size:0.72rem; color:var(--text-muted); font-weight:600; text-transform:uppercase;">지표</th>
-          <th style="padding:8px 14px; text-align:right; font-size:0.72rem; color:var(--text-muted); font-weight:600; text-transform:uppercase;">값</th>
-          <th style="padding:8px 14px; text-align:right; font-size:0.72rem; color:var(--text-muted); font-weight:600; text-transform:uppercase;">변동</th>
-          <th style="padding:8px 14px; text-align:left; font-size:0.72rem; color:var(--text-muted); font-weight:600; text-transform:uppercase;">출처</th>
+          <th class="th-l8">지표</th>
+          <th class="th-r8">값</th>
+          <th class="th-r8">변동</th>
+          <th class="th-l8">출처</th>
         </tr></thead>
         <tbody>${rows}</tbody>
       </table>
@@ -3500,7 +3319,7 @@ function renderRawPosts() {
   const dateKey = sel.value;
   const day = BRIEFING[dateKey];
   if (!day) {
-    document.getElementById('briefingContent').innerHTML = '<p style="color:var(--text-dim)">브리핑 데이터가 없습니다.</p>';
+    document.getElementById('briefingContent').innerHTML = '<p class="text-dim">브리핑 데이터가 없습니다.</p>';
     return;
   }
 
@@ -3549,7 +3368,7 @@ function renderRawPosts() {
     html += `</div>`;
   });
 
-  document.getElementById('briefingContent').innerHTML = html || '<p style="color:var(--text-dim)">해당 날짜에 포스트가 없습니다.</p>';
+  document.getElementById('briefingContent').innerHTML = html || '<p class="text-dim">해당 날짜에 포스트가 없습니다.</p>';
 }
 
 // ===== ACCOUNT SUMMARY (Dashboard) =====

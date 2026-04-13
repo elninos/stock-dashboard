@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 .wrangler/
 .env
+*_test.html

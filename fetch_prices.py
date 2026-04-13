@@ -176,7 +176,8 @@ def main():
                 price = fetch_yahoo_price(yahoo_ticker)
 
         if price:
-            prices[name] = {"code": code, "price": price, "nation": nation}
+            market = info.get("market", "")
+            prices[name] = {"code": code, "price": price, "nation": nation, "market": market}
             print(f"  OK {name} ({code}): {price:,}")
             updated += 1
         else:
