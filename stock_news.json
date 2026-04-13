@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-13T01:55:30.216128",
+  "updated_at": "2026-04-13T13:38:21.718919",
   "fetched_at": "2026-04-13T01:55:02.856616",
   "stocks": {
     "KODEX 코스닥150레버리지": {
@@ -35,11 +35,16 @@
       ],
       "article_count": 4,
       "has_news": true,
-      "summary": "",
-      "sentiment": "neutral",
-      "sentiment_reason": "",
-      "keywords": [],
-      "notable": ""
+      "summary": "종전 기대감에 기관·외인의 레버리지 투자가 확대되며 관련 ETF/ETN 수익률이 9~10% 급등했다. 코스닥 반등 국면에서 레버리지 수요가 집중되는 흐름이다.",
+      "sentiment": "positive",
+      "sentiment_reason": "기관·외인 매수 확대 및 ETF 수익률 큰 폭 상승",
+      "keywords": [
+        "레버리지",
+        "코스닥 반등",
+        "기관매수",
+        "종전기대감"
+      ],
+      "notable": "종전 기대감에 기관·외인 레버리지 투자 확대 - 전자신문"
     },
     "NAVER": {
       "articles": [
@@ -102,11 +107,16 @@
       ],
       "article_count": 8,
       "has_news": true,
-      "summary": "",
+      "summary": "1Q26 커머스 성장 견조 기대로 증권사 긍정 평가가 이어졌으나, AI 수익화 압박과 소매 투자자 이탈로 주가는 약세다. AI 검색 전환을 위해 관련 검색어 서비스를 폐지하는 등 구조적 변화를 진행 중이다.",
       "sentiment": "neutral",
-      "sentiment_reason": "",
-      "keywords": [],
-      "notable": ""
+      "sentiment_reason": "실적 기대는 있으나 AI 수익화 불확실성과 주가 약세 혼재",
+      "keywords": [
+        "AI검색",
+        "커머스성장",
+        "수익화",
+        "관련검색어폐지"
+      ],
+      "notable": "NAVER CEO Choi Soo-yeon Faces AI Profitability Test as Retail Investors Turn Cold"
     },
     "RF머트리얼즈": {
       "articles": [
@@ -169,11 +179,16 @@
       ],
       "article_count": 8,
       "has_news": true,
-      "summary": "",
-      "sentiment": "neutral",
-      "sentiment_reason": "",
-      "keywords": [],
-      "notable": ""
+      "summary": "AI 데이터센터 설비투자 목적으로 280억 원 유상증자를 추진하고, 미국 Metallife-USA와 72.9억 규모 공급계약을 체결하며 52주 신고가를 경신했다. RF모듈 수요 증가에 따른 실적 고성장 기대가 유지되고 있다.",
+      "sentiment": "positive",
+      "sentiment_reason": "AI 인프라 투자 유증, 신규 수출 계약 및 신고가 경신",
+      "keywords": [
+        "유상증자",
+        "AI데이터센터",
+        "공급계약",
+        "52주신고가"
+      ],
+      "notable": "RF머트리얼즈, 美 Metallife-USA와 72억 규모 공급계약"
     },
     "SK하이닉스": {
       "articles": [
@@ -236,11 +251,16 @@
       ],
       "article_count": 8,
       "has_news": true,
-      "summary": "",
-      "sentiment": "neutral",
-      "sentiment_reason": "",
-      "keywords": [],
-      "notable": ""
+      "summary": "1분기 영업이익 40조 돌파 기대와 1인당 성과급 13억 전망으로 실적 모멘텀이 강하다. 미·이란 협상 결렬로 장초반 하락하는 등 지정학적 이벤트에 민감하게 반응하고 있다.",
+      "sentiment": "positive",
+      "sentiment_reason": "반도체 초호황, 분기 영업이익 40조 기대",
+      "keywords": [
+        "1Q26실적",
+        "영업이익40조",
+        "성과급",
+        "미이란협상"
+      ],
+      "notable": "SK하이닉스도 '깜짝 실적' 기대감…\"분기 영업이익 40조 전망\""
     },
     "TIME K바이오액티브": {
       "articles": [
@@ -289,11 +309,16 @@
       ],
       "article_count": 6,
       "has_news": true,
-      "summary": "",
-      "sentiment": "neutral",
-      "sentiment_reason": "",
-      "keywords": [],
-      "notable": ""
+      "summary": "삼천당제약 쇼크로 편입 바이오 종목이 급락하며 출시 첫달부터 수익률 판정패를 기록했다. 변동성 장세에서 액티브 ETF 특성상 낙폭이 크게 나타났다.",
+      "sentiment": "negative",
+      "sentiment_reason": "삼천당제약 급락으로 편입 종목 손실, 출시 직후 부진한 수익률",
+      "keywords": [
+        "삼천당쇼크",
+        "바이오ETF",
+        "수익률부진",
+        "액티브ETF"
+      ],
+      "notable": "'삼천당 쇼크'에 코스닥·바이오 액티브 '비명'… 비중 따라 희비 엇갈려"
     },
     "글로벌엑스 중국 클린 에너지 ETF(HKD)": {
       "articles": [
@@ -307,10 +332,13 @@
       ],
       "article_count": 1,
       "has_news": true,
-      "summary": "",
+      "summary": "시세 정보 외 별도의 투자 관련 뉴스가 없다.",
       "sentiment": "neutral",
-      "sentiment_reason": "",
-      "keywords": [],
+      "sentiment_reason": "투자 분석 기사 없음",
+      "keywords": [
+        "중국클린에너지",
+        "ETF"
+      ],
       "notable": ""
     },
     "뉴스케일파워": {
@@ -384,11 +412,16 @@
       ],
       "article_count": 8,
       "has_news": true,
-      "summary": "",
-      "sentiment": "neutral",
-      "sentiment_reason": "",
-      "keywords": [],
-      "notable": ""
+      "summary": "AI 인프라 수요 급증으로 광통신 부품 수요가 폭발하며 52주 신고가를 연이어 경신하고 있다. 4/13 장중 20,200원으로 13.67% 급등했으며, 5G/6G 기대감과 데이터센터향 수요가 맞물려 강세다.",
+      "sentiment": "positive",
+      "sentiment_reason": "AI 데이터센터향 수요로 연속 신고가, 당일 13% 급등",
+      "keywords": [
+        "AI인프라",
+        "광통신",
+        "52주신고가",
+        "데이터센터"
+      ],
+      "notable": "[특징주] 광통신株, AI 인프라 핵심 부상…라이콤 30%↑·대한광통신 13%↑"
     },
     "두산": {
       "articles": [
@@ -450,7 +483,7 @@
         }
       ],
       "article_count": 8,
-      "has_news": true,
+      "has_news": false,
       "summary": "",
       "sentiment": "neutral",
       "sentiment_reason": "",
@@ -469,11 +502,15 @@
       ],
       "article_count": 1,
       "has_news": true,
-      "summary": "",
-      "sentiment": "neutral",
-      "sentiment_reason": "",
-      "keywords": [],
-      "notable": ""
+      "summary": "챗GPT와 구글 제미나이가 가장 많이 인용하는 플랫폼으로 AI 학습 데이터 공급자로서의 가치가 부각되고 있다. 트루이스트는 최근 하락을 매수 기회로 평가했다.",
+      "sentiment": "positive",
+      "sentiment_reason": "AI 플랫폼 가치 재평가, 증권사 매수 의견",
+      "keywords": [
+        "AI데이터",
+        "챗GPT인용",
+        "매수기회"
+      ],
+      "notable": "레딧, 최근 하락은 매수 기회…챗GPT와 제미나이가 가장 많이 인용 - 트루이스트"
     },
     "로켓 랩": {
       "articles": [
@@ -536,11 +573,16 @@
       ],
       "article_count": 8,
       "has_news": true,
-      "summary": "",
-      "sentiment": "neutral",
-      "sentiment_reason": "",
-      "keywords": [],
-      "notable": ""
+      "summary": "스페이스X IPO 기대감으로 서학개미들이 우주 산업 우회 베팅으로 집중 매수 중이다. iQPS와 Electron 로켓 발사 계약 3건을 추가 체결했으며, 뉴트론 로켓 상업화 일정이 중장기 변수다.",
+      "sentiment": "positive",
+      "sentiment_reason": "스페이스X IPO 수혜 기대, 신규 발사 계약 체결",
+      "keywords": [
+        "스페이스X",
+        "우주산업",
+        "Electron로켓",
+        "서학개미"
+      ],
+      "notable": "스페이스X IPO 앞두고 서학개미 '우회 베팅'…로켓랩·우주 ETF로 몰렸다"
     },
     "리노공업": {
       "articles": [
@@ -603,11 +645,16 @@
       ],
       "article_count": 8,
       "has_news": true,
-      "summary": "",
-      "sentiment": "neutral",
-      "sentiment_reason": "",
-      "keywords": [],
-      "notable": ""
+      "summary": "한국투자증권이 목표가를 28% 상향했으며 R&D용 소켓 수요가 견조하게 유지되고 있다. 1Q26 실적도 스마트폰 출하량 둔화에도 양호할 것으로 전망되며, 코스닥 탑10 유일 반도체주로 존재감을 키우고 있다.",
+      "sentiment": "positive",
+      "sentiment_reason": "목표가 28% 상향, R&D 소켓 수요 견조, 실적 기대",
+      "keywords": [
+        "목표가상향",
+        "R&D소켓",
+        "1Q실적",
+        "코스닥탑10"
+      ],
+      "notable": "한국투자증권 \"리노공업, R&D용 소켓 수요 견조.. 목표가 28% 상향\""
     },
     "마이크로소프트": {
       "articles": [
@@ -670,11 +717,16 @@
       ],
       "article_count": 8,
       "has_news": true,
-      "summary": "",
+      "summary": "에이전틱 AI 기반 마케팅 협력 확대와 Azure 성장이 지속되고 있다. 삼성SDS가 국내 클라우드 2위로 올라서며 국내 점유율 압박이 있으나, 글로벌 AI 인프라 주도권은 유지 중이다.",
       "sentiment": "neutral",
-      "sentiment_reason": "",
-      "keywords": [],
-      "notable": ""
+      "sentiment_reason": "Azure 성장 긍정적이나 국내 점유율 하락 보도 혼재",
+      "keywords": [
+        "에이전틱AI",
+        "Azure",
+        "클라우드",
+        "Copilot"
+      ],
+      "notable": "주간 기술 뉴스: MS 애저의 성장, 메타의 AI 출시 및 앤트로픽-팔란티어 논쟁 등"
     },
     "보로노이": {
       "articles": [
@@ -702,11 +754,16 @@
       ],
       "article_count": 3,
       "has_news": true,
-      "summary": "",
-      "sentiment": "neutral",
-      "sentiment_reason": "",
-      "keywords": [],
-      "notable": ""
+      "summary": "코스닥 리그제 도입으로 적자 기업의 2부 강등 가능성이 제기됐다. VRN110755 비소세포폐암 임상이 대만에서 IND 변경 승인을 받으며 파이프라인 진전은 있다.",
+      "sentiment": "negative",
+      "sentiment_reason": "코스닥 리그제 적자 강등 위험, 지속 적자",
+      "keywords": [
+        "코스닥리그제",
+        "VRN11",
+        "비소세포폐암",
+        "임상"
+      ],
+      "notable": "[코스닥 리그제] 조단위 시총도 적자면 2부…파두·보로노이 어쩌나"
     },
     "비트코인 전략 2배 ETF": {
       "articles": [],
@@ -789,10 +846,14 @@
       ],
       "article_count": 8,
       "has_news": true,
-      "summary": "",
+      "summary": "한국 내 이랜드 SPAO, 네오위즈 게임 콜라보 등 IP 활용 사례가 다양하게 나타나고 있다. IP 라이선스 수익 관점에서는 긍정적이나, 주가에 직접 영향을 주는 실적 관련 뉴스는 없다.",
       "sentiment": "neutral",
-      "sentiment_reason": "",
-      "keywords": [],
+      "sentiment_reason": "IP 콜라보 확대는 긍정적이나 실적·주가 영향 뉴스 부재",
+      "keywords": [
+        "IP라이선스",
+        "콜라보",
+        "캐릭터"
+      ],
       "notable": ""
     },
     "삼양엔씨켐": {
@@ -866,11 +927,16 @@
       ],
       "article_count": 8,
       "has_news": true,
-      "summary": "",
-      "sentiment": "neutral",
-      "sentiment_reason": "",
-      "keywords": [],
-      "notable": ""
+      "summary": "천식 치료제 '옴리클로'가 유럽 전역에서 처방이 급속히 확대되며 입찰·처방이 동시에 확산되고 있다. 유럽 시장 선점이 가속화되며 글로벌 바이오시밀러 리더십이 강화되고 있다.",
+      "sentiment": "positive",
+      "sentiment_reason": "옴리클로 유럽 전역 처방 급확대, 입찰·처방 동시 성과",
+      "keywords": [
+        "옴리클로",
+        "유럽처방",
+        "바이오시밀러",
+        "알레르기치료제"
+      ],
+      "notable": "셀트리온, 유럽 알레르기 치료제 점유율 급성장...입찰·처방 동시 확대"
     },
     "아이언디바이스": {
       "articles": [
@@ -884,11 +950,15 @@
       ],
       "article_count": 1,
       "has_news": true,
-      "summary": "",
-      "sentiment": "neutral",
-      "sentiment_reason": "",
-      "keywords": [],
-      "notable": ""
+      "summary": "글로벌 휴머노이드 로봇 밸류체인 진입이 임박한 것으로 평가되며, GaN 전력반도체 기술력이 부각되고 있다.",
+      "sentiment": "positive",
+      "sentiment_reason": "휴머노이드 로봇 밸류체인 진입 기대감, GaN 기술력 재평가",
+      "keywords": [
+        "휴머노이드로봇",
+        "GaN전력반도체",
+        "밸류체인"
+      ],
+      "notable": "아이언디바이스, 글로벌 휴머노이드 로봇 밸류체인 진입 '임박'"
     },
     "알파벳 Class A": {
       "articles": [
@@ -923,10 +993,14 @@
       ],
       "article_count": 4,
       "has_news": true,
-      "summary": "",
+      "summary": "미장 혼조세 속에서 알파벳 주가는 299~318달러 구간에서 완만한 상승을 지속했다. 특별한 이슈 없이 시장 흐름을 따라가고 있다.",
       "sentiment": "neutral",
-      "sentiment_reason": "",
-      "keywords": [],
+      "sentiment_reason": "미장 혼조세 속 완만한 상승, 특이사항 없음",
+      "keywords": [
+        "구글",
+        "미장",
+        "주가상승"
+      ],
       "notable": ""
     },
     "에이피알": {
@@ -990,11 +1064,16 @@
       ],
       "article_count": 8,
       "has_news": true,
-      "summary": "",
-      "sentiment": "neutral",
-      "sentiment_reason": "",
-      "keywords": [],
-      "notable": ""
+      "summary": "일본에 이어 미국·유럽에서 뷰티 디바이스 판매가 폭발적으로 성장하며 '2조 매출 로드맵'을 공개했다. 메디컬 에스테틱 B2B 확대 전략이 가속화되며 증권가 목표가 상향이 이어지고 있다.",
+      "sentiment": "positive",
+      "sentiment_reason": "미국·유럽 동시 고성장, 2조 로드맵, 잇따른 목표가 상향",
+      "keywords": [
+        "글로벌성장",
+        "뷰티디바이스",
+        "2조로드맵",
+        "메디컬에스테틱"
+      ],
+      "notable": "일본이어 유럽까지 미쳤다…에이피알 끝없는 랠리"
     },
     "오스코텍": {
       "articles": [],
@@ -1087,11 +1166,16 @@
       ],
       "article_count": 8,
       "has_news": true,
-      "summary": "",
-      "sentiment": "neutral",
-      "sentiment_reason": "",
-      "keywords": [],
-      "notable": ""
+      "summary": "반도체 후공정 장비 테마 강세에 힘입어 52주 신고가를 경신하고 VI가 발동됐다. 기관 순매수와 한투증권 신규 매수 리포트가 상승을 뒷받침하고 있다.",
+      "sentiment": "positive",
+      "sentiment_reason": "52주 신고가, 후공정 테마 부각, 기관 순매수 및 증권사 신규 커버리지",
+      "keywords": [
+        "52주신고가",
+        "후공정장비",
+        "VI발동",
+        "기관매수"
+      ],
+      "notable": "'이오테크닉스' 52주 신고가 경신 - 한국투자증권 매수(신규)"
     },
     "코오롱티슈진": {
       "articles": [
@@ -1147,11 +1231,16 @@
       ],
       "article_count": 7,
       "has_news": true,
-      "summary": "",
+      "summary": "FDA 임상 보류가 해제된 인보사 임상이 재개됐고, 오너 4세 이규호가 바이오 사업에 합류하며 재기를 노리고 있다. 과거 성분 오기재 논란의 역사가 있어 임상 결과에 따라 변동성이 클 것으로 보인다.",
       "sentiment": "neutral",
-      "sentiment_reason": "",
-      "keywords": [],
-      "notable": ""
+      "sentiment_reason": "임상 재개는 긍정적이나 과거 논란과 불확실성 공존",
+      "keywords": [
+        "인보사",
+        "FDA임상재개",
+        "TG-C",
+        "오너4세"
+      ],
+      "notable": "'TG-C 승부수' 던진 코오롱…오너 4세, 마지막 퍼즐 맞추나"
     },
     "토모큐브": {
       "articles": [
@@ -1179,10 +1268,14 @@
       ],
       "article_count": 3,
       "has_news": true,
-      "summary": "",
+      "summary": "올해 매출 손익분기점(BEP) 달성을 목표로 하며, 신제품 출시와 글로벌 시장 공략이 진행 중이다.",
       "sentiment": "neutral",
-      "sentiment_reason": "",
-      "keywords": [],
+      "sentiment_reason": "BEP 달성 목표는 긍정적이나 아직 적자 단계",
+      "keywords": [
+        "BEP달성",
+        "글로벌시장",
+        "신제품"
+      ],
       "notable": ""
     },
     "통위": {
@@ -1245,7 +1338,7 @@
         }
       ],
       "article_count": 8,
-      "has_news": true,
+      "has_news": false,
       "summary": "",
       "sentiment": "neutral",
       "sentiment_reason": "",
@@ -1313,11 +1406,16 @@
       ],
       "article_count": 8,
       "has_news": true,
-      "summary": "",
+      "summary": "리쥬란 코스메틱이 미국 세포라에서 팝업 론칭에 성공했고, 창상피복재 '자이너'로 산부인과 시장에 진출했다. 다만 주가 상승세가 꺾이며 외연 확장의 효과가 주목된다.",
       "sentiment": "neutral",
-      "sentiment_reason": "",
-      "keywords": [],
-      "notable": ""
+      "sentiment_reason": "세포라 론칭 등 사업 확장 긍정적이나 주가 모멘텀 약화",
+      "keywords": [
+        "리쥬란",
+        "세포라",
+        "창상피복재",
+        "글로벌확장"
+      ],
+      "notable": "파마리서치 '리쥬란코스메틱', 美 세포라 론칭 팝업 성료"
     },
     "파크시스템스": {
       "articles": [
@@ -1380,11 +1478,16 @@
       ],
       "article_count": 8,
       "has_news": true,
-      "summary": "",
-      "sentiment": "neutral",
-      "sentiment_reason": "",
-      "keywords": [],
-      "notable": ""
+      "summary": "과천에 글로벌 본사를 개관하며 나노계측 분야 확장의 새 출발점을 마련했다. 사외이사의 자사주 매입도 이뤄지며 내부자 신뢰가 확인됐다.",
+      "sentiment": "positive",
+      "sentiment_reason": "글로벌 본사 개관으로 성장 기대, 사외이사 자사주 매입",
+      "keywords": [
+        "글로벌본사",
+        "나노계측",
+        "과천신사옥",
+        "자사주매입"
+      ],
+      "notable": "파크시스템스, 과천 신사옥 개관…\"나노계측 새 장 열겠다\""
     },
     "프로셰어즈 QQQ 3배 ETF": {
       "articles": [
@@ -1398,10 +1501,14 @@
       ],
       "article_count": 1,
       "has_news": true,
-      "summary": "",
+      "summary": "급락 시 저가 매수 후 단기 차익 실현하는 트레이딩 사례가 언급됐다. 고변동성 레버리지 ETF 특성상 단기 매매 중심 접근이 많다.",
       "sentiment": "neutral",
-      "sentiment_reason": "",
-      "keywords": [],
+      "sentiment_reason": "단기 매매 사례 소개 위주",
+      "keywords": [
+        "레버리지ETF",
+        "나스닥3배",
+        "단기매매"
+      ],
       "notable": ""
     },
     "필옵틱스": {
@@ -1416,10 +1523,12 @@
       ],
       "article_count": 1,
       "has_news": true,
-      "summary": "",
-      "sentiment": "neutral",
-      "sentiment_reason": "",
-      "keywords": [],
+      "summary": "4월 8일 장중 9.62% 급등하며 강세를 보였다. 단일 기사로 추가 맥락은 제한적이다.",
+      "sentiment": "positive",
+      "sentiment_reason": "당일 9.62% 급등",
+      "keywords": [
+        "급등"
+      ],
       "notable": ""
     }
   }
