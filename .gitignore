@@ -4,3 +4,7 @@ __pycache__/
 .wrangler/
 .env
 *_test.html
+# _deploy/ generated files (CI builds and deploys these; no need to track)
+_deploy/*.html
+_deploy/*.json
+_deploy/functions/

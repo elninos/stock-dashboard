@@ -32,7 +32,7 @@ jobs:
         run: |
           cp index.html _deploy/
           cp loan_timeline.html _deploy/ 2>/dev/null || true
-          cp briefing_summary.json _deploy/
+          cp briefing_summary.json _deploy/ 2>/dev/null || true
           cp stock_news.json _deploy/ 2>/dev/null || true
           cp -r functions _deploy/ 2>/dev/null || true
 
@@ -43,10 +43,11 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy _deploy --project-name=stock-dashboard
 
-      - name: Commit updated files to repo
+      - name: Commit updated data files to repo
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add prices.json stock_map.json _deploy/
+          git add prices.json stock_map.json
           git diff --cached --quiet || git commit -m "Auto price update $(date '+%Y-%m-%d %H:%M') KST"
+          git pull --rebase origin main
           git push
