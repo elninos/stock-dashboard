@@ -708,7 +708,7 @@ for acc, data in account_summaries.items():
     for s in stocks_list:
         s["weight"] = round(s["market_value"] / total_mv * 100, 1) if total_mv > 0 and s["market_value"] > 0 else 0
 
-    stocks_list.sort(key=lambda x: abs(x["net_pnl"]), reverse=True)
+    stocks_list.sort(key=lambda x: x["market_value"], reverse=True)
 
     # Build treemap data for this account's holdings
     account_treemap = []
@@ -789,7 +789,7 @@ total_mv_all = sum(s["market_value"] for s in js_stock_data)
 for s in js_stock_data:
     s["weight"] = round(s["market_value"] / total_mv_all * 100, 1) if total_mv_all > 0 and s["market_value"] > 0 else 0
 
-js_stock_data.sort(key=lambda x: abs(x["net_pnl"]), reverse=True)
+js_stock_data.sort(key=lambda x: x["market_value"], reverse=True)
 
 overall_net_pnl = overall_realized_pnl + overall_dividends
 overall_roi = (overall_net_pnl / overall_invested * 100) if overall_invested > 0 else 0
@@ -2036,7 +2036,7 @@ function switchTab(name) {
 }
 
 // ===== STOCK TABLE =====
-let stockSortCol = 'net_pnl';
+let stockSortCol = 'market_value';
 let stockSortDir = 'desc';
 let stockFilter = 'holding';
 let stockData = [...STOCKS];
