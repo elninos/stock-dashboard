@@ -61,7 +61,9 @@ jobs:
         continue-on-error: true
 
       - name: Build dashboard
-        run: python build_dashboard.py
+        run: |
+          mkdir -p _deploy
+          python build_dashboard.py
 
       - name: Copy built files to _deploy
         run: |
