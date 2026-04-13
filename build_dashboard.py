@@ -48,9 +48,9 @@ for k in [k for k in hist_month_map if k.endswith('_date')]:
 stock_map_data = load_json(STOCK_MAP_FILE, default={})
 
 # Load prices once, extract both current prices and currency mapping
-__raw_prices = load_json(PRICES_FILE, default={})
+_raw_prices = load_json(PRICES_FILE, default={})
 current_prices = {}  # stock name -> price (in original currency)
-prices_updated_at = __raw_prices.get("_updated_at")
+prices_updated_at = _raw_prices.get("_updated_at")
 
 # NOTE: txs and cash_txs are created AFTER USD normalization below
 cash_flow_types = {"deposit", "withdrawal", "loan_in", "loan_out", "lending_fee"}
@@ -69,7 +69,7 @@ FX_RATES = {"KRW": 1, "USD": usd_krw, "JPY": jpy_krw, "CNY": cny_krw, "HKD": hkd
 
 stock_currency_map = {}  # stock -> "KRW" | "USD" | "JPY" | "CNY" | "HKD"
 stock_nation_map = {}    # stock -> "KOR" | "USA" | "JPN" | "CHN" | "HKG"
-for k, v in __raw_prices.items():
+for k, v in _raw_prices.items():
     if k.startswith("_") or not isinstance(v, dict):
         continue
     current_prices[k] = v["price"]
