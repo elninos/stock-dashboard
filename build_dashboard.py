@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Build interactive HTML dashboard from parsed transactions."""
 import json
-import math
 import os
 from collections import defaultdict
 from datetime import datetime, timedelta, date, timezone
@@ -14,6 +13,8 @@ from dashboard_utils import (
     fmt_pct,
     pnl_class,
 )
+from config import FX_FALLBACK, TRANSACTIONS_FILE, PRICES_FILE, STOCK_MAP_FILE, BRIEFING_FILE, BRIEFING_SUMMARY_FILE, STOCK_NEWS_FILE, HIST_PORTFOLIO_FILE
+from file_io import load_json, now_kst
 
 KST = timezone(timedelta(hours=9))
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -83,10 +84,10 @@ if os.path.exists(prices_file):
 cash_flow_types = {"deposit", "withdrawal", "loan_in", "loan_out", "lending_fee"}
 
 # ===== Exchange rates =====
-usd_krw = fetch_fx_rate("USD", fallback=1400.0)
-jpy_krw = fetch_fx_rate("JPY", fallback=9.5, divisor=100.0)  # Naver returns per 100 JPY
-cny_krw = fetch_fx_rate("CNY", fallback=200.0)
-hkd_krw = fetch_fx_rate("HKD", fallback=190.0)
+usd_krw = fetch_fx_rate("USD", fallback=FX_FALLBACK["USD"])
+jpy_krw = fetch_fx_rate("JPY", fallback=FX_FALLBACK["JPY"], divisor=100.0)  # Naver returns per 100 JPY
+cny_krw = fetch_fx_rate("CNY", fallback=FX_FALLBACK["CNY"])
+hkd_krw = fetch_fx_rate("HKD", fallback=FX_FALLBACK["HKD"])
 print(f"USD/KRW: {usd_krw:,.2f}, JPY/KRW: {jpy_krw:,.4f}, CNY/KRW: {cny_krw:,.2f}, HKD/KRW: {hkd_krw:,.2f}")
 
 # Build currency mapping from prices.json nation info

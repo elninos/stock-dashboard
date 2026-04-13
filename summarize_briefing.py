@@ -12,28 +12,14 @@ Outputs briefing_summary.json with {daily, weekly, biweekly, monthly} keys.
 import json
 import os
 import sys
-from datetime import date, timedelta, datetime
+from datetime import date, timedelta
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-BRIEFING_FILE = os.path.join(BASE_DIR, "briefing.json")
-SUMMARY_FILE = os.path.join(BASE_DIR, "briefing_summary.json")
 
-# Allow API key via env or .env file
-API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
-if not API_KEY:
-    env_path = os.path.join(BASE_DIR, ".env")
-    if os.path.exists(env_path):
-        with open(env_path) as f:
-            for line in f:
-                if line.startswith("ANTHROPIC_API_KEY="):
-                    API_KEY = line.strip().split("=", 1)[1].strip().strip('"').strip("'")
+from config import BRIEFING_FILE, BRIEFING_SUMMARY_FILE as SUMMARY_FILE, BRIEFING_PERIODS as PERIODS
+from file_io import load_api_key, load_json, save_json, now_kst
 
-PERIODS = {
-    "daily":    1,
-    "weekly":   7,
-    "biweekly": 14,
-    "monthly":  28,
-}
+API_KEY = load_api_key(base_dir=BASE_DIR)
 
 
 def collect_posts_for_period(briefings: dict, anchor_date: str, days: int) -> list[dict]:
@@ -178,8 +164,7 @@ def main():
 
     anchor_date = sys.argv[1] if len(sys.argv) > 1 else date.today().isoformat()
 
-    with open(BRIEFING_FILE, encoding="utf-8") as f:
-        briefings = json.load(f)
+    briefings = load_json(BRIEFING_FILE)
 
     available = sorted(briefings.keys(), reverse=True)
     if not available:
@@ -190,7 +175,7 @@ def main():
         anchor_date = available[0]
         print(f"Requested date not found, using latest: {anchor_date}")
 
-    result = {"updated_at": datetime.now().isoformat()}
+    result = {"updated_at": now_kst()}
 
     for period, days in PERIODS.items():
         posts = collect_posts_for_period(briefings, anchor_date, days)
@@ -212,9 +197,7 @@ def main():
         except Exception as e:
             print(f"  [ERROR] {e}")
 
-    with open(SUMMARY_FILE, "w", encoding="utf-8") as f:
-        json.dump(result, f, ensure_ascii=False, indent=2)
-
+    save_json(SUMMARY_FILE, result)
     print(f"\nSaved to {SUMMARY_FILE}")
 
 

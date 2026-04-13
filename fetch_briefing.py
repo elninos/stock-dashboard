@@ -1,16 +1,15 @@
 #!/usr/bin/env python3
 """Fetch market briefing from telegram channels and blogs listed in sources.json."""
-import json
 import os
 import re
 import sys
-import urllib.request
 from datetime import datetime, date
-from html.parser import HTMLParser
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-SOURCES_FILE = os.path.join(BASE_DIR, "sources.json")
-BRIEFING_FILE = os.path.join(BASE_DIR, "briefing.json")
+
+from config import SOURCES_FILE, BRIEFING_FILE, TIMEOUT_LONG
+from file_io import load_json, save_json, now_kst
+from http_client import http_get_text
 
 TODAY = date.today().isoformat()
 
@@ -32,15 +31,10 @@ def _extract_links(html_str: str) -> list[str]:
 
 def fetch_telegram_posts(url: str, channel_id: str = "") -> list[dict]:
     """Fetch posts from a telegram channel preview page using regex."""
-    req = urllib.request.Request(url, headers={
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
-        "Accept-Language": "ko-KR,ko;q=0.9",
-    })
-    try:
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            html = resp.read().decode("utf-8", errors="replace")
-    except Exception as e:
-        print(f"  [ERROR] Failed to fetch {url}: {e}")
+    extra_headers = {"Accept-Language": "ko-KR,ko;q=0.9"}
+    html = http_get_text(url, headers=extra_headers, timeout=TIMEOUT_LONG)
+    if html is None:
+        print(f"  [ERROR] Failed to fetch {url}")
         return []
 
     results = []
@@ -110,15 +104,10 @@ def fetch_telegram_posts(url: str, channel_id: str = "") -> list[dict]:
 
 def fetch_naver_rss(rss_url: str) -> list[dict]:
     """Fetch posts from a Naver blog RSS feed."""
-    req = urllib.request.Request(rss_url, headers={
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
-        "Accept-Language": "ko-KR,ko;q=0.9",
-    })
-    try:
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            xml = resp.read().decode("utf-8", errors="replace")
-    except Exception as e:
-        print(f"  [ERROR] Failed to fetch RSS {rss_url}: {e}")
+    extra_headers = {"Accept-Language": "ko-KR,ko;q=0.9"}
+    xml = http_get_text(rss_url, headers=extra_headers, timeout=TIMEOUT_LONG)
+    if xml is None:
+        print(f"  [ERROR] Failed to fetch RSS {rss_url}")
         return []
 
     from email.utils import parsedate_to_datetime
@@ -198,17 +187,10 @@ def fetch_blog_posts(url: str) -> list[dict]:
 def main():
     target_date = sys.argv[1] if len(sys.argv) > 1 else TODAY
 
-    with open(SOURCES_FILE, encoding="utf-8") as f:
-        sources = json.load(f)
+    sources = load_json(SOURCES_FILE, default={})
+    briefings = load_json(BRIEFING_FILE, default={})
 
-    # Load existing briefings
-    if os.path.exists(BRIEFING_FILE):
-        with open(BRIEFING_FILE, encoding="utf-8") as f:
-            briefings = json.load(f)
-    else:
-        briefings = {}
-
-    day_data = {"fetched_at": datetime.now().isoformat(), "sources": []}
+    day_data = {"fetched_at": now_kst(), "sources": []}
 
     # Telegram channels
     for src in sources.get("telegram", []):
@@ -249,8 +231,7 @@ def main():
     sorted_dates = sorted(briefings.keys(), reverse=True)[:30]
     briefings = {d: briefings[d] for d in sorted_dates}
 
-    with open(BRIEFING_FILE, "w", encoding="utf-8") as f:
-        json.dump(briefings, f, ensure_ascii=False, indent=2)
+    save_json(BRIEFING_FILE, briefings)
 
     total_posts = sum(len(s["posts"]) for s in day_data["sources"])
     print(f"\nSaved {total_posts} posts from {len(day_data['sources'])} sources to briefing.json ({target_date})")

@@ -1,16 +1,17 @@
 #!/usr/bin/env python3
 """Fetch current stock prices with auto-discovery of new stocks via Naver Search API."""
-import json
 import os
 import time
-import urllib.request
-import urllib.error
-import urllib.parse
-from datetime import datetime
+from urllib.parse import quote
 
-PRICES_FILE = os.path.join(os.path.dirname(__file__), "prices.json")
-TRANSACTIONS_FILE = os.path.join(os.path.dirname(__file__), "transactions.json")
-STOCK_MAP_FILE = os.path.join(os.path.dirname(__file__), "stock_map.json")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+from config import (
+    TRANSACTIONS_FILE, PRICES_FILE, STOCK_MAP_FILE,
+    TIMEOUT_SHORT, TIMEOUT_MEDIUM,
+)
+from file_io import load_json, save_json, now_kst
+from http_client import http_get_json
 
 # Stocks to skip (delisted, liquidated, negligible)
 SKIP_STOCKS = {"", "Unknown"}
@@ -18,94 +19,81 @@ SKIP_STOCKS = {"", "Unknown"}
 
 def load_stock_map():
     """Load saved stock code mappings."""
-    if os.path.exists(STOCK_MAP_FILE):
-        with open(STOCK_MAP_FILE, encoding="utf-8") as f:
-            return json.load(f)
-    return {}
+    return load_json(STOCK_MAP_FILE, default={})
 
 
 def save_stock_map(stock_map):
     """Save stock code mappings."""
-    with open(STOCK_MAP_FILE, "w", encoding="utf-8") as f:
-        json.dump(stock_map, f, ensure_ascii=False, indent=2)
+    save_json(STOCK_MAP_FILE, stock_map)
 
 
 def search_naver(name):
     """Search Naver Finance for stock code and market info.
     Returns: {"code": "005930", "nation": "KOR", "market": "코스피"} or None
     """
-    url = f"https://ac.stock.naver.com/ac?q={urllib.parse.quote(name)}&target=stock"
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    try:
-        with urllib.request.urlopen(req, timeout=5) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            items = data.get("items", [])
-            if not items:
-                return None
-            # Try exact name match first
-            for item in items:
-                if item["name"] == name:
-                    return {
-                        "code": item["code"],
-                        "nation": item.get("nationCode", ""),
-                        "market": item.get("typeName", ""),
-                    }
-            # Partial match: check if search name is contained in result
-            for item in items:
-                if name in item["name"] or item["name"] in name:
-                    return {
-                        "code": item["code"],
-                        "nation": item.get("nationCode", ""),
-                        "market": item.get("typeName", ""),
-                    }
-            # Fallback: return first result
-            item = items[0]
+    url = f"https://ac.stock.naver.com/ac?q={quote(name)}&target=stock"
+    data = http_get_json(url, timeout=TIMEOUT_SHORT)
+    if not data:
+        return None
+    items = data.get("items", [])
+    if not items:
+        return None
+    # Try exact name match first
+    for item in items:
+        if item["name"] == name:
             return {
                 "code": item["code"],
                 "nation": item.get("nationCode", ""),
                 "market": item.get("typeName", ""),
             }
-    except Exception:
-        return None
+    # Partial match: check if search name is contained in result
+    for item in items:
+        if name in item["name"] or item["name"] in name:
+            return {
+                "code": item["code"],
+                "nation": item.get("nationCode", ""),
+                "market": item.get("typeName", ""),
+            }
+    # Fallback: return first result
+    item = items[0]
+    return {
+        "code": item["code"],
+        "nation": item.get("nationCode", ""),
+        "market": item.get("typeName", ""),
+    }
 
 
 def fetch_naver_kr_price(code):
     """Fetch Korean stock price from Naver Finance mobile API."""
     url = f"https://m.stock.naver.com/api/stock/{code}/basic"
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    try:
-        with urllib.request.urlopen(req, timeout=5) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            price_str = data.get("closePrice", "0").replace(",", "")
-            price = int(float(price_str))
-            return price if price > 0 else None
-    except Exception:
+    data = http_get_json(url, timeout=TIMEOUT_SHORT)
+    if not data:
         return None
+    price_str = data.get("closePrice", "0").replace(",", "")
+    price = int(float(price_str))
+    return price if price > 0 else None
 
 
 def fetch_naver_foreign_price(code):
     """Fetch foreign stock price from Naver Finance."""
     url = f"https://m.stock.naver.com/api/stock/{code}/basic"
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    try:
-        with urllib.request.urlopen(req, timeout=5) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            price_str = data.get("closePrice", "0").replace(",", "")
-            price = float(price_str)
-            return price if price > 0 else None
-    except Exception:
+    data = http_get_json(url, timeout=TIMEOUT_SHORT)
+    if not data:
         return None
+    price_str = data.get("closePrice", "0").replace(",", "")
+    price = float(price_str)
+    return price if price > 0 else None
 
 
 def fetch_yahoo_price(ticker):
     """Fetch stock price from Yahoo Finance API (fallback)."""
     url = f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker}?interval=1d&range=1d"
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    data = http_get_json(url, timeout=TIMEOUT_MEDIUM)
+    if not data:
+        return None
     try:
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            price = data["chart"]["result"][0]["meta"]["regularMarketPrice"]
-            return round(price, 2)
+        price = data["chart"]["result"][0]["meta"]["regularMarketPrice"]
+        return round(price, 2)
     except Exception:
         return None
 
@@ -113,14 +101,10 @@ def fetch_yahoo_price(ticker):
 def main():
     # Load existing data
     stock_map = load_stock_map()
-    prices = {}
-    if os.path.exists(PRICES_FILE):
-        with open(PRICES_FILE, encoding="utf-8") as f:
-            prices = json.load(f)
+    prices = load_json(PRICES_FILE, default={})
 
     # Find all stocks from transactions
-    with open(TRANSACTIONS_FILE, encoding="utf-8") as f:
-        txs = json.load(f)
+    txs = load_json(TRANSACTIONS_FILE, default=[])
     all_stocks = set(
         tx["stock"] for tx in txs
         if tx["type"] in ("buy", "sell", "dividend", "lending_fee")
@@ -186,9 +170,8 @@ def main():
         time.sleep(0.2)
 
     # Save with timestamp
-    prices["_updated_at"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    with open(PRICES_FILE, "w", encoding="utf-8") as f:
-        json.dump(prices, f, ensure_ascii=False, indent=2)
+    prices["_updated_at"] = now_kst()
+    save_json(PRICES_FILE, prices)
 
     print(f"\n=== Summary ===")
     print(f"Total stocks: {len(all_stocks)}")

@@ -7,22 +7,13 @@ Run after fetch_stock_news.py.
 import json
 import os
 import sys
-from datetime import datetime
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-RAW_FILE = os.path.join(BASE_DIR, "stock_news_raw.json")
-OUTPUT_FILE = os.path.join(BASE_DIR, "stock_news.json")
 
-API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
-if not API_KEY:
-    env_path = os.path.join(BASE_DIR, ".env")
-    if os.path.exists(env_path):
-        with open(env_path) as f:
-            for line in f:
-                if line.startswith("ANTHROPIC_API_KEY="):
-                    API_KEY = line.strip().split("=", 1)[1].strip().strip('"').strip("'")
+from config import STOCK_NEWS_RAW_FILE as RAW_FILE, STOCK_NEWS_FILE as OUTPUT_FILE, BATCH_SIZE_NEWS as BATCH_SIZE
+from file_io import load_api_key, load_json, save_json, now_kst
 
-BATCH_SIZE = 5
+API_KEY = load_api_key(base_dir=BASE_DIR)
 
 
 def summarize_batch(batch: list[tuple[str, list[dict]]]) -> dict:
@@ -91,8 +82,7 @@ def main():
         print("WARNING: ANTHROPIC_API_KEY not set. Skipping news summarization.")
         sys.exit(0)
 
-    with open(RAW_FILE, encoding="utf-8") as f:
-        raw = json.load(f)
+    raw = load_json(RAW_FILE)
 
     all_stocks = raw.get("stocks", {})
     pairs = [(s, arts) for s, arts in all_stocks.items() if arts]
@@ -114,7 +104,7 @@ def main():
 
     # Build output
     output = {
-        "updated_at": datetime.now().isoformat(),
+        "updated_at": now_kst(),
         "fetched_at": raw.get("fetched_at", ""),
         "stocks": {}
     }
@@ -131,8 +121,7 @@ def main():
             "notable": s.get("notable", ""),
         }
 
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(output, f, ensure_ascii=False, indent=2)
+    save_json(OUTPUT_FILE, output)
 
     print(f"\n완료: {len(summaries)}개 요약 → {OUTPUT_FILE}")
     if no_news:

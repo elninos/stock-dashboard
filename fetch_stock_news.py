@@ -4,7 +4,6 @@
 Reads transactions.json → fetches Google News RSS per stock → saves raw articles to stock_news_raw.json.
 Summarization is handled separately by Claude Code agent (summarize_stock_news.py).
 """
-import json
 import os
 import re
 import time
@@ -12,19 +11,16 @@ import xml.etree.ElementTree as ET
 from collections import defaultdict
 from datetime import datetime, timedelta
 from urllib.parse import quote
-from urllib.request import Request, urlopen
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-TRANSACTIONS_FILE = os.path.join(BASE_DIR, "transactions.json")
-OUTPUT_FILE = os.path.join(BASE_DIR, "stock_news_raw.json")
 
-MAX_ARTICLES = 8
-NEWS_DAYS = 7
+from config import TRANSACTIONS_FILE, STOCK_NEWS_RAW_FILE as OUTPUT_FILE, MAX_NEWS_ARTICLES as MAX_ARTICLES, NEWS_LOOKBACK_DAYS as NEWS_DAYS
+from file_io import load_json, save_json, now_kst
+from http_client import http_get
 
 
 def get_held_stocks():
-    with open(TRANSACTIONS_FILE, encoding="utf-8") as f:
-        txs = json.load(f)
+    txs = load_json(TRANSACTIONS_FILE, default=[])
     holdings = defaultdict(int)
     for tx in txs:
         stock = tx.get("stock", "")
@@ -42,9 +38,9 @@ def get_held_stocks():
 def fetch_google_news(stock_name: str) -> list[dict]:
     url = f"https://news.google.com/rss/search?q={quote(stock_name)}&hl=ko&gl=KR&ceid=KR:ko"
     try:
-        req = Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with urlopen(req, timeout=10) as resp:
-            content = resp.read()
+        content = http_get(url)
+        if content is None:
+            return []
         root = ET.fromstring(content)
         cutoff = datetime.now() - timedelta(days=NEWS_DAYS)
         articles = []
@@ -83,7 +79,7 @@ def main():
     stocks = get_held_stocks()
     print(f"보유 종목 {len(stocks)}개 뉴스 수집 시작...")
 
-    result = {"fetched_at": datetime.now().isoformat(), "stocks": {}}
+    result = {"fetched_at": now_kst(), "stocks": {}}
     for stock in stocks:
         print(f"  [{stock}] ...", end=" ", flush=True)
         articles = fetch_google_news(stock)
@@ -91,8 +87,7 @@ def main():
         print(f"{len(articles)}건")
         time.sleep(0.3)
 
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(result, f, ensure_ascii=False, indent=2)
+    save_json(OUTPUT_FILE, result)
 
     has_news = sum(1 for arts in result["stocks"].values() if arts)
     print(f"\n완료: {has_news}/{len(stocks)}종목 뉴스 있음 → {OUTPUT_FILE}")

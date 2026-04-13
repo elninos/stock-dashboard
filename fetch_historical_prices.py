@@ -21,14 +21,14 @@ Usage:
   python3 fetch_historical_prices.py --force    # 강제 재계산
 """
 
-import json, os, sys, time
+import os, sys, time
 from collections import defaultdict
 from datetime import datetime, timedelta, date
 
-BASE_DIR    = os.path.dirname(os.path.abspath(__file__))
-TXS_FILE    = os.path.join(BASE_DIR, "transactions.json")
-PRICES_FILE = os.path.join(BASE_DIR, "prices.json")
-OUTPUT_FILE = os.path.join(BASE_DIR, "historical_portfolio_values.json")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+from config import TRANSACTIONS_FILE as TXS_FILE, PRICES_FILE, HIST_PORTFOLIO_FILE as OUTPUT_FILE
+from file_io import load_json, save_json
 
 # 환율 코드 (→ KRW)
 FX_TICKERS = {
@@ -162,20 +162,16 @@ def main(force=False):
     today_str = date.today().strftime("%Y-%m-%d")
 
     # 캐시 유효 체크
-    if not force and os.path.exists(OUTPUT_FILE):
-        with open(OUTPUT_FILE, encoding="utf-8") as f:
-            existing = json.load(f)
+    if not force:
+        existing = load_json(OUTPUT_FILE, default={})
         if existing.get("_updated") == today_str:
             print("✓ 오늘 이미 계산됨. 스킵 (--force로 강제 재계산)")
             return
 
     print("=== 기준일별 포트폴리오 평가금액 계산 ===\n")
 
-    with open(TXS_FILE, encoding="utf-8") as f:
-        txs = sorted(json.load(f), key=lambda x: x["date"])
-
-    with open(PRICES_FILE, encoding="utf-8") as f:
-        prices_meta = json.load(f)
+    txs = sorted(load_json(TXS_FILE, default=[]), key=lambda x: x["date"])
+    prices_meta = load_json(PRICES_FILE, default={})
 
     key_dates = get_key_dates()
     # 중복 날짜 제거 (예: mtd==qtd이면 한 번만 계산)
@@ -270,8 +266,7 @@ def main(force=False):
         }
         print(f"\n  → 포트폴리오 평가금액: {total_value:,.0f}원")
 
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(output, f, ensure_ascii=False, indent=2)
+    save_json(OUTPUT_FILE, output)
     print(f"\n✓ 저장 완료: {OUTPUT_FILE}")
 
 
