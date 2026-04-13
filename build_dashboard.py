@@ -1796,6 +1796,39 @@ async function refreshPrices() {
     pvSub.className = 'header-pv-sub pv-blur ' + (newUnreal >= 0 ? 'positive' : 'negative');
   }
 
+  // ACCOUNTS 동기화 (계좌별 종목 + 트리맵 데이터)
+  for (const accName of Object.keys(ACCOUNTS)) {
+    const acc = ACCOUNTS[accName];
+    let accMV = 0;
+    // acc.stocks 업데이트
+    for (const s of (acc.stocks || [])) {
+      if (newPrices[s.name] == null) continue;
+      s.current_price  = newPrices[s.name];
+      s.market_value   = s.current_qty > 0 ? Math.round(s.current_qty * newPrices[s.name]) : 0;
+      s.unrealized_pnl = s.current_qty > 0 ? s.market_value - s.cost : 0;
+      accMV += s.market_value;
+    }
+    // acc.treemap 업데이트
+    for (const t of (acc.treemap || [])) {
+      if (newPrices[t.name] == null) continue;
+      t.market_value   = t.qty > 0 ? Math.round(t.qty * newPrices[t.name]) : 0;
+      t.unrealized_pnl = t.qty > 0 ? t.market_value - (t.cost || 0) : 0;
+    }
+    // acc 요약값 업데이트
+    if (acc.summary != null) {
+      const heldS = (acc.stocks || []).filter(s => s.current_qty > 0);
+      acc.summary.market_value   = heldS.reduce((s, x) => s + x.market_value, 0);
+      acc.summary.unrealized_pnl = heldS.reduce((s, x) => s + x.unrealized_pnl, 0);
+    }
+  }
+
+  // OVERALL 업데이트
+  if (OVERALL) {
+    const heldAll = STOCKS.filter(s => s.current_qty > 0);
+    OVERALL.total_market_value   = heldAll.reduce((s, x) => s + x.market_value, 0);
+    OVERALL.unrealized_pnl       = heldAll.reduce((s, x) => s + x.unrealized_pnl, 0);
+  }
+
   // 업데이트 시각
   const ts = new Date().toLocaleTimeString('ko-KR', {hour:'2-digit', minute:'2-digit'}) + ' 실시간';
   const tsEl = document.getElementById('prices-updated-at');
@@ -2835,12 +2868,12 @@ function renderPeriodAnalysis() {
     diffHtml += added.map(x => diffRow(x, 'var(--positive)', x => `+${x.qe.toLocaleString('ko-KR')}주`)).join('');
   }
   if (bought.length) {
-    diffHtml += `<div style="font-size:0.75rem; font-weight:600; color:var(--negative); margin-top:8px; margin-bottom:4px;">📈 추가 매수 ${bought.length}</div>`;
-    diffHtml += bought.map(x => diffRow(x, 'var(--negative)', x => `+${x.d.toLocaleString('ko-KR')}주 (→${x.qe.toLocaleString('ko-KR')}주)`)).join('');
+    diffHtml += `<div style="font-size:0.75rem; font-weight:600; color:var(--positive); margin-top:8px; margin-bottom:4px;">📈 추가 매수 ${bought.length}</div>`;
+    diffHtml += bought.map(x => diffRow(x, 'var(--positive)', x => `+${x.d.toLocaleString('ko-KR')}주 (→${x.qe.toLocaleString('ko-KR')}주)`)).join('');
   }
   if (sold.length) {
-    diffHtml += `<div style="font-size:0.75rem; font-weight:600; color:var(--positive); margin-top:8px; margin-bottom:4px;">📉 일부 매도 ${sold.length}</div>`;
-    diffHtml += sold.map(x => diffRow(x, 'var(--positive)', x => `${x.d.toLocaleString('ko-KR')}주 (→${x.qe.toLocaleString('ko-KR')}주)`)).join('');
+    diffHtml += `<div style="font-size:0.75rem; font-weight:600; color:var(--negative); margin-top:8px; margin-bottom:4px;">📉 일부 매도 ${sold.length}</div>`;
+    diffHtml += sold.map(x => diffRow(x, 'var(--negative)', x => `${x.d.toLocaleString('ko-KR')}주 (→${x.qe.toLocaleString('ko-KR')}주)`)).join('');
   }
   if (removed.length) {
     diffHtml += `<div style="font-size:0.75rem; font-weight:600; color:var(--negative); margin-top:8px; margin-bottom:4px;">🔴 청산 ${removed.length}</div>`;
