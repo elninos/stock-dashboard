@@ -22,6 +22,18 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Install wrangler
+        run: npm install -g wrangler
+
+      - name: Download sensitive data from KV
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          wrangler kv key get "transactions" \
+            --namespace-id "6db9cbb95a4f4723bd0f26fb84214269" --remote > transactions.json
+          wrangler kv key get "historical_portfolio" \
+            --namespace-id "6db9cbb95a4f4723bd0f26fb84214269" --remote > historical_portfolio_values.json
+
       - name: Fetch latest prices
         run: python fetch_prices.py
 

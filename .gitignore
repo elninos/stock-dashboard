@@ -8,3 +8,6 @@ __pycache__/
 _deploy/*.html
 _deploy/*.json
 _deploy/functions/
+# 민감 데이터 (Cloudflare KV에 저장)
+transactions.json
+historical_portfolio_values.json
