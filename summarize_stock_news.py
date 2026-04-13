@@ -88,8 +88,8 @@ JSON 형식:
 
 def main():
     if not API_KEY:
-        print("ERROR: ANTHROPIC_API_KEY not set.")
-        sys.exit(1)
+        print("WARNING: ANTHROPIC_API_KEY not set. Skipping news summarization.")
+        sys.exit(0)
 
     with open(RAW_FILE, encoding="utf-8") as f:
         raw = json.load(f)
