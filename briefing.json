@@ -1,6 +1,6 @@
 {
   "2026-04-14": {
-    "fetched_at": "2026-04-14T20:08:24+09:00",
+    "fetched_at": "2026-04-14T22:54:33+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -365,7 +365,8 @@
             "text": "✅ SK하이닉스, 올해 HBM4 물량 하향 조정...HBM3E 등 확대\n\nhttps://zdnet.co.kr/view/?no=20260414110036\n\n📌 HBM4 출하 계획 조정\n엔비디아향 HBM4 출하량을 기존 계획 대비 20~30% 축소 검토 중\n\n이는 차세대 AI 가속기 ‘베라 루빈’의 양산 확대 지연 영향으로 분석\n\n📌 수요는 HBM3E로 대체\n줄어든 HBM4 물량은 HBM3E 및 서버용 LPDDR로 전환될 전망\n\n메모리 총 수요 감소보다는 제품 믹스 변화에 가까운 상황\n\n📌 시장 전망\n루빈 시리즈의 GPU 출하 비중은 29% → 22%로 감소 예상\n\n반면 블랙웰(Blackwell) 시리즈 비중은 61% → 71%로 확대되며 HBM3E 수요 증가 전망\n\n📌 출하 규모 변화\n기존 HBM4 출하 계획: 약 60억 GB\n\n조정 시: 20~30% 감소\n\nHBM3E 출하량은 기존 전망치인 80억 GB를 상회할 가능성\n\n📌 배경 요인\nHBM4 검증 기간, 네트워크 인터커넥트 전환\n\n전력 소비 증가, 액체 냉각 솔루션 최적화 등\n\n루빈 플랫폼의 기술적 과제가 양산 지연의 원인으로 지목\n\n📌 전략적 의미\nSK하이닉스가 HBM 시장 지배적 사업자로서\n\n엔비디아 플랫폼 변화에 따라 사업 전략을 유연하게 조정하는 모습\n\n제품 믹스 변화에 따라 수익성 영향은 추가 관찰 필요\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
             "links": [
               "https://zdnet.co.kr/view/?no=20260414110036",
-              "https://t.me/growthresearch"
+              "https://t.me/growthresearch",
+              "https://vo.la/h3EKcr"
             ],
             "post_url": "https://t.me/growthresearch/25106"
           },
@@ -437,13 +438,6 @@
         "category": "매크로/크립토",
         "channel_url": "https://t.me/SpartanResearch",
         "posts": [
-          {
-            "date": "2026-04-12",
-            "time": "12:16",
-            "text": "—❗️🇺🇸/🇵🇰/🇮🇷 알 마야딘 통신원: 'J.D. 밴스는 재협상이 불가능하다고 말하지 않았습니다. 일주일이나 열흘 안에 다른 미국 대표단과 함께 재협상이 진행될 수도 있습니다.'",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/3248"
-          },
           {
             "date": "2026-04-12",
             "time": "22:42",
@@ -570,6 +564,13 @@
               "https://finance.naver.com/item/main.nhn?code=456160"
             ],
             "post_url": "https://t.me/SpartanResearch/3268"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "22:46",
+            "text": "iShares Global Clean Energy ETF 52주 신고가",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/3269"
           }
         ]
       },
@@ -580,13 +581,6 @@
         "category": "매매 신호/트레이딩",
         "channel_url": "https://t.me/d_ticker",
         "posts": [
-          {
-            "date": "2026-04-14",
-            "time": "00:02",
-            "text": "M&A를 정말 잘하는 기업 중 하나. 소매부터 공급망까지 모든 밸류체인을 하나의 회사에 넣어버렸음. 사업 재투자 시 M&A만큼 리스크가 큰 대신 잭팟 터지면 효율적인 것이 없는데 솜니그룹은 2연타 홈런을 친 셈이라고 생각함",
-            "links": [],
-            "post_url": "https://t.me/d_ticker/2947"
-          },
           {
             "date": "2026-04-14",
             "time": "00:13",
@@ -718,7 +712,7 @@
             "text": "* SK하이닉스, 올해 HBM4 줄이고 HBM3E, 서버디램 확대\n\n\n\n다만 줄어드는 SK하이닉스의 HBM4 물량은 이전 세대인 HBM3E와 서버용 D램 등으로 수요가 대체될 전망이다.\n\n시장조사업체 트렌드포스는 최근 발간한 보고서에서 \"HBM4 검증에 필요한 시간 외에도 네트워크 인터커넥트 전환과 전력 소비량 증가, 더 고도화된 액체 냉각 솔루션 최적화 등 여러 과제가 남아있다\"며 \"결과적으로 엔비디아의 고성능 GPU 출하량에서 루빈 시리즈가 차지하는 비중은 기존 29%에서 22%로 감소할 것으로 예상된다\"고 밝혔다.\n\n반면 엔비디아가 현재 가장 주력으로 양산 중인 '블랙웰(Blackwell)' 시리즈의 출하량 비중은 기존 61%에서 71%로 크게 늘어날 전망이다. 블랙웰은 HBM3E를 탑재한다.\n\n당초 SK하이닉스는 올해 엔비디아향으로 60억Gb(기가비트) 수준의 HBM4 출하를 계획했었다. 현재 논의되고 있는 이보다 20~30% 적은 수준이다. 감소되는 물량의 일부가 블랙웰 시리즈용으로 전환됨에 따라, HBM3E 물량도 당초 전망치인 80억Gb를 상회할 것으로 관측된다.\n\n\n\n** (위 내용을 사실로 전제하고)닉스의 올해 총 디램 마진은 상향조정되는 방향\n\n** HBM3E와 HBM4 마진은 비슷한 수준일 것이고(연초 닉스 피셜, \"HBM 마진은 전년 대비 유지) 서버디램 마진은 더 높아졌기 때문\n\n\nhttps://zdnet.co.kr/view/?no=20260414110036#_enliple",
             "links": [
               "https://zdnet.co.kr/view/?no=20260414110036#_enliple",
-              "https://zdnet.co.kr/view/?no=20260414110036"
+              "https://vo.la/h3EKcr"
             ],
             "post_url": "https://t.me/d_ticker/2963"
           },
@@ -746,6 +740,13 @@
               "https://n.news.naver.com/article/011/0004610658?type=journalists"
             ],
             "post_url": "https://t.me/d_ticker/2966"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "21:37",
+            "text": "아마존, 저궤도 위성 통신사 글로벌스타 인수 추진 $GSAT  (FT) 아마존은 자사의 위성 인터넷 회사인 아마존 LEO의 역량을 강화하기 위해 글로벌스타(GSAT) 인수를 추진한다. 글로벌스타는 저궤도(LEO) 위성군을 활용해 전 세계에 위성 인터넷망과 지구관측 데이터 서비스를 제공하는 기업이다. 아마존은 이번 인수로 스타링크와 본격적인 경쟁에 돌입할 예정이다. 현재 글로벌스타는 현재 애플과 독점적인 파트너십을 맺고 아이폰의 위성 비상 구조 서비스를 제공…",
+            "links": [],
+            "post_url": "https://t.me/d_ticker/2967"
           }
         ]
       },
@@ -764,46 +765,6 @@
         "category": "국내 시장/종목 분석",
         "channel_url": "https://t.me/Yeouido_Lab",
         "posts": [
-          {
-            "date": "2026-04-13",
-            "time": "14:13",
-            "text": "뭔가 살아나는 것 같은데….? #바이오",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/31169"
-          },
-          {
-            "date": "2026-04-13",
-            "time": "14:42",
-            "text": "미국과 이란의 두 번째 회담이 '며칠 내에' 열릴 수 있고, 2주간의 휴전 연장이 논의되고 있다 - WSJ",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/31170"
-          },
-          {
-            "date": "2026-04-13",
-            "time": "14:43",
-            "text": "[단독] 효성중공업 \"액면분할, 필요하면 할 수 있다\"\nhttps://n.news.naver.com/article/215/0001248819?sid=101",
-            "links": [
-              "https://n.news.naver.com/article/215/0001248819?sid=101"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/31171"
-          },
-          {
-            "date": "2026-04-13",
-            "time": "15:46",
-            "text": "#LS증권 SNS담당자 진짜 월급 더줘라 ㅋㅋㅋ",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/31172"
-          },
-          {
-            "date": "2026-04-13",
-            "time": "16:31",
-            "text": "2026.04.13 16:19:30\n기업명: 일동제약(시가총액: 8,447억) A249420\n보고서명: 주요사항보고서(회사합병결정)\n\n* 합병방법\n일동제약이 자회사인 유노비아(지분율 100%)를 흡수합병\n- 존속회사 : 일동제약\n- 소멸회사 : 유노비아\n\n대상회사 : 유노비아(자회사)\n주요사업 : 신약연구개발\n영업실적 : 매출 17억/ 순이익 -77억\n\n합병계약 : 2026-04-13\n반대기한 : 2026-05-14\n주주총회 : -\n매수청구 : -\n거래정지 : 시작\n합병기일 : 2026-06-16\n신주상장 : -\n\n합병목적 : 인적, 물적 자원을 효율적으로 결합하여 경영효율성을 증대 및 신약 R&D파이프라인 내재화를 통해 회사의 재무 및 영업에 긍정적 영향 기대\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260413002397\n회사정보: https://finance.naver.com/item/main.nhn?code=249420",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260413002397",
-              "https://finance.naver.com/item/main.nhn?code=249420"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/31173"
-          },
           {
             "date": "2026-04-13",
             "time": "16:40",
@@ -912,8 +873,7 @@
             "time": "16:49",
             "text": "글로벌 신약 3상, 정부가 직접 투자한다…10년 이상 ‘초장기 펀드’도 신설\nhttps://www.khan.co.kr/article/202604141610011\n\n구체적으로는 우선 글로벌 임상 3상을 시도하는 기업에 직접투자·대출 방식으로 자금을 지원하기로 했다. 그동안 국내 제약사들이 임상 2상까지 마치고도 자금 부족으로 기술을 해외에 매각하는 사례가 반복돼 온 만큼, 상업화 직전 마지막 관문에 자본을 투입하겠다는 취지다.\n\n...\n\n2차 메가프로젝트에는 10조원 안팎의 자금이 투입될 예정이다. 빠르면 올 5~6월에 첫 투자가 이뤄진다. 현재 3~4곳의 바이오·제약 기업과 2곳의 디스플레이 기업이 투자 대상에 올라 있는 것으로 알려졌다. 강성호 국민성장펀드추진단 총괄과장은 “1차 메가프로젝트는 누가 봐도 첨단 산업이라 생각할 수 있는 프로젝트를 위주로 선정했다면, 2차에서는 신약개발처럼 실질적인 성과로 이어질 수 있는 기업에 주목했다”고 설명했다.",
             "links": [
-              "https://www.khan.co.kr/article/202604141610011",
-              "https://www.khan.co.kr/article/202604141610011/?utm_source=khan_rss&amp;utm_medium=rss&amp;utm_campaign=total_news"
+              "https://www.khan.co.kr/article/202604141610011"
             ],
             "post_url": "https://t.me/Yeouido_Lab/31186"
           },
@@ -932,6 +892,27 @@
             "text": "겁네 슬로우하게 파네요 ㅡㅡ",
             "links": [],
             "post_url": "https://t.me/Yeouido_Lab/31188"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "22:19",
+            "text": "예상을 하회한 PPI네요\n근원도 이전월보다 낮아졌네요",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/31190"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "22:42",
+            "text": "가장 그럴싸한 설명",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/31192"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "22:44",
+            "text": "#원전\n갑자기 피폭 중.",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/31194"
           }
         ]
       },
