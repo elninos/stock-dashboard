@@ -1,6 +1,6 @@
 {
   "2026-04-14": {
-    "fetched_at": "2026-04-14T22:54:33+09:00",
+    "fetched_at": "2026-04-15T00:17:56+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -365,8 +365,7 @@
             "text": "✅ SK하이닉스, 올해 HBM4 물량 하향 조정...HBM3E 등 확대\n\nhttps://zdnet.co.kr/view/?no=20260414110036\n\n📌 HBM4 출하 계획 조정\n엔비디아향 HBM4 출하량을 기존 계획 대비 20~30% 축소 검토 중\n\n이는 차세대 AI 가속기 ‘베라 루빈’의 양산 확대 지연 영향으로 분석\n\n📌 수요는 HBM3E로 대체\n줄어든 HBM4 물량은 HBM3E 및 서버용 LPDDR로 전환될 전망\n\n메모리 총 수요 감소보다는 제품 믹스 변화에 가까운 상황\n\n📌 시장 전망\n루빈 시리즈의 GPU 출하 비중은 29% → 22%로 감소 예상\n\n반면 블랙웰(Blackwell) 시리즈 비중은 61% → 71%로 확대되며 HBM3E 수요 증가 전망\n\n📌 출하 규모 변화\n기존 HBM4 출하 계획: 약 60억 GB\n\n조정 시: 20~30% 감소\n\nHBM3E 출하량은 기존 전망치인 80억 GB를 상회할 가능성\n\n📌 배경 요인\nHBM4 검증 기간, 네트워크 인터커넥트 전환\n\n전력 소비 증가, 액체 냉각 솔루션 최적화 등\n\n루빈 플랫폼의 기술적 과제가 양산 지연의 원인으로 지목\n\n📌 전략적 의미\nSK하이닉스가 HBM 시장 지배적 사업자로서\n\n엔비디아 플랫폼 변화에 따라 사업 전략을 유연하게 조정하는 모습\n\n제품 믹스 변화에 따라 수익성 영향은 추가 관찰 필요\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
             "links": [
               "https://zdnet.co.kr/view/?no=20260414110036",
-              "https://t.me/growthresearch",
-              "https://vo.la/h3EKcr"
+              "https://t.me/growthresearch"
             ],
             "post_url": "https://t.me/growthresearch/25106"
           },
@@ -438,22 +437,6 @@
         "category": "매크로/크립토",
         "channel_url": "https://t.me/SpartanResearch",
         "posts": [
-          {
-            "date": "2026-04-12",
-            "time": "22:42",
-            "text": "다음 주는 신재생이 또 강세겠네요 \n\nhttps://n.news.naver.com/mnews/article/023/0003970370?sid=104",
-            "links": [
-              "https://n.news.naver.com/mnews/article/023/0003970370?sid=104"
-            ],
-            "post_url": "https://t.me/SpartanResearch/3249"
-          },
-          {
-            "date": "2026-04-12",
-            "time": "22:43",
-            "text": "4월 10일에 발간된 NH 정연승 위원 리포트에서 톤 변화. \n\n1) 미국 타워 법인의 생산성 개선 지연과 2) 해상 풍력 하부 구조물 수주 부재라는 리스크를 여전히 인식하고 있지만, a) 고환율 환경과 베트남 및 중국 법인 등 타워 부문 수익성 개선에 따른 OP 추정치 상향과 b) 글로벌 풍력 터빈 업체 밸류에이션의 상승 흐름 c) 27년까지 미국 육상 풍력 수요 집중에 따른 수주 확보에 대한 기대감을 근거로 리스크 대비 업사이드가 크다고 보며 톤 변화 발생",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/3252"
-          },
           {
             "date": "2026-04-12",
             "time": "22:43",
@@ -571,6 +554,27 @@
             "text": "iShares Global Clean Energy ETF 52주 신고가",
             "links": [],
             "post_url": "https://t.me/SpartanResearch/3269"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "22:59",
+            "text": "4/13 기준 ICLN 포트 Top 10",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/3270"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "23:00",
+            "text": "클래리티 법안 통과 기대감에 써클 강세",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/3271"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "23:05",
+            "text": "수욜은 \n\n1) 블룸에너지 관련주 (블룸 올타임하이)\n\n2) 양자관련주 (아이온큐9%, 리게티7%)\n\n3) 원전관련주 (SMR 10%)\n\n4) 반도체 소부장\n\n일단 이렇게 올려두면 될거 같네여.  군밤 되세요",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/3273"
           }
         ]
       },
@@ -712,7 +716,7 @@
             "text": "* SK하이닉스, 올해 HBM4 줄이고 HBM3E, 서버디램 확대\n\n\n\n다만 줄어드는 SK하이닉스의 HBM4 물량은 이전 세대인 HBM3E와 서버용 D램 등으로 수요가 대체될 전망이다.\n\n시장조사업체 트렌드포스는 최근 발간한 보고서에서 \"HBM4 검증에 필요한 시간 외에도 네트워크 인터커넥트 전환과 전력 소비량 증가, 더 고도화된 액체 냉각 솔루션 최적화 등 여러 과제가 남아있다\"며 \"결과적으로 엔비디아의 고성능 GPU 출하량에서 루빈 시리즈가 차지하는 비중은 기존 29%에서 22%로 감소할 것으로 예상된다\"고 밝혔다.\n\n반면 엔비디아가 현재 가장 주력으로 양산 중인 '블랙웰(Blackwell)' 시리즈의 출하량 비중은 기존 61%에서 71%로 크게 늘어날 전망이다. 블랙웰은 HBM3E를 탑재한다.\n\n당초 SK하이닉스는 올해 엔비디아향으로 60억Gb(기가비트) 수준의 HBM4 출하를 계획했었다. 현재 논의되고 있는 이보다 20~30% 적은 수준이다. 감소되는 물량의 일부가 블랙웰 시리즈용으로 전환됨에 따라, HBM3E 물량도 당초 전망치인 80억Gb를 상회할 것으로 관측된다.\n\n\n\n** (위 내용을 사실로 전제하고)닉스의 올해 총 디램 마진은 상향조정되는 방향\n\n** HBM3E와 HBM4 마진은 비슷한 수준일 것이고(연초 닉스 피셜, \"HBM 마진은 전년 대비 유지) 서버디램 마진은 더 높아졌기 때문\n\n\nhttps://zdnet.co.kr/view/?no=20260414110036#_enliple",
             "links": [
               "https://zdnet.co.kr/view/?no=20260414110036#_enliple",
-              "https://vo.la/h3EKcr"
+              "https://zdnet.co.kr/view/?no=20260414110036"
             ],
             "post_url": "https://t.me/d_ticker/2963"
           },
