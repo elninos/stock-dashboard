@@ -1,6 +1,6 @@
 {
   "2026-04-14": {
-    "fetched_at": "2026-04-14T16:54:42+09:00",
+    "fetched_at": "2026-04-14T18:24:28+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -247,43 +247,6 @@
         "posts": [
           {
             "date": "2026-04-14",
-            "time": "12:18",
-            "text": "🚨파키스탄, 미-이란 2차 협상 중재 자처\n\n📌 핵심 내용\n파키스탄, 미-이란 2차 협상 호스팅 공식 제안\n\n현재 진행 중인 휴전 종료 전 협상 재개 촉구\n\n사우디 봉쇄 철회 요구에 이어 지역 중재 외교 가속\n\n📌 중재자로서 파키스탄의 포지션\n이란과 1,000km+ 국경 접경 — 지역 안정 직접 이해당사자\n\n미국과 전통적 안보 협력 관계 유지 (대테러·아프간 경험)\n\n중국·사우디와도 긴밀한 관계 → 다자 중재 허브 역할 가능\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/25088"
-          },
-          {
-            "date": "2026-04-14",
-            "time": "12:26",
-            "text": "✅ 데이터센터 전력 수요 폭증 — Goldman Sachs 상향 전망\n\n📌 핵심 수치\n글로벌 데이터센터 전력 수요, 2030년 1,350 TWh 전망\n\n2023년 대비 +220% (+905 TWh) — 기존 예상치 +175%에서 대폭 상향\n\n미국 비중 ~50% → ~60%로 확대 → 미국 단독 ~750 TWh / 나머지 ~600 TWh\n\n미국 데이터센터 캐파 2025~2030년 +197% 증가 → 95GW 달성 전망\n\n📌 상향 조정 배경\nAI 서버 출하량 전망 상향 조정\n\n전력 집약도 높은 AI 처리 서버 배포 가속\n\n미국 중심 AI 인프라 투자 집중화 심화\n\n📌 전력 인프라 수혜 구도\n천연가스 발전 — 재생에너지 간헐성 보완 단기 최대 수혜\n\n원자력 — 빅테크 SMR 계약 러시 중장기 핵심 전원\n\n송전·변전 인프라 — 현재 가장 심각한 병목 구간 → 투자 집중 불가피\n\n전력용 반도체(SiC·GaN) — 데이터센터 전력변환 효율화 수요 급증\n\n📌 중동 긴장과의 교차점\n호르무즈 사태 장기화 시 에너지 비용 급등 → 미국 데이터센터 운영비 압박\n\n미-이란 딜 성사 시 에너지 안정화 → AI 인프라 투자 재가속 시나리오\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/25089"
-          },
-          {
-            "date": "2026-04-14",
-            "time": "12:28",
-            "text": "💻NAND 가격 폭등 + 저용량 수요 폭발\n\nhttps://money.udn.com/money/story/5607/9439257?from=edn_subcatelist_cate\n\n메모리 업계: 단기적 공급 부족 해결 불가\n\n2027년: 더 심각한 공급 부족 예상\n\n✔️ 가격 상황 (충격적 포인트)\n최근 6개월: NAND 가격 4~10배 상승\n저용량 NAND: 최대 15배 상승\n\n✔️ 특징 “용량이 낮을수록 더 많이 상승”\n① AI 구조 변화\n과거: Training 중심\n\n현재: Inference (추론) 중심\n\n② 저장 수요 폭발\n데이터센터 / 기업 / 엣지 디바이스 모두 저장 필요\n\n③ 공급 제약\n\n✔️ DRAM\nHBM 우선 투자 → 일반 DRAM 부족\n\n✔️ NAND\n증설 속도: 15~25% 증가 수준 → 수요 못 따라감\n\n✔️ Kioxia (2D NAND 생산 중단)\n대상: Floating Gate BiCS3\n고객: 9월까지 마지막 주문\n\n① “HBM이 아니라 NAND도 부족”\n\n② 저용량 NAND 재평가\n\nAI 시대는 HBM만이 아니라 ‘저용량 NAND’까지 부족해지는 구조\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
-            "links": [
-              "https://money.udn.com/money/story/5607/9439257?from=edn_subcatelist_cate",
-              "https://t.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/25090"
-          },
-          {
-            "date": "2026-04-14",
-            "time": "12:35",
-            "text": "💻난야 25억달러 투자 유치 → ‘메모리도 LTA 계약 시대’ 진입 (중장기 공급 계약)\n\nNanya Technology 25억 달러 규모 투자 유치\n\n✔️ 참여 기업\nSanDisk\nKioxia\nSK hynix\nCisco\n\n단순 투자가 아닌 중장기 공급계약 포함됨.\n\n📍① “스팟 시장 → 계약 시장” : 장기 계약(LTA) 기반 산업으로 이동\n\n📍② 공급망 통합 :  공급망 파트너로 변화\n\n📍③ 자본 + 공급 묶음 구조 : 투자 + 물량 확보\n\n메모리 산업이 이제 ‘현물 시장’이 아니라 ‘계약 기반 인프라 산업’으로 바뀌고 있음.\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
-            "links": [
-              "https://t.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/25091"
-          },
-          {
-            "date": "2026-04-14",
             "time": "13:06",
             "text": "🚨러시아, 이란 농축 우라늄 인수 제안 — 미-이란 딜 촉진 카드\n\n러시아, 미-이란 협상 타결 조건으로 이란 농축 우라늄 자국 인수 공식 제안\n\n이란 핵물질을 러시아로 이전 → 핵무기화 리스크 물리적 차단 방안\n\n2015년 JCPOA 당시에도 유사한 구조 활용된 바 있음\n\n📌 협상 구도에 미치는 영향\n트럼프의 최대 요구사항인 \"핵 능력 완전 제거\" 에 대한 현실적 대안 제시\n\n5년 vs 20년 기간 갭보다 물리적 비핵화 조치가 더 중요한 변수로 부상 가능\n\n러시아 개입으로 딜 구조가 미-이란 양자 → 다자 프레임으로 전환\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
             "links": [
@@ -424,6 +387,46 @@
               "https://t.me/growthresearch"
             ],
             "post_url": "https://t.me/growthresearch/25107"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "17:14",
+            "text": "💻 사상 최대 실적 경신 앞둔 TSMC… \"하반기는 1나노급 공정이 좌우\"\n\nhttps://biz.chosun.com/it-science/ict/2026/04/14/5E3FPB6GLBDQNM4GZVKTCQJOGY\n\n📍압도적 시장 지배력\n글로벌 파운드리 시장 점유율 70.4%로 2위 삼성전자(7.1%)와 큰 격차 유지\n\n4·3·2나노 등 첨단 공정에서의 독주가 실적 상승의 핵심 요인\n\n📍하반기 관전 포인트: 1나노급(A16) 공정\nTSMC는 올 하반기 A16 공정(1나노급)을 처음 양산할 계획\n\n주요 고객으로 엔비디아가 예상, 차세대 AI 칩 ‘파인만’ 생산에 적용 전망\n\n향후 실적은 1나노급 공정의 성공 여부에 크게 좌우될 것으로 분석\n\n📍 공격적인 설비 투자\n생산능력 확대를 위해 520억~560억 달러 규모의 CAPEX 집행 예정\n\n이는 전년 대비 최소 25% 이상 증가한 수준으\n\n📍 경쟁 심화\n1나노급 공정에서는 인텔과 라피더스가 본격적으로 경쟁에 참여\n\n인텔: A18(1.8나노) 양산, A14(1.4나노) 공정 준비\n\n라피더스: 기술 격차를 6개월 수준으로 축소하겠다는 목표 제시\n\n차세대 파운드리 시장의 경쟁이 더욱 치열해질 전망\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
+            "links": [
+              "https://biz.chosun.com/it-science/ict/2026/04/14/5E3FPB6GLBDQNM4GZVKTCQJOGY",
+              "https://t.me/growth_semi",
+              "https://biz.chosun.com/it-science/ict/2026/04/14/5E3FPB6GLBDQNM4GZVKTCQJOGY/"
+            ],
+            "post_url": "https://t.me/growthresearch/25108"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "17:39",
+            "text": "✅그로쓰리서치 반도체 소부장 채널 소개✅\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi\n\n안녕하세요 그로쓰리서치 입니다. \n\n저희가 반도체 소부장 채널을 오픈하게 되었습니다.\n\n📌AI 시대 핵심 산업인 반도체 밸류체인 중 소재·부품·장비(소부장) 영역에 특화된 리서치 채널입니다.\n\n📍메모리 / 파운드리 / 패키징 구조 해부\n\n📍HBM / CoWoS / TC본더 / EUV 등 핵심 공정 분석\n\n📍공급망 병목 포인트 분석\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
+            "links": [
+              "https://t.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/25109"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "17:50",
+            "text": "✅ 쌓는 낸드 'HBF' 공정 시장 열렸다…샌디스크 공급망 구축 개시\n\nhttps://www.etnews.com/20260413000040?SNS=00001\n\n📌 HBF 시장 본격 개막\n샌디스크가 HBF 시제품 생산을 위한 파일럿 라인 구축 착수\n\n일본이 생산 거점으로 유력, 올 하반기 시제품 공개, '27년 상용화 목표\n\n소부장 기업들과 협업 및 설비 구매주문(PO) 논의가 진행 중\n\n📌 HBF란 무엇인가\nHBM과 유사한 적층 구조, D램 대신 낸드 플래시를 적층\n\nHBM = 속도 중심(연산용), HBF = 용량 중심(저장용)으로\n\nAI 인프라에서 상호 보완적 역할 기대\n\n전원이 없어도 데이터가 유지되는 비휘발성으로 차세대 AI 스토리지로 주목\n\n📌 산업 및 공급망 영향\nTSV, 본딩 장비 및 소재 등 HBM과 유사한 공정 적용 전망\n\n기존 HBM 소부장 생태계가 HBF 시장에서도 경쟁 우위를 유지할 가능성\n\n📌 주요 기업 동향\n샌디스크: HBF 기술 선도 및 생태계 구축\n\nSK하이닉스: 샌디스크와 표준화 협력 진행\n\n삼성전자: 독자적인 HBF 개발로 시장 진입 준비\n\n📌 시장 전망\n장기적으로 HBF 시장이 HBM을 넘어설 가능성도 제시('38년 전망)\n\nAI 데이터센터 확산과 함께 새로운 메모리 수요 창출 기대\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://www.etnews.com/20260413000040?SNS=00001",
+              "https://t.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/25110"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "18:05",
+            "text": "✅ [탐방노트] 퀄리타스반도체\n\n📍 SerDes 기반 반도체 IP 사업\n핵심 사업: 칩 간·칩 내 고속 데이터 전송용 IP 제공\n\n수익 구조: 라이선스 + 기술지원 매출\n\n강점: 빠른 현금 회수 가능한 라이선스 계약 중심\n\n📍 삼성 파운드리 특화 경쟁력\n공정: 삼성 4nm·5nm·8nm 특화\n\n기술력: 실리콘 프로븐 IP 보유\n\n차별화: 하드 매크로 + 소프트 매크로 번들 공급\n\n📍 AI/HPC 성장 수혜\n주력 IP: PCIe, UCIe, MIPI\n\n확장성: AI, HPC, 로보틱스향 수요 확대\n\n포인트: 칩렛 확산과 함께 UCIe 성장 기대, CPO 광통신 수혜 가능성\n\n📍 2026년 실적 반등 기대\n2025년 실적 부진: 업황 회복 지연, 중국 프로젝트 차질 영향\n\n반등 근거: 하반기 수주 회복, 삼성 파운드리 고객 증가\n\n전망: 2026년 흑자 전환 가시성 확대\n\n✅ 퀄리타스반도체 탐방노트 보러가기\n[네이버프리미엄콘텐츠]\nhttps://contents.premium.naver.com/growthresearch/growth/contents/260414180353110am\n\n[홈페이지]\nhttp://www.growthresearch.co.kr/membership/1430/1004",
+            "links": [
+              "https://contents.premium.naver.com/growthresearch/growth/contents/260414180353110am",
+              "http://www.growthresearch.co.kr/membership/1430/1004"
+            ],
+            "post_url": "https://t.me/growthresearch/25111"
           }
         ]
       },
@@ -577,15 +580,6 @@
         "category": "매매 신호/트레이딩",
         "channel_url": "https://t.me/d_ticker",
         "posts": [
-          {
-            "date": "2026-04-13",
-            "time": "23:50",
-            "text": "마이크로소프트, ‘오픈클로’ 영감 받아 코파일럿 개선한다 $MSFT\n\n(The Information) 마이크로소프트는 코파일럿이 단순한 텍스트 응답을 넘어, 사용자의 PC 화면을 직접 보고 이해하며 마우스 클릭이나 키보드 입력과 같은 동작을 수행하는 '디지털 에이전트'로 진화시키려 한다. 이는 오픈소스 프레임워크인 오픈클로의 접근 방식과 유사하다. 오픈클로는 LLM이 인간처럼 컴퓨터의 그래픽 사용자 인터페이스(GUI)를 조작할 수 있도록 돕는 기술이다. MS는 이를 참고하여 코파일럿이 여러 윈도우 앱을 넘나들며 복잡한 다단계 업무를 스스로 수행할 수 있는 환경을 구축하고 있다. 새로운 기능이 도입되면 코파일럿은 이메일로 받은 정보를 엑셀에 자동으로 정리하거나, 웹 브라우저에서 찾은 데이터를 특정 업무용 소프트웨어에 입력하는 등의 작업을 사용자의 조작 없이 직접 완수하게 된다. 이는 최근 앤스로픽이 공개한 '컴퓨터 유즈(Computer Use)' 기능과 궤를 같이한다.",
-            "links": [
-              "https://www.theinformation.com/articles/microsoft-plots-new-copilot-features-inspired-openclaw"
-            ],
-            "post_url": "https://t.me/d_ticker/2945"
-          },
           {
             "date": "2026-04-13",
             "time": "23:56",
@@ -745,6 +739,13 @@
               "https://www.thebell.co.kr/front/newsview.asp?code=00&amp;key=202604141533431160102114"
             ],
             "post_url": "https://t.me/d_ticker/2964"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "17:08",
+            "text": "중국 메모리 칩 제조사 YMTC, 신규 팹 2곳 건설 계획",
+            "links": [],
+            "post_url": "https://t.me/d_ticker/2965"
           }
         ]
       },
