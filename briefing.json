@@ -1,6 +1,6 @@
 {
   "2026-04-14": {
-    "fetched_at": "2026-04-14T11:55:06+09:00",
+    "fetched_at": "2026-04-14T14:28:57+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -92,6 +92,15 @@
             "text": "Asia Pacific Technology: Semiconductors - Memory\n\n골드만\n\n\n📈 Nanya Tech 1Q26 실적 핵심 요약\n\n가격 폭등: 1분기 DRAM 평균 판매 단가(ASP)가 전 분기 대비 70% 이상 올랐습니다.수익성 개선: 가격 상승 덕분에 영업이익률(OPM)이 61%까지 치솟았습니다.\n\n긍정적 전망: 하이엔드 PC, 모바일 및 HBM 수요가 견조하며 공급 부족 상태가 계속될 것으로 보입니다.\n\n\n🇰🇷 한국 메모리 반도체 기업 영향 (삼성, 하이닉스)\n\nNanya의 실적은 한국 기업들에게 훨씬 더 긍정적인 신호로 해석됩니다.\n\n삼성전자 (Samsung Electronics)\n\n1분기 DRAM 판매 단가가 전 분기 대비 92% 상승한 것으로 추정됩니다.DRAM 영업이익률은 무려 80%에 달할 것으로 보입니다.\n\n투자의견은 Buy(매수)이며, 목표 주가는 285,000원입니다.\n\nSK하이닉스 (SK Hynix)\n\n1분기 DRAM 판매 단가가 전 분기 대비 59% 상승한 것으로 추정됩니다.\n\nDRAM 영업이익률은 76% 수준으로 예상됩니다.\n\n투자의견은 Buy(매수)이며, 목표 주가는 1,350,000원입니다.\n\n\n🔍 주요 체크 포인트\n\n장기 계약 (LTA): 현재 고객사들과 장기 공급 계약을 협상 중이며, 앞으로 계약의 구속력이 중요한 관전 포인트가 될 것입니다.\n\n헬륨 수급: 중동 갈등에도 불구하고 미국 등에서 공급처를 확보하여 생산에 차질이 없을 전망입니다.\n\n타이트한 공급: 올해 업계 전체의 생산 능력 증설이 제한적이어서 공급 부족 현상은 당분간 이어질 것입니다.",
             "links": [],
             "post_url": "https://t.me/bumgore/54158"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "13:16",
+            "text": "https://n.news.naver.com/mnews/article/277/0005749143?sid=110",
+            "links": [
+              "https://n.news.naver.com/mnews/article/277/0005749143?sid=110"
+            ],
+            "post_url": "https://t.me/bumgore/54160"
           }
         ]
       },
@@ -237,127 +246,6 @@
         "channel_url": "https://t.me/growthresearch",
         "posts": [
           {
-            "date": "2026-04-13",
-            "time": "15:58",
-            "text": "✅ 테슬라, 양산형 세미트럭 공개 예정…ACT Expo서 시승도 진행\n\n북미 최대 컨퍼런스 라스베이거스 ACT Expo에서 양산형 Tesla Semi 공개 예정\n\nCDL 보유자는 직접 시승, 비보유자는 동승 체험 가능\n\n📌 주요 변경점 총정리\n기존 유압식 대신 완전 전동식 조향 보조 적용\n\n사이버트럭 액추에이터 강화 버전 탑재\n\n4680 배터리 셀 채택, 100만 마일 수명 목표\n\n기존 세미 대비 약 1,000파운드 경량화\n\n효율 개선 및 모델Y 스타일 라이트바 적용\n\n📌 주요 사양\n스탠다드: 325마일 주행거리, 공차중량 2만 파운드 미만\n\n롱레인지: 500마일 주행거리, 공차중량 2.3만 파운드\n\n두 모델 모두 82,000파운드 적재 기준, 전비 1.7kWh/마일\n\n후륜 3모터, 최대 800kW 출력\n\n30분 충전으로 주행거리 60% 확보\n\n롱레인지 모델은 최대 1.2MW 충전 속도 지원\n\n자율주행 대응 설계 포함\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/25068"
-          },
-          {
-            "date": "2026-04-13",
-            "time": "17:07",
-            "text": "✅ 삼성전자, ASMPT와 HBM TC본더 평가...공급망 다변화 지속\n\nhttps://zdnet.co.kr/view/?no=20260413092559\n\n📌 공급망 다변화 추진\n삼성전자가 HBM 핵심 장비인 TC본더 공급망 다변화를 지속 추진\n\n싱가포르 기반 장비업체 ASMPT와 협력해\n\nJEP(공동평가프로젝트) 진행 예정\n\n📌 현재 진행 상황\n양사는 연구소 단계의 데모 테스트를 완료\n\nJEP를 통해 양산 라인에서 성능·신뢰성 검증을 진행할 계획으로,\n\n실제 도입 가능성을 평가하는 단계\n\n📌 배경 및 의미\n기존에는 자회사 세메스가 TC본더를 주력 공급해왔으나,\n\n후공정 장비업체를 추가 확보해 공급 안정성과 협상력 강화를 노리는 전략\n\nHBM 수요 확대에 대응하기 위한 리스크 분산 목적\n\n📌 하이브리드 본딩과의 관계\n차세대 기술로 하이브리드 본딩이 주목받고 있으나,\n\n기술 난이도와 상용화 지연 가능성으로 TC본딩의 중요성은 당분간 지속\n\nJEDEC의 HBM 두께 기준 완화 역시 TC본딩 유지에 유리하게 작용할 가능성\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://zdnet.co.kr/view/?no=20260413092559",
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/25069"
-          },
-          {
-            "date": "2026-04-13",
-            "time": "17:09",
-            "text": "🧬한미약품, 연내 기술수출 나올까…비만 대장주 등극 가능성\n\nhttps://www.mt.co.kr/thebio/2026/04/13/2026041316201488823\n\n💊 HM17321 (LA-UCN2) — 근육 증가형 비만치료제\n계열 내 최초(First-in-class) 목표 — FDA 임상 1상 진행 중\n\n기전: mTOR 경로 활성화 → 근육 증가 + 지방분해 유도·지방합성 억제 동시\n\n동물모델에서 세마글루타이드 대비 우수한 혈당 조절 확인\n\n올해 임상 1상 결과 발표 예정 → 긍정적 결과 시 대규모 기술수출 기대\n\n💊 HM15275 (LA-GLP·GIP·GCG) — 비만 삼중작용제\n계열 내 최고(Best-in-class) 목표 — FDA 임상 2상 진행 중\n\nGLP-1 + GIP + 글루카곤 수용체 3중 최적화 설계\n\n2025년 상반기 임상 2상 종료 예상 → 데이터 공개 임박\n\n로슈 등 후발 빅파마와 딜 가능성 높음\n\n💊 에페글레나타이드 — 국산 첫 GLP-1 비만 신약\n2026년 하반기 국내 출시 목표 — 현재 식약처 품목 허가 신청 중\n\n매출 전망: 2026년 249억원 → 2027년 1,894억원 (DS투자증권)\n\n💊 에피노페그듀타이드 — MASH 이중작용제\nMSD에 기술수출 완료 — 임상 2b상 결과 올해 발표 예정\n\n긍정적 결과 시 파이프라인 가치 대폭 상향 가능\n\n🧬바이오섹터 분석🧬 [그로쓰리서치]\nhttps://t.me/growthbio",
-            "links": [
-              "https://www.mt.co.kr/thebio/2026/04/13/2026041316201488823",
-              "https://t.me/growthbio"
-            ],
-            "post_url": "https://t.me/growthresearch/25070"
-          },
-          {
-            "date": "2026-04-13",
-            "time": "17:49",
-            "text": "✅ [단독] 삼성 HBM 로직다이 가격 50% 올렸다…적자 파운드리 '반전 신호'\n\nhttps://www.fnnews.com/news/202604131420016759\n\n📌 HBM 로직다이 가격 인상\n4나노 공정 기반 HBM4 로직다이 가격이 기존 대비 약 40~50% 인상\n\nAI 반도체 수요 확대와 HBM4 출하 증가로 가격 협상력 회복\n\n그간 낮게 책정됐던 단가가 정상화 국면에 진입했다는 평가\n\n📌 파운드리 수주 확대\n주요 빅테크 고객 확보로 고객 기반 확대\n\n테슬라와 23조원 규모 생산 계약, 美 테일러 팹에서 2나노로 생산 예정\n\n4나노 등 주요 라인은 풀캐파 상태,\n\n일부 물량이 TSMC에서 삼성으로 분산될 가능성 제기.\n\n📌 시스템LSI 사업 반등 조짐\n차세대 AP 엑시노스 2700은 전성비 개선으로 경쟁력 회복 기대\n\n다만 외부 고객 확보 여부가 향후 실적 반등의 핵심 변수\n\n📌 수익성 개선 흐름\n비메모리 부문 영업손실:\n25년 1Q: 2조6060억원, 3Q: 9200억원\n\n26년(추정): 1Q 1조1420억원(추정), 2Q 8000억원대(추정)\n\n가격 인상과 수주 확대에 따라 흑자 전환 기대감 확대\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://www.fnnews.com/news/202604131420016759",
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/25071"
-          },
-          {
-            "date": "2026-04-13",
-            "time": "18:10",
-            "text": "✅ 실리콘 포토닉스 양산, 최대 병목은 ‘Insertion 2’ 테스트\n\n📌 시장 배경\nAI 고도화로 실리콘포토닉스(SiPh), CPO 양산 경쟁이 본격화\n\n2026~27년이 대규모 상용화의 분기점으로 거론되는 분위기\n\n📌 핵심 병목\nSiPh 칩 테스트는 3단계로 나뉘는데\n\n이 가운데 웨이퍼 단계 광·전 통합 테스트(Insertion 2)가 가장 큰 난관\n\n전기 신호는 위에서, 광 신호는 아래에서 동시에 검사해야 해\n\n속도·정확도·자동화 측면에서 아직 양산형 해법이 부족한 상황\n\n📌 왜 중요할까\nTSMC의 SoIC 기반 COUPE 구조처럼\n\nEIC와 PIC를 적층한 칩은 양면 테스트가 필수\n\n이 구간을 제대로 못 풀면\n\n수율, 원가, 양산 일정 전반에 부담이 커질 수 있음\n\n📌 업계 대응\nAdvantest, Teradyne, FormFactor 등 주요 업체들이\n\nInsertion 2 자동화 솔루션 개발을 서두르는 중\n\n반면 Insertion 1·3은 상대적으로 자동화 수준이 더 높은 편\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/25072"
-          },
-          {
-            "date": "2026-04-14",
-            "time": "08:06",
-            "text": "✅ \"SSD가 차 한 대 값\"… 기업용 30TB 제품 가격 1년 새 5배 급등\n\nhttps://biz.chosun.com/it-science/ict/2026/04/14/BOHPVRQRWBFSJNBBIY4C6HWBFU/\n\n📌 가격 급등\n30TB eSSD 가격, 1년 새 5배 상승\n\n일부 제품 가격 2,400만원 수준\n\n2분기에도 추가 인상 전망\n\n📌상승 원인\nAI 서버 수요 급증\n\n낸드 공급, 고부가 eSSD에 집중\n\nHDD 공급 부담까지 겹치며 스토리지 전반 강세\n\n📌시장 변화\nAI 확산으로 낸드 수혜 본격화\n\n하이브리드 스토리지 전략 재부상\n\n📌수혜 기업\n삼성전자·SK하이닉스, eSSD 시장 주도\n\n솔리다임, 흑자 전환 성공\n\n낸드 수익성, HBM 추월 기대\n\n📌부담 커진 수요처\nCSP·데이터센터, 도입 비용 급증\n\n클라우드 요금 인상 압력 확대\n\n공급난으로 높은 변동성 지속 가능성\n\n🔥 AI 서버 투자 확대 → eSSD 가격 급등 → 낸드 업황 개선 → 삼성전자·SK하이닉스 수혜\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://biz.chosun.com/it-science/ict/2026/04/14/BOHPVRQRWBFSJNBBIY4C6HWBFU/",
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/25073"
-          },
-          {
-            "date": "2026-04-14",
-            "time": "09:06",
-            "text": "🚨미-이란 핵협상 급진전 — 딜 임박 신호\n\n📌 현황\n이란: 핵활동 최대 5년 중단 제안\n\n트럼프: 20년 요구 — 협상 갭 존재\n\n내부 소식통: 트럼프, 내일 오전 결정 예정\n\n시장 평가: 딜 성사 가능성 높음\n\n📌 즉각 시장 파급 — 유가\n호르무즈 봉쇄 리스크 급격히 해소 시나리오\n\n이란 원유 공급 재개 기대 → 유가 하방 압력 전환\n\n에너지 섹터 단기 갭다운 가능성\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/25074"
-          },
-          {
-            "date": "2026-04-14",
-            "time": "09:12",
-            "text": "✅ [DNP NIL 업데이트] “죽은 기술”인 줄 알았던 NIL, 다시 살아나는 분위기\n\n📌 NIL이란\n반도체 회로를 빛으로 그리는 대신, 틀로 찍어내는 방식\n\n기존 첨단 공정(EUV/노광)은 빛을 이용해서 웨이퍼 위에 회로를 그리는 방식이라는 점에서 차이\n\n📌 이번에 나온 내용\nDNP는 4월 8~10일 열린 Photomask Japan 2026에서,\n\n10nm급 회로선을 만들 수 있는 NIL 템플릿 제작에 성공했다고 밝힘\n\n쉽게 말하면, 아주 미세한 반도체 회로를 찍어낼 수 있는 틀을 만드는 데 진전이 있었다는 뜻\n\n📌 회사가 말한 사업 계획\nDNP는 2028년 3월까지 끝나는 회계연도에,\nNIL 사업 양산을 시작하겠다고 설명\n\n또 2031년 3월까지 끝나는 회계연도에는,\nNIL 사업 매출 40억엔을 목표로 제시\n\n📌 중요한 점\n그동안 NIL은 '기술은 가능해 보여도, 실제 공장에서 대량생산하긴 어렵다'는 평가\n\n그런데 이제는 DNP가 언제 양산할지, 매출 목표가 얼마인지까지 말하고 있음\n\n즉, 진짜 사업으로 키우려는 움직임이 보인다는 점이 중요\n\n📌 해석 포인트\nNIL이 EUV 같은 최첨단 공정을 전부 대신할 가능성은 아직 낮아 보임\n\n하지만 특정 공정이나 특정 제품에서는 실제로 쓰일 가능성이 커지는 흐름\n\n그래서 NIL은 일부 분야부터 상용화가 시작될 수 있는 기술\n\n📌 앞으로 봐야 할 것\n실제로 어떤 고객사가 채택하는지\n\n불량률, 수율, 템플릿 내구성 문제가 해결되는지\n\n2028년 양산 계획이 실제 매출로 이어지는지\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/25075"
-          },
-          {
-            "date": "2026-04-14",
-            "time": "09:13",
-            "text": "✅그로쓰리서치 반도체 소부장 채널 소개✅\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi\n\n안녕하세요 그로쓰리서치 입니다. \n\n저희가 반도체 소부장 채널을 오픈하게 되었습니다.\n\n📌AI 시대 핵심 산업인 반도체 밸류체인 중 소재·부품·장비(소부장) 영역에 특화된 리서치 채널입니다.\n\n📍메모리 / 파운드리 / 패키징 구조 해부\n\n📍HBM / CoWoS / TC본더 / EUV 등 핵심 공정 분석\n\n📍공급망 병목 포인트 분석\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
-            "links": [
-              "https://t.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/25076"
-          },
-          {
-            "date": "2026-04-14",
-            "time": "09:28",
-            "text": "💻SanDisk가 최초로 HBF 기술 발표\n\n소재·부품·장비 공급망 구축 진행 중\n\n일본에 파일럿 라인 구축 중\n\n✔️ 로드맵\n올해 하반기: 프로토타입 웨이퍼 공개\n연말: 파일럿 라인 완성\n내년: 양산 진입\n\n✔️ 기술 특징\n구조: HBM과 유사한 수직 적층 구조\n기술: TSV 기반 NAND 연결\n\n✔️ 핵심 기능\n대역폭 ↑\n저장 용량 ↑\n비휘발성 (NAND 특성 유지)\n\n카이스트 김정호 교수 : \"2038년 HBF 시장이 HBM을 넘어설 가능성\"\n\n“HBM이 ‘연산 메모리’라면, HBF는 AI 시대 저장 메모리\"\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
-            "links": [
-              "https://t.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/25077"
-          },
-          {
-            "date": "2026-04-14",
-            "time": "09:28",
-            "text": "💻“ABF 기판 3사 과점 → 2027 공급 부족 시그널 포착”\n\n글로벌 시장의 거의 100%를 3개 기업이 장악\n\n✔️ ABF란?\n고성능 반도체 기판\n칩을 서버 시스템과 연결하는 핵심 부품\n\nABF (Ajinomoto Build-up Film) → 고성능 반도체를 위한 패키지 기판용 절연 소재\n\n칩(GPU·CPU)과 서버 보드를 연결해주는 ‘초정밀 인터페이스’\n\n✔️ 시장 구조 (3개 기업이 사실상 독점)\nKinsus\nUnimicron\nIbiden\n\n증설 리드타임: 18~36개월\n\n✔️ 적용 영역\nAI GPU (NVIDIA)\n서버 CPU\n데이터센터용 ASIC\n\n✔️ 구조 위치\n칩 → ABF 기판 → 메인보드\n\n삼성전기 등 일부 진입 시 경쟁 변화\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
-            "links": [
-              "https://t.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/25078"
-          },
-          {
-            "date": "2026-04-14",
-            "time": "09:37",
-            "text": "💻“퀄컴, CXMT와 손잡고 스마트폰용 커스텀 DRAM 검토”\n\n메모리 공급 부족과 원가 상승 압력 속에서\n퀄컴이 중국 CXMT와 스마트폰용 맞춤형 DRAM 개발을 검토 중이라는 보도\n\n✔️ 핵심 포인트\n퀄컴이 AP 설계에 그치지 않고\n\n메모리까지 최적화하는 방향으로 움직일 가능성\n\n✔️ 왜 주목하나?\n\n1. 메모리 조달 다변화\n기존 삼성전자·SK하이닉스·마이크론 중심 구조 외\n\n새 공급선 확보 시도라는 해석\n\n2. 원가 및 공급 안정성 대응\n스마트폰 메모리 가격 상승과 공급 타이트 현상에 대응하기 위한 움직임 가능성\n\n3. 성능 최적화 여지\n커스텀 DRAM이 현실화되면\n\n전력효율·성능·원가 측면에서\n퀄컴 칩셋과의 최적화 폭이 커질 수 있음\n\n✔️ 적용 가능 영역\n프리미엄 스마트폰\n\n온디바이스 AI 스마트폰\n\n차세대 모바일 AP 플랫폼\n\n✔️ 봐야 할 포인트\n현재는 검토 단계로 보이며\n\n실제 양산, 고객사 채택, 공급 규모 확대까지는 추가 확인 필요\n\n✔️ 산업적 의미\n메모리 공급 부족 상황에서 공급망 다변화하는 전략으로 해석\n\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
-            "links": [
-              "https://t.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/25079"
-          },
-          {
-            "date": "2026-04-14",
-            "time": "09:38",
-            "text": "✅미국의 중국산 스마트폰 수입 비중이 90% → 25%로 급감\n\n한때 Foxconn의 중국 생산 네트워크는 Apple 공급망의 핵심\n\n현재: 인도 / 베트남 / 멕시코 분산\n\n📌 수혜 생산 거점\n인도 — 애플 주력 이전지, 폭스콘·타타 인도 공장 풀가동\n\n베트남 — 삼성 스마트폰 핵심 생산기지\n\n멕시코 — 북미 니어쇼어링 수혜\n\n폭스콘 중국 조립 네트워크의 중심축 지위 실시간 해체 중\n\n소비자 전자 공급망 탈중국 재편의 가장 명확한 데이터포인트\n\n애플 공급망 내 한국산 부품(카메라·OLED·반도체) 수요 안정\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/25080"
-          },
-          {
             "date": "2026-04-14",
             "time": "09:48",
             "text": "💻“애플보다 CPO 선택한 라간 → 카메라에서 ‘광통신’으로 중심 이동 신호”\n\nhttps://money.udn.com/money/story/5612/9439587?from=edn_maintab_index\n\n루머에 따르면 Apple이 Largan Precision에 아이폰18용 가변 조리개 렌즈 주문 확대를 요청했지만\n\n거절당함.\n\n이유 Largan이 CPO(Co-Packaged Optics) 사업에 집중이유\n\n✔️3분기: FAU (Fiber Array Unit) / ELS (External Laser Source) 양산 목표\n\n“스마트폰 → AI 인프라” 사업 집중 이동\n\n현재: 데이터센터 광통신 = 더 큰 시장\n\nCPO는 광통신을 칩 패키지 내부로 통합하여 전력 ↓ / 속도 ↑ / 거리 문제 해결\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
@@ -412,6 +300,127 @@
               "https://t.me/growth_semi"
             ],
             "post_url": "https://t.me/growthresearch/25087"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "12:18",
+            "text": "🚨파키스탄, 미-이란 2차 협상 중재 자처\n\n📌 핵심 내용\n파키스탄, 미-이란 2차 협상 호스팅 공식 제안\n\n현재 진행 중인 휴전 종료 전 협상 재개 촉구\n\n사우디 봉쇄 철회 요구에 이어 지역 중재 외교 가속\n\n📌 중재자로서 파키스탄의 포지션\n이란과 1,000km+ 국경 접경 — 지역 안정 직접 이해당사자\n\n미국과 전통적 안보 협력 관계 유지 (대테러·아프간 경험)\n\n중국·사우디와도 긴밀한 관계 → 다자 중재 허브 역할 가능\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://t.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/25088"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "12:26",
+            "text": "✅ 데이터센터 전력 수요 폭증 — Goldman Sachs 상향 전망\n\n📌 핵심 수치\n글로벌 데이터센터 전력 수요, 2030년 1,350 TWh 전망\n\n2023년 대비 +220% (+905 TWh) — 기존 예상치 +175%에서 대폭 상향\n\n미국 비중 ~50% → ~60%로 확대 → 미국 단독 ~750 TWh / 나머지 ~600 TWh\n\n미국 데이터센터 캐파 2025~2030년 +197% 증가 → 95GW 달성 전망\n\n📌 상향 조정 배경\nAI 서버 출하량 전망 상향 조정\n\n전력 집약도 높은 AI 처리 서버 배포 가속\n\n미국 중심 AI 인프라 투자 집중화 심화\n\n📌 전력 인프라 수혜 구도\n천연가스 발전 — 재생에너지 간헐성 보완 단기 최대 수혜\n\n원자력 — 빅테크 SMR 계약 러시 중장기 핵심 전원\n\n송전·변전 인프라 — 현재 가장 심각한 병목 구간 → 투자 집중 불가피\n\n전력용 반도체(SiC·GaN) — 데이터센터 전력변환 효율화 수요 급증\n\n📌 중동 긴장과의 교차점\n호르무즈 사태 장기화 시 에너지 비용 급등 → 미국 데이터센터 운영비 압박\n\n미-이란 딜 성사 시 에너지 안정화 → AI 인프라 투자 재가속 시나리오\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://t.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/25089"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "12:28",
+            "text": "💻NAND 가격 폭등 + 저용량 수요 폭발\n\nhttps://money.udn.com/money/story/5607/9439257?from=edn_subcatelist_cate\n\n메모리 업계: 단기적 공급 부족 해결 불가\n\n2027년: 더 심각한 공급 부족 예상\n\n✔️ 가격 상황 (충격적 포인트)\n최근 6개월: NAND 가격 4~10배 상승\n저용량 NAND: 최대 15배 상승\n\n✔️ 특징 “용량이 낮을수록 더 많이 상승”\n① AI 구조 변화\n과거: Training 중심\n\n현재: Inference (추론) 중심\n\n② 저장 수요 폭발\n데이터센터 / 기업 / 엣지 디바이스 모두 저장 필요\n\n③ 공급 제약\n\n✔️ DRAM\nHBM 우선 투자 → 일반 DRAM 부족\n\n✔️ NAND\n증설 속도: 15~25% 증가 수준 → 수요 못 따라감\n\n✔️ Kioxia (2D NAND 생산 중단)\n대상: Floating Gate BiCS3\n고객: 9월까지 마지막 주문\n\n① “HBM이 아니라 NAND도 부족”\n\n② 저용량 NAND 재평가\n\nAI 시대는 HBM만이 아니라 ‘저용량 NAND’까지 부족해지는 구조\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
+            "links": [
+              "https://money.udn.com/money/story/5607/9439257?from=edn_subcatelist_cate",
+              "https://t.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/25090"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "12:35",
+            "text": "💻난야 25억달러 투자 유치 → ‘메모리도 LTA 계약 시대’ 진입 (중장기 공급 계약)\n\nNanya Technology 25억 달러 규모 투자 유치\n\n✔️ 참여 기업\nSanDisk\nKioxia\nSK hynix\nCisco\n\n단순 투자가 아닌 중장기 공급계약 포함됨.\n\n📍① “스팟 시장 → 계약 시장” : 장기 계약(LTA) 기반 산업으로 이동\n\n📍② 공급망 통합 :  공급망 파트너로 변화\n\n📍③ 자본 + 공급 묶음 구조 : 투자 + 물량 확보\n\n메모리 산업이 이제 ‘현물 시장’이 아니라 ‘계약 기반 인프라 산업’으로 바뀌고 있음.\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
+            "links": [
+              "https://t.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/25091"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "13:06",
+            "text": "🚨러시아, 이란 농축 우라늄 인수 제안 — 미-이란 딜 촉진 카드\n\n러시아, 미-이란 협상 타결 조건으로 이란 농축 우라늄 자국 인수 공식 제안\n\n이란 핵물질을 러시아로 이전 → 핵무기화 리스크 물리적 차단 방안\n\n2015년 JCPOA 당시에도 유사한 구조 활용된 바 있음\n\n📌 협상 구도에 미치는 영향\n트럼프의 최대 요구사항인 \"핵 능력 완전 제거\" 에 대한 현실적 대안 제시\n\n5년 vs 20년 기간 갭보다 물리적 비핵화 조치가 더 중요한 변수로 부상 가능\n\n러시아 개입으로 딜 구조가 미-이란 양자 → 다자 프레임으로 전환\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://t.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/25092"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "13:06",
+            "text": "🚨러시아, 이란 농축 우라늄 인수 제안 — 미-이란 딜 촉진 카드\n\n러시아, 미-이란 협상 타결 조건으로 이란 농축 우라늄 자국 인수 공식 제안\n\n이란 핵물질을 러시아로 이전 → 핵무기화 리스크 물리적 차단 방안\n\n2015년 JCPOA 당시에도 유사한 구조 활용된 바 있음\n\n📌 협상 구도에 미치는 영향\n트럼프의 최대 요구사항인 \"핵 능력 완전 제거\" 에 대한 현실적 대안 제시\n\n5년 vs 20년 기간 갭보다 물리적 비핵화 조치가 더 중요한 변수로 부상 가능\n\n러시아 개입으로 딜 구조가 미-이란 양자 → 다자 프레임으로 전환\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://t.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/25093"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "13:06",
+            "text": "💻TSMC, 패널급 패키징(CoPoS) 로드맵 본격화 — 2028~29년 양산 목표[Trend Force]\n\n📍CoPoS 파일럿 라인 현황\n2월 R&D팀 장비 반입 시작 — 6월 파일럿 라인 완성 목표\n\n양산 램프업 시점: 2028~2029년 업계 전반 컨센서스\n\n단, 기판 사이즈 확대에 따른 워피지(휨) 문제가 양산 최대 걸림돌로 부상\n\n📍CoPoS가 필요한 이유\n엔비디아 Rubin GPU 레티클 크기 5.5x 수준으로 확대\n\n12인치 웨이퍼 한 장에 최대 7개, 경우에 따라 4개만 수용 가능\n\n정사각형 패널 포맷 → 웨이퍼 대비 활용률·처리량 대폭 개선\n\n장기적으로 실리콘 인터포저를 글라스 기판으로 대체 목표\n\n📍대만 내 생산 거점 재편\n자이(Chiayi) — CoPoS 첫 파일럿 라인 유력 + CoPoS·SoIC·WMCM 통합 허브 계획\n\n신주 AP Fab 1 — 2nm 관련 패키징 (신주·타이중 생산 거점 지원)\n\n룽탄 AP Fab 3 — WMCM + 애플 고성능 프로세서용 InFO 전담\n\n타이중 AP Fab 5 — Fab 25의 2nm 출력 지원\n\n주난 Fab 6 — SoIC·InFO·CoWoS·첨단 테스트 통합, SoIC가 핵심 캐파\n\n기존 8인치 팹 → 첨단 패키징 시설로 전환 계획\n\n📍미국 첨단 패키징 로드맵\n미국 3번째 팹 캐파 2027년까지 대부분 사전 예약 완료\n\n아리조나 첫 번째 첨단 패키징 시설 2028년 양산 진입\n\n두 번째 아리조나 사이트 2029~2030년 램프업 — SoIC·CoPoS 집중\n\n엔비디아·AMD CoWoS 수요 지속 + 애플 InFO + AMD SoIC 핵심 고객\n\n📍2026년 CapEx 계획\n총 CapEx $520억~$560억\n\n첨단 공정 70~80% / 특수 노드 ~10% / 첨단 패키징·테스트 10~20%\n\n첨단 패키징 매출 비중: 2025년 ~8% → 2026년 10% 초과 전망\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
+            "links": [
+              "https://t.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/25094"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "13:13",
+            "text": "🧬리제네론 21억 달러 규모 RPT 진입 → 면역항암 + 방사성 치료 ‘결합 전략’ 본격화\n\n💊리제네론 방사성 의약품(Radiopharma, RPT) 시장 진입\n✔️ 계약 구조\n선급금: 4,000만 달러\n최대: 21억 달러 (biobucks)\n\n✔️ 프로그램\n초기: 고형암 4개 프로그램\n옵션: 추가 4개 확장 가능\n\n✔️ 수익 구조\n기본: 비용 & 수익 50:50 공유\nTelix: 최대 5.35억 달러/프로그램\n로열티 (low double digit)\n\n💊“항체 + 방사성 치료 결합”\nRegeneron 강점: 항체 (antibody)\n\nTelix 강점: 방사성 동위원소 플랫폼\n\n항체로 타겟팅 + 방사선으로 제거\n\n면역항암 + RPT 병용\n\n💊① RPT = 차세대 온콜로지 핵심\n\n💊② 빅파마 진입 가속\nRegeneron / Novartis (Pluvicto) / Lilly / Sanofi 관심\n\n💊③ Precision 치료 (특정 암세포만 타격)\nTelix 전략 수직 통합\nCDMO 인수\n동위원소 생산 플랫폼 확보\n미국 31개 약국 네트워크 확보\n\n현재 상태\n치료제: TLX101 (뇌종양) → 긍정적 초기 데이터\n\n“항체 + 방사성 치료 결합은 차세대 항암 패러다임 — Regeneron은 ‘플랫폼 확장 전략’으로 진입”\n\n🧬바이오섹터 분석🧬 [그로쓰리서치]\nhttps://t.me/growthbio",
+            "links": [
+              "https://t.me/growthbio"
+            ],
+            "post_url": "https://t.me/growthresearch/25095"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "13:33",
+            "text": "✅ 중동 산유국, ‘한국 비축기지’ 러브콜…정부 “협의 요청 잇따라”\n\nhttps://www.seoul.co.kr/news/economy/2026/04/14/20260414500135\n\n📌 호르무즈 해협 봉쇄 영향\n미국-이란 전쟁으로 호르무즈 해협 봉쇄가 장기화되면서\n\n중동 산유국들이 한국의 석유 비축기지 활용을 위해 정부와 접촉\n\n해협 외부에 원유를 저장해 지정학적 리스크를 분산하려는 전략\n\n📌 관심 국가 및 배경\n기존 협력국인 Abu Dhabi National Oil Company(UAE) 외에도\n\n사우디, 쿠웨이트 등 다수의 산유국이 동북아 비축기지 활용에 관심\n\n📌 국제공동비축사업의 의미\n해외 산유국의 원유를 한국석유공사 비축시설에 보관하고 임대료 수익을 창출\n\n수급 위기 시 우선 구매권 확보로 국내 에너지 안보 강화\n\n실질적인 국내 비축량 확대 효과도 기대\n\n📌 대체 공급망 및 대응\n사우디 얀부항을 통한 대체 수출 확대(하루 최대 700만 배럴)\n\n정부는 비축유 추가 확보(104만 배럴) 및 비축기지 용량 2000만 배럴 확대 계획\n\n에틸렌·프로필렌 등 석유화학 원료 매점매석 금지 및 긴급수급조정도 시행 예정\n\n📌 전략적 시사점\n한국이 동북아 에너지 허브로 부상할 가능성\n\n글로벌 해상 물류 병목(호르무즈·수에즈·바브엘만데브)에 따른 공급망 재편 가속\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://www.seoul.co.kr/news/economy/2026/04/14/20260414500135",
+              "https://t.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/25096"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "13:43",
+            "text": "✅스페이스X HJT 태양전지 양산 — 대주전자재료 수혜\n\n🚀스페이스X의 우주데이터센터는 대주전자재료로 수혜로 이어집니다.🚀\n\nhttps://www.edaily.co.kr/News/Read?newsId=03765446645416120&mediaCodeNo=257&OutLnkChk=Y\n\n📌 스페이스X 양산 계획\n중국 Maxwell을 총괄사로 지정, 1GW 규모 HJT 양산 장비 발주 확인\n\n3분기 양산 초읽기 — 머스크 공언 \"36개월 내 우주 100GW 데이터센터\" 구체화\n\nHJT 채택 이유: 고효율 + 우주 방사선·급격한 온도변화 내성 + 자체 복원 기능\n\nGaAs(갈륨비소) 방식 대비 제조 원가 1/1000 수준 — 대규모 위성망 구축에 최적\n\n📌 대주전자재료 수혜 포인트\n스페이스X 팀에 실버 페이스트 + 은구리(AgCu) 페이스트 샘플 모두 제공 협업 중\n\nHJT 저온 공정(~200°C) 특성상 AgCu 페이스트 사용 가능 → 은 가격 부담 순수 은 대비 ~50% 절감\n\n북미 탑티어 기업 GW급 라인 구축 과정에서 대만·일본 경쟁사 제치고 품질·양산성 입증\n\n📌 지정학적 해자\n중국산 페이스트, 미국 무역법 301조 최소 35% 관세 부과 → 가격 경쟁력 상실\n\n중국산 자재 사용 태양전지 IRA 보조금 제외 → 탈중국 소재 선정 사실상 필수\n\n대만·일본 경쟁사 대비 앞선 기술력 → 북미 시장 대체 불가 파트너 입지 구축 중\n\n📌 장기 수요 구조\n장비와 달리 페이스트는 위성 교체 주기마다 반복 수요 발생\n\n우주 데이터센터용 위성 수명 약 5~6년 → 궤도 이탈·신규 투입 반복\n\n소재 매출 안정적 반복 수익 구조 형성 가능\n\n📌 시사점\n스페이스X 우주 인프라 투자가 국내 소재 기업 실질 수혜로 연결되는 첫 사례\n\n관세·IRA 정책이 만든 탈중국 수혜 구조 — 정책 리스크 아닌 정책 수혜\n\n1GW 장비 발주는 시작점 — 100GW 목표까지 수주 규모 수십 배 확대 여지\n\n대주전자재료 실질 협업·샘플 제공 단계 진입 확인이 핵심\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://www.edaily.co.kr/News/Read?newsId=03765446645416120&amp;mediaCodeNo=257&amp;OutLnkChk=Y",
+              "https://t.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/25097"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "13:58",
+            "text": "🚨중국 제재 유조선, 호르무즈 봉쇄 정면 돌파 — 미중 직접 대치\n\n📌 핵심 내용\n미국 제재 대상 중국 유조선 Shanghai Xuanrun Shipping Co Ltd 소속 선박\n\n트럼프 호르무즈 봉쇄령 발동 당일 — 해협 통과 강행\n\n중국인 선원 탑승 확인 — Reuters·Bloomberg 동시 보도\n\nBloomberg: \"트럼프의 해군 봉쇄를 테스트하는 것\" 명시\n\n📌 Shanghai Xuanrun Shipping — 배경\n이란과의 거래로 미국 제재 명단 기등재 기업\n\n사실상 이란 원유 운송 전담 그림자 선단(Shadow Fleet) 소속\n\n중국 정부와의 직접 연계 여부는 미확인 — 그러나 중국 국적·선원 명백\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://t.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/25098"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "14:09",
+            "text": "🧬 [단독] 삼성바이오에피스, ‘1호 신약’ 1상 개시… 신약 개발 기업 전환 속도\n\nhttps://www.sedaily.com/article/20032266\n\n💊 SBE303 글로벌 임상 1상\n삼성바이오에피스의 첫 신약 ‘SBE303’ 글로벌 임상 1상에 본격 진입\n\n진행성·불응성 고형암 환자 149명을 대상으로 2030년 7월까지 진행\n\n넥틴-4 타깃으로 하는 ADC 후보물질로 방광암·폐암·유방암 등 치료 기대\n\n비임상에서 높은 내약성 확인, 관련 데이터는 AACR에서 공개 예정\n\n💊 ADC 파이프라인 확대\n두 번째 ADC 후보 ‘SBE313’ 개발 중\n\nEGFR·HER3를 동시에 표적하는 이중항체-이중 페이로드 ADC로,\n\n암세포 이질성과 내성 극복을 목표로 전임상 진행\n\n💊 비만 치료제 개발 진출\n지투지바이오와 협력해 GLP-1 계열 장기지속형 비만 치료제 개발 추진\n\n장기지속형 세마글루타이드 등 후보물질 2종의 독점 개발권 확보\n\n💊 R&D 투자 확대 및 전략\n연구개발비: 23년 1516억 원 → 24년 1718억 원 → 25년 2474억 원으로 증가\n\n올해는 4000억 원 이상 투자 전망\n\n매년 최소 1개 이상의 신약 후보물질 IND 진입 목표\n\n🧬바이오섹터 분석🧬 [그로쓰리서치]\nhttps://t.me/growthbio",
+            "links": [
+              "https://www.sedaily.com/article/20032266",
+              "https://t.me/growthbio"
+            ],
+            "post_url": "https://t.me/growthresearch/25099"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "14:21",
+            "text": "💻SanDisk, HBF(고대역폭 플래시) 상용화 가속 — 차세대 메모리 경쟁 본격화\n\n📍SanDisk 로드맵\n2026년 하반기 파일럿 생산 라인 구축 예정 (2027년 양산 목표)\n\nHBM 개발 경험 축적으로 HBF 상용화 사이클 HBM보다 현저히 단축 전망\n\n📍HBF(High Bandwidth Flash)란?\nNAND 플래시에 TSV(실리콘 관통전극) 기반 적층 기술 도입\n\n저장 용량 HBM 대비 약 10배 수준\n\n고대역폭 + 대용량 스토리지 특성 → AI 추론·데이터센터 스토리지 병목 해소 타깃\n\n📍경쟁 구도\nSK하이닉스·삼성전자 모두 HBF 분야 진입 확인\n\nHBM에서의 경쟁 구도가 HBF로 그대로 이전되는 양상\n\nSanDisk, 순수 NAND 전문성 기반으로 선제적 상용화 시도\n\n📍시사점\nHBM이 AI 학습(Training) 병목을 해소했다면 HBF는 AI 추론(Inference) 스토리지 병목 해소 타깃\n\nTSV 공정 노하우 보유 업체가 절대적으로 유리 — SK하이닉스 HBM TSV 경험 직접 전용 가능\n\nNAND 공급 타이트 국면에서 HBF 수요 본격화 시 프리미엄 NAND 수급 추가 압박 우려\n\n삼성, HBM4 + HBF 동시 경쟁 — 메모리 전 영역 멀티프론트 대응 부담 증가\n\n차세대 패키징 기술(CoPoS·FOPLP)과 결합 시 AI 인프라 스택 전면 재편 가능성\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
+            "links": [
+              "https://t.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/25100"
           }
         ]
       },
@@ -422,20 +431,6 @@
         "category": "매크로/크립토",
         "channel_url": "https://t.me/SpartanResearch",
         "posts": [
-          {
-            "date": "2026-04-12",
-            "time": "12:16",
-            "text": "⚡️ 미 육군 대령 (퇴역): 밴스는 협상을 원한 것이 아니라, 이란의 항복만을 바랐습니다.\n다니엘 데이비스:\n🔹️밴스가 이번 회담을 \"마지막 기회\"라고 말한 것은 좋지 않은 징조입니다. 외교는 그런 식으로 이루어지지 않습니다.\n\n🔹️단 한 번의 외교 회담으로 전쟁을 끝낼 수 있다고 생각하는 것은 완전히 비현실적입니다.\n\n🔹️만약 이것이 정말 미국의 마지막 제안이었다면, 협상은 전혀 없었고, 항복을 요구하는 최후통첩에 불과했습니다.\n\n🔹️이란이 이러한 조건을 받아들일 가능성은 낮으며, 오히려 전쟁 재개를 위한 카운트다운이 시작될 가능성이 큽니다.\n\n🔹️우리의 문제는 지난 6주 동안 군사적 성공을 거두지 못하게 했던 요인들이 여전히 존재하며, 앞으로 6주 동안에도 성공을 거두기 어려울 것이라는 점입니다.\n\n🔹️한편, 이란은 호르무즈 해협에 대한 통제권을 유지할 것이고, 유가는 높은 수준을 유지할 것이며, 걸프 지역에서 생산되던 화학비료 부족 현상은 세계 경제, 특히 미국에 심각한 압박을 계속 가할 것입니다.\n\n🔹️오늘은 미국에게 좋은 날이 아닙니다.",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/3246"
-          },
-          {
-            "date": "2026-04-12",
-            "time": "12:16",
-            "text": "**[이란, 미국과의 재협상에 서두르지 않아]**\n\n이란 타스님 통신은 오늘 아침(4월 12일) 소식통을 인용해 이란이 미국과의 재협상에 서두르지 않고 있다고 보도했습니다. 보도에 따르면 이란은 협상 과정에서 합리적인 제안들을 했으며, 이제 \"공은 미국의 손에 있다\"며 미국이 이 문제에 대해 실용적인 접근을 해야 한다고 촉구했습니다. 소식통은 또한 미국 정부가 \"전쟁 결정에서처럼 협상 결정에서도 실수를 저질렀다\"며, 이란은 빠른 결과를 기대하지 않는다고 전했습니다. 미국이 합리적인 합의에 동의하지 않는 한 호르무즈 해협의 상황은 변하지 않을 것이라고 덧붙였습니다. 현재 차기 협상의 시기와 장소는 아직 정해지지 않았습니다. (CCTV 국제 뉴스)",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/3247"
-          },
           {
             "date": "2026-04-12",
             "time": "12:16",
@@ -549,6 +544,26 @@
             "text": ">>이스라엘 총리: 이란과의 휴전 곧 종료될 수 있음\n\n•이스라엘 채널12 방송에 따르면 베냐민 네타냐후 총리는 이란과의 휴전이 곧 종료될 가능성이 있다고 언급 (신화사) \n\n>【以总理：与伊朗的停火可能很快结束】以色列12频道电视台13日报道，以总理内塔尼亚胡说，与伊朗的停火可能很快结束。（新华社） （来自华尔街见闻）",
             "links": [],
             "post_url": "https://t.me/SpartanResearch/3265"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "14:27",
+            "text": "2026.04.14 14:26:02\n기업명: 지투지바이오(시가총액: 1조 1,549억) A456160\n보고서명: 기업설명회(IR)개최\n\n개최일자 : 2026-04-20\n개최시각 : 11:00\n\n*IR 목적\n회사 소개 및 주요 사업 현황에 대한 투자자 이해 증진\n\n*IR 내용\n'lnnoLAMP' 플랫폼 기술 기반의 파이프라인 진행 현황/계획 등 소개\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260414900383\n회사정보: https://finance.naver.com/item/main.nhn?code=456160",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260414900383",
+              "https://finance.naver.com/item/main.nhn?code=456160"
+            ],
+            "post_url": "https://t.me/SpartanResearch/3267"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "14:27",
+            "text": "2026.04.14 14:27:06\n기업명: 지투지바이오(시가총액: 1조 1,557억) A456160\n보고서명: 기업설명회(IR)개최\n\n개최일자 : 2026-04-20\n개최시각 : 13:00\n\n*IR 목적\n회사 소개 및 주요 사업 현황에 대한 투자자 이해 증진\n\n*IR 내용\n'lnnoLAMP' 플랫폼 기술 기반의 파이프라인 진행 현황/계획 등 소개\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260414900388\n회사정보: https://finance.naver.com/item/main.nhn?code=456160",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260414900388",
+              "https://finance.naver.com/item/main.nhn?code=456160"
+            ],
+            "post_url": "https://t.me/SpartanResearch/3268"
           }
         ]
       },
@@ -559,23 +574,6 @@
         "category": "매매 신호/트레이딩",
         "channel_url": "https://t.me/d_ticker",
         "posts": [
-          {
-            "date": "2026-04-13",
-            "time": "22:11",
-            "text": "[LS ELECTRIC 데이터센터 신규수주 관련 코멘트 - 유진 허준서] \n\n안녕하세요 유진 허준서입니다. \n\n계약기간 8개월로 연내인식, 총 1,700억원 규모의 데이터센터 프로젝트 수주가 나왔습니다. \n\n대부분 미드볼티지 배전반 물량으로 파악중입니다. \n\n마진도 준수할것으로 판단합니다.  로우볼티지는 미국현지에서도 제조 가능한 업체들이 많은 반면 미드볼티지급을 제조할 수 있는 업체는 제한적이기 때문입니다. \n\nLSE가 수주할 수 있었던 배경에도 제한된 업체 논리가 작용했을것이라고 보고있습니다. \n\n지난해에 이어서 데이터센터향 레퍼런스를 지속 확보하고 있습니다. \n\n세미나를 통해서도 말씀드려왔듯, 배전 솔루션 업체들의 데이터센터향 수주 레퍼런스 확보는 단순히 AI체인에 귀속되는 이슈로 해석하는것을 넘어, \n\n다가올 DC 배전 표준화 시대의 퍼스트티어로 진입할 수 있음을 의미합니다.  규격이 존재하지 않아 도입이 늦어지는 DC 배전 아키텍처를 하이퍼스케일러들이 가장 선도적으로 도입하고 있기 때문입니다. \n\n액면분할에 이어서 좋은 모멘텀이 될 수 있을 소식이 나왔네요, 오늘도 고생 많으셨습니다. 좋은 저녁되십쇼! ^^7",
-            "links": [],
-            "post_url": "https://t.me/d_ticker/2940"
-          },
-          {
-            "date": "2026-04-13",
-            "time": "23:22",
-            "text": "TOTO, 주택용 욕실 제품 ‘주문 중단’ 5332.JP\n\n(Nikkei) 반도체 세라믹 부품 겸 화장실 위생도기 전문 TOTO가 2026년 4월 13일부로 주택용 욕실 제품의 주문 접수를 전격 중단했다. 재개 시기는 미정이다. 욕실 벽·천장 필름 접착제 및 욕조 코팅제에 사용되는 용제(화학 제품) 부족 때문이다. 호르무즈 해협이 봉쇄되면서 용제의 원료인 나프타 공급망이 붕괴된 탓이다.\n\nTOTO의 영업이익 55%는 반도체 사업에서 나옵니다. 참 신기한 기업",
-            "links": [
-              "http://5332.JP/",
-              "https://www.nikkei.com/nkd/company/article/?DisplayType=1&amp;amp;ng=DGXZQOUB169Y00W6A310C2000000&amp;amp;scode=5332&amp;amp;ba=1"
-            ],
-            "post_url": "https://t.me/d_ticker/2941"
-          },
           {
             "date": "2026-04-13",
             "time": "23:28",
@@ -724,6 +722,22 @@
               "https://n.news.naver.com/mnews/article/016/0002629275?rc=N&amp;amp;ntype=RANKING&amp;amp;sid=101"
             ],
             "post_url": "https://t.me/d_ticker/2959"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "14:16",
+            "text": "스페이스X, ‘25년 주요 재무 데이터 보도\n\n■ Starlink\n- 매출 114억 달러(+50% YoY)\n- EBITDA 72억 달러(마진 63%)\n- FCF 30억 달러\n\n■ 로켓 발사 서비스\n- 매출 41억 달러(+8% YoY)\n- EBTIDA 7억 달러(마진 17%)\n- FCF -30억 달러\n\n■ AI 사업(X 및 xAI)\n- 매출 32억 달러(+23% YoY)\n- EBTIDA -12억 달러(마진 -38%)\n- FCF -140억 달러\n\n: X 매출(1Q~3Q25) 20억 달러 보도 \n: 오픈AI 매출 131억 달러 및 FCF -80억 달러\n: 앤스로픽 매출 45억 달러 및 FCF -41억 달러\n\n■ 전체 합산\n- 매출 187억 달러(+34% YoY)\n- EBITDA 66억 달러(마진 36%)\n- FCF -140억 달러\n- CapEX 207억 달러\n\nhttps://t.me/Samsung_Global_AI_SW",
+            "links": [
+              "https://t.me/Samsung_Global_AI_SW"
+            ],
+            "post_url": "https://t.me/d_ticker/2960"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "14:22",
+            "text": "스페이스X, ‘25년 주요 재무 데이터 보도  ■ Starlink - 매출 114억 달러(+50% YoY) - EBITDA 72억 달러(마진 63%) - FCF 30억 달러  ■ 로켓 발사 서비스 - 매출 41억 달러(+8% YoY) - EBTIDA 7억 달러(마진 17%) - FCF -30억 달러  ■ AI 사업(X 및 xAI) - 매출 32억 달러(+23% YoY) - EBTIDA -12억 달러(마진 -38%) - FCF -140억 달러  : X 매출(1Q~3Q25)…",
+            "links": [],
+            "post_url": "https://t.me/d_ticker/2961"
           }
         ]
       },
@@ -742,24 +756,6 @@
         "category": "국내 시장/종목 분석",
         "channel_url": "https://t.me/Yeouido_Lab",
         "posts": [
-          {
-            "date": "2026-04-13",
-            "time": "09:23",
-            "text": "HLB·알지노믹스 등 미국암연구학회 임상 발표 주목\nhttps://n.news.naver.com/mnews/article/015/0005273924?sid=105\n\n김승민 미래에셋증권 연구원은 “바이오텍 가치 상승의 전제 조건은 임상 초기 개념검증(PoC) 데이터의 발표”라며 “양질의 데이터는 기업가치 재평가를 이끄는 변곡점이 될 수 있다”고 했다.",
-            "links": [
-              "https://n.news.naver.com/mnews/article/015/0005273924?sid=105"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/31163"
-          },
-          {
-            "date": "2026-04-13",
-            "time": "10:29",
-            "text": "안녕하세요, 알테오젠입니다.\n \n피하주사제형 키트루다 관련하여 미국 내 지불기관에서 IV 청구를 거부하는 등 SC에 대한 전환을 촉진하는 움직임이 나타났다는 기사를 공유드립니다.\n\n 특히 해당 움직임은 J-code 발효 이전에 일어난 움직임으로 발효 후 좀 더 안정적인 전환이 이뤄질 것으로 기대됩니다.\n\n또 유럽 승인 후 상업화도 순차적으로 진행되어 주요시장에서 sc제형 전환이 순조로울 예상입니다.\n \nUBS 리포트를 인용한 이번 기사에서 키트루다 큐렉스는 미국에서 2027년 기준 USD 6bn~8bn 수준의 매출이 일어날 것으로 예측하였습니다. \n \n이와 관련된 상세한 내용은 하단 링크를 확인하여 주십시오.\n\n감사합니다.\n \n[기사공유] https://dealsite.co.kr/articles/160057",
-            "links": [
-              "https://dealsite.co.kr/articles/160057"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/31165"
-          },
           {
             "date": "2026-04-13",
             "time": "10:29",
@@ -904,6 +900,31 @@
               "https://finance.naver.com/item/main.nhn?code=141080"
             ],
             "post_url": "https://t.me/Yeouido_Lab/31182"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "12:45",
+            "text": "[알지노믹스] AACR 2026에서 RNA 플랫폼 기술력 입증시 본격 기업가치 리레이팅 !! (feat. RNA대장주로 기업가치는 2~3년 내10조원 이상 목표 !!)\nhttps://blog.naver.com/chris201/224251582193\n\n38. 글로벌 바이오 기술 관점에서는 알지노믹스는 세계적인 기업임. \nRNA는 인류의 차세대 치료제로 이제 주목받기 시작, RNA에 대해서는 노벨생리의학상 수상자인 토머스 체크 박사가 쓴 “RNA의 역사”를 읽어보자\n(주식은 내가 공부해서 나의 투자논리를 만들어가는 과정임)\n\n39. 개인적으로 시가총액 10조원에 도달할 수 있는 잠재력을 갖고 선호하는 회사를 디앤디파마텍과 알지노믹스 두개로 생각함. 끝.",
+            "links": [
+              "https://blog.naver.com/chris201/224251582193"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/31183"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "13:23",
+            "text": "# 호르무즈 일평균 통행량 첫 50% 돌파 🥳🪩🎉",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/31184"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "14:23",
+            "text": "https://www.donga.com/news/Politics/article/all/20260414/133735281/1",
+            "links": [
+              "https://www.donga.com/news/Politics/article/all/20260414/133735281/1"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/31185"
           }
         ]
       },
