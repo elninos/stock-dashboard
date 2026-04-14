@@ -13,7 +13,7 @@ from dashboard_utils import (
     fmt_pct,
     pnl_class,
 )
-from config import FX_FALLBACK, TRANSACTIONS_FILE, PRICES_FILE, STOCK_MAP_FILE, BRIEFING_FILE, BRIEFING_SUMMARY_FILE, STOCK_NEWS_FILE, HIST_PORTFOLIO_FILE
+from config import BASE_DIR, FX_FALLBACK, TRANSACTIONS_FILE, PRICES_FILE, STOCK_MAP_FILE, BRIEFING_FILE, BRIEFING_SUMMARY_FILE, STOCK_NEWS_FILE, HIST_PORTFOLIO_FILE
 from file_io import load_json, now_kst
 
 KST = timezone(timedelta(hours=9))
