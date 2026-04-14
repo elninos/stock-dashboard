@@ -1,6 +1,6 @@
 {
   "2026-04-14": {
-    "fetched_at": "2026-04-14T14:28:57+09:00",
+    "fetched_at": "2026-04-14T16:54:42+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -247,62 +247,6 @@
         "posts": [
           {
             "date": "2026-04-14",
-            "time": "09:48",
-            "text": "💻“애플보다 CPO 선택한 라간 → 카메라에서 ‘광통신’으로 중심 이동 신호”\n\nhttps://money.udn.com/money/story/5612/9439587?from=edn_maintab_index\n\n루머에 따르면 Apple이 Largan Precision에 아이폰18용 가변 조리개 렌즈 주문 확대를 요청했지만\n\n거절당함.\n\n이유 Largan이 CPO(Co-Packaged Optics) 사업에 집중이유\n\n✔️3분기: FAU (Fiber Array Unit) / ELS (External Laser Source) 양산 목표\n\n“스마트폰 → AI 인프라” 사업 집중 이동\n\n현재: 데이터센터 광통신 = 더 큰 시장\n\nCPO는 광통신을 칩 패키지 내부로 통합하여 전력 ↓ / 속도 ↑ / 거리 문제 해결\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
-            "links": [
-              "https://money.udn.com/money/story/5612/9439587?from=edn_maintab_index",
-              "https://t.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/25081"
-          },
-          {
-            "date": "2026-04-14",
-            "time": "09:58",
-            "text": "💻“파나소닉 PCB 소재 가격 인상 → ABF·패키징 병목 본격화 신호”\n\n✔️Panasonic Industry 전자재료 사업부\n» PCB 소재 가격 인상 발표 (2026년 5월 1일 적용)\n\n✔️ 인상 내역\n① Glass epoxy (일반 다층 기판)\nCCL: +30%\nPrepreg: +20%\n\n② Low-loss 고성능 기판 (MEGTRON 등)\nCCL: +20%\nPrepreg: +15%\n\n③ CEM-3 (일반 기판)\n+30%\n\n④ FCCL (플렉서블 기판)\n+15%\n\n대상: 서버, AI, 스마트폰, 자동차\n\n✔️소부장 가격 전가 시작\n소재 업체 → 가격 인상 → 고객사로 전가\n\n✔️ 기판 업체 수혜\nABF / 고다층 PCB ASP 상승 가능\n\n“HBM → ABF → 이제 PCB 소재까지 — AI 반도체 공급망 전반이 ‘가격 상승 사이클’ 진입”\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
-            "links": [
-              "https://t.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/25082"
-          },
-          {
-            "date": "2026-04-14",
-            "time": "10:52",
-            "text": "✅SpaceX, 월 340기 생산 체제 → Starlink ‘위성 공장화 + 매출 구조 대전환’\n\nSpaceX Starlink 위성 연간 4,000기 이상 생산\n\n월 생산량: 약 340기 2024년: 2,880기 → 40% 증가\n\n📌지상 인프라 확대\n2024년: 240개\n2026년: 503개 (2.1배 증가)\n\n📌성장 동력\n① 항공 시장\n30개 이상 항공사 도입\n\n② 해상 시장\n75,000척 선박 도입 예상\n\n③ 정부 수요\n\nStarlink = 독립 기업 수준 : 200억 달러 매출\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/25083"
-          },
-          {
-            "date": "2026-04-14",
-            "time": "11:04",
-            "text": "💻 산업보고서 Top Pick, 에프엔에스테크 10% 상승\n\n저희가 HBM 규격완화 사업보고서 Top Pick으로 전달드린\n\n에프엔에스테크의 주가 흐름이 좋습니다.\n\nHBM 규격완화와 CMP 공정에 대한 자세한 내용을 리포트에 담아놓았으니, 참고하시면 좋을 것 같습니다.\n\n📌 HBM  두께완화 산업보고서 다시보기\nhttps://contents.premium.naver.com/growthresearch/growth/contents/260406003827183dn\n \n🔥 에프엔에스테크 투자포인트\n\n✔️ HBM 두께 완화에도 CMP는 필수\nHBM 두께 규격이 완화돼도 20단 적층에서는 Thinning 공정이 필수. \n\n단당 두께는 계속 얇아져야 해 CMP 중요성은 더 커지는 구조. \n\n즉, 두께 완화는 있어도 CMP 수요 감소로 이어지지 않음. \n\n✔️ 어떤 시나리오든 CMP 수요는 증가\n900㎛면 TC 본딩 유지, 825㎛면 하이브리드 본딩 확대 가능성이 큼. \n\n두 시나리오 모두 CMP 공정은 반드시 필요. \n\n특히 하이브리드 본딩이 확대되면 접합면 CMP 수요까지 추가됨. \n\n\n✔️ 에프엔에스테크는 CMP 패드 수요 증가의 직접 수혜\n에프엔에스테크는 CMP 패드 국산화 선도 업체. \n\nHBM 고적층 확대로 CMP 패드 소모량 증가의 직접 수혜가 기대됨. \n\n단기적으로는 Thinning용 패드, 중장기적으로는 하이브리드 본딩 관련 수요가 성장 포인트. \n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
-            "links": [
-              "https://contents.premium.naver.com/growthresearch/growth/contents/260406003827183dn",
-              "https://t.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/25084"
-          },
-          {
-            "date": "2026-04-14",
-            "time": "11:16",
-            "text": "🚨사우디, 미국에 호르무즈 봉쇄 철회·이란 협상 촉구\n\n📌 핵심 내용\n사우디아라비아, 미국에 호르무즈 해협 봉쇄 즉각 철회 요구\n\n이란과의 협상 테이블 복귀 공식 촉구\n\n앞서 선언한 \"국익 기반 독자 외교\" 노선의 즉각적 실행\n\n📌 사우디가 봉쇄 반대하는 이유\n자국 원유 수출의 핵심 통로 — 봉쇄 지속 시 아람코 수익 직격\n\n중국($82B 투자)·아시아 고객과의 원유 수출 계약 이행 불가 리스크\n\n중동 전면전 확대 시 자국 안보·경제 안정 위협\n\n🔥딜 성사 시 → 유가 급락·호르무즈 정상화·방산 단기 조정\n\n🔥 협상 결렬 시 → 사우디 독자 중재 가능성·중국 개입 심화·유가 $100+ 고착\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/25086"
-          },
-          {
-            "date": "2026-04-14",
-            "time": "11:53",
-            "text": "💻 TSMC, CoPoS·글라스 기판 선점…‘수호 산업군’으로 확장\n\n✔️ 첨단 패키징 전략\nAI 연산 수요 증가로 첨단 패키징의 대형화·고집적화가 가속\n\nTSMC는 공정뿐 아니라 소재·장비까지 아우르는 ‘수호 산업군(護國群山)’ 구축에 나서 \n\nCoPoS(Chip-on-Panel-on-Substrate)와 유리기판 기술 선점 추진\n\n✔️ CoPoS 실험 라인\nCoPoS R&D 라인에 2월부터 장비 반입, 6월 완공 예정\n\n패널 레벨 패키징(PLP)을 통해 비용 절감과 생산 효율 개선, AI 칩 수요 대응이 목표\n\n업계는 2028~2029년 대규모 양산을 전망\n\n✔️ 기술적 필요성\nAI 칩의 레티클 크기 확대로 12인치 웨이퍼당 패키징 가능한 칩 수가 감소\n\n사각형 패널 적용 시 재료 활용률과 생산성이 크게 향상\n\n장기적으로 실리콘 인터포저를 유리기판으로 대체하는 것이 목표\n\n✔️ 주요 기술 과제\n대면적 패키징에서 발생하는 휨(Warpage) 문제가 최대 난관\n\n실리콘·유리·구리 등 열팽창계수(CTE) 차이로 응력이 증가하며,\n\n패키지 면적과 RDL 층수가 늘어날수록 문제가 심화\n\n✔️ 대만 공급망의 부상\nTSMC는 소재·장비·설계를 통합한 연합형 생태계를 구축 중\n\n일본 중심이던 소재 시장에서 대만 업체들의 현지화가 빠르게 진행 중\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
-            "links": [
-              "https://t.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/25087"
-          },
-          {
-            "date": "2026-04-14",
             "time": "12:18",
             "text": "🚨파키스탄, 미-이란 2차 협상 중재 자처\n\n📌 핵심 내용\n파키스탄, 미-이란 2차 협상 호스팅 공식 제안\n\n현재 진행 중인 휴전 종료 전 협상 재개 촉구\n\n사우디 봉쇄 철회 요구에 이어 지역 중재 외교 가속\n\n📌 중재자로서 파키스탄의 포지션\n이란과 1,000km+ 국경 접경 — 지역 안정 직접 이해당사자\n\n미국과 전통적 안보 협력 관계 유지 (대테러·아프간 경험)\n\n중국·사우디와도 긴밀한 관계 → 다자 중재 허브 역할 가능\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
             "links": [
@@ -421,6 +365,65 @@
               "https://t.me/growth_semi"
             ],
             "post_url": "https://t.me/growthresearch/25100"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "15:08",
+            "text": "✅폴더블폰 시장 — 애플 진입 & 주름(Crease) 기술 혁신\n\n📌 시장 점유율 변화 (TrendForce)\n2025년: 삼성 38.1% / 화웨이 36.1%로 양강 구도\n\n2026F: 삼성 30.1% / 화웨이 29.3% / 애플 19.3% 신규 진입\n\n애플, 출시 첫해 약 20% 점유율 즉각 장악 전망 — 브랜드 파워 기반\n\n삼성·화웨이 각각 약 8%p 점유율 압축 불가피\n\n📌 애플 진입 시점 & 전략\n2026년 하반기 폴더블폰 출시 예정\n\n기존 후발주자 약점을 소재과학 기반 기술 도약으로 상쇄 전략\n\nUTG 비균일 두께 설계 + 화학 강화 처리 특허 — 접히는 부분은 유연하게, 나머지는 강하게\n\n📌 주름 해결 기술 진화\n기존: 힌지·기계 구조 중심 대응\n\n현재: 스트레스 관리 엔지니어링 — 소재과학 중심으로 패러다임 전환\n\n주름 발생 원인: 다층 패널 스택 내 중립층 어긋남 → 접힘 부위 응력 집중 → 마이크로 균열·영구 변형\n\n📌 핵심 소재 기술 돌파구\nUTG(초박형 유리): 단순 보호층 넘어 비균일 두께 설계로 부위별 강성 최적화\n\nOCA(광학 투명 접착제): 점탄성 특성 구현 — 느린 굽힘 시 유연·급격한 충격 시 경화·중립층 안정화·미세 요철 \n채움으로 시각적 주름 완화\n\n힌지: OPPO Find N6 정밀가공+3D프린팅 / 삼성디스플레이 레이저 드릴링 금속 지지판\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://t.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/25101"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "15:14",
+            "text": "🧬 노보, OpenAI와 전략적 제휴…신약개발부터 공급망까지 AI 전면 도입\n\n💊 협력 개요\n노보 노디스크가 OpenAI와 전략적 파트너십을 체결\n\n신약 발굴, 제조, 공급망, 상업 운영까지 전사적 AI 전환 추진\n\n목표는 신약 개발 속도를 높이고 환자에게 더 빠르게 치료제를 전달하는 것\n\n💊 핵심 적용 분야\nAI를 활용해 데이터셋 분석, 유망 후보물질 발굴, 가설 검증 속도 개선\n\n연구개발뿐 아니라 제조·물류·유통·기업 운영 효율화에도 적용\n\nR&D, 생산, 상업 부문에서 파일럿을 시작해 '26년 말까지 전면 통합 추진\n\n💊 추가 포인트\nOpenAI는 노보노디스크의 글로벌 인력 AI 역량 강화도 지원\n\n데이터 보호, 거버넌스, 인간 감독 체계를 포함해\n\n윤리적·규제 준수형 AI 활용을 전제로 설계됐다는 점도 강조\n\n🧬바이오섹터 분석🧬 [그로쓰리서치]\nhttps://t.me/growthbio",
+            "links": [
+              "https://t.me/growthbio"
+            ],
+            "post_url": "https://t.me/growthresearch/25102"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "15:15",
+            "text": "🚨미국 제재 대상인 중국 연계 유조선이 미국의 봉쇄에도 불구하고 호르무즈 해협을 통과\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://t.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/25104"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "15:52",
+            "text": "✅ 바이오·새만금·OLED 등 국민성장펀드 2차 메가프로젝트… 10조원 투입\n\nhttps://biz.chosun.com/stock/finance/2026/04/14/7XFPIMLRSNC2NCESGG4ITD3XZQ\n\n📌 2차 메가프로젝트 선정\n✔️ 차세대 바이오 백신, 소버린 AI(기술 주권 확보)\n\n✔️ OLED 초격차, 무인기(UAV) 체계\n\n✔️ 태양광·육상풍력 등 재생에너지\n\n✔️ 새만금 로봇·수소·AI 첨단벨트\n\n📌 첨단산업 생태계 지원\n향후 5년간 총 50조원+@ 규모의 자금 공급\n\n국민성장펀드를 통해 금융위가 약 10조 원 지원 예정\n\n직접 투자: 15조 원, 간접 투자(펀드): 35조 원\n\n민관합동펀드를 20여 개 자펀드로 세분화해 운영\n\n정책 자금 수혜 경험이 없는 운용사에도 참여 기회 확대\n\n📌 기업 지원 및 파급 효과\n기술 주도권 확보를 위한 정책적 드라이브가 강화되는 흐름입니다.\n\n바이오 외에 저희가 소개드린 기업 중에서는 OLED, 태양광 독보적 기술력을 보유한 선익시스템의 수혜를 기대해볼 수 있을 것 같습니다.\n\n자세한 내용은 아래 탐방보고서에 쉽고 자세하게 적어두었으니, 도움 받아가시기 바랍니다.\n\n📌 [탐방] 매출액 400% 성장, PER 4배: 이어지는 멀티플 재평가 (01/15)\nhttps://contents.premium.naver.com/growthresearch/growth/contents/260114175220417kc\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://biz.chosun.com/stock/finance/2026/04/14/7XFPIMLRSNC2NCESGG4ITD3XZQ",
+              "https://contents.premium.naver.com/growthresearch/growth/contents/260114175220417kc",
+              "https://t.me/growthresearch",
+              "https://biz.chosun.com/stock/finance/2026/04/14/7XFPIMLRSNC2NCESGG4ITD3XZQ/"
+            ],
+            "post_url": "https://t.me/growthresearch/25105"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "15:55",
+            "text": "✅ SK하이닉스, 올해 HBM4 물량 하향 조정...HBM3E 등 확대\n\nhttps://zdnet.co.kr/view/?no=20260414110036\n\n📌 HBM4 출하 계획 조정\n엔비디아향 HBM4 출하량을 기존 계획 대비 20~30% 축소 검토 중\n\n이는 차세대 AI 가속기 ‘베라 루빈’의 양산 확대 지연 영향으로 분석\n\n📌 수요는 HBM3E로 대체\n줄어든 HBM4 물량은 HBM3E 및 서버용 LPDDR로 전환될 전망\n\n메모리 총 수요 감소보다는 제품 믹스 변화에 가까운 상황\n\n📌 시장 전망\n루빈 시리즈의 GPU 출하 비중은 29% → 22%로 감소 예상\n\n반면 블랙웰(Blackwell) 시리즈 비중은 61% → 71%로 확대되며 HBM3E 수요 증가 전망\n\n📌 출하 규모 변화\n기존 HBM4 출하 계획: 약 60억 GB\n\n조정 시: 20~30% 감소\n\nHBM3E 출하량은 기존 전망치인 80억 GB를 상회할 가능성\n\n📌 배경 요인\nHBM4 검증 기간, 네트워크 인터커넥트 전환\n\n전력 소비 증가, 액체 냉각 솔루션 최적화 등\n\n루빈 플랫폼의 기술적 과제가 양산 지연의 원인으로 지목\n\n📌 전략적 의미\nSK하이닉스가 HBM 시장 지배적 사업자로서\n\n엔비디아 플랫폼 변화에 따라 사업 전략을 유연하게 조정하는 모습\n\n제품 믹스 변화에 따라 수익성 영향은 추가 관찰 필요\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://zdnet.co.kr/view/?no=20260414110036",
+              "https://t.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/25106"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "16:35",
+            "text": "✅ “이제 구글 아니다”…메타, 광고 시장 1위 넘본다\n\nhttps://www.donga.com/news/Inter/article/all/20260414/133736355/2\n\n📌 시장 전망\n메타의 올해 광고 순이익은 약 2435억 달러로, 구글을 소폭 앞설 것으로 예상\n\n메타 성장률 24.1%, 구글은 11.9%에 그칠 전망\n\n📌 구글의 구조적 한계\n광고 매출의 70% 이상이 검색 광고에 의존\n\n아마존 등 전자상거래와 AI 챗봇(ChatGPT 등)으로 검색 트래픽 감소\n\n‘AI 개요’ 도입으로 사용자 편의성은 높아졌지만 광고 클릭률 감소 부작용\n\n미국 검색 광고 시장 점유율도 10년 만에 50% 이하(48%대)로 하락 전망\n\n📌 메타의 성장 전략\n검색 중심이 아닌 ‘발견형 광고(Discovery Ads)’ 전략 강화\n\n인스타그램 릴스 등 숏폼 콘텐츠 기반으로 자연스러운 광고 노출 확대\n\nAI를 활용한 자동 입찰·예산·타겟팅 최적화로 광고 효율 개선\n\n광고 투자 대비 ROI 약 20% 이상 향상된 것으로 평가\n\n📌 수익 구조 차이\n구글: 유튜브 등에서 창작자와 광고 수익을 공유하는 구조\n\n메타: 플랫폼 내 광고 삽입 비중이 높아 직접 수익화 효과가 큼\n\n📌 시장 구조\n메타·구글·아마존 등 3대 기업의 시장 점유율은 60% 이상으로 확대 전망\n\n이 가운데 메타가 AI 기반 광고 전략을 통해 한발 앞서 나가는 모습\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://www.donga.com/news/Inter/article/all/20260414/133736355/2",
+              "https://t.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/25107"
           }
         ]
       },
@@ -576,30 +579,6 @@
         "posts": [
           {
             "date": "2026-04-13",
-            "time": "23:28",
-            "text": "후지쿠라, 4Q25 실적 요약 5803.JP  ✅일본 최대 케이블(전선·광섬유) 벤더  3Q FY26 Results = USD/JPY : 148.7 (Prior. 152.6) = 매출 ¥295.9B (est. ¥299.8B) = GPM 29.4% (est. 28.3%) = OPM 17.6% (est. 17.4%)  FY26 Guidance = USD/JPY : 145.5 → 149.0 (Prior. 152.6) = 매출 ¥1,109B → ¥1,143B (est.…",
-            "links": [],
-            "post_url": "https://t.me/d_ticker/2942"
-          },
-          {
-            "date": "2026-04-13",
-            "time": "23:37",
-            "text": "골드만삭스, 1분기 M&A 관련 매출 90% 증가 $GS\n\n1Q FY26 Results\n= 매출 $17.23B (est. $16.97B)\n= 순이자수익 $3.56B (est. $3.52B)\n= 투자은행 부문 $2.84B (est. $2.42B) \n= M&A 자문 매출 YoY 90%\n= 주식 트레이딩 매출 $5.33B (est. $4.90B)\n= FICC(채권 등) 트레이딩 매출 $4.01B (est. $4.87B)\n\n주가는 3~4% 하락",
-            "links": [],
-            "post_url": "https://t.me/d_ticker/2943"
-          },
-          {
-            "date": "2026-04-13",
-            "time": "23:39",
-            "text": "라인메탈, 미사일 합작법인 설립 RHM.DE\n\n(Official) 독일의 최대 방산업체인 라인메탈과 네덜란드의 국방 기술 기업 데스티누스(Destinus)가 첨단 미사일 시스템 생산을 위한 합작법인(JV) 설립에 합의했다. JV 명칭은 ‘라인메탈 데스티누스 스트라이크 시스템즈’이며 2026년 하반기 설립된다. 지분 구조는 라인메탈 51%, 데스티누스 49%다. 라인메탈의 대규모 생산 능력과 데스티누스의 혁신적인 설계 기술이 합쳐진다. 이 회사는 첨단 순항 미사일과 탄도 로켓 포병 시스템 등을 제조할 예정이다.",
-            "links": [
-              "http://RHM.DE/",
-              "https://www.rheinmetall.com/en/media/news-watch/news/2026/04/2026-04-13-rheinmetall-and-destinus-form-joint-venture-for-missile-systems"
-            ],
-            "post_url": "https://t.me/d_ticker/2944"
-          },
-          {
-            "date": "2026-04-13",
             "time": "23:50",
             "text": "마이크로소프트, ‘오픈클로’ 영감 받아 코파일럿 개선한다 $MSFT\n\n(The Information) 마이크로소프트는 코파일럿이 단순한 텍스트 응답을 넘어, 사용자의 PC 화면을 직접 보고 이해하며 마우스 클릭이나 키보드 입력과 같은 동작을 수행하는 '디지털 에이전트'로 진화시키려 한다. 이는 오픈소스 프레임워크인 오픈클로의 접근 방식과 유사하다. 오픈클로는 LLM이 인간처럼 컴퓨터의 그래픽 사용자 인터페이스(GUI)를 조작할 수 있도록 돕는 기술이다. MS는 이를 참고하여 코파일럿이 여러 윈도우 앱을 넘나들며 복잡한 다단계 업무를 스스로 수행할 수 있는 환경을 구축하고 있다. 새로운 기능이 도입되면 코파일럿은 이메일로 받은 정보를 엑셀에 자동으로 정리하거나, 웹 브라우저에서 찾은 데이터를 특정 업무용 소프트웨어에 입력하는 등의 작업을 사용자의 조작 없이 직접 완수하게 된다. 이는 최근 앤스로픽이 공개한 '컴퓨터 유즈(Computer Use)' 기능과 궤를 같이한다.",
             "links": [
@@ -738,6 +717,34 @@
             "text": "스페이스X, ‘25년 주요 재무 데이터 보도  ■ Starlink - 매출 114억 달러(+50% YoY) - EBITDA 72억 달러(마진 63%) - FCF 30억 달러  ■ 로켓 발사 서비스 - 매출 41억 달러(+8% YoY) - EBTIDA 7억 달러(마진 17%) - FCF -30억 달러  ■ AI 사업(X 및 xAI) - 매출 32억 달러(+23% YoY) - EBTIDA -12억 달러(마진 -38%) - FCF -140억 달러  : X 매출(1Q~3Q25)…",
             "links": [],
             "post_url": "https://t.me/d_ticker/2961"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "15:34",
+            "text": "[단독] OCI홀딩스, 스페이스X에 폴리실리콘 공급\n\n(매일경제) 관련 업계에 따르면, OCI홀딩스 말레이시아 자회사 OCI테라서스(TerraSus)는 스페이스X와 폴리실리콘 다년 공급계약을 체결하기로 하고 세부 조건을 조율 중이다. 계약 규모와 기간 등에 대해서는 사실상 교섭이 끝난 상태로 파악된다. 최근 이우현 OCI홀딩스 회장이 말레이시아를 직접 찾아 계약 전반을 진두지휘한 것으로 알려졌다. 산업계에서는 약 1조원 규모로 3~5년 다년 공급계약을 유력하게 점친다. 지난해 말 기준 OCI테라서스의 태양광용 폴리실리콘 생산능력은 연 3만5000톤으로 최근 가동률은 약 90%(실생산량 3만1500톤)다. 이 가운데 기존 장기계약(한화 등) 배정분을 뺀 잔여 생산능력(Capa) 절반 정도가 스페이스X 몫으로 배정될 것으로 전해졌다.",
+            "links": [
+              "https://www.mk.co.kr/news/economy/12016163"
+            ],
+            "post_url": "https://t.me/d_ticker/2962"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "16:08",
+            "text": "* SK하이닉스, 올해 HBM4 줄이고 HBM3E, 서버디램 확대\n\n\n\n다만 줄어드는 SK하이닉스의 HBM4 물량은 이전 세대인 HBM3E와 서버용 D램 등으로 수요가 대체될 전망이다.\n\n시장조사업체 트렌드포스는 최근 발간한 보고서에서 \"HBM4 검증에 필요한 시간 외에도 네트워크 인터커넥트 전환과 전력 소비량 증가, 더 고도화된 액체 냉각 솔루션 최적화 등 여러 과제가 남아있다\"며 \"결과적으로 엔비디아의 고성능 GPU 출하량에서 루빈 시리즈가 차지하는 비중은 기존 29%에서 22%로 감소할 것으로 예상된다\"고 밝혔다.\n\n반면 엔비디아가 현재 가장 주력으로 양산 중인 '블랙웰(Blackwell)' 시리즈의 출하량 비중은 기존 61%에서 71%로 크게 늘어날 전망이다. 블랙웰은 HBM3E를 탑재한다.\n\n당초 SK하이닉스는 올해 엔비디아향으로 60억Gb(기가비트) 수준의 HBM4 출하를 계획했었다. 현재 논의되고 있는 이보다 20~30% 적은 수준이다. 감소되는 물량의 일부가 블랙웰 시리즈용으로 전환됨에 따라, HBM3E 물량도 당초 전망치인 80억Gb를 상회할 것으로 관측된다.\n\n\n\n** (위 내용을 사실로 전제하고)닉스의 올해 총 디램 마진은 상향조정되는 방향\n\n** HBM3E와 HBM4 마진은 비슷한 수준일 것이고(연초 닉스 피셜, \"HBM 마진은 전년 대비 유지) 서버디램 마진은 더 높아졌기 때문\n\n\nhttps://zdnet.co.kr/view/?no=20260414110036#_enliple",
+            "links": [
+              "https://zdnet.co.kr/view/?no=20260414110036#_enliple",
+              "https://zdnet.co.kr/view/?no=20260414110036"
+            ],
+            "post_url": "https://t.me/d_ticker/2963"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "16:26",
+            "text": "삼성전자, 평택 P5에 낸드 증설 투자 결정\n\nhttps://www.thebell.co.kr/front/newsview.asp?code=00&key=202604141533431160102114",
+            "links": [
+              "https://www.thebell.co.kr/front/newsview.asp?code=00&amp;key=202604141533431160102114"
+            ],
+            "post_url": "https://t.me/d_ticker/2964"
           }
         ]
       },
@@ -756,13 +763,6 @@
         "category": "국내 시장/종목 분석",
         "channel_url": "https://t.me/Yeouido_Lab",
         "posts": [
-          {
-            "date": "2026-04-13",
-            "time": "10:29",
-            "text": "안녕하세요, 알테오젠입니다.   피하주사제형 키트루다 관련하여 미국 내 지불기관에서 IV 청구를 거부하는 등 SC에 대한 전환을 촉진하는 움직임이 나타났다는 기사를 공유드립니다.   특히 해당 움직임은 J-code 발효 이전에 일어난 움직임으로 발효 후 좀 더 안정적인 전환이 이뤄질 것으로 기대됩니다.  또 유럽 승인 후 상업화도 순차적으로 진행되어 주요시장에서 sc제형 전환이 순조로울 예상입니다.   UBS 리포트를 인용한 이번 기사에서 키트루다 큐렉스는…",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/31166"
-          },
           {
             "date": "2026-04-13",
             "time": "10:29",
@@ -925,6 +925,16 @@
               "https://www.donga.com/news/Politics/article/all/20260414/133735281/1"
             ],
             "post_url": "https://t.me/Yeouido_Lab/31185"
+          },
+          {
+            "date": "2026-04-14",
+            "time": "16:49",
+            "text": "글로벌 신약 3상, 정부가 직접 투자한다…10년 이상 ‘초장기 펀드’도 신설\nhttps://www.khan.co.kr/article/202604141610011\n\n구체적으로는 우선 글로벌 임상 3상을 시도하는 기업에 직접투자·대출 방식으로 자금을 지원하기로 했다. 그동안 국내 제약사들이 임상 2상까지 마치고도 자금 부족으로 기술을 해외에 매각하는 사례가 반복돼 온 만큼, 상업화 직전 마지막 관문에 자본을 투입하겠다는 취지다.\n\n...\n\n2차 메가프로젝트에는 10조원 안팎의 자금이 투입될 예정이다. 빠르면 올 5~6월에 첫 투자가 이뤄진다. 현재 3~4곳의 바이오·제약 기업과 2곳의 디스플레이 기업이 투자 대상에 올라 있는 것으로 알려졌다. 강성호 국민성장펀드추진단 총괄과장은 “1차 메가프로젝트는 누가 봐도 첨단 산업이라 생각할 수 있는 프로젝트를 위주로 선정했다면, 2차에서는 신약개발처럼 실질적인 성과로 이어질 수 있는 기업에 주목했다”고 설명했다.",
+            "links": [
+              "https://www.khan.co.kr/article/202604141610011",
+              "https://www.khan.co.kr/article/202604141610011/?utm_source=khan_rss&amp;utm_medium=rss&amp;utm_campaign=total_news"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/31186"
           }
         ]
       },
