@@ -1,6 +1,6 @@
 {
   "2026-04-15": {
-    "fetched_at": "2026-04-15T11:54:29+09:00",
+    "fetched_at": "2026-04-15T14:28:52+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -235,6 +235,15 @@
             "text": "Anthropic은 최근 몇 주 동안 최대 8000억 달러의 기업 가치를 제안하는 여러 벤처캐피털 투자 제안을 받은 것으로 알려졌으며, 이는 2월의 3800억 달러 기업 가치의 두 배 이상에 달한다.",
             "links": [],
             "post_url": "https://t.me/survival_DoPB/13203"
+          },
+          {
+            "date": "2026-04-15",
+            "time": "14:25",
+            "text": "2분기 전망때문인듯하네요~ \n\nASML 미국 주식은 야간 거래에서 2% 이상 하락했고, 마이크론 테크놀로지는 야간 거래에서 1.7% 하락했으며, TSMC의 야간 상승률은 0.4%로 축소되었고, ASML은 연간 매출 가이던스를 상향 조정했으나, 2분기 전망은 예상보다 다소 낮았습니다.\n\n<🇨🇳중국주식반점(饭店) t.me/hinastockrestaurant8>",
+            "links": [
+              "http://t.me/hinastockrestaurant8"
+            ],
+            "post_url": "https://t.me/survival_DoPB/13204"
           }
         ]
       },
@@ -245,64 +254,6 @@
         "category": "산업/기술 분석",
         "channel_url": "https://t.me/growthresearch",
         "posts": [
-          {
-            "date": "2026-04-15",
-            "time": "08:24",
-            "text": "✅그로쓰리서치 반도체 소부장 채널 소개✅\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi\n\n안녕하세요 그로쓰리서치 입니다. \n\n저희가 반도체 소부장 채널을 오픈하게 되었습니다.\n\n📌AI 시대 핵심 산업인 반도체 밸류체인 중 소재·부품·장비(소부장) 영역에 특화된 리서치 채널입니다.\n\n📍메모리 / 파운드리 / 패키징 구조 해부\n\n📍HBM / CoWoS / TC본더 / EUV 등 핵심 공정 분석\n\n📍공급망 병목 포인트 분석\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
-            "links": [
-              "https://t.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/25115"
-          },
-          {
-            "date": "2026-04-15",
-            "time": "08:29",
-            "text": "🧬 릴리, ADC 전문 크로스브릿지 바이오 3억 달러에 인수\n릴리가 텍사스 휴스턴 기반 크로스브릿지 바이오(CrossBridge Bio) 인수 발표\n\n딜 규모: 총 3억 달러 (선급금·마일스톤 비율 비공개)\n\n2023년 창립 → 불과 3년 만에 빅파마 인수\n\n💊 크로스브릿지의 핵심 기술 — 듀얼 페이로드 ADC\n리드 프로그램: CBB-120 — TROP2 타깃 TOP1 저해제 + ATR 저해제 이중 페이로드\n\n기존 단일 페이로드 ADC 대비 두 가지 기전 동시 공격 → 내성 극복 가능성\n\n💊적응증: 고형암 전반 — 올해 임상 1상 진입 예정\n링커 기술: 다중 페이로드 부착 + 높은 안정성 차별화 포인트\n\nUT 휴스턴 헬스사이언스센터에서 기원한 기술\n\n💊 TROP2 ADC 경쟁 구도\nTROP2는 삼중음성유방암·대장암·췌장암·난소암·NSCLC 등 광범위한 고형암 발현\n\n기존 승인 제품의 한계(내성·독성) 극복이 CBB-120의 차별화 포인트\n\n빅파마들이 링커 기술력을 가진 소형 바이오텍을 플랫폼째 인수하는 트렌드 재확인\n\n인투셀 링커 기술 보유하고 있음.\n\n🧬바이오섹터 분석🧬 [그로쓰리서치]\nhttps://t.me/growthbio",
-            "links": [
-              "https://t.me/growthbio"
-            ],
-            "post_url": "https://t.me/growthresearch/25116"
-          },
-          {
-            "date": "2026-04-15",
-            "time": "08:31",
-            "text": "💻무라타 부품 가격 인상 + MLCC 시장 구조 분석 — 트렌드포스\n\n📍무라타가 칩 비드·인덕터 등 일부 부품 가격 인상 단행\n원인: 은·구리 등 금속 원자재 비용 급등 (다이요유덴에 이어 연속 인상)\n\nAI 수요가 소비재 수요를 구축(Crowding-out) 하는 효과 + 지정학 리스크 겹침\n\n공급업체들은 생산능력·재고 조정 중 → 원가 구조 점진적 안정화\n\n📍하이엔드 MLCC — 공급 타이트\n고전압·고용량 특수 사양 MLCC 수요 집중\n\nCSP(클라우드 서비스 공급자) 자체 칩 개발 가속\n\n구글·AWS·메타 인하우스 칩 → MLCC 수요 직접 창출\n\n공급 가능한 업체: 일본·한국 소수 업체로 제한 → 구조적 공급 제약\n\n결론: 일부 하이엔드 MLCC 선택적 가격 인상 가능성 존재\n\n🔥삼성전기 — 고전압·고용량 하이엔드 MLCC 핵심 공급자, 직접 수혜\n\n🔥무라타·다이요유덴·TDK — 가격 인상 선도, 마진 개선 흐름\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
-            "links": [
-              "https://t.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/25117"
-          },
-          {
-            "date": "2026-04-15",
-            "time": "08:40",
-            "text": "✅ \"K개미가 옳았다\"…외국인 '삼전닉스' 5조 풀베팅, 7500선 가시권에\n\nhttps://www.fnnews.com/news/202604150734046561\n\n📌 외국인 수급 전환\n4월 1일~14일 코스피 5조3730억원 순매수.\n\n2~3월 두 달간 56조원 순매도 이후 3개월 만에 ‘사자’로 전환.\n\n주간 기준으로도 순매도 → 순매수로 흐름 변화.\n\n📌 ‘삼전닉스’에 매수 집중\nSK하이닉스: 2조8730억원\n\n삼성전자: 1조9610억원\n\n➡️ 두 종목 합산 4조8340억원, 전체 순매수의 약 90% 차지.\n\n그 외: 한화에어로스페이스, 삼성전자우, 삼성SDI, 현대로템 순.\n\n📌 외국인 복귀 배경\n\n코스피 이익 모멘텀 강화:\n2026년 영업이익 컨센서스 772조원으로, 3월 말 대비 20% 상향.\n\n반도체 업황 개선 기대:\n메모리 산업의 ‘선수주-후생산’ 구조 진화 전망.\n\n삼성전자, 내년 글로벌 영업이익 1위 가능성 제기.\n\nSK하이닉스도 영업이익 순위 상승 예상.\n\n지정학적 리스크 완화:\n미국–이란 휴전 합의로 투자심리 개선.\n\n📌 코스피 전망\n반도체 중심의 실적 개선 사이클 진입.\n\n증권가에서는 코스피 7500선 가시권 진입 전망.\n\n📌 리스크 요인\n원·달러 환율: 1400원 이상 지속 시 외국인 매수 제약 가능성.\n\n이익 모멘텀 지속성:\nHBM 경쟁 심화.\n\nAI 설비투자(CAPEX) 성장 둔화 우려.\n\n에너지 가격 및 인플레이션, 지정학적 리스크.\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://www.fnnews.com/news/202604150734046561",
-              "https://t.me/growthresearch",
-              "https://www.fnnews.com/news/202604150734046561?utm_medium=referral&amp;utm_source=dunamu&amp;utm_campaign=dunamu.co.kr"
-            ],
-            "post_url": "https://t.me/growthresearch/25118"
-          },
-          {
-            "date": "2026-04-15",
-            "time": "08:56",
-            "text": "✅일론머스트의 궤도 AI데이터 센터와 대주전자재료 HJT 부각\n\n머스크의 위성 데이터센터가 구체화될수록 대주전자재료의 HJT는 부각받을 가능성이 높음.\n\n📍머스크: \"태양광 AI 위성 연 100GW는 AI 컴퓨터 연 100GW를 필요로 한다\"\n스페이스X, FCC에 궤도 데이터센터 전용 대규모 위성 군집 운용 허가 신청 완료\n\n우주 공간에 태양광 패널 탑재 AI 위성을 대규모로 배치\n\n목표 규모: 연 100GW — 미국 전체 전력 생산의 약 25% 수준\n\n📍HJT(이종접합 태양전지) = 결정질 실리콘 위에 비정질 실리콘막을 코팅하는 방식\n\n200도 이하 저온 공정 → 공정 비용 저렴\n\n구리 페이스트 사용 가능 — 은 가격 급등 상황에서 핵심 원가 절감 요인\n\n경쟁 기술 GaAs: 장당 양산 비용 3,000달러 vs HJT: 2달러 수준\n\n현재 상용화된 실리콘 태양전지 중 발전 효율 최고 + 온도 변화·방사선에도 효율 유지\n\n우주태양광 프로젝트에서 HJT가 사실상 유일한 현실적 선택지로 부상\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/25119"
-          },
-          {
-            "date": "2026-04-15",
-            "time": "09:08",
-            "text": "💻삼성전자, HBM4용 D램 수율 개선 총력전… \"하반기 중 완성 단계 목표\"\n\nhttps://biz.chosun.com/it-science/ict/2026/04/15/JG4NUPA6SFDVTISQZK3NIKXHNY\n\n📍1c D램 수율 성과\n10나노 6세대(1c) D램 수율이 최근 성숙 수율(80% 이상)에 도달한 것으로 평가\n\n첨단 D램 공정 안정화의 긍정적인 신호로 해석\n\n📍 HBM4 실효 수율은 아직 과제\nHBM4용 D램의 실효 수율은 60% 미만으로 추정\n\n적층, 패키징, 발열 제어, 신호 안정성 등 추가 공정으로 인해 범용 D램보다 난도가 높음\n\n올 하반기 수율 완성 단계 진입을 목표로 개선 작업 진행 중\n\n📍수율이 경쟁력의 핵심\nHBM 시장에서는 초기 진입보다 안정적인 대량 공급 능력이 더 중요\n\n낮은 수율은 생산량 확보와 수익성 악화로 이어질 가능성\n\n📍비용 구조와 전략적 의미\n삼성은 경쟁사 대비 더 많은 EUV 레이어를 사용해 공정 복잡도와 비용 부담 높음\n\n수율 안정화가 원가 경쟁력 확보와 시장 점유율 확대의 핵심 변수로 작용\n\n📍시장 경쟁 구도\nHBM4 성능을 앞세워 SK하이닉스와의 주도권 경쟁이 본격화\n\n1c D램 수율 개선은 공정 정상화의 신호이며,\n\nHBM4 실효 수율 확보가 AI 메모리 시장 주도권을 좌우할 전망\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
-            "links": [
-              "https://biz.chosun.com/it-science/ict/2026/04/15/JG4NUPA6SFDVTISQZK3NIKXHNY",
-              "https://t.me/growth_semi",
-              "https://biz.chosun.com/it-science/ict/2026/04/15/JG4NUPA6SFDVTISQZK3NIKXHNY/"
-            ],
-            "post_url": "https://t.me/growthresearch/25122"
-          },
           {
             "date": "2026-04-15",
             "time": "09:24",
@@ -405,6 +356,69 @@
               "https://t.me/growthresearch"
             ],
             "post_url": "https://t.me/growthresearch/25134"
+          },
+          {
+            "date": "2026-04-15",
+            "time": "12:18",
+            "text": "✅ DRAM 슈퍼사이클 조기 종료론 반박 — SOCAMM 수요 폭탄\n\n📌 엔비디아 플랫폼별 SOCAMM 수요 급증\n- GB200: 17TB SOCAMM2 탑재\n- VR200: 50TB+ SOCAMM2 탑재 — GB200 대비 3배 이상\n- VR300: 220TB SOCAMM 탑재 — VR200 대비 4배 이상\n- VR300 HBM4E 1TB에만 주목하는 시각 → SOCAMM 220TB라는 진짜 수요 폭탄 간과\n\n📌 LPDDR5X 공급망 파급\n엔비디아가 AI 서버용으로 LPDDR5X 대규모 흡수 시작\n\n스마트폰 OEM들 이미 패닉 바잉 돌입\n\nVR300 양산 본격화 시 LPDDR 부족이 스마트폰 생산 자체를 제약하는 수준 도달 가능\n\nAI 서버 vs 스마트폰 간 LPDDR 쟁탈전 본격화 예고\n\n📌 슈퍼사이클 지속 근거 재정리\nSilicon Motion CEO: 공급 완화 시점 빨라도 2027년 하반기\n\nCounterpoint: 삼성·SK하이닉스 보수적 CapEx 기조 유지 — 공급 증가 억제\n\nSOCAMM 수요: GB200 → VR200 → VR300으로 세대별 3~4배 급증 구조\n\nHBM + LPDDR + NAND 전 메모리 품목 동시 타이트 — 단일 품목 사이클 아님\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
+            "links": [
+              "https://t.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/25135"
+          },
+          {
+            "date": "2026-04-15",
+            "time": "12:23",
+            "text": "✅일론머스트의 궤도 AI데이터 센터와 대주전자재료 HJT 부각  머스크의 위성 데이터센터가 구체화될수록 대주전자재료의 HJT는 부각받을 가능성이 높음.  📍머스크: \"태양광 AI 위성 연 100GW는 AI 컴퓨터 연 100GW를 필요로 한다\" 스페이스X, FCC에 궤도 데이터센터 전용 대규모 위성 군집 운용 허가 신청 완료  우주 공간에 태양광 패널 탑재 AI 위성을 대규모로 배치  목표 규모: 연 100GW — 미국 전체 전력 생산의 약 25% 수준 …",
+            "links": [],
+            "post_url": "https://t.me/growthresearch/25136"
+          },
+          {
+            "date": "2026-04-15",
+            "time": "12:50",
+            "text": "🚨속보 : 베센트 재무장관 \"중국, 이란산 원유 수입 불가\" 선언\n\n📌 핵심 내용\n미국 재무장관 스콧 베센트, \"중국은 더 이상 이란산 원유를 공급받을 수 없다\" 공식 선언\n\n호르무즈 봉쇄 + 대이란 제재 실질적 집행 의지 재확인\n\n중국 제재 유조선 해협 통과 도전에 대한 직접적 경고 메시지\n\n📌 중국에 대한 파급\n이란산 원유, 중국 전체 원유 수입의 약 10~15% 추정\n\n대체 공급원 확보 필요 — 사우디·러시아·UAE 등으로 즉각 전환 압박\n\n이란산 대비 프리미엄 가격 부담 불가피 → 중국 제조업 원가 상승\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://t.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/25137"
+          },
+          {
+            "date": "2026-04-15",
+            "time": "12:58",
+            "text": "🧬 FDA, 맞춤형 유전자치료 안전성 가이드라인 초안 공개\n\n💊핵심 내용\n FDA CBER, 게놈 편집 치료제 오프타깃(off-target) 안전성 평가 초안 가이드라인 발표\n\n차세대 염기서열 분석(NGS) 기술 활용 → 유전자치료 비의도적 편집 결과 표준화 목표\n\nEx vivo·In vivo 제품 모두 적용 — IND·BLA 신청 시 비임상 연구 지원\n\n염기서열 분석 전략·샘플 선택·분석 파라미터 구체적 권고사항 포함\n\n💊맞춤형 치료제 규제 프레임워크 강화\n2026년 2월 발표한 초희귀 질환 맞춤형 치료 가속 경로(Bespoke Therapy Pathway) 후속 조치\n\n세계 최초 맞춤형 CRISPR 치료를 받은 '아기 KJ' 사례 공식 프레임워크화\n\n유전자 편집 + RNA 기반 치료제 모두 포함\n\n희귀 질환 아동 1,500만 명 중 FDA 승인 치료제 없는 환자 대다수 → 접근성 확대 기대\n\n💊규제 기관 동향\nVinay Prasad CBER 국장, 이달 말 퇴임 예정 — 재임 중 논란 지속\n\nMarty Makary FDA 커미셔너: \"오프타깃 리스크 평가에 명확한 과학적 권고 제공\" 강조\n\nFDA, 최근 희귀 질환 관련 예상 외 규제 결정·자문위 미개최 등으로 비판 직면 중\n\n초안에 대한 공개 의견 수렴 진행 중\n\n🧬바이오섹터 분석🧬 [그로쓰리서치]\nhttps://t.me/growthbio",
+            "links": [
+              "https://t.me/growthbio"
+            ],
+            "post_url": "https://t.me/growthresearch/25138"
+          },
+          {
+            "date": "2026-04-15",
+            "time": "13:31",
+            "text": "✅ 대주전자재료에 대한 자세한 사업내용은 \n\n저희가 4월 2일 발간한 리포트에 정리해두었습니다.\n\n3월 16일에 직접 탐방 다녀와서, 작성한 리포트입니다. \n\n대주전자재료 탐방 보고서를 참고하셔서\n투자에 유익한 인사이트를 얻어가시길 바랍니다.\n\n🔥 대주전자재료 탐방보고서 다시보기\nhttps://contents.premium.naver.com/growthresearch/growth/contents/260401190252329pm\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://contents.premium.naver.com/growthresearch/growth/contents/260401190252329pm",
+              "https://t.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/25139"
+          },
+          {
+            "date": "2026-04-15",
+            "time": "14:09",
+            "text": "🧬바이오솔루션 카티라이프, 中하이난 품질 평가 통과…의미는?\n\nhttps://www.edaily.co.kr/News/Read?newsId=03899926645416448&mediaCodeNo=257&OutLnkChk=Y\n\n💊핵심 내용\n자가 연골세포치료제 카티라이프(CartiLife), 중국 하이난 현지 GMP 시설 생산 제품 동등성 평가 전 항목 통과\n\n평가 기준: 중국·유럽 약전 기준 무균·마이코플라스마·내독소·세포 특성 등 핵심 품질 지표\n\n2-A·2-B·3·4세대 완제품 전 세대 동일 QC 패널 통과 — 제조 공정 안정성·재현성 입증\n\n국내 허가 제품과 중국 현지 생산 제품 간 품질 동등성 확보 → 추가 임상 없이 상업화 절차 추진 가능\n\n💊하이난 상업화 진행 현황\n2025년 11월 하이난 의료관리국 화이트리스트 등재 (사용 승인) 완료\n\n2026년 1월 하이난 3급 병원 GMP 시설 시생산 착수\n\n현재 판매 승인을 위한 종합심사·행정 절차 마무리 단계 진입\n\n판매 승인 후 현지 파트너 통해 시술 병원 확대 계획\n\n💊하이난 교두보의 전략적 의미\n하이난 = 중국 NMPA 정식 허가 전 해외 혁신 의약품 조기 상업화 가능 규제 완화 특구\n\n하이난 생산 의약품 일부 중국 타 지역 유통 가능 — 본토 침투 경로 확보\n\n화이트리스트 등재 = 국가 차원 인증 → NMPA 허가 심사 시 긍정적 영향 기대\n\n하이난 리얼월드 데이터(RWD) 축적 → 중국 본토 허가 핵심 근거 확보 구조\n\n🧬바이오섹터 분석🧬 [그로쓰리서치]\nhttps://t.me/growthbio",
+            "links": [
+              "https://www.edaily.co.kr/News/Read?newsId=03899926645416448&amp;mediaCodeNo=257&amp;OutLnkChk=Y",
+              "https://t.me/growthbio"
+            ],
+            "post_url": "https://t.me/growthresearch/25141"
+          },
+          {
+            "date": "2026-04-15",
+            "time": "14:19",
+            "text": "💻DRAM 시장 수요 구조 분석 — AI가 전방위 수요 견인\n\n📍수요 성장 핵심 동인\nCSP(클라우드 서비스 업체)의 CapEx 대규모 확대 → HBM·고용량 DDR5·LPDDR5 수요 폭증\n\nAI 애플리케이션, 클라우드에서 엣지 AI로 확장 — 맞춤형 메모리 솔루션 의존도 심화\n\n엣지 AI 확산 = 스마트폰·PC·자동차·IoT 전 영역 LPDDR5X 수요 추가 자극\n\n📍세그먼트별 온도차\n저가 소비자 제품 수요 약세 — 메모리 가격 상승에 따른 OEM 부담 반영\n\n고사양 PC·플래그십 스마트폰 수요 안정적 유지\n\nAI 서버·데이터센터 수요 압도적 강세 — 전체 시장 수요 구조 재편 주도\n\n📍맞춤형 메모리 트렌드\n단순 범용 DRAM → 용도 특화 커스텀 솔루션 으로 수요 진화\n\nHBM4·SOCAMM·LPDDR5X 등 프리미엄 품목 중심 공급 타이트 가속\n\nVR200(50TB) → VR300(220TB) SOCAMM 수요 급증 — 엔비디아 플랫폼 세대 교체마다 수요 배증 구조\n\n📍장기 전망\nDRAM 시장 전반 수요 견조 + 장기 긍정적 아웃룩 유지\n\n공급 확대 가시화 시점 2027년 하반기 — 그 전까지 수급 타이트 지속\n\nAI 클라우드 + 엣지 AI 이중 수요 엔진 구조 정착 — 단일 사이클 논리로 설명 불가\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
+            "links": [
+              "https://t.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/25142"
           }
         ]
       },
@@ -415,13 +429,6 @@
         "category": "매크로/크립토",
         "channel_url": "https://t.me/SpartanResearch",
         "posts": [
-          {
-            "date": "2026-04-12",
-            "time": "22:56",
-            "text": "#펩트론\n\n시장도 안 좋고 개별 이슈도 없는데 200일선 근처에서 계속 반등이 나와줌\n\n현재 200일선 근처로 반등 나올 자리 왔다고 보는데 그 재료가 화요일부터 시작되는 HSBC IR이 될 수 있을 것으로 봄 \n\n펀더랑 별개로 그냥.. 애초에 대표 말 한마디로 상한가 가는 종목이니 장단에 놀아나주는 플레이",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/3260"
-          },
           {
             "date": "2026-04-12",
             "time": "23:02",
@@ -539,6 +546,16 @@
             "text": "제 생각에는 써클 주가에서 핵심 동인은 개인 기반의 USDC 유통량 증가(예금 이자 목적)보다 AI Agent의 결제 시스템에서 USDC > USDT 그림이 유지되는 것인 듯 합니다.  전자는 P2P 송금/결제 시장을 먹는 것이라면, 후자는 B2B 송금/결제 시장을 먹는 것이기에 파이가 훨씬 크다고 생각합니다.   >> BCG 리포트 참고  BCG Report - Stablecoin Payments: The Truth Behind the Numbers (26.01)…",
             "links": [],
             "post_url": "https://t.me/SpartanResearch/3279"
+          },
+          {
+            "date": "2026-04-15",
+            "time": "13:41",
+            "text": "2026.04.15 09:30:19\n기업명: 코나아이(시가총액: 8,578억) A052400\n보고서명: 연결재무제표기준영업(잠정)실적(공정공시)\n\n매출액 : 766억(예상치 : -)\n영업익 : 246억(예상치 : -)\n순이익 : -(예상치 : -)\n\n**최근 실적 추이**\n2026.1Q 766억/ 246억/ -\n2025.4Q 904억/ 288억/ 199억\n2025.3Q 933억/ 302억/ 300억\n2025.2Q 672억/ 172억/ 156억\n2025.1Q 583억/ 127억/ 90억\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260415900107\n회사정보: https://finance.naver.com/item/main.nhn?code=052400",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260415900107",
+              "https://finance.naver.com/item/main.nhn?code=052400"
+            ],
+            "post_url": "https://t.me/SpartanResearch/3280"
           }
         ]
       },
@@ -549,40 +566,6 @@
         "category": "매매 신호/트레이딩",
         "channel_url": "https://t.me/d_ticker",
         "posts": [
-          {
-            "date": "2026-04-14",
-            "time": "07:43",
-            "text": "크레도, 더스트포토닉스 인수 $CRDO\n\n(Official) 데이터센터 연결장치 전문 크레도가 실리콘 포토닉스(SiPho) 종류인 광집적회로(PIC)를 개발하는 팹리스 더스트포토닉스(DustPhotonics)를 인수하기로 합의했다. 현금 $750M와 크레도 보통주 약 92만 주를 선지급하며, 향후 재무 성과에 따라 약 321만 주를 추가 지급한다. 2026년 2분기 중 완료될 것으로 예상된다. 크레도의 기존 강점인 SerDes(신호 직렬·병렬화) 및 DSP(디지털 신호 처리) 기술에 더스트포토닉스의 실리콘 포토닉스 PIC 기술을 결합한다. 크레도는 이번 인수로 FY27 광학 부문 매출이 $500M를 상회할 것으로 전망했다. \n\n크레도는 △광트랜시버 △광학 DSP △액티브 광학 케이블(ALC) 등 기존 광통신 포트폴리오가 있습니다. 이 제품들에 탑재되는 PIC를 내재화하기 위해 더스트포토닉스 인수를 결정한 것입니다.\n\nAfter +11%",
-            "links": [
-              "https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Agrees-to-Acquire-DustPhotonics-Accelerating-Expansion-into-Silicon-Photonics-and-Next-Generation-Optical-Connectivity/default.aspx"
-            ],
-            "post_url": "https://t.me/d_ticker/2953"
-          },
-          {
-            "date": "2026-04-14",
-            "time": "07:50",
-            "text": "UL솔루션즈는 제품 시험·인증(TIC) 분야에서 독보적인 기업입니다. 애초에 역사가 100년이 넘었으니까요. 오픈AI처럼 비영리 연구기관으로 100년 넘게 운영되다가 영리 사업을 전담하는 UL솔루션즈를 뒤늦은 2024년에 상장했습니다.  사업 자체는 AI 관련 새로운 기술과 제품이 쏟아지면서 강력한 성장 국면에 있는 것은 분명합니다. 심지어 기존에 약했던 SW 영역인 AI 모델까지 안전성 시험 표준을 수립하려고 합니다.   다만 맨파워와 사이트 기반의 사업이다…",
-            "links": [],
-            "post_url": "https://t.me/d_ticker/2954"
-          },
-          {
-            "date": "2026-04-14",
-            "time": "08:04",
-            "text": "삼성D, 애플 폴더블 패널 6월 하순 양산 돌입\n\n(지디넷코리아) 삼성디스플레이가 애플의 첫번째 폴더블 제품 유기발광다이오드(OLED)를 6월 하순부터 양산할 계획인 것으로 13일 파악됐다. 폴더블 OLED는 7월부터 출하할 수 있다. 삼성디스플레이는 올해 말까지 애플 폴더블 패널을 800만~900만대 생산할 계획인 것으로 알려졌다. 완제품 기준 700만~800만대를 만들 수 있는 물량이다. 완제품 조립과정에서 생산수율 등을 고려하기 때문에 일반적으로 패널 출하량이 완제품 물량보다 많다.\n\n요새 삼성 계열사가 다 상황이 좋은 느낌(전기, 디스플레이, SDI 등등)",
-            "links": [
-              "https://n.news.naver.com/article/092/0002418500?type=journalists"
-            ],
-            "post_url": "https://t.me/d_ticker/2955"
-          },
-          {
-            "date": "2026-04-14",
-            "time": "08:07",
-            "text": "SK온, 美서 ESS 잇단 러브콜…1조 추가 수주 노린다\n\n(서울경제) 13일 배터리 업계에 따르면 SK온은 플랫아이언 등 복수 고객사와 ESS 배터리 공급계약을 논의하고 있다. 배터리 공급 규모는 10GWh 이상이며 매출액으로 환산하면 1조~1조 2000억 원 수준으로 추산된다. 회사 측은 이르면 2분기 본계약 체결을 기대하고 있다. 앞서 SK온은 지난해 9월 플랫아이언과 처음으로 1GWh 규모의 리튬·인산·철(LFP) ESS 배터리 공급계약을 체결하면서 6.2GWh 규모의 에너지 개발 프로젝트에 대한 우선공급 협상권을 확보한 바 있다. SK온이 협의 중인 수주 프로젝트를 모두 확보할 경우 올해 글로벌 ESS 배터리 수주 목표치인 20GWh의 절반을 채우게 된다.",
-            "links": [
-              "https://n.news.naver.com/article/011/0004610210?type=journalists"
-            ],
-            "post_url": "https://t.me/d_ticker/2956"
-          },
           {
             "date": "2026-04-14",
             "time": "09:25",
@@ -717,6 +700,39 @@
               "https://about.fb.com/news/2026/04/meta-partners-with-broadcom-to-co-develop-custom-ai-silicon/"
             ],
             "post_url": "https://t.me/d_ticker/2972"
+          },
+          {
+            "date": "2026-04-15",
+            "time": "13:40",
+            "text": "🍜 MSG 회사가 AI 칩의 병목? — Ajinomoto ABF, 95% 독점의 톨게이트\n\nAjinomoto = 117년 된 일본 MSG(감칠맛 조미료) 회사.\n그런데 이 회사가 만드는 ABF(Build-up Film)가 AI 칩의 핵심 소재.\n\n📌 ABF란?\n첨단 반도체 패키지 내부의 절연 필름. Nvidia Blackwell, AMD MI300 등 AI 칩의 칩렛 적층/연결에 필수. 고성능 칩일수록 더 많은 ABF 필요.\n시장점유율: ~95%. 사실상 독점.\n\n⚠️ 병목 우려\nAI 칩 수요 폭발 → ABF 수요 동반 급증\nAjinomoto: 2030년까지 $1.5억 투자, 생산능력 +50% 계획\n투자자 의문: 이 투자가 수요 증가 속도를 따라갈 수 있나?\n다른 투자자들: 95% 점유율 활용해 가격 대폭 인상하라고 압박 중\n\n🔗 AI 밸류체인 병목 연쇄도\n시리즈에서 분석한 AI 5대 병목:\n① 에너지 — 데이터센터 전력 (배터리/원자력)\n② 소재 — ABF 절연 필름 (이 글)\n③ 지정학 — 헬륨 공급, 호르무즈 (이란전쟁)\n④ 인력 — AI 엔지니어 부족 (고용시장)\n⑤ 자본 — $6,000억 투자 vs 매출 둔화 (OpenAI)\n병목은 GPU→HBM→CoWoS→ABF로 순차 이동 중. 한 병목 해소 → 다음 병목 노출.\n\n📊 Ajinomoto 투자 포인트\nBull: 95% 점유율 = 극강 해자 + 가격 인상 여력 + 식품/헬스케어가 방어적 기저수익\nBear: ABF는 전체 매출의 일부 (복합기업 할인) + 고객의 대체재 개발 인센티브 + 일본 거버넌스 이슈\n핵심: 숨겨진 톨게이트는 주목받지 않을 때 가장 저렴하다. 대부분의 투자자가 AI 밸류체인을 Nvidia-TSMC-ASML로만 보지만, 95% 독점의 MSG 회사는 그 목록에 없다.\n\n본문확인 \n\n🌩 도움되셨다면 🐳 부탁드립니다!\n🌩 블로그에는 다양한 글이 있습니다. 방문하시면 좋은 아이디어를 얻으실 수 있습니다.\n🌩 문의는 블로그 댓글에 달아주시기 바랍니다.\n🌩 모든 게시글은 투자 판단의 근거로 삼을 수 없으며 투자 판단의 책임은 투자자 본인에게 있습니다.\n\n📱 카카오페이, 네이버페이를 이용한 음료 한 잔 후원하기\n🌩후원하기",
+            "links": [
+              "https://blog.naver.com/opushk/224253172183",
+              "https://litt.ly/fundeasy"
+            ],
+            "post_url": "https://t.me/d_ticker/2973"
+          },
+          {
+            "date": "2026-04-15",
+            "time": "13:41",
+            "text": "🍜 MSG 회사가 AI 칩의 병목? — Ajinomoto ABF, 95% 독점의 톨게이트  Ajinomoto = 117년 된 일본 MSG(감칠맛 조미료) 회사. 그런데 이 회사가 만드는 ABF(Build-up Film)가 AI 칩의 핵심 소재.  📌 ABF란? 첨단 반도체 패키지 내부의 절연 필름. Nvidia Blackwell, AMD MI300 등 AI 칩의 칩렛 적층/연결에 필수. 고성능 칩일수록 더 많은 ABF 필요. 시장점유율: ~95%. 사실상…",
+            "links": [],
+            "post_url": "https://t.me/d_ticker/2974"
+          },
+          {
+            "date": "2026-04-15",
+            "time": "13:51",
+            "text": "삼성SDS가 AI 인프라 확장을 위해 KKR과 전략적 파트너십을 체결했습니다.\n\n글로벌 사례에서 자주 보다시피 CSP와 PE의 공동 투자는 흔한 일이며, CSP 입장에서는 자금 조달 부담을 줄일 수 있고 PE는 고수익을 보장하는 대체투자자산을 확보할 수 있게 됩니다.\n\n양사는 삼성SDS의 현금 6.4조원까지 활용할 계획이라고 밝힌 것을 보면 한 데이터센터 사이트로 끝날 것 같지는 않습니다. 삼성SDS는 해남 ‘국가 AI 컴퓨팅 센터’와 구미 ‘AI 데이터센터’를 구축 중입니다. \n\n다만 국내 AI 수요가 클지 생각해보면 이 투자 로드맵에 의문이 들긴 합니다. 현 글로벌 AI 수요도 대부분 미국에서 발생하며, 유럽·일본 같은 선진국도 아직 한참 낮은 것으로 알고 있습니다. 그러나 삼성SDS는 아시아 AI 허브로서 범아시아 수요를 노릴 가능성이 높아 보이긴 합니다.\n\nhttps://www.samsungsds.com/kr/news/kkr-260415.html",
+            "links": [
+              "https://www.samsungsds.com/kr/news/kkr-260415.html"
+            ],
+            "post_url": "https://t.me/d_ticker/2975"
+          },
+          {
+            "date": "2026-04-15",
+            "time": "14:18",
+            "text": "ASML, 1Q26 실적 발표 $ASML\n\n1Q FY26 Results\n= EUV 판매량 16대 (Prev. 14대)\n= 매출 €8.77B (est. €8.68B)\n= GPM 53.0% (est. 52.1%)\n= OPM 36.0% (est. 35.0%)\n= EPS €7.15 (est. €6.62)\n\n2Q FY26 Guidance\n= 매출 €8.4~9.0B (est. €9.1B)\n= GPM 51~52% (est. 52.4%)\n\nFY26 Guidance\n= 매출 €36~40B (est. €37.90B)\n= GPM 51~53% (est. 52.6%)\n= 법인세율 17% (Prior. 17.7%)",
+            "links": [],
+            "post_url": "https://t.me/d_ticker/2976"
           }
         ]
       },
@@ -735,32 +751,6 @@
         "category": "국내 시장/종목 분석",
         "channel_url": "https://t.me/Yeouido_Lab",
         "posts": [
-          {
-            "date": "2026-04-15",
-            "time": "08:42",
-            "text": "2026.04.15 08:40:13\n기업명: 삼성에스디에스(시가총액: 11조 7,227억) A018260\n보고서명: 주요사항보고서(전환사채권발행결정)\n\n발행금액 : 12,200억(전체대비 : 8.06%)\n발행방법 : 사모\n전환가액 : 180,000원(현재가 : 132,768원)\n최저조정 : -\n표면이율 : 2.5%\n만기이율 : 2.5%\n\n납입일자 : 2026-04-30\n청구시작 : 2027-04-30\n청구종료 : 2032-04-23\n\n* 투자자\nStartech AI L.P.\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260415000014\n회사정보: https://finance.naver.com/item/main.nhn?code=018260",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260415000014",
-              "https://finance.naver.com/item/main.nhn?code=018260"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/31198"
-          },
-          {
-            "date": "2026-04-15",
-            "time": "08:43",
-            "text": "2026.04.15 08:40:13 기업명: 삼성에스디에스(시가총액: 11조 7,227억) A018260 보고서명: 주요사항보고서(전환사채권발행결정)  발행금액 : 12,200억(전체대비 : 8.06%) 발행방법 : 사모 전환가액 : 180,000원(현재가 : 132,768원) 최저조정 : - 표면이율 : 2.5% 만기이율 : 2.5%  납입일자 : 2026-04-30 청구시작 : 2027-04-30 청구종료 : 2032-04-23  * 투자자 Startech…",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/31199"
-          },
-          {
-            "date": "2026-04-15",
-            "time": "08:56",
-            "text": "2026.04.15 08:40:13 기업명: 삼성에스디에스(시가총액: 11조 7,227억) A018260 보고서명: 주요사항보고서(전환사채권발행결정)  발행금액 : 12,200억(전체대비 : 8.06%) 발행방법 : 사모 전환가액 : 180,000원(현재가 : 132,768원) 최저조정 : - 표면이율 : 2.5% 만기이율 : 2.5%  납입일자 : 2026-04-30 청구시작 : 2027-04-30 청구종료 : 2032-04-23  * 투자자 Startech…",
-            "links": [
-              "https://www.smarttoday.co.kr/ko-kr/articles/106500"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/31200"
-          },
           {
             "date": "2026-04-15",
             "time": "08:58",
@@ -886,6 +876,31 @@
               "https://finance.naver.com/item/main.nhn?code=095700"
             ],
             "post_url": "https://t.me/Yeouido_Lab/31218"
+          },
+          {
+            "date": "2026-04-15",
+            "time": "13:25",
+            "text": "‘다음 주도주는 누구?’…증권가가 찍은 5대 업종은 [종전 후 새 주도주 찾는 증시③]\nhttps://www.etoday.co.kr/news/view/2575621",
+            "links": [
+              "https://www.etoday.co.kr/news/view/2575621"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/31219"
+          },
+          {
+            "date": "2026-04-15",
+            "time": "14:12",
+            "text": "[속보]강훈식 \"원유·나프타 호르무즈 무관 대체공급선서 확보…국내 수급 안정 기여\"\nhttps://www.newsis.com/view/NISX20260415_0003592350",
+            "links": [
+              "https://www.newsis.com/view/NISX20260415_0003592350"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/31220"
+          },
+          {
+            "date": "2026-04-15",
+            "time": "14:21",
+            "text": "[ ASML Q1 2026 실적 발표 ]\n\n▎Q1 실적 요약 (vs 컨센서스)\n\n매출: €8.77B ✅ (컨센 €8.6B / 가이던스 €8.2–8.9B)\nGross Margin: 53.0% ✅ (가이던스 상단 hit)\nNet Income: €2.76B\nEPS: €7.15 ✅ (컨센 €6.57, +9% beat)\n\n▎FY2026 가이던스 상향 🔺\n\n매출: €36–40B (기존 €34–39B)\n→ 하단 €2B 상향, 상단 €1B 상향\n→ 컨센 €37.6B이 신규 레인지 정중앙\nGross Margin: 51–53% (유지)\n\n▎Q2 2026 가이던스\n\n매출: €8.4–9.0B\nGross Margin: 51–52%\n\n▎주요 포인트\n① IBM(서비스/업그레이드) 매출 €2.49B, QoQ +17% — 설치기반 사이클 강세 지속\n② 신규 시스템 출하 67대 (Q4 94대) — 분기별 delivery 스케줄 차이\n③ CEO: \"고객들이 단·중기 수요 전망을 상향, 주문 흐름 매우 강함\"\n④ CEO: \"수출규제 관련 잠재적 결과도 2026 가이던스 밴드 내 수용 가능\"\n⑤ 자사주 매입 Q1 ~€1.1B 집행 (2026–2028 프로그램)\n⑥ 2025년 배당 €7.50/주 확정 (YoY +17%)\n\n▎컨콜: 오늘 22:00 KST\n\n▎소결론 : 올해 상반기는 당장 실적이 튀기는 어려운 구조였음에도 다음 분기 가이던스 하단이 상당히 올라오고 상단도 소폭 상승한 점은 긍정적이었습니다. 컨콜에서 전반적인 업황 과 내년 뷰를 제시해주는지 잘 듣는게 중요할 것 같습니다!",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/31221"
           }
         ]
       },
@@ -904,22 +919,6 @@
         "category": "매크로 분석",
         "channel_url": "https://t.me/kkkontemp",
         "posts": [
-          {
-            "date": "2026-04-06",
-            "time": "11:01",
-            "text": "*IRAN MEDIATORS MAKE LAST-DITCH PUSH FOR 45-DAY CEASEFIRE: AXIOS\n\n*이란 중재단, 45일간의 휴전 확보 위해 막판 노력: 악시오스",
-            "links": [],
-            "post_url": "https://t.me/kkkontemp/2257"
-          },
-          {
-            "date": "2026-04-06",
-            "time": "17:29",
-            "text": "미국의 에너지 패권 완성, 다음은 달러 약세?\nhttps://m.blog.naver.com/kk_kontemp/224242832564",
-            "links": [
-              "https://m.blog.naver.com/kk_kontemp/224242832564"
-            ],
-            "post_url": "https://t.me/kkkontemp/2258"
-          },
           {
             "date": "2026-04-07",
             "time": "07:44",
@@ -1029,6 +1028,20 @@
             "text": "이제부터 매크로와 시장 구조를 읽은자들의 수익률 극대화 구간 (초반 매도 러시 끝나고) \n\naka 뉴 불마켓",
             "links": [],
             "post_url": "https://t.me/kkkontemp/2277"
+          },
+          {
+            "date": "2026-04-15",
+            "time": "13:30",
+            "text": "BofA 아시아 펀드 매니저 설문조사 – 인플레이션 리스크 지속 속 북아시아 선호 유지\n\n에너지 리스크 및 인플레이션 우려: 응답자의 91%가 에너지 리스크를 우려하고 있으며, 순응답자(net) 77%가 인플레이션 상승을 예상하고 있습니다.\n\nAI 밸류에이션: 55%의 응답자가 AI 테마가 상당 부분 주가에 반영되었거나 고평가된 상태라고 보고 있습니다.\n\n거시 경제(Macro) 전망: 거시 경제 전망은 신중론으로 돌아섰습니다. 아시아 성장 전망은 기존 25% 낙관에서 순응답자 55% 비관으로 급격히 뒤집혔습니다.\n\n일본은행(BoJ) 금리 인상: 금리 인상 시점에 대해서는 4월과 6월로 의견이 갈리고 있습니다.\n\n포지셔닝 변화: 북아시아(일본, 대만, 한국)에 대한 선호가 여전히 높으며, 인도는 가장 비중 축소(Underweight)된 지역으로 나타났습니다.\n\n섹터별 동향: 에너지가 최선호 섹터로 부상했으며, 반도체는 여전히 핵심적인 AI 수혜주로 간주되고 있습니다.",
+            "links": [],
+            "post_url": "https://t.me/kkkontemp/2278"
+          },
+          {
+            "date": "2026-04-15",
+            "time": "13:38",
+            "text": "사실 핵심은 다음 세 가지:\n\n1. 아시아 대형 연기금의 전략적 자산 배분(SAA) 변화: 현재 아시아 주요 연기금들이 자산 배분을 재조정하고 있으며, 6월 내로 완료될 예정. 이는 하반기 시장에 자산 유입 촉매제가 될 가능성 (북아시아가 수혜받지 않을까 생각).\n\n2. 잠재적 대기 수요의 존재: 여전히 포트폴리오 내 한국 비중이 낮은 상황에서, 비중 확대를 희망하는 LP(출자자)들이 여전히 많음. (정말 많음)\n\n3. 의구심을 압도하는 수익률: 지표상으로 한국 시장에 대한 의구심이 일본이나 대만보다 높은 것은 사실. 하지만 수익률은 압도적. 연초 대비 달러 기준 한국 +42%로, 대만(+27%)과 일본(+14%)을 크게 앞서고 있슴.\n\n과연 올해가 한국 시장에 대한 기존의 회의적인 멘탈리티를 완전히 탈피하는 '변곡점'이 될 수 있을지 주목 ;)",
+            "links": [],
+            "post_url": "https://t.me/kkkontemp/2279"
           }
         ]
       },
