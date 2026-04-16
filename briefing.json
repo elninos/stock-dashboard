@@ -1,6 +1,6 @@
 {
   "2026-04-16": {
-    "fetched_at": "2026-04-16T23:59:39+09:00",
+    "fetched_at": "2026-04-17T01:45:33+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -446,15 +446,6 @@
         "posts": [
           {
             "date": "2026-04-16",
-            "time": "09:56",
-            "text": "펩트론, AACR 2026서 차세대 항암 플랫폼 및 병용요법 연구성과 발표\n\nhttps://www.edaily.co.kr/News/Read?newsId=02870006645416776&mediaCodeNo=257&OutLnkChk=Y",
-            "links": [
-              "https://www.edaily.co.kr/News/Read?newsId=02870006645416776&amp;mediaCodeNo=257&amp;OutLnkChk=Y"
-            ],
-            "post_url": "https://t.me/SpartanResearch/3286"
-          },
-          {
-            "date": "2026-04-16",
             "time": "10:08",
             "text": "✅ [단독] SK하이닉스, 美 ADR 6~7월 상장한다\n\nhttps://n.news.naver.com/mnews/article/016/0002630559",
             "links": [
@@ -572,6 +563,13 @@
             "text": "💡💡💡\n한국시간 저녁 10시에 예멘 후티 최고 지도자가 뭐 연설한다고 하네요. 홍해 봉쇄 이런 이슈는 없을 것 같습니다.",
             "links": [],
             "post_url": "https://t.me/SpartanResearch/3305"
+          },
+          {
+            "date": "2026-04-17",
+            "time": "00:52",
+            "text": "이스라엘과 레바논 10일간 휴전",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/3306"
           }
         ]
       },
