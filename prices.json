@@ -5,31 +5,31 @@
   },
   "NAVER": {
     "code": "035420",
-    "price": 218500,
+    "price": 215000,
     "nation": "KOR",
     "market": "코스피"
   },
   "RF머트리얼즈": {
     "code": "327260",
-    "price": 96200,
+    "price": 101200,
     "nation": "KOR",
     "market": "코스닥"
   },
   "SK바이오팜": {
     "code": "326030",
-    "price": 106400,
+    "price": 105100,
     "nation": "KOR",
     "market": "코스피"
   },
   "SK하이닉스": {
     "code": "000660",
-    "price": 1155000,
+    "price": 1126500,
     "nation": "KOR",
     "market": "코스피"
   },
   "SM C&C": {
     "code": "048550",
-    "price": 1193,
+    "price": 1187,
     "nation": "KOR",
     "market": "코스닥"
   },
@@ -39,55 +39,55 @@
   },
   "대한광통신": {
     "code": "010170",
-    "price": 15020,
+    "price": 15750,
     "nation": "KOR",
     "market": "코스닥"
   },
   "두산": {
     "code": "000150",
-    "price": 1335000,
+    "price": 1331000,
     "nation": "KOR",
     "market": "코스피"
   },
   "삼양엔씨켐": {
     "code": "482630",
-    "price": 20250,
+    "price": 20150,
     "nation": "KOR",
     "market": "코스닥"
   },
   "셀트리온": {
     "code": "068270",
-    "price": 209000,
+    "price": 206500,
     "nation": "KOR",
     "market": "코스피"
   },
   "씨티씨바이오": {
     "code": "060590",
-    "price": 4045,
+    "price": 4150,
     "nation": "KOR",
     "market": "코스닥"
   },
   "아스트": {
     "code": "067390",
-    "price": 812,
+    "price": 811,
     "nation": "KOR",
     "market": "코스닥"
   },
   "아이언디바이스": {
     "code": "464500",
-    "price": 3655,
+    "price": 3695,
     "nation": "KOR",
     "market": "코스닥"
   },
   "아티스트스튜디오": {
     "code": "200350",
-    "price": 5350,
+    "price": 6060,
     "nation": "KOR",
     "market": "코스닥"
   },
   "에스아이리소스": {
     "code": "065420",
-    "price": 244,
+    "price": 235,
     "nation": "KOR",
     "market": "코스닥"
   },
@@ -99,7 +99,7 @@
   },
   "에이피알": {
     "code": "278470",
-    "price": 414500,
+    "price": 419500,
     "nation": "KOR",
     "market": "코스피"
   },
@@ -111,73 +111,73 @@
   },
   "오스코텍": {
     "code": "039200",
-    "price": 56600,
+    "price": 54600,
     "nation": "KOR",
     "market": "코스닥"
   },
   "코아스템켐온": {
     "code": "166480",
-    "price": 2990,
+    "price": 2885,
     "nation": "KOR",
     "market": "코스닥"
   },
   "코오롱티슈진": {
     "code": "950160",
-    "price": 108700,
+    "price": 110100,
     "nation": "KOR",
     "market": "코스닥"
   },
   "콜마비앤에이치": {
     "code": "200130",
-    "price": 11620,
+    "price": 11800,
     "nation": "KOR",
     "market": "코스닥"
   },
   "파마리서치": {
     "code": "214450",
-    "price": 310000,
+    "price": 308500,
     "nation": "KOR",
     "market": "코스닥"
   },
   "파크시스템스": {
     "code": "140860",
-    "price": 256500,
+    "price": 259000,
     "nation": "KOR",
     "market": "코스닥"
   },
   "AJ네트웍스": {
     "code": "095570",
-    "price": 5030,
+    "price": 5070,
     "nation": "KOR",
     "market": "코스피"
   },
   "BGF에코머티리얼즈": {
     "code": "126600",
-    "price": 4335,
+    "price": 4330,
     "nation": "KOR",
     "market": "코스닥"
   },
   "CJ ENM": {
     "code": "035760",
-    "price": 55500,
+    "price": 55700,
     "nation": "KOR",
     "market": "코스닥"
   },
   "GST": {
     "code": "083450",
-    "price": 41750,
+    "price": 42050,
     "nation": "KOR",
     "market": "코스닥"
   },
   "HLB제넥스": {
     "code": "187420",
-    "price": 3175,
+    "price": 3410,
     "nation": "KOR",
     "market": "코스닥"
   },
   "HPSP": {
     "code": "403870",
-    "price": 44150,
+    "price": 44800,
     "nation": "KOR",
     "market": "코스닥"
   },
@@ -187,43 +187,43 @@
   },
   "KT": {
     "code": "030200",
-    "price": 63600,
+    "price": 64000,
     "nation": "KOR",
     "market": "코스피"
   },
   "LB세미콘": {
     "code": "061970",
-    "price": 4925,
+    "price": 4955,
     "nation": "KOR",
     "market": "코스닥"
   },
   "LS머트리얼즈": {
     "code": "417200",
-    "price": 22750,
+    "price": 22200,
     "nation": "KOR",
     "market": "코스닥"
   },
   "NHN": {
     "code": "181710",
-    "price": 40600,
+    "price": 39050,
     "nation": "KOR",
     "market": "코스피"
   },
   "NHN KCP": {
     "code": "060250",
-    "price": 21000,
+    "price": 20450,
     "nation": "KOR",
     "market": "코스닥"
   },
   "PS일렉트로닉스": {
     "code": "332570",
-    "price": 6790,
+    "price": 7265,
     "nation": "KOR",
     "market": "코스닥"
   },
   "SK바이오사이언스": {
     "code": "302440",
-    "price": 44650,
+    "price": 46050,
     "nation": "KOR",
     "market": "코스피"
   },
@@ -235,25 +235,25 @@
   },
   "넥스틴": {
     "code": "348210",
-    "price": 76600,
+    "price": 77000,
     "nation": "KOR",
     "market": "코스닥"
   },
   "노바텍": {
     "code": "285490",
-    "price": 22250,
+    "price": 22400,
     "nation": "KOR",
     "market": "코스닥"
   },
   "농우바이오": {
     "code": "054050",
-    "price": 8200,
+    "price": 8140,
     "nation": "KOR",
     "market": "코스닥"
   },
   "두산에너빌리티": {
     "code": "034020",
-    "price": 110800,
+    "price": 108100,
     "nation": "KOR",
     "market": "코스피"
   },
@@ -265,25 +265,25 @@
   },
   "레드캡투어": {
     "code": "038390",
-    "price": 10760,
+    "price": 10730,
     "nation": "KOR",
     "market": "코스닥"
   },
   "리가켐바이오": {
     "code": "141080",
-    "price": 198000,
+    "price": 193800,
     "nation": "KOR",
     "market": "코스닥"
   },
   "메디톡스": {
     "code": "086900",
-    "price": 106900,
+    "price": 107900,
     "nation": "KOR",
     "market": "코스닥"
   },
   "미래나노텍": {
     "code": "095500",
-    "price": 10070,
+    "price": 10620,
     "nation": "KOR",
     "market": "코스닥"
   },
@@ -295,61 +295,61 @@
   },
   "삼성SDI": {
     "code": "006400",
-    "price": 478500,
+    "price": 515000,
     "nation": "KOR",
     "market": "코스피"
   },
   "삼성생명": {
     "code": "032830",
-    "price": 258000,
+    "price": 255000,
     "nation": "KOR",
     "market": "코스피"
   },
   "삼성전자": {
     "code": "005930",
-    "price": 217500,
+    "price": 215750,
     "nation": "KOR",
     "market": "코스피"
   },
   "삼천당제약": {
     "code": "000250",
-    "price": 505000,
+    "price": 489000,
     "nation": "KOR",
     "market": "코스닥"
   },
   "스튜디오드래곤": {
     "code": "253450",
-    "price": 36400,
+    "price": 36300,
     "nation": "KOR",
     "market": "코스닥"
   },
   "시노펙스": {
     "code": "025320",
-    "price": 6080,
+    "price": 6100,
     "nation": "KOR",
     "market": "코스닥"
   },
   "시프트업": {
     "code": "462870",
-    "price": 33700,
+    "price": 33800,
     "nation": "KOR",
     "market": "코스피"
   },
   "실리콘투": {
     "code": "257720",
-    "price": 46900,
+    "price": 46950,
     "nation": "KOR",
     "market": "코스닥"
   },
   "쏘닉스": {
     "code": "088280",
-    "price": 5200,
+    "price": 5370,
     "nation": "KOR",
     "market": "코스닥"
   },
   "씨에스윈드": {
     "code": "112610",
-    "price": 66600,
+    "price": 64900,
     "nation": "KOR",
     "market": "코스피"
   },
@@ -359,55 +359,55 @@
   },
   "아미코젠": {
     "code": "092040",
-    "price": 2205,
+    "price": 2065,
     "nation": "KOR",
     "market": "코스닥"
   },
   "아이센스": {
     "code": "099190",
-    "price": 20750,
+    "price": 20700,
     "nation": "KOR",
     "market": "코스닥"
   },
   "에스디바이오센서": {
     "code": "137310",
-    "price": 8720,
+    "price": 9290,
     "nation": "KOR",
     "market": "코스피"
   },
   "에이비프로바이오": {
     "code": "195990",
-    "price": 1406,
+    "price": 1390,
     "nation": "KOR",
     "market": "코스닥"
   },
   "에이티넘인베스트": {
     "code": "021080",
-    "price": 3335,
+    "price": 3300,
     "nation": "KOR",
     "market": "코스닥"
   },
   "에이프로": {
     "code": "262260",
-    "price": 5400,
+    "price": 5470,
     "nation": "KOR",
     "market": "코스닥"
   },
   "엔씨소프트": {
     "code": "036570",
-    "price": 266500,
+    "price": 264500,
     "nation": "KOR",
     "market": "코스피"
   },
   "오르비텍": {
     "code": "046120",
-    "price": 11510,
+    "price": 11260,
     "nation": "KOR",
     "market": "코스닥"
   },
   "와이엠티": {
     "code": "251370",
-    "price": 16710,
+    "price": 16870,
     "nation": "KOR",
     "market": "코스닥"
   },
@@ -419,139 +419,139 @@
   },
   "위더스제약": {
     "code": "330350",
-    "price": 9370,
+    "price": 9500,
     "nation": "KOR",
     "market": "코스닥"
   },
   "유아이디": {
     "code": "069330",
-    "price": 1185,
+    "price": 1153,
     "nation": "KOR",
     "market": "코스닥"
   },
   "이오테크닉스": {
     "code": "039030",
-    "price": 472500,
+    "price": 471500,
     "nation": "KOR",
     "market": "코스닥"
   },
   "제일기획": {
     "code": "030000",
-    "price": 19820,
+    "price": 19700,
     "nation": "KOR",
     "market": "코스피"
   },
   "지누스": {
     "code": "013890",
-    "price": 11950,
+    "price": 12190,
     "nation": "KOR",
     "market": "코스피"
   },
   "진매트릭스": {
     "code": "109820",
-    "price": 2240,
+    "price": 2485,
     "nation": "KOR",
     "market": "코스닥"
   },
   "차AI헬스케어": {
     "code": "025620",
-    "price": 9710,
+    "price": 9610,
     "nation": "KOR",
     "market": "코스피"
   },
   "차바이오텍": {
     "code": "085660",
-    "price": 18080,
+    "price": 18130,
     "nation": "KOR",
     "market": "코스닥"
   },
   "카카오": {
     "code": "035720",
-    "price": 50600,
+    "price": 49750,
     "nation": "KOR",
     "market": "코스피"
   },
   "콘텐트리중앙": {
     "code": "036420",
-    "price": 5930,
+    "price": 5880,
     "nation": "KOR",
     "market": "코스피"
   },
   "크래프톤": {
     "code": "259960",
-    "price": 256500,
+    "price": 264500,
     "nation": "KOR",
     "market": "코스피"
   },
   "태경비케이": {
     "code": "014580",
-    "price": 4660,
+    "price": 4635,
     "nation": "KOR",
     "market": "코스피"
   },
   "토모큐브": {
     "code": "475960",
-    "price": 56800,
+    "price": 56500,
     "nation": "KOR",
     "market": "코스닥"
   },
   "티에프이": {
     "code": "425420",
-    "price": 59800,
+    "price": 62700,
     "nation": "KOR",
     "market": "코스닥"
   },
   "퓨쳐켐": {
     "code": "220100",
-    "price": 19270,
+    "price": 19080,
     "nation": "KOR",
     "market": "코스닥"
   },
   "필옵틱스": {
     "code": "161580",
-    "price": 45950,
+    "price": 44250,
     "nation": "KOR",
     "market": "코스닥"
   },
   "하림": {
     "code": "136480",
-    "price": 3305,
+    "price": 3275,
     "nation": "KOR",
     "market": "코스닥"
   },
   "하이록코리아": {
     "code": "013030",
-    "price": 40500,
+    "price": 40100,
     "nation": "KOR",
     "market": "코스닥"
   },
   "하이브": {
     "code": "352820",
-    "price": 268000,
+    "price": 260500,
     "nation": "KOR",
     "market": "코스피"
   },
   "한양증권": {
     "code": "001750",
-    "price": 28950,
+    "price": 28250,
     "nation": "KOR",
     "market": "코스피"
   },
   "한화솔루션": {
     "code": "009830",
-    "price": 44300,
+    "price": 44950,
     "nation": "KOR",
     "market": "코스피"
   },
   "후성": {
     "code": "093370",
-    "price": 11300,
+    "price": 14200,
     "nation": "KOR",
     "market": "코스피"
   },
   "글로벌엑스 중국 클린 에너지 ETF(HKD)": {
     "code": "2809.HK",
-    "price": 116.8,
+    "price": 116.4,
     "nation": "HKG",
     "market": "홍콩"
   },
@@ -561,7 +561,7 @@
   },
   "레딧": {
     "code": "RDDT",
-    "price": 158.48,
+    "price": 162.45,
     "nation": "USA",
     "market": "뉴욕 거래소"
   },
@@ -573,19 +573,19 @@
   },
   "알리바바 그룹 홀딩스 ADR": {
     "code": "BABA",
-    "price": 133.28,
+    "price": 138.59,
     "nation": "USA",
     "market": "뉴욕 거래소"
   },
   "융기실리콘자재": {
     "code": "601012.SS",
-    "price": 17.51,
+    "price": 17.34,
     "nation": "CHN",
     "market": "상해"
   },
   "통위": {
     "code": "600438.SS",
-    "price": 17.59,
+    "price": 17.52,
     "nation": "CHN",
     "market": "상해"
   },
@@ -597,271 +597,271 @@
   },
   "피엔에이치테크": {
     "code": "239890",
-    "price": 5460,
+    "price": 5660,
     "nation": "KOR",
     "market": "코스닥"
   },
   "KODEX 코스닥150레버리지": {
     "code": "233740",
-    "price": 16105,
+    "price": 16040,
     "nation": "KOR",
     "market": "코스피"
   },
   "TIME K바이오액티브": {
     "code": "463050",
-    "price": 18640,
+    "price": 18400,
     "nation": "KOR",
     "market": "코스피"
   },
   "로켓 랩": {
     "code": "RKLB",
-    "price": 73.6,
+    "price": 82.93,
     "nation": "USA",
     "market": "나스닥 증권거래소"
   },
   "리얼티 인컴": {
     "code": "O",
-    "price": 63.96,
+    "price": 64.64,
     "nation": "USA",
     "market": "뉴욕 거래소"
   },
   "셀시어스 홀딩스": {
     "code": "CELH",
-    "price": 35.28,
+    "price": 34.85,
     "nation": "USA",
     "market": "나스닥"
   },
   "캐스터 마리타임": {
     "code": "CTRM",
-    "price": 1.86,
+    "price": 1.82,
     "nation": "USA",
     "market": "나스닥 증권거래소"
   },
   "프로셰어즈 QQQ 3배 ETF": {
     "code": "TQQQ",
-    "price": 55.65,
+    "price": 56.43,
     "nation": "USA",
     "market": "나스닥"
   },
   "하이맥스 테크놀로지스": {
     "code": "HIMX",
-    "price": 10.18,
+    "price": 11.27,
     "nation": "USA",
     "market": "나스닥 증권거래소"
   },
   "TIME 차이나AI테크액티브": {
     "code": "0043Y0",
-    "price": 18490,
+    "price": 18545,
     "nation": "KOR",
     "market": "코스피"
   },
   "AMD(어드밴스드 마이크로 디바이시스)": {
     "code": "AMD",
-    "price": 258.12,
+    "price": 278.26,
     "nation": "USA",
     "market": "나스닥 증권거래소"
   },
   "AT&T": {
     "code": "T",
-    "price": 25.46,
+    "price": 26.4,
     "nation": "USA",
     "market": "뉴욕 거래소"
   },
   "GLOBAL X BLOCKCHAIN ETF": {
     "code": "BKCH",
-    "price": 72.39,
+    "price": 71.97,
     "nation": "USA",
     "market": "나스닥 증권거래소"
   },
   "HB솔루션": {
     "code": "297890",
-    "price": 2125,
+    "price": 2100,
     "nation": "KOR",
     "market": "코스닥"
   },
   "HSBC 홀딩스 ADR": {
     "code": "HSBC",
-    "price": 90.93,
+    "price": 90.52,
     "nation": "USA",
     "market": "뉴욕 거래소"
   },
   "JYP Ent.": {
     "code": "035900",
-    "price": 63000,
+    "price": 63300,
     "nation": "KOR",
     "market": "코스닥"
   },
   "L3 해리스 테크놀러지": {
     "code": "LHX",
-    "price": 355.92,
+    "price": 353.41,
     "nation": "USA",
     "market": "뉴욕 거래소"
   },
   "PI첨단소재": {
     "code": "178920",
-    "price": 24600,
+    "price": 25800,
     "nation": "KOR",
     "market": "코스피"
   },
   "SK아이이테크놀로지": {
     "code": "361610",
-    "price": 23650,
+    "price": 24200,
     "nation": "KOR",
     "market": "코스피"
   },
   "TIGER 미국S&P500": {
     "code": "360750",
-    "price": 25780,
+    "price": 25892,
     "nation": "KOR",
     "market": "코스피"
   },
   "TIGER 미국나스닥100": {
     "code": "133690",
-    "price": 171995,
+    "price": 172615,
     "nation": "KOR",
     "market": "코스피"
   },
   "TSMC(타이완반도체제조)": {
     "code": "TSM",
-    "price": 375.1,
+    "price": 363.35,
     "nation": "USA",
     "market": "뉴욕 거래소"
   },
   "VF": {
     "code": "VFC",
-    "price": 19.64,
+    "price": 20.12,
     "nation": "USA",
     "market": "뉴욕 거래소"
   },
   "Virgin Galactic Holdings": {
     "code": "SPCE",
-    "price": 2.83,
+    "price": 3.06,
     "nation": "USA",
     "market": "뉴욕 거래소"
   },
   "국일제지": {
     "code": "078130",
-    "price": 401,
+    "price": 370,
     "nation": "KOR",
     "market": "코스닥"
   },
   "나노 디멘션 ADR": {
     "code": "NNDM",
-    "price": 1.77,
+    "price": 1.8,
     "nation": "USA",
     "market": "나스닥 증권거래소"
   },
   "네오위즈": {
     "code": "095660",
-    "price": 24150,
+    "price": 23950,
     "nation": "KOR",
     "market": "코스닥"
   },
   "녹십자엠에스": {
     "code": "142280",
-    "price": 3800,
+    "price": 4135,
     "nation": "KOR",
     "market": "코스닥"
   },
   "뉴스케일 파워": {
     "code": "SMR",
-    "price": 11.71,
+    "price": 11.41,
     "nation": "USA",
     "market": "뉴욕 거래소"
   },
   "다날": {
     "code": "064260",
-    "price": 8190,
+    "price": 8080,
     "nation": "KOR",
     "market": "코스닥"
   },
   "덱스터": {
     "code": "206560",
-    "price": 2890,
+    "price": 2875,
     "nation": "KOR",
     "market": "코스닥"
   },
   "두산로보틱스": {
     "code": "454910",
-    "price": 94100,
+    "price": 93300,
     "nation": "KOR",
     "market": "코스피"
   },
   "두산퓨얼셀": {
     "code": "336260",
-    "price": 46000,
+    "price": 45750,
     "nation": "KOR",
     "market": "코스피"
   },
   "디앤디파마텍": {
     "code": "347850",
-    "price": 81600,
+    "price": 79200,
     "nation": "KOR",
     "market": "코스닥"
   },
   "램테크놀러지": {
     "code": "171010",
-    "price": 3765,
+    "price": 3710,
     "nation": "KOR",
     "market": "코스닥"
   },
   "레이크머티리얼즈": {
     "code": "281740",
-    "price": 21800,
+    "price": 22750,
     "nation": "KOR",
     "market": "코스닥"
   },
   "로빈후드": {
     "code": "HOOD",
-    "price": 87.32,
+    "price": 86.85,
     "nation": "USA",
     "market": "나스닥 증권거래소"
   },
   "리노공업": {
     "code": "058470",
-    "price": 115000,
+    "price": 114900,
     "nation": "KOR",
     "market": "코스닥"
   },
   "마이크로디지탈": {
     "code": "305090",
-    "price": 6230,
+    "price": 6150,
     "nation": "KOR",
     "market": "코스닥"
   },
   "마이크로소프트": {
     "code": "MSFT",
-    "price": 411.22,
+    "price": 420.26,
     "nation": "USA",
     "market": "나스닥 증권거래소"
   },
   "메디포스트": {
     "code": "078160",
-    "price": 25100,
+    "price": 24200,
     "nation": "KOR",
     "market": "코스닥"
   },
   "바이두 ADR": {
     "code": "BIDU",
-    "price": 120.94,
+    "price": 125.03,
     "nation": "USA",
     "market": "나스닥 증권거래소"
   },
   "바이오인프라생명과학": {
     "code": "266470",
-    "price": 113.0,
+    "price": 109.0,
     "nation": null,
     "market": "코넥스"
   },
   "발라드 파워 시스템즈": {
     "code": "BLDP",
-    "price": 3.07,
+    "price": 2.9,
     "nation": "USA",
     "market": "나스닥 증권거래소"
   },
   "버라이존": {
     "code": "VZ",
-    "price": 45.03,
+    "price": 46.78,
     "nation": "USA",
     "market": "뉴욕 거래소"
   },
@@ -873,19 +873,19 @@
   },
   "비보존 제약": {
     "code": "082800",
-    "price": 3190,
+    "price": 3205,
     "nation": "KOR",
     "market": "코스닥"
   },
   "비욘드 미트": {
     "code": "BYND",
-    "price": 0.75,
+    "price": 0.78,
     "nation": "USA",
     "market": "나스닥 증권거래소"
   },
   "비자": {
     "code": "V",
-    "price": 315.91,
+    "price": 315.1,
     "nation": "USA",
     "market": "뉴욕 거래소"
   },
@@ -897,103 +897,103 @@
   },
   "삼영엠텍": {
     "code": "054540",
-    "price": 11690,
+    "price": 11900,
     "nation": "KOR",
     "market": "코스닥"
   },
   "상신이디피": {
     "code": "091580",
-    "price": 23000,
+    "price": 23175,
     "nation": "KOR",
     "market": "코스닥"
   },
   "슈뢰딩거": {
     "code": "SDGR",
-    "price": 12.4,
+    "price": 12.06,
     "nation": "USA",
     "market": "나스닥 증권거래소"
   },
   "스톤브릿지벤처스": {
     "code": "330730",
-    "price": 6490,
+    "price": 6470,
     "nation": "KOR",
     "market": "코스닥"
   },
   "시저스 엔터테인먼트": {
     "code": "CZR",
-    "price": 27.29,
+    "price": 27.68,
     "nation": "USA",
     "market": "나스닥 증권거래소"
   },
   "써클 인터넷 그룹": {
     "code": "CRCL",
-    "price": 105.52,
+    "price": 107.46,
     "nation": "USA",
     "market": "뉴욕 거래소"
   },
   "씨젠": {
     "code": "096530",
-    "price": 24900,
+    "price": 27050,
     "nation": "KOR",
     "market": "코스닥"
   },
   "알파벳 Class A": {
     "code": "GOOGL",
-    "price": 337.12,
+    "price": 336.02,
     "nation": "USA",
     "market": "나스닥 증권거래소"
   },
   "애플": {
     "code": "AAPL",
-    "price": 266.43,
+    "price": 263.4,
     "nation": "USA",
     "market": "나스닥 증권거래소"
   },
   "에볼러스": {
     "code": "EOLS",
-    "price": 4.63,
+    "price": 4.53,
     "nation": "USA",
     "market": "나스닥 증권거래소"
   },
   "에브리봇": {
     "code": "270660",
-    "price": 17770,
+    "price": 17740,
     "nation": "KOR",
     "market": "코스닥"
   },
   "에스티팜": {
     "code": "237690",
-    "price": 146700,
+    "price": 141300,
     "nation": "KOR",
     "market": "코스닥"
   },
   "에이팩트": {
     "code": "200470",
-    "price": 7030,
+    "price": 7100,
     "nation": "KOR",
     "market": "코스닥"
   },
   "에코프로": {
     "code": "086520",
-    "price": 149200,
+    "price": 152200,
     "nation": "KOR",
     "market": "코스닥"
   },
   "엑슨 모빌": {
     "code": "XOM",
-    "price": 149.01,
+    "price": 151.98,
     "nation": "USA",
     "market": "뉴욕 거래소"
   },
   "엔피": {
     "code": "291230",
-    "price": 917,
+    "price": 899,
     "nation": "KOR",
     "market": "코스닥"
   },
   "오픈도어 테크놀로지스": {
     "code": "OPEN",
-    "price": 4.82,
+    "price": 5.27,
     "nation": "USA",
     "market": "나스닥 증권거래소"
   },
@@ -1005,145 +1005,145 @@
   },
   "원익피앤이": {
     "code": "217820",
-    "price": 3330,
+    "price": 3450,
     "nation": "KOR",
     "market": "코스닥"
   },
   "원준": {
     "code": "382840",
-    "price": 9170,
+    "price": 9420,
     "nation": "KOR",
     "market": "코스닥"
   },
   "월트 디즈니": {
     "code": "DIS",
-    "price": 103.04,
+    "price": 103.9,
     "nation": "USA",
     "market": "뉴욕 거래소"
   },
   "위지윅스튜디오": {
     "code": "299900",
-    "price": 455,
+    "price": 454,
     "nation": "KOR",
     "market": "코스닥"
   },
   "유나이티드 스테이츠 앤티모니": {
     "code": "UAMY",
-    "price": 10.7,
+    "price": 10.42,
     "nation": "USA",
     "market": "뉴욕 거래소"
   },
   "유니티소프트웨어": {
     "code": "U",
-    "price": 25.26,
+    "price": 25.93,
     "nation": "USA",
     "market": "뉴욕 거래소"
   },
   "유진로봇": {
     "code": "056080",
-    "price": 25700,
+    "price": 25650,
     "nation": "KOR",
     "market": "코스닥"
   },
   "이지트로닉스": {
     "code": "377330",
-    "price": 3735,
+    "price": 3765,
     "nation": "KOR",
     "market": "코스닥"
   },
   "인스코비": {
     "code": "006490",
-    "price": 448,
+    "price": 418,
     "nation": "KOR",
     "market": "코스피"
   },
   "제이피모간체이스": {
     "code": "JPM",
-    "price": 305.93,
+    "price": 309.95,
     "nation": "USA",
     "market": "뉴욕 거래소"
   },
   "차지포인트 홀딩스": {
     "code": "CHPT",
-    "price": 6.24,
+    "price": 6.19,
     "nation": "USA",
     "market": "뉴욕 거래소"
   },
   "초록뱀미디어": {
     "code": "047820",
-    "price": 4665,
+    "price": 4650,
     "nation": "KOR",
     "market": "코스닥"
   },
   "카카오뱅크": {
     "code": "323410",
-    "price": 25650,
+    "price": 25300,
     "nation": "KOR",
     "market": "코스피"
   },
   "퀀텀스케이프": {
     "code": "QS",
-    "price": 7.17,
+    "price": 7.04,
     "nation": "USA",
     "market": "나스닥 증권거래소"
   },
   "크레도 테크놀로지 그룹 홀딩": {
     "code": "CRDO",
-    "price": 168.35,
+    "price": 158.93,
     "nation": "USA",
     "market": "나스닥 증권거래소"
   },
   "테슬라": {
     "code": "TSLA",
-    "price": 391.95,
+    "price": 388.9,
     "nation": "USA",
     "market": "나스닥 증권거래소"
   },
   "티이엠씨": {
     "code": "425040",
-    "price": 12780,
+    "price": 12890,
     "nation": "KOR",
     "market": "코스닥"
   },
   "파두": {
     "code": "440110",
-    "price": 57600,
+    "price": 59300,
     "nation": "KOR",
     "market": "코스닥"
   },
   "팔란티어 테크놀로지스": {
     "code": "PLTR",
-    "price": 142.15,
+    "price": 142.76,
     "nation": "USA",
     "market": "나스닥 증권거래소"
   },
   "페이팔 홀딩스": {
     "code": "PYPL",
-    "price": 49.57,
+    "price": 49.81,
     "nation": "USA",
     "market": "나스닥 증권거래소"
   },
   "프롬바이오": {
     "code": "377220",
-    "price": 1298,
+    "price": 1295,
     "nation": "KOR",
     "market": "코스닥"
   },
   "플러그 파워": {
     "code": "PLUG",
-    "price": 2.93,
+    "price": 2.86,
     "nation": "USA",
     "market": "나스닥 증권거래소"
   },
   "플레이티카 홀딩": {
     "code": "PLTK",
-    "price": 3.46,
+    "price": 3.57,
     "nation": "USA",
     "market": "나스닥 증권거래소"
   },
   "피그마": {
     "code": "FIG",
-    "price": 20.34,
+    "price": 20.32,
     "nation": "USA",
     "market": "뉴욕 거래소"
   },
@@ -1155,56 +1155,56 @@
   },
   "현대바이오": {
     "code": "048410",
-    "price": 13800,
+    "price": 13750,
     "nation": "KOR",
     "market": "코스닥"
   },
   "LY 주식회사": {
     "code": "4689",
-    "price": 428.6,
+    "price": 424.5,
     "nation": "JPN",
     "market": "도쿄 거래소"
   },
   "넥슨 재팬": {
     "code": "3659",
-    "price": 2799.5,
+    "price": 2800.5,
     "nation": "JPN",
     "market": "도쿄 거래소"
   },
   "더블유스코프": {
     "code": "6619",
-    "price": 229.0,
+    "price": 217.0,
     "nation": "JPN",
     "market": "도쿄 거래소"
   },
   "산리오": {
     "code": "8136",
-    "price": 1053.0,
+    "price": 1028.5,
     "nation": "JPN",
     "market": "도쿄 거래소"
   },
-  "_updated_at": "2026-04-16T17:17:07+09:00",
+  "_updated_at": "2026-04-17T12:32:31+09:00",
   "뉴스케일파워": {
     "code": "SMR",
-    "price": 11.71,
+    "price": 11.41,
     "nation": "USA",
     "market": "뉴욕 거래소"
   },
   "킬 인프라스트럭처": {
     "code": "KEEL",
-    "price": 2.84,
+    "price": 2.74,
     "nation": "USA",
     "market": "나스닥 증권거래소"
   },
   "팔란티어": {
     "code": "PLTR",
-    "price": 142.15,
+    "price": 142.76,
     "nation": "USA",
     "market": "나스닥 증권거래소"
   },
   "하이맥스 테크놀로지스 ADR": {
     "code": "HIMX",
-    "price": 10.18,
+    "price": 11.27,
     "nation": "USA",
     "market": "나스닥 증권거래소"
   }
