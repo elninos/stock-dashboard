@@ -1,6 +1,6 @@
 {
   "2026-04-20": {
-    "fetched_at": "2026-04-20T12:24:40+09:00",
+    "fetched_at": "2026-04-20T15:19:59+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -263,45 +263,6 @@
         "posts": [
           {
             "date": "2026-04-20",
-            "time": "08:35",
-            "text": "https://www.youtube.com/live/JYJgF0YRuE4?si=dt9R9YtJuT7Z9xFx\n\n📹방송 시작했습니다!\n\n많은 시청 부탁드립니다\n\n글로벌 빅파마가 주목하는 내용에 대해서 쉽게 말씀드리겠습니다",
-            "links": [
-              "https://www.youtube.com/live/JYJgF0YRuE4?si=dt9R9YtJuT7Z9xFx"
-            ],
-            "post_url": "https://t.me/growthresearch/25246"
-          },
-          {
-            "date": "2026-04-20",
-            "time": "09:07",
-            "text": "✅ 씨이랩, 엔비디아 파트너 최고 등급 '엘리트' 승격\n\nhttps://www.cstimes.com/news/articleView.html?idxno=702508\n\n📌 1. 핵심\n씨이랩, NPN의 Enterprise Software Competency 부문 최고 등급 엘리트 승격\n\n엔비디아가 기술력과 사업 성과를 평가해 부여한 최고 레벨 파트너 자격\n\n📌 2. 인정받은 부분\nOmniverse 기반 디지털트윈·피지컬 AI 역량을 공식 인정받음\n\n반도체 분야에서 3년 연속 옴니버스 프로젝트를 수행한 점이 부각\n\n실제 공정과 생산환경을 가상 공간에 정밀 구현한 경험을 확보\n\n가상 환경에 AI 모델을 적용한 실적까지 갖춘 점이 평가된 것으로 보임\n\n📌 3. 의미\n엘리트는 기술력과 고객 성공 사례를 갖춘 소수 기업에만 주어지는 등급\n\n엔비디아 생태계 내 씨이랩의 위상과 신뢰도가 한 단계 올라간 뉴스\n\n📌 4. 회사 코멘트\n회사는 피지컬 AI 기술력과 사업 모델이 글로벌 생태계에서 검증됐다고 설명\n\n앞으로 Omniverse 플랫폼 활용도를 더 높여가겠다는 계획도 제시\n\n📌 5. 투자 포인트\n엔비디아 파트너십 강화로 대외 신뢰도와 레퍼런스 확대 기대\n\n피지컬 AI와 디지털트윈 사업 경쟁력이 다시 한번 부각된 이벤트\n\n반도체 프로젝트 이력이 강조되며 추가 수주 기대감으로 연결될 수 있음\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch⁠",
-            "links": [
-              "https://www.cstimes.com/news/articleView.html?idxno=702508",
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/25247"
-          },
-          {
-            "date": "2026-04-20",
-            "time": "09:09",
-            "text": "💻 SK하이닉스, 소캠2 192GB 본격 양산…\"AI 메모리 새 기준\"\n\nhttps://www.yna.co.kr/view/AKR20260420023500003?input=1195m\n\n📌 양산 개시\nSK하이닉스가 1c LPDDR5X 기반 SOCAMM2 192GB 제품 양산 개시\n\n모바일용 저전력 메모리를 서버용 모듈로 확장한 제품\n\n📌 핵심 특징\n기존 RDIMM 대비 2배 이상 대역폭\n\n에너지 효율 75% 이상 개선\n\n고성능 AI 연산과 저전력 운용에 최적화\n\n📌 적용처\n엔비디아 차세대 GPU 베라 루빈에 최적화\n\nAI 학습·추론 과정의 메모리 병목 해소 목적\n\n📌 전략적 의미\nHBM이 프리미엄 성능을 맡고\n\nSOCAMM2는 AI 인프라 TCO 절감 역할을 담당하는 구조\n\nAI 시장이 학습에서 추론 중심으로 이동하는 흐름과 맞물린 대응\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
-            "links": [
-              "https://www.yna.co.kr/view/AKR20260420023500003?input=1195m",
-              "https://t.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/25248"
-          },
-          {
-            "date": "2026-04-20",
-            "time": "09:13",
-            "text": "✅ 지슨, RF 원천기술 바탕 '반도체 공정 진단장비' 국산화 나서\n\nhttps://www.newsis.com/view/NISX20260420_0003597588\n\n📌 1. 핵심\n지슨, AI 기반 반도체 공정 진단장비 시장에 본격 진출 선언\n\n신사업 추진 위해 이사회에서 정관 변경 안건 의결\n\n📌2. 사업 내용\n20년간 축적한 RF·무선 측정·분석 기술을 반도체 장비로 확장\n\n전파 분석 기반 플라즈마 진단 기술로 공정 이상 진단장비 개발 추진\n\n기존 기술 연장선 사업으로 R&D 리스크와 상용화 기간 축소 기대\n\n📌 3. 시장성\n글로벌 반도체 장비 시장은 지속 성장 중인 대형 시장\n\n한국 역시 대규모 반도체 제조장비 투자 지속 중\n\n공정 진단장비 수요 확대에 따른 신규 진입 명분 확보\n\n📌 4. 국산화 의미\nRF 기반 공정 진단장비는 해외 업체 중심의 과점 시장\n\n국내 반도체 업체들의 국산화 요구가 꾸준히 제기된 분야\n\n지슨 진입 시 수입 대체 및 국내 공급망 강화 기대\n\n📌 5. 투자 포인트\n기존 보안 사업에 반도체 장비 성장 모멘텀 추가\n\nRF 원천기술의 고부가 산업 확장 사례로 평가 가능\n\n상용화 로드맵 공개 시 추가 재평가 가능성 존재\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch⁠",
-            "links": [
-              "https://www.newsis.com/view/NISX20260420_0003597588",
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/25249"
-          },
-          {
-            "date": "2026-04-20",
             "time": "09:15",
             "text": "💻 삼성전자, 美 텍사스 테일러 팹 가동 임박…테슬라 AI칩 생산 본격화\n\nhttps://www.koreatimes.co.kr/business/tech-science/20260420/samsungs-taylor-plant-to-begin-operations-with-tesla-chips-ready-for-fabrication\n\n📌 테일러 파운드리 본격 준비\n삼성전자가 이번 주 미국 텍사스 테일러 파운드리 장비 반입식 진행 예정\n\n'22년 착공한 170억 달러 투자 공장으로, 지연됐던 가동 일정이 본격 재개\n\n📌 테슬라 AI칩 생산 핵심 거점\n지난해 수주한 165억 달러 규모 테슬라 AI5·AI6 칩 계약 기반\n\n2나노 공정으로 자율주행용 AI 반도체 생산 예정\n\n최근 양산 인력까지 현지 투입 확대\n\n📌 추가 고객사 확보\n애플 아이폰용 이미지센서 생산\n\n엔비디아 차세대 추론칩 Groq 3 LPU 생산도 언급\n\n📌 실적 반등 기대\n삼성 파운드리 적자 규모는 전년 대비 크게 축소 전망\n\n가동률 80% 이상 예상, 웨이퍼 가격 상승까지 겹쳐\n\n3분기 흑자 전환 가능성 제기\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
             "links": [
@@ -402,6 +363,48 @@
               "https://t.me/growth_semi"
             ],
             "post_url": "https://t.me/growthresearch/25265"
+          },
+          {
+            "date": "2026-04-20",
+            "time": "13:01",
+            "text": "📹지투지바이오 회사 소개 및 주요 사업 현황에 대한 투자자 이해 증진 [기업설명회(IR)]\n\nhttps://www.youtube.com/watch?v=rMn-Z3so-r8\n\n지투지바이오 기업설명회 영상입니다.\n\n💥루미네어 IR💥\nhttps://t.me/Luminaire_IR",
+            "links": [
+              "https://www.youtube.com/watch?v=rMn-Z3so-r8",
+              "https://t.me/Luminaire_IR"
+            ],
+            "post_url": "https://t.me/growthresearch/25266"
+          },
+          {
+            "date": "2026-04-20",
+            "time": "13:33",
+            "text": "🧬 바이오솔루션, 핵심파이프라인 상반기 임상 승인 가시권…골관절염 3대 라인업 확보\n\nhttps://www.etoday.co.kr/news/view/2576739\n\n바이오솔루션 핵심 파이프라인 스페로큐어(SpheroCure)의 IND 승인 시점이 상반기 내 가시권이라는 점이 부각.\n\n💊 스페로큐어 의미\n골관절염 대상 주사형 세포치료제\n\n비수술 방식으로 관절강 내 투여\n\n연골 재생 + 염증 억제 동시 타깃\n\n근본치료제(DMOAD) 개발 목표\n\n💊 현재 골관절염 3대 라인업 구축\n카티라이프 : 자가 연골세포치료제(상용화)\n\n카티로이드 : 동종 연골세포치료제\n\n스페로큐어 : 주사형 세포치료제(임상 진입 대기)\n\n💊 투자 포인트\n스페로큐어 IND 승인 시 임상 1·2a상 본격 진입\n\n수술형·시술형·주사형 풀라인업 완성\n\n환자 상태별 단계적 치료 전략 가능\n\n기술이전(L/O) 및 글로벌 진출 기대\n\n🧬바이오섹터 분석🧬 [그로쓰리서치]\nhttps://t.me/growthbio",
+            "links": [
+              "https://www.etoday.co.kr/news/view/2576739",
+              "https://t.me/growthbio"
+            ],
+            "post_url": "https://t.me/growthresearch/25267"
+          },
+          {
+            "date": "2026-04-20",
+            "time": "13:44",
+            "text": "🧬 지투지바이오 +11% 급등 중\n\n기업설명회 진행한 지투지바이오의 주가가 잘 오르고 있네요.\n\n저희가 정리했던 내용 한번씩 보시면 좋을 것 같습니다.\n\n💊지투지바이오 기업 설명회 텔레그램 정리\nhttps://t.me/growthbio/1859\n\nhttps://t.me/growthbio/1869\n\n💊 지투지바이오 기업 설명회 녹화\nhttps://www.youtube.com/watch?v=rMn-Z3so-r8\n\n🧬바이오섹터 분석🧬 [그로쓰리서치]\nhttps://t.me/growthbio",
+            "links": [
+              "https://t.me/growthbio/1859",
+              "https://t.me/growthbio/1869",
+              "https://www.youtube.com/watch?v=rMn-Z3so-r8",
+              "https://t.me/growthbio"
+            ],
+            "post_url": "https://t.me/growthresearch/25268"
+          },
+          {
+            "date": "2026-04-20",
+            "time": "14:21",
+            "text": "✅ 코스피·코스닥 상장사, 지난해 현금배당 역대 최고치 경신\n\nhttps://n.news.naver.com/mnews/article/008/0005346537\n\n한국거래소 발표에 따르면 \n2025년(12월 결산 기준) 코스피·코스닥 상장사의 현금배당 규모가 모두 사상 최대를 기록.\n\n📌 코스피\n799개사 중 566개사(71%) 배당 실시\n\n총 배당금 35.1조원 (+15.5% YoY)\n\n1사 평균 배당 619억원 (역대 최고)\n\n📌 코스닥\n666개사 배당 실시\n\n총 배당금 3.1조원 (+34.8% YoY)\n\n1사 평균 배당 46.8억원 (역대 최고)\n\n📌 주목 포인트\n5년 연속 배당 기업 증가 → 배당 안정성 강화\n\n밸류업 공시 기업 중심으로 높은 주주환원\n\n평균 배당성향: 코스피 39.8%, 코스닥 37.4%\n\n평균 시가배당률도 국고채(2.43%) 상회\n\n📌 해석\n정부 밸류업 정책과 기업들의 주주환원 강화 기조가 실제 숫자로 확인되는 모습.\n\n배당 확대는 저PBR·가치주 재평가, 증시 체질 개선 측면에서 긍정적 신호.\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch⁠",
+            "links": [
+              "https://n.news.naver.com/mnews/article/008/0005346537",
+              "https://t.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/25269"
           }
         ]
       },
@@ -412,45 +415,6 @@
         "category": "매크로/크립토",
         "channel_url": "https://t.me/SpartanResearch",
         "posts": [
-          {
-            "date": "2026-04-19",
-            "time": "20:24",
-            "text": "지투지바이오 경영진은 3월 25일 2,888주를 장내 매입함. (3월 27일 공시) \n\n이희용 대표 1,200주 / 전교중 사장 670주 / 설은영 연구소장(부사장) 300주 / 최희경 CMC센터장(상무) 718주\n\n매입단가는 74,000원에서 77,000원 대이고, 4월 17일(금) 기준 종가는 72,200원으로 매입단가보다도 낮음 \n\nhttps://www.mt.co.kr/thebio/2026/03/27/2026032710431563682",
-            "links": [
-              "https://www.mt.co.kr/thebio/2026/03/27/2026032710431563682"
-            ],
-            "post_url": "https://t.me/SpartanResearch/3321"
-          },
-          {
-            "date": "2026-04-19",
-            "time": "20:25",
-            "text": "이렇게 컨빅션 없는 뇌피셜 로직으로 뭐 배팅을 크게는 못하겠지만 시세는 봐보려고 함",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/3322"
-          },
-          {
-            "date": "2026-04-19",
-            "time": "20:55",
-            "text": "실적발표 기간 대비하여 4월 1일부터 금일까지 DART에 공시된 자료 참고하여 실적 캘린더 제작했습니다. \n\n업무에 참고하시길 바랍니다! \n\n자료: https://t.me/SpartanResearch",
-            "links": [
-              "https://t.me/SpartanResearch"
-            ],
-            "post_url": "https://t.me/SpartanResearch/3323"
-          },
-          {
-            "date": "2026-04-20",
-            "time": "02:52",
-            "text": "선박 엔진이 데이터센터 엔진으로 쓰인다\n\n핀란드 선박 엔진 업체인 바르실라가 미국 오하이오주의 대규모 하이퍼스케일 데이터센터를 위해 412MW 전력 공급 엔진을 수주했습니다. ‘34SG 엔진’ 40대가 공급될 예정인데요. 이 엔진은 선박에 쓰이는 내연기관 엔진으로 데이터센터 전력 공급용으로 채택된 것은 이번이 첫 사례입니다. 고온 환경에서도 성능이 우수하고 물 소비량이 적어 데이터센터 환경에 적합하다고 합니다. 데이터센터 고객사는 전력망 연결 지연 문제를 피하기 위해 온사이트 발전을 준비 중이며 바르실라 엔진을 주 전력원으로 사용한다고 합니다. 이번 수주로 바르실라가 미국 데이터센터 시장에 판매한 엔진 총 용량은 1.6GW를 넘어섰으며 데이터센터 시장 익스포져를 빠르게 확장하고 있습니다. 참고로 리드타임은 대략 2년 정도 소요됩니다.\n\n#Opinion",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/3325"
-          },
-          {
-            "date": "2026-04-20",
-            "time": "02:53",
-            "text": "#WRT1V #Wartsila\n\n데이터센터 엔진 관련 보도 이후 바르실라 역사적 신고가 부근",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/3326"
-          },
           {
             "date": "2026-04-20",
             "time": "03:01",
@@ -544,6 +508,51 @@
               "https://t.me/growthbio"
             ],
             "post_url": "https://t.me/SpartanResearch/3340"
+          },
+          {
+            "date": "2026-04-20",
+            "time": "13:04",
+            "text": "📹지투지바이오 회사 소개 및 주요 사업 현황에 대한 투자자 이해 증진 [기업설명회(IR)]\n\nhttps://www.youtube.com/watch?v=rMn-Z3so-r8\n\n지투지바이오 기업설명회 영상입니다.\n\n💥루미네어 IR💥\nhttps://t.me/Luminaire_IR",
+            "links": [
+              "https://www.youtube.com/watch?v=rMn-Z3so-r8",
+              "https://t.me/Luminaire_IR"
+            ],
+            "post_url": "https://t.me/SpartanResearch/3341"
+          },
+          {
+            "date": "2026-04-20",
+            "time": "13:44",
+            "text": "🧬 지투지바이오 +11% 급등 중\n\n기업설명회 진행한 지투지바이오의 주가가 잘 오르고 있네요.\n\n저희가 정리했던 내용 한번씩 보시면 좋을 것 같습니다.\n\n💊지투지바이오 기업 설명회 텔레그램 정리\nhttps://t.me/growthbio/1859\n\nhttps://t.me/growthbio/1869\n\n💊 지투지바이오 기업 설명회 녹화\nhttps://www.youtube.com/watch?v=rMn-Z3so-r8\n\n🧬바이오섹터 분석🧬 [그로쓰리서치]\nhttps://t.me/growthbio",
+            "links": [
+              "https://t.me/growthbio/1859",
+              "https://t.me/growthbio/1869",
+              "https://www.youtube.com/watch?v=rMn-Z3so-r8",
+              "https://t.me/growthbio"
+            ],
+            "post_url": "https://t.me/SpartanResearch/3342"
+          },
+          {
+            "date": "2026-04-20",
+            "time": "13:44",
+            "text": "🧬 지투지바이오 +11% 급등 중  기업설명회 진행한 지투지바이오의 주가가 잘 오르고 있네요.  저희가 정리했던 내용 한번씩 보시면 좋을 것 같습니다.  💊지투지바이오 기업 설명회 텔레그램 정리 https://t.me/growthbio/1859  https://t.me/growthbio/1869  💊 지투지바이오 기업 설명회 녹화 https://www.youtube.com/watch?v=rMn-Z3so-r8  🧬바이오섹터 분석🧬 [그로쓰리서치] http…",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/3343"
+          },
+          {
+            "date": "2026-04-20",
+            "time": "13:45",
+            "text": "오랜만에 꺼내 보는 희용이 형",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/3345"
+          },
+          {
+            "date": "2026-04-20",
+            "time": "14:33",
+            "text": "26.04.14 YIG(연세대) 한화엔진 리포트 \n\nhttps://storage.googleapis.com/yighub/research-report-files/20260414_232751_262/YIG_3%ec%a1%b0_%ed%95%9c%ed%99%94%ec%97%94%ec%a7%84.pdf",
+            "links": [
+              "https://storage.googleapis.com/yighub/research-report-files/20260414_232751_262/YIG_3%ec%a1%b0_%ed%95%9c%ed%99%94%ec%97%94%ec%a7%84.pdf"
+            ],
+            "post_url": "https://t.me/SpartanResearch/3346"
           }
         ]
       },
@@ -730,77 +739,6 @@
         "channel_url": "https://t.me/Yeouido_Lab",
         "posts": [
           {
-            "date": "2026-04-18",
-            "time": "11:56",
-            "text": "알지노믹스 홍성우 부사장은 “초록 제출 시점과 발표 시점 사이의 간격으로 인해, 4월 19일 진행되는 구두 발표에서는 보다 업데이트된 임상 데이터를 제시할 예정이며, 긍정적인 결과이지만 중간결과 발표인만큼 타 임상결과와의 직접비교나 확대해석은 경계해야 할 것”이라고 밝혔다.\n\n알지도 또 뭐가 있군요",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/31277"
-          },
-          {
-            "date": "2026-04-18",
-            "time": "11:56",
-            "text": "RZ001 RECIST냐 mRECIST냐 말이 있는데 애초에 mRECIST가 HCC에서 RECIST 측정이 작동을 안 하는 케이스 때문에 AASLD에서 가이드라인을 발표한 거라... mRECIST로 보는 게 맞습니다\n\nFDA나 EMA는 Regulatory 기관이기에 간에서만 따로 mRECIST를 뗴어서 보진 않습니다. 이건 어떤 고형암에서도 마찬가지구요. \n\nhepatology에서 양대 산맥인 AASLD랑 EASL 모두 mRECIST를 표준으로 삼고 있고, mRECIST 없이는 데이터 논의 자체가 무의미하다고 보심 됩니다",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/31278"
-          },
-          {
-            "date": "2026-04-18",
-            "time": "11:57",
-            "text": "RZ001 RECIST냐 mRECIST냐 말이 있는데 애초에 mRECIST가 HCC에서 RECIST 측정이 작동을 안 하는 케이스 때문에 AASLD에서 가이드라인을 발표한 거라... mRECIST로 보는 게 맞습니다  FDA나 EMA는 Regulatory 기관이기에 간에서만 따로 mRECIST를 뗴어서 보진 않습니다. 이건 어떤 고형암에서도 마찬가지구요.   hepatology에서 양대 산맥인 AASLD랑 EASL 모두 mRECIST를 표준으로 삼고 있고…",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/31279"
-          },
-          {
-            "date": "2026-04-18",
-            "time": "12:03",
-            "text": "에이비엘바이오 gsk. 릴리가 떠갈때 휴먼데이터가 있어서 떠간게 아닙니다. 가능성이 보이니 가져간겁니다. 그게핵심인겁니다.\n빅팜들이 알지노 가능성을 보고 가져갈거란 소립니다.",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/31280"
-          },
-          {
-            "date": "2026-04-18",
-            "time": "13:38",
-            "text": "https://abc7amarillo.com/news/local/fermi-ceo-toby-neugebauer-steps-down-interim-office-named-as-stock-falls-nearly-30",
-            "links": [
-              "https://abc7amarillo.com/news/local/fermi-ceo-toby-neugebauer-steps-down-interim-office-named-as-stock-falls-nearly-30"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/31281"
-          },
-          {
-            "date": "2026-04-18",
-            "time": "13:38",
-            "text": "https://abc7amarillo.com/news/local/fermi-ceo-toby-neugebauer-steps-down-interim-office-named-as-stock-falls-nearly-30",
-            "links": [
-              "https://www.politico.com/news/2026/03/20/confrontation-ceo-and-lutnick-00838496"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/31282"
-          },
-          {
-            "date": "2026-04-18",
-            "time": "16:26",
-            "text": ".\n■ 속도는 낮지만 상선의 정상 통과가 진행되고 있는 것으로 보입니다. \n\n#호르무즈",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/31283"
-          },
-          {
-            "date": "2026-04-19",
-            "time": "17:22",
-            "text": "https://blog.naver.com/8740best/224257748969",
-            "links": [
-              "https://blog.naver.com/8740best/224257748969"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/31284"
-          },
-          {
-            "date": "2026-04-19",
-            "time": "21:26",
-            "text": "메모리 위기 심화: 2027년까지 DRAM 공급, 수요의 60%에 그칠 전망\n\n삼성전자, SK하이닉스, 마이크론 등 주요 반도체 기업들의 공격적인 증설 노력에도 불구하고, 폭발적인 AI 수요를 감당하기에는 역부족이라는 분석이 나왔습니다. 메모리 부족과 가격 고공행진은 최소 2028년 말까지 이어질 것으로 보입니다.\n\n1. 심각한 수급 불균형 (Supply-Demand Gap)\n공급 능력의 한계: 2027년 말까지 전 세계 DRAM 공급량은 시장 수요의 약 60% 수준만 충족할 수 있을 것으로 예측됩니다.\n\n성장률 격차: 시장조사업체 카운터포인트(Counterpoint)에 따르면, 수급 불균형 해소를 위해선 연간 12%의 생산량 증설이 필요하지만, 현재 실제 증설 속도는 7.5%에 머물고 있습니다.\n\n장기화 조짐: 신규 공장 건설 및 설비 가동까지의 물리적 시간을 고려할 때, 2027년 이전에는 실질적인 수급 균형을 맞추기 어렵습니다.\n\n\n2. 가격 폭등과 시장의 혼란\n가격 급등: 2026년 1분기 메모리 가격은 전년 대비 110% 폭등했습니다.\n\n패닉 바잉: PC 제조업체들은 재고 확보를 위해 비상 상황에 돌입했으며, 데이터센터 운영자들은 한 해 물량을 미리 선점하는 등 '공급량 확보 전쟁'이 벌어지고 있습니다.\n\n\n3. AI의 역설: 소비자용 시장의 희생\nAI 인프라 구축이 전 세계 DRAM 생산 라인을 독점하면서 일반 소비자 시장이 큰 타격을 입고 있습니다.\n\nHBM 우선주의: 주요 제조사들은 수익성이 높은 HBM 및 차세대 규격 생산에만 집중하고 있습니다.\n\n구형 규격 단종: 삼성 등 주요 기업은 DDR3, DDR4, LPDDR4 등 기존 범용 제품의 생산을 중단하고 있습니다.\n\n브랜드 철수: 마이크론의 소비자용 브랜드인 크루셜(Crucial)이 시장 철수를 선언하는 등 일반 PC 사용자와 완제품 업체들이 체감하는 공급난은 더욱 심화될 것입니다.\n\nhttps://wallstreetcn.com/articles/3770350",
-            "links": [
-              "https://wallstreetcn.com/articles/3770350"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/31285"
-          },
-          {
             "date": "2026-04-20",
             "time": "07:06",
             "text": "어후 ㅜㅜ\n\nhttps://n.news.naver.com/mnews/article/417/0001139648?sid=104&sicode=01",
@@ -890,6 +828,77 @@
               "https://www.ddpharmatech.com/board/board.php?bo_table=press&amp;idx=88"
             ],
             "post_url": "https://t.me/Yeouido_Lab/31299"
+          },
+          {
+            "date": "2026-04-20",
+            "time": "13:00",
+            "text": "[⚡️DOE 장관, 원전 첫 5~10기 정부 대출 확정]\n\n미국 원전 르네상스의 최대 리스크였던 자금조달이 사실상 해결되고 있는 중\n\nDOE 장관 Chris Wright, 4/16 하원 청문회에서 \"첫 5~10기 신규 원전은 거의 확실히 정부 대출을 받을 것\" 직접 발언.\n\nQ. DOE 장관이 정확히 뭐라 했나?\n\n\"처음 계획된 5기 또는 10기 신규 원전은 거의 확실히 DOE 대출 사무소의 대출을 받게 될 것\"\n\nDOE 산하 대출 조직 대출 여력 약 $290B.\nWright 장관 작년 발언 \"그 돈의 가장 큰 용도는 원전이 될 것\"\n\n정부가 첫 10기 원전 자금을 사실상 책임진다고 공개 선언한 것.\n\nQ. 얼마짜리 프로젝트가 줄 서 있나?\n\n트럼프 행정명령 : 2030년까지 대형 원전 10기 착공 + NRC 인허가 속도 상향.\n\n2025.10 미국 정부 × Westinghouse 소유주 Cameco · Brookfield 파트너십 → 최소 $80B 규모 원전 건설.\n\nDOE $290B + 일본 $332B + 민간 파트너십 $80B, 전부 원전 쪽으로 집결 중.\n\nVogtle에서 7년 지연 · $17B 초과라는 악몽을 겪고도 미국이 다시 원전에 돈을 쏟고 있는 중\n\nAP1000 공급망 · 우라늄 · 핵연료 · 원전 EPC까지 밸류체인 전반에 구조적 순풍\n\n#원전 #원자력 #AP1000 #Westinghouse #Cameco #CCJ #DOE #Brookfield #원전르네상스 #미국원전",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/31300"
+          },
+          {
+            "date": "2026-04-20",
+            "time": "13:00",
+            "text": "[⚡️DOE 장관, 원전 첫 5~10기 정부 대출 확정]  미국 원전 르네상스의 최대 리스크였던 자금조달이 사실상 해결되고 있는 중  DOE 장관 Chris Wright, 4/16 하원 청문회에서 \"첫 5~10기 신규 원전은 거의 확실히 정부 대출을 받을 것\" 직접 발언.  Q. DOE 장관이 정확히 뭐라 했나?  \"처음 계획된 5기 또는 10기 신규 원전은 거의 확실히 DOE 대출 사무소의 대출을 받게 될 것\"  DOE 산하 대출 조직 대출 여력 약 $290B.…",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/31301"
+          },
+          {
+            "date": "2026-04-20",
+            "time": "13:21",
+            "text": "3. 지원자격\n\n- 학력 : 4년제 대학교 학사 이상\n- 경력 : 경력 무관\n- 자격 : 투자자산운용사 자격증",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/31302"
+          },
+          {
+            "date": "2026-04-20",
+            "time": "13:33",
+            "text": "*고맙다. 천궁2~\nㅡㅡㅡㅡㅡㅡㅡ\nUAE 관계자: 이란의 공격 목표 중 90% 이상이 민간 기반 시설이었다\n\n국무장관은 이란이 전쟁 발발 이후 아랍에미리트를 향해 2,800발 이상의 미사일과 드론을 발사했다고 밝혔습니다.\n\n아랍에미리트 국무장관은 일요일, 미국과 이스라엘이 이란과 벌인 전쟁 발발 후 40일 동안 자국이 2,800발 이상의 미사일과 드론 공격을 받았으며, 공격 목표의 90% 이상이 민간 기반 시설이었다고 밝혔다.\n\nhttps://www.politico.com/news/2026/04/19/united-arab-emirates-iran-civilian-infrastructure-00880064",
+            "links": [
+              "https://www.politico.com/news/2026/04/19/united-arab-emirates-iran-civilian-infrastructure-00880064"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/31304"
+          },
+          {
+            "date": "2026-04-20",
+            "time": "14:02",
+            "text": "테킹이형님\n\nhttps://blog.naver.com/alteking/224258657493\n\n좁게 보면 간암에서 로슈를 추격중인 BMS, 아스트라제네카, 머크가 RZ-001을 통해 대역전을 노릴수도 있겠고~\n\n좀 더 넓게보면 LNP기술을 보유한 모더나ㆍ화이자가 알지노믹스에 관심을 보일것  같다.\n\n현재 RZ-001을 LNP정맥주사로 개발한다면\n\n간암을 넘어, 폐암ㆍ췌장암등 hTERT발현이 높은 암종으로 적응증 확대가 가능하다.",
+            "links": [
+              "https://blog.naver.com/alteking/224258657493"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/31305"
+          },
+          {
+            "date": "2026-04-20",
+            "time": "14:08",
+            "text": "테킹이형님  https://blog.naver.com/alteking/224258657493  좁게 보면 간암에서 로슈를 추격중인 BMS, 아스트라제네카, 머크가 RZ-001을 통해 대역전을 노릴수도 있겠고~  좀 더 넓게보면 LNP기술을 보유한 모더나ㆍ화이자가 알지노믹스에 관심을 보일것  같다.  현재 RZ-001을 LNP정맥주사로 개발한다면  간암을 넘어, 폐암ㆍ췌장암등 hTERT발현이 높은 암종으로 적응증 확대가 가능하다.",
+            "links": [
+              "https://www.docdocdoc.co.kr/news/articleView.html?idxno=3038472"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/31306"
+          },
+          {
+            "date": "2026-04-20",
+            "time": "15:06",
+            "text": "마감 시황. 이란, 골드만삭스, SK하이닉스\n\n미국-이란 협상 기대. 실적 효과에 상승 \n코스닥은 작년 9월 이 후 최장 7일 연속 상승\n다만 중동 충돌 우려도 부각되며 불안정한 모습 보임\n결국 협상은 열릴 것이라는 전망에 상승세는 유지\n우리 뿐 아니라 아시아 증시 대부분 플러스권 유지\n\n미국-이란 휴전 종료 앞두고 신경전\n전면 개방, 재봉쇄. 선박 나포. 보복 공격\n미국은 협상단 파견. 이란은 협상 없다며 여론전\n다만 이란의 군사적 보복이 우려 보다 약했음\n선박 나포에 드론을 통한 미국 군함 공격 정도\n판을 깨려는 의도는 없다는 것으로 해석\n알 아라비아. 양측의 입장차 좁혀지고 있다는 보도\n이란이 화요일 협상장에 도착할 것이라고\n다만 이런 보도는 다른 언론에는 나오지 않음\n관련 내용에도 미국 선물, 유가 반응 미미\n공식적으로 확인된 사안인지는 불확실해 보임\n\n증시 플러스권 유지하는데 실적이 큰 역할\n골드만삭스. 코스피 목표치 상향\n국내 기업들 실적 예상 보다 더 좋다며 8,000p 전망\n삼성전자, SK하이닉스 제외해도 실적 강하다고\n최근 해외 쪽에서 한국 증시 관련 분석이 많아짐\n주목도 높아지고 있다는 점 긍정적 영향\n\n실적 발표 앞두고 SK하이닉스 오르며 지수 주도\n이차전지주는 실적 턴 기대감에 강세\n게임, 해운, 증권, 금융주 등도 상승\n다만 양시장 모두 하락 종목수도 제법 많았음\n\n외국인 운송장비, 건설, 화학 등 순매도\n기계, 전기전자, 금속, 음식료 업종은 순매수\n코스닥 기계, 전기전자, 금융 순매수\n기관 전기전자, 기계, 금융, 제약 등 순매수\n\n주초 중동 뉴스 영향은 불가피해 보임\n그간 반등은 휴전 기간 안도 랠리 측면\n주말 사이 뉴스가 자주 바뀌는 점은 부담\n협상 전 신경전으로 보이나 확정된 것 없는 점 부담\n주초 뉴스에 따른 변동성은 염두해야\n\n반면 실적 기대감은 지수 방어 요인\n이번주 나올 SK하이닉스 역시 실적 기대감 유발\n단기 주가 상승과 무관하게 저평가 다시 부각될 듯\n골드만삭스 등 주요 외국계 여전히 긍정적 평가\n지수 방어 요인도 어느 정도는 있는 것\n\n다만 그간 상승으로 낙폭 상당 부분 만회\n양시장 모두 과매수권 접근함\n종목별 차별화가 나타날 수 있는 시기 \n기관, 외국인 수급 붙이는 업종과 주변주\n호실적 평가 꾸준했던 업종들 지속 관찰",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/31307"
+          },
+          {
+            "date": "2026-04-20",
+            "time": "15:11",
+            "text": "협상과 심리싸움의 막바지 고지전 중 아닐까\n\n[속보] 이란 측 \"미국의 긍정 신호 있으면 대표단 파견\"\nhttps://n.news.naver.com/mnews/article/422/0000856908?sid=104",
+            "links": [
+              "https://n.news.naver.com/mnews/article/422/0000856908?sid=104"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/31308"
+          },
+          {
+            "date": "2026-04-20",
+            "time": "15:19",
+            "text": "두 시간 정도 전 주요 언론사들 보도에는 안 나오고..\n\n아랍어 방송국인 알 아라비아의 X 계정에만 올려진 내용인데\n\n여튼 파키스탄 언론 보도를 인용해 이란이 화요일에 협상장에 도착할 것으로 예상된다고. 이런 내용이 나오긴 했었습니다.",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/31309"
           }
         ]
       },
