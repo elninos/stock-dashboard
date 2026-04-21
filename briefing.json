@@ -1,6 +1,6 @@
 {
   "2026-04-21": {
-    "fetched_at": "2026-04-21T14:33:12+09:00",
+    "fetched_at": "2026-04-21T17:00:03+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -256,45 +256,6 @@
         "posts": [
           {
             "date": "2026-04-21",
-            "time": "09:12",
-            "text": "✅ 씨이랩 엔비디아 GPU가 팔릴수록 우리 매출도 오른다! (기업탐방 인터뷰)\n\nhttps://www.youtube.com/watch?v=HGsW-1YYaP0\n\n어제에 이어 오늘도 🔥씨이랩 상한가 갔네요.\n\n씨이랩 윤세혁 대표님 인터뷰 영상 한번씩 보시면 좋을 것 같습니다.\n\n📌 씨이랩(C랩) 기업 소개 및 핵심 솔루션\n피지컬 AI 시대를 선도하는 코스닥 상장 풀스택 AI 기업\n\nGPU 자원 활용을 극대화하는 관리 솔루션 '아스트라고' 제공\n\n실시간 영상 분석 솔루션 '엑사이바' 보유\n\n물리 세계 가상 시뮬레이션 '엑스젠' 및 '옴니버스' 운영\n\n📌 엔비디아(NVIDIA) 파트너십 및 사업 시너지\n국내 SW 기업 최초 엔비디아 프리퍼드 파트너 선정\n\n엔비디아 인프라 판매 시 '아스트라고' 번들 패키지 제안\n\n엔비디아 GPU 시장 성장에 따른 잠재 고객 동반 확대\n\n옴니버스 플랫폼 기반 산업 현장 맞춤형 가상화 모듈 개발\n\n📌 솔루션별 도입 성과 및 시장 경쟁력\n'아스트라고 2.0' 출시로 추론 영역까지 지원 범위 확장\n\n자동 자원 회수 기능으로 GPU 인프라 활용률 평균 30% 향상\n\n실시간 현장 위험 감지로 중대재해처벌법 완벽 대응\n\n공장 시공 전 가상 시뮬레이션으로 막대한 투자 비용 절감\n\n📌 재무 건전성 및 향후 성장 모멘텀\n고마진 SW 매출 확대로 실적 턴어라운드 국면 진입\n\n성공적 유상증자로 부채비율 17%의 안정적 재무 구조 확립\n\n국가 AI 인프라 및 스마트 안전 장비 지원 정책 수혜\n\n미국·일본 파트너십 구축을 통한 글로벌 진출 본격화\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch⁠",
-            "links": [
-              "https://www.youtube.com/watch?v=HGsW-1YYaP0",
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/25276"
-          },
-          {
-            "date": "2026-04-21",
-            "time": "09:17",
-            "text": "✅ 아이씨티케이, 데이터센터 보안 시장 진입 가속…KTNF와 상용화 로드맵\n\nhttps://www.cstimes.com/news/articleView.html?idxno=702702\n\n📌 핵심 내용\n아이씨티케이가 KTNF와 PUF·PQC 기반 서버 보안 상용화를 위한 기술교류 협약(MOU) 체결\n\nAI·데이터센터 확산에 따라 커지는 서버 공급망 공격 및 위·변조 위협 대응 목적\n\n소프트웨어 중심 보안을 넘어 제조 단계부터 하드웨어 기반 신뢰 확보 추진\n\n📌 적용 기술\nICTK의 VIA PUF™ 기반 보안칩 적용 추진\n\nPUF(물리적복제불가) 기술로 반도체 고유 특성에서 암호키 생성\n\nPQC(양자내성암호) 결합으로 차세대 보안 체계 강화\n\n키 저장 방식이 아니라 생성 방식이어서 탈취·복제 리스크 축소\n\n서버 보안 핵심 요소인 RoT(Root of Trust) 구현 기반 마련 기대\n\n📌 상용화 로드맵\n1단계: USB 기반 정합 테스트로 시스템 호환성 검증\n\n2단계: 서버 메인보드 내 보안칩 직접 내장 설계 고도화\n\n3단계: HSM 연계 구조로 확장해 데이터센터급 안정성·보안성 확보\n\n📌 사업 측면\nKTNF 주력 제품인 코어릿지 서버·네트워크 보안 서버에 적용 검토\n\n양사가 PoC 및 안정성 테스트를 공동 진행할 예정\n\n향후 글로벌 데이터센터 시장 진출 기회도 공동 발굴 계획\n\n📌 투자 포인트\nICTK가 기존 보안칩 영역에서 서버·데이터센터 보안으로 확장\n\n단순 기술 협력보다 상용화 로드맵과 실질 매출 연결 가능성이 포인트\n\nAI 인프라 확대 구간에서 국산 서버 + 하드웨어 보안 조합 부각 가능\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch⁠",
-            "links": [
-              "https://www.cstimes.com/news/articleView.html?idxno=702702",
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/25277"
-          },
-          {
-            "date": "2026-04-21",
-            "time": "09:26",
-            "text": "🧬 릴리, Kelonia 32.5억달러 인수…차세대 in vivo CAR-T 베팅 강화\n\n💊 거래 개요\nEli Lilly가 미국 바이오텍 Kelonia Therapeutics를 인수\n\n선급금 32.5억달러, 총 계약 규모 최대 70억달러(약 10조 원) 규모\n\n올해 들어 두 번째 in vivo CAR-T 관련 대형 인수\n\n💊 핵심 파이프라인\nKLN-1010: BCMA 표적 다발성골수종 치료제(임상 1상)\n\n재발·불응성 환자 대상 초기 데이터에서\n\n평가 환자 4명 모두 MRD 음성 반응률 100% 기록\n\n아직 초기 단계지만 효능 신호가 강하다는 평가\n\n💊 핵심 기술력\nKelonia의 진짜 가치는 iGPS(in vivo Gene Placement System) 플랫폼\n\n렌티바이럴 기반 전달체를 이용해 체내 T세포를 직접 표적화하고\n\n환자 몸 안에서 CAR-T 세포를 생성하는 방식\n\n💊 왜 중요한가\n기존 자가 CAR-T는 환자 세포 채취 → 외부 제조 → 재투여 과정이 복잡하고 비쌈\n\n생산 기간, 접근성, 안전성, 공급능력이 한계\n\nin vivo CAR-T는 이를 줄여 더 빠르고 저렴한 기성품형 세포치료제로 발전 가능\n\nAbbVie, BMS, AZ 등 타 빅파마들도 동시 진입 중\n\n💊 릴리 전략 해석\n차세대 항암·유전자치료 플랫폼을 공격적으로 매집 중\n\n단순 후보물질 인수가 아닌 미래 치료 패러다임 확보 목적\n\n🧬바이오섹터 분석🧬 [그로쓰리서치]\nhttps://t.me/growthbio",
-            "links": [
-              "https://t.me/growthbio"
-            ],
-            "post_url": "https://t.me/growthresearch/25278"
-          },
-          {
-            "date": "2026-04-21",
-            "time": "09:44",
-            "text": "✅ 반도체 업고 1∼20일 수출 50%↑…중동전쟁에 원유수입 석달째 증가\n\nhttps://www.yna.co.kr/view/AKR20260421033951002?input=1195m\n\n• 수출 504억달러 (+49.4% YoY)\n→ 같은 기간 기준 역대 최대\n\n• 수입 399억달러 (+17.7%)\n\n• 무역수지 104억달러 흑자\n\n📌 핵심은 반도체\n\n• 반도체 수출 183억달러 (+182.5%)\n→ 4월 1~20일 기준 역대 최고\n→ 전체 수출 비중 36.3% (전년 대비 +17.1%p)\n\n• 반도체 수입도 +58.3%\n\n• 반도체 제조장비 수입 +63.3%\n\n📌 국가별 수출 증가\n중국 +70.9%\n\n미국 +51.7%\n\n베트남 +79.2%\n\nEU +10.5%\n\n대만 +77.1%\n\n📌 체크포인트\n• 한국 수출 회복은 사실상 반도체가 견인\n\n• 장비 수입 증가까지 동반돼 업황 개선 신호 강화\n\n• 반면 원유 수입은 48억달러로 증가세 지속 → 유가/환율 부담은 변수\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch⁠",
-            "links": [
-              "https://www.yna.co.kr/view/AKR20260421033951002?input=1195m",
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/25279"
-          },
-          {
-            "date": "2026-04-21",
             "time": "09:57",
             "text": "✅ 대주전자재료 +13% 상승 중\n\n금일 대주전자재료가 +13% 상승 중입니다.\n\n전 사업부에서 글로벌 레퍼런스를 바탕으로 주목할 만 한 기업입니다.\n\n📌 대주전자재료 주요 포인트\n• 우주 태양광 핵심 수혜 가능성(HJT용 은-구리 페이스트)\n\n• MLCC 업황 개선의 직접 수혜\n\n• 실리콘 음극재 반등 구간\n\n“기존 MLCC 캐시카우 + 실리콘 음극재 회복 + 우주태양광 신규 모멘텀”\n\n더 자세한 내용은 아래 대주전자재료 탐방보고서에 적어두었으니,\n\n많은 도움 받아가시기 바라겠습니다.\n\n🔥 대주전자재료 탐방보고서 다시보기\nhttps://contents.premium.naver.com/growthresearch/growth/contents/260401190252329pm\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
             "links": [
@@ -400,7 +361,8 @@
             "text": "💻 중국 CXMT, HBM3 개발 난항…韓 추격 아직 '시기 상조'\n\nhttps://zdnet.co.kr/view/?no=20260421101006\n\n📌 HBM3 양산 일정 차질\n중국 CXMT가 당초 올 상반기 목표였던 HBM3 상용화 일정에 차질\n\n아직 소재·부품 협력사에 양산 수준 발주를 진행하지 못한 상태\n\n현재는 샘플 제조 수준에 머무는 것으로 파악\n\n📌 현재 개발 상황\nCXMT는 중국 최대 D램 업체로,\n\nDDR5·LPDDR5X 상용화에 성공할 만큼 기술 고도화 속도가 빠른 편\n\n다만 HBM은 적층, TSV, 후공정 등 난도가 높아\n\nHBM3는 아직 테스트 단계라는 평가\n\n📌 경쟁 구도\nCXMT가 개발 중인 HBM3는 4세대 HBM\n\n반면 삼성전자·SK하이닉스·마이크론은 이미 HBM4 양산 단계로 이동 중\n\n기술 격차가 여전히 존재하는 상황\n\n📌 기타 포인트\nHBM3 코어 다이에는 G4(16nm급) D램 적용\n\nCXMT 기준 최신 공정이지만, 업계에선 연내 양산도 쉽지 않다는 시각\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
             "links": [
               "https://zdnet.co.kr/view/?no=20260421101006",
-              "https://t.me/growth_semi"
+              "https://t.me/growth_semi",
+              "https://t.co/HG3h92JHLW"
             ],
             "post_url": "https://t.me/growthresearch/25294"
           },
@@ -414,6 +376,43 @@
               "https://t.me/growth_semi"
             ],
             "post_url": "https://t.me/growthresearch/25295"
+          },
+          {
+            "date": "2026-04-21",
+            "time": "14:55",
+            "text": "💻 삼성·SK 안방 찾은 엔비디아…“블랙웰·NVFP4 최격차, 네모트론서 시작됐다”\n\nhttps://www.ddaily.co.kr/page/view/2026042114351151452\n\n엔비디아, 서울 행사에서 AI 에이전트 시대 전략 공개. \n\n핵심은 “칩 회사 → 풀스택 AI 플랫폼 회사” 전환입니다.\n\n📌 1. 네모트론3 공개\nSuper: 1200억 파라미터 하이브리드 MoE 모델\n\nGPT-4o 대비 더 빠르고 우수하다고 주장\n\n멀티토큰 예측, Mamba2 구조 결합으로 추론 효율 강화\n\nUltra 출시 임박, Nano(300억) 는 소형 모델인데도 DeepSeek V3급 수학·코딩 성능 강조\n\n📌 2. 블랙웰 + NVFP4\n차세대 GPU 블랙웰에 적용된 4.75비트(NVFP4) 정밀도 언급\n\n정확도 유지하면서 전력·메모리 효율 개선\n\n모델 개발 과정에서 얻은 인사이트를 GPU 설계에 반영하는 ‘공동설계(Co-design)’ 전략\n\n📌 3. 로컬 AI 강조\n개인용 AI 슈퍼컴퓨터 DGX Spark 제시\n\n클라우드 API 비용 없이 대형 모델 운용 가능하다는 메시지\n\n프라이버시·데이터 소유권 측면에서 온디바이스/온프렘 AI 강조\n\n📌 4. 한국 공략 본격화\n한국 맞춤 데이터셋 Nemotron Persona Korea 공개\n\n700만개 합성 페르소나 데이터 무상 제공\n\n네이버, SKT, LG, 업스테이지, 크래프톤 등 국내 기업 직접 언급\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
+            "links": [
+              "https://www.ddaily.co.kr/page/view/2026042114351151452",
+              "https://t.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/25298"
+          },
+          {
+            "date": "2026-04-21",
+            "time": "15:49",
+            "text": "💻CPO 기술 진화 로드맵 — 2018~2028\n\n📌 광인터커넥트 기술 세대별 진화\n1. Off-board (~30pJ/bit): 플러그인 트랜시버 — ASIC과 광모듈 간 수 cm 전기 신호 이동 / SerDes 중간자 필요 → 전력 소모·지연·열점 집중\n\n2. On-board (~20pJ/bit): 보드 위 광학 통합 — 전기 경로 단축 시작\n\n3. NPO(근접 패키지 광학, ~2020): ASIC 근처 배치 — 1.6T 수준 대역폭\n\n4. CPO(공동 패키지 광학, ~5pJ/bit): 광 트랜시버를 ASIC과 초근접 통합 — 전기 경로 mm 수준으로 단축\n\n5. CPC/LPO (~7~8pJ/bit): CPO와 병행 발전하는 중간 솔루션\n\n6. In-package (<2pJ/bit, ~2028+): 패키지 내 광학 I/O 완전 통합 — 최종 진화 단계\n\n📌 핵심 기술 원리\nCPO 핵심: 연속파(CW) 레이저 + 실리콘 포토닉스 칩을 스위치 ASIC·컴퓨트 다이와 초근접 통합\n\n기존 플러그인 방식 → ASIC·광모듈 간 수 cm 전기 신호 이동 필요\n\nSerDes(직렬화·역직렬화) 중간자 필수 → 전력 소모·지연·열점 집중 문제\n\nCPO → 전기 경로 mm 수준으로 단축 → SerDes 의존 제거 → 전력·열·지연 동시 해결\n\n📌 대역폭 진화 경로\n100G(2018) → 400G → 800G → 1.6T → 3.2T → 6.4T → 12.8T(In-package 목표)\n\nScale-Out 네트워킹(현재) → Scale-Up 네트워킹(2025~) 으로 패러다임 전환\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
+            "links": [
+              "https://t.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/25299"
+          },
+          {
+            "date": "2026-04-21",
+            "time": "15:59",
+            "text": "🚨이란 의회의장 칼리바프, 파키스탄 2차 협상 참석 의향 — 밴스 VP 참석 조건\n\n조건: 미국 측 JD 밴스 부통령 참석 — 급이 맞아야 한다는 신호\n\n기존 실무급 협상에서 부통령·의회의장급 고위급 협상으로 격상 시도\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://t.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/25301"
+          },
+          {
+            "date": "2026-04-21",
+            "time": "16:56",
+            "text": "📹 알지노믹스 RZ-001 임상 결과, 우리가 주목해야 할 4가지 포인트\n\nhttps://youtu.be/YwR8Esec1gs?si=Zn53yEp7t99VLTVT\n\n💊 기존 표준 대비 ‘반응률 2배’\n표준치료 대비 ORR 대폭 향상\n\n초기 임상임에도 절반 이상 환자에서 종양 감소 확인\n\n💊 데이터 디테일도 강력\nDCR 92%, CR(완전관해) 3명 → 일부 환자 장기 지속 효과 확인\n\n안전성도 양호, 치명적 부작용 제한적\n\n💊 투자 포인트 4가지\n적응증 확장 가능성 + 면역항암제 병용 가치\n\n국내 희소한 유전자 항암 플랫폼\n\n기술이전(L/O) 기대감\n\n💊 리스크 체크\n환자 수 13명으로 표본 작음 + 대조군 부재\n→ 후속 임상에서 재현성 검증이 핵심\n\n자세한 내용은 영상을 통해 도움 받아가시기 바랍니다.",
+            "links": [
+              "https://youtu.be/YwR8Esec1gs?si=Zn53yEp7t99VLTVT"
+            ],
+            "post_url": "https://t.me/growthresearch/25302"
           }
         ]
       },
@@ -424,15 +423,6 @@
         "category": "매크로/크립토",
         "channel_url": "https://t.me/SpartanResearch",
         "posts": [
-          {
-            "date": "2026-04-20",
-            "time": "11:48",
-            "text": "🧬지투지바이오 기업설명회 GB-7001 — 월 1회 세마글루타이드 (비만/당뇨)\n\n💊Wegovy/Ozempic 주 1회 대비 월 1회로 환자 순응도 대폭 개선\nHuman Pilot Study: Rat 대비 초기방출 감소 + 방출기간 증대, 농도 서서히 증가로 부작용 감소 기대\n\n💊PK 시뮬레이션\nOzempic 대비 동등 AUCss (81,330 vs 83,993 h·ng/mL)\n\n농도 변동성(Peak to Trough) 1.25로 현저히 낮음 \n📍(Ozempic 1.81, Ascendis 2.0, Camurus 4.0)\n\n삼성바이오에피스/에피스넥스랩 기술이전 본계약 체결 (2026.03.16)\n\n💊계약일 이후 모든 개발비 삼성 부담\n지투지: 계약금 + 개발/판매 마일스톤 + 로열티 + 제품 매출 수령\n\n삼성에피스홀딩스 200억원 CB 투자\n\n추가 3종 미립구 우선협상권 부여\n\n🧬바이오섹터 분석🧬 [그로쓰리서치]\nhttps://t.me/growthbio",
-            "links": [
-              "https://t.me/growthbio"
-            ],
-            "post_url": "https://t.me/SpartanResearch/3335"
-          },
           {
             "date": "2026-04-20",
             "time": "11:48",
@@ -564,6 +554,24 @@
             "text": "한화엔진 역사적 신고가 & 상승VI",
             "links": [],
             "post_url": "https://t.me/SpartanResearch/3354"
+          },
+          {
+            "date": "2026-04-21",
+            "time": "15:11",
+            "text": "https://theguru.co.kr/mobile/article.html?no=100798",
+            "links": [
+              "https://theguru.co.kr/mobile/article.html?no=100798"
+            ],
+            "post_url": "https://t.me/SpartanResearch/3356"
+          },
+          {
+            "date": "2026-04-21",
+            "time": "15:11",
+            "text": "https://n.news.naver.com/article/001/0016032545?sid=104",
+            "links": [
+              "https://n.news.naver.com/article/001/0016032545?sid=104"
+            ],
+            "post_url": "https://t.me/SpartanResearch/3357"
           }
         ]
       },
@@ -751,15 +759,6 @@
         "posts": [
           {
             "date": "2026-04-21",
-            "time": "07:45",
-            "text": "우리집 앞 칼국수집도 이렇게 열고 닫고 하진 않아... \n\n[속보] \"이란 선박 최소 26척, 미 봉쇄선 통과\"<영국 매체>\nhttps://www.yonhapnewstv.co.kr/news/AKR202604210717221Io",
-            "links": [
-              "https://www.yonhapnewstv.co.kr/news/AKR202604210717221Io"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/31317"
-          },
-          {
-            "date": "2026-04-21",
             "time": "07:49",
             "text": "일라이 릴리, in vivo CAR-T 기업 Kelonia upfront $3.25bn 총 $7bn에 인수\n\n임상 1상에서 좋은 초기 결과 내놓은 기업 시세..가 요렇다의 좋은 예시\n\nhttps://investor.lilly.com/news-releases/news-release-details/lilly-acquire-kelonia-therapeutics-advance-vivo-car-t-cell",
             "links": [
@@ -899,19 +898,26 @@
           },
           {
             "date": "2026-04-21",
-            "time": "13:57",
-            "text": "메르님\n\nhttps://blog.naver.com/ranto28/224259581475",
-            "links": [
-              "https://blog.naver.com/ranto28/224259581475"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/31335"
-          },
-          {
-            "date": "2026-04-21",
             "time": "14:20",
             "text": "백악관, 폭스 뉴스에 \"이란과 '좋은 합의' 도달에 근접\"",
             "links": [],
             "post_url": "https://t.me/Yeouido_Lab/31336"
+          },
+          {
+            "date": "2026-04-21",
+            "time": "15:02",
+            "text": "https://blog.naver.com/archiveofs/224260015203",
+            "links": [
+              "https://blog.naver.com/archiveofs/224260015203"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/31337"
+          },
+          {
+            "date": "2026-04-21",
+            "time": "16:08",
+            "text": "전쟁 때문에 1달 넘게 혼을 쏙 빼더니, 어느 순간 코스피가 신고가를 갱신하네요\n\n6400p 근처까지 성큼 왔습니다\n동생 코스닥이도 좀 데려가주면 더 좋겠습니다;\n\n오늘 장 초반에 코스피, 코스닥의 흐름이 사뭇달랐습니다. 코스피는 대형주들 위주로 수급이 빵빵하게 돌면서 반등이 나왔고, 코스닥은 시가고가 찍고 밀리더니, 오후에 반등하면서 마무리 되었습니다\n\n대형주들이 움직이면 그 동안 아몰랑 테마로 엮인 종목들이 주춤하는데, 특히 실적 시즌이라 실적이 그닥인데 테마 편승해서 올라탔던 종목들은 주가 회귀를 하는 중인 듯 합니다\n\n고점 대비 많이 밀렸다가 반등을 하는 종목들도 있으나, 역시 고점은 조심해야합니다\n\n\n상한가 종목이 상당히 많은데, 좋은 종목도 있지만 시총 1천억 미만의 종목들도 많습니다\n\n반도체, 2차 전지, 조선, 재건 등 순환매가 지속되고 있기 때문에 흐름을 잘 체크하는 것이 중요해 보입니다\n\n화요일 장 고생 많으셨습니다 😘",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/31338"
           }
         ]
       },
