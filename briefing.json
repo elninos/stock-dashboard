@@ -1,6 +1,6 @@
 {
   "2026-04-22": {
-    "fetched_at": "2026-04-22T14:30:22+09:00",
+    "fetched_at": "2026-04-22T16:56:34+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -9,13 +9,6 @@
         "category": "증권사 리포트",
         "channel_url": "https://t.me/bumgore",
         "posts": [
-          {
-            "date": "2026-04-19",
-            "time": "08:32",
-            "text": "Competitive Advantage Period\n\nThe Neglected Value Driver\n\n모간스탠리",
-            "links": [],
-            "post_url": "https://t.me/bumgore/54178"
-          },
           {
             "date": "2026-04-20",
             "time": "08:00",
@@ -248,34 +241,6 @@
         "channel_url": "https://t.me/growthresearch",
         "posts": [
           {
-            "date": "2026-04-21",
-            "time": "16:56",
-            "text": "📹 알지노믹스 RZ-001 임상 결과, 우리가 주목해야 할 4가지 포인트\n\nhttps://youtu.be/YwR8Esec1gs?si=Zn53yEp7t99VLTVT\n\n💊 기존 표준 대비 ‘반응률 2배’\n표준치료 대비 ORR 대폭 향상\n\n초기 임상임에도 절반 이상 환자에서 종양 감소 확인\n\n💊 데이터 디테일도 강력\nDCR 92%, CR(완전관해) 3명 → 일부 환자 장기 지속 효과 확인\n\n안전성도 양호, 치명적 부작용 제한적\n\n💊 투자 포인트 4가지\n적응증 확장 가능성 + 면역항암제 병용 가치\n\n국내 희소한 유전자 항암 플랫폼\n\n기술이전(L/O) 기대감\n\n💊 리스크 체크\n환자 수 13명으로 표본 작음 + 대조군 부재\n→ 후속 임상에서 재현성 검증이 핵심\n\n자세한 내용은 영상을 통해 도움 받아가시기 바랍니다.",
-            "links": [
-              "https://youtu.be/YwR8Esec1gs?si=Zn53yEp7t99VLTVT"
-            ],
-            "post_url": "https://t.me/growthresearch/25302"
-          },
-          {
-            "date": "2026-04-21",
-            "time": "17:28",
-            "text": "💻 [단독] 삼성전자, 온양에 '축구장 4개' 반도체 팹 신설 … 핵심 후공정 거점으로\n\nhttps://biz.newdaily.co.kr/site/data/html/2026/04/21/2026042100093.html\n\n삼성전자가 충남 온양사업장에 반도체 후공정 전용 신규 팹 건설을 추진 중이라는 보도. \n\n규모는 약 8,870평(약 2.93만㎡), 최대 8층 수준으로 축구장 4개 규모.\n\n📌 핵심 내용\n• 기존 테스트 중심 온양을 종합 후공정 거점으로 전환\n\n• WP(웨이퍼 테스트) + PKG(패키징) 라인 동시 구축 추진\n\n• 테스트 결과를 패키징에 즉시 반영 가능한 일체형 운영 구조\n\n• HBM용 첨단 패키징/수율/납기 대응력 강화 목적\n\n📌 배경\n• 삼성전자 천안사업장 공간 포화 및 증설 한계\n\n• AI/HBM 시대 핵심 경쟁력이 전공정 → 후공정(패키징·테스트)으로 이동\n\n• 고객사 대응 속도와 안정 공급 능력 중요성 확대\n\n📌 해석\n이번 투자가 현실화되면 \n삼성의 HBM 경쟁 전략이 ‘메모리 생산능력’ 중심에서 ‘첨단 패키징 공급능력’ 중심으로 확장되는 신호로 볼 수 있음. \n\n온양이 삼성 후공정 핵심 축으로 부상 가능성.\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
-            "links": [
-              "https://biz.newdaily.co.kr/site/data/html/2026/04/21/2026042100093.html",
-              "https://t.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/25303"
-          },
-          {
-            "date": "2026-04-22",
-            "time": "08:38",
-            "text": "✅세계 최대 배터리 제조사 CATL이 3세대 Shenxing LFP 배터리를 공개\n\n• 1분 만에 10%에서 35% 충전\n\n• 3분 44초 만에 10%에서 80% 충전\n\n• 6.5분 만에 10%에서 90% 충전\n\n• -30°C(-20°F)처럼 낮은 온도에서도 CATL은 20%에서 98%까지 단 9분 만에 재충전\n\n• CATL은 새로운 LFP 배터리가 1,000회 초고속 충전 주기 후에도 원래 용량의 90% 이상을 유지\n\n• 세계 기록인 0.25밀리옴의 내부 저항, 평균보다 약 50% 낮음\n\n• 추운 날씨에서 더 나은 충전 성능을 위한 새로운 자체 발열 펄스 기술\n\n• 20% 더 효율적인 새로운 Cell Shoulder Cooling Technology\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/25304"
-          },
-          {
             "date": "2026-04-22",
             "time": "08:52",
             "text": "✅ 한화오션, 美 함정 설계 업체와 손잡고 미국 시장 공략\n\nhttps://n.news.naver.com/mnews/article/018/0006263127\n\n한화오션이 미국 해군 함정 설계 강자인 Leidos 산하 깁스 앤 콕스(Gibbs & Cox) 와 MOU를 체결. \n\n미국 및 동맹국 해군 함정 시장 진출을 위한 전략적 협력에 나섬\n\n📌 핵심 내용\n• 미국 해군 규격(US Navy Spec)에 맞춘 함정 공동 설계\n\n• 차세대 함정 공동 개발\n\n• 미국 현지+국내 생산기지 활용 공급망 구축\n\n• 유지보수(MRO)까지 고려한 효율적 설계 추진\n\n📌 왜 중요할까?\n깁스 앤 콕스는 2차대전 이후 미국 해군 수상함의 70% 이상 설계에 참여한 핵심 업체.\n\nDDG-51 이지스 구축함, FFG-62 차세대 호위함, DDG(X) 등 주요 프로젝트 경험 보유.\n\n📌투자 포인트\n한화오션은 이미 함정 건조 경쟁력을 갖춘 조선사. \n\n여기에 미국 현지 설계·인증 네트워크까지 더해지면, \n미국 군함 신조 및 MRO 시장 진입 가능성이 한층 높아졌다는 평가.\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
@@ -401,7 +366,8 @@
             "text": "💻8인치 파운드리 가격 상승세…DB하이텍도 2분기 본격 수혜\n\nhttps://zdnet.co.kr/view/?no=20260422104041\n\n📌 핵심 내용\nDB하이텍, 2분기부터 8인치 파운드리 웨이퍼 가격 한 자릿수 인상 계획\n\n인상폭 3~5% 수준 — 고객사와 협의 완료 단계\n\n부천·상우 캠퍼스 가동률 90%+ 유지 — 1분기 평균 91.96%\n\n📌 8인치 파운드리 업황 반등 배경\n전력반도체(PMIC)·DDI·CIS 등 산업 전반 필수 반도체 수요 급증\n\n삼성전자·TSMC 등 주요 기업 8인치 캐파 단계적 축소 중\n\n삼성전자, 기흥 6-2 라인 완전 가동 중단 계획 — 수익성 낮은 제품 우선 정리\n\n공급 감소 + 수요 증가 → 수급 구조 빠르게 개선\n\n📌 업계 가격 인상 동향\n중국 SMIC: 지난해 말 8인치 BCD 공정 10% 인상 고객사 통보 완료\n\nUMC: 8인치 라인 10~15% 인상 발표 (타이베이·샤먼 팹 가동률 105~108%)\n\nDB하이텍: 3~5% 인상 — 2분기부터 반영 예정\n\n📌 DB하이텍 주력 제품 — BCD 공정\nBCD(바이폴라·CMOS·DMOS) = 세 가지 전력 소자 단일 칩 구현\n\n내구성·전력 효율 높은 전력반도체 핵심 공정\n\nAI 데이터센터·전기차·산업용 전력관리 수요 직접 수혜\n\nUMC 105~108% 초과 가동 + 삼성 8인치 축소 + DB하이텍 90%+ 가동 — 8인치 공급 부족 구조적 장기화 확인\n\nSMIC 10% → UMC 10~15% → DB하이텍 3~5% — 글로벌 8인치 가격 인상 도미노 완성\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
             "links": [
               "https://zdnet.co.kr/view/?no=20260422104041",
-              "https://t.me/growth_semi"
+              "https://t.me/growth_semi",
+              "https://t.co/XeUX98Pj1x"
             ],
             "post_url": "https://t.me/growthresearch/25318"
           },
@@ -441,6 +407,35 @@
               "https://t.me/growthresearch"
             ],
             "post_url": "https://t.me/growthresearch/25322"
+          },
+          {
+            "date": "2026-04-22",
+            "time": "14:32",
+            "text": "✅ [단독]엔비디아도 물량 달라고 러브콜…K전력에 800V 직류설계 요청 줄섰다\n\nhttps://www.asiae.co.kr/article/2026042115333023514\n\n📌 AI 데이터센터發 전력 전쟁\nAI 데이터센터 증설 속도가 전력망 확충을 앞지르며\n\n전력 확보가 빅테크 핵심 과제로 부상\n\n글로벌 빅테크들이 한국 전력기기 업체들과 직접 접촉 확대\n\n📌 AWS, LS일렉트릭과 계약\nAWS는 국내 업체들과 협의 끝에\n\nLS일렉트릭과 1700억원 규모 전력 인프라 공급 계약 체결\n\n📌 엔비디아, 800V 직류(DC) 설계 요청\n엔비디아는 국내 주요 업체들에\n\n데이터센터 전력 시스템을 800V DC 기반으로 설계 요청\n\n교류-직류 반복 변환 과정의 전력 손실(단계당 2~3%) 최소화 목적\n\n📌 산업적 의미\n기존 교류(AC) 중심 데이터센터 구조에서\n\n고전압 직류 기반 차세대 인프라 전환 신호탄으로 평가\n\nAI 반도체 표준이 전력 인프라 구조까지 바꾸는 흐름\n\n📌 수혜 기대\nLS일렉트릭 등 국내 전력기기 업체들의 글로벌 수주 확대 가능성\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://www.asiae.co.kr/article/2026042115333023514",
+              "https://t.me/growthresearch",
+              "https://share.google/D2wiaYq0C5RStqbzr"
+            ],
+            "post_url": "https://t.me/growthresearch/25323"
+          },
+          {
+            "date": "2026-04-22",
+            "time": "14:44",
+            "text": "🚨IRGC, 전투 재개 시 역내 적 자산 대규모 공격 경고\n\n이란 혁명수비대(IRGC), \"전투 재개 시 역내 적 자산에 대규모 공격\" 경고\n\n협상 진행 중 강경파의 역내 군사력 과시 — 협상 레버리지 극대화 시도\n\n미국의 봉쇄 해제 신호(타스님 보도) 직후 강경 발언 동시 병행\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://t.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/25324"
+          },
+          {
+            "date": "2026-04-22",
+            "time": "15:55",
+            "text": "💻DRAM 스팟 가격 주간 동향 (4/15 → 4/21, TrendForce)\n\n📌 품목별 가격 변화\n📈DDR5 16Gb (2Gx8) 4800/5600: $37.43 → $38.83 (+3.74%)\n\n📈DDR5 16Gb (2Gx8) eTT: $21.50 → $21.90 (+1.86%)\n\n📉DDR4 16Gb (2Gx8) 3200: $70.50 → $67.50 (-4.26%)\n\n📉DDR4 16Gb (2Gx8) eTT: $13.48 → $13.38 (-0.74%)\n\n📉DDR4 8Gb (1Gx8) 3200: $33.20 → $33.00 (-0.60%)\n\nDDR5: 상승세 — AI 서버·고사양 PC 수요 주도 + 공급 타이트 지속\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
+            "links": [
+              "https://t.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/25325"
           }
         ]
       },
@@ -451,13 +446,6 @@
         "category": "매크로/크립토",
         "channel_url": "https://t.me/SpartanResearch",
         "posts": [
-          {
-            "date": "2026-04-21",
-            "time": "13:40",
-            "text": "이번 주 안내한 지투지와 엔진 섹터(한화엔진) 모두 흐름이 좋네요",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/3353"
-          },
           {
             "date": "2026-04-21",
             "time": "13:41",
@@ -586,6 +574,13 @@
               "https://finance.naver.com/item/main.nhn?code=000660"
             ],
             "post_url": "https://t.me/SpartanResearch/3372"
+          },
+          {
+            "date": "2026-04-22",
+            "time": "14:33",
+            "text": "HD현대중공업 VI",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/3373"
           }
         ]
       },
@@ -596,22 +591,6 @@
         "category": "매매 신호/트레이딩",
         "channel_url": "https://t.me/d_ticker",
         "posts": [
-          {
-            "date": "2026-04-21",
-            "time": "08:24",
-            "text": "인테그리스(ENTG)는 NAND 밸류체인에서 가장 주목해야 할 종목  ENTG는 NAND 증설 없이도 적층 단수 증가와 NAND 증착 소재의 전환(텅스텐 → 몰리브덴)으로 성장하고 있으며, 향후 NAND 증설이 본격화되면 그때는 더 큰 수혜를 입을 수 있음. 파운드리 등 Logic 시장에서도 EUV 기반 2나노 공정에 포토레지스트 필터 소모품을 제공함으로써 웨이퍼 출하량에 비례하는 수익을 얻고 있음",
-            "links": [],
-            "post_url": "https://t.me/d_ticker/3031"
-          },
-          {
-            "date": "2026-04-21",
-            "time": "08:37",
-            "text": "‘차기 애플 CEO’ 존 터너스, 그를 향한 의구심\n\n(The Information) 애플의 하드웨어 엔지니어링 수석 부사장인 존 터너스가 팀 쿡의 뒤를 이을 가장 유력한 후계자로 부상하고 있다. 그는 하드웨어 전문가로서의 역량은 검증됐으나, 조나단 아이브나 스티브 잡스 같은 카리스마 있는 제품 설계자 이미지보다는 안정적인 관리자라는 평가가 지배적인 터너스가 AI와 소프트웨어가 중심이 되는 미래 시장에서 애플의 '넥스트 빅 싱'을 이끌 수 있을지에 대한 의구심이 존재한다.둘째는 공급망 관리 및 운영 능력의 검증이다. 팀 쿡의 최대 업적으로 꼽히는 효율적인 글로벌 공급망 관리를 터너스가 계승할 수 있을지, 특히 중국 의존도를 낮추고 공급망을 다변화해야 하는 지정학적 위기 속에서 그의 운영 리더십이 시험대에 오를 전망이다. 셋째는 전 세계적으로 거세지는 규제와 법적 분쟁에 대한 대응력이다. 현재 애플은 미국과 유럽 등지에서 강력한 반독점 규제에 직면해 있는데, 기술 전문가인 그가 복잡한 정치·법률적 난제를 해결하며 서비스 부문의 수익성을 방어할 수 있을지가 차기 CEO로서의 완성도를 결정할 핵심 지표가 될 것으로 분석된다.\n\n팀 쿡은 CEO를 사임하고 이사회 의장을 맡게 됩니다",
-            "links": [
-              "https://www.theinformation.com/articles/three-big-questions-apples-next-ceo-john-ternus"
-            ],
-            "post_url": "https://t.me/d_ticker/3032"
-          },
           {
             "date": "2026-04-21",
             "time": "08:47",
@@ -747,6 +726,22 @@
             "text": "[공시] SK하이닉스, 청주 첨단 패키징 팹(P&T7) 착공 건\n\n2026년 4월 착공을 시작으로 청주 흥덕구 외북동 테크노폴리스 산업단지 내 어드밴스드 패키징(Advanced Packaging) 전용 팹인 P&T7 건설 예정. 향후 공장 건설 및 생산 설비 구축에 약 19조원 규모를 투자할 계획",
             "links": [],
             "post_url": "https://t.me/d_ticker/3050"
+          },
+          {
+            "date": "2026-04-22",
+            "time": "16:00",
+            "text": "두산테스나, '엔비디아' AI 칩 테스트 맡는다",
+            "links": [],
+            "post_url": "https://t.me/d_ticker/3051"
+          },
+          {
+            "date": "2026-04-22",
+            "time": "16:08",
+            "text": "中 D램 업체, HBM3 개발 난항\n\n(지디넷코리아) 중국 창신메모리(CXMT)가 4세대 고대역폭메모리(HBM3) 상용화 시기를 늦출 가능성이 높아지고 있다. 당초 올 상반기 상용화에 나서는 것이 목표였지만, 아직까지 관련 소재·부품 협력사에 양산 수준의 발주를 진행하지 못한 것으로 파악된다. 반도체 업계 관계자는 \"개발 진척 상황을 보면 연내 양산은 어려울 것으로 관측된다\"고 설명했다. 한편 CXMT는 HBM3의 코어 다이로 G4(16나노미터급) D램을 채용했다.\n\nHBM3까지 억지로 한다 해도 EUV 기반 로직 다이 미세화가 요구되는 HBM4는 따라잡기 힘들 듯",
+            "links": [
+              "https://zdnet.co.kr/view/?no=20260421101006"
+            ],
+            "post_url": "https://t.me/d_ticker/3052"
           }
         ]
       },
@@ -765,52 +760,6 @@
         "category": "국내 시장/종목 분석",
         "channel_url": "https://t.me/Yeouido_Lab",
         "posts": [
-          {
-            "date": "2026-04-22",
-            "time": "08:45",
-            "text": "알테킹 형님은 알테오젠 22년 3월 첫 커버 개시후 1,070개글 업댓 25년 12월 1일 업댓 종료  알테오젠 22년 3월 4만원대 -> 25년 12월 50만원대  진짜 대단한 분",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/31357"
-          },
-          {
-            "date": "2026-04-22",
-            "time": "09:08",
-            "text": "바이오는 시장이 망하니 오르네",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/31358"
-          },
-          {
-            "date": "2026-04-22",
-            "time": "09:08",
-            "text": "전쟁나면 상 치겠어",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/31359"
-          },
-          {
-            "date": "2026-04-22",
-            "time": "09:09",
-            "text": "앤스로픽 Claude Code 제외 이슈 관련 오픈AI Codex 총괄 코멘트\n\n<Tibo갓>\n\n저쪽에서 무슨 일을 하고 있는지는 모르겠지만, Codex는 앞으로도 무료 플랜과 Plus(20달러) 플랜 모두에서 계속 이용 가능할 것입니다. 우리는 이를 지원할 충분한 컴퓨트 자원과 효율적인 모델을 갖추고 있습니다. 중요한 변화가 있을 경우, 실제로 적용하기 훨씬 전에 커뮤니티와 충분히 소통하겠습니다.\n\n투명성과 신뢰는 우리가 절대 저버리지 않을 두 가지 원칙입니다. 잠시 수익이 줄어들더라도 마찬가지입니다. 여러분의 구독은 이 세상에서 보고 싶은 가치에 투표하는 행위라는 점을 다시 상기시켜드립니다.\n\n(인용된 앤스로픽 Amol Avasare의 글)\n\n명확히 말씀드리면, 우리는 신규 프로슈머 가입자의 약 2%를 대상으로 소규모 테스트를 진행 중입니다. 기존 Pro 및 Max 구독자들은 영향을 받지 않습니다.\n\nhttps://t.me/Samsung_Global_AI_SW",
-            "links": [
-              "https://t.me/Samsung_Global_AI_SW"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/31360"
-          },
-          {
-            "date": "2026-04-22",
-            "time": "10:11",
-            "text": "받)이 많이 돌지만 캡쳐는 없음. 만약 정말이라면 수많은 텔레특공대들이 찾아서 돌만도한데...",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/31362"
-          },
-          {
-            "date": "2026-04-22",
-            "time": "10:13",
-            "text": "디앤디파마텍 MASH 치료제 임상2상 48주 데이터베이스 락 완료\nhttps://www.yakup.com/news/index.html?mode=view&pmode=&cat=all&cat2=&cat3=&nid=326324&num_start=0&sicode=01\n\n‘데이터베이스 락’은 임상시험 과정에서 수집된 모든 환자 투약 결과와 안전성 데이터를 최종 검증해 확정하는 단계로, 임상 데이터 무결성(Data integrity)을 확보하기 위한 필수적인 절차다. 이 단계가 완료되면 더 이상 데이터 수정이나 추가가 불가능하며, 통계 분석을 통해 약물 유효성과 안전성을 최종 검증하게 된다. 일반적으로 ‘데이터베이스 락’ 이후 30일 정도 후 CRO로부터 탑라인(Top-line) 데이터를 수령한다.",
-            "links": [
-              "https://www.yakup.com/news/index.html?mode=view&amp;pmode=&amp;cat=all&amp;cat2=&amp;cat3=&amp;nid=326324&amp;num_start=0&amp;sicode=01"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/31363"
-          },
           {
             "date": "2026-04-22",
             "time": "11:03",
@@ -845,7 +794,7 @@
             "text": "[단독]엔비디아도 K전력에 러브콜…빨라질 800V '직류시대'[직류시대]①\nhttps://www.asiae.co.kr/article/2026042115333023514\n\n전력업계에서는 이 같은 흐름을 단순한 기술 변화가 아니라 전력 인프라 전체가 바뀌는 신호로 보고 있다. AI 수요가 늘면서 데이터센터의 전력 효율 경쟁이 치열해지고 있고, 직류 기반 고전압 시스템이 새로운 기준으로 자리 잡을 것이란 전망이다. 국제에너지기구에 따르면 세계 데이터센터 전력 소비는 2024년 415TWh에서 2030년 950TWh, 2035년 1300TWh까지 증가할 것으로 전망된다. 전력 사용이 빠르게 늘어나는 만큼 손실을 줄일 수 있는 직류 기반 시스템 도입이 필요하다는 분석에 힘이 실린다.",
             "links": [
               "https://www.asiae.co.kr/article/2026042115333023514",
-              "https://view.asiae.co.kr/article/2026042115333023514"
+              "https://www.asiae.co.kr/article/enterprise-CEO/2026042115333023514"
             ],
             "post_url": "https://t.me/Yeouido_Lab/31370"
           },
@@ -888,6 +837,50 @@
             "text": "이란 분위기 완화 기대감인데 유가는 일단 맛만 살짝 보는 정도.",
             "links": [],
             "post_url": "https://t.me/Yeouido_Lab/31378"
+          },
+          {
+            "date": "2026-04-22",
+            "time": "14:33",
+            "text": "아니다 어제랑 좀 달라진것도 있다.",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/31379"
+          },
+          {
+            "date": "2026-04-22",
+            "time": "14:50",
+            "text": "늑구 다음 슴구스\n\n[속보] 광명 옥길동서 사슴 5마리 탈출…\"주민 안전 유의\"\nhttps://n.news.naver.com/mnews/article/421/0008905396?sid=102",
+            "links": [
+              "https://n.news.naver.com/mnews/article/421/0008905396?sid=102"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/31380"
+          },
+          {
+            "date": "2026-04-22",
+            "time": "15:05",
+            "text": "바이오 붐은 온다...",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/31381"
+          },
+          {
+            "date": "2026-04-22",
+            "time": "16:10",
+            "text": "✅ LIG디펜스앤에어로스페이스 하락 이유\n\n수주공시 기대하던 미국향 비궁이 아니라 말레이시아 해궁 🤦‍♂️",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/31382"
+          },
+          {
+            "date": "2026-04-22",
+            "time": "16:14",
+            "text": "✅ LIG디펜스앤에어로스페이스 하락 이유  수주공시 기대하던 미국향 비궁이 아니라 말레이시아 해궁 🤦‍♂️",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/31383"
+          },
+          {
+            "date": "2026-04-22",
+            "time": "16:21",
+            "text": "바붐온 얘기가 많은데 그 붐이 이 붐이 아니었을까요. 이미 우린 바붐온과 함께 하고 있다...",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/31384"
           }
         ]
       },
