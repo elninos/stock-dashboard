@@ -1,6 +1,6 @@
 {
   "2026-04-22": {
-    "fetched_at": "2026-04-22T18:27:51+09:00",
+    "fetched_at": "2026-04-22T20:11:09+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -242,25 +242,6 @@
         "posts": [
           {
             "date": "2026-04-22",
-            "time": "10:34",
-            "text": "✅미국 AI 데이터센터 절반 지연·취소 — 전력 인프라 병목 직격\n\n📌 핵심 현황\n2026년 계획된 미국 데이터센터 건설 약 절반 지연 또는 취소 전망\n\n빅테크 4사(알파벳·아마존·메타·마이크로소프트) 2026년 AI 인프라 투자 $6,500억+ 예정\n\n그러나 2026년 미국 데이터센터 예상 신규 캐파 12GW 중 현재 활발히 건설 중인 것은 1/3 수준\n\n📌 병목 원인 — 전력 인프라 부품 부족\n핵심 부족 품목: 변압기·스위치기어·배터리 — 데이터센터 총비용의 10% 미만이지만 단 하나만 없어도 전체 \n프로젝트 중단\n\n고출력 변압기 납기: 2020년 이전 24~30개월 → 현재 최대 5년 — AI 배포 사이클 18개월과 극명한 불일치\n\n전력망 스트레스: AI 데이터센터 + 전기차·전열 시스템 동시 수요 급증\n\n📌 중국 의존도 — 아이러니한 현실\n중국산 고출력 변압기 수입: 2022년 1,500대 미만 → 2025년 10월까지 8,000대+ 급증\n\n중국, 미국 배터리 수입의 40%+ 차지\n\n특정 변압기·스위치기어 카테고리 중국 비중 ~30% 유지\n\n10년간 리쇼어링 추진에도 미국 전기 장비 제조 캐파 여전히 부족\n\n📌 대체 공급국 수혜\n고출력 변압기 최대 공급국: 캐나다·멕시코·한국 — 직접 수혜\n\n한국 전력기기 업체 수출 모멘텀 강화 확인\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/25311"
-          },
-          {
-            "date": "2026-04-22",
-            "time": "10:36",
-            "text": "💻 [단독] 삼성, 7세대 D램 양산 시점 재검토…“ROI 확보 최우선”\n\nhttps://it.chosun.com/news/articleView.html?idxno=2023092160720\n\n📌 D1d 양산 연기\n삼성전자가 10nm급 7세대 D램(D1d) 초기 양산 계획을 무기한 연기\n\n당초 올해 1분기 양산 승인 후 시생산 예정이었으나 수율 미달로 보류\n\n📌 핵심 이유는 수익성\n공정 난도 상승으로 안정적 품질 확보가 어렵고\n\n투자 대비 수익성(ROI)이 낮다고 판단한 것으로 전해짐\n\n📌 HBM 로드맵 영향\nD1d는 차세대 HBM5E 핵심 기반 D램\n\n양산 지연 시 삼성의 차세대 AI 메모리 일정도 일부 늦어질 가능성\n\n📌 경쟁 구도\nSK하이닉스는 D1d 개발·수율 확보가 상대적으로 순조롭다는 평가\n\n삼성은 1c·1d 동시 개발로 역량 분산 지적도 존재\n\n📌 현재 상황\n400명 규모 양산 TF도 사실상 대기 상태\n\n삼성은 로드맵 재검토 후 수율 개선에 집중 중\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
-            "links": [
-              "https://it.chosun.com/news/articleView.html?idxno=2023092160720",
-              "https://t.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/25312"
-          },
-          {
-            "date": "2026-04-22",
             "time": "10:36",
             "text": "🧬디앤디파마텍, MASH 신약 'DD01' 임상 2상 결과 도출 절차 착수\n\nhttps://www.mt.co.kr/thebio/2026/04/22/2026042210110181759\n\n💊 핵심 내용\nDD01 임상 2상 48주 전체 환자 데이터베이스 락(DB Lock) 완료\n\n최종 결과 도출을 위한 통계 분석 절차 공식 착수\n\nDB 락 이후 약 30일 내 CRO로부터 톱라인 데이터 수령 예정 — 5월 중순 이후\n\n💊 EASL 2026 LBA 발표 확정\n5월 27일 스페인 바르셀로나 유럽간학회(EASL) 콩그레스 2026에서 최초 공개\n\nLBA(최신 혁신 초록) 세션 선정 — 글로벌 학계 최고 권위 무대\n\n책임저자: MASH 분야 세계적 석학 마젠 누레딘 교수(주요 PI)\n\n조직생검 데이터 확보 이전에도 LBA 선정 — DD01 기전·잠재력에 대한 글로벌 학계 신뢰 입증\n\n💊 DD01 기존 성과 요약\n12주·24주 결과에서 빠른 지방간 감소 효과 및 관련 지표 개선 확인\n\n간 섬유화 개선 잠재력 확인 — 48주 조직생검 결과가 핵심 관전 포인트\n\n💊 투자 시사점\n48주 조직생검(Liver Biopsy) 데이터 — MASH 치료제 허가의 핵심 지표\n\nEASL LBA 발표 = 글로벌 빅파마 파트너링 협상 최적 타이밍\n\n회사 측 직접 언급: \"EASL 발표 결과 기반으로 글로벌 빅파마와 전략적 파트너링 성과 창출에 최선\"\n\n🧬 바이오섹터 분석🧬 [그로쓰리서치]\nhttps://t.me/growthbio",
             "links": [
@@ -294,8 +275,7 @@
             "text": "✅ [단독] 공정위, 해외 중복 상장 때도 지주회사에 '자회사 지분 50% 이상 보유' 적용 추진\n\nhttps://biz.chosun.com/policy/policy_sub/2026/04/22/LV7J2YICS5GR7HOTATHQ5R77VM/\n\n📌 핵심 내용\n공정위, 지주사가 자회사를 해외에 중복 상장할 때도 지분 50% 이상 보유를 의무화하는 방안을 추진\n\n현재는 상장 자회사 지분 30% 보유만으로 요건 충족\n\n📌 추진 배경\n국내에서 중복상장 규제를 강화해도\n\n자회사를 해외 거래소에 상장해 규제를 우회할 가능성이 존재\n\n이를 막기 위해 국내·해외 상장 모두 동일 기준을 적용하려는 취지\n\n📌 정책 의미\n지주회사가 자회사 지분을 더 많이 보유하게 해\n\n중복상장 유인 자체를 줄이려는 방향\n\n자회사 상장으로 인한 지주사 주가 할인 문제를 완화하려는 목적도 포함\n\n📌 향후 일정\n공정위는 관련 공정거래법 개정안을 상반기 중 공개할 예정\n\n앞서 금융위·거래소가 발표한 국내 중복상장 심사 강화책의 빈틈을 보완하는 성격\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
             "links": [
               "https://biz.chosun.com/policy/policy_sub/2026/04/22/LV7J2YICS5GR7HOTATHQ5R77VM/",
-              "https://t.me/growthresearch",
-              "https://biz.chosun.com/policy/policy_sub/2026/04/22/LV7J2YICS5GR7HOTATHQ5R77VM/?outputType=amp"
+              "https://t.me/growthresearch"
             ],
             "post_url": "https://t.me/growthresearch/25316"
           },
@@ -429,6 +409,26 @@
               "http://www.growthresearch.co.kr/membership/1430/1008"
             ],
             "post_url": "https://t.me/growthresearch/25330"
+          },
+          {
+            "date": "2026-04-22",
+            "time": "18:58",
+            "text": "✅ [탐방노트] 가온칩스\n\n📍 삼성 DSP 핵심 파트너\n팹리스 설계를 삼성 공정에 맞춰 양산까지 연결\n\n직접 계약 + 공급 권한 보유\n\n📍 턴키 + 락인 수익 구조\n설계부터 양산까지 전 과정 담당 가능\n\n개발 성공 시 독점적 로열티 발생\n\n📍 선단 공정(2nm) 기술력\nAI·HPC 중심 고부가 매출 구조\n\n삼성 최첨단 공정 레퍼런스 확보\n\n📍 AI 맞춤형 칩 수요 수혜\n온디바이스 등 확산 → 턴키 수요 증가\n\n'25 적자에서 '26년 수주와 양산 확대로 흑자 전환\n\n✅ 가온칩스 탐방노트 보러가기 \n[네이버프리미엄콘텐츠]\nhttps://contents.premium.naver.com/growthresearch/growth/contents/260422184249179hn\n\n[홈페이지]\nhttp://www.growthresearch.co.kr/membership/1430/1009",
+            "links": [
+              "https://contents.premium.naver.com/growthresearch/growth/contents/260422184249179hn",
+              "http://www.growthresearch.co.kr/membership/1430/1009"
+            ],
+            "post_url": "https://t.me/growthresearch/25331"
+          },
+          {
+            "date": "2026-04-22",
+            "time": "19:50",
+            "text": "💻 삼성 P4 속도전…양산 반년 앞당긴다\n\nhttps://www.sedaily.com/article/20035821?ref=naver\n\n📌 평택 P4 공장 연내 풀가동 추진\n상동 라인 7월, 하동 라인 11월 목표\n\n임시사용승인 활용해 완전 가동 시점 약 6개월 앞당길 계획\n\n📌 P4 투자 규모 약 50조원\n현재 절반만 가동 중이며 연내 순차 확대 예정\n\nHBM4 등 AI 메모리 생산 확대 핵심 거점\n\n📌평택 P5도 본공사 돌입\n총 투자비 80조원 이상 예상\n\n3개층·6개 클린룸 규모 초대형 팹\n\n📌삼성전자 올해 시설투자 약 70조원 계획\n상당 부분 평택캠퍼스에 집중 투입 전망\n\n📌해석\nAI 서버 투자 확대와 함께 HBM·낸드 수요 급증에 선제 대응.\n\n삼성은 기술 경쟁력뿐 아니라 ‘생산 캐파 초격차’까지 확보하려는 전략으로 해석됨.\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
+            "links": [
+              "https://www.sedaily.com/article/20035821?ref=naver",
+              "https://t.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/25332"
           }
         ]
       },
@@ -576,6 +576,15 @@
               "https://t.me/growthresearch"
             ],
             "post_url": "https://t.me/SpartanResearch/3374"
+          },
+          {
+            "date": "2026-04-22",
+            "time": "20:00",
+            "text": "GE 버노바, 1분기 매출 및 주당순이익 모두 시장 예상치 상회\n\n[GE 버노바, 1분기 매출 및 주당순이익 모두 시장 예상치 상회] 2023년 4월 22일 (카일리안 프레스) – GE 버노바는 1분기 매출이 93억 4천만 달러를 기록하며 예상치인 91억 1천만 달러를 넘어섰다고 발표했습니다. 1분기 주당순이익은 17.44달러로 전년 동기 0.91달러 대비 크게 증가했습니다. 조정 EBITDA는 8억 9천 6백만 달러로 예상치인 7억 9천 110만 달러를 상회했으며, 1분기 수주잔고는 1,630억 달러로 증가했습니다.",
+            "links": [
+              "https://api3.cls.cn/share/article/2352381?os=web&amp;amp;sv=8.4.6&amp;amp;app=CailianpressWeb"
+            ],
+            "post_url": "https://t.me/SpartanResearch/3375"
           }
         ]
       },
@@ -774,7 +783,8 @@
             "time": "12:31",
             "text": "[단독]엔비디아도 K전력에 러브콜…빨라질 800V '직류시대'[직류시대]①\nhttps://www.asiae.co.kr/article/2026042115333023514\n\n전력업계에서는 이 같은 흐름을 단순한 기술 변화가 아니라 전력 인프라 전체가 바뀌는 신호로 보고 있다. AI 수요가 늘면서 데이터센터의 전력 효율 경쟁이 치열해지고 있고, 직류 기반 고전압 시스템이 새로운 기준으로 자리 잡을 것이란 전망이다. 국제에너지기구에 따르면 세계 데이터센터 전력 소비는 2024년 415TWh에서 2030년 950TWh, 2035년 1300TWh까지 증가할 것으로 전망된다. 전력 사용이 빠르게 늘어나는 만큼 손실을 줄일 수 있는 직류 기반 시스템 도입이 필요하다는 분석에 힘이 실린다.",
             "links": [
-              "https://www.asiae.co.kr/article/2026042115333023514"
+              "https://www.asiae.co.kr/article/2026042115333023514",
+              "https://share.google/33aPFfYh6Hwcl2pQM"
             ],
             "post_url": "https://t.me/Yeouido_Lab/31370"
           },
