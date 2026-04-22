@@ -1,6 +1,6 @@
 {
   "2026-04-22": {
-    "fetched_at": "2026-04-22T22:52:33+09:00",
+    "fetched_at": "2026-04-23T00:18:30+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -584,6 +584,13 @@
             "text": "#WRT1V #Wartsila #선박엔진 #데이터센터\n\n바르실라 역사적 신고가 돌파",
             "links": [],
             "post_url": "https://t.me/SpartanResearch/3377"
+          },
+          {
+            "date": "2026-04-22",
+            "time": "23:29",
+            "text": "태양광이 좀 세네요\n고유가 지속 가능성에 따른 친환경 선호 기대+오늘 10년물 금리하락",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/3378"
           }
         ]
       },
