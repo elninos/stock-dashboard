@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-04-24T22:46:00+09:00",
-  "fetched_at": "2026-04-24T22:45:34+09:00",
+  "updated_at": "2026-04-25T00:12:45+09:00",
+  "fetched_at": "2026-04-25T00:12:20+09:00",
   "stocks": {
     "KODEX 코스닥150레버리지": {
       "articles": [
         {
           "title": "24일, 거래소 기관 순매수상위에 전기,전자 업종 7종목 - 한국경제",
-          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rYTdjZTk5Y3V5UXFXUF9TeGFvazZ4RjFrUG5IaUt0czdTYVFVT0xxSlh3alFNbGhzUG5KX3Z2ZTFDamVZYk5VMjAydU13Vi1xRDUzQjJUbmJ6d9IBVEFVX3lxTFBTSXVLSDFTTjRwXzF6M2c5SXg5akFwMll3UkRtMDBYelVYTkRvZXhCQ19NaW5zc0phdVZoX0duMWdPcldoblY0eDlaWEdiUWRKY2EySg?oc=5",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBTSXVLSDFTTjRwXzF6M2c5SXg5akFwMll3UkRtMDBYelVYTkRvZXhCQ19NaW5zc0phdVZoX0duMWdPcldoblY0eDlaWEdiUWRKY2EyStIBVEFVX3lxTFBTSXVLSDFTTjRwXzF6M2c5SXg5akFwMll3UkRtMDBYelVYTkRvZXhCQ19NaW5zc0phdVZoX0duMWdPcldoblY0eDlaWEdiUWRKY2EySg?oc=5",
           "date": "2026-04-24 09:35",
           "source": "한국경제",
           "snippet": "24일, 거래소 기관 순매수상위에 전기,전자 업종 7종목&nbsp;&nbsp;한국경제"
@@ -17,6 +17,20 @@
           "date": "2026-04-23 02:34",
           "source": "뉴스1",
           "snippet": "'곱버스' 팔고 레버리지 매수…ETF 주도권 개인에 넘어가 '고위험' 베팅&nbsp;&nbsp;뉴스1"
+        },
+        {
+          "title": "[강세 토픽] 코스닥 상승에 투자 (ETF·ETN) 테마, 삼성 레버리지 코스닥150 선물 ETN +4.24%, HANARO 코스닥150선물레버리지 +3.76% - 조선비즈 - Chosunbiz",
+          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQejI1c04xOU03NHR5TnpDOGV3R19RX0VBU0Yxd0p4d0Zhal8yaXotdUxrWnh0MmhCeHdLTE5XY0doOXlsWjF5M25hZjdVLTFwS2tLYV9xLUpKYWNuc3B6c3kycU5LTzhrbllBd0VnSkhpXzZMUHZsMEFUWDVnTFhCMDRkTdIBlwFBVV95cUxNQzdoTGpYdkRlbTdJczdPTHJlejczYXFsSjJrTFBxWTQyOWdHYzNoQnNOYklQRkVXUWc1WnFXc1FwTkFzS1BXVTh5UHIxeFY2NVRrSWF1dERvWVExdWIxOGk1NWhPVi1LSThMc1diZWthbWZscEZ1aV8tTUN6MW1hUnlMTDE0Wkd6bUxRMjlKNTlxdlo0TEs0?oc=5",
+          "date": "2026-04-24 01:07",
+          "source": "Chosunbiz",
+          "snippet": "[강세 토픽] 코스닥 상승에 투자 (ETF·ETN) 테마, 삼성 레버리지 코스닥150 선물 ETN +4.24%, HANARO 코스닥150선물레버리지 +3.76% - 조선비즈&nbsp;&nbsp;Chosunbiz"
+        },
+        {
+          "title": "[강세 토픽] 코스닥 상승에 투자 (ETF·ETN) 테마, HANARO 코스닥150선물레버리지 +3.74%, RISE 코스닥150선물레버리지 +3.63% - 조선비즈 - Chosunbiz",
+          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQdmNKMll4eHRDRVM2YXZyVGE0aFBueVc0VFFhRVF5VkZyXzRPcXJycVVnT0dtNmp6aWhQRWNiZnFYSlpKVGU1SDFTa3hNNTBoaktnOFFaTEN1TFhuakpPUEpFQW04UWJ1dmgtc1JCSnU3YTVsNTh3bmg0M3l5Tm5ZWmNOSdIBlwFBVV95cUxPQnZEaEJOQkxkLUZFbEt0TFo5WmVwaHhlLV9LMDZvWTlsZWlIS3htM3VTdElBRTBjLTliNkxyWmNRMEREMmo3THVuNGtFSTVBUFpseHlEY3lQMFdQVUVDMHJHSGxGMlpQOWdGcmVHNHNHOGFsNV9DVzBvUXpGRGZEVEpFdVFvcExvaHlPVVVoSjNaR2owckNr?oc=5",
+          "date": "2026-04-20 01:11",
+          "source": "Chosunbiz",
+          "snippet": "[강세 토픽] 코스닥 상승에 투자 (ETF·ETN) 테마, HANARO 코스닥150선물레버리지 +3.74%, RISE 코스닥150선물레버리지 +3.63% - 조선비즈&nbsp;&nbsp;Chosunbiz"
         },
         {
           "title": "기관 순매수 금액 상위 20선 - 코스피 - 조선비즈 - Chosunbiz",
@@ -33,7 +47,7 @@
           "snippet": "20일, 기관 거래소에서 SK하이닉스(+3.37%), HD현대중공업(+1.95%) 등 순매수&nbsp;&nbsp;한국경제"
         }
       ],
-      "article_count": 4,
+      "article_count": 6,
       "has_news": true,
       "summary": "",
       "sentiment": "neutral",
@@ -51,11 +65,11 @@
           "snippet": "‘Baeksang Arts Awards’ Naver Popularity Award voting begins&nbsp;&nbsp;스포츠경향"
         },
         {
-          "title": "Naver Cloud, HanmiGlobal partner on global data centers - news.nate.com",
+          "title": "Naver Cloud, HanmiGlobal partner on global data centers - 네이트",
           "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE13WUM3M1pQRkhxdUxQQk9na19saS1YcmVFWnNHNTJSWFZjNklvSm1xblJHNXI3eVM4Ry04X1lJRDhBWFpIMWVMUG4yV1NQb3ZuQWlF?oc=5",
           "date": "2026-04-24 00:12",
-          "source": "news.nate.com",
-          "snippet": "Naver Cloud, HanmiGlobal partner on global data centers&nbsp;&nbsp;news.nate.com"
+          "source": "네이트",
+          "snippet": "Naver Cloud, HanmiGlobal partner on global data centers&nbsp;&nbsp;네이트"
         },
         {
           "title": "NAVER 투자분석 2026. 04. 21 - 주달",
@@ -86,18 +100,18 @@
           "snippet": "Choi Soo-yeon’s Naver joins hands with India’s Tata, but can it overcome the wall of low purchasing power?&nbsp;&nbsp;인사이트코리아"
         },
         {
+          "title": "Toss Payment Terminal Expansion Spurs Pushback from VAN Firms Backing Naver Pay - 메디컬투데이",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5xS3k5bEx3QU5BQjdPRk92UkpHMlFHVW5qQmp0N2xHM1dMMWhoem1VSjJkRnIyQkQyanVuRDBobjZuMDNJY2g1a1RVajVMUk9MQWpyOFJ0c0ZCdFJH0gFsQVVfeXFMT0ZfaTEtMWp0ZFdPSkRJdnItWWk2aDdOSXFVYkFVd1Q3clhvbnJGM19wU3NMV1R0SUplUXVFNU05cWpybTJ1U1IzVlkxanlycDNxTXlmWlBJdTZOWnUzLUpIMzFsckhOUDVmTkl5?oc=5",
+          "date": "2026-04-22 21:43",
+          "source": "메디컬투데이",
+          "snippet": "Toss Payment Terminal Expansion Spurs Pushback from VAN Firms Backing Naver Pay&nbsp;&nbsp;메디컬투데이"
+        },
+        {
           "title": "노동전문변호사 칼럼, 퇴사하면서 내가 만든 엑셀 툴 지웠더니 업무방해죄로 고소당했을때에는? - 네이버 프리미엄콘텐츠",
           "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBDaVAzWVRXLXZzeVJxT2dsUkRlaUtOanRBc011U1d4aTVFbEROMVhmbDRKY3htQVZ6R1ZaOEZqaTkxT2MxZ0w0RVc0LVRScE5mZkRUdDJWNEQ0QTNMWlloSFZKMU1XaUtOSkp5MEZNSlhDSHNUaUxCaUdsckhHTms?oc=5",
           "date": "2026-04-23 02:26",
           "source": "네이버 프리미엄콘텐츠",
           "snippet": "노동전문변호사 칼럼, 퇴사하면서 내가 만든 엑셀 툴 지웠더니 업무방해죄로 고소당했을때에는?&nbsp;&nbsp;네이버 프리미엄콘텐츠"
-        },
-        {
-          "title": "NAVER 주가, 4월 23일 장중 217,000원 1.40% 상승 - 톱스타뉴스",
-          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE05amJ4U2xscXJtZUg1Mzl5VVUwZ1BSRGxsNzFNdWI4NDdJQmpmZlhLYkw2RGtSbmlWMGRpMllTQ2tmRmw1dkt0c3JSVGlqUnktTmhsUENQdWUtSEVFU0FQT1dTRVp3VkRXUWdXNmFjV1REQQ?oc=5",
-          "date": "2026-04-23 01:09",
-          "source": "톱스타뉴스",
-          "snippet": "NAVER 주가, 4월 23일 장중 217,000원 1.40% 상승&nbsp;&nbsp;톱스타뉴스"
         }
       ],
       "article_count": 8,
@@ -178,18 +192,11 @@
     "SK하이닉스": {
       "articles": [
         {
-          "title": "노무라證 “SK하이닉스 목표가 234만원…2분기 영업익 68조 전망” - 조선비즈 - Chosunbiz",
-          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNaTNDcTZwUVM3RVhrRHYzUjJ5NzEzVVhPd1JlRFNmV3hya0hKQm1fbGN3Q1JiMzl6SmxUSjMyWWFIck9hMkRmbTRCa1dmZEQzNXk4N012cDMzM1JtNUo3SXBVSjNuaURxbGtzdHBqaEVzdnRmQXl2Y0ZKT2MtNTh6YURQMUNOZHZY0gGcAUFVX3lxTFA0enRZWHdOUUhrTk4xWUd1alNnVFFuVVdFRkxsby1pT3N4YkhweWdzRXZxaUZGQjg1bDBUWUxlLTdlT3psLVVjcGlFZ2hrOXlpMFFteWJIMmtJOXRHY3QwaGR3RWRGX1NFYUpqSXp1bGVUQ3liak55T1RvWVZjMU1nMlZITHprOGROc3E3djZFNXgxNzJxTEtYME9XWA?oc=5",
-          "date": "2026-04-24 05:43",
+          "title": "한투證 “SK하이닉스, 엔비디아보다 높은 수익성…목표가 205만원” - 조선비즈 - Chosunbiz",
+          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQdDhVVWZxY2tmQkEteDZ1bVJpMGx2RkNpZmZsNjIxZHFGdjZ4VHpQYzZRUm02SjJIRUc5RFZjc3NpUTVCb0pqUk9uVkhvajVoWUVLYm5HRFlVeFpmcjNWRkktbXBKTlozRFhUdlp4RnpnMmpUbWVxRnRNUlRVN0k1S3JFT0UzbURG0gGcAUFVX3lxTE9kVWdsSnl5bzU4XzNncVlxZUVSbGVLdFRpQkExY3N4U2lKNTVJdGpMYTJTRWd5Y3B1VUJQeGNKZkxQTHpfeHBTUmJNMlpGUWkzSHl2UzJMR0NRQm80N1RnRTVramxwS2JIdGMyUlNPTE5DN3FHZ2xzY3l2amxxOUhBUnUxbnpxOUZUMDBzbmh1eUE5Q05GQU5oTUk5Xw?oc=5",
+          "date": "2026-04-23 22:06",
           "source": "Chosunbiz",
-          "snippet": "노무라證 “SK하이닉스 목표가 234만원…2분기 영업익 68조 전망” - 조선비즈&nbsp;&nbsp;Chosunbiz'37조 잭팟 터졌다'…하이닉스 역대급 실적에 주가 파격 전망 [종합]&nbsp;&nbsp;한국경제SK하이닉스, 2분기 더 좋다...메모리 훈풍에 역대급 수익성 예고&nbsp;&nbsp;지디넷코리아"
-        },
-        {
-          "title": "추미애 경기지사 후보, 삼성·SK하이닉스 현장서 반도체 벨트 강화 구상 - 전자신문",
-          "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE96S1ZnU1ZfU3FDVWNxWGZnZThsQWFzR1hjZE9mY0plb0F5OWt4X2ZlY0I0THRUc2RoOWt1WmhuSG9DMXY5RWtIdHQ2QnRidw?oc=5",
-          "date": "2026-04-24 12:20",
-          "source": "전자신문",
-          "snippet": "추미애 경기지사 후보, 삼성·SK하이닉스 현장서 반도체 벨트 강화 구상&nbsp;&nbsp;전자신문"
+          "snippet": "한투證 “SK하이닉스, 엔비디아보다 높은 수익성…목표가 205만원” - 조선비즈&nbsp;&nbsp;Chosunbiz\"SK하이닉스, 234만원 간다\" 일본서 깜짝 전망...목표주가 더 뛰었다 - 머니투데이&nbsp;&nbsp;머니투데이“SK하이닉스 234만원 간다” 일본서 깜짝 전망&nbsp;&nbsp;v.daum.net"
         },
         {
           "title": "\"딱 5% 먹고 판다\" SK하이닉스 풀베팅했는데 8% 요동...\"참 쉽지 않네\" [개미의 세계] - v.daum.net",
@@ -220,11 +227,11 @@
           "snippet": "[기자수첩]'인당 12억' SK하이닉스 성과급이 던진 질문&nbsp;&nbsp;아시아경제"
         },
         {
-          "title": "\"3개월만 쉴래요\" 하이닉스 역대급 성과급에 '육아휴직률' 뚝 - 한국경제",
-          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBHN1QyVHNnSW5NZjR4R3JWYzdaN0JLaFQ0eWttd3J0b3dBRmV3N1YweFlEUEh2Tlc5Q0c4MVlKWk8zS1RYWXZaTEQ3Qk5hWDB1TXVpOU1HbzQ1d9IBVEFVX3lxTE5EWEhqdlpwWTQ2dUJxVnNTcWlZc0psaElTUGdMRmd5MVhYQVZ0cUYwZ2tsVzJ6SW5tTVJiQ3Q3bjdPLWFtSWtHc25mLTB6T2R5ME5ZSA?oc=5",
-          "date": "2026-04-24 06:07",
-          "source": "한국경제",
-          "snippet": "\"3개월만 쉴래요\" 하이닉스 역대급 성과급에 '육아휴직률' 뚝&nbsp;&nbsp;한국경제"
+          "title": "SK하이닉스, 성과급 올해는 6억원?…주주환원 기대도 더 커져 - 연합뉴스",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5xMWFqUnZxTlJfRTc4WFluSnJGeTQxNTJfSkNZajdZamh3VHdQc0JjQ0hxTlBYSllZdlMyOExhRWJzNjFBd05nRi1LM3dacjA5TFhMRDVWT1h4TXPSAWBBVV95cUxNT3FJdTM5X1Z2T0xyNkdtaV9ydTQ1NUQ4Rkc3YkRmYW1sTWRNRkZrTjBGdWcxTkRYYkMxR0tSYlBjQUVNQ0ZrM2twcWNoYmh6cjd2emRmU0c1RERUR3dZN08?oc=5",
+          "date": "2026-04-23 01:40",
+          "source": "연합뉴스",
+          "snippet": "SK하이닉스, 성과급 올해는 6억원?…주주환원 기대도 더 커져&nbsp;&nbsp;연합뉴스"
         },
         {
           "title": "\"팹도 AI가 돌린다\"...하이닉스, 블랙웰 2000장 도입 - 디일렉",
@@ -232,6 +239,13 @@
           "date": "2026-04-23 05:47",
           "source": "디일렉",
           "snippet": "\"팹도 AI가 돌린다\"...하이닉스, 블랙웰 2000장 도입&nbsp;&nbsp;디일렉"
+        },
+        {
+          "title": "삼성전자·SK하이닉스 찾은 추미애…지방 이전 선 긋고 속도전 강조 - 기호일보",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5EckRZUEVlWFBjNG9KWDhCdlVuQlZBeWJuMDhuUEdDNWw0OHYtdDlOTnZiQnRVOHI0VlN2czZ4WGltWWZvWm83YklNUmU4YTdsWVFyWTVHXzRtTTFvZjN3V3E2RkJReHdGQlBrZy1Ddw?oc=5",
+          "date": "2026-04-24 08:29",
+          "source": "기호일보",
+          "snippet": "삼성전자·SK하이닉스 찾은 추미애…지방 이전 선 긋고 속도전 강조&nbsp;&nbsp;기호일보"
         }
       ],
       "article_count": 8,
@@ -319,11 +333,11 @@
           "snippet": "[Who Is ?] 설윤석 대한광통신 대표이사 사장&nbsp;&nbsp;비즈니스포스트"
         },
         {
-          "title": "24일, 외국인 코스닥에서 대한광통신(-6.70%), 비에이치아이(-3.06%) 등 순매도 - news.nate.com",
+          "title": "24일, 외국인 코스닥에서 대한광통신(-6.70%), 비에이치아이(-3.06%) 등 순매도 - 네이트",
           "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9VdTBUVW1uZlFxWHF6cjU3NlgxWTlLUUQ0eXZvWnFNRzQtRElpMGprX25OekFtOV90aGszNFpwZ3puYTk2aHdTbkluNnBZNThpQkdkYmg4M0t1bWFyUENxRERwb2pXUGhVd0Q3cmJEcXZhVFdwTHUwUg?oc=5",
           "date": "2026-04-24 09:36",
-          "source": "news.nate.com",
-          "snippet": "24일, 외국인 코스닥에서 대한광통신(-6.70%), 비에이치아이(-3.06%) 등 순매도&nbsp;&nbsp;news.nate.com"
+          "source": "네이트",
+          "snippet": "24일, 외국인 코스닥에서 대한광통신(-6.70%), 비에이치아이(-3.06%) 등 순매도&nbsp;&nbsp;네이트"
         },
         {
           "title": "올해 57% 급성장…韓 광통신업체 날개 단다 - 중소기업신문",
@@ -347,11 +361,11 @@
           "snippet": "대한광통신 주가, 4월 23일 장중 14,910원 2.04% 하락&nbsp;&nbsp;톱스타뉴스"
         },
         {
-          "title": "광전자 빛과전자 대한광통신 오이솔루션 변동폭…미국 증시 조정 속 광통신 관련주 혼조세 - CBC뉴스",
-          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9PZUZCbTgtbE0xNGRfLTVQSWJMYURyNkltM01yUFUxVWtrX1lzeDNRRGJtMWJ0ZEVWY1R1aWpiOThHTHBzakZVbVlPRjUzM3FBSWtIWXJMbTlhaEZTUWJZOWRjb3hTMEdX?oc=5",
-          "date": "2026-04-24 01:12",
-          "source": "CBC뉴스",
-          "snippet": "광전자 빛과전자 대한광통신 오이솔루션 변동폭…미국 증시 조정 속 광통신 관련주 혼조세&nbsp;&nbsp;CBC뉴스"
+          "title": "[코스닥 외국인] 제주반도체·고영 ‘폭풍 매수’...대한광통신 비에이치아이 에코프로 매도 공세 - 핀포인트뉴스",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE84Wl9SZlBucFZYdU45bVZVY1M5eXpYVEJkUU1nMzJvX2VRUDZ4TEU5SjNVM1d0eFZORk8zaWlFYklBcXM4bXM2RmJmNHM0SFVpTGo5RnhHNHpidDJHVDQyVWN2Q2FURmdaQkwxaXQ4cEVsWmPSAXdBVV95cUxNTmVORG9hY2FaUEVpRXRJTTAyazRHWjBIeVJtMjFkUzFpVC1RUVdySWgwZ25jOUZYMkVoZFA5ZGVUTDFWY3pNWkYtVEs4aTNZWHBNZXlMdm1XdWhIRWVMVjNiQTRyV0NxbGJIYmJkTVUyQldNV0ZqVQ?oc=5",
+          "date": "2026-04-24 07:16",
+          "source": "핀포인트뉴스",
+          "snippet": "[코스닥 외국인] 제주반도체·고영 ‘폭풍 매수’...대한광통신 비에이치아이 에코프로 매도 공세&nbsp;&nbsp;핀포인트뉴스"
         }
       ],
       "article_count": 8,
@@ -365,25 +379,11 @@
     "두산": {
       "articles": [
         {
-          "title": "'악 날벼락!' LG 9회말 유영찬 부상 OUT, 두산과 첫 잠실 라이벌전 승리하고도 찜찜, 마음껏 웃지 못했다 '임찬규 첫 승-문보경 3안타' [잠실 현장리뷰] - 네이트 스포츠",
-          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1PYlg4enlINFA4NUhYUWV3U2hYMnZvd25qYXdqZHVqYzdzci1ha2ZUV2xvb2drNDdCQzJIWjE0UEFwcjMzZVVsNXBDdktxTWM5TTFNWC1icGVTaEd0?oc=5",
-          "date": "2026-04-24 12:54",
+          "title": "LG, 시즌 첫 '잠실 더비'서 두산 4-1 제압…문보경 3타점 맹타 - 네이트 스포츠",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFB1SzYxS2R4UVQtM1cyQmlpZVBPZUJhN252N3RMYTNTdjVrOXM1bVpxdTNYQ1FLS1R0Vll4VTBOLXh2MEY2RzBwekRPd3Qxc2ZOWDVwSkNBRVRVcDZv?oc=5",
+          "date": "2026-04-24 12:49",
           "source": "네이트 스포츠",
-          "snippet": "'악 날벼락!' LG 9회말 유영찬 부상 OUT, 두산과 첫 잠실 라이벌전 승리하고도 찜찜, 마음껏 웃지 못했다 '임찬규 첫 승-문보경 3안타' [잠실 현장리뷰]&nbsp;&nbsp;네이트 스포츠마무리 유영찬 부상 강판 어쩌나, ‘4전5기’ 임찬규 1실점 첫 승+문보경 3타점, LG 잠실 라이벌전 이겼다 [잠실 리뷰]&nbsp;&nbsp;v.daum.net[사진]벤자민,'두산 유니폼 입고'&nbsp;&nbsp;osen.co.kr"
-        },
-        {
-          "title": "[AI그래픽] 두산 최승용, 24일 잠실 LG전 투구분석 - 뉴스핌",
-          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5NbGRfU0c0cWs5SmhKNmFsTDA0anFBZkxvRmJ6OHJ4VlBRcU1HZXpuajdSdE5FT2tLZEU4d3dYTzlUMHhEM3dhY0hPSkRTMlVNTWNSV21XdzlCSHlI?oc=5",
-          "date": "2026-04-24 11:13",
-          "source": "뉴스핌",
-          "snippet": "[AI그래픽] 두산 최승용, 24일 잠실 LG전 투구분석&nbsp;&nbsp;뉴스핌"
-        },
-        {
-          "title": "[프로야구 잠실전적] LG 4-1 두산 - 연합뉴스",
-          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBVSjVFdkRnZnpBYmJ3cU9HWTltbW9nTlEwdC02akV1UDJpOGF5d0tvSlc0OE9Yclg1a0Y2UlBHRlRfVUNrUk1oaHFSNVhjaHoxSzItMFlnM1B4YlnSAWBBVV95cUxNWmdpR19mdmVYakJab08yY0NKcE5WVjVNR3ppR3duUXpyRVh1V2JUV0FNbTg0UE1Cc0pBaFotSzBXWVVxeE1UZDlGUGVyaUtvSXU2UG95MlF4bElteUl3eHc?oc=5",
-          "date": "2026-04-24 12:51",
-          "source": "연합뉴스",
-          "snippet": "[프로야구 잠실전적] LG 4-1 두산&nbsp;&nbsp;연합뉴스"
+          "snippet": "LG, 시즌 첫 '잠실 더비'서 두산 4-1 제압…문보경 3타점 맹타&nbsp;&nbsp;네이트 스포츠[프로야구 잠실전적] LG 4-1 두산&nbsp;&nbsp;연합뉴스[사진]벤자민,'두산 유니폼 입고' - 머니투데이&nbsp;&nbsp;머니투데이"
         },
         {
           "title": "\"두산에너빌리티, 가스터빈 수주 호조…목표가↑\"-KB - 한국경제",
@@ -393,11 +393,11 @@
           "snippet": "\"두산에너빌리티, 가스터빈 수주 호조…목표가↑\"-KB&nbsp;&nbsp;한국경제\"아직 닫히지 않은 천장\" SK하이닉스, 목표가 210만원…두산에너빌리티, 가스터빈·원전 수주에 목표가↑ [株토피아]&nbsp;&nbsp;v.daum.net두산에너빌리티, 베트남 신규원전 참여 위한 교두보 마련&nbsp;&nbsp;내외뉴스통신"
         },
         {
-          "title": "LG>삼성>두산>롯데 '평균 2만명'…KBO 관중 작년보다 더 늘었다 - 네이트 스포츠",
-          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1TYkFydGlQNDlWLUZ0UF9zYTgxV3lOU2Jfbnl5UFl6MUVmMGNINzRrX1g3SGZ5SmJ6UUNzc1BlVVZZSm1kQjEzUkVYc0pXZ3pCR1lHZGlPcDBEWXFv?oc=5",
-          "date": "2026-04-24 06:40",
-          "source": "네이트 스포츠",
-          "snippet": "LG>삼성>두산>롯데 '평균 2만명'…KBO 관중 작년보다 더 늘었다&nbsp;&nbsp;네이트 스포츠"
+          "title": "'쾌적한 응원 환경 위해' 두산, 크레모아와 콜라보 상품 출시 - SPOTV NEWS",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5qUlF1Nmc2a281cWpRUXNBbzRxajlOVlhkdzZ3VDVLWV9zTXNpX1ZiUEYwYzA4OGZ1SmFfVGxlWDNMYmhCTW9pdU9KMzlOS1o1eG9jQXpianp4bGFyWW40bF9uS1o2RjV4eDlIUUl6UdIBc0FVX3lxTFBZTFhJdkFtUmprWEMtaGE2eGVQY1JERFAzTkxDWEx4X1lXb0pqT1JtT3NXcE85UFhfbW1Fcm12NGo2RGUxcEZvTTZ4cEJteGxLcWcyeVg2OW1mclpxeWItTEM3aDdBMmRQY21oNEVlTXRnX00?oc=5",
+          "date": "2026-04-24 05:25",
+          "source": "SPOTV NEWS",
+          "snippet": "'쾌적한 응원 환경 위해' 두산, 크레모아와 콜라보 상품 출시&nbsp;&nbsp;SPOTV NEWS"
         },
         {
           "title": "‘두산 투타 지원군’ 복귀 다가온다!…박치국·안재석 중위권 도약 힘 보태나 [SD 잠실 브리핑] - 스포츠동아",
@@ -407,18 +407,32 @@
           "snippet": "‘두산 투타 지원군’ 복귀 다가온다!…박치국·안재석 중위권 도약 힘 보태나 [SD 잠실 브리핑]&nbsp;&nbsp;스포츠동아"
         },
         {
-          "title": "'쾌적한 응원 환경 위해' 두산, 크레모아와 콜라보 상품 출시 - SPOTV NEWS",
-          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5qUlF1Nmc2a281cWpRUXNBbzRxajlOVlhkdzZ3VDVLWV9zTXNpX1ZiUEYwYzA4OGZ1SmFfVGxlWDNMYmhCTW9pdU9KMzlOS1o1eG9jQXpianp4bGFyWW40bF9uS1o2RjV4eDlIUUl6UdIBc0FVX3lxTFBZTFhJdkFtUmprWEMtaGE2eGVQY1JERFAzTkxDWEx4X1lXb0pqT1JtT3NXcE85UFhfbW1Fcm12NGo2RGUxcEZvTTZ4cEJteGxLcWcyeVg2OW1mclpxeWItTEM3aDdBMmRQY21oNEVlTXRnX00?oc=5",
-          "date": "2026-04-24 05:25",
-          "source": "SPOTV NEWS",
-          "snippet": "'쾌적한 응원 환경 위해' 두산, 크레모아와 콜라보 상품 출시&nbsp;&nbsp;SPOTV NEWS"
+          "title": "'보이즈플래닛' 앤더블 한유진·김규빈, 26일 잠실 두산-LG전 시구·시타 - 뉴스1",
+          "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE8ydi1Ockh2QnVNYnRfN2N1bWhrUjBJMlFtTlBxRU5RSFYySU9CZV9yUDZhOFhTbldtSWU5bGhMcU9Ud3hIbXBBdlBZMzljUndtbDcxdElfMA?oc=5",
+          "date": "2026-04-24 05:24",
+          "source": "뉴스1",
+          "snippet": "'보이즈플래닛' 앤더블 한유진·김규빈, 26일 잠실 두산-LG전 시구·시타&nbsp;&nbsp;뉴스1"
         },
         {
-          "title": "'로드리게스 111구 QS' 롯데, 두산 6-1로 꺾고 5연패 탈출 - 뉴시스",
-          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9xRHBndmlIZlkyaTZjNnNRWG00dlUxWHBBc2UzdkoydFdsM0RoTm1CTFlGQWYzbjhfR0pHa3N3dGhzLXQ0dEcxSmlYQjFreFp3UWdvWm1YYkZubjdLNmYyYtIBeEFVX3lxTE5pcHY5ZkE5UGYwY19vWmpuSzlqeXBwTS0xeGxlLWxSb0lCbDBYSWJjWkFPWTRMT2ZqdUFXREd5WjJ5R1cxU1RXZ05rbG50cWRBTkwzSk1yRktObzZ2c09GOGhNMVJYaUVWOWdJZjhDd0ppajBfR2xuNQ?oc=5",
-          "date": "2026-04-23 12:15",
-          "source": "뉴시스",
-          "snippet": "'로드리게스 111구 QS' 롯데, 두산 6-1로 꺾고 5연패 탈출&nbsp;&nbsp;뉴시스"
+          "title": "“두산 라이온즈” 화제의 신인 만루포 터졌다! 개막 엔트리 좌절→2군행 딛고 6타점 싹쓸이 ‘데뷔의 날 찾아올까’ - osen.co.kr",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1uRjFoOW16cFlpTGFTOTdiVnk1cFVvSkQ0ZXZsUVRVeXZjQWZCaXE0UmhOYjNYNC1QeTY2a3VNcGlQWm02d2VXcmRjaXBtak5vSS1R?oc=5",
+          "date": "2026-04-23 15:11",
+          "source": "osen.co.kr",
+          "snippet": "“두산 라이온즈” 화제의 신인 만루포 터졌다! 개막 엔트리 좌절→2군행 딛고 6타점 싹쓸이 ‘데뷔의 날 찾아올까’&nbsp;&nbsp;osen.co.kr"
+        },
+        {
+          "title": "[핌in잠실] 두산 카메론 반등 조짐에도... \"경기마다 기복 있어, 조금 더 지켜보겠다\" - 뉴스핌",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1XRTY3UDhvWUFTaEo3V3I2VHNGMzRhQ21wUmpjS1lhempLSjZIcEFHQ0ZwZW9OdFM0aFgtNV9OX3JXTnR1UFRHV2NDcC10ZWYxczB2cjQwSTYtZWxa?oc=5",
+          "date": "2026-04-24 08:14",
+          "source": "뉴스핌",
+          "snippet": "[핌in잠실] 두산 카메론 반등 조짐에도... \"경기마다 기복 있어, 조금 더 지켜보겠다\"&nbsp;&nbsp;뉴스핌"
+        },
+        {
+          "title": "[야구] 롯데, 두산 누르고 5연패 탈출… 로드리게스 6이닝 1실점 - 천지일보",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBTd0MxX0tKSzg4bWRmRDZfaVlqelhWdV9fQ3h0Ui1YNWhVZEE3N2FLakZSWXE1emVjbzZZU2E2Q2RGV3liN1BFX2Ruc2c5Rm15QjFrWWF1M3docHo3M094WW43TlFxTjVSa2c?oc=5",
+          "date": "2026-04-24 01:41",
+          "source": "천지일보",
+          "snippet": "[야구] 롯데, 두산 누르고 5연패 탈출… 로드리게스 6이닝 1실점&nbsp;&nbsp;천지일보"
         }
       ],
       "article_count": 8,
@@ -506,18 +520,18 @@
           "snippet": "로켓 랩 주가, 84.60달러 6.04% 하락 마감&nbsp;&nbsp;톱스타뉴스"
         },
         {
-          "title": "로켓랩(RKLB), 300달러 간다? 실적 분석 후 9% 급등 (LW09THZVaj) - fathomjournal.org",
-          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5weFdGTWVmMlZNcGNUaUZfbmZ1alp0bjdjWkh5Um12d2s0alluenNuR0VaQkg5MWV4MmE4ZFM2U0lnallLeC1RbWxoTUdsWEI1ZDRWQnREOFlXWERhd0pPVDBiaW52R0FZVzJjbnZ6M2c?oc=5",
-          "date": "2026-04-23 14:52",
-          "source": "fathomjournal.org",
-          "snippet": "로켓랩(RKLB), 300달러 간다? 실적 분석 후 9% 급등 (LW09THZVaj)&nbsp;&nbsp;fathomjournal.org"
-        },
-        {
           "title": "스티펠, 로켓 랩 목표주가 $105로 상향... 우주 성장성 강조 - Investing.com 한국어",
           "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9WOTh6NDhOTnJRQUlEXy1FLVlmQ2Fyc0R3bkkxQUxnN0RldldLMFpUQzR1SHBmWmwxdXljLU5JNUh6TndtMHVUb2lfdC1UNi1PbWxfSGxOUzl4S0pSS1dHYjlKYXNMazZRTC1mWk9EZGNSeEhF?oc=5",
           "date": "2026-04-20 15:22",
           "source": "Investing.com 한국어",
           "snippet": "스티펠, 로켓 랩 목표주가 $105로 상향... 우주 성장성 강조&nbsp;&nbsp;Investing.com 한국어"
+        },
+        {
+          "title": "로켓 랩 주가, 긍정적 애널리스트 평가에 5% 상승 - Investing.com 한국어",
+          "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5ua1lJYmdNcEk0WFF5UGpPdDA1cnc3LXBiWi1ldVNGM1JGSmJtU0w2MHVoVWhXeEkzbjNURUF6WlNlbUFvMDZYeWdTMUxFYmZxdzJQckpkdjlKaGpKN0tpMVZldkJVWjZGaG5ySlFaOWNPU3JORnp3?oc=5",
+          "date": "2026-04-20 14:44",
+          "source": "Investing.com 한국어",
+          "snippet": "로켓 랩 주가, 긍정적 애널리스트 평가에 5% 상승&nbsp;&nbsp;Investing.com 한국어"
         }
       ],
       "article_count": 8,
@@ -538,25 +552,18 @@
           "snippet": "[중견기업 해부] ‘코스닥 시총 6위’ 리노공업…AI 반도체 수요 타고 신공장 승부수 - 조선비즈&nbsp;&nbsp;Chosunbiz"
         },
         {
-          "title": "리노공업, 최대주주 지분매각에 애프터마켓서 10%대 급락 - v.daum.net",
-          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1yRTB5Q0lSMzgzQ0JUSmdua2ViQktqX29lUHIwVk5IQUczUE9PUUxYWWVqRThjZy1YcDJPUnhib0RXR0pMZTJ2VmdiS0ZNQlE?oc=5",
-          "date": "2026-04-24 10:09",
+          "title": "'최대주주 지분매각' 리노공업, 애프터마켓서 9%대 급락 마감 - v.daum.net",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE0xT2xhaXphRk44U0dPdE5EczBMel85ZnFJeklCb3N6U05zc1ZnWDNwamZ4UUJBWWJlTG04RmtXVEJJVU13dzI3TDJBODZmVnc?oc=5",
+          "date": "2026-04-24 11:16",
           "source": "v.daum.net",
-          "snippet": "리노공업, 최대주주 지분매각에 애프터마켓서 10%대 급락&nbsp;&nbsp;v.daum.net이채윤 리노공업 대표, 다음달 보유 지분 8600억 블록딜 매각 예고&nbsp;&nbsp;매일경제 마켓“삼천당 생각나네”…주가 2배 뛰자 이채윤 리노공업 대표 지분 9% 매각 - 조선비즈&nbsp;&nbsp;Chosunbiz"
+          "snippet": "'최대주주 지분매각' 리노공업, 애프터마켓서 9%대 급락 마감&nbsp;&nbsp;v.daum.net“삼천당 생각나네”…주가 2배 뛰자 이채윤 리노공업 대표 지분 9% 매각 - 조선비즈&nbsp;&nbsp;Chosunbiz이채윤 리노공업 대표, 다음달 보유 지분 8600억 블록딜 매각 예고&nbsp;&nbsp;매일경제 마켓"
         },
         {
-          "title": "24일, 기관 코스닥에서 리노공업(+0.89%), 올릭스(+5.38%) 등 순매수 - news.nate.com",
+          "title": "24일, 기관 코스닥에서 리노공업(+0.89%), 올릭스(+5.38%) 등 순매수 - 네이트",
           "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE81d1hpa0NGTmUxc2dWTmtsR0I2XzljVEFNeTNjTTh1UWYydDFvLUtVSHVfMGRWRVdTZmdKZTBMYlNQN2p4VkltNmN4R1A5UGh5RDJTVDBKSGR3WGdDLWdPQjdKNEJNNHhka0RxamNRRmlocTdOWGlGMg?oc=5",
           "date": "2026-04-24 09:36",
-          "source": "news.nate.com",
-          "snippet": "24일, 기관 코스닥에서 리노공업(+0.89%), 올릭스(+5.38%) 등 순매수&nbsp;&nbsp;news.nate.com"
-        },
-        {
-          "title": "리노공업, 최대주주 지분 매각에 시간외 11% 급락 - 아시아경제",
-          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE43QXMyRnVGa2ZKYlBYUGVoNVo2dDlGYzN1bEMzRUMxazZNVXhHdGRDa1BITWZNYWROdDg5U2o1eHJjeTJMR3p5QWJXSXREd2tTcTkxX3FJWFdxWXRuRWc?oc=5",
-          "date": "2026-04-24 09:59",
-          "source": "아시아경제",
-          "snippet": "리노공업, 최대주주 지분 매각에 시간외 11% 급락&nbsp;&nbsp;아시아경제"
+          "source": "네이트",
+          "snippet": "24일, 기관 코스닥에서 리노공업(+0.89%), 올릭스(+5.38%) 등 순매수&nbsp;&nbsp;네이트"
         },
         {
           "title": "주총 땐 아무말 않더니…지분 8631억 판다는 시총 9조 기업 최대주주 [이런국장 저런주식] - 서울경제",
@@ -566,18 +573,25 @@
           "snippet": "주총 땐 아무말 않더니…지분 8631억 판다는 시총 9조 기업 최대주주 [이런국장 저런주식]&nbsp;&nbsp;서울경제"
         },
         {
-          "title": "'최대주주 지분매각' 리노공업, 애프터마켓서 9%대 급락 마감 - 뉴스웨이",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5VSzRSaGxFNGJwWDRrUm1iZzYyQ2hyZjFJYy14Ymd0clNId1hLOTR0ZW9IaFJFb1VzdGdoaWxfS1ZjM05wSFh5QzNFelMyWEtUeUYtYUhpOUlncnZWR0x4X2V0dTB6aUltQ3c?oc=5",
-          "date": "2026-04-24 11:15",
-          "source": "뉴스웨이",
-          "snippet": "'최대주주 지분매각' 리노공업, 애프터마켓서 9%대 급락 마감&nbsp;&nbsp;뉴스웨이"
+          "title": "리노공업, 최대주주 지분매각에 애프터마켓서 10%대 급락 - 연합뉴스",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1qUmg5cVFTVE9DYjgtSjkzV3BkLTZkNzJvVi1wZ3Njb0VodkVrcEl3V0w5dFJQb1ZJLXNIdnlqcjlTWkxaUTdCT19XWkZnWTIxeFBxRjRSRGJkYmfSAWBBVV95cUxPelpwRzF1a3FLdU5NVG44Ql91anZaTmJsZE01Q1RFal9jYUZLMTczRXEtNGNSNDZRRGRTQm1MWlFHUHZMY2pCWk5URUpMdnJyYXhKVjdvUUNYT0xoNHBmbEc?oc=5",
+          "date": "2026-04-24 09:45",
+          "source": "연합뉴스",
+          "snippet": "리노공업, 최대주주 지분매각에 애프터마켓서 10%대 급락&nbsp;&nbsp;연합뉴스"
         },
         {
-          "title": "리노공업, 최대주주 지분 매각에 시간외 11% 급락 - news.nate.com",
+          "title": "리노공업, 최대주주 지분 매각에 시간외 11% 급락 - 아시아경제",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE43QXMyRnVGa2ZKYlBYUGVoNVo2dDlGYzN1bEMzRUMxazZNVXhHdGRDa1BITWZNYWROdDg5U2o1eHJjeTJMR3p5QWJXSXREd2tTcTkxX3FJWFdxWXRuRWc?oc=5",
+          "date": "2026-04-24 09:59",
+          "source": "아시아경제",
+          "snippet": "리노공업, 최대주주 지분 매각에 시간외 11% 급락&nbsp;&nbsp;아시아경제"
+        },
+        {
+          "title": "리노공업, 최대주주 지분 매각에 시간외 11% 급락 - 네이트",
           "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5XZVRuNGJBNms0YXltd3RieTd0SUE4aGJzbEdPaXN6ZExmcENIYmxBdjE0QmdzNlRYVk9tV3cxQ01FRHBuN3ZDSmZwYzV5dUd2R2NR?oc=5",
           "date": "2026-04-24 10:00",
-          "source": "news.nate.com",
-          "snippet": "리노공업, 최대주주 지분 매각에 시간외 11% 급락&nbsp;&nbsp;news.nate.com"
+          "source": "네이트",
+          "snippet": "리노공업, 최대주주 지분 매각에 시간외 11% 급락&nbsp;&nbsp;네이트"
         },
         {
           "title": "[코스닥 기관] 리노공업 올릭스 올릭스 사고 에코프로 비에이치아이 인텔리안테크는 던졌다 - 핀포인트뉴스",
@@ -605,6 +619,13 @@
           "snippet": "마이크로소프트, AI 코딩 스타트업 커서 인수 검토했다 포기&nbsp;&nbsp;디지털투데이"
         },
         {
+          "title": "'빅쇼트' 마이클 버리, 마이크로소프트에 베팅…소프트웨어주 '줍줍' - 마켓인",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE4zX2JDVGs0aVlLdHRia2JhQXJYakw2MUJ6eEc2ekZ1Qll1c3B3VUZsZVFZdVU1ZG4wdDhPNUl0b1BNN01XVlpSMjl6RUxvMnVOY1BrU1NVZjRDRUdqaEtRVDEyem1fX09KR0Q3X2JpRS1vREE?oc=5",
+          "date": "2026-04-24 14:52",
+          "source": "마켓인",
+          "snippet": "'빅쇼트' 마이클 버리, 마이크로소프트에 베팅…소프트웨어주 '줍줍'&nbsp;&nbsp;마켓인"
+        },
+        {
           "title": "\"나이와 근속연수 합쳐 70 넘으면 나가라\" MS, 사상 첫 희망퇴직 - 조선일보",
           "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTlROaTVLenVZVGoyRE55N2RhR3V6bjRFWWRjSVZTSmpNSm9MQUZteUxCU09lQnZjak03UlJZX2tYdmRRSkVXT0VBODBYdzBCUHBHb1hNbWJudjlqcFFPczh1THJmclUxd2dQZjYzbTYzWlJaTENBLUFLb0RrTk12YVEyTzdlWkRISUNPU1NnWVR1MFZqQ042OFVteEVadw?oc=5",
           "date": "2026-04-24 06:10",
@@ -612,18 +633,11 @@
           "snippet": "\"나이와 근속연수 합쳐 70 넘으면 나가라\" MS, 사상 첫 희망퇴직&nbsp;&nbsp;조선일보마이크로소프트, 창사 51주년만에 첫 희망퇴직&nbsp;&nbsp;연합인포맥스'AI 투자' 충격에 메타·마이크로소프트 대규모 감원 추진&nbsp;&nbsp;YTN 사이언스"
         },
         {
-          "title": "마이크로소프트, 현 분기 실적 가이던스 '우려'…고마진 사업부 압박-구겐하임 - 마켓인",
-          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5iOWxXYnhxVTZjOUlvZnV5dW53V01DcTNjbkgxUXpKU29vTGFqR1RTLUgyLU9LajQ3aTd3MUdaYTJuLWRvc0c4UGpKb2lKYlNISW0zZ0w4ZXlnOFUtMjJuQmZpbHVEa1ZveXgwWE51dXdKT1k?oc=5",
-          "date": "2026-04-23 12:05",
-          "source": "마켓인",
-          "snippet": "마이크로소프트, 현 분기 실적 가이던스 '우려'…고마진 사업부 압박-구겐하임&nbsp;&nbsp;마켓인"
-        },
-        {
-          "title": "마이크로소프트(MSFT.O), 호주서 AI·데이터센터 대규모 확장…사이버보안·인재 양성 병행 - news.nate.com",
+          "title": "마이크로소프트(MSFT.O), 호주서 AI·데이터센터 대규모 확장…사이버보안·인재 양성 병행 - 네이트",
           "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAzSnRZaWQ0VWRCdmFGalF3cGdIWW41UGhKazRaTzg4TExsMlFZcXNyMUJnbF9HRldzd2ZMZ2Nyb3o3ajM3OFN2TFdTd0JyNFpOSFNF?oc=5",
           "date": "2026-04-23 23:00",
-          "source": "news.nate.com",
-          "snippet": "마이크로소프트(MSFT.O), 호주서 AI·데이터센터 대규모 확장…사이버보안·인재 양성 병행&nbsp;&nbsp;news.nate.com"
+          "source": "네이트",
+          "snippet": "마이크로소프트(MSFT.O), 호주서 AI·데이터센터 대규모 확장…사이버보안·인재 양성 병행&nbsp;&nbsp;네이트"
         },
         {
           "title": "마이크로소프트, 스페이스X 인수 전 Cursor 검토 - CNBC - Investing.com 한국어",
@@ -633,6 +647,13 @@
           "snippet": "마이크로소프트, 스페이스X 인수 전 Cursor 검토 - CNBC&nbsp;&nbsp;Investing.com 한국어"
         },
         {
+          "title": "마이크로소프트 오피스, AI가 알아서 일한다 - 바이라인네트워크",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9LdGNRZVBOQTFnbVI2VkJfdlpxQTNZRUxrMkVSUnNoR2xjOTZXTmZSRy1XMzgxOUVDVEJobUlwSWp4UmpWaC1vV1lSSlRxM3c?oc=5",
+          "date": "2026-04-24 07:54",
+          "source": "바이라인네트워크",
+          "snippet": "마이크로소프트 오피스, AI가 알아서 일한다&nbsp;&nbsp;바이라인네트워크"
+        },
+        {
           "title": "마이크로소프트, 게임 부문 15% 감원 루머 확산 - 인벤",
           "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5lT3lIVkM0RTdTeHRRSW8wNDlNVi1DbnNVVzBkM0hqbmE1MF9VRUdnVGhwNlZRN2loUmRCc1UtZU82X09hQmlSYXhtU2FMb09jRzJsbGR4SzhzTWgyZ0E?oc=5",
           "date": "2026-04-23 20:14",
@@ -640,18 +661,11 @@
           "snippet": "마이크로소프트, 게임 부문 15% 감원 루머 확산&nbsp;&nbsp;인벤"
         },
         {
-          "title": "마이크로소프트, 여러 AI 모델 결합해 사이버 보안 강화…앤트로픽 미토스도 포함 - news.nate.com",
-          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0zUDFGSjh3aDBucmhPZm03dkw4SUJ5VjI5TzBtR3ROMGhKOWQ1WmtTRV9YTDYwRkhtdEUtTzB3UzFZal9wMENpUjB2WlhXc3ZabjZr?oc=5",
-          "date": "2026-04-23 12:48",
-          "source": "news.nate.com",
-          "snippet": "마이크로소프트, 여러 AI 모델 결합해 사이버 보안 강화…앤트로픽 미토스도 포함&nbsp;&nbsp;news.nate.com"
-        },
-        {
-          "title": "마이크로소프트, 스페이스X 계약 전 '커서' 인수 검토 - biz.sbs.co.kr.",
-          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE50NUJKbVJJUUtuR1lOZXFodk1iWVRMR1pxdjRtWS1heWluMkkwT2JEeHRSUWdxTGVXWC02SXRXRTZVU2NkaGVIbXZOTVdrZ3RzZ05R?oc=5",
-          "date": "2026-04-23 05:35",
-          "source": "biz.sbs.co.kr.",
-          "snippet": "마이크로소프트, 스페이스X 계약 전 '커서' 인수 검토&nbsp;&nbsp;biz.sbs.co.kr."
+          "title": "마이크로소프트, 현 분기 실적 가이던스 '우려'…고마진 사업부 압박-구겐하임 - 마켓인",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5iOWxXYnhxVTZjOUlvZnV5dW53V01DcTNjbkgxUXpKU29vTGFqR1RTLUgyLU9LajQ3aTd3MUdaYTJuLWRvc0c4UGpKb2lKYlNISW0zZ0w4ZXlnOFUtMjJuQmZpbHVEa1ZveXgwWE51dXdKT1k?oc=5",
+          "date": "2026-04-23 12:05",
+          "source": "마켓인",
+          "snippet": "마이크로소프트, 현 분기 실적 가이던스 '우려'…고마진 사업부 압박-구겐하임&nbsp;&nbsp;마켓인"
         }
       ],
       "article_count": 8,
@@ -677,6 +691,13 @@
           "date": "2026-04-20 01:29",
           "source": "글로벌이코노믹",
           "snippet": "[특징주] 보로노이, 차세대 폐암 표적치료제 임상 1상 긍정적 '급등'&nbsp;&nbsp;글로벌이코노믹"
+        },
+        {
+          "title": "차세대 폐암치료제 보로노이, 1상 공개 - 한국경제",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1sX1lFY2p3YmRXTnJ3c0RESXNIYll4a24zUWlPS0V3eXo5LVB6clB3ZHRIVk9BXzhQNVk2b0FseXRFVDE2ZUt5QjNVSmFvc0hLU3F4OXdoemNjUdIBVEFVX3lxTFAyNXZFZWFobHhlVWVPRWlTQlF3aHo4WlhVWWRPMnlZNUV3SXRJT0t2ZmV5WVpYeFpvUUhVMlVpbnE5T2ExdXZqdEtDalByQndBQnVzXw?oc=5",
+          "date": "2026-04-20 08:14",
+          "source": "한국경제",
+          "snippet": "차세대 폐암치료제 보로노이, 1상 공개&nbsp;&nbsp;한국경제"
         },
         {
           "title": "[특징주] 보로노이, VRN11 1상 기대치 상회에 8% 강세 - 조선비즈 - Chosunbiz",
@@ -712,13 +733,6 @@
           "date": "2026-04-20 00:19",
           "source": "TradingView",
           "snippet": "보로노이, 폐암 표적치료제 'VRN11' 임상 성과 소식에 강세&nbsp;&nbsp;TradingView"
-        },
-        {
-          "title": "[특징주] 보로노이, 폐암 신약 'VRN11' 임상 호조에 19% 급등 - 뉴스드림",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBucG4yNHFyN0VRNDdZc3VlenFjS18xYVNIZDMzbEtHNEtBUi1YamoyVDlrbmtIZm1reEpkNXVQa1gwWW9LMVI1UV9aaFh1UTBJRV80dzIwakFRTGd3cG84VGxFYjBkeEZCRVHSAW5BVV95cUxOVU5PUzU2aE5JUGV5X2RBX210VUNIb3dGMF9aaGZJRXhFLUt5ZUdmaGxFbTdtbnl4bTdZSGZtdXFNRmxiV2FxQWprNGlMMVJ0dkZYZWdrRGdPbnFQZ1NnX0lrV0tZeHlxVkdkSU93QQ?oc=5",
-          "date": "2026-04-20 01:42",
-          "source": "뉴스드림",
-          "snippet": "[특징주] 보로노이, 폐암 신약 'VRN11' 임상 호조에 19% 급등&nbsp;&nbsp;뉴스드림"
         }
       ],
       "article_count": 8,
@@ -849,46 +863,11 @@
     "셀트리온": {
       "articles": [
         {
-          "title": "셀트리온, ADC 신약 후보물질 3종 투약 개시…‘글로벌 신약 기업’ 도약 가속화 - 인더스트리뉴스",
-          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE84UTZnOFhaeXNQZElqeFhfMGwzeF9FcFpzaEpPZnZjY3g2eVpVYV9kT1pPN01HNmpZZkgwZFZWMWM0VzdYRTZLbVFOal83eXdzUDZ5a0tMaEpxOXhOeHQzZEh2MEpoUWFnTWp0ZHUtT0dfQQ?oc=5",
-          "date": "2026-04-24 09:09",
-          "source": "인더스트리뉴스",
-          "snippet": "셀트리온, ADC 신약 후보물질 3종 투약 개시…‘글로벌 신약 기업’ 도약 가속화&nbsp;&nbsp;인더스트리뉴스"
-        },
-        {
-          "title": "셀트리온제약, ‘AACR 2026’서 ADC 듀얼페이로드 2종 연구성과 발표 - 팜이데일리",
-          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9CaWFIdkxCVV9sUUJWazlqMmRCc0ROSTUyck9vXzNyYTUyMFBNb1VxVENPQXlBbmFIck1ESnhOemxYSGs5LWwwOHVDSmM2bl9vT3dLSVlwZzJheUI5OHJ0ZUxCMFJQcE5SLThva3Vn?oc=5",
-          "date": "2026-04-24 01:20",
-          "source": "팜이데일리",
-          "snippet": "셀트리온제약, ‘AACR 2026’서 ADC 듀얼페이로드 2종 연구성과 발표&nbsp;&nbsp;팜이데일리"
-        },
-        {
-          "title": "셀트리온, 가팔라지는 '고마진 신제품' 성장세…증권가 \"주가 31% 상승 여력\" - 아시아경제",
-          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB5V2FVSWtSSVdNQkJ6R2tQQlFpLTVzOVI5V2Z0ZHpDV3FfTmRRSU8tcWNIVzdlUFlHRk1kUW9KZzNGc2dfVnRIZEhEYUh6REZxb09VX1dnYVVTaUxUc2dObA?oc=5",
-          "date": "2026-04-23 21:30",
-          "source": "아시아경제",
-          "snippet": "셀트리온, 가팔라지는 '고마진 신제품' 성장세…증권가 \"주가 31% 상승 여력\"&nbsp;&nbsp;아시아경제"
-        },
-        {
-          "title": "셀트리온제약, 美서 차세대 항암 연구 발표 - 조선비즈 - Chosunbiz",
-          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOLXprNE1sTC1VT25VWWVEOUcyWmhyYzZuOTBKQ0N1ZVFiX0trbHRQeXMwdmR0MHE5eVdNbDRIRjZyYVNxcndqQmJJcXhvaGdkOVRPaHAxOXpTUnpkVzJxZUw3OXRRLWxWUGF0NndaWG5XMHJiT0FRdTd3aXc0RWZDdUpIQy02N1XSAZsBQVVfeXFMTjh4aHFRcFIyd3VpRG91Si1PSGk5c0lMd0gtTXJfODY0N1YzU0pld0lJMjg5YmxncDlLWW9TbnFELXJ3dVA1SHhFTm1WajdDazltejBFQ083Y3pwYlFVTE5nblZobWp0QklHbHVsX21lb1A3TjZOajdMQU9haGE3QzJoTThnMWZSOEJMdmxUU3Izamk4YjhPdGZyRzA?oc=5",
-          "date": "2026-04-24 00:38",
-          "source": "Chosunbiz",
-          "snippet": "셀트리온제약, 美서 차세대 항암 연구 발표 - 조선비즈&nbsp;&nbsp;Chosunbiz"
-        },
-        {
-          "title": "[마켓파워] 3조 재고·2269% 부채…서정진 통합 셀트리온 전략 ‘사실상 실패’ - 아시아투데이",
-          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5oaTBzSHZSeTROSi1ORUUtZThPOElLOG94WUdocFIzSG5mTzFqZWg0Nno1U3BnODlRTkNROHNRbUMyTUVqNllUV0s1TVJmZG9iRWhITGlsYVNsby11dHR5Zm8ydGV1MlFlLW1PV1Zn?oc=5",
-          "date": "2026-04-23 22:00",
-          "source": "아시아투데이",
-          "snippet": "[마켓파워] 3조 재고·2269% 부채…서정진 통합 셀트리온 전략 ‘사실상 실패’&nbsp;&nbsp;아시아투데이"
-        },
-        {
-          "title": "셀트리온, 1000억원 규모 자사주 매입 결정 - 한국경제",
-          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBGSkwwbk1XMTFMckk0Njd2RVZ6YjZmMm9HVlhZbmZZa0otd1BYbnF3X1RBSHo1R0g3Z05nYWVrZW1yd21oYVVHRjJlckhfRXk0SjhDRVk5b21WZ9IBVEFVX3lxTFBJQml3OTRzZFZzNC1VUnNNUTRsck1DUmpOblRGSFFPdTZ3eGhaWEEwcEZDcHRLeWN0ekRWdUdSY3JpUHFINmRmc3Q0cFI0VXVDLW4ybw?oc=5",
-          "date": "2026-04-22 04:54",
-          "source": "한국경제",
-          "snippet": "셀트리온, 1000억원 규모 자사주 매입 결정&nbsp;&nbsp;한국경제"
+          "title": "셀트리온제약, 美AACR서 'ADC 듀얼페이로드' 발표 - 뉴시스",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBaQWNZNXpVaFo3VEMzaEt2emlnVmdQRGtWSmFaMFZsVUdkai1pb3c5MGF0QnRJeFE5eWM0UW1wcGE3YTVPanc0MGdYUjluQ0FBLXIwUXlMMWJlMGtCd0xRbNIBeEFVX3lxTE1ESmpJWUQ3azdlUXlCN0t2aC11R3dhTkNmRFRoVk5NRFp5SmxzYnFPUzAyaFdJTmdYVVJJSGpyMzFJNGNJbjdrdVNSRl9MSDR5YTQwWUhtX3phTVNWZC1zMkxJdk5kX3dwbmFLaXc4UjFMSko4NzZJOQ?oc=5",
+          "date": "2026-04-24 00:01",
+          "source": "뉴시스",
+          "snippet": "셀트리온제약, 美AACR서 'ADC 듀얼페이로드' 발표&nbsp;&nbsp;뉴시스"
         },
         {
           "title": "셀트리온, 시밀러 넘어 '신약 기업' 탈바꿈 속도 - v.daum.net",
@@ -898,11 +877,46 @@
           "snippet": "셀트리온, 시밀러 넘어 '신약 기업' 탈바꿈 속도&nbsp;&nbsp;v.daum.net"
         },
         {
-          "title": "두산에너빌리티·셀트리온 쓸어담은 초고수…SK하이닉스는 '팔자' [주식 초고수는 지금] - news.nate.com",
+          "title": "셀트리온, 가팔라지는 '고마진 신제품' 성장세…증권가 \"주가 31% 상승 여력\" - 아시아경제",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB5V2FVSWtSSVdNQkJ6R2tQQlFpLTVzOVI5V2Z0ZHpDV3FfTmRRSU8tcWNIVzdlUFlHRk1kUW9KZzNGc2dfVnRIZEhEYUh6REZxb09VX1dnYVVTaUxUc2dObA?oc=5",
+          "date": "2026-04-23 21:30",
+          "source": "아시아경제",
+          "snippet": "셀트리온, 가팔라지는 '고마진 신제품' 성장세…증권가 \"주가 31% 상승 여력\"&nbsp;&nbsp;아시아경제"
+        },
+        {
+          "title": "[마켓파워] 3조 재고·2269% 부채…서정진 통합 셀트리온 전략 ‘사실상 실패’ - 아시아투데이",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5oaTBzSHZSeTROSi1ORUUtZThPOElLOG94WUdocFIzSG5mTzFqZWg0Nno1U3BnODlRTkNROHNRbUMyTUVqNllUV0s1TVJmZG9iRWhITGlsYVNsby11dHR5Zm8ydGV1MlFlLW1PV1Zn?oc=5",
+          "date": "2026-04-23 22:00",
+          "source": "아시아투데이",
+          "snippet": "[마켓파워] 3조 재고·2269% 부채…서정진 통합 셀트리온 전략 ‘사실상 실패’&nbsp;&nbsp;아시아투데이"
+        },
+        {
+          "title": "셀트리온제약, 美서 차세대 항암 연구 발표 - 조선비즈 - Chosunbiz",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOLXprNE1sTC1VT25VWWVEOUcyWmhyYzZuOTBKQ0N1ZVFiX0trbHRQeXMwdmR0MHE5eVdNbDRIRjZyYVNxcndqQmJJcXhvaGdkOVRPaHAxOXpTUnpkVzJxZUw3OXRRLWxWUGF0NndaWG5XMHJiT0FRdTd3aXc0RWZDdUpIQy02N1XSAZsBQVVfeXFMTjh4aHFRcFIyd3VpRG91Si1PSGk5c0lMd0gtTXJfODY0N1YzU0pld0lJMjg5YmxncDlLWW9TbnFELXJ3dVA1SHhFTm1WajdDazltejBFQ083Y3pwYlFVTE5nblZobWp0QklHbHVsX21lb1A3TjZOajdMQU9haGE3QzJoTThnMWZSOEJMdmxUU3Izamk4YjhPdGZyRzA?oc=5",
+          "date": "2026-04-24 00:38",
+          "source": "Chosunbiz",
+          "snippet": "셀트리온제약, 美서 차세대 항암 연구 발표 - 조선비즈&nbsp;&nbsp;Chosunbiz"
+        },
+        {
+          "title": "셀트리온, 1000억원 규모 자사주 매입 결정 - 한국경제",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBGSkwwbk1XMTFMckk0Njd2RVZ6YjZmMm9HVlhZbmZZa0otd1BYbnF3X1RBSHo1R0g3Z05nYWVrZW1yd21oYVVHRjJlckhfRXk0SjhDRVk5b21WZ9IBVEFVX3lxTFBJQml3OTRzZFZzNC1VUnNNUTRsck1DUmpOblRGSFFPdTZ3eGhaWEEwcEZDcHRLeWN0ekRWdUdSY3JpUHFINmRmc3Q0cFI0VXVDLW4ybw?oc=5",
+          "date": "2026-04-22 04:54",
+          "source": "한국경제",
+          "snippet": "셀트리온, 1000억원 규모 자사주 매입 결정&nbsp;&nbsp;한국경제"
+        },
+        {
+          "title": "두산에너빌리티·셀트리온 쓸어담은 초고수…SK하이닉스는 '팔자' [주식 초고수는 지금] - 네이트",
           "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9qdHY0VEw0cmd4ZG5yQVh4ZElOd3FkYWFHZG1yNFJkRmtrbGZpaUFKbXFnb2t1TTlfZzByU2U5Q0NEUFlwTWwwc29qc21mb1czcktz?oc=5",
           "date": "2026-04-23 02:24",
-          "source": "news.nate.com",
-          "snippet": "두산에너빌리티·셀트리온 쓸어담은 초고수…SK하이닉스는 '팔자' [주식 초고수는 지금]&nbsp;&nbsp;news.nate.com"
+          "source": "네이트",
+          "snippet": "두산에너빌리티·셀트리온 쓸어담은 초고수…SK하이닉스는 '팔자' [주식 초고수는 지금]&nbsp;&nbsp;네이트"
+        },
+        {
+          "title": "셀트리온, ADC 신약 3종 모두 ‘환자 투약’ 돌입 - 팜이데일리",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE12R1hPandIRXVRaldZYmZna3NLYTRRM3Y4cmFBeUlFVTlfTWN6UnFMakZjRXlHZ1V3a1AxUUR2dHVSbWZsQjlERDFJb1liMXR2b2JhRmlYNi1MWHk1TUJqSklmVG1xanA3VjN5Yzh3?oc=5",
+          "date": "2026-04-22 23:07",
+          "source": "팜이데일리",
+          "snippet": "셀트리온, ADC 신약 3종 모두 ‘환자 투약’ 돌입&nbsp;&nbsp;팜이데일리"
         }
       ],
       "article_count": 8,
@@ -1001,13 +1015,6 @@
           "snippet": "외인들 삼전닉스 팔고 '이것' 담았다…\"올해만 89% 폭등\" [종목+]&nbsp;&nbsp;한국경제"
         },
         {
-          "title": "에이피알 메디큐브 '랩핑 마스크', 출시 4년 만에 글로벌 판매량 1천만 개 넘어서 - 비즈니스포스트",
-          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFByT0xRVlhxWWZZR3FRbm9wbkNzLXdRNkRweTlic0lqUnpUSFg4UGhGT2RYWnFRQTZER3BjSnprV2ZxbWVaVlJ5REdKRWx3WUJfS0JKeUI2emdLYXY2RlZoaHkzMkZWWUY0dlJOZHZ1SjNmTzQ?oc=5",
-          "date": "2026-04-23 07:38",
-          "source": "비즈니스포스트",
-          "snippet": "에이피알 메디큐브 '랩핑 마스크', 출시 4년 만에 글로벌 판매량 1천만 개 넘어서&nbsp;&nbsp;비즈니스포스트"
-        },
-        {
           "title": "K뷰티, 전쟁 속 나홀로 랠리…두 달 만에 40%↑ - seoulwire.com",
           "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1maGJLTnhMdTlGa29lbDdHVFpqQXF1YWl0WGVWTG5rSDktU2JvbERBVjRna28tVDRIQ3hjXzNGdEo1RWFuWHpvZk12UG1BOE8zc0tUX25FQVUtaTJhUUJQak1hQl9WOVJUR0lvLQ?oc=5",
           "date": "2026-04-24 04:38",
@@ -1027,6 +1034,13 @@
           "date": "2026-04-24 12:20",
           "source": "파이낸셜뉴스",
           "snippet": "코첼라서 K뷰티 존재감 과시한 에이피알, 미국서 접점 넓힌다&nbsp;&nbsp;파이낸셜뉴스\"노래방에 뷰티 디바이스까지\" 메디큐브, 코첼라서 5만명 모았다&nbsp;&nbsp;뉴시스에이피알 “美 코첼라 메디큐브 부스에 5만 4000명 다녀가”&nbsp;&nbsp;서울경제"
+        },
+        {
+          "title": "에이피알 메디큐브, '콜라겐 랩핑 마스크' 누적 판매 1000만개 돌파 - 네이트",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9LNXJsZUdEMVo5akw0Q21zZFhneHJuZUNCTXVPM0h4cHFkODJfUHI4eHRrOXVzdHNaNGlhVDNxbnlFcnNDTkNPT3I2MlhWbHU5dmtF?oc=5",
+          "date": "2026-04-23 02:29",
+          "source": "네이트",
+          "snippet": "에이피알 메디큐브, '콜라겐 랩핑 마스크' 누적 판매 1000만개 돌파&nbsp;&nbsp;네이트"
         },
         {
           "title": "에이피알, +1.27% VI 발동 - 조선비즈 - Chosunbiz",
@@ -1082,25 +1096,25 @@
           "snippet": "오스코텍, 이사회 운영 원칙 논의를 위한 워크숍 개최&nbsp;&nbsp;한국경제"
         },
         {
-          "title": "오스코텍 \"이사회 운영 원칙 논의 위한 워크숍 개최\" - news.nate.com",
+          "title": "오스코텍 \"이사회 운영 원칙 논의 위한 워크숍 개최\" - 네이트",
           "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5DSENtLUZaNVFqdjhpRFNlSTZCTm12dWExRFJ0UE84VjBFNVVqZ005aWNpX21WamRNNzY0N1d6b20wbDg3RF9QWUdLVnVITEtoUGo4?oc=5",
           "date": "2026-04-24 00:24",
-          "source": "news.nate.com",
-          "snippet": "오스코텍 \"이사회 운영 원칙 논의 위한 워크숍 개최\"&nbsp;&nbsp;news.nate.com"
+          "source": "네이트",
+          "snippet": "오스코텍 \"이사회 운영 원칙 논의 위한 워크숍 개최\"&nbsp;&nbsp;네이트"
         },
         {
-          "title": "오스코텍, 이사회 거버넌스 강화 워크숍 개최 - news.nate.com",
+          "title": "오스코텍, 이사회 거버넌스 강화 워크숍 개최 - 네이트",
           "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE54N1BCcWs4QnBnUW9JUEJWd1VGNXhnTWFxMVZGLVRiNFU4cGZXZEduTmtKUV9Cc3J5T1RqVWtBUXJQYXROLXUtUHRaSDc2dlN1LTFn?oc=5",
           "date": "2026-04-24 02:07",
-          "source": "news.nate.com",
-          "snippet": "오스코텍, 이사회 거버넌스 강화 워크숍 개최&nbsp;&nbsp;news.nate.com"
+          "source": "네이트",
+          "snippet": "오스코텍, 이사회 거버넌스 강화 워크숍 개최&nbsp;&nbsp;네이트"
         },
         {
-          "title": "오스코텍, 워크숍 개최…이사회 운영원칙 논의 - news.nate.com",
+          "title": "오스코텍, 워크숍 개최…이사회 운영원칙 논의 - 네이트",
           "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9hNXZYYWpST3hqUEYydDlzZkhoUWRodlNIQ1dwVkIxaGVnYkNaSjkzc3hZWU1WdWh4Q2NHTkRYNGZvdXZpaTgyWVVvX2tfZTREUmNJ?oc=5",
           "date": "2026-04-24 00:57",
-          "source": "news.nate.com",
-          "snippet": "오스코텍, 워크숍 개최…이사회 운영원칙 논의&nbsp;&nbsp;news.nate.com"
+          "source": "네이트",
+          "snippet": "오스코텍, 워크숍 개최…이사회 운영원칙 논의&nbsp;&nbsp;네이트"
         },
         {
           "title": "오스코텍, 이사회 워크숍 개최 “글로벌 기준 거버넌스 구축 시동” - 약업신문",
@@ -1141,18 +1155,18 @@
     "이오테크닉스": {
       "articles": [
         {
+          "title": "이오테크닉스, +4.64% 52주 신고가 - 조선비즈 - Chosunbiz",
+          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOVEs1eU9NNEM3WW9VeGl0dnN5NzctUkpJQTlwNVFVVFNMbjJGMXFvNS1kYzNja0RuWE1aN3JCUnBXX3planhXSFVSMmJTRHVrSHpDNWdPM2RLZFlNZmVuUVVkSEZhdTdqSVVtRXlrZGhwOHR4YkZoeXFKdkpENmQ2Mk16UdIBlwFBVV95cUxNbC1hMHoyc3NwY25Kd3RFQjFJbFdKVy1HM2ZRYnJnLVJfZTM5VjlYYkp5RkdzSktWVHRjS3ZHLTRTYi1TRHV2Q3g5OTdEQUprdGxUTDlIVFU3bnhocXU3NmlNYm5IblFOdkdOM2JNSmMxakFrVkFoQkdSSTRFQjRLVjROcXhaOGZoVjR4OUVaMnpfU1J6cUZz?oc=5",
+          "date": "2026-04-24 02:16",
+          "source": "Chosunbiz",
+          "snippet": "이오테크닉스, +4.64% 52주 신고가 - 조선비즈&nbsp;&nbsp;Chosunbiz"
+        },
+        {
           "title": "이오테크닉스, 증권사 목표가 상향에 강세…4.44% - 매일경제 마켓",
           "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE0tUk9XcElVYXdobnhyMFZ3aHRMUks1UjVsakRJMFVzdXR0STVzMXdiTlRDZlR3TWxLQVlGTlFkaFpObHdZUER3V0NjbDdUZWZvWkp3SXJRTlN1elJ6WEY5Ng?oc=5",
           "date": "2026-04-24 02:33",
           "source": "매일경제 마켓",
           "snippet": "이오테크닉스, 증권사 목표가 상향에 강세…4.44%&nbsp;&nbsp;매일경제 마켓"
-        },
-        {
-          "title": "이오테크닉스, +4.64% 52주 신고가 - 조선비즈 - Chosunbiz",
-          "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbC1hMHoyc3NwY25Kd3RFQjFJbFdKVy1HM2ZRYnJnLVJfZTM5VjlYYkp5RkdzSktWVHRjS3ZHLTRTYi1TRHV2Q3g5OTdEQUprdGxUTDlIVFU3bnhocXU3NmlNYm5IblFOdkdOM2JNSmMxakFrVkFoQkdSSTRFQjRLVjROcXhaOGZoVjR4OUVaMnpfU1J6cUZz0gGXAUFVX3lxTE1sLWEwejJzc3Bjbkp3dEVCMUlsV0pXLUczZlFicmctUl9lMzlWOVhiSnlGR3NKS1ZUdGNLdkctNFNiLVNEdXZDeDk5N0RBSmt0bFRMOUhUVTdueGhxdTc2aU1ibkhuUU52R04zYk1KYzFqQWtWQWhCR1JJNEVCNEtWNE5xeFo4ZmhWNHg5RVoyel9TUnpxRnM?oc=5",
-          "date": "2026-04-24 02:10",
-          "source": "Chosunbiz",
-          "snippet": "이오테크닉스, +4.64% 52주 신고가 - 조선비즈&nbsp;&nbsp;Chosunbiz"
         },
         {
           "title": "[모닝 리포트] \"이오테크닉스, 반도체 장비 비중 확대…HBM·NAND 수혜로 실적 성장\" - 뉴스핌",
@@ -1162,11 +1176,11 @@
           "snippet": "[모닝 리포트] \"이오테크닉스, 반도체 장비 비중 확대…HBM·NAND 수혜로 실적 성장\"&nbsp;&nbsp;뉴스핌"
         },
         {
-          "title": "'이오테크닉스' 52주 신고가 경신, 최근 3일간 외국인 대량 순매수 - news.nate.com",
+          "title": "'이오테크닉스' 52주 신고가 경신, 최근 3일간 외국인 대량 순매수 - 네이트",
           "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE4tdVdOZUV6blhpM0owU2lVYURXckVpR1pRTWVJd1ZjOXcxcUx6TnBSLTl4eEUzbWZaMXVGWk1lUWFwOGxDbHZQRFNwMy14Q3BYQjRr?oc=5",
           "date": "2026-04-24 02:14",
-          "source": "news.nate.com",
-          "snippet": "'이오테크닉스' 52주 신고가 경신, 최근 3일간 외국인 대량 순매수&nbsp;&nbsp;news.nate.com"
+          "source": "네이트",
+          "snippet": "'이오테크닉스' 52주 신고가 경신, 최근 3일간 외국인 대량 순매수&nbsp;&nbsp;네이트"
         },
         {
           "title": "김보라 시장, 첨단 반도체 소부장 기업 ㈜이오테크닉스 방문 - 자치안성신문",
@@ -1215,6 +1229,13 @@
           "snippet": "종목 진단 - 코오롱 티슈진 (`26.04.20)&nbsp;&nbsp;네이버 프리미엄콘텐츠"
         },
         {
+          "title": "코오롱티슈진 투자분석 2026. 04. 19 - 주달",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1NMDFYMEZtbER5Q0FSY05DN0oxOTlQb1FBQ1hWaVNPNW5JVFpYR3JKQnZpWl9Wb2xnUUp1MTR3YkdVVTd0VEJ1R21HLWlFRUZJQW5jUVMza0dJODNoVzNibVZCSG05LVRRb0dzLXZfakxBY3M?oc=5",
+          "date": "2026-04-19 08:47",
+          "source": "주달",
+          "snippet": "코오롱티슈진 투자분석 2026. 04. 19&nbsp;&nbsp;주달"
+        },
+        {
           "title": "[TG-C 블록버스터 도전] ④DMOAD 승인이 코오롱티슈진 기업가치에 중요한 이유는? - 스마트투데이",
           "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9Ca2p5R1hIdllFUngxOXVTMHFfV2F3OFlIOFdETklXaVlpc1lQT2ZuZl9FaEMtem81UV84VHJadTZoM1NWLV8teFVNU25SWTRURE1QRDYtWjZ4QVlicEtn?oc=5",
           "date": "2026-04-18 22:10",
@@ -1229,7 +1250,7 @@
           "snippet": "코스닥, 개인 매수에 상승 마감...에코프로, 에코프로비엠 상승 VS 코오롱티슈진, 리가켐바이오 하락&nbsp;&nbsp;이코노뉴스"
         }
       ],
-      "article_count": 4,
+      "article_count": 5,
       "has_news": true,
       "summary": "",
       "sentiment": "neutral",
@@ -1346,25 +1367,18 @@
           "snippet": "파마리서치, 리쥬란코스메틱 공식몰 리뉴얼 오픈…20일까지 프로모션 진행&nbsp;&nbsp;한국경제"
         },
         {
-          "title": "파마리서치 리쥬란코스메틱, 공식몰 그랜드 리뉴얼…5만원 이상 구매 시 선케어 키트 증정 - 로이슈",
-          "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5VbWJpOUw1TTZCbGVfZktGYldvMjRnSjZ4anFFM2tzOVZzcTdTRndDYTZkclRFREhxS2FnU2Yzd25YV2Z0VEFwLU93TExxOE5PTGZ5ZGlQRjA0Z3k2MGFmbFFtaTA5RWRWc3V2QXhTZEhWaDlnaGpJeGhn?oc=5",
-          "date": "2026-04-24 06:43",
-          "source": "로이슈",
-          "snippet": "파마리서치 리쥬란코스메틱, 공식몰 그랜드 리뉴얼…5만원 이상 구매 시 선케어 키트 증정&nbsp;&nbsp;로이슈"
-        },
-        {
-          "title": "파마리서치, 리쥬란코스메틱 공식몰 그랜드 리뉴얼 오픈 - 아시아투데이",
-          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBFd05tRVAxNkM3Q25JVXQ0V2NFWEU0TWQyX0lIMjdjVEtfY3p6VTFTc2hNUUhPY0FSUzB2eWpiU0pHUTgzeWRkamZEUWx5Tmh4SE0zSGE1eDIwUEpxdzhMczhkdzJCb2llXzNBRS1B?oc=5",
-          "date": "2026-04-24 07:21",
-          "source": "아시아투데이",
-          "snippet": "파마리서치, 리쥬란코스메틱 공식몰 그랜드 리뉴얼 오픈&nbsp;&nbsp;아시아투데이"
-        },
-        {
           "title": "[강세 토픽] 미용기기 테마, 파마리서치 +5.00%, 달바글로벌 +4.79% - 조선비즈 - Chosunbiz",
           "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQblNvOEV0WUJqTDEzQVNVMjdTbDlXMk94RDJxTGlLTHhjSi1JZW9WcjdmY3pOLTFkajAtbmM4Y2N3X0duZXB1c1JZcHpvZHBxU3F4SXZqbUFHTVJvUzEwRDRlWnRxei1oUzRGUThGVVlWMWxxYnpCb1JjRGFQWEtGMmZNNNIBlwFBVV95cUxPeEdRdFd5ck15bjkwV053ZzdRSldjcXQyV0IwQXg2UjFNcHJHZ2NydE1xLWhteWFiRC0yZGtDSVF5XzJxY0x4MFI3ZjJDQUZUNmU5WVp6a1JoN3pSb0I5a19SZ3ZrZmczeFBnU0JlMEhwQ3pvS0hyNm9tR1Z6c1JBV1JudFVqNWt1eVVJMW5SRFpncXo1bFE4?oc=5",
           "date": "2026-04-24 02:54",
           "source": "Chosunbiz",
           "snippet": "[강세 토픽] 미용기기 테마, 파마리서치 +5.00%, 달바글로벌 +4.79% - 조선비즈&nbsp;&nbsp;Chosunbiz"
+        },
+        {
+          "title": "파마리서치, 김세정과 리쥬란 정품인증 3단계 안내 영상 공개 - 로이슈",
+          "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5oMC1BcU9fd0c2QnJ2NjR1WXNuVkw2ek9uSTljV2ZRUV84UEFBbXZ1VHoxNmpmVWZFQThzdkstVDZOTkVmenltT1hnNmxHeGgyR0dwOXRiT0F2Z2hlS1U3YjZYMlVzTjctdWZFd3NSb0d6MktBbWgzcmRn?oc=5",
+          "date": "2026-04-22 06:56",
+          "source": "로이슈",
+          "snippet": "파마리서치, 김세정과 리쥬란 정품인증 3단계 안내 영상 공개&nbsp;&nbsp;로이슈"
         },
         {
           "title": "[N2 뷰] 파마리서치, ‘리쥬란 원툴’ 넘어 글로벌 멀티플 시험대 극복할까 - 뉴스투데이",
@@ -1386,6 +1400,13 @@
           "date": "2026-04-22 06:15",
           "source": "블로터",
           "snippet": "테르가제 뺏긴 파마리서치, 자회사 자본잠식 가속도&nbsp;&nbsp;블로터"
+        },
+        {
+          "title": "파마리서치 리쥬란코스메틱, 공식몰 그랜드 리뉴얼…5만원 이상 구매 시 선케어 키트 증정 - 로이슈",
+          "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5VbWJpOUw1TTZCbGVfZktGYldvMjRnSjZ4anFFM2tzOVZzcTdTRndDYTZkclRFREhxS2FnU2Yzd25YV2Z0VEFwLU93TExxOE5PTGZ5ZGlQRjA0Z3k2MGFmbFFtaTA5RWRWc3V2QXhTZEhWaDlnaGpJeGhn?oc=5",
+          "date": "2026-04-24 06:43",
+          "source": "로이슈",
+          "snippet": "파마리서치 리쥬란코스메틱, 공식몰 그랜드 리뉴얼…5만원 이상 구매 시 선케어 키트 증정&nbsp;&nbsp;로이슈"
         }
       ],
       "article_count": 8,
@@ -1441,11 +1462,11 @@
           "snippet": "심상원 이사, 필옵틱스 주식 1600주 매도&nbsp;&nbsp;디지털투데이"
         },
         {
-          "title": "심상원 이사, 필옵틱스 주식 1600주 매도 - news.nate.com",
+          "title": "심상원 이사, 필옵틱스 주식 1600주 매도 - 네이트",
           "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0xcW92ZlBpZUZGMDI1ekJDNmVTbEJKR0VIMEV2ZzFhZ0FFRmhqSXUxNWNTRS03Nk52dFRxdGMyMFpvMmsyT3FUWUMySE5oTjlQcG5B?oc=5",
           "date": "2026-04-24 11:21",
-          "source": "news.nate.com",
-          "snippet": "심상원 이사, 필옵틱스 주식 1600주 매도&nbsp;&nbsp;news.nate.com"
+          "source": "네이트",
+          "snippet": "심상원 이사, 필옵틱스 주식 1600주 매도&nbsp;&nbsp;네이트"
         },
         {
           "title": "필옵틱스 투자분석 2026. 04. 23 - 주달",
@@ -1476,18 +1497,18 @@
           "snippet": "필옵틱스, 독보적 광학 기술로 OLED·이차전지 시장 선도&nbsp;&nbsp;핀포인트뉴스"
         },
         {
-          "title": "한규완 부사장, 필옵틱스 주식 3400주 매도 - news.nate.com",
-          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE8zOFM3WnEwN1JVazFJc1hVRHhvNFRSSlYxVlh4ZkZMWmVWWFpJZGVrNGNMaUNyRGJXV3JlNDgxZ0s2RFNpMl9WLXNVR2ZmNGZiQXJB?oc=5",
-          "date": "2026-04-24 11:21",
-          "source": "news.nate.com",
-          "snippet": "한규완 부사장, 필옵틱스 주식 3400주 매도&nbsp;&nbsp;news.nate.com"
-        },
-        {
           "title": "[강세 토픽] 유리기판 테마, 한빛레이저 +17.62%, 필옵틱스 +10.05% - 조선비즈 - Chosunbiz",
           "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQVDNWN2xFcFYxZmF0T3UwbHUyci1WaEk3bmVsdWdOdTBuMXlfazZRLVlnc0tqa1NKRnJPOWFIeEF5ZklvRkJ1akFrT24tM0JybFlsODFXTzVzR2hJeEkyd0pqR0E5QUJNWW14alRFUm9vWV9hV2FxSElSaXJITGwxX1ZOTdIBlwFBVV95cUxQajAxWFkxSDNxNkNMTWxTcG1RLXk4ODZVZmdON1VhV1R1TGs1MHRNMkRHQVlieTdHMElnb2tuOGRZZW9zRE9tNjF5OXI4UE4tdE1Wbl9NMWJicXl0UVJSV1lGT3VZQndZcmxieFBxRkg4aUlSNDB1bTdKUHlQTDJZS21vVHItNjExQnNKSWdmcFNlTjRRdG9B?oc=5",
           "date": "2026-04-20 01:01",
           "source": "Chosunbiz",
           "snippet": "[강세 토픽] 유리기판 테마, 한빛레이저 +17.62%, 필옵틱스 +10.05% - 조선비즈&nbsp;&nbsp;Chosunbiz"
+        },
+        {
+          "title": "한규완 부사장, 필옵틱스 주식 3400주 매도 - 네이트",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE8zOFM3WnEwN1JVazFJc1hVRHhvNFRSSlYxVlh4ZkZMWmVWWFpJZGVrNGNMaUNyRGJXV3JlNDgxZ0s2RFNpMl9WLXNVR2ZmNGZiQXJB?oc=5",
+          "date": "2026-04-24 11:21",
+          "source": "네이트",
+          "snippet": "한규완 부사장, 필옵틱스 주식 3400주 매도&nbsp;&nbsp;네이트"
         }
       ],
       "article_count": 8,
