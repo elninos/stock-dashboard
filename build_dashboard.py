@@ -26,6 +26,61 @@ briefing_data = load_json(BRIEFING_FILE, default={})
 # Load briefing summary (period-based AI summaries)
 briefing_summary = load_json(BRIEFING_SUMMARY_FILE, default={})
 
+# ── Compute stock mention counts from briefing.json ──────────────────────────
+from datetime import datetime as _dt, timedelta as _td
+_TRACKED_STOCKS = [
+    # 국내 반도체/IT
+    '삼성전자', 'SK하이닉스', 'HBM', '한미반도체', '이오테크닉스', 'DB하이텍',
+    'LG전자', 'LG디스플레이', '삼성전기', '삼성SDI',
+    # 국내 방산/조선
+    '한화에어로스페이스', '현대로템', '한화오션', '현대중공업', '한국항공우주',
+    'LIG넥스원', 'SNT다이내믹스',
+    # 국내 금융
+    'KB금융', '신한지주', '하나금융지주', '우리금융지주', '메리츠금융지주',
+    # 국내 바이오/헬스
+    '삼성바이오로직스', '셀트리온', '셀트리온헬스케어', '보로노이', '올릭스',
+    '코오롱티슈진', '파마리서치', '클래시스', 'HLB',
+    # 국내 소비/기타
+    '네이버', 'NAVER', '카카오', '현대차', '기아', 'LG에너지솔루션',
+    '에코프로', '에코프로비엠', '포스코홀딩스', '두산에너빌리티', '두산로보틱스',
+    '자화전자', '레딧', 'RF머트리얼즈',
+    # 미국 빅테크
+    '엔비디아', 'TSMC', '마이크로소프트', '구글', '알파벳', '아마존', '애플',
+    '메타', '넷플릭스', '테슬라', '인텔', 'AMD', '팔란티어', 'ARM',
+    '브로드컴', '퀄컴', '마이크론', 'ASML', '램리서치', 'AMAT',
+    # 미국 기타
+    '로켓랩', '뉴스케일파워', '노보노디스크', '일라이릴리', '위고비', '화이자',
+    'MSD', '코인베이스', 'BYD', '소파이',
+]
+
+_today_str = _dt.now().date().isoformat()
+_cutoffs = {
+    'daily':    (_dt.now().date() - _td(days=1)).isoformat(),
+    'weekly':   (_dt.now().date() - _td(days=7)).isoformat(),
+    'biweekly': (_dt.now().date() - _td(days=14)).isoformat(),
+    'monthly':  (_dt.now().date() - _td(days=30)).isoformat(),
+}
+_counts = {p: {} for p in _cutoffs}
+
+for _date_key, _day in briefing_data.items():
+    for _src in _day.get('sources', []):
+        _src_name = _src.get('name', '')
+        for _post in _src.get('posts', []):
+            _text = _post.get('text', '') + ' ' + _post.get('title', '')
+            _post_date = _post.get('date', _date_key)
+            for _period, _cutoff in _cutoffs.items():
+                if _post_date >= _cutoff:
+                    for _stk in _TRACKED_STOCKS:
+                        _c = _text.count(_stk)
+                        if _c:
+                            _counts[_period][_stk] = _counts[_period].get(_stk, 0) + _c
+
+briefing_mention_counts = {
+    p: sorted(v.items(), key=lambda x: x[1], reverse=True)[:25]
+    for p, v in _counts.items()
+}
+# ──────────────────────────────────────────────────────────────────────────────
+
 # Load stock news (AI-summarized news per held stock)
 stock_news_data = load_json(STOCK_NEWS_FILE, default={})
 sell_signals_data = load_json(SELL_SIGNALS_FILE, default={})
@@ -1469,6 +1524,7 @@ const TIMELINE = """ + json.dumps(timeline, ensure_ascii=False) + """;
 const TREEMAP_DATA = """ + json.dumps(treemap_data, ensure_ascii=False) + """;
 const BRIEFING = """ + json.dumps(briefing_data, ensure_ascii=False) + """;
 const BRIEFING_SUMMARY = """ + json.dumps(briefing_summary, ensure_ascii=False) + """;
+const BRIEFING_MENTIONS = """ + json.dumps(briefing_mention_counts, ensure_ascii=False) + """;
 const STOCK_NEWS = """ + json.dumps(stock_news_data, ensure_ascii=False) + """;
 const SELL_SIGNALS = """ + json.dumps(sell_signals_data, ensure_ascii=False) + """;
 const TXS = """ + json.dumps([
@@ -3236,38 +3292,42 @@ function renderBriefingSummary() {
   // 위 themes.forEach 에서 이미 렌더링 중 — evolution 필드만 카드에 추가
   // (기존 forEach를 아래로 대체)
 
-  // ── 주목 종목 ──────────────────────────────────────────────
-  const stocks = data.stocks || [];
-  if (stocks.length > 0) {
-    const stockItems = stocks.map(s => {
-      const pct = s.price_change_pct;
-      const pctHtml = pct != null
-        ? `<span style="font-size:0.75rem; font-weight:600; color:${pct>=0?'#0a7c59':'#c81e1e'}">${pct>=0?'+':''}${pct.toFixed(1)}%</span>`
-        : '';
-      const chs = (s.channels || []).join(' · ');
-      const daysBadge = s.days_mentioned > 1
-        ? `<span style="font-size:0.68rem; background:rgba(26,86,219,0.1); color:#1a56db; border-radius:4px; padding:1px 6px; font-weight:600;">${s.days_mentioned}일 연속</span>`
+  // ── 주목 종목 (언급 빈도 자동 집계 + AI 컨텍스트 병합) ─────────
+  const mentionList = (BRIEFING_MENTIONS[briefingActivePeriod] || []);  // [[name, count], ...]
+  const aiStocks = data.stocks || [];
+  const aiCtxMap = {};
+  for (const s of aiStocks) aiCtxMap[s.name] = s;
+
+  if (mentionList.length > 0) {
+    // Bar-style rank list
+    const maxCnt = mentionList[0][1] || 1;
+    const stockRows = mentionList.map(([name, cnt], i) => {
+      const ai = aiCtxMap[name] || {};
+      const barPct = Math.round(cnt / maxCnt * 100);
+      const rankColor = i === 0 ? '#f59e0b' : i < 3 ? '#6b7280' : 'var(--text-dim)';
+      const ctxHtml = ai.context
+        ? `<div style="font-size:0.74rem; color:var(--text-dim); line-height:1.5; margin-top:3px;">${ai.context}</div>`
         : '';
       return `
-      <div style="display:flex; flex-direction:column; padding:12px 16px; background:var(--bg2); border:1px solid var(--border); border-radius:10px; min-width:150px; gap:4px;">
-        <div style="display:flex; align-items:center; justify-content:space-between; gap:8px;">
-          <span style="font-size:0.9rem; font-weight:700; color:var(--text);">${s.name}</span>
-          ${pctHtml}
+      <div style="padding:8px 12px; background:var(--bg2); border:1px solid var(--border); border-radius:8px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
+          <span style="font-size:0.72rem; font-weight:700; color:${rankColor}; min-width:18px;">#${i+1}</span>
+          <span style="font-size:0.88rem; font-weight:700; color:var(--text); flex:1;">${name}</span>
+          <span style="font-size:0.78rem; font-weight:600; color:var(--accent);">${cnt}회</span>
         </div>
-        <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
-          <div style="font-size:0.75rem; color:var(--text-muted);">언급 <b style="color:var(--accent);">${s.mention_count}</b>회</div>
-          ${daysBadge}
+        <div style="height:4px; background:var(--border); border-radius:2px; overflow:hidden;">
+          <div style="height:100%; width:${barPct}%; background:var(--accent); border-radius:2px;"></div>
         </div>
-        <div style="font-size:0.71rem; color:var(--text-muted); overflow:hidden; text-overflow:ellipsis; white-space:nowrap;" title="${chs}">${chs}</div>
-        ${s.context ? `<div style="font-size:0.76rem; color:var(--text-dim); line-height:1.5; margin-top:2px;">${s.context}</div>` : ''}
+        ${ctxHtml}
       </div>`;
     }).join('');
 
     html += `
     <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
-      <span class="section-label">주목 종목</span>
+      <span class="section-label">언급 종목 순위</span>
+      <span style="font-size:0.75rem; color:var(--text-muted);">· 소스 전체 자동 집계</span>
     </div>
-    <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:24px;">${stockItems}</div>`;
+    <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap:8px; margin-bottom:24px;">${stockRows}</div>`;
   }
 
   // ── 매크로 ─────────────────────────────────────────────────
