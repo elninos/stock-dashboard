@@ -52,12 +52,15 @@ def make_tx(date, account, broker, tx_type, stock="", qty=0, price=0,
 
 
 def read_xls_html(filepath):
-    """Read .xls files that are actually HTML format (NH증권 exports)."""
-    dfs = pd.read_html(filepath)
-    df = dfs[0]
-    if isinstance(df.columns, pd.MultiIndex):
-        df.columns = [str(c[-1]) if isinstance(c, tuple) else str(c) for c in df.columns]
-    return df
+    """Read .xls files that are actually HTML format (NH증권 exports).
+
+    NH HTS exports HTML disguised as .xls with a 2-row header (상세 format).
+    Reading with header=0 keeps the second header row as the first data row,
+    matching the structure of genuine .xlsx files so the parser can detect
+    상세 format via df.iloc[0]['수량'] == '단가'.
+    """
+    dfs = pd.read_html(filepath, encoding="euc-kr", header=0)
+    return dfs[0]
 
 
 class LendingFeeAllocator:

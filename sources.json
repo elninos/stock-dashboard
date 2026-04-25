@@ -92,6 +92,13 @@
       "url": "https://blog.naver.com/kk_kontemp",
       "category": "매크로 분석",
       "enabled": true
+    },
+    {
+      "name": "luy1978 투자블로그",
+      "id": "luy1978",
+      "url": "https://blog.naver.com/luy1978",
+      "category": "투자철학/산업·종목 분석",
+      "enabled": true
     }
   ],
   "rss": []

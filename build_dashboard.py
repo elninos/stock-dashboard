@@ -1283,7 +1283,7 @@ body.mask-on .amt {{ filter: blur(8px); user-select: none; }}
   </div>
 
   <!-- Summary KPIs -->
-  <div id="periodKpis" style="display:grid; grid-template-columns:repeat(5,1fr); gap:12px; margin-bottom:8px;"></div>
+  <div id="periodKpis" style="display:grid; grid-template-columns:repeat(6,1fr); gap:12px; margin-bottom:8px;"></div>
   <!-- Trading pattern stats -->
   <div id="periodPattern" style="display:grid; grid-template-columns:repeat(5,1fr); gap:8px; margin-bottom:16px;"></div>
 
@@ -1339,12 +1339,12 @@ body.mask-on .amt {{ filter: blur(8px); user-select: none; }}
     <div class="kpi">
       <div class="kpi-label">수수료 + 세금</div>
       <div class="kpi-value compact negative amt">{fmt_num(overall_fees + overall_tax)}</div>
-      <div class="kpi-sub">수수료 {fmt_num(overall_fees)} · 세금 {fmt_num(overall_tax)}</div>
+      <div class="kpi-sub"><span class="amt">수수료 {fmt_num(overall_fees)}</span> · <span class="amt">세금 {fmt_num(overall_tax)}</span></div>
     </div>
     <div class="kpi">
       <div class="kpi-label">순입금</div>
       <div class="kpi-value compact amt">{fmt_num(overall_net_deposit)}</div>
-      <div class="kpi-sub">입금 {fmt_num(overall_deposits)} / 출금 {fmt_num(overall_withdrawals)}</div>
+      <div class="kpi-sub"><span class="amt">입금 {fmt_num(overall_deposits)}</span> / <span class="amt">출금 {fmt_num(overall_withdrawals)}</span></div>
     </div>
     <div class="kpi">
       <div class="kpi-label">대출잔액</div>
@@ -2569,6 +2569,10 @@ function renderPeriodAnalysis() {
   const endVal   = document.getElementById('periodEnd').value;
   if (!startVal || !endVal) return;
 
+  // Current price lookup (build-time prices)
+  const priceMap = {};
+  for (const s of STOCKS) priceMap[s.name] = s.current_price || 0;
+
   // Filter transactions in range
   const inRange = TXS.filter(tx => tx.d >= startVal && tx.d <= endVal);
 
@@ -2585,16 +2589,44 @@ function renderPeriodAnalysis() {
     return h;
   }
 
+  // Holdings at period boundary (needed for MV calc + portfolio diff)
+  const startDateAdj = new Date(startVal);
+  startDateAdj.setDate(startDateAdj.getDate() - 1);
+  const startAdj = startDateAdj.toISOString().slice(0,10);
+  const hStart = holdingsAt(startAdj);
+  const hEnd   = holdingsAt(endVal);
+
+  // ── 주식 평가액 기준 기간 평가손익 ──────────────────────────
+  // mvStart / mvEnd: 각 시점 보유 종목 × 현재가(빌드 시점)
+  // periodStockPnl = mvEnd - mvStart - 순매수액(buys-sells)
+  let mvStart = 0, mvEnd = 0, mvCoveredCount = 0, mvTotalCount = 0;
+  const allHoldingStocks = new Set([...Object.keys(hStart), ...Object.keys(hEnd)]);
+  for (const s of allHoldingStocks) {
+    const cp = priceMap[s] || 0;
+    const qs = hStart[s] || 0;
+    const qe = hEnd[s]   || 0;
+    if (qs > 0 || qe > 0) mvTotalCount++;
+    if (cp > 0) {
+      mvStart += qs * cp;
+      mvEnd   += qe * cp;
+      if (qs > 0 || qe > 0) mvCoveredCount++;
+    }
+  }
+
   // Summary stats
   let buys=0, sells=0, divs=0, fees=0;
   const typeMap = {'buy':'매수','sell':'매도','dividend':'배당','fee':'수수료','tax':'세금','lending_fee':'대주료'};
   for (const tx of inRange) {
-    if (tx.t === 'buy')          buys += tx.a;
-    else if (tx.t === 'sell')    sells += tx.a;
-    else if (tx.t === 'dividend') divs += tx.a;
+    if (tx.t === 'buy')           buys += tx.a;
+    else if (tx.t === 'sell')     sells += tx.a;
+    else if (tx.t === 'dividend') divs  += tx.a;
     else if (tx.t === 'fee' || tx.t === 'tax' || tx.t === 'lending_fee') fees += tx.a;
   }
   const netCash = sells + divs - buys - fees;
+  const netInvested = buys - sells;
+  const periodStockPnl = mvEnd - mvStart - netInvested;
+  const hasMv = mvStart > 0 || mvEnd > 0;
+  const mvRetPct = (hasMv && mvStart > 0) ? (periodStockPnl / mvStart * 100) : null;
 
   // ── KPIs (row 1: 금액) ──────────────────────────────────────
   const fmt = v => (v < 0 ? '-' : '') + Math.abs(v).toLocaleString('ko-KR') + '원';
@@ -2603,12 +2635,17 @@ function renderPeriodAnalysis() {
     { label:'매도', value: sells, cls:'positive' },
     { label:'배당', value: divs, cls:'positive' },
     { label:'순현금흐름', value: netCash, cls: netCash>=0?'positive':'negative' },
+    { label:'주식 평가손익', value: periodStockPnl,
+      cls: periodStockPnl>=0?'positive':'negative',
+      sub: hasMv ? (mvRetPct !== null ? `${mvRetPct>=0?'+':''}${mvRetPct.toFixed(1)}% · 현재가 기준` : '현재가 기준') : null,
+      na: !hasMv },
     { label:'거래건수', value: inRange.length, raw:true },
   ];
   document.getElementById('periodKpis').innerHTML = kpiDefs.map(k => `
     <div style="background:var(--bg2); border:1px solid var(--border); border-radius:10px; padding:14px 16px;">
       <div style="font-size:0.72rem; color:var(--text-muted); font-weight:600; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px;">${k.label}</div>
-      <div style="font-size:1.15rem; font-weight:700;" class="${k.raw?'':k.cls+' amt'}">${k.raw ? k.value.toLocaleString('ko-KR') : fmt(k.value)}</div>
+      <div style="font-size:1.15rem; font-weight:700;" class="${k.raw?'':k.cls+' amt'}">${k.na ? '─' : k.raw ? k.value.toLocaleString('ko-KR') : fmt(k.value)}</div>
+      ${k.sub ? `<div style="font-size:0.68rem; color:var(--text-muted); margin-top:3px;">${k.sub}</div>` : ''}
     </div>`).join('');
 
   // ── 매매 패턴 (row 2) ─────────────────────────────────────
@@ -2634,13 +2671,13 @@ function renderPeriodAnalysis() {
     { label:'매매 종목 수',  value: allTraded.size + '종목',
       sub: `매수 ${buyStocks.size}·매도 ${sellStocks.size}` },
     { label:'매수 횟수',     value: buyTxs.length + '회',
-      sub: avgBuy > 0 ? '평균 ' + Math.round(avgBuy/10000).toLocaleString() + '만원' : '-' },
+      sub: avgBuy > 0 ? `평균 <span class="amt">${Math.round(avgBuy/10000).toLocaleString()}만원</span>` : '-' },
     { label:'매도 횟수',     value: sellTxs.length + '회',
-      sub: avgSell > 0 ? '평균 ' + Math.round(avgSell/10000).toLocaleString() + '만원' : '-' },
+      sub: avgSell > 0 ? `평균 <span class="amt">${Math.round(avgSell/10000).toLocaleString()}만원</span>` : '-' },
     { label:'최다 매수',     value: topBuy  ? topBuy[0]  : '-',
-      sub: topBuy  ? Math.round(topBuy[1] /10000).toLocaleString()+'만원' : '' },
+      sub: topBuy  ? `<span class="amt">${Math.round(topBuy[1]/10000).toLocaleString()}만원</span>` : '' },
     { label:'최다 매도',     value: topSell ? topSell[0] : '-',
-      sub: topSell ? Math.round(topSell[1]/10000).toLocaleString()+'만원' : '' },
+      sub: topSell ? `<span class="amt">${Math.round(topSell[1]/10000).toLocaleString()}만원</span>` : '' },
   ];
   document.getElementById('periodPattern').innerHTML = patternCards.map(k => `
     <div style="background:var(--bg2); border:1px solid var(--border); border-radius:8px; padding:10px 14px;">
@@ -2649,14 +2686,7 @@ function renderPeriodAnalysis() {
       ${k.sub ? `<div style="font-size:0.71rem; color:var(--text-muted); margin-top:2px;">${k.sub}</div>` : ''}
     </div>`).join('');
 
-  // Portfolio diff: holdings before start vs at end
-  // Get day before start
-  const startDateAdj = new Date(startVal);
-  startDateAdj.setDate(startDateAdj.getDate() - 1);
-  const startAdj = startDateAdj.toISOString().slice(0,10);
-  const hStart = holdingsAt(startAdj);
-  const hEnd   = holdingsAt(endVal);
-
+  // Portfolio diff: holdings before start vs at end (hStart/hEnd already computed above)
   const allStocks = new Set([...Object.keys(hStart), ...Object.keys(hEnd)]);
   const added=[], removed=[], bought=[], sold=[];
   for (const s of allStocks) {
@@ -2761,6 +2791,17 @@ function renderPeriodAnalysis() {
         ? (avgSell - avgBuy) * matchedQty
         : (sellQty > 0 && buyQty === 0 ? d.sells : 0); // 기간 전 매수분 매도: 매도액만 표시
 
+      // 종목별 주식 평가손익: (기간말 보유수량 - 기간초 보유수량) × 현재가 차이
+      // = (hEnd - hStart) × cp - 순매수액
+      const cp = priceMap[stock] || 0;
+      const qsStock = hStart[stock] || 0;
+      const qeStock = hEnd[stock]   || 0;
+      const stockMvDiff = cp > 0 ? (qeStock - qsStock) * cp - d.buys + d.sells : null;
+      // 더 직관적: 기간말 평가액 - 기간초 평가액 - 순매수
+      const stockMvEnd   = qeStock * cp;
+      const stockMvStart = qsStock * cp;
+      const stockUnreal  = cp > 0 ? stockMvEnd - stockMvStart - (d.buys - d.sells) : null;
+
       // summary 셀 helper
       const sumCell = (label, val, subLabel, subVal, color) => `
         <div style="text-align:center; padding:10px 8px; border-right:1px solid var(--border);">
@@ -2770,10 +2811,11 @@ function renderPeriodAnalysis() {
         </div>`;
 
       const summaryCols = [
-        d.buys  ? sumCell('매수', `<span class="amt">${fmt(d.buys)}</span>`, `<span class="amt">${buyQty.toLocaleString('ko-KR')}주</span> avg`, avgBuy > 0 ? avgBuy.toLocaleString('ko-KR', {maximumFractionDigits:0})+'원' : '─', 'var(--negative)') : '',
-        d.sells ? sumCell('매도', `<span class="amt">${fmt(d.sells)}</span>`, `<span class="amt">${sellQty.toLocaleString('ko-KR')}주</span> avg`, avgSell > 0 ? avgSell.toLocaleString('ko-KR', {maximumFractionDigits:0})+'원' : '─', 'var(--positive)') : '',
-        d.divs  ? sumCell('배당', `${fmt(d.divs)}`, null, null, '#1a56db') : '',
-        (d.buys && d.sells) ? sumCell('avg 차익/주', avgSell > 0 && avgBuy > 0 ? `${(avgSell-avgBuy>=0?'+':'')}${(avgSell-avgBuy).toLocaleString('ko-KR',{maximumFractionDigits:0})}원` : '─', matchedQty > 0 ? `<span class="amt">${matchedQty.toLocaleString('ko-KR')}주</span> 기준` : '', '', (avgSell-avgBuy) >= 0 ? 'var(--positive)' : 'var(--negative)') : '',
+        d.buys  ? sumCell('매수', `<span class="amt">${fmt(d.buys)}</span>`, `<span class="amt">${buyQty.toLocaleString('ko-KR')}주</span> avg`, avgBuy > 0 ? `<span class="amt">${avgBuy.toLocaleString('ko-KR', {maximumFractionDigits:0})}원</span>` : '─', 'var(--negative)') : '',
+        d.sells ? sumCell('매도', `<span class="amt">${fmt(d.sells)}</span>`, `<span class="amt">${sellQty.toLocaleString('ko-KR')}주</span> avg`, avgSell > 0 ? `<span class="amt">${avgSell.toLocaleString('ko-KR', {maximumFractionDigits:0})}원</span>` : '─', 'var(--positive)') : '',
+        d.divs  ? sumCell('배당', `<span class="amt">${fmt(d.divs)}</span>`, null, null, '#1a56db') : '',
+        (d.buys && d.sells) ? sumCell('avg 차익/주', avgSell > 0 && avgBuy > 0 ? `<span class="amt">${(avgSell-avgBuy>=0?'+':'')}${(avgSell-avgBuy).toLocaleString('ko-KR',{maximumFractionDigits:0})}원</span>` : '─', matchedQty > 0 ? `<span class="amt">${matchedQty.toLocaleString('ko-KR')}주</span> 기준` : '', '', (avgSell-avgBuy) >= 0 ? 'var(--positive)' : 'var(--negative)') : '',
+        stockUnreal !== null ? sumCell('평가손익', `<span class="amt">${stockUnreal>=0?'+':''}${fmt(stockUnreal)}</span>`, `${qsStock}→${qeStock}주 현재가`, `<span class="amt">${cp.toLocaleString('ko-KR')}원</span>`, stockUnreal >= 0 ? 'var(--positive)' : 'var(--negative)') : '',
         sumCell('순현금', `<span class="amt">${net>=0?'+':''}${fmt(net)}</span>`, null, null, net >= 0 ? 'var(--positive)' : 'var(--negative)'),
       ].filter(Boolean);
 
