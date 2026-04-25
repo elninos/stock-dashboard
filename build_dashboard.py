@@ -13,7 +13,7 @@ from dashboard_utils import (
     fmt_pct,
     pnl_class,
 )
-from config import BASE_DIR, FX_FALLBACK, TRANSACTIONS_FILE, PRICES_FILE, STOCK_MAP_FILE, BRIEFING_FILE, BRIEFING_SUMMARY_FILE, STOCK_NEWS_FILE, HIST_PORTFOLIO_FILE
+from config import BASE_DIR, FX_FALLBACK, TRANSACTIONS_FILE, PRICES_FILE, STOCK_MAP_FILE, BRIEFING_FILE, BRIEFING_SUMMARY_FILE, STOCK_NEWS_FILE, HIST_PORTFOLIO_FILE, SELL_SIGNALS_FILE
 from file_io import load_json, now_kst
 
 KST = timezone(timedelta(hours=9))
@@ -28,6 +28,7 @@ briefing_summary = load_json(BRIEFING_SUMMARY_FILE, default={})
 
 # Load stock news (AI-summarized news per held stock)
 stock_news_data = load_json(STOCK_NEWS_FILE, default={})
+sell_signals_data = load_json(SELL_SIGNALS_FILE, default={})
 
 # Load historical portfolio values (date → portfolio_value)
 # Maps YYYY-MM → portfolio_value using the latest date in each month
@@ -1469,6 +1470,7 @@ const TREEMAP_DATA = """ + json.dumps(treemap_data, ensure_ascii=False) + """;
 const BRIEFING = """ + json.dumps(briefing_data, ensure_ascii=False) + """;
 const BRIEFING_SUMMARY = """ + json.dumps(briefing_summary, ensure_ascii=False) + """;
 const STOCK_NEWS = """ + json.dumps(stock_news_data, ensure_ascii=False) + """;
+const SELL_SIGNALS = """ + json.dumps(sell_signals_data, ensure_ascii=False) + """;
 const TXS = """ + json.dumps([
     {"d": tx["date"], "t": tx["type"], "s": tx.get("stock",""), "a": round(tx.get("amount",0)), "q": round(tx.get("qty",0),4), "acc": tx.get("account","")}
     for tx in all_txs

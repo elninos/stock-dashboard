@@ -8,7 +8,7 @@ from config import USER_AGENT, TIMEOUT_MEDIUM
 DEBUG_HTTP = False
 
 
-def http_get(url: str, headers: dict | None = None, timeout: int = TIMEOUT_MEDIUM) -> bytes | None:
+def http_get(url: str, headers=None, timeout: int = TIMEOUT_MEDIUM):
     """GET 요청 → bytes 반환. 실패 시 None."""
     _headers = {"User-Agent": USER_AGENT}
     if headers:
@@ -27,7 +27,7 @@ def http_get(url: str, headers: dict | None = None, timeout: int = TIMEOUT_MEDIU
         return None
 
 
-def http_get_json(url: str, headers: dict | None = None, timeout: int = TIMEOUT_MEDIUM) -> dict | list | None:
+def http_get_json(url: str, headers=None, timeout: int = TIMEOUT_MEDIUM):
     """GET 요청 → JSON 파싱. 실패 시 None."""
     data = http_get(url, headers=headers, timeout=timeout)
     if data is None:
@@ -40,7 +40,7 @@ def http_get_json(url: str, headers: dict | None = None, timeout: int = TIMEOUT_
         return None
 
 
-def http_get_text(url: str, headers: dict | None = None, timeout: int = TIMEOUT_MEDIUM) -> str | None:
+def http_get_text(url: str, headers=None, timeout: int = TIMEOUT_MEDIUM):
     """GET 요청 → 텍스트 반환. 실패 시 None."""
     data = http_get(url, headers=headers, timeout=timeout)
     if data is None:

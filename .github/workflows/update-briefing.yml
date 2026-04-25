@@ -1,18 +1,19 @@
-name: Auto Update Briefing
+name: Fetch Briefing Data
 
+# AI 요약은 Windows PC (Claude Max, 무료)에서 실행됨.
+# 이 workflow는 데이터 수집만 담당. 빌드/배포는 deploy.yml 또는 update-prices.yml 처리.
 on:
   schedule:
-    # 매 1시간 — KST 08:00~01:00, 새벽 01:00~08:00 제외 (취침 시간)
-    - cron: '0 23 * * 0-4'   # 08:00 KST
-    - cron: '0 0-16 * * 1-5' # 09:00~01:00 KST (매 정시)
-  workflow_dispatch:          # 수동 실행 가능
+    # 매 2시간 — KST 08:00~22:00 (취침 시간 제외)
+    - cron: '0 23 * * 0-4'   # 08:00 KST (일~목)
+    - cron: '0 1,3,5,7,9,11,13 * * 1-5'  # 10:00~22:00 KST 홀수시간 (월~금)
+  workflow_dispatch:           # 수동 실행 가능
 
 jobs:
-  update:
+  fetch:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      deployments: write
 
     steps:
       - name: Checkout repo
@@ -23,78 +24,18 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
-        run: pip install anthropic pykrx yfinance
-
-      - name: Install wrangler
-        run: npm install -g wrangler
-
-      - name: Download sensitive data from KV
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_KV_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: "605b9f5ffc7fc231b1ca395aeeb80dd8"
-        run: |
-          wrangler kv key get "transactions" \
-            --namespace-id "6db9cbb95a4f4723bd0f26fb84214269" --remote > transactions.json
-          wrangler kv key get "historical_portfolio" \
-            --namespace-id "6db9cbb95a4f4723bd0f26fb84214269" --remote > historical_portfolio_values.json
-
-      - name: Fetch historical prices
-        run: python fetch_historical_prices.py
-        continue-on-error: true
-
       - name: Fetch briefing posts
         run: python fetch_briefing.py
 
-      - name: Generate AI summary
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python summarize_briefing.py
-
-      - name: Fetch stock news
+      - name: Fetch stock news (raw)
         run: python fetch_stock_news.py
-
-      - name: Summarize stock news
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python summarize_stock_news.py
         continue-on-error: true
 
-      - name: Build dashboard
-        run: |
-          mkdir -p _deploy
-          python build_dashboard.py
-
-      - name: Copy built files to _deploy
-        run: |
-          cp index.html _deploy/
-          cp loan_timeline.html _deploy/ 2>/dev/null || true
-          cp briefing_summary.json _deploy/
-          cp stock_news.json _deploy/ 2>/dev/null || true
-          cp -r functions _deploy/
-
-      - name: Deploy to Cloudflare Pages
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy _deploy --project-name=stock-dashboard
-
-      - name: Upload updated historical portfolio to KV
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_KV_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: "605b9f5ffc7fc231b1ca395aeeb80dd8"
-        run: |
-          wrangler kv key put "historical_portfolio" \
-            --namespace-id "6db9cbb95a4f4723bd0f26fb84214269" \
-            --path historical_portfolio_values.json --remote
-        continue-on-error: true
-
-      - name: Commit updated data files to repo
+      - name: Commit updated raw data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add briefing.json briefing_summary.json stock_news.json stock_news_raw.json
-          git diff --cached --quiet || git commit -m "Auto briefing+news update $(date '+%Y-%m-%d %H:%M') KST"
+          git add briefing.json stock_news_raw.json
+          git diff --cached --quiet || git commit -m "Auto fetch briefing $(date '+%Y-%m-%d %H:%M') KST"
           git pull --rebase origin main
           git push

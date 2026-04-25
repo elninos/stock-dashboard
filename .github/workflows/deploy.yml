@@ -1,0 +1,81 @@
+name: Deploy Dashboard
+
+# Windows PC가 briefing_summary.json 등을 push하면 빌드+배포 실행.
+# update-prices.yml 도 빌드+배포를 포함하므로, 이 workflow는 브리핑 push에 반응.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'briefing_summary.json'
+      - 'stock_news.json'
+      - 'build_dashboard.py'
+      - 'index.html'
+      - 'loan_timeline.html'
+      - 'functions/**'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      deployments: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install pykrx yfinance
+
+      - name: Install wrangler
+        run: npm install -g wrangler
+
+      - name: Download sensitive data from KV
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_KV_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: "605b9f5ffc7fc231b1ca395aeeb80dd8"
+        run: |
+          wrangler kv key get "transactions" \
+            --namespace-id "6db9cbb95a4f4723bd0f26fb84214269" --remote > transactions.json
+          wrangler kv key get "historical_portfolio" \
+            --namespace-id "6db9cbb95a4f4723bd0f26fb84214269" --remote > historical_portfolio_values.json
+
+      - name: Fetch historical prices
+        run: python fetch_historical_prices.py
+        continue-on-error: true
+
+      - name: Build dashboard
+        run: |
+          mkdir -p _deploy
+          python build_dashboard.py
+
+      - name: Copy built files to _deploy
+        run: |
+          cp index.html _deploy/
+          cp loan_timeline.html _deploy/ 2>/dev/null || true
+          cp briefing_summary.json _deploy/ 2>/dev/null || true
+          cp stock_news.json _deploy/ 2>/dev/null || true
+          cp -r functions _deploy/ 2>/dev/null || true
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy _deploy --project-name=stock-dashboard
+
+      - name: Upload updated historical portfolio to KV
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_KV_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: "605b9f5ffc7fc231b1ca395aeeb80dd8"
+        run: |
+          wrangler kv key put "historical_portfolio" \
+            --namespace-id "6db9cbb95a4f4723bd0f26fb84214269" \
+            --path historical_portfolio_values.json --remote
+        continue-on-error: true
