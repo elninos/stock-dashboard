@@ -2698,28 +2698,44 @@ function renderPeriodAnalysis() {
     else if (qs - qe > 0.001)        sold.push({s, qs, qe, d: qe - qs});
   }
 
-  const diffRow = (x, color, label) =>
+  // Portfolio % helpers (uses priceMap, mvStart, mvEnd already computed above)
+  const _pctS = (s, qs) => mvStart > 0 ? (qs * (priceMap[s]||0) / mvStart * 100) : null;
+  const _pctE = (s, qe) => mvEnd   > 0 ? (qe * (priceMap[s]||0) / mvEnd   * 100) : null;
+  const _fp   = v => v !== null ? v.toFixed(1) + '%' : '?';
+
+  const diffRow = (x, color, pctLabel, qtyLabel) =>
     `<div style="font-size:0.82rem; padding:3px 0; border-bottom:1px solid var(--border); display:flex; justify-content:space-between; align-items:center;">
       <span>${x.s}</span>
-      <span class="amt" style="color:${color}; font-size:0.78rem;">${label(x)}</span>
+      <span style="display:flex; gap:5px; align-items:center;">
+        <span style="color:${color}; font-size:0.78rem; font-weight:600;">${pctLabel(x)}</span>
+        <span class="amt" style="color:var(--text-muted); font-size:0.72rem;">${qtyLabel(x)}</span>
+      </span>
     </div>`;
 
   let diffHtml = '';
   if (added.length) {
     diffHtml += `<div style="font-size:0.75rem; font-weight:600; color:var(--positive); margin-bottom:4px;">🆕 신규 편입 ${added.length}</div>`;
-    diffHtml += added.map(x => diffRow(x, 'var(--positive)', x => `+${x.qe.toLocaleString('ko-KR')}주`)).join('');
+    diffHtml += added.map(x => diffRow(x, 'var(--positive)',
+      x => `+${_fp(_pctE(x.s, x.qe))}`,
+      x => `+${x.qe.toLocaleString('ko-KR')}주`)).join('');
   }
   if (bought.length) {
     diffHtml += `<div style="font-size:0.75rem; font-weight:600; color:var(--positive); margin-top:8px; margin-bottom:4px;">📈 추가 매수 ${bought.length}</div>`;
-    diffHtml += bought.map(x => diffRow(x, 'var(--positive)', x => `+${x.d.toLocaleString('ko-KR')}주 (→${x.qe.toLocaleString('ko-KR')}주)`)).join('');
+    diffHtml += bought.map(x => diffRow(x, 'var(--positive)',
+      x => `${_fp(_pctS(x.s, x.qs))}→${_fp(_pctE(x.s, x.qe))}`,
+      x => `+${x.d.toLocaleString('ko-KR')}주`)).join('');
   }
   if (sold.length) {
     diffHtml += `<div style="font-size:0.75rem; font-weight:600; color:var(--negative); margin-top:8px; margin-bottom:4px;">📉 일부 매도 ${sold.length}</div>`;
-    diffHtml += sold.map(x => diffRow(x, 'var(--negative)', x => `${x.d.toLocaleString('ko-KR')}주 (→${x.qe.toLocaleString('ko-KR')}주)`)).join('');
+    diffHtml += sold.map(x => diffRow(x, 'var(--negative)',
+      x => `${_fp(_pctS(x.s, x.qs))}→${_fp(_pctE(x.s, x.qe))}`,
+      x => `${x.d.toLocaleString('ko-KR')}주`)).join('');
   }
   if (removed.length) {
     diffHtml += `<div style="font-size:0.75rem; font-weight:600; color:var(--negative); margin-top:8px; margin-bottom:4px;">🔴 청산 ${removed.length}</div>`;
-    diffHtml += removed.map(x => diffRow(x, 'var(--negative)', x => `${x.qs.toLocaleString('ko-KR')}주→0`)).join('');
+    diffHtml += removed.map(x => diffRow(x, 'var(--negative)',
+      x => `${_fp(_pctS(x.s, x.qs))}→0`,
+      x => `${x.qs.toLocaleString('ko-KR')}주→0`)).join('');
   }
   if (!diffHtml) diffHtml = '<div style="font-size:0.82rem; color:var(--text-muted);">변동 없음</div>';
   document.getElementById('periodPortfolioDiff').innerHTML = diffHtml;
