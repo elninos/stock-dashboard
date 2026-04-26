@@ -47,8 +47,11 @@ def collect_posts_for_period(briefings: dict, anchor_date: str, days: int) -> li
 
 
 def build_posts_text(posts: list[dict], max_chars_per_post: int = 1200) -> str:
+    dart_posts = [p for p in posts if p.get("category") == "공시"]
+    other_posts = [p for p in posts if p.get("category") != "공시"]
+
     by_channel = defaultdict(list)
-    for p in posts:
+    for p in other_posts:
         by_channel[(p["channel"], p["category"])].append(p)
 
     parts = []
@@ -57,6 +60,14 @@ def build_posts_text(posts: list[dict], max_chars_per_post: int = 1200) -> str:
         for p in channel_posts:
             ts = f"[{p['date']} {p['time']}]"
             parts.append(f"\n{ts}\n{p['text'][:max_chars_per_post]}")
+
+    # DART 공시는 별도 섹션으로 분리 (★ 보유 표시 포함)
+    if dart_posts:
+        parts.append(f"\n{'='*60}\n[DART 공시] 보유종목 및 시장 주요사항\n{'='*60}")
+        parts.append("(★ 표시: 현재 보유 중인 종목의 공시)")
+        for p in dart_posts:
+            parts.append(f"\n[{p['date']}] {p['text'][:400]}")
+
     return "\n".join(parts)
 
 
@@ -110,6 +121,7 @@ def summarize_with_claude_cli(posts_text: str, period: str, anchor_date: str, da
 - 모든 텍스트는 한국어로 작성하세요.
 - 여러 채널에서 중복 언급되는 종목/테마를 특히 강조하세요.
 - 실제 포스트 내용에 근거해서만 작성하세요. 내용이 없으면 빈 배열/빈 문자열로 두세요.
+- [DART 공시] 섹션의 ★ 표시 종목은 현재 보유 중인 종목입니다. 보유 종목의 유증/CB/감자/자사주 등 중요 공시는 반드시 themes나 stocks에 반영하세요.
 
 JSON 형식:
 {{

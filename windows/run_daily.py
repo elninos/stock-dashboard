@@ -3,12 +3,13 @@
 
 Task Scheduler에서 run_daily.bat → 이 스크립트 호출.
 실행 순서:
-  1. git pull (최신 데이터 동기화)
-  2. fetch_briefing.py (텔레그램/블로그 수집)
-  3. summarize_briefing_claude.py (Claude Code CLI 요약, Max 무료)
-  4. fetch_stock_news.py (뉴스 수집)
-  5. summarize_stock_news_claude.py (Claude Code CLI 요약, Max 무료)
-  6. git add + commit + push (→ GitHub Actions 빌드/배포 트리거)
+  1. git pull (최신 데이터 동기화, GitHub Actions가 올린 raw 데이터 받아옴)
+  2. summarize_briefing_claude.py (Claude Code CLI 요약, Max 무료)
+  3. summarize_stock_news_claude.py (Claude Code CLI 요약, Max 무료)
+  4. git add + commit + push (→ GitHub Actions deploy.yml 트리거)
+
+NOTE: fetch_briefing.py / fetch_stock_news.py는 GitHub Actions update-briefing.yml이
+      2시간마다 이미 실행 중 → 여기서 중복 실행 불필요.
 """
 import os
 import subprocess
@@ -53,31 +54,22 @@ def main():
     log("=" * 60)
 
     try:
-        # 1. Git pull (원격 최신 상태 동기화)
-        log("\n[1/6] git pull")
+        # 1. Git pull (GitHub Actions가 올린 최신 briefing.json / stock_news_raw.json 받아오기)
+        log("\n[1/4] git pull")
         run(["git", "pull", "--rebase", "origin", "main"])
 
-        # 2. 브리핑 수집 (텔레그램/블로그 — AI 없음)
-        log("\n[2/6] fetch_briefing.py")
-        run(["python", os.path.join(REPO_DIR, "fetch_briefing.py")])
-
-        # 3. 브리핑 AI 요약 (Claude Code CLI — Max 구독, 추가 비용 없음)
-        log("\n[3/6] summarize_briefing_claude.py")
+        # 2. 브리핑 AI 요약 (Claude Code CLI — Max 구독, 추가 비용 없음)
+        log("\n[2/4] summarize_briefing_claude.py")
         run(["python", os.path.join(REPO_DIR, "summarize_briefing_claude.py")])
 
-        # 4. 뉴스 수집 (AI 없음)
-        log("\n[4/6] fetch_stock_news.py")
-        run(["python", os.path.join(REPO_DIR, "fetch_stock_news.py")], check=False)
-
-        # 5. 뉴스 AI 요약 (Claude Code CLI — Max 구독)
-        log("\n[5/6] summarize_stock_news_claude.py")
+        # 3. 뉴스 AI 요약 (Claude Code CLI — Max 구독)
+        log("\n[3/4] summarize_stock_news_claude.py")
         run(["python", os.path.join(REPO_DIR, "summarize_stock_news_claude.py")], check=False)
 
-        # 6. Git commit & push
-        log("\n[6/6] git commit & push")
+        # 4. Git commit & push (요약 결과만 — raw 데이터는 GitHub Actions가 관리)
+        log("\n[4/4] git commit & push")
         run(["git", "add",
-             "briefing.json", "briefing_summary.json",
-             "stock_news_raw.json", "stock_news.json"],
+             "briefing_summary.json", "stock_news.json"],
             check=False)
 
         ts = datetime.now().strftime("%Y-%m-%d %H:%M")

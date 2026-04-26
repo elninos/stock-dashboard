@@ -14,3 +14,6 @@ historical_portfolio_values.json
 # 빌드 결과물 (Cloudflare Pages로 배포, git 추적 불필요)
 index.html
 loan_timeline.html
+# DART corp code 캐시 (weekly 자동 갱신, git 불필요)
+dart_corp_codes.json
+dart_corp_codes.zip
