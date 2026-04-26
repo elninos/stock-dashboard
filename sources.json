@@ -101,5 +101,10 @@
       "enabled": true
     }
   ],
-  "rss": []
+  "rss": [],
+  "dart": {
+    "enabled": true,
+    "lookback_days": 7,
+    "pblntf_types": ["B", "D", "A"]
+  }
 }

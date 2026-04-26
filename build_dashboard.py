@@ -3440,19 +3440,29 @@ function renderRawPosts() {
     html += `<div class="card-title"><a href="${channelUrl}" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:none;">${src.name}</a>`;
     html += `<span style="font-size:0.75rem; color:var(--text-muted); font-weight:400; margin-left:8px;">${src.category || ''} · ${posts.length}개</span></div>`;
     posts.forEach(p => {
-      const time = p.time ? `<span style="color:var(--text-muted); font-size:0.75rem; min-width:40px;">${p.time}</span>` : '';
-      const text = (p.text || '').replace(/\\n/g, '<br>');
+      const isDart = src.type === 'dart';
+      const isHeld = isDart && (p.text || '').startsWith('[보유]');
+      const rawText = (p.text || '').replace(/^\\[보유\\] /, '');
+      const text = rawText.replace(/\\n/g, '<br>');
+      const heldBadge = isHeld
+        ? `<span style="font-size:0.68rem; font-weight:700; color:#f59e0b; background:rgba(245,158,11,0.12); border-radius:4px; padding:1px 6px; margin-right:6px; vertical-align:middle;">★ 보유</span>`
+        : '';
+      const dateBadge = isDart && p.date
+        ? `<span style="font-size:0.72rem; color:var(--text-muted); margin-right:6px;">${p.date}</span>`
+        : '';
+      const time = (!isDart && p.time) ? `<span style="color:var(--text-muted); font-size:0.75rem; min-width:40px;">${p.time}</span>` : '';
       let linkHtml = '';
-      if (p.post_url) linkHtml += `<a href="${p.post_url}" target="_blank" rel="noopener" style="color:var(--accent); font-size:0.75rem; text-decoration:none; margin-right:8px;">원문</a>`;
+      if (p.post_url) linkHtml += `<a href="${p.post_url}" target="_blank" rel="noopener" style="color:var(--accent); font-size:0.75rem; text-decoration:none; margin-right:8px;">${isDart ? 'DART 원문' : '원문'}</a>`;
       (p.links || []).forEach(lnk => {
         if (lnk === p.post_url) return;
         if (lnk.includes('t.me/' + (src.id || '---'))) return;
         const domain = lnk.replace(/https?:\\/\\/([^/]+).*/, '$1').replace('www.', '');
         linkHtml += `<a href="${lnk}" target="_blank" rel="noopener" style="color:var(--text-dim); font-size:0.75rem; text-decoration:none; margin-right:8px;">${domain}</a>`;
       });
-      html += `<div style="display:flex; gap:10px; padding:10px 0; border-bottom:1px solid var(--border); align-items:flex-start;">`;
+      const rowBg = isHeld ? 'background:rgba(245,158,11,0.04);' : '';
+      html += `<div style="display:flex; gap:10px; padding:10px 0; border-bottom:1px solid var(--border); align-items:flex-start; ${rowBg}">`;
       html += time;
-      html += `<div style="flex:1; min-width:0;"><div style="font-size:0.85rem; line-height:1.6; word-break:break-word;">${text}</div>`;
+      html += `<div style="flex:1; min-width:0;"><div style="font-size:0.85rem; line-height:1.6; word-break:break-word;">${dateBadge}${heldBadge}${text}</div>`;
       if (linkHtml) html += `<div style="margin-top:6px;">${linkHtml}</div>`;
       html += `</div></div>`;
     });

@@ -7,9 +7,10 @@ from datetime import datetime, date, timezone, timedelta
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-from config import SOURCES_FILE, BRIEFING_FILE, TIMEOUT_LONG
+from config import SOURCES_FILE, BRIEFING_FILE, TIMEOUT_LONG, TRANSACTIONS_FILE
 from file_io import load_json, save_json, now_kst
 from http_client import http_get_text
+from fetch_dart import fetch_dart_posts
 
 TODAY = date.today().isoformat()
 
@@ -182,6 +183,28 @@ def fetch_blog_posts(url: str) -> list[dict]:
 
 # ── Main ──────────────────────────────────────────────────────────────
 
+def _get_held_stocks() -> list[str]:
+    """Return list of currently held domestic stock names from transactions.json."""
+    from collections import defaultdict
+    txs = load_json(TRANSACTIONS_FILE, default=[])
+    qty = defaultdict(float)
+    for tx in txs:
+        s = tx.get("stock", "")
+        t = tx.get("type", "")
+        if not s:
+            continue
+        if t == "buy":
+            qty[s] += tx.get("qty", 0)
+        elif t == "sell":
+            qty[s] -= tx.get("qty", 0)
+    # Return domestic stocks only (no foreign ETFs / English names)
+    held = []
+    for name, q in qty.items():
+        if q > 0.001 and re.search(r'[가-힣]', name):
+            held.append(name)
+    return held
+
+
 def main():
     target_date = sys.argv[1] if len(sys.argv) > 1 else TODAY
 
@@ -222,6 +245,25 @@ def main():
             "category": src.get("category", ""),
             "posts": posts,
         })
+
+    # DART 공시
+    print("Fetching DART disclosures...")
+    held_stocks = _get_held_stocks()
+    print(f"  보유 국내 종목: {len(held_stocks)}개")
+    dart_posts = fetch_dart_posts(held_stocks, lookback_days=7)
+    # Strip internal dedup keys before saving
+    for p in dart_posts:
+        p.pop("_rcept_no", None)
+        p.pop("_corp_name", None)
+        p.pop("_held", None)
+    print(f"  → {len(dart_posts)} 공시 수집")
+    day_data["sources"].append({
+        "type": "dart",
+        "name": "DART 공시",
+        "url": "https://dart.fss.or.kr",
+        "category": "공시",
+        "posts": dart_posts,
+    })
 
     briefings[target_date] = day_data
 

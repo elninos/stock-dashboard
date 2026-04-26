@@ -47,3 +47,8 @@ STOCK_NEWS_FILE          = os.path.join(BASE_DIR, "stock_news.json")
 HIST_PORTFOLIO_FILE      = os.path.join(BASE_DIR, "historical_portfolio_values.json")
 SOURCES_FILE             = os.path.join(BASE_DIR, "sources.json")
 SELL_SIGNALS_FILE        = os.path.join(BASE_DIR, "sell_signals.json")
+
+# ── DART OpenAPI ──────────────────────────────────────────────────────────────
+DART_API_KEY             = "95a83c9efdb1e3ce13be539270823fa31aafdad5"
+DART_CORP_CODE_JSON      = os.path.join(BASE_DIR, "dart_corp_codes.json")
+DART_CORP_CODE_ZIP       = os.path.join(BASE_DIR, "dart_corp_codes.zip")
