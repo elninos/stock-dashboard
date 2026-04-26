@@ -10,7 +10,7 @@ import sys
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-from config import STOCK_NEWS_RAW_FILE as RAW_FILE, STOCK_NEWS_FILE as OUTPUT_FILE, BATCH_SIZE_NEWS as BATCH_SIZE
+from config import STOCK_NEWS_RAW_FILE as RAW_FILE, STOCK_NEWS_FILE as OUTPUT_FILE, BATCH_SIZE_NEWS as BATCH_SIZE, CLAUDE_MODEL
 from file_io import load_api_key, load_json, save_json, now_kst
 
 API_KEY = load_api_key(base_dir=BASE_DIR)
@@ -64,7 +64,7 @@ JSON 형식:
 {"".join(sections)}"""
 
     response = client.messages.create(
-        model="claude-sonnet-4-6",
+        model=CLAUDE_MODEL,
         max_tokens=2048,
         messages=[{"role": "user", "content": prompt}],
     )

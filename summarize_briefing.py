@@ -16,7 +16,7 @@ from datetime import date, timedelta
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-from config import BRIEFING_FILE, BRIEFING_SUMMARY_FILE as SUMMARY_FILE, BRIEFING_PERIODS as PERIODS
+from config import BRIEFING_FILE, BRIEFING_SUMMARY_FILE as SUMMARY_FILE, BRIEFING_PERIODS as PERIODS, CLAUDE_MODEL
 from file_io import load_api_key, load_json, save_json, now_kst
 
 API_KEY = load_api_key(base_dir=BASE_DIR)
@@ -141,7 +141,7 @@ themes는 중요도순 정렬.
 {posts_text}"""
 
     response = client.messages.create(
-        model="claude-sonnet-4-6",
+        model=CLAUDE_MODEL,
         max_tokens=4096,
         messages=[{"role": "user", "content": prompt}],
     )

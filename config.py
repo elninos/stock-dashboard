@@ -24,9 +24,8 @@ MAX_NEWS_ARTICLES  = 8
 NEWS_LOOKBACK_DAYS = 7
 
 # ── Claude API ───────────────────────────────────────────────────────────────
-CLAUDE_MODEL      = "claude-sonnet-4-5"
+CLAUDE_MODEL      = "claude-sonnet-4-6"
 BATCH_SIZE_NEWS   = 5
-BATCH_SIZE_BRIIEF = 4   # 브리핑 기간 수 (daily/weekly/biweekly/monthly)
 
 # ── 브리핑 기간 ──────────────────────────────────────────────────────────────
 BRIEFING_PERIODS = {

@@ -43,3 +43,25 @@ def load_api_key(env_var: str = "ANTHROPIC_API_KEY", base_dir: str = ".") -> str
                     if line.startswith(f"{env_var}="):
                         key = line.strip().split("=", 1)[1].strip().strip('"').strip("'")
     return key
+
+
+def call_claude_cli(prompt: str, timeout: int = 300) -> str:
+    """Claude Code CLI로 프롬프트를 전송하고 응답 텍스트 반환.
+
+    claude --print 는 비대화형 모드로 실행 후 종료.
+    프롬프트는 stdin으로 전달 (긴 프롬프트의 CLI arg 길이 제한 우회).
+    Windows PC (Claude Max 구독) 전용 — API 비용 없음.
+    """
+    import subprocess
+    result = subprocess.run(
+        ["claude", "--print", "--dangerously-skip-permissions"],
+        input=prompt,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        timeout=timeout,
+    )
+    if result.returncode != 0:
+        stderr_preview = result.stderr[:500] if result.stderr else "(no stderr)"
+        raise RuntimeError(f"claude CLI 오류 (exit {result.returncode}): {stderr_preview}")
+    return result.stdout.strip()

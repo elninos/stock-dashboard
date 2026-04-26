@@ -8,7 +8,6 @@ summarize_briefing.py의 Windows용 버전.
 """
 import json
 import os
-import subprocess
 import sys
 from collections import defaultdict
 from datetime import date, timedelta
@@ -17,7 +16,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BASE_DIR)
 
 from config import BRIEFING_FILE, BRIEFING_SUMMARY_FILE as SUMMARY_FILE, BRIEFING_PERIODS as PERIODS
-from file_io import load_json, save_json, now_kst
+from file_io import load_json, save_json, now_kst, call_claude_cli
 
 TODAY = date.today().isoformat()
 
@@ -72,26 +71,6 @@ def build_posts_text(posts: list[dict], max_chars_per_post: int = 1200) -> str:
 
 
 # ── Claude Code CLI 호출 ──────────────────────────────────────────────
-
-def call_claude_cli(prompt: str, timeout: int = 300) -> str:
-    """Claude Code CLI로 프롬프트를 전송하고 응답 텍스트 반환.
-
-    claude --print 는 비대화형 모드로 실행 후 종료.
-    프롬프트는 stdin으로 전달 (긴 프롬프트의 CLI arg 길이 제한 우회).
-    """
-    result = subprocess.run(
-        ["claude", "--print", "--dangerously-skip-permissions"],
-        input=prompt,
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        timeout=timeout,
-    )
-    if result.returncode != 0:
-        stderr_preview = result.stderr[:500] if result.stderr else "(no stderr)"
-        raise RuntimeError(f"claude CLI 오류 (exit {result.returncode}): {stderr_preview}")
-    return result.stdout.strip()
-
 
 def summarize_with_claude_cli(posts_text: str, period: str, anchor_date: str, days: int) -> dict:
     """Claude Code CLI로 기간별 요약 생성 → dict 반환."""

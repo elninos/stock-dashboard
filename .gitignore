@@ -17,3 +17,17 @@ loan_timeline.html
 # DART corp code 캐시 (weekly 자동 갱신, git 불필요)
 dart_corp_codes.json
 dart_corp_codes.zip
+# 로컬 분석 스크립트 출력물 (git 불필요 — 로컬/수동 실행)
+broker_flow_analysis.html
+broker_flow_dashboard.html
+peak_analysis.html
+# 로컬 fetch_prices_pykrx.py 출력 (prices.json으로 병합됨)
+price_history.json
+# Windows 자동화 로그
+windows/run_daily.log
+# AutoHotkey 테스트 스크립트 (maximize_test.ahk 등)
+maximize_test.ahk
+# 백업 파일
+*_backup.json
+# analyze_signals.py 출력물 (로컬 실행)
+sell_signals.json

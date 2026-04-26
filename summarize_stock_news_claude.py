@@ -6,30 +6,13 @@ summarize_stock_news.py의 Windows용 버전.
 """
 import json
 import os
-import subprocess
 import sys
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BASE_DIR)
 
 from config import STOCK_NEWS_RAW_FILE as RAW_FILE, STOCK_NEWS_FILE as OUTPUT_FILE, BATCH_SIZE_NEWS as BATCH_SIZE
-from file_io import load_json, save_json, now_kst
-
-
-def call_claude_cli(prompt: str, timeout: int = 180) -> str:
-    """Claude Code CLI로 프롬프트 전송, 응답 텍스트 반환."""
-    result = subprocess.run(
-        ["claude", "--print", "--dangerously-skip-permissions"],
-        input=prompt,
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        timeout=timeout,
-    )
-    if result.returncode != 0:
-        stderr_preview = result.stderr[:500] if result.stderr else "(no stderr)"
-        raise RuntimeError(f"claude CLI 오류 (exit {result.returncode}): {stderr_preview}")
-    return result.stdout.strip()
+from file_io import load_json, save_json, now_kst, call_claude_cli
 
 
 def summarize_batch(batch: list[tuple[str, list[dict]]]) -> dict:
