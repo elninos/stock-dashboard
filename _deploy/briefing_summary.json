@@ -1,49 +1,286 @@
 {
   "daily": {
     "date": "2026-04-27",
-    "market_summary": "일요일로 정규장 휴장, 발행 포스트 수 자체가 적음. 그로쓰리서치는 호르무즈 해협 관련 이란 의원의 강경 발언과 일라이 릴리 마운자로의 호주 PBS 등재 협상 결렬을 전했음. DART 공시는 에스아이리소스 유상증자 정정 1건. 큰 시장 흐름 변화는 부재하며, 호르무즈 지정학 리스크와 GLP-1 글로벌 약가 협상 이슈가 주말 헤드라인을 차지함.",
+    "market_summary": "1Q26 실적 시즌 본격화 가운데 조선·엔진·전력기기 섹터에서 어닝서프라이즈가 잇따랐다. 한화오션(영업익 컨센상회 +18%), HD건설기계(+34%), 한화엔진(+15%) 모두 시장 기대를 크게 넘어섰고, 효성중공업은 1분기 신규수주 4.2조원·수주잔고 15조원으로 역대 최대를 기록했다. 바이오 섹터에서는 바이오솔루션의 카티라이프가 한국 세포치료제 최초로 중국 하이난 판매승인을 획득해 모멘텀이 강했고, 디앤디파마텍·올릭스·에스티팜·에스티큐브 등 신약 개발 기업들의 강세가 두드러졌다. AI 인프라에서는 GPU 다음 병목으로 CPU 부족이 부각됐으며, KK Kontemporaries는 AI 컴퓨팅 자원의 구조적 병목이 시장 리레이팅을 지속할 것으로 진단했다.",
     "themes": [
       {
-        "title": "호르무즈 해협 지정학 긴장 재부각",
-        "summary": "이란 국회의원이 호르무즈 해협의 전쟁 전 상태 복귀 불가를 공개 선언. 미-이란 간접 협상이 진행 중인 가운데서도 강경파 메시지가 지속되며 에너지·해상운임 변수에 노출.",
-        "sentiment": "negative",
-        "mentioned_in": ["그로쓰리서치"]
+        "title": "조선·엔진·전력기기 1Q 실적 어닝서프",
+        "summary": "한화오션·HD건설기계·한화엔진·효성중공업 모두 1Q26 영업이익 컨센서스를 큰 폭으로 상회했다. 특히 효성중공업은 신규수주 4.2조원에 수주잔고 15조원으로 4년치 물량을 확보했고, 한화엔진은 데이터센터향 4행정 엔진 인콰이어리 진행 중이다.",
+        "sentiment": "positive",
+        "mentioned_in": [
+          "스파르탄 리서치",
+          "여의도 랩",
+          "그로쓰리서치"
+        ]
       },
       {
-        "title": "릴리 호주 PBS 등재 협상 결렬",
-        "summary": "릴리가 호주 정부와의 마운자로 약가보조제도(PBS) 등재 협상에서 자진 철수. 환자 약 45만명이 자비 부담을 지속해야 하는 구조로, GLP-1 글로벌 약가 협상의 까다로움을 보여줌.",
+        "title": "바이오 모멘텀 - K바이오 글로벌 진출",
+        "summary": "바이오솔루션 카티라이프가 한국 세포치료제 최초로 중국 하이난 판매승인을 획득(한국가 대비 2배 우호적 가격). 디앤디파마텍은 화이자와의 경구용 비만 이중작용제 추가 계약과 5월 EASL 2026 LBA 발표를 앞두고 있고, 에이비엘바이오는 토베시미그 FDA 희귀의약품 지정.",
+        "sentiment": "positive",
+        "mentioned_in": [
+          "그로쓰리서치",
+          "여의도 랩"
+        ]
+      },
+      {
+        "title": "AI 인프라 CPU 병목과 폭발적 수요",
+        "summary": "GPU 부족 다음 병목으로 CPU 숏티지가 부각. 에이전틱 AI 시대 도래로 CPU:GPU 비율이 1:4~1:8에서 1:1~1:2로 변화. TSMC 선단공정·첨단 패키징 부족이 구조적 병목으로 작용. 삼성전기·대덕전자가 수혜주로 거론된다.",
+        "sentiment": "positive",
+        "mentioned_in": [
+          "그로쓰리서치",
+          "KK Kontemporaries"
+        ]
+      },
+      {
+        "title": "TSMC A16 SPR vs 삼성 2나노 - 첨단공정 격차",
+        "summary": "TSMC는 2027년 A16(1.6nm) 양산 시작 후 매년 파생 공정 출시 전략. BSPD(백사이드 전력공급) 기술로 성능 차별화. 삼성은 1.4나노 양산을 2027년→2029년으로 연기하며 2나노 안정화에 집중.",
         "sentiment": "neutral",
-        "mentioned_in": ["그로쓰리서치"]
+        "mentioned_in": [
+          "그로쓰리서치"
+        ]
+      },
+      {
+        "title": "유럽 EV 판매 급반등 - K배터리 기회",
+        "summary": "EU 1Q26 BEV 판매 54.7만대로 전년대비 +32.4% 급증, 비중 19.4%. 고유가와 EU 산업가속화법(IAA) 영향. SK온 헝가리 공장 가동률 80%대 회복, LG에너지솔루션 벤츠향 LFP 수주.",
+        "sentiment": "positive",
+        "mentioned_in": [
+          "그로쓰리서치"
+        ]
       }
     ],
     "stocks": [
       {
-        "name": "일라이 릴리",
-        "ticker": "LLY",
+        "name": "한화엔진",
+        "ticker": "082740",
+        "mention_count": 5,
+        "channels": [
+          "여의도 랩",
+          "스파르탄 리서치"
+        ],
+        "context": "1Q26 영업이익 514억원(YoY +130%, 컨센 +15% 상회). LNGC 저속엔진 마진율 하이싱글→미드틴 개선. SK증권 목표가 100,000원으로 상향(기존 72,000원). 미국 데이터센터향 4행정 엔진 수주 기대.",
+        "sentiment": "positive"
+      },
+      {
+        "name": "한화오션",
+        "ticker": "042660",
+        "mention_count": 3,
+        "channels": [
+          "스파르탄 리서치"
+        ],
+        "context": "1Q26 영업익 4,411억(컨센 +18% 상회), 순이익 5,000억(+83%). 상선 수익성 개선 본격화, 2024년 수주 고선가 호선 인도 시작.",
+        "sentiment": "positive"
+      },
+      {
+        "name": "HD건설기계",
+        "ticker": "267270",
+        "mention_count": 3,
+        "channels": [
+          "스파르탄 리서치"
+        ],
+        "context": "1Q26 영업익 1,907억(컨센 +34% 상회), 순이익 1,739억(+78%). 발전기용 엔진 수요 북미·신흥 전력 수요로 2분기 이후 성장 본격화. 재건+데센향 엔진 테마 부각.",
+        "sentiment": "positive"
+      },
+      {
+        "name": "바이오솔루션",
+        "ticker": "086820",
+        "mention_count": 3,
+        "channels": [
+          "그로쓰리서치"
+        ],
+        "context": "카티라이프 한국 세포치료제 최초 중국 하이난 판매승인 획득. 한국 판매가 대비 약 2배 가격, 5월 초 의료보장 등재 후 6월 첫 환자 시술 예정. 잠재 부유층 환자 30~50만명.",
+        "sentiment": "positive"
+      },
+      {
+        "name": "디앤디파마텍",
+        "ticker": "347850",
+        "mention_count": 3,
+        "channels": [
+          "여의도 랩",
+          "스몰인사이트"
+        ],
+        "context": "5월 EASL 2026 LBA 세션에서 DD01 48주 조직생검 데이터 발표 예정. 화이자가 경구용 비만 이중작용제 후속 계약 체결, 디앤디 제형 기술이 글로벌 빅파마 인정.",
+        "sentiment": "positive"
+      },
+      {
+        "name": "효성중공업",
+        "ticker": "298040",
+        "mention_count": 2,
+        "channels": [
+          "여의도 랩"
+        ],
+        "context": "1Q26 영업이익 1,523억(+49%). 중공업 부문 신규수주 4조 1,745억(+108%), 수주잔고 15.1조(+44%) 역대 최대. 신규수주 77%가 북미, 미국 765kV 변압기 시장 1위.",
+        "sentiment": "positive"
+      },
+      {
+        "name": "올릭스",
+        "ticker": "226950",
+        "mention_count": 2,
+        "channels": [
+          "그로쓰리서치",
+          "여의도 랩"
+        ],
+        "context": "탐방보고서 발간 후 +7% 상승. 안구·CNS 듀얼 타깃 siRNA 플랫폼 확장, 2026년 플랫폼 확장 원년 전망. 비만·안구·뇌 거대 시장 경쟁력.",
+        "sentiment": "positive"
+      },
+      {
+        "name": "에스티팜",
+        "ticker": "237690",
         "mention_count": 1,
-        "channels": ["그로쓰리서치"],
-        "context": "마운자로의 호주 PBS 등재 협상이 결렬되며 약 45만명 환자 자비 부담 지속. 약가 협상력은 여전히 우위지만 단기 호주 매출 인식 지연 가능성.",
+        "channels": [
+          "그로쓰리서치"
+        ],
+        "context": "1Q26 매출 669.6억(+27.7%), 영업이익 115.3억(+1024.6% YoY) 어닝서프. 영업익 컨센 +32% 상회. 제품 mix 개선·환율·R&D 비용 감소.",
+        "sentiment": "positive"
+      },
+      {
+        "name": "에스티큐브",
+        "ticker": "052020",
+        "mention_count": 1,
+        "channels": [
+          "그로쓰리서치"
+        ],
+        "context": "사상 최고가 갱신. BTN1A1 표적 면역항암제 넬마스토바트 First-in-Class 기대감. PD-(L)1 불응 환자군 대상 차별화.",
+        "sentiment": "positive"
+      },
+      {
+        "name": "RFHIC",
+        "ticker": "218410",
+        "mention_count": 1,
+        "channels": [
+          "스파르탄 리서치"
+        ],
+        "context": "1Q26 영업익 77억(컨센 +12%), 순이익 67억(+14%). 매출은 컨센 -2%로 소폭 미달.",
+        "sentiment": "positive"
+      },
+      {
+        "name": "오픈엣지테크놀로지",
+        "ticker": "394280",
+        "mention_count": 2,
+        "channels": [
+          "그로쓰리서치"
+        ],
+        "context": "당일 +8% 상승. LPDDR5x/6 PHY 글로벌 소수 가능 기업. 국산 IP 정부 프로젝트+삼성 파운드리 개선으로 수요 폭증, 영업 레버리지.",
+        "sentiment": "positive"
+      },
+      {
+        "name": "선익시스템",
+        "ticker": "171090",
+        "mention_count": 1,
+        "channels": [
+          "그로쓰리서치"
+        ],
+        "context": "LGD 1.106조 OLED 투자 6세대 증착기 수주 경쟁에서 캐논토키 대비 우세 전망. 8.6세대 장비 수주로 기술 검증 완료.",
+        "sentiment": "positive"
+      },
+      {
+        "name": "에이비엘바이오",
+        "ticker": "298380",
+        "mention_count": 1,
+        "channels": [
+          "여의도 랩"
+        ],
+        "context": "컴퍼스 테라퓨틱스 토베시미그(담도암 치료제) FDA 희귀의약품 지정. DLL4·VEGF-A 동시 차단 이중항체.",
+        "sentiment": "positive"
+      },
+      {
+        "name": "삼성전기",
+        "ticker": "009150",
+        "mention_count": 1,
+        "channels": [
+          "그로쓰리서치"
+        ],
+        "context": "CPU 숏티지 산업보고서에서 국내 최대 수혜주로 분석. AI 서버 패키지 기판(FCBGA) 수혜.",
+        "sentiment": "positive"
+      },
+      {
+        "name": "대덕전자",
+        "ticker": "353200",
+        "mention_count": 1,
+        "channels": [
+          "그로쓰리서치"
+        ],
+        "context": "CPU 숏티지 산업보고서 기업분석 대상. AI 서버 PCB 수혜.",
+        "sentiment": "positive"
+      },
+      {
+        "name": "호텔신라",
+        "ticker": "008770",
+        "mention_count": 1,
+        "channels": [
+          "스파르탄 리서치"
+        ],
+        "context": "5월 8일 IR 개최 안내공시. 투자자 미팅 통한 이해 증진.",
         "sentiment": "neutral"
       },
       {
-        "name": "에스아이리소스",
-        "ticker": "060150",
+        "name": "선진뷰티사이언스",
+        "ticker": "086710",
         "mention_count": 1,
-        "channels": ["DART 공시"],
-        "context": "유상증자결정 기재정정 공시. 자금조달 일정 변경에 유의.",
-        "sentiment": "neutral"
+        "channels": [
+          "그로쓰리서치"
+        ],
+        "context": "+8.7% 급등. 50년 업력 화장품 소재 강자, 254억 투자로 1,000억 CAPA 확보. 미국 선케어 시장 변화 수혜.",
+        "sentiment": "positive"
       }
     ],
     "macro": {
-      "kr": "한국은 일요일 휴장. 별도 신규 매크로 이슈 없음.",
-      "us": "정규장 휴장. 트럼프-이란 간접 협상 진행 보도 외 신규 헤드라인 부재.",
-      "global": "이란 의원의 호르무즈 강경 발언이 중동 리스크를 재차 부각."
+      "kr": "조선·엔진·전력기기 1Q26 실적 시즌이 어닝서프라이즈로 출발했다. 한화오션·HD건설기계·한화엔진 모두 컨센서스를 +15%~+34% 상회했고, 효성중공업은 신규수주 +108%로 역대 최대치를 경신하며 북미 765kV 변압기·HVDC 모멘텀이 지속되고 있다.",
+      "us": "AI 컴퓨팅 자원의 구조적 병목이 심화되며 GPU 다음 CPU 숏티지가 부각됐다. TSMC가 1나노급 선점 전략을 강화(2027년 A16 양산)하는 가운데 삼성은 1.4나노 양산을 2년 연기하며 격차 확대 우려가 제기된다.",
+      "global": "유럽 1Q26 BEV 판매가 +32.4% 급반등하며 EV 캐즘 종료 신호가 나타났다. EU 산업가속화법(IAA) 시행으로 한국 배터리사에 우호적 환경이 조성되고 있다."
     },
     "key_numbers": [
       {
-        "label": "호주 마운자로 이용 환자",
-        "value": "약 45만명",
-        "change": "PBS 등재 결렬",
+        "label": "한화오션 1Q26 영업익",
+        "value": "4,411억원",
+        "change": "컨센 +18%",
+        "source": "스파르탄 리서치"
+      },
+      {
+        "label": "효성중공업 1Q26 신규수주",
+        "value": "4조 1,745억원",
+        "change": "+108% YoY",
+        "source": "여의도 랩"
+      },
+      {
+        "label": "효성중공업 수주잔고",
+        "value": "15.1조원",
+        "change": "+44% YoY (역대 최대)",
+        "source": "여의도 랩"
+      },
+      {
+        "label": "한화엔진 SK증권 목표주가",
+        "value": "100,000원",
+        "change": "기존 72,000원 → 상향",
+        "source": "여의도 랩"
+      },
+      {
+        "label": "한화엔진 1Q26 영업익",
+        "value": "514억원",
+        "change": "+130% YoY, 컨센 +15%",
+        "source": "여의도 랩"
+      },
+      {
+        "label": "HD건설기계 1Q26 영업익",
+        "value": "1,907억원",
+        "change": "컨센 +34%",
+        "source": "스파르탄 리서치"
+      },
+      {
+        "label": "에스티팜 1Q26 영업익",
+        "value": "115.3억원",
+        "change": "+1024.6% YoY, 컨센 +32%",
+        "source": "그로쓰리서치"
+      },
+      {
+        "label": "EU 1Q26 BEV 판매",
+        "value": "54.7만대",
+        "change": "+32.4% YoY",
+        "source": "그로쓰리서치"
+      },
+      {
+        "label": "TSMC CoWoS 캐파",
+        "value": "300만개 (2028E)",
+        "change": "vs 2023년 11.8만개 (+25배)",
         "source": "그로쓰리서치"
       }
     ]
@@ -51,115 +288,191 @@
   "weekly": {
     "date": "2026-04-27",
     "period": "04/21 ~ 04/27",
-    "market_summary": "한 주 핵심은 SK하이닉스 1Q26 어닝 서프라이즈와 골드만 목표가 180만원(기존 135만)으로의 대폭 상향이었음. DRAM/NAND 가격이 예상치를 크게 웃돌며 메모리 슈퍼사이클이 가속화됐고, HBM 수요는 향후 3년간 캐파를 초과하는 구도가 재확인됨. 코스피는 원화 기준 사상 최고가를 경신했으며 KK Kontemporaries는 위험자산이 '미개척지(No man's territory)'에 진입했다고 진단. 호텔신라 1Q 어닝 서프라이즈, 효성중공업·LS일렉트릭 북미 전력기기 호조, 한화엔진 1Q 컨콜 등 실적 시즌 호재가 폭넓게 확산됨. 동시에 호르무즈 해협 긴장과 미-이란 간접 협상은 매크로 변동성의 근저에 깔린 변수로 유지됨.",
+    "market_summary": "주중 코스피가 원화 기준 ATH(역사적 신고가)를 경신하며 강한 종목 장세가 이어졌다(KK Kontemporaries). AI 반도체·HBM·CPU 인프라 테마가 시장의 핵심 동력이었고, 삼성전자·SK하이닉스·TSMC·엔비디아·인텔이 다수 채널에서 반복 언급됐다. 후반부에 1Q26 실적 시즌이 본격화되며 조선(한화엔진·한화오션·HD현대중공업)·전력기기(효성중공업)에서 어닝서프가 집중적으로 발생했다. 바이오에서는 디앤디파마텍·올릭스·알지노믹스·에이비엘바이오·바이오솔루션 등 K바이오 글로벌 진출 모멘텀이 부각됐고, 구글 8세대 TPU 발표(4/22)도 광통신 OCS 공급사(루멘텀·코히어런트) 수혜 이슈를 만들었다.",
     "themes": [
       {
-        "title": "SK하이닉스 1Q26 어닝 서프라이즈 + 메모리 슈퍼사이클",
-        "summary": "영업이익 37.6조원 기록, DRAM ASP +102% QoQ·NAND ASP +71% QoQ로 기존 추정치(+88%/+58%)를 상회. 골드만은 EPS를 +39%/+72%/+81%(26~28E) 상향, 목표가 180만원으로 33% 올림. HBM4가 HBM3E 대비 약 40% 비싸 연내 ASP 점진 상승 전망. LTA(장기공급계약) 요청이 폭증하며 공급자 우위 구도 정착.",
+        "title": "AI 반도체·HBM·CPU 인프라 사이클",
+        "summary": "GPU에서 CPU로 병목이 확장되며 에이전틱 AI 시대 인프라 수요가 폭증. TSMC CoWoS 캐파 2028년 300만개 전망, AI 반도체 검사장비 시장 +16% CAGR. 한국 검사장비 업체에도 유사 포지션 기회.",
         "sentiment": "positive",
-        "mentioned_in": ["시장 이야기 by 제이슨", "디티커", "그로쓰리서치", "luy1978 투자블로그", "KK Kontemporaries (텔레그램)"],
+        "mentioned_in": [
+          "그로쓰리서치",
+          "KK Kontemporaries",
+          "디티커",
+          "여의도 랩"
+        ],
+        "days_active": 7,
+        "evolution": "주 초반 HBM/엔비디아 중심 → 주 후반 CPU 숏티지·TSMC A16 BSPD 등 공정·구조적 병목 논의로 확장"
+      },
+      {
+        "title": "조선·엔진 1Q 실적 어닝서프",
+        "summary": "한화엔진·한화오션·HD현대중공업·HD건설기계 모두 1Q26 어닝서프. 데이터센터향 4행정 엔진·발전기 엔진 수요와 LNGC·고선가 호선 인도가 동시에 모멘텀.",
+        "sentiment": "positive",
+        "mentioned_in": [
+          "여의도 랩",
+          "스파르탄 리서치",
+          "그로쓰리서치"
+        ],
+        "days_active": 4,
+        "evolution": "주 후반 4/27 실적 발표 집중, SK증권 한화엔진 목표가 38% 상향 등 컨센서스 일제 상향 흐름"
+      },
+      {
+        "title": "전력기기·데이터센터 인프라 슈퍼사이클",
+        "summary": "효성중공업 수주잔고 15조 역대 최대, 북미 765kV 변압기·HVDC·SST 등 다중 성장축. GE Vernova 1Q26 어닝서프(+13% EBITDA 상회)도 글로벌 전력 인프라 모멘텀 확인.",
+        "sentiment": "positive",
+        "mentioned_in": [
+          "여의도 랩",
+          "그로쓰리서치"
+        ],
         "days_active": 5,
-        "evolution": "23일 1Q 잠정실적 발표(매출 52.6조·영업이익 37.6조) → 24일 골드만 목표가 180만원 상향 → 25일 그로쓰리서치 ASML/램리서치 한국 매출 비중 급등 보도로 장비 발주 확장 확인"
+        "evolution": "전력기기 수주 모멘텀이 견조하게 유지, 데이터센터 전력 수요와 결합되며 멀티플 재평가 진행"
       },
       {
-        "title": "삼성 P5 160조 쌍둥이 팹 + HBM5E용 D1d 양산 철회",
-        "summary": "삼성은 P5 이후 동일 구조 'P5 2'를 추가 건설하는 쌍둥이 팹 전략으로 단지 하나에 160조원 투입. 다만 HBM5E에 적용 예정이던 1d D램 양산 계획을 수율 미달로 철회. 1c로는 HBM5까지 대응, 1d 안정화 시점이 차세대 HBM 경쟁력의 분수령.",
-        "sentiment": "neutral",
-        "mentioned_in": ["디티커", "KK Kontemporaries (텔레그램)"],
-        "days_active": 2,
-        "evolution": "22일 P5 쌍둥이 팹 + D1d 철회 동시 보도, 23일 머스크의 'AI4.1 삼성 파운드리 생산' 발언으로 파운드리 모멘텀 보강"
-      },
-      {
-        "title": "한국 코스피 사상최고가, 위험자산 'No man's territory' 진입",
-        "summary": "원화 기준 코스피 ATH 경신, 미 증시도 신고가 행진. KK Kontemporaries는 위험자산이 미개척지에 진입했으며 추가 상승을 위해 거시경제 순풍이 절실하다고 분석. 외국인 1.2조 순매수, ETF 자금 성격 금투 순매수 동반.",
+        "title": "K바이오 글로벌 진출",
+        "summary": "디앤디파마텍 EASL 2026 LBA·화이자 후속계약, 바이오솔루션 카티라이프 중국 판매승인, 에이비엘바이오 FDA 희귀의약품, 알지노믹스 AACR 발표. 비만·MASH·세포치료제·RNA 플랫폼 다각화.",
         "sentiment": "positive",
-        "mentioned_in": ["KK Kontemporaries", "KK Kontemporaries (텔레그램)", "luy1978 투자블로그"],
-        "days_active": 4,
-        "evolution": "21일 외인 1.2조 순매수 → 23일 'TSMC > 삼성+하이닉스' 시총 역설 환기 → 25일 연기금 리밸런싱·CTA 수요 분석 → 26일 KK 본 글에서 '미개척지' 진단"
-      },
-      {
-        "title": "호텔신라 1Q 서프라이즈 + 면세점 구조적 회복",
-        "summary": "OP 1,880~2,170억(컨센 1,279억) 상회. 인천공항 DF1 권역 및 마카오 면세점 영업 종료에 따른 구조적 수익성 개선이 일회성이 아닌 점이 핵심. 사모펀드·연기금·투신 모두 매수 상위. 1Q26 역대 방한 관광객 기록.",
-        "sentiment": "positive",
-        "mentioned_in": ["스파르탄 리서치"],
-        "days_active": 3,
-        "evolution": "24일 사모펀드/연기금/투신 매수 상위 + 호텔신라 1Q 서프 → 25일 인텔/엔진 섹터로 관심 분산 → 26일 OP 1,880억 상향 + Up to Buy 변경"
-      },
-      {
-        "title": "조선·방산: SHIPS Act 추진 + K-방산 수출 모멘텀",
-        "summary": "FY2027 미 해군 함정 조달 658억$로 +46% 증액, 34척 건조 계획. SHIPS Act 양원 합동 청문회 + 헤리티지 재단의 황금함대(515척) 보고서. 한국 2026 국방예산 67조원(+5.8%), JPM은 한화에어로·현대로템·LIG넥스원 비중확대.",
-        "sentiment": "positive",
-        "mentioned_in": ["스파르탄 리서치", "시장 이야기 by 제이슨"],
-        "days_active": 3,
-        "evolution": "23일 JPM 한국 방산 리포트 → 24일 한화엔진 1Q 컨콜 + 엔진 섹터 핫 → 26일 SHIPS Act 진전 보도 + 미 조선소 8개 한정 병목 지적"
-      },
-      {
-        "title": "비만/RNA 치료제: 릴리 K-바이오 후속 수혜 + IONS·ARWR 상향",
-        "summary": "여의도 랩은 릴리가 RNA·이중항체·AI 신약으로 포트폴리오 확장하며 올릭스·알지노믹스가 후속 협력 수혜 가능성 부각. 모건스탠리는 SHTG RNA 치료제 시장을 $43억→$90억으로 상향, IONS·ARWR 비중확대. 화이자는 PD-L1 PF-08046037 개발 중단.",
-        "sentiment": "positive",
-        "mentioned_in": ["여의도 랩", "그로쓰리서치", "KK Kontemporaries (텔레그램)"],
-        "days_active": 4,
-        "evolution": "22일 MS의 SHTG 시장 재평가 + IONS/ARWR 상향 → 25일 그로쓰리서치 GLP-1 매출($71B) > AI($29B) 비교 + 사노피 듀피젠트 LOE → 26일 릴리 K-바이오 후속 협력 → 27일 호주 PBS 결렬"
-      },
-      {
-        "title": "전력기기·SMR: 북미 인프라 사이클",
-        "summary": "효성중공업 1Q 매출 +26%·OP +49% (미국 765kV 7,870억 수주 반영). LS일렉트릭 북미 매출 분기 사상 최대 +80% YoY. 미 수출입은행 루마니아 SMR 76억$(약 10조) 지원 검토, 단일 에너지 프로젝트 사상 최대급.",
-        "sentiment": "positive",
-        "mentioned_in": ["여의도 랩", "그로쓰리서치"],
-        "days_active": 2,
-        "evolution": "24일 여의도 랩 효성중공업 765kV 디테일 + 루마니아 SMR 76억$ → 25일 그로쓰리서치 전력 3사 1Q 종합"
-      },
-      {
-        "title": "AI 데이터센터 인프라: TSMC CPO 2026 + TPU 8세대 + Cybercab 양산",
-        "summary": "TSMC 2029 로드맵: 애리조나 CoWoS 패키징 + COUPE(CPO) 2026 양산(전력 -50%, 지연 -90%). 구글 TPU 8t/8i 공개(HBM4 칩당 8개). 테슬라 텍사스 사이버캡 양산 확인 및 1Q26 매출 $223.9억(+16% YoY) 호실적.",
-        "sentiment": "positive",
-        "mentioned_in": ["그로쓰리서치", "디티커", "도PB의 생존투자"],
-        "days_active": 4,
-        "evolution": "22일 구글 8세대 TPU 공개 + 스페이스X S-1 위험요인 → 23일 테슬라 1Q26 + 머스크 'AI4.1 삼성' → 25일 CPO 테스트 병목 보고서 → 26일 TSMC 2029 로드맵 공개"
-      },
-      {
-        "title": "호르무즈 해협 + 미-이란 협상",
-        "summary": "이란 외무장관이 파키스탄을 통해 미국과 간접 협상 개시. 한편 트럼프는 백악관 만찬 도중 총격으로 긴급 대피(용의자 사망)하며 변수 발생. 이란 의회는 호르무즈 전쟁 전 상태 복귀 불가 선언으로 강온 양면 신호.",
-        "sentiment": "neutral",
-        "mentioned_in": ["스파르탄 리서치", "그로쓰리서치", "여의도 랩", "KK Kontemporaries (텔레그램)"],
+        "mentioned_in": [
+          "그로쓰리서치",
+          "여의도 랩"
+        ],
         "days_active": 5,
-        "evolution": "21일 호르무즈 헤드라인 변동성 → 25일 이란 외무장관 파키스탄 도착 + 미국 측 위트코프·쿠슈너 출발 → 26일 트럼프 백악관 총격 사건 → 27일 이란 의원 강경 발언"
+        "evolution": "주 초반 알지노믹스·올릭스 RNA → 후반 바이오솔루션·디앤디·에이비엘로 확산"
+      },
+      {
+        "title": "방산·우주 - 한화에어로스페이스·LIG넥스원",
+        "summary": "골드만삭스 한화에어로스페이스 목표가 1,830,000원 매수의견 유지. 1Q26 컨센 -12% 하회는 폴란드 K9 인도 공백 영향, 하반기 실적 반등 전망. LIG디펜스앤에어로스페이스 출범도 주목.",
+        "sentiment": "positive",
+        "mentioned_in": [
+          "시장 이야기 by 제이슨",
+          "여의도 랩"
+        ],
+        "days_active": 4,
+        "evolution": "1Q 실적 부진은 일시적·바닥, 하반기 인도 가속화 기대"
       }
     ],
     "stocks": [
       {
         "name": "SK하이닉스",
         "ticker": "000660",
-        "mention_count": 12,
-        "channels": ["시장 이야기 by 제이슨", "디티커", "그로쓰리서치", "luy1978 투자블로그", "KK Kontemporaries (텔레그램)", "DART 공시"],
-        "context": "1Q26 영업이익 37.6조원 어닝 서프라이즈, DRAM/NAND ASP 폭등. 골드만 TP 180만원, 메리츠 '계단식 리레이팅 구간 진입' 평가. 청주 P&T7 19조 투자 발표. HBM4E 하반기 샘플 공급 + 베이스다이에 TSMC 선단 로직 도입.",
+        "mention_count": 26,
+        "channels": [
+          "DART 공시",
+          "그로쓰리서치",
+          "디티커",
+          "스파르탄 리서치",
+          "시장 이야기 by 제이슨",
+          "여의도 랩",
+          "luy1978 투자블로그"
+        ],
+        "context": "AI 메모리 사이클 핵심 수혜주로 7개 채널에서 반복 언급. 퀄컴 CEO 방한·메모리 수급 협의 등 글로벌 빅테크 수요 확인.",
         "sentiment": "positive",
-        "days_mentioned": 5
+        "days_mentioned": 6
       },
       {
         "name": "삼성전자",
         "ticker": "005930",
-        "mention_count": 10,
-        "channels": ["디티커", "KK Kontemporaries (텔레그램)", "luy1978 투자블로그", "그로쓰리서치"],
-        "context": "P5 + P5 2 쌍둥이 팹 160조 투입. HBM5E용 1d D램 양산 철회. 머스크 'AI4.1' 파운드리 위탁 + GDDR6 4배 증산. 노조 결의대회로 24일 메모리 생산 -18%, 파운드리 -58% 일시 차질.",
+        "mention_count": 21,
+        "channels": [
+          "KK Kontemporaries (텔레그램)",
+          "그로쓰리서치",
+          "디티커",
+          "스파르탄 리서치",
+          "시장 이야기 by 제이슨"
+        ],
+        "context": "2나노 안정화 전략, 퀄컴 스냅드래곤 8 엘리트 2 파운드리 협력 구체화. 1.4나노 연기는 우려 요인.",
+        "sentiment": "neutral",
+        "days_mentioned": 6
+      },
+      {
+        "name": "TSMC",
+        "ticker": "TSM",
+        "mention_count": 13,
+        "channels": [
+          "KK Kontemporaries (텔레그램)",
+          "그로쓰리서치",
+          "디티커",
+          "여의도 랩"
+        ],
+        "context": "A16 SPR(BSPD) 차세대 핵심 트렌드, 2027년 1나노급 양산. CoWoS 캐파 25배 확장 예정.",
         "sentiment": "positive",
+        "days_mentioned": 7
+      },
+      {
+        "name": "엔비디아",
+        "ticker": "NVDA",
+        "mention_count": 15,
+        "channels": [
+          "그로쓰리서치",
+          "디티커",
+          "여의도 랩"
+        ],
+        "context": "AI 칩 1,000단계 공정·전수검사 시대 진입. CoWoS 수요 핵심.",
+        "sentiment": "positive",
+        "days_mentioned": 7
+      },
+      {
+        "name": "인텔",
+        "ticker": "INTC",
+        "mention_count": 11,
+        "channels": [
+          "그로쓰리서치",
+          "도PB의 생존투자",
+          "디티커",
+          "스파르탄 리서치",
+          "여의도 랩"
+        ],
+        "context": "UMC와 미국 12nm 협력 검증 가속, 2027년 양산 목표. PowerVia BSPD 선제 개발.",
+        "sentiment": "neutral",
         "days_mentioned": 5
       },
       {
-        "name": "테슬라",
-        "ticker": "TSLA",
-        "mention_count": 5,
-        "channels": ["도PB의 생존투자", "디티커", "그로쓰리서치"],
-        "context": "1Q26 매출 $223.9억(+16%), Adj EPS $0.41, FCF +$14.4억 흑자전환. FSD 구독 128만(+51%). Cybercab/Semi/Megapack 3 모두 2026 양산. CFO는 잔여 분기 FCF 마이너스 전망(역대 최대 칩 팹 투자).",
+        "name": "HD현대중공업",
+        "ticker": "329180",
+        "mention_count": 14,
+        "channels": [
+          "그로쓰리서치",
+          "디티커",
+          "스파르탄 리서치",
+          "여의도 랩"
+        ],
+        "context": "조선·엔진 멀티 사이클의 중심. 데이터센터향 4행정 엔진 수주 본격화.",
         "sentiment": "positive",
-        "days_mentioned": 3
+        "days_mentioned": 6
       },
       {
-        "name": "호텔신라",
-        "ticker": "008770",
+        "name": "한화엔진",
+        "ticker": "082740",
+        "mention_count": 15,
+        "channels": [
+          "디티커",
+          "스파르탄 리서치",
+          "여의도 랩"
+        ],
+        "context": "1Q26 영업익 컨센 +15%, SK증권 목표가 100,000원 상향(기존 72,000원).",
+        "sentiment": "positive",
+        "days_mentioned": 4
+      },
+      {
+        "name": "삼성중공업",
+        "ticker": "010140",
         "mention_count": 5,
-        "channels": ["스파르탄 리서치"],
-        "context": "1Q OP 1,880~2,170억 vs 컨센 1,279억. 사모펀드/연기금/투신 매수 상위. 인천공항 DF1·마카오 면세점 영업 종료가 구조적 수익성 개선 트리거. 1Q26 역대 방한 관광객 기록.",
+        "channels": [
+          "그로쓰리서치",
+          "스파르탄 리서치",
+          "여의도 랩"
+        ],
+        "context": "조선 사이클 핵심, FLNG·LNGC 수주 모멘텀.",
+        "sentiment": "positive",
+        "days_mentioned": 4
+      },
+      {
+        "name": "한화오션",
+        "ticker": "042660",
+        "mention_count": 4,
+        "channels": [
+          "그로쓰리서치",
+          "스파르탄 리서치"
+        ],
+        "context": "1Q26 어닝서프(영업익 컨센 +18%, 순익 +83%), 상선 수익성 개선 본격화.",
         "sentiment": "positive",
         "days_mentioned": 3
       },
@@ -167,627 +480,714 @@
         "name": "효성중공업",
         "ticker": "298040",
         "mention_count": 3,
-        "channels": ["여의도 랩", "그로쓰리서치"],
-        "context": "1Q 매출 1.36조(+26%) OP 1,523억(+49%). 북미 765kV 변압기·800kV 차단기 신규 수주, 신규수주 비중 미국 77%. 중공업 수주잔고 15.1조원(+4.2조). OP 이연 400억은 2Q에 인식 예정.",
+        "channels": [
+          "그로쓰리서치",
+          "여의도 랩"
+        ],
+        "context": "1Q26 신규수주 4.2조 +108%, 수주잔고 15조 역대 최대. 북미 765kV 변압기 1위.",
         "sentiment": "positive",
-        "days_mentioned": 2
+        "days_mentioned": 3
       },
       {
-        "name": "한화엔진",
-        "ticker": "082740",
-        "mention_count": 3,
-        "channels": ["스파르탄 리서치", "디티커"],
-        "context": "1Q26 컨콜 발표, 엔진 섹터 핫. 17주차 글로벌 +35% 상승. 미 SHIPS Act + FY27 해군 예산 +46% 증액 모멘텀.",
+        "name": "알지노믹스",
+        "ticker": "424960",
+        "mention_count": 8,
+        "channels": [
+          "그로쓰리서치",
+          "여의도 랩"
+        ],
+        "context": "AACR 2026에서 RZ-001 간세포암 임상 중간결과 발표, RNA 치환효소 정밀교정 기술.",
         "sentiment": "positive",
-        "days_mentioned": 2
+        "days_mentioned": 5
       },
       {
         "name": "올릭스",
         "ticker": "226950",
-        "mention_count": 3,
-        "channels": ["여의도 랩"],
-        "context": "릴리와 RNA 기반 치료제 기술이전 계약 보유. 릴리 차세대 모달리티 확장 흐름에서 후속 협력 가능성 부각.",
+        "mention_count": 7,
+        "channels": [
+          "그로쓰리서치",
+          "여의도 랩"
+        ],
+        "context": "릴리 기술이전 검증, 비만·안구·뇌 거대 시장 plat폼 확장 원년.",
         "sentiment": "positive",
-        "days_mentioned": 2
+        "days_mentioned": 3
       },
       {
-        "name": "알지노믹스",
-        "ticker": "474170",
-        "mention_count": 4,
-        "channels": ["여의도 랩"],
-        "context": "RZ-001 글로벌 제약사와 CDA 체결. AACR Human PoC 임상 데이터 확보 시 추가 CDA 두 곳 논의 예정. 항암 빅파마 관심.",
-        "sentiment": "positive",
-        "days_mentioned": 2
-      },
-      {
-        "name": "인텔",
-        "ticker": "INTC",
-        "mention_count": 3,
-        "channels": ["스파르탄 리서치", "도PB의 생존투자", "디티커"],
-        "context": "1Q 모든 사업부 수요 > 공급. 'CPU가 AI 기반' 발언 + 머스크 테라팹 협력 비전. 인텍플러스/앱솔릭스/삼성전기/ISC 등 협력사 + 유리기판/CXL 수혜 구도.",
-        "sentiment": "positive",
-        "days_mentioned": 2
-      },
-      {
-        "name": "KB금융",
-        "ticker": "105560",
-        "mention_count": 3,
-        "channels": ["시장 이야기 by 제이슨", "DART 공시"],
-        "context": "1Q 지배주주순이익 1.6조(+컨센 15%). 자사주 4,000억 추가 소각 + 분기 배당 750원 정례화. JPM 목표가 20만원 상향, '밸류업 모범사례' 평가.",
-        "sentiment": "positive",
-        "days_mentioned": 2
-      },
-      {
-        "name": "한화에어로스페이스",
-        "ticker": "012450",
-        "mention_count": 1,
-        "channels": ["시장 이야기 by 제이슨"],
-        "context": "JPM Overweight. K9·레드백 폴란드/호주 수출 + 국내 K21 추가 양산 수혜.",
-        "sentiment": "positive",
-        "days_mentioned": 1
-      },
-      {
-        "name": "LIG넥스원",
-        "ticker": "079550",
-        "mention_count": 1,
-        "channels": ["시장 이야기 by 제이슨"],
-        "context": "JPM Overweight. 천궁-II(M-SAM) 중동 수출 확대 + 국내 유도무기 고도화 핵심 수혜주.",
-        "sentiment": "positive",
-        "days_mentioned": 1
-      },
-      {
-        "name": "현대로템",
-        "ticker": "064350",
-        "mention_count": 1,
-        "channels": ["시장 이야기 by 제이슨"],
-        "context": "JPM Overweight. 폴란드 K2 2차 실행계약 임박 + 국내 4차 양산.",
-        "sentiment": "positive",
-        "days_mentioned": 1
-      },
-      {
-        "name": "LS일렉트릭",
-        "ticker": "010120",
-        "mention_count": 1,
-        "channels": ["그로쓰리서치"],
-        "context": "1Q 매출 1.38조(+33%) OP 1,266억(+45%). 북미 매출 분기 최대 +80% YoY. ESS 매출 +3배. 데이터센터 마이크로그리드 DC 솔루션 수주.",
-        "sentiment": "positive",
-        "days_mentioned": 1
-      },
-      {
-        "name": "두산테스나",
-        "ticker": "131970",
-        "mention_count": 1,
-        "channels": ["디티커"],
-        "context": "엔비디아 AI 칩 테스트 수주.",
-        "sentiment": "positive",
-        "days_mentioned": 1
-      },
-      {
-        "name": "삼성바이오로직스",
-        "ticker": "207940",
-        "mention_count": 1,
-        "channels": ["그로쓰리서치"],
-        "context": "미국 록빌 공장 2Q부터 연결 인식, 6공장 18만L 착공, CDMO 원년. 록빌 GSK 수주만으로 캐파 50% 가동.",
-        "sentiment": "positive",
-        "days_mentioned": 1
-      },
-      {
-        "name": "셀트리온",
-        "ticker": "068270",
-        "mention_count": 2,
-        "channels": ["DART 공시"],
-        "context": "자기주식취득결정 + 셀트리온홀딩스 대량보유 보고. 주주환원 시그널.",
-        "sentiment": "positive",
-        "days_mentioned": 1
-      },
-      {
-        "name": "현대모비스",
-        "ticker": "012330",
-        "mention_count": 1,
-        "channels": ["DART 공시"],
-        "context": "자기주식취득결정 공시.",
-        "sentiment": "positive",
-        "days_mentioned": 1
-      },
-      {
-        "name": "하나금융지주",
-        "ticker": "086790",
-        "mention_count": 1,
-        "channels": ["DART 공시"],
-        "context": "자기주식취득결정 공시.",
-        "sentiment": "positive",
-        "days_mentioned": 1
-      },
-      {
-        "name": "일라이 릴리",
-        "ticker": "LLY",
-        "mention_count": 4,
-        "channels": ["여의도 랩", "그로쓰리서치"],
-        "context": "마운자로 매출 견고하나 호주 PBS 결렬. RNA·이중항체·AI 신약 포트폴리오 확장 → 한국 올릭스/알지노믹스 후속 수혜.",
+        "name": "호텔신라",
+        "ticker": "008770",
+        "mention_count": 9,
+        "channels": [
+          "스파르탄 리서치",
+          "여의도 랩"
+        ],
+        "context": "5월 8일 IR 개최, 면세점 회복 기대.",
         "sentiment": "neutral",
         "days_mentioned": 3
+      },
+      {
+        "name": "LG에너지솔루션",
+        "ticker": "373220",
+        "mention_count": 4,
+        "channels": [
+          "그로쓰리서치",
+          "시장 이야기 by 제이슨",
+          "여의도 랩"
+        ],
+        "context": "벤츠향 원통형·LFP 수주, 유럽 EV 회복 수혜.",
+        "sentiment": "positive",
+        "days_mentioned": 3
+      },
+      {
+        "name": "한국항공우주",
+        "ticker": "047810",
+        "mention_count": 2,
+        "channels": [
+          "스파르탄 리서치",
+          "시장 이야기 by 제이슨"
+        ],
+        "context": "방산 섹터 모멘텀 지속.",
+        "sentiment": "positive",
+        "days_mentioned": 2
+      },
+      {
+        "name": "삼성전기",
+        "ticker": "009150",
+        "mention_count": 4,
+        "channels": [
+          "그로쓰리서치",
+          "스파르탄 리서치"
+        ],
+        "context": "AI 서버 FCBGA 패키지 기판 수혜, CPU 숏티지 핵심 수혜주.",
+        "sentiment": "positive",
+        "days_mentioned": 4
+      },
+      {
+        "name": "디앤디파마텍",
+        "ticker": "347850",
+        "mention_count": 3,
+        "channels": [
+          "여의도 랩"
+        ],
+        "context": "EASL 2026 LBA·화이자 후속계약, MASH·비만 멀티 파이프라인.",
+        "sentiment": "positive",
+        "days_mentioned": 2
       }
     ],
     "macro": {
-      "kr": "코스피 원화 기준 사상최고가 경신, 외국인 1.2조 순매수와 ETF 자금성 금투 매수 동반. 한국이 시클리컬이냐 구조적 리레이팅이냐의 논쟁이 격화 중이며 KK Kontemp는 후자 관점.",
-      "us": "S&P 500 신고가 행진. 다음주 시총 45% 기업 실적 발표, QDS는 연기금 리밸런싱 매도 잔여 약 300억$ 추정. 케빈 와시 연준 등판 시 금리 하락 기대(트럼프). 미국 10년물 실질금리 2% 하회.",
-      "global": "호르무즈 해협 긴장 지속 가운데 미-이란 파키스탄 간접 협상 개시. 미 수출입은행 루마니아 SMR 76억$ 단일 사상 최대급 검토. 이스라엘 아이언돔 UAE 첫 해외 배치."
+      "kr": "코스피가 원화 기준 ATH 경신하며 강세 종목 장세 본격화. 4월 첫 10일 수출 +36.7%(전년동기) 호조, 1Q 실적 시즌은 조선·엔진·전력기기를 중심으로 어닝서프라이즈가 잇따랐다.",
+      "us": "AI 인프라 슈퍼사이클이 GPU에서 CPU·HBM·검사장비·광통신(OCS)·전력으로 확산. TSMC가 1나노 선점 전략을 가속하는 반면 삼성은 2나노 안정화에 집중하는 구도. 트럼프-연준 갈등(케빈 와시 거론) 등 정책 불확실성도 상존.",
+      "global": "이란 사태 진정 후 미국 10년물 실질금리 2% 하회로 하향 안정화. 유럽 1Q26 BEV 판매 +32.4% 급반등. 구글 8세대 TPU 발표로 광통신 공급망 수혜 부각."
     }
   },
   "biweekly": {
     "date": "2026-04-27",
     "period": "04/14 ~ 04/27",
-    "market_summary": "지난 2주의 가장 큰 변화는 호르무즈 휴전 → 재긴장 → 간접협상 사이클 속에서도 위험자산이 우상향했다는 점. 4/16 S&P 500은 미-이란 전쟁 시작 이후 처음으로 사상최고가 회복, 4/21~22 전후로 코스피 ATH 경신. 메모리 슈퍼사이클은 ASML CEO의 '메모리 회사들 올해 완판' 발언과 SK하이닉스 1Q 어닝 서프라이즈로 가시화. 트럼프-연준 갈등(파월 사임 가능성)과 케빈 와시 등판 가능성이 매크로 변수. 비만 GLP-1과 RNA 치료제 시장 재평가, K-방산·전력기기·조선 글로벌 인프라 수혜 흐름이 2주에 걸쳐 강화됐음.",
+    "market_summary": "지난 2주간 시장은 변동성 높은 3월을 지나 강한 반등 랠리에 진입했다. KK Kontemporaries는 '뉴 불마켓'으로 진단하며 매크로·시장 구조 이해자의 수익률 극대화 구간으로 평가. AI 반도체(TSMC·삼성전자·SK하이닉스·엔비디아·인텔)가 채널 전반에서 압도적으로 반복 언급됐고, 후반부 조선·엔진·전력기기 1Q 실적 시즌이 모멘텀을 추가했다. 바이오는 알지노믹스·올릭스 RNA 플랫폼이 11일에 걸쳐 지속 언급되는 구조적 테마로 자리잡았다. 매크로에서는 중동 긴장 진정·실질금리 하향 안정화·달러 약세 가능성 등 위험자산 우호적 환경이 형성됐다.",
     "themes": [
       {
-        "title": "메모리 슈퍼사이클 가시화",
-        "summary": "ASML CEO '메모리 완판' 발언(4/15) → SK하이닉스 1Q 잠정실적 어닝 서프(4/23) → 골드만 SK하이닉스 TP 180만원(4/24) → 삼전·하이닉스 2배 ETF 16종 동시상장 임박(5/22). 메리츠 '계단식 리레이팅 구간 진입' 평가.",
+        "title": "AI 반도체 슈퍼사이클 - HBM·CPU·검사장비·광통신",
+        "summary": "GPU 중심 사이클이 CPU·HBM·검사장비·광통신·BSPD 등 인프라 전반으로 확장. TSMC CoWoS 캐파 25배 확장, A16 SPR 양산 로드맵 구체화. 한국 검사장비·소부장도 동반 수혜 구조.",
         "sentiment": "positive",
-        "mentioned_in": ["시장 이야기 by 제이슨", "도PB의 생존투자", "디티커", "luy1978 투자블로그", "KK Kontemporaries (텔레그램)", "그로쓰리서치"],
+        "mentioned_in": [
+          "그로쓰리서치",
+          "디티커",
+          "여의도 랩",
+          "KK Kontemporaries",
+          "스파르탄 리서치",
+          "시장 이야기 by 제이슨"
+        ],
+        "days_active": 14,
+        "evolution": "초반 HBM·엔비디아 → 중반 광통신(루멘텀)·TPU(구글) → 후반 CPU 숏티지·BSPD·검사장비로 테마 확장"
+      },
+      {
+        "title": "조선·엔진·전력기기 멀티 사이클",
+        "summary": "1Q26 실적 시즌에서 조선(한화오션·HD현대중공업)·엔진(한화엔진·HD건설기계)·전력기기(효성중공업)가 동시 어닝서프. 데이터센터 전력·미국 765kV·HVDC·LNGC·발전기 엔진 등 멀티 성장축.",
+        "sentiment": "positive",
+        "mentioned_in": [
+          "여의도 랩",
+          "스파르탄 리서치",
+          "그로쓰리서치",
+          "디티커"
+        ],
         "days_active": 8,
-        "evolution": "4/15 ASML 우려에서 시작 → 4/16 백악관 이란 대화 진전 + S&P ATH → 4/22 삼성 P5 160조 발표 + D1d 철회 → 4/23 SK하이닉스 잠정 어닝 서프 → 4/24 골드만 대폭 상향"
+        "evolution": "수주 모멘텀 확인 → 1Q 실적 어닝서프 → 컨센서스·목표가 일제 상향 → 2분기 이후 성장 가속 전망"
       },
       {
-        "title": "호르무즈 사태: 휴전 → 재봉쇄 → 간접협상",
-        "summary": "4/16~17 휴전 기간 호르무즈 재개통 → 4/20 트럼프 '이란 화물선 나포' → 4/22 이란 강경 발언 → 4/25 파키스탄 간접 협상 → 4/27 이란 의원 '전쟁 전 복귀 불가'. 변동성에도 위험자산은 견조. KK Kontemp는 '새로운 질서' 진입 강조.",
-        "sentiment": "neutral",
-        "mentioned_in": ["도PB의 생존투자", "스파르탄 리서치", "그로쓰리서치", "KK Kontemporaries (텔레그램)", "luy1978 투자블로그"],
-        "days_active": 10,
-        "evolution": "휴전 정착 기대 → 재봉쇄 헤드라인 → 간접 협상 트랙 가동의 3단계로 진행. 시장은 점진적으로 헤드라인 면역 강화"
-      },
-      {
-        "title": "S&P 500 / 나스닥 100 리밸런싱 메가트렌드",
-        "summary": "4/16 도PB 분석: 신규 편입 4종(샌디스크·루멘텀·에코스타·버티브)이 (1) 효율적 AI 데이터센터 (2) 스페이스X 우주 산업 (3) AI 추론 사이클 메모리 중요도라는 3대 메가트렌드를 반영.",
+        "title": "K바이오 글로벌 진출 - RNA·MASH·비만·세포치료제",
+        "summary": "알지노믹스·올릭스 RNA 플랫폼, 디앤디파마텍 MASH·비만, 바이오솔루션 카티라이프 중국 진출, 에이비엘바이오 FDA 희귀의약품. 다양한 모달리티로 K바이오의 글로벌 경쟁력 입증.",
         "sentiment": "positive",
-        "mentioned_in": ["도PB의 생존투자"],
-        "days_active": 1,
-        "evolution": "리밸런싱 결과로 시장의 주도 테마가 전이되고 있음을 확인하는 단발 이벤트지만 향후 지속적 의미"
+        "mentioned_in": [
+          "그로쓰리서치",
+          "여의도 랩"
+        ],
+        "days_active": 11,
+        "evolution": "RNA 플랫폼(알지노믹스·올릭스)이 11일간 지속 언급되며 구조적 테마화, 후반부 세포치료제·신약 임상 데이터 발표로 확산"
       },
       {
-        "title": "RNA/SHTG 치료제 시장 재평가",
-        "summary": "4/22 모건스탠리 SHTG 시장 $43억→$90억 상향, IONS·ARWR 비중확대. 트린골자 췌장염 -85%, FDA 우선심사 PDUFA 6/30/2026. 4/26 여의도 랩의 K-바이오(올릭스/알지노믹스) 후속 협력 수혜 분석.",
+        "title": "매크로 - 위험자산 우호적 환경",
+        "summary": "이란 사태 진정 후 미국 10년물 실질금리 2% 하회. 트럼프 행정부 에너지 패권 전략·달러 약세 유도 가능성. 코스피 원화 기준 ATH 경신, 미 증시 신고가 행진.",
         "sentiment": "positive",
-        "mentioned_in": ["KK Kontemporaries (텔레그램)", "여의도 랩"],
-        "days_active": 4,
-        "evolution": "글로벌 RNA 치료제 가치 재평가 → K-바이오 플랫폼 기술 후속 가치로 연결되는 흐름"
+        "mentioned_in": [
+          "KK Kontemporaries",
+          "시장 이야기 by 제이슨",
+          "도PB의 생존투자"
+        ],
+        "days_active": 14,
+        "evolution": "3월 변동성 → 4월 중순 반등 시작 → 4월 말 강한 종목 장세, FOMO 자극"
       },
       {
-        "title": "K-방산·조선·전력기기 인프라 사이클",
-        "summary": "4/23 JPM K-방산 + 2026 한국 국방예산 67조(+5.8%) → 4/24 효성중공업 765kV 디테일 + 루마니아 SMR 76억$ → 4/26 SHIPS Act + FY27 미 해군 658억$ → 17주차 한화엔진 +35%, HD현대중공업 +31%, STX엔진 +30%.",
+        "title": "방산·우주 - 한화에어로스페이스·LIG·SpaceX",
+        "summary": "골드만삭스 한화에어로 1,830,000원 목표가 매수 유지. 스페이스X 우주데이터센터 100GW 공언, 1GW HJT 양산 발주. 위성통신(아마존-글로벌스타) M&A.",
         "sentiment": "positive",
-        "mentioned_in": ["시장 이야기 by 제이슨", "여의도 랩", "스파르탄 리서치", "디티커"],
-        "days_active": 5,
-        "evolution": "한국 국방예산 → 미국 SHIPS Act → 17주차 주가 +30~50% 폭등으로 이어지는 사이클 가시화"
-      },
-      {
-        "title": "비만치료제 시장 진화: 2차전 + 가격하락",
-        "summary": "4/22 메디케어 GLP-1 보장 무기한 연기 → 4/25 그로쓰리서치 GLP-1 매출 $71B vs OpenAI+Anthropic $29B 비교 + 사노피 듀피젠트 LOE → 4/26 릴리 K-바이오 후속 → 4/27 호주 PBS 결렬. Seung은 펜→경구→다중작용제로 시장 재편 진단.",
-        "sentiment": "neutral",
-        "mentioned_in": ["디티커", "그로쓰리서치", "여의도 랩", "Seung's 투자와 생각"],
+        "mentioned_in": [
+          "시장 이야기 by 제이슨",
+          "그로쓰리서치",
+          "디티커",
+          "여의도 랩"
+        ],
         "days_active": 6,
-        "evolution": "리얼월드 매출 우월성 재확인 + 약가 하락 + 2차전 진입의 다층 흐름"
+        "evolution": "K방산 수주 모멘텀 + 우주 인프라(태양전지·위성)로 테마 확장"
       }
     ],
     "stocks": [
       {
+        "name": "TSMC",
+        "ticker": "TSM",
+        "mention_count": 47,
+        "channels": [
+          "KK Kontemporaries (텔레그램)",
+          "그로쓰리서치",
+          "디티커",
+          "여의도 랩",
+          "스파르탄 리서치",
+          "시장 이야기 by 제이슨",
+          "도PB의 생존투자",
+          "luy1978 투자블로그"
+        ],
+        "context": "8개 채널, 14일 연속 언급되는 시장 핵심 종목. A16 BSPD·CoWoS·1나노 로드맵.",
+        "sentiment": "positive",
+        "days_mentioned": 14
+      },
+      {
         "name": "SK하이닉스",
         "ticker": "000660",
-        "mention_count": 14,
-        "channels": ["시장 이야기 by 제이슨", "디티커", "그로쓰리서치", "luy1978 투자블로그", "KK Kontemporaries (텔레그램)", "DART 공시"],
-        "context": "1Q26 영업이익 37.6조 어닝 서프라이즈, 골드만 TP 180만원, 자기주식처분결정 공시, P&T7 19조 투자, HBM4E 하반기 샘플.",
+        "mention_count": 56,
+        "channels": [
+          "DART 공시",
+          "그로쓰리서치",
+          "디티커",
+          "스파르탄 리서치",
+          "시장 이야기 by 제이슨",
+          "여의도 랩",
+          "luy1978 투자블로그"
+        ],
+        "context": "HBM 사이클 최대 수혜주, 12일간 7개 채널 반복 언급.",
         "sentiment": "positive",
-        "days_mentioned": 6
+        "days_mentioned": 12
       },
       {
         "name": "삼성전자",
         "ticker": "005930",
-        "mention_count": 11,
-        "channels": ["디티커", "KK Kontemporaries (텔레그램)", "luy1978 투자블로그", "그로쓰리서치"],
-        "context": "P5 쌍둥이 팹 160조, HBM5E용 1d D램 철회, AI4.1 파운드리, GDDR6 4배 증산, 갤럭시 S27 스냅드래곤 유지.",
-        "sentiment": "positive",
-        "days_mentioned": 6
+        "mention_count": 51,
+        "channels": [
+          "KK Kontemporaries (텔레그념)",
+          "그로쓰리서치",
+          "디티커",
+          "스파르탄 리서치",
+          "시장 이야기 by 제이슨",
+          "여의도 랩",
+          "luy1978 투자블로그"
+        ],
+        "context": "2나노 파운드리 안정화 전략, 퀄컴·NVIDIA 협력. 1.4나노 연기는 견제 요인.",
+        "sentiment": "neutral",
+        "days_mentioned": 12
       },
       {
-        "name": "테슬라",
-        "ticker": "TSLA",
-        "mention_count": 6,
-        "channels": ["도PB의 생존투자", "디티커", "그로쓰리서치"],
-        "context": "1Q26 매출 +16%, FSD 128만 구독, Cybercab/Semi/Megapack 3 양산, 역대 최대 칩 팹 투자 발표.",
+        "name": "엔비디아",
+        "ticker": "NVDA",
+        "mention_count": 33,
+        "channels": [
+          "그로쓰리서치",
+          "디티커",
+          "여의도 랩"
+        ],
+        "context": "AI 칩 사이클 핵심, 13일간 지속 언급. CoWoS·검사장비 수요 견인.",
         "sentiment": "positive",
-        "days_mentioned": 4
-      },
-      {
-        "name": "호텔신라",
-        "ticker": "008770",
-        "mention_count": 5,
-        "channels": ["스파르탄 리서치"],
-        "context": "1Q OP 1,880~2,170억 어닝 서프, 면세점 구조적 회복, 사모펀드/연기금 매수 상위.",
-        "sentiment": "positive",
-        "days_mentioned": 3
-      },
-      {
-        "name": "ASML",
-        "ticker": "ASML",
-        "mention_count": 4,
-        "channels": ["도PB의 생존투자", "그로쓰리서치"],
-        "context": "CEO '메모리 완판, 공급 부족 2026 이후 지속'. 1Q 한국 매출 비중 45%로 단일 1위. 2Q 가이던스는 다소 미달.",
-        "sentiment": "positive",
-        "days_mentioned": 3
-      },
-      {
-        "name": "효성중공업",
-        "ticker": "298040",
-        "mention_count": 3,
-        "channels": ["여의도 랩", "그로쓰리서치"],
-        "context": "1Q 매출 +26%·OP +49%, 미국 765kV 7,870억 수주, 수주잔고 15.1조원.",
-        "sentiment": "positive",
-        "days_mentioned": 2
-      },
-      {
-        "name": "한화엔진",
-        "ticker": "082740",
-        "mention_count": 3,
-        "channels": ["스파르탄 리서치", "디티커"],
-        "context": "1Q26 컨콜, 17주차 +35%. SHIPS Act + 미 해군 +46% 증액 수혜.",
-        "sentiment": "positive",
-        "days_mentioned": 2
-      },
-      {
-        "name": "올릭스",
-        "ticker": "226950",
-        "mention_count": 3,
-        "channels": ["여의도 랩"],
-        "context": "릴리 RNA 기술이전 보유, 후속 협력 수혜.",
-        "sentiment": "positive",
-        "days_mentioned": 2
-      },
-      {
-        "name": "알지노믹스",
-        "ticker": "474170",
-        "mention_count": 4,
-        "channels": ["여의도 랩"],
-        "context": "RZ-001 글로벌 CDA 체결, AACR Human PoC 데이터 후 CDA 추가 논의.",
-        "sentiment": "positive",
-        "days_mentioned": 2
+        "days_mentioned": 13
       },
       {
         "name": "인텔",
         "ticker": "INTC",
-        "mention_count": 3,
-        "channels": ["스파르탄 리서치", "도PB의 생존투자", "디티커"],
-        "context": "1Q 수요>공급, AI4.1 머스크 테라팹, 인텍플러스·앱솔릭스·삼성전기·ISC 등 협력사 수혜.",
-        "sentiment": "positive",
-        "days_mentioned": 2
+        "mention_count": 20,
+        "channels": [
+          "그로쓰리서치",
+          "도PB의 생존투자",
+          "디티커",
+          "스파르탄 리서치",
+          "여의도 랩",
+          "시장 이야기 by 제이슨"
+        ],
+        "context": "UMC 미국 12nm 협력, PowerVia BSPD 선제 개발.",
+        "sentiment": "neutral",
+        "days_mentioned": 11
       },
       {
-        "name": "KB금융",
-        "ticker": "105560",
-        "mention_count": 3,
-        "channels": ["시장 이야기 by 제이슨", "DART 공시"],
-        "context": "1Q 지배주주순이익 1.6조, 자사주 4,000억 추가 소각, JPM TP 20만원.",
+        "name": "알지노믹스",
+        "ticker": "424960",
+        "mention_count": 24,
+        "channels": [
+          "그로쓰리서치",
+          "여의도 랩"
+        ],
+        "context": "11일간 지속 언급되는 RNA 플랫폼 핵심주, AACR 2026 RZ-001 임상 발표.",
         "sentiment": "positive",
-        "days_mentioned": 2
+        "days_mentioned": 11
       },
       {
-        "name": "샌디스크",
-        "ticker": "SNDK",
-        "mention_count": 2,
-        "channels": ["도PB의 생존투자", "안아줘 투자이야기"],
-        "context": "나스닥100 신규 편입, 1Q26 영업이익 1.1B/2Q 2.5B 가이던스, AI 추론 사이클 메모리 수혜.",
+        "name": "한화엔진",
+        "ticker": "082740",
+        "mention_count": 18,
+        "channels": [
+          "디티커",
+          "스파르탄 리서치",
+          "여의도 랩"
+        ],
+        "context": "1Q26 어닝서프, 목표가 38% 상향. 데이터센터향 4행정 엔진.",
         "sentiment": "positive",
-        "days_mentioned": 2
+        "days_mentioned": 6
       },
       {
-        "name": "버티브",
-        "ticker": "VRT",
-        "mention_count": 1,
-        "channels": ["도PB의 생존투자"],
-        "context": "S&P500 편입. 데이터센터 액체냉각·SmartRun 모듈로 효율성 모멘텀.",
+        "name": "HD현대중공업",
+        "ticker": "329180",
+        "mention_count": 15,
+        "channels": [
+          "그로쓰리서치",
+          "디티커",
+          "스파르탄 리서치",
+          "여의도 랩"
+        ],
+        "context": "조선·엔진 멀티 사이클 중심.",
         "sentiment": "positive",
-        "days_mentioned": 1
+        "days_mentioned": 7
       },
       {
-        "name": "루멘텀",
-        "ticker": "LITE",
-        "mention_count": 1,
-        "channels": ["도PB의 생존투자"],
-        "context": "S&P500 편입. AI 데이터센터 광통신 확대 수혜.",
+        "name": "올릭스",
+        "ticker": "226950",
+        "mention_count": 11,
+        "channels": [
+          "그로쓰리서치",
+          "여의도 랩",
+          "luy1978 투자블로그"
+        ],
+        "context": "RNA 플랫폼 확장 원년, 릴리 기술이전 검증.",
         "sentiment": "positive",
-        "days_mentioned": 1
+        "days_mentioned": 5
       },
       {
-        "name": "에코스타",
-        "ticker": "SATS",
-        "mention_count": 1,
-        "channels": ["도PB의 생존투자"],
-        "context": "스페이스X 지분 보유, 6월 IPO 모멘텀 연계.",
-        "sentiment": "positive",
-        "days_mentioned": 1
+        "name": "호텔신라",
+        "ticker": "008770",
+        "mention_count": 11,
+        "channels": [
+          "스파르탄 리서치",
+          "여의도 랩"
+        ],
+        "context": "5월 IR 개최, 면세점 회복 기대.",
+        "sentiment": "neutral",
+        "days_mentioned": 4
       },
       {
-        "name": "IONS",
-        "ticker": "IONS",
-        "mention_count": 1,
-        "channels": ["KK Kontemporaries (텔레그램)"],
-        "context": "MS 비중확대, 트린골자 SHTG 피크 매출 $47억 상향, PDUFA 6/30/26.",
+        "name": "삼성전기",
+        "ticker": "009150",
+        "mention_count": 7,
+        "channels": [
+          "그로쓰리서치",
+          "스파르탄 리서치",
+          "디티커"
+        ],
+        "context": "FCBGA·CPU 숏티지 핵심 수혜주.",
         "sentiment": "positive",
-        "days_mentioned": 1
+        "days_mentioned": 7
       },
       {
-        "name": "ARWR",
-        "ticker": "ARWR",
-        "mention_count": 1,
-        "channels": ["KK Kontemporaries (텔레그램)"],
-        "context": "MS Hold→Overweight, 레뎀플로 SHTG 피크 $43억, 3Q26 3상 데이터.",
+        "name": "삼성중공업",
+        "ticker": "010140",
+        "mention_count": 5,
+        "channels": [
+          "그로쓰리서치",
+          "스파르탄 리서치",
+          "여의도 랩"
+        ],
+        "context": "조선 슈퍼사이클 핵심.",
         "sentiment": "positive",
-        "days_mentioned": 1
+        "days_mentioned": 4
       },
       {
-        "name": "한화에어로스페이스",
-        "ticker": "012450",
-        "mention_count": 1,
-        "channels": ["시장 이야기 by 제이슨"],
-        "context": "JPM Overweight, K9·레드백 폴란드/호주 수출 + K21 추가 양산.",
+        "name": "LG에너지솔루션",
+        "ticker": "373220",
+        "mention_count": 5,
+        "channels": [
+          "그로쓰리서치",
+          "시장 이야기 by 제이슨",
+          "여의도 랩"
+        ],
+        "context": "유럽 EV 반등·벤츠 수주.",
         "sentiment": "positive",
-        "days_mentioned": 1
+        "days_mentioned": 4
       },
       {
-        "name": "LIG넥스원",
-        "ticker": "079550",
-        "mention_count": 1,
-        "channels": ["시장 이야기 by 제이슨"],
-        "context": "JPM Overweight, 천궁-II 중동 수출 + 유도무기 고도화.",
-        "sentiment": "positive",
-        "days_mentioned": 1
+        "name": "네이버",
+        "ticker": "035420",
+        "mention_count": 9,
+        "channels": [
+          "그로쓰리서치",
+          "디티커"
+        ],
+        "context": "AI 검색·콘텐츠 플랫폼.",
+        "sentiment": "neutral",
+        "days_mentioned": 7
       },
       {
-        "name": "현대로템",
-        "ticker": "064350",
-        "mention_count": 1,
-        "channels": ["시장 이야기 by 제이슨"],
-        "context": "JPM Overweight, 폴란드 K2 2차 + 4차 양산.",
+        "name": "한화오션",
+        "ticker": "042660",
+        "mention_count": 4,
+        "channels": [
+          "그로쓰리서치",
+          "스파르탄 리서치"
+        ],
+        "context": "1Q26 어닝서프, 상선 수익성 본격 개선.",
         "sentiment": "positive",
-        "days_mentioned": 1
+        "days_mentioned": 3
       }
     ],
     "macro": {
-      "kr": "코스피 ATH 경신, 외국인 누적 매도 종료 시그널 + ETF성 금투 매수. 'TSMC > 삼성+하이닉스' 시총 역설을 통한 한국 리레이팅 논쟁 활발.",
-      "us": "S&P 500 미-이란 전쟁 이후 사상최고가 회복(4/16). 트럼프-파월 갈등, 케빈 와시 등판 시 금리 인하 기대. 시총 45% 기업 실적 집중 + 연기금 리밸런싱 매도.",
-      "global": "호르무즈 휴전→재봉쇄→간접협상 사이클. 루마니아 SMR 76억$ 미국 지원 검토, IAEA 북한 핵능력 '심각한 증가' 경고, 이스라엘 아이언돔 UAE 첫 해외 배치."
+      "kr": "코스피 원화 기준 ATH 경신, 4월 수출 호조(첫 10일 +36.7%) 지속. 1Q 실적 시즌 조선·전력기기·엔진 어닝서프라이즈가 시장 강세를 견인. 일부 채널은 '뉴 불마켓' 진단.",
+      "us": "이란 사태 진정 후 10년물 실질금리 2% 하회. 트럼프 케빈 와시 발탁 가능성·연준 압박 지속. AI 인프라 사이클은 GPU에서 CPU·HBM·광통신·검사장비·BSPD로 다층 확장 중. 구글 8세대 TPU 발표로 광통신(OCS) 추가 모멘텀.",
+      "global": "유럽 EV 반등(BEV +32.4%), EU 산업가속화법으로 K배터리 우호 환경. 중동 긴장 진정·달러 약세 시나리오 부상. 비트코인은 YTD -14.4%로 위험자산 중 부진."
     }
   },
   "monthly": {
     "date": "2026-04-27",
     "period": "03/31 ~ 04/27",
-    "market_summary": "한 달 기간으로 보면 4월 초 이란 휴전 합의(4/8) 이후 호르무즈 사태가 휴전→재봉쇄→간접협상의 다단계 변동성을 거치는 동안 위험자산이 'No man's territory'로 진입한 구간. 외국인 매도가 누적 정점을 통과(KK Kontemp '외국인들은 왜 계속 팔죠? pt.II') 후 4월 21일 이후 1.2조 순매수로 전환. 메모리 슈퍼사이클은 4/1 하나증권 1Q 프리뷰부터 4/23 SK하이닉스 어닝 서프, 4/24 골드만 TP 180만원으로 단계적 가시화. KK는 '재정우위시대 + 구조적 투자'를 키워드로 시클리컬 → 구조적 리레이팅 전환 가설을 일관되게 주장. 비만치료제·RNA 치료제·K-방산·조선·전력기기·SMR가 한 달 내내 반복 등장한 구조적 테마.",
+    "market_summary": "지난 한 달간 시장은 3월 변동성 구간을 지나 4월 강한 반등 랠리로 전환됐다. AI 반도체(삼성전자·TSMC·SK하이닉스·엔비디아·인텔)가 8개 채널 전반에서 17~18일간 압도적으로 반복 언급되는 구조적 테마로 자리잡았고, RNA 플랫폼(알지노믹스·올릭스)도 13일간 지속 언급되는 장기 성장 테마로 부상. 후반부에는 조선·엔진·전력기기 1Q 실적 시즌이 본격적인 어닝서프라이즈로 모멘텀을 추가했다. 매크로 환경은 미국 에너지 패권 전략·달러 약세 유도 가능성·트럼프-연준 갈등 등 정책 불확실성과 위험자산 우호적 유동성이 공존하는 구조였다.",
     "themes": [
       {
-        "title": "메모리 슈퍼사이클 + 한국 리레이팅 논쟁",
-        "summary": "4/1 하나증권 1Q 프리뷰(SK하이닉스 영업이익 36.9조) → 4/3 외국인 메모리 비관(Capex 우려, 디그로싱) → 4/15 ASML '메모리 완판' → 4/17 luy1978 'TSMC > 삼전+하이닉스' 시총 역설 → 4/22 삼성 P5 160조 + D1d 철회 → 4/23 SK하이닉스 어닝 서프 → 4/24 골드만 TP 180만원. KK는 시클리컬 → 구조적 리레이팅 가설을 일관되게 주장.",
+        "title": "AI 반도체 슈퍼사이클 - 다층 확장",
+        "summary": "GPU·HBM 중심에서 CPU·검사장비·광통신·BSPD·첨단 패키징·소부장 전반으로 사이클 확장. 한 달간 8개 채널에서 17~18일간 지속 언급. CoWoS 25배 확장 등 구조적 캐파 사이클.",
         "sentiment": "positive",
-        "mentioned_in": ["시장 이야기 by 제이슨", "도PB의 생존투자", "디티커", "luy1978 투자블로그", "KK Kontemporaries", "그로쓰리서치", "안아줘 투자이야기"],
+        "mentioned_in": [
+          "KK Kontemporaries (텔레그램)",
+          "그로쓰리서치",
+          "디티커",
+          "여의도 랩",
+          "스파르탄 리서치",
+          "시장 이야기 by 제이슨",
+          "도PB의 생존투자",
+          "luy1978 투자블로그"
+        ],
         "days_active": 18,
-        "evolution": "외국인 매도 정점 → 시클리컬 의심 → ASML/하이닉스 실적 검증 → 외국인 재매수·코스피 ATH로 한 달간 컨센서스 전환"
+        "evolution": "3월말~4월초 HBM·엔비디아 → 4월 중반 광통신·TPU·CoWoS → 4월 말 CPU 숏티지·BSPD·검사장비·BSPD로 테마 다층 확장"
       },
       {
-        "title": "이란-미국 사태: 휴전→재봉쇄→간접협상",
-        "summary": "4/8 트럼프 '2주 휴전' 발표 → 4/16 백악관 '대화 생산적' → 4/17 호르무즈 재개통 → 4/20 화물선 나포 → 4/25 파키스탄 간접 협상 → 4/27 이란 의원 강경 발언. 변동성 절정에서도 4/16 S&P 사상최고가 회복.",
-        "sentiment": "neutral",
-        "mentioned_in": ["도PB의 생존투자", "스파르탄 리서치", "그로쓰리서치", "여의도 랩", "KK Kontemporaries", "luy1978 투자블로그"],
-        "days_active": 22,
-        "evolution": "전쟁 우려 → 휴전 합의 → 재봉쇄 헤드라인 → 간접협상 진입의 4단계. 헤드라인 변동성은 점진적으로 시장 면역화"
-      },
-      {
-        "title": "비만치료제 + RNA 치료제 시장 진화",
-        "summary": "4/6 Seung 'RNA1: GLP-1 연장 관점' → 4/22 메디케어 GLP-1 보장 연기 + MS SHTG 시장 $43억→$90억 상향 → 4/25 그로쓰리서치 GLP-1 vs AI 매출 비교 + 사노피 듀피젠트 LOE → 4/26 릴리 K-바이오 후속 협력 → 4/27 호주 PBS 결렬. 1차 펜→경구→다중작용제 → RNA로 진화.",
+        "title": "조선·엔진·전력기기 멀티 사이클",
+        "summary": "조선(한화오션·HD현대중공업·삼성중공업), 엔진(한화엔진·HD건설기계), 전력기기(효성중공업) 트리오. 1Q26 실적이 동시 어닝서프, 데이터센터·765kV 변압기·LNGC·발전기 엔진 다중 성장축.",
         "sentiment": "positive",
-        "mentioned_in": ["Seung's 투자와 생각", "디티커", "그로쓰리서치", "여의도 랩", "KK Kontemporaries (텔레그램)"],
+        "mentioned_in": [
+          "여의도 랩",
+          "스파르탄 리서치",
+          "그로쓰리서치",
+          "디티커",
+          "시장 이야기 by 제이슨"
+        ],
+        "days_active": 8,
+        "evolution": "수주 모멘텀 → 1Q 실적 어닝서프 집중 → 컨센서스·목표가 일제 상향"
+      },
+      {
+        "title": "K바이오 글로벌 진출 - RNA·MASH·비만·세포치료제",
+        "summary": "알지노믹스·올릭스 RNA 플랫폼이 13일간 구조적으로 언급. 디앤디파마텍 MASH·화이자 비만, 바이오솔루션 카티라이프 중국 진출, 에이비엘바이오 FDA 희귀의약품, 에스티팜 1Q 어닝서프.",
+        "sentiment": "positive",
+        "mentioned_in": [
+          "그로쓰리서치",
+          "여의도 랩",
+          "스파르탄 리서치"
+        ],
         "days_active": 13,
-        "evolution": "GLP-1 1차전 종료 → 약가 하락·접근성 확대 → 차세대 RNA·SHTG로 영역 확장 → K-바이오 플랫폼 가치 재평가"
+        "evolution": "RNA 플랫폼 → MASH·비만 → 세포치료제·면역항암제로 모달리티 다각화"
       },
       {
-        "title": "K-방산·조선·전력기기 + SMR 인프라 사이클",
-        "summary": "한 달 내내 반복 등장. 4/8 luy1978 '건설주 급등 재건이슈' → 4/23 JPM K-방산 + 한국 국방예산 67조 → 4/24 효성중공업 765kV + 루마니아 SMR 76억$ → 4/25 LS일렉트릭 북미 사상최대 → 4/26 SHIPS Act + FY27 미 해군 658억$. 17주차 한화엔진 +35%, HD현대중공업 +31%.",
+        "title": "방산·우주·에너지",
+        "summary": "한화에어로스페이스·LIG넥스원·한국항공우주 K방산 모멘텀. 스페이스X 우주데이터센터(100GW) HJT 태양전지 양산, 위성통신(아마존-글로벌스타) M&A. SMR·우라늄 등 원자력도 부각.",
         "sentiment": "positive",
-        "mentioned_in": ["시장 이야기 by 제이슨", "여의도 랩", "스파르탄 리서치", "디티커", "그로쓰리서치"],
+        "mentioned_in": [
+          "시장 이야기 by 제이슨",
+          "그로쓰리서치",
+          "디티커",
+          "여의도 랩"
+        ],
+        "days_active": 10,
+        "evolution": "K방산 수주 → 우주 인프라(태양전지·위성)·원자력으로 확장"
+      },
+      {
+        "title": "매크로 - 미국 에너지 패권·달러 약세",
+        "summary": "트럼프 행정부 에너지 패권 전략 명확화, 달러 약세 유도 가능성. 이란 사태 진정 후 실질금리 하향 안정화, 위험자산 우호 환경. 코스피 원화 ATH·미 증시 신고가 행진.",
+        "sentiment": "positive",
+        "mentioned_in": [
+          "KK Kontemporaries",
+          "도PB의 생존투자",
+          "시장 이야기 by 제이슨"
+        ],
         "days_active": 14,
-        "evolution": "지정학 → 한국 국방예산 → 미국 SHIPS Act → 1Q 실적 → 주가 폭등으로 이어진 풀 사이클"
-      },
-      {
-        "title": "AI 데이터센터·CPO·우주 산업",
-        "summary": "4/16 S&P/나스닥 리밸런싱(샌디스크/루멘텀/에코스타/버티브) → 4/22 구글 TPU 8세대 + 스페이스X S-1 + 커서 인수 옵션 → 4/23 테슬라 1Q26 + 머스크 'AI4.1 삼성' → 4/25 CPO 테스트 병목 + ASML/램리서치/AMAT 한국 비중 급등 → 4/26 TSMC 2029 로드맵(애리조나 + COUPE 2026 양산).",
-        "sentiment": "positive",
-        "mentioned_in": ["도PB의 생존투자", "디티커", "그로쓰리서치", "안아줘 투자이야기", "Seung's 투자와 생각"],
-        "days_active": 15,
-        "evolution": "리밸런싱 → 칩 로드맵 공개 → 패키징·CPO 양산 → 한국 장비 발주 가속의 점진적 강화"
-      },
-      {
-        "title": "트럼프 - 연준 갈등 / 케빈 와시 등판",
-        "summary": "4/15 트럼프 '와시 즉시 임용 시 금리 하락 예상' + '파월 사임 거부 시 조치' → 케빈 와시 등판 가능성이 미국채·달러 변수. KK는 미국 에너지 패권 → 약달러 → 부채 축소 그림 일관 주장.",
-        "sentiment": "neutral",
-        "mentioned_in": ["도PB의 생존투자", "KK Kontemporaries"],
-        "days_active": 5,
-        "evolution": "연준 독립성 압박 → 금리 인하 기대 → 약달러 시나리오로 매크로 프레임 정착 중"
+        "evolution": "3월 변동성·이란 긴장 → 4월 중순 반등 시작 → 4월 말 신고가 랠리·FOMO"
       }
     ],
     "stocks": [
       {
-        "name": "SK하이닉스",
-        "ticker": "000660",
-        "mention_count": 18,
-        "channels": ["시장 이야기 by 제이슨", "디티커", "그로쓰리서치", "luy1978 투자블로그", "KK Kontemporaries", "KK Kontemporaries (텔레그램)", "안아줘 투자이야기", "DART 공시"],
-        "context": "한 달 내내 반복 언급. 1Q 잠정실적(영업이익 37.6조), 골드만 TP 180만원, 메리츠 '계단식 리레이팅', P&T7 19조 투자, HBM4E 하반기 샘플.",
-        "sentiment": "positive",
-        "days_mentioned": 10
-      },
-      {
         "name": "삼성전자",
         "ticker": "005930",
-        "mention_count": 14,
-        "channels": ["디티커", "KK Kontemporaries (텔레그램)", "KK Kontemporaries", "luy1978 투자블로그", "그로쓰리서치", "안아줘 투자이야기"],
-        "context": "P5 쌍둥이 팹 160조, HBM5E용 1d 철회, AI4.1 파운드리, GDDR6 4배 증산, 시클리컬→리레이팅 논쟁의 중심.",
-        "sentiment": "positive",
-        "days_mentioned": 9
+        "mention_count": 64,
+        "channels": [
+          "KK Kontemporaries (텔레그램)",
+          "그로쓰리서치",
+          "디티커",
+          "스파르탄 리서치",
+          "시장 이야기 by 제이슨",
+          "여의도 랩",
+          "luy1978 투자블로그",
+          "도PB의 생존투자"
+        ],
+        "context": "8개 채널·18일 - 시장 최다 언급 종목. 2나노 파운드리·HBM·퀄컴 협력.",
+        "sentiment": "neutral",
+        "days_mentioned": 18
       },
       {
-        "name": "테슬라",
-        "ticker": "TSLA",
-        "mention_count": 7,
-        "channels": ["도PB의 생존투자", "디티커", "그로쓰리서치"],
-        "context": "1Q26 매출 +16%, FSD 128만 구독, Cybercab/Semi/Megapack 3 양산, 역대 최대 칩 팹 투자.",
+        "name": "TSMC",
+        "ticker": "TSM",
+        "mention_count": 54,
+        "channels": [
+          "KK Kontemporaries (텔레그램)",
+          "그로쓰리서치",
+          "디티커",
+          "여의도 랩",
+          "스파르탄 리서치",
+          "시장 이야기 by 제이슨",
+          "도PB의 생존투자",
+          "luy1978 투자블로그"
+        ],
+        "context": "AI 칩 파운드리 독점. A16 BSPD·CoWoS 25배 캐파 확장.",
         "sentiment": "positive",
-        "days_mentioned": 5
+        "days_mentioned": 17
       },
       {
-        "name": "ASML",
-        "ticker": "ASML",
-        "mention_count": 5,
-        "channels": ["도PB의 생존투자", "그로쓰리서치"],
-        "context": "CEO 메모리 완판 발언, 1Q 한국 매출 비중 45%로 단일 1위, 2Q 가이던스 다소 미달.",
+        "name": "SK하이닉스",
+        "ticker": "000660",
+        "mention_count": 66,
+        "channels": [
+          "DART 공시",
+          "그로쓰리서치",
+          "디티커",
+          "스파르탄 리서치",
+          "시장 이야기 by 제이슨",
+          "여의도 랩",
+          "luy1978 투자블로그"
+        ],
+        "context": "HBM 슈퍼사이클 최대 수혜주.",
         "sentiment": "positive",
-        "days_mentioned": 3
-      },
-      {
-        "name": "호텔신라",
-        "ticker": "008770",
-        "mention_count": 5,
-        "channels": ["스파르탄 리서치"],
-        "context": "1Q OP 어닝 서프 + 면세점 구조적 회복 + 1Q26 역대 방한 관광객.",
-        "sentiment": "positive",
-        "days_mentioned": 3
-      },
-      {
-        "name": "효성중공업",
-        "ticker": "298040",
-        "mention_count": 3,
-        "channels": ["여의도 랩", "그로쓰리서치"],
-        "context": "1Q 매출 +26%·OP +49%, 765kV 미국 수주, 수주잔고 15.1조.",
-        "sentiment": "positive",
-        "days_mentioned": 2
-      },
-      {
-        "name": "한화엔진",
-        "ticker": "082740",
-        "mention_count": 3,
-        "channels": ["스파르탄 리서치", "디티커"],
-        "context": "1Q26 컨콜, 17주차 +35%, SHIPS Act 수혜.",
-        "sentiment": "positive",
-        "days_mentioned": 2
-      },
-      {
-        "name": "알지노믹스",
-        "ticker": "474170",
-        "mention_count": 4,
-        "channels": ["여의도 랩"],
-        "context": "RZ-001 글로벌 CDA, AACR Human PoC 데이터 후 추가 CDA 논의.",
-        "sentiment": "positive",
-        "days_mentioned": 2
-      },
-      {
-        "name": "올릭스",
-        "ticker": "226950",
-        "mention_count": 3,
-        "channels": ["여의도 랩"],
-        "context": "릴리 RNA 기술이전 보유, 후속 협력 가능성.",
-        "sentiment": "positive",
-        "days_mentioned": 2
-      },
-      {
-        "name": "인텔",
-        "ticker": "INTC",
-        "mention_count": 3,
-        "channels": ["스파르탄 리서치", "도PB의 생존투자", "디티커"],
-        "context": "1Q 수요>공급, 머스크 테라팹, 인텍플러스·앱솔릭스 협력사 수혜.",
-        "sentiment": "positive",
-        "days_mentioned": 2
-      },
-      {
-        "name": "KB금융",
-        "ticker": "105560",
-        "mention_count": 3,
-        "channels": ["시장 이야기 by 제이슨", "DART 공시"],
-        "context": "1Q 1.6조 어닝 서프 + 자사주 4,000억 추가 소각 + JPM TP 20만원.",
-        "sentiment": "positive",
-        "days_mentioned": 2
-      },
-      {
-        "name": "샌디스크",
-        "ticker": "SNDK",
-        "mention_count": 3,
-        "channels": ["도PB의 생존투자", "안아줘 투자이야기"],
-        "context": "1Q26 영업이익 1.1B/2Q 2.5B 가이던스, 나스닥100 편입, AI 추론 사이클 수혜.",
-        "sentiment": "positive",
-        "days_mentioned": 2
-      },
-      {
-        "name": "한화에어로스페이스",
-        "ticker": "012450",
-        "mention_count": 1,
-        "channels": ["시장 이야기 by 제이슨"],
-        "context": "JPM Overweight, K9·레드백 수출 + K21 추가 양산.",
-        "sentiment": "positive",
-        "days_mentioned": 1
-      },
-      {
-        "name": "LIG넥스원",
-        "ticker": "079550",
-        "mention_count": 1,
-        "channels": ["시장 이야기 by 제이슨"],
-        "context": "JPM Overweight, 천궁-II 중동 수출 + 유도무기 고도화.",
-        "sentiment": "positive",
-        "days_mentioned": 1
-      },
-      {
-        "name": "현대로템",
-        "ticker": "064350",
-        "mention_count": 1,
-        "channels": ["시장 이야기 by 제이슨"],
-        "context": "JPM Overweight, 폴란드 K2 2차 + 4차 양산.",
-        "sentiment": "positive",
-        "days_mentioned": 1
-      },
-      {
-        "name": "LS일렉트릭",
-        "ticker": "010120",
-        "mention_count": 2,
-        "channels": ["그로쓰리서치"],
-        "context": "1Q OP +45%, 북미 매출 +80% YoY 사상최대, ESS +3배.",
-        "sentiment": "positive",
-        "days_mentioned": 1
-      },
-      {
-        "name": "삼성바이오로직스",
-        "ticker": "207940",
-        "mention_count": 1,
-        "channels": ["그로쓰리서치"],
-        "context": "록빌 공장 2Q 인식, 6공장 18만L 착공, CDMO 원년.",
-        "sentiment": "positive",
-        "days_mentioned": 1
-      },
-      {
-        "name": "셀트리온",
-        "ticker": "068270",
-        "mention_count": 2,
-        "channels": ["DART 공시"],
-        "context": "자기주식취득결정 + 셀트리온홀딩스 대량보유 보고.",
-        "sentiment": "positive",
-        "days_mentioned": 1
+        "days_mentioned": 17
       },
       {
         "name": "엔비디아",
         "ticker": "NVDA",
-        "mention_count": 4,
-        "channels": ["디티커", "그로쓰리서치", "안아줘 투자이야기", "카이에 블로그"],
-        "context": "ISSCC 2026 CPO 인터포저 시연, 두산테스나 AI 칩 테스트 수주, GPU 클라우드 투자, AI 인프라 핵심.",
+        "mention_count": 42,
+        "channels": [
+          "그로쓰리서치",
+          "디티커",
+          "여의도 랩"
+        ],
+        "context": "AI 칩 시장 표준, 18일간 지속 언급. CoWoS·검사장비·광통신 수요 견인.",
         "sentiment": "positive",
-        "days_mentioned": 3
+        "days_mentioned": 18
+      },
+      {
+        "name": "인텔",
+        "ticker": "INTC",
+        "mention_count": 23,
+        "channels": [
+          "그로쓰리서치",
+          "도PB의 생존투자",
+          "디티커",
+          "스파르탄 리서치",
+          "여의도 랩",
+          "시장 이야기 by 제이슨",
+          "KK Kontemporaries (텔레그램)"
+        ],
+        "context": "UMC 12nm 협력, PowerVia BSPD 선제 개발.",
+        "sentiment": "neutral",
+        "days_mentioned": 13
+      },
+      {
+        "name": "알지노믹스",
+        "ticker": "424960",
+        "mention_count": 28,
+        "channels": [
+          "그로쓰리서치",
+          "여의도 랩"
+        ],
+        "context": "13일간 지속 언급, RNA 치환효소 정밀교정 플랫폼. AACR RZ-001 임상.",
+        "sentiment": "positive",
+        "days_mentioned": 13
+      },
+      {
+        "name": "HD현대중공업",
+        "ticker": "329180",
+        "mention_count": 16,
+        "channels": [
+          "그로쓰리서치",
+          "디티커",
+          "스파르탄 리서치",
+          "여의도 랩",
+          "시장 이야기 by 제이슨"
+        ],
+        "context": "조선·엔진 멀티 사이클 중심, 데이터센터향 4행정 엔진.",
+        "sentiment": "positive",
+        "days_mentioned": 8
+      },
+      {
+        "name": "한화엔진",
+        "ticker": "082740",
+        "mention_count": 18,
+        "channels": [
+          "디티커",
+          "스파르탄 리서치",
+          "여의도 랩"
+        ],
+        "context": "1Q26 어닝서프 + 목표가 38% 상향(SK증권 100,000원).",
+        "sentiment": "positive",
+        "days_mentioned": 6
+      },
+      {
+        "name": "삼성전기",
+        "ticker": "009150",
+        "mention_count": 15,
+        "channels": [
+          "그로쓰리서치",
+          "스파르탄 리서치",
+          "디티커",
+          "시장 이야기 by 제이슨"
+        ],
+        "context": "AI 서버 FCBGA·CPU 숏티지 핵심 수혜주.",
+        "sentiment": "positive",
+        "days_mentioned": 13
+      },
+      {
+        "name": "올릭스",
+        "ticker": "226950",
+        "mention_count": 12,
+        "channels": [
+          "그로쓰리서치",
+          "여의도 랩",
+          "luy1978 투자블로그"
+        ],
+        "context": "RNA 플랫폼 확장, 릴리 기술이전 검증.",
+        "sentiment": "positive",
+        "days_mentioned": 6
+      },
+      {
+        "name": "네이버",
+        "ticker": "035420",
+        "mention_count": 12,
+        "channels": [
+          "그로쓰리서치",
+          "디티커",
+          "luy1978 투자블로그"
+        ],
+        "context": "AI 검색·콘텐츠 플랫폼, 9일 언급.",
+        "sentiment": "neutral",
+        "days_mentioned": 9
+      },
+      {
+        "name": "현대차",
+        "ticker": "005380",
+        "mention_count": 8,
+        "channels": [
+          "스파르탄 리서치",
+          "그로쓰리서치",
+          "디티커"
+        ],
+        "context": "EV 캐즘 회복, 미국 관세 영향 감소.",
+        "sentiment": "neutral",
+        "days_mentioned": 7
+      },
+      {
+        "name": "삼성중공업",
+        "ticker": "010140",
+        "mention_count": 6,
+        "channels": [
+          "그로쓰리서치",
+          "스파르탄 리서치",
+          "여의도 랩",
+          "디티커"
+        ],
+        "context": "조선 슈퍼사이클·FLNG.",
+        "sentiment": "positive",
+        "days_mentioned": 5
+      },
+      {
+        "name": "LG에너지솔루션",
+        "ticker": "373220",
+        "mention_count": 6,
+        "channels": [
+          "그로쓰리서치",
+          "시장 이야기 by 제이슨",
+          "여의도 랩"
+        ],
+        "context": "유럽 EV 반등·벤츠 LFP 수주.",
+        "sentiment": "positive",
+        "days_mentioned": 5
+      },
+      {
+        "name": "두산",
+        "ticker": "000150",
+        "mention_count": 6,
+        "channels": [
+          "디티커",
+          "여의도 랩",
+          "스파르탄 리서치"
+        ],
+        "context": "그룹 지주사·SMR·로보틱스 익스포저.",
+        "sentiment": "neutral",
+        "days_mentioned": 6
+      },
+      {
+        "name": "한화오션",
+        "ticker": "042660",
+        "mention_count": 5,
+        "channels": [
+          "그로쓰리서치",
+          "스파르탄 리서치",
+          "여의도 랩"
+        ],
+        "context": "1Q26 어닝서프, 상선 수익성 개선.",
+        "sentiment": "positive",
+        "days_mentioned": 4
+      },
+      {
+        "name": "LIG넥스원",
+        "ticker": "079550",
+        "mention_count": 5,
+        "channels": [
+          "스파르탄 리서치",
+          "여의도 랩",
+          "시장 이야기 by 제이슨"
+        ],
+        "context": "K방산 핵심, LIG디펜스앤에어로스페이스 출범.",
+        "sentiment": "positive",
+        "days_mentioned": 5
       }
     ],
     "macro": {
-      "kr": "외국인 매도 정점 통과 후 4월 후반 1.2조 순매수 전환, 코스피 ATH. 한국이 시클리컬→구조적 리레이팅으로 진입했다는 KK 가설이 점차 다수 의견화. 1Q 실적 시즌이 KB금융·SK하이닉스·호텔신라 등에서 어닝 서프라이즈 흐름.",
-      "us": "S&P 500 4/16 사상최고가 회복 후 신고가 행진. 트럼프-파월 갈등 + 케빈 와시 등판 가능성으로 통화정책 변수 상존. 시총 45% 기업 실적 + 연기금 리밸런싱 매도가 단기 변수. AI 도입 정량효과 언급 기업 비중 13%(1Q25)→25%(1Q26).",
-      "global": "호르무즈 사태 휴전→재봉쇄→간접협상 4단계 변동성. 미 SHIPS Act + FY27 해군 +46%, 루마니아 SMR 76억$, 이스라엘 아이언돔 UAE 첫 배치 등 군사·인프라 자본 사이클. 미국 에너지 패권 + 약달러 가설은 KK가 일관되게 주장."
+      "kr": "3월 변동성 구간을 지나 4월 강한 반등 랠리. 코스피 원화 기준 ATH 경신, 4월 수출 호조 지속. 1Q 실적 시즌은 조선·엔진·전력기기 어닝서프가 견인. 4월 첫 10일 수출 +36.7%(YoY).",
+      "us": "트럼프 행정부 에너지 패권·달러 약세 전략 명확화. 트럼프-연준(파월) 갈등 지속, 케빈 와시 발탁 가능성 부각. AI 인프라 슈퍼사이클이 GPU·HBM에서 CPU·검사장비·광통신·BSPD로 다층 확장. 구글 8세대 TPU 발표로 광통신(루멘텀·코히어런트) 추가 수혜.",
+      "global": "이란 사태 정점 통과 후 진정 국면, 미 10년물 실질금리 2% 하회. 유럽 1Q26 BEV 판매 +32.4% 급반등, EU 산업가속화법으로 K배터리 우호 환경. 비트코인 YTD -14.4%로 위험자산 중 부진하나 원유·금·해외주식 강세 지속."
     }
   },
-  "updated_at": "2026-04-27T07:15:00+09:00"
+  "updated_at": "2026-04-27T18:00:00+09:00"
 }
