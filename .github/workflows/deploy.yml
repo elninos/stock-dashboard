@@ -31,7 +31,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install pykrx yfinance
+        run: pip install requests python-dotenv
 
       - name: Install wrangler
         run: npm install -g wrangler
@@ -47,6 +47,9 @@ jobs:
             --namespace-id "6db9cbb95a4f4723bd0f26fb84214269" --remote > historical_portfolio_values.json
 
       - name: Fetch historical prices
+        env:
+          KIS_APPKEY: ${{ secrets.KIS_APPKEY }}
+          KIS_APPSECRET: ${{ secrets.KIS_APPSECRET }}
         run: python fetch_historical_prices.py
         continue-on-error: true
 
