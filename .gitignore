@@ -3,6 +3,7 @@ __pycache__/
 *.pyc
 .wrangler/
 .env
+.env.kis
 *_test.html
 # _deploy/ generated files (CI builds and deploys these; no need to track)
 _deploy/*.html

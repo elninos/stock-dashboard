@@ -1,0 +1,46 @@
+{
+  "ticker": "327260",
+  "quarters": [
+    {
+      "period": "202512",
+      "revenue": 641,
+      "op_profit": 74,
+      "net_profit": 104,
+      "yoy_rev": 0.0,
+      "qoq_rev": 0.0
+    },
+    {
+      "period": "202509",
+      "revenue": 430,
+      "op_profit": 46,
+      "net_profit": 51,
+      "yoy_rev": 0.0,
+      "qoq_rev": 0.0
+    },
+    {
+      "period": "202506",
+      "revenue": 284,
+      "op_profit": 27,
+      "net_profit": 27,
+      "yoy_rev": 0.0,
+      "qoq_rev": 0.0
+    },
+    {
+      "period": "202503",
+      "revenue": 118,
+      "op_profit": 8,
+      "net_profit": 6,
+      "yoy_rev": 0.0,
+      "qoq_rev": 0.0
+    }
+  ],
+  "valuation": {
+    "per": 113.7,
+    "pbr": 15.2,
+    "roe": 0.0,
+    "sector_per_avg": 0.0
+  },
+  "next_earnings_date": "",
+  "earnings_surprise_history": [],
+  "last_updated": "2026-04-30T12:33:26"
+}

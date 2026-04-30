@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<title>Stage-Aware Backtest</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.kpi-strip { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:18px; }
+.kpi-strip .kpi-mini { flex:1; min-width:160px; background:#181b23; border-radius:8px; padding:14px; text-align:center; }
+.kpi-strip .num { font-size:1.5em; font-weight:700; color:#fff; }
+.kpi-strip .lbl { font-size:0.78em; color:#888; margin-top:4px; }
+</style></head><body>
+<div class="container">
+<div class="nav">
+  <a href="index.html">📊 전체</a>
+  <a href="backtest_multi.html">시그널만</a>
+  <a href="backtest_macro.html">+ 매크로</a>
+  <a href="backtest_stage.html" class="active">+ Stage Analysis</a>
+</div>
+
+<h1>🧪 Stage-Aware Multi-Signal Backtest</h1>
+<p class="subtitle">Weinstein Stage + Chandelier + ADX + Dow Theory + 매크로 — 검증된 방법론 통합</p>
+
+<div class="card">
+  <div class="callout">
+    <b>적용 방법론:</b><br>
+    1. <b>Stan Weinstein Stage Analysis</b> — 30주 MA로 4단계 분류, Stage별 행동 다름<br>
+    2. <b>Chandelier Exit</b> — 22일 신고가 - ATR(22)×3, 변동성 반영 트레일링<br>
+    3. <b>ADX 필터</b> — ADX&lt;20 (횡보) 시 시그널 점수 ×0.5<br>
+    4. <b>Dow Theory</b> — LH(경고)/LL(매도) 객관적 추세 깨짐<br>
+    5. <b>매크로 보정</b> — KOSPI/KOSDAQ regime 따라 ×0.7~×1.3<br>
+    <br>
+    <b>Stage별 행동:</b><br>
+    Stage 2 (상승): Chandelier Exit만 작동, 다른 시그널 무시 → 추세 끝까지 탐<br>
+    Stage 3 (토핑): 모든 시그널 + ADX 필터 + 매크로 보정<br>
+    Stage 4 (하락): 즉시 전량 청산<br>
+    Stage 1 (Basing): 관망
+  </div>
+</div>
+
+<div class="kpi-strip">
+  <div class="kpi-mini"><div class="num mono">+4.67억</div><div class="lbl">실제 매매</div></div>
+  <div class="kpi-mini"><div class="num mono">+8,538만</div><div class="lbl">Stage-Aware</div></div>
+  <div class="kpi-mini" style="border:2px solid #ef4444"><div class="num mono" style="color:#ef4444">-3.81억</div><div class="lbl">차이</div></div>
+  <div class="kpi-mini"><div class="num">2/11</div><div class="lbl">Stage 우세</div></div>
+</div>
+
+<div class="card">
+  <h2>종목별 결과</h2>
+  <table>
+    <tr>
+      <th>종목</th>
+      <th style="text-align:right">실제</th>
+      <th style="text-align:right">Stage-Aware</th>
+      <th style="text-align:right">차이</th>
+      <th>Stage 분포</th>
+      <th>매도 시점</th>
+    </tr>
+    <tr>
+          <td><b>NAVER</b><br><span style="color:#666;font-size:0.78em">035420 · KOSPI</span></td>
+          <td class="mono" style="text-align:right">-899만<br><span style="font-size:0.78em;color:#888">4회</span></td>
+          <td class="mono" style="text-align:right">-387만<br><span style="font-size:0.78em;color:#888">12회</span></td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+512만<br><span style="font-size:0.78em">🤖 우세</span></td>
+          <td style="font-size:0.78em">S0:431 · S1:15 · S2:443 · S3:4 · S4:376</td>
+          <td><div style='font-size:0.78em;color:#888'>2022-01-19 S3 33% — CMF 분배 + Chandelier Exit</div><div style='font-size:0.78em;color:#888'>2022-03-21 S4 50% — Stage 4 (하락 추세)</div><div style='font-size:0.78em;color:#888'>2022-05-20 S4 50% — Stage 4 (하락 추세)</div><div style='font-size:0.78em;color:#888'>2022-07-19 S4 50% — Stage 4 (하락 추세)</div><div style='font-size:0.78em;color:#888'>2022-09-19 S4 50% — Stage 4 (하락 추세)</div></td>
+        </tr><tr>
+          <td><b>파마리서치</b><br><span style="color:#666;font-size:0.78em">214450 · KOSDAQ</span></td>
+          <td class="mono" style="text-align:right">+2.79억<br><span style="font-size:0.78em;color:#888">14회</span></td>
+          <td class="mono" style="text-align:right">+3,129만<br><span style="font-size:0.78em;color:#888">45회</span></td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-2.48억<br><span style="font-size:0.78em">👤 우세</span></td>
+          <td style="font-size:0.78em">S0:649 · S1:16 · S2:1238 · S3:8 · S4:727</td>
+          <td><div style='font-size:0.78em;color:#888'>2015-10-22 S0 25% — CMF 분배 + Volume Climax + Chandelier Exit</div><div style='font-size:0.78em;color:#888'>2016-04-01 S4 50% — Stage 4 (하락 추세)</div><div style='font-size:0.78em;color:#888'>2016-05-31 S4 50% — Stage 4 (하락 추세)</div><div style='font-size:0.78em;color:#888'>2016-08-01 S4 50% — Stage 4 (하락 추세)</div><div style='font-size:0.78em;color:#888'>2016-09-30 S4 50% — Stage 4 (하락 추세)</div></td>
+        </tr><tr>
+          <td><b>파크시스템스</b><br><span style="color:#666;font-size:0.78em">140860 · KOSDAQ</span></td>
+          <td class="mono" style="text-align:right">+1,179만<br><span style="font-size:0.78em;color:#888">1회</span></td>
+          <td class="mono" style="text-align:right">+688만<br><span style="font-size:0.78em;color:#888">6회</span></td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-491만<br><span style="font-size:0.78em">👤 우세</span></td>
+          <td style="font-size:0.78em">S0:268 · S1:13 · S2:262 · S3:1 · S4:5</td>
+          <td><div style='font-size:0.78em;color:#888'>2024-11-14 S2 33% — Chandelier Exit 이탈 (189173원)</div><div style='font-size:0.78em;color:#888'>2025-02-14 S2 33% — Chandelier Exit 이탈 (222523원)</div><div style='font-size:0.78em;color:#888'>2025-07-21 S2 33% — Chandelier Exit 이탈 (278193원)</div><div style='font-size:0.78em;color:#888'>2025-10-14 S2 33% — Chandelier Exit 이탈 (256386원)</div><div style='font-size:0.78em;color:#888'>2025-12-30 S3 25% — Chandelier Exit</div></td>
+        </tr><tr>
+          <td><b>HLB제넥스</b><br><span style="color:#666;font-size:0.78em">187420 · KOSDAQ</span></td>
+          <td class="mono" style="text-align:right">-2,808만<br><span style="font-size:0.78em;color:#888">32회</span></td>
+          <td class="mono" style="text-align:right">-245만<br><span style="font-size:0.78em;color:#888">54회</span></td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+2,563만<br><span style="font-size:0.78em">🤖 우세</span></td>
+          <td style="font-size:0.78em">S0:870 · S1:55 · S2:644 · S3:9 · S4:1100</td>
+          <td><div style='font-size:0.78em;color:#888'>2015-12-28 S0 25% — CMF 분배 + Chandelier Exit + Dow Theory LL</div><div style='font-size:0.78em;color:#888'>2016-02-26 S4 50% — Stage 4 (하락 추세)</div><div style='font-size:0.78em;color:#888'>2016-06-16 S2 33% — Chandelier Exit 이탈 (13161원)</div><div style='font-size:0.78em;color:#888'>2016-08-23 S2 33% — Chandelier Exit 이탈 (11794원)</div><div style='font-size:0.78em;color:#888'>2016-10-28 S0 25% — CMF 분배 + Volume Climax + Chandelier Exit</div></td>
+        </tr><tr>
+          <td><b>토모큐브</b><br><span style="color:#666;font-size:0.78em">475960 · KOSDAQ</span></td>
+          <td class="mono" style="text-align:right">+2,542만<br><span style="font-size:0.78em;color:#888">1회</span></td>
+          <td class="mono" style="text-align:right">+2,138만<br><span style="font-size:0.78em;color:#888">3회</span></td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-405만<br><span style="font-size:0.78em">👤 우세</span></td>
+          <td style="font-size:0.78em">S0:169 · S2:171</td>
+          <td><div style='font-size:0.78em;color:#888'>2025-10-17 S2 33% — Chandelier Exit 이탈 (43464원)</div><div style='font-size:0.78em;color:#888'>2025-12-16 S2 33% — Chandelier Exit 이탈 (52541원)</div><div style='font-size:0.78em;color:#888'>2026-03-31 S2 33% — Chandelier Exit 이탈 (54336원)</div></td>
+        </tr><tr>
+          <td><b>삼천당제약</b><br><span style="color:#666;font-size:0.78em">000250 · KOSDAQ</span></td>
+          <td class="mono" style="text-align:right">+4,887만<br><span style="font-size:0.78em;color:#888">14회</span></td>
+          <td class="mono" style="text-align:right">+1,450만<br><span style="font-size:0.78em;color:#888">9회</span></td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-3,437만<br><span style="font-size:0.78em">👤 우세</span></td>
+          <td style="font-size:0.78em">S0:211 · S2:421 · S3:1</td>
+          <td><div style='font-size:0.78em;color:#888'>2024-05-29 S2 33% — Chandelier Exit 이탈 (102791원)</div><div style='font-size:0.78em;color:#888'>2024-07-31 S2 33% — Chandelier Exit 이탈 (183009원)</div><div style='font-size:0.78em;color:#888'>2024-10-08 S2 33% — Chandelier Exit 이탈 (135432원)</div><div style='font-size:0.78em;color:#888'>2024-12-09 S0 25% — CMF 분배 + Chandelier Exit + Dow Theory LL</div><div style='font-size:0.78em;color:#888'>2025-03-20 S2 33% — Chandelier Exit 이탈 (175677원)</div></td>
+        </tr><tr>
+          <td><b>SM C&C</b><br><span style="color:#666;font-size:0.78em">048550 · KOSDAQ</span></td>
+          <td class="mono" style="text-align:right">+4,411만<br><span style="font-size:0.78em;color:#888">15회</span></td>
+          <td class="mono" style="text-align:right">-119만<br><span style="font-size:0.78em;color:#888">42회</span></td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-4,530만<br><span style="font-size:0.78em">👤 우세</span></td>
+          <td style="font-size:0.78em">S0:740 · S1:138 · S2:707 · S3:9 · S4:1093</td>
+          <td><div style='font-size:0.78em;color:#888'>2016-05-12 S4 50% — Stage 4 (하락 추세)</div><div style='font-size:0.78em;color:#888'>2016-07-11 S4 50% — Stage 4 (하락 추세)</div><div style='font-size:0.78em;color:#888'>2016-09-09 S4 50% — Stage 4 (하락 추세)</div><div style='font-size:0.78em;color:#888'>2016-11-08 S4 50% — Stage 4 (하락 추세)</div><div style='font-size:0.78em;color:#888'>2017-01-23 S4 50% — Stage 4 (하락 추세)</div></td>
+        </tr><tr>
+          <td><b>아미코젠</b><br><span style="color:#666;font-size:0.78em">092040 · KOSDAQ</span></td>
+          <td class="mono" style="text-align:right">+2,338만<br><span style="font-size:0.78em;color:#888">10회</span></td>
+          <td class="mono" style="text-align:right">-2,835만<br><span style="font-size:0.78em;color:#888">30회</span></td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-5,173만<br><span style="font-size:0.78em">👤 우세</span></td>
+          <td style="font-size:0.78em">S0:784 · S1:37 · S2:697 · S3:10 · S4:1300</td>
+          <td><div style='font-size:0.78em;color:#888'>2015-07-07 S2 33% — Chandelier Exit 이탈 (24141원)</div><div style='font-size:0.78em;color:#888'>2015-09-07 S2 33% — Chandelier Exit 이탈 (16691원)</div><div style='font-size:0.78em;color:#888'>2015-11-06 S2 33% — Chandelier Exit 이탈 (16153원)</div><div style='font-size:0.78em;color:#888'>2016-01-05 S4 50% — Stage 4 (하락 추세)</div><div style='font-size:0.78em;color:#888'>2016-03-07 S4 50% — Stage 4 (하락 추세)</div></td>
+        </tr><tr>
+          <td><b>진매트릭스</b><br><span style="color:#666;font-size:0.78em">109820 · KOSDAQ</span></td>
+          <td class="mono" style="text-align:right">+1,675만<br><span style="font-size:0.78em;color:#888">6회</span></td>
+          <td class="mono" style="text-align:right">+1,324만<br><span style="font-size:0.78em;color:#888">24회</span></td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-351만<br><span style="font-size:0.78em">👤 우세</span></td>
+          <td style="font-size:0.78em">S0:617 · S1:61 · S2:345 · S3:5 · S4:923</td>
+          <td><div style='font-size:0.78em;color:#888'>2019-01-31 S2 33% — Chandelier Exit 이탈 (3902원)</div><div style='font-size:0.78em;color:#888'>2019-05-20 S0 25% — CMF 분배 + Chandelier Exit + Dow Theory LL</div><div style='font-size:0.78em;color:#888'>2019-07-24 S4 50% — Stage 4 (하락 추세)</div><div style='font-size:0.78em;color:#888'>2019-09-23 S4 50% — Stage 4 (하락 추세)</div><div style='font-size:0.78em;color:#888'>2019-11-22 S4 50% — Stage 4 (하락 추세)</div></td>
+        </tr><tr>
+          <td><b>에이피알</b><br><span style="color:#666;font-size:0.78em">278470 · KOSPI</span></td>
+          <td class="mono" style="text-align:right">+3,882만<br><span style="font-size:0.78em;color:#888">3회</span></td>
+          <td class="mono" style="text-align:right">+3,259만<br><span style="font-size:0.78em;color:#888">3회</span></td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-623만<br><span style="font-size:0.78em">👤 우세</span></td>
+          <td style="font-size:0.78em">S0:169 · S2:219</td>
+          <td><div style='font-size:0.78em;color:#888'>2025-10-21 S2 33% — Chandelier Exit 이탈 (231864원)</div><div style='font-size:0.78em;color:#888'>2025-12-23 S2 33% — Chandelier Exit 이탈 (236159원)</div><div style='font-size:0.78em;color:#888'>2026-03-04 S2 33% — Chandelier Exit 이탈 (272750원)</div></td>
+        </tr><tr>
+          <td><b>오르비텍</b><br><span style="color:#666;font-size:0.78em">046120 · KOSDAQ</span></td>
+          <td class="mono" style="text-align:right">+1,552만<br><span style="font-size:0.78em;color:#888">4회</span></td>
+          <td class="mono" style="text-align:right">+137만<br><span style="font-size:0.78em;color:#888">30회</span></td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-1,415만<br><span style="font-size:0.78em">👤 우세</span></td>
+          <td style="font-size:0.78em">S0:666 · S1:84 · S2:786 · S3:9 · S4:1008</td>
+          <td><div style='font-size:0.78em;color:#888'>2016-07-26 S0 25% — CMF 분배 + MFI 과매수 + Failed Breakout</div><div style='font-size:0.78em;color:#888'>2016-09-26 S4 50% — Stage 4 (하락 추세)</div><div style='font-size:0.78em;color:#888'>2016-11-25 S4 50% — Stage 4 (하락 추세)</div><div style='font-size:0.78em;color:#888'>2017-01-24 S4 50% — Stage 4 (하락 추세)</div><div style='font-size:0.78em;color:#888'>2017-03-27 S4 50% — Stage 4 (하락 추세)</div></td>
+        </tr>
+  </table>
+</div>
+
+</div></body></html>

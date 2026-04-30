@@ -1,0 +1,174 @@
+/* 거래원 수급 대시보드 공통 스타일 */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #0b0d12;
+  color: #d8dbe0;
+  padding: 24px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.container { max-width: 1500px; margin: 0 auto; }
+
+h1 { font-size: 1.7em; color: #4fc3f7; margin-bottom: 4px; font-weight: 600; }
+h2 { font-size: 1.3em; margin-bottom: 14px; color: #eee; font-weight: 600; }
+h3 { font-size: 1.05em; color: #aaa; margin-bottom: 10px; font-weight: 500; }
+
+.subtitle { color: #6b7280; font-size: 0.85em; margin-bottom: 24px; }
+.section-title { font-size: 1.05em; color: #4fc3f7; margin-bottom: 8px; font-weight: 600; }
+.desc { color: #889; font-size: 0.82em; line-height: 1.7; margin-bottom: 12px; }
+
+.nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #1f2230;
+}
+.nav a {
+  color: #9aa0a6;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.88em;
+}
+.nav a:hover { background: #1a1d26; color: #fff; }
+.nav a.active { background: #4fc3f7; color: #0b0d12; font-weight: 600; }
+
+.card {
+  background: #14171f;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  border: 1px solid #1f2230;
+}
+.card-tight { padding: 14px; }
+
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.grid4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+@media (max-width: 900px) {
+  .grid2, .grid3, .grid4 { grid-template-columns: 1fr; }
+}
+
+/* 알림 카드 */
+.alert-row { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; }
+.alert {
+  flex: 1;
+  min-width: 220px;
+  padding: 14px 18px;
+  border-radius: 10px;
+  border: 1px solid #1f2230;
+  background: #14171f;
+}
+.alert.danger { border-color: #ef4444; background: linear-gradient(135deg, #1a1015 0%, #14171f 100%); }
+.alert.warn   { border-color: #f59e0b; background: linear-gradient(135deg, #1a1410 0%, #14171f 100%); }
+.alert.good   { border-color: #10b981; background: linear-gradient(135deg, #101a14 0%, #14171f 100%); }
+.alert .alert-title { font-size: 0.78em; color: #888; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+.alert .alert-value { font-size: 1.5em; font-weight: 700; }
+.alert .alert-detail { font-size: 0.82em; color: #aaa; margin-top: 4px; }
+
+/* KPI 카드 */
+.kpi {
+  background: #1a1d26;
+  border-radius: 10px;
+  padding: 14px;
+  text-align: center;
+}
+.kpi .kpi-label { font-size: 0.78em; color: #888; margin-bottom: 6px; }
+.kpi .kpi-value { font-size: 1.4em; font-weight: 700; color: #eee; }
+.kpi .kpi-sub { font-size: 0.78em; color: #888; margin-top: 4px; }
+
+/* 테이블 */
+table { width: 100%; border-collapse: collapse; font-size: 0.85em; }
+th {
+  background: #1a1d26;
+  padding: 10px 8px;
+  text-align: left;
+  color: #999;
+  font-weight: 500;
+  white-space: nowrap;
+  border-bottom: 1px solid #2a2d3e;
+  font-size: 0.85em;
+}
+td { padding: 9px 8px; border-bottom: 1px solid #1a1d26; vertical-align: top; }
+tr:hover td { background: #181b24; }
+tr.clickable { cursor: pointer; }
+
+.table-compact td, .table-compact th { padding: 6px 8px; font-size: 0.82em; }
+
+/* 행동 권고 배지 */
+.action-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 0.78em;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.action-hold      { background: #1f2937; color: #9ca3af; }
+.action-partial   { background: #422006; color: #fbbf24; }
+.action-sell      { background: #450a0a; color: #fca5a5; }
+.action-strong    { background: #7f1d1d; color: #fff; }
+.action-buy       { background: #064e3b; color: #6ee7b7; }
+.action-buy-strong { background: #065f46; color: #fff; }
+
+/* 등급 배지 */
+.grade-strong-sell { color: #ef4444; font-weight: 700; }
+.grade-sell-watch  { color: #f59e0b; font-weight: 600; }
+.grade-watch       { color: #9ca3af; font-weight: 500; }
+.grade-buy         { color: #10b981; font-weight: 600; }
+.grade-strong-buy  { color: #059669; font-weight: 700; }
+
+/* 국면 색상 */
+.regime-1 { color: #10b981; }  /* 상승 */
+.regime-2 { color: #f59e0b; }  /* 분배 */
+.regime-3 { color: #ef4444; }  /* 하락 */
+.regime-0 { color: #9ca3af; }  /* 중립 */
+
+/* 플래그 아이콘 */
+.flag-row { font-size: 1.05em; }
+.flag-row span { display: inline-block; margin-right: 4px; }
+
+/* 콜아웃 */
+.callout {
+  background: #0d1421;
+  border-left: 3px solid #4fc3f7;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 14px;
+  color: #b8c4d0;
+  font-size: 0.86em;
+  line-height: 1.7;
+}
+.callout.danger  { border-left-color: #ef4444; background: #1a0d0d; }
+.callout.warn    { border-left-color: #f59e0b; background: #1a150d; }
+
+/* 시그널 이유 리스트 */
+.reason-list { font-size: 0.82em; color: #aaa; }
+.reason-list li { padding: 2px 0; list-style: none; }
+.reason-list li::before { content: "• "; color: #6b7280; }
+
+/* 거래원 그룹 색상 */
+.grp-foreign { color: #10b981; }
+.grp-inst    { color: #3498db; }
+.grp-retail  { color: #ef4444; }
+
+/* 수익률 색상 */
+.ret-down { color: #10b981; }   /* 시그널 이후 하락 = 적중 */
+.ret-up   { color: #ef4444; }
+
+/* 모노스페이스 */
+.mono { font-family: 'SF Mono', Monaco, Consolas, monospace; font-variant-numeric: tabular-nums; }
+
+/* 작은 라벨 */
+.label-tag {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: #1f2937;
+  color: #9ca3af;
+  font-size: 0.75em;
+  font-weight: 500;
+}

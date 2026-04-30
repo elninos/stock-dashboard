@@ -1,0 +1,271 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8">
+<title>v14 시그널 정확도</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.grid3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; }
+.kpi { background:#1a1d26; border-radius:8px; padding:14px; }
+.kpi-label { font-size:0.85em; color:#888; margin-bottom:6px; }
+.kpi-value { font-size:1.6em; font-weight:700; }
+.kpi-sub { font-size:0.78em; color:#888; margin-top:4px; }
+</style></head><body><div class="container">
+
+<div class="nav">
+  <a href="index.html">📊 전체</a>
+  <a href="backtest_regime.html">v8~v12</a>
+  <a href="backtest_v13.html">v13</a>
+  <a href="backtest_v14.html" class="active">🎯 v14 정확도</a>
+</div>
+
+<h1>🎯 v14 — 시그널 정확도 (적중률) 측정</h1>
+<p class="subtitle">자동 매도 X, 알림 시스템으로서의 가치 평가</p>
+
+<div class="card">
+  <div class="callout">
+    <b>평가 기준:</b><br>
+    매도 강신호 (점수 ≥9): 30일 후 -5% 이하 = 적중<br>
+    매도 중신호 (5~8): 30일 후 -3% 이하 = 적중<br>
+    매수 강신호 (≥7): 30일 후 +5% 이상 = 적중<br>
+    <br>
+    <b>적중률 해석:</b> 60%↑ 신뢰 / 40~60% 보통 / 40%↓ 노이즈
+  </div>
+</div>
+
+<div class="card">
+  <h2>전체 시그널 정확도</h2>
+  
+    <div class="grid3" style="margin-bottom:18px">
+      <div class="kpi" style="border-left:4px solid #ef4444">
+        <div class="kpi-label">📉 매도 강신호 (≥9)</div>
+        <div class="kpi-value mono" style="color:#ef4444">25%</div>
+        <div class="kpi-sub">1053건 / 적중 264건</div>
+        <div class="kpi-sub">30일 평균 +16.2%</div>
+      </div>
+      <div class="kpi" style="border-left:4px solid #ef4444">
+        <div class="kpi-label">📉 매도 중신호 (5~8)</div>
+        <div class="kpi-value mono" style="color:#ef4444">30%</div>
+        <div class="kpi-sub">1135건 / 적중 339건</div>
+        <div class="kpi-sub">30일 평균 +15.5%</div>
+      </div>
+      <div class="kpi" style="border-left:4px solid #f59e0b">
+        <div class="kpi-label">📈 매수 강신호 (≥7)</div>
+        <div class="kpi-value mono" style="color:#f59e0b">56%</div>
+        <div class="kpi-sub">79건 / 적중 44건</div>
+        <div class="kpi-sub">30일 평균 +12.5%</div>
+      </div>
+    </div>
+</div>
+
+<div class="card">
+  <h2>종목별 시그널 정확도</h2>
+  <table>
+    <tr>
+      <th rowspan="2">종목</th>
+      <th colspan="3" style="text-align:center;border-right:1px solid #333">📉 매도 강신호 (≥9)</th>
+      <th colspan="3" style="text-align:center;border-right:1px solid #333">📉 매도 중신호 (5~8)</th>
+      <th colspan="2" style="text-align:center">📈 매수 강신호</th>
+    </tr>
+    <tr>
+      <th style="text-align:center">건수</th>
+      <th style="text-align:center">적중</th>
+      <th style="text-align:right;border-right:1px solid #333">평균</th>
+      <th style="text-align:center">건수</th>
+      <th style="text-align:center">적중</th>
+      <th style="text-align:right;border-right:1px solid #333">평균</th>
+      <th style="text-align:center">건수</th>
+      <th style="text-align:center">적중</th>
+    </tr>
+    <tr>
+          <td><b>필옵틱스</b></td>
+          <td class="mono" style="text-align:center">77</td>
+          <td class="mono" style="text-align:center;color:#ef4444">34%</td>
+          <td class="mono" style="text-align:right">+5.7%</td>
+          <td class="mono" style="text-align:center">73</td>
+          <td class="mono" style="text-align:center;color:#ef4444">38%</td>
+          <td class="mono" style="text-align:right">+2.3%</td>
+          <td class="mono" style="text-align:center">1</td>
+          <td class="mono" style="text-align:center;color:#ef4444">0%</td>
+        </tr><tr>
+          <td><b>보로노이</b></td>
+          <td class="mono" style="text-align:center">74</td>
+          <td class="mono" style="text-align:center;color:#ef4444">14%</td>
+          <td class="mono" style="text-align:right">+22.6%</td>
+          <td class="mono" style="text-align:center">57</td>
+          <td class="mono" style="text-align:center;color:#ef4444">30%</td>
+          <td class="mono" style="text-align:right">+15.4%</td>
+          <td class="mono" style="text-align:center">15</td>
+          <td class="mono" style="text-align:center;color:#10b981">100%</td>
+        </tr><tr>
+          <td><b>SK하이닉스</b></td>
+          <td class="mono" style="text-align:center">70</td>
+          <td class="mono" style="text-align:center;color:#ef4444">10%</td>
+          <td class="mono" style="text-align:right">+23.5%</td>
+          <td class="mono" style="text-align:center">44</td>
+          <td class="mono" style="text-align:center;color:#ef4444">20%</td>
+          <td class="mono" style="text-align:right">+26.3%</td>
+          <td class="mono" style="text-align:center">4</td>
+          <td class="mono" style="text-align:center;color:#10b981">100%</td>
+        </tr><tr>
+          <td><b>토모큐브</b></td>
+          <td class="mono" style="text-align:center">69</td>
+          <td class="mono" style="text-align:center;color:#ef4444">30%</td>
+          <td class="mono" style="text-align:right">+16.6%</td>
+          <td class="mono" style="text-align:center">80</td>
+          <td class="mono" style="text-align:center;color:#ef4444">32%</td>
+          <td class="mono" style="text-align:right">+18.1%</td>
+          <td class="mono" style="text-align:center">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444">0%</td>
+        </tr><tr>
+          <td><b>이오테크닉스</b></td>
+          <td class="mono" style="text-align:center">63</td>
+          <td class="mono" style="text-align:center;color:#ef4444">5%</td>
+          <td class="mono" style="text-align:right">+19.2%</td>
+          <td class="mono" style="text-align:center">61</td>
+          <td class="mono" style="text-align:center;color:#ef4444">7%</td>
+          <td class="mono" style="text-align:right">+16.6%</td>
+          <td class="mono" style="text-align:center">4</td>
+          <td class="mono" style="text-align:center;color:#10b981">75%</td>
+        </tr><tr>
+          <td><b>파크시스템스</b></td>
+          <td class="mono" style="text-align:center">62</td>
+          <td class="mono" style="text-align:center;color:#f59e0b">44%</td>
+          <td class="mono" style="text-align:right">-0.3%</td>
+          <td class="mono" style="text-align:center">53</td>
+          <td class="mono" style="text-align:center;color:#f59e0b">53%</td>
+          <td class="mono" style="text-align:right">-0.2%</td>
+          <td class="mono" style="text-align:center">3</td>
+          <td class="mono" style="text-align:center;color:#10b981">67%</td>
+        </tr><tr>
+          <td><b>에이피알</b></td>
+          <td class="mono" style="text-align:center">62</td>
+          <td class="mono" style="text-align:center;color:#ef4444">11%</td>
+          <td class="mono" style="text-align:right">+11.7%</td>
+          <td class="mono" style="text-align:center">47</td>
+          <td class="mono" style="text-align:center;color:#ef4444">9%</td>
+          <td class="mono" style="text-align:right">+14.6%</td>
+          <td class="mono" style="text-align:center">3</td>
+          <td class="mono" style="text-align:center;color:#10b981">100%</td>
+        </tr><tr>
+          <td><b>대한광통신</b></td>
+          <td class="mono" style="text-align:center">61</td>
+          <td class="mono" style="text-align:center;color:#ef4444">3%</td>
+          <td class="mono" style="text-align:right">+87.4%</td>
+          <td class="mono" style="text-align:center">88</td>
+          <td class="mono" style="text-align:center;color:#ef4444">7%</td>
+          <td class="mono" style="text-align:right">+56.1%</td>
+          <td class="mono" style="text-align:center">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444">0%</td>
+        </tr><tr>
+          <td><b>NAVER</b></td>
+          <td class="mono" style="text-align:center">60</td>
+          <td class="mono" style="text-align:center;color:#f59e0b">42%</td>
+          <td class="mono" style="text-align:right">+1.0%</td>
+          <td class="mono" style="text-align:center">51</td>
+          <td class="mono" style="text-align:center;color:#f59e0b">45%</td>
+          <td class="mono" style="text-align:right">+0.0%</td>
+          <td class="mono" style="text-align:center">13</td>
+          <td class="mono" style="text-align:center;color:#ef4444">0%</td>
+        </tr><tr>
+          <td><b>코오롱티슈진</b></td>
+          <td class="mono" style="text-align:center">60</td>
+          <td class="mono" style="text-align:center;color:#ef4444">28%</td>
+          <td class="mono" style="text-align:right">+10.5%</td>
+          <td class="mono" style="text-align:center">69</td>
+          <td class="mono" style="text-align:center;color:#ef4444">13%</td>
+          <td class="mono" style="text-align:right">+24.9%</td>
+          <td class="mono" style="text-align:center">3</td>
+          <td class="mono" style="text-align:center;color:#ef4444">33%</td>
+        </tr><tr>
+          <td><b>두산</b></td>
+          <td class="mono" style="text-align:center">59</td>
+          <td class="mono" style="text-align:center;color:#ef4444">20%</td>
+          <td class="mono" style="text-align:right">+16.8%</td>
+          <td class="mono" style="text-align:center">27</td>
+          <td class="mono" style="text-align:center;color:#ef4444">37%</td>
+          <td class="mono" style="text-align:right">+15.2%</td>
+          <td class="mono" style="text-align:center">4</td>
+          <td class="mono" style="text-align:center;color:#10b981">75%</td>
+        </tr><tr>
+          <td><b>콜마비앤에이치</b></td>
+          <td class="mono" style="text-align:center">51</td>
+          <td class="mono" style="text-align:center;color:#ef4444">35%</td>
+          <td class="mono" style="text-align:right">-1.2%</td>
+          <td class="mono" style="text-align:center">61</td>
+          <td class="mono" style="text-align:center;color:#f59e0b">49%</td>
+          <td class="mono" style="text-align:right">-2.1%</td>
+          <td class="mono" style="text-align:center">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444">0%</td>
+        </tr><tr>
+          <td><b>에이프로젠</b></td>
+          <td class="mono" style="text-align:center">47</td>
+          <td class="mono" style="text-align:center;color:#10b981">66%</td>
+          <td class="mono" style="text-align:right">-7.9%</td>
+          <td class="mono" style="text-align:center">96</td>
+          <td class="mono" style="text-align:center;color:#f59e0b">43%</td>
+          <td class="mono" style="text-align:right">-6.4%</td>
+          <td class="mono" style="text-align:center">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444">0%</td>
+        </tr><tr>
+          <td><b>RF머트리얼즈</b></td>
+          <td class="mono" style="text-align:center">45</td>
+          <td class="mono" style="text-align:center;color:#ef4444">2%</td>
+          <td class="mono" style="text-align:right">+51.8%</td>
+          <td class="mono" style="text-align:center">68</td>
+          <td class="mono" style="text-align:center;color:#ef4444">3%</td>
+          <td class="mono" style="text-align:right">+65.0%</td>
+          <td class="mono" style="text-align:center">2</td>
+          <td class="mono" style="text-align:center;color:#10b981">100%</td>
+        </tr><tr>
+          <td><b>셀트리온</b></td>
+          <td class="mono" style="text-align:center">43</td>
+          <td class="mono" style="text-align:center;color:#ef4444">2%</td>
+          <td class="mono" style="text-align:right">+8.0%</td>
+          <td class="mono" style="text-align:center">35</td>
+          <td class="mono" style="text-align:center;color:#ef4444">17%</td>
+          <td class="mono" style="text-align:right">+6.5%</td>
+          <td class="mono" style="text-align:center">16</td>
+          <td class="mono" style="text-align:center;color:#ef4444">38%</td>
+        </tr><tr>
+          <td><b>파마리서치</b></td>
+          <td class="mono" style="text-align:center">42</td>
+          <td class="mono" style="text-align:center;color:#f59e0b">55%</td>
+          <td class="mono" style="text-align:right">-3.5%</td>
+          <td class="mono" style="text-align:center">40</td>
+          <td class="mono" style="text-align:center;color:#10b981">68%</td>
+          <td class="mono" style="text-align:right">-10.4%</td>
+          <td class="mono" style="text-align:center">5</td>
+          <td class="mono" style="text-align:center;color:#ef4444">0%</td>
+        </tr><tr>
+          <td><b>코아스템켐온</b></td>
+          <td class="mono" style="text-align:center">42</td>
+          <td class="mono" style="text-align:center;color:#f59e0b">60%</td>
+          <td class="mono" style="text-align:right">-0.4%</td>
+          <td class="mono" style="text-align:center">86</td>
+          <td class="mono" style="text-align:center;color:#10b981">65%</td>
+          <td class="mono" style="text-align:right">-0.0%</td>
+          <td class="mono" style="text-align:center">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444">0%</td>
+        </tr><tr>
+          <td><b>리노공업</b></td>
+          <td class="mono" style="text-align:center">37</td>
+          <td class="mono" style="text-align:center;color:#ef4444">5%</td>
+          <td class="mono" style="text-align:right">+26.8%</td>
+          <td class="mono" style="text-align:center">54</td>
+          <td class="mono" style="text-align:center;color:#ef4444">7%</td>
+          <td class="mono" style="text-align:right">+20.0%</td>
+          <td class="mono" style="text-align:center">3</td>
+          <td class="mono" style="text-align:center;color:#10b981">100%</td>
+        </tr><tr>
+          <td><b>오스코텍</b></td>
+          <td class="mono" style="text-align:center">29</td>
+          <td class="mono" style="text-align:center;color:#ef4444">21%</td>
+          <td class="mono" style="text-align:right">+6.8%</td>
+          <td class="mono" style="text-align:center">45</td>
+          <td class="mono" style="text-align:center;color:#ef4444">20%</td>
+          <td class="mono" style="text-align:right">+12.7%</td>
+          <td class="mono" style="text-align:center">3</td>
+          <td class="mono" style="text-align:center;color:#10b981">67%</td>
+        </tr>
+  </table>
+</div>
+
+</div></body></html>

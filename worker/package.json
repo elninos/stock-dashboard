@@ -1,0 +1,14 @@
+{
+  "name": "stock-dashboard-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "kv:upload": "node scripts/upload-kv.js"
+  },
+  "devDependencies": {
+    "wrangler": "^3.99.0"
+  }
+}

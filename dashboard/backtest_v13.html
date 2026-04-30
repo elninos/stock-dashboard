@@ -1,0 +1,172 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8">
+<title>v13 HOLD-First</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.kpi-strip { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:18px; }
+.kpi-strip .kpi-mini { flex:1; min-width:160px; background:#181b23; border-radius:8px; padding:12px; text-align:center; }
+.kpi-strip .num { font-size:1.4em; font-weight:700; color:#fff; }
+.kpi-strip .lbl { font-size:0.75em; color:#888; margin-top:4px; }
+</style></head><body><div class="container">
+
+<div class="nav">
+  <a href="index.html">📊 전체</a>
+  <a href="backtest_regime.html">v8~v12</a>
+  <a href="backtest_v13.html" class="active">🎯 v13 HOLD-First</a>
+</div>
+
+<h1>🎯 v13 HOLD-First — 강세 종목 보호 + 손실만 손절</h1>
+<p class="subtitle">한번 +30% 달성 종목은 트레일링만, 손실 종목은 적극 손절</p>
+
+<div class="card">
+  <div class="callout">
+    <b>v13 룰:</b><br>
+    • <b>+30% 달성 종목</b> (강세 추세): 트레일링 -25%만 적용 + 매우 강한 시그널만 (점수 13+)<br>
+    • <b>이익 못본 종목</b>: 손실 진행 시 적극 매도<br>
+    • <b>큰 손실 (-15%↓)</b>: 즉시 손절<br>
+    • <b>중간 손실 (-10%~-15%)</b>: 시그널 강하면 1/2 매도<br>
+    • <b>중립 (0~30%)</b>: 표준 시그널<br>
+  </div>
+</div>
+
+<div class="kpi-strip">
+  <div class="kpi-mini" style="border:2px solid #6b7280">
+    <div class="lbl">실제</div>
+    <div class="num mono">+2.89억</div>
+    <div class="lbl">16종목</div>
+  </div>
+  <div class="kpi-mini" style="border:2px solid #ef4444">
+    <div class="lbl">🎯 v13 HOLD-First</div>
+    <div class="num mono">+8,201만</div>
+    <div class="lbl mono" style="color:#ef4444">-2.07억</div>
+    <div class="lbl">v13 우세 1/16</div>
+  </div>
+</div>
+
+<div class="card">
+  <h2>종목별 결과 (개선순)</h2>
+  <table>
+    <tr>
+      <th>종목</th>
+      <th style="text-align:right">실제</th>
+      <th style="text-align:right">v13</th>
+      <th style="text-align:right">차이</th>
+      <th style="text-align:center">최고이익</th>
+      <th>매도 시점</th>
+    </tr>
+    <tr>
+          <td><b>NAVER</b><br><span style="color:#666;font-size:0.78em">035420</span></td>
+          <td class="mono" style="text-align:right">-452만</td>
+          <td class="mono" style="text-align:right">-142만<br><span style="font-size:0.78em;color:#888">6회</span></td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+310만<br><span style="font-size:0.78em">🤖</span></td>
+          <td class="mono" style="text-align:center">16%</td>
+          <td><span style='font-size:0.78em;color:#888'>2025-09-24 50% 이익 못본 종목 손실 진행</span><br><span style='font-size:0.78em;color:#888'>2025-10-27 33% 표준 매도</span><br><span style='font-size:0.78em;color:#888'>2025-11-27 33% 표준 매도</span><br><span style='font-size:0.78em;color:#888'>2026-01-21 50% 이익 못본 종목 손실 진행</span><br><span style='font-size:0.78em;color:#888'>2026-03-12 50% 손절 -10% 이하</span></td>
+        </tr><tr>
+          <td><b>코오롱티슈진</b><br><span style="color:#666;font-size:0.78em">950160</span></td>
+          <td class="mono" style="text-align:right">-80만</td>
+          <td class="mono" style="text-align:right">-84만<br><span style="font-size:0.78em;color:#888">1회</span></td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-4만<br><span style="font-size:0.78em">👤</span></td>
+          <td class="mono" style="text-align:center">7%</td>
+          <td><span style='font-size:0.78em;color:#888'>2026-04-03 50% 손절 -10% 이하</span></td>
+        </tr><tr>
+          <td><b>셀트리온</b><br><span style="color:#666;font-size:0.78em">068270</span></td>
+          <td class="mono" style="text-align:right">+41만</td>
+          <td class="mono" style="text-align:right">+26만<br><span style="font-size:0.78em;color:#888">2회</span></td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-15만<br><span style="font-size:0.78em">👤</span></td>
+          <td class="mono" style="text-align:center">20%</td>
+          <td><span style='font-size:0.78em;color:#888'>2026-03-16 50% 이익 못본 종목 손실 진행</span><br><span style='font-size:0.78em;color:#888'>2026-04-23 33% 표준 매도</span></td>
+        </tr><tr>
+          <td><b>오스코텍</b><br><span style="color:#666;font-size:0.78em">039200</span></td>
+          <td class="mono" style="text-align:right">+16만</td>
+          <td class="mono" style="text-align:right">-2만<br><span style="font-size:0.78em;color:#888">4회</span></td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-18만<br><span style="font-size:0.78em">👤</span></td>
+          <td class="mono" style="text-align:center">27%</td>
+          <td><span style='font-size:0.78em;color:#888'>2025-12-26 50% 이익 못본 종목 손실 진행</span><br><span style='font-size:0.78em;color:#888'>2026-02-09 50% 이익 못본 종목 손실 진행</span><br><span style='font-size:0.78em;color:#888'>2026-03-17 33% 표준 매도</span><br><span style='font-size:0.78em;color:#888'>2026-04-20 50% 이익 못본 종목 손실 진행</span></td>
+        </tr><tr>
+          <td><b>필옵틱스</b><br><span style="color:#666;font-size:0.78em">161580</span></td>
+          <td class="mono" style="text-align:right">-65만</td>
+          <td class="mono" style="text-align:right">-95만<br><span style="font-size:0.78em;color:#888">6회</span></td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-31만<br><span style="font-size:0.78em">👤</span></td>
+          <td class="mono" style="text-align:center">18%</td>
+          <td><span style='font-size:0.78em;color:#888'>2025-11-10 50% 이익 못본 종목 손실 진행</span><br><span style='font-size:0.78em;color:#888'>2025-12-10 50% 손절 -10% 이하</span><br><span style='font-size:0.78em;color:#888'>2026-01-09 50% 이익 못본 종목 손실 진행</span><br><span style='font-size:0.78em;color:#888'>2026-02-09 33% 표준 매도</span><br><span style='font-size:0.78em;color:#888'>2026-03-12 50% 이익 못본 종목 손실 진행</span></td>
+        </tr><tr>
+          <td><b>SK하이닉스</b><br><span style="color:#666;font-size:0.78em">000660</span></td>
+          <td class="mono" style="text-align:right">+155만</td>
+          <td class="mono" style="text-align:right">+110만<br><span style="font-size:0.78em;color:#888">1회</span></td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-45만<br><span style="font-size:0.78em">👤</span></td>
+          <td class="mono" style="text-align:center">27%</td>
+          <td><span style='font-size:0.78em;color:#888'>2026-03-25 33% 표준 매도</span></td>
+        </tr><tr>
+          <td><b>리노공업</b><br><span style="color:#666;font-size:0.78em">058470</span></td>
+          <td class="mono" style="text-align:right">+149만</td>
+          <td class="mono" style="text-align:right">+26만<br><span style="font-size:0.78em;color:#888">8회</span></td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-123만<br><span style="font-size:0.78em">👤</span></td>
+          <td class="mono" style="text-align:center">155%</td>
+          <td><span style='font-size:0.78em;color:#888'>2025-08-05 50% 이익 못본 종목 손실 진행</span><br><span style='font-size:0.78em;color:#888'>2025-09-11 50% 이익 못본 종목 손실 진행</span><br><span style='font-size:0.78em;color:#888'>2025-10-20 33% 표준 매도</span><br><span style='font-size:0.78em;color:#888'>2025-11-19 33% 표준 매도</span><br><span style='font-size:0.78em;color:#888'>2025-12-23 33% 극강 시그널 14</span></td>
+        </tr><tr>
+          <td><b>파크시스템스</b><br><span style="color:#666;font-size:0.78em">140860</span></td>
+          <td class="mono" style="text-align:right">+213만</td>
+          <td class="mono" style="text-align:right">-79만<br><span style="font-size:0.78em;color:#888">8회</span></td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-292만<br><span style="font-size:0.78em">👤</span></td>
+          <td class="mono" style="text-align:center">26%</td>
+          <td><span style='font-size:0.78em;color:#888'>2025-08-08 50% 이익 못본 종목 손실 진행</span><br><span style='font-size:0.78em;color:#888'>2025-09-08 50% 이익 못본 종목 손실 진행</span><br><span style='font-size:0.78em;color:#888'>2025-10-10 33% 표준 매도</span><br><span style='font-size:0.78em;color:#888'>2025-11-10 50% 이익 못본 종목 손실 진행</span><br><span style='font-size:0.78em;color:#888'>2025-12-10 50% 이익 못본 종목 손실 진행</span></td>
+        </tr><tr>
+          <td><b>보로노이</b><br><span style="color:#666;font-size:0.78em">310210</span></td>
+          <td class="mono" style="text-align:right">+568만</td>
+          <td class="mono" style="text-align:right">-36만<br><span style="font-size:0.78em;color:#888">4회</span></td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-603만<br><span style="font-size:0.78em">👤</span></td>
+          <td class="mono" style="text-align:center">25%</td>
+          <td><span style='font-size:0.78em;color:#888'>2025-11-17 33% 표준 매도</span><br><span style='font-size:0.78em;color:#888'>2025-12-22 50% 이익 못본 종목 손실 진행</span><br><span style='font-size:0.78em;color:#888'>2026-01-21 100% 손절 -15% 이하</span><br><span style='font-size:0.78em;color:#888'>2026-04-07 50% 이익 못본 종목 손실 진행</span></td>
+        </tr><tr>
+          <td><b>이오테크닉스</b><br><span style="color:#666;font-size:0.78em">039030</span></td>
+          <td class="mono" style="text-align:right">+2,041만</td>
+          <td class="mono" style="text-align:right">+921만<br><span style="font-size:0.78em;color:#888">7회</span></td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-1,120만<br><span style="font-size:0.78em">👤</span></td>
+          <td class="mono" style="text-align:center">112%</td>
+          <td><span style='font-size:0.78em;color:#888'>2025-07-17 33% 표준 매도</span><br><span style='font-size:0.78em;color:#888'>2025-08-27 33% 표준 매도</span><br><span style='font-size:0.78em;color:#888'>2025-10-02 33% 표준 매도</span><br><span style='font-size:0.78em;color:#888'>2025-11-03 33% 표준 매도</span><br><span style='font-size:0.78em;color:#888'>2026-01-29 33% 극강 시그널 16</span></td>
+        </tr><tr>
+          <td><b>토모큐브</b><br><span style="color:#666;font-size:0.78em">475960</span></td>
+          <td class="mono" style="text-align:right">+2,542만</td>
+          <td class="mono" style="text-align:right">+672만<br><span style="font-size:0.78em;color:#888">9회</span></td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-1,870만<br><span style="font-size:0.78em">👤</span></td>
+          <td class="mono" style="text-align:center">107%</td>
+          <td><span style='font-size:0.78em;color:#888'>2025-06-24 33% 표준 매도</span><br><span style='font-size:0.78em;color:#888'>2025-07-24 50% 이익 못본 종목 손실 진행</span><br><span style='font-size:0.78em;color:#888'>2025-09-22 33% 극강 시그널 14</span><br><span style='font-size:0.78em;color:#888'>2025-10-22 50% 트레일링 (peak 107% → 현재 60%)</span><br><span style='font-size:0.78em;color:#888'>2025-11-21 50% 트레일링 (peak 107% → 현재 32%)</span></td>
+        </tr><tr>
+          <td><b>에이피알</b><br><span style="color:#666;font-size:0.78em">278470</span></td>
+          <td class="mono" style="text-align:right">+2,285만</td>
+          <td class="mono" style="text-align:right">+284만<br><span style="font-size:0.78em;color:#888">8회</span></td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-2,001만<br><span style="font-size:0.78em">👤</span></td>
+          <td class="mono" style="text-align:center">210%</td>
+          <td><span style='font-size:0.78em;color:#888'>2025-07-16 33% 극강 시그널 16</span><br><span style='font-size:0.78em;color:#888'>2025-08-18 50% 트레일링 (peak 210% → 현재 12%)</span><br><span style='font-size:0.78em;color:#888'>2025-09-19 50% 트레일링 (peak 210% → 현재 7%)</span><br><span style='font-size:0.78em;color:#888'>2025-10-20 50% 트레일링 (peak 210% → 현재 11%)</span><br><span style='font-size:0.78em;color:#888'>2025-11-21 50% 트레일링 (peak 210% → 현재 11%)</span></td>
+        </tr><tr>
+          <td><b>RF머트리얼즈</b><br><span style="color:#666;font-size:0.78em">327260</span></td>
+          <td class="mono" style="text-align:right">+4,640만</td>
+          <td class="mono" style="text-align:right">+2,500만<br><span style="font-size:0.78em;color:#888">2회</span></td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-2,140만<br><span style="font-size:0.78em">👤</span></td>
+          <td class="mono" style="text-align:center">125%</td>
+          <td><span style='font-size:0.78em;color:#888'>2026-02-13 50% 이익 못본 종목 손실 진행</span><br><span style='font-size:0.78em;color:#888'>2026-03-17 50% 트레일링 (peak 63% → 현재 34%)</span></td>
+        </tr><tr>
+          <td><b>파마리서치</b><br><span style="color:#666;font-size:0.78em">214450</span></td>
+          <td class="mono" style="text-align:right">+2,062만</td>
+          <td class="mono" style="text-align:right">-194만<br><span style="font-size:0.78em;color:#888">3회</span></td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-2,256만<br><span style="font-size:0.78em">👤</span></td>
+          <td class="mono" style="text-align:center">6%</td>
+          <td><span style='font-size:0.78em;color:#888'>2025-09-24 50% 이익 못본 종목 손실 진행</span><br><span style='font-size:0.78em;color:#888'>2025-10-30 50% 이익 못본 종목 손실 진행</span><br><span style='font-size:0.78em;color:#888'>2025-12-01 100% 손절 -15% 이하</span></td>
+        </tr><tr>
+          <td><b>두산</b><br><span style="color:#666;font-size:0.78em">000150</span></td>
+          <td class="mono" style="text-align:right">+7,453만</td>
+          <td class="mono" style="text-align:right">+2,872만<br><span style="font-size:0.78em;color:#888">5회</span></td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-4,580만<br><span style="font-size:0.78em">👤</span></td>
+          <td class="mono" style="text-align:center">190%</td>
+          <td><span style='font-size:0.78em;color:#888'>2025-09-26 50% 이익 못본 종목 손실 진행</span><br><span style='font-size:0.78em;color:#888'>2025-11-06 33% 극강 시그널 16</span><br><span style='font-size:0.78em;color:#888'>2025-12-12 50% 트레일링 (peak 88% → 현재 61%)</span><br><span style='font-size:0.78em;color:#888'>2026-01-21 50% 트레일링 (peak 88% → 현재 55%)</span><br><span style='font-size:0.78em;color:#888'>2026-03-11 50% 트레일링 (peak 141% → 현재 107%)</span></td>
+        </tr><tr>
+          <td><b>대한광통신</b><br><span style="color:#666;font-size:0.78em">010170</span></td>
+          <td class="mono" style="text-align:right">+7,354만</td>
+          <td class="mono" style="text-align:right">+1,420만<br><span style="font-size:0.78em;color:#888">5회</span></td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-5,933만<br><span style="font-size:0.78em">👤</span></td>
+          <td class="mono" style="text-align:center">547%</td>
+          <td><span style='font-size:0.78em;color:#888'>2025-11-07 100% 손절 -15% 이하</span><br><span style='font-size:0.78em;color:#888'>2025-12-08 100% 손절 -15% 이하</span><br><span style='font-size:0.78em;color:#888'>2026-01-15 33% 극강 시그널 14</span><br><span style='font-size:0.78em;color:#888'>2026-02-26 33% 극강 시그널 14</span><br><span style='font-size:0.78em;color:#888'>2026-03-31 50% 트레일링 (peak 168% → 현재 109%)</span></td>
+        </tr>
+  </table>
+</div>
+
+</div></body></html>

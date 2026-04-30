@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>매매 스타일 분석</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.diag-card {
+  background: #181b23;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 14px;
+  border-left: 4px solid #4fc3f7;
+}
+.diag-card.warn  { border-left-color: #f59e0b; }
+.diag-card.bad   { border-left-color: #ef4444; }
+.diag-card.good  { border-left-color: #10b981; }
+.diag-title { font-weight: 600; margin-bottom: 6px; font-size: 1.0em; }
+.diag-detail { color: #aaa; font-size: 0.86em; line-height: 1.7; }
+.suggest {
+  background: #0d1421;
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin-top: 8px;
+  border-left: 2px solid #4fc3f7;
+  color: #b8c4d0;
+  font-size: 0.85em;
+}
+.kpi-strip { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 18px; }
+.kpi-strip .kpi-mini {
+  flex: 1; min-width: 140px; background: #181b23; border-radius: 8px;
+  padding: 14px; text-align: center;
+}
+.kpi-strip .num { font-size: 1.6em; font-weight: 700; color: #fff; }
+.kpi-strip .lbl { font-size: 0.78em; color: #888; margin-top: 4px; }
+.kpi-strip .sub { font-size: 0.78em; color: #6b7280; margin-top: 2px; }
+ul.simple { padding-left: 22px; line-height: 1.9; }
+ul.simple li { color: #aaa; font-size: 0.86em; }
+ul.simple li b { color: #ddd; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="nav">
+  <a href="index.html">📊 전체 대시보드</a>
+  <a href="profit_taking.html">💰 익절 타이밍</a>
+  <a href="status.html">📋 현재 상황</a>
+  <a href="trading_style.html" class="active">🎯 매매 스타일</a>
+</div>
+
+<h1>매매 스타일 분석</h1>
+<p class="subtitle">11년치 거래 3,299건 · 233개 종목 · 매수 2,610건 / 매도 689건</p>
+
+<!-- 핵심 KPI -->
+<div class="kpi-strip">
+  <div class="kpi-mini">
+    <div class="num" style="color:#ef4444">49.6%</div>
+    <div class="lbl">승률</div>
+    <div class="sub">1,290승 / 1,310패</div>
+  </div>
+  <div class="kpi-mini">
+    <div class="num">433일</div>
+    <div class="lbl">평균 보유</div>
+    <div class="sub">중앙값 272일</div>
+  </div>
+  <div class="kpi-mini">
+    <div class="num" style="color:#ef4444">0.83</div>
+    <div class="lbl">Profit Factor</div>
+    <div class="sub">총이익 / 총손실</div>
+  </div>
+  <div class="kpi-mini">
+    <div class="num">+756.0% / -40.4%</div>
+    <div class="lbl">평균 이익 / 손실</div>
+    <div class="sub">비율 18.72x</div>
+  </div>
+  <div class="kpi-mini">
+    <div class="num">74%</div>
+    <div class="lbl">장기보유 (90일+)</div>
+    <div class="sub">1,912건</div>
+  </div>
+</div>
+
+<!-- 진단 -->
+<div class="card">
+  <h2>🔍 매매 스타일 진단</h2>
+
+  <div class="diag-card warn">
+    <div class="diag-title">⚠️ 1. 분할매수 → 평단 낮추기 → 손실 키우기 패턴</div>
+    <div class="diag-detail">
+      종목당 평균 매수 횟수 <b>11.5회</b>.
+      10회 이상 매수 종목이 <b>76개</b> (전체 227개 중 33%).<br>
+      <b>핵심 발견:</b> 매수 횟수가 많을수록 평균 수익률이 떨어짐.
+      <table class="table-compact" style="margin-top:8px;width:auto">
+        <tr><th>매수 횟수</th><th>종목수</th><th>평균 수익률</th><th>승률</th></tr>
+        <tr>
+          <td>1회</td>
+          <td class="mono" style="text-align:center">47</td>
+          <td class="mono ret-down" style="text-align:right">+39.4%</td>
+          <td class="mono" style="text-align:center">87%</td>
+        </tr><tr>
+          <td>2~3회</td>
+          <td class="mono" style="text-align:center">42</td>
+          <td class="mono ret-down" style="text-align:right">+22.7%</td>
+          <td class="mono" style="text-align:center">74%</td>
+        </tr><tr>
+          <td>4~9회</td>
+          <td class="mono" style="text-align:center">55</td>
+          <td class="mono ret-up" style="text-align:right">-3.7%</td>
+          <td class="mono" style="text-align:center">58%</td>
+        </tr><tr>
+          <td>10~19회</td>
+          <td class="mono" style="text-align:center">35</td>
+          <td class="mono ret-up" style="text-align:right">-14.5%</td>
+          <td class="mono" style="text-align:center">40%</td>
+        </tr><tr>
+          <td>20회+</td>
+          <td class="mono" style="text-align:center">38</td>
+          <td class="mono ret-up" style="text-align:right">-11.7%</td>
+          <td class="mono" style="text-align:center">42%</td>
+        </tr>
+      </table>
+      <div class="suggest">
+        💡 <b>제안:</b> 같은 종목 4회 이상 매수 시 자동 경고. "평단 낮추기" 시도가 손실로 이어지는 구간.
+        대신 <b>익절은 분할로, 손절은 한 번에</b>로 룰 변경.
+      </div>
+    </div>
+  </div>
+
+  <div class="diag-card bad">
+    <div class="diag-title">🚨 2. 좀비 종목 — 손절 못함 패턴 (63개)</div>
+    <div class="diag-detail">
+      매수 5회 이상 + 1년 이상 매수 안함 + 매도가 매수의 30% 미만 = "버려진 종목".<br>
+      현재 미실현 손실로 깔려있을 가능성 높음.
+      <div class="suggest">
+        💡 <b>제안:</b> 1년 이상 미매수 + 매도율 30% 미만 종목 자동 알림.
+        분기마다 <b>좀비 청산일(zombie cleanup)</b> 정해서 일괄 정리.
+      </div>
+    </div>
+  </div>
+
+  <div class="diag-card warn">
+    <div class="diag-title">⚠️ 3. 승률 50%인데 Profit Factor 0.83</div>
+    <div class="diag-detail">
+      승률 49.6% (사실상 동전던지기) · 평균 이익 756.0% vs 평균 손실 -40.4%.<br>
+      이익/손실 비율 18.72배 — 이익이 더 크게 나는 구조.
+      <div class="suggest">
+        💡 <b>제안:</b> 승률을 60%로 올리는 것보다 <b>손실 종목의 평균 손실을 줄이는 것</b>이 더 쉬움.
+        손절 룰 (-7% / -10%) 적용 시 평균 손실 -40.4% → -8%로 개선 가능.
+      </div>
+    </div>
+  </div>
+
+  <div class="diag-card good">
+    <div class="diag-title">✓ 4. 장기보유 성향은 강점</div>
+    <div class="diag-detail">
+      74%가 90일 이상 보유 — 단타 매매 손실(수수료/세금)이 적음.<br>
+      평균 보유 433일 (1.2년).
+      <div class="suggest">
+        💡 <b>유지:</b> 이 강점은 그대로. 다만 "장기보유 = 손절 안 함"이 되지 않게 주의.
+      </div>
+    </div>
+  </div>
+
+  <div class="diag-card warn">
+    <div class="diag-title">⚠️ 5. 매도 후 재매수 188회 — 상승 추격 가능성</div>
+    <div class="diag-detail">
+      판 종목을 다시 산 횟수 188회. 상승 추격 매수일 가능성 (판 가격보다 비싸게 다시 사는 경우).
+      <div class="suggest">
+        💡 <b>제안:</b> 매도 후 재매수 시 "이전 매도가" 알림 표시. 상승 추격 vs 단순 재진입 구분.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 좀비 종목 -->
+<div class="card">
+  <h2>🚨 좀비 종목 청산 후보 (TOP 15, 매수금액 큰 순)</h2>
+  <p class="desc">
+    매수 5회 이상 + 마지막 매수 1년+ + 매도/매수 비율 30% 미만<br>
+    이 종목들을 위해 자본이 묶여 있는 상태. 분기별 정리 필요.
+  </p>
+  <table>
+    <tr>
+      <th>종목</th>
+      <th style="text-align:center">매수 회수</th>
+      <th style="text-align:center">매도 회수</th>
+      <th style="text-align:center">마지막 매수</th>
+      <th style="text-align:right">매수 합계</th>
+      <th style="text-align:right">실현손익</th>
+    </tr>
+    <tr>
+          <td><b>HLB제넥스</b></td>
+          <td class="mono" style="text-align:center">108</td>
+          <td class="mono" style="text-align:center">32 <span style="color:#666">(30%)</span></td>
+          <td class="mono" style="text-align:center">921일전</td>
+          <td class="mono" style="text-align:right">7,975만</td>
+          <td class="mono ret-up" style="text-align:right">-2,840만</td>
+        </tr><tr>
+          <td><b>진매트릭스</b></td>
+          <td class="mono" style="text-align:center">34</td>
+          <td class="mono" style="text-align:center">6 <span style="color:#666">(18%)</span></td>
+          <td class="mono" style="text-align:center">1,398일전</td>
+          <td class="mono" style="text-align:right">6,789만</td>
+          <td class="mono ret-up" style="text-align:right">+1,623만</td>
+        </tr><tr>
+          <td><b>코아스템켐온</b></td>
+          <td class="mono" style="text-align:center">34</td>
+          <td class="mono" style="text-align:center">5 <span style="color:#666">(15%)</span></td>
+          <td class="mono" style="text-align:center">1,706일전</td>
+          <td class="mono" style="text-align:right">4,775만</td>
+          <td class="mono ret-up" style="text-align:right">-506만</td>
+        </tr><tr>
+          <td><b>아이센스</b></td>
+          <td class="mono" style="text-align:center">11</td>
+          <td class="mono" style="text-align:center">2 <span style="color:#666">(18%)</span></td>
+          <td class="mono" style="text-align:center">2,733일전</td>
+          <td class="mono" style="text-align:right">3,360만</td>
+          <td class="mono ret-up" style="text-align:right">+164만</td>
+        </tr><tr>
+          <td><b>우성아이비</b></td>
+          <td class="mono" style="text-align:center">19</td>
+          <td class="mono" style="text-align:center">4 <span style="color:#666">(21%)</span></td>
+          <td class="mono" style="text-align:center">1,080일전</td>
+          <td class="mono" style="text-align:right">3,255만</td>
+          <td class="mono ret-up" style="text-align:right">-2,300만</td>
+        </tr><tr>
+          <td><b>카카오</b></td>
+          <td class="mono" style="text-align:center">26</td>
+          <td class="mono" style="text-align:center">4 <span style="color:#666">(15%)</span></td>
+          <td class="mono" style="text-align:center">1,112일전</td>
+          <td class="mono" style="text-align:right">1,925만</td>
+          <td class="mono ret-up" style="text-align:right">+338만</td>
+        </tr><tr>
+          <td><b>LB세미콘</b></td>
+          <td class="mono" style="text-align:center">5</td>
+          <td class="mono" style="text-align:center">1 <span style="color:#666">(20%)</span></td>
+          <td class="mono" style="text-align:center">3,527일전</td>
+          <td class="mono" style="text-align:right">1,902만</td>
+          <td class="mono ret-up" style="text-align:right">+532만</td>
+        </tr><tr>
+          <td><b>경남제약</b></td>
+          <td class="mono" style="text-align:center">14</td>
+          <td class="mono" style="text-align:center">4 <span style="color:#666">(29%)</span></td>
+          <td class="mono" style="text-align:center">1,488일전</td>
+          <td class="mono" style="text-align:right">1,888만</td>
+          <td class="mono ret-up" style="text-align:right">-161만</td>
+        </tr><tr>
+          <td><b>하이록코리아</b></td>
+          <td class="mono" style="text-align:center">41</td>
+          <td class="mono" style="text-align:center">8 <span style="color:#666">(20%)</span></td>
+          <td class="mono" style="text-align:center">500일전</td>
+          <td class="mono" style="text-align:right">1,682만</td>
+          <td class="mono ret-up" style="text-align:right">+199만</td>
+        </tr><tr>
+          <td><b>에이프로젠</b></td>
+          <td class="mono" style="text-align:center">29</td>
+          <td class="mono" style="text-align:center">4 <span style="color:#666">(14%)</span></td>
+          <td class="mono" style="text-align:center">1,018일전</td>
+          <td class="mono" style="text-align:right">1,605만</td>
+          <td class="mono ret-up" style="text-align:right">-892만</td>
+        </tr><tr>
+          <td><b>씨에스윈드</b></td>
+          <td class="mono" style="text-align:center">11</td>
+          <td class="mono" style="text-align:center">3 <span style="color:#666">(27%)</span></td>
+          <td class="mono" style="text-align:center">1,434일전</td>
+          <td class="mono" style="text-align:right">1,555만</td>
+          <td class="mono ret-up" style="text-align:right">+185만</td>
+        </tr><tr>
+          <td><b>아스트</b></td>
+          <td class="mono" style="text-align:center">62</td>
+          <td class="mono" style="text-align:center">5 <span style="color:#666">(8%)</span></td>
+          <td class="mono" style="text-align:center">948일전</td>
+          <td class="mono" style="text-align:right">1,303만</td>
+          <td class="mono ret-up" style="text-align:right">-723만</td>
+        </tr><tr>
+          <td><b>메디톡스</b></td>
+          <td class="mono" style="text-align:center">11</td>
+          <td class="mono" style="text-align:center">2 <span style="color:#666">(18%)</span></td>
+          <td class="mono" style="text-align:center">1,097일전</td>
+          <td class="mono" style="text-align:right">1,264만</td>
+          <td class="mono ret-up" style="text-align:right">+67만</td>
+        </tr><tr>
+          <td><b>에스아이리소스</b></td>
+          <td class="mono" style="text-align:center">26</td>
+          <td class="mono" style="text-align:center">3 <span style="color:#666">(12%)</span></td>
+          <td class="mono" style="text-align:center">998일전</td>
+          <td class="mono" style="text-align:right">1,067만</td>
+          <td class="mono ret-up" style="text-align:right">-615만</td>
+        </tr><tr>
+          <td><b>피엔에이치테크</b></td>
+          <td class="mono" style="text-align:center">73</td>
+          <td class="mono" style="text-align:center">2 <span style="color:#666">(3%)</span></td>
+          <td class="mono" style="text-align:center">398일전</td>
+          <td class="mono" style="text-align:right">1,043만</td>
+          <td class="mono ret-up" style="text-align:right">-718만</td>
+        </tr>
+  </table>
+</div>
+
+<!-- 손익 TOP -->
+<div class="grid2">
+  <div class="card">
+    <h2>📉 큰 손실 TOP 10</h2>
+    <p class="desc">총 실현손실: <b style="color:#ef4444">-3.20억</b></p>
+    <table class="table-compact">
+      <tr><th>종목</th><th style="text-align:right">손익</th><th style="text-align:center">매수</th><th style="text-align:center">매도</th><th style="text-align:right">매수합</th></tr>
+      <tr>
+          <td>NAVER</td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-4,181만</td>
+          <td class="mono" style="text-align:center">24</td>
+          <td class="mono" style="text-align:center">4</td>
+          <td class="mono" style="text-align:right">0.81억</td>
+        </tr><tr>
+          <td>파마리서치</td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-3,570만</td>
+          <td class="mono" style="text-align:center">80</td>
+          <td class="mono" style="text-align:center">14</td>
+          <td class="mono" style="text-align:right">1.05억</td>
+        </tr><tr>
+          <td>파크시스템스</td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-3,094만</td>
+          <td class="mono" style="text-align:center">18</td>
+          <td class="mono" style="text-align:center">1</td>
+          <td class="mono" style="text-align:right">0.40억</td>
+        </tr><tr>
+          <td>HLB제넥스</td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-2,840만</td>
+          <td class="mono" style="text-align:center">108</td>
+          <td class="mono" style="text-align:center">32</td>
+          <td class="mono" style="text-align:right">0.80억</td>
+        </tr><tr>
+          <td>토모큐브</td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-2,535만</td>
+          <td class="mono" style="text-align:center">9</td>
+          <td class="mono" style="text-align:center">1</td>
+          <td class="mono" style="text-align:right">0.26억</td>
+        </tr><tr>
+          <td>우성아이비</td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-2,300만</td>
+          <td class="mono" style="text-align:center">19</td>
+          <td class="mono" style="text-align:center">4</td>
+          <td class="mono" style="text-align:right">0.33억</td>
+        </tr><tr>
+          <td>보로노이</td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-1,882만</td>
+          <td class="mono" style="text-align:center">8</td>
+          <td class="mono" style="text-align:center">1</td>
+          <td class="mono" style="text-align:right">0.19억</td>
+        </tr><tr>
+          <td>레드로버</td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-1,569만</td>
+          <td class="mono" style="text-align:center">3</td>
+          <td class="mono" style="text-align:center">1</td>
+          <td class="mono" style="text-align:right">0.19억</td>
+        </tr><tr>
+          <td>에코글로우</td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-1,229만</td>
+          <td class="mono" style="text-align:center">15</td>
+          <td class="mono" style="text-align:center">6</td>
+          <td class="mono" style="text-align:right">0.16억</td>
+        </tr><tr>
+          <td>CJ ENM</td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-992만</td>
+          <td class="mono" style="text-align:center">11</td>
+          <td class="mono" style="text-align:center">7</td>
+          <td class="mono" style="text-align:right">0.25억</td>
+        </tr>
+    </table>
+  </div>
+  <div class="card">
+    <h2>📈 큰 이익 TOP 10</h2>
+    <p class="desc">총 실현이익: <b style="color:#10b981">+2.66억</b></p>
+    <table class="table-compact">
+      <tr><th>종목</th><th style="text-align:right">손익</th><th style="text-align:center">매수</th><th style="text-align:center">매도</th><th style="text-align:right">매수합</th></tr>
+      <tr>
+          <td>삼천당제약</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+4,870만</td>
+          <td class="mono" style="text-align:center">40</td>
+          <td class="mono" style="text-align:center">14</td>
+          <td class="mono" style="text-align:right">0.29억</td>
+        </tr><tr>
+          <td>SM C&C</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+4,363만</td>
+          <td class="mono" style="text-align:center">30</td>
+          <td class="mono" style="text-align:center">15</td>
+          <td class="mono" style="text-align:right">0.61억</td>
+        </tr><tr>
+          <td>아미코젠</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+2,288만</td>
+          <td class="mono" style="text-align:center">19</td>
+          <td class="mono" style="text-align:center">10</td>
+          <td class="mono" style="text-align:right">0.56억</td>
+        </tr><tr>
+          <td>크래프톤</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+2,040만</td>
+          <td class="mono" style="text-align:center">1</td>
+          <td class="mono" style="text-align:center">9</td>
+          <td class="mono" style="text-align:right">0.02억</td>
+        </tr><tr>
+          <td>진매트릭스</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+1,623만</td>
+          <td class="mono" style="text-align:center">34</td>
+          <td class="mono" style="text-align:center">6</td>
+          <td class="mono" style="text-align:right">0.68억</td>
+        </tr><tr>
+          <td>에이피알</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+1,583만</td>
+          <td class="mono" style="text-align:center">10</td>
+          <td class="mono" style="text-align:center">3</td>
+          <td class="mono" style="text-align:right">0.23억</td>
+        </tr><tr>
+          <td>오르비텍</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+1,531만</td>
+          <td class="mono" style="text-align:center">9</td>
+          <td class="mono" style="text-align:center">4</td>
+          <td class="mono" style="text-align:right">0.21억</td>
+        </tr><tr>
+          <td>비덴트</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+646만</td>
+          <td class="mono" style="text-align:center">27</td>
+          <td class="mono" style="text-align:center">9</td>
+          <td class="mono" style="text-align:right">0.42억</td>
+        </tr><tr>
+          <td>리가켐바이오</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+608만</td>
+          <td class="mono" style="text-align:center">6</td>
+          <td class="mono" style="text-align:center">2</td>
+          <td class="mono" style="text-align:right">0.22억</td>
+        </tr><tr>
+          <td>NHN</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+597만</td>
+          <td class="mono" style="text-align:center">35</td>
+          <td class="mono" style="text-align:center">18</td>
+          <td class="mono" style="text-align:right">0.72억</td>
+        </tr>
+    </table>
+  </div>
+</div>
+
+<!-- 연도별 -->
+<div class="card">
+  <h2>📅 연도별 매매 빈도</h2>
+  <table class="table-compact">
+    <tr><th>연도</th>
+      <th style="text-align:right">매수 건수</th>
+      <th style="text-align:right">매도 건수</th>
+      <th style="text-align:right">매수 금액</th>
+      <th style="text-align:right">매도 금액</th></tr>
+    <tr>
+          <td>2014</td>
+          <td class="mono" style="text-align:right">19</td>
+          <td class="mono" style="text-align:right">1</td>
+          <td class="mono" style="text-align:right">0.30억</td>
+          <td class="mono" style="text-align:right">0.05억</td>
+        </tr><tr>
+          <td>2015</td>
+          <td class="mono" style="text-align:right">53</td>
+          <td class="mono" style="text-align:right">11</td>
+          <td class="mono" style="text-align:right">1.04억</td>
+          <td class="mono" style="text-align:right">0.44억</td>
+        </tr><tr>
+          <td>2016</td>
+          <td class="mono" style="text-align:right">61</td>
+          <td class="mono" style="text-align:right">21</td>
+          <td class="mono" style="text-align:right">1.53억</td>
+          <td class="mono" style="text-align:right">0.74억</td>
+        </tr><tr>
+          <td>2017</td>
+          <td class="mono" style="text-align:right">52</td>
+          <td class="mono" style="text-align:right">11</td>
+          <td class="mono" style="text-align:right">1.35억</td>
+          <td class="mono" style="text-align:right">0.78억</td>
+        </tr><tr>
+          <td>2018</td>
+          <td class="mono" style="text-align:right">127</td>
+          <td class="mono" style="text-align:right">26</td>
+          <td class="mono" style="text-align:right">3.11억</td>
+          <td class="mono" style="text-align:right">2.72억</td>
+        </tr><tr>
+          <td>2019</td>
+          <td class="mono" style="text-align:right">47</td>
+          <td class="mono" style="text-align:right">18</td>
+          <td class="mono" style="text-align:right">0.58억</td>
+          <td class="mono" style="text-align:right">0.88억</td>
+        </tr><tr>
+          <td>2020</td>
+          <td class="mono" style="text-align:right">126</td>
+          <td class="mono" style="text-align:right">30</td>
+          <td class="mono" style="text-align:right">1.63억</td>
+          <td class="mono" style="text-align:right">1.90억</td>
+        </tr><tr>
+          <td>2021</td>
+          <td class="mono" style="text-align:right">559</td>
+          <td class="mono" style="text-align:right">161</td>
+          <td class="mono" style="text-align:right">0.69억</td>
+          <td class="mono" style="text-align:right">0.81억</td>
+        </tr><tr>
+          <td>2022</td>
+          <td class="mono" style="text-align:right">385</td>
+          <td class="mono" style="text-align:right">88</td>
+          <td class="mono" style="text-align:right">0.38억</td>
+          <td class="mono" style="text-align:right">0.44억</td>
+        </tr><tr>
+          <td>2023</td>
+          <td class="mono" style="text-align:right">404</td>
+          <td class="mono" style="text-align:right">89</td>
+          <td class="mono" style="text-align:right">0.81억</td>
+          <td class="mono" style="text-align:right">1.61억</td>
+        </tr><tr>
+          <td>2024</td>
+          <td class="mono" style="text-align:right">352</td>
+          <td class="mono" style="text-align:right">77</td>
+          <td class="mono" style="text-align:right">1.22억</td>
+          <td class="mono" style="text-align:right">1.16억</td>
+        </tr><tr>
+          <td>2025</td>
+          <td class="mono" style="text-align:right">322</td>
+          <td class="mono" style="text-align:right">114</td>
+          <td class="mono" style="text-align:right">3.52억</td>
+          <td class="mono" style="text-align:right">1.50억</td>
+        </tr><tr>
+          <td>2026</td>
+          <td class="mono" style="text-align:right">103</td>
+          <td class="mono" style="text-align:right">42</td>
+          <td class="mono" style="text-align:right">2.03억</td>
+          <td class="mono" style="text-align:right">2.47억</td>
+        </tr>
+  </table>
+</div>
+
+<!-- 시그널 시스템 활용 제안 -->
+<div class="card">
+  <h2>🎯 시그널 시스템과 결합한 룰 제안</h2>
+  <div class="callout">
+    이미 만든 시그널 시스템 + 매매 스타일 데이터 → 개인화된 룰 6개 제안
+  </div>
+
+  <div class="diag-card good">
+    <div class="diag-title">규칙 1: <b>같은 종목 4회+ 매수 경고</b></div>
+    <div class="diag-detail">
+      4회 이상 매수 시도 시 → 대시보드 알림 + "이 종목 평균 수익률은 이 횟수에 ___%"
+      자동 표시.<br>
+      구현: <span class="code">build_dashboard.py</span>에 매수 카운트 추적 추가
+    </div>
+  </div>
+
+  <div class="diag-card good">
+    <div class="diag-title">규칙 2: <b>좀비 종목 분기별 자동 탐지</b></div>
+    <div class="diag-detail">
+      매수 5회+ AND 1년+ 미매수 → 매도 시그널 강제 발동 (현재 시그널과 OR).<br>
+      해당 종목은 행동 권고 = "정리 검토" 자동 부여.
+    </div>
+  </div>
+
+  <div class="diag-card good">
+    <div class="diag-title">규칙 3: <b>손절 룰 (-7% / -10%)</b></div>
+    <div class="diag-detail">
+      현재 평균 손실 -40.4% → -8% 캡 적용 시 시뮬레이션 결과 표시.<br>
+      이미 매수한 종목은 평단가 -7% 이탈 시 "트레일링 스탑 발동" 알림.
+    </div>
+  </div>
+
+  <div class="diag-card good">
+    <div class="diag-title">규칙 4: <b>매도 후 재매수 시 이전 매도가 표시</b></div>
+    <div class="diag-detail">
+      직전 매도가보다 +X% 비싸게 재매수 시 경고. 상승 추격 매매 방지.
+    </div>
+  </div>
+
+  <div class="diag-card good">
+    <div class="diag-title">규칙 5: <b>익절 분할 vs 손절 일괄 룰</b></div>
+    <div class="diag-detail">
+      이익 종목: +20% / +40% / +60%에서 1/3씩 분할 매도 (보유 늘리기 방지).<br>
+      손실 종목: -7% 이탈 시 한 번에 전량 매도 (물타기 금지).
+    </div>
+  </div>
+
+  <div class="diag-card good">
+    <div class="diag-title">규칙 6: <b>"매수 금지" 종목 리스트</b></div>
+    <div class="diag-detail">
+      손실 -1,000만원 이상으로 매도한 종목 → 6개월간 신규 매수 금지 (감정적 재진입 방지).<br>
+      현재 해당 종목: NAVER, 파마리서치, HLB제넥스, 토모큐브 등
+    </div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

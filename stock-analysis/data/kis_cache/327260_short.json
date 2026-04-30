@@ -1,0 +1,167 @@
+{
+  "ticker": "327260",
+  "recent_20d": [
+    {
+      "date": "2026-04-03",
+      "short_volume": 3952,
+      "short_ratio": 1.17,
+      "short_balance": 76661,
+      "short_balance_ratio": 1.33,
+      "margin_balance": 0
+    },
+    {
+      "date": "2026-04-06",
+      "short_volume": 247,
+      "short_ratio": 0.06,
+      "short_balance": 76908,
+      "short_balance_ratio": 1.25,
+      "margin_balance": 0
+    },
+    {
+      "date": "2026-04-07",
+      "short_volume": 835,
+      "short_ratio": 0.38,
+      "short_balance": 77743,
+      "short_balance_ratio": 1.22,
+      "margin_balance": 0
+    },
+    {
+      "date": "2026-04-08",
+      "short_volume": 43166,
+      "short_ratio": 5.56,
+      "short_balance": 120909,
+      "short_balance_ratio": 1.69,
+      "margin_balance": 0
+    },
+    {
+      "date": "2026-04-09",
+      "short_volume": 25208,
+      "short_ratio": 4.07,
+      "short_balance": 146117,
+      "short_balance_ratio": 1.88,
+      "margin_balance": 0
+    },
+    {
+      "date": "2026-04-10",
+      "short_volume": 7476,
+      "short_ratio": 1.02,
+      "short_balance": 153593,
+      "short_balance_ratio": 1.8,
+      "margin_balance": 0
+    },
+    {
+      "date": "2026-04-13",
+      "short_volume": 6748,
+      "short_ratio": 1.4,
+      "short_balance": 160341,
+      "short_balance_ratio": 1.78,
+      "margin_balance": 0
+    },
+    {
+      "date": "2026-04-14",
+      "short_volume": 4474,
+      "short_ratio": 0.9,
+      "short_balance": 164815,
+      "short_balance_ratio": 1.74,
+      "margin_balance": 0
+    },
+    {
+      "date": "2026-04-15",
+      "short_volume": 11521,
+      "short_ratio": 2.86,
+      "short_balance": 176336,
+      "short_balance_ratio": 1.78,
+      "margin_balance": 0
+    },
+    {
+      "date": "2026-04-16",
+      "short_volume": 5510,
+      "short_ratio": 1.54,
+      "short_balance": 181846,
+      "short_balance_ratio": 1.77,
+      "margin_balance": 0
+    },
+    {
+      "date": "2026-04-17",
+      "short_volume": 6516,
+      "short_ratio": 1.32,
+      "short_balance": 188362,
+      "short_balance_ratio": 1.75,
+      "margin_balance": 0
+    },
+    {
+      "date": "2026-04-20",
+      "short_volume": 3958,
+      "short_ratio": 0.89,
+      "short_balance": 192320,
+      "short_balance_ratio": 1.72,
+      "margin_balance": 0
+    },
+    {
+      "date": "2026-04-21",
+      "short_volume": 3510,
+      "short_ratio": 1.63,
+      "short_balance": 195830,
+      "short_balance_ratio": 1.72,
+      "margin_balance": 0
+    },
+    {
+      "date": "2026-04-22",
+      "short_volume": 1163,
+      "short_ratio": 0.51,
+      "short_balance": 196993,
+      "short_balance_ratio": 1.69,
+      "margin_balance": 0
+    },
+    {
+      "date": "2026-04-23",
+      "short_volume": 304,
+      "short_ratio": 0.04,
+      "short_balance": 197297,
+      "short_balance_ratio": 1.58,
+      "margin_balance": 0
+    },
+    {
+      "date": "2026-04-24",
+      "short_volume": 980,
+      "short_ratio": 0.3,
+      "short_balance": 198277,
+      "short_balance_ratio": 1.55,
+      "margin_balance": 0
+    },
+    {
+      "date": "2026-04-27",
+      "short_volume": 540,
+      "short_ratio": 0.14,
+      "short_balance": 198817,
+      "short_balance_ratio": 1.51,
+      "margin_balance": 0
+    },
+    {
+      "date": "2026-04-28",
+      "short_volume": 445,
+      "short_ratio": 0.09,
+      "short_balance": 199262,
+      "short_balance_ratio": 1.46,
+      "margin_balance": 0
+    },
+    {
+      "date": "2026-04-29",
+      "short_volume": 246,
+      "short_ratio": 0.09,
+      "short_balance": 199508,
+      "short_balance_ratio": 1.43,
+      "margin_balance": 0
+    },
+    {
+      "date": "2026-04-30",
+      "short_volume": 0,
+      "short_ratio": 0.0,
+      "short_balance": 199508,
+      "short_balance_ratio": 1.39,
+      "margin_balance": 0
+    }
+  ],
+  "alert": true,
+  "last_updated": "2026-04-30T12:33:25"
+}

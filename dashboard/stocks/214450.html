@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>파마리서치 (214450) — 거래원 수급</title>
+<link rel="stylesheet" href="../assets/style.css">
+<script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+<div class="nav">
+  <a href="../index.html">← 전체 대시보드</a>
+  <a href="../profit_taking.html">💰 익절 타이밍</a>
+  <a href="../status.html">📋 현재 상황</a>
+  <a href="../trading_style.html">🎯 매매 스타일</a>
+  <span style="color:#444;margin-left:auto">|</span>
+  <span style="color:#888">파마리서치 (214450) · 데이터 38일</span>
+</div>
+
+<h1>파마리서치 <span style="color:#666;font-size:0.65em">(214450)</span></h1>
+
+<div class="grid4">
+      <div class="kpi">
+        <div class="kpi-label">현재 가격</div>
+        <div class="kpi-value mono">291,000원</div>
+        <div class="kpi-sub mono">고점(301,000원) 대비 -3.3%</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">현재 국면</div>
+        <div class="kpi-value regime-0">중립</div>
+        <div class="kpi-sub">신고가 거리 nan%</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">스마트머니 20일</div>
+        <div class="kpi-value mono" style="color:#10b981">+1.4%</div>
+        <div class="kpi-sub">대형기관 5일 -0.6%</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">권고 행동</div>
+        <div class="kpi-value"><span class="action-badge action-hold">HOLD (감시)</span></div>
+        <div class="kpi-sub">외인 breadth 18, fr5 -0.4%</div>
+      </div>
+    </div>
+
+<!-- 메인 차트 -->
+<div class="card">
+  <h2>주가 + MA + 시그널</h2>
+  <p class="desc">배경: 추세 국면 (초록=상승 / 주황=분배의심 / 빨강=하락) · 마커: ★다이버전스 ▼매도시그널 ▲매수시그널</p>
+  <div id="chart_main" style="height:440px"></div>
+</div>
+
+<!-- 비율 차트 -->
+<div class="card">
+  <h2>20일 수급 비율 (%)</h2>
+  <p class="desc">스마트머니(노란선)가 0 아래로 내려가면서 신고가 거리(보라선)가 90~100% = 다이버전스 형성</p>
+  <div id="chart_ratio" style="height:320px"></div>
+</div>
+
+<!-- 그룹별 일별 금액 -->
+<div class="grid2">
+  <div class="card">
+    <h2>일별 그룹 순매수 (억 원)</h2>
+    <div id="chart_amt" style="height:280px"></div>
+  </div>
+  <div class="card">
+    <h2>20일 롤링 스마트머니 (억 원)</h2>
+    <div id="chart_smart" style="height:280px"></div>
+  </div>
+</div>
+
+<!-- 거래원 분석 -->
+<div class="grid2">
+  <div class="card">
+    <h2>📈 매수 주도 TOP 10</h2>
+    <p class="desc">데이터 기간 시작 ~ 가격 고점(2025-02-27)까지 누적 순매수 1위~10위</p>
+    <table class="table-compact"></table>
+  </div>
+  <div class="card">
+    <h2>📉 매도 주도 TOP 10</h2>
+    <p class="desc">가격 고점(2025-02-27) ~ 현재까지 누적 순매도 1위~10위</p>
+    <table class="table-compact"><tr>
+              <td class="mono" style="color:#666;text-align:center;width:36px">1</td>
+              <td>하나금융투자</td>
+              <td class="grp-inst" style="font-size:0.82em">기관</td>
+              <td class="mono" style="text-align:right;color:#ef4444">-105.7k</td>
+            </tr><tr>
+              <td class="mono" style="color:#666;text-align:center;width:36px">2</td>
+              <td>NH투자증권</td>
+              <td class="grp-inst" style="font-size:0.82em">기관</td>
+              <td class="mono" style="text-align:right;color:#ef4444">-60.2k</td>
+            </tr><tr>
+              <td class="mono" style="color:#666;text-align:center;width:36px">3</td>
+              <td>미래에셋증권</td>
+              <td class="grp-inst" style="font-size:0.82em">기관</td>
+              <td class="mono" style="text-align:right;color:#ef4444">-42.4k</td>
+            </tr><tr>
+              <td class="mono" style="color:#666;text-align:center;width:36px">4</td>
+              <td>키움증권</td>
+              <td class="grp-retail" style="font-size:0.82em">개인</td>
+              <td class="mono" style="text-align:right;color:#ef4444">-30.6k</td>
+            </tr><tr>
+              <td class="mono" style="color:#666;text-align:center;width:36px">5</td>
+              <td>KB증권</td>
+              <td class="grp-inst" style="font-size:0.82em">기관</td>
+              <td class="mono" style="text-align:right;color:#ef4444">-25.3k</td>
+            </tr><tr>
+              <td class="mono" style="color:#666;text-align:center;width:36px">6</td>
+              <td>맥쿼리증권</td>
+              <td class="grp-foreign" style="font-size:0.82em">외국계</td>
+              <td class="mono" style="text-align:right;color:#ef4444">-23.0k</td>
+            </tr><tr>
+              <td class="mono" style="color:#666;text-align:center;width:36px">7</td>
+              <td>CIMB증권</td>
+              <td class="grp-inst" style="font-size:0.82em">기관</td>
+              <td class="mono" style="text-align:right;color:#ef4444">-11.0k</td>
+            </tr><tr>
+              <td class="mono" style="color:#666;text-align:center;width:36px">8</td>
+              <td>다올투자증권</td>
+              <td class="grp-inst" style="font-size:0.82em">기관</td>
+              <td class="mono" style="text-align:right;color:#ef4444">-10.5k</td>
+            </tr><tr>
+              <td class="mono" style="color:#666;text-align:center;width:36px">9</td>
+              <td>한화증권</td>
+              <td class="grp-inst" style="font-size:0.82em">기관</td>
+              <td class="mono" style="text-align:right;color:#ef4444">-10.1k</td>
+            </tr><tr>
+              <td class="mono" style="color:#666;text-align:center;width:36px">10</td>
+              <td>유안타증권</td>
+              <td class="grp-inst" style="font-size:0.82em">기관</td>
+              <td class="mono" style="text-align:right;color:#ef4444">-9.9k</td>
+            </tr></table>
+  </div>
+</div>
+
+<!-- KRX 추가 데이터 -->
+<div class="card">
+          <h2>KRX 추가 데이터 (공매도 · 외국인 보유 · 기관 세부)</h2>
+          <div class="callout warn">
+            ⚠️ KRX API가 현재 응답하지 않습니다 (일시적 차단 가능).<br>
+            다시 시도하려면: <code>rm -rf data/krx_cache && python3 build_broker_dashboard.py</code><br>
+            또는 KRX 사이트 접속 가능한지 확인 후 재실행.
+          </div>
+        </div>
+
+<!-- OBV / CMF / MFI 차트 -->
+<div class="card">
+  <h2>OBV · CMF · MFI — 매집/분배 다이버전스 탐지</h2>
+  <p class="desc">
+    <b>OBV(누적 거래량)</b>: 가격은 신고가지만 OBV는 정체 = 분배 다이버전스(약한 상승) ·
+    <b>CMF</b>: -0.10 이하 분배, +0.10 이상 매집 ·
+    <b>MFI</b>: 80↑ 과매수(분배 가능), 20↓ 과매도(매집 가능)
+  </p>
+  <div id="chart_obv" style="height:300px"></div>
+  <div class="grid2" style="margin-top:14px">
+    <div id="chart_cmf" style="height:240px"></div>
+    <div id="chart_mfi" style="height:240px"></div>
+  </div>
+</div>
+
+<!-- 분배 주도자 -->
+
+
+<!-- 시그널 시계열 -->
+<div class="card">
+  <h2>시그널 타임라인 (최근 50건)</h2>
+  <p class="desc">★ 다이버전스 · 🚨 분배 패턴 · ⚡ 시너지(N개 카테고리 동시) · 컨펌 = 가격이 MA20/저점 깸</p>
+  <table class="table-compact">
+    <tr>
+      <th>날짜</th><th>등급</th><th style="text-align:center">점수</th>
+      <th>국면</th><th>행동 권고</th><th style="text-align:center">표식</th>
+      <th style="text-align:right">개미5d</th>
+      <th style="text-align:right">대형기관5d</th>
+      <th style="text-align:center">+5일</th>
+      <th style="text-align:center">+10일</th>
+      <th style="text-align:center">+20일</th>
+    </tr>
+    <tr>
+          <td class="mono">2025-02-27</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">2</span></td>
+          <td style="text-align:center" class="regime-0">중립</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">-0.6%</td>
+          <td class="mono ret-up" style="text-align:right">-2.0%</td>
+          <td style="text-align:center" class="mono ">─</td>
+          <td style="text-align:center" class="mono ">─</td>
+          <td style="text-align:center" class="mono ">─</td>
+        </tr><tr>
+          <td class="mono">2025-02-07</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">1</span></td>
+          <td style="text-align:center" class="regime-0">중립</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">-1.3%</td>
+          <td class="mono ret-up" style="text-align:right">-2.0%</td>
+          <td style="text-align:center" class="mono ret-up">+7.7%</td>
+          <td style="text-align:center" class="mono ret-up">+8.3%</td>
+          <td style="text-align:center" class="mono ">─</td>
+        </tr>
+  </table>
+</div>
+
+</div>
+
+<script>
+const D = {"dates": ["2025-01-02", "2025-01-03", "2025-01-06", "2025-01-07", "2025-01-08", "2025-01-09", "2025-01-10", "2025-01-13", "2025-01-14", "2025-01-15", "2025-01-16", "2025-01-17", "2025-01-20", "2025-01-21", "2025-01-22", "2025-01-23", "2025-01-24", "2025-01-31", "2025-02-03", "2025-02-04", "2025-02-05", "2025-02-06", "2025-02-07", "2025-02-10", "2025-02-11", "2025-02-12", "2025-02-13", "2025-02-14", "2025-02-17", "2025-02-18", "2025-02-19", "2025-02-20", "2025-02-21", "2025-02-24", "2025-02-25", "2025-02-26", "2025-02-27", "2025-02-28"], "close": [260500, 260500, 252500, 257500, 251500, 251500, 251000, 247500, 252000, 250500, 258000, 263500, 245000, 247000, 246000, 241000, 243500, 241500, 243500, 250000, 253000, 270500, 266000, 273500, 284500, 282500, 272500, 286500, 287000, 294500, 283500, 276000, 288000, 283000, 286500, 294000, 301000, 291000], "ma20": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 250700.0, 250325.0, 250825.0, 251500.0, 252300.0, 253950.0, 255500.0, 256575.0, 258525.0, 260275.0, 262475.0, 263750.0, 264375.0, 266525.0, 268325.0, 270350.0, 273000.0, 275875.0, 278350.0], "ma60": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null], "fr20": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 1.58, 1.73, 1.76, 1.85, 1.67, 1.84, 1.42, 1.27, 1.42, 1.64, 1.56, 1.24, 1.09, 1.77, 1.85, 1.82, 1.97, 2.23, 2.34], "ir20": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, -1.87, -2.16, -1.99, -1.91, -1.73, -1.47, -1.14, -1.07, -0.91, -1.14, -0.87, -0.59, -0.19, -0.25, -0.38, -0.3, -0.42, -0.73, -0.9], "rr5": [null, null, null, null, 0.97, 1.37, 1.08, 0.43, 0.73, 0.2, -0.06, -0.07, 1.14, 1.31, 1.22, 1.52, 1.34, -0.66, -0.74, -2.16, -2.21, -1.72, -1.3, -1.48, -1.31, -1.11, -0.61, -1.62, -1.72, -1.41, -1.58, -3.04, -2.36, -1.75, -1.4, -1.63, -0.64, -0.05], "sr20": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, -0.29, -0.42, -0.24, -0.05, -0.07, 0.37, 0.28, 0.21, 0.51, 0.51, 0.69, 0.64, 0.9, 1.53, 1.47, 1.52, 1.55, 1.49, 1.44], "li5": [null, null, null, null, -4.2, -4.56, -3.34, -3.89, -2.92, -3.17, -2.82, -2.88, -2.43, -2.73, -1.9, -0.45, 1.09, 3.59, 5.0, 3.61, 1.89, 0.09, -2.03, -1.9, -2.08, -2.08, -2.37, -1.7, -3.14, -4.01, -2.72, -1.9, -3.22, -2.37, -0.35, -1.28, -2.04, -0.62], "near_high": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null], "f_amt": [7.94, 53.6, 7.64, 31.19, 1.06, 61.86, 25.37, 20.63, -10.61, 7.6, 29.22, 53.78, -54.94, 10.74, -27.21, 0.76, -36.34, -11.83, 0.6, 31.69, 23.29, 61.44, 11.67, 17.31, 41.09, 4.71, 7.06, 45.72, 17.17, -9.2, -6.4, 33.75, 15.25, 19.02, -35.37, 19.14, -8.46, -3.32], "i_amt": [7.05, -64.85, -36.05, -9.73, -28.93, -59.68, -25.72, -26.92, 23.45, -21.76, -19.11, -53.71, 2.33, -5.81, 19.45, -0.2, 48.17, 17.75, 4.93, -7.6, -24.42, -49.13, -17.44, 3.17, -9.21, -15.48, -17.68, -9.19, -3.81, 17.08, 13.87, 0.3, -2.32, -23.28, 32.27, -15.61, 16.43, 0.87], "r_amt": [-14.99, 11.25, 28.41, -21.45, 27.87, -2.19, 0.35, 6.29, -12.83, 14.17, -10.11, -0.07, 52.61, -4.93, 7.76, -0.57, -11.84, -5.92, -5.53, -24.1, 1.13, -12.31, 5.77, -20.48, -31.88, 10.77, 10.62, -36.53, -13.36, -7.88, -7.47, -34.05, -12.93, 4.26, 3.1, -3.53, -7.97, 2.45], "sm_amt20": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, -34.18, -50.3, -26.74, -4.1, -5.07, 54.68, 41.72, 31.45, 74.27, 74.8, 96.85, 94.21, 128.19, 193.73, 184.54, 189.2, 192.16, 188.29, 179.92], "obv": [0.0, 0.0, -190650.0, -101054.0, -190995.0, -190995.0, -321378.0, -421677.0, -325231.0, -464302.0, -326860.0, -177059.0, -450976.0, -345587.0, -443105.0, -550491.0, -481649.0, -586017.0, -515941.0, -415228.0, -334825.0, -154733.0, -255136.0, -73394.0, 173776.0, 106477.0, -16258.0, 98409.0, 152619.0, 233254.0, 11083.0, -93930.0, 11826.0, -64740.0, 27685.0, 121077.0, 199177.0, 122691.0], "obv_ma20": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, -324959.75, -341701.0, -349437.65, -352661.95, -351278.95, -333040.4, -318166.8, -302910.8, -276906.5, -253014.0, -218136.2, -201239.05, -197082.6, -173942.5, -159900.15, -136360.65, -102782.25, -68740.95, -33305.55], "cmf": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, -0.005, 0.025, 0.044, 0.045, 0.058, 0.026, -0.013, -0.087, -0.037, -0.042, 0.014, -0.001, -0.042, 0.086, 0.089, 0.131, 0.145, 0.167, 0.124], "mfi": [null, null, null, null, null, null, null, null, null, null, null, null, null, 40.6, 38.6, 39.7, 46.5, 40.9, 45.5, 51.8, 58.4, 60.5, 60.8, 62.0, 64.8, 59.1, 64.0, 70.5, 75.6, 81.6, 70.0, 69.3, 70.2, 70.0, 65.0, 63.5, 63.2, 55.8], "obv_bear_dates": ["2025-02-06", "2025-02-07", "2025-02-10", "2025-02-12", "2025-02-14", "2025-02-17", "2025-02-21", "2025-02-25", "2025-02-26", "2025-02-27"], "obv_bull_dates": [], "regime_shapes": [], "sig_x": ["2025-02-07", "2025-02-27", "2025-01-16", "2025-01-17", "2025-01-21", "2025-02-11", "2025-02-12", "2025-02-13", "2025-02-14", "2025-02-17", "2025-02-18", "2025-02-19", "2025-02-21", "2025-02-24", "2025-02-26"], "sig_y": [266000, 301000, 258000, 263500, 247000, 284500, 282500, 272500, 286500, 287000, 294500, 283500, 288000, 283000, 294000], "sig_hover": ["<b>2025-02-07 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 중립 · 신고가권: nan%<br>─────────<br>기관 5일 순매도 -3.3% (기준 -3.0%)<br>─────────<br>+5일: +7.7%  +10일: +8.3%  +20일: 집계중", "<b>2025-02-27 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 중립 · 신고가권: nan%<br>─────────<br>📊 거래량 다이버전스: 5일 가격 +9.1% but 거래량 비율 0.72 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: 집계중  +10일: 집계중  +20일: 집계중", "<b>2025-01-16 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +8<br>외국계 5일 순매수 +2.4%", "<b>2025-01-17 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +10<br>외국계 5일 순매수 +3.1%", "<b>2025-01-21 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +10<br>외국계 5일 순매수 +1.0%", "<b>2025-02-11 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +8<br>외국계 5일 순매수 +3.6%", "<b>2025-02-12 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +10<br>외국계 5일 순매수 +3.2%", "<b>2025-02-13 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +11<br>외국계 5일 순매수 +2.0%", "<b>2025-02-14 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +13<br>외국계 5일 순매수 +2.8%", "<b>2025-02-17 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +10<br>외국계 5일 순매수 +3.4%", "<b>2025-02-18 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +11<br>외국계 5일 순매수 +2.6%", "<b>2025-02-19 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +11<br>외국계 5일 순매수 +1.6%", "<b>2025-02-21 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +13<br>외국계 5일 순매수 +1.6%", "<b>2025-02-24 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +17<br>외국계 5일 순매수 +1.6%", "<b>2025-02-26 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +24<br>외국계 5일 순매수 +1.9%"], "sig_color": ["#9ca3af", "#9ca3af", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981"], "sig_symbol": ["circle-open", "circle-open", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up"], "sig_size": [9, 9, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12]};
+const BASE = {
+  paper_bgcolor:'#14171f', plot_bgcolor:'#14171f',
+  font:{color:'#bbb',size:11},
+  xaxis:{gridcolor:'#1f2230',zeroline:false},
+  yaxis:{gridcolor:'#1f2230'},
+  legend:{orientation:'h',y:-0.18},
+  margin:{t:10,b:55,l:65,r:55},
+  hovermode:'closest',
+};
+
+// 메인 차트
+Plotly.newPlot('chart_main', [
+  {x:D.dates,y:D.close,type:'scatter',mode:'lines',name:'종가',line:{color:'#4fc3f7',width:2.2}},
+  {x:D.dates,y:D.ma20,type:'scatter',mode:'lines',name:'MA20',line:{color:'rgba(241,196,15,0.7)',width:1.2}},
+  {x:D.dates,y:D.ma60,type:'scatter',mode:'lines',name:'MA60',line:{color:'rgba(149,165,166,0.7)',width:1.2,dash:'dot'}},
+  {x:D.sig_x,y:D.sig_y,type:'scatter',mode:'markers',name:'시그널',
+    marker:{color:D.sig_color,size:D.sig_size,symbol:D.sig_symbol,line:{color:'#fff',width:1}},
+    hovertext:D.sig_hover,hoverinfo:'text',hoverlabel:{bgcolor:'#14171f',bordercolor:'#444'}}
+], {...BASE, yaxis:{...BASE.yaxis,title:'원'}, shapes:D.regime_shapes, margin:{t:10,b:55,l:75,r:10}}, {responsive:true});
+
+// 비율 차트
+const n = D.dates.length;
+const thrLines = [
+  {type:'line',x0:D.dates[0],x1:D.dates[n-1],y0:-3.0,y1:-3.0,
+    line:{color:'rgba(46,204,113,0.4)',width:1,dash:'dot'}},
+  {type:'line',x0:D.dates[0],x1:D.dates[n-1],y0:-5.0,y1:-5.0,
+    line:{color:'rgba(52,152,219,0.4)',width:1,dash:'dot'}},
+  {type:'line',x0:D.dates[0],x1:D.dates[n-1],y0:0,y1:0,line:{color:'#555',width:1}},
+];
+Plotly.newPlot('chart_ratio', [
+  {x:D.dates,y:D.fr20,type:'scatter',mode:'lines',name:'외국계 20일%',line:{color:'#10b981',width:1.5}},
+  {x:D.dates,y:D.ir20,type:'scatter',mode:'lines',name:'기관 20일%',  line:{color:'#3498db',width:1.5}},
+  {x:D.dates,y:D.li5, type:'scatter',mode:'lines',name:'대형기관 5일%',line:{color:'#f97316',width:1.2,dash:'dash'}},
+  {x:D.dates,y:D.sr20,type:'scatter',mode:'lines',name:'스마트머니 20일%',
+    line:{color:'#fbbf24',width:2.2},fill:'tozeroy',fillcolor:'rgba(251,191,36,0.07)'},
+  {x:D.dates,y:D.near_high.map(v=>v?v*100:null),type:'scatter',mode:'lines',
+    name:'신고가 거리(%)',line:{color:'#a78bfa',width:1,dash:'dot'},yaxis:'y2'},
+], {...BASE,
+  yaxis:{...BASE.yaxis,title:'비율 (%)'},
+  yaxis2:{title:'신고가(%)',overlaying:'y',side:'right',range:[0,105],gridcolor:'transparent'},
+  shapes:thrLines,
+}, {responsive:true});
+
+// 일별 금액
+Plotly.newPlot('chart_amt', [
+  {x:D.dates,y:D.f_amt,type:'bar',name:'외국계',marker:{color:'#10b981',opacity:0.85}},
+  {x:D.dates,y:D.i_amt,type:'bar',name:'기관',  marker:{color:'#3498db',opacity:0.85}},
+  {x:D.dates,y:D.r_amt,type:'bar',name:'개인',  marker:{color:'#ef4444',opacity:0.85}},
+], {...BASE,barmode:'relative',
+  yaxis:{...BASE.yaxis,title:'억 원',zeroline:true,zerolinecolor:'#555'},
+}, {responsive:true});
+
+// 스마트머니 롤링
+Plotly.newPlot('chart_smart', [
+  {x:D.dates,y:D.sm_amt20,type:'scatter',mode:'lines',name:'스마트머니 20일',
+    line:{color:'#fbbf24',width:2.5},fill:'tozeroy',fillcolor:'rgba(251,191,36,0.07)'},
+], {...BASE,
+  yaxis:{...BASE.yaxis,title:'억 원',zeroline:true,zerolinecolor:'#888',zerolinewidth:2},
+}, {responsive:true});
+
+// OBV (누적 거래량) — 가격과 함께 표시 (이중 y축)
+Plotly.newPlot('chart_obv', [
+  {x:D.dates,y:D.close,type:'scatter',mode:'lines',name:'종가',
+    line:{color:'#4fc3f7',width:1.5},yaxis:'y'},
+  {x:D.dates,y:D.obv,type:'scatter',mode:'lines',name:'OBV (누적)',
+    line:{color:'#a78bfa',width:1.8},yaxis:'y2'},
+  {x:D.dates,y:D.obv_ma20,type:'scatter',mode:'lines',name:'OBV MA20',
+    line:{color:'rgba(167,139,250,0.4)',width:1,dash:'dot'},yaxis:'y2'},
+  // 다이버전스 마커
+  {x:D.obv_bear_dates,y:D.obv_bear_dates.map(d=>D.close[D.dates.indexOf(d)]),
+    type:'scatter',mode:'markers',name:'분배 다이버전스',
+    marker:{color:'#ef4444',size:10,symbol:'triangle-down'},yaxis:'y'},
+  {x:D.obv_bull_dates,y:D.obv_bull_dates.map(d=>D.close[D.dates.indexOf(d)]),
+    type:'scatter',mode:'markers',name:'매집 다이버전스',
+    marker:{color:'#10b981',size:10,symbol:'triangle-up'},yaxis:'y'},
+], {...BASE,
+  yaxis:{...BASE.yaxis,title:'가격(원)'},
+  yaxis2:{title:'OBV',overlaying:'y',side:'right',gridcolor:'transparent'},
+}, {responsive:true});
+
+// CMF
+Plotly.newPlot('chart_cmf', [
+  {x:D.dates,y:D.cmf,type:'scatter',mode:'lines',name:'CMF (20일)',
+    line:{color:'#fbbf24',width:1.8},fill:'tozeroy',fillcolor:'rgba(251,191,36,0.05)'},
+], {...BASE,
+  yaxis:{...BASE.yaxis,title:'CMF',range:[-0.4,0.4],zeroline:true,zerolinecolor:'#555'},
+  shapes:[
+    {type:'line',x0:D.dates[0],x1:D.dates[D.dates.length-1],y0:-0.1,y1:-0.1,
+      line:{color:'rgba(239,68,68,0.4)',width:1,dash:'dot'}},
+    {type:'line',x0:D.dates[0],x1:D.dates[D.dates.length-1],y0:0.1,y1:0.1,
+      line:{color:'rgba(16,185,129,0.4)',width:1,dash:'dot'}},
+  ],
+  annotations:[
+    {x:D.dates[10],y:0.1,text:'매집',showarrow:false,yshift:8,font:{color:'rgba(16,185,129,0.6)',size:10}},
+    {x:D.dates[10],y:-0.1,text:'분배',showarrow:false,yshift:-8,font:{color:'rgba(239,68,68,0.6)',size:10}},
+  ],
+}, {responsive:true});
+
+// MFI
+Plotly.newPlot('chart_mfi', [
+  {x:D.dates,y:D.mfi,type:'scatter',mode:'lines',name:'MFI (14일)',
+    line:{color:'#a78bfa',width:1.8}},
+], {...BASE,
+  yaxis:{...BASE.yaxis,title:'MFI',range:[0,100]},
+  shapes:[
+    {type:'line',x0:D.dates[0],x1:D.dates[D.dates.length-1],y0:80,y1:80,
+      line:{color:'rgba(239,68,68,0.4)',width:1,dash:'dot'}},
+    {type:'line',x0:D.dates[0],x1:D.dates[D.dates.length-1],y0:20,y1:20,
+      line:{color:'rgba(16,185,129,0.4)',width:1,dash:'dot'}},
+  ],
+  annotations:[
+    {x:D.dates[10],y:80,text:'과매수',showarrow:false,yshift:8,font:{color:'rgba(239,68,68,0.6)',size:10}},
+    {x:D.dates[10],y:20,text:'과매도',showarrow:false,yshift:-8,font:{color:'rgba(16,185,129,0.6)',size:10}},
+  ],
+}, {responsive:true});
+</script>
+</body>
+</html>

@@ -1223,5 +1223,10 @@
     "code": "HIMX",
     "nation": "USA",
     "market": "나스닥 증권거래소"
+  },
+  "제이스로보틱스": {
+    "code": "090470",
+    "nation": "KOR",
+    "market": "코스닥"
   }
 }

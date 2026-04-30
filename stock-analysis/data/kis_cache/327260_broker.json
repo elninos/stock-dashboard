@@ -1,0 +1,51 @@
+{
+  "ticker": "327260",
+  "date": "2026-04-30",
+  "top_buy": [
+    {
+      "broker": "신한증권",
+      "amount": 77430
+    },
+    {
+      "broker": "한국증권",
+      "amount": 59490
+    },
+    {
+      "broker": "키움증권",
+      "amount": 38989
+    },
+    {
+      "broker": "미래에셋증권",
+      "amount": 32501
+    },
+    {
+      "broker": "NH투자증권",
+      "amount": 22939
+    }
+  ],
+  "top_sell": [
+    {
+      "broker": "신한증권",
+      "amount": 62367
+    },
+    {
+      "broker": "미래에셋증권",
+      "amount": 52857
+    },
+    {
+      "broker": "키움증권",
+      "amount": 50783
+    },
+    {
+      "broker": "한국증권",
+      "amount": 41583
+    },
+    {
+      "broker": "NH투자증권",
+      "amount": 30981
+    }
+  ],
+  "foreign_desk_concentration": false,
+  "program_buy_ratio": 0.0,
+  "last_updated": "2026-04-30T12:33:25"
+}

@@ -1,0 +1,131 @@
+{
+  "ticker": "327260",
+  "recent_20d": [
+    {
+      "date": "2026-04-30",
+      "foreign_net": 0,
+      "institution_net": 0,
+      "individual_net": 0
+    },
+    {
+      "date": "2026-04-29",
+      "foreign_net": 45955,
+      "institution_net": -24618,
+      "individual_net": -21628
+    },
+    {
+      "date": "2026-04-28",
+      "foreign_net": 15511,
+      "institution_net": -61638,
+      "individual_net": 40834
+    },
+    {
+      "date": "2026-04-27",
+      "foreign_net": 20434,
+      "institution_net": -6393,
+      "individual_net": -8039
+    },
+    {
+      "date": "2026-04-24",
+      "foreign_net": 37733,
+      "institution_net": -5952,
+      "individual_net": -31835
+    },
+    {
+      "date": "2026-04-23",
+      "foreign_net": 49726,
+      "institution_net": -117663,
+      "individual_net": 79324
+    },
+    {
+      "date": "2026-04-22",
+      "foreign_net": -61842,
+      "institution_net": -31617,
+      "individual_net": 93217
+    },
+    {
+      "date": "2026-04-21",
+      "foreign_net": -4081,
+      "institution_net": 34645,
+      "individual_net": -29933
+    },
+    {
+      "date": "2026-04-20",
+      "foreign_net": 120954,
+      "institution_net": -2086,
+      "individual_net": -113821
+    },
+    {
+      "date": "2026-04-17",
+      "foreign_net": 108202,
+      "institution_net": -1337,
+      "individual_net": -103723
+    },
+    {
+      "date": "2026-04-16",
+      "foreign_net": 29750,
+      "institution_net": -20646,
+      "individual_net": -9692
+    },
+    {
+      "date": "2026-04-15",
+      "foreign_net": 14260,
+      "institution_net": -45047,
+      "individual_net": 34461
+    },
+    {
+      "date": "2026-04-14",
+      "foreign_net": 28738,
+      "institution_net": 7494,
+      "individual_net": -37362
+    },
+    {
+      "date": "2026-04-13",
+      "foreign_net": -39048,
+      "institution_net": 7971,
+      "individual_net": 28660
+    },
+    {
+      "date": "2026-04-10",
+      "foreign_net": 13827,
+      "institution_net": 29871,
+      "individual_net": -52560
+    },
+    {
+      "date": "2026-04-09",
+      "foreign_net": 51913,
+      "institution_net": 63486,
+      "individual_net": -108463
+    },
+    {
+      "date": "2026-04-08",
+      "foreign_net": -78351,
+      "institution_net": -99931,
+      "individual_net": 170518
+    },
+    {
+      "date": "2026-04-07",
+      "foreign_net": -1445,
+      "institution_net": -44270,
+      "individual_net": 49337
+    },
+    {
+      "date": "2026-04-06",
+      "foreign_net": 31794,
+      "institution_net": -33301,
+      "individual_net": 736
+    },
+    {
+      "date": "2026-04-03",
+      "foreign_net": 7427,
+      "institution_net": 9527,
+      "individual_net": -18457
+    }
+  ],
+  "summary": {
+    "foreign_20d_cumul": 391457,
+    "institution_20d_cumul": -341505,
+    "trend": "외인 매수 우위"
+  },
+  "last_updated": "2026-04-30T12:33:25"
+}

@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>RF머트리얼즈 (327260) — 거래원 수급</title>
+<link rel="stylesheet" href="../assets/style.css">
+<script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+<div class="nav">
+  <a href="../index.html">← 전체 대시보드</a>
+  <a href="../profit_taking.html">💰 익절 타이밍</a>
+  <a href="../status.html">📋 현재 상황</a>
+  <a href="../trading_style.html">🎯 매매 스타일</a>
+  <span style="color:#444;margin-left:auto">|</span>
+  <span style="color:#888">RF머트리얼즈 (327260) · 데이터 312일</span>
+</div>
+
+<h1>RF머트리얼즈 <span style="color:#666;font-size:0.65em">(327260)</span></h1>
+
+<div class="grid4">
+      <div class="kpi">
+        <div class="kpi-label">현재 가격</div>
+        <div class="kpi-value mono">92,300원</div>
+        <div class="kpi-sub ret-up">고점(107,300원) 대비 -14.0%</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">현재 국면</div>
+        <div class="kpi-value regime-1">상승추세</div>
+        <div class="kpi-sub">신고가 거리 86%</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">스마트머니 20일</div>
+        <div class="kpi-value mono" style="color:#ef4444">-0.5%</div>
+        <div class="kpi-sub">대형기관 5일 -0.9%</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">권고 행동</div>
+        <div class="kpi-value"><span class="action-badge action-partial">부분 익절 (신고가권)</span></div>
+        <div class="kpi-sub">외인 breadth 4, fr5 +3.6%</div>
+      </div>
+    </div>
+
+<!-- 메인 차트 -->
+<div class="card">
+  <h2>주가 + MA + 시그널</h2>
+  <p class="desc">배경: 추세 국면 (초록=상승 / 주황=분배의심 / 빨강=하락) · 마커: ★다이버전스 ▼매도시그널 ▲매수시그널</p>
+  <div id="chart_main" style="height:440px"></div>
+</div>
+
+<!-- 비율 차트 -->
+<div class="card">
+  <h2>20일 수급 비율 (%)</h2>
+  <p class="desc">스마트머니(노란선)가 0 아래로 내려가면서 신고가 거리(보라선)가 90~100% = 다이버전스 형성</p>
+  <div id="chart_ratio" style="height:320px"></div>
+</div>
+
+<!-- 그룹별 일별 금액 -->
+<div class="grid2">
+  <div class="card">
+    <h2>일별 그룹 순매수 (억 원)</h2>
+    <div id="chart_amt" style="height:280px"></div>
+  </div>
+  <div class="card">
+    <h2>20일 롤링 스마트머니 (억 원)</h2>
+    <div id="chart_smart" style="height:280px"></div>
+  </div>
+</div>
+
+<!-- 거래원 분석 -->
+<div class="grid2">
+  <div class="card">
+    <h2>📈 매수 주도 TOP 10</h2>
+    <p class="desc">데이터 기간 시작 ~ 가격 고점(2026-04-21)까지 누적 순매수 1위~10위</p>
+    <table class="table-compact"><tr>
+              <td class="mono" style="color:#666;text-align:center;width:36px">1</td>
+              <td>모간스탠리증권</td>
+              <td class="grp-foreign" style="font-size:0.82em">외국계</td>
+              <td class="mono" style="text-align:right;color:#10b981">+255.9k</td>
+            </tr><tr>
+              <td class="mono" style="color:#666;text-align:center;width:36px">2</td>
+              <td>메리츠증권주식회사</td>
+              <td class="grp-inst" style="font-size:0.82em">기관</td>
+              <td class="mono" style="text-align:right;color:#10b981">+233.7k</td>
+            </tr><tr>
+              <td class="mono" style="color:#666;text-align:center;width:36px">3</td>
+              <td>하나금융투자</td>
+              <td class="grp-inst" style="font-size:0.82em">기관</td>
+              <td class="mono" style="text-align:right;color:#10b981">+227.8k</td>
+            </tr><tr>
+              <td class="mono" style="color:#666;text-align:center;width:36px">4</td>
+              <td>유진투자증권</td>
+              <td class="grp-inst" style="font-size:0.82em">기관</td>
+              <td class="mono" style="text-align:right;color:#10b981">+85.3k</td>
+            </tr><tr>
+              <td class="mono" style="color:#666;text-align:center;width:36px">5</td>
+              <td>JP모간증권</td>
+              <td class="grp-foreign" style="font-size:0.82em">외국계</td>
+              <td class="mono" style="text-align:right;color:#10b981">+77.3k</td>
+            </tr><tr>
+              <td class="mono" style="color:#666;text-align:center;width:36px">6</td>
+              <td>교보증권</td>
+              <td class="grp-inst" style="font-size:0.82em">기관</td>
+              <td class="mono" style="text-align:right;color:#10b981">+68.6k</td>
+            </tr><tr>
+              <td class="mono" style="color:#666;text-align:center;width:36px">7</td>
+              <td>한양증권</td>
+              <td class="grp-inst" style="font-size:0.82em">기관</td>
+              <td class="mono" style="text-align:right;color:#10b981">+61.7k</td>
+            </tr><tr>
+              <td class="mono" style="color:#666;text-align:center;width:36px">8</td>
+              <td>골드만삭스증권</td>
+              <td class="grp-foreign" style="font-size:0.82em">외국계</td>
+              <td class="mono" style="text-align:right;color:#10b981">+60.6k</td>
+            </tr><tr>
+              <td class="mono" style="color:#666;text-align:center;width:36px">9</td>
+              <td>대신증권</td>
+              <td class="grp-inst" style="font-size:0.82em">기관</td>
+              <td class="mono" style="text-align:right;color:#10b981">+47.1k</td>
+            </tr><tr>
+              <td class="mono" style="color:#666;text-align:center;width:36px">10</td>
+              <td>홍콩상하이증권</td>
+              <td class="grp-foreign" style="font-size:0.82em">외국계</td>
+              <td class="mono" style="text-align:right;color:#10b981">+39.4k</td>
+            </tr></table>
+  </div>
+  <div class="card">
+    <h2>📉 매도 주도 TOP 10</h2>
+    <p class="desc">가격 고점(2026-04-21) ~ 현재까지 누적 순매도 1위~10위</p>
+    <table class="table-compact"><tr>
+              <td class="mono" style="color:#666;text-align:center;width:36px">1</td>
+              <td>NH투자증권</td>
+              <td class="grp-inst" style="font-size:0.82em">기관</td>
+              <td class="mono" style="text-align:right;color:#ef4444">-133.3k</td>
+            </tr><tr>
+              <td class="mono" style="color:#666;text-align:center;width:36px">2</td>
+              <td>유진투자증권</td>
+              <td class="grp-inst" style="font-size:0.82em">기관</td>
+              <td class="mono" style="text-align:right;color:#ef4444">-132.8k</td>
+            </tr><tr>
+              <td class="mono" style="color:#666;text-align:center;width:36px">3</td>
+              <td>모간스탠리증권</td>
+              <td class="grp-foreign" style="font-size:0.82em">외국계</td>
+              <td class="mono" style="text-align:right;color:#ef4444">-110.4k</td>
+            </tr><tr>
+              <td class="mono" style="color:#666;text-align:center;width:36px">4</td>
+              <td>신한투자증권</td>
+              <td class="grp-inst" style="font-size:0.82em">기관</td>
+              <td class="mono" style="text-align:right;color:#ef4444">-108.8k</td>
+            </tr><tr>
+              <td class="mono" style="color:#666;text-align:center;width:36px">5</td>
+              <td>디에스투자증권</td>
+              <td class="grp-inst" style="font-size:0.82em">기관</td>
+              <td class="mono" style="text-align:right;color:#ef4444">-76.3k</td>
+            </tr><tr>
+              <td class="mono" style="color:#666;text-align:center;width:36px">6</td>
+              <td>한국투자증권</td>
+              <td class="grp-inst" style="font-size:0.82em">기관</td>
+              <td class="mono" style="text-align:right;color:#ef4444">-68.5k</td>
+            </tr><tr>
+              <td class="mono" style="color:#666;text-align:center;width:36px">7</td>
+              <td>하나금융투자</td>
+              <td class="grp-inst" style="font-size:0.82em">기관</td>
+              <td class="mono" style="text-align:right;color:#ef4444">-60.2k</td>
+            </tr><tr>
+              <td class="mono" style="color:#666;text-align:center;width:36px">8</td>
+              <td>교보증권</td>
+              <td class="grp-inst" style="font-size:0.82em">기관</td>
+              <td class="mono" style="text-align:right;color:#ef4444">-47.6k</td>
+            </tr><tr>
+              <td class="mono" style="color:#666;text-align:center;width:36px">9</td>
+              <td>JP모간증권</td>
+              <td class="grp-foreign" style="font-size:0.82em">외국계</td>
+              <td class="mono" style="text-align:right;color:#ef4444">-41.2k</td>
+            </tr><tr>
+              <td class="mono" style="color:#666;text-align:center;width:36px">10</td>
+              <td>메릴린치증권</td>
+              <td class="grp-foreign" style="font-size:0.82em">외국계</td>
+              <td class="mono" style="text-align:right;color:#ef4444">-38.7k</td>
+            </tr></table>
+  </div>
+</div>
+
+<!-- KRX 추가 데이터 -->
+<div class="card">
+          <h2>KRX 추가 데이터 (공매도 · 외국인 보유 · 기관 세부)</h2>
+          <div class="callout warn">
+            ⚠️ KRX API가 현재 응답하지 않습니다 (일시적 차단 가능).<br>
+            다시 시도하려면: <code>rm -rf data/krx_cache && python3 build_broker_dashboard.py</code><br>
+            또는 KRX 사이트 접속 가능한지 확인 후 재실행.
+          </div>
+        </div>
+
+<!-- OBV / CMF / MFI 차트 -->
+<div class="card">
+  <h2>OBV · CMF · MFI — 매집/분배 다이버전스 탐지</h2>
+  <p class="desc">
+    <b>OBV(누적 거래량)</b>: 가격은 신고가지만 OBV는 정체 = 분배 다이버전스(약한 상승) ·
+    <b>CMF</b>: -0.10 이하 분배, +0.10 이상 매집 ·
+    <b>MFI</b>: 80↑ 과매수(분배 가능), 20↓ 과매도(매집 가능)
+  </p>
+  <div id="chart_obv" style="height:300px"></div>
+  <div class="grid2" style="margin-top:14px">
+    <div id="chart_cmf" style="height:240px"></div>
+    <div id="chart_mfi" style="height:240px"></div>
+  </div>
+</div>
+
+<!-- 분배 주도자 -->
+<div class="card">
+  <h2>★ 분배 주도자 — 상승에서 사고 하락에서 판 거래원</h2>
+  <p class="desc">가장 영리한 매매. 외국계·대형 기관에 많을수록 "큰손이 분배했다"는 뚜렷한 증거.</p>
+  <table class="table-compact">
+    <tr><th style="width:36px">#</th><th>거래원</th><th>그룹</th>
+      <th style="text-align:right">상승중<br>매수</th>
+      <th style="text-align:right">하락중<br>매도</th></tr>
+    <tr>
+          <td class="mono" style="color:#666;text-align:center">1</td>
+          <td>유진투자증권</td>
+          <td class="grp-inst" style="font-size:0.82em">기관</td>
+          <td class="mono ret-up" style="text-align:right">+85.3k</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">-132.8k</td>
+        </tr><tr>
+          <td class="mono" style="color:#666;text-align:center">2</td>
+          <td>모간스탠리증권</td>
+          <td class="grp-foreign" style="font-size:0.82em">외국계</td>
+          <td class="mono ret-up" style="text-align:right">+255.9k</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">-110.4k</td>
+        </tr><tr>
+          <td class="mono" style="color:#666;text-align:center">3</td>
+          <td>신한투자증권</td>
+          <td class="grp-inst" style="font-size:0.82em">기관</td>
+          <td class="mono ret-up" style="text-align:right">+17.5k</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">-108.8k</td>
+        </tr><tr>
+          <td class="mono" style="color:#666;text-align:center">4</td>
+          <td>디에스투자증권</td>
+          <td class="grp-inst" style="font-size:0.82em">기관</td>
+          <td class="mono ret-up" style="text-align:right">+8.5k</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">-76.3k</td>
+        </tr><tr>
+          <td class="mono" style="color:#666;text-align:center">5</td>
+          <td>하나금융투자</td>
+          <td class="grp-inst" style="font-size:0.82em">기관</td>
+          <td class="mono ret-up" style="text-align:right">+227.8k</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">-60.2k</td>
+        </tr><tr>
+          <td class="mono" style="color:#666;text-align:center">6</td>
+          <td>교보증권</td>
+          <td class="grp-inst" style="font-size:0.82em">기관</td>
+          <td class="mono ret-up" style="text-align:right">+68.6k</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">-47.6k</td>
+        </tr><tr>
+          <td class="mono" style="color:#666;text-align:center">7</td>
+          <td>JP모간증권</td>
+          <td class="grp-foreign" style="font-size:0.82em">외국계</td>
+          <td class="mono ret-up" style="text-align:right">+77.3k</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">-41.2k</td>
+        </tr><tr>
+          <td class="mono" style="color:#666;text-align:center">8</td>
+          <td>한양증권</td>
+          <td class="grp-inst" style="font-size:0.82em">기관</td>
+          <td class="mono ret-up" style="text-align:right">+61.7k</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">-11.2k</td>
+        </tr>
+  </table>
+</div>
+
+<!-- 시그널 시계열 -->
+<div class="card">
+  <h2>시그널 타임라인 (최근 50건)</h2>
+  <p class="desc">★ 다이버전스 · 🚨 분배 패턴 · ⚡ 시너지(N개 카테고리 동시) · 컨펌 = 가격이 MA20/저점 깸</p>
+  <table class="table-compact">
+    <tr>
+      <th>날짜</th><th>등급</th><th style="text-align:center">점수</th>
+      <th>국면</th><th>행동 권고</th><th style="text-align:center">표식</th>
+      <th style="text-align:right">개미5d</th>
+      <th style="text-align:right">대형기관5d</th>
+      <th style="text-align:center">+5일</th>
+      <th style="text-align:center">+10일</th>
+      <th style="text-align:center">+20일</th>
+    </tr>
+    <tr>
+          <td class="mono">2026-04-22</td>
+          <td><span class="grade-sell-watch">매도주의</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-sell-watch">4</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-partial">부분 익절 (신고가권)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">-0.2%</td>
+          <td class="mono ret-up" style="text-align:right">-2.2%</td>
+          <td style="text-align:center" class="mono ">─</td>
+          <td style="text-align:center" class="mono ">─</td>
+          <td style="text-align:center" class="mono ">─</td>
+        </tr><tr>
+          <td class="mono">2026-04-07</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">2</span></td>
+          <td style="text-align:center" class="regime-1">상승추세</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">-0.2%</td>
+          <td class="mono ret-up" style="text-align:right">-2.5%</td>
+          <td style="text-align:center" class="mono ret-up">+37.9%</td>
+          <td style="text-align:center" class="mono ret-up">+45.4%</td>
+          <td style="text-align:center" class="mono ">─</td>
+        </tr><tr>
+          <td class="mono">2026-04-06</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">2</span></td>
+          <td style="text-align:center" class="regime-1">상승추세</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">-0.0%</td>
+          <td class="mono ret-up" style="text-align:right">-2.0%</td>
+          <td style="text-align:center" class="mono ret-up">+12.2%</td>
+          <td style="text-align:center" class="mono ret-up">+34.3%</td>
+          <td style="text-align:center" class="mono ">─</td>
+        </tr><tr>
+          <td class="mono">2026-04-03</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">2</span></td>
+          <td style="text-align:center" class="regime-1">상승추세</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">-0.6%</td>
+          <td class="mono ret-up" style="text-align:right">-0.6%</td>
+          <td style="text-align:center" class="mono ret-up">+21.3%</td>
+          <td style="text-align:center" class="mono ret-up">+32.1%</td>
+          <td style="text-align:center" class="mono ">─</td>
+        </tr><tr>
+          <td class="mono">2026-03-31</td>
+          <td><span class="grade-sell-watch">매도주의</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-sell-watch">3</span></td>
+          <td style="text-align:center" class="regime-1">상승추세</td>
+          <td><span class="action-badge action-strong">전량 매도 (트레일링 스탑)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">-1.2%</td>
+          <td class="mono ret-up" style="text-align:right">+3.3%</td>
+          <td style="text-align:center" class="mono ret-up">+19.2%</td>
+          <td style="text-align:center" class="mono ret-up">+64.5%</td>
+          <td style="text-align:center" class="mono ">─</td>
+        </tr><tr>
+          <td class="mono">2026-03-30</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">2</span></td>
+          <td style="text-align:center" class="regime-1">상승추세</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">-1.9%</td>
+          <td class="mono ret-up" style="text-align:right">+4.1%</td>
+          <td style="text-align:center" class="mono ret-up">+13.6%</td>
+          <td style="text-align:center" class="mono ret-up">+27.4%</td>
+          <td style="text-align:center" class="mono ">─</td>
+        </tr><tr>
+          <td class="mono">2026-03-26</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">2</span></td>
+          <td style="text-align:center" class="regime-1">상승추세</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">-1.5%</td>
+          <td class="mono ret-up" style="text-align:right">+0.7%</td>
+          <td style="text-align:center" class="mono ret-up">+0.6%</td>
+          <td style="text-align:center" class="mono ret-up">+10.5%</td>
+          <td style="text-align:center" class="mono ret-up">+30.7%</td>
+        </tr><tr>
+          <td class="mono">2026-03-25</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">1</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">-1.5%</td>
+          <td class="mono ret-up" style="text-align:right">-0.2%</td>
+          <td style="text-align:center" class="mono ret-down">-1.4%</td>
+          <td style="text-align:center" class="mono ret-up">+1.7%</td>
+          <td style="text-align:center" class="mono ret-up">+43.9%</td>
+        </tr><tr>
+          <td class="mono">2026-03-20</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">1</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">-0.4%</td>
+          <td class="mono ret-up" style="text-align:right">-0.2%</td>
+          <td style="text-align:center" class="mono ret-down">-8.0%</td>
+          <td style="text-align:center" class="mono ret-up">+3.4%</td>
+          <td style="text-align:center" class="mono ret-up">+36.5%</td>
+        </tr><tr>
+          <td class="mono">2026-03-16</td>
+          <td><span class="grade-sell-watch"><span style="color:#fb7185">★</span> 매도주의</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-sell-watch">4</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-sell">매도 (다이버전스)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">+0.4%</td>
+          <td class="mono ret-up" style="text-align:right">+1.4%</td>
+          <td style="text-align:center" class="mono ret-down">-2.8%</td>
+          <td style="text-align:center" class="mono ret-up">+7.7%</td>
+          <td style="text-align:center" class="mono ret-up">+37.2%</td>
+        </tr><tr>
+          <td class="mono">2026-03-13</td>
+          <td><span class="grade-strong-sell"><span style="color:#fb7185">★</span> 매도강추</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-strong-sell">5</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-sell">매도 (다이버전스)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">+0.6%</td>
+          <td class="mono ret-up" style="text-align:right">+1.2%</td>
+          <td style="text-align:center" class="mono ret-up">+7.4%</td>
+          <td style="text-align:center" class="mono ret-down">-1.2%</td>
+          <td style="text-align:center" class="mono ret-up">+34.7%</td>
+        </tr><tr>
+          <td class="mono">2026-03-12</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">2</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">+0.3%</td>
+          <td class="mono ret-up" style="text-align:right">+0.7%</td>
+          <td style="text-align:center" class="mono ret-down">-6.1%</td>
+          <td style="text-align:center" class="mono ret-up">+6.4%</td>
+          <td style="text-align:center" class="mono ret-up">+17.6%</td>
+        </tr><tr>
+          <td class="mono">2026-03-11</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">1</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">+0.4%</td>
+          <td class="mono ret-up" style="text-align:right">+0.2%</td>
+          <td style="text-align:center" class="mono ret-down">-16.2%</td>
+          <td style="text-align:center" class="mono ret-up">+6.2%</td>
+          <td style="text-align:center" class="mono ret-up">+8.0%</td>
+        </tr><tr>
+          <td class="mono">2026-03-10</td>
+          <td><span class="grade-sell-watch"><span style="color:#fb7185">★</span> 매도주의</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-sell-watch">4</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-sell">매도 (다이버전스)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">+0.9%</td>
+          <td class="mono ret-up" style="text-align:right">-0.8%</td>
+          <td style="text-align:center" class="mono ret-down">-7.4%</td>
+          <td style="text-align:center" class="mono ret-up">+2.0%</td>
+          <td style="text-align:center" class="mono ret-up">+21.4%</td>
+        </tr><tr>
+          <td class="mono">2026-03-09</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">1</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">+0.5%</td>
+          <td class="mono ret-up" style="text-align:right">+0.0%</td>
+          <td style="text-align:center" class="mono ret-up">+38.9%</td>
+          <td style="text-align:center" class="mono ret-up">+35.0%</td>
+          <td style="text-align:center" class="mono ret-up">+69.9%</td>
+        </tr><tr>
+          <td class="mono">2026-03-06</td>
+          <td><span class="grade-sell-watch"><span style="color:#fb7185">★</span> 매도주의</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-sell-watch">4</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-sell">매도 (다이버전스)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">+0.1%</td>
+          <td class="mono ret-up" style="text-align:right">-0.5%</td>
+          <td style="text-align:center" class="mono ret-up">+32.6%</td>
+          <td style="text-align:center" class="mono ret-up">+42.4%</td>
+          <td style="text-align:center" class="mono ret-up">+47.2%</td>
+        </tr><tr>
+          <td class="mono">2026-03-05</td>
+          <td><span class="grade-strong-sell"><span style="color:#fb7185">★</span> 매도강추</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-strong-sell">6</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-sell">매도 (다이버전스)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">+0.8%</td>
+          <td class="mono ret-up" style="text-align:right">-1.1%</td>
+          <td style="text-align:center" class="mono ret-up">+32.4%</td>
+          <td style="text-align:center" class="mono ret-up">+24.4%</td>
+          <td style="text-align:center" class="mono ret-up">+41.6%</td>
+        </tr><tr>
+          <td class="mono">2026-02-13</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">2</span></td>
+          <td style="text-align:center" class="regime-1">상승추세</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">+0.1%</td>
+          <td class="mono ret-up" style="text-align:right">-2.5%</td>
+          <td style="text-align:center" class="mono ret-up">+7.5%</td>
+          <td style="text-align:center" class="mono ret-up">+23.5%</td>
+          <td style="text-align:center" class="mono ret-up">+53.5%</td>
+        </tr><tr>
+          <td class="mono">2026-02-12</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">2</span></td>
+          <td style="text-align:center" class="regime-1">상승추세</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">+0.0%</td>
+          <td class="mono ret-up" style="text-align:right">-1.9%</td>
+          <td style="text-align:center" class="mono ret-down">-0.2%</td>
+          <td style="text-align:center" class="mono ret-down">-1.9%</td>
+          <td style="text-align:center" class="mono ret-up">+29.2%</td>
+        </tr><tr>
+          <td class="mono">2026-02-11</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">2</span></td>
+          <td style="text-align:center" class="regime-1">상승추세</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">+0.2%</td>
+          <td class="mono ret-up" style="text-align:right">-2.1%</td>
+          <td style="text-align:center" class="mono ret-up">+10.7%</td>
+          <td style="text-align:center" class="mono ret-up">+23.2%</td>
+          <td style="text-align:center" class="mono ret-up">+34.7%</td>
+        </tr><tr>
+          <td class="mono">2026-02-03</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">2</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">-0.8%</td>
+          <td class="mono ret-up" style="text-align:right">-2.0%</td>
+          <td style="text-align:center" class="mono ret-up">+8.2%</td>
+          <td style="text-align:center" class="mono ret-up">+19.1%</td>
+          <td style="text-align:center" class="mono ret-up">+23.8%</td>
+        </tr><tr>
+          <td class="mono">2026-02-02</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">2</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">-1.0%</td>
+          <td class="mono ret-up" style="text-align:right">-2.2%</td>
+          <td style="text-align:center" class="mono ret-up">+21.5%</td>
+          <td style="text-align:center" class="mono ret-up">+16.0%</td>
+          <td style="text-align:center" class="mono ret-up">+56.3%</td>
+        </tr><tr>
+          <td class="mono">2026-01-30</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">2</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">-0.5%</td>
+          <td class="mono ret-up" style="text-align:right">-3.2%</td>
+          <td style="text-align:center" class="mono ret-up">+13.8%</td>
+          <td style="text-align:center" class="mono ret-up">+20.5%</td>
+          <td style="text-align:center" class="mono ret-up">+48.8%</td>
+        </tr><tr>
+          <td class="mono">2026-01-29</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">2</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">-0.5%</td>
+          <td class="mono ret-up" style="text-align:right">-4.0%</td>
+          <td style="text-align:center" class="mono ret-up">+15.7%</td>
+          <td style="text-align:center" class="mono ret-up">+29.0%</td>
+          <td style="text-align:center" class="mono ret-up">+26.6%</td>
+        </tr><tr>
+          <td class="mono">2026-01-28</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">1</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">-0.7%</td>
+          <td class="mono ret-up" style="text-align:right">-3.9%</td>
+          <td style="text-align:center" class="mono ret-up">+22.7%</td>
+          <td style="text-align:center" class="mono ret-up">+31.6%</td>
+          <td style="text-align:center" class="mono ret-up">+62.2%</td>
+        </tr><tr>
+          <td class="mono">2026-01-27</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">1</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">-1.0%</td>
+          <td class="mono ret-up" style="text-align:right">-3.0%</td>
+          <td style="text-align:center" class="mono ret-up">+23.1%</td>
+          <td style="text-align:center" class="mono ret-up">+33.2%</td>
+          <td style="text-align:center" class="mono ret-up">+39.4%</td>
+        </tr><tr>
+          <td class="mono">2026-01-26</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">1</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">-1.1%</td>
+          <td class="mono ret-up" style="text-align:right">-1.4%</td>
+          <td style="text-align:center" class="mono ret-up">+4.2%</td>
+          <td style="text-align:center" class="mono ret-up">+26.7%</td>
+          <td style="text-align:center" class="mono ret-up">+32.6%</td>
+        </tr><tr>
+          <td class="mono">2026-01-23</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">1</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">-0.4%</td>
+          <td class="mono ret-up" style="text-align:right">-0.8%</td>
+          <td style="text-align:center" class="mono ret-up">+14.3%</td>
+          <td style="text-align:center" class="mono ret-up">+30.1%</td>
+          <td style="text-align:center" class="mono ret-up">+48.1%</td>
+        </tr><tr>
+          <td class="mono">2026-01-22</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">1</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">-0.4%</td>
+          <td class="mono ret-up" style="text-align:right">-1.5%</td>
+          <td style="text-align:center" class="mono ret-up">+31.5%</td>
+          <td style="text-align:center" class="mono ret-up">+52.2%</td>
+          <td style="text-align:center" class="mono ret-up">+69.3%</td>
+        </tr><tr>
+          <td class="mono">2026-01-21</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">1</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">-0.9%</td>
+          <td class="mono ret-up" style="text-align:right">-0.8%</td>
+          <td style="text-align:center" class="mono ret-up">+28.5%</td>
+          <td style="text-align:center" class="mono ret-up">+57.7%</td>
+          <td style="text-align:center" class="mono ret-up">+87.2%</td>
+        </tr><tr>
+          <td class="mono">2026-01-16</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">2</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"><span class="label-tag" style="background:#7f1d1d;color:#fff">컨펌 1일</span></td>
+          <td class="mono ret-down" style="text-align:right">+0.2%</td>
+          <td class="mono ret-up" style="text-align:right">-0.2%</td>
+          <td style="text-align:center" class="mono ret-up">+19.9%</td>
+          <td style="text-align:center" class="mono ret-up">+37.1%</td>
+          <td style="text-align:center" class="mono ret-up">+65.2%</td>
+        </tr><tr>
+          <td class="mono">2026-01-15</td>
+          <td><span class="grade-strong-sell"><span style="color:#fb7185">★</span> 매도강추</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-strong-sell">5</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-sell">매도 (다이버전스)</span></td>
+          <td style="text-align:center"><span class="label-tag" style="background:#7f1d1d;color:#fff">컨펌 2일</span></td>
+          <td class="mono ret-down" style="text-align:right">+1.6%</td>
+          <td class="mono ret-up" style="text-align:right">+2.0%</td>
+          <td style="text-align:center" class="mono ret-up">+4.3%</td>
+          <td style="text-align:center" class="mono ret-up">+37.2%</td>
+          <td style="text-align:center" class="mono ret-up">+77.0%</td>
+        </tr><tr>
+          <td class="mono">2026-01-14</td>
+          <td><span class="grade-strong-sell"><span style="color:#fb7185">★</span> 매도강추</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-strong-sell">5</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-sell">매도 (다이버전스)</span></td>
+          <td style="text-align:center"><span class="label-tag" style="background:#7f1d1d;color:#fff">컨펌 3일</span></td>
+          <td class="mono ret-down" style="text-align:right">+2.8%</td>
+          <td class="mono ret-up" style="text-align:right">+2.2%</td>
+          <td style="text-align:center" class="mono ret-up">+0.0%</td>
+          <td style="text-align:center" class="mono ret-up">+28.5%</td>
+          <td style="text-align:center" class="mono ret-up">+69.2%</td>
+        </tr><tr>
+          <td class="mono">2026-01-13</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">2</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"><span class="label-tag" style="background:#7f1d1d;color:#fff">컨펌 4일</span></td>
+          <td class="mono ret-down" style="text-align:right">+2.8%</td>
+          <td class="mono ret-up" style="text-align:right">+3.5%</td>
+          <td style="text-align:center" class="mono ret-down">-3.5%</td>
+          <td style="text-align:center" class="mono ret-up">+27.1%</td>
+          <td style="text-align:center" class="mono ret-up">+69.4%</td>
+        </tr><tr>
+          <td class="mono">2026-01-12</td>
+          <td><span class="grade-strong-sell"><span style="color:#fb7185">★</span> 매도강추</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-strong-sell">5</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-sell">매도 (다이버전스)</span></td>
+          <td style="text-align:center"><span class="label-tag" style="background:#7f1d1d;color:#fff">컨펌 5일</span></td>
+          <td class="mono ret-down" style="text-align:right">+2.7%</td>
+          <td class="mono ret-up" style="text-align:right">+3.1%</td>
+          <td style="text-align:center" class="mono ret-down">-7.2%</td>
+          <td style="text-align:center" class="mono ret-up">+30.8%</td>
+          <td style="text-align:center" class="mono ret-up">+65.7%</td>
+        </tr><tr>
+          <td class="mono">2026-01-09</td>
+          <td><span class="grade-sell-watch">매도주의</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-sell-watch">3</span></td>
+          <td style="text-align:center" class="regime-1">상승추세</td>
+          <td><span class="action-badge action-strong">전량 매도 (트레일링 스탑)</span></td>
+          <td style="text-align:center"><span class="label-tag" style="background:#7f1d1d;color:#fff">컨펌 6일</span></td>
+          <td class="mono ret-down" style="text-align:right">+2.5%</td>
+          <td class="mono ret-up" style="text-align:right">+3.9%</td>
+          <td style="text-align:center" class="mono ret-up">+0.8%</td>
+          <td style="text-align:center" class="mono ret-up">+20.9%</td>
+          <td style="text-align:center" class="mono ret-up">+57.3%</td>
+        </tr><tr>
+          <td class="mono">2026-01-05</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">2</span></td>
+          <td style="text-align:center" class="regime-1">상승추세</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"><span class="label-tag" style="background:#7f1d1d;color:#fff">컨펌 10일</span></td>
+          <td class="mono ret-down" style="text-align:right">-0.9%</td>
+          <td class="mono ret-up" style="text-align:right">+2.6%</td>
+          <td style="text-align:center" class="mono ret-down">-3.9%</td>
+          <td style="text-align:center" class="mono ret-down">-10.8%</td>
+          <td style="text-align:center" class="mono ret-up">+31.0%</td>
+        </tr><tr>
+          <td class="mono">2025-12-18</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">2</span></td>
+          <td style="text-align:center" class="regime-1">상승추세</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">-2.9%</td>
+          <td class="mono ret-up" style="text-align:right">+1.8%</td>
+          <td style="text-align:center" class="mono ret-up">+13.7%</td>
+          <td style="text-align:center" class="mono ret-up">+18.5%</td>
+          <td style="text-align:center" class="mono ret-up">+13.7%</td>
+        </tr><tr>
+          <td class="mono">2025-12-16</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">2</span></td>
+          <td style="text-align:center" class="regime-1">상승추세</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">-4.5%</td>
+          <td class="mono ret-up" style="text-align:right">+3.9%</td>
+          <td style="text-align:center" class="mono ret-up">+23.1%</td>
+          <td style="text-align:center" class="mono ret-up">+26.8%</td>
+          <td style="text-align:center" class="mono ret-up">+18.4%</td>
+        </tr><tr>
+          <td class="mono">2025-12-15</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">2</span></td>
+          <td style="text-align:center" class="regime-1">상승추세</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">-4.7%</td>
+          <td class="mono ret-up" style="text-align:right">+6.7%</td>
+          <td style="text-align:center" class="mono ret-up">+31.2%</td>
+          <td style="text-align:center" class="mono ret-up">+14.0%</td>
+          <td style="text-align:center" class="mono ret-up">+21.4%</td>
+        </tr><tr>
+          <td class="mono">2025-12-12</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">2</span></td>
+          <td style="text-align:center" class="regime-1">상승추세</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"></td>
+          <td class="mono ret-down" style="text-align:right">-2.5%</td>
+          <td class="mono ret-up" style="text-align:right">+6.5%</td>
+          <td style="text-align:center" class="mono ret-up">+3.1%</td>
+          <td style="text-align:center" class="mono ret-up">+11.1%</td>
+          <td style="text-align:center" class="mono ret-up">+18.8%</td>
+        </tr><tr>
+          <td class="mono">2025-11-12</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">1</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"><span class="label-tag" style="background:#7f1d1d;color:#fff">컨펌 1일</span></td>
+          <td class="mono ret-down" style="text-align:right">-0.1%</td>
+          <td class="mono ret-up" style="text-align:right">-0.7%</td>
+          <td style="text-align:center" class="mono ret-down">-10.6%</td>
+          <td style="text-align:center" class="mono ret-down">-0.9%</td>
+          <td style="text-align:center" class="mono ret-up">+13.3%</td>
+        </tr><tr>
+          <td class="mono">2025-11-11</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">1</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"><span class="label-tag" style="background:#7f1d1d;color:#fff">컨펌 1일</span></td>
+          <td class="mono ret-down" style="text-align:right">-0.5%</td>
+          <td class="mono ret-up" style="text-align:right">-1.0%</td>
+          <td style="text-align:center" class="mono ret-down">-11.5%</td>
+          <td style="text-align:center" class="mono ret-down">-6.2%</td>
+          <td style="text-align:center" class="mono ret-down">-0.7%</td>
+        </tr><tr>
+          <td class="mono">2025-11-10</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">1</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"><span class="label-tag" style="background:#7f1d1d;color:#fff">컨펌 2일</span></td>
+          <td class="mono ret-down" style="text-align:right">-0.5%</td>
+          <td class="mono ret-up" style="text-align:right">-1.2%</td>
+          <td style="text-align:center" class="mono ret-down">-6.1%</td>
+          <td style="text-align:center" class="mono ret-down">-17.3%</td>
+          <td style="text-align:center" class="mono ret-down">-5.1%</td>
+        </tr><tr>
+          <td class="mono">2025-11-06</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">2</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"><span class="label-tag" style="background:#7f1d1d;color:#fff">컨펌 1일</span></td>
+          <td class="mono ret-down" style="text-align:right">-0.7%</td>
+          <td class="mono ret-up" style="text-align:right">-0.6%</td>
+          <td style="text-align:center" class="mono ret-down">-11.1%</td>
+          <td style="text-align:center" class="mono ret-down">-11.4%</td>
+          <td style="text-align:center" class="mono ret-down">-6.3%</td>
+        </tr><tr>
+          <td class="mono">2025-10-30</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">1</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"><span class="label-tag" style="background:#7f1d1d;color:#fff">컨펌 1일</span></td>
+          <td class="mono ret-down" style="text-align:right">+1.7%</td>
+          <td class="mono ret-up" style="text-align:right">-2.1%</td>
+          <td style="text-align:center" class="mono ret-up">+11.7%</td>
+          <td style="text-align:center" class="mono ret-down">-0.8%</td>
+          <td style="text-align:center" class="mono ret-up">+4.7%</td>
+        </tr><tr>
+          <td class="mono">2025-10-29</td>
+          <td><span class="grade-sell-watch"><span style="color:#fb7185">★</span> 매도주의</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-sell-watch">4</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-sell">매도 (다이버전스)</span></td>
+          <td style="text-align:center"><span class="label-tag" style="background:#7f1d1d;color:#fff">컨펌 2일</span></td>
+          <td class="mono ret-down" style="text-align:right">+0.5%</td>
+          <td class="mono ret-up" style="text-align:right">-2.4%</td>
+          <td style="text-align:center" class="mono ret-down">-5.7%</td>
+          <td style="text-align:center" class="mono ret-down">-4.3%</td>
+          <td style="text-align:center" class="mono ret-down">-5.2%</td>
+        </tr><tr>
+          <td class="mono">2025-10-28</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">1</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"><span class="label-tag" style="background:#7f1d1d;color:#fff">컨펌 3일</span></td>
+          <td class="mono ret-down" style="text-align:right">-0.3%</td>
+          <td class="mono ret-up" style="text-align:right">-1.6%</td>
+          <td style="text-align:center" class="mono ret-down">-13.4%</td>
+          <td style="text-align:center" class="mono ret-down">-2.7%</td>
+          <td style="text-align:center" class="mono ret-down">-8.8%</td>
+        </tr><tr>
+          <td class="mono">2025-10-27</td>
+          <td><span class="grade-sell-watch">매도주의</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-sell-watch">3</span></td>
+          <td style="text-align:center" class="regime-2">분배의심</td>
+          <td><span class="action-badge action-partial">부분 익절 (신고가권)</span></td>
+          <td style="text-align:center"><span class="label-tag" style="background:#7f1d1d;color:#fff">컨펌 4일</span></td>
+          <td class="mono ret-down" style="text-align:right">-0.8%</td>
+          <td class="mono ret-up" style="text-align:right">+0.0%</td>
+          <td style="text-align:center" class="mono ret-down">-8.3%</td>
+          <td style="text-align:center" class="mono ret-up">+1.0%</td>
+          <td style="text-align:center" class="mono ret-down">-16.5%</td>
+        </tr><tr>
+          <td class="mono">2025-10-23</td>
+          <td><span class="grade-watch">관망</span></td>
+          <td class="mono" style="text-align:center"><span class="grade-watch">2</span></td>
+          <td style="text-align:center" class="regime-1">상승추세</td>
+          <td><span class="action-badge action-hold">HOLD (감시)</span></td>
+          <td style="text-align:center"><span class="label-tag" style="background:#7f1d1d;color:#fff">컨펌 6일</span></td>
+          <td class="mono ret-down" style="text-align:right">-1.3%</td>
+          <td class="mono ret-up" style="text-align:right">-0.7%</td>
+          <td style="text-align:center" class="mono ret-down">-6.7%</td>
+          <td style="text-align:center" class="mono ret-up">+4.2%</td>
+          <td style="text-align:center" class="mono ret-down">-7.7%</td>
+        </tr>
+  </table>
+</div>
+
+</div>
+
+<script>
+const D = {"dates": ["2025-01-02", "2025-01-03", "2025-01-06", "2025-01-07", "2025-01-08", "2025-01-09", "2025-01-10", "2025-01-13", "2025-01-14", "2025-01-15", "2025-01-16", "2025-01-17", "2025-01-20", "2025-01-21", "2025-01-22", "2025-01-23", "2025-01-24", "2025-01-31", "2025-02-03", "2025-02-04", "2025-02-05", "2025-02-06", "2025-02-07", "2025-02-10", "2025-02-11", "2025-02-12", "2025-02-13", "2025-02-14", "2025-02-17", "2025-02-18", "2025-02-19", "2025-02-20", "2025-02-21", "2025-02-24", "2025-02-25", "2025-02-26", "2025-02-27", "2025-02-28", "2025-03-04", "2025-03-05", "2025-03-06", "2025-03-07", "2025-03-10", "2025-03-11", "2025-03-12", "2025-03-13", "2025-03-14", "2025-03-17", "2025-03-18", "2025-03-19", "2025-03-20", "2025-03-21", "2025-03-24", "2025-03-25", "2025-03-26", "2025-03-27", "2025-03-28", "2025-03-31", "2025-04-01", "2025-04-02", "2025-04-03", "2025-04-04", "2025-04-07", "2025-04-08", "2025-04-09", "2025-04-10", "2025-04-11", "2025-04-14", "2025-04-15", "2025-04-16", "2025-04-17", "2025-04-18", "2025-04-21", "2025-04-22", "2025-04-23", "2025-04-24", "2025-04-25", "2025-04-28", "2025-04-29", "2025-04-30", "2025-05-02", "2025-05-07", "2025-05-08", "2025-05-09", "2025-05-12", "2025-05-13", "2025-05-14", "2025-05-15", "2025-05-16", "2025-05-19", "2025-05-20", "2025-05-21", "2025-05-22", "2025-05-23", "2025-05-26", "2025-05-27", "2025-05-28", "2025-05-29", "2025-05-30", "2025-06-02", "2025-06-16", "2025-06-17", "2025-06-18", "2025-06-19", "2025-06-20", "2025-06-23", "2025-06-24", "2025-06-25", "2025-06-26", "2025-06-27", "2025-06-30", "2025-07-01", "2025-07-02", "2025-07-03", "2025-07-04", "2025-07-07", "2025-07-08", "2025-07-09", "2025-07-10", "2025-07-11", "2025-07-14", "2025-07-15", "2025-07-16", "2025-07-17", "2025-07-18", "2025-07-21", "2025-07-22", "2025-07-23", "2025-07-24", "2025-07-25", "2025-07-28", "2025-07-29", "2025-07-30", "2025-07-31", "2025-08-01", "2025-08-04", "2025-08-05", "2025-08-06", "2025-08-07", "2025-08-08", "2025-08-11", "2025-08-12", "2025-08-13", "2025-08-14", "2025-08-18", "2025-08-19", "2025-08-20", "2025-08-21", "2025-08-22", "2025-08-25", "2025-08-26", "2025-08-27", "2025-08-28", "2025-08-29", "2025-09-01", "2025-09-02", "2025-09-03", "2025-09-04", "2025-09-05", "2025-09-08", "2025-09-09", "2025-09-10", "2025-09-11", "2025-09-12", "2025-09-15", "2025-09-16", "2025-09-17", "2025-09-18", "2025-09-19", "2025-09-22", "2025-09-23", "2025-09-24", "2025-09-25", "2025-09-26", "2025-09-29", "2025-09-30", "2025-10-01", "2025-10-02", "2025-10-10", "2025-10-13", "2025-10-14", "2025-10-15", "2025-10-16", "2025-10-17", "2025-10-20", "2025-10-21", "2025-10-22", "2025-10-23", "2025-10-24", "2025-10-27", "2025-10-28", "2025-10-29", "2025-10-30", "2025-10-31", "2025-11-03", "2025-11-04", "2025-11-05", "2025-11-06", "2025-11-07", "2025-11-10", "2025-11-11", "2025-11-12", "2025-11-13", "2025-11-14", "2025-11-17", "2025-11-18", "2025-11-19", "2025-11-20", "2025-11-21", "2025-11-24", "2025-11-25", "2025-11-26", "2025-11-27", "2025-11-28", "2025-12-01", "2025-12-02", "2025-12-03", "2025-12-04", "2025-12-05", "2025-12-08", "2025-12-09", "2025-12-10", "2025-12-11", "2025-12-12", "2025-12-15", "2025-12-16", "2025-12-17", "2025-12-18", "2025-12-19", "2025-12-22", "2025-12-23", "2025-12-24", "2025-12-26", "2025-12-29", "2025-12-30", "2026-01-02", "2026-01-05", "2026-01-06", "2026-01-07", "2026-01-08", "2026-01-09", "2026-01-12", "2026-01-13", "2026-01-14", "2026-01-15", "2026-01-16", "2026-01-19", "2026-01-20", "2026-01-21", "2026-01-22", "2026-01-23", "2026-01-26", "2026-01-27", "2026-01-28", "2026-01-29", "2026-01-30", "2026-02-02", "2026-02-03", "2026-02-04", "2026-02-05", "2026-02-06", "2026-02-09", "2026-02-10", "2026-02-11", "2026-02-12", "2026-02-13", "2026-02-19", "2026-02-20", "2026-02-23", "2026-02-24", "2026-02-25", "2026-02-26", "2026-02-27", "2026-03-03", "2026-03-04", "2026-03-05", "2026-03-06", "2026-03-09", "2026-03-10", "2026-03-11", "2026-03-12", "2026-03-13", "2026-03-16", "2026-03-17", "2026-03-18", "2026-03-19", "2026-03-20", "2026-03-23", "2026-03-24", "2026-03-25", "2026-03-26", "2026-03-27", "2026-03-30", "2026-03-31", "2026-04-01", "2026-04-02", "2026-04-03", "2026-04-06", "2026-04-07", "2026-04-08", "2026-04-09", "2026-04-10", "2026-04-13", "2026-04-14", "2026-04-15", "2026-04-16", "2026-04-17", "2026-04-20", "2026-04-21", "2026-04-22", "2026-04-23", "2026-04-24"], "close": [4925, 4950, 4985, 5010, 5150, 5140, 5200, 5260, 5300, 5360, 5490, 5670, 5800, 5720, 5730, 5700, 5690, 5720, 5620, 6340, 6120, 6140, 6210, 6180, 6370, 6320, 6310, 6250, 6170, 6550, 6460, 6220, 6250, 6380, 6100, 6020, 6040, 5660, 5850, 5890, 6190, 6060, 6120, 6090, 6220, 6020, 6430, 6380, 6450, 6950, 6660, 6470, 6510, 6330, 6170, 6160, 6010, 5690, 5740, 5590, 5900, 5700, 4840, 5180, 5150, 5320, 5400, 5490, 5660, 5620, 5350, 5330, 5280, 5230, 5310, 5340, 5450, 5550, 5530, 5470, 5520, 5540, 5590, 5560, 5500, 5510, 5560, 5560, 5610, 5360, 5370, 5450, 5270, 5250, 5200, 5320, 5400, 5480, 5630, 5750, 6000, 6050, 5990, 5840, 5970, 6020, 6000, 6130, 6200, 5990, 5820, 6000, 5900, 5940, 5850, 5690, 5730, 5720, 5850, 5850, 5710, 5960, 6070, 6200, 6170, 5970, 5800, 5810, 5720, 5700, 6310, 6270, 6470, 6540, 6680, 6700, 6580, 6530, 6760, 6530, 6340, 6580, 6580, 6470, 6510, 6160, 6140, 6190, 6100, 6340, 6440, 6440, 6720, 7070, 6950, 6870, 6920, 7350, 7880, 8360, 9200, 10600, 11930, 12690, 12040, 12840, 13160, 12780, 13460, 14260, 13950, 14080, 14410, 13530, 15470, 15930, 15800, 16790, 16680, 15620, 16500, 19150, 18150, 18890, 18330, 18390, 18020, 19300, 18730, 18740, 19860, 18920, 18000, 16850, 17190, 17200, 17850, 20100, 17950, 18920, 19320, 18100, 17860, 16880, 17770, 17100, 16180, 17810, 16160, 15650, 18120, 17930, 18850, 20800, 20050, 20750, 21750, 18830, 18380, 17960, 19190, 20500, 19500, 20800, 20050, 20150, 21300, 20500, 21450, 26300, 24800, 24000, 23300, 23100, 22850, 25550, 25350, 24300, 24850, 23600, 23650, 24350, 24150, 24700, 24350, 23850, 22600, 23300, 24700, 25400, 28600, 31850, 30700, 31750, 33400, 32700, 33200, 37800, 38950, 38650, 37200, 40350, 40900, 41800, 43100, 39400, 38500, 45000, 46250, 43000, 42350, 42250, 42800, 51500, 42300, 48650, 51900, 46800, 60800, 66500, 64400, 68800, 65000, 56300, 55700, 60500, 73900, 63200, 62000, 70600, 68500, 68000, 70000, 61900, 69600, 68900, 76400, 79500, 73800, 71800, 75700, 92700, 89200, 101800, 97000, 96200, 100900, 106800, 107300, 101600, 89500, 92300], "ma20": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 5438.0, 5497.75, 5557.25, 5618.5, 5677.0, 5738.0, 5797.0, 5852.5, 5902.0, 5945.5, 6005.0, 6053.5, 6081.0, 6103.5, 6136.5, 6155.0, 6171.0, 6188.5, 6185.5, 6197.0, 6174.5, 6178.0, 6174.0, 6169.5, 6165.0, 6157.5, 6142.5, 6148.5, 6155.0, 6169.0, 6189.0, 6199.0, 6211.5, 6224.5, 6222.0, 6225.5, 6232.5, 6231.0, 6232.5, 6227.0, 6212.0, 6197.5, 6179.5, 6115.5, 6070.0, 6016.5, 5981.5, 5930.0, 5885.5, 5846.0, 5779.5, 5714.0, 5657.0, 5595.5, 5540.5, 5497.5, 5456.5, 5428.5, 5421.5, 5411.0, 5405.0, 5386.0, 5378.0, 5415.5, 5434.5, 5452.0, 5461.5, 5469.5, 5473.0, 5470.5, 5457.5, 5458.5, 5464.5, 5464.0, 5465.0, 5459.5, 5458.5, 5456.0, 5452.5, 5457.5, 5471.5, 5495.5, 5521.0, 5541.0, 5555.0, 5578.5, 5604.0, 5626.0, 5654.5, 5684.0, 5715.5, 5738.0, 5765.5, 5797.0, 5831.5, 5864.0, 5882.5, 5899.0, 5911.0, 5922.0, 5927.0, 5912.5, 5908.0, 5912.0, 5930.0, 5940.0, 5937.5, 5927.5, 5911.5, 5887.5, 5873.0, 5897.5, 5911.0, 5939.5, 5969.5, 6011.0, 6061.5, 6104.0, 6144.5, 6190.0, 6224.0, 6255.5, 6286.5, 6312.0, 6325.5, 6342.5, 6352.0, 6369.0, 6388.0, 6407.0, 6439.0, 6445.5, 6454.0, 6466.5, 6493.0, 6506.5, 6515.0, 6532.0, 6573.0, 6629.0, 6720.5, 6863.5, 7064.5, 7332.0, 7643.0, 7919.5, 8253.5, 8604.5, 8934.0, 9302.0, 9698.0, 10073.5, 10455.5, 10840.0, 11163.0, 11589.0, 12042.0, 12486.0, 12958.0, 13398.0, 13761.0, 14126.0, 14553.5, 14864.5, 15174.5, 15489.0, 15766.5, 16009.5, 16335.5, 16599.0, 16823.0, 17118.5, 17360.5, 17540.0, 17706.0, 17792.0, 17855.5, 17958.0, 18123.5, 18187.0, 18352.0, 18493.0, 18440.5, 18426.0, 18325.5, 18297.5, 18233.0, 18141.0, 18066.5, 17938.0, 17783.5, 17696.5, 17647.0, 17689.5, 17887.0, 18030.0, 18207.5, 18402.5, 18339.0, 18360.5, 18312.5, 18306.0, 18426.0, 18508.0, 18704.0, 18818.0, 18970.5, 19226.5, 19361.0, 19625.5, 20158.0, 20492.0, 20795.5, 21018.0, 21133.0, 21273.0, 21513.0, 21693.0, 21966.5, 22290.0, 22572.0, 22795.0, 22987.5, 23220.0, 23415.0, 23630.0, 23815.0, 23880.0, 24020.0, 24182.5, 24137.5, 24327.5, 24720.0, 25090.0, 25522.5, 26050.0, 26407.5, 26800.0, 27475.0, 28180.0, 28932.5, 29610.0, 30410.0, 31247.5, 32102.5, 33040.0, 33817.5, 34612.5, 35697.5, 36775.0, 37655.0, 38342.5, 38862.5, 39467.5, 40455.0, 40900.0, 41697.5, 42632.5, 43082.5, 44175.0, 45567.5, 46927.5, 48350.0, 49555.0, 50280.0, 50910.0, 51965.0, 53735.0, 54645.0, 55432.5, 56812.5, 58120.0, 59407.5, 60767.5, 61287.5, 62652.5, 63665.0, 64890.0, 66525.0, 67175.0, 67440.0, 68005.0, 69200.0, 70410.0, 72685.0, 74750.0, 76535.0, 77885.0, 80065.0, 82330.0, 83880.0, 84930.0, 86145.0], "ma60": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 5941.5, 5957.75, 5970.25, 5967.833333333333, 5970.666666666667, 5970.666666666667, 5973.666666666667, 5977.0, 5980.833333333333, 5986.833333333333, 5991.166666666667, 5988.833333333333, 5983.166666666667, 5974.5, 5966.333333333333, 5959.333333333333, 5953.333333333333, 5949.333333333333, 5946.5, 5945.0, 5930.5, 5920.5, 5910.5, 5900.166666666667, 5889.833333333333, 5875.333333333333, 5861.833333333333, 5849.333333333333, 5837.833333333333, 5828.5, 5808.666666666667, 5790.5, 5777.666666666667, 5761.333333333333, 5742.5, 5727.5, 5715.833333333333, 5705.166666666667, 5702.166666666667, 5698.5, 5696.166666666667, 5693.0, 5692.833333333333, 5690.666666666667, 5686.5, 5682.333333333333, 5682.333333333333, 5675.166666666667, 5671.0, 5666.833333333333, 5650.833333333333, 5636.833333333333, 5629.0, 5618.833333333333, 5612.333333333333, 5607.0, 5599.166666666667, 5594.5, 5595.0, 5596.833333333333, 5601.166666666667, 5598.0, 5602.333333333333, 5622.833333333333, 5639.833333333333, 5656.833333333333, 5667.666666666667, 5674.333333333333, 5679.666666666667, 5680.666666666667, 5682.0, 5698.0, 5713.666666666667, 5733.5, 5755.333333333333, 5778.166666666667, 5800.833333333333, 5819.666666666667, 5836.0, 5856.5, 5874.166666666667, 5887.833333333333, 5905.166666666667, 5921.666666666667, 5936.833333333333, 5953.666666666667, 5964.5, 5974.166666666667, 5984.666666666667, 5992.833333333333, 6009.166666666667, 6027.0, 6043.5, 6067.666666666667, 6098.0, 6127.166666666667, 6153.0, 6178.333333333333, 6209.5, 6247.0, 6290.5, 6343.833333333333, 6419.666666666667, 6518.666666666667, 6632.833333333333, 6734.0, 6847.666666666667, 6967.0, 7077.833333333333, 7198.833333333333, 7336.666666666667, 7472.166666666667, 7606.833333333333, 7748.666666666667, 7875.166666666667, 8035.5, 8206.166666666666, 8374.0, 8558.5, 8739.0, 8901.833333333334, 9081.666666666666, 9301.5, 9502.833333333334, 9714.333333333334, 9917.0, 10124.0, 10327.666666666666, 10552.5, 10769.333333333334, 10986.666666666666, 11212.5, 11423.333333333334, 11615.5, 11787.333333333334, 11962.5, 12137.5, 12325.333333333334, 12551.5, 12738.0, 12944.5, 13160.833333333334, 13352.833333333334, 13540.833333333334, 13714.333333333334, 13902.0, 14084.333333333334, 14251.666666666666, 14445.333333333334, 14613.0, 14768.166666666666, 14962.833333333334, 15154.333333333334, 15356.5, 15585.333333333334, 15803.666666666666, 16035.0, 16282.166666666666, 16473.5, 16648.5, 16808.5, 16975.0, 17140.0, 17266.166666666668, 17401.333333333332, 17534.833333333332, 17656.666666666668, 17792.333333333332, 17921.0, 18054.166666666668, 18254.833333333332, 18435.666666666668, 18601.0, 18749.166666666668, 18908.666666666668, 19031.666666666668, 19192.0, 19351.166666666668, 19476.333333333332, 19612.5, 19745.5, 19864.666666666668, 19951.333333333332, 20051.333333333332, 20148.166666666668, 20248.5, 20339.5, 20415.833333333332, 20482.5, 20582.0, 20693.0, 20838.666666666668, 21054.166666666668, 21265.833333333332, 21514.166666666668, 21784.333333333332, 22042.666666666668, 22298.5, 22593.5, 22943.5, 23272.333333333332, 23570.333333333332, 23941.166666666668, 24325.166666666668, 24740.5, 25162.666666666668, 25534.333333333332, 25906.333333333332, 26359.5, 26861.0, 27316.833333333332, 27720.666666666668, 28126.0, 28525.166666666668, 29036.833333333332, 29407.666666666668, 29872.666666666668, 30375.166666666668, 30841.333333333332, 31548.333333333332, 32357.333333333332, 33110.833333333336, 33915.833333333336, 34674.166666666664, 35265.833333333336, 35860.0, 36532.5, 37409.166666666664, 38120.833333333336, 38796.666666666664, 39535.0, 40263.333333333336, 40996.666666666664, 41775.0, 42421.666666666664, 43200.833333333336, 43923.333333333336, 44774.166666666664, 45694.166666666664, 46510.0, 47313.333333333336, 48180.833333333336, 49320.0, 50404.166666666664, 51689.166666666664, 52900.0, 54105.833333333336, 55410.833333333336, 56802.5, 58179.166666666664, 59449.166666666664, 60464.166666666664, 61471.666666666664], "fr20": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 0.11, -0.26, -0.12, 0.02, 0.24, 0.28, 0.13, 0.37, 0.52, 0.54, 0.69, 0.55, 0.57, 0.39, 0.52, 0.32, 0.3, 0.37, 0.03, -0.21, -1.03, -0.81, -1.28, -1.42, -1.53, -1.76, -1.43, -0.57, -0.5, -0.59, -0.17, 0.07, 0.09, 0.15, 0.13, 0.33, 0.34, 0.27, 0.28, 0.37, 0.36, 0.36, 0.46, 0.59, 0.49, 0.47, 0.54, 0.85, 0.88, 0.94, 1.23, 0.19, 0.23, 0.34, 0.44, 0.31, 0.3, 0.57, 0.59, 0.59, 0.56, 0.66, 0.76, 0.55, 1.28, 1.55, 1.33, 1.39, 1.25, 1.41, 1.17, 3.4, 3.35, 3.04, 3.38, 3.1, 3.09, 2.5, 2.84, 2.8, 3.11, 3.27, 3.2, 3.15, 3.2, 3.7, 3.93, 3.87, 4.04, 3.86, 3.88, 3.92, 4.08, 4.08, 4.18, 4.13, 3.92, 4.24, 4.27, 4.33, 4.24, 4.27, 4.26, 4.12, 4.1, 3.57, 3.33, 3.12, 2.6, 2.47, 2.78, 0.16, 0.0, -0.07, -0.09, -0.21, -0.33, -0.37, -0.38, -0.39, -0.37, -0.31, -0.24, -0.25, -0.28, -0.29, -0.32, -0.31, -0.32, -0.32, -0.3, -0.36, -0.32, -0.28, 0.24, 0.61, 1.14, 1.4, 1.95, 2.45, 2.33, 1.56, 1.91, 1.3, 1.41, 1.39, 1.4, 1.38, 1.35, 1.3, 1.14, 1.03, 0.92, 0.84, 0.72, 1.14, 0.96, 0.65, 0.72, 0.56, 0.35, 0.1, -0.57, -0.63, -0.69, -0.92, -1.02, -1.02, -0.79, -0.96, -0.66, -0.43, -0.52, -0.44, 0.17, -0.12, 0.73, 1.29, 0.95, 0.98, 1.1, 1.43, 1.54, 1.73, 1.63, 1.83, 2.3, 2.21, 1.79, 1.96, 2.13, 2.09, 2.3, 2.35, 1.71, 1.34, 0.49, 0.23, 0.27, 0.35, 0.27, 0.18, 0.34, 0.37, 0.34, 0.37, -0.05, 0.09, 0.22, 0.14, 0.78, 0.49, 0.48, 0.51, 0.71, 0.67, 0.93, 0.76, 0.63, -0.46, -0.86, -1.07, -1.21, -1.46, -1.69, -1.88, -2.08, -2.11, -1.65, -1.4, -2.74, -2.25, -1.73, -1.82, -1.37, -0.77, -0.79, -0.2, 0.5, 1.79, 2.38, 2.68, 2.86, 2.91, 3.42, 3.63, 3.55, 3.8, 3.5, 3.06, 2.75, 2.31, 2.33, 2.4, 2.33, 1.48, 1.33, 0.78, -0.35, -0.29, -0.92, -1.05, -1.29, -1.26, -1.53, -1.56, -1.28, -1.1, -1.11, -1.05, -0.73, -0.68, -0.83, -0.85, -1.45, -1.24, -1.17, -0.98, -0.34, -0.65, -0.68, -0.64, -0.32, -0.25, 0.08, 0.15, 0.32, 0.46, 1.04, 1.28, 1.08, 1.14, 1.52], "ir20": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 1.99, 1.74, 1.67, 1.56, 1.23, 1.0, 1.14, 0.92, 0.56, 0.57, 0.41, 0.49, 0.4, 0.44, 0.23, 0.42, 0.44, 1.38, 1.12, 0.78, 1.38, 1.24, 1.59, 1.38, 1.69, 1.99, 1.3, 0.08, 0.48, 0.78, -0.82, -0.54, -0.48, -0.4, -0.4, -0.55, -0.4, -0.29, -0.24, -0.22, -0.27, -0.2, -0.27, -0.53, -0.65, -0.55, -0.61, -0.68, -0.94, -1.09, 1.33, 0.08, 0.11, -0.05, -0.1, -0.12, -0.54, -0.81, -0.73, -0.72, -0.58, -0.83, -1.03, -0.45, -0.01, -0.58, -0.41, -0.11, 0.03, -0.04, 0.07, 1.66, 1.28, 0.44, 0.65, 1.4, 1.32, 2.27, 1.65, 1.15, 1.02, -0.01, -0.52, -0.55, -0.86, -1.84, -1.9, -2.47, -3.46, -3.92, -3.89, -4.09, -4.72, -4.59, -4.81, -4.7, -4.35, -5.28, -5.44, -5.55, -5.89, -5.87, -5.37, -5.15, -4.64, -4.24, -4.3, -4.09, -3.54, -3.48, -4.09, -0.98, -0.72, -0.49, -0.31, -0.39, -0.25, -0.14, -0.16, -0.07, -0.15, -0.18, -0.11, -0.12, -0.12, -0.12, -0.12, -0.14, -0.08, -0.08, -0.07, 0.34, 0.53, 0.64, 0.19, 0.05, -0.44, -0.79, -0.7, -0.92, -0.93, -0.71, -0.96, -0.39, -0.31, -0.29, -0.14, -0.06, -0.05, 0.15, 0.45, 0.51, 0.64, 0.7, 0.71, 0.46, 0.62, 0.93, 0.76, 0.75, 1.0, 1.03, 1.69, 1.41, 1.17, 1.41, 1.47, 1.34, 1.25, 1.1, 0.54, 0.36, 0.12, -0.06, -0.55, -0.43, -1.28, -1.83, -1.43, -1.43, -1.5, -1.47, -1.89, -1.64, -1.49, -1.71, -2.08, -1.97, -1.77, -1.83, -1.99, -1.78, -1.79, -1.64, -0.91, -0.47, 0.42, 0.67, 0.54, 0.46, 0.39, 0.63, 0.87, 0.75, 0.82, 0.94, 1.2, 1.13, 1.09, 0.97, -0.16, -0.06, 0.22, 0.12, -0.26, -0.32, -0.44, -0.31, -0.21, 0.62, 1.0, 0.84, 0.55, 0.73, 0.85, 1.1, 1.32, 1.2, 0.84, 0.76, 2.38, 2.03, 1.45, 1.53, 1.1, 0.49, 0.42, 0.03, -0.6, -1.62, -2.04, -2.09, -2.37, -2.39, -2.77, -3.02, -2.98, -3.16, -2.86, -2.47, -2.31, -1.94, -2.11, -2.19, -1.93, -1.46, -1.41, -0.85, 0.14, 0.06, 0.52, 0.64, 0.98, 0.98, 1.0, 1.03, 0.95, 0.94, 0.88, 0.84, 0.68, 0.7, 0.91, 0.94, 1.36, 1.5, 1.49, 1.19, 0.59, 0.88, 0.71, 0.74, 0.39, 0.31, 0.3, 0.11, -0.16, -0.38, -0.91, -1.18, -1.28, -1.71, -2.05], "rr5": [null, null, null, null, -8.52, -4.4, -4.05, -5.6, -5.53, -4.41, -3.93, -3.85, -2.95, -3.38, -3.02, -1.83, 0.42, -0.04, -0.32, -0.66, -0.66, -4.0, -3.04, -1.77, -0.92, -1.55, -1.37, -0.75, -1.31, -2.12, -2.03, -0.69, -0.48, -0.03, 0.87, 1.44, 2.04, 1.87, 2.11, 1.63, 1.09, 0.22, 0.35, -1.33, -1.17, -1.15, 0.5, -0.19, -0.49, 1.03, 0.41, 0.17, 0.45, 0.76, -8.23, -5.53, -5.1, -4.06, -5.55, -5.28, -2.91, -4.23, -0.01, 1.62, 0.81, 1.01, 1.27, 0.22, -4.63, -3.18, 1.72, 0.85, 0.59, 1.26, 1.92, -4.03, -1.64, -1.21, -3.55, -5.68, -6.11, -6.1, -3.18, -1.17, -2.31, -1.58, -4.41, -9.02, -12.19, -8.96, -8.72, -7.02, -2.96, -0.37, -1.45, -0.63, -2.28, -4.33, -3.47, -4.22, -2.73, -0.29, 0.96, 1.83, 3.41, 2.09, 1.25, 1.39, 1.2, 0.9, 1.78, 2.61, 1.97, 2.3, 2.1, 1.15, -0.28, -0.47, -0.92, 0.37, 1.15, -0.34, 0.38, -0.84, -0.41, -0.7, 0.58, 1.17, 5.26, 5.76, 0.86, 0.78, 0.57, 0.4, 0.56, 0.24, -0.1, 0.23, 0.74, -0.31, -0.36, -1.6, -1.57, -0.93, -1.77, -0.83, 3.36, 1.73, 2.39, 1.27, -0.27, -1.51, -0.84, -2.87, -0.88, -1.06, -1.08, -2.17, -2.34, -1.78, -0.84, -1.14, -0.89, -0.97, -1.01, -1.64, -1.65, -2.95, -3.47, -4.81, -3.25, -3.08, -2.88, -1.78, -1.36, -1.67, -1.53, -1.37, -0.98, -0.16, 1.23, 0.6, 1.81, 1.6, 1.53, 0.1, 1.64, -1.32, -1.2, -0.85, -0.34, 0.52, 1.68, 0.77, 0.74, 0.86, -0.26, -0.74, -0.43, -0.54, -0.53, -0.14, 0.33, -0.24, 0.09, -1.66, -1.84, -1.23, -1.09, -1.07, -0.62, -0.46, -0.9, -1.18, -1.31, -1.27, -1.66, -1.08, -0.26, 0.59, 0.19, -1.39, -1.48, -2.47, -4.66, -4.48, -2.24, -2.88, -0.76, 0.96, 1.06, 0.62, 0.6, 0.38, -0.88, -1.97, -0.9, -0.22, 0.74, 1.01, 2.5, 2.71, 2.81, 2.83, 1.63, 0.21, 0.67, -0.36, -0.87, -0.4, -0.45, -1.07, -0.97, -0.67, -0.48, -0.47, -1.01, -0.81, -1.07, -1.44, -1.38, -0.01, 0.26, 0.21, 0.01, 0.13, -0.3, -0.84, -0.59, 0.23, 0.31, 0.37, 0.85, -0.04, 0.7, 0.81, 0.11, 0.48, 0.87, 0.4, 0.28, 0.64, 0.43, 1.15, 0.73, -0.01, -0.41, -0.41, -1.31, -1.53, -1.49, -1.41, -1.94, -1.18, -1.16, -0.79, -0.65, -0.01, -0.25, 1.83, 1.32, 1.26, 1.14, 0.67, -0.13, -0.2, -0.56, -0.85, -0.56, -0.2, 1.35, 1.62], "sr20": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 2.11, 1.48, 1.55, 1.59, 1.47, 1.28, 1.27, 1.3, 1.08, 1.11, 1.1, 1.04, 0.97, 0.83, 0.75, 0.74, 0.74, 1.76, 1.15, 0.58, 0.35, 0.43, 0.31, -0.04, 0.17, 0.23, -0.13, -0.49, -0.03, 0.19, -0.98, -0.47, -0.39, -0.25, -0.27, -0.23, -0.06, -0.02, 0.04, 0.15, 0.1, 0.15, 0.19, 0.06, -0.16, -0.08, -0.06, 0.17, -0.06, -0.15, 2.56, 0.27, 0.35, 0.29, 0.34, 0.19, -0.25, -0.25, -0.14, -0.12, -0.02, -0.17, -0.27, 0.1, 1.27, 0.97, 0.92, 1.28, 1.28, 1.37, 1.23, 5.06, 4.63, 3.49, 4.03, 4.5, 4.41, 4.76, 4.49, 3.95, 4.13, 3.26, 2.68, 2.59, 2.35, 1.86, 2.03, 1.41, 0.58, -0.06, -0.01, -0.17, -0.65, -0.52, -0.63, -0.57, -0.43, -1.05, -1.17, -1.23, -1.65, -1.6, -1.11, -1.03, -0.54, -0.66, -0.97, -0.97, -0.94, -1.02, -1.31, -0.83, -0.71, -0.56, -0.4, -0.59, -0.58, -0.51, -0.54, -0.46, -0.52, -0.49, -0.34, -0.37, -0.4, -0.4, -0.45, -0.45, -0.4, -0.4, -0.37, -0.02, 0.21, 0.35, 0.44, 0.66, 0.7, 0.61, 1.25, 1.53, 1.4, 0.84, 0.95, 0.92, 1.09, 1.1, 1.26, 1.31, 1.3, 1.46, 1.6, 1.54, 1.56, 1.54, 1.43, 1.6, 1.58, 1.58, 1.48, 1.31, 1.36, 1.13, 1.12, 0.78, 0.48, 0.49, 0.46, 0.33, 0.46, 0.14, -0.11, -0.07, -0.41, -0.51, -0.38, -0.55, -0.55, -0.54, -0.47, -0.45, -0.4, -0.04, -0.35, 0.08, 0.14, 0.12, 0.22, 0.24, 0.03, 0.13, 0.14, 0.31, 0.51, 0.72, 0.8, 0.86, 0.91, 0.9, 0.81, 0.82, 0.66, 0.8, 1.21, 1.12, 1.16, 1.31, 1.15, 1.22, 1.31, 1.11, 0.61, 0.43, 0.71, 0.63, 0.45, 0.34, 0.49, 0.45, 0.41, 0.16, 0.14, -0.22, -0.67, -0.72, -0.84, -0.78, -0.76, -0.92, -0.81, -0.64, -0.36, -0.22, -0.28, -0.29, -0.27, -0.27, -0.37, -0.17, -0.1, 0.17, 0.34, 0.59, 0.49, 0.53, 0.65, 0.61, 0.57, 0.64, 0.64, 0.59, 0.44, 0.37, 0.22, 0.21, 0.4, 0.02, -0.08, -0.06, -0.2, -0.23, -0.4, -0.41, -0.3, -0.28, -0.53, -0.52, -0.33, -0.16, -0.23, -0.22, -0.05, 0.01, 0.08, 0.09, -0.09, 0.27, 0.32, 0.21, 0.25, 0.23, 0.03, 0.1, 0.07, 0.06, 0.38, 0.26, 0.16, 0.07, 0.14, 0.1, -0.2, -0.57, -0.53], "li5": [null, null, null, null, 17.38, 17.59, 16.08, 15.5, 13.04, 12.75, 9.97, 7.2, 5.23, 6.9, 4.39, 3.65, -0.32, -0.12, -0.19, -0.35, -0.25, 1.85, 0.81, 0.06, 0.9, 2.75, 3.62, 3.0, 2.94, 2.36, -1.08, -4.57, -2.1, -1.56, 3.25, 3.51, 4.53, 2.81, 1.68, -0.01, 0.24, 2.28, 2.86, 7.13, 7.5, 10.04, 0.42, 0.87, 0.99, -0.91, -0.73, -1.14, -1.32, -1.49, 3.49, 3.72, 4.1, 2.4, 3.85, 5.66, 4.66, 5.19, -1.29, -1.91, -0.97, -1.99, -1.96, -0.59, 2.06, 0.36, -2.32, -1.57, -0.41, 0.56, -0.0, 10.19, 8.31, 8.61, 5.52, 8.33, 8.93, 6.51, 0.38, 0.34, -0.01, -1.61, 0.38, 4.19, 7.02, 7.99, 9.17, 8.49, 5.49, 3.7, 3.25, 1.69, 2.93, 5.77, 6.48, 5.67, 2.97, -0.03, -1.59, -5.41, -9.86, -10.15, -9.93, -10.0, -8.98, -5.15, -5.34, -6.42, -5.09, -5.2, -6.66, -2.36, 1.06, -0.12, 1.6, -0.34, -3.95, -2.43, -3.52, -3.45, -3.93, -3.95, -5.05, -2.47, -4.25, -4.34, -1.02, -1.08, -0.8, -0.82, -0.75, -0.18, 0.55, 0.6, 1.33, -0.32, -1.08, -0.93, -0.32, -1.58, 0.21, 0.03, -0.74, 1.4, 3.57, 4.94, 5.76, 5.22, 3.14, 1.19, 0.87, 0.85, 0.14, 1.07, 1.3, -0.27, -0.51, -0.79, -1.13, -1.03, -1.36, -1.63, -1.53, -0.52, -0.28, 3.43, 3.51, 4.46, 5.52, 4.94, 1.93, 2.66, 0.93, -2.72, -2.47, -1.92, -2.63, -2.44, -2.13, -2.68, -2.0, -1.54, -1.45, -0.74, 1.37, 0.05, -1.62, -2.38, -2.06, -0.53, -1.48, -1.02, -0.8, -0.64, -1.71, -1.23, -1.04, -0.69, -0.12, 0.62, -0.58, -2.75, -3.01, -3.99, -4.81, -4.11, -0.84, -1.59, -1.25, -0.94, -0.57, -1.76, -2.14, -1.5, -3.03, -1.91, 0.76, 3.84, 3.08, 6.49, 6.66, 3.87, 2.05, 1.83, -2.69, -5.16, -4.36, -3.68, -3.71, -2.78, 1.94, 2.75, 2.56, 2.81, 4.27, 3.82, 3.92, 3.08, 3.51, 2.22, 2.01, -0.15, -0.85, -0.73, -0.8, -1.49, -0.81, -1.43, -2.95, -3.9, -4.02, -3.24, -2.17, -2.02, -1.77, -1.14, -1.82, -3.06, -2.05, -2.07, -1.91, -2.53, -0.98, 0.26, 1.06, 1.84, 1.56, 0.59, -1.75, -0.17, -0.8, -1.08, -0.49, 0.01, -0.82, 0.2, 0.7, 1.2, 1.44, 2.3, 2.02, 0.96, -0.25, -0.11, -0.11, -0.22, 0.68, 4.07, 4.07, 3.3, 2.34, 1.73, -0.65, -2.04, -2.52, -0.69, 0.22, -0.23, 0.39, 0.25, 0.12, -0.85, -0.56, -1.94, -2.09, -2.21, -0.85, -0.88], "near_high": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 0.8043165467625899, 0.8489208633093526, 0.8201438848920863, 0.6964028776978417, 0.7453237410071942, 0.7410071942446043, 0.7654676258992805, 0.7769784172661871, 0.7899280575539568, 0.814388489208633, 0.8086330935251799, 0.7697841726618705, 0.7669064748201438, 0.7597122302158273, 0.7525179856115108, 0.7640287769784173, 0.7683453237410072, 0.7841726618705036, 0.7985611510791367, 0.7956834532374101, 0.7870503597122303, 0.7942446043165468, 0.7971223021582734, 0.8043165467625899, 0.8, 0.7913669064748201, 0.7928057553956834, 0.8, 0.8, 0.8071942446043165, 0.7712230215827338, 0.7726618705035971, 0.7841726618705036, 0.758273381294964, 0.7553956834532374, 0.7482014388489209, 0.7654676258992805, 0.7769784172661871, 0.7884892086330936, 0.8100719424460432, 0.8273381294964028, 0.8633093525179856, 0.8705035971223022, 0.8618705035971223, 0.8402877697841726, 0.8589928057553957, 0.8661870503597122, 0.8633093525179856, 0.8820143884892087, 0.8920863309352518, 0.8993993993993994, 0.8940092165898618, 0.9216589861751152, 0.9320695102685624, 0.9580645161290322, 0.9435483870967742, 0.917741935483871, 0.9241935483870968, 0.9225806451612903, 0.9435483870967742, 0.9435483870967742, 0.9209677419354839, 0.9612903225806452, 0.9790322580645161, 1.0, 0.9951612903225806, 0.9629032258064516, 0.9354838709677419, 0.9370967741935484, 0.9225806451612903, 0.9193548387096774, 1.0, 0.993660855784469, 1.0, 1.0, 1.0, 1.0, 0.982089552238806, 0.9746268656716418, 1.0, 0.9659763313609467, 0.9378698224852071, 0.9733727810650887, 0.9733727810650887, 0.9571005917159763, 0.9630177514792899, 0.9112426035502958, 0.908284023668639, 0.915680473372781, 0.9023668639053254, 0.9378698224852071, 0.9526627218934911, 0.9526627218934911, 0.9940828402366864, 1.0, 0.983026874115983, 0.9717114568599717, 0.9787835926449788, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.9487785657998424, 1.0, 1.0, 0.9711246200607903, 1.0, 1.0, 0.9782608695652174, 0.9873772791023843, 1.0, 0.9389312977099237, 1.0, 1.0, 0.9918392969240427, 1.0, 0.9934484812388327, 0.9303156640857654, 0.9827278141751042, 1.0, 0.9477806788511749, 0.9864229765013055, 0.9571801566579634, 0.960313315926893, 0.9409921671018276, 1.0, 0.9704663212435233, 0.9709844559585492, 1.0, 0.9526686807653575, 0.9063444108761329, 0.8484390735146022, 0.8655589123867069, 0.8660624370594159, 0.8987915407854985, 1.0, 0.8930348258706468, 0.9412935323383085, 0.9611940298507463, 0.900497512437811, 0.8885572139303483, 0.8398009950248756, 0.8840796019900498, 0.8507462686567164, 0.8049751243781095, 0.8860696517412935, 0.8039800995024876, 0.7786069651741293, 0.9014925373134328, 0.8920398009950249, 0.9378109452736318, 1.0, 0.9639423076923077, 0.9975961538461539, 1.0, 0.8657471264367816, 0.8450574712643678, 0.8257471264367816, 0.8822988505747127, 0.9425287356321839, 0.896551724137931, 0.9563218390804598, 0.9218390804597701, 0.9264367816091954, 0.9793103448275862, 0.9425287356321839, 0.9862068965517241, 1.0, 0.9429657794676806, 0.9125475285171103, 0.8859315589353612, 0.8783269961977186, 0.8688212927756654, 0.9714828897338403, 0.9638783269961977, 0.9239543726235742, 0.9448669201520913, 0.8973384030418251, 0.8992395437262357, 0.9258555133079848, 0.9182509505703422, 0.9391634980988594, 0.9258555133079848, 0.9068441064638784, 0.8593155893536122, 0.8859315589353612, 0.9391634980988594, 0.9657794676806084, 1.0, 1.0, 0.9638932496075353, 0.9968602825745683, 1.0, 0.9790419161676647, 0.9940119760479041, 1.0, 1.0, 0.9922978177150192, 0.9550706033376123, 1.0, 1.0, 1.0, 1.0, 0.91415313225058, 0.8932714617169374, 1.0, 1.0, 0.9297297297297298, 0.9156756756756756, 0.9135135135135135, 0.9254054054054054, 1.0, 0.8213592233009709, 0.9446601941747573, 1.0, 0.9017341040462428, 1.0, 1.0, 0.968421052631579, 1.0, 0.9447674418604651, 0.8183139534883721, 0.809593023255814, 0.8793604651162791, 1.0, 0.8552097428958051, 0.8389715832205683, 0.9553450608930988, 0.9269282814614344, 0.9201623815967523, 0.9472259810554804, 0.8376184032476319, 0.9418132611637348, 0.93234100135318, 1.0, 1.0, 0.9283018867924528, 0.9031446540880503, 0.9522012578616352, 1.0, 0.9622437971952535, 1.0, 0.9528487229862476, 0.9449901768172888, 0.9911591355599214, 1.0, 1.0, 0.9468779123951537, 0.8341099720410066, 0.8602050326188257], "f_amt": [0.32, -0.14, -0.21, -0.31, -0.17, -0.16, -0.39, -0.18, 0.01, 0.07, 0.22, -0.0, 0.17, -0.32, 0.02, 0.04, 0.17, 0.36, 0.01, 0.86, -0.31, 0.11, 0.01, 0.04, -0.1, -0.5, 0.06, 0.1, 0.06, 0.41, -0.05, 0.02, -0.19, -0.07, -0.38, 0.0, -0.01, -0.02, -0.27, 0.03, -0.06, -0.37, -0.08, -0.05, -0.05, -0.06, -0.07, 0.21, -0.14, 1.15, 0.85, 0.11, 0.02, -0.14, 0.33, 0.06, -0.25, 0.01, 0.02, -0.01, -0.07, -0.01, 0.37, -0.23, -0.09, 0.25, 0.1, 0.21, 0.04, -0.0, -0.5, 0.14, 0.14, -0.0, 0.13, 0.03, 0.09, 0.03, 0.03, -0.05, 0.03, 0.1, 0.13, 0.08, 0.04, 0.02, 0.12, 0.12, 0.12, -0.16, 0.02, 0.08, 0.05, 0.0, 0.06, 0.02, -0.02, 0.1, 0.05, 0.13, 0.22, 0.1, 0.1, 0.16, 0.35, 0.21, 0.16, 0.39, 0.15, -0.03, 0.13, 0.24, 0.08, 0.07, -0.03, 0.02, 0.05, 0.17, 0.04, 0.04, 0.14, 0.07, 0.11, 0.18, -0.01, 0.0, -0.01, -0.03, -0.02, 0.02, -0.61, -0.34, -0.38, -0.03, -0.82, -0.86, -0.18, 0.09, -0.12, 0.21, 0.49, 0.59, -0.01, -0.0, -0.06, -0.26, 0.06, -0.07, -0.03, 0.14, 0.21, 0.06, 0.06, 1.0, -0.17, -0.02, 0.16, 1.29, 1.04, 3.17, 1.29, 8.39, -2.87, 3.0, 0.22, -0.15, 0.2, -0.22, -0.23, -2.17, -1.16, -1.8, -1.28, -0.84, 10.35, -4.12, -7.0, 5.52, -2.13, -0.41, -4.21, -1.56, -3.57, 3.51, -3.91, -2.17, 0.35, 3.72, -3.63, 3.0, 3.24, -4.39, -0.17, 10.84, 5.57, 13.0, 4.9, -0.83, -1.7, 2.25, -0.59, -1.28, -1.15, 0.35, -0.56, 6.5, -1.18, -3.93, -0.25, 3.56, 6.28, -0.41, 1.08, -1.2, -1.36, -2.78, 0.08, -0.44, -0.35, 0.8, -2.28, 1.83, -0.7, -0.12, -0.26, -0.06, 0.99, -2.2, -1.82, 25.06, -0.36, -1.0, 1.77, 1.86, -2.66, 3.04, -3.98, -3.62, -24.69, -7.84, -8.23, -1.13, -6.99, -6.5, -5.95, -5.74, -1.6, 6.89, 5.25, -1.89, 10.66, 9.81, -1.7, 16.5, 18.44, 3.32, 16.91, 25.97, 18.89, 14.17, -1.28, 8.59, -9.45, 12.63, 3.44, -10.3, 10.45, -3.16, -13.49, -20.64, -10.47, 5.29, -1.52, 38.8, -13.93, -3.68, -9.24, -38.64, 31.42, -48.82, -17.49, -14.85, -13.7, -19.26, -1.07, 6.36, 39.31, -5.17, -10.43, 12.89, -10.02, -12.14, -6.32, -17.71, 13.58, 4.93, 12.95, 28.09, 3.93, -52.23, -18.29, 25.83, -8.5, 23.99, 9.1, 35.31, 72.08, 88.74, 20.38, -15.23, 9.08, 41.28], "i_amt": [0.59, 0.18, 0.38, 0.35, 0.36, 0.32, 0.46, 0.6, -0.04, 0.04, -0.04, 0.07, 0.08, 0.41, -0.09, -0.07, -0.81, 0.34, 0.35, -0.42, 0.29, 0.07, 0.29, -0.21, 0.13, 0.81, 0.06, -0.09, -0.03, -0.3, 0.12, -0.11, 0.17, 0.02, 0.3, -0.05, -0.13, 0.0, 0.06, 0.05, 0.11, 0.43, 0.03, 0.07, 0.11, 0.08, -0.72, 0.75, 0.63, -5.38, 1.13, 0.1, 0.45, 0.05, -0.25, 0.5, 0.24, 0.17, 0.14, -0.1, 0.32, 0.17, -0.76, -0.51, 0.41, -0.16, -0.1, 0.02, 0.18, 0.07, -0.53, 0.12, 0.17, -0.02, -0.25, -0.05, -0.09, 0.26, 0.15, 0.07, 0.03, -0.06, -0.15, -0.09, 0.07, -0.03, 0.07, 0.11, 0.14, 0.12, -0.01, -0.02, -0.09, 0.03, -0.02, -0.07, 0.27, 0.02, 0.0, 0.06, -0.37, -0.29, -0.17, -0.24, -0.4, -0.09, -0.23, -0.54, -0.21, 0.01, -0.21, -0.49, -0.04, -0.1, 0.13, -0.01, -0.14, -0.12, -0.01, -0.1, -0.22, 0.02, -0.16, 0.05, -0.12, -0.06, -0.06, -0.06, -0.05, -0.13, -2.04, -0.13, 0.52, 0.9, -0.39, 0.89, 0.51, -0.28, 0.65, -0.69, -0.45, 0.52, -0.22, 0.02, -0.11, -0.12, -0.16, 0.33, -0.04, -0.07, -0.32, 0.13, 0.09, 0.16, -0.69, 0.04, -0.03, -0.22, 0.25, -2.18, -1.46, -3.41, 4.78, 0.84, 0.05, 2.21, 0.94, 0.94, 3.62, 6.0, 0.8, 3.2, 1.75, 0.47, -7.04, 4.21, 8.13, -4.42, 0.51, 0.28, -3.79, 6.74, -4.09, -4.21, 4.4, 4.57, -1.26, 0.33, 1.85, -3.08, -2.8, -0.78, -1.41, -9.41, -5.18, -13.13, -3.64, 3.33, 0.53, -1.32, 0.24, 0.28, 1.87, -0.12, 0.72, -2.52, 0.68, 3.86, 0.41, -3.54, -2.44, -0.82, 1.54, 4.6, 2.99, 3.43, 0.78, -0.22, -0.81, -2.47, 4.47, 5.27, -0.22, 1.21, 2.95, 1.0, -0.55, 3.19, -1.2, -33.34, -0.43, 5.52, -0.48, -2.79, 2.33, 1.36, 3.83, 1.89, 17.86, 5.43, 2.56, -0.81, 4.3, 4.66, 10.2, 6.98, -2.35, -4.25, -3.71, 3.43, -8.07, -6.35, 2.94, -17.7, -19.1, -1.01, -9.76, -25.92, -17.02, -10.68, 3.03, -16.04, 6.68, -9.69, 2.32, 11.07, -13.62, 8.24, 13.8, 15.0, 10.28, -9.11, 2.85, -28.02, -5.98, 0.81, 21.45, 29.98, -32.53, 33.05, 18.55, 14.62, 11.24, -4.17, 7.92, 14.11, -20.96, 3.26, 12.56, 2.61, 17.93, 15.2, 10.67, 7.76, 0.54, -2.37, -10.71, -36.4, -10.63, 10.53, 28.03, -29.69, 3.21, -10.06, -18.19, -20.26, -61.18, -81.54, -22.81, -9.0, -55.59, -31.16], "r_amt": [-0.91, -0.04, -0.17, -0.05, -0.19, -0.15, -0.07, -0.42, 0.03, -0.11, -0.18, -0.07, -0.25, -0.09, 0.07, 0.03, 0.64, -0.7, -0.36, -0.45, 0.02, -0.18, -0.3, 0.17, -0.03, -0.31, -0.12, -0.01, -0.03, -0.11, -0.07, 0.09, 0.03, 0.05, 0.08, 0.05, 0.14, 0.02, 0.21, -0.07, -0.05, -0.06, 0.05, -0.02, -0.06, -0.02, 0.79, -0.96, -0.49, 4.22, -1.98, -0.21, -0.47, 0.09, -0.08, -0.57, 0.0, -0.17, -0.16, 0.11, -0.25, -0.16, 0.39, 0.73, -0.32, -0.09, 0.01, -0.23, -0.22, -0.06, 1.03, -0.26, -0.31, 0.02, 0.12, 0.02, -0.0, -0.29, -0.18, -0.02, -0.06, -0.04, 0.02, 0.01, -0.11, 0.0, -0.19, -0.22, -0.26, 0.04, -0.01, -0.05, 0.04, -0.03, -0.05, 0.05, -0.25, -0.13, -0.05, -0.19, 0.15, 0.2, 0.07, 0.08, 0.06, -0.12, 0.07, 0.15, 0.07, 0.02, 0.08, 0.25, -0.04, 0.03, -0.1, -0.01, 0.09, -0.05, -0.03, 0.06, 0.08, -0.1, 0.05, -0.23, 0.13, 0.05, 0.06, 0.09, 0.07, 0.11, 2.65, 0.47, -0.14, -0.87, 1.21, -0.03, -0.32, 0.19, -0.53, 0.48, -0.04, -1.11, 0.23, -0.02, 0.17, 0.38, 0.1, -0.26, 0.07, -0.07, 0.12, -0.18, -0.15, -1.16, 0.86, -0.01, -0.13, -1.07, -1.29, -0.99, 0.16, -4.98, -1.91, -3.84, -0.27, -2.06, -1.15, -0.72, -3.39, -3.83, 0.35, -1.4, -0.47, 0.37, -3.31, -0.09, -1.13, -1.1, 1.61, 0.13, 8.0, -5.18, 7.66, 0.69, -0.49, -2.4, 0.91, -4.04, 1.78, 0.08, -0.44, 5.17, 1.59, -1.43, -0.39, 0.13, -1.26, -2.5, 1.17, -0.93, 0.35, 1.0, -0.72, -0.23, -0.15, -3.98, 0.5, 0.07, -0.17, -0.01, -3.84, 1.23, -2.62, -3.4, -1.63, -0.65, -0.87, 0.66, 1.16, 1.67, -2.19, -7.11, 0.92, -1.09, -2.69, -0.94, -0.44, -0.98, 3.01, 8.28, 0.79, -4.52, -1.29, 0.93, 0.32, -4.4, 0.15, 1.73, 6.83, 2.4, 5.67, 1.93, 2.69, 1.84, -4.25, -1.24, 3.95, -2.63, -1.54, -1.54, -2.59, -3.46, -1.24, 1.2, 0.65, -2.31, -7.15, -0.06, -1.87, -3.49, -1.75, 7.45, 2.77, -2.94, -5.76, -0.77, 3.17, -5.09, -0.31, 5.64, 0.19, 3.82, -1.33, -10.78, 19.91, 2.87, -12.22, 8.66, 1.11, 15.77, -1.06, 0.23, 2.46, 23.43, -6.85, -20.47, -18.35, 1.91, -2.13, -15.5, -7.91, -3.07, -4.35, 9.94, -14.12, -2.56, -2.24, 8.31, 6.7, 41.7, -9.74, 3.86, 5.29, -13.93, 9.09, -15.05, -10.9, -7.2, 2.43, 24.22, 46.51, -7.01], "sm_amt20": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 3.44, 2.51, 2.65, 2.78, 2.56, 2.4, 2.56, 2.61, 2.2, 2.26, 2.26, 2.15, 1.99, 1.71, 1.57, 1.56, 1.54, 2.04, 1.32, 0.75, 0.37, 0.44, 0.32, -0.03, 0.16, 0.19, -0.1, -1.01, -0.06, 0.4, -3.93, -2.02, -1.72, -1.22, -1.26, -1.1, -0.48, -0.34, -0.15, 0.22, 0.04, 0.24, 0.34, 0.0, -0.75, -0.49, -0.42, 0.36, -0.37, -0.64, 3.64, 0.63, 0.68, 0.52, 0.59, 0.39, -0.2, -0.2, -0.08, -0.06, 0.07, -0.12, -0.24, 0.13, 0.85, 0.64, 0.55, 0.75, 0.74, 0.78, 0.68, 1.72, 1.51, 1.16, 1.21, 1.38, 1.35, 1.6, 1.44, 1.31, 1.48, 1.27, 1.03, 0.98, 0.91, 0.74, 0.86, 0.6, 0.23, -0.1, -0.08, -0.17, -0.47, -0.39, -0.45, -0.4, -0.34, -0.68, -0.76, -0.78, -1.03, -0.96, -0.66, -0.64, -0.33, -0.4, -0.57, -0.56, -0.5, -0.5, -0.59, -3.16, -3.38, -3.28, -2.38, -3.69, -3.67, -3.26, -3.5, -3.0, -3.42, -3.3, -2.29, -2.47, -2.68, -2.72, -3.05, -3.09, -2.74, -2.74, -2.56, -0.03, 0.62, 0.63, 0.92, 1.27, 1.25, 1.06, 2.32, 3.08, 4.55, 4.35, 8.22, 10.36, 14.18, 14.62, 17.06, 18.31, 18.77, 22.23, 25.99, 25.76, 26.98, 27.3, 25.77, 29.94, 30.02, 31.02, 31.05, 28.15, 27.03, 19.19, 19.39, 9.82, 5.29, 5.51, 5.85, 3.79, 7.11, 1.94, -1.97, -1.18, -7.75, -9.81, -8.01, -10.93, -11.15, -11.02, -9.62, -9.18, -8.12, -0.47, -6.65, 1.73, 2.65, 2.31, 3.89, 4.3, 0.19, 2.14, 2.23, 5.63, 9.57, 13.78, 15.75, 16.99, 17.77, 17.38, 14.22, 14.23, 11.63, 14.17, 22.28, 20.64, 21.5, 24.04, 21.0, 21.94, 22.99, 19.81, 11.52, 6.89, 12.64, 11.31, 6.98, 5.03, 8.78, 7.76, 6.69, 1.02, 0.29, -7.57, -16.61, -18.38, -21.31, -19.75, -19.45, -23.84, -22.19, -17.64, -7.82, -4.44, -5.5, -5.55, -5.82, -6.15, -8.24, -0.94, 0.85, 9.55, 15.44, 22.86, 17.34, 17.26, 22.04, 23.55, 23.08, 23.86, 26.32, 25.09, 17.91, 15.13, 7.85, 7.94, 19.92, 0.66, -4.52, 0.55, -8.17, -11.15, -30.41, -31.1, -23.88, -23.57, -49.94, -48.85, -29.15, -7.63, -14.63, -12.81, 8.33, 16.43, 23.32, 26.34, 5.62, 39.65, 45.08, 35.1, 35.45, 29.86, 3.93, 12.61, 8.98, 6.15, 43.51, 27.57, 22.15, 14.7, 23.81, 19.25, -20.47, -74.89, -67.84], "obv": [0.0, 27768.0, 63466.0, 90838.0, 121579.0, 109772.0, 156844.0, 191576.0, 207829.0, 257267.0, 293319.0, 341415.0, 369826.0, 346221.0, 363925.0, 334522.0, -413981.0, -357600.0, -394052.0, -205145.0, -254424.0, -229441.0, -182704.0, -205111.0, -65001.0, -171168.0, -203704.0, -225632.0, -234082.0, -184490.0, -204602.0, -247354.0, -229386.0, -179079.0, -210180.0, -230478.0, -216126.0, -242985.0, -139670.0, -126365.0, -94110.0, -121359.0, -104639.0, -115343.0, -98203.0, -113166.0, 955946.0, 887745.0, 914315.0, 2155927.0, 2054305.0, 2009004.0, 2043631.0, 2019652.0, 1981671.0, 1946410.0, 1919240.0, 1895512.0, 1918337.0, 1903680.0, 1954927.0, 1936572.0, 1811979.0, 2125420.0, 2092362.0, 2164246.0, 2184912.0, 2210529.0, 2231502.0, 2199620.0, 2006045.0, 1982900.0, 1963779.0, 1931130.0, 1947292.0, 1953609.0, 1970444.0, 1994533.0, 1975485.0, 1967624.0, 1981692.0, 2004293.0, 2019760.0, 2008825.0, 2000803.0, 2009898.0, 2021418.0, 2021418.0, 2038700.0, 2024839.0, 2037398.0, 2047204.0, 2025075.0, 2020699.0, 1999026.0, 2004883.0, 2049454.0, 2059969.0, 2090415.0, 2119892.0, 2199618.0, 2226011.0, 2214046.0, 2190115.0, 2217281.0, 2241838.0, 2219007.0, 2265807.0, 2305817.0, 2262137.0, 2233000.0, 2254726.0, 2229201.0, 2233640.0, 2225515.0, 2192434.0, 2208711.0, 2189949.0, 2211946.0, 2211946.0, 2185078.0, 2208798.0, 2239614.0, 2267097.0, 2247710.0, 2237771.0, 2225718.0, 2237687.0, 2226412.0, 2214003.0, 4928418.0, 4182948.0, 5110607.0, 5217724.0, 5357437.0, 5481990.0, 5396112.0, 5333980.0, 5451327.0, 5370322.0, 5280735.0, 5402305.0, 5402305.0, 5369350.0, 5403248.0, 5350555.0, 5320065.0, 5338789.0, 5319397.0, 5345534.0, 5372617.0, 5372617.0, 5412534.0, 5603904.0, 5521492.0, 5474815.0, 5500415.0, 5630164.0, 5788431.0, 6687423.0, 8047623.0, 9374269.0, 10654997.0, 11103718.0, 10900538.0, 11044905.0, 11190001.0, 11063876.0, 11279457.0, 11505594.0, 11234373.0, 11452226.0, 11611948.0, 11509484.0, 11834863.0, 12001132.0, 11783120.0, 12172084.0, 11946737.0, 11781391.0, 12624784.0, 13130617.0, 12826709.0, 13134509.0, 12983786.0, 13172301.0, 13049065.0, 13338940.0, 13168989.0, 13514174.0, 13782636.0, 13507941.0, 13260742.0, 12727374.0, 12960701.0, 13195522.0, 13549773.0, 14195663.0, 13967142.0, 14100204.0, 14261660.0, 14142556.0, 14030248.0, 13934947.0, 14060753.0, 13789465.0, 13676870.0, 13964826.0, 13767719.0, 13659305.0, 14466386.0, 14222596.0, 14491373.0, 14957260.0, 14724153.0, 14880644.0, 15130073.0, 14928503.0, 14710744.0, 14527241.0, 14661963.0, 14896889.0, 14798160.0, 14901966.0, 14829150.0, 14914081.0, 15014526.0, 14851938.0, 15147991.0, 16280430.0, 16004714.0, 15847860.0, 15687972.0, 15523147.0, 15387029.0, 15686098.0, 15519476.0, 15369775.0, 15932710.0, 15712251.0, 15997174.0, 16196011.0, 16026043.0, 16223454.0, 16059327.0, 15882711.0, 15590101.0, 16030477.0, 16269941.0, 16552285.0, 16996452.0, 17626218.0, 17361092.0, 17691058.0, 17934885.0, 17693974.0, 17945193.0, 18307112.0, 18684818.0, 18437517.0, 18214980.0, 18501734.0, 18655897.0, 18815471.0, 19097407.0, 18826505.0, 18481535.0, 18930465.0, 19207939.0, 18965405.0, 18703314.0, 18509056.0, 18635592.0, 19640555.0, 18912865.0, 19201093.0, 19607542.0, 19230244.0, 20273763.0, 21455093.0, 21099321.0, 21501566.0, 21252606.0, 20493356.0, 20070281.0, 20928130.0, 21744164.0, 21390970.0, 21117575.0, 21466674.0, 21284131.0, 21076638.0, 21290630.0, 21050221.0, 21350967.0, 21136328.0, 21473174.0, 21860275.0, 21637767.0, 20861860.0, 21481978.0, 22214404.0, 21732904.0, 22229313.0, 21826735.0, 21468423.0, 21962938.0, 22407302.0, 22623000.0, 22394544.0, 21530659.0, 21850411.0], "obv_ma20": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 95269.45, 82548.25, 69687.8, 57379.3, 42581.85, 33252.85, 19205.85, 1178.45, -19681.95, -41777.5, -63865.35, -88761.4, -118199.85, -148160.45, -174425.45, -203130.7, -231380.7, -221487.95, -215757.2, -203038.1, -199099.1, -191083.4, -185679.3, -181776.05, -177287.65, -178947.75, -176047.65, -118065.15, -62396.3, -4976.45, 112044.4, 224989.75, 337807.65, 451458.5, 561395.05, 670987.6, 779832.0, 886600.3, 993525.15, 1096425.5, 1197927.75, 1300379.6, 1403276.15, 1499107.05, 1611145.2, 1720673.45, 1834544.05, 1895992.35, 1962131.55, 2027990.9, 2030175.55, 2027762.55, 2026457.35, 2022464.75, 2018038.65, 2016319.7, 2016679.65, 2019239.85, 2024190.9, 2027048.3, 2030245.5, 2031583.75, 2034969.8, 2045358.85, 2039529.1, 2034951.15, 2027233.75, 2019059.05, 2009603.5, 1999963.4, 1991224.35, 1992792.0, 1996007.2, 1999072.0, 2003550.45, 2006137.15, 2008700.85, 2012651.35, 2015923.15, 2021669.65, 2029283.05, 2104915.55, 2114281.1, 2123741.45, 2131377.3, 2139881.15, 2150719.3, 2160634.7, 2173973.75, 2189020.45, 2199654.6, 2208306.15, 2216521.7, 2221987.15, 2225178.05, 2225875.7, 2226108.4, 2226091.75, 2226123.5, 2228262.8, 2226637.25, 2225910.25, 2225049.6, 2226328.0, 2230177.1, 2231698.55, 2231495.2, 2231830.75, 2230424.75, 2226454.5, 2224047.8, 2358818.7, 2455229.8, 2599300.1, 2748504.3, 2905100.4, 3069578.2, 3228948.25, 3386149.8, 3548118.85, 3706037.65, 3860820.5, 4020495.85, 4178630.4, 4333743.05, 4491519.95, 4647159.15, 4801876.5, 4956931.6, 5111580.85, 5268157.4, 5290367.35, 5349850.8, 5364947.15, 5384256.15, 5392458.9, 5392100.15, 5397315.3, 5412124.5, 5428979.7, 5494834.75, 5633179.15, 5831777.35, 6094411.95, 6381130.35, 6655994.85, 6940712.35, 7234209.15, 7520463.5, 7818466.5, 8126469.5, 8419557.3, 8723537.75, 9033508.45, 9328787.45, 9644456.0, 9970771.85, 10284907.1, 10612003.1, 10919918.4, 11174616.8, 11403474.85, 11591292.25, 11699877.85, 11801417.4, 11905579.8, 12011949.6, 12104902.8, 12218656.0, 12313132.6, 12413561.6, 12540974.75, 12643760.5, 12726200.2, 12787094.7, 12843386.6, 12903106.1, 12991438.75, 13092617.7, 13193637.95, 13309578.6, 13391422.4, 13442019.35, 13502196.3, 13542218.2, 13596066.55, 13626924.75, 13658315.0, 13689609.3, 13719545.8, 13726802.35, 13760989.85, 13796722.6, 13858254.15, 13969748.45, 14057921.05, 14142177.15, 14221192.15, 14257834.15, 14295014.25, 14316366.1, 14336381.25, 14374097.9, 14412493.5, 14460844.45, 14499264.3, 14555495.1, 14622377.9, 14666733.5, 14735747.1, 14866803.35, 14943719.75, 15024982.95, 15084812.9, 15113107.25, 15146251.05, 15186523.75, 15205993.9, 15228057.5, 15289155.8, 15348406.3, 15415166.85, 15480122.95, 15541517.1, 15607591.5, 15669100.35, 15717531.85, 15746310.6, 15805237.55, 15861335.05, 15874927.8, 15924514.7, 16013432.6, 16097088.6, 16205484.15, 16332876.95, 16433270.75, 16554556.6, 16701423.45, 16839028.85, 16975292.15, 17086182.45, 17201468.6, 17332961.3, 17462562.15, 17614466.15, 17761655.85, 17906227.55, 18051226.95, 18198126.85, 18318782.85, 18404125.95, 18448267.85, 18511992.85, 18609467.7, 18658366.7, 18733722.65, 18816840.1, 18862996.7, 18942443.95, 19093322.75, 19237539.8, 19387531.4, 19517366.85, 19601261.1, 19649904.8, 19754986.05, 19918117.5, 20041142.75, 20136624.55, 20261688.0, 20390728.85, 20519107.95, 20651859.85, 20722343.15, 20844248.25, 20941010.0, 21034291.6, 21165793.15, 21233993.35, 21204331.7, 21223464.55, 21259106.45, 21283121.35, 21369919.2, 21457741.9, 21484756.55, 21495695.25, 21546511.85, 21621783.1, 21668176.6, 21680503.0, 21719191.65], "cmf": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, -0.247, -0.284, -0.277, -0.283, -0.283, -0.284, -0.304, -0.297, -0.304, -0.314, -0.284, -0.308, -0.345, -0.345, -0.362, -0.381, -0.398, -0.05, -0.056, -0.077, -0.241, -0.187, -0.229, -0.257, -0.263, -0.293, -0.27, -0.339, -0.34, -0.327, -0.348, -0.369, -0.362, -0.361, -0.355, -0.348, -0.34, -0.344, -0.343, -0.341, -0.346, -0.348, -0.349, -0.372, -0.393, -0.391, -0.391, -0.401, -0.399, -0.397, -0.482, -0.377, -0.351, -0.372, -0.378, -0.377, -0.399, -0.383, -0.354, -0.362, -0.35, -0.359, -0.338, -0.243, -0.079, -0.114, -0.061, -0.082, -0.087, -0.12, -0.088, -0.061, -0.116, -0.124, -0.062, -0.053, -0.06, -0.155, -0.18, -0.084, -0.009, -0.084, -0.04, -0.004, -0.024, -0.004, 0.056, 0.053, 0.052, 0.067, 0.045, 0.014, 0.008, -0.021, -0.041, -0.061, -0.034, -0.042, -0.012, -0.007, -0.035, -0.032, -0.047, -0.027, 0.043, 0.029, -0.014, -0.03, -0.028, -0.084, 0.003, -0.216, -0.281, -0.3, -0.272, -0.243, -0.234, -0.232, -0.231, -0.219, -0.226, -0.225, -0.224, -0.236, -0.241, -0.238, -0.244, -0.239, -0.24, -0.238, -0.233, -0.205, -0.107, 0.099, 0.071, -0.006, -0.052, -0.055, -0.018, 0.042, -0.072, -0.074, -0.006, 0.073, 0.139, 0.127, 0.14, 0.155, 0.143, 0.148, 0.151, 0.131, 0.147, 0.144, 0.123, 0.152, 0.161, 0.154, 0.148, 0.121, 0.156, 0.119, 0.164, 0.082, 0.052, 0.047, 0.034, 0.005, 0.046, 0.019, -0.028, 0.014, -0.046, -0.083, -0.095, -0.124, -0.114, -0.069, -0.015, -0.026, 0.006, 0.09, 0.001, 0.029, -0.038, -0.007, 0.02, 0.007, -0.018, -0.033, -0.005, 0.014, 0.084, 0.133, 0.21, 0.154, 0.152, 0.138, 0.035, 0.044, 0.027, 0.048, 0.089, 0.079, 0.114, 0.1, 0.08, 0.112, 0.097, 0.14, 0.237, 0.182, 0.14, 0.098, 0.065, 0.125, 0.148, 0.112, 0.13, 0.066, 0.021, 0.007, -0.01, 0.017, 0.009, 0.019, -0.0, -0.055, -0.014, 0.02, -0.09, 0.036, 0.126, 0.157, 0.113, 0.136, 0.088, 0.082, 0.121, 0.166, 0.174, 0.18, 0.165, 0.17, 0.165, 0.14, 0.118, 0.154, 0.177, 0.131, 0.093, -0.007, -0.089, -0.078, -0.01, -0.13, -0.087, -0.028, -0.053, 0.111, 0.169, 0.147, 0.178, 0.145, 0.055, 0.066, 0.098, 0.151, 0.1, 0.095, 0.12, 0.127, 0.129, 0.127, 0.102, 0.171, 0.152, 0.106, 0.081, -0.044, -0.156, -0.107, -0.072, -0.069, 0.054, 0.016, 0.018, -0.083, -0.063, -0.039, -0.072, -0.101, -0.074], "mfi": [null, null, null, null, null, null, null, null, null, null, null, null, null, 93.9, 89.8, 82.8, 94.0, 89.4, 86.5, 88.4, 88.5, 86.5, 86.9, 85.0, 86.2, 86.8, 84.6, 84.6, 85.1, 87.1, 75.7, 76.5, 78.0, 73.4, 67.7, 68.2, 64.1, 63.8, 60.9, 49.7, 56.9, 56.3, 58.9, 52.4, 51.9, 55.8, 89.8, 85.3, 87.3, 94.1, 91.0, 90.4, 90.0, 89.7, 88.4, 88.2, 87.3, 87.0, 86.3, 86.4, 78.6, 80.8, 76.2, 41.2, 46.1, 53.9, 52.6, 55.8, 60.0, 64.6, 53.8, 54.0, 56.2, 55.3, 53.4, 54.2, 62.9, 42.8, 47.6, 38.6, 42.2, 41.9, 41.1, 35.4, 66.3, 70.3, 69.3, 82.4, 82.6, 79.5, 72.9, 70.7, 59.6, 60.8, 51.3, 46.5, 54.1, 54.3, 59.0, 66.3, 68.0, 66.9, 64.7, 57.8, 61.6, 61.3, 60.8, 60.7, 60.5, 57.8, 52.3, 56.8, 56.2, 48.0, 53.0, 52.3, 56.0, 56.8, 56.1, 55.8, 48.9, 45.1, 43.3, 55.0, 63.3, 58.3, 61.2, 58.0, 57.4, 61.7, 96.8, 77.7, 82.2, 80.3, 81.2, 81.7, 80.1, 79.0, 79.4, 78.3, 77.1, 77.8, 78.2, 77.9, 55.1, 73.4, 49.7, 55.6, 47.7, 41.2, 48.0, 57.0, 52.0, 69.3, 69.3, 59.6, 58.2, 67.7, 76.1, 91.3, 96.1, 97.5, 98.4, 98.5, 94.6, 94.7, 94.9, 94.9, 95.9, 96.5, 96.7, 92.9, 93.0, 90.4, 89.2, 86.9, 83.1, 83.5, 89.8, 83.9, 87.5, 89.0, 89.4, 81.7, 81.4, 80.8, 77.6, 80.8, 80.3, 81.4, 81.8, 74.5, 68.8, 63.5, 52.6, 49.0, 49.4, 61.7, 56.9, 60.9, 64.3, 59.7, 56.2, 50.5, 48.2, 48.8, 50.9, 63.6, 64.5, 59.7, 65.1, 51.4, 60.0, 64.6, 65.6, 64.5, 69.3, 67.0, 62.1, 63.3, 66.2, 66.1, 67.3, 69.9, 60.4, 66.5, 64.6, 52.2, 53.8, 74.7, 75.3, 75.4, 75.7, 75.1, 71.2, 72.2, 75.5, 71.4, 76.9, 72.3, 66.9, 70.7, 66.0, 55.4, 48.2, 48.0, 46.2, 42.7, 48.0, 47.8, 52.2, 62.4, 52.3, 59.5, 66.1, 67.1, 71.7, 73.7, 78.7, 75.7, 74.9, 82.1, 77.9, 77.8, 77.8, 68.5, 66.0, 67.9, 69.0, 62.8, 56.4, 49.7, 42.8, 60.6, 53.4, 53.9, 59.4, 53.9, 61.5, 71.8, 69.8, 70.5, 66.3, 60.7, 59.0, 64.5, 69.1, 62.7, 64.8, 65.6, 62.4, 62.8, 55.5, 43.8, 49.8, 43.9, 49.9, 61.1, 62.3, 63.0, 48.0, 59.8, 66.7, 68.5, 73.2, 70.2, 75.1, 79.5, 75.3, 74.1, 63.3, 58.3], "obv_bear_dates": ["2025-02-04", "2025-02-07", "2025-02-10", "2025-02-11", "2025-02-12", "2025-02-13", "2025-02-14", "2025-02-18", "2025-02-19", "2025-02-24", "2025-03-17", "2025-05-07", "2025-05-08", "2025-05-09", "2025-05-12", "2025-05-13", "2025-05-14", "2025-05-15", "2025-05-16", "2025-07-29"], "obv_bull_dates": ["2025-02-28", "2025-03-31", "2025-04-01", "2025-04-02", "2025-04-04", "2025-04-07", "2025-05-20", "2025-11-14", "2025-11-18", "2025-11-19", "2025-11-21", "2025-11-24"], "regime_shapes": [{"type": "rect", "xref": "x", "yref": "paper", "x0": "2025-04-11", "x1": "2025-04-25", "y0": 0, "y1": 1, "fillcolor": "rgba(231,76,60,0.10)", "line": {"width": 0}, "layer": "below"}, {"type": "rect", "xref": "x", "yref": "paper", "x0": "2025-05-19", "x1": "2025-05-29", "y0": 0, "y1": 1, "fillcolor": "rgba(231,76,60,0.10)", "line": {"width": 0}, "layer": "below"}, {"type": "rect", "xref": "x", "yref": "paper", "x0": "2025-06-26", "x1": "2025-07-01", "y0": 0, "y1": 1, "fillcolor": "rgba(46,204,113,0.06)", "line": {"width": 0}, "layer": "below"}, {"type": "rect", "xref": "x", "yref": "paper", "x0": "2025-07-01", "x1": "2025-08-27", "y0": 0, "y1": 1, "fillcolor": "rgba(243,156,18,0.10)", "line": {"width": 0}, "layer": "below"}, {"type": "rect", "xref": "x", "yref": "paper", "x0": "2025-08-27", "x1": "2025-10-27", "y0": 0, "y1": 1, "fillcolor": "rgba(46,204,113,0.06)", "line": {"width": 0}, "layer": "below"}, {"type": "rect", "xref": "x", "yref": "paper", "x0": "2025-10-27", "x1": "2025-10-31", "y0": 0, "y1": 1, "fillcolor": "rgba(243,156,18,0.10)", "line": {"width": 0}, "layer": "below"}, {"type": "rect", "xref": "x", "yref": "paper", "x0": "2025-10-31", "x1": "2025-11-06", "y0": 0, "y1": 1, "fillcolor": "rgba(46,204,113,0.06)", "line": {"width": 0}, "layer": "below"}, {"type": "rect", "xref": "x", "yref": "paper", "x0": "2025-11-06", "x1": "2025-11-07", "y0": 0, "y1": 1, "fillcolor": "rgba(243,156,18,0.10)", "line": {"width": 0}, "layer": "below"}, {"type": "rect", "xref": "x", "yref": "paper", "x0": "2025-11-07", "x1": "2025-11-10", "y0": 0, "y1": 1, "fillcolor": "rgba(46,204,113,0.06)", "line": {"width": 0}, "layer": "below"}, {"type": "rect", "xref": "x", "yref": "paper", "x0": "2025-11-10", "x1": "2025-11-13", "y0": 0, "y1": 1, "fillcolor": "rgba(243,156,18,0.10)", "line": {"width": 0}, "layer": "below"}, {"type": "rect", "xref": "x", "yref": "paper", "x0": "2025-11-13", "x1": "2026-01-12", "y0": 0, "y1": 1, "fillcolor": "rgba(46,204,113,0.06)", "line": {"width": 0}, "layer": "below"}, {"type": "rect", "xref": "x", "yref": "paper", "x0": "2026-01-12", "x1": "2026-01-19", "y0": 0, "y1": 1, "fillcolor": "rgba(243,156,18,0.10)", "line": {"width": 0}, "layer": "below"}, {"type": "rect", "xref": "x", "yref": "paper", "x0": "2026-01-19", "x1": "2026-01-21", "y0": 0, "y1": 1, "fillcolor": "rgba(46,204,113,0.06)", "line": {"width": 0}, "layer": "below"}, {"type": "rect", "xref": "x", "yref": "paper", "x0": "2026-01-21", "x1": "2026-02-04", "y0": 0, "y1": 1, "fillcolor": "rgba(243,156,18,0.10)", "line": {"width": 0}, "layer": "below"}, {"type": "rect", "xref": "x", "yref": "paper", "x0": "2026-02-04", "x1": "2026-03-05", "y0": 0, "y1": 1, "fillcolor": "rgba(46,204,113,0.06)", "line": {"width": 0}, "layer": "below"}, {"type": "rect", "xref": "x", "yref": "paper", "x0": "2026-03-05", "x1": "2026-03-17", "y0": 0, "y1": 1, "fillcolor": "rgba(243,156,18,0.10)", "line": {"width": 0}, "layer": "below"}, {"type": "rect", "xref": "x", "yref": "paper", "x0": "2026-03-17", "x1": "2026-03-20", "y0": 0, "y1": 1, "fillcolor": "rgba(46,204,113,0.06)", "line": {"width": 0}, "layer": "below"}, {"type": "rect", "xref": "x", "yref": "paper", "x0": "2026-03-20", "x1": "2026-03-23", "y0": 0, "y1": 1, "fillcolor": "rgba(243,156,18,0.10)", "line": {"width": 0}, "layer": "below"}, {"type": "rect", "xref": "x", "yref": "paper", "x0": "2026-03-23", "x1": "2026-03-25", "y0": 0, "y1": 1, "fillcolor": "rgba(46,204,113,0.06)", "line": {"width": 0}, "layer": "below"}, {"type": "rect", "xref": "x", "yref": "paper", "x0": "2026-03-25", "x1": "2026-03-26", "y0": 0, "y1": 1, "fillcolor": "rgba(243,156,18,0.10)", "line": {"width": 0}, "layer": "below"}, {"type": "rect", "xref": "x", "yref": "paper", "x0": "2026-03-26", "x1": "2026-04-22", "y0": 0, "y1": 1, "fillcolor": "rgba(46,204,113,0.06)", "line": {"width": 0}, "layer": "below"}, {"type": "rect", "xref": "x", "yref": "paper", "x0": "2026-04-22", "x1": "2026-04-23", "y0": 0, "y1": 1, "fillcolor": "rgba(243,156,18,0.10)", "line": {"width": 0}, "layer": "below"}, {"type": "rect", "xref": "x", "yref": "paper", "x0": "2026-04-23", "x1": "2026-04-24", "y0": 0, "y1": 1, "fillcolor": "rgba(46,204,113,0.06)", "line": {"width": 0}, "layer": "below"}], "sig_x": ["2025-02-25", "2025-02-26", "2025-02-27", "2025-02-28", "2025-03-04", "2025-03-07", "2025-03-10", "2025-03-11", "2025-03-12", "2025-03-13", "2025-03-19", "2025-03-20", "2025-03-21", "2025-03-24", "2025-03-25", "2025-03-26", "2025-03-27", "2025-03-28", "2025-03-31", "2025-04-01", "2025-04-02", "2025-04-03", "2025-04-04", "2025-04-07", "2025-04-08", "2025-04-09", "2025-04-10", "2025-04-11", "2025-04-14", "2025-04-15", "2025-04-16", "2025-04-17", "2025-04-18", "2025-04-21", "2025-04-22", "2025-04-23", "2025-04-24", "2025-04-25", "2025-04-28", "2025-04-29", "2025-04-30", "2025-05-02", "2025-05-07", "2025-05-08", "2025-05-09", "2025-05-12", "2025-05-13", "2025-05-14", "2025-05-15", "2025-05-16", "2025-05-19", "2025-05-20", "2025-05-21", "2025-05-22", "2025-05-23", "2025-05-26", "2025-05-27", "2025-05-28", "2025-05-29", "2025-05-30", "2025-06-02", "2025-06-16", "2025-06-17", "2025-06-18", "2025-06-19", "2025-06-20", "2025-06-23", "2025-06-24", "2025-06-25", "2025-06-26", "2025-06-27", "2025-06-30", "2025-07-01", "2025-07-02", "2025-07-03", "2025-07-04", "2025-07-07", "2025-07-08", "2025-07-09", "2025-07-10", "2025-07-11", "2025-07-14", "2025-07-15", "2025-07-16", "2025-07-17", "2025-07-18", "2025-07-21", "2025-07-22", "2025-07-23", "2025-07-24", "2025-07-25", "2025-07-28", "2025-07-29", "2025-07-30", "2025-07-31", "2025-08-01", "2025-08-04", "2025-08-05", "2025-08-06", "2025-08-07", "2025-08-08", "2025-08-11", "2025-08-12", "2025-08-13", "2025-08-14", "2025-08-18", "2025-08-19", "2025-08-20", "2025-08-21", "2025-08-22", "2025-08-25", "2025-08-26", "2025-08-28", "2025-08-29", "2025-09-01", "2025-09-02", "2025-09-03", "2025-09-18", "2025-09-19", "2025-09-22", "2025-09-23", "2025-09-24", "2025-09-25", "2025-09-29", "2025-09-30", "2025-10-01", "2025-10-02", "2025-10-10", "2025-10-23", "2025-10-27", "2025-10-28", "2025-10-29", "2025-10-30", "2025-11-06", "2025-11-10", "2025-11-11", "2025-11-12", "2025-12-12", "2025-12-15", "2025-12-16", "2025-12-18", "2026-01-05", "2026-01-09", "2026-01-12", "2026-01-13", "2026-01-14", "2026-01-15", "2026-01-16", "2026-01-21", "2026-01-22", "2026-01-23", "2026-01-26", "2026-01-27", "2026-01-28", "2026-01-29", "2026-01-30", "2026-02-02", "2026-02-03", "2026-02-11", "2026-02-12", "2026-02-13", "2026-03-05", "2026-03-06", "2026-03-09", "2026-03-10", "2026-03-11", "2026-03-12", "2026-03-13", "2026-03-16", "2026-03-20", "2026-03-25", "2026-03-26", "2026-03-30", "2026-03-31", "2026-04-03", "2026-04-06", "2026-04-07", "2026-04-22", "2025-05-30", "2025-06-19", "2025-06-20", "2025-06-23", "2025-06-24", "2025-06-25", "2025-06-26", "2025-06-27", "2025-06-30", "2025-07-01", "2025-07-02", "2025-07-03", "2025-07-04", "2025-07-07", "2025-07-08", "2025-07-14", "2025-07-15", "2025-07-16", "2025-07-17", "2025-07-18", "2025-07-21", "2025-07-22", "2025-08-12", "2025-08-13", "2025-09-08", "2025-09-09", "2025-09-10", "2025-09-11", "2025-09-12", "2025-11-05", "2025-11-27", "2025-11-28", "2026-01-23", "2026-01-26", "2026-01-27", "2026-01-28", "2026-01-29", "2026-01-30", "2026-02-02", "2026-02-03", "2026-02-04", "2026-02-05", "2026-02-06", "2026-02-09"], "sig_y": [6100, 6020, 6040, 5660, 5850, 6060, 6120, 6090, 6220, 6020, 6950, 6660, 6470, 6510, 6330, 6170, 6160, 6010, 5690, 5740, 5590, 5900, 5700, 4840, 5180, 5150, 5320, 5400, 5490, 5660, 5620, 5350, 5330, 5280, 5230, 5310, 5340, 5450, 5550, 5530, 5470, 5520, 5540, 5590, 5560, 5500, 5510, 5560, 5560, 5610, 5360, 5370, 5450, 5270, 5250, 5200, 5320, 5400, 5480, 5630, 5750, 6000, 6050, 5990, 5840, 5970, 6020, 6000, 6130, 6200, 5990, 5820, 6000, 5900, 5940, 5850, 5690, 5730, 5720, 5850, 5850, 5710, 5960, 6070, 6200, 6170, 5970, 5800, 5810, 5720, 5700, 6310, 6270, 6470, 6540, 6680, 6700, 6580, 6530, 6760, 6530, 6340, 6580, 6580, 6470, 6510, 6160, 6140, 6190, 6100, 6340, 6440, 6720, 7070, 6950, 6870, 6920, 12780, 13460, 14260, 13950, 14080, 14410, 15470, 15930, 15800, 16790, 16680, 19300, 18740, 19860, 18920, 18000, 20100, 18920, 19320, 18100, 20800, 20050, 20150, 20500, 25350, 23650, 24350, 24150, 24700, 24350, 23850, 24700, 25400, 28600, 31850, 30700, 31750, 33400, 32700, 33200, 37800, 41800, 43100, 39400, 48650, 51900, 46800, 60800, 66500, 64400, 68800, 65000, 73900, 70600, 68500, 70000, 61900, 76400, 79500, 73800, 101600, 5630, 5840, 5970, 6020, 6000, 6130, 6200, 5990, 5820, 6000, 5900, 5940, 5850, 5690, 5730, 5710, 5960, 6070, 6200, 6170, 5970, 5800, 6580, 6580, 8360, 9200, 10600, 11930, 12690, 17850, 18850, 20800, 28600, 31850, 30700, 31750, 33400, 32700, 33200, 37800, 38950, 38650, 37200, 40350], "sig_hover": ["<b>2025-02-25 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 중립 · 신고가권: nan%<br>─────────<br>외국계 5일 순매도 -3.3% (기준 -2.0%)<br>⚠️ 거래원 집중도: HHI 1547 / 5일 평균 최상위 점유율 30% (NH투자증권)<br>─────────<br>+5일: -3.4%  +10일: +2.0%  +20일: +1.1%", "<b>2025-02-26 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 중립 · 신고가권: nan%<br>─────────<br>외국계 5일 순매도 -3.0% (기준 -2.0%)<br>⚠️ 거래원 집중도: HHI 1539 / 5일 평균 최상위 점유율 30% (유안타증권)<br>─────────<br>+5일: +2.8%  +10일: +0.0%  +20일: +2.3%", "<b>2025-02-27 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 중립 · 신고가권: nan%<br>─────────<br>외국계 5일 순매도 -3.9% (기준 -2.0%)<br>⚠️ 거래원 집중도: HHI 1576 / 5일 평균 최상위 점유율 31% (한국투자증권)<br>─────────<br>+5일: +0.3%  +10일: +6.5%  +20일: -0.5%", "<b>2025-02-28 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 중립 · 신고가권: nan%<br>─────────<br>외국계 5일 순매도 -2.7% (기준 -2.0%)<br>⚠️ 거래원 집중도: HHI 1642 / 5일 평균 최상위 점유율 31% (하나금융투자)<br>─────────<br>+5일: +8.1%  +10일: +12.7%  +20일: +0.5%", "<b>2025-03-04 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 중립 · 신고가권: nan%<br>─────────<br>외국계 5일 순매도 -2.9% (기준 -2.0%)<br>⚠️ 거래원 집중도: HHI 1552 / 5일 평균 최상위 점유율 29% (메릴린치증권)<br>─────────<br>+5일: +4.1%  +10일: +10.3%  +20일: -1.9%", "<b>2025-03-07 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 중립 · 신고가권: nan%<br>─────────<br>외국계 5일 순매도 -2.8% (기준 -2.0%)<br>─────────<br>+5일: +6.1%  +10일: +6.8%  +20일: -5.9%", "<b>2025-03-10 매도주의 (점수:3)</b><br>행동: HOLD (감시)<br>국면: 중립 · 신고가권: nan%<br>─────────<br>외국계 5일 순매도 -3.2% (기준 -2.0%)<br>스마트머니 20일 비율 양→음 전환 (+0.3% → -0.0%)<br>─────────<br>+5일: +4.2%  +10일: +6.4%  +20일: -20.9%", "<b>2025-03-11 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 중립 · 신고가권: nan%<br>─────────<br>외국계 5일 순매도 -4.3% (기준 -2.0%)<br>─────────<br>+5일: +5.9%  +10일: +3.9%  +20일: -14.9%", "<b>2025-03-12 매도주의 (점수:3)</b><br>행동: HOLD (감시)<br>국면: 중립 · 신고가권: nan%<br>─────────<br>외국계 5일 순매도 -4.8% (기준 -2.0%)<br>📊 거래량 다이버전스: 5일 가격 +5.6% but 거래량 비율 0.49 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: +11.7%  +10일: -0.8%  +20일: -17.2%", "<b>2025-03-13 매도주의 (점수:4)</b><br>행동: HOLD (감시)<br>국면: 중립 · 신고가권: nan%<br>─────────<br>외국계 5일 순매도 -5.7% (기준 -2.0%)<br>스마트머니 20일 비율 양→음 전환 (+0.2% → -0.1%)<br>⚠️ 거래원 집중도: HHI 1508 / 5일 평균 최상위 점유율 27% (삼성증권)<br>─────────<br>+5일: +10.6%  +10일: +2.3%  +20일: -11.6%", "<b>2025-03-19 매도주의 (점수:3)</b><br>행동: HOLD (감시)<br>국면: 중립 · 신고가권: nan%<br>─────────<br>스마트머니 20일 비율 양→음 전환 (+0.2% → -1.0%)<br>⚠️ 거래원 집중도: HHI 1607 / 5일 평균 최상위 점유율 30% (키움증권)<br>─────────<br>+5일: -11.2%  +10일: -19.6%  +20일: -19.1%", "<b>2025-03-20 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 중립 · 신고가권: nan%<br>─────────<br>⚠️ 거래원 집중도: HHI 1678 / 5일 평균 최상위 점유율 32% (키움증권)<br>─────────<br>+5일: -7.5%  +10일: -11.4%  +20일: -19.7%", "<b>2025-03-21 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 중립 · 신고가권: nan%<br>─────────<br>⚠️ 거래원 집중도: HHI 1659 / 5일 평균 최상위 점유율 31% (NH투자증권)<br>─────────<br>+5일: -7.1%  +10일: -11.9%  +20일: -17.6%", "<b>2025-03-24 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 중립 · 신고가권: nan%<br>─────────<br>⚠️ 거래원 집중도: HHI 1665 / 5일 평균 최상위 점유율 31% (삼성증권)<br>─────────<br>+5일: -12.6%  +10일: -25.6%  +20일: -18.9%", "<b>2025-03-25 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 중립 · 신고가권: nan%<br>─────────<br>⚠️ 거래원 집중도: HHI 1531 / 5일 평균 최상위 점유율 30% (신한투자증권)<br>─────────<br>+5일: -9.3%  +10일: -18.2%  +20일: -17.4%", "<b>2025-03-26 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 중립 · 신고가권: nan%<br>─────────<br>⚠️ 거래원 집중도: HHI 1574 / 5일 평균 최상위 점유율 31% (하나금융투자)<br>─────────<br>+5일: -9.4%  +10일: -16.5%  +20일: -13.9%", "<b>2025-03-27 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 중립 · 신고가권: nan%<br>─────────<br>⚠️ 거래원 집중도: HHI 1520 / 5일 평균 최상위 점유율 28% (키움증권)<br>─────────<br>+5일: -4.2%  +10일: -13.6%  +20일: -13.3%", "<b>2025-03-28 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 중립 · 신고가권: nan%<br>─────────<br>⚠️ 거래원 집중도: HHI 1673 / 5일 평균 최상위 점유율 30% (한화증권)<br>─────────<br>+5일: -5.2%  +10일: -10.2%  +20일: -9.3%", "<b>2025-03-31 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 중립 · 신고가권: nan%<br>─────────<br>⚠️ 거래원 집중도: HHI 1641 / 5일 평균 최상위 점유율 30% (키움증권)<br>─────────<br>+5일: -14.9%  +10일: -3.5%  +20일: -2.5%", "<b>2025-04-01 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 중립 · 신고가권: nan%<br>─────────<br>⚠️ 거래원 집중도: HHI 1760 / 5일 평균 최상위 점유율 32% (신한투자증권)<br>─────────<br>+5일: -9.8%  +10일: -1.4%  +20일: -3.7%", "<b>2025-04-02 관망 (점수:2)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 중립 · 신고가권: 80.4%<br>─────────<br>⚠️ 거래원 집중도: HHI 1651 / 5일 평균 최상위 점유율 29% (키움증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -19.6% 하락<br>─────────<br>+5일: -7.9%  +10일: +0.5%  +20일: -2.1%", "<b>2025-04-03 관망 (점수:2)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 중립 · 신고가권: 84.9%<br>─────────<br>⚠️ 거래원 집중도: HHI 1610 / 5일 평균 최상위 점유율 29% (신한투자증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -15.1% 하락<br>─────────<br>+5일: -9.8%  +10일: -9.3%  +20일: -6.4%", "<b>2025-04-04 관망 (점수:2)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 중립 · 신고가권: 82.0%<br>─────────<br>⚠️ 거래원 집중도: HHI 1563 / 5일 평균 최상위 점유율 29% (한화증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -18.0% 하락<br>─────────<br>+5일: -5.3%  +10일: -6.5%  +20일: -2.8%", "<b>2025-04-07 관망 (점수:2)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 중립 · 신고가권: 69.6%<br>─────────<br>⚠️ 거래원 집중도: HHI 1747 / 5일 평균 최상위 점유율 32% (NH투자증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -30.4% 하락<br>─────────<br>+5일: +13.4%  +10일: +9.1%  +20일: +15.5%", "<b>2025-04-08 매도주의 (점수:4)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 중립 · 신고가권: 74.5%<br>─────────<br>스마트머니 20일 비율 양→음 전환 (+0.1% → -0.2%)<br>⚠️ 거래원 집중도: HHI 1715 / 5일 평균 최상위 점유율 31% (신한투자증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -25.5% 하락<br>─────────<br>+5일: +9.3%  +10일: +1.0%  +20일: +7.3%", "<b>2025-04-09 관망 (점수:2)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 중립 · 신고가권: 74.1%<br>─────────<br>⚠️ 거래원 집중도: HHI 1706 / 5일 평균 최상위 점유율 30% (키움증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -25.9% 하락<br>─────────<br>+5일: +9.1%  +10일: +3.1%  +20일: +6.8%", "<b>2025-04-10 관망 (점수:2)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 중립 · 신고가권: 76.5%<br>─────────<br>⚠️ 거래원 집중도: HHI 1643 / 5일 평균 최상위 점유율 29% (신한투자증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -23.4% 하락<br>─────────<br>+5일: +0.6%  +10일: +0.4%  +20일: +3.6%", "<b>2025-04-11 매도주의 (점수:3)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 하락추세 · 신고가권: 77.7%<br>─────────<br>⛔ 하락추세 진입 (종가 < MA20 < MA60)<br>⚠️ 거래원 집중도: HHI 1548 / 5일 평균 최상위 점유율 29% (유안타증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -22.3% 하락<br>─────────<br>+5일: -1.3%  +10일: +0.9%  +20일: +3.0%", "<b>2025-04-14 매도강추 (점수:6)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 하락추세 · 신고가권: 79.0%<br>─────────<br>⛔ 하락추세 진입 (종가 < MA20 < MA60)<br>스마트머니 20일 비율 양→음 전환 (+0.2% → -0.1%)<br>📊 거래량 다이버전스: 5일 가격 +13.4% but 거래량 비율 0.62 (거래량 동반 안 됨 → 약한 상승)<br>🔻 트레일링 스탑: 60일 신고가 대비 -21.0% 하락<br>─────────<br>+5일: -3.8%  +10일: +1.1%  +20일: +1.3%", "<b>2025-04-15 매도주의 (점수:4)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 하락추세 · 신고가권: 81.4%<br>─────────<br>⛔ 하락추세 진입 (종가 < MA20 < MA60)<br>📊 거래량 다이버전스: 5일 가격 +9.3% but 거래량 비율 0.21 (거래량 동반 안 됨 → 약한 상승)<br>🔻 트레일링 스탑: 60일 신고가 대비 -18.6% 하락<br>─────────<br>+5일: -7.6%  +10일: -2.3%  +20일: -0.9%", "<b>2025-04-16 매도주의 (점수:4)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 하락추세 · 신고가권: 80.9%<br>─────────<br>⛔ 하락추세 진입 (종가 < MA20 < MA60)<br>📊 거래량 다이버전스: 5일 가격 +9.1% but 거래량 비율 0.21 (거래량 동반 안 됨 → 약한 상승)<br>🔻 트레일링 스탑: 60일 신고가 대비 -19.1% 하락<br>─────────<br>+5일: -5.5%  +10일: -2.7%  +20일: -4.6%", "<b>2025-04-17 매도주의 (점수:3)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 하락추세 · 신고가권: 77.0%<br>─────────<br>⛔ 하락추세 진입 (종가 < MA20 < MA60)<br>⚠️ 거래원 집중도: HHI 1671 / 5일 평균 최상위 점유율 32% (한화증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -23.0% 하락<br>─────────<br>+5일: -0.2%  +10일: +3.2%  +20일: +0.4%", "<b>2025-04-18 매도주의 (점수:3)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 하락추세 · 신고가권: 76.7%<br>─────────<br>⛔ 하락추세 진입 (종가 < MA20 < MA60)<br>⚠️ 거래원 집중도: HHI 1651 / 5일 평균 최상위 점유율 30% (미래에셋증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -23.3% 하락<br>─────────<br>+5일: +2.2%  +10일: +3.9%  +20일: +2.2%", "<b>2025-04-21 매도주의 (점수:3)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 하락추세 · 신고가권: 76.0%<br>─────────<br>⛔ 하락추세 진입 (종가 < MA20 < MA60)<br>⚠️ 거래원 집중도: HHI 1738 / 5일 평균 최상위 점유율 30% (미래에셋증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -24.0% 하락<br>─────────<br>+5일: +5.1%  +10일: +5.9%  +20일: -0.2%", "<b>2025-04-22 매도주의 (점수:3)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 하락추세 · 신고가권: 75.3%<br>─────────<br>⛔ 하락추세 진입 (종가 < MA20 < MA60)<br>⚠️ 거래원 집중도: HHI 1809 / 5일 평균 최상위 점유율 33% (유안타증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -24.8% 하락<br>─────────<br>+5일: +5.7%  +10일: +6.3%  +20일: +0.4%", "<b>2025-04-23 매도주의 (점수:3)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 하락추세 · 신고가권: 76.4%<br>─────────<br>⛔ 하락추세 진입 (종가 < MA20 < MA60)<br>⚠️ 거래원 집중도: HHI 1752 / 5일 평균 최상위 점유율 32% (미래에셋증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -23.6% 하락<br>─────────<br>+5일: +3.0%  +10일: +3.6%  +20일: -2.1%", "<b>2025-04-24 매도강추 (점수:5)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 하락추세 · 신고가권: 76.8%<br>─────────<br>⛔ 하락추세 진입 (종가 < MA20 < MA60)<br>스마트머니 20일 비율 양→음 전환 (+0.2% → -0.2%)<br>⚠️ 거래원 집중도: HHI 1619 / 5일 평균 최상위 점유율 29% (NH투자증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -23.2% 하락<br>─────────<br>+5일: +3.4%  +10일: +3.2%  +20일: -0.4%", "<b>2025-04-25 관망 (점수:2)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 중립 · 신고가권: 78.4%<br>─────────<br>⚠️ 거래원 집중도: HHI 1603 / 5일 평균 최상위 점유율 29% (NH투자증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -21.6% 하락<br>─────────<br>+5일: +1.6%  +10일: +2.0%  +20일: -0.9%", "<b>2025-04-28 매도주의 (점수:4)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 중립 · 신고가권: 79.9%<br>─────────<br>⚠️ 거래원 집중도: HHI 1531 / 5일 평균 최상위 점유율 28% (NH투자증권)<br>📊 거래량 다이버전스: 5일 가격 +5.1% but 거래량 비율 0.34 (거래량 동반 안 됨 → 약한 상승)<br>🔻 트레일링 스탑: 60일 신고가 대비 -20.1% 하락<br>─────────<br>+5일: +0.7%  +10일: +0.2%  +20일: -1.3%", "<b>2025-04-29 매도주의 (점수:3)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 중립 · 신고가권: 79.6%<br>─────────<br>📊 거래량 다이버전스: 5일 가격 +5.7% but 거래량 비율 0.29 (거래량 동반 안 됨 → 약한 상승)<br>🔻 트레일링 스탑: 60일 신고가 대비 -20.4% 하락<br>─────────<br>+5일: +0.5%  +10일: +1.4%  +20일: +1.8%", "<b>2025-04-30 관망 (점수:1)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 중립 · 신고가권: 78.7%<br>─────────<br>🔻 트레일링 스탑: 60일 신고가 대비 -21.3% 하락<br>─────────<br>+5일: +0.6%  +10일: -2.0%  +20일: +5.1%", "<b>2025-05-02 관망 (점수:1)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 중립 · 신고가권: 79.4%<br>─────────<br>🔻 트레일링 스탑: 60일 신고가 대비 -20.6% 하락<br>─────────<br>+5일: -0.2%  +10일: -2.7%  +20일: +8.7%", "<b>2025-05-07 관망 (점수:1)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 중립 · 신고가권: 79.7%<br>─────────<br>🔻 트레일링 스탑: 60일 신고가 대비 -20.3% 하락<br>─────────<br>+5일: +0.4%  +10일: -1.6%  +20일: +9.2%", "<b>2025-05-08 관망 (점수:1)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 중립 · 신고가권: 80.4%<br>─────────<br>🔻 트레일링 스탑: 60일 신고가 대비 -19.6% 하락<br>─────────<br>+5일: -0.5%  +10일: -5.7%  +20일: +7.2%", "<b>2025-05-09 관망 (점수:1)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 중립 · 신고가권: 80.0%<br>─────────<br>🔻 트레일링 스탑: 60일 신고가 대비 -20.0% 하락<br>─────────<br>+5일: +0.9%  +10일: -5.6%  +20일: +5.0%", "<b>2025-05-12 관망 (점수:2)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 중립 · 신고가권: 79.1%<br>─────────<br>⚠️ 거래원 집중도: HHI 1592 / 5일 평균 최상위 점유율 30% (키움증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -20.9% 하락<br>─────────<br>+5일: -2.5%  +10일: -5.5%  +20일: +8.6%", "<b>2025-05-13 매도주의 (점수:3)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 중립 · 신고가권: 79.3%<br>─────────<br>기관 5일 순매도 -3.5% (기준 -3.0%)<br>⚠️ 거래원 집중도: HHI 1504 / 5일 평균 최상위 점유율 28% (KB증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -20.7% 하락<br>─────────<br>+5일: -2.5%  +10일: -3.5%  +20일: +9.3%", "<b>2025-05-14 관망 (점수:2)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 중립 · 신고가권: 80.0%<br>─────────<br>⚠️ 거래원 집중도: HHI 1506 / 5일 평균 최상위 점유율 28% (신한투자증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -20.0% 하락<br>─────────<br>+5일: -2.0%  +10일: -2.9%  +20일: +7.9%", "<b>2025-05-15 관망 (점수:1)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 중립 · 신고가권: 80.0%<br>─────────<br>🔻 트레일링 스탑: 60일 신고가 대비 -20.0% 하락<br>─────────<br>+5일: -5.2%  +10일: -1.4%  +20일: +10.2%", "<b>2025-05-16 관망 (점수:1)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 중립 · 신고가권: 80.7%<br>─────────<br>🔻 트레일링 스탑: 60일 신고가 대비 -19.3% 하락<br>─────────<br>+5일: -6.4%  +10일: +0.4%  +20일: +10.5%", "<b>2025-05-19 관망 (점수:2)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 하락추세 · 신고가권: 77.1%<br>─────────<br>⛔ 하락추세 진입 (종가 < MA20 < MA60)<br>🔻 트레일링 스탑: 60일 신고가 대비 -22.9% 하락<br>─────────<br>+5일: -3.0%  +10일: +7.3%  +20일: +11.8%", "<b>2025-05-20 관망 (점수:2)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 하락추세 · 신고가권: 77.3%<br>─────────<br>⛔ 하락추세 진입 (종가 < MA20 < MA60)<br>🔻 트레일링 스탑: 60일 신고가 대비 -22.7% 하락<br>─────────<br>+5일: -0.9%  +10일: +11.7%  +20일: +8.4%", "<b>2025-05-21 매도주의 (점수:3)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 하락추세 · 신고가권: 78.4%<br>─────────<br>⛔ 하락추세 진입 (종가 < MA20 < MA60)<br>⚠️ 거래원 집중도: HHI 1500 / 5일 평균 최상위 점유율 27% (NH투자증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -21.6% 하락<br>─────────<br>+5일: -0.9%  +10일: +11.0%  +20일: +10.1%", "<b>2025-05-22 관망 (점수:2)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 하락추세 · 신고가권: 75.8%<br>─────────<br>⛔ 하락추세 진입 (종가 < MA20 < MA60)<br>🔻 트레일링 스탑: 60일 신고가 대비 -24.2% 하락<br>─────────<br>+5일: +4.0%  +10일: +13.7%  +20일: +11.9%", "<b>2025-05-23 매도주의 (점수:3)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 하락추세 · 신고가권: 75.5%<br>─────────<br>⛔ 하락추세 진입 (종가 < MA20 < MA60)<br>⚠️ 거래원 집중도: HHI 1571 / 5일 평균 최상위 점유율 28% (미래에셋증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -24.5% 하락<br>─────────<br>+5일: +7.2%  +10일: +11.2%  +20일: +13.1%", "<b>2025-05-26 매도주의 (점수:3)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 하락추세 · 신고가권: 74.8%<br>─────────<br>⛔ 하락추세 진입 (종가 < MA20 < MA60)<br>⚠️ 거래원 집중도: HHI 1586 / 5일 평균 최상위 점유율 28% (신한투자증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -25.2% 하락<br>─────────<br>+5일: +10.6%  +10일: +14.8%  +20일: +12.5%", "<b>2025-05-27 매도주의 (점수:3)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 하락추세 · 신고가권: 76.5%<br>─────────<br>⛔ 하락추세 진입 (종가 < MA20 < MA60)<br>⚠️ 거래원 집중도: HHI 1536 / 5일 평균 최상위 점유율 26% (키움증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -23.4% 하락<br>─────────<br>+5일: +12.8%  +10일: +13.2%  +20일: +7.0%", "<b>2025-05-28 매도주의 (점수:3)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 하락추세 · 신고가권: 77.7%<br>─────────<br>⛔ 하락추세 진입 (종가 < MA20 < MA60)<br>⚠️ 거래원 집중도: HHI 1602 / 5일 평균 최상위 점유율 28% (NH투자증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -22.3% 하락<br>─────────<br>+5일: +12.0%  +10일: +11.1%  +20일: +6.1%", "<b>2025-05-29 관망 (점수:2)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 중립 · 신고가권: 78.8%<br>─────────<br>⚠️ 거래원 집중도: HHI 1606 / 5일 평균 최상위 점유율 29% (NH투자증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -21.1% 하락<br>─────────<br>+5일: +9.3%  +10일: +11.9%  +20일: +4.4%", "<b>2025-05-30 관망 (점수:1)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 중립 · 신고가권: 81.0%<br>─────────<br>🔻 트레일링 스탑: 60일 신고가 대비 -19.0% 하락<br>─────────<br>+5일: +3.7%  +10일: +10.1%  +20일: +3.9%", "<b>2025-06-02 관망 (점수:1)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 중립 · 신고가권: 82.7%<br>─────────<br>🔻 트레일링 스탑: 60일 신고가 대비 -17.3% 하락<br>─────────<br>+5일: +3.8%  +10일: +4.2%  +20일: +1.7%", "<b>2025-06-16 관망 (점수:2)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 중립 · 신고가권: 86.3%<br>─────────<br>⚠️ 거래원 집중도: HHI 1600 / 5일 평균 최상위 점유율 29% (미래에셋증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -13.7% 하락<br>─────────<br>+5일: +0.3%  +10일: -3.0%  +20일: -4.8%", "<b>2025-06-17 매도주의 (점수:3)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 중립 · 신고가권: 87.1%<br>─────────<br>기관 5일 순매도 -3.3% (기준 -3.0%)<br>⚠️ 거래원 집중도: HHI 1618 / 5일 평균 최상위 점유율 28% (한국투자증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -12.9% 하락<br>─────────<br>+5일: -0.8%  +10일: -0.8%  +20일: -1.5%", "<b>2025-06-18 매도주의 (점수:3)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 중립 · 신고가권: 86.2%<br>─────────<br>기관 5일 순매도 -4.5% (기준 -3.0%)<br>⚠️ 거래원 집중도: HHI 1574 / 5일 평균 최상위 점유율 26% (NH투자증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -13.8% 하락<br>─────────<br>+5일: +2.3%  +10일: -1.5%  +20일: +1.3%", "<b>2025-06-19 매도주의 (점수:3)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 중립 · 신고가권: 84.0%<br>─────────<br>기관 5일 순매도 -6.2% (기준 -3.0%)<br>⚠️ 거래원 집중도: HHI 1741 / 5일 평균 최상위 점유율 30% (KB증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -16.0% 하락<br>─────────<br>+5일: +6.2%  +10일: +1.7%  +20일: +6.2%", "<b>2025-06-20 매도강추 (점수:6)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 중립 · 신고가권: 85.9%<br><b style='color:#fbbf24'>🚨 분배</b><br>─────────<br>기관 5일 순매도 -9.2% (기준 -3.0%)<br>🚨 분배 패턴 (1/10일 발동): 개미 5일 +3.4% ↔ 대형기관(NH/KB/한투/삼성 등) 5일 -9.9%<br>⚠️ 거래원 집중도: HHI 1716 / 5일 평균 최상위 점유율 30% (한국투자증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -14.1% 하락<br>─────────<br>+5일: +0.3%  +10일: -2.0%  +20일: +3.4%", "<b>2025-06-23 매도주의 (점수:3)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 중립 · 신고가권: 86.6%<br>─────────<br>기관 5일 순매도 -8.8% (기준 -3.0%)<br>⚠️ 거래원 집중도: HHI 1502 / 5일 평균 최상위 점유율 27% (한국투자증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -13.4% 하락<br>─────────<br>+5일: -3.3%  +10일: -5.5%  +20일: -0.8%", "<b>2025-06-24 관망 (점수:2)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 중립 · 신고가권: 86.3%<br>─────────<br>기관 5일 순매도 -8.6% (기준 -3.0%)<br>🔻 트레일링 스탑: 60일 신고가 대비 -13.7% 하락<br>─────────<br>+5일: +0.0%  +10일: -4.5%  +20일: -3.3%", "<b>2025-06-25 매도주의 (점수:3)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 중립 · 신고가권: 88.2%<br>─────────<br>기관 5일 순매도 -8.6% (기준 -3.0%)<br>⚠️ 거래원 집중도: HHI 1515 / 5일 평균 최상위 점유율 28% (NH투자증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -11.8% 하락<br>─────────<br>+5일: -3.8%  +10일: -6.7%  +20일: -5.2%", "<b>2025-06-26 매도주의 (점수:3)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 상승추세 · 신고가권: 89.2%<br>─────────<br>스마트머니 20일 비율 양→음 전환 (+0.6% → -0.1%)<br>🔻 트레일링 스탑: 60일 신고가 대비 -10.8% 하락<br>─────────<br>+5일: -4.2%  +10일: -5.7%  +20일: -7.7%", "<b>2025-06-27 관망 (점수:2)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 상승추세 · 신고가권: 89.9%<br>─────────<br>⚠️ 거래원 집중도: HHI 1508 / 5일 평균 최상위 점유율 28% (NH투자증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -10.1% 하락<br>─────────<br>+5일: -2.3%  +10일: -2.3%  +20일: -4.8%", "<b>2025-06-30 관망 (점수:2)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 상승추세 · 신고가권: 89.4%<br>─────────<br>⚠️ 거래원 집중도: HHI 1713 / 5일 평균 최상위 점유율 32% (미래에셋증권)<br>🔻 트레일링 스탑: 60일 신고가 대비 -10.6% 하락<br>─────────<br>+5일: -2.2%  +10일: -1.9%  +20일: +8.4%", "<b>2025-07-01 매도강추 (점수:11)</b><br>행동: 전량 매도 (다이버전스+분배)<br>국면: 분배의심 · 신고가권: 92.2%<br><b style='color:#fb7185'>★ 다이버전스</b><br><b style='color:#fbbf24'>🚨 분배</b><br>─────────<br>📉 베어리시 다이버전스: 신고가권(92%) + 스마트머니 20일 -0.7% (5일 -2.6% 가속화)<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>기관 5일 순매도 -6.6% (기준 -3.0%)<br>🚨 분배 패턴 (2/10일 발동): 개미 5일 +2.6% ↔ 대형기관(NH/KB/한투/삼성 등) 5일 -6.4%<br>─────────<br>+5일: -4.5%  +10일: -0.7%  +20일: +4.5%", "<b>2025-07-02 매도강추 (점수:6)</b><br>행동: 매도 (다이버전스)<br>국면: 분배의심 · 신고가권: 93.2%<br><b style='color:#fb7185'>★ 다이버전스</b><br>─────────<br>📉 베어리시 다이버전스: 신고가권(93%) + 스마트머니 20일 -0.5% (5일 -2.0% 가속화)<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>기관 5일 순매도 -4.9% (기준 -3.0%)<br>⚠️ 거래원 집중도: HHI 1642 / 5일 평균 최상위 점유율 30% (신한투자증권)<br>─────────<br>+5일: -3.0%  +10일: +2.9%  +20일: +9.7%", "<b>2025-07-03 매도강추 (점수:6)</b><br>행동: 매도 (다이버전스)<br>국면: 분배의심 · 신고가권: 95.8%<br><b style='color:#fb7185'>★ 다이버전스</b><br>─────────<br>📉 베어리시 다이버전스: 신고가권(96%) + 스마트머니 20일 -0.6% (5일 -2.3% 가속화)<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>기관 5일 순매도 -5.6% (기준 -3.0%)<br>⚠️ 거래원 집중도: HHI 1526 / 5일 평균 최상위 점유율 27% (미래에셋증권)<br>─────────<br>+5일: -1.5%  +10일: +4.4%  +20일: +10.1%", "<b>2025-07-04 매도강추 (점수:6)</b><br>행동: 매도 (다이버전스)<br>국면: 분배의심 · 신고가권: 94.4%<br><b style='color:#fb7185'>★ 다이버전스</b><br>─────────<br>📉 베어리시 다이버전스: 신고가권(94%) + 스마트머니 20일 -0.6% (5일 -2.1% 가속화)<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>기관 5일 순매도 -6.8% (기준 -3.0%)<br>⚠️ 거래원 집중도: HHI 1588 / 5일 평균 최상위 점유율 28% (삼성증권)<br>─────────<br>+5일: +0.0%  +10일: +5.5%  +20일: +14.2%", "<b>2025-07-07 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 91.8%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>기관 5일 순매도 -4.6% (기준 -3.0%)<br>─────────<br>+5일: +0.3%  +10일: +4.9%  +20일: +17.8%", "<b>2025-07-08 매도주의 (점수:3)</b><br>행동: 부분 익절 (신고가권)<br>국면: 분배의심 · 신고가권: 92.4%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>기관 20일 순매도 -5.3% (기준 -5.0%, 가중치 +2)<br>─────────<br>+5일: +4.0%  +10일: +1.2%  +20일: +14.8%", "<b>2025-07-09 매도주의 (점수:3)</b><br>행동: 부분 익절 (신고가권)<br>국면: 분배의심 · 신고가권: 92.3%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>기관 20일 순매도 -5.4% (기준 -5.0%, 가중치 +2)<br>─────────<br>+5일: +6.1%  +10일: +1.6%  +20일: +14.2%", "<b>2025-07-10 매도주의 (점수:3)</b><br>행동: 부분 익절 (신고가권)<br>국면: 분배의심 · 신고가권: 94.4%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>기관 20일 순매도 -5.5% (기준 -5.0%, 가중치 +2)<br>─────────<br>+5일: +6.0%  +10일: -2.2%  +20일: +15.6%", "<b>2025-07-11 매도주의 (점수:3)</b><br>행동: 부분 익절 (신고가권)<br>국면: 분배의심 · 신고가권: 94.4%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>기관 20일 순매도 -5.9% (기준 -5.0%, 가중치 +2)<br>─────────<br>+5일: +5.5%  +10일: -2.6%  +20일: +11.6%", "<b>2025-07-14 매도주의 (점수:3)</b><br>행동: 부분 익절 (신고가권)<br>국면: 분배의심 · 신고가권: 92.1%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>기관 20일 순매도 -5.9% (기준 -5.0%, 가중치 +2)<br>─────────<br>+5일: +4.5%  +10일: +10.5%  +20일: +11.0%", "<b>2025-07-15 매도주의 (점수:3)</b><br>행동: 부분 익절 (신고가권)<br>국면: 분배의심 · 신고가권: 96.1%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>기관 20일 순매도 -5.4% (기준 -5.0%, 가중치 +2)<br>─────────<br>+5일: -2.7%  +10일: +5.2%  +20일: +10.4%", "<b>2025-07-16 매도주의 (점수:3)</b><br>행동: 부분 익절 (신고가권)<br>국면: 분배의심 · 신고가권: 97.9%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>기관 20일 순매도 -5.2% (기준 -5.0%, 가중치 +2)<br>─────────<br>+5일: -4.3%  +10일: +6.6%  +20일: +8.4%", "<b>2025-07-17 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 100.0%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: -7.7%  +10일: +5.5%  +20일: +4.3%", "<b>2025-07-18 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 99.5%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: -7.6%  +10일: +8.3%  +20일: +5.5%", "<b>2025-07-21 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 96.3%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: +5.7%  +10일: +12.2%  +20일: +3.2%", "<b>2025-07-22 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 93.5%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: +8.1%  +10일: +13.4%  +20일: +5.9%", "<b>2025-07-23 매도주의 (점수:4)</b><br>행동: 매도 (다이버전스)<br>국면: 분배의심 · 신고가권: 93.7%<br><b style='color:#fb7185'>★ 다이버전스</b><br>─────────<br>📉 베어리시 다이버전스: 신고가권(94%) + 스마트머니 20일 -0.9% (5일 -1.2% 가속화)<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: +11.4%  +10일: +12.4%  +20일: +6.5%", "<b>2025-07-24 매도강추 (점수:8)</b><br>행동: 전량 매도 (다이버전스+분배)<br>국면: 분배의심 · 신고가권: 92.3%<br><b style='color:#fb7185'>★ 다이버전스</b><br><b style='color:#fbbf24'>🚨 분배</b><br>─────────<br>📉 베어리시 다이버전스: 신고가권(92%) + 스마트머니 20일 -1.0% (5일 -5.3% 가속화)<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>기관 5일 순매도 -4.5% (기준 -3.0%)<br>🚨 분배 패턴 (1/10일 발동): 개미 5일 +5.3% ↔ 대형기관(NH/KB/한투/삼성 등) 5일 -4.2%<br>─────────<br>+5일: +14.3%  +10일: +18.2%  +20일: +6.6%", "<b>2025-07-25 매도강추 (점수:5)</b><br>행동: 매도 (분배 패턴)<br>국면: 분배의심 · 신고가권: 91.9%<br><b style='color:#fbbf24'>🚨 분배</b><br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>기관 5일 순매도 -5.3% (기준 -3.0%)<br>🚨 분배 패턴 (2/10일 발동): 개미 5일 +5.8% ↔ 대형기관(NH/KB/한투/삼성 등) 5일 -4.3%<br>─────────<br>+5일: +17.2%  +10일: +14.6%  +20일: +11.2%", "<b>2025-07-28 매도주의 (점수:4)</b><br>행동: 매도 (다이버전스)<br>국면: 분배의심 · 신고가권: 100.0%<br><b style='color:#fb7185'>★ 다이버전스</b><br>─────────<br>📉 베어리시 다이버전스: 신고가권(100%) + 스마트머니 20일 -0.8% (5일 -0.9% 가속화)<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: +6.2%  +10일: +0.5%  +20일: +2.1%", "<b>2025-07-29 매도주의 (점수:4)</b><br>행동: 매도 (다이버전스)<br>국면: 분배의심 · 신고가권: 99.4%<br><b style='color:#fb7185'>★ 다이버전스</b><br>─────────<br>📉 베어리시 다이버전스: 신고가권(99%) + 스마트머니 20일 -0.7% (5일 -0.8% 가속화)<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: +4.9%  +10일: +4.9%  +20일: +2.7%", "<b>2025-07-30 매도주의 (점수:4)</b><br>행동: 매도 (다이버전스)<br>국면: 분배의심 · 신고가권: 100.0%<br><b style='color:#fb7185'>★ 다이버전스</b><br>─────────<br>📉 베어리시 다이버전스: 신고가권(100%) + 스마트머니 20일 -0.6% (5일 -0.6% 가속화)<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: +0.9%  +10일: +1.7%  +20일: +3.9%", "<b>2025-07-31 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 100.0%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: +3.4%  +10일: -1.1%  +20일: +8.1%", "<b>2025-08-01 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 100.0%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: -2.2%  +10일: -2.5%  +20일: +4.0%", "<b>2025-08-04 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 100.0%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: -5.4%  +10일: -8.1%  +20일: +2.5%", "<b>2025-08-05 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 98.2%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: +0.0%  +10일: -6.7%  +20일: +5.2%", "<b>2025-08-06 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 97.5%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>외국계 5일 순매도 -2.6% (기준 -2.0%)<br>─────────<br>+5일: +0.8%  +10일: -5.2%  +20일: +12.6%", "<b>2025-08-07 매도강추 (점수:5)</b><br>행동: 매도 (다이버전스)<br>국면: 분배의심 · 신고가권: 100.0%<br><b style='color:#fb7185'>★ 다이버전스</b><br>─────────<br>📉 베어리시 다이버전스: 신고가권(100%) + 스마트머니 20일 -0.5% (5일 -0.7% 가속화)<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>외국계 5일 순매도 -2.7% (기준 -2.0%)<br>─────────<br>+5일: -4.3%  +10일: -9.8%  +20일: +16.6%", "<b>2025-08-08 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 96.6%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: -0.3%  +10일: -2.9%  +20일: +28.0%", "<b>2025-08-11 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 93.8%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: -2.8%  +10일: +1.6%  +20일: +45.1%", "<b>2025-08-12 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 97.3%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: -6.7%  +10일: -2.1%  +20일: +61.1%", "<b>2025-08-13 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 97.3%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: -5.9%  +10일: +2.1%  +20일: +81.3%", "<b>2025-08-14 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 95.7%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: -5.7%  +10일: +9.3%  +20일: +96.1%", "<b>2025-08-18 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 96.3%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: -2.6%  +10일: +6.8%  +20일: +85.0%", "<b>2025-08-19 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 91.1%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: +4.5%  +10일: +11.5%  +20일: +108.4%", "<b>2025-08-20 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 90.8%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: +4.9%  +10일: +12.7%  +20일: +114.3%", "<b>2025-08-21 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 91.6%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: +8.6%  +10일: +18.7%  +20일: +106.5%", "<b>2025-08-22 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 90.2%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: +15.9%  +10일: +29.2%  +20일: +120.7%", "<b>2025-08-25 매도주의 (점수:4)</b><br>행동: 매도 (다이버전스)<br>국면: 분배의심 · 신고가권: 93.8%<br><b style='color:#fb7185'>★ 다이버전스</b><br>─────────<br>📉 베어리시 다이버전스: 신고가권(94%) + 스마트머니 20일 -0.4% (5일 -1.3% 가속화)<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: +9.6%  +10일: +31.9%  +20일: +124.9%", "<b>2025-08-26 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 95.3%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: +6.7%  +10일: +42.9%  +20일: +116.6%", "<b>2025-08-28 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 상승추세 · 신고가권: 99.4%<br>─────────<br>📊 거래량 다이버전스: 5일 가격 +8.6% but 거래량 비율 0.14 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: +9.4%  +10일: +77.5%  +20일: +114.4%", "<b>2025-08-29 매도주의 (점수:3)</b><br>행동: 부분 익절 (신고가권)<br>국면: 상승추세 · 신고가권: 100.0%<br>─────────<br>⚠️ 거래원 집중도: HHI 1536 / 5일 평균 최상위 점유율 27% (NH투자증권)<br>📊 거래량 다이버전스: 5일 가격 +15.9% but 거래량 비율 0.26 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: +11.5%  +10일: +79.5%  +20일: +91.4%", "<b>2025-09-01 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 상승추세 · 신고가권: 98.3%<br>─────────<br>📊 거래량 다이버전스: 5일 가격 +9.6% but 거래량 비율 0.30 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: +20.3%  +10일: +73.2%  +20일: +122.6%", "<b>2025-09-02 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 상승추세 · 신고가권: 97.2%<br>─────────<br>📊 거래량 다이버전스: 5일 가격 +6.7% but 거래량 비율 0.60 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: +33.9%  +10일: +86.9%  +20일: +131.9%", "<b>2025-09-03 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 상승추세 · 신고가권: 97.9%<br>─────────<br>📊 거래량 다이버전스: 5일 가격 +7.5% but 거래량 비율 0.69 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: +53.2%  +10일: +90.2%  +20일: +128.3%", "<b>2025-09-18 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 상승추세 · 신고가권: 97.1%<br>─────────<br>📊 거래량 다이버전스: 5일 가격 +7.1% but 거래량 비율 0.73 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: +12.8%  +10일: +31.4%  +20일: +51.0%", "<b>2025-09-19 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 상승추세 · 신고가권: 100.0%<br>─────────<br>📊 거래량 다이버전스: 5일 가격 +6.1% but 거래량 비율 0.53 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: +0.5%  +10일: +23.9%  +20일: +39.1%", "<b>2025-09-22 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 상승추세 · 신고가권: 100.0%<br>─────────<br>📊 거래량 다이버전스: 5일 가격 +18.4% but 거래량 비율 0.53 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: +8.5%  +10일: +9.5%  +20일: +31.4%", "<b>2025-09-23 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 상승추세 · 신고가권: 97.8%<br>─────────<br>📊 거래량 다이버전스: 5일 가격 +8.6% but 거래량 비율 0.60 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: +14.2%  +10일: +18.3%  +20일: +42.4%", "<b>2025-09-24 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 상승추세 · 신고가권: 98.7%<br>─────────<br>📊 거래량 다이버전스: 5일 가격 +7.0% but 거래량 비율 0.64 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: +12.2%  +10일: +36.0%  +20일: +34.4%", "<b>2025-09-25 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 상승추세 · 신고가권: 100.0%<br>─────────<br>📊 거래량 다이버전스: 5일 가격 +12.8% but 거래량 비율 0.65 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: +16.5%  +10일: +25.9%  +20일: +24.9%", "<b>2025-09-29 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 상승추세 · 신고가권: 100.0%<br>─────────<br>📊 거래량 다이버전스: 5일 가격 +8.5% but 거래량 비율 0.60 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: +1.0%  +10일: +18.5%  +20일: +11.1%", "<b>2025-09-30 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 상승추세 · 신고가권: 100.0%<br>─────────<br>📊 거래량 다이버전스: 5일 가격 +14.2% but 거래량 비율 0.53 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: +3.6%  +10일: +15.4%  +20일: +8.0%", "<b>2025-10-01 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 상승추세 · 신고가권: 99.2%<br>─────────<br>📊 거래량 다이버전스: 5일 가격 +12.2% but 거래량 비율 0.52 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: +21.2%  +10일: +14.1%  +20일: +13.0%", "<b>2025-10-02 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 상승추세 · 신고가권: 100.0%<br>─────────<br>📊 거래량 다이버전스: 5일 가격 +16.5% but 거래량 비율 0.63 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: +8.1%  +10일: +14.9%  +20일: +19.7%", "<b>2025-10-10 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 상승추세 · 신고가권: 99.3%<br>─────────<br>📊 거래량 다이버전스: 5일 가격 +23.3% but 거래량 비율 0.70 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: +13.2%  +10일: +12.3%  +20일: +7.6%", "<b>2025-10-23 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 상승추세 · 신고가권: 100.0%<br>─────────<br>📊 거래량 다이버전스: 5일 가격 +6.3% but 거래량 비율 0.79 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: -6.7%  +10일: +4.2%  +20일: -7.7%", "<b>2025-10-27 매도주의 (점수:3)</b><br>행동: 부분 익절 (신고가권)<br>국면: 분배의심 · 신고가권: 97.1%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>스마트머니 20일 비율 양→음 전환 (+0.1% → -0.1%)<br>─────────<br>+5일: -8.3%  +10일: +1.0%  +20일: -16.5%", "<b>2025-10-28 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 100.0%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: -13.4%  +10일: -2.7%  +20일: -8.8%", "<b>2025-10-29 매도주의 (점수:4)</b><br>행동: 매도 (다이버전스)<br>국면: 분배의심 · 신고가권: 95.3%<br><b style='color:#fb7185'>★ 다이버전스</b><br>─────────<br>📉 베어리시 다이버전스: 신고가권(95%) + 스마트머니 20일 -0.4% (5일 -0.5% 가속화)<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: -5.7%  +10일: -4.3%  +20일: -5.2%", "<b>2025-10-30 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 90.6%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: +11.7%  +10일: -0.8%  +20일: +4.7%", "<b>2025-11-06 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 100.0%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>기관 5일 순매도 -4.2% (기준 -3.0%)<br>─────────<br>+5일: -11.1%  +10일: -11.4%  +20일: -6.3%", "<b>2025-11-10 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 94.1%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: -6.1%  +10일: -17.3%  +20일: -5.1%", "<b>2025-11-11 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 96.1%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: -11.5%  +10일: -6.2%  +20일: -0.7%", "<b>2025-11-12 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 90.0%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: -10.6%  +10일: -0.9%  +20일: +13.3%", "<b>2025-12-12 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 상승추세 · 신고가권: 95.6%<br>─────────<br>📊 거래량 다이버전스: 5일 가격 +13.2% but 거래량 비율 0.66 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: +3.1%  +10일: +11.1%  +20일: +18.8%", "<b>2025-12-15 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 상승추세 · 신고가권: 92.2%<br>─────────<br>📊 거래량 다이버전스: 5일 가격 +11.6% but 거래량 비율 0.56 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: +31.2%  +10일: +14.0%  +20일: +21.4%", "<b>2025-12-16 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 상승추세 · 신고가권: 92.6%<br>─────────<br>📊 거래량 다이버전스: 5일 가격 +5.0% but 거래량 비율 0.52 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: +23.1%  +10일: +26.8%  +20일: +18.4%", "<b>2025-12-18 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 상승추세 · 신고가권: 94.3%<br>─────────<br>📊 거래량 다이버전스: 5일 가격 +5.1% but 거래량 비율 0.45 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: +13.7%  +10일: +18.5%  +20일: +13.7%", "<b>2026-01-05 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 상승추세 · 신고가권: 96.4%<br>─────────<br>📊 거래량 다이버전스: 5일 가격 +5.6% but 거래량 비율 0.77 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: -3.9%  +10일: -10.8%  +20일: +31.0%", "<b>2026-01-09 매도주의 (점수:3)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 상승추세 · 신고가권: 89.9%<br>─────────<br>스마트머니 20일 비율 양→음 전환 (+0.1% → -0.2%)<br>🔻 트레일링 스탑: 60일 신고가 대비 -10.1% 하락<br>─────────<br>+5일: +0.8%  +10일: +20.9%  +20일: +57.3%", "<b>2026-01-12 매도강추 (점수:5)</b><br>행동: 매도 (다이버전스)<br>국면: 분배의심 · 신고가권: 92.6%<br><b style='color:#fb7185'>★ 다이버전스</b><br>─────────<br>📉 베어리시 다이버전스: 신고가권(93%) + 스마트머니 20일 -0.7% (5일 -2.7% 가속화)<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>외국계 5일 순매도 -6.6% (기준 -2.0%)<br>─────────<br>+5일: -7.2%  +10일: +30.8%  +20일: +65.7%", "<b>2026-01-13 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 91.8%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>외국계 5일 순매도 -7.0% (기준 -2.0%)<br>─────────<br>+5일: -3.5%  +10일: +27.1%  +20일: +69.4%", "<b>2026-01-14 매도강추 (점수:5)</b><br>행동: 매도 (다이버전스)<br>국면: 분배의심 · 신고가권: 93.9%<br><b style='color:#fb7185'>★ 다이버전스</b><br>─────────<br>📉 베어리시 다이버전스: 신고가권(94%) + 스마트머니 20일 -0.8% (5일 -2.8% 가속화)<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>외국계 5일 순매도 -6.0% (기준 -2.0%)<br>─────────<br>+5일: +0.0%  +10일: +28.5%  +20일: +69.2%", "<b>2026-01-15 매도강추 (점수:5)</b><br>행동: 매도 (다이버전스)<br>국면: 분배의심 · 신고가권: 92.6%<br><b style='color:#fb7185'>★ 다이버전스</b><br>─────────<br>📉 베어리시 다이버전스: 신고가권(93%) + 스마트머니 20일 -0.8% (5일 -1.6% 가속화)<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>외국계 5일 순매도 -5.9% (기준 -2.0%)<br>─────────<br>+5일: +4.3%  +10일: +37.2%  +20일: +77.0%", "<b>2026-01-16 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 90.7%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>외국계 5일 순매도 -6.0% (기준 -2.0%)<br>─────────<br>+5일: +19.9%  +10일: +37.1%  +20일: +65.2%", "<b>2026-01-21 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 93.9%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: +28.5%  +10일: +57.7%  +20일: +87.2%", "<b>2026-01-22 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 96.6%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: +31.5%  +10일: +52.2%  +20일: +69.3%", "<b>2026-01-23 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 100.0%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: +14.3%  +10일: +30.1%  +20일: +48.1%", "<b>2026-01-26 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 100.0%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: +4.2%  +10일: +26.7%  +20일: +32.6%", "<b>2026-01-27 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 96.4%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: +23.1%  +10일: +33.2%  +20일: +39.4%", "<b>2026-01-28 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 99.7%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: +22.7%  +10일: +31.6%  +20일: +62.2%", "<b>2026-01-29 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 100.0%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>기관 5일 순매도 -4.0% (기준 -3.0%)<br>─────────<br>+5일: +15.7%  +10일: +29.0%  +20일: +26.6%", "<b>2026-01-30 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 97.9%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>기관 5일 순매도 -3.7% (기준 -3.0%)<br>─────────<br>+5일: +13.8%  +10일: +20.5%  +20일: +48.8%", "<b>2026-02-02 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 99.4%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>기관 5일 순매도 -5.1% (기준 -3.0%)<br>─────────<br>+5일: +21.5%  +10일: +16.0%  +20일: +56.3%", "<b>2026-02-03 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 100.0%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>기관 5일 순매도 -7.5% (기준 -3.0%)<br>─────────<br>+5일: +8.2%  +10일: +19.1%  +20일: +23.8%", "<b>2026-02-11 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 상승추세 · 신고가권: 100.0%<br>─────────<br>📊 거래량 다이버전스: 5일 가격 +7.3% but 거래량 비율 0.74 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: +10.7%  +10일: +23.2%  +20일: +34.7%", "<b>2026-02-12 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 상승추세 · 신고가권: 100.0%<br>─────────<br>📊 거래량 다이버전스: 5일 가격 +11.5% but 거래량 비율 0.76 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: -0.2%  +10일: -1.9%  +20일: +29.2%", "<b>2026-02-13 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 상승추세 · 신고가권: 91.4%<br>─────────<br>📊 거래량 다이버전스: 5일 가격 +5.9% but 거래량 비율 0.80 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: +7.5%  +10일: +23.5%  +20일: +53.5%", "<b>2026-03-05 매도강추 (점수:6)</b><br>행동: 매도 (다이버전스)<br>국면: 분배의심 · 신고가권: 94.5%<br><b style='color:#fb7185'>★ 다이버전스</b><br>─────────<br>📉 베어리시 다이버전스: 신고가권(94%) + 스마트머니 20일 -0.1% (5일 -0.8% 가속화)<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>스마트머니 20일 비율 양→음 전환 (+0.0% → -0.1%)<br>─────────<br>+5일: +32.4%  +10일: +24.4%  +20일: +41.6%", "<b>2026-03-06 매도주의 (점수:4)</b><br>행동: 매도 (다이버전스)<br>국면: 분배의심 · 신고가권: 100.0%<br><b style='color:#fb7185'>★ 다이버전스</b><br>─────────<br>📉 베어리시 다이버전스: 신고가권(100%) + 스마트머니 20일 -0.1% (5일 -0.1% 가속화)<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: +32.6%  +10일: +42.4%  +20일: +47.2%", "<b>2026-03-09 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 90.2%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: +38.9%  +10일: +35.0%  +20일: +69.9%", "<b>2026-03-10 매도주의 (점수:4)</b><br>행동: 매도 (다이버전스)<br>국면: 분배의심 · 신고가권: 100.0%<br><b style='color:#fb7185'>★ 다이버전스</b><br>─────────<br>📉 베어리시 다이버전스: 신고가권(100%) + 스마트머니 20일 -0.2% (5일 -0.9% 가속화)<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: -7.4%  +10일: +2.0%  +20일: +21.4%", "<b>2026-03-11 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 100.0%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: -16.2%  +10일: +6.2%  +20일: +8.0%", "<b>2026-03-12 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 96.8%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>외국계 5일 순매도 -2.2% (기준 -2.0%)<br>─────────<br>+5일: -6.1%  +10일: +6.4%  +20일: +17.6%", "<b>2026-03-13 매도강추 (점수:5)</b><br>행동: 매도 (다이버전스)<br>국면: 분배의심 · 신고가권: 100.0%<br><b style='color:#fb7185'>★ 다이버전스</b><br>─────────<br>📉 베어리시 다이버전스: 신고가권(100%) + 스마트머니 20일 -0.3% (5일 -0.6% 가속화)<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>외국계 5일 순매도 -2.3% (기준 -2.0%)<br>─────────<br>+5일: +7.4%  +10일: -1.2%  +20일: +34.7%", "<b>2026-03-16 매도주의 (점수:4)</b><br>행동: 매도 (다이버전스)<br>국면: 분배의심 · 신고가권: 94.5%<br><b style='color:#fb7185'>★ 다이버전스</b><br>─────────<br>📉 베어리시 다이버전스: 신고가권(94%) + 스마트머니 20일 -0.3% (5일 -0.4% 가속화)<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: -2.8%  +10일: +7.7%  +20일: +37.2%", "<b>2026-03-20 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 100.0%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: -8.0%  +10일: +3.4%  +20일: +36.5%", "<b>2026-03-25 관망 (점수:1)</b><br>행동: HOLD (감시)<br>국면: 분배의심 · 신고가권: 95.5%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>─────────<br>+5일: -1.4%  +10일: +1.7%  +20일: +43.9%", "<b>2026-03-26 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 상승추세 · 신고가권: 92.7%<br>─────────<br>📊 거래량 다이버전스: 5일 가격 +13.2% but 거래량 비율 0.79 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: +0.6%  +10일: +10.5%  +20일: +30.7%", "<b>2026-03-30 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 상승추세 · 신고가권: 94.7%<br>─────────<br>📊 거래량 다이버전스: 5일 가격 +10.8% but 거래량 비율 0.47 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: +13.6%  +10일: +27.4%  +20일: 집계중", "<b>2026-03-31 매도주의 (점수:3)</b><br>행동: 전량 매도 (트레일링 스탑)<br>국면: 상승추세 · 신고가권: 83.8%<br>─────────<br>스마트머니 20일 비율 양→음 전환 (+0.1% → -0.1%)<br>🔻 트레일링 스탑: 60일 신고가 대비 -16.2% 하락<br>─────────<br>+5일: +19.2%  +10일: +64.5%  +20일: 집계중", "<b>2026-04-03 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 상승추세 · 신고가권: 100.0%<br>─────────<br>📊 거래량 다이버전스: 5일 가격 +12.3% but 거래량 비율 0.50 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: +21.3%  +10일: +32.1%  +20일: 집계중", "<b>2026-04-06 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 상승추세 · 신고가권: 100.0%<br>─────────<br>📊 거래량 다이버전스: 5일 가격 +13.6% but 거래량 비율 0.56 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: +12.2%  +10일: +34.3%  +20일: 집계중", "<b>2026-04-07 관망 (점수:2)</b><br>행동: HOLD (감시)<br>국면: 상승추세 · 신고가권: 92.8%<br>─────────<br>📊 거래량 다이버전스: 5일 가격 +19.2% but 거래량 비율 0.60 (거래량 동반 안 됨 → 약한 상승)<br>─────────<br>+5일: +37.9%  +10일: +45.4%  +20일: 집계중", "<b>2026-04-22 매도주의 (점수:4)</b><br>행동: 부분 익절 (신고가권)<br>국면: 분배의심 · 신고가권: 94.7%<br>─────────<br>⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>기관 5일 순매도 -5.4% (기준 -3.0%)<br>스마트머니 20일 비율 양→음 전환 (+0.1% → -0.2%)<br>─────────<br>+5일: 집계중  +10일: 집계중  +20일: 집계중", "<b>2025-05-30 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +8<br>외국계 5일 순매수 +1.8%", "<b>2025-06-19 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +9<br>외국계 5일 순매수 +4.3%", "<b>2025-06-20 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +11<br>외국계 5일 순매수 +5.8%", "<b>2025-06-23 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +11<br>외국계 5일 순매수 +6.7%", "<b>2025-06-24 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +12<br>외국계 5일 순매수 +7.4%", "<b>2025-06-25 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +14<br>외국계 5일 순매수 +7.2%", "<b>2025-06-26 매수주의 (점수:3)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +14<br>외국계 5일 순매수 +6.4%", "<b>2025-06-27 매수주의 (점수:3)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +11<br>외국계 5일 순매수 +4.0%", "<b>2025-06-30 매수주의 (점수:3)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +12<br>외국계 5일 순매수 +3.6%", "<b>2025-07-01 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +13<br>외국계 5일 순매수 +4.0%", "<b>2025-07-02 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +14<br>외국계 5일 순매수 +2.9%", "<b>2025-07-03 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +13<br>외국계 5일 순매수 +3.3%", "<b>2025-07-04 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +15<br>외국계 5일 순매수 +4.6%", "<b>2025-07-07 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +10<br>외국계 5일 순매수 +3.5%", "<b>2025-07-08 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +9<br>외국계 5일 순매수 +1.8%", "<b>2025-07-14 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +11<br>외국계 5일 순매수 +3.6%", "<b>2025-07-15 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +10<br>외국계 5일 순매수 +3.6%", "<b>2025-07-16 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +10<br>외국계 5일 순매수 +2.8%", "<b>2025-07-17 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +11<br>외국계 5일 순매수 +3.4%", "<b>2025-07-18 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +11<br>외국계 5일 순매수 +3.2%", "<b>2025-07-21 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +8<br>외국계 5일 순매수 +2.6%", "<b>2025-07-22 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +9<br>외국계 5일 순매수 +2.2%", "<b>2025-08-12 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +9<br>외국계 5일 순매수 +2.1%", "<b>2025-08-13 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +8<br>외국계 5일 순매수 +2.0%", "<b>2025-09-08 매수주의 (점수:3)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +9<br>외국계 5일 순매수 +2.8%", "<b>2025-09-09 매수주의 (점수:3)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +12<br>외국계 5일 순매수 +1.6%", "<b>2025-09-10 매수주의 (점수:3)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +15<br>외국계 5일 순매수 +2.1%", "<b>2025-09-11 매수주의 (점수:3)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +10<br>외국계 5일 순매수 +1.2%", "<b>2025-09-12 매수주의 (점수:3)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +8<br>외국계 5일 순매수 +1.2%", "<b>2025-11-05 매수주의 (점수:3)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +10<br>외국계 5일 순매수 +6.2%", "<b>2025-11-27 매수주의 (점수:3)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +8<br>외국계 5일 순매수 +1.8%", "<b>2025-11-28 매수주의 (점수:3)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +11<br>외국계 5일 순매수 +1.4%", "<b>2026-01-23 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +15<br>외국계 5일 순매수 +2.2%", "<b>2026-01-26 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +16<br>외국계 5일 순매수 +2.7%", "<b>2026-01-27 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +8<br>외국계 5일 순매수 +2.0%", "<b>2026-01-28 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +8<br>외국계 5일 순매수 +2.7%", "<b>2026-01-29 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +13<br>외국계 5일 순매수 +4.4%", "<b>2026-01-30 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +11<br>외국계 5일 순매수 +4.2%", "<b>2026-02-02 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +13<br>외국계 5일 순매수 +6.1%", "<b>2026-02-03 매수주의 (점수:2)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +20<br>외국계 5일 순매수 +8.3%", "<b>2026-02-04 매수주의 (점수:3)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +20<br>외국계 5일 순매수 +7.9%", "<b>2026-02-05 매수주의 (점수:3)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +17<br>외국계 5일 순매수 +7.3%", "<b>2026-02-06 매수주의 (점수:3)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +13<br>외국계 5일 순매수 +6.9%", "<b>2026-02-09 매수주의 (점수:3)</b><br>행동: 관심 (외인 컨센서스)<br>📈 외국계 컨센서스 매수: 5일 누적 매수자-매도자 +13<br>외국계 5일 순매수 +5.7%"], "sig_color": ["#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#f59e0b", "#9ca3af", "#f59e0b", "#f59e0b", "#f59e0b", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#f59e0b", "#9ca3af", "#9ca3af", "#f59e0b", "#ef4444", "#f59e0b", "#f59e0b", "#f59e0b", "#f59e0b", "#f59e0b", "#f59e0b", "#f59e0b", "#ef4444", "#9ca3af", "#f59e0b", "#f59e0b", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#f59e0b", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#f59e0b", "#9ca3af", "#f59e0b", "#f59e0b", "#f59e0b", "#f59e0b", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#f59e0b", "#f59e0b", "#f59e0b", "#ef4444", "#f59e0b", "#9ca3af", "#f59e0b", "#f59e0b", "#9ca3af", "#9ca3af", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#9ca3af", "#f59e0b", "#f59e0b", "#f59e0b", "#f59e0b", "#f59e0b", "#f59e0b", "#f59e0b", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#f59e0b", "#ef4444", "#ef4444", "#f59e0b", "#f59e0b", "#f59e0b", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#ef4444", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#f59e0b", "#9ca3af", "#9ca3af", "#f59e0b", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#f59e0b", "#9ca3af", "#f59e0b", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#f59e0b", "#ef4444", "#9ca3af", "#ef4444", "#ef4444", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#ef4444", "#f59e0b", "#9ca3af", "#f59e0b", "#9ca3af", "#9ca3af", "#ef4444", "#f59e0b", "#9ca3af", "#9ca3af", "#9ca3af", "#9ca3af", "#f59e0b", "#9ca3af", "#9ca3af", "#9ca3af", "#f59e0b", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981", "#10b981"], "sig_symbol": ["triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "circle-open", "circle-open", "circle-open", "circle-open", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "circle-open", "circle-open", "circle-open", "circle-open", "circle-open", "circle-open", "circle-open", "circle-open", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "star", "star", "star", "star", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "star", "star", "circle-open", "star", "star", "star", "circle-open", "circle-open", "triangle-down", "triangle-down", "triangle-down", "star", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "star", "triangle-down", "circle-open", "circle-open", "circle-open", "circle-open", "circle-open", "circle-open", "circle-open", "circle-open", "circle-open", "circle-open", "circle-open", "circle-open", "circle-open", "circle-open", "circle-open", "circle-open", "triangle-down", "triangle-down", "triangle-down", "star", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "triangle-down", "circle-open", "circle-open", "circle-open", "circle-open", "triangle-down", "triangle-down", "star", "triangle-down", "star", "star", "triangle-down", "circle-open", "circle-open", "circle-open", "circle-open", "circle-open", "circle-open", "circle-open", "circle-open", "circle-open", "circle-open", "circle-open", "circle-open", "circle-open", "star", "star", "circle-open", "star", "circle-open", "circle-open", "star", "star", "circle-open", "circle-open", "circle-open", "circle-open", "circle-open", "circle-open", "circle-open", "circle-open", "circle-open", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up", "triangle-up"], "sig_size": [11, 11, 11, 11, 11, 11, 14, 11, 14, 14, 14, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 14, 11, 11, 14, 16, 14, 14, 14, 14, 14, 14, 14, 12, 9, 11, 11, 11, 11, 11, 11, 11, 11, 14, 11, 11, 11, 11, 11, 14, 11, 14, 14, 14, 11, 9, 9, 9, 9, 11, 11, 11, 16, 14, 11, 14, 14, 11, 11, 16, 16, 16, 16, 11, 14, 14, 14, 14, 14, 14, 14, 11, 11, 11, 11, 14, 16, 12, 11, 11, 11, 9, 9, 11, 11, 11, 16, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 14, 11, 9, 11, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 11, 14, 11, 14, 11, 11, 11, 11, 11, 9, 9, 9, 9, 11, 14, 16, 11, 16, 16, 11, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 12, 11, 9, 11, 9, 9, 12, 11, 9, 9, 9, 9, 11, 9, 9, 9, 11, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12]};
+const BASE = {
+  paper_bgcolor:'#14171f', plot_bgcolor:'#14171f',
+  font:{color:'#bbb',size:11},
+  xaxis:{gridcolor:'#1f2230',zeroline:false},
+  yaxis:{gridcolor:'#1f2230'},
+  legend:{orientation:'h',y:-0.18},
+  margin:{t:10,b:55,l:65,r:55},
+  hovermode:'closest',
+};
+
+// 메인 차트
+Plotly.newPlot('chart_main', [
+  {x:D.dates,y:D.close,type:'scatter',mode:'lines',name:'종가',line:{color:'#4fc3f7',width:2.2}},
+  {x:D.dates,y:D.ma20,type:'scatter',mode:'lines',name:'MA20',line:{color:'rgba(241,196,15,0.7)',width:1.2}},
+  {x:D.dates,y:D.ma60,type:'scatter',mode:'lines',name:'MA60',line:{color:'rgba(149,165,166,0.7)',width:1.2,dash:'dot'}},
+  {x:D.sig_x,y:D.sig_y,type:'scatter',mode:'markers',name:'시그널',
+    marker:{color:D.sig_color,size:D.sig_size,symbol:D.sig_symbol,line:{color:'#fff',width:1}},
+    hovertext:D.sig_hover,hoverinfo:'text',hoverlabel:{bgcolor:'#14171f',bordercolor:'#444'}}
+], {...BASE, yaxis:{...BASE.yaxis,title:'원'}, shapes:D.regime_shapes, margin:{t:10,b:55,l:75,r:10}}, {responsive:true});
+
+// 비율 차트
+const n = D.dates.length;
+const thrLines = [
+  {type:'line',x0:D.dates[0],x1:D.dates[n-1],y0:-3.0,y1:-3.0,
+    line:{color:'rgba(46,204,113,0.4)',width:1,dash:'dot'}},
+  {type:'line',x0:D.dates[0],x1:D.dates[n-1],y0:-5.0,y1:-5.0,
+    line:{color:'rgba(52,152,219,0.4)',width:1,dash:'dot'}},
+  {type:'line',x0:D.dates[0],x1:D.dates[n-1],y0:0,y1:0,line:{color:'#555',width:1}},
+];
+Plotly.newPlot('chart_ratio', [
+  {x:D.dates,y:D.fr20,type:'scatter',mode:'lines',name:'외국계 20일%',line:{color:'#10b981',width:1.5}},
+  {x:D.dates,y:D.ir20,type:'scatter',mode:'lines',name:'기관 20일%',  line:{color:'#3498db',width:1.5}},
+  {x:D.dates,y:D.li5, type:'scatter',mode:'lines',name:'대형기관 5일%',line:{color:'#f97316',width:1.2,dash:'dash'}},
+  {x:D.dates,y:D.sr20,type:'scatter',mode:'lines',name:'스마트머니 20일%',
+    line:{color:'#fbbf24',width:2.2},fill:'tozeroy',fillcolor:'rgba(251,191,36,0.07)'},
+  {x:D.dates,y:D.near_high.map(v=>v?v*100:null),type:'scatter',mode:'lines',
+    name:'신고가 거리(%)',line:{color:'#a78bfa',width:1,dash:'dot'},yaxis:'y2'},
+], {...BASE,
+  yaxis:{...BASE.yaxis,title:'비율 (%)'},
+  yaxis2:{title:'신고가(%)',overlaying:'y',side:'right',range:[0,105],gridcolor:'transparent'},
+  shapes:thrLines,
+}, {responsive:true});
+
+// 일별 금액
+Plotly.newPlot('chart_amt', [
+  {x:D.dates,y:D.f_amt,type:'bar',name:'외국계',marker:{color:'#10b981',opacity:0.85}},
+  {x:D.dates,y:D.i_amt,type:'bar',name:'기관',  marker:{color:'#3498db',opacity:0.85}},
+  {x:D.dates,y:D.r_amt,type:'bar',name:'개인',  marker:{color:'#ef4444',opacity:0.85}},
+], {...BASE,barmode:'relative',
+  yaxis:{...BASE.yaxis,title:'억 원',zeroline:true,zerolinecolor:'#555'},
+}, {responsive:true});
+
+// 스마트머니 롤링
+Plotly.newPlot('chart_smart', [
+  {x:D.dates,y:D.sm_amt20,type:'scatter',mode:'lines',name:'스마트머니 20일',
+    line:{color:'#fbbf24',width:2.5},fill:'tozeroy',fillcolor:'rgba(251,191,36,0.07)'},
+], {...BASE,
+  yaxis:{...BASE.yaxis,title:'억 원',zeroline:true,zerolinecolor:'#888',zerolinewidth:2},
+}, {responsive:true});
+
+// OBV (누적 거래량) — 가격과 함께 표시 (이중 y축)
+Plotly.newPlot('chart_obv', [
+  {x:D.dates,y:D.close,type:'scatter',mode:'lines',name:'종가',
+    line:{color:'#4fc3f7',width:1.5},yaxis:'y'},
+  {x:D.dates,y:D.obv,type:'scatter',mode:'lines',name:'OBV (누적)',
+    line:{color:'#a78bfa',width:1.8},yaxis:'y2'},
+  {x:D.dates,y:D.obv_ma20,type:'scatter',mode:'lines',name:'OBV MA20',
+    line:{color:'rgba(167,139,250,0.4)',width:1,dash:'dot'},yaxis:'y2'},
+  // 다이버전스 마커
+  {x:D.obv_bear_dates,y:D.obv_bear_dates.map(d=>D.close[D.dates.indexOf(d)]),
+    type:'scatter',mode:'markers',name:'분배 다이버전스',
+    marker:{color:'#ef4444',size:10,symbol:'triangle-down'},yaxis:'y'},
+  {x:D.obv_bull_dates,y:D.obv_bull_dates.map(d=>D.close[D.dates.indexOf(d)]),
+    type:'scatter',mode:'markers',name:'매집 다이버전스',
+    marker:{color:'#10b981',size:10,symbol:'triangle-up'},yaxis:'y'},
+], {...BASE,
+  yaxis:{...BASE.yaxis,title:'가격(원)'},
+  yaxis2:{title:'OBV',overlaying:'y',side:'right',gridcolor:'transparent'},
+}, {responsive:true});
+
+// CMF
+Plotly.newPlot('chart_cmf', [
+  {x:D.dates,y:D.cmf,type:'scatter',mode:'lines',name:'CMF (20일)',
+    line:{color:'#fbbf24',width:1.8},fill:'tozeroy',fillcolor:'rgba(251,191,36,0.05)'},
+], {...BASE,
+  yaxis:{...BASE.yaxis,title:'CMF',range:[-0.4,0.4],zeroline:true,zerolinecolor:'#555'},
+  shapes:[
+    {type:'line',x0:D.dates[0],x1:D.dates[D.dates.length-1],y0:-0.1,y1:-0.1,
+      line:{color:'rgba(239,68,68,0.4)',width:1,dash:'dot'}},
+    {type:'line',x0:D.dates[0],x1:D.dates[D.dates.length-1],y0:0.1,y1:0.1,
+      line:{color:'rgba(16,185,129,0.4)',width:1,dash:'dot'}},
+  ],
+  annotations:[
+    {x:D.dates[10],y:0.1,text:'매집',showarrow:false,yshift:8,font:{color:'rgba(16,185,129,0.6)',size:10}},
+    {x:D.dates[10],y:-0.1,text:'분배',showarrow:false,yshift:-8,font:{color:'rgba(239,68,68,0.6)',size:10}},
+  ],
+}, {responsive:true});
+
+// MFI
+Plotly.newPlot('chart_mfi', [
+  {x:D.dates,y:D.mfi,type:'scatter',mode:'lines',name:'MFI (14일)',
+    line:{color:'#a78bfa',width:1.8}},
+], {...BASE,
+  yaxis:{...BASE.yaxis,title:'MFI',range:[0,100]},
+  shapes:[
+    {type:'line',x0:D.dates[0],x1:D.dates[D.dates.length-1],y0:80,y1:80,
+      line:{color:'rgba(239,68,68,0.4)',width:1,dash:'dot'}},
+    {type:'line',x0:D.dates[0],x1:D.dates[D.dates.length-1],y0:20,y1:20,
+      line:{color:'rgba(16,185,129,0.4)',width:1,dash:'dot'}},
+  ],
+  annotations:[
+    {x:D.dates[10],y:80,text:'과매수',showarrow:false,yshift:8,font:{color:'rgba(239,68,68,0.6)',size:10}},
+    {x:D.dates[10],y:20,text:'과매도',showarrow:false,yshift:-8,font:{color:'rgba(16,185,129,0.6)',size:10}},
+  ],
+}, {responsive:true});
+</script>
+</body>
+</html>

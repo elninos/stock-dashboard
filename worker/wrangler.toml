@@ -1,0 +1,17 @@
+name = "stock-dashboard-api"
+main = "src/index.js"
+compatibility_date = "2024-11-01"
+
+# Cron: 평일 2시간마다 (KST 08:00 ~ 00:00)
+# Free plan: 1 cron trigger / Paid plan: 5 triggers
+[triggers]
+crons = ["0 */2 * * *"]
+
+# KV namespace (wrangler kv namespace create "STOCK_KV" 후 id 입력)
+[[kv_namespaces]]
+binding = "KV"
+id = "6db9cbb95a4f4723bd0f26fb84214269"
+preview_id = "cb5d569dbbe94d18a60c5ff480894569"
+
+# Secrets (wrangler secret put 으로 설정):
+#   ANTHROPIC_API_KEY

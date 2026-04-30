@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>창구별 수급 분석 — 파마리서치 · 코오롱티슈진</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3"></script>
+<style>
+.stock-section { margin-bottom: 56px; }
+.stock-header {
+  display:flex; align-items:baseline; gap:12px;
+  margin-bottom:16px; padding-bottom:12px;
+  border-bottom:2px solid #1f2230;
+}
+.stock-name { font-size:1.6em; font-weight:700; color:#4fc3f7; }
+.stock-code { font-size:0.88em; color:#556; background:#1a1d26;
+               padding:3px 12px; border-radius:20px; }
+.summary-card { margin-bottom:16px; border-left:3px solid #4fc3f7; }
+.summary-text { color:#c8d0db; font-size:0.9em; line-height:1.8; margin-bottom:10px; }
+.key-insight {
+  background:#111827; border-radius:8px; padding:10px 14px;
+  color:#fbbf24; font-size:0.88em; font-weight:500; line-height:1.7;
+}
+.chart-grid {
+  display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px;
+}
+.span2 { grid-column:span 2; }
+.chart-wrap { height:280px; position:relative; }
+.chart-wrap-wide { height:300px; position:relative; }
+
+/* 단계별 카드 */
+.stage-cards {
+  display:grid; grid-template-columns:1fr 1fr; gap:12px;
+}
+.stage-card {
+  background:#111827; border-radius:10px; padding:14px 16px;
+  border:1px solid #1f2230;
+}
+.stage-card-header {
+  display:flex; align-items:center; gap:8px; margin-bottom:8px; flex-wrap:wrap;
+}
+.stage-dot {
+  width:10px; height:10px; border-radius:50%; flex-shrink:0;
+}
+.stage-card-header strong { color:#e2e8f0; font-size:0.92em; }
+.stage-period { color:#556; font-size:0.8em; }
+.stage-driver {
+  color:#7dd3fc; font-size:0.82em; font-weight:600;
+  margin-bottom:6px;
+}
+.stage-desc { color:#8896a8; font-size:0.82em; line-height:1.7; }
+
+/* 범례 */
+.legend-bar {
+  display:flex; flex-wrap:wrap; gap:10px;
+  padding:14px 18px; background:#14171f;
+  border-radius:10px; margin-bottom:20px;
+  border:1px solid #1f2230; font-size:0.82em;
+}
+.legend-item {
+  display:flex; align-items:center; gap:6px;
+}
+.legend-dot {
+  width:10px; height:10px; border-radius:50%;
+}
+
+@media(max-width:900px){
+  .chart-grid,.stage-cards{ grid-template-columns:1fr; }
+  .span2{ grid-column:span 1; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="nav">
+  <a href="index.html">📊 전체 대시보드</a>
+  <a href="supply_analysis.html" class="active">🔍 수급 분석</a>
+</div>
+
+<h1>창구별 수급 분석</h1>
+<p class="subtitle">랠리 단계별 주도 창구 추적 — 누가 올렸고, 언제 팔기 시작했나</p>
+
+<div class="legend-bar">
+  <span style="color:#888;margin-right:4px">구간:</span>
+  <span class="legend-item"><span class="legend-dot" style="background:#52c452"></span>1단계 선도 매수</span>
+  <span class="legend-item"><span class="legend-dot" style="background:#4299ff"></span>2단계 주도세력 합류</span>
+  <span class="legend-item"><span class="legend-dot" style="background:#ffc432"></span>3단계 가속 상승</span>
+  <span class="legend-item"><span class="legend-dot" style="background:#ff8232"></span>4단계 최종 급등</span>
+  <span class="legend-item"><span class="legend-dot" style="background:#ef4444"></span>하락기</span>
+  <span style="color:#888;margin-left:12px;margin-right:4px">창구:</span>
+  <span class="legend-item"><span class="legend-dot" style="background:#4fc3f7"></span>외국계</span>
+  <span class="legend-item"><span class="legend-dot" style="background:#fbbf24"></span>국내 증권사</span>
+</div>
+
+
+<div class="stock-section">
+  <div class="stock-header">
+    <span class="stock-name">파마리서치</span>
+    <span class="stock-code">214450</span>
+  </div>
+
+  <!-- 종합 설명 -->
+  <div class="card summary-card">
+    <div class="summary-text">파마리서치는 2024년 5월 ~12만원에서 2025년 8월 71만원까지 약 16개월간 +453% 상승한 뒤 현재 33만원대로 조정 중입니다. 상승 전 구간을 통해 수급 구조가 어떻게 바뀌었는지 분석합니다.</div>
+    <div class="key-insight">🔑 핵심 패턴: 외국계 창구(모간서울·골드만)가 순매수하는 동안 주가 상승, 이들이 매도 전환한 시점이 사실상 고점이었습니다.</div>
+  </div>
+
+  <div class="chart-grid">
+    <div class="card">
+      <h3>주가 &amp; 투자자 수급 (월별)</h3>
+      <p class="desc">막대 = 외인/기관/개인 순매수(주). 선 = 월말 종가. 배경색 = 랠리 단계.</p>
+      <div class="chart-wrap"><canvas id="inv_pharma"></canvas></div>
+    </div>
+    <div class="card">
+      <h3>거래원 월별 순매수 (상위 8창구)</h3>
+      <p class="desc">파란 계열 = 외국계(모간·골드만·JP모간 등). 노란·빨간·초록 = 국내 증권사.</p>
+      <div class="chart-wrap"><canvas id="broker_pharma"></canvas></div>
+    </div>
+    <div class="card span2">
+      <h3>주도 창구 월별 추이 — 0선 아래 = 순매도 전환</h3>
+      <p class="desc">상승기 주도 창구가 0선 아래로 꺾이는 시점이 핵심 매도 시그널.</p>
+      <div class="chart-wrap-wide"><canvas id="line_pharma"></canvas></div>
+    </div>
+  </div>
+
+  <!-- 단계별 설명 -->
+  <div class="card">
+    <h3>단계별 수급 해석</h3>
+    <div class="stage-cards">
+
+        <div class="stage-card">
+          <div class="stage-card-header">
+            <span class="stage-dot" style="background:#52c452"></span>
+            <strong>1단계 (12만→20만, +54%)</strong>
+            <span class="stage-period">2024.05 ~ 2024.11</span>
+            <span style="background:#1a1d26;color:#6b7280;border:1px solid #6b7280;padding:2px 8px;border-radius:4px;font-size:0.78em;font-weight:600">관망/탐색</span>
+          </div>
+          <div class="stage-driver">주도: 외국인 단독 선매수</div>
+          <div class="stage-desc">외국인이 323거래일 중 205일 순매수하며 +1,521억을 쌓는 동안, 기관은 -1,169억 매도. 아직 기관·개인 모두 관심 없는 구간. 창구 데이터 없음(2025-04 이전).</div>
+        </div>
+
+        <div class="stage-card">
+          <div class="stage-card-header">
+            <span class="stage-dot" style="background:#4299ff"></span>
+            <strong>2단계 (20만→35만, +56%)</strong>
+            <span class="stage-period">2024.12 ~ 2025.03</span>
+            <span style="background:#0a2a1a;color:#10b981;border:1px solid #10b981;padding:2px 8px;border-radius:4px;font-size:0.78em;font-weight:600">상승 주도</span>
+          </div>
+          <div class="stage-driver">주도: 외국인+기관 공동 매수</div>
+          <div class="stage-desc">외국인 +522억에 기관도 +451억 합류. 개인이 파는 물량을 둘이 흡수하면서 랠리 가속. 이 구간부터 주가 상승이 뚜렷해짐. 창구 데이터 없음(2025-04 이전).</div>
+        </div>
+
+        <div class="stage-card">
+          <div class="stage-card-header">
+            <span class="stage-dot" style="background:#ffc432"></span>
+            <strong>3단계 (35만→55만, +48%)</strong>
+            <span class="stage-period">2025.04 ~ 2025.07</span>
+            <span style="background:#0a2a1a;color:#10b981;border:1px solid #10b981;padding:2px 8px;border-radius:4px;font-size:0.78em;font-weight:600">상승 주도</span>
+          </div>
+          <div class="stage-driver">주도: 메리츠(00010) 대규모 진입 + 모간서울·골드만</div>
+          <div class="stage-desc">메리츠가 +16만주로 가장 공격적으로 매수. 모간서울·골드만도 가담. 반면 신한·DB·키움은 매도. 기관 순매수 +921억으로 이 구간 주도.</div>
+        </div>
+
+        <div class="stage-card">
+          <div class="stage-card-header">
+            <span class="stage-dot" style="background:#ff8232"></span>
+            <strong>4단계 (55만→71만, +21%)</strong>
+            <span class="stage-period">2025.07 ~ 2025.08</span>
+            <span style="background:#2a1f0a;color:#f59e0b;border:1px solid #f59e0b;padding:2px 8px;border-radius:4px;font-size:0.78em;font-weight:600">전환 징후</span>
+          </div>
+          <div class="stage-driver">주도: 모간서울·골드만·씨티 재진입, 메리츠 이탈 시작</div>
+          <div class="stage-desc">외국계 3파(모간서울 +10만, 골드만 +6만, 씨티 +6만)가 마지막 구간을 올리는 동안, 3단계 주도였던 메리츠는 -3만으로 조용히 이탈 시작. 고점 직전 창구 교체 신호.</div>
+        </div>
+
+        <div class="stage-card">
+          <div class="stage-card-header">
+            <span class="stage-dot" style="background:#ef4444"></span>
+            <strong>하락기 (71만→33만, -53%)</strong>
+            <span class="stage-period">2025.09 ~ 현재</span>
+            <span style="background:#2a0a0a;color:#ef4444;border:1px solid #ef4444;padding:2px 8px;border-radius:4px;font-size:0.78em;font-weight:600">매도 전환</span>
+          </div>
+          <div class="stage-driver">주도: 외국계 전면 이탈 → 개인이 흡수</div>
+          <div class="stage-desc">모간서울 -25만, 골드만 -17만, 메리츠 -14만으로 상승기 주도 창구 전원 매도 전환. NH·키움·미래에셋(개인 리테일 채널)이 물량 흡수 중. 수급 구조가 상승기와 정반대.</div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  const months = ["2019-10", "2019-11", "2019-12", "2020-01", "2020-02", "2020-03", "2020-04", "2020-05", "2020-06", "2020-07", "2020-08", "2020-09", "2020-10", "2020-11", "2020-12", "2021-01", "2021-02", "2021-03", "2021-04", "2021-05", "2021-06", "2021-07", "2021-08", "2021-09", "2021-10", "2021-11", "2021-12", "2022-01", "2022-02", "2022-03", "2022-04", "2022-05", "2022-06", "2022-07", "2022-08", "2022-09", "2022-10", "2022-11", "2022-12", "2023-01", "2023-02", "2023-03", "2023-04", "2023-05", "2023-06", "2023-07", "2023-08", "2023-09", "2023-10", "2023-11", "2023-12", "2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06", "2024-07", "2024-08", "2024-09", "2024-10", "2024-11", "2024-12", "2025-01", "2025-02", "2025-03", "2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09", "2025-10", "2025-11", "2025-12", "2026-01", "2026-02", "2026-03", "2026-04"];
+  const annots = [{type:'box',xMin:'2024-05',xMax:'2024-11',
+            backgroundColor:'rgba(82,196,82,0.12)',borderWidth:0,
+            label:{content:'1단계 12만→20만',display:true,color:'rgba(255,255,255,0.45)',
+            font:{size:9},position:{x:'start',y:'start'}}},
+{type:'box',xMin:'2024-12',xMax:'2025-03',
+            backgroundColor:'rgba(66,153,255,0.12)',borderWidth:0,
+            label:{content:'2단계 20만→35만',display:true,color:'rgba(255,255,255,0.45)',
+            font:{size:9},position:{x:'start',y:'start'}}},
+{type:'box',xMin:'2025-04',xMax:'2025-07',
+            backgroundColor:'rgba(255,196,50,0.12)',borderWidth:0,
+            label:{content:'3단계 35만→55만',display:true,color:'rgba(255,255,255,0.45)',
+            font:{size:9},position:{x:'start',y:'start'}}},
+{type:'box',xMin:'2025-07',xMax:'2025-08',
+            backgroundColor:'rgba(255,130,50,0.15)',borderWidth:0,
+            label:{content:'4단계 55만→71만',display:true,color:'rgba(255,255,255,0.45)',
+            font:{size:9},position:{x:'start',y:'start'}}},
+{type:'box',xMin:'2025-09',xMax:'2026-04',
+            backgroundColor:'rgba(210,50,50,0.08)',borderWidth:0,
+            label:{content:'하락기',display:true,color:'rgba(255,255,255,0.45)',
+            font:{size:9},position:{x:'start',y:'start'}}}];
+  const annotOpts = {annotations: annots};
+  const zeroLine = {type:'line',yMin:0,yMax:0,borderColor:'rgba(255,255,255,0.15)',borderWidth:1,borderDash:[4,4]};
+
+  new Chart(document.getElementById('inv_pharma'), {
+    type:'bar',
+    data:{labels:months,datasets:[
+      ...(function(){ return [{"label": "외국인", "data": [-5086, -8565, 13163, -13835, -17818, -40055, 11093, 130972, 108023, 94842, 353140, -21470, -14495, -50955, -96771, -98681, -126757, 195760, 99748, 182508, 382930, -6226, -84937, 227056, -89763, -73644, -94413, -67357, -32513, 54506, 75809, -45118, -67232, -96035, -102991, -9206, -36056, 110195, 958, 95786, 71792, 40415, -26854, 391611, -145403, 174147, -123104, 118838, 20773, 122078, 115011, -53934, 14936, -69477, -426521, 91980, -257242, 214388, 232853, -42752, 247318, 257742, -37066, 157731, 158620, -70432, 1762, 96596, -193999, 338938, 90812, 183024, -10968, -92357, -27370, -893465, -446599, 245521, -23351], "backgroundColor": "rgba(79,195,247,0.75)", "stack": "s"}, {"label": "기관", "data": [-30824, -19548, 57126, 9902, 190579, 124589, -998, 89345, 104701, -123279, -33979, -97261, -56810, -67904, -17025, 4280, 63420, 61956, -15157, 80784, 74346, 179888, 321779, -113762, 149207, 126184, 109208, 103157, 36731, 65076, 38454, 15782, 14442, -99595, 21339, 13745, -28868, -50840, 58702, 31108, 26092, -129668, 302159, -266129, 121153, -152038, 158117, 164779, 139452, -231258, -133961, 108502, -319634, -153438, 330726, -443323, 332113, -114350, 35148, -153280, -143731, -142839, 80454, -121514, 101538, 90260, -6729, 19783, 243402, -316641, 29243, -256955, -61373, 11898, -158558, 660072, -399957, -145919, -114396], "backgroundColor": "rgba(251,191,36,0.75)", "stack": "s"}, {"label": "개인", "data": [35910, 28113, -70289, 3933, -172761, -84534, -10095, -220317, -212724, 28437, -319161, 118731, 71305, 118859, 113796, 94401, 63337, -257716, -84591, -263292, -457276, -173662, -236842, -113294, -59444, -52540, -14795, -35800, -4218, -119582, -114263, 29336, 52790, 195630, 81652, -4539, 64924, -59355, -59660, -126894, -97884, 89253, -275305, -125482, 24250, -22109, -35013, -283617, -160225, 109180, 18950, -54568, 304698, 222915, 95795, 351343, -74871, -100038, -268001, 196032, -103587, -114903, -43388, -36217, -260158, -19828, 4967, -116379, -49403, -22297, -120055, 73931, 72341, 80459, 185928, 233393, 846556, -99602, 137747], "backgroundColor": "rgba(248,113,113,0.75)", "stack": "s"}]; }()),
+      {label:'주가',data:[null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 127600, 146100, 148800, 134100, 174500, 192700, 225500, 198000, 262500, 241500, 291000, 332000, 376500, 451000, 493500, 557000, 680000, 601000, 541000, 470000, 403000, 473500, 349500, 299000, 332000],type:'line',borderColor:'#e2e8f0',backgroundColor:'transparent',
+        borderWidth:2,pointRadius:0,tension:0.3,yAxisID:'yPrice'}
+    ]},
+    options:{
+      responsive:true,maintainAspectRatio:false,
+      interaction:{mode:'index',intersect:false},
+      plugins:{legend:{labels:{color:'#aaa',boxWidth:12}},annotation:annotOpts},
+      scales:{
+        x:{stacked:true,ticks:{color:'#555',maxRotation:45,font:{size:10}},grid:{color:'#1a1d26'}},
+        y:{stacked:true,ticks:{color:'#888',callback:v=>(v/1000).toFixed(0)+'k',font:{size:10}},grid:{color:'#1f2230'}},
+        yPrice:{position:'right',ticks:{color:'#aaa',callback:v=>v>=10000?(v/10000).toFixed(0)+'만':v.toLocaleString(),font:{size:10}},grid:{display:false}}
+      }
+    }
+  });
+
+  new Chart(document.getElementById('broker_pharma'), {
+    type:'bar',
+    data:{labels:months,datasets:(function(){ return [{"label": "모간서울", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7163, 20870, 27191, 134644, -6722, 122135, -15009, -19474, 127862, -451489, -106440, 90881, -7159], "backgroundColor": "#4fc3f7", "borderColor": "#4fc3f7", "borderWidth": 1}, {"label": "JP모간", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5208, -9164, -24504, 13770, 4594, 76266, 30970, 29985, -53158, -134386, -102222, 51945, -2966], "backgroundColor": "#38bdf8", "borderColor": "#38bdf8", "borderWidth": 1}, {"label": "신한증권", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -6582, -25412, -64502, 23925, 11122, 38265, -23488, 38235, -13885, -38656, 44847, 41531, 8290], "backgroundColor": "#f87171", "borderColor": "#f87171", "borderWidth": 1}, {"label": "메리츠", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3404, 71893, 100983, -41244, -443, -4414, -5786, -19859, 64450, -54559, -84405, -40879, -29454], "backgroundColor": "#fb923c", "borderColor": "#fb923c", "borderWidth": 1}, {"label": "NH투자증권", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -2535, -9844, 25066, -42711, -6592, 5160, 69168, 19661, 11685, 104028, 151269, 32670, -9931], "backgroundColor": "#fbbf24", "borderColor": "#fbbf24", "borderWidth": 1}, {"label": "삼성증권", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -8650, 24006, 9945, -19795, 349, -10046, -32659, -37239, -20676, 64384, 111858, -131, -624], "backgroundColor": "#facc15", "borderColor": "#facc15", "borderWidth": 1}, {"label": "미래에셋증권", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2281, 27598, -27412, -37560, -12920, -36056, 2933, 34921, -40503, 140208, 70418, -29580, 4916], "backgroundColor": "#a3e635", "borderColor": "#a3e635", "borderWidth": 1}, {"label": "골드만", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7204, 31624, 31671, 36240, 26849, -15092, -3014, -7623, 9178, -129931, -80509, 50042, 33407], "backgroundColor": "#7dd3fc", "borderColor": "#7dd3fc", "borderWidth": 1}]; })()},
+    options:{
+      responsive:true,maintainAspectRatio:false,
+      interaction:{mode:'index',intersect:false},
+      plugins:{legend:{labels:{color:'#aaa',boxWidth:12}},annotation:annotOpts},
+      scales:{
+        x:{stacked:true,ticks:{color:'#555',maxRotation:45,font:{size:10}},grid:{color:'#1a1d26'}},
+        y:{stacked:true,ticks:{color:'#888',callback:v=>(v/1000).toFixed(0)+'k',font:{size:10}},grid:{color:'#1f2230'}}
+      }
+    }
+  });
+
+  const allDs = (function(){ return [{"label": "모간서울", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7163, 20870, 27191, 134644, -6722, 122135, -15009, -19474, 127862, -451489, -106440, 90881, -7159], "backgroundColor": "#4fc3f7", "borderColor": "#4fc3f7", "borderWidth": 1}, {"label": "JP모간", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5208, -9164, -24504, 13770, 4594, 76266, 30970, 29985, -53158, -134386, -102222, 51945, -2966], "backgroundColor": "#38bdf8", "borderColor": "#38bdf8", "borderWidth": 1}, {"label": "신한증권", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -6582, -25412, -64502, 23925, 11122, 38265, -23488, 38235, -13885, -38656, 44847, 41531, 8290], "backgroundColor": "#f87171", "borderColor": "#f87171", "borderWidth": 1}, {"label": "메리츠", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3404, 71893, 100983, -41244, -443, -4414, -5786, -19859, 64450, -54559, -84405, -40879, -29454], "backgroundColor": "#fb923c", "borderColor": "#fb923c", "borderWidth": 1}, {"label": "NH투자증권", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -2535, -9844, 25066, -42711, -6592, 5160, 69168, 19661, 11685, 104028, 151269, 32670, -9931], "backgroundColor": "#fbbf24", "borderColor": "#fbbf24", "borderWidth": 1}, {"label": "삼성증권", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -8650, 24006, 9945, -19795, 349, -10046, -32659, -37239, -20676, 64384, 111858, -131, -624], "backgroundColor": "#facc15", "borderColor": "#facc15", "borderWidth": 1}, {"label": "미래에셋증권", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2281, 27598, -27412, -37560, -12920, -36056, 2933, 34921, -40503, 140208, 70418, -29580, 4916], "backgroundColor": "#a3e635", "borderColor": "#a3e635", "borderWidth": 1}, {"label": "골드만", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7204, 31624, 31671, 36240, 26849, -15092, -3014, -7623, 9178, -129931, -80509, 50042, 33407], "backgroundColor": "#7dd3fc", "borderColor": "#7dd3fc", "borderWidth": 1}]; })();
+  const colorMap = {"모간서울": "#4fc3f7", "JP모간": "#38bdf8", "신한증권": "#f87171", "메리츠": "#fb923c", "NH투자증권": "#fbbf24", "삼성증권": "#facc15", "미래에셋증권": "#a3e635", "골드만": "#7dd3fc"};
+  new Chart(document.getElementById('line_pharma'), {
+    type:'line',
+    data:{labels:months,datasets:allDs.map(d=>{
+      const c = colorMap[d.label]||'#aaa';
+      return {...d,type:'line',backgroundColor:'transparent',borderColor:c,
+               borderWidth:2,pointRadius:2,pointHoverRadius:5,fill:false,tension:0.3};
+    })}},
+    options:{
+      responsive:true,maintainAspectRatio:false,
+      interaction:{mode:'index',intersect:false},
+      plugins:{
+        legend:{labels:{color:'#aaa',boxWidth:12}},
+        annotation:{annotations:[...annots, zeroLine]}
+      },
+      scales:{
+        x:{ticks:{color:'#555',maxRotation:45,font:{size:10}},grid:{color:'#1a1d26'}},
+        y:{ticks:{color:'#888',callback:v=>(v/1000).toFixed(0)+'k',font:{size:10}},grid:{color:'#1f2230'}}
+      }
+    }
+  });
+})();
+</script>
+
+
+<hr style="border:none;border-top:1px solid #1f2230;margin:32px 0">
+
+
+<div class="stock-section">
+  <div class="stock-header">
+    <span class="stock-name">코오롱티슈진</span>
+    <span class="stock-code">950160</span>
+  </div>
+
+  <!-- 종합 설명 -->
+  <div class="card summary-card">
+    <div class="summary-text">코오롱티슈진은 2024년 5월 ~1.2만원에서 2026년 3월 12.7만원까지 약 22개월간 +990% 상승. 개인 선매수 → 외인 합류 → 급등 → 현재 고점 이후 조정 국면.</div>
+    <div class="key-insight">🔑 핵심 패턴: 2025.11 골드만·JP모간·씨티·모간서울 4개 외국계가 동시 진입 → 급등. 이후 JP모간이 2026.03 매도 전환하며 고점 형성.</div>
+  </div>
+
+  <div class="chart-grid">
+    <div class="card">
+      <h3>주가 &amp; 투자자 수급 (월별)</h3>
+      <p class="desc">막대 = 외인/기관/개인 순매수(주). 선 = 월말 종가. 배경색 = 랠리 단계.</p>
+      <div class="chart-wrap"><canvas id="inv_kolon"></canvas></div>
+    </div>
+    <div class="card">
+      <h3>거래원 월별 순매수 (상위 8창구)</h3>
+      <p class="desc">파란 계열 = 외국계(모간·골드만·JP모간 등). 노란·빨간·초록 = 국내 증권사.</p>
+      <div class="chart-wrap"><canvas id="broker_kolon"></canvas></div>
+    </div>
+    <div class="card span2">
+      <h3>주도 창구 월별 추이 — 0선 아래 = 순매도 전환</h3>
+      <p class="desc">상승기 주도 창구가 0선 아래로 꺾이는 시점이 핵심 매도 시그널.</p>
+      <div class="chart-wrap-wide"><canvas id="line_kolon"></canvas></div>
+    </div>
+  </div>
+
+  <!-- 단계별 설명 -->
+  <div class="card">
+    <h3>단계별 수급 해석</h3>
+    <div class="stage-cards">
+
+        <div class="stage-card">
+          <div class="stage-card-header">
+            <span class="stage-dot" style="background:#52c452"></span>
+            <strong>1단계 (1.2만→2만, +43%)</strong>
+            <span class="stage-period">2024.05 ~ 2024.11</span>
+            <span style="background:#1a1d26;color:#6b7280;border:1px solid #6b7280;padding:2px 8px;border-radius:4px;font-size:0.78em;font-weight:600">관망/탐색</span>
+          </div>
+          <div class="stage-driver">주도: 개인 단독 선매수</div>
+          <div class="stage-desc">외인 -19억, 기관 -397억 매도하는 동안 개인이 +415억 혼자 매수. 아무도 주목하지 않던 시기의 저가 매집. 창구 데이터 없음(2025-04 이전).</div>
+        </div>
+
+        <div class="stage-card">
+          <div class="stage-card-header">
+            <span class="stage-dot" style="background:#4299ff"></span>
+            <strong>2단계 (2만→4만, +98%)</strong>
+            <span class="stage-period">2024.12 ~ 2025.03</span>
+            <span style="background:#0a2a1a;color:#10b981;border:1px solid #10b981;padding:2px 8px;border-radius:4px;font-size:0.78em;font-weight:600">상승 주도</span>
+          </div>
+          <div class="stage-driver">주도: 외인·기관 첫 진입</div>
+          <div class="stage-desc">외인 +72억, 기관 +25억 진입하면서 개인 매도 물량을 받아내며 2배 상승. 처음으로 기관이 주목하기 시작한 구간. 창구 데이터 없음(2025-04 이전).</div>
+        </div>
+
+        <div class="stage-card">
+          <div class="stage-card-header">
+            <span class="stage-dot" style="background:#ffc432"></span>
+            <strong>3단계 (4만→8.5만, +64%)</strong>
+            <span class="stage-period">2025.03 ~ 2025.11</span>
+            <span style="background:#0a2a1a;color:#10b981;border:1px solid #10b981;padding:2px 8px;border-radius:4px;font-size:0.78em;font-weight:600">상승 주도</span>
+          </div>
+          <div class="stage-driver">주도: 한국증권·골드만·씨티 주도</div>
+          <div class="stage-desc">한국증권 +36만주, 골드만 +20만주, 씨티 +13만주 매수. 반면 모간서울은 이 구간에서 -58만주 매도. 주목할 점: 4단계 주역인 모간서울이 여기서는 팔고 있었음.</div>
+        </div>
+
+        <div class="stage-card">
+          <div class="stage-card-header">
+            <span class="stage-dot" style="background:#ff8232"></span>
+            <strong>4단계 (8.5만→12.7만, +49%)</strong>
+            <span class="stage-period">2025.11 ~ 2026.03</span>
+            <span style="background:#2a1f0a;color:#f59e0b;border:1px solid #f59e0b;padding:2px 8px;border-radius:4px;font-size:0.78em;font-weight:600">전환 징후</span>
+          </div>
+          <div class="stage-driver">주도: 외국계 4파 동시 진입 (골드만·JP모간·씨티·모간서울)</div>
+          <div class="stage-desc">2025-11 단 한 달에 골드만 +20만, 씨티 +20만, 모간서울 +18만, JP모간 +14만이 동시 진입. 반대편에서 NH·신한·키움이 팜. 이 구간이 핵심 급등 구간이자 위험 구간.</div>
+        </div>
+
+        <div class="stage-card">
+          <div class="stage-card-header">
+            <span class="stage-dot" style="background:#ef4444"></span>
+            <strong>고점 이후 (-19%)</strong>
+            <span class="stage-period">2026.03 ~ 현재</span>
+            <span style="background:#2a0a0a;color:#ef4444;border:1px solid #ef4444;padding:2px 8px;border-radius:4px;font-size:0.78em;font-weight:600">매도 전환</span>
+          </div>
+          <div class="stage-driver">주도: JP모간 매도 전환, 기관 대규모 이탈</div>
+          <div class="stage-desc">JP모간 -14만주로 4단계 매수량 반환 시작. 기관 전체 -976억 이탈. 미래에셋·삼성이 받아내고 있으나 4단계 주도 창구 대비 매수 강도 부족. 모간서울은 아직 플러스 유지.</div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  const months = ["2019-10", "2019-11", "2019-12", "2020-01", "2020-02", "2020-03", "2020-04", "2020-05", "2020-06", "2020-07", "2020-08", "2020-09", "2020-10", "2020-11", "2020-12", "2021-01", "2021-02", "2021-03", "2021-04", "2021-05", "2021-06", "2021-07", "2021-08", "2021-09", "2021-10", "2021-11", "2021-12", "2022-01", "2022-02", "2022-03", "2022-04", "2022-05", "2022-06", "2022-07", "2022-08", "2022-09", "2022-10", "2022-11", "2022-12", "2023-01", "2023-02", "2023-03", "2023-04", "2023-05", "2023-06", "2023-07", "2023-08", "2023-09", "2023-10", "2023-11", "2023-12", "2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06", "2024-07", "2024-08", "2024-09", "2024-10", "2024-11", "2024-12", "2025-01", "2025-02", "2025-03", "2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09", "2025-10", "2025-11", "2025-12", "2026-01", "2026-02", "2026-03", "2026-04"];
+  const annots = [{type:'box',xMin:'2024-05',xMax:'2024-11',
+            backgroundColor:'rgba(82,196,82,0.12)',borderWidth:0,
+            label:{content:'1단계 1.2만→2만',display:true,color:'rgba(255,255,255,0.45)',
+            font:{size:9},position:{x:'start',y:'start'}}},
+{type:'box',xMin:'2024-12',xMax:'2025-03',
+            backgroundColor:'rgba(66,153,255,0.12)',borderWidth:0,
+            label:{content:'2단계 2만→4만',display:true,color:'rgba(255,255,255,0.45)',
+            font:{size:9},position:{x:'start',y:'start'}}},
+{type:'box',xMin:'2025-03',xMax:'2025-11',
+            backgroundColor:'rgba(255,196,50,0.12)',borderWidth:0,
+            label:{content:'3단계 4만→8.5만',display:true,color:'rgba(255,255,255,0.45)',
+            font:{size:9},position:{x:'start',y:'start'}}},
+{type:'box',xMin:'2025-11',xMax:'2026-03',
+            backgroundColor:'rgba(255,130,50,0.15)',borderWidth:0,
+            label:{content:'4단계 8.5만→12.7만',display:true,color:'rgba(255,255,255,0.45)',
+            font:{size:9},position:{x:'start',y:'start'}}},
+{type:'box',xMin:'2026-03',xMax:'2026-04',
+            backgroundColor:'rgba(210,50,50,0.08)',borderWidth:0,
+            label:{content:'고점 후',display:true,color:'rgba(255,255,255,0.45)',
+            font:{size:9},position:{x:'start',y:'start'}}}];
+  const annotOpts = {annotations: annots};
+  const zeroLine = {type:'line',yMin:0,yMax:0,borderColor:'rgba(255,255,255,0.15)',borderWidth:1,borderDash:[4,4]};
+
+  new Chart(document.getElementById('inv_kolon'), {
+    type:'bar',
+    data:{labels:months,datasets:[
+      ...(function(){ return [{"label": "외국인", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -577952, -842670, -736, 65941, -90340, 8982, 30761, -55701, -71373, 17061, 30309, -75695, 802, -29750, 8889, 64371, 57345, 80548, 53767, -7963, -166206, -125891, 127634, -96301, -22144, 148395, -216983, 162317, 120742, 357107, -278509, -484615, 89857, -147329, 74390, 687142, -338094, 979801, -158876, 222220, 24932, 358088, -378646], "backgroundColor": "rgba(79,195,247,0.75)", "stack": "s"}, {"label": "기관", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 202507, 58, 0, 15339, 4537, -438, 4179, 1351, 0, -7000, -6130, 0, 0, 0, 0, -2937, -92228, 207276, -440125, -611534, -205078, -1478479, -213211, -113749, 15665, -1663, 75560, -46232, 64025, -42901, -451757, 141262, -185559, -149180, -82362, -5136, -179763, 250724, -72880, 31089, 47042, -310717, -765382], "backgroundColor": "rgba(251,191,36,0.75)", "stack": "s"}, {"label": "개인", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 375445, 842612, 736, -81280, 85803, -8544, -34940, 54350, 71373, -10061, -24179, 75695, -802, 29750, -8889, -61434, 34883, -287824, 386358, 619497, 371284, 1604370, 85577, 210050, 6479, -146732, 141423, -116085, -184767, -314206, 730266, 343353, 95702, 296509, 7972, -682006, 517857, -1230525, 231756, -253309, -71974, -47371, 1144028], "backgroundColor": "rgba(248,113,113,0.75)", "stack": "s"}]; }()),
+      {label:'주가',data:[null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 12100, 14260, 13990, 17330, 15600, 13660, 16180, 17550, 23250, 28700, 36300, 44700, 38100, 40600, 41100, 38300, 37050, 47850, 44800, 85400, 79600, 105000, 107000, 106700, 103000],type:'line',borderColor:'#e2e8f0',backgroundColor:'transparent',
+        borderWidth:2,pointRadius:0,tension:0.3,yAxisID:'yPrice'}
+    ]},
+    options:{
+      responsive:true,maintainAspectRatio:false,
+      interaction:{mode:'index',intersect:false},
+      plugins:{legend:{labels:{color:'#aaa',boxWidth:12}},annotation:annotOpts},
+      scales:{
+        x:{stacked:true,ticks:{color:'#555',maxRotation:45,font:{size:10}},grid:{color:'#1a1d26'}},
+        y:{stacked:true,ticks:{color:'#888',callback:v=>(v/1000).toFixed(0)+'k',font:{size:10}},grid:{color:'#1f2230'}},
+        yPrice:{position:'right',ticks:{color:'#aaa',callback:v=>v>=10000?(v/10000).toFixed(0)+'만':v.toLocaleString(),font:{size:10}},grid:{display:false}}
+      }
+    }
+  });
+
+  new Chart(document.getElementById('broker_kolon'), {
+    type:'bar',
+    data:{labels:months,datasets:(function(){ return [{"label": "신한증권", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12993, 41046, -12255, -9928, 36597, 135260, -80972, -4138, -128734, -124542, 59764, 128440, -79985], "backgroundColor": "#f87171", "borderColor": "#f87171", "borderWidth": 1}, {"label": "JP모간", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -27152, -85825, 29335, -7521, 61570, 94621, -75742, 148416, -79784, 159085, 132075, -88376, -136838], "backgroundColor": "#38bdf8", "borderColor": "#38bdf8", "borderWidth": 1}, {"label": "키움증권", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -44579, 108096, -17881, 88155, 28696, -87266, 113858, -154978, 4062, -54979, -6746, -70300, 51970], "backgroundColor": "#f472b6", "borderColor": "#f472b6", "borderWidth": 1}, {"label": "미래에셋증권", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 49916, 77233, -207500, -67009, 54699, 19532, 115487, -108142, 14161, -36148, 110131, -73610, 193946], "backgroundColor": "#a3e635", "borderColor": "#a3e635", "borderWidth": 1}, {"label": "NH투자증권", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -7928, 7021, -51833, 38335, -95218, -152820, 64368, -418097, 38444, -100131, -35669, -59593, 112041], "backgroundColor": "#fbbf24", "borderColor": "#fbbf24", "borderWidth": 1}, {"label": "삼성증권", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -8722, -36039, -29426, 101514, 61337, -248064, 76880, -50359, -18024, 120015, -15864, -94876, 209378], "backgroundColor": "#facc15", "borderColor": "#facc15", "borderWidth": 1}, {"label": "한국증권", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 43085, 104391, 106291, 11065, -37518, 64919, 5055, 44640, -928, 56916, 67092, 4991, -145385], "backgroundColor": "#2dd4bf", "borderColor": "#2dd4bf", "borderWidth": 1}, {"label": "KB증권", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 51013, 28018, -88000, 3433, 111537, -20243, 4144, -180824, 138622, -123734, -59981, 39777, 11010], "backgroundColor": "#34d399", "borderColor": "#34d399", "borderWidth": 1}]; })()},
+    options:{
+      responsive:true,maintainAspectRatio:false,
+      interaction:{mode:'index',intersect:false},
+      plugins:{legend:{labels:{color:'#aaa',boxWidth:12}},annotation:annotOpts},
+      scales:{
+        x:{stacked:true,ticks:{color:'#555',maxRotation:45,font:{size:10}},grid:{color:'#1a1d26'}},
+        y:{stacked:true,ticks:{color:'#888',callback:v=>(v/1000).toFixed(0)+'k',font:{size:10}},grid:{color:'#1f2230'}}
+      }
+    }
+  });
+
+  const allDs = (function(){ return [{"label": "신한증권", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12993, 41046, -12255, -9928, 36597, 135260, -80972, -4138, -128734, -124542, 59764, 128440, -79985], "backgroundColor": "#f87171", "borderColor": "#f87171", "borderWidth": 1}, {"label": "JP모간", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -27152, -85825, 29335, -7521, 61570, 94621, -75742, 148416, -79784, 159085, 132075, -88376, -136838], "backgroundColor": "#38bdf8", "borderColor": "#38bdf8", "borderWidth": 1}, {"label": "키움증권", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -44579, 108096, -17881, 88155, 28696, -87266, 113858, -154978, 4062, -54979, -6746, -70300, 51970], "backgroundColor": "#f472b6", "borderColor": "#f472b6", "borderWidth": 1}, {"label": "미래에셋증권", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 49916, 77233, -207500, -67009, 54699, 19532, 115487, -108142, 14161, -36148, 110131, -73610, 193946], "backgroundColor": "#a3e635", "borderColor": "#a3e635", "borderWidth": 1}, {"label": "NH투자증권", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -7928, 7021, -51833, 38335, -95218, -152820, 64368, -418097, 38444, -100131, -35669, -59593, 112041], "backgroundColor": "#fbbf24", "borderColor": "#fbbf24", "borderWidth": 1}, {"label": "삼성증권", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -8722, -36039, -29426, 101514, 61337, -248064, 76880, -50359, -18024, 120015, -15864, -94876, 209378], "backgroundColor": "#facc15", "borderColor": "#facc15", "borderWidth": 1}, {"label": "한국증권", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 43085, 104391, 106291, 11065, -37518, 64919, 5055, 44640, -928, 56916, 67092, 4991, -145385], "backgroundColor": "#2dd4bf", "borderColor": "#2dd4bf", "borderWidth": 1}, {"label": "KB증권", "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 51013, 28018, -88000, 3433, 111537, -20243, 4144, -180824, 138622, -123734, -59981, 39777, 11010], "backgroundColor": "#34d399", "borderColor": "#34d399", "borderWidth": 1}]; })();
+  const colorMap = {"신한증권": "#f87171", "JP모간": "#38bdf8", "키움증권": "#f472b6", "미래에셋증권": "#a3e635", "NH투자증권": "#fbbf24", "삼성증권": "#facc15", "한국증권": "#2dd4bf", "KB증권": "#34d399"};
+  new Chart(document.getElementById('line_kolon'), {
+    type:'line',
+    data:{labels:months,datasets:allDs.map(d=>{
+      const c = colorMap[d.label]||'#aaa';
+      return {...d,type:'line',backgroundColor:'transparent',borderColor:c,
+               borderWidth:2,pointRadius:2,pointHoverRadius:5,fill:false,tension:0.3};
+    })}},
+    options:{
+      responsive:true,maintainAspectRatio:false,
+      interaction:{mode:'index',intersect:false},
+      plugins:{
+        legend:{labels:{color:'#aaa',boxWidth:12}},
+        annotation:{annotations:[...annots, zeroLine]}
+      },
+      scales:{
+        x:{ticks:{color:'#555',maxRotation:45,font:{size:10}},grid:{color:'#1a1d26'}},
+        y:{ticks:{color:'#888',callback:v=>(v/1000).toFixed(0)+'k',font:{size:10}},grid:{color:'#1f2230'}}
+      }
+    }
+  });
+})();
+</script>
+
+
+</div>
+</body>
+</html>

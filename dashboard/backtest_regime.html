@@ -1,0 +1,80 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8">
+<title>Regime-Aware 백테스트</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.kpi-strip { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:18px; }
+.kpi-strip .kpi-mini { flex:1; min-width:160px; background:#181b23; border-radius:8px; padding:12px; text-align:center; }
+.kpi-strip .num { font-size:1.3em; font-weight:700; color:#fff; }
+.kpi-strip .lbl { font-size:0.75em; color:#888; margin-top:4px; }
+</style></head><body><div class="container">
+
+<div class="nav">
+  <a href="index.html">📊 전체</a>
+  <a href="backtest_broker_signals.html">v1~v7</a>
+  <a href="backtest_regime.html" class="active">🎯 v8~v12</a>
+</div>
+
+<h1>🎯 Regime-Aware 백테스트 (v8~v12)</h1>
+<p class="subtitle">시장환경 + 종목추세 + 평가손익에 따라 동적 매도 룰</p>
+
+<div class="card">
+  <div class="callout">
+    <b>v8</b>: KOSPI 12주 추세 기반 (강세 12, 약세 5)<br>
+    <b>v9</b>: 종목 Stage (Stage2 무시, Stage4 청산)<br>
+    <b>v10</b>: 평가손익 (이익 100%↑ 트레일링, 손실 적극손절)<br>
+    <b>v11</b>: 모두 결합 (Hybrid)<br>
+    <b>v12</b>: 신고가 후 경과일 가중 (5일 이내 1.5배, 30일+ 0.5배)
+  </div>
+</div>
+
+<div class="kpi-strip">
+  <div class="kpi-mini" style="border:2px solid #6b7280">
+    <div class="lbl">실제</div>
+    <div class="num mono">+2.89억</div>
+    <div class="lbl">16종목</div>
+  </div>
+  <div class="kpi-mini" style="border:2px solid #ef4444">
+          <div class="lbl">🏆 v11_hybrid</div>
+          <div class="num mono">+2.08억</div>
+          <div class="lbl mono" style="color:#ef4444">-8,156만</div>
+          <div class="lbl">우세 2/16</div>
+        </div><div class="kpi-mini" style="">
+          <div class="lbl">#2 v9_stage</div>
+          <div class="num mono">+2.04억</div>
+          <div class="lbl mono" style="color:#ef4444">-8,480만</div>
+          <div class="lbl">우세 3/16</div>
+        </div><div class="kpi-mini" style="">
+          <div class="lbl">#3 v8_macro</div>
+          <div class="num mono">+1.51억</div>
+          <div class="lbl mono" style="color:#ef4444">-1.38억</div>
+          <div class="lbl">우세 2/16</div>
+        </div><div class="kpi-mini" style="">
+          <div class="lbl">#4 v12_time</div>
+          <div class="num mono">+1.49억</div>
+          <div class="lbl mono" style="color:#ef4444">-1.40억</div>
+          <div class="lbl">우세 2/16</div>
+        </div><div class="kpi-mini" style="">
+          <div class="lbl">#5 v10_position</div>
+          <div class="num mono">+1.24억</div>
+          <div class="lbl mono" style="color:#ef4444">-1.66억</div>
+          <div class="lbl">우세 0/16</div>
+        </div>
+</div>
+
+<div class="card">
+  <h2>변형별 룰</h2>
+  <table>
+    <tr><th>변형</th><th>룰</th><th style="text-align:right">합계</th></tr>
+    <tr><td><b>v11_hybrid</b></td><td>Macro+Stage+Position 모두 결합 (가장 정교)</td><td class='mono' style='text-align:right'>+2.08억</td></tr><tr><td><b>v9_stage</b></td><td>종목 Stage: 2(상승) 시그널무시, 3(토핑) 표준, 4(하락) 적극매도</td><td class='mono' style='text-align:right'>+2.04억</td></tr><tr><td><b>v8_macro</b></td><td>KOSPI regime 기반: bull→임계값12, bear→5, 횡보→9</td><td class='mono' style='text-align:right'>+1.51억</td></tr><tr><td><b>v12_time</b></td><td>신고가 후 경과일에 따라 시그널 가중치 (0~5일 1.5x, 30일+ 0.5x)</td><td class='mono' style='text-align:right'>+1.49억</td></tr><tr><td><b>v10_position</b></td><td>평가손익: +100%↑ 트레일링, 0~50% 표준, -10%↓ 적극손절</td><td class='mono' style='text-align:right'>+1.24억</td></tr>
+  </table>
+</div>
+
+<div class="card">
+  <h2>종목별 결과</h2>
+  <table>
+    <tr><th>종목</th><th style="text-align:right">실제</th><th style='text-align:right'>v11_hybrid</th><th style='text-align:right'>v9_stage</th><th style='text-align:right'>v8_macro</th><th style='text-align:right'>v12_time</th><th style='text-align:right'>v10_position</th></tr>
+    <tr><td><b>NAVER</b><br><span style='color:#666;font-size:0.78em'>035420</span></td><td class='mono' style='text-align:right'>-452만</td><td class='mono ret-up' style='text-align:right'>-562만<br><span style='font-size:0.78em;color:#888'>3회</span></td><td class='mono ret-down' style='text-align:right'>-249만 🏆<br><span style='font-size:0.78em;color:#888'>4회</span></td><td class='mono ret-up' style='text-align:right'>-830만<br><span style='font-size:0.78em;color:#888'>0회</span></td><td class='mono ret-up' style='text-align:right'>-830만<br><span style='font-size:0.78em;color:#888'>0회</span></td><td class='mono ret-up' style='text-align:right'>-890만<br><span style='font-size:0.78em;color:#888'>1회</span></td></tr><tr><td><b>RF머트리얼즈</b><br><span style='color:#666;font-size:0.78em'>327260</span></td><td class='mono' style='text-align:right'>+4,640만</td><td class='mono ret-up' style='text-align:right'>+3,940만<br><span style='font-size:0.78em;color:#888'>1회</span></td><td class='mono ret-up' style='text-align:right'>+4,542만 🏆<br><span style='font-size:0.78em;color:#888'>1회</span></td><td class='mono ret-up' style='text-align:right'>+3,211만<br><span style='font-size:0.78em;color:#888'>2회</span></td><td class='mono ret-up' style='text-align:right'>+3,211만<br><span style='font-size:0.78em;color:#888'>2회</span></td><td class='mono ret-up' style='text-align:right'>+3,399만<br><span style='font-size:0.78em;color:#888'>2회</span></td></tr><tr><td><b>SK하이닉스</b><br><span style='color:#666;font-size:0.78em'>000660</span></td><td class='mono' style='text-align:right'>+155만</td><td class='mono ret-up' style='text-align:right'>+31만<br><span style='font-size:0.78em;color:#888'>1회</span></td><td class='mono ' style='text-align:right'>+155만<br><span style='font-size:0.78em;color:#888'>0회</span></td><td class='mono ' style='text-align:right'>+155만 🏆<br><span style='font-size:0.78em;color:#888'>0회</span></td><td class='mono ' style='text-align:right'>+155만<br><span style='font-size:0.78em;color:#888'>0회</span></td><td class='mono ret-up' style='text-align:right'>+31만<br><span style='font-size:0.78em;color:#888'>1회</span></td></tr><tr><td><b>대한광통신</b><br><span style='color:#666;font-size:0.78em'>010170</span></td><td class='mono' style='text-align:right'>+7,354만</td><td class='mono ret-up' style='text-align:right'>+6,379만 🏆<br><span style='font-size:0.78em;color:#888'>1회</span></td><td class='mono ret-up' style='text-align:right'>+6,055만<br><span style='font-size:0.78em;color:#888'>1회</span></td><td class='mono ret-up' style='text-align:right'>+4,249만<br><span style='font-size:0.78em;color:#888'>2회</span></td><td class='mono ret-up' style='text-align:right'>+4,533만<br><span style='font-size:0.78em;color:#888'>3회</span></td><td class='mono ret-up' style='text-align:right'>+2,621만<br><span style='font-size:0.78em;color:#888'>4회</span></td></tr><tr><td><b>두산</b><br><span style='color:#666;font-size:0.78em'>000150</span></td><td class='mono' style='text-align:right'>+7,453만</td><td class='mono ret-up' style='text-align:right'>+4,763만 🏆<br><span style='font-size:0.78em;color:#888'>2회</span></td><td class='mono ret-up' style='text-align:right'>+3,747만<br><span style='font-size:0.78em;color:#888'>3회</span></td><td class='mono ret-up' style='text-align:right'>+3,884만<br><span style='font-size:0.78em;color:#888'>3회</span></td><td class='mono ret-up' style='text-align:right'>+3,443만<br><span style='font-size:0.78em;color:#888'>4회</span></td><td class='mono ret-up' style='text-align:right'>+3,062만<br><span style='font-size:0.78em;color:#888'>5회</span></td></tr><tr><td><b>리노공업</b><br><span style='color:#666;font-size:0.78em'>058470</span></td><td class='mono' style='text-align:right'>+149만</td><td class='mono ret-down' style='text-align:right'>+199만<br><span style='font-size:0.78em;color:#888'>2회</span></td><td class='mono ret-down' style='text-align:right'>+424만 🏆<br><span style='font-size:0.78em;color:#888'>1회</span></td><td class='mono ret-down' style='text-align:right'>+251만<br><span style='font-size:0.78em;color:#888'>4회</span></td><td class='mono ret-down' style='text-align:right'>+245만<br><span style='font-size:0.78em;color:#888'>3회</span></td><td class='mono ret-up' style='text-align:right'>+92만<br><span style='font-size:0.78em;color:#888'>6회</span></td></tr><tr><td><b>보로노이</b><br><span style='color:#666;font-size:0.78em'>310210</span></td><td class='mono' style='text-align:right'>+568만</td><td class='mono ret-up' style='text-align:right'>+266만<br><span style='font-size:0.78em;color:#888'>2회</span></td><td class='mono ret-up' style='text-align:right'>+374만<br><span style='font-size:0.78em;color:#888'>2회</span></td><td class='mono ret-down' style='text-align:right'>+652만 🏆<br><span style='font-size:0.78em;color:#888'>1회</span></td><td class='mono ret-down' style='text-align:right'>+607만<br><span style='font-size:0.78em;color:#888'>1회</span></td><td class='mono ret-up' style='text-align:right'>+326만<br><span style='font-size:0.78em;color:#888'>3회</span></td></tr><tr><td><b>셀트리온</b><br><span style='color:#666;font-size:0.78em'>068270</span></td><td class='mono' style='text-align:right'>+41만</td><td class='mono ' style='text-align:right'>+41만<br><span style='font-size:0.78em;color:#888'>0회</span></td><td class='mono ret-up' style='text-align:right'>+36만<br><span style='font-size:0.78em;color:#888'>1회</span></td><td class='mono ' style='text-align:right'>+41만 🏆<br><span style='font-size:0.78em;color:#888'>0회</span></td><td class='mono ' style='text-align:right'>+41만<br><span style='font-size:0.78em;color:#888'>0회</span></td><td class='mono ' style='text-align:right'>+41만<br><span style='font-size:0.78em;color:#888'>0회</span></td></tr><tr><td><b>에이피알</b><br><span style='color:#666;font-size:0.78em'>278470</span></td><td class='mono' style='text-align:right'>+2,285만</td><td class='mono ret-up' style='text-align:right'>+1,643만 🏆<br><span style='font-size:0.78em;color:#888'>4회</span></td><td class='mono ret-up' style='text-align:right'>+1,633만<br><span style='font-size:0.78em;color:#888'>2회</span></td><td class='mono ret-up' style='text-align:right'>+949만<br><span style='font-size:0.78em;color:#888'>6회</span></td><td class='mono ret-up' style='text-align:right'>+971만<br><span style='font-size:0.78em;color:#888'>7회</span></td><td class='mono ret-up' style='text-align:right'>+1,044만<br><span style='font-size:0.78em;color:#888'>6회</span></td></tr><tr><td><b>오스코텍</b><br><span style='color:#666;font-size:0.78em'>039200</span></td><td class='mono' style='text-align:right'>+16만</td><td class='mono ' style='text-align:right'>+16만<br><span style='font-size:0.78em;color:#888'>0회</span></td><td class='mono ret-up' style='text-align:right'>-12만<br><span style='font-size:0.78em;color:#888'>2회</span></td><td class='mono ' style='text-align:right'>+16만 🏆<br><span style='font-size:0.78em;color:#888'>0회</span></td><td class='mono ' style='text-align:right'>+16만<br><span style='font-size:0.78em;color:#888'>0회</span></td><td class='mono ' style='text-align:right'>+16만<br><span style='font-size:0.78em;color:#888'>0회</span></td></tr><tr><td><b>이오테크닉스</b><br><span style='color:#666;font-size:0.78em'>039030</span></td><td class='mono' style='text-align:right'>+2,041만</td><td class='mono ret-down' style='text-align:right'>+2,773만 🏆<br><span style='font-size:0.78em;color:#888'>1회</span></td><td class='mono ret-down' style='text-align:right'>+2,696만<br><span style='font-size:0.78em;color:#888'>1회</span></td><td class='mono ret-up' style='text-align:right'>+1,290만<br><span style='font-size:0.78em;color:#888'>5회</span></td><td class='mono ret-up' style='text-align:right'>+1,318만<br><span style='font-size:0.78em;color:#888'>6회</span></td><td class='mono ret-up' style='text-align:right'>+1,448만<br><span style='font-size:0.78em;color:#888'>5회</span></td></tr><tr><td><b>코오롱티슈진</b><br><span style='color:#666;font-size:0.78em'>950160</span></td><td class='mono' style='text-align:right'>-80만</td><td class='mono ' style='text-align:right'>-80만<br><span style='font-size:0.78em;color:#888'>0회</span></td><td class='mono ' style='text-align:right'>-80만<br><span style='font-size:0.78em;color:#888'>1회</span></td><td class='mono ' style='text-align:right'>-80만 🏆<br><span style='font-size:0.78em;color:#888'>0회</span></td><td class='mono ' style='text-align:right'>-80만<br><span style='font-size:0.78em;color:#888'>0회</span></td><td class='mono ret-up' style='text-align:right'>-84만<br><span style='font-size:0.78em;color:#888'>1회</span></td></tr><tr><td><b>토모큐브</b><br><span style='color:#666;font-size:0.78em'>475960</span></td><td class='mono' style='text-align:right'>+2,542만</td><td class='mono ret-up' style='text-align:right'>+1,873만 🏆<br><span style='font-size:0.78em;color:#888'>3회</span></td><td class='mono ret-up' style='text-align:right'>+1,559만<br><span style='font-size:0.78em;color:#888'>4회</span></td><td class='mono ret-up' style='text-align:right'>+1,815만<br><span style='font-size:0.78em;color:#888'>6회</span></td><td class='mono ret-up' style='text-align:right'>+1,802만<br><span style='font-size:0.78em;color:#888'>5회</span></td><td class='mono ret-up' style='text-align:right'>+1,852만<br><span style='font-size:0.78em;color:#888'>8회</span></td></tr><tr><td><b>파마리서치</b><br><span style='color:#666;font-size:0.78em'>214450</span></td><td class='mono' style='text-align:right'>+2,062만</td><td class='mono ret-up' style='text-align:right'>-335만<br><span style='font-size:0.78em;color:#888'>5회</span></td><td class='mono ret-up' style='text-align:right'>-354만<br><span style='font-size:0.78em;color:#888'>5회</span></td><td class='mono ret-up' style='text-align:right'>-636만<br><span style='font-size:0.78em;color:#888'>0회</span></td><td class='mono ret-up' style='text-align:right'>-636만<br><span style='font-size:0.78em;color:#888'>0회</span></td><td class='mono ret-up' style='text-align:right'>-334만 🏆<br><span style='font-size:0.78em;color:#888'>5회</span></td></tr><tr><td><b>파크시스템스</b><br><span style='color:#666;font-size:0.78em'>140860</span></td><td class='mono' style='text-align:right'>+213만</td><td class='mono ret-up' style='text-align:right'>+51만<br><span style='font-size:0.78em;color:#888'>4회</span></td><td class='mono ret-up' style='text-align:right'>+41만<br><span style='font-size:0.78em;color:#888'>5회</span></td><td class='mono ' style='text-align:right'>+213만 🏆<br><span style='font-size:0.78em;color:#888'>0회</span></td><td class='mono ' style='text-align:right'>+213만<br><span style='font-size:0.78em;color:#888'>0회</span></td><td class='mono ret-up' style='text-align:right'>-99만<br><span style='font-size:0.78em;color:#888'>3회</span></td></tr><tr><td><b>필옵틱스</b><br><span style='color:#666;font-size:0.78em'>161580</span></td><td class='mono' style='text-align:right'>-65만</td><td class='mono ret-up' style='text-align:right'>-231만<br><span style='font-size:0.78em;color:#888'>4회</span></td><td class='mono ret-up' style='text-align:right'>-124만<br><span style='font-size:0.78em;color:#888'>2회</span></td><td class='mono ' style='text-align:right'>-65만 🏆<br><span style='font-size:0.78em;color:#888'>0회</span></td><td class='mono ' style='text-align:right'>-65만<br><span style='font-size:0.78em;color:#888'>0회</span></td><td class='mono ret-up' style='text-align:right'>-170만<br><span style='font-size:0.78em;color:#888'>5회</span></td></tr>
+  </table>
+</div>
+
+</div></body></html>

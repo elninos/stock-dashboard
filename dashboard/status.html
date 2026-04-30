@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>거래원 수급 분석 — 현재 상황</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.status-grid { display:grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 18px; }
+.status-grid .item {
+  background: #181b23;
+  border-left: 4px solid #4fc3f7;
+  border-radius: 8px;
+  padding: 14px 18px;
+}
+.status-grid .item.ok    { border-left-color: #10b981; }
+.status-grid .item.warn  { border-left-color: #f59e0b; }
+.status-grid .item.block { border-left-color: #ef4444; }
+.status-grid .item.todo  { border-left-color: #6b7280; }
+.item-title { font-size: 0.95em; font-weight: 600; margin-bottom: 6px; }
+.item-detail { color: #999; font-size: 0.83em; line-height: 1.6; }
+.checkmark { color: #10b981; }
+.cross { color: #ef4444; }
+.pending { color: #f59e0b; }
+.timeline-row {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 14px;
+  padding: 10px 0;
+  border-bottom: 1px solid #1f2230;
+}
+.timeline-row .ts { color: #6b7280; font-family: monospace; font-size: 0.85em; }
+.timeline-row.done .ts { color: #10b981; }
+.timeline-row.next .ts { color: #f59e0b; }
+.kpi-strip { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 18px; }
+.kpi-strip .kpi-mini {
+  flex: 1;
+  min-width: 130px;
+  background: #181b23;
+  border-radius: 8px;
+  padding: 12px 14px;
+  text-align: center;
+}
+.kpi-strip .num { font-size: 1.5em; font-weight: 700; color: #fff; }
+.kpi-strip .lbl { font-size: 0.78em; color: #888; margin-top: 4px; }
+ul.simple { padding-left: 22px; margin: 6px 0; line-height: 1.8; }
+ul.simple li { color: #aaa; font-size: 0.86em; }
+ul.simple li b { color: #ddd; }
+.code { font-family: monospace; background: #1a1d26; padding: 1px 6px; border-radius: 3px; font-size: 0.85em; color: #fbbf24; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="nav">
+  <a href="index.html">📊 전체 대시보드</a>
+  <a href="profit_taking.html">💰 익절 타이밍</a>
+  <a href="status.html" class="active">📋 현재 상황</a>
+  <a href="trading_style.html">🎯 매매 스타일</a>
+</div>
+
+<h1>현재 상황 정리</h1>
+<p class="subtitle">무엇이 만들어졌고 · 무엇이 작동하고 · 무엇이 막혔는가</p>
+
+<!-- 핵심 KPI -->
+<div class="kpi-strip">
+  <div class="kpi-mini"><div class="num">6</div><div class="lbl">분석 종목</div></div>
+  <div class="kpi-mini"><div class="num">502</div><div class="lbl">수급 파일</div></div>
+  <div class="kpi-mini"><div class="num">50</div><div class="lbl">고유 거래원</div></div>
+  <div class="kpi-mini"><div class="num">11</div><div class="lbl">시그널 종류</div></div>
+  <div class="kpi-mini"><div class="num">4</div><div class="lbl">행동 권고 단계</div></div>
+  <div class="kpi-mini"><div class="num">5</div><div class="lbl">차트 종류</div></div>
+</div>
+
+<!-- 데이터 파이프라인 -->
+<div class="card">
+  <h2>📦 데이터 파이프라인</h2>
+  <div class="status-grid">
+    <div class="item ok">
+      <div class="item-title"><span class="checkmark">✓</span> Mac → Google Drive holdings.txt</div>
+      <div class="item-detail">
+        <span class="code">generate_holdings.py</span> — 보유 KOR 종목 → Google Drive 자동 생성<br>
+        매일 15:30 cron 등록 대기
+      </div>
+    </div>
+    <div class="item ok">
+      <div class="item-title"><span class="checkmark">✓</span> Windows AHK 자동화</div>
+      <div class="item-detail">
+        <span class="code">hts_dump.ahk</span> — NH HTS [1502] 거래원 데이터 자동 CSV 추출<br>
+        사용자: 거의 완료 ("왼도우 자동화 거의다 됬어")
+      </div>
+    </div>
+    <div class="item warn">
+      <div class="item-title"><span class="pending">⏳</span> Google Drive → 종목별 daily_flow/</div>
+      <div class="item-detail">
+        현재 6종목만 (RF머트리얼즈 312일, 나머지 38일).<br>
+        보유 23종목 모두 자동 수집 시작 대기
+      </div>
+    </div>
+    <div class="item ok">
+      <div class="item-title"><span class="checkmark">✓</span> 자동 분석 + HTML 빌드</div>
+      <div class="item-detail">
+        <span class="code">build_broker_dashboard.py</span> — 한 번에 6종목 분석 → 통합 + 종목별 HTML
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 시그널 시스템 -->
+<div class="card">
+  <h2>🎯 시그널 시스템</h2>
+  <div class="status-grid">
+    <div class="item ok">
+      <div class="item-title"><span class="checkmark">✓</span> 그룹 분류 (외국계/기관/대형기관/개인)</div>
+      <div class="item-detail">
+        50개 거래원 → 4개 그룹.<br>
+        대형기관 8개 (NH/KB/한투/삼성/한화/미래/신한/하나) 별도 추적
+      </div>
+    </div>
+    <div class="item ok">
+      <div class="item-title"><span class="checkmark">✓</span> 거래량 대비 비율 (%) 정규화</div>
+      <div class="item-detail">
+        시가총액·거래량 무관 일관 임계값. 5일/20일 윈도우.
+      </div>
+    </div>
+    <div class="item ok">
+      <div class="item-title"><span class="checkmark">✓</span> 추세 국면 분류 (4단계)</div>
+      <div class="item-detail">
+        상승 / 분배의심 / 하락 / 중립. MA20 + MA60 + 60일 신고가 기준.
+      </div>
+    </div>
+    <div class="item ok">
+      <div class="item-title"><span class="checkmark">✓</span> 베어리시 다이버전스</div>
+      <div class="item-detail">
+        신고가권 + 스마트머니 음수 + 5일 가속화. <b>가장 강한 매도 시그널.</b>
+      </div>
+    </div>
+    <div class="item ok">
+      <div class="item-title"><span class="checkmark">✓</span> 분배 패턴 (개미↔대형기관)</div>
+      <div class="item-detail">
+        개미 매수 + 대형기관 매도 동시 → 점수 +3~5 (지속성 가중)
+      </div>
+    </div>
+    <div class="item ok">
+      <div class="item-title"><span class="checkmark">✓</span> 외국계 컨센서스 매수</div>
+      <div class="item-detail">
+        5일 외국계 매수자수 - 매도자수 ≥ 8 + 외인 5일 비율 양수
+      </div>
+    </div>
+    <div class="item ok">
+      <div class="item-title"><span class="checkmark">✓</span> 거래원 집중도 (HHI + Top Share)</div>
+      <div class="item-detail">
+        HHI ≥ 1500 또는 단일 거래원 5일 평균 점유율 ≥ 35% → 변동성 위험
+      </div>
+    </div>
+    <div class="item ok">
+      <div class="item-title"><span class="checkmark">✓</span> 거래량 다이버전스</div>
+      <div class="item-detail">
+        가격 5일 +5% but 거래량 비율 &lt; 0.8 → 약한 상승, 탑 형성 가능
+      </div>
+    </div>
+    <div class="item ok">
+      <div class="item-title"><span class="checkmark">✓</span> 트레일링 스탑</div>
+      <div class="item-detail">
+        60일 신고가 -10% 이탈 시 추세 깨짐 컨펌
+      </div>
+    </div>
+    <div class="item ok">
+      <div class="item-title"><span class="checkmark">✓</span> 시너지 (Cluster Score)</div>
+      <div class="item-detail">
+        3+ 카테고리 동시 발동 시 +2~3 보너스
+      </div>
+    </div>
+    <div class="item ok">
+      <div class="item-title"><span class="checkmark">✓</span> OBV / CMF / MFI</div>
+      <div class="item-detail">
+        가격-거래량 다이버전스 자동 탐지 (외부 API 불필요)
+      </div>
+    </div>
+    <div class="item ok">
+      <div class="item-title"><span class="checkmark">✓</span> 행동 권고 4단계</div>
+      <div class="item-detail">
+        전량매도 / 매도 / 부분익절 / HOLD / 신규매수
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 백테스트 -->
+<div class="card">
+  <h2>🧪 백테스트 검증</h2>
+  <div class="status-grid">
+    <div class="item ok">
+      <div class="item-title"><span class="checkmark">✓</span> 가격 컨펌 검증</div>
+      <div class="item-detail">
+        시그널 후 10일 내 종가가 MA20 또는 직전 20일 저점 이탈 = 컨펌
+      </div>
+    </div>
+    <div class="item ok">
+      <div class="item-title"><span class="checkmark">✓</span> +5/+10/+20일 수익률 추적</div>
+      <div class="item-detail">
+        시그널 발생 후 실제 주가 변화 자동 집계
+      </div>
+    </div>
+    <div class="item warn">
+      <div class="item-title"><span class="pending">⏳</span> 시그널 ROC 검증 (한계)</div>
+      <div class="item-detail">
+        대한광통신 케이스: 6개 매도포인트 0개 적중 (38일 데이터 한계).<br>
+        풀 1년 데이터 더 필요.
+      </div>
+    </div>
+    <div class="item warn">
+      <div class="item-title"><span class="pending">⚠️</span> Precision 낮음</div>
+      <div class="item-detail">
+        RF머트리얼즈 시그널 178건 / 매도포인트 26건 매칭 = Precision 14.6%.<br>
+        시그널이 너무 많이 발동 → 추가 필터링 필요
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 외부 데이터 -->
+<div class="card">
+  <h2>📡 외부 데이터 연동</h2>
+  <div class="status-grid">
+    <div class="item ok">
+      <div class="item-title"><span class="checkmark">✓</span> pykrx OHLCV (가격/거래량)</div>
+      <div class="item-detail">정상 작동 — 모든 종목 1년치 가격 받음</div>
+    </div>
+    <div class="item ok">
+      <div class="item-title"><span class="checkmark">✓</span> FinanceDataReader (백업)</div>
+      <div class="item-detail">설치 완료. KRX OHLCV 백업 소스로 활용 가능</div>
+    </div>
+    <div class="item block">
+      <div class="item-title"><span class="cross">✗</span> KRX 공매도 잔고</div>
+      <div class="item-detail">
+        <b>일시적 차단</b> (HTTP 403). retry + 캐시 로직 완성됨.<br>
+        다음 실행 시 자동 재시도. 보통 몇 시간~1일 내 풀림
+      </div>
+    </div>
+    <div class="item block">
+      <div class="item-title"><span class="cross">✗</span> KRX 외국인 보유율</div>
+      <div class="item-detail">동일하게 차단 상태. 모듈은 준비됨.</div>
+    </div>
+    <div class="item block">
+      <div class="item-title"><span class="cross">✗</span> KRX 기관 세부 분류 (연기금/사모/투신)</div>
+      <div class="item-detail">동일하게 차단 상태. 모듈은 준비됨.</div>
+    </div>
+    <div class="item todo">
+      <div class="item-title"><span class="pending">📋</span> DART 임원 공시 (5%↑)</div>
+      <div class="item-detail">
+        최우선 추가 가능: 인사이더 매수/매도 직접 신호.<br>
+        OpenDartReader 라이브러리 + 무료 API 키
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 대시보드 구조 -->
+<div class="card">
+  <h2>🎨 대시보드 구조</h2>
+  <ul class="simple">
+    <li><b>dashboard/index.html</b> — 전체 대시보드 (알림 / 종합백테스트 / 종목 비교 테이블)</li>
+    <li><b>dashboard/status.html</b> — 이 페이지 (현재 상황)</li>
+    <li><b>dashboard/trading_style.html</b> — 매매 스타일 분석 (다음 페이지)</li>
+    <li><b>dashboard/stocks/{종목코드}.html</b> — 종목별 상세 (KPI + 5종 차트 + 거래원 분석 + 시그널 타임라인)</li>
+    <li><b>dashboard/assets/style.css</b> — 공통 스타일</li>
+  </ul>
+</div>
+
+<!-- 다음 단계 -->
+<div class="card">
+  <h2>🚀 다음 단계 우선순위</h2>
+  <div class="timeline-row next">
+    <div class="ts">P0</div>
+    <div>
+      <b>Windows AHK 자동화 완성</b> + Task Scheduler 등록 (15:40 KST 매일)<br>
+      <span style="color:#888;font-size:0.85em">→ 보유 종목 모두 자동 수집 시작 → 시그널 정밀도 캘리브레이션 가능</span>
+    </div>
+  </div>
+  <div class="timeline-row next">
+    <div class="ts">P0</div>
+    <div>
+      <b>Mac cron 등록</b> (16:00 KST: generate_holdings → analyze → build_dashboard)<br>
+      <span style="color:#888;font-size:0.85em">→ 매일 갱신되는 대시보드</span>
+    </div>
+  </div>
+  <div class="timeline-row">
+    <div class="ts">P1</div>
+    <div>
+      <b>매매 스타일 분석 활용</b> (다음 페이지)<br>
+      <span style="color:#888;font-size:0.85em">→ 좀비 종목, 손절 룰, 분할매수 한도 등 개인화된 룰 추가</span>
+    </div>
+  </div>
+  <div class="timeline-row">
+    <div class="ts">P1</div>
+    <div>
+      <b>KRX 외부 데이터 재시도</b> (1~2일 후)<br>
+      <span style="color:#888;font-size:0.85em">→ 공매도 / 외국인 보유율 / 기관 세부 분류</span>
+    </div>
+  </div>
+  <div class="timeline-row">
+    <div class="ts">P2</div>
+    <div>
+      <b>DART 인사이더 공시 연동</b> (반나절 작업)<br>
+      <span style="color:#888;font-size:0.85em">→ 가장 강한 매수/매도 직접 신호</span>
+    </div>
+  </div>
+  <div class="timeline-row">
+    <div class="ts">P2</div>
+    <div>
+      <b>시그널 정밀도 개선 (Precision 14.6% → 30%+)</b><br>
+      <span style="color:#888;font-size:0.85em">→ 시그널 강도 재조정, false positive 필터링</span>
+    </div>
+  </div>
+  <div class="timeline-row">
+    <div class="ts">P3</div>
+    <div>
+      <b>Cloudflare Pages 자동 배포</b> + 알림 (텔레그램/이메일)
+    </div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

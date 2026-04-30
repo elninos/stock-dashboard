@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<title>Time-Stratified Backtest</title>
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+<div class="container">
+<div class="nav">
+  <a href="index.html">📊 전체</a>
+  <a href="backtest_top.html">고점 판별</a>
+  <a href="backtest_time.html" class="active">🕒 시기별</a>
+</div>
+
+<h1>🕒 시기별 시그널 성능 백테스트</h1>
+<p class="subtitle">시장 변천에 따른 시그널 정확도 차이 — 한 가지 룰이 모든 시기에 통할까?</p>
+
+<div class="card">
+  <div class="callout">
+    <b>분석 방법:</b><br>
+    1. 11종목의 모든 시그널 발동일 추출 (Top Detection 점수 ≥3)<br>
+    2. 각 시그널의 30일/60일 후 가격 변화 추적<br>
+    3. 시기별 (연도/반기/regime) 평균 수익률 + 적중률<br>
+    <br>
+    <b>적중률 정의:</b> 시그널 발동 후 30일 내 -3% 이상 하락 = 적중<br>
+    <b>큰 적중:</b> -10% 이상 하락 (실질적 매도 가치)<br>
+    <br>
+    <b>KOSPI Regime 분류:</b><br>
+    🐂 강세장: 12개월 +15% 이상<br>
+    🐻 약세장: 12개월 -15% 이하<br>
+    ↔️ 박스권: 12개월 ±5% 이내<br>
+    🔄 전환: 그 외 (회복/조정)
+  </div>
+</div>
+
+<div class="card">
+  <h2>🌊 KOSPI Regime별 시그널 정확도</h2>
+  <p class="desc">시그널이 어떤 시장 환경에서 가장 잘 작동했나?</p>
+  <table>
+    <tr>
+      <th>Regime</th>
+      <th style="text-align:right">시그널 수</th>
+      <th style="text-align:right">30일 평균</th>
+      <th style="text-align:right">60일 평균</th>
+      <th style="text-align:right">-3%↓ 적중률</th>
+      <th style="text-align:right">-10%↓ 큰적중</th>
+    </tr>
+    <tr>
+          <td>🐂 강세장 (12M +15%↑)</td>
+          <td class="mono" style="text-align:right">125</td>
+          <td class="mono ret-up" style="text-align:right">+4.9%</td>
+          <td class="mono" style="text-align:right">+6.5%</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">51%</td>
+          <td class="mono" style="text-align:right">36%</td>
+        </tr><tr>
+          <td>🐻 약세장 (12M -15%↓)</td>
+          <td class="mono" style="text-align:right">24</td>
+          <td class="mono ret-down" style="text-align:right">-0.9%</td>
+          <td class="mono" style="text-align:right">+3.5%</td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">42%</td>
+          <td class="mono" style="text-align:right">33%</td>
+        </tr><tr>
+          <td>↔️ 박스권 (12M -5~+5%)</td>
+          <td class="mono" style="text-align:right">46</td>
+          <td class="mono ret-down" style="text-align:right">-2.9%</td>
+          <td class="mono" style="text-align:right">+4.4%</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">59%</td>
+          <td class="mono" style="text-align:right">39%</td>
+        </tr><tr>
+          <td>🔄 회복/조정</td>
+          <td class="mono" style="text-align:right">179</td>
+          <td class="mono ret-up" style="text-align:right">+0.8%</td>
+          <td class="mono" style="text-align:right">+5.1%</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">52%</td>
+          <td class="mono" style="text-align:right">32%</td>
+        </tr><tr>
+          <td>불명</td>
+          <td class="mono" style="text-align:right">1</td>
+          <td class="mono ret-down" style="text-align:right">-40.5%</td>
+          <td class="mono" style="text-align:right">-13.7%</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">100%</td>
+          <td class="mono" style="text-align:right">100%</td>
+        </tr>
+  </table>
+</div>
+
+<div class="card">
+  <h2>📅 연도별 시그널 정확도</h2>
+  <p class="desc">매년 시그널이 어떻게 작동했나? 차이가 크다면 시기별 적응 룰 필요.</p>
+  <table>
+    <tr>
+      <th>연도</th>
+      <th style="text-align:right">시그널 수</th>
+      <th style="text-align:right">30일 평균</th>
+      <th style="text-align:right">60일 평균</th>
+      <th style="text-align:right">적중률</th>
+      <th style="text-align:right">큰적중률</th>
+    </tr>
+    <tr>
+          <td>2015</td>
+          <td class="mono" style="text-align:right">10</td>
+          <td class="mono ret-up" style="text-align:right">+8.6%</td>
+          <td class="mono" style="text-align:right">+18.5%</td>
+          <td class="mono ret-up" style="text-align:right">30%</td>
+          <td class="mono" style="text-align:right">10%</td>
+        </tr><tr>
+          <td>2016</td>
+          <td class="mono" style="text-align:right">24</td>
+          <td class="mono ret-down" style="text-align:right">-8.0%</td>
+          <td class="mono" style="text-align:right">-7.6%</td>
+          <td class="mono ret-down" style="text-align:right">88%</td>
+          <td class="mono" style="text-align:right">46%</td>
+        </tr><tr>
+          <td>2017</td>
+          <td class="mono" style="text-align:right">28</td>
+          <td class="mono ret-down" style="text-align:right">-1.2%</td>
+          <td class="mono" style="text-align:right">-0.9%</td>
+          <td class="mono ret-down" style="text-align:right">50%</td>
+          <td class="mono" style="text-align:right">36%</td>
+        </tr><tr>
+          <td>2018</td>
+          <td class="mono" style="text-align:right">25</td>
+          <td class="mono ret-down" style="text-align:right">-5.6%</td>
+          <td class="mono" style="text-align:right">-16.4%</td>
+          <td class="mono ret-down" style="text-align:right">76%</td>
+          <td class="mono" style="text-align:right">68%</td>
+        </tr><tr>
+          <td>2019</td>
+          <td class="mono" style="text-align:right">26</td>
+          <td class="mono ret-down" style="text-align:right">-10.9%</td>
+          <td class="mono" style="text-align:right">-12.5%</td>
+          <td class="mono ret-down" style="text-align:right">73%</td>
+          <td class="mono" style="text-align:right">54%</td>
+        </tr><tr>
+          <td>2020</td>
+          <td class="mono" style="text-align:right">41</td>
+          <td class="mono ret-up" style="text-align:right">+8.0%</td>
+          <td class="mono" style="text-align:right">+31.0%</td>
+          <td class="mono ret-up" style="text-align:right">37%</td>
+          <td class="mono" style="text-align:right">20%</td>
+        </tr><tr>
+          <td>2021</td>
+          <td class="mono" style="text-align:right">39</td>
+          <td class="mono ret-down" style="text-align:right">-2.4%</td>
+          <td class="mono" style="text-align:right">+0.0%</td>
+          <td class="mono ret-down" style="text-align:right">56%</td>
+          <td class="mono" style="text-align:right">33%</td>
+        </tr><tr>
+          <td>2022</td>
+          <td class="mono" style="text-align:right">18</td>
+          <td class="mono ret-down" style="text-align:right">-10.4%</td>
+          <td class="mono" style="text-align:right">-8.0%</td>
+          <td class="mono ret-down" style="text-align:right">61%</td>
+          <td class="mono" style="text-align:right">56%</td>
+        </tr><tr>
+          <td>2023</td>
+          <td class="mono" style="text-align:right">26</td>
+          <td class="mono ret-down" style="text-align:right">-6.6%</td>
+          <td class="mono" style="text-align:right">-8.0%</td>
+          <td class="mono ret-down" style="text-align:right">65%</td>
+          <td class="mono" style="text-align:right">46%</td>
+        </tr><tr>
+          <td>2024</td>
+          <td class="mono" style="text-align:right">54</td>
+          <td class="mono ret-up" style="text-align:right">+0.6%</td>
+          <td class="mono" style="text-align:right">+7.9%</td>
+          <td class="mono ret-up" style="text-align:right">44%</td>
+          <td class="mono" style="text-align:right">24%</td>
+        </tr><tr>
+          <td>2025</td>
+          <td class="mono" style="text-align:right">60</td>
+          <td class="mono ret-up" style="text-align:right">+7.2%</td>
+          <td class="mono" style="text-align:right">+16.8%</td>
+          <td class="mono ret-up" style="text-align:right">35%</td>
+          <td class="mono" style="text-align:right">25%</td>
+        </tr><tr>
+          <td>2026</td>
+          <td class="mono" style="text-align:right">24</td>
+          <td class="mono ret-up" style="text-align:right">+32.6%</td>
+          <td class="mono" style="text-align:right">+16.2%</td>
+          <td class="mono ret-up" style="text-align:right">38%</td>
+          <td class="mono" style="text-align:right">25%</td>
+        </tr>
+  </table>
+</div>
+
+<div class="card">
+  <h2>📆 반기별 (최근 12개)</h2>
+  <table>
+    <tr>
+      <th>시기</th>
+      <th style="text-align:right">시그널 수</th>
+      <th style="text-align:right">30일 평균</th>
+      <th style="text-align:right">적중률</th>
+      <th>Regime 분포</th>
+    </tr>
+    <tr>
+          <td>2020-H2</td>
+          <td class="mono" style="text-align:right">12</td>
+          <td class="mono ret-up" style="text-align:right">+12.5%</td>
+          <td class="mono ret-down" style="text-align:right">50%</td>
+          <td style="font-size:0.78em">bull:9 transition:2 sideways:1</td>
+        </tr><tr>
+          <td>2021-H1</td>
+          <td class="mono" style="text-align:right">21</td>
+          <td class="mono ret-down" style="text-align:right">-1.0%</td>
+          <td class="mono ret-up" style="text-align:right">38%</td>
+          <td style="font-size:0.78em">bull:21</td>
+        </tr><tr>
+          <td>2021-H2</td>
+          <td class="mono" style="text-align:right">18</td>
+          <td class="mono ret-down" style="text-align:right">-4.1%</td>
+          <td class="mono ret-down" style="text-align:right">78%</td>
+          <td style="font-size:0.78em">bull:18</td>
+        </tr><tr>
+          <td>2022-H1</td>
+          <td class="mono" style="text-align:right">10</td>
+          <td class="mono ret-down" style="text-align:right">-11.4%</td>
+          <td class="mono ret-down" style="text-align:right">60%</td>
+          <td style="font-size:0.78em">transition:7 bear:2 unknown:1</td>
+        </tr><tr>
+          <td>2022-H2</td>
+          <td class="mono" style="text-align:right">8</td>
+          <td class="mono ret-down" style="text-align:right">-9.1%</td>
+          <td class="mono ret-down" style="text-align:right">62%</td>
+          <td style="font-size:0.78em">bear:8</td>
+        </tr><tr>
+          <td>2023-H1</td>
+          <td class="mono" style="text-align:right">16</td>
+          <td class="mono ret-down" style="text-align:right">-3.8%</td>
+          <td class="mono ret-down" style="text-align:right">62%</td>
+          <td style="font-size:0.78em">bear:5 transition:9 sideways:2</td>
+        </tr><tr>
+          <td>2023-H2</td>
+          <td class="mono" style="text-align:right">10</td>
+          <td class="mono ret-down" style="text-align:right">-11.0%</td>
+          <td class="mono ret-down" style="text-align:right">70%</td>
+          <td style="font-size:0.78em">transition:6 sideways:4</td>
+        </tr><tr>
+          <td>2024-H1</td>
+          <td class="mono" style="text-align:right">29</td>
+          <td class="mono ret-down" style="text-align:right">-1.1%</td>
+          <td class="mono ret-down" style="text-align:right">59%</td>
+          <td style="font-size:0.78em">transition:24 sideways:1 bull:4</td>
+        </tr><tr>
+          <td>2024-H2</td>
+          <td class="mono" style="text-align:right">25</td>
+          <td class="mono ret-up" style="text-align:right">+2.4%</td>
+          <td class="mono ret-up" style="text-align:right">28%</td>
+          <td style="font-size:0.78em">sideways:8 transition:17</td>
+        </tr><tr>
+          <td>2025-H1</td>
+          <td class="mono" style="text-align:right">28</td>
+          <td class="mono ret-up" style="text-align:right">+9.8%</td>
+          <td class="mono ret-up" style="text-align:right">32%</td>
+          <td style="font-size:0.78em">transition:21 sideways:7</td>
+        </tr><tr>
+          <td>2025-H2</td>
+          <td class="mono" style="text-align:right">32</td>
+          <td class="mono ret-up" style="text-align:right">+4.9%</td>
+          <td class="mono ret-up" style="text-align:right">38%</td>
+          <td style="font-size:0.78em">bull:22 transition:10</td>
+        </tr><tr>
+          <td>2026-H1</td>
+          <td class="mono" style="text-align:right">24</td>
+          <td class="mono ret-up" style="text-align:right">+32.6%</td>
+          <td class="mono ret-up" style="text-align:right">38%</td>
+          <td style="font-size:0.78em">bull:24</td>
+        </tr>
+  </table>
+</div>
+
+<div class="card">
+  <h2>해석</h2>
+  <div class="callout">
+    <b>이 분석이 보여주는 것:</b><br>
+    • Regime별 시그널 정확도 차이가 크면 → <b>시장 환경별 적응 룰 필요</b><br>
+    • 강세장에서 적중률 낮음 + 약세장에서 적중률 높음 → 우리 가설 입증<br>
+    • 연도별 변화 큼 → 한 가지 임계값으로 부족<br>
+    <br>
+    <b>활용:</b><br>
+    1. 약세장 regime일 때 → 시그널 임계값 낮추기 (3 → 2)<br>
+    2. 강세장 regime일 때 → 시그널 임계값 올리기 (3 → 5)<br>
+    3. 시기별 자동 적응으로 false signal 감소
+  </div>
+</div>
+
+</div></body></html>

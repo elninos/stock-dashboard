@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
-"""Fetch current stock prices with auto-discovery of new stocks via Naver Search API."""
+"""Fetch current stock prices via KIS API.
+
+Stock discovery (신규 종목 매핑)은 Naver 검색 그대로 사용 — 가격 조회만 KIS API로 교체.
+"""
 import os
+import sys
 import time
 from urllib.parse import quote
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, BASE_DIR)
 
 from config import (
     TRANSACTIONS_FILE, PRICES_FILE, STOCK_MAP_FILE,
@@ -12,9 +17,43 @@ from config import (
 )
 from file_io import load_json, save_json, now_kst
 from http_client import http_get_json
+from signals.kis_api import get_client, rate_limit
 
 # Stocks to skip (delisted, liquidated, negligible)
 SKIP_STOCKS = {"", "Unknown"}
+
+# nation + market → KIS 해외주식 거래소 코드 (EXCD)
+def _resolve_excd(nation: str, market: str = "") -> str:
+    """nation/market → KIS EXCD 매핑.
+
+    USA: 나스닥→NAS, 뉴욕→NYS, AMEX→AMS (기본 NAS)
+    JPN: TSE / HKG: HKS / CHN: 상해→SHS, 심천→SZS
+    """
+    m = market or ""
+    if nation == "USA":
+        if "나스닥" in m or "NASDAQ" in m.upper():
+            return "NAS"
+        if "뉴욕" in m or "NYSE" in m.upper():
+            return "NYS"
+        if "AMEX" in m.upper() or "아멕스" in m:
+            return "AMS"
+        return "NAS"
+    if nation == "JPN":
+        return "TSE"
+    if nation == "HKG":
+        return "HKS"
+    if nation == "CHN":
+        if "심천" in m or "SHENZHEN" in m.upper():
+            return "SZS"
+        return "SHS"
+    return ""
+
+
+def _strip_suffix(code: str) -> str:
+    """'2809.HK', '601012.SS' 등에서 거래소 suffix 제거."""
+    if "." in code:
+        return code.split(".")[0]
+    return code
 
 
 def load_stock_map():
@@ -63,39 +102,61 @@ def search_naver(name):
     }
 
 
-def fetch_naver_kr_price(code):
-    """Fetch Korean stock price from Naver Finance mobile API."""
-    url = f"https://m.stock.naver.com/api/stock/{code}/basic"
-    data = http_get_json(url, timeout=TIMEOUT_SHORT)
-    if not data:
-        return None
-    price_str = data.get("closePrice", "0").replace(",", "")
-    price = int(float(price_str))
-    return price if price > 0 else None
-
-
-def fetch_naver_foreign_price(code):
-    """Fetch foreign stock price from Naver Finance."""
-    url = f"https://m.stock.naver.com/api/stock/{code}/basic"
-    data = http_get_json(url, timeout=TIMEOUT_SHORT)
-    if not data:
-        return None
-    price_str = data.get("closePrice", "0").replace(",", "")
-    price = float(price_str)
-    return price if price > 0 else None
-
-
-def fetch_yahoo_price(ticker):
-    """Fetch stock price from Yahoo Finance API (fallback)."""
-    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker}?interval=1d&range=1d"
-    data = http_get_json(url, timeout=TIMEOUT_MEDIUM)
-    if not data:
-        return None
+def fetch_kis_kr_price(code):
+    """KIS API FHKST01010100 — 한국주식 현재가 (원)."""
+    rate_limit()
     try:
-        price = data["chart"]["result"][0]["meta"]["regularMarketPrice"]
-        return round(price, 2)
+        res = get_client().get(
+            "/uapi/domestic-stock/v1/quotations/inquire-price",
+            "FHKST01010100",
+            {"FID_COND_MRKT_DIV_CODE": "J", "FID_INPUT_ISCD": code},
+        )
     except Exception:
         return None
+    if res.get("rt_cd") != "0":
+        return None
+    out = res.get("output") or {}
+    try:
+        price = int(float(out.get("stck_prpr", "0")))
+    except (ValueError, TypeError):
+        return None
+    return price if price > 0 else None
+
+
+def fetch_kis_foreign_price(code, nation, market=""):
+    """KIS API HHDFS76200200 — 해외주식 현재가 + 환율.
+
+    Returns:
+        (price, fx_rate) — price는 현지 통화 기준, fx_rate는 KRW/현지통화.
+        실패 시 (None, None).
+    """
+    excd = _resolve_excd(nation, market)
+    if not excd:
+        return None, None
+    symb = _strip_suffix(code)
+    rate_limit()
+    try:
+        res = get_client().get(
+            "/uapi/overseas-price/v1/quotations/price-detail",
+            "HHDFS76200200",
+            {"AUTH": "", "EXCD": excd, "SYMB": symb},
+        )
+    except Exception:
+        return None, None
+    if res.get("rt_cd") != "0":
+        return None, None
+    out = res.get("output") or {}
+    try:
+        price = float(out.get("last", "0"))
+    except (ValueError, TypeError):
+        return None, None
+    if price <= 0:
+        return None, None
+    try:
+        fx = float(out.get("t_rate", "0")) or None
+    except (ValueError, TypeError):
+        fx = None
+    return round(price, 2), fx
 
 
 def main():
@@ -140,34 +201,25 @@ def main():
 
         code = info["code"]
         nation = info.get("nation", "")
+        market = info.get("market", "")
         price = None
+        fx = None
 
         if nation == "KOR":
-            # Korean stock: Naver KR API
-            price = fetch_naver_kr_price(code)
+            price = fetch_kis_kr_price(code)
         else:
-            # Foreign stock: try Naver first, then Yahoo fallback
-            price = fetch_naver_foreign_price(code)
-            if price is None:
-                # Yahoo fallback: add exchange suffix by nation
-                yahoo_suffix = {
-                    "JPN": ".T",    # Tokyo
-                    "CHN": ".SS",   # Shanghai
-                    "HKG": ".HK",   # Hong Kong
-                }
-                suffix = yahoo_suffix.get(nation, "")
-                yahoo_ticker = code + suffix if suffix and not code.endswith(suffix) else code
-                price = fetch_yahoo_price(yahoo_ticker)
+            price, fx = fetch_kis_foreign_price(code, nation, market)
 
         if price:
-            market = info.get("market", "")
-            prices[name] = {"code": code, "price": price, "nation": nation, "market": market}
+            entry = {"code": code, "price": price, "nation": nation, "market": market}
+            if fx:
+                entry["fx_rate"] = fx
+            prices[name] = entry
             print(f"  OK {name} ({code}): {price:,}")
             updated += 1
         else:
             failed.append(name)
             print(f"  FAIL {name} ({code})")
-        time.sleep(0.2)
 
     # Save with timestamp
     prices["_updated_at"] = now_kst()

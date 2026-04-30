@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<title>보유 종목 종합 진단</title>
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+<div class="container">
+
+<div class="nav">
+  <a href="index.html">📊 전체</a>
+  <a href="holdings_action.html">행동 권고</a>
+  <a href="holdings_total.html" class="active">🎯 종합 진단</a>
+</div>
+
+<h1>🎯 보유 종목 종합 진단 (KIS + 브리핑 + 뉴스)</h1>
+<p class="subtitle">수급 (40%) + 패턴 (30%) + sentiment (20%) + 뉴스 (10%) — 멀티소스 통합</p>
+
+<div class="card">
+  <div class="callout">
+    <b>통합 데이터 소스:</b><br>
+    • <b>KIS API</b>: 거래원/투자자별 매매 (실시간 수급)<br>
+    • <b>패턴 분류</b>: 거래량/변동성/추세 → 분배/펌프/잔여 자동 구분<br>
+    • <b>브리핑</b> (briefing_summary.json): 텔레그램 9채널 + 블로그 5개 sentiment<br>
+    • <b>뉴스</b> (stock_news.json): 종목별 호재/악재<br>
+    • <b>DART 공시</b>: 임원 매수/매도, 5%주주 변동, 자사주 취득/처분 (180일)<br>
+    <br>
+    <b>특징:</b><br>
+    • 수급 vs 펀더멘털 충돌 시 (예: SK하이닉스) 둘 다 표시 — "관찰" 등급<br>
+    • 패턴이 "펌프"면 트레일링 스탑 우선<br>
+    • "잔여" 패턴 + 매수 시그널 → 저점 매수 후보
+  </div>
+</div>
+
+<div class="card" style="margin-bottom:16px">
+          <h2>🚨 즉시 검토 (7종목)</h2>
+          <table>
+            <tr>
+              <th>종목</th>
+              <th style="text-align:right">평가이익</th>
+              <th style="text-align:center">패턴</th>
+              <th style="text-align:center">점수</th>
+              <th>권고 + 시그널 + 브리핑</th>
+            </tr>
+            <tr>
+              <td><b>대한광통신</b><br><span style="color:#666;font-size:0.78em">010170</span></td>
+              <td class="mono ret-down" style="text-align:right">+411.7%<br>
+                <span style="font-size:0.78em;color:#888">+9,266만</span></td>
+              <td style="text-align:center">분배</td>
+              <td class="mono" style="text-align:center">📈8<br>📉26</td>
+              <td>
+                <div style="font-weight:600;color:#ef4444;margin-bottom:4px">🚨 1/3 매도</div>
+                <div style="color:#aaa;font-size:0.85em">분배 강함 + 큰 이익</div>
+                <div style="color:#10b981;font-size:0.78em;margin-top:6px">  • DART 임원매수 2건 (3,476,366주, 매도의 1.6배)<br>  • DART 5%주주 증가 2건<br>  • 뉴스 호재</div>
+                <div style="color:#ef4444;font-size:0.78em;margin-top:4px">  • 스마트 20일 -1034억<br>  • 스마트 5일 -668억<br>  • 분배 (개미 +656억 vs 스마트 -668억)</div>
+                
+                <div style='font-size:0.78em;color:#ef4444;margin-top:6px;border-left:2px solid #ef4444;padding-left:8px'>🏛️ DART 180일: 임매도 4건/2,171,172주 / 임매수 2건/3,476,366주 / 5%↓ 2건 / 5%↑ 2건 → 점수 +6</div>
+              </td>
+            </tr><tr>
+              <td><b>파마리서치</b><br><span style="color:#666;font-size:0.78em">214450</span></td>
+              <td class="mono ret-down" style="text-align:right">+363.2%<br>
+                <span style="font-size:0.78em;color:#888">+25,101만</span></td>
+              <td style="text-align:center">분배</td>
+              <td class="mono" style="text-align:center">📈1<br>📉22</td>
+              <td>
+                <div style="font-weight:600;color:#ef4444;margin-bottom:4px">🚨 1/3 매도</div>
+                <div style="color:#aaa;font-size:0.85em">분배 강함 + 큰 이익</div>
+                <div style="color:#10b981;font-size:0.78em;margin-top:6px">  • DART 5%주주 증가 1건</div>
+                <div style="color:#ef4444;font-size:0.78em;margin-top:4px">  • 스마트 20일 -328억<br>  • 스마트 5일 -180억<br>  • 분배 (개미 +170억 vs 스마트 -180억)</div>
+                
+                <div style='font-size:0.78em;color:#f59e0b;margin-top:6px;border-left:2px solid #f59e0b;padding-left:8px'>🏛️ DART 180일: 임매도 1건/480주 / 임매수 3건/562주 / 5%↓ 2건 / 5%↑ 1건 → 점수 +0</div>
+              </td>
+            </tr><tr>
+              <td><b>NAVER</b><br><span style="color:#666;font-size:0.78em">035420</span></td>
+              <td class="mono ret-up" style="text-align:right">-11.7%<br>
+                <span style="font-size:0.78em;color:#888">-437만</span></td>
+              <td style="text-align:center">분배</td>
+              <td class="mono" style="text-align:center">📈6<br>📉20</td>
+              <td>
+                <div style="font-weight:600;color:#ef4444;margin-bottom:4px">⛔ 손절 검토</div>
+                <div style="color:#aaa;font-size:0.85em">손실 확대 + 매도 시그널</div>
+                <div style="color:#10b981;font-size:0.78em;margin-top:6px">  • DART 임원매수 62건 (66,401주, 매도의 4.2배)</div>
+                <div style="color:#ef4444;font-size:0.78em;margin-top:4px">  • 스마트 20일 -4353억<br>  • 스마트 5일 -1755억<br>  • 분배 (개미 +1717억 vs 스마트 -1755억)</div>
+                
+                <div style='font-size:0.78em;color:#f59e0b;margin-top:6px;border-left:2px solid #f59e0b;padding-left:8px'>🏛️ DART 180일: 임매도 15건/15,796주 / 임매수 62건/66,401주 → 점수 +0</div>
+              </td>
+            </tr><tr>
+              <td><b>코아스템켐온</b><br><span style="color:#666;font-size:0.78em">166480</span></td>
+              <td class="mono ret-up" style="text-align:right">-85.5%<br>
+                <span style="font-size:0.78em;color:#888">-1,124만</span></td>
+              <td style="text-align:center">분배</td>
+              <td class="mono" style="text-align:center">📈9<br>📉16</td>
+              <td>
+                <div style="font-weight:600;color:#ef4444;margin-bottom:4px">⛔ 손절 검토</div>
+                <div style="color:#aaa;font-size:0.85em">손실 확대 + 매도 시그널</div>
+                <div style="color:#10b981;font-size:0.78em;margin-top:6px">  • DART 임원매수 7건 (3,060,784주, 매도의 16.1배)<br>  • DART 5%주주 증가 3건</div>
+                <div style="color:#ef4444;font-size:0.78em;margin-top:4px">  • 패턴: 분배 (vol 1.1x)<br>  • DART 임원매도 3건 (189,801주)<br>  • DART 5%주주 감소 2건</div>
+                
+                <div style='font-size:0.78em;color:#f59e0b;margin-top:6px;border-left:2px solid #f59e0b;padding-left:8px'>🏛️ DART 180일: 임매도 3건/189,801주 / 임매수 7건/3,060,784주 / 5%↓ 2건 / 5%↑ 3건 / 자사처분 1건 → 점수 +0</div>
+              </td>
+            </tr><tr>
+              <td><b>에이프로젠</b><br><span style="color:#666;font-size:0.78em">007460</span></td>
+              <td class="mono ret-up" style="text-align:right">-95.4%<br>
+                <span style="font-size:0.78em;color:#888">-345만</span></td>
+              <td style="text-align:center">분배</td>
+              <td class="mono" style="text-align:center">📈2<br>📉15</td>
+              <td>
+                <div style="font-weight:600;color:#ef4444;margin-bottom:4px">⛔ 손절 검토</div>
+                <div style="color:#aaa;font-size:0.85em">손실 확대 + 매도 시그널</div>
+                <div style="color:#10b981;font-size:0.78em;margin-top:6px">  • DART 5%주주 증가 2건</div>
+                <div style="color:#ef4444;font-size:0.78em;margin-top:4px">  • 패턴: 분배 (vol 0.0x)<br>  • DART 임원매도 4건 (104,327,790주)<br>  • DART 5%주주 감소 4건</div>
+                
+                <div style='font-size:0.78em;color:#ef4444;margin-top:6px;border-left:2px solid #ef4444;padding-left:8px'>🏛️ DART 180일: 임매도 4건/104,327,790주 / 임매수 1건/468,934주 / 5%↓ 4건 / 5%↑ 2건 → 점수 +11</div>
+              </td>
+            </tr><tr>
+              <td><b>RF머트리얼즈</b><br><span style="color:#666;font-size:0.78em">327260</span></td>
+              <td class="mono ret-down" style="text-align:right">+109.2%<br>
+                <span style="font-size:0.78em;color:#888">+4,507만</span></td>
+              <td style="text-align:center">분배</td>
+              <td class="mono" style="text-align:center">📈1<br>📉15</td>
+              <td>
+                <div style="font-weight:600;color:#ef4444;margin-bottom:4px">🚨 1/3 매도</div>
+                <div style="color:#aaa;font-size:0.85em">분배 강함 + 큰 이익</div>
+                <div style="color:#10b981;font-size:0.78em;margin-top:6px">  • DART 5%주주 증가 1건</div>
+                <div style="color:#ef4444;font-size:0.78em;margin-top:4px">  • 패턴: 분배 (vol 0.9x)<br>  • DART 임원매도 6건 (52,714주)<br>  • DART 5%주주 감소 2건</div>
+                
+                <div style='font-size:0.78em;color:#ef4444;margin-top:6px;border-left:2px solid #ef4444;padding-left:8px'>🏛️ DART 180일: 임매도 6건/52,714주 / 임매수 2건/7,504주 / 5%↓ 2건 / 5%↑ 1건 → 점수 +10</div>
+              </td>
+            </tr><tr>
+              <td><b>토모큐브</b><br><span style="color:#666;font-size:0.78em">475960</span></td>
+              <td class="mono ret-down" style="text-align:right">+103.1%<br>
+                <span style="font-size:0.78em;color:#888">+2,619만</span></td>
+              <td style="text-align:center">분배</td>
+              <td class="mono" style="text-align:center">📈0<br>📉9</td>
+              <td>
+                <div style="font-weight:600;color:#ef4444;margin-bottom:4px">🚨 1/3 매도</div>
+                <div style="color:#aaa;font-size:0.85em">분배 강함 + 큰 이익</div>
+                
+                <div style="color:#ef4444;font-size:0.78em;margin-top:4px">  • 스마트 20일 -72억<br>  • 패턴: 분배 (vol 0.6x)<br>  • DART 임원매도 1건 (18,000주)</div>
+                
+                <div style='font-size:0.78em;color:#f59e0b;margin-top:6px;border-left:2px solid #f59e0b;padding-left:8px'>🏛️ DART 180일: 임매도 1건/18,000주 / 임매수 2건/26,000주 / 5%↓ 1건 → 점수 +1</div>
+              </td>
+            </tr>
+          </table>
+        </div><div class="card" style="margin-bottom:16px">
+          <h2>🟡 주의 (7종목)</h2>
+          <table>
+            <tr>
+              <th>종목</th>
+              <th style="text-align:right">평가이익</th>
+              <th style="text-align:center">패턴</th>
+              <th style="text-align:center">점수</th>
+              <th>권고 + 시그널 + 브리핑</th>
+            </tr>
+            <tr>
+              <td><b>보로노이</b><br><span style="color:#666;font-size:0.78em">310210</span></td>
+              <td class="mono ret-down" style="text-align:right">+31.6%<br>
+                <span style="font-size:0.78em;color:#888">+596만</span></td>
+              <td style="text-align:center">분배</td>
+              <td class="mono" style="text-align:center">📈2<br>📉29</td>
+              <td>
+                <div style="font-weight:600;color:#f59e0b;margin-bottom:4px">🟡 모니터링</div>
+                <div style="color:#aaa;font-size:0.85em">약한 매도 우세</div>
+                <div style="color:#10b981;font-size:0.78em;margin-top:6px">  • 뉴스 호재</div>
+                <div style="color:#ef4444;font-size:0.78em;margin-top:4px">  • 스마트 20일 -938억<br>  • 스마트 5일 -179억<br>  • 분배 (개미 +206억 vs 스마트 -179억)</div>
+                
+                <div style='font-size:0.78em;color:#ef4444;margin-top:6px;border-left:2px solid #ef4444;padding-left:8px'>🏛️ DART 180일: 임매도 4건/11,800주 / 5%↓ 3건 / 자사처분 1건 → 점수 +21</div>
+              </td>
+            </tr><tr>
+              <td><b>SK하이닉스</b><br><span style="color:#666;font-size:0.78em">000660</span></td>
+              <td class="mono ret-down" style="text-align:right">+34.0%<br>
+                <span style="font-size:0.78em;color:#888">+196만</span></td>
+              <td style="text-align:center">분배</td>
+              <td class="mono" style="text-align:center">📈16<br>📉21</td>
+              <td>
+                <div style="font-weight:600;color:#f59e0b;margin-bottom:4px">🟡 모니터링</div>
+                <div style="color:#aaa;font-size:0.85em">약한 매도 우세</div>
+                <div style="color:#10b981;font-size:0.78em;margin-top:6px">  • 스마트 20일 +9297억 매수<br>  • 브리핑 daily: positive (7회, 2채널)<br>  • DART 임원매수 283건 (52,309주, 매도의 16.4배)</div>
+                <div style="color:#ef4444;font-size:0.78em;margin-top:4px">  • 스마트 5일 -5034억<br>  • 분배 (개미 +4855억 vs 스마트 -5034억)<br>  • 패턴: 분배 (vol 0.8x)</div>
+                <div style='font-size:0.78em;color:#aaa;margin-top:6px;border-left:2px solid #4fc3f7;padding-left:8px'>📰 daily: 골드만삭스 목표주가 180만원으로 기존 135만원 대비 33% 상향. DRAM ASP 1Q +102% QoQ, HBM 수요가 3년 생산 능력 초과로 공급자 우위 시장 고착화. 2026E EPS +39%, ROE 95% 전망.</div>
+                <div style='font-size:0.78em;color:#ef4444;margin-top:6px;border-left:2px solid #ef4444;padding-left:8px'>🏛️ DART 180일: 임매도 8건/3,190주 / 임매수 283건/52,309주 / 5%↓ 1건 / 5%↑ 1건 / 자사처분 4건 → 점수 +5</div>
+              </td>
+            </tr><tr>
+              <td><b>셀트리온</b><br><span style="color:#666;font-size:0.78em">068270</span></td>
+              <td class="mono ret-down" style="text-align:right">+2.4%<br>
+                <span style="font-size:0.78em;color:#888">+24만</span></td>
+              <td style="text-align:center">분배</td>
+              <td class="mono" style="text-align:center">📈14<br>📉20</td>
+              <td>
+                <div style="font-weight:600;color:#f59e0b;margin-bottom:4px">🟡 모니터링</div>
+                <div style="color:#aaa;font-size:0.85em">약한 매도 우세</div>
+                <div style="color:#10b981;font-size:0.78em;margin-top:6px">  • 스마트 20일 +1143억 매수<br>  • DART 임원매수 17건 (2,127,438주, 매도의 76.9배)<br>  • DART 5%주주 증가 4건</div>
+                <div style="color:#ef4444;font-size:0.78em;margin-top:4px">  • 🚨 분배 패턴: 개미 매수 20% ↔ 대형 매도 40%<br>  • ⚠️ 외국계 순매도 10,808주 (전체 거래량 5.7%)<br>  • 패턴: 분배 (vol 0.8x)</div>
+                
+                <div style='font-size:0.78em;color:#f59e0b;margin-top:6px;border-left:2px solid #f59e0b;padding-left:8px'>🏛️ DART 180일: 임매도 7건/27,667주 / 임매수 17건/2,127,438주 / 5%↓ 2건 / 5%↑ 4건 / 자사처분 1건 → 점수 +4</div>
+              </td>
+            </tr><tr>
+              <td><b>오스코텍</b><br><span style="color:#666;font-size:0.78em">039200</span></td>
+              <td class="mono ret-down" style="text-align:right">+9.3%<br>
+                <span style="font-size:0.78em;color:#888">+145만</span></td>
+              <td style="text-align:center">분배</td>
+              <td class="mono" style="text-align:center">📈5<br>📉16</td>
+              <td>
+                <div style="font-weight:600;color:#f59e0b;margin-bottom:4px">🟡 모니터링</div>
+                <div style="color:#aaa;font-size:0.85em">약한 매도 우세</div>
+                <div style="color:#10b981;font-size:0.78em;margin-top:6px">  • DART 임원매수 1건 (908주, 매도의 908.0배)<br>  • DART 5%주주 증가 3건</div>
+                <div style="color:#ef4444;font-size:0.78em;margin-top:4px">  • 스마트 5일 -139억<br>  • 분배 (개미 +110억 vs 스마트 -139억)<br>  • 패턴: 분배 (vol 0.8x)</div>
+                
+                <div style='font-size:0.78em;color:#f59e0b;margin-top:6px;border-left:2px solid #f59e0b;padding-left:8px'>🏛️ DART 180일: 임매수 1건/908주 / 5%↓ 3건 / 5%↑ 3건 → 점수 +1</div>
+              </td>
+            </tr><tr>
+              <td><b>코오롱티슈진</b><br><span style="color:#666;font-size:0.78em">950160</span></td>
+              <td class="mono ret-up" style="text-align:right">-2.2%<br>
+                <span style="font-size:0.78em;color:#888">-68만</span></td>
+              <td style="text-align:center">분배</td>
+              <td class="mono" style="text-align:center">📈3<br>📉14</td>
+              <td>
+                <div style="font-weight:600;color:#f59e0b;margin-bottom:4px">🟡 모니터링</div>
+                <div style="color:#aaa;font-size:0.85em">약한 매도 우세</div>
+                <div style="color:#10b981;font-size:0.78em;margin-top:6px">  • DART 임원매수 1건 (118,040주, 매도의 118040.0배)<br>  • DART 5%주주 증가 1건</div>
+                <div style="color:#ef4444;font-size:0.78em;margin-top:4px">  • 스마트 20일 -1258억<br>  • 스마트 5일 -306억<br>  • 분배 (개미 +305억 vs 스마트 -306억)</div>
+                
+                <div style='font-size:0.78em;color:#10b981;margin-top:6px;border-left:2px solid #10b981;padding-left:8px'>🏛️ DART 180일: 임매수 1건/118,040주 / 5%↑ 1건 → 점수 -4</div>
+              </td>
+            </tr><tr>
+              <td><b>필옵틱스</b><br><span style="color:#666;font-size:0.78em">161580</span></td>
+              <td class="mono ret-up" style="text-align:right">-0.5%<br>
+                <span style="font-size:0.78em;color:#888">-6만</span></td>
+              <td style="text-align:center">분배</td>
+              <td class="mono" style="text-align:center">📈6<br>📉11</td>
+              <td>
+                <div style="font-weight:600;color:#f59e0b;margin-bottom:4px">🟡 모니터링</div>
+                <div style="color:#aaa;font-size:0.85em">약한 매도 우세</div>
+                <div style="color:#10b981;font-size:0.78em;margin-top:6px">  • DART 임원매수 2건 (19,500주, 매도의 1.6배)<br>  • DART 5%주주 증가 2건</div>
+                <div style="color:#ef4444;font-size:0.78em;margin-top:4px">  • 패턴: 분배 (vol 1.2x)<br>  • DART 임원매도 5건 (12,000주)<br>  • DART 5%주주 감소 1건</div>
+                
+                <div style='font-size:0.78em;color:#ef4444;margin-top:6px;border-left:2px solid #ef4444;padding-left:8px'>🏛️ DART 180일: 임매도 5건/12,000주 / 임매수 2건/19,500주 / 5%↓ 1건 / 5%↑ 2건 → 점수 +5</div>
+              </td>
+            </tr><tr>
+              <td><b>콜마비앤에이치</b><br><span style="color:#666;font-size:0.78em">200130</span></td>
+              <td class="mono ret-down" style="text-align:right">+6.1%<br>
+                <span style="font-size:0.78em;color:#888">+24만</span></td>
+              <td style="text-align:center">분배</td>
+              <td class="mono" style="text-align:center">📈1<br>📉7</td>
+              <td>
+                <div style="font-weight:600;color:#f59e0b;margin-bottom:4px">🟡 모니터링</div>
+                <div style="color:#aaa;font-size:0.85em">약한 매도 우세</div>
+                <div style="color:#10b981;font-size:0.78em;margin-top:6px">  • DART 5%주주 증가 1건</div>
+                <div style="color:#ef4444;font-size:0.78em;margin-top:4px">  • ⚠️ 외국계 순매도 2,595주 (전체 거래량 5.1%)<br>  • 패턴: 분배 (vol 1.0x)<br>  • DART 임원매도 1건 (326,460주)</div>
+                
+                <div style='font-size:0.78em;color:#f59e0b;margin-top:6px;border-left:2px solid #f59e0b;padding-left:8px'>🏛️ DART 180일: 임매도 1건/326,460주 / 임매수 1건/326,460주 / 5%↑ 1건 → 점수 -2</div>
+              </td>
+            </tr>
+          </table>
+        </div><div class="card" style="margin-bottom:16px">
+          <h2>🟢 HOLD / 매수 후보 (1종목)</h2>
+          <table>
+            <tr>
+              <th>종목</th>
+              <th style="text-align:right">평가이익</th>
+              <th style="text-align:center">패턴</th>
+              <th style="text-align:center">점수</th>
+              <th>권고 + 시그널 + 브리핑</th>
+            </tr>
+            <tr>
+              <td><b>이오테크닉스</b><br><span style="color:#666;font-size:0.78em">039030</span></td>
+              <td class="mono ret-down" style="text-align:right">+136.2%<br>
+                <span style="font-size:0.78em;color:#888">+1,176만</span></td>
+              <td style="text-align:center">분배</td>
+              <td class="mono" style="text-align:center">📈10<br>📉7</td>
+              <td>
+                <div style="font-weight:600;color:#10b981;margin-bottom:4px">🟢 HOLD</div>
+                <div style="color:#aaa;font-size:0.85em">특이 시그널 없음</div>
+                <div style="color:#10b981;font-size:0.78em;margin-top:6px">  • 스마트 20일 +234억 매수<br>  • DART 5%주주 증가 6건<br>  • 뉴스 호재</div>
+                <div style="color:#ef4444;font-size:0.78em;margin-top:4px">  • ⚠️ 외국계 순매도 2,840주 (전체 거래량 10.1%)<br>  • 패턴: 분배 (vol 0.8x)<br>  • DART 5%주주 감소 1건</div>
+                
+                <div style='font-size:0.78em;color:#10b981;margin-top:6px;border-left:2px solid #10b981;padding-left:8px'>🏛️ DART 180일: 5%↓ 1건 / 5%↑ 6건 → 점수 -3</div>
+              </td>
+            </tr>
+          </table>
+        </div><div class="card" style="margin-bottom:16px">
+          <h2>⚪ 관찰 (4종목)</h2>
+          <table>
+            <tr>
+              <th>종목</th>
+              <th style="text-align:right">평가이익</th>
+              <th style="text-align:center">패턴</th>
+              <th style="text-align:center">점수</th>
+              <th>권고 + 시그널 + 브리핑</th>
+            </tr>
+            <tr>
+              <td><b>에이피알</b><br><span style="color:#666;font-size:0.78em">278470</span></td>
+              <td class="mono ret-down" style="text-align:right">+115.5%<br>
+                <span style="font-size:0.78em;color:#888">+1,233만</span></td>
+              <td style="text-align:center">분배</td>
+              <td class="mono" style="text-align:center">📈11<br>📉13</td>
+              <td>
+                <div style="font-weight:600;color:#9ca3af;margin-bottom:4px">⚪ 관찰</div>
+                <div style="color:#aaa;font-size:0.85em">시그널 혼재 (수급 vs 펀더멘털)</div>
+                <div style="color:#10b981;font-size:0.78em;margin-top:6px">  • 스마트 20일 +2255억 매수<br>  • DART 임원매수 3건 (7,990주, 매도의 1.5배)<br>  • DART 5%주주 증가 1건</div>
+                <div style="color:#ef4444;font-size:0.78em;margin-top:4px">  • ⚠️ 외국계 순매도 8,428주 (전체 거래량 14.8%)<br>  • 패턴: 분배 (vol 0.6x)<br>  • DART 임원매도 3건 (5,200주)</div>
+                
+                <div style='font-size:0.78em;color:#f59e0b;margin-top:6px;border-left:2px solid #f59e0b;padding-left:8px'>🏛️ DART 180일: 임매도 3건/5,200주 / 임매수 3건/7,990주 / 5%↓ 1건 / 5%↑ 1건 → 점수 +1</div>
+              </td>
+            </tr><tr>
+              <td><b>두산</b><br><span style="color:#666;font-size:0.78em">000150</span></td>
+              <td class="mono ret-down" style="text-align:right">+192.0%<br>
+                <span style="font-size:0.78em;color:#888">+7,880만</span></td>
+              <td style="text-align:center">분배</td>
+              <td class="mono" style="text-align:center">📈11<br>📉10</td>
+              <td>
+                <div style="font-weight:600;color:#9ca3af;margin-bottom:4px">⚪ 관찰</div>
+                <div style="color:#aaa;font-size:0.85em">시그널 혼재 (수급 vs 펀더멘털)</div>
+                <div style="color:#10b981;font-size:0.78em;margin-top:6px">  • 스마트 20일 +1042억 매수<br>  • DART 임원매수 25건 (1,674,664주, 매도의 205.2배)<br>  • DART 5%주주 증가 1건</div>
+                <div style="color:#ef4444;font-size:0.78em;margin-top:4px">  • 패턴: 분배 (vol 0.8x)<br>  • DART 임원매도 1건 (8,160주)<br>  • DART 5%주주 감소 1건</div>
+                
+                <div style='font-size:0.78em;color:#10b981;margin-top:6px;border-left:2px solid #10b981;padding-left:8px'>🏛️ DART 180일: 임매도 1건/8,160주 / 임매수 25건/1,674,664주 / 5%↓ 1건 / 5%↑ 1건 / 자사처분 1건 → 점수 -3</div>
+              </td>
+            </tr><tr>
+              <td><b>리노공업</b><br><span style="color:#666;font-size:0.78em">058470</span></td>
+              <td class="mono ret-down" style="text-align:right">+113.8%<br>
+                <span style="font-size:0.78em;color:#888">+125만</span></td>
+              <td style="text-align:center">분배</td>
+              <td class="mono" style="text-align:center">📈8<br>📉9</td>
+              <td>
+                <div style="font-weight:600;color:#9ca3af;margin-bottom:4px">⚪ 관찰</div>
+                <div style="color:#aaa;font-size:0.85em">시그널 혼재 (수급 vs 펀더멘털)</div>
+                <div style="color:#10b981;font-size:0.78em;margin-top:6px">  • 스마트 20일 +466억 매수<br>  • DART 5%주주 증가 6건</div>
+                <div style="color:#ef4444;font-size:0.78em;margin-top:4px">  • 🚨 분배 패턴: 개미 매수 22% ↔ 대형 매도 31%<br>  • ⚠️ 외국계 순매도 386,364주 (전체 거래량 21.6%)<br>  • 패턴: 분배 (vol 1.4x)</div>
+                
+                <div style='font-size:0.78em;color:#10b981;margin-top:6px;border-left:2px solid #10b981;padding-left:8px'>🏛️ DART 180일: 5%↑ 6건 → 점수 -6</div>
+              </td>
+            </tr><tr>
+              <td><b>파크시스템스</b><br><span style="color:#666;font-size:0.78em">140860</span></td>
+              <td class="mono ret-down" style="text-align:right">+33.1%<br>
+                <span style="font-size:0.78em;color:#888">+1,064만</span></td>
+              <td style="text-align:center">분배</td>
+              <td class="mono" style="text-align:center">📈6<br>📉8</td>
+              <td>
+                <div style="font-weight:600;color:#9ca3af;margin-bottom:4px">⚪ 관찰</div>
+                <div style="color:#aaa;font-size:0.85em">시그널 혼재 (수급 vs 펀더멘털)</div>
+                <div style="color:#10b981;font-size:0.78em;margin-top:6px">  • 스마트 5일 +131억<br>  • DART 임원매수 1건 (40주, 매도의 40.0배)<br>  • DART 5%주주 증가 2건</div>
+                <div style="color:#ef4444;font-size:0.78em;margin-top:4px">  • ⚠️ 외국계 순매도 2,151주 (전체 거래량 19.6%)<br>  • 패턴: 분배 (vol 0.9x)<br>  • DART 자사주 처분 1건</div>
+                
+                <div style='font-size:0.78em;color:#f59e0b;margin-top:6px;border-left:2px solid #f59e0b;padding-left:8px'>🏛️ DART 180일: 임매수 1건/40주 / 5%↑ 2건 / 자사처분 1건 → 점수 -2</div>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+</div></body></html>

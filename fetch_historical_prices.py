@@ -4,9 +4,9 @@
 
 기준일: 전월말, 전분기말, 전년말(YTD), 1년 전(T12M)
 각 기준일에 보유 중이던 종목의 종가를 조회해서 포트폴리오 가치를 계산한다.
-- 한국주식: pykrx
-- 해외주식: yfinance
-- 환율: yfinance (KRW=X 등)
+- 한국주식: KRX Open API
+- 해외주식: KIS HHDFS76240000 (해외주식 기간별시세)
+- 환율: KIS HHDFS76200200 응답의 t_rate (현재 환율 — 역사 환율 미제공)
 
 Output: historical_portfolio_values.json
 {
@@ -26,22 +26,26 @@ from collections import defaultdict
 from datetime import datetime, timedelta, date
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, BASE_DIR)
 
 from config import TRANSACTIONS_FILE as TXS_FILE, PRICES_FILE, HIST_PORTFOLIO_FILE as OUTPUT_FILE
 from file_io import load_json, save_json
+from signals.kis_api import get_client, rate_limit
+from signals.krx_open_api import get_kospi_daily, get_kosdaq_daily
+from fetch_prices import _resolve_excd, _strip_suffix
 
-# 환율 코드 (→ KRW)
-FX_TICKERS = {
-    "USD": "KRW=X",
-    "JPY": "JPYKRW=X",
-    "HKD": "HKDKRW=X",
-    "CNY": "CNYKRW=X",
-}
 NATION_CURRENCY = {
     "KOR": "KRW", "USA": "USD", "JPN": "JPY",
     "HKG": "HKD", "CHN": "CNY",
 }
-YAHOO_SUFFIX = {"JPN": ".T", "CHN": ".SS", "HKG": ".HK", "USA": ""}
+
+# 통화별 KIS 환율 조회용 sample 티커 (각 거래소에서 활동적인 티커 1개)
+FX_SAMPLE = {
+    "USD": ("AAPL", "USA", "나스닥"),
+    "JPY": ("7203", "JPN", "도쿄"),       # Toyota
+    "HKD": ("0700", "HKG", "홍콩"),       # Tencent
+    "CNY": ("600519", "CHN", "상해"),     # Kweichow Moutai
+}
 
 # ───────────────────────── 기준일 계산 ─────────────────────────
 
@@ -108,52 +112,106 @@ def build_holdings_at(txs_sorted, target_date_str):
 
 # ───────────────────────── 가격 조회 ─────────────────────────
 
-def krx_price_at(krx, code, target: date):
-    """pykrx로 기준일 또는 직전 거래일 종가 반환"""
+def krx_price_at(code, target: date):
+    """KRX Open API로 기준일 또는 직전 거래일 종가 반환.
+
+    KOSPI/KOSDAQ 일별 매매정보(전종목)를 호출하여 해당 종목 추출.
+    캐시 활용 — 같은 날짜 재호출 시 즉시.
+    """
     for i in range(10):
         d = target - timedelta(days=i)
+        if d.weekday() >= 5:
+            continue
         d_str = d.strftime("%Y%m%d")
-        try:
-            df = krx.get_market_ohlcv_by_date(d_str, d_str, code)
-            if not df.empty and int(df["종가"].iloc[-1]) > 0:
-                return int(df["종가"].iloc[-1]), d
-        except Exception:
-            pass
-        time.sleep(0.15)
+        rows = get_kospi_daily(d_str) + get_kosdaq_daily(d_str)
+        for r in rows:
+            if r.get("ISU_CD") == code:
+                try:
+                    close = int(str(r.get("TDD_CLSPRC", "0")).replace(",", ""))
+                except (ValueError, TypeError):
+                    continue
+                if close > 0:
+                    return close, d
+        time.sleep(0.05)
     return None, None
 
-def yf_price_at(ticker_str, target: date):
-    """yfinance로 기준일 또는 직전 거래일 종가 반환"""
-    import yfinance as yf
-    start = (target - timedelta(days=14)).strftime("%Y-%m-%d")
-    end   = (target + timedelta(days=1)).strftime("%Y-%m-%d")
+
+def kis_overseas_price_at(code, nation, market, target: date):
+    """KIS HHDFS76240000 — 해외주식 기간별시세.
+
+    GUBN=0(일봉), BYMD=조회기준일(이날 포함 직전 100일).
+    응답에서 target 또는 직전 거래일 종가 반환.
+    """
+    excd = _resolve_excd(nation, market)
+    if not excd:
+        return None, None
+    symb = _strip_suffix(code)
+    bymd = target.strftime("%Y%m%d")
+    rate_limit()
     try:
-        df = yf.download(ticker_str, start=start, end=end,
-                         progress=False, auto_adjust=True)
-        if not df.empty:
-            close = df["Close"].iloc[-1]
-            if hasattr(close, "iloc"):
-                close = float(close.iloc[0])
-            else:
-                close = float(close)
-            return round(close, 4), df.index[-1].date()
+        res = get_client().get(
+            "/uapi/overseas-price/v1/quotations/dailyprice",
+            "HHDFS76240000",
+            {"AUTH": "", "EXCD": excd, "SYMB": symb,
+             "GUBN": "0", "BYMD": bymd, "MODP": "1"},
+        )
     except Exception:
-        pass
-    return None, None
+        return None, None
+    if res.get("rt_cd") != "0":
+        return None, None
+    rows = res.get("output2") or []
+    target_str = target.strftime("%Y%m%d")
+    # output2는 보통 최신일이 앞. target 이하 중 가장 최근 영업일 종가 찾기.
+    best = None
+    for r in rows:
+        d = str(r.get("xymd") or r.get("stck_bsop_date") or "")
+        if not d or d > target_str:
+            continue
+        try:
+            close = float(str(r.get("clos") or r.get("stck_clpr") or "0").replace(",", ""))
+        except (ValueError, TypeError):
+            continue
+        if close <= 0:
+            continue
+        # d가 더 최신이면 갱신
+        if best is None or d > best[0]:
+            best = (d, close)
+    if not best:
+        return None, None
+    d_str, close = best
+    actual_date = date(int(d_str[:4]), int(d_str[4:6]), int(d_str[6:8]))
+    return round(close, 4), actual_date
+
 
 def fx_rate_at(currency, target: date, fx_cache):
-    """기준일 환율 (→ KRW). 캐시 활용."""
+    """KIS HHDFS76200200 응답의 t_rate 활용.
+
+    NOTE: KIS는 현재 환율만 제공. 역사 환율은 별도 소스 없으므로
+    현재 환율을 기준일에도 적용 (기준일 평가가치 계산은 근사치).
+    """
     if currency == "KRW":
         return 1.0
-    key = f"{currency}_{target}"
-    if key in fx_cache:
-        return fx_cache[key]
-    ticker_str = FX_TICKERS.get(currency)
-    if not ticker_str:
+    if currency in fx_cache:
+        return fx_cache[currency]
+    sample = FX_SAMPLE.get(currency)
+    if not sample:
+        fx_cache[currency] = 1300.0
         return 1300.0
-    price, _ = yf_price_at(ticker_str, target)
-    rate = price if price else None
-    fx_cache[key] = rate
+    code, nation, market = sample
+    excd = _resolve_excd(nation, market)
+    symb = _strip_suffix(code)
+    rate_limit()
+    try:
+        res = get_client().get(
+            "/uapi/overseas-price/v1/quotations/price-detail",
+            "HHDFS76200200",
+            {"AUTH": "", "EXCD": excd, "SYMB": symb},
+        )
+        out = res.get("output") or {}
+        rate = float(out.get("t_rate", "0")) or None
+    except Exception:
+        rate = None
+    fx_cache[currency] = rate
     return rate
 
 # ───────────────────────── 메인 ─────────────────────────
@@ -183,12 +241,6 @@ def main(force=False):
     for label, d in key_dates.items():
         print(f"  {label:6s}: {d.strftime('%Y-%m-%d')}")
     print()
-
-    try:
-        from pykrx import stock as krx
-    except ImportError:
-        print("ERROR: pykrx 미설치. pip3 install pykrx")
-        sys.exit(1)
 
     output = {
         "_updated": today_str,
@@ -221,13 +273,12 @@ def main(force=False):
                 price_native = h["cost"] / h["qty"] if h["qty"] > 0 else 0
                 note = "no_code→cost"
             elif nation == "KOR":
-                price_native, actual_date = krx_price_at(krx, code, target_date)
+                price_native, actual_date = krx_price_at(code, target_date)
                 note = f"krx_{actual_date}" if actual_date else "krx_fail"
             else:
-                suffix     = YAHOO_SUFFIX.get(nation, "")
-                ticker_str = code if code.endswith(suffix) else code + suffix
-                price_native, actual_date = yf_price_at(ticker_str, target_date)
-                note = f"yf_{actual_date}" if actual_date else "yf_fail"
+                market = meta.get("market", "")
+                price_native, actual_date = kis_overseas_price_at(code, nation, market, target_date)
+                note = f"kis_{actual_date}" if actual_date else "kis_fail"
 
             if price_native is None:
                 price_native = h["cost"] / h["qty"] if h["qty"] > 0 else 0

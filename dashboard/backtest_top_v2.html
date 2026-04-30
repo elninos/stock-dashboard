@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<title>Top Detection v2 Backtest</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.kpi-strip { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:18px; }
+.kpi-strip .kpi-mini { flex:1; min-width:160px; background:#181b23; border-radius:8px; padding:14px; text-align:center; }
+.kpi-strip .num { font-size:1.5em; font-weight:700; color:#fff; }
+.kpi-strip .lbl { font-size:0.78em; color:#888; margin-top:4px; }
+.grid3 { display:grid; grid-template-columns: 1fr 1fr 1fr; gap:10px; }
+.kpi { background:#1a1d26; border-radius:8px; padding:12px; text-align:center; }
+.kpi-label { font-size:0.78em; color:#888; margin-bottom:4px; }
+.kpi-value { font-size:1.3em; font-weight:700; color:#eee; }
+</style></head><body>
+<div class="container">
+<div class="nav">
+  <a href="index.html">📊 전체</a>
+  <a href="backtest_top.html">고점 v1</a>
+  <a href="backtest_top_v2.html" class="active">🎯 고점 v2 강화</a>
+  <a href="backtest_time.html">시기별</a>
+</div>
+
+<h1>🎯 Top Detection v2 — 강화 시그널</h1>
+<p class="subtitle">OBV 누적 + CMF/MFI 지속 시그널 추가 + 그룹별 분석</p>
+
+<div class="card">
+  <div class="callout">
+    <b>v1 대비 v2 변경점:</b><br>
+    🆕 <b>OBV 분배 클러스터</b> (5일 내 3회+) → +5점<br>
+    🆕 <b>OBV 분배 폭주</b> (10일 내 5회+) → +7점 (가장 강함)<br>
+    🆕 <b>CMF 지속 분배</b> (-0.15↓ 7일 연속) → +4점<br>
+    🆕 <b>CMF 강한 분배</b> (-0.20↓ 14일 연속) → +6점<br>
+    🆕 <b>MFI 지속 과매수</b> (80+ 5일 연속) → +3점<br>
+    🆕 <b>MFI 극단 과열</b> (80+ 10일 연속) → +4점<br>
+    <br>
+    <b>매도 룰 (v2):</b> 점수 ≥10 → 1/2 · ≥7 → 1/3 · ≥5 → 1/4 · 60일 cooldown
+  </div>
+</div>
+
+<div class="kpi-strip">
+  <div class="kpi-mini"><div class="num mono">+5.58억</div><div class="lbl">실제 합계</div></div>
+  <div class="kpi-mini"><div class="num mono">+2.19억</div><div class="lbl">v2 합계</div></div>
+  <div class="kpi-mini" style="border:2px solid #ef4444"><div class="num mono" style="color:#ef4444">-3.39억</div><div class="lbl">차이</div></div>
+  <div class="kpi-mini"><div class="num" style="color:#10b981">6/16</div><div class="lbl">고점 사전 캐치</div></div>
+</div>
+
+<div class="card">
+          <h2>💀 큰 손실 종목 (5종목)</h2>
+          <div class="grid3" style="margin-bottom:14px">
+            <div class="kpi"><div class="kpi-label">실제 합계</div><div class="kpi-value mono">+2.79억</div></div>
+            <div class="kpi"><div class="kpi-label">v2 시뮬</div><div class="kpi-value mono">+4,488만</div></div>
+            <div class="kpi" style="border:2px solid #ef4444"><div class="kpi-label">차이</div><div class="kpi-value mono" style="color:#ef4444">-2.34억</div></div>
+          </div>
+          <p class="desc">v2 우세 2/5종목 · 고점 사전 캐치 2/5</p>
+          <table>
+            <tr>
+              <th>종목</th>
+              <th style="text-align:right">절대 고점</th>
+              <th>고점 사전 캐치</th>
+              <th style="text-align:right">실제</th>
+              <th style="text-align:right">v2 시뮬</th>
+              <th style="text-align:right">차이</th>
+              <th>매도 시점</th>
+            </tr>
+            <tr>
+              <td><b>NAVER</b><br><span style="color:#666;font-size:0.78em">035420</span></td>
+              <td class="mono" style="text-align:right">454,000<br><span style="font-size:0.78em;color:#888">2021-09-06</span></td>
+              <td><span style='color:#10b981'>30일 전 (점수 14)</span><br><span style='color:#888;font-size:0.78em'>최강: 17일 전 점수 15</span></td>
+              <td class="mono" style="text-align:right">-899만<br><span style="font-size:0.78em;color:#888">4회</span></td>
+              <td class="mono" style="text-align:right">-506만<br><span style="font-size:0.78em;color:#888">11회</span></td>
+              <td class="mono ret-down" style="text-align:right;font-weight:600">+393만<br><span style="font-size:0.78em">🤖</span></td>
+              <td><div style='font-size:0.78em;color:#888'>2021-09-10 점7.0 33% — 🔥 OBV 분배 폭주 (10일내 6회)</div><div style='font-size:0.78em;color:#888'>2021-10-26 점14.0 50% — OBV 분배 다이버전스, ⚡ OBV 분배 클러스터 (5일내 5회)</div><div style='font-size:0.78em;color:#888'>2022-04-04 점14.0 50% — OBV 분배 다이버전스, ⚡ OBV 분배 클러스터 (5일내 4회)</div></td>
+            </tr><tr>
+              <td><b>파마리서치</b><br><span style="color:#666;font-size:0.78em">214450</span></td>
+              <td class="mono" style="text-align:right">711,000<br><span style="font-size:0.78em;color:#888">2025-08-26</span></td>
+              <td>─</td>
+              <td class="mono" style="text-align:right">+2.79억<br><span style="font-size:0.78em;color:#888">14회</span></td>
+              <td class="mono" style="text-align:right">+2,800만<br><span style="font-size:0.78em;color:#888">36회</span></td>
+              <td class="mono ret-up" style="text-align:right;font-weight:600">-2.51억<br><span style="font-size:0.78em">👤</span></td>
+              <td><div style='font-size:0.78em;color:#888'>2015-12-02 점14.0 50% — OBV 분배 다이버전스, ⚡ OBV 분배 클러스터 (5일내 5회)</div><div style='font-size:0.78em;color:#888'>2016-01-13 점14.0 50% — OBV 분배 다이버전스, ⚡ OBV 분배 클러스터 (5일내 4회)</div><div style='font-size:0.78em;color:#888'>2016-07-27 점15.0 50% — OBV 분배 다이버전스, ⚡ OBV 분배 클러스터 (5일내 5회)</div></td>
+            </tr><tr>
+              <td><b>파크시스템스</b><br><span style="color:#666;font-size:0.78em">140860</span></td>
+              <td class="mono" style="text-align:right">307,000<br><span style="font-size:0.78em;color:#888">2025-07-09</span></td>
+              <td><span style='color:#10b981'>30일 전 (점수 12)</span><br><span style='color:#888;font-size:0.78em'>최강: 29일 전 점수 14</span></td>
+              <td class="mono" style="text-align:right">+1,179만<br><span style="font-size:0.78em;color:#888">1회</span></td>
+              <td class="mono" style="text-align:right">+739만<br><span style="font-size:0.78em;color:#888">5회</span></td>
+              <td class="mono ret-up" style="text-align:right;font-weight:600">-440만<br><span style="font-size:0.78em">👤</span></td>
+              <td><div style='font-size:0.78em;color:#888'>2024-08-09 점7.0 33% — OBV 분배 다이버전스, ⚡ OBV 분배 클러스터 (5일내 3회)</div><div style='font-size:0.78em;color:#888'>2024-10-23 점7.0 33% — OBV 분배 다이버전스, ⚡ OBV 분배 클러스터 (5일내 3회)</div><div style='font-size:0.78em;color:#888'>2025-04-25 점7.0 33% — OBV 분배 다이버전스, ⚡ OBV 분배 클러스터 (5일내 3회)</div></td>
+            </tr><tr>
+              <td><b>HLB제넥스</b><br><span style="color:#666;font-size:0.78em">187420</span></td>
+              <td class="mono" style="text-align:right">23,500<br><span style="font-size:0.78em;color:#888">2015-07-06</span></td>
+              <td>─</td>
+              <td class="mono" style="text-align:right">-2,808만<br><span style="font-size:0.78em;color:#888">32회</span></td>
+              <td class="mono" style="text-align:right">-726만<br><span style="font-size:0.78em;color:#888">26회</span></td>
+              <td class="mono ret-down" style="text-align:right;font-weight:600">+2,083만<br><span style="font-size:0.78em">🤖</span></td>
+              <td><div style='font-size:0.78em;color:#888'>2016-02-03 점3.0 25% — Failed Breakout</div><div style='font-size:0.78em;color:#888'>2016-04-08 점4.0 25% — ⚡ CMF 지속 분배 (26일 연속 -0.15↓)</div><div style='font-size:0.78em;color:#888'>2016-06-08 점3.0 25% — Failed Breakout</div></td>
+            </tr><tr>
+              <td><b>토모큐브</b><br><span style="color:#666;font-size:0.78em">475960</span></td>
+              <td class="mono" style="text-align:right">66,300<br><span style="font-size:0.78em;color:#888">2026-02-23</span></td>
+              <td>─</td>
+              <td class="mono" style="text-align:right">+2,542만<br><span style="font-size:0.78em;color:#888">1회</span></td>
+              <td class="mono" style="text-align:right">+2,180만<br><span style="font-size:0.78em;color:#888">2회</span></td>
+              <td class="mono ret-up" style="text-align:right;font-weight:600">-362만<br><span style="font-size:0.78em">👤</span></td>
+              <td><div style='font-size:0.78em;color:#888'>2025-08-20 점3.0 25% — Failed Breakout</div><div style='font-size:0.78em;color:#888'>2025-12-09 점3.0 25% — ⚡ MFI 지속 과매수 (5일 연속 80+)</div></td>
+            </tr>
+          </table>
+        </div><div class="card">
+          <h2>💰 큰 이익 (실현) (5종목)</h2>
+          <div class="grid3" style="margin-bottom:14px">
+            <div class="kpi"><div class="kpi-label">실제 합계</div><div class="kpi-value mono">+1.72억</div></div>
+            <div class="kpi"><div class="kpi-label">v2 시뮬</div><div class="kpi-value mono">+1.05억</div></div>
+            <div class="kpi" style="border:2px solid #ef4444"><div class="kpi-label">차이</div><div class="kpi-value mono" style="color:#ef4444">-6,646만</div></div>
+          </div>
+          <p class="desc">v2 우세 1/5종목 · 고점 사전 캐치 3/5</p>
+          <table>
+            <tr>
+              <th>종목</th>
+              <th style="text-align:right">절대 고점</th>
+              <th>고점 사전 캐치</th>
+              <th style="text-align:right">실제</th>
+              <th style="text-align:right">v2 시뮬</th>
+              <th style="text-align:right">차이</th>
+              <th>매도 시점</th>
+            </tr>
+            <tr>
+              <td><b>삼천당제약</b><br><span style="color:#666;font-size:0.78em">000250</span></td>
+              <td class="mono" style="text-align:right">1,184,000<br><span style="font-size:0.78em;color:#888">2026-03-30</span></td>
+              <td>─</td>
+              <td class="mono" style="text-align:right">+4,887만<br><span style="font-size:0.78em;color:#888">14회</span></td>
+              <td class="mono" style="text-align:right">+3,316만<br><span style="font-size:0.78em;color:#888">6회</span></td>
+              <td class="mono ret-up" style="text-align:right;font-weight:600">-1,571만<br><span style="font-size:0.78em">👤</span></td>
+              <td><div style='font-size:0.78em;color:#888'>2024-07-11 점3.0 25% — Failed Breakout</div><div style='font-size:0.78em;color:#888'>2024-12-24 점5.0 25% — Failed Breakout, Volume Climax</div><div style='font-size:0.78em;color:#888'>2025-07-07 점4.0 25% — ⚡ CMF 지속 분배 (11일 연속 -0.15↓)</div></td>
+            </tr><tr>
+              <td><b>SM C&C</b><br><span style="color:#666;font-size:0.78em">048550</span></td>
+              <td class="mono" style="text-align:right">6,190<br><span style="font-size:0.78em;color:#888">2021-08-24</span></td>
+              <td><span style='color:#10b981'>10일 전 (점수 6)</span></td>
+              <td class="mono" style="text-align:right">+4,411만<br><span style="font-size:0.78em;color:#888">15회</span></td>
+              <td class="mono" style="text-align:right">+70만<br><span style="font-size:0.78em;color:#888">35회</span></td>
+              <td class="mono ret-up" style="text-align:right;font-weight:600">-4,341만<br><span style="font-size:0.78em">👤</span></td>
+              <td><div style='font-size:0.78em;color:#888'>2015-12-01 점14.0 50% — OBV 분배 다이버전스, ⚡ OBV 분배 클러스터 (5일내 4회)</div><div style='font-size:0.78em;color:#888'>2016-03-17 점7.0 33% — OBV 분배 다이버전스, ⚡ OBV 분배 클러스터 (5일내 3회)</div><div style='font-size:0.78em;color:#888'>2016-05-16 점6.0 25% — OBV 분배 다이버전스, ⚡ CMF 지속 분배 (12일 연속 -0.15↓)</div></td>
+            </tr><tr>
+              <td><b>아미코젠</b><br><span style="color:#666;font-size:0.78em">092040</span></td>
+              <td class="mono" style="text-align:right">28,265<br><span style="font-size:0.78em;color:#888">2015-07-01</span></td>
+              <td><span style='color:#10b981'>23일 전 (점수 14)</span></td>
+              <td class="mono" style="text-align:right">+2,338만<br><span style="font-size:0.78em;color:#888">10회</span></td>
+              <td class="mono" style="text-align:right">-2,753만<br><span style="font-size:0.78em;color:#888">22회</span></td>
+              <td class="mono ret-up" style="text-align:right;font-weight:600">-5,091만<br><span style="font-size:0.78em">👤</span></td>
+              <td><div style='font-size:0.78em;color:#888'>2015-05-22 점3.0 25% — OBV 분배 다이버전스, MFI 81→73</div><div style='font-size:0.78em;color:#888'>2016-01-11 점3.0 25% — Failed Breakout</div><div style='font-size:0.78em;color:#888'>2017-05-02 점3.0 25% — Failed Breakout</div></td>
+            </tr><tr>
+              <td><b>진매트릭스</b><br><span style="color:#666;font-size:0.78em">109820</span></td>
+              <td class="mono" style="text-align:right">33,900<br><span style="font-size:0.78em;color:#888">2020-11-25</span></td>
+              <td><span style='color:#10b981'>4일 전 (점수 5)</span></td>
+              <td class="mono" style="text-align:right">+1,675만<br><span style="font-size:0.78em;color:#888">6회</span></td>
+              <td class="mono" style="text-align:right">+7,389만<br><span style="font-size:0.78em;color:#888">20회</span></td>
+              <td class="mono ret-down" style="text-align:right;font-weight:600">+5,715만<br><span style="font-size:0.78em">🤖</span></td>
+              <td><div style='font-size:0.78em;color:#888'>2018-12-04 점5.0 25% — ⚡ MFI 지속 과매수 (5일 연속 80+), Volume Climax</div><div style='font-size:0.78em;color:#888'>2019-04-02 점3.0 25% — Volume Climax, CMF 분배 진입 (-0.56)</div><div style='font-size:0.78em;color:#888'>2019-07-05 점5.5 25% — OBV 분배 다이버전스, Volume Climax</div></td>
+            </tr><tr>
+              <td><b>에이피알</b><br><span style="color:#666;font-size:0.78em">278470</span></td>
+              <td class="mono" style="text-align:right">450,000<br><span style="font-size:0.78em;color:#888">2026-04-24</span></td>
+              <td>─</td>
+              <td class="mono" style="text-align:right">+3,882만<br><span style="font-size:0.78em;color:#888">3회</span></td>
+              <td class="mono" style="text-align:right">+2,525만<br><span style="font-size:0.78em;color:#888">6회</span></td>
+              <td class="mono ret-up" style="text-align:right;font-weight:600">-1,357만<br><span style="font-size:0.78em">👤</span></td>
+              <td><div style='font-size:0.78em;color:#888'>2025-04-02 점3.0 25% — Failed Breakout</div><div style='font-size:0.78em;color:#888'>2025-06-05 점3.0 25% — Failed Breakout</div><div style='font-size:0.78em;color:#888'>2025-08-29 점7.0 33% — OBV 분배 다이버전스, ⚡ OBV 분배 클러스터 (5일내 3회)</div></td>
+            </tr>
+          </table>
+        </div><div class="card">
+          <h2>📊 현재 평가이익 큰 종목 (2종목)</h2>
+          <div class="grid3" style="margin-bottom:14px">
+            <div class="kpi"><div class="kpi-label">실제 합계</div><div class="kpi-value mono">+9,494만</div></div>
+            <div class="kpi"><div class="kpi-label">v2 시뮬</div><div class="kpi-value mono">+7,331만</div></div>
+            <div class="kpi" style="border:2px solid #ef4444"><div class="kpi-label">차이</div><div class="kpi-value mono" style="color:#ef4444">-2,162만</div></div>
+          </div>
+          <p class="desc">v2 우세 0/2종목 · 고점 사전 캐치 0/2</p>
+          <table>
+            <tr>
+              <th>종목</th>
+              <th style="text-align:right">절대 고점</th>
+              <th>고점 사전 캐치</th>
+              <th style="text-align:right">실제</th>
+              <th style="text-align:right">v2 시뮬</th>
+              <th style="text-align:right">차이</th>
+              <th>매도 시점</th>
+            </tr>
+            <tr>
+              <td><b>두산</b><br><span style="color:#666;font-size:0.78em">000150</span></td>
+              <td class="mono" style="text-align:right">1,541,000<br><span style="font-size:0.78em;color:#888">2026-04-24</span></td>
+              <td>─</td>
+              <td class="mono" style="text-align:right">+7,453만<br><span style="font-size:0.78em;color:#888">0회</span></td>
+              <td class="mono" style="text-align:right">+5,414만<br><span style="font-size:0.78em;color:#888">2회</span></td>
+              <td class="mono ret-up" style="text-align:right;font-weight:600">-2,039만<br><span style="font-size:0.78em">👤</span></td>
+              <td><div style='font-size:0.78em;color:#888'>2025-10-27 점3.0 25% — ⚡ MFI 지속 과매수 (5일 연속 80+)</div><div style='font-size:0.78em;color:#888'>2026-02-13 점3.0 25% — Failed Breakout</div></td>
+            </tr><tr>
+              <td><b>이오테크닉스</b><br><span style="color:#666;font-size:0.78em">039030</span></td>
+              <td class="mono" style="text-align:right">506,000<br><span style="font-size:0.78em;color:#888">2026-04-24</span></td>
+              <td>─</td>
+              <td class="mono" style="text-align:right">+2,041만<br><span style="font-size:0.78em;color:#888">4회</span></td>
+              <td class="mono" style="text-align:right">+1,918만<br><span style="font-size:0.78em;color:#888">3회</span></td>
+              <td class="mono ret-up" style="text-align:right;font-weight:600">-123만<br><span style="font-size:0.78em">👤</span></td>
+              <td><div style='font-size:0.78em;color:#888'>2025-09-24 점3.0 25% — OBV 분배 다이버전스, MFI 82→75</div><div style='font-size:0.78em;color:#888'>2026-01-07 점3.0 25% — Failed Breakout</div><div style='font-size:0.78em;color:#888'>2026-03-09 점3.0 25% — Failed Breakout</div></td>
+            </tr>
+          </table>
+        </div><div class="card">
+          <h2>🧟 좀비 종목 (1년+ 미매수) (4종목)</h2>
+          <div class="grid3" style="margin-bottom:14px">
+            <div class="kpi"><div class="kpi-label">실제 합계</div><div class="kpi-value mono">+1,184만</div></div>
+            <div class="kpi"><div class="kpi-label">v2 시뮬</div><div class="kpi-value mono">-470만</div></div>
+            <div class="kpi" style="border:2px solid #ef4444"><div class="kpi-label">차이</div><div class="kpi-value mono" style="color:#ef4444">-1,654만</div></div>
+          </div>
+          <p class="desc">v2 우세 2/4종목 · 고점 사전 캐치 1/4</p>
+          <table>
+            <tr>
+              <th>종목</th>
+              <th style="text-align:right">절대 고점</th>
+              <th>고점 사전 캐치</th>
+              <th style="text-align:right">실제</th>
+              <th style="text-align:right">v2 시뮬</th>
+              <th style="text-align:right">차이</th>
+              <th>매도 시점</th>
+            </tr>
+            <tr>
+              <td><b>삼성생명</b><br><span style="color:#666;font-size:0.78em">032830</span></td>
+              <td class="mono" style="text-align:right">258,000<br><span style="font-size:0.78em;color:#888">2026-04-15</span></td>
+              <td>─</td>
+              <td class="mono" style="text-align:right">+31만<br><span style="font-size:0.78em;color:#888">1회</span></td>
+              <td class="mono" style="text-align:right">+55만<br><span style="font-size:0.78em;color:#888">10회</span></td>
+              <td class="mono ret-down" style="text-align:right;font-weight:600">+24만<br><span style="font-size:0.78em">🤖</span></td>
+              <td><div style='font-size:0.78em;color:#888'>2014-09-15 점14.0 50% — OBV 분배 다이버전스, ⚡ OBV 분배 클러스터 (5일내 4회)</div><div style='font-size:0.78em;color:#888'>2014-10-15 점14.0 50% — OBV 분배 다이버전스, ⚡ OBV 분배 클러스터 (5일내 3회)</div><div style='font-size:0.78em;color:#888'>2014-11-14 점14.0 50% — OBV 분배 다이버전스, ⚡ OBV 분배 클러스터 (5일내 5회)</div></td>
+            </tr><tr>
+              <td><b>콜마비앤에이치</b><br><span style="color:#666;font-size:0.78em">200130</span></td>
+              <td class="mono" style="text-align:right">71,900<br><span style="font-size:0.78em;color:#888">2020-08-25</span></td>
+              <td><span style='color:#10b981'>29일 전 (점수 5)</span></td>
+              <td class="mono" style="text-align:right">+605만<br><span style="font-size:0.78em;color:#888">2회</span></td>
+              <td class="mono" style="text-align:right">+1,480만<br><span style="font-size:0.78em;color:#888">24회</span></td>
+              <td class="mono ret-down" style="text-align:right;font-weight:600">+875만<br><span style="font-size:0.78em">🤖</span></td>
+              <td><div style='font-size:0.78em;color:#888'>2015-01-19 점3.0 25% — Failed Breakout</div><div style='font-size:0.78em;color:#888'>2015-03-23 점3.0 25% — Failed Breakout</div><div style='font-size:0.78em;color:#888'>2015-06-01 점4.0 25% — ⚡ CMF 지속 분배 (7일 연속 -0.15↓)</div></td>
+            </tr><tr>
+              <td><b>씨에스윈드</b><br><span style="color:#666;font-size:0.78em">112610</span></td>
+              <td class="mono" style="text-align:right">92,300<br><span style="font-size:0.78em;color:#888">2021-02-09</span></td>
+              <td>─</td>
+              <td class="mono" style="text-align:right">+196만<br><span style="font-size:0.78em;color:#888">3회</span></td>
+              <td class="mono" style="text-align:right">-775만<br><span style="font-size:0.78em;color:#888">28회</span></td>
+              <td class="mono ret-up" style="text-align:right;font-weight:600">-971만<br><span style="font-size:0.78em">👤</span></td>
+              <td><div style='font-size:0.78em;color:#888'>2015-03-23 점7.0 33% — 🔥 OBV 분배 폭주 (10일내 5회)</div><div style='font-size:0.78em;color:#888'>2015-04-22 점14.0 50% — OBV 분배 다이버전스, ⚡ OBV 분배 클러스터 (5일내 4회)</div><div style='font-size:0.78em;color:#888'>2015-12-01 점14.0 50% — OBV 분배 다이버전스, ⚡ OBV 분배 클러스터 (5일내 5회)</div></td>
+            </tr><tr>
+              <td><b>카카오</b><br><span style="color:#666;font-size:0.78em">035720</span></td>
+              <td class="mono" style="text-align:right">169,500<br><span style="font-size:0.78em;color:#888">2021-06-23</span></td>
+              <td>─</td>
+              <td class="mono" style="text-align:right">+352만<br><span style="font-size:0.78em;color:#888">4회</span></td>
+              <td class="mono" style="text-align:right">-1,231만<br><span style="font-size:0.78em;color:#888">26회</span></td>
+              <td class="mono ret-up" style="text-align:right;font-weight:600">-1,582만<br><span style="font-size:0.78em">👤</span></td>
+              <td><div style='font-size:0.78em;color:#888'>2015-07-20 점7.0 33% — OBV 분배 다이버전스, ⚡ OBV 분배 클러스터 (5일내 3회)</div><div style='font-size:0.78em;color:#888'>2015-10-01 점3.5 25% — Volume Climax, Dow Theory LH (Lower High)</div><div style='font-size:0.78em;color:#888'>2015-12-08 점4.0 25% — ⚡ CMF 지속 분배 (7일 연속 -0.15↓)</div></td>
+            </tr>
+          </table>
+        </div>
+
+</div></body></html>

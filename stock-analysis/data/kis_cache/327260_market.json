@@ -1,0 +1,13 @@
+{
+  "ticker": "327260",
+  "rs_vs_kospi_1m": 14.9,
+  "rs_vs_sector_1m": 0.0,
+  "sector_index_trend": "확인필요",
+  "peer_performance": "확인필요",
+  "macro": {
+    "kospi": 0.0,
+    "usd_krw": 0,
+    "us_10y": 0.0
+  },
+  "last_updated": "2026-04-30T12:33:26"
+}

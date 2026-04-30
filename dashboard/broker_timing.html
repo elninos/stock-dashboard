@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<title>거래원 매도 타이밍 분석</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+</head><body>
+<div class="container">
+
+<div class="nav">
+  <a href="index.html">📊 전체</a>
+  <a href="broker_timing.html" class="active">🎯 거래원 매도 타이밍</a>
+</div>
+
+<h1>🎯 거래원 매도 타이밍 정밀 분석</h1>
+<p class="subtitle">매수 주도자 → 매도 전환 추적 + 개미 vs 큰손 비교</p>
+
+<div class="card">
+  <div class="callout">
+    <b>핵심 시그널: 매수 주도자 → 매도 전환</b><br>
+    직전 5일 매수 TOP 3 거래원이 다음 5일에 매도로 전환했는가?<br>
+    <br>
+    <b>점수 산정:</b><br>
+    1명 전환: +2점 (약한 경고)<br>
+    2명 전환: +7점 (강한 경고)<br>
+    3명 전환: +9점 (매우 강한 경고, 추세 끝났음)<br>
+    <br>
+    <b>해석:</b> 가격을 끌어올린 사람들이 빠지기 시작 = 추세 종료 임박
+  </div>
+</div>
+
+<div class="card" style="margin-bottom:20px">
+      <h2 style="color:#4fc3f7">대한광통신 <span style="color:#666;font-size:0.65em">(010170)</span></h2>
+      <p class="desc">데이터 기간: 20250102 ~ 20250228 (38일)</p>
+      <p class="desc">고점: <b>1,027원</b> (2025-02-04) · 매수→매도 전환 시그널 <b>26건</b></p>
+
+      <div id="chart_price_0" style="height:380px"></div>
+
+      <h3 style="color:#aaa;margin-top:18px">개미 vs 큰손 5일 누적 순매수</h3>
+      <p class="desc">개미가 사고 큰손이 팔면 분배 진행 중. 외국계가 매도로 전환하면 강한 신호.</p>
+      <div id="chart_flow_0" style="height:280px"></div>
+
+      <h3 style="color:#aaa;margin-top:18px">매수→매도 전환 시그널 타임라인</h3>
+      <p class="desc">직전 5일 매수 주도 거래원 중 N명이 다음 5일에 매도로 전환.</p>
+      <table class="table-compact">
+        <tr>
+          <th>날짜</th>
+          <th style="text-align:right">가격</th>
+          <th style="text-align:center">점수</th>
+          <th style="text-align:center">고점까지</th>
+          <th>매도 전환 거래원</th>
+        </tr>
+        <tr>
+          <td class="mono">20250116</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">9</td>
+          <td class="mono" style="text-align:center;color:#10b981">+19일</td>
+          <td>3명: 카카오페이증권, 유진투자증권, SK증권</td>
+        </tr><tr>
+          <td class="mono">20250117</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">9</td>
+          <td class="mono" style="text-align:center;color:#10b981">+18일</td>
+          <td>3명: 카카오페이증권, SK증권, 유진투자증권</td>
+        </tr><tr>
+          <td class="mono">20250120</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">9</td>
+          <td class="mono" style="text-align:center;color:#10b981">+15일</td>
+          <td>3명: 키움증권, 카카오페이증권, SK증권</td>
+        </tr><tr>
+          <td class="mono">20250121</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">9</td>
+          <td class="mono" style="text-align:center;color:#10b981">+14일</td>
+          <td>3명: 키움증권, 삼성증권, 토스증권</td>
+        </tr><tr>
+          <td class="mono">20250122</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">9</td>
+          <td class="mono" style="text-align:center;color:#10b981">+13일</td>
+          <td>3명: 키움증권, KB증권, 토스증권</td>
+        </tr><tr>
+          <td class="mono">20250123</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#888;font-weight:600">2</td>
+          <td class="mono" style="text-align:center;color:#10b981">+12일</td>
+          <td>1명: 키움증권</td>
+        </tr><tr>
+          <td class="mono">20250131</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#888;font-weight:600">2</td>
+          <td class="mono" style="text-align:center;color:#f59e0b">+4일</td>
+          <td>1명: 신한투자증권</td>
+        </tr><tr>
+          <td class="mono">20250203</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#888;font-weight:600">2</td>
+          <td class="mono" style="text-align:center;color:#f59e0b">+1일</td>
+          <td>1명: 신한투자증권</td>
+        </tr><tr>
+          <td class="mono">20250205</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#888;font-weight:600">2</td>
+          <td class="mono" style="text-align:center;color:#888">-1일</td>
+          <td>1명: 신한투자증권</td>
+        </tr><tr>
+          <td class="mono">20250206</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">7</td>
+          <td class="mono" style="text-align:center;color:#888">-2일</td>
+          <td>2명: 한국투자증권, 상상인증권</td>
+        </tr><tr>
+          <td class="mono">20250207</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">9</td>
+          <td class="mono" style="text-align:center;color:#888">-3일</td>
+          <td>3명: 미래에셋증권, 한화증권, UBS증권</td>
+        </tr><tr>
+          <td class="mono">20250210</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#888;font-weight:600">2</td>
+          <td class="mono" style="text-align:center;color:#888">-6일</td>
+          <td>1명: 미래에셋증권</td>
+        </tr><tr>
+          <td class="mono">20250211</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">7</td>
+          <td class="mono" style="text-align:center;color:#888">-7일</td>
+          <td>2명: 삼성증권, 미래에셋증권</td>
+        </tr><tr>
+          <td class="mono">20250212</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#888;font-weight:600">2</td>
+          <td class="mono" style="text-align:center;color:#888">-8일</td>
+          <td>1명: 키움증권</td>
+        </tr><tr>
+          <td class="mono">20250213</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">9</td>
+          <td class="mono" style="text-align:center;color:#888">-9일</td>
+          <td>3명: 키움증권, 메리츠증권주식회사, 토스증권</td>
+        </tr><tr>
+          <td class="mono">20250214</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">7</td>
+          <td class="mono" style="text-align:center;color:#888">-10일</td>
+          <td>2명: 키움증권, 하나금융투자</td>
+        </tr><tr>
+          <td class="mono">20250217</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">9</td>
+          <td class="mono" style="text-align:center;color:#888">-13일</td>
+          <td>3명: 키움증권, 삼성증권, 토스증권</td>
+        </tr><tr>
+          <td class="mono">20250218</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">7</td>
+          <td class="mono" style="text-align:center;color:#888">-14일</td>
+          <td>2명: 토스증권, 하나금융투자</td>
+        </tr><tr>
+          <td class="mono">20250219</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">9</td>
+          <td class="mono" style="text-align:center;color:#888">-15일</td>
+          <td>3명: 한국투자증권, 하나금융투자, 토스증권</td>
+        </tr><tr>
+          <td class="mono">20250220</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">7</td>
+          <td class="mono" style="text-align:center;color:#888">-16일</td>
+          <td>2명: 삼성증권, 신한투자증권</td>
+        </tr><tr>
+          <td class="mono">20250221</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#888;font-weight:600">2</td>
+          <td class="mono" style="text-align:center;color:#888">-17일</td>
+          <td>1명: 신한투자증권</td>
+        </tr><tr>
+          <td class="mono">20250224</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">7</td>
+          <td class="mono" style="text-align:center;color:#888">-20일</td>
+          <td>2명: 한국투자증권, 신한투자증권</td>
+        </tr><tr>
+          <td class="mono">20250225</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">7</td>
+          <td class="mono" style="text-align:center;color:#888">-21일</td>
+          <td>2명: NH투자증권, 대신증권</td>
+        </tr><tr>
+          <td class="mono">20250226</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#888;font-weight:600">2</td>
+          <td class="mono" style="text-align:center;color:#888">-22일</td>
+          <td>1명: NH투자증권</td>
+        </tr><tr>
+          <td class="mono">20250227</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#888;font-weight:600">2</td>
+          <td class="mono" style="text-align:center;color:#888">-23일</td>
+          <td>1명: KB증권</td>
+        </tr><tr>
+          <td class="mono">20250228</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">7</td>
+          <td class="mono" style="text-align:center;color:#888">-24일</td>
+          <td>2명: NH투자증권, KB증권</td>
+        </tr>
+      </table>
+
+      <script>
+      (function() {
+        const D = {"dates": ["2025-01-02", "2025-01-03", "2025-01-06", "2025-01-07", "2025-01-08", "2025-01-09", "2025-01-10", "2025-01-13", "2025-01-14", "2025-01-15", "2025-01-16", "2025-01-17", "2025-01-20", "2025-01-21", "2025-01-22", "2025-01-23", "2025-01-24", "2025-01-31", "2025-02-03", "2025-02-04", "2025-02-05", "2025-02-06", "2025-02-07", "2025-02-10", "2025-02-11", "2025-02-12", "2025-02-13", "2025-02-14", "2025-02-17", "2025-02-18", "2025-02-19", "2025-02-20", "2025-02-21", "2025-02-24", "2025-02-25", "2025-02-26", "2025-02-27", "2025-02-28"], "close": [795.0, 842.0, 831.0, 823.0, 803.0, 771.0, 772.0, 753.0, 754.0, 746.0, 793.0, 835.0, 780.0, 759.0, 780.0, 766.0, 801.0, 786.0, 790.0, 1027.0, 994.0, 939.0, 937.0, 902.0, 886.0, 869.0, 889.0, 853.0, 856.0, 814.0, 814.0, 812.0, 804.0, 789.0, 778.0, 770.0, 722.0, 633.0], "buy_x": [], "buy_y": [], "sell_x": [], "sell_y": [], "sig_x": [], "sig_y": [], "sig_size": [], "sig_hover": [], "rs_dates": ["20250108", "20250109", "20250110", "20250113", "20250114", "20250115", "20250116", "20250117", "20250120", "20250121", "20250122", "20250123", "20250124", "20250131", "20250203", "20250204", "20250205", "20250206", "20250207", "20250210", "20250211", "20250212", "20250213", "20250214", "20250217", "20250218", "20250219", "20250220", "20250221", "20250224", "20250225", "20250226", "20250227", "20250228"], "retail_5d": [63378, 50688, 75621, 119105, 74700, 91561, 74757, -63592, -177334, -133788, -202742, -164540, -36728, -91315, -122263, 430728, 832883, 957017, 926345, 945016, 412301, -43948, -172695, -49713, -60255, 23676, 81082, 145118, 152603, 138710, 86733, 78415, 45338, 669681], "large_inst_5d": [-98870, -79453, -63639, -56295, -22540, -55073, 10172, 123558, 293047, 302152, 392981, 315680, 236646, 178596, 226462, -503077, -857414, -1013349, -958299, -1067914, -373113, 63898, 208005, 67693, 109999, 142653, 36677, -40618, -89447, -98956, -150137, -147846, -128113, -879080], "foreign_5d": [19615, 13241, -25302, -48503, -23664, -14640, -38663, 63442, 14657, 1084, 3530, 19643, -73245, 40343, 56967, -16341, 69330, 29259, -70746, -33037, 39314, -52728, -46131, 8864, -24769, -48870, -44248, -9325, -2757, -17584, 2295, 9259, -2607, -8574], "peak_date": "2025-02-04", "peak_price": 1027.0};
+        // 가격 차트
+        Plotly.newPlot('chart_price_0', [
+          {x:D.dates,y:D.close,type:'scatter',mode:'lines',name:'종가',line:{color:'#4fc3f7',width:2}},
+          {x:[D.peak_date],y:[D.peak_price],type:'scatter',mode:'markers+text',name:'고점',
+            text:['💎 고점'],textposition:'top center',textfont:{size:11,color:'#fbbf24'},
+            marker:{color:'#fbbf24',size:14,symbol:'star'}},
+          {x:D.buy_x,y:D.buy_y,type:'scatter',mode:'markers',name:'내 매수',
+            marker:{color:'rgba(16,185,129,0.7)',size:8,symbol:'triangle-up'}},
+          {x:D.sell_x,y:D.sell_y,type:'scatter',mode:'markers',name:'내 매도',
+            marker:{color:'rgba(239,68,68,0.85)',size:9,symbol:'triangle-down'}},
+          {x:D.sig_x,y:D.sig_y,type:'scatter',mode:'markers',name:'⚡ 매수→매도 전환',
+            marker:{color:'#a78bfa',size:D.sig_size,symbol:'diamond',line:{color:'#fff',width:1.5}},
+            hovertext:D.sig_hover,hoverinfo:'text',hoverlabel:{bgcolor:'#14171f'}},
+        ], {
+          paper_bgcolor:'#14171f', plot_bgcolor:'#14171f',
+          font:{color:'#bbb',size:11},
+          xaxis:{gridcolor:'#1f2230'}, yaxis:{gridcolor:'#1f2230', title:'원'},
+          legend:{orientation:'h',y:-0.13},
+          margin:{t:10,b:55,l:75,r:10},
+        }, {responsive:true});
+
+        // 개미 vs 큰손
+        Plotly.newPlot('chart_flow_0', [
+          {x:D.rs_dates,y:D.retail_5d,type:'scatter',mode:'lines',name:'개미 5일',
+            line:{color:'#ef4444',width:1.8}},
+          {x:D.rs_dates,y:D.large_inst_5d,type:'scatter',mode:'lines',name:'대형기관 5일',
+            line:{color:'#3498db',width:1.8}},
+          {x:D.rs_dates,y:D.foreign_5d,type:'scatter',mode:'lines',name:'외국계 5일',
+            line:{color:'#10b981',width:1.8}},
+        ], {
+          paper_bgcolor:'#14171f', plot_bgcolor:'#14171f',
+          font:{color:'#bbb',size:11},
+          xaxis:{gridcolor:'#1f2230'}, yaxis:{gridcolor:'#1f2230', title:'순매수 (주)', zeroline:true, zerolinecolor:'#555'},
+          legend:{orientation:'h',y:-0.18},
+          margin:{t:10,b:55,l:65,r:10},
+        }, {responsive:true});
+      })();
+      </script>
+    </div><div class="card" style="margin-bottom:20px">
+      <h2 style="color:#4fc3f7">파마리서치 <span style="color:#666;font-size:0.65em">(214450)</span></h2>
+      <p class="desc">데이터 기간: 20250102 ~ 20250228 (38일)</p>
+      <p class="desc">고점: <b>301,000원</b> (2025-02-27) · 매수→매도 전환 시그널 <b>22건</b></p>
+
+      <div id="chart_price_1" style="height:380px"></div>
+
+      <h3 style="color:#aaa;margin-top:18px">개미 vs 큰손 5일 누적 순매수</h3>
+      <p class="desc">개미가 사고 큰손이 팔면 분배 진행 중. 외국계가 매도로 전환하면 강한 신호.</p>
+      <div id="chart_flow_1" style="height:280px"></div>
+
+      <h3 style="color:#aaa;margin-top:18px">매수→매도 전환 시그널 타임라인</h3>
+      <p class="desc">직전 5일 매수 주도 거래원 중 N명이 다음 5일에 매도로 전환.</p>
+      <table class="table-compact">
+        <tr>
+          <th>날짜</th>
+          <th style="text-align:right">가격</th>
+          <th style="text-align:center">점수</th>
+          <th style="text-align:center">고점까지</th>
+          <th>매도 전환 거래원</th>
+        </tr>
+        <tr>
+          <td class="mono">20250120</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">7</td>
+          <td class="mono" style="text-align:center;color:#10b981">+38일</td>
+          <td>2명: 모간스탠리증권, UBS증권</td>
+        </tr><tr>
+          <td class="mono">20250121</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">7</td>
+          <td class="mono" style="text-align:center;color:#10b981">+37일</td>
+          <td>2명: 모간스탠리증권, DB금융투자</td>
+        </tr><tr>
+          <td class="mono">20250122</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#888;font-weight:600">2</td>
+          <td class="mono" style="text-align:center;color:#10b981">+36일</td>
+          <td>1명: 모간스탠리증권</td>
+        </tr><tr>
+          <td class="mono">20250123</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">7</td>
+          <td class="mono" style="text-align:center;color:#10b981">+35일</td>
+          <td>2명: 신한투자증권, DB금융투자</td>
+        </tr><tr>
+          <td class="mono">20250124</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">9</td>
+          <td class="mono" style="text-align:center;color:#10b981">+34일</td>
+          <td>3명: JP모간증권, 홍콩상하이증권, 신한투자증권</td>
+        </tr><tr>
+          <td class="mono">20250131</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">9</td>
+          <td class="mono" style="text-align:center;color:#10b981">+27일</td>
+          <td>3명: 키움증권, 미래에셋증권, 홍콩상하이증권</td>
+        </tr><tr>
+          <td class="mono">20250203</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">7</td>
+          <td class="mono" style="text-align:center;color:#10b981">+24일</td>
+          <td>2명: 키움증권, 미래에셋증권</td>
+        </tr><tr>
+          <td class="mono">20250204</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">9</td>
+          <td class="mono" style="text-align:center;color:#10b981">+23일</td>
+          <td>3명: 한국투자증권, 미래에셋증권, 키움증권</td>
+        </tr><tr>
+          <td class="mono">20250205</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">7</td>
+          <td class="mono" style="text-align:center;color:#10b981">+22일</td>
+          <td>2명: 키움증권, 미래에셋증권</td>
+        </tr><tr>
+          <td class="mono">20250206</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#888;font-weight:600">2</td>
+          <td class="mono" style="text-align:center;color:#10b981">+21일</td>
+          <td>1명: 키움증권</td>
+        </tr><tr>
+          <td class="mono">20250207</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">9</td>
+          <td class="mono" style="text-align:center;color:#10b981">+20일</td>
+          <td>3명: 삼성증권, 한국투자증권, 현대차증권</td>
+        </tr><tr>
+          <td class="mono">20250210</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#888;font-weight:600">2</td>
+          <td class="mono" style="text-align:center;color:#10b981">+17일</td>
+          <td>1명: 삼성증권</td>
+        </tr><tr>
+          <td class="mono">20250211</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#888;font-weight:600">2</td>
+          <td class="mono" style="text-align:center;color:#10b981">+16일</td>
+          <td>1명: 삼성증권</td>
+        </tr><tr>
+          <td class="mono">20250212</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#888;font-weight:600">2</td>
+          <td class="mono" style="text-align:center;color:#10b981">+15일</td>
+          <td>1명: 삼성증권</td>
+        </tr><tr>
+          <td class="mono">20250213</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#888;font-weight:600">2</td>
+          <td class="mono" style="text-align:center;color:#10b981">+14일</td>
+          <td>1명: 삼성증권</td>
+        </tr><tr>
+          <td class="mono">20250214</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#888;font-weight:600">2</td>
+          <td class="mono" style="text-align:center;color:#10b981">+13일</td>
+          <td>1명: 메릴린치증권</td>
+        </tr><tr>
+          <td class="mono">20250217</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#888;font-weight:600">2</td>
+          <td class="mono" style="text-align:center;color:#10b981">+10일</td>
+          <td>1명: 메릴린치증권</td>
+        </tr><tr>
+          <td class="mono">20250220</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#888;font-weight:600">2</td>
+          <td class="mono" style="text-align:center;color:#10b981">+7일</td>
+          <td>1명: UBS증권</td>
+        </tr><tr>
+          <td class="mono">20250221</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">7</td>
+          <td class="mono" style="text-align:center;color:#f59e0b">+6일</td>
+          <td>2명: 한국투자증권, UBS증권</td>
+        </tr><tr>
+          <td class="mono">20250226</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">7</td>
+          <td class="mono" style="text-align:center;color:#f59e0b">+1일</td>
+          <td>2명: 씨티그룹글로벌마켓, 삼성증권</td>
+        </tr><tr>
+          <td class="mono">20250227</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">7</td>
+          <td class="mono" style="text-align:center;color:#f59e0b">+0일</td>
+          <td>2명: 씨티그룹글로벌마켓, 삼성증권</td>
+        </tr><tr>
+          <td class="mono">20250228</td>
+          <td class="mono" style="text-align:right">0</td>
+          <td class="mono" style="text-align:center;color:#888;font-weight:600">2</td>
+          <td class="mono" style="text-align:center;color:#888">-1일</td>
+          <td>1명: 씨티그룹글로벌마켓</td>
+        </tr>
+      </table>
+
+      <script>
+      (function() {
+        const D = {"dates": ["2025-01-02", "2025-01-03", "2025-01-06", "2025-01-07", "2025-01-08", "2025-01-09", "2025-01-10", "2025-01-13", "2025-01-14", "2025-01-15", "2025-01-16", "2025-01-17", "2025-01-20", "2025-01-21", "2025-01-22", "2025-01-23", "2025-01-24", "2025-01-31", "2025-02-03", "2025-02-04", "2025-02-05", "2025-02-06", "2025-02-07", "2025-02-10", "2025-02-11", "2025-02-12", "2025-02-13", "2025-02-14", "2025-02-17", "2025-02-18", "2025-02-19", "2025-02-20", "2025-02-21", "2025-02-24", "2025-02-25", "2025-02-26", "2025-02-27", "2025-02-28"], "close": [260500.0, 260500.0, 252500.0, 257500.0, 251500.0, 251500.0, 251000.0, 247500.0, 252000.0, 250500.0, 258000.0, 263500.0, 245000.0, 247000.0, 246000.0, 241000.0, 243500.0, 241500.0, 243500.0, 250000.0, 253000.0, 270500.0, 266000.0, 273500.0, 284500.0, 282500.0, 272500.0, 286500.0, 287000.0, 294500.0, 283500.0, 276000.0, 288000.0, 283000.0, 286500.0, 294000.0, 301000.0, 291000.0], "buy_x": [], "buy_y": [], "sell_x": [], "sell_y": [], "sig_x": [], "sig_y": [], "sig_size": [], "sig_hover": [], "rs_dates": ["20250108", "20250109", "20250110", "20250113", "20250114", "20250115", "20250116", "20250117", "20250120", "20250121", "20250122", "20250123", "20250124", "20250131", "20250203", "20250204", "20250205", "20250206", "20250207", "20250210", "20250211", "20250212", "20250213", "20250214", "20250217", "20250218", "20250219", "20250220", "20250221", "20250224", "20250225", "20250226", "20250227", "20250228"], "retail_5d": [12566, 17452, 13272, 4560, 7800, 2375, -675, -841, 18092, 21187, 18687, 22371, 17537, -6388, -6662, -19456, -18774, -18465, -13845, -19061, -20630, -17264, -8815, -23734, -20901, -12370, -18818, -35051, -26791, -20632, -16874, -15440, -5751, -418], "large_inst_5d": [-54179, -58063, -41144, -40939, -31138, -36839, -33999, -35946, -38792, -43947, -28974, -6668, 14243, 34743, 44853, 32606, 16030, 1006, -21579, -24425, -32779, -32343, -34074, -24893, -38119, -35276, -32277, -21953, -36545, -27937, -4231, -12071, -18169, -5137], "foreign_5d": [39180, 60730, 50262, 55573, 39250, 41861, 28590, 38893, 8132, 16693, 2599, -8411, -43744, -26220, -30324, -6585, 2303, 39940, 49228, 55312, 57078, 49542, 29419, 40990, 40642, 23075, 19151, 28788, 18123, 18863, 9643, 18409, 3369, -3067], "peak_date": "2025-02-27", "peak_price": 301000.0};
+        // 가격 차트
+        Plotly.newPlot('chart_price_1', [
+          {x:D.dates,y:D.close,type:'scatter',mode:'lines',name:'종가',line:{color:'#4fc3f7',width:2}},
+          {x:[D.peak_date],y:[D.peak_price],type:'scatter',mode:'markers+text',name:'고점',
+            text:['💎 고점'],textposition:'top center',textfont:{size:11,color:'#fbbf24'},
+            marker:{color:'#fbbf24',size:14,symbol:'star'}},
+          {x:D.buy_x,y:D.buy_y,type:'scatter',mode:'markers',name:'내 매수',
+            marker:{color:'rgba(16,185,129,0.7)',size:8,symbol:'triangle-up'}},
+          {x:D.sell_x,y:D.sell_y,type:'scatter',mode:'markers',name:'내 매도',
+            marker:{color:'rgba(239,68,68,0.85)',size:9,symbol:'triangle-down'}},
+          {x:D.sig_x,y:D.sig_y,type:'scatter',mode:'markers',name:'⚡ 매수→매도 전환',
+            marker:{color:'#a78bfa',size:D.sig_size,symbol:'diamond',line:{color:'#fff',width:1.5}},
+            hovertext:D.sig_hover,hoverinfo:'text',hoverlabel:{bgcolor:'#14171f'}},
+        ], {
+          paper_bgcolor:'#14171f', plot_bgcolor:'#14171f',
+          font:{color:'#bbb',size:11},
+          xaxis:{gridcolor:'#1f2230'}, yaxis:{gridcolor:'#1f2230', title:'원'},
+          legend:{orientation:'h',y:-0.13},
+          margin:{t:10,b:55,l:75,r:10},
+        }, {responsive:true});
+
+        // 개미 vs 큰손
+        Plotly.newPlot('chart_flow_1', [
+          {x:D.rs_dates,y:D.retail_5d,type:'scatter',mode:'lines',name:'개미 5일',
+            line:{color:'#ef4444',width:1.8}},
+          {x:D.rs_dates,y:D.large_inst_5d,type:'scatter',mode:'lines',name:'대형기관 5일',
+            line:{color:'#3498db',width:1.8}},
+          {x:D.rs_dates,y:D.foreign_5d,type:'scatter',mode:'lines',name:'외국계 5일',
+            line:{color:'#10b981',width:1.8}},
+        ], {
+          paper_bgcolor:'#14171f', plot_bgcolor:'#14171f',
+          font:{color:'#bbb',size:11},
+          xaxis:{gridcolor:'#1f2230'}, yaxis:{gridcolor:'#1f2230', title:'순매수 (주)', zeroline:true, zerolinecolor:'#555'},
+          legend:{orientation:'h',y:-0.18},
+          margin:{t:10,b:55,l:65,r:10},
+        }, {responsive:true});
+      })();
+      </script>
+    </div>
+
+</div></body></html>

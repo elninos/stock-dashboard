@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>익절 타이밍 분석</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.kpi-strip { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 18px; }
+.kpi-strip .kpi-mini {
+  flex: 1; min-width: 150px; background: #181b23; border-radius: 8px;
+  padding: 14px; text-align: center;
+}
+.kpi-strip .num { font-size: 1.6em; font-weight: 700; color: #fff; }
+.kpi-strip .lbl { font-size: 0.78em; color: #888; margin-top: 4px; }
+.kpi-strip .sub { font-size: 0.78em; color: #6b7280; margin-top: 2px; }
+.rule-card {
+  background: #181b23; border-radius: 10px;
+  padding: 14px 18px; margin-bottom: 10px;
+  border-left: 4px solid #4fc3f7;
+}
+.rule-card .rule-num { font-size: 0.85em; color: #4fc3f7; font-weight: 600; margin-bottom: 4px; }
+.rule-card .rule-title { font-weight: 600; margin-bottom: 4px; font-size: 0.95em; }
+.rule-card .rule-detail { color: #aaa; font-size: 0.84em; line-height: 1.7; }
+.urgent-banner {
+  padding: 14px 18px;
+  border-radius: 10px;
+  margin-bottom: 14px;
+  font-size: 0.92em;
+}
+.urgent-banner.danger { background: linear-gradient(135deg, #1a0d0d 0%, #14171f 100%); border:2px solid #ef4444; }
+.urgent-banner.warn { background: linear-gradient(135deg, #1a1410 0%, #14171f 100%); border:2px solid #f59e0b; }
+.urgent-banner.good { background: linear-gradient(135deg, #0d1a14 0%, #14171f 100%); border:2px solid #10b981; }
+table.holdings td { padding: 10px 8px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="nav">
+  <a href="index.html">📊 전체 대시보드</a>
+  <a href="status.html">📋 현재 상황</a>
+  <a href="trading_style.html">🎯 매매 스타일</a>
+  <a href="profit_taking.html" class="active">💰 익절 타이밍</a>
+</div>
+
+<h1>💰 익절 타이밍 분석</h1>
+<p class="subtitle">"평가이익 ≠ 실현이익" — 안 팔면 0원 · 시그널 시스템 + 트레일링 룰로 자동 권고</p>
+
+<!-- 핵심 KPI -->
+<div class="kpi-strip">
+  <div class="kpi-mini">
+    <div class="num" style="color:#10b981">+4.88억</div>
+    <div class="lbl">현재 평가이익</div>
+    <div class="sub">+103.9% (총 평가 9.6억)</div>
+  </div>
+  <div class="kpi-mini">
+    <div class="num">8</div>
+    <div class="lbl">+100%↑ 종목</div>
+    <div class="sub">+50%↑: 10개</div>
+  </div>
+  <div class="kpi-mini">
+    <div class="num" style="color:#ef4444">8</div>
+    <div class="lbl">🚨 긴급 익절</div>
+    <div class="sub">전량 또는 1/2 매도 권고</div>
+  </div>
+  <div class="kpi-mini">
+    <div class="num" style="color:#f59e0b">4</div>
+    <div class="lbl">⚠️ 부분 익절</div>
+    <div class="sub">1/3~1/4 매도 권고</div>
+  </div>
+  <div class="kpi-mini">
+    <div class="num" style="color:#10b981">20</div>
+    <div class="lbl">🟢 HOLD</div>
+    <div class="sub">시그널 없음, 추세 견조</div>
+  </div>
+  <div class="kpi-mini">
+    <div class="num ret-up">+9,586만</div>
+    <div class="lbl">전체 -10% 시</div>
+    <div class="sub">평가이익 +3.93억 잔여</div>
+  </div>
+</div>
+
+<!-- 긴급 알림 -->
+<div class="urgent-banner danger"><b>🚨 즉시 익절 검토 (8종목):</b> 토모큐브, 아스트, 원준, 원익피앤이, 비덴트, 에이프로젠, 아미코젠, 코아스템켐온</div>
+<div class="urgent-banner warn"><b>⚠️ 부분 익절 후보 (1종목):</b> 파마리서치</div>
+
+<!-- 익절 룰 -->
+<div class="card">
+  <h2>🎯 익절 룰 (Profit-Taking Rules)</h2>
+  <div class="callout">
+    <b>"평가이익이 많다"는 함정.</b> 매도하지 않으면 시장 변동에 그대로 노출됩니다.<br>
+    <b>이익을 단계적으로 실현하면서 일부는 추세에 태우는 것</b>이 익절 시스템의 목표.
+  </div>
+
+  <div class="rule-card" style="border-left-color:#a78bfa">
+    <div class="rule-num">RULE 1 · 도달 기반 분할 익절</div>
+    <div class="rule-title">💰 +50% / +100% / +200% 도달 시 1/4씩 익절</div>
+    <div class="rule-detail">
+      이익이 클수록 변동성도 큼 → 단계별로 잠금. 마지막 1/4은 추세에 태움.<br>
+      <b>실행:</b> 한 번에 다 팔지 말고 4번에 나눠서. "원금 + α 회수" 다음에 추세 보유.
+    </div>
+  </div>
+
+  <div class="rule-card" style="border-left-color:#fbbf24">
+    <div class="rule-num">RULE 2 · 분배 시그널 강제 익절</div>
+    <div class="rule-title">🚨 다이버전스 / 분배 패턴 / 거래량 다이버전스 발동 시 1/3 익절</div>
+    <div class="rule-detail">
+      가격은 신고가지만 큰손이 빠지는 중 = 곧 빠질 가능성 큼. 즉시 부분 익절.<br>
+      <b>지표:</b> OBV 분배 다이버전스, MFI ≥ 80, CMF ≤ -0.10, 외국계+기관 20일 음전환
+    </div>
+  </div>
+
+  <div class="rule-card" style="border-left-color:#ef4444">
+    <div class="rule-num">RULE 3 · 트레일링 스탑 (이익 잠금)</div>
+    <div class="rule-title">🔻 60일 신고가 -10% 이탈 시 즉시 1/2~전량 익절</div>
+    <div class="rule-detail">
+      추세 깨짐 컨펌. 평가이익이 크다면 주가가 -10% 빠질 때 절대 금액 손실이 큼.<br>
+      <b>예시:</b> +200% 종목이 -10% 빠지면 평가이익이 +170%로 줄어듬 (체감 큼)
+    </div>
+  </div>
+
+  <div class="rule-card" style="border-left-color:#10b981">
+    <div class="rule-num">RULE 4 · HOLD 조건</div>
+    <div class="rule-title">🟢 외국계 컨센서스 매수 + 신고가권 유지 + 분배 시그널 없음</div>
+    <div class="rule-detail">
+      "절대 안 판다"가 아니라 "지금은 안 판다". 추세가 살아있는 동안만 보유.<br>
+      매일 시그널 재평가하고, RULE 2/3 발동 즉시 분할 익절로 전환.
+    </div>
+  </div>
+</div>
+
+<!-- 종목별 익절 권고 테이블 -->
+<div class="card">
+  <h2>📋 종목별 익절 권고 (긴급도 순)</h2>
+  <p class="desc">
+    🚨 즉시 익절 → 🔻 1/3 익절 → ⚠️ 1/4 익절 → 🟡 첫 익절 후보 → 🟢 HOLD<br>
+    종목명 클릭 시 상세 페이지(daily_flow 데이터 있는 종목)
+  </p>
+  <table class="holdings">
+    <tr>
+      <th>종목</th>
+      <th style="text-align:right">수량</th>
+      <th style="text-align:right">평단</th>
+      <th style="text-align:right">현재가</th>
+      <th style="text-align:right">평가금액</th>
+      <th style="text-align:right">평가이익</th>
+      <th style="text-align:center">60일고점<br>이격</th>
+      <th>분배 신호</th>
+      <th>권고 행동</th>
+      <th style="text-align:right">-10% 시<br>손실</th>
+    </tr>
+    <tr style="background:#1a0d0d">
+          <td>
+            <a href="stocks/475960.html" style="color:#4fc3f7;text-decoration:none"><b>토모큐브</b></a><br>
+            <span style="color:#666;font-size:0.78em">475960 · 311일째</span>
+          </td>
+          <td class="mono" style="text-align:right">918</td>
+          <td class="mono" style="text-align:right">27,672</td>
+          <td class="mono" style="text-align:right">55,300</td>
+          <td class="mono" style="text-align:right">0.51억</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+2,536만<br><span style="font-size:0.85em">+99.8%</span></td>
+          <td class="mono" style="text-align:center;color:#ef4444">
+            -16.6%
+          </td>
+          <td><span class="label-tag" style="background:#7f1d1d;color:#fff">CMF 분배</span></td>
+          <td>
+            <span class="action-badge action-strong" style="font-size:0.78em">🚨 1/2 익절 (트레일링 -15%)</span>
+            
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+508만</td>
+        </tr><tr style="background:#1a0d0d">
+          <td>
+            <a href="stocks/067390.html" style="color:#4fc3f7;text-decoration:none"><b>아스트</b></a><br>
+            <span style="color:#666;font-size:0.78em">067390 · 946일째</span>
+          </td>
+          <td class="mono" style="text-align:right">1</td>
+          <td class="mono" style="text-align:right">3,325</td>
+          <td class="mono" style="text-align:right">794</td>
+          <td class="mono" style="text-align:right">0.00억</td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-0만<br><span style="font-size:0.85em">-76.1%</span></td>
+          <td class="mono" style="text-align:center;color:#ef4444">
+            -15.6%
+          </td>
+          <td><span class="label-tag" style="background:#7f1d1d;color:#fff">CMF 분배</span></td>
+          <td>
+            <span class="action-badge action-sell" style="font-size:0.78em">⛔ 손절 검토 (큰 손실)</span>
+            
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+0만</td>
+        </tr><tr style="background:#1a0d0d">
+          <td>
+            <a href="stocks/382840.html" style="color:#4fc3f7;text-decoration:none"><b>원준</b></a><br>
+            <span style="color:#666;font-size:0.78em">382840 · 1495일째</span>
+          </td>
+          <td class="mono" style="text-align:right">1</td>
+          <td class="mono" style="text-align:right">94,300</td>
+          <td class="mono" style="text-align:right">10,490</td>
+          <td class="mono" style="text-align:right">0.00억</td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-8만<br><span style="font-size:0.85em">-88.9%</span></td>
+          <td class="mono" style="text-align:center;color:#ef4444">
+            -12.6%
+          </td>
+          <td><span class="label-tag" style="background:#7c2d12;color:#fff">MFI 92</span></td>
+          <td>
+            <span class="action-badge action-sell" style="font-size:0.78em">⛔ 손절 검토 (큰 손실)</span>
+            
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+0만</td>
+        </tr><tr style="background:#1a0d0d">
+          <td>
+            <a href="stocks/217820.html" style="color:#4fc3f7;text-decoration:none"><b>원익피앤이</b></a><br>
+            <span style="color:#666;font-size:0.78em">217820 · 1495일째</span>
+          </td>
+          <td class="mono" style="text-align:right">12</td>
+          <td class="mono" style="text-align:right">28,850</td>
+          <td class="mono" style="text-align:right">3,825</td>
+          <td class="mono" style="text-align:right">0.00억</td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-30만<br><span style="font-size:0.85em">-86.7%</span></td>
+          <td class="mono" style="text-align:center;color:#ef4444">
+            -14.8%
+          </td>
+          <td><span style="color:#666">─</span></td>
+          <td>
+            <span class="action-badge action-sell" style="font-size:0.78em">⛔ 손절 검토 (큰 손실)</span>
+            
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+0만</td>
+        </tr><tr style="background:#1a0d0d">
+          <td>
+            <a href="stocks/121800.html" style="color:#4fc3f7;text-decoration:none"><b>비덴트</b></a><br>
+            <span style="color:#666;font-size:0.78em">121800 · 1928일째</span>
+          </td>
+          <td class="mono" style="text-align:right">300</td>
+          <td class="mono" style="text-align:right">9,973</td>
+          <td class="mono" style="text-align:right">3,320</td>
+          <td class="mono" style="text-align:right">0.01억</td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-200만<br><span style="font-size:0.85em">-66.7%</span></td>
+          <td class="mono" style="text-align:center;color:#10b981">
+            +0.0%
+          </td>
+          <td><span style="color:#666">─</span></td>
+          <td>
+            <span class="action-badge action-sell" style="font-size:0.78em">⛔ 손절 검토 (큰 손실)</span>
+            
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+10만</td>
+        </tr><tr style="background:#1a0d0d">
+          <td>
+            <a href="stocks/007460.html" style="color:#4fc3f7;text-decoration:none"><b>에이프로젠</b></a><br>
+            <span style="color:#666;font-size:0.78em">007460 · 2730일째</span>
+          </td>
+          <td class="mono" style="text-align:right">574</td>
+          <td class="mono" style="text-align:right">6,311</td>
+          <td class="mono" style="text-align:right">293</td>
+          <td class="mono" style="text-align:right">0.00억</td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-345만<br><span style="font-size:0.85em">-95.4%</span></td>
+          <td class="mono" style="text-align:center;color:#ef4444">
+            -67.8%
+          </td>
+          <td><span style="color:#666">─</span></td>
+          <td>
+            <span class="action-badge action-sell" style="font-size:0.78em">⛔ 손절 검토 (큰 손실)</span>
+            
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+2만</td>
+        </tr><tr style="background:#1a0d0d">
+          <td>
+            <a href="stocks/092040.html" style="color:#4fc3f7;text-decoration:none"><b>아미코젠</b></a><br>
+            <span style="color:#666;font-size:0.78em">092040 · 2804일째</span>
+          </td>
+          <td class="mono" style="text-align:right">200</td>
+          <td class="mono" style="text-align:right">33,675</td>
+          <td class="mono" style="text-align:right">1,862</td>
+          <td class="mono" style="text-align:right">0.00억</td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-636만<br><span style="font-size:0.85em">-94.5%</span></td>
+          <td class="mono" style="text-align:center;color:#ef4444">
+            -60.3%
+          </td>
+          <td><span style="color:#666">─</span></td>
+          <td>
+            <span class="action-badge action-sell" style="font-size:0.78em">⛔ 손절 검토 (큰 손실)</span>
+            
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+4만</td>
+        </tr><tr style="background:#1a0d0d">
+          <td>
+            <a href="stocks/166480.html" style="color:#4fc3f7;text-decoration:none"><b>코아스템켐온</b></a><br>
+            <span style="color:#666;font-size:0.78em">166480 · 1963일째</span>
+          </td>
+          <td class="mono" style="text-align:right">580</td>
+          <td class="mono" style="text-align:right">22,662</td>
+          <td class="mono" style="text-align:right">3,200</td>
+          <td class="mono" style="text-align:right">0.02억</td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-1,129만<br><span style="font-size:0.85em">-85.9%</span></td>
+          <td class="mono" style="text-align:center;color:#ef4444">
+            -19.5%
+          </td>
+          <td><span style="color:#666">─</span></td>
+          <td>
+            <span class="action-badge action-sell" style="font-size:0.78em">⛔ 손절 검토 (큰 손실)</span>
+            
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+19만</td>
+        </tr><tr style="background:#1a1410">
+          <td>
+            <a href="stocks/214450.html" style="color:#4fc3f7;text-decoration:none"><b>파마리서치</b></a><br>
+            <span style="color:#666;font-size:0.78em">214450 · 2233일째</span>
+          </td>
+          <td class="mono" style="text-align:right">973</td>
+          <td class="mono" style="text-align:right">71,028</td>
+          <td class="mono" style="text-align:right">323,000</td>
+          <td class="mono" style="text-align:right">3.14억</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+2.45억<br><span style="font-size:0.85em">+354.8%</span></td>
+          <td class="mono" style="text-align:center;color:#ef4444">
+            -54.6%
+          </td>
+          <td><span class="label-tag" style="background:#7f1d1d;color:#fff">OBV 분배</span> <span class="label-tag" style="background:#7f1d1d;color:#fff">CMF 분배</span></td>
+          <td>
+            <span class="action-badge action-sell" style="font-size:0.78em">🔻 1/3 익절 (OBV 분배 다이버전스)</span>
+            
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+3,143만</td>
+        </tr><tr style="background:#1a1410">
+          <td>
+            <a href="stocks/010170.html" style="color:#4fc3f7;text-decoration:none"><b>대한광통신</b></a><br>
+            <span style="color:#666;font-size:0.78em">010170 · 168일째</span>
+          </td>
+          <td class="mono" style="text-align:right">7,189</td>
+          <td class="mono" style="text-align:right">3,131</td>
+          <td class="mono" style="text-align:right">13,360</td>
+          <td class="mono" style="text-align:right">0.96억</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+7,354만<br><span style="font-size:0.85em">+326.7%</span></td>
+          <td class="mono" style="text-align:center;color:#ef4444">
+            -33.7%
+          </td>
+          <td><span style="color:#666">─</span></td>
+          <td>
+            <span class="action-badge action-partial" style="font-size:0.78em">⚠️ 1/4 익절 (수급 약화 시작)</span>
+            
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+960만</td>
+        </tr><tr style="background:#1a1410">
+          <td>
+            <a href="stocks/327260.html" style="color:#4fc3f7;text-decoration:none"><b>RF머트리얼즈</b></a><br>
+            <span style="color:#666;font-size:0.78em">327260 · 74일째</span>
+          </td>
+          <td class="mono" style="text-align:right">950</td>
+          <td class="mono" style="text-align:right">43,457</td>
+          <td class="mono" style="text-align:right">92,300</td>
+          <td class="mono" style="text-align:right">0.88억</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+4,640만<br><span style="font-size:0.85em">+112.4%</span></td>
+          <td class="mono" style="text-align:center;color:#ef4444">
+            -14.0%
+          </td>
+          <td><span style="color:#666">─</span></td>
+          <td>
+            <span class="action-badge action-partial" style="font-size:0.78em">⚠️ 1/4 익절 (수급 약화 시작)</span>
+            <div style="color:#888;font-size:0.78em;margin-top:4px">⚠️ 분배 의심 국면 (신고가권 + 스마트머니 음전환)<br>기관 5일 순매도 -5.4% (기준 -3.0%)</div>
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+877만</td>
+        </tr><tr style="background:#1a1410">
+          <td>
+            <a href="stocks/088280.html" style="color:#4fc3f7;text-decoration:none"><b>쏘닉스</b></a><br>
+            <span style="color:#666;font-size:0.78em">088280 · 428일째</span>
+          </td>
+          <td class="mono" style="text-align:right">5</td>
+          <td class="mono" style="text-align:right">3,005</td>
+          <td class="mono" style="text-align:right">6,140</td>
+          <td class="mono" style="text-align:right">0.00억</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+2만<br><span style="font-size:0.85em">+104.3%</span></td>
+          <td class="mono" style="text-align:center;color:#10b981">
+            +0.0%
+          </td>
+          <td><span class="label-tag" style="background:#7c2d12;color:#fff">MFI 84</span></td>
+          <td>
+            <span class="action-badge action-partial" style="font-size:0.78em">⚠️ 1/4 익절 (MFI 과매수 정점)</span>
+            
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+0만</td>
+        </tr><tr style="background:#0d1a14">
+          <td>
+            <a href="stocks/000150.html" style="color:#4fc3f7;text-decoration:none"><b>두산</b></a><br>
+            <span style="color:#666;font-size:0.78em">000150 · 210일째</span>
+          </td>
+          <td class="mono" style="text-align:right">75</td>
+          <td class="mono" style="text-align:right">547,293</td>
+          <td class="mono" style="text-align:right">1,541,000</td>
+          <td class="mono" style="text-align:right">1.16억</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+7,453만<br><span style="font-size:0.85em">+181.6%</span></td>
+          <td class="mono" style="text-align:center;color:#10b981">
+            +0.0%
+          </td>
+          <td><span style="color:#666">─</span></td>
+          <td>
+            <span class="action-badge action-hold" style="font-size:0.78em">🟢 HOLD (신고가권 큰 이익)</span>
+            
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+1,156만</td>
+        </tr><tr style="background:#0d1a14">
+          <td>
+            <a href="stocks/278470.html" style="color:#4fc3f7;text-decoration:none"><b>에이피알</b></a><br>
+            <span style="color:#666;font-size:0.78em">278470 · 249일째</span>
+          </td>
+          <td class="mono" style="text-align:right">51</td>
+          <td class="mono" style="text-align:right">209,412</td>
+          <td class="mono" style="text-align:right">450,000</td>
+          <td class="mono" style="text-align:right">0.23억</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+1,227만<br><span style="font-size:0.85em">+114.9%</span></td>
+          <td class="mono" style="text-align:center;color:#10b981">
+            +0.0%
+          </td>
+          <td><span style="color:#666">─</span></td>
+          <td>
+            <span class="action-badge action-hold" style="font-size:0.78em">🟢 HOLD (신고가권 큰 이익)</span>
+            
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+230만</td>
+        </tr><tr style="background:#0d1a14">
+          <td>
+            <a href="stocks/039030.html" style="color:#4fc3f7;text-decoration:none"><b>이오테크닉스</b></a><br>
+            <span style="color:#666;font-size:0.78em">039030 · 228일째</span>
+          </td>
+          <td class="mono" style="text-align:right">41</td>
+          <td class="mono" style="text-align:right">210,646</td>
+          <td class="mono" style="text-align:right">506,000</td>
+          <td class="mono" style="text-align:right">0.21억</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+1,211만<br><span style="font-size:0.85em">+140.2%</span></td>
+          <td class="mono" style="text-align:center;color:#10b981">
+            +0.0%
+          </td>
+          <td><span style="color:#666">─</span></td>
+          <td>
+            <span class="action-badge action-hold" style="font-size:0.78em">🟢 HOLD (신고가권 큰 이익)</span>
+            
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+207만</td>
+        </tr><tr style="background:#0d1a14">
+          <td>
+            <a href="stocks/140860.html" style="color:#4fc3f7;text-decoration:none"><b>파크시스템스</b></a><br>
+            <span style="color:#666;font-size:0.78em">140860 · 561일째</span>
+          </td>
+          <td class="mono" style="text-align:right">150</td>
+          <td class="mono" style="text-align:right">214,093</td>
+          <td class="mono" style="text-align:right">284,500</td>
+          <td class="mono" style="text-align:right">0.43억</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+1,056만<br><span style="font-size:0.85em">+32.9%</span></td>
+          <td class="mono" style="text-align:center;color:#ef4444">
+            -7.3%
+          </td>
+          <td><span class="label-tag" style="background:#7f1d1d;color:#fff">OBV 분배</span></td>
+          <td>
+            <span class="action-badge action-hold" style="font-size:0.78em">🟢 HOLD (이익 진행 중)</span>
+            
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+427만</td>
+        </tr><tr style="background:#0d1a14">
+          <td>
+            <a href="stocks/417200.html" style="color:#4fc3f7;text-decoration:none"><b>LS머트리얼즈</b></a><br>
+            <span style="color:#666;font-size:0.78em">417200 · 169일째</span>
+          </td>
+          <td class="mono" style="text-align:right">500</td>
+          <td class="mono" style="text-align:right">15,433</td>
+          <td class="mono" style="text-align:right">27,200</td>
+          <td class="mono" style="text-align:right">0.14억</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+588만<br><span style="font-size:0.85em">+76.2%</span></td>
+          <td class="mono" style="text-align:center;color:#10b981">
+            +0.0%
+          </td>
+          <td><span class="label-tag" style="background:#7c2d12;color:#fff">MFI 90</span></td>
+          <td>
+            <span class="action-badge action-hold" style="font-size:0.78em">🟢 HOLD (신고가권 큰 이익)</span>
+            
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+136만</td>
+        </tr><tr style="background:#0d1a14">
+          <td>
+            <a href="stocks/310210.html" style="color:#4fc3f7;text-decoration:none"><b>보로노이</b></a><br>
+            <span style="color:#666;font-size:0.78em">310210 · 158일째</span>
+          </td>
+          <td class="mono" style="text-align:right">80</td>
+          <td class="mono" style="text-align:right">235,544</td>
+          <td class="mono" style="text-align:right">306,500</td>
+          <td class="mono" style="text-align:right">0.25억</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+568만<br><span style="font-size:0.85em">+30.1%</span></td>
+          <td class="mono" style="text-align:center;color:#ef4444">
+            -15.7%
+          </td>
+          <td><span class="label-tag" style="background:#7f1d1d;color:#fff">CMF 분배</span></td>
+          <td>
+            <span class="action-badge action-hold" style="font-size:0.78em">🟢 HOLD (이익 진행 중)</span>
+            
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+245만</td>
+        </tr><tr style="background:#0d1a14">
+          <td>
+            <a href="stocks/058470.html" style="color:#4fc3f7;text-decoration:none"><b>리노공업</b></a><br>
+            <span style="color:#666;font-size:0.78em">058470 · 283일째</span>
+          </td>
+          <td class="mono" style="text-align:right">22</td>
+          <td class="mono" style="text-align:right">49,900</td>
+          <td class="mono" style="text-align:right">124,400</td>
+          <td class="mono" style="text-align:right">0.03억</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+164만<br><span style="font-size:0.85em">+149.3%</span></td>
+          <td class="mono" style="text-align:center;color:#10b981">
+            -2.0%
+          </td>
+          <td><span style="color:#666">─</span></td>
+          <td>
+            <span class="action-badge action-hold" style="font-size:0.78em">🟢 HOLD (신고가권 큰 이익)</span>
+            
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+27만</td>
+        </tr><tr style="background:#0d1a14">
+          <td>
+            <a href="stocks/000660.html" style="color:#4fc3f7;text-decoration:none"><b>SK하이닉스</b></a><br>
+            <span style="color:#666;font-size:0.78em">000660 · 30일째</span>
+          </td>
+          <td class="mono" style="text-align:right">6</td>
+          <td class="mono" style="text-align:right">963,000</td>
+          <td class="mono" style="text-align:right">1,222,000</td>
+          <td class="mono" style="text-align:right">0.07억</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+155만<br><span style="font-size:0.85em">+26.9%</span></td>
+          <td class="mono" style="text-align:center;color:#10b981">
+            -0.2%
+          </td>
+          <td><span style="color:#666">─</span></td>
+          <td>
+            <span class="action-badge action-hold" style="font-size:0.78em">🟢 HOLD (이익 진행 중)</span>
+            
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+73만</td>
+        </tr><tr style="background:#0d1a14">
+          <td>
+            <a href="stocks/233740.html" style="color:#4fc3f7;text-decoration:none"><b>KODEX 코스닥150레버리지</b></a><br>
+            <span style="color:#666;font-size:0.78em">233740 · 50일째</span>
+          </td>
+          <td class="mono" style="text-align:right">1,500</td>
+          <td class="mono" style="text-align:right">16,469</td>
+          <td class="mono" style="text-align:right">17,320</td>
+          <td class="mono" style="text-align:right">0.26억</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+128만<br><span style="font-size:0.85em">+5.2%</span></td>
+          <td class="mono" style="text-align:center;color:#ef4444">
+            -16.2%
+          </td>
+          <td><span class="label-tag" style="background:#7f1d1d;color:#fff">OBV 분배</span></td>
+          <td>
+            <span class="action-badge action-hold" style="font-size:0.78em">─ 익절 분석 대상 아님</span>
+            
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+260만</td>
+        </tr><tr style="background:#0d1a14">
+          <td>
+            <a href="stocks/099190.html" style="color:#4fc3f7;text-decoration:none"><b>아이센스</b></a><br>
+            <span style="color:#666;font-size:0.78em">099190 · 2731일째</span>
+          </td>
+          <td class="mono" style="text-align:right">200</td>
+          <td class="mono" style="text-align:right">19,100</td>
+          <td class="mono" style="text-align:right">22,800</td>
+          <td class="mono" style="text-align:right">0.05억</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+74만<br><span style="font-size:0.85em">+19.4%</span></td>
+          <td class="mono" style="text-align:center;color:#ef4444">
+            -15.6%
+          </td>
+          <td><span style="color:#666">─</span></td>
+          <td>
+            <span class="action-badge action-hold" style="font-size:0.78em">🟢 HOLD (이익 진행 중)</span>
+            
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+46만</td>
+        </tr><tr style="background:#0d1a14">
+          <td>
+            <a href="stocks/068270.html" style="color:#4fc3f7;text-decoration:none"><b>셀트리온</b></a><br>
+            <span style="color:#666;font-size:0.78em">068270 · 93일째</span>
+          </td>
+          <td class="mono" style="text-align:right">50</td>
+          <td class="mono" style="text-align:right">200,740</td>
+          <td class="mono" style="text-align:right">209,000</td>
+          <td class="mono" style="text-align:right">0.10억</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+41만<br><span style="font-size:0.85em">+4.1%</span></td>
+          <td class="mono" style="text-align:center;color:#ef4444">
+            -15.9%
+          </td>
+          <td><span class="label-tag" style="background:#7f1d1d;color:#fff">CMF 분배</span></td>
+          <td>
+            <span class="action-badge action-hold" style="font-size:0.78em">─ 익절 분석 대상 아님</span>
+            
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+104만</td>
+        </tr><tr style="background:#0d1a14">
+          <td>
+            <a href="stocks/200130.html" style="color:#4fc3f7;text-decoration:none"><b>콜마비앤에이치</b></a><br>
+            <span style="color:#666;font-size:0.78em">200130 · 4119일째</span>
+          </td>
+          <td class="mono" style="text-align:right">360</td>
+          <td class="mono" style="text-align:right">11,200</td>
+          <td class="mono" style="text-align:right">12,090</td>
+          <td class="mono" style="text-align:right">0.04억</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+32만<br><span style="font-size:0.85em">+7.9%</span></td>
+          <td class="mono" style="text-align:center;color:#ef4444">
+            -31.7%
+          </td>
+          <td><span class="label-tag" style="background:#7f1d1d;color:#fff">CMF 분배</span></td>
+          <td>
+            <span class="action-badge action-hold" style="font-size:0.78em">─ 익절 분석 대상 아님</span>
+            
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+44만</td>
+        </tr><tr style="background:#0d1a14">
+          <td>
+            <a href="stocks/463050.html" style="color:#4fc3f7;text-decoration:none"><b>TIME K바이오액티브</b></a><br>
+            <span style="color:#666;font-size:0.78em">463050 · 77일째</span>
+          </td>
+          <td class="mono" style="text-align:right">1,100</td>
+          <td class="mono" style="text-align:right">18,432</td>
+          <td class="mono" style="text-align:right">18,590</td>
+          <td class="mono" style="text-align:right">0.20억</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+17만<br><span style="font-size:0.85em">+0.9%</span></td>
+          <td class="mono" style="text-align:center;color:#ef4444">
+            -12.3%
+          </td>
+          <td><span class="label-tag" style="background:#7f1d1d;color:#fff">CMF 분배</span></td>
+          <td>
+            <span class="action-badge action-hold" style="font-size:0.78em">─ 익절 분석 대상 아님</span>
+            
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+204만</td>
+        </tr><tr style="background:#0d1a14">
+          <td>
+            <a href="stocks/039200.html" style="color:#4fc3f7;text-decoration:none"><b>오스코텍</b></a><br>
+            <span style="color:#666;font-size:0.78em">039200 · 119일째</span>
+          </td>
+          <td class="mono" style="text-align:right">308</td>
+          <td class="mono" style="text-align:right">50,390</td>
+          <td class="mono" style="text-align:right">50,900</td>
+          <td class="mono" style="text-align:right">0.16억</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+16만<br><span style="font-size:0.85em">+1.0%</span></td>
+          <td class="mono" style="text-align:center;color:#ef4444">
+            -14.2%
+          </td>
+          <td><span class="label-tag" style="background:#7f1d1d;color:#fff">CMF 분배</span></td>
+          <td>
+            <span class="action-badge action-hold" style="font-size:0.78em">─ 익절 분석 대상 아님</span>
+            
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+157만</td>
+        </tr><tr style="background:#0d1a14">
+          <td>
+            <a href="stocks/021080.html" style="color:#4fc3f7;text-decoration:none"><b>에이티넘인베스트</b></a><br>
+            <span style="color:#666;font-size:0.78em">021080 · 842일째</span>
+          </td>
+          <td class="mono" style="text-align:right">550</td>
+          <td class="mono" style="text-align:right">3,510</td>
+          <td class="mono" style="text-align:right">3,575</td>
+          <td class="mono" style="text-align:right">0.02억</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+4만<br><span style="font-size:0.85em">+1.9%</span></td>
+          <td class="mono" style="text-align:center;color:#ef4444">
+            -5.5%
+          </td>
+          <td><span style="color:#666">─</span></td>
+          <td>
+            <span class="action-badge action-hold" style="font-size:0.78em">─ 익절 분석 대상 아님</span>
+            
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+20만</td>
+        </tr><tr style="background:#0d1a14">
+          <td>
+            <a href="stocks/285490.html" style="color:#4fc3f7;text-decoration:none"><b>노바텍</b></a><br>
+            <span style="color:#666;font-size:0.78em">285490 · 392일째</span>
+          </td>
+          <td class="mono" style="text-align:right">1</td>
+          <td class="mono" style="text-align:right">18,350</td>
+          <td class="mono" style="text-align:right">22,900</td>
+          <td class="mono" style="text-align:right">0.00억</td>
+          <td class="mono ret-down" style="text-align:right;font-weight:600">+0만<br><span style="font-size:0.85em">+24.8%</span></td>
+          <td class="mono" style="text-align:center;color:#ef4444">
+            -23.9%
+          </td>
+          <td><span style="color:#666">─</span></td>
+          <td>
+            <span class="action-badge action-hold" style="font-size:0.78em">🟢 HOLD (이익 진행 중)</span>
+            
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+0만</td>
+        </tr><tr style="background:#0d1a14">
+          <td>
+            <a href="stocks/065420.html" style="color:#4fc3f7;text-decoration:none"><b>에스아이리소스</b></a><br>
+            <span style="color:#666;font-size:0.78em">065420 · 996일째</span>
+          </td>
+          <td class="mono" style="text-align:right">1</td>
+          <td class="mono" style="text-align:right">312</td>
+          <td class="mono" style="text-align:right">285</td>
+          <td class="mono" style="text-align:right">0.00억</td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-0만<br><span style="font-size:0.85em">-8.7%</span></td>
+          <td class="mono" style="text-align:center;color:#ef4444">
+            -24.4%
+          </td>
+          <td><span class="label-tag" style="background:#7f1d1d;color:#fff">CMF 분배</span></td>
+          <td>
+            <span class="action-badge action-hold" style="font-size:0.78em">─ 손절/홀드 결정</span>
+            
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+0만</td>
+        </tr><tr style="background:#0d1a14">
+          <td>
+            <a href="stocks/161580.html" style="color:#4fc3f7;text-decoration:none"><b>필옵틱스</b></a><br>
+            <span style="color:#666;font-size:0.78em">161580 · 1864일째</span>
+          </td>
+          <td class="mono" style="text-align:right">205</td>
+          <td class="mono" style="text-align:right">50,672</td>
+          <td class="mono" style="text-align:right">48,400</td>
+          <td class="mono" style="text-align:right">0.10억</td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-47만<br><span style="font-size:0.85em">-4.5%</span></td>
+          <td class="mono" style="text-align:center;color:#ef4444">
+            -15.5%
+          </td>
+          <td><span style="color:#666">─</span></td>
+          <td>
+            <span class="action-badge action-hold" style="font-size:0.78em">─ 손절/홀드 결정</span>
+            
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+99만</td>
+        </tr><tr style="background:#0d1a14">
+          <td>
+            <a href="stocks/950160.html" style="color:#4fc3f7;text-decoration:none"><b>코오롱티슈진</b></a><br>
+            <span style="color:#666;font-size:0.78em">950160 · 21일째</span>
+          </td>
+          <td class="mono" style="text-align:right">300</td>
+          <td class="mono" style="text-align:right">103,675</td>
+          <td class="mono" style="text-align:right">101,000</td>
+          <td class="mono" style="text-align:right">0.30억</td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-80만<br><span style="font-size:0.85em">-2.6%</span></td>
+          <td class="mono" style="text-align:center;color:#ef4444">
+            -20.5%
+          </td>
+          <td><span class="label-tag" style="background:#7f1d1d;color:#fff">CMF 분배</span></td>
+          <td>
+            <span class="action-badge action-hold" style="font-size:0.78em">─ 손절/홀드 결정</span>
+            
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+303만</td>
+        </tr><tr style="background:#0d1a14">
+          <td>
+            <a href="stocks/035420.html" style="color:#4fc3f7;text-decoration:none"><b>NAVER</b></a><br>
+            <span style="color:#666;font-size:0.78em">035420 · 207일째</span>
+          </td>
+          <td class="mono" style="text-align:right">152</td>
+          <td class="mono" style="text-align:right">244,724</td>
+          <td class="mono" style="text-align:right">214,000</td>
+          <td class="mono" style="text-align:right">0.33억</td>
+          <td class="mono ret-up" style="text-align:right;font-weight:600">-467만<br><span style="font-size:0.85em">-12.6%</span></td>
+          <td class="mono" style="text-align:center;color:#ef4444">
+            -25.4%
+          </td>
+          <td><span class="label-tag" style="background:#7f1d1d;color:#fff">CMF 분배</span></td>
+          <td>
+            <span class="action-badge action-hold" style="font-size:0.78em">─ 손절/홀드 결정</span>
+            
+          </td>
+          <td class="mono ret-up" style="text-align:right;font-size:0.85em">+325만</td>
+        </tr>
+  </table>
+</div>
+
+<!-- 시뮬레이션 -->
+<div class="card">
+  <h2>📊 익절 시나리오 비교</h2>
+  <p class="desc">현재 평가이익 +4.88억을 어떻게 잠그느냐에 따른 결과 시뮬레이션</p>
+  <div class="grid3">
+    <div class="kpi" style="border:1px solid #ef4444">
+      <div class="kpi-label" style="color:#ef4444">시나리오 A: 안 팔고 -20% 시장 하락</div>
+      <div class="kpi-value mono">+2.97억</div>
+      <div class="kpi-sub">평가이익 61% 잔존</div>
+    </div>
+    <div class="kpi" style="border:1px solid #f59e0b">
+      <div class="kpi-label" style="color:#f59e0b">시나리오 B: 1/3 익절 후 -20% 하락</div>
+      <div class="kpi-value mono">+3.61억</div>
+      <div class="kpi-sub">분할 익절로 손실 완충</div>
+    </div>
+    <div class="kpi" style="border:1px solid #10b981">
+      <div class="kpi-label" style="color:#10b981">시나리오 C: 시그널 발동 종목만 익절</div>
+      <div class="kpi-value mono">+α</div>
+      <div class="kpi-sub">현재 긴급/부분 익절 9종목 매도</div>
+    </div>
+  </div>
+</div>
+
+<!-- 매매 스타일 변화 제안 -->
+<div class="card">
+  <h2>🔄 매매 스타일 진단 — 손절 → 익절 중심으로</h2>
+  <div class="callout warn">
+    <b>새로운 진단:</b> 사용자의 진짜 약점은 "손절 못함"이 아니라 <b>"익절 못함"</b>.<br>
+    평가이익 +4.88억 / 실현이익은 그보다 훨씬 적을 가능성. 안 팔면 시장 변동에 그대로 노출.
+  </div>
+  <ul class="reason-list" style="line-height:2">
+    <li><b>이전 진단의 오류:</b> 분할매수가 손실의 원인이라고 봤지만, 실제로는 분할매수 → 평가이익 큰 종목 유지 = 좋은 결과</li>
+    <li><b>진짜 약점:</b> 큰 평가이익 종목(+100%↑) 발생해도 실현 안 함 → 시장 변동 시 평가이익 증발 위험</li>
+    <li><b>해결책:</b> 익절 시그널 자동화 + 단계적 분할 익절 (RULE 1~4 적용)</li>
+    <li><b>지금 당장 할 일:</b> 위 테이블의 🚨/🔻 종목 검토 → 1/3 또는 1/2 매도 검토</li>
+  </ul>
+</div>
+
+</div>
+</body>
+</html>

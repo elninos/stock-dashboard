@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<title>파마리서치 8월 고점 거래원 분석</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+</head><body>
+<div class="container">
+<div class="nav">
+  <a href="index.html">📊 전체</a>
+  <a href="broker_timing.html">1차 매수기 거래원</a>
+  <a href="pharma_aug_peak.html" class="active">🎯 파마 8월 고점</a>
+</div>
+
+<h1>🎯 파마리서치 2025-08 고점 거래원 정밀 분석</h1>
+<p class="subtitle">KIS API로 모든 거래원 × 일별 매매 시계열 수집 — daily_flow에 없던 8월 데이터 확보</p>
+
+<div class="card">
+  <div class="callout">
+    <b>분석 방법:</b><br>
+    1. KIS API <code>FHPST04540000</code>로 99개 거래원 코드 × 파마리서치 일별 매매 일괄 수집<br>
+    2. 거래원 코드 ↔ 이름 매핑 자동 구축 (스냅샷 API 활용)<br>
+    3. 5일 매수 주도자 → 다음 5일 매도 전환 시그널 탐지<br>
+    4. 외국계 / 대형기관 / 개미 / 기타 그룹별 시계열<br>
+    <br>
+    <b>고점:</b> 2025-08-26 @ <b>711,000원</b>
+  </div>
+</div>
+
+<div class="card">
+  <h2>가격 + 사용자 매매 + 매도 전환 시그널</h2>
+  <div id="chart_price" style="height:420px"></div>
+</div>
+
+<div class="card">
+  <h2>그룹별 5일 누적 순매수</h2>
+  <p class="desc">외국계가 매도 전환 → 대형기관 따라옴 → 마지막에 개미가 받는 패턴 추적</p>
+  <div id="chart_groups" style="height:340px"></div>
+</div>
+
+<div class="card">
+  <h2>매도 전환 시그널 시계열 (점수 ≥5)</h2>
+  <table>
+    <tr>
+      <th>날짜</th>
+      <th style="text-align:center">점수</th>
+      <th style="text-align:center">고점까지</th>
+      <th>매도 전환 거래원</th>
+    </tr>
+    <tr>
+          <td class="mono">2025-08-11</td>
+          <td class="mono" style="text-align:center;color:#f59e0b;font-weight:600">7</td>
+          <td class="mono" style="text-align:center;color:#f59e0b">+15일</td>
+          <td>KB증권(lar), unknown_00043(sma)</td>
+        </tr><tr>
+          <td class="mono">2025-08-12</td>
+          <td class="mono" style="text-align:center;color:#f59e0b;font-weight:600">7</td>
+          <td class="mono" style="text-align:center;color:#10b981">+14일</td>
+          <td>KB증권(lar), unknown_00043(sma)</td>
+        </tr><tr>
+          <td class="mono">2025-08-13</td>
+          <td class="mono" style="text-align:center;color:#f59e0b;font-weight:600">7</td>
+          <td class="mono" style="text-align:center;color:#10b981">+13일</td>
+          <td>KB증권(lar), unknown_00022(sma)</td>
+        </tr><tr>
+          <td class="mono">2025-08-14</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">9</td>
+          <td class="mono" style="text-align:center;color:#10b981">+12일</td>
+          <td>KB증권(lar), unknown_00056(sma), 미래에셋증권(lar)</td>
+        </tr><tr>
+          <td class="mono">2025-08-18</td>
+          <td class="mono" style="text-align:center;color:#f59e0b;font-weight:600">7</td>
+          <td class="mono" style="text-align:center;color:#10b981">+8일</td>
+          <td>삼성증권(lar), 한국증권(lar)</td>
+        </tr><tr>
+          <td class="mono">2025-08-19</td>
+          <td class="mono" style="text-align:center;color:#f59e0b;font-weight:600">7</td>
+          <td class="mono" style="text-align:center;color:#10b981">+7일</td>
+          <td>삼성증권(lar), 한국증권(lar)</td>
+        </tr><tr>
+          <td class="mono">2025-08-26</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">9</td>
+          <td class="mono" style="text-align:center;color:#10b981">+0일</td>
+          <td>모간서울(sma), 골드만(for)</td>
+        </tr><tr>
+          <td class="mono">2025-09-11</td>
+          <td class="mono" style="text-align:center;color:#f59e0b;font-weight:600">7</td>
+          <td class="mono" style="text-align:center;color:#888">-16일</td>
+          <td>신한증권(lar), unknown_00022(sma)</td>
+        </tr><tr>
+          <td class="mono">2025-09-15</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">9</td>
+          <td class="mono" style="text-align:center;color:#888">-20일</td>
+          <td>메릴린치(for), unknown_00022(sma)</td>
+        </tr><tr>
+          <td class="mono">2025-09-17</td>
+          <td class="mono" style="text-align:center;color:#f59e0b;font-weight:600">7</td>
+          <td class="mono" style="text-align:center;color:#888">-22일</td>
+          <td>NH투자증권(lar), 삼성증권(lar)</td>
+        </tr><tr>
+          <td class="mono">2025-09-18</td>
+          <td class="mono" style="text-align:center;color:#f59e0b;font-weight:600">7</td>
+          <td class="mono" style="text-align:center;color:#888">-23일</td>
+          <td>NH투자증권(lar), KB증권(lar)</td>
+        </tr><tr>
+          <td class="mono">2025-09-19</td>
+          <td class="mono" style="text-align:center;color:#f59e0b;font-weight:600">7</td>
+          <td class="mono" style="text-align:center;color:#888">-24일</td>
+          <td>NH투자증권(lar), unknown_00001(sma)</td>
+        </tr><tr>
+          <td class="mono">2025-09-22</td>
+          <td class="mono" style="text-align:center;color:#ef4444;font-weight:600">9</td>
+          <td class="mono" style="text-align:center;color:#888">-27일</td>
+          <td>JP모간(for), NH투자증권(lar)</td>
+        </tr>
+  </table>
+</div>
+
+<script>
+const D = {"dates": ["2025-07-15", "2025-07-16", "2025-07-17", "2025-07-18", "2025-07-21", "2025-07-22", "2025-07-23", "2025-07-24", "2025-07-25", "2025-07-28", "2025-07-29", "2025-07-30", "2025-07-31", "2025-08-01", "2025-08-04", "2025-08-05", "2025-08-06", "2025-08-07", "2025-08-08", "2025-08-11", "2025-08-12", "2025-08-13", "2025-08-14", "2025-08-18", "2025-08-19", "2025-08-20", "2025-08-21", "2025-08-22", "2025-08-25", "2025-08-26", "2025-08-27", "2025-08-28", "2025-08-29", "2025-09-01", "2025-09-02", "2025-09-03", "2025-09-04", "2025-09-05", "2025-09-08", "2025-09-09", "2025-09-10", "2025-09-11", "2025-09-12", "2025-09-15", "2025-09-16", "2025-09-17", "2025-09-18", "2025-09-19", "2025-09-22", "2025-09-23", "2025-09-24", "2025-09-25", "2025-09-26", "2025-09-29", "2025-09-30"], "close": [592000.0, 574000.0, 578000.0, 567000.0, 574000.0, 572000.0, 583000.0, 579000.0, 558000.0, 547000.0, 567000.0, 550000.0, 557000.0, 551000.0, 555000.0, 564000.0, 598000.0, 608000.0, 664000.0, 680000.0, 669000.0, 665000.0, 684000.0, 668000.0, 675000.0, 653000.0, 680000.0, 700000.0, 694000.0, 711000.0, 704000.0, 684000.0, 680000.0, 659000.0, 655000.0, 622000.0, 622000.0, 630000.0, 675000.0, 672000.0, 641000.0, 653000.0, 644000.0, 626000.0, 628000.0, 619000.0, 608000.0, 597000.0, 609000.0, 580000.0, 570000.0, 547000.0, 578000.0, 580000.0, 601000.0], "sig_x": ["2025-08-11", "2025-08-12", "2025-08-13", "2025-08-14", "2025-08-18", "2025-08-19", "2025-08-26", "2025-09-11", "2025-09-15", "2025-09-17", "2025-09-18", "2025-09-19", "2025-09-22"], "sig_y": [680000.0, 669000.0, 665000.0, 684000.0, 668000.0, 675000.0, 711000.0, 653000.0, 626000.0, 619000.0, 608000.0, 597000.0, 609000.0], "sig_size": [15, 15, 15, 17, 15, 15, 17, 15, 17, 15, 15, 15, 17], "sig_hover": ["<b>2025-08-11 매수→매도 전환 (점수 7)</b><br>고점까지 +15일<br>━━━━━━━━━━━━<br><b style='color:#ef4444'>매도 전환 (2명, 외인:0):</b><br>  KB증권 (large_inst): +37,884 → -2,388<br>  unknown_00043 (small_inst): +6,306 → -16,477<br><b style='color:#10b981'>유지 (1명):</b><br>  unknown_00040: +140 (유지)", "<b>2025-08-12 매수→매도 전환 (점수 7)</b><br>고점까지 +14일<br>━━━━━━━━━━━━<br><b style='color:#ef4444'>매도 전환 (2명, 외인:0):</b><br>  KB증권 (large_inst): +23,360 → -13,720<br>  unknown_00043 (small_inst): +6,523 → -18,275<br><b style='color:#10b981'>유지 (1명):</b><br>  unknown_00041: +52 (유지)", "<b>2025-08-13 매수→매도 전환 (점수 7)</b><br>고점까지 +13일<br>━━━━━━━━━━━━<br><b style='color:#ef4444'>매도 전환 (2명, 외인:0):</b><br>  KB증권 (large_inst): +14,229 → -15,749<br>  unknown_00022 (small_inst): +6,418 → -2,169<br><b style='color:#10b981'>유지 (1명):</b><br>  unknown_00041: +52 (유지)", "<b>2025-08-14 매수→매도 전환 (점수 9)</b><br>고점까지 +12일<br>━━━━━━━━━━━━<br><b style='color:#ef4444'>매도 전환 (3명, 외인:0):</b><br>  KB증권 (large_inst): +11,298 → -13,672<br>  unknown_00056 (small_inst): +9,967 → -11,655<br>  미래에셋증권 (large_inst): +8,750 → -7,931<br><b style='color:#10b981'>유지 (0명):</b><br>", "<b>2025-08-18 매수→매도 전환 (점수 7)</b><br>고점까지 +8일<br>━━━━━━━━━━━━<br><b style='color:#ef4444'>매도 전환 (2명, 외인:0):</b><br>  삼성증권 (large_inst): +15,978 → -1,538<br>  한국증권 (large_inst): +9,640 → -3,258<br><b style='color:#10b981'>유지 (1명):</b><br>  unknown_00010: +554 (유지)", "<b>2025-08-19 매수→매도 전환 (점수 7)</b><br>고점까지 +7일<br>━━━━━━━━━━━━<br><b style='color:#ef4444'>매도 전환 (2명, 외인:0):</b><br>  삼성증권 (large_inst): +18,218 → -5,524<br>  한국증권 (large_inst): +10,791 → -2,864<br><b style='color:#10b981'>유지 (1명):</b><br>  골드만: +16,472 (유지)", "<b>2025-08-26 매수→매도 전환 (점수 9)</b><br>고점까지 +0일<br>━━━━━━━━━━━━<br><b style='color:#ef4444'>매도 전환 (2명, 외인:1):</b><br>  모간서울 (small_inst): +32,611 → -7,600<br>  골드만 (foreign): +16,472 → -1,759<br><b style='color:#10b981'>유지 (1명):</b><br>  신한증권: +5,463 (유지)", "<b>2025-09-11 매수→매도 전환 (점수 7)</b><br>고점까지 -16일<br>━━━━━━━━━━━━<br><b style='color:#ef4444'>매도 전환 (2명, 외인:0):</b><br>  신한증권 (large_inst): +11,485 → -27,571<br>  unknown_00022 (small_inst): +11,255 → -4,863<br><b style='color:#10b981'>유지 (1명):</b><br>  메릴린치: +6,108 (유지)", "<b>2025-09-15 매수→매도 전환 (점수 9)</b><br>고점까지 -20일<br>━━━━━━━━━━━━<br><b style='color:#ef4444'>매도 전환 (2명, 외인:1):</b><br>  메릴린치 (foreign): +12,223 → -1,173<br>  unknown_00022 (small_inst): +9,483 → -5,080<br><b style='color:#10b981'>유지 (1명):</b><br>  모간서울: +26,812 (유지)", "<b>2025-09-17 매수→매도 전환 (점수 7)</b><br>고점까지 -22일<br>━━━━━━━━━━━━<br><b style='color:#ef4444'>매도 전환 (2명, 외인:0):</b><br>  NH투자증권 (large_inst): +15,530 → -11,500<br>  삼성증권 (large_inst): +11,873 → -10,048<br><b style='color:#10b981'>유지 (1명):</b><br>  JP모간: +40,605 (유지)", "<b>2025-09-18 매수→매도 전환 (점수 7)</b><br>고점까지 -23일<br>━━━━━━━━━━━━<br><b style='color:#ef4444'>매도 전환 (2명, 외인:0):</b><br>  NH투자증권 (large_inst): +10,901 → -5,887<br>  KB증권 (large_inst): +9,341 → -18,424<br><b style='color:#10b981'>유지 (1명):</b><br>  JP모간: +21,554 (유지)", "<b>2025-09-19 매수→매도 전환 (점수 7)</b><br>고점까지 -24일<br>━━━━━━━━━━━━<br><b style='color:#ef4444'>매도 전환 (2명, 외인:0):</b><br>  NH투자증권 (large_inst): +9,103 → -2,676<br>  unknown_00001 (small_inst): +7,554 → -1,209<br><b style='color:#10b981'>유지 (1명):</b><br>  JP모간: +14,724 (유지)", "<b>2025-09-22 매수→매도 전환 (점수 9)</b><br>고점까지 -27일<br>━━━━━━━━━━━━<br><b style='color:#ef4444'>매도 전환 (2명, 외인:1):</b><br>  JP모간 (foreign): +75,208 → -7,942<br>  NH투자증권 (large_inst): +8,692 → -8,437<br><b style='color:#10b981'>유지 (1명):</b><br>  모간서울: +45,933 (유지)"], "gts_dates": ["2025-07-15", "2025-07-16", "2025-07-17", "2025-07-18", "2025-07-21", "2025-07-22", "2025-07-23", "2025-07-24", "2025-07-25", "2025-07-28", "2025-07-29", "2025-07-30", "2025-07-31", "2025-08-01", "2025-08-04", "2025-08-05", "2025-08-06", "2025-08-07", "2025-08-08", "2025-08-11", "2025-08-12", "2025-08-13", "2025-08-14", "2025-08-18", "2025-08-19", "2025-08-20", "2025-08-21", "2025-08-22", "2025-08-25", "2025-08-26", "2025-08-27", "2025-08-28", "2025-08-29", "2025-09-01", "2025-09-02", "2025-09-03", "2025-09-04", "2025-09-05", "2025-09-08", "2025-09-09", "2025-09-10", "2025-09-11", "2025-09-12", "2025-09-15", "2025-09-16", "2025-09-17", "2025-09-18", "2025-09-19", "2025-09-22", "2025-09-23", "2025-09-24", "2025-09-25", "2025-09-26", "2025-09-29", "2025-09-30"], "foreign_5d": [NaN, NaN, NaN, NaN, 23421.0, 30741.0, 33039.0, 23312.0, 26174.0, 26334.0, 17266.0, 11014.0, 22395.0, 12026.0, 3670.0, -1043.0, -11872.0, -24473.0, -15545.0, 4707.0, 7615.0, 16385.0, 24794.0, 23611.0, 7851.0, 15712.0, 5725.0, 6863.0, 20950.0, 21231.0, 24649.0, 33671.0, 32090.0, 17758.0, 19189.0, 19072.0, 19475.0, 9831.0, 14183.0, 22535.0, 13990.0, 33602.0, 52541.0, 65267.0, 55296.0, 43068.0, 16790.0, 4004.0, -45990.0, -43539.0, -35992.0, -8690.0, -25664.0, 2484.0, -8869.0], "large_5d": [NaN, NaN, NaN, NaN, -42968.0, -45083.0, -44126.0, -37572.0, -36218.0, -20537.0, -840.0, 12550.0, 16166.0, 26777.0, 20663.0, 7380.0, 8556.0, 22373.0, 15007.0, 15126.0, 22228.0, 6424.0, -15225.0, -15898.0, -11529.0, -8784.0, -4524.0, -4641.0, -6911.0, -8170.0, -18852.0, -17118.0, -11102.0, -4058.0, -10075.0, -5558.0, -10852.0, -4953.0, -5537.0, -2489.0, 20319.0, 1504.0, -30858.0, -44723.0, -49237.0, -62212.0, -27762.0, 6232.0, 26594.0, 24365.0, 14925.0, -8978.0, -20044.0, -36731.0, -36650.0], "retail_5d": [NaN, NaN, NaN, NaN, -9452.0, -8412.0, -10509.0, -6990.0, -4326.0, -5905.0, -5309.0, -4228.0, -6247.0, -7796.0, -1506.0, 968.0, 3005.0, 4516.0, 2106.0, -2429.0, -3325.0, -5460.0, -8733.0, -5830.0, -4765.0, -5824.0, -9290.0, -7886.0, -9360.0, -6928.0, -8718.0, -3736.0, -234.0, 1254.0, 1324.0, -536.0, -2234.0, -8321.0, -11049.0, -12224.0, -4331.0, -4042.0, 455.0, 3584.0, 3289.0, 3423.0, 3822.0, 3365.0, 3956.0, 3936.0, 673.0, 37.0, 1007.0, -1458.0, -617.0], "small_5d": [NaN, NaN, NaN, NaN, 28999.0, 22754.0, 21596.0, 21250.0, 14370.0, 108.0, -11117.0, -19336.0, -32314.0, -31007.0, -22827.0, -7305.0, 311.0, -2416.0, -1568.0, -17404.0, -26518.0, -17349.0, -836.0, -1883.0, 8443.0, -1104.0, 8089.0, 5664.0, -4679.0, -6133.0, 2921.0, -12817.0, -20754.0, -14954.0, -10438.0, -12978.0, -6389.0, 3443.0, 2403.0, -7822.0, -29978.0, -31064.0, -22138.0, -24128.0, -9348.0, 15721.0, 7150.0, -13601.0, 15440.0, 15238.0, 20394.0, 17631.0, 44701.0, 35705.0, 46136.0], "peak_date": "2025-08-26", "peak_price": 711000.0, "buy_x": ["2025-09-24"], "buy_y": [602000.0], "sell_x": [], "sell_y": []};
+const BASE = {
+  paper_bgcolor:'#14171f', plot_bgcolor:'#14171f',
+  font:{color:'#bbb',size:11},
+  xaxis:{gridcolor:'#1f2230'}, yaxis:{gridcolor:'#1f2230'},
+  legend:{orientation:'h',y:-0.13},
+  margin:{t:10,b:55,l:75,r:10},
+};
+
+Plotly.newPlot('chart_price', [
+  {x:D.dates,y:D.close,type:'scatter',mode:'lines',name:'종가',line:{color:'#4fc3f7',width:2}},
+  {x:[D.peak_date],y:[D.peak_price],type:'scatter',mode:'markers+text',name:'💎 고점',
+    text:[`💎 ${D.peak_price.toLocaleString()}원`],textposition:'top center',
+    textfont:{size:11,color:'#fbbf24'},
+    marker:{color:'#fbbf24',size:14,symbol:'star'}},
+  {x:D.buy_x,y:D.buy_y,type:'scatter',mode:'markers',name:'내 매수',
+    marker:{color:'rgba(16,185,129,0.7)',size:8,symbol:'triangle-up'}},
+  {x:D.sell_x,y:D.sell_y,type:'scatter',mode:'markers',name:'내 매도',
+    marker:{color:'rgba(239,68,68,0.85)',size:9,symbol:'triangle-down'}},
+  {x:D.sig_x,y:D.sig_y,type:'scatter',mode:'markers',name:'⚡ 매수→매도 전환',
+    marker:{color:'#a78bfa',size:D.sig_size,symbol:'diamond',line:{color:'#fff',width:1.5}},
+    hovertext:D.sig_hover,hoverinfo:'text',hoverlabel:{bgcolor:'#14171f'}},
+], {...BASE,yaxis:{...BASE.yaxis,title:'원'}}, {responsive:true});
+
+Plotly.newPlot('chart_groups', [
+  {x:D.gts_dates,y:D.foreign_5d,type:'scatter',mode:'lines',name:'🌐 외국계 5일',
+    line:{color:'#10b981',width:2}},
+  {x:D.gts_dates,y:D.large_5d,type:'scatter',mode:'lines',name:'🏛️ 대형기관 5일',
+    line:{color:'#3498db',width:2}},
+  {x:D.gts_dates,y:D.retail_5d,type:'scatter',mode:'lines',name:'👥 개미 5일',
+    line:{color:'#ef4444',width:2}},
+  {x:D.gts_dates,y:D.small_5d,type:'scatter',mode:'lines',name:'🏢 중소형 5일',
+    line:{color:'rgba(167,139,250,0.7)',width:1.2,dash:'dot'}},
+], {...BASE,
+  yaxis:{...BASE.yaxis,title:'5일 누적 순매수 (주)',zeroline:true,zerolinecolor:'#555'},
+}, {responsive:true});
+</script>
+
+</div></body></html>
