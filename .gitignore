@@ -32,3 +32,9 @@ maximize_test.ahk
 *_backup.json
 # analyze_signals.py 출력물 (로컬 실행)
 sell_signals.json
+# KRX Open API 캐시 (로컬 캐시, git 불필요)
+data/krx_open_cache/
+data/kis_cache/
+*.db
+*.db-shm
+*.db-wal
