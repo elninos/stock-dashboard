@@ -36,6 +36,9 @@ jobs:
             --namespace-id "6db9cbb95a4f4723bd0f26fb84214269" --remote > historical_portfolio_values.json
 
       - name: Fetch latest prices
+        env:
+          KIS_APPKEY: ${{ secrets.KIS_APPKEY }}
+          KIS_APPSECRET: ${{ secrets.KIS_APPSECRET }}
         run: python fetch_prices.py
 
       - name: Build dashboard
@@ -62,7 +65,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase --autostash origin main
           git add prices.json stock_map.json
           git diff --cached --quiet || git commit -m "Auto price update $(date '+%Y-%m-%d %H:%M') KST"
-          git pull --rebase origin main
           git push
