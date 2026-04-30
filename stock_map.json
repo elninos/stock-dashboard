@@ -1228,5 +1228,15 @@
     "code": "090470",
     "nation": "KOR",
     "market": "코스닥"
+  },
+  "자화전자": {
+    "code": "033240",
+    "nation": "KOR",
+    "market": "코스피"
+  },
+  "파마리서치 214450": {
+    "code": "",
+    "nation": "",
+    "market": "NOT_FOUND"
   }
 }
