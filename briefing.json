@@ -1,6 +1,6 @@
 {
   "2026-05-20": {
-    "fetched_at": "2026-05-20T19:26:19+09:00",
+    "fetched_at": "2026-05-20T22:43:26+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -9,15 +9,6 @@
         "category": "증권사 리포트",
         "channel_url": "https://t.me/bumgore",
         "posts": [
-          {
-            "date": "2026-05-16",
-            "time": "18:14",
-            "text": "https://wccftech.com/sk-hynix-workers-become-the-hottest-commodity-in-south-koreas-marriage-mart-after-a-2-5-billion-bonus-pool-hits-their-bank-accounts/",
-            "links": [
-              "https://wccftech.com/sk-hynix-workers-become-the-hottest-commodity-in-south-koreas-marriage-mart-after-a-2-5-billion-bonus-pool-hits-their-bank-accounts/"
-            ],
-            "post_url": "https://t.me/bumgore/54311"
-          },
           {
             "date": "2026-05-18",
             "time": "07:54",
@@ -268,56 +259,6 @@
         "posts": [
           {
             "date": "2026-05-20",
-            "time": "08:59",
-            "text": "✅ 에스트래픽,  샌프란시스코 지하철에서 무임승차 차단용 게이트로 속도 개선(CBS)\n\nhttps://www.cbsnews.com/sanfrancisco/news/bart-rolling-out-quicker-fare-gates-to-cut-down-on-fare-evasion/?utm_source=copilot.com\n\n📌 게이트 닫힘 속도 단축\n샌프란시스코 지하철(BART), 한국 에스트래픽 게이트 도입해\n\n무임승차와 ‘piggybacking’ 방지를 위해 개찰구 작동 속도 조정\n\n게이트 개폐 시간을 기존 800ms → 500ms로 단축\n\n📌 추가 장비 없이 소프트웨어 변경\n새 장비 도입 없이 기존 게이트의 소프트웨어 설정만 변경\n\nConcord·Antioch 역에서 시범 운영 후 전 역 확대 추진\n\n📌 효과는 예상보다 큼\nBART는 신규 요금 게이트 도입으로 연간 약 1000만달러 수익 개선 효과를 추정\n\n무임승차 감소뿐 아니라 고객 만족도와 승객 수 증가도 확인\n\n📌 치안 개선 효과도 언급\nBART 측은 게이트 도입 이후 범죄, 기물파손, 성희롱 신고 등이 감소했다고 설명\n\n대중교통 인프라에서 요금 징수 시스템이 수익성과 치안 개선을 동시에 좌우하는 사례\n\n추후 타 프로젝트 수주 가능성도 높은 상황\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://www.cbsnews.com/sanfrancisco/news/bart-rolling-out-quicker-fare-gates-to-cut-down-on-fare-evasion/?utm_source=copilot.com",
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/26199"
-          },
-          {
-            "date": "2026-05-20",
-            "time": "09:07",
-            "text": "✅ 한투證, '380만닉스' 목표가 제시…\"메모리 반도체, AI 인프라 핵심 자산으로 재평가\"\n\nhttps://biz.chosun.com/stock/stock_general/2026/05/20/CPTPBJGI4FHGZOC4I5IO7IPMFI/\n\n📌 목표가 85% 상향\n한국투자증권이 SK하이닉스 목표주가를 205만원 → 380만원으로 상향\n\n투자의견은 ‘매수’ 유지\n\n📌 메모리의 전략자산화\n메모리 반도체가 단순 범용 제품을 넘어 AI 인프라 핵심 자산으로 재평가받고 있다는 분석\n\n높은 ROE 지속과 밸류에이션 리레이팅을 정당화하는 요인으로 평가\n\n📌 구조적 공급 부족\nHBM은 범용 DRAM 대비 3배 이상의 생산능력을 필요로 해 공급 증가 속도가 제한적\n\n메모리 공급 부족이 일시적 사이클이 아닌 구조적 변화라는 판단\n\n📌 LTA 구조 변화 주목\n하이퍼스케일러와 3~5년 장기공급계약 체결 확대\n\nASP 하방을 방어하고 실적 변동성을 줄이는 구조로 전환 중\n\n📌 가격 전망\n올해 범용 DRAM ASP는 전년 대비 315% 상승 전망\n\n내년에는 HBM ASP가 116% 상승하며 메모리 가격 상승을 주도할 것으로 전망\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://biz.chosun.com/stock/stock_general/2026/05/20/CPTPBJGI4FHGZOC4I5IO7IPMFI/",
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/26200"
-          },
-          {
-            "date": "2026-05-20",
-            "time": "09:24",
-            "text": "✅ 구글, 4배 빠른 '제미나이 3.5 플래시' 출시…AI 에이전트·영상 모델도 공개\n\nhttps://biz.chosun.com/it-science/ict/2026/05/20/DRJJZQYCVZC5HOK6LILNEPWTWU/\n\n📌 4배 빠른 경량 AI 모델\n구글이 I/O 2026에서 ‘제미나이 3.5 플래시’ 출시\n\n기존 최상위 모델보다 빠른 출력 속도와 비용 효율성이 핵심\n\n📌 AI 에이전트도 공개\n‘제미나이 스파크’는 이메일 요약, 브리핑, 반복 업무, 코딩 등을 자동 수행\n\n화면을 꺼도 백그라운드에서 작동 가능\n\n📌 검색·쇼핑도 AI 중심 개편\n구글 검색은 텍스트뿐 아니라 이미지·파일·영상까지 통합\n\n쇼핑은 가격 추적부터 결제까지 AI가 처리하는 구조로 확대\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://biz.chosun.com/it-science/ict/2026/05/20/DRJJZQYCVZC5HOK6LILNEPWTWU/",
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/26201"
-          },
-          {
-            "date": "2026-05-20",
-            "time": "09:58",
-            "text": "✅ [탐방노트] 에스트래픽\n\n📍 교통 인프라 SI 기반 모빌리티 솔루션 기업\n도로·철도 교통 인프라 시스템 구축 및 운영을 주력으로 하는 교통 솔루션 전문 기업\n\n하이패스·스마트톨링·AFC·철도 신호·LTE-R·K-MaaS 등으로 사업 영역 확장 중\n\n📍 국내 도로교통 시장 1위 기반 안정적 레퍼런스 보유\n국내 유료도로 요금징수 시스템 시장에서 50% 이상 점유율 확보\n\n하이패스 약 40%, 기계식 요금징수 TCS 80% 이상 점유율로 국내 압도적 지위 보유\n\n📍 미국 AFC 수주 확대가 핵심 성장동력\n워싱턴·샌프란시스코·LA 등 미국 주요 도시 역무 자동화 시스템 수주 레퍼런스 확보\n\n큐빅·컨듀언트 등 글로벌 업체와 경쟁 중이며, 부정승차 방지 게이트 설계와 빠른 실행력이 차별화 포인트\n\n📍 UWB 기반 태그리스·오픈페이먼트로 플랫폼화 추진\n블루투스 대비 위치 오차를 10~20cm 수준으로 줄인 UWB 기반 태그리스 기술 개발\n\n일반 신용카드 결제가 가능한 오픈페이먼트와 SaaS형 결제 플랫폼으로 2027년 토탈 페이먼트 솔루션 업체 도약 목표\n\n✅ 에스트래픽 탐방노트 보러가기 \n[네이버프리미엄콘텐츠]\nhttps://contents.premium.naver.com/growthresearch/growth/contents/260520094310563tv\n\n[홈페이지]\nhttp://www.growthresearch.co.kr/membership/1430/1032",
-            "links": [
-              "https://contents.premium.naver.com/growthresearch/growth/contents/260520094310563tv",
-              "http://www.growthresearch.co.kr/membership/1430/1032"
-            ],
-            "post_url": "https://t.me/growthresearch/26202"
-          },
-          {
-            "date": "2026-05-20",
-            "time": "10:10",
-            "text": "✅ 엔비디아 실적 앞 긴장 최고조…\"시총 위아래 각각 535조 열려\"\n\nhttps://www.news1.kr/world/international-economy/6172179\n\n📌 옵션시장, ±6.5% 변동 반영\n엔비디아가 20일 장마감 후 1분기 실적 발표 예정\n\n옵션시장은 실적 발표 다음날 주가가 위아래 약 6.5% 움직일 가능성을 반영\n\n📌 시총 변동폭 535조원 수준\n현재 시가총액 기준 하루 변동폭은 약 3550억달러\n\n한화 약 535조원 규모로 S&P500 기업 대부분의 시총보다 큰 수준\n\n📌 상승 베팅도 확대\n최근 옵션시장에서는 하락 방어보다 상승 베팅 콜옵션 수요가 더 강한 흐름\n\nAI·데이터센터 투자 지속에 대한 기대감이 여전히 반영 중\n\n📌 핵심 체크포인트\n이번 실적은 AI 투자 사이클 지속 여부를 확인하는 핵심 이벤트\n\n데이터센터 매출, 마진, 향후 가이던스가 반도체 섹터 방향성을 좌우할 전망\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://www.news1.kr/world/international-economy/6172179",
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/26203"
-          },
-          {
-            "date": "2026-05-20",
             "time": "10:28",
             "text": "✅ [이차전지 검사장비 재편] 후발주자 지아이에스, 원통형 수주로 존재감 확대\n\nhttps://m.thebell.co.kr/m/newsview.asp?svccode=00&newskey=202605121627565840106783\n\n📌 후발주자였던 지아이에스\n기존 MLCC 절단장비·자동화 중심 사업에서 이차전지 검사장비로 확장\n\n2023년 검사장비 업체 구일엔지니어링 인수 이후 본격 진출\n\n📌 핵심은 ‘로우 데이터’ 확보\nCATL·BYD 공급 경험이 있는 글로벌 기업과 협업하며 대량 결함 데이터 확보\n\n단순 하드웨어보다 결함 패턴·판독 알고리즘 경쟁력이 중요해지는 흐름\n\n📌 원통형 배터리 검사 수주 확보\n국내 배터리 셀메이커 원통형 인라인 X-ray 검사장비 수주\n\n쎄크·자비스 등 기존 강자와 경쟁에서 확보한 물량\n\n📌 왜 원통형이 어려운가\n4680·46100·46120 등 대형 원통형 확대 중\n\n곡면 구조 특성상 철 이물 검출 난도가 높고 EV 고객사 기준도 엄격\n\n📌 포인트\n배터리 검사장비도 결국 AI 학습 데이터 산업으로 진화 중\n\n장비 성능 상향평준화 이후에는 실제 양산 데이터와 알고리즘이 수주 경쟁력으로 연결되는 국면\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
             "links": [
@@ -460,6 +401,43 @@
               "https://t.me/growthresearch"
             ],
             "post_url": "https://t.me/growthresearch/26218"
+          },
+          {
+            "date": "2026-05-20",
+            "time": "19:51",
+            "text": "✅ [탐방노트] 아이엠비디엑스\n\n📍 혈액 한 번으로 암을 읽는 기업\n아이엠비디엑스는 액체생검 기반 암 진단 기업\n\n혈액 속 순환종양 DNA(ctDNA)를 분석해 암의 존재, 재발 가능성, 치료제 선택까지 돕는 솔루션을 보유\n\n📍 국내 액체생검 시장 사실상 1위\nNGS 기반 국내 액체생검 시장에서 점유율은 거의 100% 수준\n\n국내 대형병원 대부분을 고객사로 확보하며 빠르게 레퍼런스를 쌓는 중\n\n📍 현재 실적은 프로파일링이 견인\n주력 제품은 암 환자에게 맞는 표적치료제를 추천하는 캔서프로파일러·알파리퀴드\n\n보험 적용이 가능해 매출 비중 65%를 차지하는 핵심 캐시카우\n\n📍 진짜 기대는 조기진단·재발탐지\n캔서파인드는 혈액 한 번으로 여러 암을 조기 선별하는 제품\n\n캔서디덱트는 수술 후 재발 위험을 기존 검사보다 빠르게 잡아내는 제품\n\n올해 해외 매출 비중 확대와 2027년 BEP 달성 여부가 관전 포인트\n\n✅ 아이엠비디엑스 탐방노트 보러가기\n[네이버프리미엄콘텐츠]\nhttps://contents.premium.naver.com/growthresearch/growth/contents/260520193835553jv\n\n[홈페이지]\nhttp://www.growthresearch.co.kr/membership/1430/1035",
+            "links": [
+              "https://contents.premium.naver.com/growthresearch/growth/contents/260520193835553jv",
+              "http://www.growthresearch.co.kr/membership/1430/1035"
+            ],
+            "post_url": "https://t.me/growthresearch/26219"
+          },
+          {
+            "date": "2026-05-20",
+            "time": "20:49",
+            "text": "🧬 노보 노디스크, 사우디 MASH 시장 확장\n\n노보 노디스크 사우디.\n사우디 주요 3개 의학회와 협력 체결.\n\n목표는\n지방간·MASH 인식 제고.\n\n💊 참여 기관\n• 사우디 간질환·이식학회\n\n• 사우디 당뇨병학회\n\n• 사우디 비만학회\n\n💊 의료 협업 강화\n1차 진료의.\n\n간 전문의.\n\n내분비 전문의.\n\n비만 전문의.\n\n각 진료 영역 간\n협업 체계 강화 필요.\n\n🧬바이오섹터 분석🧬 [그로쓰리서치]\nhttps://t.me/growthbio",
+            "links": [
+              "https://t.me/growthbio"
+            ],
+            "post_url": "https://t.me/growthresearch/26220"
+          },
+          {
+            "date": "2026-05-20",
+            "time": "20:58",
+            "text": "💻 모건스탠리: 1GW AI 데이터센터 구축 Capex 구조 분석\n: NVDA vs Big Tech Custom ASIC 비교\n\nAI 데이터센터 비용 구조의 중심이 \nGPU 단품이 아니라 랙/서버 시스템 전체로 이동 중이라는 점\n\n📌 NVDA 플랫폼의 높은 랙/서버 비용 비중\n\n1GW 구축 시 \nNVDA 플랫폼의 Servers/Racks 비중은 약 58~63% 수준\n\nHBM·CPU 제외 후에도 랙/서버 시스템이 전체 비용의 약 60%\n\nCustom ASIC은 서버/랙 비중이 약 39% 수준\n\n📌 NVDA 세대별 1GW당 Capex 상승\n\nH100: $23bn\nB200: $24bn\nGB300: $33bn\nVera Rubin: $41bn\n\n서버/랙 비용: H100 $13.9bn → Vera Rubin $24.8bn으로 증가\n\n📌 Custom ASIC의 핵심 경쟁력은 비용\n\nGoogle TPUv7\n1GW당 Capex는 $27bn\n\nAmazon Trainium3\n1GW당 Capex는 약 $15bn\n\n📌 투자 관점 핵심 시사점\n\n1. NVDA는 여전히 AI 인프라의 표준\n\nCUDA 생태계\n성능 우위\n개발자 락인\n통합 랙 시스템 경쟁력\n\n2. 다만 NVDA 스택의 Capex 부담 확대가 구조적 고민\n\n특히 추론 수요가 커질수록 중요한 변수는 단순 성능보다 \n단위 컴퓨팅당 비용 효율성\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
+            "links": [
+              "https://t.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/26221"
+          },
+          {
+            "date": "2026-05-20",
+            "time": "21:13",
+            "text": "💻 엔비디아, 스트릿 컨센서스 [JPM]\n\n📌 1Q27 실적 기대치\n\n🎮 회사 가이던스\n• 매출: $78bn\n\n• 매출총이익률: 75.0%\n\n☺️ 스트릿 컨센서스\n• 매출: $78.60bn\n\n• EPS: $1.76 \n\n•  2분기 가이던스 매출: $86.40bn / 매출총이익률: 74.8%\n\n☺️ 설문조사 평균\n• 매출: $80.97bn\n\n• EPS: $1.84\n\n• 2분기 가이던스 매출: $89.71bn / 매출총이익률: 74.8% \n\n📌 연간 EPS 전망\n\n☺️ FY27 EPS\n• 스트릿 컨센서스: $8.39\n\n• 설문조사 평균: $9.42\n\n☺️ FY28 EPS\n• 스트릿 컨센서스: $11.28\n\n• 설문조사 평균: $13.30\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
+            "links": [
+              "https://t.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/26223"
           }
         ]
       },
@@ -470,15 +448,6 @@
         "category": "매크로/크립토",
         "channel_url": "https://t.me/SpartanResearch",
         "posts": [
-          {
-            "date": "2026-05-18",
-            "time": "11:39",
-            "text": "▶️[HD현대마린솔루션, 북미 AEG와 데이터센터 전력용 엔진 유지·보수 MOU 체결]\n\n- 18일 HD현대마린솔루션은 미국 에너지 인프라 개발 기업 AEG와 데이터센터 전력용 엔진 유지·보수를 위한 업무협약(MOU)을 체결\n\n- 최근 인공지능(AI) 기술 확산으로 데이터센터 전력 수요가 급증하면서 HD현대중공업이 자체 개발한 힘센 엔진을 데이터 센터 비상 발전용으로 공급한 데 이어 관계사인 HD현대마린솔루션도 비상 발전 및 상용 전력 공급 시스템 유지 보수 사업으로 영역을 확장\n\n- 앞서 HD현대중공업이 지난 달 AEG와 20메가와트(MW)급 힘센(HiMSEN) 엔진 기반 684MW 규모 데이터센터 전력용 발전설비 공급 계약을 체결\n\n- HD현대마린솔루션은 AEG가 미국 텍사스주에 건립 중인 데이터센터 내 전력용 엔진 33기에 대한 장기 유지·보수와 운영 등을 담당하게 됨\n\n- HD현대마린솔루션은 이번 협력을 통해 힘센 엔진의 성능과 엔진 유지·보수 기술력을 앞세워 북미 시장 점유율을 확대할 방침\n\n- 특히 장기 유지·보수 계약과 운영·정비 계약을 기반으로 지속적인 서비스 수익 모델을 강화한다는 전략\n\n- HD현대마린솔루션 관계자는 \"AI 산업의 급성장으로 데이터센터 발전용 엔진 유지·보수 서비스 중요성이 커지고 있다\"며 \"이번 협력을 통해 북미 데이터센터 시장 내 신규 수요를 선점할 것\"이라고 언급\n\nhttps://www.livebiz.today/news/articleView.html?idxno=202146",
-            "links": [
-              "https://www.livebiz.today/news/articleView.html?idxno=202146"
-            ],
-            "post_url": "https://t.me/SpartanResearch/3668"
-          },
           {
             "date": "2026-05-18",
             "time": "13:57",
@@ -803,154 +772,159 @@
         "posts": [
           {
             "date": "2026-05-20",
-            "time": "14:10",
-            "text": "삼성전기의 실리콘 캐패시터 대형 수주가 공시되었습니다.\n\nEmbedded PCB 및 차세대 PCB의 핵심 부품으로 부각되고 있는 실리콘 캐패시터에 대해 당사가 기존 작성했던 리포트를 재공유드립니다.",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/32520"
-          },
-          {
-            "date": "2026-05-20",
-            "time": "14:16",
-            "text": "[속보]이 대통령 \"노동3권 노동자 보호 위한 것…개인 몇몇 이익 위해 준 것 아냐\"\nhttps://www.newsis.com/view/NISX20260520_0003637630",
-            "links": [
-              "https://www.newsis.com/view/NISX20260520_0003637630"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/32522"
-          },
-          {
-            "date": "2026-05-20",
-            "time": "14:16",
-            "text": "✅ [속보]李대통령 “영업이익 배분받는 것은 투자자가 하는 것..이해 안돼”\n\nhttps://www.edaily.co.kr/news/read?newsId=03745766645450888",
-            "links": [
-              "https://www.edaily.co.kr/news/read?newsId=03745766645450888"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/32523"
-          },
-          {
-            "date": "2026-05-20",
-            "time": "14:18",
-            "text": "[속보] \"한국 유조선, 호르무즈해협 통과 시도중\"<블룸버그> | 연합뉴스\nhttps://www.yna.co.kr/view/AKR20260520117900009",
-            "links": [
-              "https://www.yna.co.kr/view/AKR20260520117900009"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/32524"
-          },
-          {
-            "date": "2026-05-20",
-            "time": "14:23",
-            "text": "\"로봇 도입도 협상\"…현대차, 노조 벽에 신사업 멈춘다\nhttps://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202605200411",
-            "links": [
-              "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202605200411"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/32525"
-          },
-          {
-            "date": "2026-05-20",
-            "time": "14:28",
-            "text": "[속보] 李대통령 \"노조 단체행동도 좋지만…적정한 선이 있어야\"\nhttps://n.news.naver.com/article/001/0016088719?cds=news_media_pc&type=breakingnews",
-            "links": [
-              "https://n.news.naver.com/article/001/0016088719?cds=news_media_pc&amp;type=breakingnews"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/32526"
-          },
-          {
-            "date": "2026-05-20",
-            "time": "14:31",
-            "text": "삼성전자 및 파업을 앞두고 있는 대기업 목록\n\n삼성전자\n삼성바이오로직스\nLG유플러스\n현대차\n카카오\n한화오션, 한화시스템\n현대모비스 하청\n포스코\n대한항공\n현대중공업",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/32527"
-          },
-          {
-            "date": "2026-05-20",
-            "time": "14:35",
-            "text": "리브스메드, 수술 로봇 '스타크' 공개 임박…특허 1000건이 뒷받침 https://www.edaily.co.kr/News/Read?newsId=02650246645450888&mediaCodeNo=257",
-            "links": [
-              "https://www.edaily.co.kr/News/Read?newsId=02650246645450888&amp;mediaCodeNo=257"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/32528"
-          },
-          {
-            "date": "2026-05-20",
-            "time": "14:40",
-            "text": "약속의 2시 30ㅂ...",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/32529"
-          },
-          {
-            "date": "2026-05-20",
-            "time": "14:42",
-            "text": "기판 공급망 선점\n\n기판이 미래다 - 인텔 -\n\nhttps://www.joseilbo.com/news/htmls/2026/05/20260520568641.html",
-            "links": [
-              "https://www.joseilbo.com/news/htmls/2026/05/20260520568641.html"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/32530"
-          },
-          {
-            "date": "2026-05-20",
-            "time": "14:45",
-            "text": "월 1회 제형 모든 회사를 응원합니다. \n\n서로 싸우지말고 좀\n\n[펩트론]트럼프는 왜 주사제에 돈을 걸었나: GLP‑1 시장의 구조적 변화와 월 1회 제형의 의미\nhttps://blog.naver.com/slow_dreambear/224291020686\n\n월 1회 제형은 주사제 생태계를 축소시키는 것이 아니라 오히려 더 크게 만들고, 디바이스 수요를 더 안정적으로 만든다. 펩트론–릴리의 월 1회 제형 개발은 시대의 흐름을 역행하는 것이 아니라, GLP‑1 시장이 직면한 공급 부족·편의성·확장성 문제를 해결하는 ‘다음 물결’이다. CMS의 GLP‑1 Bridge가 수요를 폭발적으로 늘리고, 릴리·West Pharma가 그 수요를 감당하기 위해 생산·디바이스 생태계를 확장하는 가운데, 펩트론의 기술은 그 흐름 속에서 자연스럽게 등장한 하나의 필연적 조각이다.\n​\n그리고 여기서 한 가지 더 짚어볼 필요가 있다. 트럼프가 릴리와 West Pharma 같은 주사제 생태계 기업에 투자했다는 사실 자체가, 그 역시 주사제 시장의 미래 발전 가능성을 확신했다는 신호라는 점이다. 이는 단순히 “지금 잘 팔리는 약”에 베팅한 것이 아니라, 주사제 기술이 앞으로 더 진화하고 더 편리해질 것이라는 방향성에 돈을 건 선택이다. 그렇다면 자연스럽게 이런 질문이 따라온다.",
-            "links": [
-              "https://blog.naver.com/slow_dreambear/224291020686"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/32531"
-          },
-          {
-            "date": "2026-05-20",
-            "time": "14:50",
-            "text": "[속보] 조현 \"韓유조선, 이란과 협의해 호르무즈 해협 통과 중\" | 연합뉴스\nhttps://www.yna.co.kr/view/AKR20260520127400504",
-            "links": [
-              "https://www.yna.co.kr/view/AKR20260520127400504"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/32532"
-          },
-          {
-            "date": "2026-05-20",
-            "time": "14:54",
-            "text": "https://n.news.naver.com/mnews/article/421/0008956373?rc=N&ntype=RANKING&sid=001",
-            "links": [
-              "https://n.news.naver.com/mnews/article/421/0008956373?rc=N&amp;ntype=RANKING&amp;sid=001"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/32533"
-          },
-          {
-            "date": "2026-05-20",
-            "time": "15:14",
-            "text": "장 마치기전에 뻘 생각인데, 생각해보면 투자경고는 이런거에 줘야 하는거 아님?\n\n빠질거라고 경고 해줬어야지 미리...",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/32534"
-          },
-          {
-            "date": "2026-05-20",
-            "time": "15:25",
-            "text": "근데 코스피 사고팔때는 CD로 이쁘게 반대물량 지지면서 사고파는데 코스닥은 지정가로 사는건지 항상 외인이 힘을 못씀..\n\n내일 코스닥 시나리오는\n1. 삼전 극적 타결 -> 전닉 상승 -> 코스닥 하락\n2. 삼전 파업 -> 전자 하락 -> 코스닥 하락\n\n음...?",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/32536"
-          },
-          {
-            "date": "2026-05-20",
-            "time": "15:26",
-            "text": "근데 코스피 사고팔때는 CD로 이쁘게 반대물량 지지면서 사고파는데 코스닥은 지정가로 사는건지 항상 외인이 힘을 못씀..  내일 코스닥 시나리오는 1. 삼전 극적 타결 -> 전닉 상승 -> 코스닥 하락 2. 삼전 파업 -> 전자 하락 -> 코스닥 하락  음...?",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/32537"
-          },
-          {
-            "date": "2026-05-20",
-            "time": "15:33",
-            "text": "[SK증권 반도체 한동희]\n\n삼성전자 사후조정 최종 결렬에도 — 오늘 저녁 벼랑 끝 추가 협상 가능성\n\n▶️ 현황\n\n- 3차 사후조정 최종 결렬 확정, 노조 21일 총파업 돌입 선언\n- 그러나 재계·노조 모두 이날 저녁 추가 협상 가능성 열어둔 상태\n\n▶️ 추가 협상 가능성 근거\n\n- 재계 관계자, \"정부가 만나라고 압박할 가능성 커 노사 추가 대화 가능성 클 것\"\n- \"늦어도 오늘 저녁 협상 테이블에 다시 앉을 수 있다\"는 관측\n- 최승호 노조 위원장, \"파업 기간 중에도 언제나 대화할 의사 있다\"\n- 노조 내부에서도 파업 관련 뚜렷한 지침 미하달 — 추가 협상 기대 가능\n\n▶️ 파업 현실화 시 파급 효과\n\n- 업계 추산 직간접 손실 최대 100조 원 우려\n\n▶️ 향후 시나리오\n\n- 오늘 저녁 추가 협상 타결 → 총파업 철회\n- 추가 협상 결렬 → 21일 총파업 돌입 → 정부 긴급조정권 발동\n\n▶️ URL: https://buly.kr/1n5zOaH\n\n* SK증권 리서치 IT팀 채널 : https://t.me/skitteam",
-            "links": [
-              "https://buly.kr/1n5zOaH",
-              "https://t.me/skitteam"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/32538"
-          },
-          {
-            "date": "2026-05-20",
             "time": "17:54",
             "text": "죵나 이상한데요...\n\n셀트리온·리가켐·오름, 주가 등락에 잇단 주주 서한···\"K-바이오 이상 없다\"\nhttps://www.newsway.co.kr/news/view?ud=2026052014472918907",
             "links": [
               "https://www.newsway.co.kr/news/view?ud=2026052014472918907"
             ],
             "post_url": "https://t.me/Yeouido_Lab/32540"
+          },
+          {
+            "date": "2026-05-20",
+            "time": "19:46",
+            "text": "전쟁이 끝나면 인플레이션은 뚝 떨어질 것이고 주식 시장은 하늘을 뚫고 치솟을 겁니다.\n\n#트럼프",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/32541"
+          },
+          {
+            "date": "2026-05-20",
+            "time": "20:00",
+            "text": "📮[메리츠증권 전기전자/IT부품 양승수]\n\n삼성전기(009150): 대체불가\n\n▶ 삼성전기, 적정주가 160만원으로 상향  \n\n- 삼성전기에 대한 적정주가를 기존 102만원에서 160만원으로 56.9% 상향\n\n- MLCC와 ABF기판의 ASP 상승 가정 상향과 Si Cap 신규 매출 반영을 통해 ‘27년 영업이익 추정치를 기존 대비 18.1% 상향 조정\n\n- Target PER은 ABF 기판 경쟁사인 Ibiden의 ‘27년 멀티플 51.5배를 할인 없이 적용\n\n- 당사가 이전 리포트에서 강조했듯, Embedded PCB 시대에는 전력 전달 안정성과 라우팅 효율 개선 관점에서 차세대 패키징 내 Si Cap의 구조적 채택 확대를 예상\n\n- 동사의 이번 1조 5,570억원 대규모 수주는 이러한 방향성이 현실화되고 있음을 입증하는 첫 사례로 판단\n\n▶ Si Cap · MLCC · ABF, 트리플 모멘텀 \n\n* Silicon Capacitor \n\n- 금일 공시된 1조 5,570억원 규모의 Si Cap 수주는 매출 인식 기준으로 ‘27년에 약 3분의 1, ‘28년에 약 3분의 2가 반영될 것으로 예상\n\n- 동사의 기존 Si Cap 매출과 신규 수주를 함께 반영해 ‘27년 Si Cap 매출을 약 5,500억원으로 전망하며 초기 수익성은 OPM 20% 전후로 추정\n\n- 다만 Si Cap은 기존 제품 대비 ASP가 높고, 팹리스 구조로 공급하는 형태인 만큼 향후 물량 확대와 함께 수익성 개선이 가능할 것으로 판단\n\n- 또한 금일 공시된 고객사 외에도 다수의 빅테크 고객사와 추가 공급 논의가 진행 중인 것으로 파악되며, 향후 점진적인 공급 물량 확대를 기대 \n\n* MLCC \n\n- 삼성전기 역시 유통업체단 MLCC 가격 인상을 통보한 것으로 파악\n\n- 가격 인상 폭은 Taiyo Yuden의 발표한 6~13% 인상과 유사한 수준으로 진행됐을 것으로 추정되며, 경쟁 업체인 Murata 역시 동참할 가능성이 높다고 판단\n\n- 또한 Murata가 최근 실적발표에서 IT향 추가 Capa 배정을 중단하겠다고 언급한 만큼, IT향 MLCC 역시 오버서플라이 부담이 완화되며 가격 하방이 제한되는 구간에 진입할 것으로 예상\n\n- ‘27년에는 800VDC 도입으로 ASP가 높은 고전압 MLCC 시장이 본격 개화되며, 제품 믹스 개선에 따른 추가적인 ASP 상승이 이뤄질 전망\n\n- 전방위적으로 시장 기대를 상회하는 ASP 상승 여력이 확인되고 있다는 점을 감안해, ‘27년 MLCC ASP 상승률 가정을 기존 14.0%에서 22.6%로 상향 조정\n\n* ABF 기판 \n\n- ‘27년 패키지솔루션 ASP 상승 가정 또한 기존 23.6%에서 31.5%로 상향 조정 \n\n- AI 및 CPU 양방향의 수요 증가, 선두 업체들의 제한적인 Capa에 따른 쇼티지 심화, T-Glass·ABF 필름 등 주요 원자재 가격 인상이 맞물리며 ASP 상승 압력이 기존 예상보다 강하게 나타나고 있기 때문\n\n- 또한 동사가 2분기부터 출하가 본격 확대되는 북미 A사 CPU·ASIC향 메인 벤더이며, 향후 CPO 등 차세대 기술 적용 과정에서 수요 변화가 예상되는 북미 NV사향 스위치 기판을 공급하고 있다는 점에서 중장기 성장 가시성도 높다고 판단\n\nhttps://buly.kr/9tCqaB3 (링크)\n\n*동 자료는 Compliance 규정을 준수하여 사전 공표된 자료이며, 고객의 증권투자결과에 대한 법적 책임소재의 증빙자료로 사용될 수 없습니다.",
+            "links": [
+              "https://buly.kr/9tCqaB3"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/32542"
+          },
+          {
+            "date": "2026-05-20",
+            "time": "20:19",
+            "text": "안녕하세요? 한올바이오파마입니다. \n\n아이메로프루바트 (IMVT-1402) 난치성 류마티스 관절염 임상 초기 (Period 1) 결과 공유드립니다. \n\n이번 결과는 아이메로프루바트의 개별 적응증에서의 첫 데이터 발표로, JAK 억제제와 anti-TNF 억제제 등 기존 치료제에 불응한 극난치성 환자군에서 72% (ACR20)의 의미있는 반응률이 확인되었습니다. \n이는 치료 대안이 없는 시장에서의 Best-in-class 가능성을 보여주는 결과입니다.  \nCLE PoC 임상 역시 환자 모집이 완료 되어 2026년 하반기 D2T RA 탑라인 및 CLE 탑라인 데이터 발표를 시작으로 2028년까지 임상 모멘텀 가시화가 본격화될 것으로 기대됩니다.\n\n\n\n아래 내용 및 첨부된 이뮤노반트 보도자료 참고 부탁드립니다. \n\n\n■ 아이메로프루바트 D2T RA 임상 디자인\n- 대상: 난치성 류마티스 관절염 환자 170명 (2가지 이상 기전 실패한 환자)\n- 디자인: Period 1 (16주, 오픈라벨): 600mg 주 1회 투여 후 14주 및 16주 차에 ACR20 반응 달성한 환자 선별 → Period 2 (12주): 반응군을 1:1:1로 재분류하여 600mg, 300mg, 또는 위약 투여\n- 주평가지표: 28주차 ACR20 반응률 \n \n■ Period 1 (16주차, 오픈라벨) 결과\n- 환자 Baseline: 평균 유병 기간 12.8년, 평균 압통 관절 24.2개, 부종 관절 16.7개, DAS28-CRP 6.1점의 중증 환자 대상\n- 우수한 임상 효과: 16주차 ACR20, ACR50, ACR70 반응률 각각 72.7%, 54.5%, 35.8% 기록\n- 극난치성 환자 대상 일관성 효과 확인: 최소 하나 이상의 JAK 억제제와 anti-TNF 억제제 모두에 실패한 극난치성 환자군 (107명)에서도 ACR20 72.0%, ACR50 53.3%, ACR70 37.4% 기록하며 전체 환자군과 일관된 효능 확인\n- 안정적인 안전성 및 내약성 프로파일을 확인했으며, 약물 관련 새로운 이상 징후는 확인되지 않음 \n- 아이메로프루바트는 JAK 억제제와 anti-TNF 억제제 마저 실패한 극난치성 류마티스 관절염 환자군에서 의미있는 임상적 반응률을 입증하며, 치료 대안이 없는 시장에서의 차세대 Best-in-Class 가능성 증명\n\n■ 향후 주요 파이프라인 마일스톤\n- 2026년 하반기: D2T RA 등록임상 28주차 탑라인 데이터, CLE 개념입증 임상 탑라인 데이터 (환자 모집 완료) 발표\n- 2027년: GD, MG 등록임상 탑라인 데이터 발표\n- 2028년: SjD, CIDP 등록임상 탑라인 데이터 발표 \n\n감사합니다\n한올바이오파마",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/32543"
+          },
+          {
+            "date": "2026-05-20",
+            "time": "20:30",
+            "text": "IMVT 개장 전 +25.9%",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/32544"
+          },
+          {
+            "date": "2026-05-20",
+            "time": "20:31",
+            "text": ">>인도, 호르무즈 해협 통항 재개 준비… 유조선 중동 원유 선적 위해 파견\n\n•인도가 호르무즈 해협을 통과하는 유조선 항로 재개를 준비하고 있음. 이는 중동 충돌 발발 이후 처음 있는 움직임. 현재 미국과 이란이 인도 측에 실제 통항 허가 신호를 보냈는지는 아직 불확실한 상황. 다만 항로 안전 확보를 위해 인도는 외교적 조율에 나섰으며, 해군 호위 규모를 확대하고 고위험 해역 보험 프로그램도 도입한 것으로 전해졌음 \n\n>印度准备重启霍尔木兹海峡过境，派油轮赴中东装货 https://wallstreetcn.com/articles/3772729#from=ios",
+            "links": [
+              "https://wallstreetcn.com/articles/3772729#from=ios",
+              "https://wallstreetcn.com/articles/3772729"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/32545"
+          },
+          {
+            "date": "2026-05-20",
+            "time": "21:03",
+            "text": "[하나증권 IT 김민경]\n\n삼성전기 (009150.KS/매수): 점점 더 강해지는 확신\n\n자료: https://cutt.ly/MtB2wyLG\n\n■ 목표주가 170만원으로 상향\n\n삼성전기에 대한 목표주가를 170만원으로 상향. 목표주가는 27년 예상 EPS 33,014원에 Ibiden의 27년 예상 멀티플을 적용\n\n데이터센터발 FCBGA 업황 호조로 가격 인상 사이클이 시작된 가운데 신호 전달 경로를 단축하기 위한 캐패시터 내장 FCBGA에 대한 수요가 증가. MLCC, 실리콘 캐패시터 등 수동 소자 기술력을 확보하고 있다는 점이 여타 기판 업체 대비 차별화 포인트로 작용할 것으로 판단\n\nMLCC 또한 AI 서버 랙의 전력 밀도 상승으로 서버 랙 당 MLCC 탑재량은 기하급수적으로 증가할 것으로 예상되며 특히 27년 800VDC 전력 인프라 도입은 글로벌 MLCC 생산능력을 대폭 잠식하는 계기가 될 것으로 예상. FCBGA와 MLCC 모두 27년까지 추가적인 생산능력 증가가 제한적인 가운데 수요 추정은 지속 상향조정되고 있어 우호적 영업환경은 장기화 될 전망\n\n■ 실리콘 캐패시터 대규모 공급 계약 공시\n\n삼성전기는 금일 약 1.6조원 규모의 글로벌 대형기업향 실리콘 캐패시터 공급 계약을 공시. 27~28년에 걸쳐 공급할 예정\n\n실리콘 캐패시터는 세라믹 대신 실리콘 웨이퍼로 제작해 마이크로미터 단위로 작게 만들 수 있어 반도체 패키지 면적과 두께를 얇게 설계할 수 있음. 최근 VPD(Vertical Power Delivery) 도입 등 반도체와 패키지 기판 간 신호 거리를 단축하기 위한 니즈가 강해지며 글로벌 데이터센터 고객사의 수요가 강해지고 있는 것으로 파악. 다만 폼팩터 사이즈 특성상 초고용량 대응은 제한적으로 MLCC를 대체하기 보다는 동반 성장할 가능성이 높음 \n\n■ 27년 연간 영업이익 3조원 전망\n\n27년 매출 16조 211억원(YoY +19%), 영업이익 3조 663억원(YoY +86%, OPM 19%)을 기록할 전망. 영업이익을 기존 추정치 대비 28% 상향 조정했는데 컴포넌트와 패키지솔루션 사업부문의 영업이익 추정치를 각각 35%, 12% 상향한 것이 주 요인\n\n컴포넌트솔루션의 경우 27년 데이터센터 내 800VDC 전력 인프라 도입으로 고전압 고용량 제품과 저전압 고용량 제품 수요가 동반 성장하며 믹스 개선 효과가 극대화 될 것으로 기대. 또한 중위권 업체들 또한 AI 서버용 MLCC 공급에 집중하며 업계 전반의 생산능력 잠식이 빠르게 이루어지고 우호적 영업환경은 더욱 강화될 전망\n\n패키지솔루션 부문은 1분기부터 이루어진 FCBGA 판가인상 기조가 연중으로 지속되는 가운데 수율 향상 및 생산 효율화에 따른 추가적인 수익성 개선이 기대. 장치산업 특성상 27년까지 공급 확대가 제한적인 상황에서 수요는 지속 상향조정되고 있어 추가적인 실적 상향 여력이 남아있다는 판단\n\n\n(컴플라이언스 승인을 득함)",
+            "links": [
+              "https://cutt.ly/MtB2wyLG"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/32546"
+          },
+          {
+            "date": "2026-05-20",
+            "time": "21:04",
+            "text": "[하나증권 IT 김민경]  삼성전기 (009150.KS/매수): 점점 더 강해지는 확신  자료: https://cutt.ly/MtB2wyLG  ■ 목표주가 170만원으로 상향  삼성전기에 대한 목표주가를 170만원으로 상향. 목표주가는 27년 예상 EPS 33,014원에 Ibiden의 27년 예상 멀티플을 적용  데이터센터발 FCBGA 업황 호조로 가격 인상 사이클이 시작된 가운데 신호 전달 경로를 단축하기 위한 캐패시터 내장 FCBGA에 대한 수요가 증가.…",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/32547"
+          },
+          {
+            "date": "2026-05-20",
+            "time": "21:06",
+            "text": "[키움 허혜민] Immunovant 시초가 +27% 상승 중\n \nIMVT-1402 난치성 류마티스 관절염 1상 초기 결과 발표\n \n기존 치료제 불응 극난치성 환자군에서 72%(ACR20) 반응률 확인\n \n향후 주요 파이프라인 마일스톤\n- 2026년 하반기: D2T RA 등록임상 28주차 탑라인 데이터, CLE 개념입증 임상 탑라인 데이터 (환자 모집 완료) 발표\n- 2027년: GD, MG 등록임상 탑라인 데이터 발표\n- 2028년: SjD, CIDP 등록임상 탑라인 데이터 발표 \n \nhttps://www.immunovant.com/investors/news-events/press-releases/detail/83/immunovant-provides-corporate-updates-and-reports-financial\n \n#한올바이오파마",
+            "links": [
+              "https://www.immunovant.com/investors/news-events/press-releases/detail/83/immunovant-provides-corporate-updates-and-reports-financial"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/32548"
+          },
+          {
+            "date": "2026-05-20",
+            "time": "21:09",
+            "text": "🧬 노보 노디스크, 사우디 MASH 시장 확장\n\n노보 노디스크 사우디.\n사우디 주요 3개 의학회와 협력 체결.\n\n목표는\n지방간·MASH 인식 제고.\n\n💊 참여 기관\n• 사우디 간질환·이식학회\n\n• 사우디 당뇨병학회\n\n• 사우디 비만학회\n\n💊 의료 협업 강화\n1차 진료의.\n\n간 전문의.\n\n내분비 전문의.\n\n비만 전문의.\n\n각 진료 영역 간\n협업 체계 강화 필요.\n\n🧬바이오섹터 분석🧬 [그로쓰리서치]\nhttps://t.me/growthbio",
+            "links": [
+              "https://t.me/growthbio"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/32549"
+          },
+          {
+            "date": "2026-05-20",
+            "time": "21:23",
+            "text": "[키움 허혜민] 나이벡 기술이전한 업체 공개\n \n미국 Oorja Bio가 ATS 2026에서 ORJ-001 1상 및 전임상 데이터를 공개하면서, 나이벡이 폐섬유증 치료제 기술 이전한 파트너사가 공개됨.\n \nOorja Bio는 Westlake BioPartners 초기 투자로 설립된 미국 바이오텍으로 리드 파이프라인은 ORJ-001, 피하주사(SC) 제형의 peptide 치료제. AEC2 세포 기능 회복을 통해 IPF를 치료하는 first-in-class 접근.\n \nORJ-001은 나이벡이 2025년 기술이전한 peptide 기반 폐섬유증 후보물질 NP-201로 파악\n \n재밌는건 Oorja Bio의 CEO인 Sujay Kango.\n전 Acceleron Pharma EVP & Chief Commercial Officer 였는데, Acceleron은 2021년 Merck가 약 $11.5~11.8bn에 인수했고, Acceleron의 핵심 자산이 바로 폐동맥고혈압 치료제 sotatercept, 현재 제품명이 Winrevair로 머크가 키트루다 특허만료 이후 제품으로 밀고 있는 품목.\n \nSujay Kango는 Acceleron 상업화 총괄 역할을 했던 인물로 상업화(commercial) + BD + 라이선싱 + M&A 중심 경력을 보유.\n \nTmunity Therapeutics CEO도 했었는데,  이후 Gilead Sciences 인수된 바 있어\n이번 NewCo 설립은  M&A를 염두한 CEO 배치..\n\nhttps://endpoints.news/acceleron-leaders-and-westlake-jumpstart-new-ipf-biotech/\n \n나이벡의 다중 표적 펩타이드의 신규기전 폐동맥고혈압(PAH) 치료제(전임상), Oorja Bio가 우선협상권을 갖고 있음.\n \n참고로 나이벡은 키움 키우고 콥데이 5/28일 14:20분 설명회가 예정되어 있습니다!",
+            "links": [
+              "https://endpoints.news/acceleron-leaders-and-westlake-jumpstart-new-ipf-biotech/"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/32550"
+          },
+          {
+            "date": "2026-05-20",
+            "time": "21:26",
+            "text": "IMVT 1402 RA 임상 정리\n\n일단 임상 결과를 정리해보면 \n\n임상 디자인 : 170명 대상으로 16주 오픈라벨로 1402 600mg QW SC 투약\n-> 이후 14, 16주차에 ACR20 달성자 대상으로 무작위로 12주 blind 600mg, 300mg, placebo 투약\n\n그래서 1차 평가지표로 28주차에 ACR 20 maintenance 를 확인한 임상. \n\n--------------------\n환자 대상군 : JAKi / Anti-TNF 등을 포함한 현재 치료법에서 실패한 D2T (Difficult to treat) RA 환자를 대상으로... 즉 치료하기 어려운 환자들 대상으로 임상을 진행 \n\n-> 임상 결과는 Overall 과 JAKi + Anti-TNF 라는 현재 RA 표준치료 방식에서 실패한 107명을 따로 sub-group analysis 해서 분석한 결과 두가지로 확인\n\n--------------------\n\n임상 결과 (Overall) : ACR 20 72.7% / ACR 50 54.5% / ACR 70 35.8%\n임상결과 (JAKi/Anti-TNF sub-group) : ACR 20 72% / ACR 50 53.3% / ACR 70 37.4%\n\n두 그룹 모두 일정한 ACR 반응을 확인 \n\n*ACR 이란 Americal college of Rheumatology response criteria -> RA 임상에서 기준 척도. \n\nACR20: baseline 대비 1. tender joint count 20% 이상 감소 2. swollen joint count 20% 이상 감소 3. 추가 5개 임상 지표 중 3개에서 20% 이상 개선 — 이 세 가지 다 충족\nACR50 / ACR70: 동일한 구조인데 20%가 아니라 50% / 70% 개선\n-----------------—\n\n그래서 함의가 뭐냐? \n\n1. 일단 기대가 없었습니다. 골드만삭스 셀사이드 기준 GD 75%, MG 85%, CIDP 60% PoS (성공 확률) 잡혀있었는데 RA 는 15% 정도였구요 \n2. Peak sales 기준 시장에서 전부 기다리는 GD $4.6bn 수준의 $4.2bn 입니다 \n3. 현행 표준 치료인 Anti-TNF 및 JAKi 가 naive 환자 기준 ACR20 약 65~70% 나옵니다. 저희는 이미 두 치료 실패한 그룹에서 70% 상회 \n4. J&J nipocalimab이 2상에서 RA 실패했었는데 IMVT-1402 는 성공. class 내에서 BIC 도달 가능. \n\n디자인이 좀 까다롭긴 한데, 170명 16주 투약에서 72.7% 도달했으므로 성공 판단",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/32551"
+          },
+          {
+            "date": "2026-05-20",
+            "time": "21:26",
+            "text": "IMVT 1402 RA 임상 정리  일단 임상 결과를 정리해보면   임상 디자인 : 170명 대상으로 16주 오픈라벨로 1402 600mg QW SC 투약 -> 이후 14, 16주차에 ACR20 달성자 대상으로 무작위로 12주 blind 600mg, 300mg, placebo 투약  그래서 1차 평가지표로 28주차에 ACR 20 maintenance 를 확인한 임상.   -------------------- 환자 대상군 : JAKi / Anti-TNF 등을…",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/32552"
+          },
+          {
+            "date": "2026-05-20",
+            "time": "21:26",
+            "text": "요약하면   1. 성공확률 15%, 피크세일즈 $4.2bn  2. JnJ 실패했던 임상 -> BIC 가능성 상승  3. 알제넥스 RA 임상 중단 -> 경쟁자 X 4. float 숏 비중 10% -> 숏커버 가능성   원래 28주 채우고 하반기 공개할라고 했는데, 16주차 데이터 잘나와서 신나갖고 공개한걸로 보입니다",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/32553"
+          },
+          {
+            "date": "2026-05-20",
+            "time": "21:36",
+            "text": "모처럼 바이오 가뭄에 단비가.. ^^\n\n전일 발간한 하반기 전망 자료 재공유 드립니다. \n\n\n★ [키움 허혜민] ★ 제약/바이오 산업자료 – 바이오의 시간은 다시 오는가 \n\n다시 옵니다. \n\n섹터에 대한 조롱과 회의만 가득한 상황입니다. 여기서 던져야 할 가장 중요한 질문은 바이오는 지속 성장하는가? 하반기에도 지금과 같이 악재에 민감하고, 소외되어 하락을 지속할 것인가? 입니다. \n\n최근 상황을 잘 들여다보면, 서구권 빅파마는 신뢰도가 높은 K-BIO를 찾고 있고, 중국 대형제약사는 글로벌로 갈 핵심 물질로 K-BIO를 선택하고 있습니다. K-BIO의 글로벌 주요 학회에서 구두 발표도 증가하는 추세입니다. 펀더멘털은 분명 개선되고 있습니다. \n\n‘26.5월까지 기술 이전한 최대 마일스톤 총 규모는 $6.5B으로 지난해 최대 마일스톤 총 연간 규모의 약 50% 수준까지 회복했습니다. \n\n또한 현재는 학회에 대한 기대감보다 우려감이 더 크게 반영되고 있어, 오히려 긍정적인 데이터가 발표된다면 투자심리가 개선될 가능성이 높아 보입니다. \n\n이번 보고서에는 곧 이어질 유럽간학회(EASL), 미국암학회(ASCO), 미국당뇨병학회(ADA)에서의 글로벌 주요 관전포인트와 국내 업체들의 발표 현황도 함께 담았습니다. \n\nK-BIO는 가격 조정을 상당 부분 소화하여, 5월 하순을 기점으로 하반기로 갈수록 데이터와 기술이전을 중심으로 점진적인 재평가 흐름이 나타날 것으로 기대합니다. \n\n자세한 내용은 보고서를 참고 부탁드립니다. 섹터 고민이 있으신 분들은 언제든 편하게 연락주십시오. 세미나에서 더욱 자세히 말씀드리겠습니다. \n\n\n키움 제약/바이오 소식통 → https://t.me/huhpharm\n\n★ 보고서 링크: https://bbn.kiwoom.com/rfCI5610\n\n* 컴플라이언스 검필\n\n* 본 정보는 키움증권 리서치센터에서 고객분들에게 발송하는 정보입니다.",
+            "links": [
+              "https://t.me/huhpharm",
+              "https://bbn.kiwoom.com/rfCI5610"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/32554"
+          },
+          {
+            "date": "2026-05-20",
+            "time": "21:50",
+            "text": "뱅크오브아메리카(BofA), 서버 CPU 시장 전망 대폭 상향\n\n뱅크오브아메리카(BofA)가 서버 CPU 시장 전망치를 상향 조정했습니다. 에이전틱 AI(Agentic AI) 워크로드에서 프로세서의 역할이 커짐에 따라, 서버 CPU 시장 규모가 2026년 약 430억 달러에서 2030년에는 1,250억 달러로 성장할 것으로 내다봤습니다. 이는 기존 전망치였던 1,100억 달러에서 늘어난 수치이며, 연평균 성장률(CAGR)은 31%에 달합니다.\n\nBofA는 이러한 강력한 수요의 최대 수혜주(Top picks)로 AMD와 엔비디아(Nvidia)를 꼽았습니다.\n\n\n1. 에이전틱 AI 시대, CPU의 새로운 역할\n이번 전망치 상향은 AI 도입의 다음 단계에서 CPU가 훨씬 더 중요한 역할을 맡게 될 것이라는 BofA의 관점을 반영합니다. 비벡 아리아(Vivek Arya)가 이끄는 분석가 팀은 다음과 같이 설명했습니다.\n\n구조적 변화: 기존의 GPU가 AI '학습(Training)' 시대를 지배했다면, 시스템이 스스로 계획을 세우고 문맥을 검색하며 도구 호출, 상태 관리, 데이터베이스 상호작용을 수행하는 '에이전틱 AI'는 구조적으로 CPU 집약도가 훨씬 높습니다.\n\nAI 추론의 제어 평면(Control Plane): 이 환경에서 CPU는 복잡해지는 다단계 워크플로우 전반의 조율(Orchestration) 및 메모리 관리를 담당하는 핵심 제어 장치가 됩니다.\n\n시장 대체가 아닌 확장: 이는 기존 시장을 대체하는 것이 아니라 전체 데이터 센터 시장의 확장을 의미합니다. 검색 증강 생성(RAG), 벡터 데이터베이스, 에이전트 조율 등에 특화된 'CPU 전용 랙(Rack)'은 과거 GPU 랙이 비용 효율적으로 처리하지 못했던 워크로드를 해결할 것입니다.\n\n\n대표적인 예시: 2026년 하반기 '베라 루빈(Vera Rubin)' 플랫폼과 함께 출시될 엔비디아의 차세대 '베라(Vera) CPU' 랙이 있습니다. 전체 베라 루빈 포드(Pod)에서는 CPU와 GPU의 비율이 거의 1대 1에 달할 가능성이 있습니다.\n\n\n2. 2030년 시장 점유율(Market Share) 전망\nBofA가 예측한 2030년 서버 CPU 시장 가치 기준 점유율은 다음과 같습니다.\n인텔(Intel) & AMD: 각각 약 28%의 점유율을 기록할 것으로 전망 (인텔은 클라우드와 엔터프라이즈 부문 모두에서 점유율 하락세가 지속될 것으로 분석).\n\nARM 기반 맞춤형 디자인: AWS 그래비톤(Graviton), 구글 액시온(Axion), 마이크로소프트 코발트(Cobalt) 등 빅테크의 자체 칩이 가장 가파르게 성장하며 현재 약 15%에서 약 37%까지 점유율을 확대할 것으로 예상.\n\nARM 상용(Merchant) CPU: 추가로 약 7%의 점유율을 차지할 전망.\n\n\n3. 주요 기업별 투자 의견\nBofA는 주요 CPU 벤더들이 모두 두 자릿수 매출 성장률을 기록하며 수혜를 입겠지만, 그 중에서도 AMD와 엔비디아를 최선호주로 꼽으며 모두 '매수(Buy)' 의견을 유지했습니다.\n\"모든 주요 CPU 업체가 잠재적 수혜를 입겠지만, 우리의 최선호주는 AMD(클라우드 점유율 유지 및 x86 엔터프라이즈 점유율 흡수)와 엔비디아(독립형 베라 CPU 본격 양산 및 풀스택 아키텍처로의 통합 능력)이다.\"\n\n\nAMD: x86 진영에서 가장 선호하는 종목으로, 실적 추정치를 소폭 상향하고 목표 주가 500달러를 유지했습니다.\n\n엔비디아: 컴퓨팅, 네트워킹, 스토리지, 메모리를 아우르는 풀스택 아키텍처 내에 CPU를 완벽하게 통합할 수 있는 독보적인 능력을 높게 평가했습니다.",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/32555"
+          },
+          {
+            "date": "2026-05-20",
+            "time": "22:03",
+            "text": "모처럼 바이오 가뭄에 단비가.. ^^\n\n전일 발간한 하반기 전망 자료 재공유 드립니다. \n\n\n★ [키움 허혜민] ★ 제약/바이오 산업자료 – 바이오의 시간은 다시 오는가 \n\n다시 옵니다. \n\n섹터에 대한 조롱과 회의만 가득한 상황입니다. 여기서 던져야 할 가장 중요한 질문은 바이오는 지속 성장하는가? 하반기에도 지금과 같이 악재에 민감하고, 소외되어 하락을 지속할 것인가? 입니다. \n\n최근 상황을 잘 들여다보면, 서구권 빅파마는 신뢰도가 높은 K-BIO를 찾고 있고, 중국 대형제약사는 글로벌로 갈 핵심 물질로 K-BIO를 선택하고 있습니다. K-BIO의 글로벌 주요 학회에서 구두 발표도 증가하는 추세입니다. 펀더멘털은 분명 개선되고 있습니다. \n\n‘26.5월까지 기술 이전한 최대 마일스톤 총 규모는 $6.5B으로 지난해 최대 마일스톤 총 연간 규모의 약 50% 수준까지 회복했습니다. \n\n또한 현재는 학회에 대한 기대감보다 우려감이 더 크게 반영되고 있어, 오히려 긍정적인 데이터가 발표된다면 투자심리가 개선될 가능성이 높아 보입니다. \n\n이번 보고서에는 곧 이어질 유럽간학회(EASL), 미국암학회(ASCO), 미국당뇨병학회(ADA)에서의 글로벌 주요 관전포인트와 국내 업체들의 발표 현황도 함께 담았습니다. \n\nK-BIO는 가격 조정을 상당 부분 소화하여, 5월 하순을 기점으로 하반기로 갈수록 데이터와 기술이전을 중심으로 점진적인 재평가 흐름이 나타날 것으로 기대합니다. \n\n자세한 내용은 보고서를 참고 부탁드립니다. 섹터 고민이 있으신 분들은 언제든 편하게 연락주십시오. 세미나에서 더욱 자세히 말씀드리겠습니다. \n\n\n키움 제약/바이오 소식통 → https://t.me/huhpharm\n\n★ 보고서 링크: https://bbn.kiwoom.com/rfCI5610\n\n* 컴플라이언스 검필\n\n* 본 정보는 키움증권 리서치센터에서 고객분들에게 발송하는 정보입니다.",
+            "links": [
+              "https://t.me/huhpharm",
+              "https://bbn.kiwoom.com/rfCI5610"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/32558"
+          },
+          {
+            "date": "2026-05-20",
+            "time": "22:03",
+            "text": "모처럼 바이오 가뭄에 단비가.. ^^  전일 발간한 하반기 전망 자료 재공유 드립니다.    ★ [키움 허혜민] ★ 제약/바이오 산업자료 – 바이오의 시간은 다시 오는가   다시 옵니다.   섹터에 대한 조롱과 회의만 가득한 상황입니다. 여기서 던져야 할 가장 중요한 질문은 바이오는 지속 성장하는가? 하반기에도 지금과 같이 악재에 민감하고, 소외되어 하락을 지속할 것인가? 입니다.   최근 상황을 잘 들여다보면, 서구권 빅파마는 신뢰도가 높은 K-BIO를…",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/32559"
+          },
+          {
+            "date": "2026-05-20",
+            "time": "22:30",
+            "text": "전문가의 뷰가 맞았나...?\n\n[속보] 노동장관, 밤 10시 반 삼전노조 관련 브리핑\nhttps://n.news.naver.com/mnews/article/422/0000866880?rc=N&ntype=RANKING&sid=001",
+            "links": [
+              "https://n.news.naver.com/mnews/article/422/0000866880?rc=N&amp;ntype=RANKING&amp;sid=001"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/32560"
           }
         ]
       },
