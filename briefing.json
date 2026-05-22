@@ -1,6 +1,6 @@
 {
   "2026-05-22": {
-    "fetched_at": "2026-05-22T19:26:01+09:00",
+    "fetched_at": "2026-05-22T22:33:21+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -260,6 +260,24 @@
               "https://youtu.be/VdW_poqIZ98?si=Iat3o3wAKFCN1Ucn"
             ],
             "post_url": "https://t.me/growthresearch/26333"
+          },
+          {
+            "date": "2026-05-22",
+            "time": "22:02",
+            "text": "💻 AI 수요에 중국 파운드리 가격 인상 본격화\n\n📌 중국 파운드리 가격 인상 본격화\nAI 수요 확대로 SMIC·Hua Hong 가동률 상승 및 가격 인상 진행\n\n1Q26 중국 반도체 상장사 약 80%가 원가 상승 경험 → 웨이퍼 가격 인상이 주요 요인\n\nSMIC는 2Q26 GPM 20~22% 전망, QoQ 개선 예상\n\n📌 수혜 제품군\nAI 서버·전력반도체 수요 증가로 PMIC 강세\n\nMCU·Standalone Flash·BCD·CIS·HV 공정 수요도 확대\n\n특히 90nm 이상 12인치 성숙공정 주문 증가\n\n📌 TSMC · 삼성파운드리 반사이익\nTSMC·삼성이 선단공정 중심으로 캐파를 재배치\n\n성숙공정 공급 여력이 줄면서 고객사들이 중국 파운드리로 이동\n\nSMIC·Hua Hong은 M&A와 12인치 증설로 대응 중\n\n📌 핵심\nAI 수요 확대와 글로벌 파운드리 캐파 재편이 맞물리며, 중국 성숙공정 파운드리의 가격 인상 및 가동률 개선이 본격화되는 흐름\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
+            "links": [
+              "https://t.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/26334"
+          },
+          {
+            "date": "2026-05-22",
+            "time": "22:07",
+            "text": "💻  NVIDIA HGX Rubin NVL8 모습\n\n📌 Dell Tech World에서 공개된 NVIDIA HGX Rubin NVL8 보드\n2U 폼팩터에 Rubin GPU 8개 탑재한 HGX Rubin NVL8 공개\n\nGPU 간 연결은 NVLink 6 적용, 최대 28.8TB/s GPU-to-GPU 대역폭 지원\n\n성능은 최대 400 PFLOPS(NVFP4 기준)\n\n📌 특징\n전체 시스템은 완전 수랭(liquid-cooled) 구조\n\nHost CPU는 NVIDIA Vera뿐 아니라 AMD EPYC, Intel Xeon도 선택 가능\n\n차세대 AI 팩토리/초대형 추론 서버용 플랫폼 성격 강화\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
+            "links": [
+              "https://t.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/26335"
           }
         ]
       },
