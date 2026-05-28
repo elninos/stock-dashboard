@@ -1,6 +1,6 @@
 {
   "2026-05-28": {
-    "fetched_at": "2026-05-28T19:58:59+09:00",
+    "fetched_at": "2026-05-28T23:43:44+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -9,20 +9,6 @@
         "category": "증권사 리포트",
         "channel_url": "https://t.me/bumgore",
         "posts": [
-          {
-            "date": "2026-05-26",
-            "time": "07:11",
-            "text": "KOREA WEEKLY KICKSTART\n\n골드만\n\n\n📈 지난 주 KOSPI 동향\n\nKOSPI +5% 상승 (엔비디아 실적 호조가 촉매)\n\n주간 아웃퍼폼: 테크(+33.5%), 보험(+10.4%), 조선(+2.8%)\n\n주간 언더퍼폼: 레저(-4.7%), 소프트웨어(-3.7%), 기계(-3.4%)\n\n원화는 달러 대비 1.3% 약세\n\nKOSPI 12개월 선행 EPS +1.7% 상향 조정\n\n\n🔍 지난 주 핵심 주제 2가지\n\n1️⃣ 레버리지 ETF 익스포저 현황\n\n시장 규모는 크지 않다\n\n국내 레버리지 ETF(국내주식 추종)는 전체 1,100개 상장 ETF 중 약 17개 → 전체의 1% 수준\n\n레버리지 ETF의 전체 ETF AUM 대비 비중은 2021년 이후 약 4%까지 하락\n\n개인 투자자 자금 흐름\n\n연초 이후 일반 ETF로 약 140억 달러 유입\n\n레버리지 ETF로는 약 20억 달러 유입에 불과\n\n신용융자는 35~36조원으로 증가했으나, 시총 대비 비중은 오히려 감소(약 0.5%)\n\n해외 레버리지 ETF 노출은 상당\n\n개인 투자자 해외주식 상위 20개 보유 중 SOXL, TQQQ, TSLL, QLD 등 레버리지 ETF 4개가 포함 → 비중 약 12%\n\n따라서 국내 레버리지 ETF 노출만 보면 과도하지 않은 수준\n\n\n2️⃣ 분산투자 규정과 외국인 매도 압력 🏦\n\n외국인 순매도 규모가 어마어마하다\n\n연초 이후 KOSPI 외국인 순매도 누적 약 620억 달러\n\n이 중 삼성전자·SK하이닉스 두 종목이 약 570억 달러 차지\n\n그 결과 외국인의 국내 반도체 섹터 보유 비중은 10년 최저치(50.5%, -1.7 표준편차)\n\n왜 팔았나? — 펀드 분산투자 규정 때문\n\n시장 랠리로 삼성전자·하이닉스의 MSCI Korea 내 비중이 25% 한도(미국 투자회사법 기준) 초과\n\n한국 집중 펀드 AUM이 약 2,000억 달러에 달하는 상황에서 두 종목 비중이 25% 초과\n\n2025년 10월 말 이후 분산투자 규정으로 인한 누적 매도 추정치: 약 690억 달러\n\n\n향후 전망\n\n외국인 보유 비중이 이미 낮아 대규모 매도는 상당 부분 마무리됐을 가능성\n\n다만 두 종목 합산 비중이 1%p 추가 상승 시 약 20억 달러 추가 매도 압력 발생 가능\n\n방산·조선·전력 인프라 등 타 섹터 강세로 집중도 완화되면 외국인 재유입 기대",
-            "links": [],
-            "post_url": "https://t.me/bumgore/54351"
-          },
-          {
-            "date": "2026-05-26",
-            "time": "08:31",
-            "text": "서울보증보험               제이피모건\n\n\n ⭐️ 투자의견: 비중확대 (OW) \n\n 🎯 목표주가: ₩90,000 💰 \n\n\n📈 매출 성장\n\n1Q26 직접수입보험료 ₩6,400억 (전년比 +28%) — 2025년 +3%에서 급가속\n이익성장 가능한 핵심 사업에 자본 추가 배분 계획\n\n이행보증(수탁보증) 부문이 FY25 기준 포트폴리오의 50% 차지\n🛡 언더라이팅 개선\n\n경영진 목표: 중장기 손해율 70% 미만 (FY25/1Q26: 74.7% / 53.0%)\n합산비율 목표 90% 미만\n\n전세 보증 부문 손해율 → FY26 중 100% 미만으로 안정화 기대\n\nFY25 보험료 인상 효과 + 언더라이팅 강화 + 클레임 관리 개선 효과 반영\n\n\n💸 주주환원 (Value-Up)\n\n2H26(9월경) 밸류업 업데이트 공시 예정\n\n자사주 매입 검토 중 (초과이익 환원 목적)\n\nFY27까지 최소 배당금 ₩2,000억 확약\n\n최소 배당성향 50% → 최소 배당수익률 6% 보장\n\n\n🏦 투자 포트폴리오\n\n대체자산 비중: 현재 17% → 20%+ 확대 계획 (국내채권 축소로 재원 마련)\n\n대체자산 기대수익률 보수적 가정: 약 6%\n\nMar-26 기준 사모신용(Private Credit) 익스포저 약 ₩6,500억 (운용자산 ₩8.5조 중)\n\n\n💪 자본건전성 & 자본배분\n\nMar-26 기준 K-ICS 비율: 395% (목표 320%, 최저 130%)\n\n초과자본 규모: 약 ₩1.1조 (시가총액의 33%)\n\n초과자본 활용 우선순위: ① 매출 성장 → ② 자산배분 → ③ 주주환원\n\nK-ICS 비율 연간 15~20%p 감축 목표\n\n\n🔔 기타\n\nKDIC(예금보험공사) Phase 2 지분 매각 로드맵: 2027년 12월까지 지분 50%로 축소\n\nMar-26에 1차 매각 완료 (지분 4%p 감소)\n\n시장 상황에 따라 Dec-27 일정 유연하게 조정 가능",
-            "links": [],
-            "post_url": "https://t.me/bumgore/54352"
-          },
           {
             "date": "2026-05-26",
             "time": "08:53",
@@ -254,15 +240,6 @@
         "posts": [
           {
             "date": "2026-05-28",
-            "time": "08:30",
-            "text": "🎬 [탐방보고서 LIVE] 이엔셀, CDMO 회복, 재생의료 진출, EN001 2상까지: 리레이팅의 3박자\n\nhttps://youtube.com/live/sa-pC_Fn7_4?feature=share\n\n8시 30분부터, 오늘 발간한 이엔셀 탐방보고서 라이브 진행합니다.\n\n이엔셀의 핵심 포인트를 여러분들께 쉽고 자세하게 설명드리려 합니다.\n\n많은 관심 부탁드립니다!",
-            "links": [
-              "https://youtube.com/live/sa-pC_Fn7_4?feature=share"
-            ],
-            "post_url": "https://t.me/growthresearch/26463"
-          },
-          {
-            "date": "2026-05-28",
             "time": "09:01",
             "text": "✅ 일론 머스크, 'AI 패권의 핵심은 칩 생산능력’\n\n📌 미국 AI 경쟁력의 조건\n미국이 AI 경쟁에서 이길 가능성은 아직 높다는 평가\n\n다만 핵심 변수는 AI 칩과 AI 칩 생산 공장을 누가 통제하느냐\n\n📌 결정적 병목은 팹\nAI 경쟁은 모델이나 소프트웨어만의 문제가 아님\n\n첨단 AI 칩을 만드는 팹을 확보하는 국가가 주도권을 가져갈 가능성\n\n📌 대만 의존 리스크\n현재 첨단 AI 칩 생산의 대부분은 대만에 집중\n\n대만 지정학 리스크가 현실화될 경우 글로벌 AI 칩 공급망이 직접 타격을 받을 수 있음\n\n📌 중국 변수\n중국이 AI 칩 생산시설을 더 많이 통제하게 되면 AI 패권 경쟁에서 유리해질 가능성\n\n결국 반도체 제조 역량이 국가 안보와 직결되는 구조\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
             "links": [
@@ -445,6 +422,16 @@
               "https://t.me/growth_semi"
             ],
             "post_url": "https://t.me/growthresearch/26484"
+          },
+          {
+            "date": "2026-05-28",
+            "time": "21:11",
+            "text": "🧬 중국 바이오기업, 생물보안법에도 미국 기업과 잇따라 계약\n\nhttps://www.hankookilbo.com/news/article/A2026052814260002443?did=NA\n\n중국 CDMO 기업 우시바이오로직스가 올해 미국 바이오 기업들과 잇따라 계약 체결\n\n📌 우시바이오, 미국 기업과 계속 계약\n5월: 美 비리디안 테라퓨틱스와 5년 생산 계약\n\n2월: 美 버텍스에 자가면역질환 후보물질 개발·상업화 권리 이전\n\n📌 생물보안법 영향이 예상보다 제한적\n\n미국 기업들이 계속 계약하는 이유:\n• 우시바이오의 가격·속도 경쟁력이 매우 강함\n\n• 아직 실제 규제 명단이 확정되지 않음\n\n• 기존 계약은 최대 5년 유예 가능\n\n🧬바이오섹터 분석🧬 [그로쓰리서치]\nhttps://t.me/growthbio",
+            "links": [
+              "https://www.hankookilbo.com/news/article/A2026052814260002443?did=NA",
+              "https://t.me/growthbio"
+            ],
+            "post_url": "https://t.me/growthresearch/26485"
           }
         ]
       },
@@ -455,17 +442,6 @@
         "category": "매크로/크립토",
         "channel_url": "https://t.me/SpartanResearch",
         "posts": [
-          {
-            "date": "2026-05-26",
-            "time": "16:40",
-            "text": "2026.05.26 16:39:46\n기업명: 비츠로셀(시가총액: 2조 6,297억) A082920\n보고서명: 단일판매ㆍ공급계약체결(자율공시)\n\n계약상대 : BHARAT ELECTRONICS LTD. \n계약내용 : 포탄 전자 신관용 중형 앰플전지 판매 \n공급지역 : 인도 \n계약금액 : 205억\n\n계약시작 : 2026-05-23\n계약종료 : 2027-10-29\n계약기간 : 1년 5개월\n매출대비 : 8.4%\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260526900576\n최근계약 : https://www.awakeplus.co.kr/board/contract/082920\n회사정보: https://finance.naver.com/item/main.nhn?code=082920",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260526900576",
-              "https://www.awakeplus.co.kr/board/contract/082920",
-              "https://finance.naver.com/item/main.nhn?code=082920"
-            ],
-            "post_url": "https://t.me/SpartanResearch/3712"
-          },
           {
             "date": "2026-05-26",
             "time": "16:48",
@@ -558,6 +534,13 @@
             "text": "■ 국민연금 2026년 자산군별 목표비중 조정\n\n-국내주식 20.8% (기존 14.9%)\n-해외주식 34.7% (기존 37.2%)\n-국내채권 23.1% (기존 24.9%)\n-해외채권 7.4% (기존 8.0%)\n-대체투자 14.0% (기존15.0%)\n\n\n*전략적배분 허용범위를 활용해 최대 ±5%포인트까지 기계적 매매 없이 운용할 수 있기에 국내주식을 최대 25.8%까지 보유 가능하다\n\n*당장 국민연금발 ‘매도 폭탄’ 우려는 완화된셈\n3~4분기에 걱정하면 될듯하네여. \n\n*현재 기준 국민연금의 국내주식 비중은 28~29%대 수준이다.",
             "links": [],
             "post_url": "https://t.me/SpartanResearch/3732"
+          },
+          {
+            "date": "2026-05-28",
+            "time": "23:16",
+            "text": "미장 태양광 ETF",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/3733"
           }
         ]
       },
@@ -568,20 +551,6 @@
         "category": "매매 신호/트레이딩",
         "channel_url": "https://t.me/d_ticker",
         "posts": [
-          {
-            "date": "2026-05-26",
-            "time": "23:24",
-            "text": "⚡️전력반도체 3사 급등\n\n- 바이코 +13%\n- 나비타스 +11%\n- 모놀리식 +7%\n\n수직전력공급(VPD) 모듈 전문 바이코가 26일 2분기 매출 가이던스를 $126M → $142M (est. $126M)로 상향 조정한다고 발표한 것이 섹터 전반의 상승세를 이끌었습니다.",
-            "links": [],
-            "post_url": "https://t.me/d_ticker/3165"
-          },
-          {
-            "date": "2026-05-26",
-            "time": "23:51",
-            "text": "ASE +12%\n\n대만의 대표 OSAT 기업인 ASE가 세계 최초 310㎜ x 310㎜ 사이즈의 팬넬(Panel) 레벨 패키징(PLP) 생산 라인을 구축했다고 발표했습니다. 이 라인은 2027년 상반기부터 본격 양산을 시작한다고 합니다.\n\n현재 반도체 제조 공정은 작은 칩을 다이싱하는 것보다는 웨이퍼 통쨰로 찍는 방식으로 발전하고 있고, 나아가 가장자리가 필연적으로 수율이 안 나오는 웨이퍼가 아닌 사각형의 팬넬로 생산하는 방향으로 바뀌고 있습니다.\n\n이걸 가장 먼저 선도하는 게 ASE가 됐네요. 삼성전자도 PLP에 꽤나 진심이거든요. 그런데 이걸 대만이 먼저 합니다. ASE는 최근 TSMC 첨단 패키징(CoWoS) 용량의 낙수효과로 엄청난 물량이 떨어지면서 전성기를 열고 있는데요. 이에 더해 PLP까지 선점하게 된다면 엄청난 수요가 줄을 서고 있을 것으로 보입니다.",
-            "links": [],
-            "post_url": "https://t.me/d_ticker/3166"
-          },
           {
             "date": "2026-05-26",
             "time": "23:56",
@@ -716,6 +685,22 @@
               "https://www.nikkei.com/article/DGXZQOUC156K40V10C26A5000000/"
             ],
             "post_url": "https://t.me/d_ticker/3184"
+          },
+          {
+            "date": "2026-05-28",
+            "time": "22:25",
+            "text": "메타, CSP 가능성 시사\n\n마크 저커버그 메타 CEO는 연례 주주총회에서 데이터센터 투자 과잉으로 유휴 컴퓨팅 용량이 발생할 경우 클라우드 서비스 사업자(CSP)로서 클라우드 컴퓨팅 시장에 진출할 수 있다고 언급. 현재 구글·아마존·마이크로소프트·메타 등 4대 하이퍼스케일러 중 메타만 CSP가 아닌 상황인데 CSP 가능성을 열어뒀다는 말은 AI CAPEX 상한을 높게 잡을 명분이 되겠네요\n\nhttps://www.cnbc.com/2026/05/27/mark-zuckerberg-says-meta-starting-cloud-business-on-the-table.html",
+            "links": [
+              "https://www.cnbc.com/2026/05/27/mark-zuckerberg-says-meta-starting-cloud-business-on-the-table.html"
+            ],
+            "post_url": "https://t.me/d_ticker/3185"
+          },
+          {
+            "date": "2026-05-28",
+            "time": "22:55",
+            "text": "샌디스크 CTO 인터뷰 - Nikkei Asia\n\n1. AI 인프라는 ‘연산(Compute) 대신 ‘메모리 센트릭‘으로 바뀌었음\n\n2. LLM이 거대해지고 AI가 한 번에 이해하는 문맥(컨텍스트)이 길어지기 때문임\n\n3. 유례없는 메모리 쇼티지는 2030년까지 지속될 수 있음.\n\n4. 대형 고객사들이 LTA ‘적극 체결‘ 추세. 당사는 최대 5년치 LTA 5건 기확보\n\n5. 현재 HBF 다이 설계 중. 2026년 말 샘플 공급 시작 예정. 컨트롤러 포함 완제품은 2027년 본격 출시(뉴팩트)\n\nHBF 로드맵 본격 가시화",
+            "links": [],
+            "post_url": "https://t.me/d_ticker/3186"
           }
         ]
       },
@@ -734,43 +719,6 @@
         "category": "국내 시장/종목 분석",
         "channel_url": "https://t.me/Yeouido_Lab",
         "posts": [
-          {
-            "date": "2026-05-28",
-            "time": "12:31",
-            "text": "**[#이란 혁명수비대, 미 공군기지 공습 주장]**\n\n이란 혁명수비대(IRGC) 공보실은 28일 새벽, 미군이 반다르 압바스 외곽 지역에 공습을 감행했으며, 이에 따라 혁명수비대가 해당 공습을 수행한 미군 공군기지를 공격했다고 발표했다. (#신화통신)",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/33061"
-          },
-          {
-            "date": "2026-05-28",
-            "time": "12:32",
-            "text": "코스닥 레버리지 ETF 하방 VI",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/33062"
-          },
-          {
-            "date": "2026-05-28",
-            "time": "12:42",
-            "text": "F1 머신을 아무나 모는 줄 아나보네.\n\n어제까지 운전면허 이론 강의 들은 개미들이 오늘 영암써킷에 몰려드는 모습이다.\n\nhttps://n.news.naver.com/mnews/article/016/0002648561",
-            "links": [
-              "https://n.news.naver.com/mnews/article/016/0002648561"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/33063"
-          },
-          {
-            "date": "2026-05-28",
-            "time": "13:09",
-            "text": "그러니까 어제 전자레버 산사람은...",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/33064"
-          },
-          {
-            "date": "2026-05-28",
-            "time": "13:09",
-            "text": "단기간에 매콤하긴하겠네",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/33065"
-          },
           {
             "date": "2026-05-28",
             "time": "14:14",
@@ -889,6 +837,50 @@
               "https://n.news.naver.com/mnews/article/001/0016105876?sid=105"
             ],
             "post_url": "https://t.me/Yeouido_Lab/33081"
+          },
+          {
+            "date": "2026-05-28",
+            "time": "20:28",
+            "text": "[메리츠증권 전기전자/IT부품 양승수] \n\n▶ 급성장하는 인텔 EMIB 패키징…실리콘 캐패시터도 뜬다\n\n- 인텔은 내년부터 자사 2.5D 패키징 기술인 EMIB 성능 강화를 위해 실리콘 커패시터 대량 채용 예정, AI 반도체 전력 공급 안정성 강화 목적\n\n- 구글은 내년 하반기 출시 예정인 차세대 AI 가속기 ‘v8e’에 실리콘 커패시터 내장 EMIB 기판 채택, 칩 양산은 TSMC, 설계·제조 지원은 미디어텍, 패키징은 인텔이 담당하는 분업 구조\n\n- 아마존 등 주요 빅테크 역시 EMIB 채택 확대 중으로 관련 패키징 및 실리콘 커패시터 수요 급증 가능성 부각\n\n- EMIB는 대형 인터포저 대신 소형 실리콘 브릿지로 칩 간 연결이 필요한 부분에만 브릿지를 배치해 비용 효율성과 배치 유연성이 강점, TSMC 2.5D 패키징 공급 부족이 지속되며 CoWoS 대안으로 부상\n\n- AI 칩 고전력화 영향으로 고주파 영역의 전압강하 문제 등 기존 MLCC 기반 전력 안정성 한계 부각되며 실리콘 커패시터 중요성 확대\n\n- 실리콘 커패시터는 기존 MLCC 대비 ESL/ESR이 100배 이상 낮아 고성능 반도체에서의 신호 손실 최소화 가능, 실리콘 웨이퍼 기반 초박형 구조로 고밀도 집적화에 유리\n\n- 인텔은 TSV 기술을 활용한 차세대 EMIB-T 구조 도입 예정, 기판-칩 간 전력 전달 경로를 단축해 전력 공급 안정성·효율·신호 무결성 개선 추진 계획\n\n- EMIB-T용 기판 주요 양산 업체인 일본 Ibiden은 기존 인텔 CPU용 기판 공장 구축 계획을 EMIB-T 전용 기판 양산 라인으로 공식 전환, 투자 규모는 약 2,200억엔으로 2027년 가동 개시 후 2028년 본격 양산 예정\n\nhttps://buly.kr/EI5pvr6 (지디넷)\n\n* 본 내용은 당사의 코멘트 없이 국내외 언론사 뉴스 및 전자공시자료 등을 인용한 것으로 별도의 승인 절차 없이 제공합니다.",
+            "links": [
+              "https://buly.kr/EI5pvr6"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/33082"
+          },
+          {
+            "date": "2026-05-28",
+            "time": "20:50",
+            "text": "Endpoints News BPSI Q2 2026 정리\n\n1. 바이오 업황 센티먼트는 뚜렷하게 개선\n\nBiopharma Sentiment Index(BPSI)는:\n\nQ4 2025: 78\nQ1 2026: 90\nQ2 2026: 96\n\n까지 상승했다.\n\n중립선(100)에 근접하며, 팬데믹 이후 이어진 약 4년간의 downturn에서 상당 부분 회복된 모습이다.\n\n⸻\n\n2. 이번 분기의 핵심 변화는 “현재 업황 개선”\n\n이번 분기 특징은:\n\nFuture Expectations(미래 기대감)보다\nCurrent Conditions(현재 체감 업황)\n\n개선 폭이 훨씬 컸다는 점이다.\n\nCurrent Conditions:\n\nQ4 2025: 57\nQ1 2026: 73\nQ2 2026: 87\n\nFuture Expectations:\n\nQ4 2025: 91\nQ1 2026: 101\nQ2 2026: 102\n\n즉 업계는:\n\n“앞으로 좋아질 것이다”\n보다\n“실제로 지금 좋아지고 있다”\n\n고 느끼기 시작했다는 의미다.\n\n⸻\n\n3. 하지만 Funding Outlook은 악화\n\n이번 리포트의 가장 부정적인 포인트는:\n\n향후 12개월 funding outlook이 13포인트 하락\n다시 negative territory로 진입\n\n했다는 점이다.\n\n리포트는 배경으로:\n\n금리 상승\n미국-이란 갈등\n경기침체 우려\n글로벌 불확실성\n\n등을 언급한다.\n\n즉:\n\n현재 자금 조달 환경은 좋지만,\n지금이 peak일 수 있다는 우려\n\n가 존재하는 상황이다.\n\n⸻\n\n4. 딜메이킹은 가장 강한 낙관 요인\n\n응답자의 약 1/3은:\n\ndealmaking이 업계 낙관론의 가장 큰 이유\n\n라고 답했다.\n\n리포트에 따르면:\n\n2026년 현재 $1B 이상 biopharma M&A 19건\n현재 속도 유지 시 record 가능성\n총 M&A 규모 $250B 가능성\n\n이 있다.\n\nLicensing deal도 매우 활발하며:\n\nQ1 upfront payment가 $4.9B\n\n수준이라고 언급된다.\n\n또한:\n\n58%는 향후 12개월 dealmaking 가속 예상\nslowdown 예상은 9%\n\n뿐이었다.\n\n⸻\n\n5. Regulatory Environment는 여전히 가장 약한 영역\n\nRegulatory environment는 여전히 가장 낮은 점수 영역이었다.\n\n다만 개선은 나타났다.\n\n12개월 regulatory outlook:\n\nQ4 2025: 68\nQ1 2026: 72\nQ2 2026: 90\n\nCurrent regulatory condition도:\n\n23 → 50\n\n으로 상승했다.\n\n즉:\n\n여전히 부정적이지만,\n이전보다는 덜 비관적\n\n인 분위기다.\n\n⸻\n\n6. 직군별 시각 차이 존재\n\n리포트는:\n\nanalysts\nexecutives\ninvestors\n\n가 상대적으로 낙관적이었다고 설명한다.\n\n반면:\n\nscientists\nacademics\nstaff\n\n는 여전히 더 비관적이었다.\n\n특히:\n\nInvestors BPSI: 119\nScientists BPSI: 74\n\n로 큰 차이가 있었다.\n\n다만 scientists sentiment도 이번 분기에는 크게 개선됐다.\n\n⸻\n\n7. 바이오텍과 Pharma의 채용 분위기는 상반\n\n리포트는:\n\n“Biotech is hiring; pharma is firing”\n\n이라고 표현한다.\n\nBiotech 응답자들은:\n\n향후 12개월 채용 확대 예상이 많았고\n\n반면 pharma에서는:\n\nlayoffs 예상이 hiring보다 많았다.\n\n또한 big pharma는 AI 및 restructuring과 함께 비용 절감 압력을 받고 있다고 설명한다.\n\n⸻\n\n8. AI에 대한 시각은 대체로 긍정적\n\nAI는 dealmaking, discovery pace와 함께:\n\n업계 optimism의 주요 요인 중 하나였다.\n\nAI가 인력에 미치는 영향에 대한 응답:\n\n41%: 변화 없음 예상\n37%: 일부 채용 + 일부 감원\n14%: 순감원 예상\n7%: 순채용 증가 예상\n\n이었다.\n\n리포트는:\n\nPharma가 biotech보다 AI-related layoffs 가능성을 더 높게 본다고 설명한다",
+            "links": [
+              "https://endpoints.news/biopharma-sentiment-index-q2-2026/"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/33083"
+          },
+          {
+            "date": "2026-05-28",
+            "time": "23:16",
+            "text": "*미국과 이란, 휴전 및 핵 프로그램 협상을 위한 60일 양해각서(MOU) 체결  *이란, 합의에 따라 30일 이내 호르무즈 해협 모든 기뢰 제거해야  *미국, 해협 내 상업 선박 운항 정상화에 비례하여 해상 봉쇄 완화  *트럼프 대통령, 최종 승인 전 합의 검토 중\n\n원문:\n*U.S. AND IRAN REACHED A 60-DAY MOU FOR CEASEFIRE AND NUCLEAR PROGRAM NEGOTIATIONS\n\n*IRAN MUST REMOVE ALL STRAIT OF HORMUZ MINES WITHIN 30 DAYS UNDER THE AGREEMENT\n\n*U.S. WILL LIFT NAVAL BLOCKADES PROPORTIONAL TO RESTORED COMMERCIAL SHIPPING IN THE STRAIT\n\n*PRESIDENT TRUMP IS CURRENTLY REVIEWING THE AGREEMENT BEFORE PROVIDING HIS FINAL APPROVAL [...](https://x.com/tradfi/status/2060001562576261225)\n\n출처: @marketfeed\n번역제공: 구글",
+            "links": [
+              "https://x.com/tradfi/status/2060001562576261225",
+              "https://t.me/marketfeed"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/33084"
+          },
+          {
+            "date": "2026-05-28",
+            "time": "23:16",
+            "text": "꼭 코스닥만 잡도리 쎄게 당하고 밤 되면 아무일 없음",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/33085"
+          },
+          {
+            "date": "2026-05-28",
+            "time": "23:20",
+            "text": "가즈아\n\nhttps://n.news.naver.com/mnews/article/421/0008972241?rc=N&ntype=RANKING&sid=001",
+            "links": [
+              "https://n.news.naver.com/mnews/article/421/0008972241?rc=N&amp;ntype=RANKING&amp;sid=001"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/33086"
           }
         ]
       },
