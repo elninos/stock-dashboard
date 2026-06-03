@@ -1,6 +1,6 @@
 {
   "2026-06-03": {
-    "fetched_at": "2026-06-03T15:07:07+09:00",
+    "fetched_at": "2026-06-03T20:59:05+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -88,15 +88,6 @@
         "category": "매크로/트레이딩",
         "channel_url": "https://t.me/survival_DoPB",
         "posts": [
-          {
-            "date": "2026-05-18",
-            "time": "08:49",
-            "text": "삼성전자 노조 파업 예고 이후 주요 메모리 업체 주가 상승률\n\n\nhttps://n.news.naver.com/article/020/0003720247\n\n#삼성전자",
-            "links": [
-              "https://n.news.naver.com/article/020/0003720247"
-            ],
-            "post_url": "https://t.me/survival_DoPB/13262"
-          },
           {
             "date": "2026-05-18",
             "time": "12:33",
@@ -224,6 +215,13 @@
             "text": "젠슨 황, 대만 컴퓨텍스 마벨 CEO 기조연설에서 마벨을 “차세대 1조 달러 기업”이라 칭하다  $MRVL",
             "links": [],
             "post_url": "https://t.me/survival_DoPB/13281"
+          },
+          {
+            "date": "2026-06-03",
+            "time": "19:18",
+            "text": "트럼프는 미국이 이란과의 합의를 위해 노력함에 따라 이란 봉쇄가 노동절까지 해제될 수 있다고 말했다.\n\n그는 또한 이란이 핵무기를 보유하지 않기로 동의했으며, 이란의 최고지도자가 미국과의 대화에 참여하고 있다고 말했다.\n\n트럼프는 최고지도자와 “아마도” 언젠가 만날 것이라고 덧붙였다.",
+            "links": [],
+            "post_url": "https://t.me/survival_DoPB/13282"
           }
         ]
       },
@@ -235,190 +233,40 @@
         "channel_url": "https://t.me/growthresearch",
         "posts": [
           {
-            "date": "2026-06-02",
-            "time": "08:54",
-            "text": "💻 [단독] 롯데에너지, 이달부터 엔비디아에 AI용 회로박 공급\n\nhttps://www.hankyung.com/article/2026060115581\n\n📌 1. 공급 개요: 롯데에너지머티리얼즈 → 엔비디아\n롯데에너지머티리얼즈, 6월부터 AI용 회로박 본격 납품 시작.\n\n당초 하반기 계획을 엔비디아 요청으로 앞당김.\n\n전북 익산공장에서 출하, 차세대 GPU용 소재 공급.\n\nAI 회로박은 일반 전기차 동박보다 단가 3~4배 높음.\n\n📌 2. 생산 및 공급 구조\n롯데에너지머티리얼즈: 회로박 생산.\n\n두산전자BG: 동박적층판(CCL) 제조.\n\n이수페타시스: PCB 제작, 엔비디아 최종 납품.\n\n이달부터 두 회사 모두 엔비디아 공급 본격화.\n\n📌 3. 생산 확장 계획\n현재 익산공장 일부 라인에서 회로박 생산.\n\n내년엔 익산공장 전체를 AI 회로박 전용 생산기지로 전환.\n\n생산능력: 2026년 3,700t → 2027년 1만6,000t.\n\n2028년 이후 추가 증설 계획 있음.\n\n📌4. 시장 경쟁력\nAI용 회로박 양산 가능한 기업은 일본 미쓰이, 롯데, 솔루스첨단소재 정도.\n\n미쓰이는 증설 정체, 솔루스는 관련 자회사 매각.\n\n높은 압연 기술 요구, 단기간 라인 전환 어려움.\n\n롯데가 사실상 시장 주도권 확보 가능.\n\n📌5. 투자·시장 평가\nAI 시장에서 소외됐던 롯데, 엔비디아 밸류체인 본격 진입.\n\n6월 1일 주가: 전일 대비 14.62% 상승, 6만4,300원 마감.\n\n차세대 고부가 소재 시장 선점 기대감 존재.\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
-            "links": [
-              "https://www.hankyung.com/article/2026060115581",
-              "https://t.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/26636"
-          },
-          {
-            "date": "2026-06-02",
-            "time": "09:07",
-            "text": "💻 “CCL 산업보고서: 롯데에너지머티리얼즈, AI용 회로박 본격 공급과 밸류체인 편입”\n\n현재 CCL도 병목이 발생하는 영역 중 하나로 주목할 만한 상황입니다.\n\n저희는 롯데에너지머티리얼즈가 \n엔비디아 CCL 밸류체인 내에 포함될 것으로 보고 있었는데,\n실제로 본격적인 공급을 시작했습니다.\n\nCCL 보고서를 참고하시면, \n인사이트 투자 관점에서 숨은 병목을 가진 기업을 찾는 데 도움이 될 것입니다.\n\n🔥 CCL  산업보고서 다시보기\nhttps://contents.premium.naver.com/growthresearch/growth/contents/260511020756045dk\n\n💥 CCL 산업보고서 포인트\n\n📌 1. CCL 공급 병목과 구조적 부족\nAI 서버·데이터센터 확대로 고성능 CCL 수요 폭증 .\n\n고성능 CCL은 저유전 유리섬유, HVLP 동박, 저손실 수지 등 핵심 원재료 필요.\n\n범용 CCL까지 생산 감소, 단기적으로 공급 안정화 어려움.\n\n가격 상승뿐 아니라 리드타임 6개월까지 장기화, 구조적 병목 형성.\n\n📌 2. CCL 밸류체인 단계별 수혜\nCCL 밸류체인: 원자재 → CCL 제조 → PCB 제조 → AI 가속기 최종고객 구조 .\n\n원자재: 동박·유리섬유·레진 → 두산전자BG 공급 시 후행 수혜.\n\nCCL 제조: 두산전자BG, 엔비디아 GB200 단독 공급, 국내 유일 메이저 플레이어.\n\nPCB 제조: 대만 업체 중심, 국내 투자 관점에서는 제한적.\n\n수혜 집중은 검증된 공급망과 품질 신뢰성 보유 업체에 집중.\n\n📌 3. 롯데에너지머티리얼즈와 엔비디아 납품 연결\n롯데에너지머티리얼즈, HVLP 동박 생산 → 두산전자BG 통해 AI용 CCL 제조 .\n\n2026년 6월부터 엔비디아 차세대 GPU용 회로박 본격 납품 시작.\n\n원자재(동박) 단계에서 CCL 밸류체인 참여, 향후 수혜 가능성 높음.\n\n기존 전기차용 동박에서 AI 회로박으로 사업 중심 이동, 생산 설비 증설 진행.\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
-            "links": [
-              "https://contents.premium.naver.com/growthresearch/growth/contents/260511020756045dk",
-              "https://t.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/26637"
-          },
-          {
-            "date": "2026-06-02",
-            "time": "09:40",
-            "text": "✅ 오픈AI·앤스로픽 IPO 전쟁… “누가 먼저 상장하느냐가 승패 가른다”\n\nhttps://www.mk.co.kr/news/it/12063712\n\n📌 선점 효과가 핵심\n\n오픈AI와 앤스로픽이 기술 경쟁을 넘어 IPO 속도전으로 돌입\n\n첫 번째 상장 기업이 투자자 관심과 자금 유입을 선점할 가능성이 높음\n\nIPO는 산업별 군집형 경향 → 뒤늦게 상장하면 유동성과 관심 면에서 불리\n\n📌 앤스로픽과 오픈AI 현황\n\n앤스로픽, IPO 신청서 제출 완료\n\n오픈AI도 상장 준비 착수\n\n양사 모두 사상 최고 수준 기업가치 인정, 앤스로픽 약 1조달러, 오픈AI 8,520억달러\n\n📌 시장 분위기와 경쟁\n\nAI 기업 IPO에 투자자 우호적 → 세레브라스 상장 첫날 68% 상승, 피그마 상장 직후 250% 상승\n\n일론 머스크 스페이스X 1조5천억달러 규모 상장 추진 → AI·우주 기업 중심 초대형 IPO 형성\n\n투자 자금 제한 → 먼저 상장한 기업이 현금 확보와 직원 보상 측면에서 유리\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://www.mk.co.kr/news/it/12063712",
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/26638"
-          },
-          {
-            "date": "2026-06-02",
-            "time": "10:02",
-            "text": "✅ 구글, 120조 원 초대형 유상증자…반도체 랠리에 돌발 변수 [글로벌마켓 A/S]\n\nhttps://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202606020341&t=NN\n\n📌 유상증자 목적\n알파벳, AI 인프라 및 핵심 인재 확보를 위해 800억 달러(약 120조 원) 초대형 유상증자 진행\n\n400억 달러는 데이터센터 AI 인프라 확충, 나머지 400억 달러는 직원 주식 보상 및 세금 처리 용도\n\n 버크셔 해서웨이 100억 달러 투자 합의 \n\n📌 자금 조달 구조\n일반 공모 300억 달러, 의무전환우선주 150억 달러, 보통주 클래스A·C 각각 75억 달러\n\n장내 주식 매각 400억 달러, 버크셔 사모 투자 100억 달러\n\n이번 유상증자 후 알파벳 현금과 자본 확보로 AI 경쟁력 강화\n\n📌 시장 반응과 영향\n발표 직후 알파벳 주가는 시간외 거래에서 1.98% 하락\n\n엔비디아 AI 랠리에도 영향 → S&P500, 나스닥100 선물 약세 전환\n\n오라클, MS, 아마존 등 AI 인프라 투자 관련 기업 주가 동반 하락\n\n📌 AI 인프라 투자 규모와 트렌드\n알파벳 올해 시설투자 계획 1,900억 달러, 클라우드 매출 63% 증가\n\nAI 데이터센터 투자 경쟁 가속, 하이퍼스케일러 올해 투자 합계 7,000억 달러 이상\n\n매출 대비 AI 투자 비율 사상 최고 → 알파벳 46%, 오라클 86%, 메타 54%, MS 47%\n\n빅테크, 채권 발행 통한 외부 자금 조달 필요성 확대 → 수년간 기술업계 총 부채 1조 5,000억 달러 전망\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202606020341&amp;t=NN",
-              "https://t.me/growthresearch",
-              "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202606020341&amp;t=NN"
-            ],
-            "post_url": "https://t.me/growthresearch/26639"
-          },
-          {
-            "date": "2026-06-02",
-            "time": "10:08",
-            "text": "🧬 바이오솔루션, 바이오USA 참석…카티라이프 글로벌 파트너십 본격 논의\n\nhttps://www.edaily.co.kr/News/Read?newsId=03142246645477784\n\n💊 바이오USA 참가 목적\n미국 샌디에이고에서 열리는 2026 바이오 인터내셔널 컨벤션(바이오USA 2026)에 참가\n\n전 세계 70개국, 1,600개 이상 제약·바이오 기업 참여, 글로벌 파트너십 강화 목적\n\n💊 카티라이프 글로벌 진출 전략\n중국 하이난 의료특구 판매 승인 후 글로벌 기업 미팅 요청 증가\n\n중국 본토 진출을 위한 현지 파트너사 논의 진행\n\n미국 임상 2상 종료 후 임상 3상 준비 중, 기술이전·공동개발·투자유치 논의 본격화\n\n💊 차세대 파이프라인 사업 개발\n카티로이드: 동종연골세포치료제, 호주 1·2상 임상시험계획 승인\n\n스페로큐어: 주사제형 골관절염 DMOAD, 한국 1·2a상 임상시험계획 승인 신청\n\n글로벌 임상 및 사업개발 가속화\n\n💊 기대 효과\n세포치료제 파이프라인 기술력과 임상 성과 강조\n\n세계 유수 빅파마와 네트워크 강화, 사업개발 기회 확대\n\n🧬바이오섹터 분석🧬 [그로쓰리서치]\nhttps://t.me/growthbio",
-            "links": [
-              "https://www.edaily.co.kr/News/Read?newsId=03142246645477784",
-              "https://t.me/growthbio"
-            ],
-            "post_url": "https://t.me/growthresearch/26640"
-          },
-          {
-            "date": "2026-06-02",
-            "time": "10:57",
-            "text": "💻 CPO 산업보고서, 성호전자가 +16% 급등 중.\n\n어제 삼성전자와 자회사 ADS테크가 \n‘실리콘 포토닉스’ 시스템 공동 개발 계약을 체결한 영향으로 보입니다.\n\n관련하여 CPO 내용을 저희가 산업보고서에 정리해 두었으니, \n참고해 보시면 좋습니다.\n\n🔥 CPO 산업보고서 다시보기\nhttps://contents.premium.naver.com/growthresearch/growth/contents/260411154742445kt\n\n⚡️ CPO 산업보고서 핵심 포인트\n\n📌 1. AI 인프라 병목, ‘연산에서 연결’로 전환\n초거대 AI 환경에서는 GPU 개별 성능보다 데이터 이동과 네트워크 효율이 핵심.\n\n대규모 모델 훈련 시 GPU 유휴 시간의 70%가 데이터 전달·동기화 문제에서 발생.\n\n네트워크 병목은 GPU 활용률 저하와 전력 비용 증가로 직결.\n\n효율적 연결 개선 시 절감된 운영비를 GPU 확충 등으로 재투자 가능.\n\n📌 2. CPO 도입과 전력·성능 개선\n기존 구리선 기반 인터커넥트는 전송 거리·발열 한계로 AI 고속화 대응 어려움.\n\nCPO(Co-Packaged Optics)는 광 엔진을 칩 옆에 직접 패키징, 전력 3배 절감, 지연 수 나노초 단위 단축.\n\n데이터센터 내 수만 개 GPU를 하나의 시스템처럼 연결할 수 있는 핵심 기술.\n\n1.6T 이상 고속 장비 도입과 함께 CPO 생태계 본격화, 광 부품 수급 불균형 발생 예상.\n\n📌 3. CPO 밸류체인과 관련 기업\nCPO 밸류체인: 광 부품 → 테스트/정렬 장비 → 칩 패키징 → 최종 AI 서버.\n\n국내 소부장 기업, 초기 양산 수율·광 정렬 기술 확보 시 구조적 수혜 가능.\n\n주요 기업:\n• 티에프이: CPO 테스트 소켓·보드, 글로벌 레퍼런스 보유.\n• 성호전자: 에이디에스테크 인수, CPO 광모듈 정렬 장비 공급.\n\n고난이도 테스트와 광 정렬 기술이 CPO 도입 병목 해소와 ASP 상승을 견인.\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
-            "links": [
-              "https://contents.premium.naver.com/growthresearch/growth/contents/260411154742445kt",
-              "https://t.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/26641"
-          },
-          {
-            "date": "2026-06-02",
-            "time": "11:21",
-            "text": "💻 LG이노텍, 인텔 'EMIB'용 기판 공급망 노린다…SK하이닉스에 샘플 공급\n\nhttps://zdnet.co.kr/view/?no=20260602095436\n\n📌 협력 현황\nSK하이닉스에 EMIB용 FC-BGA 기판 샘플 공급\n\n기술 개발 협업 진행 중\n\nSK하이닉스는 EMIB에 최적화된 HBM 특성 파악 가능\n\n📌 EMIB 기술 개요\n인텔 2.5D 패키징 기술: 소형 실리콘 브릿지로 칩 연결\n\n기존 인터포저 대비 비용 효율 높고, 칩 배치 유연성 증가\n\nAI·HPC 수요 증가로 중요도 상승\n\n📌 시장 현황\n현재 공급사: 일본 이비덴, 신코덴키, 대만 유니마이크론, 오스트리아 AT&S\n\nEMIB용 기판은 기존 FC-BGA 대비 기술 난도 높음, 고부가 제품\n\n📌 LG이노텍 과제\n서버용 고사양 FC-BGA 분야에서는 아직 후발주자\n\n양산 위해 전용 라인 구축 및 대규모 투자 필요\n\n실제 EMIB 공급망 진입 여부는 불확실\n\n📌 체크포인트\nES → QS → 양산 승인 단계 진행 여부\n\n인텔 EMIB 공급망 실제 진입 가능성\n\n전용 라인 구축 및 투자 계획\n\n경쟁사 대비 원가·수율 경쟁력 확보 여부\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
-            "links": [
-              "https://zdnet.co.kr/view/?no=20260602095436",
-              "https://t.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/26643"
-          },
-          {
-            "date": "2026-06-02",
-            "time": "12:04",
-            "text": "✅ “삼전·하닉 뛰어넘어”…日키옥시아 ‘기판 접합’ 기술 자신감\n\nhttps://www.edaily.co.kr/News/Read?newsId=03686726645477784\n\n📌 기술 개요\n키옥시아, NAND 메모리 적층 수 경쟁에서 벗어나 CBA(CMOS Bonded to Array) 접합 기술 적용\n\n메모리셀과 제어회로를 각각 웨이퍼 위에 형성 후 결합 → 저장 밀도 향상\n\n정밀 접합으로 읽기·쓰기 속도 20~30% 향상, AI용 고속 처리에 최적\n\n📌 시장 성과\n주력 제품에 CBA 기술 적용, 올해 주가 500% 상승\n\nAI 붐으로 NAND 수요 증가 → 기술 선점 효과\n\n삼성전자·SK하이닉스 대비 고속·효율 경쟁력 강조\n\n📌 과제 및 전망\n올해 상반기 NAND 점유율 13.9%, 3위 유지\n\n데이터센터 고객 기반 약하고, 가격 반영 속도 지연 → 점유율 확대 필요\n\n첨단 기술과 고속 처리력을 바탕으로 데이터센터 고객 확보 시 경쟁력 강화 가능\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
-            "links": [
-              "https://www.edaily.co.kr/News/Read?newsId=03686726645477784",
-              "https://t.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/26644"
-          },
-          {
-            "date": "2026-06-02",
-            "time": "13:00",
-            "text": "💻 [속보]삼성전자, 컴퓨텍스 2026서 HBM5 세계 최초 공개\n\nhttps://www.edaily.co.kr/News/Read?newsId=03926166645477784&mediaCodeNo=257&OutLnkChk=Y\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
-            "links": [
-              "https://www.edaily.co.kr/News/Read?newsId=03926166645477784&amp;mediaCodeNo=257&amp;OutLnkChk=Y",
-              "https://t.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/26645"
-          },
-          {
-            "date": "2026-06-02",
-            "time": "13:38",
-            "text": "✅그로쓰리서치 기업탐방 프리뷰 보고서 ✅\n\n📌종목명 : 00000\n\n탐방일자: 2026.05.22.\n\n시가총액: 7,223억원\n\n현재주가: 71,600원\n\n✅ 기업탐방 보고서 다운로드(네프콘)\nhttps://contents.premium.naver.com/growthresearch/growth/contents/260602133004213bi\n\n✅ 기업탐방 보고서 다운로드(자사 홈페이지)\nhttp://www.growthresearch.co.kr/membership/1410/1043\n\n\n📌기업 요약\n00000은 OLED 증착 장비 업체인데, 지금 시장이 보는 핵심은 페로브스카이트 태양전지와 OLEDoS가 차세대 모멘텀으로 수주가 커진다는 점입니다. \n\n페로브스카이트는 세계 최초 8세대급 장비를 개발했고, 핵심 공정인 ETL 증착에서 소재 사용량을 20~30% 줄이는 기술력이 포인트입니다. OLEDoS도 상반기 3대 수주를 완료했고, 하반기까지 약 7대 이상이면 연간 2,000억원 이상 수주 기대가 가능합니다. \n\n여기에 중요한 점은 기존 디스플레이 본업이 6세대 중심 투자에서 8.6세대 OLED 투자로 전환되는 구간의 최대 수혜를 입고 있다는 점입니다.\n\n특히 6세대까지 강했던 Canon-Tokki 독점 구조가 8.6세대에서는 흔들리는 가운데, 동사의 얼라인 기술과 가격 경쟁력을 기반으로 고객사 채택이 늘어나는 흐름입니다.\n\n’25년 매출 5,157억원, 영업이익 1,115억원으로 이미 흐름이 숫자로 확인되고 있습니다. 8.6세대 투자는 앞으로도 계속될 전망입니다. OLED 본업 성장에 차세대 장비 수주까지 붙는 구조라, 반응할 만한 포인트는 충분해 보입니다.",
-            "links": [
-              "https://contents.premium.naver.com/growthresearch/growth/contents/260602133004213bi",
-              "http://www.growthresearch.co.kr/membership/1410/1043"
-            ],
-            "post_url": "https://t.me/growthresearch/26646"
-          },
-          {
-            "date": "2026-06-02",
-            "time": "14:27",
-            "text": "✅중국 태양광 업계, 우주 에너지 동맹 출범\n\n📌 동맹 출범 개요\nGCL테크놀로지, 트리나솔라 등 13개 기업·연구기관 참여\n\n상하이 SNEC PV+ 컨퍼런스(세계 최대 태양광 전시회) 개막일 출범\n\n명칭: Space Energy Development Alliance\n\n선텍파워 창업자·전 세계 첫 태양광 억만장자 스젱룽 참여\n\n📌 왜 지금 우주 태양광인가\n중국 태양광 산업의 지상 공급과잉 위기 → 새로운 성장 활로 모색\n\n우주 기반 태양광 → 궤도 AI 데이터센터 전력원으로 주목\n\n다이와 캐피탈 애널리스트 추산: 향후 10년 내 관련 수요 ~200GW 잠재\n\n📌 한계와 리스크\n5분짜리 행사, 구체적 목표·로드맵 일절 공개 없음\n\n중국광전산업협회(CPIA) 경고: \"대규모 상업화까지 아직 갈 길이 멀다\"\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "date": "2026-06-03",
+            "time": "15:51",
+            "text": "✅ SpaceX, 주당 $135에 $75B 조달 — 역대 최대 IPO 공식화\n\n📌 IPO 핵심 구조\n공모가 $135, 발행 주식 5억 5,560만 주, 조달 규모 $750억\n\n기업가치 $1.75조 — 로드쇼 목요일(6/5) 개시, 6월 12일 상장 예정\n\n머스크 보유 지분 IPO 후 366일 락업 — 매각 불가 시그널\n\nIPO 공모 물량의 최대 30%를 개인 투자자에게 배정 검토 — 통상 5~10% 대비 이례적 규모\n\n📌 IPO 프로세스 이례성\n일반적으로 기업은 로드쇼 전 공모가 범위를 먼저 제시하고 상장 전날 확정하지만, SpaceX는 단일 고정가를 선제 발표하는 비전통적 방식 채택\n\nGoldman Sachs 주관, 총 21개 은행 인수단 구성\n\n📌 자금 사용처 — 주의할 부분\n조달 자금은 AI 컴퓨팅 인프라 확장 및 위성 네트워크 확대에 사용 예정\n\n단, S-1 분석에 따르면 조달액의 78%($62.8B)가 기존 부채 상환·인사이더·벤더 지급에 이미 배정 — 실질 신규 투자 가능 자금은 $18B 미만\n\n📌 비즈니스 현황\n2025년 매출 $187억, 조정 EBITDA $66억 흑자 / GAAP 순손실 $49억\n\nStarlink 가입자 1,000만 명 돌파(2026년 2월), 전체 위성의 65% 점유\n\n올해 초 머스크의 AI 스타트업 xAI와 합병 — SpaceX $1조, xAI $2,500억 가치 기준\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
             "links": [
               "https://t.me/growthresearch"
             ],
-            "post_url": "https://t.me/growthresearch/26647"
+            "post_url": "https://t.me/growthresearch/26656"
           },
           {
-            "date": "2026-06-02",
-            "time": "15:18",
-            "text": "✅ 전 세계 ESS 출하량, 1분기 79% 급증...BYD 1위·테슬라 4위 순위 변동\n\nhttps://www.theguru.co.kr/mobile/article.html?no=102571\n\n📌 출하량\n126.4GWh, 전년 동기 대비 79% 증가\n\n직전 분기 대비 6.2% 감소\n\n📌 글로벌 업체 순위\n1위: BYD, 2위: Sungrow, 3위: Huawei, 4위: Tesla, 5위: CRRC Zhuzhou\n\n상위 5개사 점유율: 41.38%, 상위 10개사: 58.07%\n\n기존 3강 구도 변화 → Tesla 4위로 하락\n\n📌 부문별 출하량\n\n유틸리티급 ESS \n103.7GWh, 전년 대비 60.78% 증가\n\n순위: BYD > Sungrow > Huawei > CRRC Zhuzhou > Tesla\n\n주택용 ESS \n20.67GWh, 전년 대비 392% 폭증, 전 분기 대비 138.4% 증가\n\n상위 5개사: Sige Energy > Fox ESS > Deye > Tesla > Huawei\n\n상위 3개사 분기 출하량 2GWh 돌파\n\n📌 시장 전략\n지역별 리더십 확보: 중동(BYD), 중국(CRRC), 미국(Tesla)\n\n프리미엄 시장 선진입 → 중저가 시장 확장\n\n📌 연간 전망\n글로벌 출하량 600GWh 유지\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://www.theguru.co.kr/mobile/article.html?no=102571",
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/26648"
-          },
-          {
-            "date": "2026-06-02",
+            "date": "2026-06-03",
             "time": "15:56",
-            "text": "💻 \"D램값 60% 뛴다\"…메모리 품귀 확산, 가격 상승 압력\n\nhttps://www.hankyung.com/article/2026060233017\n\n📌 D램 가격 급등\n2분기 D램 계약가격, 직전 분기 대비 58~63% 상승 예상\n\nAI 활용 중심이 대형언어모델(LLM) 훈련에서 추론 응용으로 이동\n\n데이터센터 구축 전략 변화 → 범용 서버용 D램 수요 확대\n\n📌 공급 상황\nD램 공급업체 재고 매우 낮음\n\nAI 서버용 대용량 RDIMM 생산 우선 → PC·노트북·스마트폰용 확보 어려움\n\n수요 급증에도 공급 여력 제한 → 가격 상승 압력 증가\n\n📌 가격 협상 환경\n클라우드 서비스 기업, 안정적 공급 우선 → 가격 인상 수용 가능성 높음\n\n다른 고객사들도 안정적 물량 확보 위해 가격 인상 받아들일 가능성\n\n📌 업체 전략 변화\n삼성전자·SK하이닉스·마이크론: 첨단 AI 메모리 집중\n\n대만 업체: 성숙 공정 제품으로 시장 공백 일부 메움\n\n전체적으로 AI 서버용 고부가 제품 생산 집중\n→ 일반 범용 메모리 시장 일부 공백 발생\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
+            "text": "💻 Marvell × NVIDIA, AI 인프라 '연결성' 시대 선언…광인터커넥트 본격 개화\n\n📌 핵심 메시지\nComputex 2026에서 Marvell CEO Matt Murphy, AI 인프라 발전 3단계 제시\n\n컴퓨트(GPU) → 메모리(HBM) → 연결성(Connectivity 다음 병목은 데이터를 얼마나 빠르게 옮기느냐\n\n📌 'Copper Wall' 선언\n초고속 전송에서 구리 인터커넥트의 물리적 한계 공식화\n\n광(Optical) 기술이 이 한계를 돌파할 핵심 솔루션으로 부상\n\n업계 최초 102.4Tbps AI 전용 스위치 출시\n\n51.2T CPO 스위치 (16×3.2T 광엔진) 무대 현장 시연\n\n1.6Tbps 2nm 코히어런트 광 솔루션 — 올해 내 샘플링 예정 (세계 최초)\n\n📌 거리별 솔루션 구조\n데이터센터 간 (수백~수천km): 코히어런트 DSP → Marvell COLORZ 1600 (4세대 실리콘 포토닉스)\n\n데이터센터 내 (~500m): PAM4 방식 전력 최적화 광링크\n\n\"구리 쓸 수 있는 곳엔 구리, 불가능한 구간엔 광\" — Jensen Huang\n\n📌 Jensen 무대 등판\nNVIDIA의 Marvell 20억 달러 투자 재확인\n\n광·실리콘 포토닉스·NVLink Fusion 전반으로 협력 확대\n\n\"수천 개 칩이 분산된 데이터센터에서 진정 불가결한 건 연결성\" — Jensen\n\n\"Marvell은 다음 1조 달러 기업\" 발언\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
             "links": [
-              "https://www.hankyung.com/article/2026060233017",
               "https://t.me/growth_semi"
             ],
-            "post_url": "https://t.me/growthresearch/26649"
-          },
-          {
-            "date": "2026-06-02",
-            "time": "16:32",
-            "text": "💻 르네 하스 Arm CEO \"AI 시대 승부처는 CPU\"…'AGI CPU' 양산 발표\n\nhttps://www.asiae.co.kr/article/2026060216221274812\n\n📌 발표 및 핵심 메시지\n르네 하스 Arm CEO, 2026 컴퓨텍스 기조연설\n\n생성형 AI 시대는 GPU 중심 → 에이전틱 AI 시대는 CPU 역할 중요\n\nAI 에이전트가 24시간 동작하며 토큰 분배·작업 조율을 CPU가 담당\n\n📌 시장 전망\nCPU 수요, 기존 예상보다 4~10배 증가\n\n5년 내 CPU 시장 규모 1,000~1,200억 달러 이상 전망\n\n📌 신제품: Arm AGI CPU\n양산 시작: 공랭식 8,000코어 / 수랭식 45,000코어 이상\n\n동일 전력 기준 x86 대비 랙당 성능 2배\n\n고객사: 메타, 오픈AI, SAP, SK텔레콤 + 신규 OCI, 바이트댄스\n\n📌 주요 사례\n구글: x86\n→ Arm 네오버스 기반 ‘악시온(Axion)’ CPU 전환\n→ 전력 60% 절감\n\n엔비디아 젠슨 황: AI PC 플랫폼 ‘RTX 스파크’\n\n20코어 Arm CPU + 블랙웰 GPU\n\n128GB 메모리, NVFP-4 포맷으로 1,000억 파라미터 AI 모델 로컬 실행 가능\n\n미래 PC는 사용자 대신 AI 에이전트가 지속적 업무 수행\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
-            "links": [
-              "https://www.asiae.co.kr/article/2026060216221274812",
-              "https://t.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/26650"
-          },
-          {
-            "date": "2026-06-02",
-            "time": "17:10",
-            "text": "✅ [해외주식 컨콜] 엔비디아 컨퍼런스 콜로 읽는 메모리 산업의 구조적 변화 (NVIDIA Q1 FY2027 컨콜)\n\n📌 실적 요약\n총매출 820억 달러, 데이터센터 매출 750억 달러, 전년 대비 85% 증가\n\n📌 업황 전망\nAI 추론 수요 폭발 → 메모리(HBM) 및 GPU 중심 컴퓨팅 수요 지속 확대\n\n📌 가이던스\n2분기 매출 가이던스 910억 달러, GAAP·비GAAP 총이익률 74.9~75% 유지 예상\n\n📌 경영진 코멘트\n젠슨 황 CEO: 에이전틱 AI 도래로 컴퓨트가 곧 매출·이익, 수요가 포물선을 그리며 치솟음\n\n📌 핵심 Q&A\n고객 다변화, 데이터센터 중심 AI 수요, 베라 루빈 및 AI용 CPU 적용 관련 질문 집중\n\n✔️ 엔비디아 컨콜 이후 메모리 산업 핵심 포인트\n\nAI 추론 전용 HBM 수요 급증, 전통적 메모리 사이클과 다른 구조적 변화\n\nGPU 및 메모리 세대 전환마다 공급 제한 → 장기적 병목 구간 발생\n\nAI 팩토리·데이터센터 중심 투자 확대 → HBM, CoWoS, 액체냉각 등 인프라 중요성 증가\n\n메모리 공급망과 최첨단 패키징 솔루션 수혜 예상\n\n프런티어 AI 모델 확산 → 베라루빈 점유율 상승과 산업 경쟁력 강화\n\n🔥 자세한 내용 보러가기 (네이버 프리미엄 콘텐츠)\nhttps://contents.premium.naver.com/growthresearch/growth/contents/260602164331336lv\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://contents.premium.naver.com/growthresearch/growth/contents/260602164331336lv",
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/26651"
-          },
-          {
-            "date": "2026-06-02",
-            "time": "17:25",
-            "text": "🔥 그로쓰리서치 <해외주식 컨퍼런스콜 정리> 안내\n\n안녕하세요, 그로쓰리서치입니다.\n저희가 이번에는 ‼️해외주식 컨퍼런스 콜 정리‼️ 컨텐츠를 시작했습니다.\n\nAI 시대에 특히, 미국 기업들의 입장 변화가 국내 기업 투자전략에도 많은 영향을 끼치고 있습니다.\n\n여러분께 컨퍼런스콜 내용을 쉽고 자세하게 요약드리면서,\n단순한 내용 요약을 넘어\n\n1) 투자 인사이트를 제공하고,\n2) 산업 흐름에 어떤 변화가 생길 지 예측하고,\n3) 국내주식과의 연결점도 최대한 반영해\n\n여러분께 다양한 양질의 컨텐츠를 제공드리겠습니다.\n\n앞으로 많은 관심 부탁드립니다. \n\n감사합니다😄\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/26652"
-          },
-          {
-            "date": "2026-06-02",
-            "time": "18:12",
-            "text": "🎬 SK하이닉스 400만원! 노무라 증권이 예언한, 소름 돋는 비밀은!? [이창환 영업이사]\n\nhttps://youtu.be/q9PyHO4MbY8?si=hHOCUuaJ5NMWW5mo\n\n📌 목표가 산출 근거\nTSMC 밸류에이션을 기준으로 SK하이닉스 멀티플 6배 적용 → 목표가 400만 원\n\n2028년 영업이익 480조 예상, 올해 자기자본이익률(ROE) 100% 반영\n\n장기 공급 계약 및 글로벌 하이퍼스케일러 공급 완료해 수익 안정성 확보\n\n📌 메모리 가격 전망\n~'28년 메모리 가격 연평균 66% 상승 예상, HBM4 포함 고부가 제품 비중 증가\n\nPB·PER 기반 밸류에이션 적용, 삼성전자보다 더 빠른 멀티플 변화\n\nSK하이닉스 투자 전략을 포함한 자세한 내용은 영상을 통해 확인 바랍니다!",
-            "links": [
-              "https://youtu.be/q9PyHO4MbY8?si=hHOCUuaJ5NMWW5mo"
-            ],
-            "post_url": "https://t.me/growthresearch/26653"
+            "post_url": "https://t.me/growthresearch/26657"
           },
           {
             "date": "2026-06-03",
-            "time": "11:05",
-            "text": "🎬 2차전지 에코프로 모멘텀 점검, ‘지주사 할인 소멸’과 중복 상장 금지 이슈 분석 [이창환 영업이사]\n\nhttps://youtu.be/Rfko8kFcpWc?si=ZJP07Vjo5Vy-tqb0\n\n📌 자회사 중복 상장 금지 영향\n7월부터 자회사 중복 상장이 금지되며 에코프로 이노베이션 성장 모멘텀 제한\n\n기존 단독 상장 계획이 차질을 빚으면 프리IPO 투자금 반환 리스크 발생\n\n📌 시장 조정과 반등 제한\n반도체 강세장으로 2차전지 섹터 상대적 조정 발생\n\n에코프로 그룹주는 조정 이후에도 다른 2차전지 기업 대비 반등 제한\n\n📌 주주 구조와 수익률\n에코프로 보유자 중 약 80%는 이미 수익권, 나머지 20%는 손실 상태\n\n과거 최고점 기준 ‘앵커리 효과’로 손실 확정 회피 → 장기 비자발적 보유\n\n📌 신규 모멘텀\n휴머이드, 전고체 배터리 상용화 기대감으로 장기 투자 명분 형성\n\n지주사 적용 탄력 → 자산 가치 할인율 소멸, 밸류에이션 조정 가능\n\n더 자세한 내용은 영상을 통해 확인 바랍니다!",
+            "time": "18:50",
+            "text": "✅ [Reseach Note] ENCell (456070, KOSDAQ) — KRW 124.1bn (~$82.3mn)\n\n🔥 Re-Rating Drivers: CDMO Recovery, Japan Expansion,\nand EN001 Phase 2\n\n📌 Investment Highlights\n- Korea-based CGT CDMO with end-to-end cell and gene therapy manufacturing capabilities\n\n- Operates the only hospital-based GMP facility in Korea, enabling integrated autologous cell therapy production\n\n- Expanding into high-margin Japanese regenerative medicine and aesthetics markets\n\n- Key pipeline: EN001 for Charcot-Marie-Tooth (CMT) disease entering Phase 2a; potential conditional approval could accelerate commercialization\n\n📊 2026E: OP Loss improving toward normalized levels | Potential inflection from regenerative medicine contribution\n\n#KoreanStocks #Biotech #CDMO #CellTherapy #RegenerativeMedicine #ENCell\n\n✅ Korean Independent Research: Growth Research\nhttps://t.me/growthresearch",
             "links": [
-              "https://youtu.be/Rfko8kFcpWc?si=ZJP07Vjo5Vy-tqb0"
+              "https://t.me/growthresearch"
             ],
-            "post_url": "https://t.me/growthresearch/26654"
+            "post_url": "https://t.me/growthresearch/26658"
           },
           {
             "date": "2026-06-03",
-            "time": "11:24",
-            "text": "💻 HBM 공급 부족 심화… 2027년 계약가 급등 전망[TrendForce] \n\n📌 HBM 가격 협상력 강화… 2027년 가격 급등 전망\n2025년 하반기 이후 범용 DRAM 가격이 급등하며 메모리 공급 부족 심화\n\nHBM은 연간 계약 구조 때문에 시장 가격 상승이 즉시 반영되지 못했음\n\n현재 2027년 HBM4 공급 계약 협상이 진행 중\n\n공급 부족이 지속되면서 메모리 업체들의 HBM 가격 협상력이 크게 강화되는 상황\n\n📌 HBM 수익성, DDR5 서버 DRAM에 역전\nTrendForce 분석에 따르면 1Q26 기준 HBM의 웨이퍼당 매출이 DDR5 64GB RDIMM에 추월당함\n\nHBM 수익성 역시 DDR5 64GB RDIMM보다 낮아진 상태\n\n이에 따라 삼성전자, SK하이닉스, 마이크론은 HBM 가격 수준에 따라 HBM과 일반 DRAM 생산 비중을 조정할 가능성\n\n📌 2026년 HBM 수요 성장 동력은 AI ASIC\n2026년 HBM 수요 증가는 AI ASIC이 주도\n\nAI ASIC 탑재 HBM 용량 증가\n기존 96GB~192GB\n신규 216GB~288GB\n\nNVIDIA Rubin 플랫폼은 GPU당 HBM 용량 변화는 크지 않지만 출하량 증가로 수요 확대 예상\n\n📌 2027년 Rubin Ultra와 TPU가 수요 폭증 견인\nNVIDIA Rubin Ultra는 GPU당 HBM 용량이 384GB까지 확대될 전망\n\nGoogle TPU 등 AI ASIC 채택 확대도 HBM 비트 수요 증가 요인\n\nAI 인프라 투자 확대가 2027년까지 지속될 것으로 예상\n\n📌 HBM 생산 비중 지속 확대\n\nHBM 웨이퍼 투입 비중 전망\n2025년 말: 18%\n2026년 말: 22%\n2027년 말: 30%\n\n전체 DRAM 비트 공급 중 HBM 비중\n2025년: 8%\n2026년: 9%\n2027년: 13%\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
+            "time": "19:42",
+            "text": "💻 모건스탠리, AI 사이클 최중요 데이터 패키지 발표…2027년 빅4 CAPEX 1조 달러 돌파\n\n📌 하이퍼스케일러 캐팩스 추이\n구글·아마존·마이크로소프트·메타 4사 합산 기준\n\n2024년 $2,500억 → 2025년 $4,130억 → 2026년 $7,370억 → 2027년 $1조 180억\n\n2024~2027년 누적 합산 $2조 이상 집행 예정\n\n📌 달러보다 중요한 숫자 — 실물 컴퓨트 용량\n2025년 증설 컴퓨트 용량: 6.7GW\n\n2027년 증설 컴퓨트 용량: 19.5GW\n\n단 2년 만에 3배 규모의 AI 인프라가 단일 연도에 가동\n\n구글 단독으로 2027년 6.8GW 증설 예정\n\n참고: AWS가 2024년말까지 역사상 누적 구축한 전체 용량이 4~6GW — 구글은 \n1년에 그걸 넘는다\n\n📌 GW당 구축 비용\n2024년 GW당 $620억 → 2027년 GW당 $520억 (밀도는 오히려 상승)\n\n구글(커스텀 ASIC): GW당 $440억\n\n마이크로소프트(NVIDIA GPU): GW당 $590억\n→ GW당 $150억 격차, 원인은 단 하나 — 커스텀 실리콘 vs 범용 GPU\n\n📌 NVIDIA GPU vs 커스텀 ASIC 비용 구조\nNVIDIA GB300 랙: GW당 $190억\n\nNVIDIA Vera Rubin (차세대, 랙 전력밀도 600kW): GW당 ~$250억\n\nBroadcom(구글향)·Marvell(아마존향) 커스텀 ASIC 랙: GW당 $60~110억\n\n커스텀 실리콘으로 전환한 하이퍼스케일러는 비용 절감을 넘어 동일 달러 대비 지수적으로 더 많은 컴퓨트 확보\n\n범용 실리콘에 머무는 경쟁자 대비 구조적 우위 형성\n\n📌 투자 시사점\n발주는 이미 완료, 전력 계약 체결, 부지 확보 끝\n\n유일한 변수는 서플라이체인이 따라올 수 있느냐\n\nBroadcom — ASIC 설계\nMarvell — 커스텀 실리콘 + 광 DSP\nAAOI — InP 레이저\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
             "links": [
               "https://t.me/growth_semi"
             ],
-            "post_url": "https://t.me/growthresearch/26655"
+            "post_url": "https://t.me/growthresearch/26674"
           }
         ]
       },
@@ -710,75 +558,6 @@
         "posts": [
           {
             "date": "2026-06-03",
-            "time": "10:08",
-            "text": "CLSA , SK Hynix , 'High-Conviction Outperform' 등급, 목표주가를 기존 300만 원에서 400만원으로 상향",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/33373"
-          },
-          {
-            "date": "2026-06-03",
-            "time": "10:13",
-            "text": "반도체 장비, 전력인프라 관련주 들의 상승폭이 큰 가운데 FCbga들도 강세 중",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/33374"
-          },
-          {
-            "date": "2026-06-03",
-            "time": "10:21",
-            "text": "중국은 딜이 쏟아지고있네요\n\n하이코스는 이번 릴리까지 세번째 딜이 연달아나왔습니다.\n\n우리나라 기업들도 작년 에이비엘바이오 같은\n\n플랫폼딜 크게좀 연달아 나왔으면 좋겠네요",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/33375"
-          },
-          {
-            "date": "2026-06-03",
-            "time": "10:37",
-            "text": "https://youtu.be/nygnrfphSPg?si=xO-KufbeHRgbPEzG",
-            "links": [
-              "https://youtu.be/nygnrfphSPg?si=xO-KufbeHRgbPEzG"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/33377"
-          },
-          {
-            "date": "2026-06-03",
-            "time": "10:37",
-            "text": "https://youtu.be/nygnrfphSPg?si=xO-KufbeHRgbPEzG",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/33378"
-          },
-          {
-            "date": "2026-06-03",
-            "time": "10:44",
-            "text": ".\n■ 나스닥 보합인 가운데, AI 투자사이클의 한 몸이었던 <원전>과 <전력에너지>에 순환매 반등이 나오는 중\n\n#오르비텍\n#우리기술",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/33379"
-          },
-          {
-            "date": "2026-06-03",
-            "time": "10:45",
-            "text": "바보의 디앤디파마텍 '추가'매수 이유 (Feat. IR자료 파헤쳐보기)\nhttps://m.blog.naver.com/freedomfromsalary/224304432515",
-            "links": [
-              "https://m.blog.naver.com/freedomfromsalary/224304432515"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/33380"
-          },
-          {
-            "date": "2026-06-03",
-            "time": "11:31",
-            "text": "https://n.news.naver.com/article/001/0016115627?sid=104",
-            "links": [
-              "https://n.news.naver.com/article/001/0016115627?sid=104"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/33381"
-          },
-          {
-            "date": "2026-06-03",
-            "time": "11:37",
-            "text": "•심천 ChiNext +3% 신고가 경신\n\n•중국 광(光)•반도체•희토류 테마 폭발 \n\n>创业板指盘中涨近3%，最高触及4170.24点，创历史新高。 （来自华尔街见闻）",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/33382"
-          },
-          {
-            "date": "2026-06-03",
             "time": "11:40",
             "text": "\"보수적 PER 적용\"...골드만삭스, 코스피 1만2000 간다\n\nhttps://naver.me/GgUsL5S1",
             "links": [
@@ -856,6 +635,74 @@
             "text": "▶️ 2026 USTR 국가별 무역장벽보고서(NTE) 한국 항목\n\n* 2026/03/31\n\n미국은 국제적으로 인정되는 노동권 보호와 관련한 한국의 법률에 대해 우려를 갖고 있다. 특히 결사의 자유, 단체교섭권의 실질적 보장, 그리고 모든 형태의 강제노동 및 강제적 노동의 철폐와 관련하여 우려를 제기하고 있다.\n\n미국은 또한 노동법 집행 측면에 대해서도 우려를 갖고 있다.\n\n아울러 미국 국토안보부 산하 관세국경보호청(CBP)은 현재 한국 기업을 대상으로 한 인도보류명령(Withhold Release Order, WRO)을 유지하고 있다.\n\n2025년 4월 3일, CBP는 강제노동 사용 정황이 합리적으로 의심된다는 정보를 근거로 한국 태평염전(Taepyung Salt Farm)에서 생산된 천일염 제품에 대해 WRO를 발령했다.\n\n한국은 강제노동 또는 강제적 노동을 통해 생산된 상품의 수입을 금지하는 제도를 갖추고 있지 않다.\n\n따라서 이러한 상품들이 한국 시장에 유입되어 국내 시장에서 경쟁할 수 있다.\n\n이러한 문제들은 결과적으로 노동비용을 인위적으로 낮추는 효과를 가져올 수 있으며, 한국 내 또는 한국산 일부 상품과 서비스에 불공정한 경쟁우위를 제공할 수 있다.",
             "links": [],
             "post_url": "https://t.me/Yeouido_Lab/33392"
+          },
+          {
+            "date": "2026-06-03",
+            "time": "15:56",
+            "text": "CLSA — 삼성전기 TP 320만원 상향 (High Conviction Outperform)\n2026.06 / CLSA\n\n──────────\n\n1. 핵심 한 줄\n\n= 삼성전기 = 단순 전자부품 업체 아닌 AI 인프라 확장 핵심 수혜주로 재평가 시작\n= ABF 기판·MLCC·실리콘 캐패시터 동시 성장 국면 진입 = AI 시대 핵심 부품 공급업체\n= 목표주가 220만 → 320만원 상향 = High Conviction Outperform\n\n──────────\n\n2. 사업별 성장 동력\n\nABF 기판\n= 2조원 넘는 대규모 증설 예상\n= 공급 부족 지속 = 가격 인상 2026년까지 이어질 전망\n\n실리콘 캐패시터\n= 최근 확보 수주 = 인텔 차세대 AI 패키징 기술 EMIB-T와 연관 추정\n= 삼성전기가 AI 칩 전력 공급 구조에서 핵심 역할 담당 가능\n\nMLCC\n= AI 서버·산업용·자동차 수요 증가 = 수익성 빠르게 개선 예상\n\n──────────\n\n3. SK하이닉스 재평가 과정과 유사\n\n= CLSA: 이러한 변화가 삼성전기를 과거 SK하이닉스가 HBM으로 AI 수혜주 재평가받던 과정과 유사한 위치에 올려놓음\n= 과거 높은 상관관계 두 종목 = AI 사이클 이후 차별화\n= 최근 삼성전기 AI 노출도 확대 = 다시 유사한 흐름 보이기 시작\n\n──────────\n\n4. 실적·밸류에이션\n\n= 2027~2028년 실적 전망 상향 조정\n= 목표주가 220만 → 320만원 상향\n= High Conviction Outperform\n\n──────────\n\n5. 한 줄 요약\n\nCLSA = 삼성전기 TP 320만원 상향(220만→320만, High Conviction Outperform). 단순 부품 업체 아닌 AI 인프라 핵심 수혜주 재평가. ABF 기판(2조 증설·가격 인상 2026까지)·실리콘 캐패시터(인텔 EMIB-T 연관·AI 칩 전력)·MLCC(AI 서버·산업·차) 동시 성장. 과거 SK하이닉스 HBM 재평가 과정과 유사 = 2027~2028 실적 상향\n\n#CLSA, #삼성전기, #목표주가320만, #HighConvictionOutperform, #ABF기판, #실리콘캐패시터, #인텔EMIBT, #MLCC, #AI인프라수혜, #SK하이닉스재평가비교",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/33393"
+          },
+          {
+            "date": "2026-06-03",
+            "time": "16:06",
+            "text": "코로나, 금융 위기 이 후 최저 찍은 코스닥 ADR. 시황맨\n\n코스닥 ADR이 46까지 밀린 경우는 2008년 금융 위기, 2020년 코로나 때.\n\n2008년 이 후 46 이하로 내려간 적은 없었습니다.\n\n50 미만을 기록 후 1개월 지난 시점에서 코스닥 지수를 보면\n\n2008년 때는 +16%, 2018년 +11%, 2020년에는 +49% 올랐습니다.",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/33394"
+          },
+          {
+            "date": "2026-06-03",
+            "time": "16:52",
+            "text": "» SpaceX, 기업가치 1.75조달러 목표. 공모가는 135달러로 설정\n\n» IPO 주관사는 Goldman Sachs와 MorganStanley\n\n스페이스X, 기업가치 2천600조원 목표…공모가 135달러 고정\n- 수요예측 앞서 공모가 고정은 이례적…IPO로 114조원 조달 계획\nhttps://n.news.naver.com/article/001/0016116390?sid=104",
+            "links": [
+              "https://n.news.naver.com/article/001/0016116390?sid=104"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/33396"
+          },
+          {
+            "date": "2026-06-03",
+            "time": "16:59",
+            "text": ">>AI 데이터센터, 전력망·가스터빈도 기다릴 수 없다… SOFC ‘대체 옵션’에서 표준으로 전환 (중국 국금증권) \n\n•SOFC(고체산화물 연료전지)가 AI 데이터센터 전력 공급 공백을 메우는 핵심 솔루션으로 빠르게 부상. 국금증권은 SOFC가 현재 “1에서 10으로 확장되는” 본격적인 대규모 양산 및 실적 반영 단계에 진입했다고 평가\n\n•SOFC는 약 90일 수준의 빠른 설치·공급 능력, 55~65%에 달하는 높은 발전 효율, 그리고 거의 제로에 가까운 배출 특성을 기반으로 AI 데이터센터의 급증하는 전력 수요를 직접적으로 충족할 수 있는 기술로 부각되고 있음.\n\n•특히 기존 가스터빈 대비 가격 경쟁력 격차가 빠르게 줄어드는 ‘평형 지점’에 근접하고 있으며, Bloom Energy의 수주 급증은 글로벌 수요 확대를 보여주는 대표 사례로 언급. 이러한 흐름은 중국 및 글로벌 관련 공급망 기업 전반으로 확산되며, AI 인프라 전력난 해소 과정에서 SOFC 생태계 전반이 수혜를 받을 것으로 전망\n\n>AI数据中心等不起电网，也等不起燃气轮机，SOFC从“备胎”变标配 https://wallstreetcn.com/articles/3773759#from=ios",
+            "links": [
+              "https://wallstreetcn.com/articles/3773759#from=ios",
+              "https://wallstreetcn.com/articles/3773759"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/33397"
+          },
+          {
+            "date": "2026-06-03",
+            "time": "17:31",
+            "text": "https://blog.naver.com/pillion21/224304597556",
+            "links": [
+              "https://blog.naver.com/pillion21/224304597556"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/33398"
+          },
+          {
+            "date": "2026-06-03",
+            "time": "17:31",
+            "text": "오늘 알바트로스님이 '시장은 늘 옳다'라는 제목의 글을 적어주셨는데 저는 이와는 조금 다른 의견으로 글을 적어보려고 합니다(감히 저따위가 뭐라고^^;;) \n 존경하는 알바트로스님이 틀렸다는 것이 아니라, 그냥 저만의 다른 생각을 적는 것뿐이니 오해 없으시길 바랍니다. 가장 존경하는 투자자 중 한 명이시고, 책도 읽고 투자 강연회도 다녀올 정도로 팬입니다^^\n\n하워드 막스가 책에서 했던 말 중에 기억에 남는 말이 있습니다.\n\n\"시장은 '대체로' 효율적이다. 그러나 시장은 기회가 될 수 있는 실수를 종종 한다.\"\n\n 이 말이 저는 시장이 '항상' 옳지만은 않다는 말로 생각되었습니다. 시장은 '대체로' 옳기 때문에 대부분의 경우 시장은 옳은 것이 맞다고 생각합니다. 그래서 내가 추세를 따르는 투자자라면, 시장에 순응하는 자세가 응당 마땅하다고도 생각합니다. 하지만, 내가 하워드막스가 강조하는 '역투자가'라면 우리는 이러한 추세를 거부할 수 있어야 합니다. 오히려 지금 시장이 외면하고 있는 곳에서 우리는 아주 큰 기회를 찾을 수 있을지도 모릅니다.\n\n 투자에는 한 가지의 길만 존재하지 않습니다. 시장에 순응하는 방식이 있을 수 있고, 그 반대편에서 투자하는 방식도 있을 수 있습니다. (반대편에 있다는 뜻이 공매도를 한다는 뜻은 절대로 아님을 먼저 밝힙니다) \n제가 말하는 반대편은 시장에서 주목받지 못하고 있는 소외주에 한정합니다. 소외된 주식들과 부정당하고 있는 주식들은 어떠한 호재에도 그 호재의 값이 주가에 반영되지 않습니다. 현재의 바이오 섹터를 생각하시면 편할 것 같습니다. 최근 바이오 섹터에 많은 호재들이 있었음에도, 주가 상승은 정말 미미했습니다. 하지만, 주가가 오르지 않았다고 해서 \n그 가치가 상승하지 않은 것은 아닙니다. \n그 가치를 알아봐 주는 시기가 온다면 \n가치는 곧 주가 상승의 원동력이 되어줄 것입니다.\n\n 오해하지 말아야 할 것이 하워드 막스는 책에서 이런 말도 했습니다. \n\n'대부분의 시기에 역투자할 기회를 줄 만큼 시장은 과열된 상태가 아닌 경우가 많다. '너무 비싼' 가격과 '내일 떨어질' 가격은 완전히 다르다.'\n\n 이 문장에서 우리가 주목해야 할 부분은 타이밍을 알 수는 없다는 것입니다. \n소외주들이 소외당하는 기간은 일주일이 될 수도, 일 년 이상이 될 수도 있습니다. 그것은 정말 아무도 모릅니다. 그렇기 때문에 우리는 내재가치를 평가할 수 있어야 합니다. 내재가치를 평가하고 가치보다 싸다면 분할로 매수하는 것. \n그것이 역투자가의 전부라고 생각합니다.\n\n 당신은 추세추종자입니까? 역투자가입니까? 두 방식 모두 큰돈을 벌 수 있다고 생각합니다. 중요한 것은 '자신의 기준이 어디에 있는지 아는 것' 그리고 '그 확신에 흔들림이 없는 것'이라고 생각합니다.\n\n모두 즐거운 휴일 되시길 바랍니다.🫡",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/33399"
+          },
+          {
+            "date": "2026-06-03",
+            "time": "19:45",
+            "text": "[키움 허혜민] ASCO 2026: 암 환자 97%, ChatGPT보다 종양내과 의사 신뢰\n \nASCO 2026에서 발표된 설문 결과에 따르면 암 환자들은 암 관련 중요한 질문에 대해 AI보다 종양내과 의사를 압도적으로 더 신뢰하는 것으로 나타남\n \n미국 암 환자 75명 대상 설문, 암의 향후 경과에 대한 중요한 질문이 있을 때 누구를 가장 신뢰하는가? 질문에 종양내과 의사 97.3%, AI(ChatGPT) 0%, 잘 모르겠다 2.7%.\n \nChatGPT가 정확한 답변을 제공한다고 생각한 환자는 52%.\n \n암 진단, 예후, 생존 가능성 등 민감한 의사결정 영역에서는 의사 신뢰가 여전히 절대적\n \nhttps://firstwordhealthtech.com/story/7515031",
+            "links": [
+              "https://firstwordhealthtech.com/story/7515031"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/33401"
+          },
+          {
+            "date": "2026-06-03",
+            "time": "20:03",
+            "text": "🎯 소외된 코스닥에…당국, 시장 활성화 방안 찾는다\n\n\n✅ 코스닥 급락에 금융당국 긴급회의\n\n· 금융위원회가 6월 4일 증권사 코스닥 담당자들을 소집해 시장 활성화 방안을 논의\n· 최근 코스피와 코스닥 간 수익률 격차가 급격히 확대되면서 대응책 마련에 나선 것으로 해석\n· 코스닥 2부제 개편 외 추가 부양책 검토 가능성\n\n\n✅ 문제는 수급보다 펀더멘털\n\n· 5월 외국인 코스닥 순매수는 역대 최대 규모(2.8조원)\n· 그러나 연기금은 여전히 순매도 기조 -> 수급만으로는 코스닥 상승을 설명하기 어려운 상황\n· 가장 큰 문제는 실적 \n코스피 : AI·반도체 중심 이익 성장\n코스닥 : 실적 개선 기업 부족\n\nhttps://n.news.naver.com/article/011/0004627320?sid=101\n\n🔍 독립리서치 지엘리서치\nt.me/valjuman",
+            "links": [
+              "https://n.news.naver.com/article/011/0004627320?sid=101",
+              "http://t.me/valjuman"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/33402"
           }
         ]
       },
@@ -874,13 +721,6 @@
         "category": "매크로 분석",
         "channel_url": "https://t.me/kkkontemp",
         "posts": [
-          {
-            "date": "2026-05-26",
-            "time": "13:31",
-            "text": "그리고 평화가 찾아왔다 https://m.blog.naver.com/kk_kontemp/224289882008",
-            "links": [],
-            "post_url": "https://t.me/kkkontemp/2381"
-          },
           {
             "date": "2026-05-27",
             "time": "06:41",
@@ -977,6 +817,13 @@
             "text": "1. 미국 소프트웨어의 반란 (맨 오른쪽이 YTD 수익률) \n\n2. 일본은 게임마저 오른 (맨 오른쪽이 YTD 수익률) \n\n3. 글로벌 헤지펀드 가장 인기있는 페어: 롱 반도체 숏 소프트웨어",
             "links": [],
             "post_url": "https://t.me/kkkontemp/2399"
+          },
+          {
+            "date": "2026-06-03",
+            "time": "20:41",
+            "text": "최근 몇 달 동안 MSCI EM(신흥시장) 지수는 상당한 변화를 겪었습니다. AI 설비투자(capex)에 힘입은 반도체(Semis) 및 IT 업종의 끊임없는 아웃퍼폼(시장 수익률 상회)과 더불어, 유가 충격이 후방 소비자, 이커머스 및 다운스트림 산업에 미친 영향이 MSCI EM 지수를 재편했습니다.   현재 대만과 한국이 각각 비중 1위와 2위를 차지하고 있으며, 중국은 3위, 인도는 4위로 밀려났습니다. 대만과 한국의 합산 비중은 역대 최고치인 약 48%에…",
+            "links": [],
+            "post_url": "https://t.me/kkkontemp/2402"
           }
         ]
       },
