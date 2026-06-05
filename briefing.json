@@ -1,6 +1,6 @@
 {
   "2026-06-05": {
-    "fetched_at": "2026-06-05T19:51:07+09:00",
+    "fetched_at": "2026-06-05T22:53:43+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -684,29 +684,6 @@
         "posts": [
           {
             "date": "2026-06-05",
-            "time": "14:00",
-            "text": "https://n.news.naver.com/mnews/article/003/0013989059?sid=101",
-            "links": [
-              "https://n.news.naver.com/mnews/article/003/0013989059?sid=101"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/33580"
-          },
-          {
-            "date": "2026-06-05",
-            "time": "14:00",
-            "text": "아....언제쯤 4천명 구독자 채울까요 ㅠㅠ",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/33581"
-          },
-          {
-            "date": "2026-06-05",
-            "time": "14:01",
-            "text": "아....언제쯤 4천명 구독자 채울까요 ㅠㅠ",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/33582"
-          },
-          {
-            "date": "2026-06-05",
             "time": "14:02",
             "text": "치킨 관련주!\n\nhttps://n.news.naver.com/article/469/0000934737",
             "links": [
@@ -825,6 +802,29 @@
               "https://finance.naver.com/item/main.nhn?code=456160"
             ],
             "post_url": "https://t.me/Yeouido_Lab/33600"
+          },
+          {
+            "date": "2026-06-05",
+            "time": "20:45",
+            "text": "﻿﻿D&D Pharmatech’s DD01 shows MASH resolution in U.S. Phase 2 trial; receives WHO name ‘zabopegdutide’\n\nhttps://www.thebionews.net/news/articleView.html?idxno=25196",
+            "links": [
+              "https://www.thebionews.net/news/articleView.html?idxno=25196"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/33601"
+          },
+          {
+            "date": "2026-06-05",
+            "time": "20:45",
+            "text": "﻿﻿D&D Pharmatech’s DD01 shows MASH resolution in U.S. Phase 2 trial; receives WHO name ‘zabopegdutide’  https://www.thebionews.net/news/articleView.html?idxno=25196",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/33602"
+          },
+          {
+            "date": "2026-06-05",
+            "time": "20:45",
+            "text": "﻿﻿D&D Pharmatech’s DD01 shows MASH resolution in U.S. Phase 2 trial; receives WHO name ‘zabopegdutide’  https://www.thebionews.net/news/articleView.html?idxno=25196",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/33603"
           }
         ]
       },
