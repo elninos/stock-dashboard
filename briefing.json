@@ -1,6 +1,6 @@
 {
   "2026-06-08": {
-    "fetched_at": "2026-06-08T21:01:21+09:00",
+    "fetched_at": "2026-06-09T01:50:54+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -95,29 +95,6 @@
         "category": "매크로/트레이딩",
         "channel_url": "https://t.me/survival_DoPB",
         "posts": [
-          {
-            "date": "2026-06-05",
-            "time": "15:05",
-            "text": "ㅋㅋㅋㅋ저는 숨고르기청년",
-            "links": [],
-            "post_url": "https://t.me/survival_DoPB/13294"
-          },
-          {
-            "date": "2026-06-05",
-            "time": "15:09",
-            "text": "샌디스크          모건스탠리\n\n작성: 탐방왕(https://t.me/tambangwang)\n\n당사는 NAND 시장 역시 DRAM과 유사한 구조적 공급 부족 국면에 진입하고 있다고 판단함. 특히 하이퍼스케일러들이 AI 데이터센터 구축을 위해 고성능 엔터프라이즈 SSD용 NAND를 대규모로 확보하면서 수요 구조 자체가 변화하고 있음. 반면 공급은 여전히 제한적으로 증가하고 있어 시장 수급은 지속적으로 타이트한 상태를 유지하고 있음. AI 인프라 확대가 NAND 시장에도 본격적인 구조적 수요 증가를 가져오고 있다고 평가함.\n\n최근 샌디스크의 합작 파트너인 키옥시아는 투자자 행사에서 장기 NAND 비트 성장률 전망을 기존 20%에서 22%로 소폭 상향 조정함. 이는 AI 추론 수요 확대 효과를 반영한 결과임. 다만 PC와 스마트폰 시장은 여전히 성장세가 제한적일 것으로 전망했으며 이에 따라 대규모 설비투자 확대 필요성은 낮다고 판단하고 있음. 실제 키옥시아는 연간 설비투자를 약 4700억엔 수준으로 유지할 계획을 제시함. 즉 AI 수요는 강하지만 공급 증가 속도는 제한되는 구조가 유지되고 있음.\n\n다만, 당사는 메모리 업종 내에서는 여전히 마이크론을 더 선호함. 그 이유는 DRAM이 AI 데이터센터와 직접 연결되는 비중이 더 높고, 스마트폰이나 PC의 사양 하향 조정으로 수요가 감소할 가능성이 상대적으로 낮기 때문임. 반면 NAND는 모바일과 PC 시장 노출도가 상대적으로 높아 장기적으로는 수요 구조 차이가 존재한다고 분석함. 그럼에도 현재 NAND 가격 환경은 모바일과 PC 수요 부진 영향을 거의 받지 않고 있으며, AI 인프라 수요가 이를 충분히 상쇄하고 있다고 판단함. 이에 따라 당사는 샌디스크의 2026년과 2027년 EPS 전망치를 각각 12%, 24% 상향 조정함.\n\n당사는 샌디스크의 밸류에이션 기준도 상향 적용함. 기존 목표주가는 사이클 평균 EPS 48달러에 PER 23배를 적용해 산출했으나, 현재는 AI 수혜를 반영해 사이클 평균 EPS를 62.5달러로 상향함. 이는 2021년부터 2028년 평균 EPS 56달러를 상회하는 수준이며 아직 AI 신규 사업 기회가 충분히 반영되지 않았다고 판단함. 또한 적용 PER도 기존 23배에서 28배로 상향 조정했음. 다만 여전히 마이크론 대비 소폭 할인된 밸류에이션을 적용하고 있음. 당사는 NAND 산업 역시 AI 추론 수요 확대에 따른 구조적 수혜 국면에 진입하고 있으며, 공급 증가가 제한적인 만큼 가격 강세가 예상보다 오래 지속될 가능성이 높다고 평가함.",
-            "links": [
-              "https://t.me/tambangwang"
-            ],
-            "post_url": "https://t.me/survival_DoPB/13296"
-          },
-          {
-            "date": "2026-06-05",
-            "time": "18:18",
-            "text": "이란, 우라늄 일부 제3국 이전 수용 의사 파키스탄에 전달했다는 보도에 브렌트유 배럴당 0.8달러 하락",
-            "links": [],
-            "post_url": "https://t.me/survival_DoPB/13297"
-          },
           {
             "date": "2026-06-08",
             "time": "07:20",
@@ -228,6 +205,36 @@
             "text": "트럼프 미국 대통령: \"이스라엘과 이란, 즉각적인 휴전 추진 중! 평화를 위한 최종 협상 진행 중\"... \"최종 합의 도달까지 봉쇄는 전면 유지될 것. 신속히 진행될 것으로 기대\"",
             "links": [],
             "post_url": "https://t.me/survival_DoPB/13313"
+          },
+          {
+            "date": "2026-06-08",
+            "time": "21:28",
+            "text": "속보: 이스라엘 고위 관리들이 트럼프 대통령의 요청으로 이스라엘이 이란에 대한 공습을 중단한다고 밝혔습니다.\n\n이스라엘 관리들은 남부 레바논에 대한 공습이 앞으로 며칠 동안 계속될 것이라고 밝혔으며, 이스라엘은 공격을 받을 경우 베이루트를 타격하겠다고 위협했습니다.",
+            "links": [],
+            "post_url": "https://t.me/survival_DoPB/13314"
+          },
+          {
+            "date": "2026-06-08",
+            "time": "22:03",
+            "text": "이스라엘 총리 네타냐후는 이란에 대한 새로운 공격 라운드 준비를 중단하도록 군대에 명령했습니다.",
+            "links": [],
+            "post_url": "https://t.me/survival_DoPB/13315"
+          },
+          {
+            "date": "2026-06-08",
+            "time": "22:24",
+            "text": "흔해빠진 경제/투자유튜브 지옥에 \n찐 메기남 등장\n\n여의도 야전사령관 이선엽 대표님\n\nhttps://youtu.be/JeNB21m0ios?si=xVL-av54tN2HeAC0",
+            "links": [
+              "https://youtu.be/JeNB21m0ios?si=xVL-av54tN2HeAC0"
+            ],
+            "post_url": "https://t.me/survival_DoPB/13316"
+          },
+          {
+            "date": "2026-06-08",
+            "time": "22:27",
+            "text": "🤩Cantor Fitzgerald는 Micron과 SanDisk 모두에 대한 가격 목표를 상향 조정하며 Overweight 등급을 유지했습니다.\n\n$MU: $700에서 $1,500으로\n$SNDK: $1,800에서 $2,900으로\n\n이 회사는 AI 주도의 메모리 슈퍼사이클과 지속 가능한 산업 순풍을 인용했습니다. \nCantor에 따르면, 메모리 거래는 여전히 \"중반\"에 있으며, 추가 상승 여력이 남아 있습니다.",
+            "links": [],
+            "post_url": "https://t.me/survival_DoPB/13317"
           }
         ]
       },
@@ -396,13 +403,6 @@
         "channel_url": "https://t.me/SpartanResearch",
         "posts": [
           {
-            "date": "2026-06-07",
-            "time": "15:19",
-            "text": "방한 외래관광객 분기별 누적 추이",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/3800"
-          },
-          {
             "date": "2026-06-08",
             "time": "08:06",
             "text": "📌 NAVER(시가총액: 40조 812억) #A035420\n📁 장래사업ㆍ경영계획(공정공시)\n2026.06.08 08:03:47 (현재가 : 255,500원, 0.0%)\n\n계획사항 : 엔비디아와 글로벌 AI 팩토리 공동 구축 사업 추진 (신규사업 추진 및 타법인과의 전략적 제휴)\n계획목적 : 글로벌 AI 인프라 수요 급증에 대응하여 엔비디아와의 전략적 파트너십을 통해 대규모 글로벌 AI 팩토리를 공동 구축·운영함으로써 글로벌 AI 컴퓨트 시장에서의 사업 기회를 선점하고 신규 수익원을 확보함\n예상금액 : 세부 계약 조건 협의 중으로 현재 미확정(단계별 계약 확정 시 관련 규정에 따라 별도 공시 예정)\n기대효과 : - 글로벌 AI 인프라 수요 대응을 통한 AI 팩토리 운영 기반 신규 수익원 확보  - 엔비디아의 글로벌 네트워크를 활용한 고객 기반 및 사업 역량 확대  - 아시아·태평양 핵심 AI 팩토리 허브 위상 구축 및 소버린 AI 수요 대응\n\n* 세부내용\n(1) 협력 개요 - 당사는 데이터센터 부지 확보, 구축 및 운영을 주도하며, 엔비디아는 GPU 공급과 함께 글로벌 고객 발굴 및 매출·사업 리스크를 공동 부담하는 사업 주체로 참여  (2) 단계별 인프라 구축 계획 - 2027년 상반기: 55MW - 2027년 말: 100MW 누적 - 2028년: 200MW 누적 - 최종적으로 기가와트(GW)급 인프라 구축 계획 (구체적인 추진 일정은 현재 협의 중으로 미확정이며, 상기 일정은 잠정적인 목표 시기입니다)  (3) 사업 거점 하이퍼스케일 데이터센터 '각 세종'을 첫 거점으로 아시아·태평양 지역을 넘어 유럽, 중동 등 글로벌 전역으로 단계적 확장  (4) 기술 협력 엔비디아 차세대 인프라 플랫폼 'DSX' 도입을 통한 데이터센터 운영 효율화 및 사업성 제고 등\n\n* 기타사항\n- 본 공시는 양사 간 합의 사실에 기반하며, 세부 계약 조건 및 투자 금액 등은 현재 협의 중으로 미확정 상태입니다.  - 본 사업은 단계적으로 추진되며, 각 단계별 투자 규모·일정 등은 시장 상황 및 협의 결과에 따라 변경될 수 있습니다.  - 향후 확정되는 개별 계약 중 공시 기준금액 이상의 사항에 대해서는 관련 법령 및 공시규정에 따라 별도 공시할 예정입니다.  - 본 공시는 장래 계획에 관한 사항으로, 실제 결과는 국내외 시장 환경, 인허가 진행 상황 등 다양한 요인에 의해 달라질 수 있습니다.  - 당사는 2026년 12월 31일까지 본 사업의 진행 현황(단계별 주요 계약 체결 현황 등)을 공시할 예정입니다.  - 다만, 상기 예정일 이전이라도 계약 체결 확정 등 중요한 진행사항이 발생하는 경우 관련 법령 및 공시규정에 따라 해당 시점에 즉시 공시할 예정입니다.  - 상기 '4. 이사회결의일(결정일)'은 대표이사 확인서 상 일자입니다.\n\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260608800036\n회사정보: https://finance.naver.com/item/main.nhn?code=035420",
@@ -530,6 +530,13 @@
               "https://chzzk.naver.com/clips/XLi465Y07d"
             ],
             "post_url": "https://t.me/SpartanResearch/3819"
+          },
+          {
+            "date": "2026-06-08",
+            "time": "22:37",
+            "text": ">>“이란 대통령: 이란은 협상 테이블을 떠난 적이 없다”\n\n•이란 대통령 페제시키안은 8일 SNS에 글을 올려, 외교와 국방은 국가 역량의 양 날개이며 이란은 전장에서 물러난 적도, 협상 테이블을 떠난 적도 없다고 밝혔음.\n\n•그는 국가 안보와 사회 안정 유지가 현재 이란 정부의 최우선 과제라고 강조했음. 또한 이란은 국가와 국민의 권익을 확고히 수호할 것이며, 외부 압력과 위협 앞에서 물러서지 않을 것이라고 언급. 동시에 그는 국가적 단결을 유지하고 이성적으로 도전에 대응할 것을 촉구 (신화통신)",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/3820"
           }
         ]
       },
@@ -681,7 +688,7 @@
           {
             "date": "2026-06-08",
             "time": "13:29",
-            "text": "한미반도체, HBM4용 TC본더 공급 수주\n\n-442억원(전체 매출의 7.7%)\n\nhttps://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260608800436",
+            "text": "한미반도체, HBM4용 TC본더 공급 수주\n\n- 442억원(전체 매출의 7.7%)\n\nhttps://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260608800436",
             "links": [
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260608800436"
             ],
@@ -713,37 +720,6 @@
         "category": "국내 시장/종목 분석",
         "channel_url": "https://t.me/Yeouido_Lab",
         "posts": [
-          {
-            "date": "2026-06-08",
-            "time": "15:20",
-            "text": "코스피로 가는건가.",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/33778"
-          },
-          {
-            "date": "2026-06-08",
-            "time": "15:41",
-            "text": "글로벌 호재 : 국장 종료 띰은 오늘도 작동할 것인가",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/33779"
-          },
-          {
-            "date": "2026-06-08",
-            "time": "15:42",
-            "text": "얘넨 이게 뭔 일이여...\n\n진짜 레버ETF 때문에 별걸 다 보는구나",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/33780"
-          },
-          {
-            "date": "2026-06-08",
-            "time": "15:57",
-            "text": "2026.06.08 15:53:13\n기업명: SK텔레콤(시가총액: 22조 9,181억) A017670\n보고서명: 풍문또는보도에대한해명\n\n보도내용 : [서울파이낸스등] \"SKT, 엔비디아와 GW급 'AI 팩토리' 구축...2027년 첫 가동\" \n발생일자 : 2026-06-08\n해명내용 : \n \n- 본 공시는 2026년 6월 8일 서울파이낸스 등에서 보도한 \"SKT, 엔비디아와 GW급 'AI 팩토리' 구축...2027년 첫 가동\"에 대한 해명공시입니다. \n \n- 상기 언론 등에 보도된 내용 중 \"엔비디아와 SK텔레콤이 국내 GW(기가와트)급 AI 클라우드 구축에 나선다고 8일 밝혔다. 양사는 엔비디아 DSX 플랫폼을 기반으로 오는 2027년 첫 번째 AI 팩토리 가동을 목표로 협력한다.\"와 관련하여, 2027년 가동을 계획하고 있는 AI 팩토리의 규모는 GW급은 아니며, GW급 규모로의 확장은 단계적으로 추진할 계획임을 밝힙니다.  \n\n \n(공시책임자) 주주가치기획실장 김태희\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260608800721\n회사정보: https://finance.naver.com/item/main.nhn?code=017670",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260608800721",
-              "https://finance.naver.com/item/main.nhn?code=017670"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/33781"
-          },
           {
             "date": "2026-06-08",
             "time": "16:01",
@@ -865,6 +841,40 @@
               "https://www.hani.co.kr/arti/international/international_general/1261476.html"
             ],
             "post_url": "https://t.me/Yeouido_Lab/33798"
+          },
+          {
+            "date": "2026-06-08",
+            "time": "21:47",
+            "text": ">>마이크론 CEO “메모리는 AI 시대에 과소평가된 병목… 공급 부족은 2026년 이후에도 지속될 수 있어, 우리는 결코 스스로를 의심하지 않는다”\n\n•마이크론 CEO는 메모리가 AI 산업에서 가장 과소평가된 핵심 병목 요소라고 평가했음. AI 경쟁이 단순한 연산능력 경쟁에서 메모리 경쟁으로 확대되고 있으며, 특히 고성능 AI 시스템일수록 메모리의 중요성이 더욱 커지고 있다고 설명\n\n•그는 공급 측면의 구조적 제약으로 인해 메모리 부족 현상이 장기화될 것으로 전망. 신규 팹 건설에는 수년이 소요되고, 공정 미세화가 진행될수록 웨이퍼당 생산량 증가 효과도 과거보다 낮아지고 있어 공급 확대가 쉽지 않다는 것. 메모리 공급 부족은 최소 2026년 이후까지 이어질 가능성이 높다고 밝혔음\n\n•또한 기업의 성공은 단기 유행을 쫓는 것이 아니라 회복탄력성, 운영 규율, 장기적 관점에 달려 있다고 강조하며, 마이크론은 시장 변동성 속에서도 장기 전략을 유지해 왔다고 설명했음. “우리는 결코 스스로를 의심하지 않는다”며 AI 시대 메모리 수요 확대에 대한 강한 자신감을 드러냈음\n\n>摘要：美光CEO认为，存储是AI被低估的底层瓶颈，AI正从“算力竞赛”延伸为“存储竞赛”。供给端的结构性约束决定了存储短缺将是长期状态。晶圆厂建设周期长，技术节点推进导致单位产出增幅下降，供应紧张至少延续至2026年以后。他强调，成功的底层逻辑是韧性、纪律与长期主义，而非追逐短期风口。",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/33799"
+          },
+          {
+            "date": "2026-06-08",
+            "time": "21:51",
+            "text": "https://www.businesswire.com/news/home/20260608808565/en/Johnson-Johnson-to-Acquire-Firefly-Bio-Inc.-to-Expand-Oncology-Pipeline-with-Novel-Degrader-Antibody-Conjugate-Platform\n\n\n#JNJ\n#오름테리퓨틱\n\nJnJ가 1.5조에 DAC 전임상 회사(firefly bio)를 인수하였습니다. 오름과 페이로드와 타깃이 달라 직접 비교는 어렵지만 오름은 BMS에 에셋 세일한 DAC 물질 세계 최초 임상 1상 중이며, 버텍스와 플랫폼 계약도 맺었습니다.",
+            "links": [
+              "https://www.businesswire.com/news/home/20260608808565/en/Johnson-Johnson-to-Acquire-Firefly-Bio-Inc.-to-Expand-Oncology-Pipeline-with-Novel-Degrader-Antibody-Conjugate-Platform"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/33800"
+          },
+          {
+            "date": "2026-06-08",
+            "time": "21:59",
+            "text": "으악 Tango Therapeutics, Vopimetostat과 Revolution Medicine의 Daraxonrasib 병용으로 췌장암에서 ORR 약 92%\n\n으악 진짜 췌장암 치료 되는거에요?\n\n-. Vopimetostat은 PRMT5 억제제\n-. 2/3L PDAC 환자 대상 Phase 1/2상 초기 데이터\n-. 6개월 PFS 비율 약 90%, ORR 약 92%, DCR 100%\n-. 대부분 부작용 1-2등급\n-. Vopimetostat 250mg/ Daraxonrasib 100mg에서 3건 DLT 보고, 1건 G3 발진/1건 G3 구내염, 피로\n\nhttps://www.globenewswire.com/news-release/2026/06/08/3307926/0/en/tango-therapeutics-announces-combination-of-vopimetostat-and-daraxonrasib-demonstrated-92-objective-response-rate-in-pancreatic-cancer.html",
+            "links": [
+              "https://www.globenewswire.com/news-release/2026/06/08/3307926/0/en/tango-therapeutics-announces-combination-of-vopimetostat-and-daraxonrasib-demonstrated-92-objective-response-rate-in-pancreatic-cancer.html"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/33801"
+          },
+          {
+            "date": "2026-06-08",
+            "time": "22:21",
+            "text": "워매 ㄷㄷㄷ 이러면 또 얘기가 달라지는데\n\nhttps://m.blog.naver.com/studying-investor/224309898482",
+            "links": [
+              "https://m.blog.naver.com/studying-investor/224309898482"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/33802"
           }
         ]
       },
@@ -2760,6 +2770,15 @@
         "posts": [
           {
             "date": "2026-06-08",
+            "time": "21:43",
+            "text": "[젠슨황, 한국 방문 목적은 AI팩토리?]\n\n과거 스마트폰 산업이 애플의 스티브 잡스가 선도했듯이, AI 시대의 로드맵은 젠슨황 머리 안에 다 있다고 생각한다. 그가 생각하는 대로 AI 로드맵이 진행되고 있는 듯. 그런 그가 다음 먹거리로 차세대 AI 데이터센터인 AI 팩토리를 구상하는 듯 하다. 아마도 추론 다음 단계를 준비 하는 듯.. 젠슨황의 시간은 돈으로 환산하면 엄청난데, 그냥 한국에 관광와서 시구나 던질 사람은 아님. 이번 방문의 목적을 보니, AI 하드웨어 제조국으로 한국을 완전히 낙점 한듯 한 것 아닌가 싶다. 물론 AI 관련 파트너사는 대만을 비롯해 다양하겠지만, 대만이 커버하지 못하는 분야에서는 확실히 한국을 낙점한게 아닌가 싶다. 일본이나 대만, 중국에도.......",
+            "links": [
+              "https://blog.naver.com/luy1978/224309904679"
+            ],
+            "post_url": "https://blog.naver.com/luy1978/224309904679"
+          },
+          {
+            "date": "2026-06-08",
             "time": "18:23",
             "text": "[유난스러운 국장]\n\n그저 몇프로 먹으면 좋다고 판다고. 레버리지 etf 보유기간이 5일도 안된다지 나 역시 장기투자자는 아니지만 좋은건 계속 들고 갔었다는.. 국장 변동성 잘 이용해보자..",
             "links": [
@@ -3180,15 +3199,6 @@
               "https://blog.naver.com/luy1978/224279731952"
             ],
             "post_url": "https://blog.naver.com/luy1978/224279731952"
-          },
-          {
-            "date": "2026-05-09",
-            "time": "10:12",
-            "text": "[이번주 본 영상들~]\n\n야구는 9회말 투아웃까지 지켜봐야지? https://youtu.be/EXQDSkuZVKM?si=vpYcYuKKP855sIlE 말바꾸는 다른 시황방송 필요없음. 끝날때 까지 끝난게 아니다. 고점은 시장이 판단해주지, 일부 전문가, 유튜버들이 정하는게 아님. https://youtu.be/tuqW2u96XBc?si=-NzHs3pgdnVJRaju 학습-추론 - 피지컬. 피지컬AI 도 AI 임. 정해진 미래. https://youtu.be/ra73Dy6Z8p0?si=CNtjqwrxbkBclmts 양산 모델은 확정. https://youtu.be/eK0HFVE2gcs?si=MKzjoVtTPKLj5_qT 2030년 전후로 아주 흥미로운 시대가 열릴것 같음.. https://youtu.be/1p8WESN5pN0?si=YCAb8ZNA1IUm3-_w 그려질 그림이 좋다. https://youtu.be/-LVt0E8FB44?s.......",
-            "links": [
-              "https://blog.naver.com/luy1978/224279714611"
-            ],
-            "post_url": "https://blog.naver.com/luy1978/224279714611"
           }
         ]
       },
@@ -3198,6 +3208,15 @@
         "url": "https://dart.fss.or.kr",
         "category": "공시",
         "posts": [
+          {
+            "date": "2026-06-09",
+            "time": "00:00",
+            "text": "[인카금융서비스] [기재정정]주요사항보고서(자기주식취득신탁계약체결결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260608000474"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260608000474"
+          },
           {
             "date": "2026-06-08",
             "time": "00:00",
@@ -3494,15 +3513,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260605000640"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260605000640"
-          },
-          {
-            "date": "2026-06-05",
-            "time": "00:00",
-            "text": "[알엔투테크놀로지] [기재정정]주요사항보고서(타법인주식및출자증권양도결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260605000588"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260605000588"
           },
           {
             "date": "2026-06-04",
