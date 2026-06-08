@@ -1,6 +1,6 @@
 {
   "2026-06-08": {
-    "fetched_at": "2026-06-09T01:50:54+09:00",
+    "fetched_at": "2026-06-09T08:56:02+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -9,20 +9,6 @@
         "category": "증권사 리포트",
         "channel_url": "https://t.me/bumgore",
         "posts": [
-          {
-            "date": "2026-06-01",
-            "time": "21:32",
-            "text": "2무 1패 32강 진출 . 스위스에 패해 16강 진출 실패. 스페인 우승",
-            "links": [],
-            "post_url": "https://t.me/bumgore/54395"
-          },
-          {
-            "date": "2026-06-02",
-            "time": "07:36",
-            "text": "Goldman Sachs APAC Conviction List - Directors' Cut \n\n(2026년 6월 업데이트)\n\n핵심 변경사항\n\n이번 달 업데이트의 핵심은 S-Oil(010950.KS)을 컨빅션 리스트에 신규 편입한 것입니다. \n\n동시에 Futu Holdings는 리스트에서 제외되었습니다(22일간 보유, -42.5% 수익률).\n\n\nS-Oil 투자 논리 (애널리스트 Nikhil Bhandari)\n\n목표주가 W147,000 / 투자의견 매수.\n\n네 가지 근거로 요약됩니다:\n\n강력한 잉여현금흐름(FCF) 반등 — US$7bn 규모 증설(샤힌 프로젝트)이 2026년 중반 완료되며 자본지출이 급감, 2027년 예상 FCF 수익률 18% 도달\n\n중간유분(디젤·항공유) 비중이 높음 — 제품 수율의 약 56%를 차지, 정제 시스템의 병목 구간으로 제품 타이트함이 지속될 전망\n\n컨센서스 이익 상향 가속 — 1분기 영업이익이 이미 2026년 연간 컨센서스의 상당 부분을 달성, 2분기도 호조 예상\n\n저평가 — 현 주가는 2027년 디젤/항공유 마진을 중간 사이클 이하로, 샤힌 화학 프로젝트는 사실상 마이너스 IRR로 반영(즉 화학 회복 가능성은 무료 옵션)\n\n디젤/항공유 크랙이 US$1/bbl 오를 때마다 2027년 EBITDA가 약 6% 상승하는 높은 레버리지 구조입니다. 단기적으로 유가 변동성에 따라 주가가 흔들릴 수 있으나, 하락 시 매수 기회로 봅니다.\n\n리스트 전반 구성 (총 24개 종목)\n\n지역: 중화권 54%(중국 33%, 대만 13%, 홍콩 8%), 일본 17%, 호주·뉴질랜드 13%, 인도 8%, 한국\n섹터: IT 25%, 소비재(필수+임의) 34%, 산업재 17%, 헬스케어 8% 등\n\n한국 종목은 S-Oil 외에 APR(목표가 W460,000) 포함\n\n\n5월 성과 주요 종목\n\n상위: 무라타(+86.7%), 홍하이(+31.7%), 야스카와(+20.7%)\n하위: 마오거핑(-16.9%), NYPCB(-15.6%), Yum China(-11.8%)\n\n주요 전략·섹터 리포트 \n\n글로벌 매크로: 미국 경기침체 확률을 25%로 하향. Fed 금리 인하는 2026년 12월·2027년 3월로 연기 전망. ECB는 6·9월 인상 후 2027년 초 전환 예상.\n\n아시아 전략: 북아시아 선호. 한국 KOSPI 목표 9,000, 2026년 한국 이익성장 +300% 전망. 한국·일본·중국 비중확대.\n\n에이전틱 이코노미: 2030년까지 토큰 소비가 24배(월 120경 토큰) 증가, 1H26 토큰 경제성 흑자 전환 전망.\n\n글로벌 정제: 중동 사태 진정 시나리오에서도 2H26 제품 타이트함 지속. 아시아 내 S-Oil, 타이오일 선호.\n\n중국 소비: 1분기 견조하나 2분기 기대치 하향. 유제품을 선호 리스트에 추가, 펫푸드는 최하위로 강등.",
-            "links": [],
-            "post_url": "https://t.me/bumgore/54396"
-          },
           {
             "date": "2026-06-02",
             "time": "08:36",
@@ -85,6 +71,27 @@
             "text": "한국 유틸리티·원전 EPC      \n\n제이피모건\n\n\n총평 ✨\n\n한국 원전주는 최근 한 달간 KOSPI(+18%)를 크게 하회 📉 — KEPCO -15%, 현대건설 -17%, 두산에너빌리티 -25%, 한전기술 -32%. 대형 원전 EPC 신규 수주 뉴스 부재로 기대감이 둔화된 영향. 다만 SMR 관련 뉴스플로우는 강화되고 한미 원전 협력도 가속화 중. JPM은 원전 EPC주에 대해 KEPCO보다 우호적이며, 최선호주는 두산에너빌리티 🎯.\n\n\nSMR이 핵심 포커스 🔬\n\n미국: Fulcrum Point·Blue Castle가 합작법인 설립해 유타에서 Holtec SMR-300 프로젝트 추진, 뉴욕은 SMR 포함 1GW 이상 차세대 원전 공모\n\n영국: X-energy 규제 평가 신청, Rolls-Royce가 두산에너빌리티를 핵심 원자로 아일랜드 부품 작업 파트너로 선정\n\n국가 차원: 이탈리아 원전 법안 하원 통과(7월말 상원 통과 전망), 인도는 원전 시장 민간 개방\n\n\n한미 원전 협력 가속 🇰🇷🇺🇸\n\n양국이 6월 초 첫 안보 협의 개최, 7월 워싱턴에서 2차 논의 예정(우라늄 농축·사용후핵연료 재처리권 논의). 수익성 난항을 겪는 루이지애나 LNG 터미널 대신, 원전·조선이 한국의 첫 대미 투자 분야로 부상 중(단, 공식 결정된 것은 없음).\n\n\n원전 EPC 투자 의견 💼\n\n최선호주 두산에너빌리티 — 빠르게 확대되는 수주잔고와 대형 원전·SMR·가스터빈에 걸친 균형 잡힌 포트폴리오. JPM은 두산에너빌리티, 한전기술, 현대건설(모두 OW) > KEPCO(N) 선호. 근거: ① 해외 원전 EPC 기회의 촉매 구체화, ② KEPCO 대비 작은 정책 리스크.\n\n\n향후 촉매 📌\n\n① 베트남·미국 등 한국 주도 해외 원전 프로젝트 진전, ② 빅테크·정부의 신규 원전 프로젝트, ③ 한국에 더 큰 기회를 부여하는 한미 원자력협정(2035년 만료) 개정.\n\n\n밸류에이션 / 목표주가 📊\n\n두산에너빌리티: OW, 목표가 160,000원 \n\n현대건설: OW, 목표가 180,000원 \n\n한전기술: OW, 목표가 260,000원\n\nKEPCO: N, 목표가 48,000원 \n\n\n주요 기업 뉴스 📰\n\n두산에너빌리티: Rolls-Royce SMR(470MWe) 핵심 부품 사전 작업 수주(체코 Škoda JS와 듀얼 공급), 미국에 370MW급 스팀터빈 4기 공급 계약(2029년 텍사스 납품)\n\nSK 투자 TerraPower SMR(와이오밍 Natrium)는 순항 — SK이노베이션·SK가 2대 주주, HD현대·두산이 핵심 부품 공급, SK이노베이션은 아시아 독점권 보유(2035년 한국 첫 4세대 SMR 상용화 목표)",
             "links": [],
             "post_url": "https://t.me/bumgore/54412"
+          },
+          {
+            "date": "2026-06-09",
+            "time": "08:03",
+            "text": "시프트업                          골드만\n\n\n6월 6일 Summer Game Fest 2026에서 「Stellar Blade: Blood Rain」 첫 트레일러 공개 — Stellar Blade 세계관 후속작의 첫 공개 reveal. \n\n김형태 대표는 인터뷰에서 이를 콘텐츠 확장팩이 아닌 독립 정식 후속작으로 규정하며, 새 주인공·확장된 게임플레이·멀티플랫폼 자체 퍼블리싱(self-publishing) 의지를 강조. \n\nGS는 정확한 출시 시점이 불명확해 단기 실적 영향은 제한적이나, 이번 발표가 확장 가능한 IP를 보유한 프리미엄 AAA 개발사라는 장기 내러티브를 강화한다고 평가. \n\n투자의견 Neutral 유지, 목표주가 31,000원 → 33,000원 상향(상승여력 +8%).\n\n\nStellar Blade: Blood Rain 🗡\n\n멀티타이틀 프랜차이즈 야망: 원작 확장이 아닌 자체 정체성을 가진 독립 후속작. 새 주인공·전투 시스템 재설계·확장된 사이드 콘텐츠·넓어진 도시 배경으로 프랜차이즈 진화 및 고객층 확대 추구\n\n퍼블리싱 야망 확대: 기존 소니(SIE)와의 퍼블리싱 협업 대신 자체 퍼블리싱으로 단일 플랫폼에 국한되지 않고 최대한 많은 유저 도달 목표. GS는 이를 IP 상업적 잠재력에 대한 자신감 증가로 해석하며, 향후 프랜차이즈 생애 경제성에서 더 큰 몫을 확보할 수 있다고 평가\n\n단기 실적 영향 제한적: 개발 약 1년 차 초기 단계로 단기 기여는 미미. 다만 다음 성장 사이클 가시성 개선\n\n\nNikke 글로벌 📱\n\n4/23 출시한 3.5주년 기념 이벤트 효과로 2Q 실적 개선 전망. 출시 직후 한국/일본 iOS 앱스토어 최고매출 3위/4위 기록. Sensor Tower 데이터 기준 4~5월 매출 +78% YoY / +6% YoY 성장. 출시 3년+ 경과에도 견조한 라이브서비스 운영으로 회사의 핵심 수익원 역할 지속 전망.\n\n\n실적 추정 조정 📊\n\n4~5월 Nikke 글로벌 호조 반영해 2026E/27E/28E 매출 +3%/+1%/+0%, OP +4%/+1%/+0%, NP +3%/+1%/+0% 상향.\n\n2026E: 매출 2,135억 원, NP 1,370억 원, EPS 2,359원\n2027E: 매출 1,912억 원, NP 1,012억 원, EPS 1,743원\n2028E: 매출 6,073억 원(Blood Rain 출시 가정), EPS 5,881원\n\n\n밸류에이션 💰\n\nNTM EPS에 목표배수 16배 적용(과거 2Q25 실적 후 mid-teens 거래) → 목표가 33,000원(현재 30,550원).\n\n상방 리스크: 신규 파이프라인(Blood Rain, Project SPIRITS) 출시 시점 가이던스 명확화, 주요 파이프라인 후기 개발 진입 확인, Nikke 중국 트래픽/수익화 램프업, 중국 등 규제 완화\n\n하방 리스크: Nikke 글로벌 트래픽 하락으로 제품 수명주기 조기 악화, 신규 파이프라인 출시 지연, 신작 성과 부진, 중국 경쟁/규제 환경 악화\n\n주가 흐름 📉\n절대수익률 3M +1.2% / 6M -20.6% / 12M -39.5%. KOSPI 대비로는 각각 -30.8% / -60.1% / -79.2%로 크게 부진.",
+            "links": [],
+            "post_url": "https://t.me/bumgore/54414"
+          },
+          {
+            "date": "2026-06-09",
+            "time": "08:17",
+            "text": "2026 Computex Takeaways\n\n제이피모건\n\n\n🖥 1. 엔비디아 '카이버(Kyber)' 랙 출시 일정 리스크\n\n백플레인 신호 무결성 이슈\n\n엔비디아의 차세대 카이버(Kyber) GPU 랙(2H27 양산 목표)이 백플레인 신호 무결성(Signal-Integrity) 문제로 인해 일정 지연 또는 불확실성에 직면해 있습니다.  \n\n대안 설계 검토 중\n\n현재 '루빈 울트라(Rubin Ultra) NVL144'를 위해 두 가지 대안을 평가 중입니다.\n\n① 케이블 카트리지를 통해 NVL72 랙 2개를 서로 맞대어 연결하는 방식 ② NVLink CPO(광학 소자 부착형) 스위칭 방식   \n\n결정까지의 시간\n\n양산까지 약 1.5년의 시간이 남아있어 최종 결정에는 시간이 걸릴 것으로 보입니다. M10 CCL 부품 인증과 CPO 스위치 성숙도가 핵심 변수입니다.  \n\n\n⚡️ 2. 전력 솔루션 (HVDC 및 고전압 랙) 도입 확대\n\nVR200 전력 소비량(TDP) 하향 가능성\n\n최근 액체 냉각 아키텍처 변화로 인해 엔비디아가 VR200 칩의 전력(TDP)을 기존 ~2.3kW에서 ~1.8kW로 낮출 것이라는 예측이 나옵니다. 다만, 랙 레벨의 AC/DC 파워 서플라이 구성(랙당 4개의 110kW 파워 쉘프)은 변하지 않을 것입니다.  \n\n고전압 직류(HVDC) 채택 가속화\n\n엔비디아는 '베라 루빈(Vera Rubin) NVL144' 레퍼런스 디자인에 HVDC 전력 옵션을 포함했습니다. 델타(Delta) 경영진은 VR200 세대에서 HVDC 채택률이 약 20%에 달할 것으로 예상하여, 기존 전망치(15%)를 상향 조정했습니다.  \n\n수혜 부문\n\n카이버 랙 지연과 상관없이 고객들은 HVDC 파워 랙을 채택할 것입니다. 다만 SiC(탄화규소) 등 전력 부품 원가 상승으로 인해 100% 침투는 어려울 수 있습니다.  \n\n\n📈 3. ASPEED (BMC 칩 공급사)의 강력한 수혜\n\n2027년까지 장기 주문 가시성 확보\n\n에이전틱 AI(Agentic AI) 관련 서버 구축 계획이 빨라지면서, ASPEED는 이례적으로 2027년까지의 장기 주문 가시성을 확보했습니다 (통상 가시성은 3개월 수준).  \n\n실적 턴어라운드 시점\n\n단기적으로는 공급 부족(Supply Constraint)으로 매출 성장이 제한될 수 있지만, 2026년 4분기부터 공급이 개선되며 본격적인 매출 성장이 시작될 것입니다.  \n\n엔비디아 '루빈' 플랫폼 아키텍처의 호재\n\n엔비디아가 공개한 루빈 레퍼런스 아키텍처는 컴퓨트 랙 외에도 CPU 랙, 스토리지 랙, 스위치 랙 등 시스템 구조가 훨씬 더 고도화되고 복잡해졌습니다. 이에 따라 랙당 탑재되는 BMC 칩의 개수가 크게 늘어나 수혜가 예상됩니다.  \n\n\n⚙️ 4. 엔비디아 '베라(Vera) CPU' 및 AMD '헬리오(Helio)' 시스템 동향\n\n베라(Vera) CPU 초기 반응 양호\n\n엔비디아의 베라 CPU 랙은 공랭식과 수랭식 버전 모두 공개되었습니다. 미국 일부 하이퍼스케일러 고객들의 초기 반응이 긍정적이며, 이르면 2026년 2분기부터 출하가 시작될 가능성이 있습니다. 이는 BMC, 액체냉각, DRAM 공급사에게 호재입니다.  \n\nAMD 헬리오(Helio) 시스템 분석\n\nAMD Venice CPU 18개와 AMD M1455 GPU 72개 등으로 구성된 240kW급 랙 시스템이 공개되었습니다. 폼팩터 특성상 공간 효율성은 떨어지지만, 상대적으로 저렴한 가격이 장점입니다 . silicon 및 UBB 디자인 사이클이 길어지면서 랙 레벨의 대량 양산은 2027년 상반기로 예상됩니다.  \n\n\n🔧 5. 생산 공정 혁신 및 부품 트렌드\n\n조립 시간의 혁신적 단축\n\n케이블이 없는 모듈러 설계(Midplane 적용) 덕분에 VR200 NVL72 컴퓨트 트레이 1개당 생산 주기가 기존 2시간(GB300 기준)에서 단 5분으로 단축되었습니다. 이는 공급망 전반(혼하이, 퀀타, 위스트론 등)의 수율 개선과 운전자본 감소에 기여할 것입니다.  \n\nSiC(탄화규소) 및 커패시터 수요 폭발\n800V 고전압(HVDC) 랙에는 SiC 소재가",
+            "links": [],
+            "post_url": "https://t.me/bumgore/54415"
+          },
+          {
+            "date": "2026-06-09",
+            "time": "08:33",
+            "text": "Memory Market Update\n\n제이피모건\n\n\n최근 일주일간 메모리주가 11% 하락했는데(SOX는 6% 하락), JPM은 이를 SOCAMM 콘텐츠 컷 노이즈와 지정학적 이슈 탓으로 보고 매수 기회로 판단합니다. \n\nVera Rubin 랙의 SOCAMM 용량이 CPU당 192GB에서 96GB로 줄었다는 보도가 투자자 우려를 키웠지만, JPM은 이게 성능 다운스펙이 아니라 메모리 공급 부족 때문이라고 봅니다. 즉 모듈당 용량은 줄어도 SOCAMM 비트 조달 수요 자체는 변화가 없어서, Vera CPU 물량 증가로 상쇄될 거라는 논리입니다.\n\n엔비디아-SK하이닉스 파트너십도 긍정적으로 봅니다. SK하이닉스가 엔비디아의 최대 메모리 파트너로 공식 지정됐고(2년+ 연장 옵션), HBM뿐 아니라 Vera Rubin·Vera CPU·RTX Spark PC·Jetson Thor 로보틱스까지 메모리를 공동 개발합니다. \n\nJPM은 이게 2027년까지 수요 가시성을 확보해주고, 공급이 빠듯한 만큼 다른 메모리 업체에도 호재라고 해석합니다. 엔비디아는 SK텔레콤, 네이버, 두산, 크래프톤/NC, 삼성·현대 등 한국 기업들과도 AI 인프라 협력을 발표했고, 젠슨 황은 향후 5년 DRAM 웨이퍼 2배 증설로도 부족할 수 있다고 언급했습니다.\n\nComputex 2026 관련해선 SK하이닉스의 12단 HBM4 양산 순항, eSSD가 AI 데이터 파이프라인의 핵심 인프라로 부상하는 점, Kioxia의 SSD 소프트웨어(AiSAQ) 차별화 등을 긍정적으로 봤습니다.\n\n투자 의견: 중기 관점에서 조정을 매수 기회로 보고 \"higher for longer\" 업사이클에 베팅하라는 입장입니다. 아시아 최선호주(OW)는 삼성전자, SK하이닉스, Kioxia입니다. 목표가는 SK하이닉스 300만원(현재가 193.4만원), 삼성전자 48만원(현재가 29.8만원), Kioxia ¥80,000입니다.",
+            "links": [],
+            "post_url": "https://t.me/bumgore/54416"
           }
         ]
       },
@@ -95,20 +102,6 @@
         "category": "매크로/트레이딩",
         "channel_url": "https://t.me/survival_DoPB",
         "posts": [
-          {
-            "date": "2026-06-08",
-            "time": "07:20",
-            "text": "지난 금요일 \n\n단 하루만에 Fear 42(이전 Neutral 53)로 하락",
-            "links": [],
-            "post_url": "https://t.me/survival_DoPB/13298"
-          },
-          {
-            "date": "2026-06-08",
-            "time": "07:21",
-            "text": "나선은 7시 땡 이후 \n-0.5% 이상 하락 출발 후 강보합",
-            "links": [],
-            "post_url": "https://t.me/survival_DoPB/13299"
-          },
           {
             "date": "2026-06-08",
             "time": "07:22",
@@ -235,6 +228,20 @@
             "text": "🤩Cantor Fitzgerald는 Micron과 SanDisk 모두에 대한 가격 목표를 상향 조정하며 Overweight 등급을 유지했습니다.\n\n$MU: $700에서 $1,500으로\n$SNDK: $1,800에서 $2,900으로\n\n이 회사는 AI 주도의 메모리 슈퍼사이클과 지속 가능한 산업 순풍을 인용했습니다. \nCantor에 따르면, 메모리 거래는 여전히 \"중반\"에 있으며, 추가 상승 여력이 남아 있습니다.",
             "links": [],
             "post_url": "https://t.me/survival_DoPB/13317"
+          },
+          {
+            "date": "2026-06-09",
+            "time": "07:29",
+            "text": "지난 금요일   단 하루만에 Fear 42(이전 Neutral 53)로 하락",
+            "links": [],
+            "post_url": "https://t.me/survival_DoPB/13318"
+          },
+          {
+            "date": "2026-06-09",
+            "time": "07:29",
+            "text": "달러/원 1,559.55",
+            "links": [],
+            "post_url": "https://t.me/survival_DoPB/13319"
           }
         ]
       },
@@ -281,7 +288,7 @@
             "links": [
               "https://biz.chosun.com/it-science/ict/2026/06/08/EPEVELPEBJANDMU7JFKAIB4XWE/?utm_source=naver&amp;utm_medium=original&amp;utm_campaign=biz",
               "https://t.me/growth_semi",
-              "https://biz.chosun.com/it-science/ict/2026/06/08/EPEVELPEBJANDMU7JFKAIB4XWE/"
+              "https://biz.chosun.com/it-science/ict/2026/06/08/EPEVELPEBJANDMU7JFKAIB4XWE/?outputType=amp"
             ],
             "post_url": "https://t.me/growthresearch/26775"
           },
@@ -392,6 +399,36 @@
               "https://t.me/growthresearch"
             ],
             "post_url": "https://t.me/growthresearch/26786"
+          },
+          {
+            "date": "2026-06-09",
+            "time": "08:18",
+            "text": "💻 '트럼프 업은' 인텔, 구글 칩도 만든다…\"텐서칩 3백만개 생산 계획\"\n\nhttps://biz.sbs.co.kr/article/20000315259\n\n📌 구글, 인텔 파운드리 활용 검토\n구글이 28년까지 인텔 공장에서 300만개 이상의 TPU를 생산할 계획\n\n자체 AI칩 생산을 TSMC 외 파운드리로 다변화하려는 움직임\n\n성사 시 인텔 파운드리 사업 정상화의 핵심 레퍼런스가 될 가능성\n\n📌 엔비디아·테슬라·애플도 인텔 검토\nAI 붐으로 첨단 칩 수요가 급증하면서 TSMC 생산능력 부족 심화\n\n엔비디아는 인텔 기술을 활용해 4개 GPU를 하나의 장치로 결합하는 프로세서 제작 가능성\n\n테슬라는 AI 칩 복합단지 ‘테라팹’ 프로젝트에 인텔 14A 공정 활용을 추진\n\n애플도 인텔과 일부 칩 생산 예비 계약을 체결한 것으로 보도\n\n📌 인텔 파운드리 재평가\n립부 탄 CEO 취임 이후 인텔은 미국 정부, 엔비디아, 소프트뱅크 등으로부터 대규모 투자 유치\n\n미국 내 반도체 제조 역량 강화 기조와 맞물려 빅테크의 인텔 협력 유인이 커지는 상황\n\n구글 TPU 수주가 현실화될 경우 인텔은 AI 파운드리 시장에서 의미 있는 반전 계기 확보 가능\n\n💻반도체 소부장💻 [그로쓰리서치]\nhttps://t.me/growth_semi",
+            "links": [
+              "https://biz.sbs.co.kr/article/20000315259",
+              "https://t.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/26787"
+          },
+          {
+            "date": "2026-06-09",
+            "time": "08:24",
+            "text": "✅ 일론 머스크 \"우주 태양광, 인류 에너지 확장의 다음 단계로 부상\"\n\n📌 우주에서 태양 에너지 포획\n우주에 태양광 패널을 배치해 태양 에너지를 직접 포획하는 구상 부각\n\n지구 궤도에서 태양 에너지 활용 시 지상 발전소 건설과 냉각 부담을 줄일 수 있음\n\n📌 우주 데이터센터와 에너지 문제 연결\nAI 데이터센터 확산으로 전력과 냉각 문제가 핵심 병목으로 부상\n\n우주는 진공 환경을 활용할 수 있어 지구보다 열 방출과 냉각이 유리하다는 주장\n\n향후 우주 인프라는 전력·컴퓨팅 인프라 확장 수단으로 해석 가능\n\n📌 카르다셰프 척도 관점\n위성을 발사해 태양 에너지를 활용하는 것은 문명의 에너지 활용 단계를 높임\n\n태양 에너지의 일부만 활용해도 현재 인류보다 훨씬 강력한 에너지 기반 확보\n\n우주태양광은 장기적으로 에너지·AI·우주 산업이 결합되는 핵심 테마로 부각\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://t.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/26788"
+          },
+          {
+            "date": "2026-06-09",
+            "time": "08:53",
+            "text": "✅ 'AI 심폐소생술' 해낸 팀 쿡의 애플…AI 시리 마침내 선보여\n\nhttps://www.chosun.com/economy/tech_it/2026/06/09/GNHMWM5MSJDGDJDISOTKV2SIKQ\n\n📌 2년 만에 AI 시리 공개\n애플, WWDC 2026에서 AI 기능을 탑재한 차세대 시리 공개\n\n아이폰에서 챗GPT·제미나이 앱 접속 없이 음성으로 정보 검색, 사진 정리, 일정 확인 등 수행\n\n개인 메시지·사진·메모 등 기기 내 데이터를 활용해 사용자 맥락 기반 답변 제공\n\n📌 구글 제미나이 기반 개발\n애플은 자체 AI 모델 개발 지연 끝에 구글 제미나이 기술을 활용한 차세대 파운데이션 모델 개발 선택\n\nAI 경쟁의 초점을 자체 모델 성능보다 아이폰·iOS·앱스토어 생태계 안에서의 사용자 경험으로 전환\n\n개발자 도구 Xcode에서도 제미나이를 선택 가능한 모델로 지원 예정\n\n📌 온디바이스 AI와 개인정보 보호 강조\nAI 시리는 화면을 인식하는 시각 지능과 과거 대화 기록, 개인 맞춤형 응답 기능 탑재\n\n애플은 온디바이스 AI와 비공개 클라우드를 통해 사용자 데이터 접근·저장을 차단한다고 강조\n\n다만 EU와 중국은 개인정보·규제 이슈로 기능 제공이 제한될 예정\n\n📌 시장 평가는 기대 이하\n외신은 이번 발표가 1~2년 전 예고된 기능의 지연 공개에 가깝다고 평가\n\n핵심 관전 포인트는 애플이 AI 에이전트 시대에 아이폰·OS·앱스토어 지배력을 수익화할 수 있는지 여부\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://www.chosun.com/economy/tech_it/2026/06/09/GNHMWM5MSJDGDJDISOTKV2SIKQ",
+              "https://t.me/growthresearch",
+              "https://www.chosun.com/economy/tech_it/2026/06/09/GNHMWM5MSJDGDJDISOTKV2SIKQ/?utm_source=naver&amp;utm_medium=referral&amp;utm_campaign=naver-news"
+            ],
+            "post_url": "https://t.me/growthresearch/26789"
           }
         ]
       },
@@ -721,160 +758,167 @@
         "channel_url": "https://t.me/Yeouido_Lab",
         "posts": [
           {
-            "date": "2026-06-08",
-            "time": "16:01",
-            "text": "“스페이스X, 너무 비싸다…이 가격엔 안 사” 전문가 의견 나왔다\n\n\nhttps://naver.me/xRgbyuuL",
+            "date": "2026-06-09",
+            "time": "07:47",
+            "text": "미국과 이란, 파키스탄을 통해 지역 전체 휴전을 위한 '최종 합의안'에 대해 의견을 교환하고 있다 - 이란 유엔 대사\n\n초안은 레바논을 포함한 전 지역을 포함할 것이다",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/33812"
+          },
+          {
+            "date": "2026-06-09",
+            "time": "07:48",
+            "text": "미국과 이란, 파키스탄을 통해 지역 전체 휴전을 위한 '최종 합의안'에 대해 의견을 교환하고 있다 - 이란 유엔 대사  초안은 레바논을 포함한 전 지역을 포함할 것이다",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/33813"
+          },
+          {
+            "date": "2026-06-09",
+            "time": "07:53",
+            "text": "메르님. 이번 시장은 어떨까.\n\n꽤 내렸으니 이제는 주식을 다시 살만한것 같다일까\n주식을 사기가 무섭다일까\n\n적어도 코스닥은 후자임. 다 죽어버렸음.\n\nhttps://blog.naver.com/ranto28/224310167271",
             "links": [
-              "https://naver.me/xRgbyuuL"
+              "https://blog.naver.com/ranto28/224310167271"
             ],
-            "post_url": "https://t.me/Yeouido_Lab/33782"
+            "post_url": "https://t.me/Yeouido_Lab/33814"
           },
           {
-            "date": "2026-06-08",
-            "time": "16:13",
-            "text": "치지직 시작\n\n젠슨황 : big announcement today~",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/33784"
-          },
-          {
-            "date": "2026-06-08",
-            "time": "16:20",
-            "text": "ADR은 이제 상승할 것 같다\n\n이거보다 상승종목 개수가 더 적기도 쉽지 않을 듯\n\n문제는 ADR에 베팅해서 돈을 벌 방법이 없는듯 (동일가중 ETF?)",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/33785"
-          },
-          {
-            "date": "2026-06-08",
-            "time": "18:12",
-            "text": "여러모로 거의 다 온것 같긴 한데... 양 시장 서킷 이후에는 어쨋든 확률 우위가 있더라...",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/33786"
-          },
-          {
-            "date": "2026-06-08",
-            "time": "18:12",
-            "text": "SK하이닉스 단일종목 레버리지\n-손실 투자자 100%",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/33787"
-          },
-          {
-            "date": "2026-06-08",
-            "time": "18:51",
-            "text": "신용은 지난주까지 기회라고 맘 편하게 더 사다가 오늘 지옥행",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/33788"
-          },
-          {
-            "date": "2026-06-08",
-            "time": "19:19",
-            "text": "글로벌 호재 : 국장 종료 띰은 오늘도 작동할 것인가",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/33789"
-          },
-          {
-            "date": "2026-06-08",
-            "time": "19:20",
-            "text": "전영현 삼성전자 부회장 “엔비다아와 그록 4세대 논의”... TSMC 수주설 일축\nhttps://n.news.naver.com/article/011/0004628948?sid=101",
+            "date": "2026-06-09",
+            "time": "08:00",
+            "text": "디앤디파마텍, 갈수록 몸값 오르는 중\nhttps://blog.naver.com/oracleyongsan/224309977491",
             "links": [
-              "https://n.news.naver.com/article/011/0004628948?sid=101"
+              "https://blog.naver.com/oracleyongsan/224309977491"
             ],
-            "post_url": "https://t.me/Yeouido_Lab/33790"
+            "post_url": "https://t.me/Yeouido_Lab/33815"
           },
           {
-            "date": "2026-06-08",
-            "time": "20:05",
-            "text": "트럼프, 이스라엘과 이란 양측 모두 즉각적인 휴전을 원하고 있다. \n\"모든 일은 신속하게 진행될 것\"",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/33791"
-          },
-          {
-            "date": "2026-06-08",
-            "time": "20:05",
-            "text": "트럼프, 이스라엘과 이란 양측 모두 즉각적인 휴전을 원하고 있다.  \"모든 일은 신속하게 진행될 것\"",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/33792"
-          },
-          {
-            "date": "2026-06-08",
-            "time": "20:46",
-            "text": "BofA , 샌디스크( $SNDK)의 목표 주가를 1,550달러에서 2,100달러로 상향 , 매수(Buy) 등급을 유지\n\n\"샌디스크의 투자자 관계(IR) 담당자인 아이반 도널드슨과 재스민 누리가 샌프란시스코에서 열린 당사의 2026 글로벌 기술 컨퍼런스에 참석했습니다. 회사 측은 가이던스에 대한 어떠한 업데이트도 제공하지 않았습니다.\n\n 투자자들의 질문은 샌디스크와 고객사 간의 다년간 공급 파트너십, 즉 신규 비즈니스 모델(NBM)에 집중되었습니다. NBM은 초기 기간에는 고정 가격을, 계약의 나머지 기간에는 변동 가격을 적용하는 것을 포함합니다. \n\n이 계약들은 가격이 최저점(floor)에 도달하더라도(계약 기간 동안 최저점은 변동 없음) 마진이 가이던스 범위 내에 유지되도록 설계되었습니다. 우리는 NBM이 고객에게는 확정된 공급을, 샌디스크에게는 확정된 재무 성과를 보장한다는 점에서 윈-윈(win-win)이라고 봅니다. \n\n밸류에이션, 유익한 합작 투자 파트너십, 점유율 확대, 그리고 업계 통합에 대한 장기적인 잠재력을 근거로 매수 의견을 재확인합니다.\n\n 단기적으로 가격 추세는 여전히 강세를 보이고 있습니다. 지금까지 샌디스크는 F27(2027 회계연도) 매출의 3분의 1 이상을 NBM을 통해 계약했으며, 이는 낸드(NAND) 공급 물량의 60% 이상이 여전히 고객들이 구매 가능한 상태임을 의미합니다(1년 전보다 높은 가격이기는 하지만). 시간이 지남에 따라 우리는 이 NBM 하에서의 공급 비중이 더 높아질 것으로 보며, 이를 통해 수익의 안정성을 높일 수 있을 것으로 전망합니다. 가격 추세는 지속적인 ASP(평균판매단가) 상승을 나타내고 있으며, 우리는 C26(2026 달력 연도)까지 더 높은 가격 인상을 모델링하고 있습니다. 우리는 1H27(2027년 상반기)에도 가격이 견조할 것으로 예상합니다. 점진적인 공급 증가는 2028년/2029년에나 가능할 것으로 보입니다.\"",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/33793"
-          },
-          {
-            "date": "2026-06-08",
-            "time": "20:48",
-            "text": "글로벌 호재 : 국장 종료 띰은 오늘도 작동할 것인가",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/33794"
-          },
-          {
-            "date": "2026-06-08",
-            "time": "20:49",
-            "text": "메르님. 톤이 쎄다.\n\nhttps://blog.naver.com/ranto28/224309101928",
+            "date": "2026-06-09",
+            "time": "08:02",
+            "text": "숏 감마\n야 임마\n\n급락의 숨은 주범은 레버리지 ETF?…'숏 감마'가 뭐길래\nhttps://news.einfomax.co.kr/news/articleView.html?idxno=4418966",
             "links": [
-              "https://blog.naver.com/ranto28/224309101928"
+              "https://news.einfomax.co.kr/news/articleView.html?idxno=4418966",
+              "https://ift.tt/vakqtRl"
             ],
-            "post_url": "https://t.me/Yeouido_Lab/33795"
+            "post_url": "https://t.me/Yeouido_Lab/33816"
           },
           {
-            "date": "2026-06-08",
-            "time": "20:50",
-            "text": "[속보]이란 합참 지휘부 \"이스라엘과의 교전 후 공격 작전 중단\" 발표\nhttps://n.news.naver.com/mnews/article/003/0013994574?rc=N&ntype=RANKING&sid=001",
+            "date": "2026-06-09",
+            "time": "08:13",
+            "text": "https://www.newspim.com/news/view/20260609000042",
             "links": [
-              "https://n.news.naver.com/mnews/article/003/0013994574?rc=N&amp;ntype=RANKING&amp;sid=001"
+              "https://www.newspim.com/news/view/20260609000042",
+              "https://cp.news.search.daum.net/p/178422370"
             ],
-            "post_url": "https://t.me/Yeouido_Lab/33796"
+            "post_url": "https://t.me/Yeouido_Lab/33817"
           },
           {
-            "date": "2026-06-08",
-            "time": "20:51",
-            "text": "오늘의 우리..낼은 다르길😭",
+            "date": "2026-06-09",
+            "time": "08:14",
+            "text": "메디슨 황-최윤정, 2세 교류도 활발…\"미래 성장 동력 결합\"\n\n황가네는 슨자 돌림인가요?\n\nhttps://v.daum.net/v/20260608170449722",
+            "links": [
+              "https://v.daum.net/v/20260608170449722"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/33818"
+          },
+          {
+            "date": "2026-06-09",
+            "time": "08:14",
+            "text": "메디슨 황-최윤정, 2세 교류도 활발…\"미래 성장 동력 결합\"  황가네는 슨자 돌림인가요?  https://v.daum.net/v/20260608170449722",
             "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/33797"
+            "post_url": "https://t.me/Yeouido_Lab/33819"
           },
           {
-            "date": "2026-06-08",
-            "time": "20:56",
-            "text": "며칠 전 뉴스를 생각하면\nhttps://www.hani.co.kr/arti/international/international_general/1261476.html\n\n아마 야지타임 버닝이벤트 on이었을듯",
+            "date": "2026-06-09",
+            "time": "08:15",
+            "text": "★ [키움 허혜민] ★ 제약바이오 인싸이트 – 바닥 탐색 구간 \n\n[키움 제약/바이오 / 허혜민]\n\n◆ 애널리스트 코멘트\n코스닥 제약지수는 (3월 말 대비) 약 -41% 급락하며, 과거 주요 조정 국면 보다 가장 가파른 가격 조정을 겪고 있음.\n\n같은 기간 NBI와 XBI는 상승세를 유지하고 있어, 이번 약세는 글로벌 바이오 펀더멘털 훼손보다 국내 수급 악화와 타 섹터 쏠림 영향이 큰 것으로 판단. \n\n가격 조정은 바닥권에 근접했으나, 본격 반등을 위해서는 타 섹터 쏠림 완화, 악재 둔감, 기술이전·임상 호재에 대한 반응 회복 확인이 필요. \n\n\n\n키움 제약/바이오 소식통 → https://t.me/huhpharm \n\n★ 보고서 링크: https://bbn.kiwoom.com/rfCI5628\n\n* 컴플라이언스 검필\n\n* 본 정보는 키움증권 리서치센터에서 고객분들에게 발송하는 정보입니다.",
             "links": [
-              "https://www.hani.co.kr/arti/international/international_general/1261476.html"
+              "https://t.me/huhpharm",
+              "https://bbn.kiwoom.com/rfCI5628"
             ],
-            "post_url": "https://t.me/Yeouido_Lab/33798"
+            "post_url": "https://t.me/Yeouido_Lab/33820"
           },
           {
-            "date": "2026-06-08",
-            "time": "21:47",
-            "text": ">>마이크론 CEO “메모리는 AI 시대에 과소평가된 병목… 공급 부족은 2026년 이후에도 지속될 수 있어, 우리는 결코 스스로를 의심하지 않는다”\n\n•마이크론 CEO는 메모리가 AI 산업에서 가장 과소평가된 핵심 병목 요소라고 평가했음. AI 경쟁이 단순한 연산능력 경쟁에서 메모리 경쟁으로 확대되고 있으며, 특히 고성능 AI 시스템일수록 메모리의 중요성이 더욱 커지고 있다고 설명\n\n•그는 공급 측면의 구조적 제약으로 인해 메모리 부족 현상이 장기화될 것으로 전망. 신규 팹 건설에는 수년이 소요되고, 공정 미세화가 진행될수록 웨이퍼당 생산량 증가 효과도 과거보다 낮아지고 있어 공급 확대가 쉽지 않다는 것. 메모리 공급 부족은 최소 2026년 이후까지 이어질 가능성이 높다고 밝혔음\n\n•또한 기업의 성공은 단기 유행을 쫓는 것이 아니라 회복탄력성, 운영 규율, 장기적 관점에 달려 있다고 강조하며, 마이크론은 시장 변동성 속에서도 장기 전략을 유지해 왔다고 설명했음. “우리는 결코 스스로를 의심하지 않는다”며 AI 시대 메모리 수요 확대에 대한 강한 자신감을 드러냈음\n\n>摘要：美光CEO认为，存储是AI被低估的底层瓶颈，AI正从“算力竞赛”延伸为“存储竞赛”。供给端的结构性约束决定了存储短缺将是长期状态。晶圆厂建设周期长，技术节点推进导致单位产出增幅下降，供应紧张至少延续至2026年以后。他强调，成功的底层逻辑是韧性、纪律与长期主义，而非追逐短期风口。",
+            "date": "2026-06-09",
+            "time": "08:15",
+            "text": "★ [키움 허혜민] ★ 제약바이오 인싸이트 – 바닥 탐색 구간   [키움 제약/바이오 / 허혜민]  ◆ 애널리스트 코멘트 코스닥 제약지수는 (3월 말 대비) 약 -41% 급락하며, 과거 주요 조정 국면 보다 가장 가파른 가격 조정을 겪고 있음.  같은 기간 NBI와 XBI는 상승세를 유지하고 있어, 이번 약세는 글로벌 바이오 펀더멘털 훼손보다 국내 수급 악화와 타 섹터 쏠림 영향이 큰 것으로 판단.   가격 조정은 바닥권에 근접했으나, 본격 반등을 위해서는…",
             "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/33799"
+            "post_url": "https://t.me/Yeouido_Lab/33821"
           },
           {
-            "date": "2026-06-08",
-            "time": "21:51",
-            "text": "https://www.businesswire.com/news/home/20260608808565/en/Johnson-Johnson-to-Acquire-Firefly-Bio-Inc.-to-Expand-Oncology-Pipeline-with-Novel-Degrader-Antibody-Conjugate-Platform\n\n\n#JNJ\n#오름테리퓨틱\n\nJnJ가 1.5조에 DAC 전임상 회사(firefly bio)를 인수하였습니다. 오름과 페이로드와 타깃이 달라 직접 비교는 어렵지만 오름은 BMS에 에셋 세일한 DAC 물질 세계 최초 임상 1상 중이며, 버텍스와 플랫폼 계약도 맺었습니다.",
+            "date": "2026-06-09",
+            "time": "08:20",
+            "text": "[iM증권 고의영(전기전자)] [삼성전기/Buy/TP 230만원(상향)]   ★ 가늠할 수 없는 이익의 지평  - 동사는 MLCC, FC-BGA에서 동시에 수혜를 누릴 수 있는 AI 컴포넌트 대장주이며, 추가 가격 인상, Si-Cap 수주를 통해 앞으로도 이익 추정치 상향 가능성 높음  - 당사는 +20% 수준의 MLCC 판가 인상을 가정하여 동사의 ‘27년 영업이익을 3.3조원으로 전망하고 있으나, 이러한 추정이 추가 상향될 가능성을 배제할 수 없음 …",
             "links": [
-              "https://www.businesswire.com/news/home/20260608808565/en/Johnson-Johnson-to-Acquire-Firefly-Bio-Inc.-to-Expand-Oncology-Pipeline-with-Novel-Degrader-Antibody-Conjugate-Platform"
+              "https://t.me/Yeouido_Lab"
             ],
-            "post_url": "https://t.me/Yeouido_Lab/33800"
+            "post_url": "https://t.me/Yeouido_Lab/33822"
           },
           {
-            "date": "2026-06-08",
-            "time": "21:59",
-            "text": "으악 Tango Therapeutics, Vopimetostat과 Revolution Medicine의 Daraxonrasib 병용으로 췌장암에서 ORR 약 92%\n\n으악 진짜 췌장암 치료 되는거에요?\n\n-. Vopimetostat은 PRMT5 억제제\n-. 2/3L PDAC 환자 대상 Phase 1/2상 초기 데이터\n-. 6개월 PFS 비율 약 90%, ORR 약 92%, DCR 100%\n-. 대부분 부작용 1-2등급\n-. Vopimetostat 250mg/ Daraxonrasib 100mg에서 3건 DLT 보고, 1건 G3 발진/1건 G3 구내염, 피로\n\nhttps://www.globenewswire.com/news-release/2026/06/08/3307926/0/en/tango-therapeutics-announces-combination-of-vopimetostat-and-daraxonrasib-demonstrated-92-objective-response-rate-in-pancreatic-cancer.html",
+            "date": "2026-06-09",
+            "time": "08:25",
+            "text": "루닛, 엔비디아와 '의료 파운데이션모델' 플랫폼 탑재 논의\n\n유성원 루닛 CTO, 8일 엔비디아 'AI 에코시스템 간담회'서 젠슨 황 CEO와 협력 논의\n\n여기도 엔비디아가?\n\nhttps://m.biospectator.com/view/news_view.php?varAtcId=28974",
             "links": [
-              "https://www.globenewswire.com/news-release/2026/06/08/3307926/0/en/tango-therapeutics-announces-combination-of-vopimetostat-and-daraxonrasib-demonstrated-92-objective-response-rate-in-pancreatic-cancer.html"
+              "https://m.biospectator.com/view/news_view.php?varAtcId=28974"
             ],
-            "post_url": "https://t.me/Yeouido_Lab/33801"
+            "post_url": "https://t.me/Yeouido_Lab/33823"
           },
           {
-            "date": "2026-06-08",
-            "time": "22:21",
-            "text": "워매 ㄷㄷㄷ 이러면 또 얘기가 달라지는데\n\nhttps://m.blog.naver.com/studying-investor/224309898482",
+            "date": "2026-06-09",
+            "time": "08:28",
+            "text": "[IV Research]\n\n티움바이오(321550)-ASCO 2026에서 확인된 Best-in-class 가능성\n\nTosposertib ASCO 2026 Update: ORR을 넘어 지속성까지\n\n동사는 2026 ASCO를 통해 핵심 파이프라인인 Tosposertib(TU2218)의 두경부암 (HNSCC) 임상 2a상 업데이트 데이터를 발표하였다. 이번 데이터를 통해 Tosposertib 은 ORR, mPFS, mOS, Safety profile 등까지 포함되어, 지난 SITC 대비 더욱 성숙한 임상 데이터를 제시했다. 특히 PD-L1 양성 재발성/전이성 두경부암에서 pembro-lizumab 병용요법으로 전체 환자군 ORR 57.7%, 1차 치료군에서는 ORR 75.0%를 기록하였으며, median PFS 또한 10.9개월로 나타났다. 대부분의 환자에서 장기간 치료 반응이 유지되고 있어 mOS는 아직 도달하지 않았으며(NR), 기존 TGF-β pathway 기반 치료제 개발에서 주요 리스크로 지적되어 왔던 cardio-vascular toxicity signal 및 Grade 5 TRAE 또한 현재까지 관찰되지 않았다. 이는 Tosposertib이 efficacy뿐 아니라 safety profile 측면에서도 차별화 가능성을 보여주고 있다는 판단이다.\n\n면역억제 미세환경 동시 제어 기반의 차별화 전략\n\nTosposertib은 TGF-β receptor I 및 VEGFR2를 동시에 저해하는 dual inhibition 기전의 면역항암제로, 면역억제성 tumor microenvironment를 동시에 조절함으로써 PD-1 기반 면역항암제의 한계를 극복하는 전략을 기반으로 개발되고 있다. 특히 VEGF 및 TGF-β signaling은 두경부암에서 면역세포 침투 억제 및 면역 회피와 직접적으로 연관되어 있는 것으로 알려져 있으며, 동사는 이를 pembrolizumab과 병용하는 전략을 통해 실제 임상적 efficacy로 연결시키고 있다는 점에서 의미가 크다. 현재 두경부암 1차 치료 시장에서는 pembrolizumab 기반 치료가 표준요법으로 자리잡고 있으나, 여전히 제한적인 반응률 및 내성 문제가 존재한다는 점에서, Tosposertib의 초기 데이터는 차세대 병용 파이프라인으로서의 가능성을 보여주고 있는 것으로 판단된다.\n\nFast-track 및 글로벌 파트너링 가능성 확대\n\n특히 동사가 제시한 경쟁 파이프라인 비교 자료 기준, Tosposertib+pembrolizumab 병용은 경쟁 이중항체 및 VEGF 기반 병용 파이프라인 대비 높은 ORR을 나타내고 있으며, Grade 3/4 TRAE 발생률 또한 상대적으로 양호한 수준을 유지하고 있다. 이에 따라 동사는 현재 FDA의 Breakthrough therapy designation 추진 전략을 병행하고 있으며, 향후 추가 데이터 축적 시 글로벌 파트너링 논의 또한 본격화될 가능성이 높을 것으로 기대된다. 지난 해 SITC에서 발표한 데이터가 초기 efficacy를 확인시켜 줬다면, 이번 ASCO 데이터는 실제 글로벌 면역항암제 시장 내에서 경쟁 가능한 asset인지에 대한 첫 번째 검증 단계로 해석 가능하다.\n\nMerigolix도 기술 이전 기대감 유효\n\n기존 핵심 파이프라인인 Merigolix(TU2670) 역시 유럽 지역 기술이전 논의가 지속되고 있는 것으로 파악된다. 자궁내막증 유럽 임상 2a상 및 국내 자궁근종 임상 2상에서 경쟁약 대비 우수한 efficacy 및 safety profile을 확인한 이후, 현재 유럽 지역 중심의 기술이전 협상이 진행 중이며, 향후 미국 및 일본 지역으로의 추가 확장 가능성도 존재한다. 이에 따라 동사는 단기적으로 Tosposertib의 글로벌 oncology value re-rating 가능성과 함께, 중장기적으로는 Merigolix 기술이전 모멘텀까지 동시에 보유하고 있다.\n\nhttps://t.me/IVResearch\n\nhttps://blog.naver.com/ivresearch/224303039438",
             "links": [
-              "https://m.blog.naver.com/studying-investor/224309898482"
+              "https://t.me/IVResearch",
+              "https://blog.naver.com/ivresearch/224303039438"
             ],
-            "post_url": "https://t.me/Yeouido_Lab/33802"
+            "post_url": "https://t.me/Yeouido_Lab/33824"
+          },
+          {
+            "date": "2026-06-09",
+            "time": "08:35",
+            "text": "글로벌 메모리 반도체 시장 업데이트 (JPM) \n\n1. SOCAMM 탑재량 축소 오해로 발생한 단기 조정과 저점 매수 기회\n\n• 엔비디아의 Vera Rubin NVL72 랙 시스템에서 CPU당 SOCAMM 탑재량이 기존 192GB에서 96GB로 하향된다는 언론 보도로 인해 투자자들 사이에서 CPU 관련 메모리 수요 둔화 우려가 확산\n\n• 그러나 공급망 점검 결과, 이러한 하향 조정은 성능 저하나 스펙 다운 때문이 아니라 현재 메모리 시장의 한정된 공급 상황(Supply Shortage) 때문인 것으로 파악\n\n• 실제로는 96GB 모듈에 대한 수요가 강력하게 증가하고 있으며, 엔비디아의 전체 SOCAMM 비트 조달 수요량에는 변함이 없어 탑재량 감소 분은 모듈 수량 증가를 통해 충분히 상쇄될 예정\n\n• 해당 소식과 지정학적 이슈가 겹치며 지난주 메모리 업종 주가가 약 11% 조정을 받았으나, 중기 관점에서 볼 때 이는 강력한 업사이클 진입을 앞둔 매우 훌륭한 저점 매수 기회\n\n2. 엔비디아와 SK하이닉스의 다년가 전략적 파트너십이 갖는 시사점\n\n• 엔비디아와 SK하이닉스는 차세대 AI 데이터센터용 HBM 공동 개발을 골자로 하는 최소 2년 이상의 다년가(장기 연장 옵션 포함) 기술 파트너십을 체결하고, SK하이닉스를 엔비디아의 '최대 메모리 파트너'로 공식 지정\n\n• 이번 협약은 단순 데이터센터용 HBM 공급에 그치지 않고, 엔비디아의 풀 스택 전반인 Vera Rubin 슈퍼컴퓨터(HBM/DRAM/NAND), Vera CPU(SOCAMM2), RTX Spark PC(LPDDR5X), Jetson Thor 로보틱스 플랫폼까지 전방위적으로 확대\n\n• 이로 인해 SK하이닉스는 2027년까지 매우 높은 수준의 AI 메모리 수요 가시성을 확보했으며, 한정된 공급망 특성상 경쟁사들을 포함한 글로벌 메모리 제조사 전체의 업황에도 긍정적인 낙수효과 기대\n\n• 엔비디아 CEO 젠슨 황은 향후 5년간 DRAM 웨이퍼 생산 능력을 2배로 늘리는 계획조차 AI 수요를 감당하기에 부족할 수 있다고 언급하여 강력한 전방 시장 수요를 재확인",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/33825"
+          },
+          {
+            "date": "2026-06-09",
+            "time": "08:36",
+            "text": "상승 이유\n\n\n가온전선, 美 생성형 AI 데이터센터에 버스덕트 첫 공급\n\nhttps://www.infostockdaily.co.kr/news/articleView.html?idxno=216212",
+            "links": [
+              "https://www.infostockdaily.co.kr/news/articleView.html?idxno=216212"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/33826"
+          },
+          {
+            "date": "2026-06-09",
+            "time": "08:37",
+            "text": "ㅜㅜ\n\n네이버, 젠슨 황도 찍었는데 투자의견 하향 왜…\"AI팩토리 확인 필요\"-키움  \nhttps://n.news.naver.com/mnews/article/018/0006301166?rc=N&ntype=RANKING&sid=101",
+            "links": [
+              "https://n.news.naver.com/mnews/article/018/0006301166?rc=N&amp;ntype=RANKING&amp;sid=101"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/33827"
+          },
+          {
+            "date": "2026-06-09",
+            "time": "08:39",
+            "text": "[머크/알테오젠의 할로자임 PGR 무효 추가]\n6월 8일(현지): PGR2025-00004 '특허번호 298' 무효 결정\n\n이로써 지금까지 할로자임의 특허 연속 3건 무효 판결 (PGR2025-00003, 00006, 00004)",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/33828"
+          },
+          {
+            "date": "2026-06-09",
+            "time": "08:47",
+            "text": "https://www.theguru.co.kr/news/article.html?no=102776",
+            "links": [
+              "https://www.theguru.co.kr/news/article.html?no=102776"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/33829"
+          },
+          {
+            "date": "2026-06-09",
+            "time": "08:54",
+            "text": "https://blog.naver.com/stmatt82/224310237663",
+            "links": [
+              "https://blog.naver.com/stmatt82/224310237663"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/33831"
           }
         ]
       },
@@ -2769,6 +2813,24 @@
         "category": "투자철학/산업·종목 분석",
         "posts": [
           {
+            "date": "2026-06-09",
+            "time": "08:39",
+            "text": "[SK그룹은 본격적으로 엔비디아 생태계로 들어가는가]\n\n칩 제조에서 대만의 TSMC가 핵심역할을 했다면, AI팩토리에서는 SK그룹이 될지... https://n.news.naver.com/article/001/0016125501 서울=연합뉴스) 김민지 기자 = 젠슨 황 엔비디아 최고경영자(CEO)는 8일 \"AI 인프라 구축은 이제 막 걸음마를 뗐다\"며 \"SK그룹과 함께 미래 AI 수요에 대응하겠다\"고 말했다. SK그룹은 그간 SK하이닉스의 메모리 중심으로 진행되던 엔비디아와의 협력을 그룹 차원의 인공지능(AI) 팩토리로 확장할 계획이다. 전 세계적으로 폭증하는 AI 팩토리 수요 증가에 대응하기 위해 양사는 연구개발(R&D) 로드맵을 공유하고 맞춤형 메모리 개발로 파트너십을 강화할 방침이다. 다음은 젠.......",
+            "links": [
+              "https://blog.naver.com/luy1978/224310233922"
+            ],
+            "post_url": "https://blog.naver.com/luy1978/224310233922"
+          },
+          {
+            "date": "2026-06-09",
+            "time": "07:26",
+            "text": "[필반  반등]\n\n어제는 죽일듯이 패더니.. 털리면 후회.",
+            "links": [
+              "https://blog.naver.com/luy1978/224310193299"
+            ],
+            "post_url": "https://blog.naver.com/luy1978/224310193299"
+          },
+          {
             "date": "2026-06-08",
             "time": "21:43",
             "text": "[젠슨황, 한국 방문 목적은 AI팩토리?]\n\n과거 스마트폰 산업이 애플의 스티브 잡스가 선도했듯이, AI 시대의 로드맵은 젠슨황 머리 안에 다 있다고 생각한다. 그가 생각하는 대로 AI 로드맵이 진행되고 있는 듯. 그런 그가 다음 먹거리로 차세대 AI 데이터센터인 AI 팩토리를 구상하는 듯 하다. 아마도 추론 다음 단계를 준비 하는 듯.. 젠슨황의 시간은 돈으로 환산하면 엄청난데, 그냥 한국에 관광와서 시구나 던질 사람은 아님. 이번 방문의 목적을 보니, AI 하드웨어 제조국으로 한국을 완전히 낙점 한듯 한 것 아닌가 싶다. 물론 AI 관련 파트너사는 대만을 비롯해 다양하겠지만, 대만이 커버하지 못하는 분야에서는 확실히 한국을 낙점한게 아닌가 싶다. 일본이나 대만, 중국에도.......",
@@ -3190,15 +3252,6 @@
               "https://blog.naver.com/luy1978/224283784130"
             ],
             "post_url": "https://blog.naver.com/luy1978/224283784130"
-          },
-          {
-            "date": "2026-05-09",
-            "time": "10:37",
-            "text": "[시장(미국 AI 폭등)]\n\n미장 폭등 인텔 cpu 쇼티지. 라운드힐 메모리 etf : 전자, 닉스,마이크론 샌디스크 : 낸드 쇼티지 가속화. 마이크론 :주가를 보니 메모리도 이제 ai 밸류로 가는듯 하다. soxl : 하... 수익률 미쳤네.. 국장 야간 선물. 월요일이 기다려짐. 닉스gdr 독일 시장에서 16% 급등 하반기 주목해야 할 점. 환율 환차익 등으로 외국인 투자자들에게 좋은 환경 제공할듯. 미국 중간선거. 켄 피셔 영상 참조.",
-            "links": [
-              "https://blog.naver.com/luy1978/224279731952"
-            ],
-            "post_url": "https://blog.naver.com/luy1978/224279731952"
           }
         ]
       },
@@ -3208,6 +3261,15 @@
         "url": "https://dart.fss.or.kr",
         "category": "공시",
         "posts": [
+          {
+            "date": "2026-06-09",
+            "time": "00:00",
+            "text": "[유니슨] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260609000001"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260609000001"
+          },
           {
             "date": "2026-06-09",
             "time": "00:00",
@@ -3504,15 +3566,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260605000647"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260605000647"
-          },
-          {
-            "date": "2026-06-05",
-            "time": "00:00",
-            "text": "[코스메카코리아] [첨부정정]주요사항보고서(유형자산양수결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260605000640"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260605000640"
           },
           {
             "date": "2026-06-04",
