@@ -1,6 +1,6 @@
 {
   "2026-06-17": {
-    "fetched_at": "2026-06-17T20:53:23+09:00",
+    "fetched_at": "2026-06-18T01:39:56+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -787,15 +787,6 @@
         "posts": [
           {
             "date": "2026-06-17",
-            "time": "14:04",
-            "text": "무료로 전환\n\n할로자임, 결국 英 특허 포기…알테오젠에 훈풍부나[only 이데일리]\nhttps://n.news.naver.com/mnews/article/018/0006308188?sid=101\n\n글로벌 시장조사기관 포츈 비즈니스 인사이트(Fortune Business Insights)의 올해 5월 보고서에 따르면, 영국 내 키트루다 시장 규모는 약 13억8000만달러(2조800억원)로 추산된다. 이는 글로벌 키트루다 시장의 약 4.17%를 차지하는 엄청난 규모다. MSD가 키트루다 정맥 제형을 피하주사 제형으로 전환하는 데 속도를 내고 있는 만큼 알테오젠이 확보할 로열티는 더 늘어날 것으로 예상된다.\n\n앞서 미국 특허심판원(PTAB) 역시 MSD가 할로자임을 상대로 제기한 특허무효심판(PGR)에서 할로자임의 특허를 인정하지 않은 바 있다. 할로자임과 MSD의 소송 뿐 아니라 미국 특허청은 할로자임이 알테오젠의 공정에 대한 특허를 대상으로 제기한 무효심판(IPR)에 대해서도 심리 개시를 기각했다.\n\n이에 알테오젠이 키트루다 큐렉스 판매에 따라 확보할 수 있는 잔여 마일스톤 10억달러(약 1조5000억원)를 3~4년 내 수령할 것으로 기대된다. 알테오젠은 미국과 영국에서 키트루다 큐렉스 판매에 따른 판매 로열티를 확보할 전망이다.",
-            "links": [
-              "https://n.news.naver.com/mnews/article/018/0006308188?sid=101"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/34448"
-          },
-          {
-            "date": "2026-06-17",
             "time": "14:50",
             "text": "🧬[올릭스] 로레알의 의미\n\nhttps://contents.premium.naver.com/growthresearch/growthbio/contents/260617093641677rs\n\n💊 공동연구에서 지분투자로\n\n💊 치료제보다 빠른 화장품 상업화\n\n💊 OLX702A·OLX501A — MASH와 비만 파이프라인\n\n💊 황반변성·CNS까지 확장\n\n로레알의 지분투자 의미와\n\n올릭스의 Dual siRNA·CNS 확장 가능성을 중심으로 정리하였습니다.\n\n자세한 내용은 네이버 프리미엄 콘텐츠를 확인하시기 바랍니다.\n\n🧬바이오섹터 분석🧬 [그로쓰리서치]\nhttps://t.me/growthbio",
             "links": [
@@ -939,6 +930,13 @@
               "https://n.news.naver.com/article/015/0005299964"
             ],
             "post_url": "https://t.me/Yeouido_Lab/34468"
+          },
+          {
+            "date": "2026-06-17",
+            "time": "23:24",
+            "text": "iea는 석유공급과잉전망",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/34469"
           }
         ]
       },
@@ -3241,6 +3239,15 @@
         "category": "공시",
         "posts": [
           {
+            "date": "2026-06-18",
+            "time": "00:00",
+            "text": "[비트플래닛] [기재정정]주요사항보고서(유형자산양수결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260617000510"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260617000510"
+          },
+          {
             "date": "2026-06-17",
             "time": "00:00",
             "text": "[미래에셋증권] [기재정정]주요사항보고서(자기주식취득결정)\n공시유형: 주요사항보고",
@@ -3545,15 +3552,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260616000028"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260616000028"
-          },
-          {
-            "date": "2026-06-16",
-            "time": "00:00",
-            "text": "[넥스턴앤롤코리아] 주요사항보고서(자기전환사채만기전취득결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260616000353"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260616000353"
           },
           {
             "date": "2026-06-15",
