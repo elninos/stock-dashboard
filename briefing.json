@@ -1,6 +1,6 @@
 {
   "2026-06-18": {
-    "fetched_at": "2026-06-18T20:10:35+09:00",
+    "fetched_at": "2026-06-19T01:36:36+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -109,13 +109,6 @@
         "category": "매크로/트레이딩",
         "channel_url": "https://t.me/survival_DoPB",
         "posts": [
-          {
-            "date": "2026-06-15",
-            "time": "09:09",
-            "text": "미국 데이장\n\n마이크론 $1,000 회복\n샌디스크 $2,000 돌파",
-            "links": [],
-            "post_url": "https://t.me/survival_DoPB/13348"
-          },
           {
             "date": "2026-06-15",
             "time": "16:03",
@@ -245,6 +238,13 @@
             "text": "역사적인 케빈 워시 6월 FOMC 회의.\n\n\"앞으로 포워드 가이던스(연준이 시장에 금리의 방향이나 정책 기조를 제시하는 것)는 없다!\"\n\n1. 기준금리 3.50~3.75% 동결. 변화없음. \n\n2. 가장 중요한 변화는 예상대로 연준 의장이 점도표를 믿지 않는다며 제출을 하지 않은 것(추정). \n\n3. 전체 위원 19명 중 점도표를 제시한 18명. 그 중 절반인 9명이 올해 최소 한 번의 금리인상을 예상. 8명은 동결. 1명은 인하. \n\n4. 실제로 2026년말 기준금리 전망 중앙값이 3.4%에서 3.8%로 상승함. \n\n5. 한마디로 금리인하 기대 사라지고 인상 가능성이 커짐. 재미있는 점은 케빈 워시 신임 연준의장이 점도표를 제시하지 않았지만 나머지 위원들의 컨센서스로 시장이 연준의 매파적 기조를 읽었다는 것. \n\n6. 중요한 시장의 변화: 단기금리 급등하며 연준의 금리인상 기조 강하게 반영한 반면 장기금리는 하락하며 경제 둔화 가능성 반영. 장단기 금리차 축소(경기침체 가능성)\n\n7. 달러가 1년 만에 가장 높은 수준으로 급등했고 5년만기 실물금리 역시 2025년 3월 이후 최고치로 상승.  \n\n결론: 워시 의장이 점도표에 참여를 하지 않으면서 점도표의 포워드 가이던스 역할이 무너졌을까 아니면 의장의 권위가 무너졌을까? 시장의 반응은 후자인듯.\n\nITK / 미주투",
             "links": [],
             "post_url": "https://t.me/survival_DoPB/13367"
+          },
+          {
+            "date": "2026-06-18",
+            "time": "21:31",
+            "text": "미국 실업수당 청구 데이터 \n\n➤ 초기 실업수당 청구 (6월 13일): 226K (예상 225K, 이전 229K)\n\n➤ 연속 실업수당 청구 (6월 6일): 1,810K (예상 1,795K, 이전 1,795K)\n\n➤ 초기 실업 수당 청구 4주 평균 (6월 13일): 223.25K (이전 219K)",
+            "links": [],
+            "post_url": "https://t.me/survival_DoPB/13368"
           }
         ]
       },
@@ -648,47 +648,6 @@
         "posts": [
           {
             "date": "2026-06-18",
-            "time": "16:40",
-            "text": "美, 해군 지원함 해외 건조 허용 추진…K조선 ‘마스가’ 청신호\n\n\nhttps://naver.me/FjmHxx0u",
-            "links": [
-              "https://naver.me/FjmHxx0u"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/34577"
-          },
-          {
-            "date": "2026-06-18",
-            "time": "16:52",
-            "text": "아델이 코스닥 기술특례상장을 위한 기술성 평가를 통과하며 기업공개(IPO) 절차에 본격 착수합니다. 타우 타깃 알츠하이머병 치료제 후보물질 ‘ADEL-Y01(개발코드명)’을 사노피에 기술이전한 성과를 바탕으로 후속 퇴행성 뇌질환 파이프라인 개발과 상장 추진을 병행한다는 계획입니다.\n\n아델은 한국거래소가 지정한 전문 평가기관 두 곳으로부터 각각 A, BBB 등급을 받아 기술특례상장 요건을 충족했다고 밝혔습니다. 상장 주관사는 미래에셋증권과 삼성증권이 공동으로 맡고 있다. 아델은 이른 시일 내 기술특례 상장을 위한 상장예비심사를 신청한다는 계획입니다.\n\n아델은 2016년 울산대 의과대학 서울아산병원에서 스핀오프해 설립된 바이오 기업입니다. 알츠하이머병을 비롯한 퇴행성 신경질환 치료제 개발에 집중하고 있으며, 질환 특이적 병리 타깃에 대한 선택성을 높여 정상 단백질에 미치는 영향을 최소화하는 전략을 취하고 있습니다.\n\n대표 에셋은 타우 단백질 표적 항체치료제 후보물질 ADEL-Y01입니다. ADEL-Y01은 타우 단백질의 신경섬유다발 형성 핵심 영역인 아세틸화 라이신 280번 아미노산(acK280)을 표적하는 방식으로 차별화를 시도했습니다. 2023년 미국 식품의약국(FDA)으로부터 임상시험계획(IND) 승인을 받아 임상1a상도 마무리된 상태입니다. \n\n아델은 지난해 12월 글로벌 제약사 사노피에 ADEL-Y01을 기술 수출했다. 계약 규모는 선급금 8000만달러(약 1177억원)를 포함해 총 10억4000만달러(약 1조5296억원)입니다. 현재 ADEL-Y01은 ‘SAR449548’이라는 물질명으로 사노피 주관 글로벌 후속 임상이 진행될 예정입니다. 아델은 이 성과를 바탕으로 올해 2월 제27회 대한민국신약개발상 기술수출상을 수상했습니다.\n\nhttps://www.thebionews.net/news/articleView.html?idxno=25624",
-            "links": [
-              "https://www.thebionews.net/news/articleView.html?idxno=25624"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/34578"
-          },
-          {
-            "date": "2026-06-18",
-            "time": "16:54",
-            "text": "번스타인\n\n- 2030년 CPU TAM을 $223B로 상향조정(기존 전망치는 $137B)\n\n- 25년 기준 $37B에서 6배 성장 예상, CAGR 43%",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/34579"
-          },
-          {
-            "date": "2026-06-18",
-            "time": "16:55",
-            "text": "✅ 인체유래 지방 의료적 활용 길 열려…폐기물관리법 '본회의 통과'\n\nhttps://www.doctorsnews.co.kr/news/articleView.html?idxno=165040",
-            "links": [
-              "https://www.doctorsnews.co.kr/news/articleView.html?idxno=165040"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/34580"
-          },
-          {
-            "date": "2026-06-18",
-            "time": "16:55",
-            "text": "✅ 인체유래 지방 의료적 활용 길 열려…폐기물관리법 '본회의 통과'  https://www.doctorsnews.co.kr/news/articleView.html?idxno=165040",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/34581"
-          },
-          {
-            "date": "2026-06-18",
             "time": "16:59",
             "text": "2026.06.18 16:56:23\n기업명: NAVER(시가총액: 36조 8,686억) A035420\n보고서명: 풍문또는보도에대한해명(미확정)\n\n보도내용 : [서울경제] 당사의 배달의민족 인수를 위한 컨소시엄 구성 \n발생일자 : 2026-05-19\n해명내용 : \n \n본 공시는 2026년 5월 19일 서울경제에서 보도한 \"우버·네이버, 8조에 배민 인수한다\" 내용에 대한 해명공시 입니다. \n \n당사는 사업 경쟁력 강화를 위해 다양한 방안을 검토 중이나, 현재 구체적으로 결정된 바는 없습니다. \n \n추후 구체적인 내용이 확정되는 시점 또는 3개월 이내에 재공시 하도록 하겠습니다. \n \n(공시책임자)CFO 김희철\n \n\n재공시 예정일 : 2026-09-17\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260618800694\n회사정보: https://finance.naver.com/item/main.nhn?code=035420",
             "links": [
@@ -803,6 +762,49 @@
               "https://n.news.naver.com/article/011/0004632667?cds=news_edit"
             ],
             "post_url": "https://t.me/Yeouido_Lab/34596"
+          },
+          {
+            "date": "2026-06-18",
+            "time": "21:00",
+            "text": "#Oklo #Centrus #HALEU #Aurora #원전연료\n\n<Oklo·Centrus, 美 오하이오 Aurora 원전용 HALEU 공급 협력>\n\n- Oklo와 Centrus가 LOI를 체결하고 2029년부터 최대 5기의 Aurora 원전에 사용할 미국산 HALEU 공급을 추진. 공급은 오하이오 Piketon 원심분리 시설에서 이뤄질 예정\n\n- 이번 협력은 오하이오 남부 1.2GW Aurora 캠퍼스 구축과 연계되며 발전소, 연료 공급, 고객 수요를 통합하는 미국 첨단원전 공급망 구축 전략의 일환\n\n- Oklo는 향후 연료 공급 안정성을 확보하기 위해 선급금 지급도 검토 중이며 Centrus는 DOE의 9억달러 HALEU 사업과 민간 투자 확대를 기반으로 생산능력 확대를 추진\n\n- 미국 SMR 산업의 최대 병목인 HALEU 공급망 구축이 본격화되는 사례로 평가되며, 미국 내 우라늄 농축 자립과 첨단원전 상업화 속도를 높이는 계기가 될 전망\n\nhttps://oklo.com/newsroom/news-details/2026/Oklo-Centrus-Sign-Letter-of-Intent-to-Purchase-Nuclear-Fuel-for-Aurora-Powerhouse-Deployment-in-Southern-Ohio/default.aspx",
+            "links": [
+              "https://oklo.com/newsroom/news-details/2026/Oklo-Centrus-Sign-Letter-of-Intent-to-Purchase-Nuclear-Fuel-for-Aurora-Powerhouse-Deployment-in-Southern-Ohio/default.aspx"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/34598"
+          },
+          {
+            "date": "2026-06-18",
+            "time": "21:00",
+            "text": "#Oklo #Centrus #HALEU #Aurora #원전연료  <Oklo·Centrus, 美 오하이오 Aurora 원전용 HALEU 공급 협력>  - Oklo와 Centrus가 LOI를 체결하고 2029년부터 최대 5기의 Aurora 원전에 사용할 미국산 HALEU 공급을 추진. 공급은 오하이오 Piketon 원심분리 시설에서 이뤄질 예정  - 이번 협력은 오하이오 남부 1.2GW Aurora 캠퍼스 구축과 연계되며 발전소, 연료 공급, 고객 수요를…",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/34599"
+          },
+          {
+            "date": "2026-06-18",
+            "time": "22:02",
+            "text": "#콜로라도 #SMR #전력계획 #청정에너지 #원자력\n\n<콜로라도스프링스, 2045 전력계획에 SMR 검토 포함>\n\n- 콜로라도스프링스 유틸리티위원회가 2045년까지의 장기 전력계획(Sustainable Energy Plan)을 승인. 2030년까지 재생에너지 300MW를 추가하고 단기적으로 천연가스를 활용하는 한편 장기 옵션으로 소형모듈원전(SMR) 도입 가능성을 포함\n\n- 유틸리티는 원자력이 날씨와 무관하게 필요 시 전력을 공급할 수 있는 안정적인 전원(Dispatchable Resource)이라는 점을 강조. 재생에너지를 대체하는 것이 아니라 풍력·태양광·지열·배터리와 함께 균형 잡힌 전원 포트폴리오의 일부로 검토한다는 입장\n\n- 현재 원전 건설을 결정한 단계는 아니며 SMR을 직접 건설·운영할지, 다른 전력회사와 공동 개발할지, 외부 원전 전력을 구매할지 등 다양한 방안을 조사하는 단계. 입지 역시 아직 확정되지 않았으며 지역 외 설치 가능성도 열어둠\n\n- 향후 청정에너지계획(Clean Energy Plan)은 올해 말까지 주정부에 제출될 예정이며 2033년 탄소배출 80% 감축과 석탄화력 퇴출 목표를 포함. 원자력 도입 여부는 추가 연구와 주민 의견수렴, 경제성 검토를 거쳐 최종 결정될 전망\n\nhttps://www.koaa.com/news/local-news/in-your-community/southeast-side/colorado-springs-utilities-explores-nuclear-power-as-part-of-long-term-energy-plan",
+            "links": [
+              "https://www.koaa.com/news/local-news/in-your-community/southeast-side/colorado-springs-utilities-explores-nuclear-power-as-part-of-long-term-energy-plan"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/34600"
+          },
+          {
+            "date": "2026-06-18",
+            "time": "22:20",
+            "text": "#뉴저지 #원전 #SMR #데이터센터 #전력정책\n\n<뉴저지, 첨단원전 확대 법안 의회 통과 속도>\n\n- 뉴저지 하원 위원회가 첨단원전 도입을 지원하는 'Power NJ Act'를 만장일치로 통과했으며, 상원 위원회도 이미 동일 법안을 통과시켜 입법 절차가 진행 중\n\n- 법안은 공공유틸리티위원회(BPU)와 경제개발청(EDA)이 주내 첨단 원전 시설을 조달하도록 하는 내용이며, 뉴저지는 현재 원전 3기로 전체 전력의 약 40%를 공급 중\n\n- 전력요금 상승과 AI 데이터센터 중심의 전력수요 급증이 법안 추진 배경으로 제시됐으며, 셰릴 주지사는 원전 확대를 위해 관련 방사성폐기물 규제도 완화한 상태\n\n- 반대 측은 원전 건설에 10~20년이 소요되고 비용 부담이 크다고 지적한 반면, 찬성 측은 데이터센터 시대 장기 전력안보 확보를 위한 필수 기저전원 투자라고 평가\n\nhttps://www.njspotlightnews.org/2026/06/sherrill-backed-nuclear-power-expansion-makes-gain-in-legislature/",
+            "links": [
+              "https://www.njspotlightnews.org/2026/06/sherrill-backed-nuclear-power-expansion-makes-gain-in-legislature/"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/34601"
+          },
+          {
+            "date": "2026-06-18",
+            "time": "22:56",
+            "text": "#체코 #두산스코다파워 #두코바니 #증기터빈\n\n<체코 정부·ČEZ, 두산스코다파워 시찰…원전 공급망 역할 확대 기대>\n\n- 체코 총리와 산업부 장관, ČEZ CEO 등이 플젠 소재 두산스코다파워 공장을 방문해 증기터빈 생산라인과 기술 역량을 점검하고 원전 공급망 협력 방안을 논의\n\n- 두산스코다파워는 1869년 설립된 발전설비 기업으로 원전용 증기터빈 26기, 전체 발전설비 540기 이상을 공급한 글로벌 레퍼런스를 보유\n\n- 두산에너빌리티와 두산스코다파워는 지난 2월 체코 두코바니 5·6호기용 약 3,200억원 규모 증기터빈·터빈제어시스템 공급계약을 체결한 바 있음\n\n- 체코 상공회의소는 한수원과의 협력을 통해 두코바니 신규 원전 터빈 공급뿐 아니라 테멜린 원전 터빈 유지보수(O&M) 사업까지 역할이 확대될 가능성을 언급\n\n- 체코 정부와 ČEZ가 직접 생산시설을 점검하면서 두산스코다파워가 신규 원전과 기존 원전 O&M을 아우르는 핵심 현지 공급망으로 자리매김할 가능성이 커지고 있다는 평가\n\nhttps://www.theguru.co.kr/mobile/article.html?no=103271",
+            "links": [
+              "https://www.theguru.co.kr/mobile/article.html?no=103271"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/34602"
           }
         ]
       },
@@ -3105,6 +3107,15 @@
         "category": "공시",
         "posts": [
           {
+            "date": "2026-06-19",
+            "time": "00:00",
+            "text": "[파이온엑스] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260618000413"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260618000413"
+          },
+          {
             "date": "2026-06-18",
             "time": "00:00",
             "text": "[차AI헬스케어] 주요사항보고서(타법인주식및출자증권양수결정)\n공시유형: 주요사항보고",
@@ -3445,15 +3456,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260617000488"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260617000488"
-          },
-          {
-            "date": "2026-06-17",
-            "time": "00:00",
-            "text": "[제이에스링크] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260617000473"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260617000473"
           },
           {
             "date": "2026-06-16",
