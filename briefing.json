@@ -1,6 +1,6 @@
 {
   "2026-07-03": {
-    "fetched_at": "2026-07-03T17:12:53+09:00",
+    "fetched_at": "2026-07-03T20:35:57+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -372,6 +372,25 @@
               "https://www.sedaily.com/article/20063585"
             ],
             "post_url": "https://t.me/growthresearch/27567"
+          },
+          {
+            "date": "2026-07-03",
+            "time": "17:29",
+            "text": "🎬 유리기판 \"기술력 자랑에 속지 마세요\" 진짜 대장주 가르는 기준\n\nhttps://youtu.be/dkaGL5mswXQ?si=OWW2OsNQ5xzyp7Z2\n\n📌 유리기판이 필요한 이유\nAI 칩 대형화로 기존 유기기판의 휨·신호 손실 한계 확대\n\n유리는 높은 평탄도와 열 안정성, 낮은 신호 손실로 차세대 기판 소재로 부상\n\n📌 상용화의 핵심 난제\nTGV 구멍 형성 과정에서 유리가 깨지고, 구리 도금 수율 확보도 어려움\n\n초기에는 수율이 높은 논임베딩 방식과 유리 인터포저부터 도입될 가능성\n\n📌 투자 기업 선별 기준\n유리기판 공정 확대로 가공·세정·도금 장비 수요 확대 기대\n\n기술 홍보보다 삼성전기·SKC 등 고객사의 실제 양산 채택 여부가 중요\n\n자세한 내용은 영상을 통해 확인하세요!",
+            "links": [
+              "https://youtu.be/dkaGL5mswXQ?si=OWW2OsNQ5xzyp7Z2"
+            ],
+            "post_url": "https://t.me/growthresearch/27568"
+          },
+          {
+            "date": "2026-07-03",
+            "time": "17:45",
+            "text": "🧬 바이오솔루션, 카티라이프 中 상업화 성공…글로벌 확장 시작했다\n\nhttps://www.mt.co.kr/thebio/2026/07/03/2026070314090949155\n\n💊 중국 하이난 첫 환자 모집 완료\n무릎 연골 결손 세포치료제 ‘카티라이프’의 중국 하이난 의료특구 판매 승인 확보\n\n첫 시술 환자의 연골 채취를 완료하고 세포 배양 단계 돌입\n\n중국 내 실제 시술 및 매출 발생 단계에 진입했다는 의미\n\n올해부터 중국 카티라이프 매출이 실적에 반영될 전망\n\n💊 광저우 기반 중국 본토 진출 추진\n하이난을 넘어 중국 본토 진출을 위해 광저우시와 협의 시작\n\n이르면 2027년 광저우 지역 시술 개시 가능성\n\n광저우 상주인구 약 1,898만명, 광둥성 인구 약 1억 2,780만명\n\n홍콩·선전 등 인접 대도시까지 환자 접근성이 높은 지역\n\n💊 중국 잠재 시장 규모\n중국 전체 골관절염 환자 약 1억 5,285만명\n\n이 중 무릎 골관절염 환자 약 1억 960만명\n\n카티라이프 시술 적합 환자는 약 27만~55만명으로 추정\n\n💊 미국 임상 3상도 준비 중\n미국 FDA C타입 미팅을 위한 자료 제출 완료\n\n2026년 내 미국 임상 3상 IND 신청 계획\n\nFDA로부터 첨단재생의학치료제 RMAT 지정 획득\n\n미국 임상 2상 2년 장기추적에서 MRI 기반 구조적 연골 재생 효과 확인\n\n💊 차세대 파이프라인 ‘스페로큐어’\n골관절염 근본치료제 DMOAD 후보물질\n\n국내 임상 1/2상 시험계획 심사 결과 대기 중\n\n국내 승인 후 미국·유럽 등 글로벌 임상으로 확대 추진\n\n🧬바이오섹터 분석🧬 [그로쓰리서치]\nhttps://t.me/growthbio",
+            "links": [
+              "https://www.mt.co.kr/thebio/2026/07/03/2026070314090949155",
+              "https://t.me/growthbio"
+            ],
+            "post_url": "https://t.me/growthresearch/27569"
           }
         ]
       },
@@ -726,15 +745,6 @@
         "posts": [
           {
             "date": "2026-07-03",
-            "time": "14:09",
-            "text": "신약 하나보다 여러 약에 쓰는 기술…코스닥 바이오 경쟁력, ‘플랫폼’으로\nhttps://n.news.naver.com/mnews/article/296/0000102165?sid=101\n\n그는 디앤디파마텍이 대사이상지방간염(MASH) 치료제 후보물질 DD01의 임상 결과가 긍정적으로 나왔고, GLP-1/GCG 이중작용제 영역에서 높은 유효성을 보였다는 점을 강조했다. GLP-1/GCG 이중작용제는 GLP-1과 글루카곤 수용체를 동시에 겨냥하는 대사질환 치료제다. 펩타이드 경구화 플랫폼 오랄링크(ORALINK)도 주요 변수다. 화이자가 인수한 멧세라의 경구용 비만 치료제 개발과 연결될 수 있다.",
-            "links": [
-              "https://n.news.naver.com/mnews/article/296/0000102165?sid=101"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/35610"
-          },
-          {
-            "date": "2026-07-03",
             "time": "14:28",
             "text": ">>삼성전자, 3분기 DRAM 가격 최대 20% 인상 추진 (중국언론 인용) \n\n•업계 관계자에 따르면, 삼성전자는 현재 고객사들과 협상을 진행 중이며, 2026년 3분기 DRAM 평균판매가격(ASP)을 전분기 대비 최대 20% 인상하는 것을 목표로 하고 있는 것으로 전해졌음\n\n>报道：三星电子第三季度DRAM价格将上调至多20% https://wallstreetcn.com/articles/3776132#from=ios",
             "links": [
@@ -875,6 +885,16 @@
             "text": "고속노화 증상 9개래요  님들은 몇개?",
             "links": [],
             "post_url": "https://t.me/Yeouido_Lab/35630"
+          },
+          {
+            "date": "2026-07-03",
+            "time": "19:04",
+            "text": "2026.07.03 18:40:19\n기업명: 현대자동차(시가총액: 100조 7,408억) A005380\n보고서명: 풍문또는보도에대한해명(미확정)\n\n보도내용 : [디지털타임스등] 현대차, 영남권에 10년간 42조 투자…자율주행차 거점 육성 \n발생일자 : 2026-07-03\n해명내용 : \n \n- 본 공시는 2026년 7월 3일자 디지털타임스 등에서 보도된 \n\n\"현대차, 영남권에 10년간 42조 투자…자율주행차 거점 육성\"에 대한 \n\n해명 공시(미확정)입니다. \n \n- 당 그룹은 영남권에 10년간 42조 투자 방침을 결정하였으나, \n\n현재 그룹 내 참여 회사 및 회사별 투자 규모는 확정되지 않았습니다. \n \n- 향후 관련 사항이 확정되는 시점 또는 1개월 내 재공시 예정입니다. \n \n- 공시책임자 : 재무관리실장 김우열\n \n\n재공시 예정일 : 2026-07-31\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260703801045\n회사정보: https://finance.naver.com/item/main.nhn?code=005380",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260703801045",
+              "https://finance.naver.com/item/main.nhn?code=005380"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/35631"
           }
         ]
       },
@@ -3207,6 +3227,15 @@
           {
             "date": "2026-07-03",
             "time": "00:00",
+            "text": "[이엔플러스] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260703000647"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260703000647"
+          },
+          {
+            "date": "2026-07-03",
+            "time": "00:00",
             "text": "[대신증권] 주요사항보고서(자본으로인정되는채무증권발행결정)\n공시유형: 주요사항보고",
             "links": [
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260703000602"
@@ -3230,6 +3259,24 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260702000610"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260702000610"
+          },
+          {
+            "date": "2026-07-03",
+            "time": "00:00",
+            "text": "[시선AI] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260703000651"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260703000651"
+          },
+          {
+            "date": "2026-07-03",
+            "time": "00:00",
+            "text": "[크라우드웍스] 주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260703000646"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260703000646"
           },
           {
             "date": "2026-07-03",
@@ -3403,24 +3450,6 @@
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260702000518"
           },
           {
-            "date": "2026-07-02",
-            "time": "00:00",
-            "text": "[CS] [기재정정]주요사항보고서(타법인주식및출자증권양수결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260702000439"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260702000439"
-          },
-          {
-            "date": "2026-07-02",
-            "time": "00:00",
-            "text": "[테라사이언스] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260702000432"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260702000432"
-          },
-          {
             "date": "2026-07-01",
             "time": "00:00",
             "text": "[우진아이엔에스] [기재정정]주요사항보고서(자기주식처분결정)\n공시유형: 주요사항보고",
@@ -3554,15 +3583,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260630000391"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260630000391"
-          },
-          {
-            "date": "2026-06-30",
-            "time": "00:00",
-            "text": "[SK이터닉스] [첨부정정]주요사항보고서(유형자산양도결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260630000277"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260630000277"
           }
         ]
       }
