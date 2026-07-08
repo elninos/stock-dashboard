@@ -1,6 +1,6 @@
 {
   "2026-07-08": {
-    "fetched_at": "2026-07-08T20:08:31+09:00",
+    "fetched_at": "2026-07-09T00:24:44+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -9,13 +9,6 @@
         "category": "증권사 리포트",
         "channel_url": "https://t.me/bumgore",
         "posts": [
-          {
-            "date": "2026-07-07",
-            "time": "08:44",
-            "text": "골드만\n\n\n삼성전기 (SEMCO) \n\nBuy, 목표주가 260만원 (기존 100만원에서 상향)\n\nMLCC\n\nAI 서버용 MLCC 매출이 2025~2028년 사이 6.4배 성장 전망, 2028년 MLCC 매출의 28% 차지 예상\n\n블렌디드 ASP는 2025년 US$3.5 → 2028년 US$6.0로 상승\n\n영업이익률은 12% → 35%로 대폭 개선 전망\n\nAI 서버 MLCC는 고온 안정성, 소형화, 고용량 등 기술 난이도가 높아 삼성전기 등 소수 업체만 생산 가능 → 공급 타이트\n\nABF 기판\n\n2025년 1.2조원 → 2028년 3.9조원으로 3.3배 성장 전망\n\n영업이익률 9% → 35%로 개선\n\n현재 ABF 수요가 생산능력을 50% 이상 초과 중\n\n실리콘 커패시터\n\n신규 성장동력으로 부상. 최근 대형 고객사와 1.6조원(약 US$10억) 규모 계약 체결\n\n2028년 약 1.5조원 매출 전망\n\n2026~2028년 실적 전망치를 10%/41%/96% 상향 조정\n\n\n\nLG이노텍 (LGI) \n\nNeutral, 목표주가 100만원 (기존 55만원에서 상향)\n\nABF 사업은 아직 초기 단계(2025년 매출 500억원)지만, 낮은 기저에서 2028년 7,000억원까지 성장 전망\n\n다만 전체 매출의 2.5% 수준에 불과해 영향은 제한적\n\n여전히 카메라 모듈이 매출·이익의 핵심 동력이며, 마진 확대는 제한적일 것으로 전망\n\n2026~2028년 실적 전망치를 9%/21%/42% 상향\n\n리스크 요인\n\nMLCC 업계 공급 과잉 가능성\n\nAI 서버/자동차/스마트폰 수요 둔화 가능성\n\nLGI의 경우 애플向 카메라모듈 점유율 및 ASP 변동",
-            "links": [],
-            "post_url": "https://t.me/bumgore/54555"
-          },
           {
             "date": "2026-07-08",
             "time": "08:37",
@@ -368,6 +361,16 @@
               "https://t.me/growth_semi"
             ],
             "post_url": "https://t.me/growthresearch/27690"
+          },
+          {
+            "date": "2026-07-08",
+            "time": "21:30",
+            "text": "✅ 그로쓰리서치 영문 홈페이지 오픈 안내\n\n앞서 말씀드린 바와 같이, 그로쓰리서치의 리포트는 현재 미국·캐나다 헤지펀드 등 글로벌 투자자들에게도 읽히고 있습니다.\n\n이에 따라 해외 투자자들의 수요에 맞춰 영문 리포트 발행을 진행하고 있으며,\n\n보다 적극적인 대응을 위해 영문 홈페이지를 새롭게 개설했습니다.\n\n해당 홈페이지에는 지금까지 발간한 영문 리포트들이 업로드되어 있으며, 향후 발간되는 영문 리포트도 지속적으로 업데이트될 예정입니다.\n\n많은 관심 부탁드립니다!\n\n⚡️ 영문 홈페이지 바로가기\nhttp://www.growthresearchen.com/\n\n————\n\n✅ Growth Research English Website Now Open\n\nAs previously mentioned, Growth Research reports are now being read by hedge funds and other institutional investors in the U.S. and Canada.\n\nIn response to growing demand from global investors, we have been publishing English-language reports.\n\nTo further strengthen our engagement with overseas investors, we have also launched a dedicated English website.\n\nThe website currently includes the English reports we have published to date, and we will continue to update it with new English reports going forward.\n\nWe would appreciate your continued interest and support.\n\n⚡️ ENGLISH WEBSITE NOW LIVE\nhttp://www.growthresearchen.com/\n\n✅ Korean Independent Research: Growth Research\nhttps://t.me/growthresearch",
+            "links": [
+              "http://www.growthresearchen.com/",
+              "https://t.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/27691"
           }
         ]
       },
@@ -378,13 +381,6 @@
         "category": "매크로/크립토",
         "channel_url": "https://t.me/SpartanResearch",
         "posts": [
-          {
-            "date": "2026-07-08",
-            "time": "09:45",
-            "text": "현지언론에 따르면, 애플이 중국 내수용 기기에 사용하기 위해 장신스토리지(CXMT)의 메모리 칩 테스트를 시작  市场消息：苹果已开始测试长鑫存储（CXMT）的内存芯片，用于在中国销售的设备。",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/4126"
-          },
           {
             "date": "2026-07-08",
             "time": "10:16",
@@ -500,6 +496,22 @@
               "https://n.news.naver.com/mnews/article/421/0009048531"
             ],
             "post_url": "https://t.me/SpartanResearch/4146"
+          },
+          {
+            "date": "2026-07-08",
+            "time": "20:57",
+            "text": "TRUMP DID NOT REPEAT CRITICISM OF SPAIN DURING NATO LEADERS' SUMMIT MEETING, SOURCE FAMILIAR WITH TALKS SAYS\n\nTRUMP DID NOT REPEAT TERMINATION OF INTERIM DEAL WITH IRAN DURING NATO SUMMIT, SOURCE FAMILIAR WITH THE TALKS SAYS\n\nTRUMP DID NOT MENTION GREENLAND DURING NATO SUMMIT MEETING, SOURCE FAMILIAR WITH THE TALKS SAYS\n(@WalterBloomberg)",
+            "links": [
+              "https://t.me/WalterBloomberg"
+            ],
+            "post_url": "https://t.me/SpartanResearch/4147"
+          },
+          {
+            "date": "2026-07-08",
+            "time": "22:38",
+            "text": "⚡️⚡️⚡️ 뱅크오브아메리카, OpenAI IPO 참여를 위해 5.2억달러의 신용한도 지원",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/4148"
           }
         ]
       },
@@ -689,27 +701,6 @@
         "posts": [
           {
             "date": "2026-07-08",
-            "time": "12:27",
-            "text": "30거래일동안 코스닥은 얼마나 빠질 수 있을까?",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/35904"
-          },
-          {
-            "date": "2026-07-08",
-            "time": "13:38",
-            "text": "주식쪽은 또 사이드카가 걸린듯...\n\n이래저래 변동성이 엄청나서 쪼렙은 입장금지 존이 된듯..",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/35905"
-          },
-          {
-            "date": "2026-07-08",
-            "time": "13:38",
-            "text": "고니와 아귀 정도 되는 애들만 남아서 매매하지 나머지는 저기 선장이랑 구석에서  바둑이나 둬야 하는 시장...\n오목이나 둘걸 왜 주식해서 ㅅㅂ",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/35906"
-          },
-          {
-            "date": "2026-07-08",
             "time": "13:38",
             "text": "고니와 아귀 정도 되는 애들만 남아서 매매하지 나머지는 저기 선장이랑 구석에서  바둑이나 둬야 하는 시장... 오목이나 둘걸 왜 주식해서 ㅅㅂ",
             "links": [],
@@ -838,6 +829,22 @@
             "text": "이 정도 체감이면 그래도 뭔가 부양책이나 안정책이 나와야될거 같은데... ㅜㅜ",
             "links": [],
             "post_url": "https://t.me/Yeouido_Lab/35926"
+          },
+          {
+            "date": "2026-07-08",
+            "time": "21:04",
+            "text": "하이닉스 2배롱 SKHX/1배숏 SKHZ ETF 다음주 월요일 출시예정!",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/35927"
+          },
+          {
+            "date": "2026-07-08",
+            "time": "22:52",
+            "text": "IMF, 한국 성장률 2.6%로 상향 전망…주요 30개국 중 최대폭\nhttps://www.hankyung.com/article/202607083916i",
+            "links": [
+              "https://www.hankyung.com/article/202607083916i"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/35929"
           }
         ]
       },
@@ -2734,15 +2741,6 @@
         "category": "투자철학/산업·종목 분석",
         "posts": [
           {
-            "date": "2026-07-08",
-            "time": "14:49",
-            "text": "[이 정도면 문제 있는거지]\n\n지금의 변동성 해결은 쉽지 않을듯 5.27일 2배짜리 출시 후 코스닥",
-            "links": [
-              "https://blog.naver.com/luy1978/224340367952"
-            ],
-            "post_url": "https://blog.naver.com/luy1978/224340367952"
-          },
-          {
             "date": "2026-07-07",
             "time": "14:52",
             "text": "[시장이 너무 기형적이다.]\n\n한국 증시가 서킷브레이커가 발동된 것이 12번, 그중 올해 6번. 6월 이후 4번. 6월부터는 뚜렷한 이유도 없음. 무서워서 주식 하겠냐.",
@@ -3137,6 +3135,15 @@
               "https://blog.naver.com/luy1978/224302462891"
             ],
             "post_url": "https://blog.naver.com/luy1978/224302462891"
+          },
+          {
+            "date": "2026-05-31",
+            "time": "21:47",
+            "text": "[복기와 반성]\n\n스스로의 생각을 정리하면서 투자 복기와 반성은 다시 성장을 가져 옵니다. 실패 경험에 대한 깊은 생각은 반드시 성공 확률을 높이는데 기여할 것입니다. 세라피나님 글. https://m.blog.naver.com/arsjj/224299714932",
+            "links": [
+              "https://blog.naver.com/luy1978/224301978403"
+            ],
+            "post_url": "https://blog.naver.com/luy1978/224301978403"
           }
         ]
       },
@@ -3146,6 +3153,15 @@
         "url": "https://dart.fss.or.kr",
         "category": "공시",
         "posts": [
+          {
+            "date": "2026-07-09",
+            "time": "00:00",
+            "text": "[매드업] 주요사항보고서(자기주식취득결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260708000588"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260708000588"
+          },
           {
             "date": "2026-07-08",
             "time": "00:00",
@@ -3442,15 +3458,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260707000155"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260707000155"
-          },
-          {
-            "date": "2026-07-07",
-            "time": "00:00",
-            "text": "[제테마] [첨부정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260707000463"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260707000463"
           },
           {
             "date": "2026-07-06",
