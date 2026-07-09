@@ -1,6 +1,6 @@
 {
   "2026-07-09": {
-    "fetched_at": "2026-07-09T21:09:28+09:00",
+    "fetched_at": "2026-07-10T01:02:32+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -101,50 +101,6 @@
         "posts": [
           {
             "date": "2026-07-09",
-            "time": "08:14",
-            "text": "$IGV\n\niShares Expanded Tech-Software Sector ETF",
-            "links": [],
-            "post_url": "https://t.me/survival_DoPB/13589"
-          },
-          {
-            "date": "2026-07-09",
-            "time": "08:15",
-            "text": "$EWY\n\niShares MSCI South Korea ETF",
-            "links": [],
-            "post_url": "https://t.me/survival_DoPB/13590"
-          },
-          {
-            "date": "2026-07-09",
-            "time": "08:15",
-            "text": "$DRAM\n\nRoundhill Memory ETF",
-            "links": [],
-            "post_url": "https://t.me/survival_DoPB/13591"
-          },
-          {
-            "date": "2026-07-09",
-            "time": "08:15",
-            "text": "$SOXX\n\niShares Semiconductor ETF",
-            "links": [],
-            "post_url": "https://t.me/survival_DoPB/13592"
-          },
-          {
-            "date": "2026-07-09",
-            "time": "09:34",
-            "text": "저가 매수 자금, 미국 반도체 ETF로 몰려\n\n블룸버그의 ETF 전문가 에릭 발추나스(Eric Balchunas)의 데이터에 따르면: 화요일, 전례를 찾아보기 힘들 정도의 막대한 자금이 반도체 ETF인 'SOXX'에 몰려들었습니다. 유입된 규모는 무려 54억 달러에 달하며 신기록을 세웠습니다\n\n (이는 종전 일일 최대 유입 규모의 4배에 해당하는 수치입니다).\n\nhttps://wallstreetcn.com/charts/41959369",
-            "links": [
-              "https://wallstreetcn.com/charts/41959369"
-            ],
-            "post_url": "https://t.me/survival_DoPB/13593"
-          },
-          {
-            "date": "2026-07-09",
-            "time": "09:35",
-            "text": "코스피\n: 개인 매도, 외인&기관 매수\n\n코스닥\n: 개인&외인 매도, 기관 매수",
-            "links": [],
-            "post_url": "https://t.me/survival_DoPB/13594"
-          },
-          {
-            "date": "2026-07-09",
             "time": "10:10",
             "text": "야데니 형님\n\n찬스자나.\n\n#반도체",
             "links": [],
@@ -221,6 +177,54 @@
             "text": "ETF 개인순매수/순매도 TOP10\n\n레버리지 팔고 인버스로\n\n출처: KOSCOM, 타임폴리오자산운용\n기준: 2026년 7월 9일 장마감 기준",
             "links": [],
             "post_url": "https://t.me/survival_DoPB/13608"
+          },
+          {
+            "date": "2026-07-09",
+            "time": "23:23",
+            "text": "『글로벌 주식전략; 주도주 바텀 피싱 고려하기 시작할 이유들』\n글로벌전략 김성환 ☎️ 02-3772-2637\n\n- 최근 시장 혼란, 펀더멘탈 아닌 수급 이슈로 인식. 수급 꼬임 정점 통과 조짐\n- 사실상 주도주들의 가장 큰 리스크였던 기술적 부담이 완화\n\n※ 원문 확인: http://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=352501\n위 내용은 2026년 07월 09일 16시 47분 현재 조사분석자료 공표 승인이 이뤄진 내용입니다. \n제공해 드린 조사분석자료는 당사 고객에 한하여 배포되는 자료로 어떠한 경우에도 당사의 허락 없이 복사, 대여, 재배포 될 수 없습니다.",
+            "links": [
+              "http://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=352501"
+            ],
+            "post_url": "https://t.me/survival_DoPB/13609"
+          },
+          {
+            "date": "2026-07-09",
+            "time": "23:23",
+            "text": "SK하이닉스\n\n미국 주식예탁증서(ADR) 공모 가격을 한국 증시 종가보다 3.1% 높은 수준인 ADR당 149달러로 안내하고 있는 것으로 알려짐",
+            "links": [],
+            "post_url": "https://t.me/survival_DoPB/13610"
+          },
+          {
+            "date": "2026-07-09",
+            "time": "23:35",
+            "text": "메타, ‘27년 컴퓨팅 용량 14GW로 확대, 자체 AI 칩 Iris는 9월 생산 시작\n\n: 내부 메모에 따르면 ‘26년 7GW 규모의 컴퓨팅 인프라를 배치하고, ’27년에는 이를 두 배인 14GW로 확대할 계획\n\n: 또한 자체 AI 칩 ‘Iris’의 테스트를 6주 만에 완료했으며 중대한 문제는 발견되지 않음. 오는 9월부터 생산 시작 예정\n\n: Iris는 4세대에 걸친 MTIA 프로젝트의 일부. 브로드컴과 설계 협력, TSMC가 생산 담당. 엔비디아와 AMD GPU를 보완하고 비용 및 외부 칩 의존도를 낮추는 것이 목적\n\n: 메타는 최신 GPU를 자사 규모에 도입하는 과정이 “매우 힘든 일이었으며, 시간을 잃었다”고 평가. 2027년까지 약 6개월마다 새로운 자체 AI 칩을 출시할 계획\n\n: 인프라 확장을 위해 메모리, 스토리지, 광섬유 장비 관련 장기 다년 공급 계약 체결\n\nhttps://t.me/Samsung_Global_AI_SW",
+            "links": [
+              "https://t.me/Samsung_Global_AI_SW"
+            ],
+            "post_url": "https://t.me/survival_DoPB/13611"
+          },
+          {
+            "date": "2026-07-09",
+            "time": "23:35",
+            "text": "메타, ‘27년 컴퓨팅 용량 14GW로 확대, 자체 AI 칩 Iris는 9월 생산 시작  : 내부 메모에 따르면 ‘26년 7GW 규모의 컴퓨팅 인프라를 배치하고, ’27년에는 이를 두 배인 14GW로 확대할 계획  : 또한 자체 AI 칩 ‘Iris’의 테스트를 6주 만에 완료했으며 중대한 문제는 발견되지 않음. 오는 9월부터 생산 시작 예정  : Iris는 4세대에 걸친 MTIA 프로젝트의 일부. 브로드컴과 설계 협력, TSMC가 생산 담당. 엔비디아와…",
+            "links": [],
+            "post_url": "https://t.me/survival_DoPB/13612"
+          },
+          {
+            "date": "2026-07-10",
+            "time": "00:53",
+            "text": "$META는 AI 인프라를 확장하면서 플래시 스토리지에 대해 $SNDK와, 메모리에 대해 삼성과 장기 공급 계약을 체결했습니다.\n\nMeta는 올해 7GW의 컴퓨트 용량을 배치하고 2027년에는 이를 두 배로 늘릴 계획이며, 칩 부족 사태 동안 메모리와 스토리지 공급의 확보가 중요합니다.",
+            "links": [],
+            "post_url": "https://t.me/survival_DoPB/13613"
+          },
+          {
+            "date": "2026-07-10",
+            "time": "00:54",
+            "text": "마이크론, 미국 투자 계획을 $200B → $250B로 상향 (자료: Micron)\n\n> 2035년까지 예상 투자액(CapEx + R&D)을 $250B로 상향. DRAM 생산량의 40%를 미국에서 생산하겠다는 장기 목표와 첨단 메모리 제품에 대한 수요를 반영한 것\n\n> 뉴욕주 클레이 공장 부지에서 첫 콘크리트 타설(3개월 앞당겨짐)과 함께 발표\n\n> 미국 내 팹 투자는 뉴욕 + 아이다호 + 버지니아",
+            "links": [
+              "https://investors.micron.com/news-releases/news-release-details/micron-accelerates-us-investments-pours-first-concrete-new-york?bm-verify=AAQAAAAN_____2lLz8OTXvlvAu7V2NLzoidFFEDf1gYB-2tNE89WogpfoMCxD08sng4M9OYQLf00hMIXqPvBmrsmVpyk010z7XqCetYFx7auE3q5cNFEkDZdNgECwVH7e_uWPw62QQotXgAyt0dMm4nvUqeb1UXlBzDVl8J8kkcz2nJ2B1i2Rj_aJUGZ31er2jF4-qmK0yK3gFqaRwZH833tLhq35d7YY4vMdnGf-KZsd8c-AxrSTXhye9cM1FS20NY27APHbk2pwe_8UxQtjXdslske8OGT7IIIHvrW1wVTgvFTRPqdqPbJzYsTr_eAVBZTbO1QcxjZHytrQ4gSx6fR3cBXULUqEbNNfUCc78E_lgecib_eyu45jIWFHZeTa6E6"
+            ],
+            "post_url": "https://t.me/survival_DoPB/13614"
           }
         ]
       },
@@ -386,7 +390,8 @@
             "text": "✅두나무·네이버 합병은 또 지연…공정위, 미래에셋 코빗 인수 승인\n\nhttps://magazine.hankyung.com/business/article/202607095686b\n\n📌미래에셋, 코빗 인수 승인\n공정위가 미래에셋컨설팅의 코빗 지분 92.06% 인수를 승인\n\n인수 금액은 약 1,334억원으로, 금융그룹이 가상자산 거래소를 품은 첫 사례\n\n코빗 점유율이 0.5% 수준이라 시장 경쟁 제한 가능성은 낮다고 판단\n\n📌디지털자산 사업 확대 기대\n미래에셋은 이번 인수를 계기로 가상자산 사업 확장 가능성이 커진 상황\n\n주식과 가상자산을 함께 거래하는 플랫폼 구축 가능성도 거론\n\n향후 가상자산 ETF 등 신규 금융상품으로 사업이 확장될지 주목\n\n📌네이버·두나무 결합은 지연\n공정위는 네이버파이낸셜과 두나무의 기업결합 심사를 아직 진행 중\n\n주식교환일은 기존 9월 말에서 12월 말로 다시 연기\n\n대형 플랫폼과 1위 가상자산 거래소 결합인 만큼 경쟁 영향 검토가 길어지는 모습\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
             "links": [
               "https://magazine.hankyung.com/business/article/202607095686b",
-              "https://t.me/growthresearch"
+              "https://t.me/growthresearch",
+              "https://magazine.hankyung.com/business/amp/202607095686b"
             ],
             "post_url": "https://t.me/growthresearch/27731"
           },
@@ -437,54 +442,6 @@
         "category": "매크로/크립토",
         "channel_url": "https://t.me/SpartanResearch",
         "posts": [
-          {
-            "date": "2026-07-08",
-            "time": "17:07",
-            "text": ">>내일, 최강 플래그십 GPT-5.6 Sol이 공개된다! 새로운 Ultra 모드로 멀티 에이전트 시대 개막 (중국언론) \n\n•GPT-5.6 Sol이 이번 주 목요일 정식 출시됨. 코딩 벤치마크인 Terminal-Bench 2.1에서 91.9%를 기록하며 1위에 올랐고, 추론 효율은 Anthropic의 Claude Mythos를 넘어섰음. 가격은 입력 기준 100만 Token당 5달러이며, Ultra 멀티 에이전트 모드를 통해 단일 모델의 한계를 돌파했음. 7월에는 Cerebras Systems 하드웨어에서도 지원되며, 추론 속도는 초당 최대 750 Token에 달함. OpenAI는 역사상 가장 강력한 플래그십 모델의 출시를 위해 70만 GPU 시간을 투입한 레드팀 테스트를 진행하며 안전성 검증에 총력",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/4143"
-          },
-          {
-            "date": "2026-07-08",
-            "time": "17:27",
-            "text": "✅ [속보] 트럼프 \"이란과의 MOU 끝났다…그들과 상대하기 싫어\"\n\nhttps://n.news.naver.com/mnews/article/421/0009048531",
-            "links": [
-              "https://n.news.naver.com/mnews/article/421/0009048531"
-            ],
-            "post_url": "https://t.me/SpartanResearch/4146"
-          },
-          {
-            "date": "2026-07-08",
-            "time": "20:57",
-            "text": "TRUMP DID NOT REPEAT CRITICISM OF SPAIN DURING NATO LEADERS' SUMMIT MEETING, SOURCE FAMILIAR WITH TALKS SAYS\n\nTRUMP DID NOT REPEAT TERMINATION OF INTERIM DEAL WITH IRAN DURING NATO SUMMIT, SOURCE FAMILIAR WITH THE TALKS SAYS\n\nTRUMP DID NOT MENTION GREENLAND DURING NATO SUMMIT MEETING, SOURCE FAMILIAR WITH THE TALKS SAYS\n(@WalterBloomberg)",
-            "links": [
-              "https://t.me/WalterBloomberg"
-            ],
-            "post_url": "https://t.me/SpartanResearch/4147"
-          },
-          {
-            "date": "2026-07-08",
-            "time": "22:38",
-            "text": "⚡️⚡️⚡️ 뱅크오브아메리카, OpenAI IPO 참여를 위해 5.2억달러의 신용한도 지원",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/4148"
-          },
-          {
-            "date": "2026-07-09",
-            "time": "08:51",
-            "text": "오늘도 동시호가 반대매매 퍽퍽퍽",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/4149"
-          },
-          {
-            "date": "2026-07-09",
-            "time": "10:18",
-            "text": "[메리츠증권 반도체/디스플레이 김선우] \n\n▶ 하이닉스에 날아든 주주서한…최태원 발표 호남팹, '이사회 패싱' 지적\n\n- 흥국자산운용이 SK하이닉스 이사회를 향해 공식 주주서한을 보내 최태원 SK그룹 회장과 정부가 주도해 발표한 대규모 투자 계획의 의사결정 과정을 비판\n\n- 정식 이사회 의결을 거치기 전에 대외적으로 투자가 발표된 것은 글로벌 거버넌스 기준에 어긋난다는 지적\n\n- 서한에서 \"최근 일련의 경영 의사결정 과정을 지켜보며 일반주주의 권익 보호와 기업 거버넌스의 관점에서 깊은 우려를 지울 수 없다\"고 밝힘\n\n[이사회 구성원도 아닌데…\"대주주의 대주주가 통제\"]\n\n- 흥국운용은 \"당사 이사회 임원이 아닌 당사 대주주의 대주주가 행정부 수반과 함께 대규모 투자 계획을 대외적으로 발표하는 모습은 이사회 중심 경영이라는 글로벌 스탠다드와 거리가 멀다\"고 비판\n\n- 이어 \"이사회 내부의 충분한 심의와 결의를 거치기 전에 사외의 주체가 천문학적인 현금흐름의 방향성을 먼저 통제하는 구조는 과거의 관행일 수는 있어도 결코 모범적인 모습이라 할 수 없다\"고 덧붙임\n\n- 이에 따라 이사회 내 사내외 이사들 간에 어떠한 심도 있는 논의와 숙의가 있었는지 투명하게 설명해달라고 요구\n\n- 실제로 최태원 회장은 SK하이닉스의 미등기 임원으로 이사회 구성원이 아니며, 지배구조상 SK하이닉스의 최대주주인 SK스퀘어의 최대주주, 즉 SK㈜의 최대주주인데도 이사회 승인 전에 대규모 투자를 주도했다는 지적\n\n- SK하이닉스가 지난달 29일 공시한 '장래사업·경영계획'에 따르면, 서남권 클러스터(400조원)를 포함해 총 1천100조원 규모의 중장기 투자 계획을 밝히면서 '이사회 결의일(결정일)' 항목을 공란(-)으로 표기\n\n- 회사 측 역시 공시의 중요사항을 통해 \"구체적인 일정과 투자 계획은 향후 이사회 승인을 거쳐 확정되는 시점에 추가 공시할 예정\"이라고 명시해, 천문학적인 투자 계획이 이사회 심의 전에 먼저 발표되었음을 자인\n\n- 반도체 업황 호황에도 불구하고 주주환원 정책이 미흡하다는 점도 도마 위. 특히 경쟁사와의 비교를 통해 \"마이크론의 경우 최근 잉여현금흐름(FCF)의 전액을 주주에게 환원하는 정책을 발표한 반면, SK하이닉스의 올해 배당에서는 오히려 배당성향이 후퇴하는 모습을 보여주었다\"고 피력\n\n- 흥국운용은 지난 2001년 SK하이닉스(당시 하이닉스반도체)가 마이크론에 단돈 5조 원에 매각될 뻔했던 위기 당시 소액주주들이 회사를 살려낸 역사적 사실도 언급\n\n- 아울러 향후 SK하이닉스가 준비 중인 장기공급계약(LTA)과 관련해 그룹 계열사 간 부당 내부거래(터널링) 가능성에 대한 철저한 감시도 주문\n\n- \"만약 장기공급 계약의 상대방이 SK그룹 계열사가 추진하는 데이터센터 사업 등 복합적인 거래 관계와 얽혀 있다면, 당사의 정당한 이익이 타 계열사로 부당하게 이전되는 '터널링'의 여지가 단 1%도 있어서는 안 된다\"며 이사회가 하이닉스 법인의 이익을 최우선으로 하여 철저히 감시하고 통제해야 한다고 촉구\n\nhttps://buly.kr/9MSrcOn (연합 인포맥스)\n\n\n*본 내용은 당사의 코멘트 없이 국내외 언론사 뉴스 및 전자공시자료 등을 인용한 것으로 별도의 승인 절차 없이 제공합니다.",
-            "links": [
-              "https://buly.kr/9MSrcOn"
-            ],
-            "post_url": "https://t.me/SpartanResearch/4150"
-          },
           {
             "date": "2026-07-09",
             "time": "10:30",
@@ -578,6 +535,58 @@
             "text": "불반등이 나와야 한드아..",
             "links": [],
             "post_url": "https://t.me/SpartanResearch/4163"
+          },
+          {
+            "date": "2026-07-09",
+            "time": "21:34",
+            "text": "⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️\n🚨 경제 지표 발표 🚨\n\n━━━━━━━━━━━━━━━\n\n🟢 미국 신규 실업수당청구건수\n(Initial Jobless Claims, 7월 1주)\n\nㆍ실제치(Actual): 215,000건\nㆍ예상치(Forecast): 218,000건 → 🟢 예상 하회\nㆍ이전치(Previous): 217,000건 → 🟢 전주 대비 감소\n\n━━━━━━━━━━━━━━━\n\n📌 요약\n\nㆍ미국 신규 실업수당청구건수는 215,000건으로 예상치를 하회하며 노동시장 견조세 지속 🟢\nㆍ전주 대비 청구건수도 감소하면서 고용시장 냉각 우려가 일부 완화 🔴\nㆍ최근 둔화 조짐이 나타났던 고용지표와 비교할 때 노동수요가 여전히 안정적인 수준 유지 🔴\nㆍ연준 입장에서는 노동시장 약화에 대한 우려를 다소 완화시킬 수 있는 결과 🔴\n\n━━━━━━━━━━━━━━━\n\n📈 주식시장 영향\n\nㆍ견조한 고용시장은 경기민감주와 금융주 투자심리에 우호적 🟢\nㆍ반면 노동시장 강세는 국채금리 상승 압력을 통해 기술주·성장주에는 부담 가능 🔴\nㆍ소비 여력 유지 기대가 소비재 및 유통 업종에는 긍정적 🟢\nㆍ전반적으로 경기 연착륙 기대를 지지하는 지표로 평가 가능 🟢\n\n━━━━━━━━━━━━━━━\n\n🏦 금리 인하 영향\n\nㆍ신규 실업수당청구건수 감소는 연준 금리 인하 기대를 일부 약화시키는 요인 🔴\nㆍ노동시장 강세 지속은 연준의 신중한 통화정책 기조 유지 가능성을 높임 🔴\nㆍ매파적 해석이 소폭 강화될 수 있는 결과 🔴\nㆍ다만 단일 주간 지표인 만큼 정책 경로 변화 영향은 제한적일 전망 🟡\n\n━━━━━━━━━━━━━━━\n\n작성자: 미국 주식 인사이더\nt.me/insidertracking",
+            "links": [
+              "http://t.me/insidertracking"
+            ],
+            "post_url": "https://t.me/SpartanResearch/4165"
+          },
+          {
+            "date": "2026-07-09",
+            "time": "21:41",
+            "text": "마이크론, 미국 반도체 생태계 강화를 위해 최대 30억 달러 전략적 투자 발표\n\n마이크론은 미국 공급망 투자 계획의 일환으로 글로벌웨이퍼스(GlobalWafers Co., Ltd.)에 5억 달러 규모의 전략적 금융 지원을 제공하여 텍사스주 셔먼에 위치한 글로벌웨이퍼스 아메리카 300mm 실리콘 웨이퍼 생산 시설의 개발 및 제조 역량을 강화할 예정입니다. 또한 양사는 10년 공급 계약을 체결하여 마이크론이 장기적인 제조 계획을 지원하고 미국 내 핵심 반도체 제조 생태계를 강화하는 데 필요한 상당한 규모의 실리콘 웨이퍼 생산 능력을 확보할 수 있도록 할 것입니다.\n\nhttps://www.marketscreener.com/news/micron-announces-up-to-3-billion-strategic-investment-to-strengthen-u-s-semiconductor-ecosystem-ce7f5eded980f326",
+            "links": [
+              "https://www.marketscreener.com/news/micron-announces-up-to-3-billion-strategic-investment-to-strengthen-u-s-semiconductor-ecosystem-ce7f5eded980f326"
+            ],
+            "post_url": "https://t.me/SpartanResearch/4166"
+          },
+          {
+            "date": "2026-07-09",
+            "time": "21:45",
+            "text": "TSMC: WILL MOVE JUNE SALES DATA RELEASE FROM FRIDAY TO MONDAY DUE TO TYPHOON (@FirstSquaw)",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/4167"
+          },
+          {
+            "date": "2026-07-09",
+            "time": "22:30",
+            "text": "(Bloomberg) 하이닉스 ADR 공모가 주당 149달러\n\nSK하이닉스가 미국 ADR 공모가를 주당 149달러로 제시했다고 Bloomberg가 보도. 이는 국내 증시 종가(10일, 주당 218만6천원, 약 1,445달러) 대비 약 3.1% 높은 수준.\n\n공모가가 확정될 경우 조달 규모는 약 265억달러로, 알리바바의 250억달러 기록을 넘어 외국 기업의 ADR 상장 중 역대 최대 규모가 될 전망. 다만 공모 조건은 아직 논의 중으로 변경될 가능성도 있음.\n\n출처: 블룸버그",
+            "links": [
+              "https://www.bloomberg.com/news/articles/2026-07-09/sk-hynix-said-to-guide-us-offering-price-3-1-above-korea-close"
+            ],
+            "post_url": "https://t.me/SpartanResearch/4168"
+          },
+          {
+            "date": "2026-07-09",
+            "time": "23:33",
+            "text": "OPENAI'S ALTMAN SAYS RISE IN COST OF COMPUTE AND MEMORY DEFINITELY A HEADWIND- CNBC INTERVIEW ...",
+            "links": [
+              "https://x.com/FirstSquawk/status/2075221396591190097"
+            ],
+            "post_url": "https://t.me/SpartanResearch/4169"
+          },
+          {
+            "date": "2026-07-10",
+            "time": "00:11",
+            "text": "진행자 (줄리아 부어스틴) 00:16\n\n오늘부터 이 모델들이 정식 출시(GA)된다고 발표하셨는데요. 이 신규 모델들이 경쟁사 모델과 비교해 어떤 점에서 의미 있게 다릅니까?\n\n샘 올트먼 00:27\n\n네, 저희도 굉장히 기대가 큽니다. 초대해 주셔서 감사합니다. 5.6 Sol은 대부분의 사용자에게 세계 최고의 모델일 뿐 아니라, 시중에 나와 있는 다른 모델들보다 훨씬 효율적이라고 생각합니다. 에이전틱 코딩 작업에서 토큰 효율이 54% 더 높으면서도, 다른 최고 수준의 모델들과 동등하거나 그 이상의 성능을 냅니다. 그리고 이제 사람들이 효율성에 관심을 갖기 시작하고, 자신들의 지출을 파악하고, 좋은 ROI를 얻으려 한다는 게 실제로 보입니다. 그래서 이번 출시는 저희에게 큰 진전입니다.\n\n진행자 00:53\n\n그 54%라는 수치는 처음 나온 이야기인데요. 그중 얼마나가 파트너사와 고객사의 비용을 낮추는 데 집중한 결과입니까?\n\n올트먼 01:01\n\n전적으로 비용과 속도입니다. 속도도 훨씬 빨라졌고요. 다만 고객들, 분명히 지금 모든 기업이 지출과 AI에 쓴 돈 대비 얻는 가치를 고민하고 있습니다. 그게 바로 저희가 하고 싶은 일입니다. 기업들에게 가장 훌륭하고, 가장 믿을 수 있고, 가장 안정적이며, 최고의 ROI를 제공하는 파트너가 되고 싶습니다.\n\n진행자 01:20\n\n여기 선밸리에서 많은 파트너사를 만나고 계신데요. 여기 모인 기업 대부분이 오픈AI의 고객사일 겁니다. 그분들로부터 지출과 관련해 어떤 압박을 듣고 계신가요? 그리고 그들이 AI 지출 예산을 어떻게 조정할 계획이라고 하던가요?\n\n올트먼 01:34\n\n음, 그분들은 저희가 그 부분에 집중하는 걸 정말 좋아합니다. 올해가 AI 지출이 큰 화두가 된 첫 해입니다. 그런데 갑자기 아주 큰 화두가 됐죠. 모두가 지출을 줄이거나 가치를 높이기 위해 저희가 무엇을 해줄 수 있는지 묻고 있습니다. 저희 모델이 거기에 잘 맞는다고 생각합니다. 그래서 이번 5.6 Sol 출시가 아주 반가운 소식일 거라고 봅니다.\n\n진행자 01:51\n\n5.6이 정부 승인 절차를 거치면서 몇 주 지연됐는데요. 그 승인 과정에서 무슨 일이 있었습니까?\n\n올트먼 01:58\n\n저는 매우 생산적인 과정이었다고 생각합니다. 러트닉 장관, 베선트 장관, 케언크로스 국장과 함께 아주 좋은 시간을 보냈습니다. 저희로서는 이번이 처음 거치는 절차였습니다. 그래서 다음번에 더 나아지도록 배울 점들이 있고, 곧 다음 절차를 시작하게 될 겁니다. 다음번에는 훨씬 매끄러운 과정이 될 거라고 봅니다. 다만 정부의 기술적 역량은 저에게 인상적이었습니다. 실제로 좋은 인력들이 이 모델들을 테스트하고 레드팀 작업을 하고 있습니다.\n\n올트먼 02:23\n\n그리고 그들도 이 모델들이 빠르게 출시되기를 진심으로 바라고 있습니다. 다만 높은 수준의 안전성을 확보한 채로요. 그리고 이건 사실 모두의 이익에 부합한다고 생각합니다. 광범위한 접근을 원하고, 실제로 저희는 그걸 원합니다만, 강력한 모델을 보유하고 있다면 자신의 안전성 주장에 확신을 가질 수 있어야 합니다. 그렇지 않으면 세상은 아주 빠르게 불편해질 테니까요.\n\nhttps://www.youtube.com/watch?v=10ugh4fl97M",
+            "links": [
+              "https://www.youtube.com/watch?v=10ugh4fl97M"
+            ],
+            "post_url": "https://t.me/SpartanResearch/4170"
           }
         ]
       },
@@ -588,62 +597,6 @@
         "category": "매매 신호/트레이딩",
         "channel_url": "https://t.me/d_ticker",
         "posts": [
-          {
-            "date": "2026-07-07",
-            "time": "21:48",
-            "text": "올해 하이퍼스케일러 조달 사례 \n\n> 알파벳｜회사채 + 유상증자｜$117B\n> 아마존｜회사채｜$106B\n> 메타｜회사채｜$25B\n> 오라클｜회사채 + 에쿼티｜$48B\n\n총 $296B vs 현금흐름 $57B\n\n하이퍼스케일러 4사의 연간 현금흐름 추정치 합계보다 약 5배 큰 수준을 조달한 상황",
-            "links": [],
-            "post_url": "https://t.me/d_ticker/3414"
-          },
-          {
-            "date": "2026-07-07",
-            "time": "22:01",
-            "text": "USD 환산으로 본 코스피 지수 퍼포먼스\n\n> 코스피 +69% (고점 대비 39%p 감소)\n> 미국 +10%\n> 일본 +13%\n> 영국 +7%\n> 홍콩 -12%\n\n**YTD 기준",
-            "links": [],
-            "post_url": "https://t.me/d_ticker/3415"
-          },
-          {
-            "date": "2026-07-07",
-            "time": "22:14",
-            "text": "中 딥시크·즈푸, 커스텀 AI 칩 개발 중\n\nReuters 세 명의 소식통에 따르면 딥시크가 엔비디아 칩 의존도를 낮추기 위해 화웨이 칩을 사용하는 것을 넘어 자체 추론용 칩을 개발하고 있다고 함\n\nThe Information 세 명의 관계자에 따르면 즈푸AI는 일부 중국 반도체 설계 업체들과 GLM 모델에 최적화된 맞춤형 AI 가속기를 공동 개발할 가능성이 있다고 언급. 현재 논의 는 초기단계, 아직 협력할 설계 회사를 선정하지는 않음\n\nNVDA Pre -1.6%",
-            "links": [
-              "https://www.reuters.com/world/china/chinas-deepseek-developing-its-own-ai-chip-sources-say-2026-07-07/",
-              "https://www.theinformation.com/articles/chinas-ai-lab-ziphu-weighs-custom-chip-demand-glm-model-soars?rc=3nnj10"
-            ],
-            "post_url": "https://t.me/d_ticker/3416"
-          },
-          {
-            "date": "2026-07-07",
-            "time": "22:27",
-            "text": "독일 정부 “숙련 인력을 유지한 게 캐나다 잠수함 수주 비결”\n\n- 독일 부총리 曰 캐나다 잠수함 12척 건조 수주는 성공적\n- 비스마르 조선소 일감이 감소해도 인력 유지하길 잘해\n- 이번 수주로 최대 1500개 신규 일자리 창출 예정\n\nhttps://www.marketscreener.com/news/submarine-contract-satisfied-faces-in-berlin-and-schwerin-ce7f5ed8d981f122",
-            "links": [
-              "https://www.marketscreener.com/news/submarine-contract-satisfied-faces-in-berlin-and-schwerin-ce7f5ed8d981f122"
-            ],
-            "post_url": "https://t.me/d_ticker/3417"
-          },
-          {
-            "date": "2026-07-07",
-            "time": "22:37",
-            "text": "로켓 발사 서비스 상장사가 스페이스X, 로켓랩만 있는 건 아니었네요\n\n→ 7일 독일 로켓 제조사 이자르 에어로스페이스(Isar Aerospace)가 캐나다 최초 로켓 발사 서비스 기업인 마리타임 론치 서비스(Maritime Launch Services, MLS)와 계약을 체결\n\n마리타임(MAXQ)은 2016년 설립돼 캐나다 최초의 상업용 우주 궤도 발사대를 갖고 있습니다. 캐나다 NEO 거래소에 상장돼 있고, 지난 1년 동안 1100% 올랐습니다.",
-            "links": [],
-            "post_url": "https://t.me/d_ticker/3418"
-          },
-          {
-            "date": "2026-07-08",
-            "time": "06:06",
-            "text": "한국·미국·일본, 소형모듈원자로 도입 가속화 협력각서\n\n이번 MOC는 인도·태평양 지역의 다른 나라들을 우선 대상으로 SMR 도입을 가속화하기 위한 3국가 협력 체제를 구축하기 위한 것\n\n\"이 협력 체계는 프로젝트 개발 위험을 줄이고, 규모의 경제를 달성하며, 민간 투자를 촉진하고, 인허가 절차를 간소화하며, 공급망을 최적화하는 발전소 배치 모델을 조성하는 것을 목표로 한다\"\n\nhttps://www.yna.co.kr/view/AKR20260708001900071?section=search",
-            "links": [
-              "https://www.yna.co.kr/view/AKR20260708001900071?section=search"
-            ],
-            "post_url": "https://t.me/d_ticker/3419"
-          },
-          {
-            "date": "2026-07-08",
-            "time": "06:39",
-            "text": "미국의 메모리 모듈 제조사인 펭귄솔루션즈(PENG)가 금일 ‘어닝 서프라이즈’로 장후 5% 오르고 있습니다.\n\n이 회사는 삼성전자·SK하이닉스·마이크론으로부터 메모리 셀을 사오고 메모리 모듈을 조립하는 업체로, DDR5 기반 서버용 CXL 메모리 모듈과 GPU의 KV캐시 처리를 분산하는 메모리 모듈이 대표 제품입니다.\n\n3Q FY26 Results\n= 매출 $479M (est. $421M)\n= GPM 28.1% (est. 26.7%)\n= OPM 13.4% (est. 10.8%)\n= EPS $0.84 (est. $0.56)\n\nFY26 Guidance [Raised]\n= 매출 YoY 20~24% (est. 16%)\n= GPM 26.5% → 28.5% (est. 28.2%)\n= EPS $1.97 → $2.60 (est. $2.27)",
-            "links": [],
-            "post_url": "https://t.me/d_ticker/3420"
-          },
           {
             "date": "2026-07-08",
             "time": "08:09",
@@ -752,6 +705,61 @@
               "https://www.hankyung.com/article/202607096332i"
             ],
             "post_url": "https://t.me/d_ticker/3434"
+          },
+          {
+            "date": "2026-07-09",
+            "time": "23:00",
+            "text": "마이크론, 실리콘 웨이퍼 기업에 5억 달러 투자 $MU\n\n> ‘글로벌웨이퍼스’에 $0.5B 전략적 금융 지원\n> 이를 통해 300㎜ 실리콘 웨이퍼 공급망 강화\n> 글로벌웨이퍼스와 10년 장기 공급 계약 체결\n> 향후 미 반도체 공급망 위해 최대 $3.0B 투자 계획\n\nhttps://investors.micron.com/news-releases/news-release-details/micron-announces-3-billion-strategic-investment-strengthen-us",
+            "links": [
+              "https://investors.micron.com/news-releases/news-release-details/micron-announces-3-billion-strategic-investment-strengthen-us"
+            ],
+            "post_url": "https://t.me/d_ticker/3435"
+          },
+          {
+            "date": "2026-07-09",
+            "time": "23:07",
+            "text": "메타, 커스텀 AI 칩 생산 돌입 $META\n\n> 메타, AI 컴퓨팅 용량 7GW→14GW 목표\n> 이를 위해 9월부터 자체 AI 칩 생산 시작\n> 이 칩은 ‘MTIA 4세대’로 AI 가속기\n> 칩 테스트는 6주만 완료될 정도로 빠름\n> 브로드컴과 칩 설계 협력\n> TSMC가 위탁 생산 담당\n> 메모리 공급사는 삼성전자 및 샌디스크\n> 광섬유 공급업체는 스미토모일렉트릭\n\nhttps://www.reuters.com/world/asia-pacific/meta-put-ai-chip-into-production-september-it-looks-double-computing-capacity-2026-07-09/",
+            "links": [
+              "https://www.reuters.com/world/asia-pacific/meta-put-ai-chip-into-production-september-it-looks-double-computing-capacity-2026-07-09/"
+            ],
+            "post_url": "https://t.me/d_ticker/3436"
+          },
+          {
+            "date": "2026-07-09",
+            "time": "23:18",
+            "text": "전자기기(Set) 업계에 숨통이 트이는 소식\n\n인도, 2029년까지 스마트폰 및 전자기기 부품 수입 관세 폐지\n\n무선충전모듈, 디스플레이, 리튬이온배터리 등이 포함\n\n인도의 스마트폰 생산량은 지난 10년 간 28배 증가하며, 대표적인 스마트폰 제조국으로 자리잡음",
+            "links": [
+              "https://www.reuters.com/business/media-telecom/india-removes-import-duty-some-electronics-smartphone-parts-2026-07-09/"
+            ],
+            "post_url": "https://t.me/d_ticker/3437"
+          },
+          {
+            "date": "2026-07-09",
+            "time": "23:33",
+            "text": "세레브라스, AI 서버 랙 캐파 7배 확대 $CBRS\n\n> 세레브라스는 웨이퍼 통째로 칩 설계\n> 이 웨이퍼를 사용하는 AI 랙이 ‘CS-3’\n> CS-3 랙 위탁 제조는 플렉스(FLEX)\n> 플렉스는 미국서 CS-3 캐파 7배 증설\n> 세레브라스 칩 수요 급증 증명한 셈",
+            "links": [],
+            "post_url": "https://t.me/d_ticker/3438"
+          },
+          {
+            "date": "2026-07-09",
+            "time": "23:35",
+            "text": "세레브라스, AI 서버 랙 캐파 7배 확대 $CBRS  > 세레브라스는 웨이퍼 통째로 칩 설계 > 이 웨이퍼를 사용하는 AI 랙이 ‘CS-3’ > CS-3 랙 위탁 제조는 플렉스(FLEX) > 플렉스는 미국서 CS-3 캐파 7배 증설 > 세레브라스 칩 수요 급증 증명한 셈",
+            "links": [],
+            "post_url": "https://t.me/d_ticker/3439"
+          },
+          {
+            "date": "2026-07-09",
+            "time": "23:53",
+            "text": "‘미용기기’ 인모드, 인수 제안 받아 $INMD\n\n> 행동주의 ‘스틸 파트너스(Steel Parteners)’\n> 주당 $16.75에 100% 인수 제안\n> 전날 종가 대비 16% 프리미엄\n\n주주이자 행동주의 펀드인 스틸 파트너스가 인모드의 이사회와 CEO가 회사 실적 의도적으로 낮춰 헐값에 비상장화하려고 한다며 공문을 보내고, 직접 인수하겠다고 나선 상황입니다.",
+            "links": [],
+            "post_url": "https://t.me/d_ticker/3440"
+          },
+          {
+            "date": "2026-07-09",
+            "time": "23:59",
+            "text": "마이크론, 실리콘 웨이퍼 기업에 5억 달러 투자 $MU  > ‘글로벌웨이퍼스’에 $0.5B 전략적 금융 지원 > 이를 통해 300㎜ 실리콘 웨이퍼 공급망 강화 > 글로벌웨이퍼스와 10년 장기 공급 계약 체결 > 향후 미 반도체 공급망 위해 최대 $3.0B 투자 계획  https://investors.micron.com/news-releases/news-release-details/micron-announces-3-billion-strategic-investment…",
+            "links": [],
+            "post_url": "https://t.me/d_ticker/3441"
           }
         ]
       },
@@ -770,32 +778,6 @@
         "category": "국내 시장/종목 분석",
         "channel_url": "https://t.me/Yeouido_Lab",
         "posts": [
-          {
-            "date": "2026-07-09",
-            "time": "14:15",
-            "text": "거래할때마다 공인인증서 인증\n안랩 세이프 프로텍트 설치 필수\n키보드 보안프로그램 설치 필수\nnProtect 설치 필수\nARS 전화인증\nOTP인증\n이렇게 하면 안살거 같은데",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/35996"
-          },
-          {
-            "date": "2026-07-09",
-            "time": "14:36",
-            "text": "2026.07.09 14:34:14\n기업명: 에이비엘바이오(시가총액: 4조 5,238억) A298380\n보고서명: 투자판단관련주요경영사항(임상시험계획변경승인)              (이중항체 면역항암제 ABL503의 제1상 임상시험계획 (IND) 변경승인)\n\n* 임상명칭 : 진행성 국소 진행성(절제 불가능) 또는 전이성 고형암을 동반한 시험대상자를 대상으로 하는 4-1BB 및 PD-L1의 이중특이항체 ABL503을 단독 또는 병용 요법으로 평가하는 임상시험\n* 대상질환 : 진행성ㆍ전이성 고형암\n* 임상단계 : 제1상 임상시험\n\n* 승인기관 : 미국 식품의약국 (FDA)\n* 임상국가 : 미국, 한국\n\n* 시험목적 : <단독요법 용량 증량파트 및 용량 확장파트> \n- ABL503의 안전성 및 내약성을 평가하고, 최대내약용량 (Maximum tolerated dose, MTD) 및 제2상 권장 용량 (Recommended phase 2 dose, RP2D)을 결정 \n \n<단독요법 종양 확장파트> \n- ABL503의 안전성, 내약성 및 예비 항종양 활성을 평가 \n \n<병용요법 용량 증량파트 및 용량 확장파트> \n- ABL503 병용요법의 안전성, 내약성 및 예비 항종양 활성을 평가하고, 제2상 권장 용량 (RP2D)을 결정\n* 임상방법 : 단일군, 공개, 다기관, 다회 투여, 단독요법 용량증량 (Dose escalation), 단독요법 용량확장 (Dose expansion), 단독요법 종양확장 (Tumor expansion) 및 병용요법 시험\n\n* 기타투자판단 관련사항\n \n- 상기 변경승인일 및 사실발생(확인)일은 한국 시간 기준이며, 임상시험계획의 FDA 승인이 완료된 사실을 대리인으로부터 전달 받은 날짜임 \n- 상기 임상시험실시국가, 임상시험실시기관, 임상시험방법, 임상시험기간, 목표 시험대상자 수 및 예상종료일 등은 진행에 따라 변동 가능함 \n- 추후 임상시험계획이 신청된 다른 기관에서 추가적으로 승인될 경우 관련 공시를 즉시 제출할 예정임 \n- 본 공시 이후 당사의 보도자료 및 IR 자료로 활용할 예정임\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260709900274\n회사정보: https://finance.naver.com/item/main.nhn?code=298380",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260709900274",
-              "https://finance.naver.com/item/main.nhn?code=298380"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/35997"
-          },
-          {
-            "date": "2026-07-09",
-            "time": "14:38",
-            "text": "TRUMP SAYS IRAN REACHED OUT SEEKING A NEW AGREEMENT ...",
-            "links": [
-              "https://x.com/FirstSquawk/status/2075086754026283230"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/35999"
-          },
           {
             "date": "2026-07-09",
             "time": "14:39",
@@ -888,6 +870,27 @@
               "https://t.me/Samsung_Global_AI_SW"
             ],
             "post_url": "https://t.me/Yeouido_Lab/36018"
+          },
+          {
+            "date": "2026-07-09",
+            "time": "21:28",
+            "text": "메타, 자체 AI 칩 9월 양산 — 삼성 메모리 장기계약 명시\n\n- 메타, 자체 AI 칩 'Iris'(MTIA 400) 9월 생산 시작. 테스트 6주 만에 완료, 중대 결함 없음. TSMC 생산·브로드컴 설계 협력\n\n- 컴퓨팅 용량 올해 7GW → 2027년 14GW로 2배 확대. 올해 AI 인프라 지출 최대 1,450억 달러 전망\n\n- 인프라 확장 위한 장기 다년 공급계약 체결: 메모리는 삼성전자, 플래시 스토리지는 샌디스크, 광섬유는 스미토모전기 지목\n\n- 배경은 메모리 공급부족. 이 숏티지가 하이퍼스케일러의 장기 선계약(LTA)을 강제 — 애플 등 일부 업체 가격 인상 촉발\n\n- 단, 삼성 계약은 'memory chips'로만 표기. HBM 여부·규모·기간·가격 전부 비공개(유출 메모 기반)",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/36023"
+          },
+          {
+            "date": "2026-07-09",
+            "time": "21:35",
+            "text": "미장 개장 전인데 분위기가 서로 완전히 다르네요; ㅎㅎ",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/36024"
+          },
+          {
+            "date": "2026-07-09",
+            "time": "21:39",
+            "text": "#기계 #건설기계 260709\n\n우리 기계 많이 저렴한데 일도 잘 하고 있습니다...\n\n- 건설기계 수출데이터 / 환영향 양호\n- 북미 / 유럽 비주택 데이터 양호, 주택은 더 떨어질 업황도 없음\n- 중동 영향 제한적, 아프리카 / 남미 마이닝 수요 여전히 건재\n\n- 일본 공작기계 신규수주 데이터 10년래 최고 수준\n- 한/일 업체 모두 우주 / 방산 / 반도체 등 전방산업 발주 호조 코멘트\n- 독일 공작기계도 최근 데이터 턴하려는 모습\n\n- 모든 CAPEX에는 기계가 필요\n- 실제로 수주 / 실적이 CAPEX 업사이클 착실하게 따라가는 중 (발전용 엔진 등 킥도 존재)\n\n현재 개인추정 OP 기준\n- HD건설기계 7.7배\n- 두산밥캣 7.5배\n- 진성티이씨 5.7배\n- DN오토모티브 3.4배\n- 와이지-원 4.1배\n\n그로스도 나오는데, 테크만큼 (내지는 테크보다 싼) 몇 안되는 섹터... 우리 기계 관심 좀 가져주세요\n겸사겸사 저도 좀 살려주세요",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/36026"
           }
         ]
       },
@@ -3195,6 +3198,15 @@
         "category": "공시",
         "posts": [
           {
+            "date": "2026-07-10",
+            "time": "00:00",
+            "text": "[녹십자] [기재정정]주요사항보고서(타법인주식및출자증권양도결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260709000697"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260709000697"
+          },
+          {
             "date": "2026-07-09",
             "time": "00:00",
             "text": "[주성코퍼레이션] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
@@ -3544,15 +3556,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260708000271"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260708000271"
-          },
-          {
-            "date": "2026-07-07",
-            "time": "00:00",
-            "text": "[호텔신라] [첨부정정]주요사항보고서(자기주식처분결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260707000458"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260707000458"
           }
         ]
       }
