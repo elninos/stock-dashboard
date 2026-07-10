@@ -1,6 +1,6 @@
 {
   "2026-07-10": {
-    "fetched_at": "2026-07-10T17:27:29+09:00",
+    "fetched_at": "2026-07-10T20:55:33+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -258,16 +258,6 @@
         "posts": [
           {
             "date": "2026-07-10",
-            "time": "08:52",
-            "text": "💻 삼성전자 \"HBM·로직·실리콘포토닉스 묶는 2.xD 개발중\"\n\nhttps://www.inews24.com/view/1984212\n\n📌 AI 시대 승부처는 후공정 통합\n삼성전자는 AI 확산으로 데이터센터 전력 소비와 데이터 전송 병목이 핵심 과제로 부상했다고 강조\n\nHBM, 로직, 실리콘 포토닉스를 시스템 차원에서 최적화해 성능과 전력 효율을 높이는 방향 제시\n\n📌 2.xD 패키징으로 대용량 AI 시스템 대응\n삼성전자는 HBM·로직·광 기술을 하나의 패키지로 구현하는 2.xD 패키징 개발 중\n\n실리콘 인터포저 기반에서 패널 기반 RDL 인터포저 구조로 확장해 고대역폭·대용량 데이터센터 수요 대응\n\n📌 차세대 HBM 라인업 확대\n고객 맞춤형 HBM인 cHBM, 3차원 집적 D램 기반 zHBM 개발 방향 공개\n\n로직은 3D 적층 기술로 고성능·대면적 칩에 대응하고,\n\n실리콘 포토닉스는 CPO 기반 저손실 데이터 전송을 추진\n\n📌 하이브리드 본딩이 핵심 기술 변수\n삼성전자는 차세대 HBM용 TC 본딩 고도화와 하이브리드 본딩 개발을 병행\n\n미세화가 진행될수록 솔더 범프 → 마이크로 범프 → 범프 없는 하이브리드 본딩으로 기술 전환\n\n파티클과 워페이지 제어가 양산 경쟁력의 핵심 과제로 부각\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
-            "links": [
-              "https://www.inews24.com/view/1984212",
-              "https://t.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/27749"
-          },
-          {
-            "date": "2026-07-10",
             "time": "09:18",
             "text": "✅ '여의도 22배' 美 재생에너지 단지…한화큐셀이 짓는다\n\nhttps://news.bizwatch.co.kr/article/industry/2026/07/10/0002\n\n📌 미국 최대급 재생에너지 단지 참여\n한화큐셀이 애리조나주 ‘아틀라스 에너지 파크’ EPC 수행\n\n2028년까지 태양광 2.8GW, ESS 5.7GWh 구축 예정\n\n부지 규모 63.66㎢로 여의도 약 22배\n\n📌 개발·시공·매각까지 사업모델 확장\n단지 내 14개 프로젝트 EPC와 태양광 모듈 공급 모두 담당\n\n이 중 357MW 규모 태양광 발전소 2곳 자산 매각 완료\n\n단순 모듈 공급을 넘어 개발·EPC·자산 운용 역량 부각\n\n📌 미국 현지 공급망이 핵심 경쟁력\n조지아주 ‘솔라 허브’를 통해 태양광 모듈 공급망 확보\n\nESS 기자재도 현지 조달 추진\n\nITC와 DCBC 등 미국 세액공제 인센티브 활용 가능\n\n📌 AI 전력 수요 확대 수혜 기대\n북미에서 완료·추진 중인 프로젝트는 태양광 11GW, ESS 6GWh 이상\n\nAI 데이터센터 확산으로 전력 수요 증가\n\n태양광+ESS 통합 솔루션 확대가 중장기 성장 포인트\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
             "links": [
@@ -418,6 +408,16 @@
               "https://t.me/growthresearch"
             ],
             "post_url": "https://t.me/growthresearch/27770"
+          },
+          {
+            "date": "2026-07-10",
+            "time": "18:01",
+            "text": "✅ [탐방노트] 오픈엣지테크놀로지\n\n📍 하반기 수주 모멘텀 본격화\n연간 라이선스 수주 목표 2,000만달러 유지, 국내 1,000만달러 이상 기대\n\nK-온디바이스 AI 과제 8월 사업비 집행 예정, 하반기 라이선스 계약 확대 가능성\n\n방산 프로젝트 약 1개 분기 지연에도 지속, 국산 IP 적용 기회 확대 기대\n\n2026년 1분기 소니 계약에 이어 3분기 일본 대형 고객 추가 계약 가능성\n\n📍 LPDDR6 중심 성장 동력 강화\nLPDDR6 수주 파이프라인이 전체의 약 50%까지 확대, 관련 수요 10건 이상 확보\n\n삼성 4나노 LPDDR6 계약은 건당 40억원 이상, 2나노 개발 문의도 증가\n\nAI·엣지 서버 중심 LPDDR6 수요 확대, LPDDR5X 콤보와 PIM IP 병행 개발\n\n중국 AI 엣지 서버와 일본 TSMC 공정 프로젝트가 주요 해외 성장축\n\n📍 실적 구조 및 핵심 체크포인트\n라이선스 대금은 계약금·DB 전달 시 대부분 회수, 매출은 수주 후 1~2분기 후행\n\n유지보수 매출은 라이선스의 10~15%, 양산 확대 시 로열티 매출 추가 가능\n\n글로벌 경쟁사 대비 PPA 경쟁력을 강조하나 양산 레퍼런스 부족이 최대 진입장벽\n\n연구개발 인력 부족으로 동시 프로젝트 수행 제약, 수주 확대 대비 인력 확보 필요\n\n✅ 탐방노트 보러가기\n[네이버프리미엄콘텐츠]\nhttps://contents.premium.naver.com/growthresearch/growth/contents/260710174316889wq\n\n[홈페이지]\nhttp://www.growthresearch.co.kr/membership/1430/1100",
+            "links": [
+              "https://contents.premium.naver.com/growthresearch/growth/contents/260710174316889wq",
+              "http://www.growthresearch.co.kr/membership/1430/1100"
+            ],
+            "post_url": "https://t.me/growthresearch/27771"
           }
         ]
       },
@@ -428,22 +428,6 @@
         "category": "매크로/크립토",
         "channel_url": "https://t.me/SpartanResearch",
         "posts": [
-          {
-            "date": "2026-07-09",
-            "time": "19:26",
-            "text": "✨ 현재 코스피 상황\n\n1. 개미들 죄다 레버로 몰려감\n\n2. 덕분에 본주는 빈집됨\n\n3. 호가창에서 받아주는 개미 없으니까 외인이 프로그램으로 호가창 밀어버림\n\n4. 개미 깜짝 놀라서 레버 매도\n\n5. 선물이 현물을 자극하는 웩더독 현상 극대화\n\n6. 다시 외인이 현물 사는 척함\n\n7. 개미들은 옳다구나 손해 메꾸려고 본주 팔고 레버삼\n\n8. 현물 호가창 허벌이라 조금만 올렸을뿐인데 개미들이 레버로 장작 쌓아줌\n\n9. 다시 밑으로 외인들이 밀어버림.\n\n10. 레버 전에는 외인이 아무리 팔아도 개미가 다 소화해서 외인도 주가를 함부로 못 끌어내렸음. 이젠 외인 입장에선 삼전 하닉으로 코스피 맘대로 컨트롤 가능한 역대급 개꿀장임.\n\n\n#코스피  #외인컨트롤",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/4158"
-          },
-          {
-            "date": "2026-07-09",
-            "time": "19:49",
-            "text": "블랙록의 국제 주식 투자 부문 최고투자책임자인 헬렌 주얼은 인공지능(AI) 분야 투자에 대해 논의하며 \"향후 몇 년 동안 AI 분야에 투자될 자본 규모를 고려할 때 AI의 미래는 매우 명확하다\"고 말했습니다. 블룸버그 TV에 출연한 주얼은 모든 자본 지출 주기에는 과잉 지출이 발생하는 시점이 있지만, 아직은 그렇지 않다고 덧붙였습니다. \"우리는 지금 그 시점에 도달하지 않았다고 생각합니다.\"\n\nhttps://www.marketscreener.com/news/ai-capex-cycle-hasn-t-reached-overspend-yet-blackrock-ce7f5ed9d181f524",
-            "links": [
-              "https://www.marketscreener.com/news/ai-capex-cycle-hasn-t-reached-overspend-yet-blackrock-ce7f5ed9d181f524"
-            ],
-            "post_url": "https://t.me/SpartanResearch/4159"
-          },
           {
             "date": "2026-07-09",
             "time": "20:59",
@@ -566,6 +550,22 @@
             "text": "미국 프런티어 vs 중국 LLM 비용 비교\n\n어제 공개된 GPT-5.6 Luna는 GLM-5.2와 유사한 지능 수준이나, 비용은 $0.21로 43% 저렴 ($0.21 vs $0.37) \n→ 동일 성능 구간에서 비용 효율성 개선 확인.\n\nTask당 비용(USD):\n\nClaude Fable 5 (with fallback): $2.72\nClaude Opus 4.8 (max): $1.80\nGLM-5.2 (max): $0.37\nGPT-5.6 Luna (max): $0.21\nMiniMax-M3: $0.12\nDeepSeek V4 Pro (max): $0.04\n- 출처: Artificial Analysis(2026.07.10)",
             "links": [],
             "post_url": "https://t.me/SpartanResearch/4176"
+          },
+          {
+            "date": "2026-07-10",
+            "time": "18:02",
+            "text": "받)\n\n주식투자 하시는 분들 모두 수고많으십니다.\n\n3.3 매도사이드카\n3.4 서킷브레이커\n3.5 매수사이드카\n3.9 서킷브레이커\n3.10 매수사이드카\n3.18 매수사이드카\n3.23 매도사이드카\n3.24 매수사이드카\n4.1 매수사이드카\n4.2 매도사이드카\n4.8 매수사이드카\n5.6 매수사이드카\n5.11 매수사이드카\n5.15 매도사이드카\n5.18 매도사이드카\n5.21 매수사이드카\n6.5 매도사이드카\n6.8 서킷브레이커\n6.9 매수사이드카\n6.10 매도사이드카\n6.12 매수사이드카\n6.15 매수사이드카\n6.23 서킷브레이커\n6.25 매수사이드카\n6.26 서킷브레이커\n7.2 매도사이드카\n7.3 매수사이드카\n7.7 서킷브레이커\n7.8 매도사이드카\n7.10 매수사이드카",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/4178"
+          },
+          {
+            "date": "2026-07-10",
+            "time": "19:47",
+            "text": "스페이스X, 스타링크 위성 10배 증가 신청\n\n-현재 10,800기에서 10만기로\n\n-FCC 검토 후 증편 규모 확정\n\n-스타링크 가입자수 증가 속도 빨라질 것\n\n-상아프론테크 수혜: 스타링크 위성 수신기 보호 필름 공급업체\n\nhttps://finance.yahoo.com/technology/ai/articles/elon-musk-says-gonna-bigger-153103495.html",
+            "links": [
+              "https://finance.yahoo.com/technology/ai/articles/elon-musk-says-gonna-bigger-153103495.html"
+            ],
+            "post_url": "https://t.me/SpartanResearch/4179"
           }
         ]
       },
@@ -576,24 +576,6 @@
         "category": "매매 신호/트레이딩",
         "channel_url": "https://t.me/d_ticker",
         "posts": [
-          {
-            "date": "2026-07-09",
-            "time": "13:02",
-            "text": "영국, 원전 1기 20년 연장해 2055년까지 가동\n\n프랑스 전력 공사(EDF)가 영국 서퍽 지역에 운영하고 있는 ‘시즈웰 B 원자력 발전소(1.2GW)’의 수명을 20년 연장해 2055년까지 가동하는 계약을 영국 정부와 체결. 1995년에 가동 시작한 시즈웰 B 발전소는 영국 전체 전력 수요의 약 3%를 공급하고 있음\n\nhttps://www.reuters.com/business/energy/edf-uk-government-agree-extend-life-sizewell-b-nuclear-plant-by-20-years-2026-07-08/",
-            "links": [
-              "https://www.reuters.com/business/energy/edf-uk-government-agree-extend-life-sizewell-b-nuclear-plant-by-20-years-2026-07-08/"
-            ],
-            "post_url": "https://t.me/d_ticker/3431"
-          },
-          {
-            "date": "2026-07-09",
-            "time": "14:01",
-            "text": "삼성전기 7월 30일(목) 실적 발표 예정\n\nhttp://dart.fss.or.kr/api/link.jsp?rcpNo=20260709800238",
-            "links": [
-              "http://dart.fss.or.kr/api/link.jsp?rcpNo=20260709800238"
-            ],
-            "post_url": "https://t.me/d_ticker/3432"
-          },
           {
             "date": "2026-07-09",
             "time": "15:45",
@@ -737,6 +719,24 @@
               "https://www.youtube.com/live/dpR-UMQ7Adk?si=E3BFGZAn9KnvHNKE"
             ],
             "post_url": "https://t.me/d_ticker/3450"
+          },
+          {
+            "date": "2026-07-10",
+            "time": "18:13",
+            "text": "삼성전자-삼성D, 유리 인터포저 동맹 추진\n\n10일 반도체 업계에 따르면 삼성디스플레이는 최근 유리 인터포저 연구개발팀을 꾸리고 초기 연구에 착수한 것으로 전해졌다. 삼성디스플레이는 유리 위 포토 공정을 거쳐 재배선층(RDL·Redistribution Layer)을 형성하는 패터닝에 연구를 집중할 방침이다. \n\n삼성디스플레이 핵심 과제는 '세와레(SeWaRe)' 현상 극복이다. 세와레는 RDL 공정 내 아지노모토 빌드업 필름(ABF) 절연 소재를 유리 위 적층 후 패널을 개별 제품으로 절단하는 과정에서 발생하는 층간 분리 현상이다. \n\nhttps://www.thelec.kr/news/articleView.html?idxno=59394",
+            "links": [
+              "https://www.thelec.kr/news/articleView.html?idxno=59394"
+            ],
+            "post_url": "https://t.me/d_ticker/3451"
+          },
+          {
+            "date": "2026-07-10",
+            "time": "18:21",
+            "text": "대만 메모리 난야, 2Q26 잠정 실적 2408.TW\n\n2Q FY26 Results (TWD)\n= 매출 82.549B (est. 73.700B)\n= GPM 79.5% (est. 76.4%)\n= OPM 73.7% (est. 71.8%)\n= EPS 14.66 (est. 12.95)",
+            "links": [
+              "http://2408.TW/"
+            ],
+            "post_url": "https://t.me/d_ticker/3452"
           }
         ]
       },
@@ -755,43 +755,6 @@
         "category": "국내 시장/종목 분석",
         "channel_url": "https://t.me/Yeouido_Lab",
         "posts": [
-          {
-            "date": "2026-07-10",
-            "time": "14:36",
-            "text": "\"한국 바이오, 혁신성은 충분\"…이제는 글로벌 공동개발 역량 입증할 때\nhttps://www.yakup.com/news/index.html?mode=view&cat=12&nid=329633",
-            "links": [
-              "https://www.yakup.com/news/index.html?mode=view&amp;cat=12&amp;nid=329633"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/36048"
-          },
-          {
-            "date": "2026-07-10",
-            "time": "14:54",
-            "text": "삼성바이오에피스, 신약개발 방식 넓힌다 … 후보물질 확보 다각화\nhttps://biz.newdaily.co.kr/site/data/html/2026/07/10/2026071000078.html\n\n최근 삼성바이오에피스는 자체 연구개발에 공동개발과 외부기술 도입, 전략적 투자 등을 더하면서 신약후보물질 확보경로를 넓혀왔다.\n\nADC 분야에서는 자체 연구역량과 외부기술을 결합하는 방식을 택했다. 국내 인투셀과 공동개발하는 'Nectin-4 ADC'는 2025년 12월 미국 식품의약국(FDA)으로부터 임상 1상 시험계획을 승인받았다. 중국 프론트라인 바이오파마와 공동개발하는 'EGFR-HER3 이중항체 이중독소 ADC'는 전임상 단계에 있다.\n\n삼성바이오에피스는 2023년 ADC 신약개발에 착수한 이후 두 후보물질을 파이프라인으로 확보했다. 자체 연구개발에만 의존하지 않고 외부 기업이 보유한 기술을 활용해 후보물질을 확보하는 방식으로 신약개발 영역을 넓히고 있는 것이다.\n\n후보물질을 발굴하기 위한 외부 접점도 확대하고 있다. 3월 지투지바이오와 장기지속형 의약품 개발을 위한 기술협력과 전략적 투자를 단행했다. 4월에는 중국 바이오 연구개발 혁신 플랫폼 아틀라틀 이노베이션센터와 업무협약을 체결하고 현지 바이오벤처와 연구개발 협력에 나섰다.\n\n유망 바이오텍의 초기 성장을 지원하면서 다양한 모달리티 기반의 차세대 바이오기술을 조기에 확보하기 위한 오픈이노베이션 전략이다. 자체개발과 공동개발, 외부기술 도입에 이어 초기 기술을 탐색하는 단계까지 신약 파이프라인 확보 범위를 확대한 셈이다.",
-            "links": [
-              "https://biz.newdaily.co.kr/site/data/html/2026/07/10/2026071000078.html"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/36049"
-          },
-          {
-            "date": "2026-07-10",
-            "time": "15:03",
-            "text": "차세대 비만약 '유망기업'에 디앤디파마텍…경구 플랫폼 주목\nhttps://www.hitnews.co.kr/news/articleView.html?idxno=77512\n\n클래리베이트는 8일 발간한 'Companies to Watch 2026: Next-generation obesity therapies' 보고서에서 차세대 비만치료제 분야를 이끌 유망 기업 7곳을 선정했다.\n\n클래리베이트는 신약 개발과 임상, 시장 분석 정보를 제공하는 글로벌 정보분석기관으로 제약·바이오 업계에서는 신약 파이프라인과 시장 전망 등을 분석하는 대표적인 기관이다.\n\n선정 기업은 디앤디파마텍을 비롯해 △아파이아파마 △아레코어 테라퓨틱스 △바이오에이지랩스 △아이바이오 △미토Rx 테라퓨틱스 △레살리스 테라퓨틱스다. 선정은 의료적 미충족 수요 해결 가능성과 임상 개발 단계, 기술 검증 수준, 산학·산업 협력, 재무 기반, 지식재산(IP) 경쟁력 등을 종합 평가해 이뤄졌다.\n\n클래리베이트는 비만치료제 개발 경쟁이 단순한 체중 감량 효과를 넘어 복약 편의성과 치료 지속성, 근육 보존, 신규 기전 확보를 중심으로 재편되고 있다고 진단했다. 이 같은 변화 속에서 디앤디파마텍은 경구 플랫폼과 차세대 파이프라인을 통해 새로운 경쟁 축에 부합하는 기업으로 평가받았다.",
-            "links": [
-              "https://www.hitnews.co.kr/news/articleView.html?idxno=77512"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/36050"
-          },
-          {
-            "date": "2026-07-10",
-            "time": "15:10",
-            "text": "이번 AI는 언제 정점에 도달하는가? 지난 20년 동안 6가지 고성장 산업 사례: 주가 정점은 펀더멘털 정점을 약 1-1.5년 선행. 종종 'M자형 고점' 형성(국신증권)\n\n• 역사상 6가지 고성장 산업 데이터에 따르면 주가 정점은 일반적으로 펀더멘털 전환점 1~1.5년 선행. '실적 확인'과 '정점 도달'은 다른 것\n\n• 고성장 섹터는 일반적으로 M 정점 형태. 호재 둔화는 바로 조기 경보 신호\n\n• 이번 AI 컴퓨팅 파워 시장의 운명은 기술 대기업 Capex의 향방에 달려 있음. 현재 총량 확장세는 멈추지 않았지만, 마이크로소프트와 메타의 자본지출 2차 가이드 먼저 마이너스로 전환. 전환점 신호는 무시할 수 없음\n\n本轮AI何时见顶？过去二十年六个高景气行业案例：股价顶点领先基本面顶点约1-1.5 年，高景气行业往往呈现“M顶”\n国信证券认为，历史上六大高景气行业数据揭示，股价顶部通常领先基本面拐点1至1.5年——\"业绩还在兑现\"并不等于\"行情还没见顶\"。高景气板块普遍呈现M顶形态，利好钝化正是早期预警信号。本轮AI算力行情的命运，关键取决于科技巨头Capex走向：当前总量扩张势头未止，但微软、Meta的资本开支二阶导已率先转负，拐点信号不容忽视。\n https://wallstreetcn.com/articles/3776630#from=android",
-            "links": [
-              "https://wallstreetcn.com/articles/3776630#from=android",
-              "https://wallstreetcn.com/articles/3776630"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/36051"
-          },
           {
             "date": "2026-07-10",
             "time": "15:10",
@@ -919,6 +882,40 @@
               "https://news.einfomax.co.kr/news/articleView.html?idxno=4424349"
             ],
             "post_url": "https://t.me/Yeouido_Lab/36070"
+          },
+          {
+            "date": "2026-07-10",
+            "time": "17:31",
+            "text": "2026.07.10 17:30:47\n기업명: 지아이이노베이션(시가총액: 5,290억) A358570\n보고서명: 투자판단관련주요경영사항(임상시험계획변경승인)              (GI108 제1/2a상 임상시험계획 한국식품의약품안전처 변경승인)\n\n* 임상명칭 : 진행성 또는 전이성 고형암 시험대상자를 대상으로 anti-CD73-IgG4 Fc-IL-2v 이중특이적 융합 단백질인 GI-108 단일 요법의 안전성, 내약성, 약동학 및 항종양 효과를 평가하기 위한 제1/2a상, 공개, 다기관, 용량 증량 및 확장 임상시험\n* 대상질환 : 진행성 또는 전이성 고형암\n* 임상단계 : 임상시험 제1/2a상\n\n* 승인기관 : 대한민국 식품의약품안전처 (MFDS)\n* 임상국가 : 대한민국\n\n* 시험목적 : 일차 목적: \n(1) 용량 증량 단계: GI-108 단독요법의 최대내약용량(MTD) 및/또는 권장 제2상 용량(RP2D)을 정의하고 안전성 및 내약성을 평가한다. \n(2) 용량 확장 단계: GI-108 단독 요법의 항종양 활성을 평가한다.\n* 임상방법 : GI-108 단일 요법의 안전성, 내약성, 약동학 및 항종양 효과를 평가하기 위한 제1/2a상, 공개, 다기관 임상시험으로 용량 증량 단계 및 용량 확장 단계 2개 파트로 진행할 예정임\n\n* 기타투자판단 관련사항\n \n- 상기의 사실발생(확인)일은 한국 식품의약품안전처(MFDS)로부터 변경승인을 득한 날입니다. \n- GI-108은 지아이이노베이션과 임상전략, 사업개발, 허가전략을 전문적으로 지원하는 메디라마사와 공동개발하는 파이프라인입니다. \n- 본 공시 이후 당사의 보도자료 및 IR 자료로 활용할 예정입니다.\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710900892\n회사정보: https://finance.naver.com/item/main.nhn?code=358570",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710900892",
+              "https://finance.naver.com/item/main.nhn?code=358570"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/36071"
+          },
+          {
+            "date": "2026-07-10",
+            "time": "18:20",
+            "text": "http://www.munhwa.com/article/11601855",
+            "links": [
+              "http://www.munhwa.com/article/11601855",
+              "https://www.munhwa.com/article/11601855"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/36072"
+          },
+          {
+            "date": "2026-07-10",
+            "time": "19:54",
+            "text": "ㅋㅋㅋㅋㅋㅋ\n\n받)\n\n주식투자 하시는 분들 모두 수고많으십니다.\n\n3.3 매도사이드카\n3.4 서킷브레이커\n3.5 매수사이드카\n3.9 서킷브레이커\n3.10 매수사이드카\n3.18 매수사이드카\n3.23 매도사이드카\n3.24 매수사이드카\n4.1 매수사이드카\n4.2 매도사이드카\n4.8 매수사이드카\n5.6 매수사이드카\n5.11 매수사이드카\n5.15 매도사이드카\n5.18 매도사이드카\n5.21 매수사이드카\n6.5 매도사이드카\n6.8 서킷브레이커\n6.9 매수사이드카\n6.10 매도사이드카\n6.12 매수사이드카\n6.15 매수사이드카\n6.23 서킷브레이커\n6.25 매수사이드카\n6.26 서킷브레이커\n7.2 매도사이드카\n7.3 매수사이드카\n7.7 서킷브레이커\n7.8 매도사이드카\n7.10 매수사이드카",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/36073"
+          },
+          {
+            "date": "2026-07-10",
+            "time": "20:46",
+            "text": "ㅋㅋㅋㅋㅋㅋ  받)  주식투자 하시는 분들 모두 수고많으십니다.  3.3 매도사이드카 3.4 서킷브레이커 3.5 매수사이드카 3.9 서킷브레이커 3.10 매수사이드카 3.18 매수사이드카 3.23 매도사이드카 3.24 매수사이드카 4.1 매수사이드카 4.2 매도사이드카 4.8 매수사이드카 5.6 매수사이드카 5.11 매수사이드카 5.15 매도사이드카 5.18 매도사이드카 5.21 매수사이드카 6.5 매도사이드카 6.8 서킷브레이커 6.9 매수사이드카 6.10…",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/36074"
           }
         ]
       },
@@ -2814,15 +2811,6 @@
         "posts": [
           {
             "date": "2026-07-10",
-            "time": "14:26",
-            "text": "[2배 ETF 문턱 높일수도..]\n\nhttps://naver.me/FCZhwOrL",
-            "links": [
-              "https://blog.naver.com/luy1978/224342495321"
-            ],
-            "post_url": "https://blog.naver.com/luy1978/224342495321"
-          },
-          {
-            "date": "2026-07-10",
             "time": "11:52",
             "text": "[EZ Kipost 영상.]\n\n반도체 공급 대비 수요를 판단하기가 어려운데.. 좋은 자료인듯. 주가는 모르겠고, 다 각자 뷰대로, 생각대로, 포지션 대로, 아는 만큼 판단하겠지 뭐. https://www.youtube.com/watch?v=zO3G4q2tp68&t=144s",
             "links": [
@@ -3216,6 +3204,15 @@
               "https://blog.naver.com/luy1978/224303547233"
             ],
             "post_url": "https://blog.naver.com/luy1978/224303547233"
+          },
+          {
+            "date": "2026-06-01",
+            "time": "21:26",
+            "text": "[FOMO..]\n\n경험이 참 중요하다는걸 새삼 느낀다. 주도주에서 소외되어 느끼는 FOMO 를 이겨내는 방법은 딱 세 가지임. 1.과감하게 올라타기. -그냥 올라 타라는게 아님. 왜 올라가는지 충분히 리서치 해야함. 그 산업을 지금이라도 파야 마지막으로 주어질 수 있는 기회를 놓치지 않음. 2.확신있는 다른 종목으로 수익 내기 -자기가 잘하는 것(보유 종목)에 확신을 갖던지. 보유종목에 대한 확신이 없으니 포모가 올수밖에 3.아예 신경쓰지 않기. 그냥 차트만 보고 많이 올랐네. 이제는 더 오리지 않겠지. 왜 오르는지 모르겠네. 그냥 아무 생각없이 왜 나는 소외되는 것인지 모르고, 가만 있으면 죽도 밥도 안됨. 비싸다, 조심해야 한다. 거품이다. 이제 곧.......",
+            "links": [
+              "https://blog.naver.com/luy1978/224303124296"
+            ],
+            "post_url": "https://blog.naver.com/luy1978/224303124296"
           }
         ]
       },
@@ -3296,6 +3293,24 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260709000697"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260709000697"
+          },
+          {
+            "date": "2026-07-10",
+            "time": "00:00",
+            "text": "[좋은사람들] 주요사항보고서(감자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000712"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000712"
+          },
+          {
+            "date": "2026-07-10",
+            "time": "00:00",
+            "text": "[더코디] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000698"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000698"
           },
           {
             "date": "2026-07-10",
@@ -3557,24 +3572,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260709000166"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260709000166"
-          },
-          {
-            "date": "2026-07-09",
-            "time": "00:00",
-            "text": "[한울앤제주] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260709000551"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260709000551"
-          },
-          {
-            "date": "2026-07-09",
-            "time": "00:00",
-            "text": "[태웅로직스] 주요사항보고서(자기주식취득결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260709000650"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260709000650"
           },
           {
             "date": "2026-07-08",
