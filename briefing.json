@@ -1,6 +1,6 @@
 {
   "2026-07-10": {
-    "fetched_at": "2026-07-10T20:55:33+09:00",
+    "fetched_at": "2026-07-11T00:33:47+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -578,56 +578,6 @@
         "posts": [
           {
             "date": "2026-07-09",
-            "time": "15:45",
-            "text": "AI 밸류체인 수급 불균형 점검 - GS\n\n- 메모리 '매우 타이트' 2Q26~2Q27 (4분기)\n- 파운드리 '매우 타이트' 1Q26~4Q27 (8분기)\n- MLCC '매우 타이트' 2Q26~4Q27 (7분기)\n- ABF 기판 '매우 타이트' 2Q26~4Q27 (7분기)\n- CCL '매우 타이트' 1Q26~4Q27 (8분기)\n- T-글래스 '매우 타이트' 1Q26~2Q26 (2분기)\n- InP 기판 '매우 타이트' 1Q26~4Q26 (4분기)\n\n매우 타이트 > 타이트 > 밸런스드 > 완화 > 과잉공급 순",
-            "links": [],
-            "post_url": "https://t.me/d_ticker/3433"
-          },
-          {
-            "date": "2026-07-09",
-            "time": "18:02",
-            "text": "[단독] 삼성전자, PC용 AI칩 출사표…엔비디아·퀄컴과 '맞짱'\n\n\n돈이 되나..??\n\n\nhttps://www.hankyung.com/article/202607096332i",
-            "links": [
-              "https://www.hankyung.com/article/202607096332i"
-            ],
-            "post_url": "https://t.me/d_ticker/3434"
-          },
-          {
-            "date": "2026-07-09",
-            "time": "23:00",
-            "text": "마이크론, 실리콘 웨이퍼 기업에 5억 달러 투자 $MU\n\n> ‘글로벌웨이퍼스’에 $0.5B 전략적 금융 지원\n> 이를 통해 300㎜ 실리콘 웨이퍼 공급망 강화\n> 글로벌웨이퍼스와 10년 장기 공급 계약 체결\n> 향후 미 반도체 공급망 위해 최대 $3.0B 투자 계획\n\nhttps://investors.micron.com/news-releases/news-release-details/micron-announces-3-billion-strategic-investment-strengthen-us",
-            "links": [
-              "https://investors.micron.com/news-releases/news-release-details/micron-announces-3-billion-strategic-investment-strengthen-us"
-            ],
-            "post_url": "https://t.me/d_ticker/3435"
-          },
-          {
-            "date": "2026-07-09",
-            "time": "23:07",
-            "text": "메타, 커스텀 AI 칩 생산 돌입 $META\n\n> 메타, AI 컴퓨팅 용량 7GW→14GW 목표\n> 이를 위해 9월부터 자체 AI 칩 생산 시작\n> 이 칩은 ‘MTIA 4세대’로 AI 가속기\n> 칩 테스트는 6주만 완료될 정도로 빠름\n> 브로드컴과 칩 설계 협력\n> TSMC가 위탁 생산 담당\n> 메모리 공급사는 삼성전자 및 샌디스크\n> 광섬유 공급업체는 스미토모일렉트릭\n\nhttps://www.reuters.com/world/asia-pacific/meta-put-ai-chip-into-production-september-it-looks-double-computing-capacity-2026-07-09/",
-            "links": [
-              "https://www.reuters.com/world/asia-pacific/meta-put-ai-chip-into-production-september-it-looks-double-computing-capacity-2026-07-09/"
-            ],
-            "post_url": "https://t.me/d_ticker/3436"
-          },
-          {
-            "date": "2026-07-09",
-            "time": "23:18",
-            "text": "전자기기(Set) 업계에 숨통이 트이는 소식\n\n인도, 2029년까지 스마트폰 및 전자기기 부품 수입 관세 폐지\n\n무선충전모듈, 디스플레이, 리튬이온배터리 등이 포함\n\n인도의 스마트폰 생산량은 지난 10년 간 28배 증가하며, 대표적인 스마트폰 제조국으로 자리잡음",
-            "links": [
-              "https://www.reuters.com/business/media-telecom/india-removes-import-duty-some-electronics-smartphone-parts-2026-07-09/"
-            ],
-            "post_url": "https://t.me/d_ticker/3437"
-          },
-          {
-            "date": "2026-07-09",
-            "time": "23:33",
-            "text": "세레브라스, AI 서버 랙 캐파 7배 확대 $CBRS\n\n> 세레브라스는 웨이퍼 통째로 칩 설계\n> 이 웨이퍼를 사용하는 AI 랙이 ‘CS-3’\n> CS-3 랙 위탁 제조는 플렉스(FLEX)\n> 플렉스는 미국서 CS-3 캐파 7배 증설\n> 세레브라스 칩 수요 급증 증명한 셈",
-            "links": [],
-            "post_url": "https://t.me/d_ticker/3438"
-          },
-          {
-            "date": "2026-07-09",
             "time": "23:35",
             "text": "세레브라스, AI 서버 랙 캐파 7배 확대 $CBRS  > 세레브라스는 웨이퍼 통째로 칩 설계 > 이 웨이퍼를 사용하는 AI 랙이 ‘CS-3’ > CS-3 랙 위탁 제조는 플렉스(FLEX) > 플렉스는 미국서 CS-3 캐파 7배 증설 > 세레브라스 칩 수요 급증 증명한 셈",
             "links": [],
@@ -737,6 +687,48 @@
               "http://2408.TW/"
             ],
             "post_url": "https://t.me/d_ticker/3452"
+          },
+          {
+            "date": "2026-07-10",
+            "time": "22:49",
+            "text": "SK하이닉스 美 상장이 ‘코리안 디스카운트’ 해결할까?\n\n“마이크론과 SK하이닉스의 PER 차이 접근성과 인지도 때문이었다. SK하이닉스가 AI 메모리 분야에서 더 강한 입지를 갖고 있음에도 미국 펀드들이 접근하기에 제한적인 종목이어서 수년간 기업 가치가 낮게 유지됐다. SK하이닉스 주가가 최근 올랐다고 해서 마이크론과 할인율이 줄어든 것은 아니다” - eToro, 시장 분석가 자비에르 윙\n\nhttps://www.cnbc.com/2026/07/10/sk-hynix-debuts-on-nasdaq-will-that-bridge-its-korea-discount-.html",
+            "links": [
+              "https://www.cnbc.com/2026/07/10/sk-hynix-debuts-on-nasdaq-will-that-bridge-its-korea-discount-.html"
+            ],
+            "post_url": "https://t.me/d_ticker/3454"
+          },
+          {
+            "date": "2026-07-10",
+            "time": "22:49",
+            "text": "SK하이닉스 美 상장이 ‘코리안 디스카운트’ 해결할까?  “마이크론과 SK하이닉스의 PER 차이 접근성과 인지도 때문이었다. SK하이닉스가 AI 메모리 분야에서 더 강한 입지를 갖고 있음에도 미국 펀드들이 접근하기에 제한적인 종목이어서 수년간 기업 가치가 낮게 유지됐다. SK하이닉스 주가가 최근 올랐다고 해서 마이크론과 할인율이 줄어든 것은 아니다” - eToro, 시장 분석가 자비에르 윙  https://www.cnbc.com/2026/07/10/sk…",
+            "links": [],
+            "post_url": "https://t.me/d_ticker/3455"
+          },
+          {
+            "date": "2026-07-10",
+            "time": "22:58",
+            "text": "SK하이닉스의 주식이 금요일 나스닥 상장을 앞두고 있어, 여러 월가 트레이딩 데스크에서는 신규 주식 유입이 주가 변동의 촉매제가 될 수 있다고 분석했습니다. 모건 스탠리의 트레이더들은 화요일, SK하이닉스의 신규 주식 공급이 ”추가 하락 가능성을 시사한다”고 언급했으며, UBS 역시 비슷한 의견을 내놓았습니다. \n\nhttps://www.cnbc.com/2026/07/10/key-chip-stock-index-flashing-ominous-signals-says-btig.html",
+            "links": [
+              "https://www.cnbc.com/2026/07/10/key-chip-stock-index-flashing-ominous-signals-says-btig.html",
+              "https://ift.tt/Z8U9t3X"
+            ],
+            "post_url": "https://t.me/d_ticker/3456"
+          },
+          {
+            "date": "2026-07-10",
+            "time": "23:49",
+            "text": "[정리] 최태원 CNBC 인터뷰 $SKHY\n\n> 인디애나주 첨단패키징 40억 달러 넘어 미국과 미국 외 전 세계 대상으로 팹 부지를 실사하고 있고, 만약 미국에서 적합한 장소를 발견한다면 그곳에 투자할 것\n\n> 미국에서 최소 수백억 달러($ million) 투자 예정. AI 데이터센터 분야 기업이나 스타트업, 또는 파트너사와 합작투자(JV)까지 진행할 것\n\n> 장기계약의 가격 조건은 고객마다 다르다. 어떤 고객은 가격을 고정해두길 원하고, 또 다른 고객은 가격 상하한선을 자유롭게 책정하길 원한다. 우리는 LTA에 대해 일률적인 규칙을 적용하지 않으려고 한다.\n\n> (삼성전자 HBM 추격과 빅테크의 메모리 효율화 기술 개발에 대해) HBM 시장 위축 조짐은 없다. 모든 파트너사들이 더 많은 물량을 원하고 있다. HBM과 레거시 D램도 주문량을 2배 늘려달라고 요청한다.",
+            "links": [
+              "https://t.me/d_ticker"
+            ],
+            "post_url": "https://t.me/d_ticker/3457"
+          },
+          {
+            "date": "2026-07-10",
+            "time": "23:53",
+            "text": "[정리] 최태원 CNBC 인터뷰 $SKHY  > 인디애나주 첨단패키징 40억 달러 넘어 미국과 미국 외 전 세계 대상으로 팹 부지를 실사하고 있고, 만약 미국에서 적합한 장소를 발견한다면 그곳에 투자할 것  > 미국에서 최소 수백억 달러($ million) 투자 예정. AI 데이터센터 분야 기업이나 스타트업, 또는 파트너사와 합작투자(JV)까지 진행할 것  > 장기계약의 가격 조건은 고객마다 다르다. 어떤 고객은 가격을 고정해두길 원하고, 또 다른 고객은…",
+            "links": [],
+            "post_url": "https://t.me/d_ticker/3458"
           }
         ]
       },
@@ -755,125 +747,6 @@
         "category": "국내 시장/종목 분석",
         "channel_url": "https://t.me/Yeouido_Lab",
         "posts": [
-          {
-            "date": "2026-07-10",
-            "time": "15:10",
-            "text": "알지노믹스, 이성욱 대표가 1000주 장내매수…\"책임경영 실천\"\nhttps://www.mt.co.kr/thebio/2026/07/10/2026071014534243748",
-            "links": [
-              "https://www.mt.co.kr/thebio/2026/07/10/2026071014534243748"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/36052"
-          },
-          {
-            "date": "2026-07-10",
-            "time": "15:54",
-            "text": "📌MASH 임상이 어렵고, 그만큼 주목해야 하는 이유 / 현재까지 승인 약물은 Rezdiffra와 Wegovy\n\n- 대사 기능 장애 관련 지방간염(MASH) 환자 중 '확진된 간경변증'을 앓고 있는 특정 환자 집단을 선별할 때, 각 조건을 적용함에 따라 대상자 수가 얼마나 급격하게 줄어드는지를 보여주는 데이터\n\n- 맨 아래 줄의 '초기 환자 수 대비 최종 비율(Percent of initial count)'을 보면 6개 그룹 모두 0.28% ~ 2.95% 수준\n\n- MASH와 간경변증을 동시에 앓고 있으면서 다른 교란 요인(알코올, 기타 간 질환, 특정 약물 복용 등)이 없는 순수 환자군을 찾기가 매우 어려운 수준(대략 100명 중 1명 꼴)으로 어렵다는 것을 증명\n\n- 그나마 '제2형 당뇨병 및 지방간' 그룹이 최종 비율 2.95%로 가장 높음.",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/36054"
-          },
-          {
-            "date": "2026-07-10",
-            "time": "15:55",
-            "text": "송선생님 그러면 이불 개면서 스마트폰 보면 어떻게 되는거에요?🫢",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/36055"
-          },
-          {
-            "date": "2026-07-10",
-            "time": "15:56",
-            "text": "DRAM으로 대박! 난야테크(Nanya Tech), 매출총이익률 80% 육박하며 2분기 EPS 14.66 대만달러 달성\n\n대만의 메모리 반도체 기업 난야테크놀로지가 DRAM 가격 급등에 힘입어 2026년 2분기에 엄청난 어닝 서프라이즈를 기록했습니다. 판매량 자체는 전분기와 비슷했으나, DRAM 판매 단가가 60% 이상 폭등하면서 매출과 이익률 모두 크게 뛰었습니다. 특히 AI 및 서버 관련 매출 비중이 크게 늘어나며 향후 고부가가치 사업 확장을 예고했습니다.\n\n\n2026년 2분기 실적 대폭발\n난야테크는 10일 자제결산 재무제표를 발표했습니다. DRAM 가격의 대폭 상승에 수혜를 입어 2분기 단일 매출액은 825억 4,900만 대만달러(전분기 대비 68.2% 증가)를 기록했습니다.\n\nDRAM 판매량은 지난 분기와 비슷한 수준을 유지했으나, 평균 판매 단가(ASP)가 전분기 대비 60% 이상 상승한 것이 주효했습니다.\n\n\n압도적인 수익성\n\n매출총이익률(마진율)은 무려 79.5%까지 치솟았습니다.\n영업이익은 608억 2,600만 대만달러, 세후 순이익은 501억 9,200만 대만달러를 기록했으며, 순이익률은 60.8%에 달합니다.\n\n2분기 주당순이익(EPS)은 14.66 대만달러를 기록했습니다.\n\n\n상반기 누적 실적 및 향후 전망\n\n상반기 누적 세후 순이익은 762억 5,000만 대만달러, 누적 EPS는 23.38 대만달러, 주당 순자산은 93.49 대만달러입니다.\n\n난야테크 측은 \"상반기 AI 인프라 및 서버 제품의 매출 비중이 이미 20%를 넘어섰다\"고 밝히며, \"앞으로도 맞춤형 AI, WoW(Wafer-on-Wafer) 및 고부가가치 제품 시장을 지속적으로 개척해 나갈 것\"이라고 강조했습니다.\n\nhttps://www.ctee.com.tw/news/20260710700726-430502",
-            "links": [
-              "https://www.ctee.com.tw/news/20260710700726-430502"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/36056"
-          },
-          {
-            "date": "2026-07-10",
-            "time": "16:06",
-            "text": "2026.07.10 15:59:05\n기업명: 한진칼(시가총액: 8조 9,929억) A180640\n보고서명: 주식등의대량보유상황보고서(약식)\n\n대표보고 : 호반건설/대한민국\n보유목적 : 단순투자\n\n보고전 : 18.46%\n보고후 : 20.15%\n보고사유 : 장내매수로 인한 주식 취득 및 특별관계자 추가\n\n* (주)호반산업\n2026-07-06/장내매수(+)/보통주/ 20,925주/-\n2026-07-07/장내매수(+)/보통주/ 11,758주/-\n2026-07-08/장내매수(+)/보통주/ 17,970주/-\n2026-07-09/장내매수(+)/보통주/ 45,457주/-\n2026-07-10/장내매수(+)/보통주/ 1,100주/-\n\n* (주)호반호텔앤리조트\n2026-06-29/장내매수(+)/보통주/ 10,071주/-\n2026-06-30/장내매수(+)/보통주/ 29,661주/-\n2026-07-01/장내매수(+)/보통주/ 20,022주/-\n2026-07-02/장내매수(+)/보통주/ 30,348주/-\n2026-07-03/장내매수(+)/보통주/ 16,486주/-\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000462\n회사정보: https://finance.naver.com/item/main.nhn?code=180640",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000462",
-              "https://finance.naver.com/item/main.nhn?code=180640"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/36057"
-          },
-          {
-            "date": "2026-07-10",
-            "time": "16:11",
-            "text": "국뽕짤 ㅎ \n미국 뉴욕 맨하탄 JP 모건 빌딩. SK하이닉스 제공",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/36058"
-          },
-          {
-            "date": "2026-07-10",
-            "time": "16:14",
-            "text": "* SKHY US Equity: Good to Great\n\n오늘은 메리츠에서 지난해 11월 당위성을 주장했던, SK하이닉스 ADR 상장일입니다.\n\n한국시장 및 메모리 산업 특유의 디스카운트 요인이 ADR을 통해 상당부분 해소되기 시작할 것으로 예상합니다. 그 온기는 점차 확산됩니다.\n\n관련해 서울경제와 인터뷰한 내용을 공유 드립니다.\n\nhttps://www.sedaily.com/article/20065449",
-            "links": [
-              "https://www.sedaily.com/article/20065449"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/36059"
-          },
-          {
-            "date": "2026-07-10",
-            "time": "16:15",
-            "text": "안녕하세요. 당사의 파트너제품 Keytruda Qlex의 지난 달(6월) Bloomberg WAC 데이터 아래와 같이 공유드립니다.\n \n▶️ 6월 WAC: $168.5M (약 2,528억원, 직전 월 대비 약 34% 증가) \n \n▶️ 키트루다 프랜차이즈(IV+SC) 중 점유율 약 9% (직전 월 7% 대비 2%p 증가) \n \n▶️ 올해 1~6월 누적 매출액은 $510M(약 7,650억원) 이상으로 추정됨 (8월 4일 MSD Q2 실적발표일에 실제 매출 확인 가능)",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/36060"
-          },
-          {
-            "date": "2026-07-10",
-            "time": "16:42",
-            "text": "https://www.sisajournal-e.com/news/articleView.html?idxno=422322",
-            "links": [
-              "https://www.sisajournal-e.com/news/articleView.html?idxno=422322"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/36064"
-          },
-          {
-            "date": "2026-07-10",
-            "time": "16:54",
-            "text": "어느 쪽도 물러서기 힘든 싸움..\n\nhttps://m.sedaily.com/article/20066338",
-            "links": [
-              "https://m.sedaily.com/article/20066338"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/36065"
-          },
-          {
-            "date": "2026-07-10",
-            "time": "16:56",
-            "text": "[SK증권 반도체 한동희, 해외주식 박제민]\n\nNanya Technology FY2Q26 실적발표 \n\n▶️ FY2Q26 실적\n\n매출액 NT$82.55B (+68% QoQ, +684% YoY): 컨센서스 +12%\nGPM 79.5% (+12%p QoQ, YoY 흑전): 컨센서스 +3.1%p\n조정 EPS NT$14.66 (+74% QoQ, YoY 흑전): 컨센서스 +13%\n\n▶️ 주요 코멘트\n\n- 매출 증가 요인:\nASP 급등, 출하량은 flat: QoQ ASP 60%대 이상 상승(출하량 QoQ flat), YoY ASP 500%대 이상 상승(출하량 YoY high-20%대 증가). 환율 영향은 미미\n\n- 현금창출력 강화 - 영업활동현금흐름 NT$550억, FCF NT$509.7억: \nCAPEX는 NT$40억에 불과. 사모배정 NT$787억 유입으로 기말 현금 NT$2,167.6억(QoQ +NT$1,304.8억), 순현금 NT$1,984억 확보\n\n- 13.5년 연속 이익 구조 - 누적순이익 NT$2,820억(2013~1H26): \nDRAM 업황 사이클성이 AI 수요로 완화되고 있음을 강조\n\n- 2026년 CAPEX·비트출하 가이던스 - CAPEX 최대 NT$520억(YoY 최대 50%대 증가), WFE 비중 약 30%: \n1H26 CAPEX는 NT$69억에 불과(하반기 집중 집행). 2026년 비트출하 목표 YoY high-teens%대 증가. Q2 비트출하는 QoQ flat, 재고는 낮은 수준\n\n- DRAM 시장 전망(3Q26) - AI발 구조적 공급부족 지속: \nAI·범용 서버 수요가 HBM·RDIMM을 견인하며 스마트폰/PC/차량/가전용 메모리 공급을 제약. 공급 타이트 상황 수개월간 지속 전망. 멀티이어 LTA로 수급 정렬 중이며 그린필드 증설은 2028년 이후 반영. 구조적 변화가 메모리 부족을 심화시키고 agentic AI·edge AI·physical AI 등 혁신을 촉진\n\n- 실적 전망 — 3Q26 추가 개선, 향후 수개 분기 지속 가능: \nAI 인프라·서버향 매출이 전체의 20% 이상 차지\n\n- 신규 팹 및 기술 로드맵 — 총 CAPEX 계획 US$160억(4.5만 WSPM, 건설비 포함): \n1단계 3만 WSPM 램프는 2028년까지 목표. 1C/1D/1E/EUV 개발 일정 순조. DDR5·LPDDR5/5X 등 광범위한 제품 포트폴리오 유지, 커스텀 AI/WoW 제품 및 AI 인프라 솔루션 지원\n\n▶️ URL: https://buly.kr/2fg4nuE\n\n* 위 내용은 공개 실적발표 내용으로 별도의 승인절차 없이 제공합니다.\n* SK증권 리서치 IT팀 채널 : \nhttps://t.me/skitteam",
-            "links": [
-              "https://buly.kr/2fg4nuE",
-              "https://t.me/skitteam"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/36066"
-          },
-          {
-            "date": "2026-07-10",
-            "time": "16:59",
-            "text": "<비IT 반등 시작>\n\n상반기 한국 경제는 3% 성장과 IT 편중 심화라는 두 가지 키워드로 설명 가능합니다. 견조한 성장은 반가운 일이지만, IT 편중이 심화되면서 충격에 취약해졌다는 점은 부담입니다. 하반기에는 비IT가 반등하면서 이들 격차가 축소될 것으로 기대합니다.\n\n1. IT +23.4%, 비IT -1.2%\n2. 비IT 저점 통과\n3. 수출입에서 찾는 힌트\n4. 유형자산 사이클",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/36067"
-          },
-          {
-            "date": "2026-07-10",
-            "time": "17:05",
-            "text": "https://n.news.naver.com/mnews/article/029/0003036412",
-            "links": [
-              "https://n.news.naver.com/mnews/article/029/0003036412"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/36068"
-          },
-          {
-            "date": "2026-07-10",
-            "time": "17:22",
-            "text": "2026.07.10 17:21:55\n기업명: 삼성전자(시가총액: 1,666조 1,894억) A005930\n보고서명: 주식등의대량보유상황보고서(일반)\n\n대표보고 : 삼성물산/대한민국\n보유목적 : 경영권 영향\n\n보고전 : 19.70%\n보고후 : 19.69%\n보고사유 : - 보유주식수 변동- 보유주식등에 관한 계약의 변경\n\n* 삼성생명보험\n2026-07-03/장내매수(+)/보통주/ 12,334주/-\n2026-07-06/장내매수(+)/보통주/ 18,223주/-\n2026-07-06/장내매도(-)/보통주/ -278주/-\n2026-07-07/장내매도(-)/보통주/ -28주/-\n2026-07-07/장내매수(+)/보통주/ 23,586주/-\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000678\n회사정보: https://finance.naver.com/item/main.nhn?code=005930",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000678",
-              "https://finance.naver.com/item/main.nhn?code=005930"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/36069"
-          },
           {
             "date": "2026-07-10",
             "time": "17:23",
@@ -916,6 +789,81 @@
             "text": "ㅋㅋㅋㅋㅋㅋ  받)  주식투자 하시는 분들 모두 수고많으십니다.  3.3 매도사이드카 3.4 서킷브레이커 3.5 매수사이드카 3.9 서킷브레이커 3.10 매수사이드카 3.18 매수사이드카 3.23 매도사이드카 3.24 매수사이드카 4.1 매수사이드카 4.2 매도사이드카 4.8 매수사이드카 5.6 매수사이드카 5.11 매수사이드카 5.15 매도사이드카 5.18 매도사이드카 5.21 매수사이드카 6.5 매도사이드카 6.8 서킷브레이커 6.9 매수사이드카 6.10…",
             "links": [],
             "post_url": "https://t.me/Yeouido_Lab/36074"
+          },
+          {
+            "date": "2026-07-10",
+            "time": "22:18",
+            "text": "https://www.youtube.com/live/dpR-UMQ7Adk",
+            "links": [
+              "https://www.youtube.com/live/dpR-UMQ7Adk"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/36076"
+          },
+          {
+            "date": "2026-07-10",
+            "time": "22:20",
+            "text": "https://www.youtube.com/live/dpR-UMQ7Adk",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/36077"
+          },
+          {
+            "date": "2026-07-10",
+            "time": "22:27",
+            "text": "갑자기 제가 6월초 올렸었던 젠슨황 최태원 협업 관련 미디어 발표 뉴스가 텔레에 도는데 옛날꺼니 혹시 오해하지마시라고 남깁니다ㅎ",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/36078"
+          },
+          {
+            "date": "2026-07-10",
+            "time": "22:33",
+            "text": "#미국 #원전 #FermiAmerica #전환사채 #AI\n\n<Fermi America, 전환사채 발행 후 주가 급락>\n\n- Fermi America가 2031년 만기 5.0% 전환사채(CB) 발행 규모를 기존보다 확대해 3억7500만달러로 확정. 추가 인수 옵션 행사 시 최대 4억3125만달러까지 확대 가능\n\n- 전환가격은 주당 약 9.52달러로 설정됐으며, 추가 주식 희석 가능성이 부각되면서 발표 이후 주가가 장중 약 15% 하락\n\n- 조달 자금은 텍사스 아마릴로의 기가와트급 AI 전력단지(Project Matador) 개발에 사용할 계획. 다만 1분기 매출이 없고 약 1억8900만달러 순손실을 기록한 상황이어서 향후 추가 자금조달 필요성에 대한 우려가 확대\n\nhttps://finance.yahoo.com/markets/stocks/articles/fermi-america-shares-fall-pricing-102043816.html",
+            "links": [
+              "https://finance.yahoo.com/markets/stocks/articles/fermi-america-shares-fall-pricing-102043816.html"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/36081"
+          },
+          {
+            "date": "2026-07-10",
+            "time": "22:50",
+            "text": "SK하이닉스 美 상장이 ‘코리안 디스카운트’ 해결할까?\n\n“마이크론과 SK하이닉스의 PER 차이 접근성과 인지도 때문이었다. SK하이닉스가 AI 메모리 분야에서 더 강한 입지를 갖고 있음에도 미국 펀드들이 접근하기에 제한적인 종목이어서 수년간 기업 가치가 낮게 유지됐다. SK하이닉스 주가가 최근 올랐다고 해서 마이크론과 할인율이 줄어든 것은 아니다” - eToro, 시장 분석가 자비에르 윙\n\nhttps://www.cnbc.com/2026/07/10/sk-hynix-debuts-on-nasdaq-will-that-bridge-its-korea-discount-.html",
+            "links": [
+              "https://www.cnbc.com/2026/07/10/sk-hynix-debuts-on-nasdaq-will-that-bridge-its-korea-discount-.html"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/36082"
+          },
+          {
+            "date": "2026-07-10",
+            "time": "22:50",
+            "text": "SK하이닉스 美 상장이 ‘코리안 디스카운트’ 해결할까?  “마이크론과 SK하이닉스의 PER 차이 접근성과 인지도 때문이었다. SK하이닉스가 AI 메모리 분야에서 더 강한 입지를 갖고 있음에도 미국 펀드들이 접근하기에 제한적인 종목이어서 수년간 기업 가치가 낮게 유지됐다. SK하이닉스 주가가 최근 올랐다고 해서 마이크론과 할인율이 줄어든 것은 아니다” - eToro, 시장 분석가 자비에르 윙  https://www.cnbc.com/2026/07/10/sk…",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/36083"
+          },
+          {
+            "date": "2026-07-10",
+            "time": "22:59",
+            "text": "💻골드만삭스 \"광 네트워킹, AI 인프라 최대 수혜…CPO 시장 2028년 910억달러 전망\"\n\n📌AI 인프라 확대, 광 네트워킹 시장 급성장\nAI 서버 고도화로 광 네트워킹 시장은 2026년 150억달러에서 2028년 1,540억달러까지 약 9배 성장 전망\n\nCPO 시장만 910억달러 규모로 확대되며 전체 시장의 59%를 차지할 것으로 예상\n\nGB300에서 Rubin Ultra로 갈수록 랙당 네트워킹 가치도 약 29배 증가 전망\n\n📌1.6T·3.2T 시대, 광 부품 탑재량 급증\nAI 서버는 400G에서 800G, 1.6T, 3.2T로 빠르게 업그레이드되는 구간\n\n광모듈 사용량은 GB300 대비 Rubin Ultra에서 컴퓨팅 유닛당 약 10배 증가 전망\n\n1.6T 광모듈은 2026년부터 본격 양산 구간에 진입할 것으로 분석\n\n📌실리콘포토닉스 채택 확대\n실리콘포토닉스 채택률은 2024년 6%에서 2028년 45%까지 확대 전망\n\n1.6T 기준 기존 EML 대비 BOM 비용은 최대 32%, 가격은 약 20% 절감 가능\n\n속도가 높아질수록 실리콘포토닉스의 경제성이 더욱 커질 것으로 분석\n\n📌광원 공급 부족 지속\nAI 투자 확대와 InP 기판 공급 제약으로 EML·CW 레이저 공급은 2026~2027년까지 타이트할 전망\n\n공급 정상화는 2028년 하반기 이후에야 가능할 것으로 예상\n\n광 엔진, 레이저, 실리콘포토닉스 등 광 네트워킹 밸류체인 전반의 수혜가 이어질 가능성에 주목\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
+            "links": [
+              "https://t.me/growth_semi"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/36085"
+          },
+          {
+            "date": "2026-07-10",
+            "time": "23:06",
+            "text": "#원전 #미국 #미주리 #Callaway #대형원전\n\n<미주리, 전력수요 증가에 Callaway 원전 증설 추진>\n\n- 미주리주가 제조업, 전기차, AI 데이터센터 확대로 전력수요가 증가하면서 Callaway 원전 증설을 추진 중임. Callaway 원전은 현재 미주리 전력의 약 15%를 공급하고 있으며, 부지는 당초 원자로 2기 건설을 고려해 설계됐지만 1980년대 수요 둔화와 비용 증가로 2호기 계획이 중단\n\n- 미주리주는 올해 '첨단원전 태스크포스'를 출범시켜 신규 원전 건설과 정책·인력·공급망 구축 방안을 검토하고 있음. 태스크포스는 DOE의 175억달러 대형원전 금융지원 프로그램을 활용해 Callaway 부지에 신규 원전을 유치하는 것을 주요 목표로 제시\n\n- 업계는 미국이 수십 년간 신규 원전을 건설하지 않으면서 공급망과 인력, 시공 역량이 약화됐다고 평가함. Vogtle 3·4호기의 공사 지연과 대규모 비용 초과도 이러한 경험 부족이 주요 원인으로 지목됐으며, 초기 사업은 정부의 금융지원과 위험분담이 필수적이라는 의견이 제기\n\n- Ameren Missouri는 2045년까지 원전 1,500MW를 추가 확보할 계획이며, Callaway 부지는 기존 송전망과 미주리강 용수, 지역사회 지지, 운영 경험을 갖춰 신규 원전 입지로 유력하게 평가받고 있음. 현재 운영허가는 2044년까지이며 이후 계속운전 허가도 추진할 계획\n\nhttps://www.newsfromthestates.com/article/missouri-eyes-nuclear-expansion-callaway-power-demand-climbs",
+            "links": [
+              "https://www.newsfromthestates.com/article/missouri-eyes-nuclear-expansion-callaway-power-demand-climbs"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/36089"
+          },
+          {
+            "date": "2026-07-11",
+            "time": "00:03",
+            "text": "[정리] 최태원 CNBC 인터뷰 $SKHY\n\n> 인디애나주 첨단패키징 40억 달러 넘어 미국과 미국 외 전 세계 대상으로 팹 부지를 실사하고 있고, 만약 미국에서 적합한 장소를 발견한다면 그곳에 투자할 것\n\n> 미국에서 최소 수백억 달러($ million) 투자 예정. AI 데이터센터 분야 기업이나 스타트업, 또는 파트너사와 합작투자(JV)까지 진행할 것\n\n> 장기계약의 가격 조건은 고객마다 다르다. 어떤 고객은 가격을 고정해두길 원하고, 또 다른 고객은 가격 상하한선을 자유롭게 책정하길 원한다. 우리는 LTA에 대해 일률적인 규칙을 적용하지 않으려고 한다.\n\n> (삼성전자 HBM 추격과 빅테크의 메모리 효율화 기술 개발에 대해) HBM 시장 위축 조짐은 없다. 모든 파트너사들이 더 많은 물량을 원하고 있다. HBM과 레거시 D램도 주문량을 2배 늘려달라고 요청한다.",
+            "links": [
+              "https://t.me/d_ticker"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/36090"
           }
         ]
       },
