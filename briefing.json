@@ -1,6 +1,6 @@
 {
   "2026-07-13": {
-    "fetched_at": "2026-07-13T17:19:05+09:00",
+    "fetched_at": "2026-07-13T21:10:07+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -118,20 +118,6 @@
         "posts": [
           {
             "date": "2026-07-09",
-            "time": "15:22",
-            "text": "많은 투자자들은 AMD, ASIC, 자체 AI 칩의 확산으로 NVIDIA의 점유율 하락만 주목하지만, BoFA는 AI 인프라 시장 자체가 훨씬 더 빠르게 커질 것으로 가정 \n\n점유율은 85%에서 67% 수준까지 낮아지더라도 전체 시장(TAM)이 10배 이상 확대되기 때문에 NVIDIA의 절대 매출과 이익은 계속 증가할 수 있다는 논리\n\n또 하나의 중요한 포인트는 NVIDIA를 단순한 GPU 회사가 아니라 AI 데이터센터 플랫폼 기업으로 평가하고 있다는 점\n\nGPU뿐 아니라 CPU, 네트워킹, NVLink, 스위치, 소프트웨어, 랙 통합까지 모두 성장 축으로 포함\n\nASIC과 $AMD의 도입까지 더하면, 설치 용량이 150 GW를 넘어설 수도 있음 .",
-            "links": [],
-            "post_url": "https://t.me/survival_DoPB/13603"
-          },
-          {
-            "date": "2026-07-09",
-            "time": "15:40",
-            "text": "코스피\n: 개인 매도, 외인&기관 매수\n\n코스닥\n: 개인&외인 매도, 기관 매수\n\n고생 많으셨습니다.",
-            "links": [],
-            "post_url": "https://t.me/survival_DoPB/13604"
-          },
-          {
-            "date": "2026-07-09",
             "time": "15:41",
             "text": "✅슈퍼 SOL 앱 설치 부탁드립니다.\n\n1. 하단 링크 클릭\n2. 문자메세지 보내기\n3. 휴대폰 본인확인\n4. 약관동의\n5. 신분증 촬영 및 계좌인증(타사 가능)\n6. 인증서 비밀번호 등록 \n\nhttps://SNRyhPIaqEWCErBZXy2iWA.adtouch.adbrix.io/api/v1/click/y9XvBoqAIEqatgehUbiJhg?deeplink_custom_path=supersol%3A%2F%2FCO0605H0011F01%3Fgroup%3DS011%26hwno%3D214151",
             "links": [
@@ -235,6 +221,27 @@
             "text": "미국 반도체 펀드에 전례 없는 수요가 몰리고 있습니다:\n\n반도체 ETF인 $SOXX는 화요일에 +$5.4 billion의 자금 유입을 기록하며, 2001년 펀드 출시 이후 최대 일일 유입액을 달성했습니다.\n\n이는 이전 기록 일일 유입액을 +300% 이상 초과한 수치입니다.\n\n3배 레버리지 롱 반도체 ETF인 $SOXL은 +$1.2 billion의 유입을 기록하며, 올해 2번째로 큰 일일 유입액을 보였습니다.\n\n총계로, 미국 롱 반도체 ETF들은 화요일에 +$7.1 billion의 신규 자본을 유치했습니다.\n\n올해 들어 $SOXX만 해도 +$13.3 billion의 유입을 기록했습니다.\n\n투자자들은 반도체의 하락장에서 전례 없는 속도로 매수에 나서고 있습니다.",
             "links": [],
             "post_url": "https://t.me/survival_DoPB/13620"
+          },
+          {
+            "date": "2026-07-13",
+            "time": "18:42",
+            "text": "에고.. 저 포함 제 주변 난다긴다 하시는분들도 다 힘들어하는 시기입니다..\n\n오늘 아예 주식 싹 비우는 투자자분들도 속출하는것 같네요..\n\n재고 형님 말씀대로 모두 힘을 유지하시길 바랍니다.. \n\n이 또한 지나가리 / 살아남은자가 강한 것이다\n\n이 두 문구가 떠오르는 하루네요\n\n여기서 제일 중요한건 기분이 태도가 되지 않게 하는 것. 제 와이프는 나름 제가 평온하다고 생각할겁니다 하하.. (아닌데 말이죠..)\n\n힘든 하루 정말 고생 많으셨습니다.",
+            "links": [],
+            "post_url": "https://t.me/survival_DoPB/13623"
+          },
+          {
+            "date": "2026-07-13",
+            "time": "18:54",
+            "text": "또 좋은 날 오겠죠",
+            "links": [],
+            "post_url": "https://t.me/survival_DoPB/13624"
+          },
+          {
+            "date": "2026-07-13",
+            "time": "18:54",
+            "text": "미국 빅테크 실적발표 일정",
+            "links": [],
+            "post_url": "https://t.me/survival_DoPB/13625"
           }
         ]
       },
@@ -245,45 +252,6 @@
         "category": "산업/기술 분석",
         "channel_url": "https://t.me/growthresearch",
         "posts": [
-          {
-            "date": "2026-07-13",
-            "time": "09:43",
-            "text": "💻 피에스케이홀딩스 +14% 급등 중\n\n피에스케이홀딩스도 견조한 주가 흐름을 보이고 있습니다.\n\n앞서 소부장 시리즈에서 주요 수혜주로 언급드린 바 있습니다.\n\n메모리 증설이 본격화되는 가운데, \n후공정에서는 CoWoS를 중심으로 올해 대규모 증설이 진행되는 상황입니다.\n\n특히 증설 기조가 2027년이후까지 이어질 것으로 보이는 만큼,\n피에스케이홀딩스의 관련 장비 수요와 실적 수혜도 지속될 것으로 판단합니다.\n\n🔥반도체 소부장 시리즈(1) - 장비 (Top Pick 피에스케이홀딩스)\nhttps://contents.premium.naver.com/growthresearch/growth/contents/260607193104588xn\n\n🔥 피에스케이홀딩스 핵심포인트\n\n📌 1. CoWoS 투자 사이클 본격화\nTSMC의 2026년 CapEx 520~560억달러 확대와 첨단 패키징 투자 강화\n\nCoWoS CAPA의 2025년 7.4~7.5만장에서 2026년 13만장 확대 전망\n\n2027년 CoWoS CAPA 14만~21만장 추가 증설에 따른 장비 수요 지속\n\n📌 2. 피에스케이홀딩스의 직접 수혜 구조\nCoWoS 공정용 Reflow·Descum 장비를 공급하는 국내 대표 후공정 장비사\n\nTSMC 및 글로벌 OSAT향 장비 공급 확대를 통한 CoWoS 공급망 내 입지 강화\n\n첨단 패키징 CAPA 증설과 장비 발주 증가가 연동되는 높은 실적 레버리지\n\n📌 3. 실적 성장 동력과 핵심 점검 요인\nHBM·CoWoS용 Reflow·Descum을 전공정 장비와 잇는 이중 성장축 확보\n\nAI 반도체 패키징 고도화에 따른 웨이퍼 표면처리·접합 장비 수요 증가\n\nTSMC CoWoS 증설 속도와 글로벌 OSAT향 수주 확대 여부가 핵심 변수\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
-            "links": [
-              "https://contents.premium.naver.com/growthresearch/growth/contents/260607193104588xn",
-              "https://t.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/27812"
-          },
-          {
-            "date": "2026-07-13",
-            "time": "10:07",
-            "text": "💻 SK하이닉스, 뉴욕서도 '곱버스·레버' ETF 줄줄이 출격\n\nhttps://www.fnnews.com/news/202607130727028096\n\n📌 ADR 상장 직후 ETF 출시 경쟁\nSK하이닉스 ADR 상장 사흘 만에 미국 ETF 운용사들이 관련 상품 출시\n\n미 동부시간 기준 13일\n→ 레버리지셰어즈: 2배 레버리지 SKHX · 인버스 SKHZ\n→ 프로셰어즈: 2배 레버리지 SKUU\n\n14일\n→ 그래나이트셰어즈: 2배 레버리지 SKUU · 2배 인버스 SKDD\n→ 코기펀즈: 2배 레버리지 ETF 출시\n\n디렉시언도 2배 레버리지 SKHL 출시 예고, 일정은 미정\n\n📌 2배 레버리지·인버스 ETF 동시 출격\nSK하이닉스 ADR의 하루 등락률을 2배 또는 반대 방향으로 추종\n\n파생상품을 활용해 장기 보유보다는 단기 매매 성격이 강한 상품\n\n미국은 가격제한폭이 없어 ADR 급등락 시 ETF 변동폭도 크게 확대될 수 있음\n\n📌 ADR 거래에 미칠 영향\n레버리지·인버스 상품 출시로 단기 매매와 헤지 수요가 동시에 유입될 전망\n\n거래량 확대에는 긍정적이지만, 장중 변동성과 본주 대비 가격 괴리가 커질 가능성도 있음\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
-            "links": [
-              "https://www.fnnews.com/news/202607130727028096",
-              "https://t.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/27814"
-          },
-          {
-            "date": "2026-07-13",
-            "time": "10:20",
-            "text": "✅BofA: AI 시대, 현금흐름의 중심이 반도체로 이동\n\n📌반도체 기업 FCF 급증\n향후 12개월 기준 반도체 기업의 잉여현금흐름이 사상 최고 수준으로 급증\n\n엔비디아·브로드컴·마이크론 등 AI 반도체 기업의 이익 레버리지가 본격 반영\n\nAI 인프라 투자금이 반도체 기업의 매출과 현금흐름으로 빠르게 전환되는 구간\n\n📌하이퍼스케일러 FCF 급감\n아마존·구글·메타·마이크로소프트·오라클의 잉여현금흐름은 빠르게 감소\n\n대규모 데이터센터 증설과 AI CapEx 확대가 현금창출력을 압박\n\nAI 투자 경쟁이 심화될수록 빅테크의 자금 부담은 더욱 커지는 구조\n\n📌AI 투자 수혜의 중심 이동\n초기에는 하이퍼스케일러가 AI 인프라 투자를 주도하며 시장을 견인\n\n현재는 해당 투자금이 GPU·메모리·네트워크 장비 업체의 실적으로 이전\n\nAI 투자 사이클의 수익이 빅테크에서 반도체 기업으로 이동하는 모습\n\n📌세대적 현금흐름 재편\nBofA는 이를 ‘세대적 현금흐름 이전’으로 표현\n\n반도체 기업 FCF는 4,000억달러 이상으로 확대되는 반면 하이퍼스케일러는 마이너스 전환\n\nAI 생태계 내 자본 지출과 현금 창출의 주체가 완전히 재편되는 국면\n\n✅독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/27815"
-          },
-          {
-            "date": "2026-07-13",
-            "time": "10:42",
-            "text": "💻 SK하이닉스 美 2호 공장 나오나…인디애나 이어 신규 팹 수면 위로\n\nhttps://biz.heraldcorp.com/article/10806654?ref=naver\n\n📌 미국 내 두 번째 생산거점 가능성\n최태원 SK그룹 회장, 인디애나 첨단 패키징 시설 외 추가 투자 검토 언급\n\n전력·용수·인력·공급망 여건이 갖춰질 경우 미국 내 메모리 전공정 팹 건설도 가능하다는 입장\n\n현실화되면 미국에서 메모리 생산부터 첨단 패키징까지 이어지는 현지 생산체계 구축\n\n📌 인디애나 첨단 패키징 공장\n웨스트라피엣에 38.7억달러(약 5.4조원) 투자\n\n차세대 HBM 등 AI 메모리용 첨단 패키징 시설 건설 중\n\n2028년 하반기 양산 목표\n\n📌 미국의 현지 생산 압박\n미 상무장관, 삼성전자·SK하이닉스의 미국 생산시설 투자 필요성을 연이어 강조\n\n외국산 메모리에 대한 고율 관세 가능성도 거론\n\n미국은 생산비 부담이 높지만 관세 리스크 대응 차원에서 추가 투자가 불가피할 수 있다는 분석\n\n📌 미국 AI 공급망 강화\nSK하이닉스 HBM과 TSMC 파운드리, 엔비디아 GPU가 결합되는 AI 반도체 공급망 형성\n\nTSMC 애리조나 생산 확대에 SK하이닉스 미국 팹까지 더해질 경우 현지 AI 반도체 생태계 강화\n\n주요 고객사와 가까운 미국에서 공급 안정성과 고객 대응력 제고 기대\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
-            "links": [
-              "https://biz.heraldcorp.com/article/10806654?ref=naver",
-              "https://t.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/27816"
-          },
           {
             "date": "2026-07-13",
             "time": "10:54",
@@ -444,6 +412,43 @@
               "https://t.me/growthresearch"
             ],
             "post_url": "https://t.me/growthresearch/27833"
+          },
+          {
+            "date": "2026-07-13",
+            "time": "18:01",
+            "text": "🧬 [단독] 키트루다 2년 뒤 특허만료…삼성에피스, 독자 기술로 ‘47조 시장’ 노린다\n\nhttps://n.news.naver.com/mnews/article/011/0004641097\n\n💊 키트루다 특허만료와 동시에 SC 진입\n키트루다는 지난해 매출 317억달러의 글로벌 1위 항암제\n\n삼성에피스는 키트루다·엔허투 시밀러에 자체 SC 기술 적용 검토\n\n오리지널 물질특허 만료 직후 SC 제품까지 출시하는 전략 가능\n\n💊 빅파마의 특허 방어막을 자체 기술로 돌파\nMSD는 내년 말까지 키트루다 시장의 40%를 SC로 전환할 계획\n\n단순 환산 시 키트루다 SC 시장만 약 127억달러·약 17조원 규모\n\n알테오젠·할로자임 기술은 성분별 독점계약으로 경쟁사 활용 제한\n\n💊 SC 전환이 바이오시밀러 승부처\n다잘렉스는 SC 출시 2년 만에 미국 85%·유럽 80% 전환\n\n투여 시간이 수 시간에서 수분으로 줄어 환자·의료진 선호도 높음\n\n글로벌 SC 바이오의약품 시장은 2031년 4,989억달러 전망\n\n💊 삼성바이오로직스와 생산 시너지\n삼성바이오로직스는 2027년까지 PFS·오토인젝터 생산라인 확충\n\n향후 삼성에피스 SC 바이오시밀러의 완제의약품 생산에 활용 가능\n\n개발부터 생산까지 그룹 내 수직계열화 경쟁력 강화 기대\n\n🧬바이오섹터 분석🧬 [그로쓰리서치]\nhttps://t.me/growthbio",
+            "links": [
+              "https://n.news.naver.com/mnews/article/011/0004641097",
+              "https://t.me/growthbio"
+            ],
+            "post_url": "https://t.me/growthresearch/27834"
+          },
+          {
+            "date": "2026-07-13",
+            "time": "18:20",
+            "text": "🎬  삼성중공업·HD현대마린솔루션 AI 시대 다음 테마는 '바다'? 부유식 데이터센터 투자 전략 정복 [부유식 데이터센터 산업보고서]\n\nhttps://www.youtube.com/watch?v=zrob95i-TP4\n\n📌 부유식 데이터센터 도입 배경\nAI 확산으로 데이터센터의 전력·냉각·부지 확보 부담 급증\n\n육상 데이터센터의 주민 수용성·인허가·전력망 병목 심화\n\n해상 구조물 활용을 통해 건설 리드타임 단축 및 이동·재배치 가능\n\n📌 FDC의 핵심 기술과 구조적 변화\n해수를 활용한 간접 냉각으로 용수 부담과 냉각 효율 개선\n\nSOFC·선박 엔진·LNG 발전선 등 자체 발전원 적용 가능성 확대\n\n📌 차세대 FDC 생태계 방향성\n삼성중공업이 50MW급 상업용 FDC 모델과 2028년 서비스 로드맵 제시\n\n조선사 → 발전·전력 기자재 → 개조·유지보수 서비스로 수혜 확산\n\n지금, 관심 가져야 할 부유식 데이터센터(FDC) 산업 흐름과 삼성중공업·HD현대마린솔루션 등 관련 종목은 유튜브 영상을 통해 확인하시기 바랍니다!",
+            "links": [
+              "https://www.youtube.com/watch?v=zrob95i-TP4"
+            ],
+            "post_url": "https://t.me/growthresearch/27835"
+          },
+          {
+            "date": "2026-07-13",
+            "time": "18:20",
+            "text": "🎬 삼성중공업·HD현대마린솔루션 AI 시대 다음 테마는 '바다'? 부유식 데이터센터 투자 전략 정복 [부유식 데이터센터 산업보고서]\n\nhttps://youtu.be/zrob95i-TP4?si=8a8JF6YhFn-j5YSh\n\n📌 부유식 데이터센터(FDC), 육상 데이터센터 한계 보완\n전력 수급난, 냉각수 확보, 토지·인허가 문제를 완화할 수 있어 AI 시대 데이터센터 대안으로 부각\n\n📌 삼성중공업이 상용화 선도\n삼성중공업은 2028년 2분기 상업용 FDC 서비스를 목표로 제시\n\nFLNG 경험을 바탕으로 초기 수주 경쟁력 기대\n\n📌 조선·기자재·서비스 밸류체인 수혜\nFDC는 선박·발전소·데이터센터가 결합된 형태\n\n조선사뿐 아니라 SOFC, 선박엔진, 전력 인프라, 유지보수 업체까지 수혜 가능\n\n📌 Top-pick은 삼성중공업·HD현대마린솔루션\n삼성중공업은 첫 수주 기대감, HD현대마린솔루션은 노후선 개조와 고마진 유지보수 매출 확대가 핵심 포인트",
+            "links": [
+              "https://youtu.be/zrob95i-TP4?si=8a8JF6YhFn-j5YSh"
+            ],
+            "post_url": "https://t.me/growthresearch/27836"
+          },
+          {
+            "date": "2026-07-13",
+            "time": "18:39",
+            "text": "✅ 주가에 고민이 많은 상장사 IR 담당자분들께 ✅\n그로쓰리서치가 귀사의 IR/PR을 서포트합니다.\n\nIR 담당자로 계시면서, 이런 고민 한 번쯤 해보셨을 겁니다.\n\n📌 \"우리 회사, 좋은 회사인데 왜 시장은 몰라줄까?\"\n\n요즘 코스닥, 정말 쉽지 않으시죠? 😥\n\n상장폐지 규제까지 강해지면서\n(올해 코스닥 상폐 대상 기업이 당초 50개사 내외에서\n약 150개사 규모로 늘어날 것으로 추산됩니다)\n\n이럴 때 IR의 본질은 결국 하나입니다.\n\n🔥우리 회사의 진짜 가치를, 시장에 제대로 전달하는 것.\n\n저평가의 상당 부분은 실적이 나빠서가 아니라,\n\"좋은 회사인데 시장이 아직 모르고 있어서\"인 경우가 많습니다.\n\n그 가치를 시장에 알리는 일, 담당자분과 함께 저희 그로쓰리서치가 풀어가겠습니다.\n\n담당자분이 아무리 좋은 자료를 만들어도 닿기 어려웠던 투자자에게, \n저희 채널이 그 다리가 되어드립니다.\n\n🔥 유튜브 구독자 7만명\n\n🔥 텔레그램 합산 구독자 6.6만명 (증권사·운용사 등 기관투자자분들도 다수 구독 중!)\n\n유튜브 영상 / 텔레그램으로 이어지는 멀티채널로 확산시켜,\n개인은 물론 기관 투자자에게까지 귀사의 가치가 닿도록 만듭니다.\n\n담당자분이 IR 성과를 내부에 보고하실 때, 눈에 보이는 결과로 남습니다.\n\n📌 이런 담당자분들께 권해드립니다\n✔️ 좋은 실적·기술을 가졌는데 시장에서 저평가받고 있다고 느끼시는 분\n\n✔️ 강화된 규제 환경에서 IR을 어떻게 풀어가야 할지 막막하신 분\n\n✔️ 상장을 앞두고 투자자와의 접점을 미리 만들어두고 싶으신 예비 상장사 담당자분\n\n편하게 문의부터 주세요.\n\n신청해주시면 귀사 상황에 맞는 IR 방향을 담당자분과 미팅 진행하면서 안내드리겠습니다.\n\n신청 링크👇\nhttps://naver.me/xcgLCFdP",
+            "links": [
+              "https://naver.me/xcgLCFdP"
+            ],
+            "post_url": "https://t.me/growthresearch/27837"
           }
         ]
       },
@@ -454,13 +459,6 @@
         "category": "매크로/크립토",
         "channel_url": "https://t.me/SpartanResearch",
         "posts": [
-          {
-            "date": "2026-07-11",
-            "time": "14:18",
-            "text": ">>‘토큰세’ 부담… 또 다른 실리콘밸리 CEO “AI 토큰 비용 90% 낮춰야”  •7월 9일, 팔로알토 CEO 아로라는 높은 토큰 비용이 기업 AI 예산의 가장 큰 부담 요인이 되고 있다고 경고. 향후 2년 내 AI 토큰 비용을 90% 낮춰야만 기업들의 AI 도입이 대규모로 확산될 수 있다고 밝혔음",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/4187"
-          },
           {
             "date": "2026-07-11",
             "time": "14:20",
@@ -601,6 +599,13 @@
               "https://comic.naver.com/webtoon/list?titleId=840014"
             ],
             "post_url": "https://t.me/SpartanResearch/4206"
+          },
+          {
+            "date": "2026-07-13",
+            "time": "17:26",
+            "text": "에고.. 저 포함 제 주변 난다긴다 하시는분들도 다 힘들어하는 시기입니다..\n\n오늘 아예 주식 싹 비우는 투자자분들도 속출하는것 같네요..\n\n재고 형님 말씀대로 모두 힘을 유지하시길 바랍니다.. \n\n이 또한 지나가리 / 살아남은자가 강한 것이다\n\n이 두 문구가 떠오르는 하루네요\n\n여기서 제일 중요한건 기분이 태도가 되지 않게 하는 것. 제 와이프는 나름 제가 평온하다고 생각할겁니다 하하.. (아닌데 말이죠..)\n\n힘든 하루 정말 고생 많으셨습니다.",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/4207"
           }
         ]
       },
@@ -611,13 +616,6 @@
         "category": "매매 신호/트레이딩",
         "channel_url": "https://t.me/d_ticker",
         "posts": [
-          {
-            "date": "2026-07-10",
-            "time": "23:53",
-            "text": "[정리] 최태원 CNBC 인터뷰 $SKHY  > 인디애나주 첨단패키징 40억 달러 넘어 미국과 미국 외 전 세계 대상으로 팹 부지를 실사하고 있고, 만약 미국에서 적합한 장소를 발견한다면 그곳에 투자할 것  > 미국에서 최소 수백억 달러($ million) 투자 예정. AI 데이터센터 분야 기업이나 스타트업, 또는 파트너사와 합작투자(JV)까지 진행할 것  > 장기계약의 가격 조건은 고객마다 다르다. 어떤 고객은 가격을 고정해두길 원하고, 또 다른 고객은…",
-            "links": [],
-            "post_url": "https://t.me/d_ticker/3458"
-          },
           {
             "date": "2026-07-11",
             "time": "00:45",
@@ -773,6 +771,15 @@
             "text": "삼성전기는 전고점 대비 47% 하락\n\nYTD 상승률 기준 +795% 고점 → +400% 현재",
             "links": [],
             "post_url": "https://t.me/d_ticker/3478"
+          },
+          {
+            "date": "2026-07-13",
+            "time": "18:07",
+            "text": "[단독] SK하이닉스, 호남팹 합작 투자 가능...수십조 재무부담 던다\n\n- 호남 팹 건설 시 외부 투자금 받을 수 있게 됨\n- 지배구조 규제에 막혀 자금 수혈 어려웠지만\n- 호남 프로젝트 맞춰 여당에서 특별법 제정하기로\n- 모회사가 증손회사 지분 100% 보유하는 룰 완화\n- 100%→50% 소유해도 문제가 없도록 개정\n\nhttps://www.hankyung.com/article/202607132461i",
+            "links": [
+              "https://www.hankyung.com/article/202607132461i"
+            ],
+            "post_url": "https://t.me/d_ticker/3479"
           }
         ]
       },
@@ -791,41 +798,6 @@
         "category": "국내 시장/종목 분석",
         "channel_url": "https://t.me/Yeouido_Lab",
         "posts": [
-          {
-            "date": "2026-07-13",
-            "time": "14:20",
-            "text": "<닉스 회고록>\n\n인생은 돌고돈다.",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/36142"
-          },
-          {
-            "date": "2026-07-13",
-            "time": "14:27",
-            "text": "대형주들은 이제 TP 업사이드가 100%가 넘는것도 많네...",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/36143"
-          },
-          {
-            "date": "2026-07-13",
-            "time": "14:27",
-            "text": "저도 연식이 좀 있어서, 하락장을 많이 맞아 봤는데 정말 살아 남아야 기회도 잡습니다.\n\n과거 무역전쟁, 코로나, 러-우 전쟁, 작년 관세 등 퇴출되면 기회도 못 잡습니다.\n\n변동성이 너무 크기 때문에 어설프게 레버리지를 쓰는 것은 너무 위험한거 같아요.\n\n주위에 힘들어하시는 분들도 너무 많구 물론 저도 마찬가지구요.\n\n상대와 비교하기보다 서로를 위로해주자구요. \n\n모두 화이팅입니다~",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/36144"
-          },
-          {
-            "date": "2026-07-13",
-            "time": "14:29",
-            "text": "나도 진짜 살다살다 이런 하락장은 처음 맞아보네...",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/36145"
-          },
-          {
-            "date": "2026-07-13",
-            "time": "14:32",
-            "text": "음?\n\n*TSMC JUNE MONTHLY SALES (Y/Y) +67.9%",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/36146"
-          },
           {
             "date": "2026-07-13",
             "time": "14:41",
@@ -935,6 +907,49 @@
               "https://finance.naver.com/item/main.nhn?code=005930"
             ],
             "post_url": "https://t.me/Yeouido_Lab/36162"
+          },
+          {
+            "date": "2026-07-13",
+            "time": "17:56",
+            "text": "[단독]삼성에피스 ‘빅파마 독점’ 고용량 SC 기술 성공\nhttps://n.news.naver.com/mnews/article/011/0004641112?sid=101&sicode=01",
+            "links": [
+              "https://n.news.naver.com/mnews/article/011/0004641112?sid=101&amp;sicode=01"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/36163"
+          },
+          {
+            "date": "2026-07-13",
+            "time": "18:41",
+            "text": "하이닉스 3배 레버리지 근황\n\n오늘 하루 -48%",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/36164"
+          },
+          {
+            "date": "2026-07-13",
+            "time": "19:29",
+            "text": "https://n.news.naver.com/mnews/article/011/0004641112?sid=101&sicode=01\n \n✅ 알테오젠과 머크가 할로자임이랑 몇 년째 벌이고 있는 특허전쟁을 보고도???\n \n“삼성에피스홀딩스(0126Z0)의 자회사 삼성바이오에피스가 재조합 인간 히알루로니다제(PH20) 기반 피하주사(SC) 제형 변경 기술을 확보했다. ‘키트루다’ 등 글로벌 블록버스터 의약품들이 SC 제형으로 전환하며 특허 장벽을 높이고 있는 만큼 자체 기술로 시밀러 시장 공략에 속도를 낼 것으로 예상된다.”\n \n라는 기사가 뜨면,\n \n머크와 알테오젠이\n“앗! 새로운 기술이 나왔구나, 우리 클났다”\n할로자임도\n“어랏! 또 나왔다고, 우리는 더 클났다”\n이렇게 반응합니까?\n \n정작 현실은, 미국 PTAB가 할로자임의 엠다제(MDASE) 핵심 특허들을 연달아 특허불능으로 보면서 머크·알테오젠 쪽이 특허전에서 3연승을 찍고 있고, 할로자임이 알테오젠 ALT‑B4 제조방법 특허를 깨보겠다고 걸었던 IPR은 심리 개시조차 못 하고 기각된 상황입니다.\n특허 불확실성은 할로자임 쪽이 훨씬 큰데, 기사 하나에 주가가 10%씩 밀리는 쪽은 머크 키트루다 SC 파트너 알테오젠입니다. 이게 우리 코스닥입니다.\n \n할로자임 입장에서 보자면,\n자기 MDASE 특허는 PGR에서 연달아 무효 판결이 나오고, 알테오젠 특허 공격도 PTAB에서 기각되고, 거기에 삼성에피스가 “우리도 PH20 기반 SC 플랫폼 있다”고 손을 든 상황입니다.\nSC 제형 플랫폼을 독점하겠다고 나섰던 쪽이 누구였는지를 생각해 보면, 이 뉴스에서 땀을 흘려야 할 쪽이 어딘지는 더 분명해지는데, 외려 할로자임은 최근 신고가 행진을 이어오고 있죠.\n현재 뉴욕증시 Pre Market에서도 상승중입니다.\n \n그런데 코스닥 시가총액 1위, 머크 키트루다 SC(큐렉스) 파트너사라는 회사 주가가, 이런 류 기사 하나에 10%씩 출렁입니다.\n전닉처럼 이미 몇 백 퍼센트씩 상승을 만든 후도 아닌데요.",
+            "links": [
+              "https://n.news.naver.com/mnews/article/011/0004641112?sid=101&amp;sicode=01"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/36165"
+          },
+          {
+            "date": "2026-07-13",
+            "time": "19:49",
+            "text": "[SK증권 반도체 한동희]\n\n메타, 루이지애나 DC 투자 500억 달러 이상으로 상향\n\n메타는 루이지애나주  ‘하이페리온(Hyperion)’ 데이터센터 슈퍼클러스터가 5GW 규모로, 총사업비는 500억 달러를 웃돌 것이라 밝힘\n\n이는 지난해 10월 메타와 블루아울캐피털이 해당 시설의 건설 및 운영을 위한 합작법인을 설립하면서 공개한 270억 달러보다 크게 늘어난 금액\n\n메타를 비롯한 하이퍼스케일러들은 AI 붐의 수혜를 유치하려는 미국 각 주 정부가 제공하는 세금 환급과 유리한 전력 공급 계약을 적극 활용 중\n\nhttps://www.cnbc.com/amp/2026/07/13/meta-louisiana-data-center-investment-reaches-50-billion-amid-ai-push.html",
+            "links": [
+              "https://www.cnbc.com/amp/2026/07/13/meta-louisiana-data-center-investment-reaches-50-billion-amid-ai-push.html"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/36166"
+          },
+          {
+            "date": "2026-07-13",
+            "time": "20:39",
+            "text": "안녕하세요. 오늘 저녁에 올라온 서울경제 기사와 관련해 기술적인 이해를 돕기 위해 설명을 아래 링크와 같이 공유해드리니 참고해주시기 바랍니다.\n\nhttps://alteogen.com/kr/sub/ir/information.php?mode=view&bid=2&idx=326&page=1",
+            "links": [
+              "https://alteogen.com/kr/sub/ir/information.php?mode=view&amp;bid=2&amp;idx=326&amp;page=1"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/36167"
           }
         ]
       },
@@ -3244,6 +3259,33 @@
           {
             "date": "2026-07-13",
             "time": "00:00",
+            "text": "[아시아나항공] [기재정정]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260713000482"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260713000482"
+          },
+          {
+            "date": "2026-07-13",
+            "time": "00:00",
+            "text": "[한화갤러리아] 주요사항보고서(유형자산양수결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260713000472"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260713000472"
+          },
+          {
+            "date": "2026-07-13",
+            "time": "00:00",
+            "text": "[에이프로젠] 주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260713000435"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260713000435"
+          },
+          {
+            "date": "2026-07-13",
+            "time": "00:00",
             "text": "[블루산업개발] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
             "links": [
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260713000420"
@@ -3339,6 +3381,33 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260713000038"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260713000038"
+          },
+          {
+            "date": "2026-07-13",
+            "time": "00:00",
+            "text": "[푸드나무] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260713000467"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260713000467"
+          },
+          {
+            "date": "2026-07-13",
+            "time": "00:00",
+            "text": "[제이스코홀딩스] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260713000446"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260713000446"
+          },
+          {
+            "date": "2026-07-13",
+            "time": "00:00",
+            "text": "[그래피] 주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260713000436"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260713000436"
           },
           {
             "date": "2026-07-13",
@@ -3523,24 +3592,6 @@
           {
             "date": "2026-07-10",
             "time": "00:00",
-            "text": "[SK하이닉스] [기재정정]주요사항보고서(해외증권시장주권등상장결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000002"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000002"
-          },
-          {
-            "date": "2026-07-10",
-            "time": "00:00",
-            "text": "[녹십자] [기재정정]주요사항보고서(타법인주식및출자증권양도결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260709000697"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260709000697"
-          },
-          {
-            "date": "2026-07-10",
-            "time": "00:00",
             "text": "[좋은사람들] 주요사항보고서(감자결정)\n공시유형: 주요사항보고",
             "links": [
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000712"
@@ -3564,42 +3615,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000677"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000677"
-          },
-          {
-            "date": "2026-07-10",
-            "time": "00:00",
-            "text": "[경남제약] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000638"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000638"
-          },
-          {
-            "date": "2026-07-10",
-            "time": "00:00",
-            "text": "[폰드그룹] 주요사항보고서(자기주식취득신탁계약해지결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000556"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000556"
-          },
-          {
-            "date": "2026-07-10",
-            "time": "00:00",
-            "text": "[케이피엠테크] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000523"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000523"
-          },
-          {
-            "date": "2026-07-09",
-            "time": "00:00",
-            "text": "[주성코퍼레이션] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260709000695"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260709000695"
           }
         ]
       }
