@@ -1,6 +1,6 @@
 {
   "2026-07-14": {
-    "fetched_at": "2026-07-14T13:06:08+09:00",
+    "fetched_at": "2026-07-14T16:11:30+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -925,6 +925,15 @@
         "category": "산업/바이오 분석",
         "posts": [
           {
+            "date": "2026-07-14",
+            "time": "13:47",
+            "text": "[20260714 - 시장단상]\n\n생각보다 글을 자주 쓰게 된다. 원래 지금과 같은 국면을 예상한건 아닌데, 생각보다 모든 것이 빠르고 급격하게 일어나는 국면 같다. 1. 현재는 알파나, 펀더멘탈 분석이 잘 작동하는 시장 환경은 아니게 되었다. 1차적으로 국장은 유동성이 심각하게 고갈되기 시작했다. 전세계에서 유일하게 한국만이 극심한 '국지적' 유동성 가뭄을 경험하고 있다. 특히 전닉 레버리지는 유동성 소각기로 돌변하여 현 하락 국면에서 빨아들인 시장의 유동성을 급격하게 소각하는 역할을 하고 있다. 가령 최근 펩트론이나 알테오젠 사태를 보더라도, 시장이 건강했다면 비교적 해프닝에서 끝날만한 이벤트가 극심한 공포로 작동한다. 이는 마치 건강.......",
+            "links": [
+              "https://blog.naver.com/tmdejr1267/224346224477"
+            ],
+            "post_url": "https://blog.naver.com/tmdejr1267/224346224477"
+          },
+          {
             "date": "2026-07-13",
             "time": "14:35",
             "text": "[20260713 - 악마의 장난]\n\n1. 개인적으로 몇 차례 걱정은 했었지만, 결국 큰 사고가 나고 말았다. 이건 금융사고다. 레버리지 상품은 본주랑 가격 메커니즘이 다르다. 이제 고점에 레버리지 상품을 산 투자자들은 원금 회복 가능성이 희박해졌다. 하이닉스 본주가 약 400만 원을 가야 레버리지 상품은 본전이 된다. Vol Drag 효과를 이론이 아닌 실제 피부로 이해하는 개인 투자자들의 비중이 얼마나 될까. 고변동성 구간에서는 레버리지 상품은 원금을 무섭게 좀먹는다. 지금은 역사적으로 유례없는 수준의 고변동성 구간이다. 2. 금융권과 정부는 정말 무책임하다. 투자는 물론 개인의 책임이지만, 일반 투자자들의 금융 지식수준이 처참하다는 것도 일반적으로 사실이다.......",
@@ -1364,15 +1373,6 @@
               "https://blog.naver.com/tmdejr1267/223951126158"
             ],
             "post_url": "https://blog.naver.com/tmdejr1267/223951126158"
-          },
-          {
-            "date": "2025-06-30",
-            "time": "22:44",
-            "text": "[20250630 - 아주 더울 때 기억]\n\n1. 어느덧 한 해의 반이 지나갔다. 항상 회고적인 글의 초입에 적는 클리셰적인 문장이지만, 이보다 더 적절한 감상이 없다 - 시간은 참 천천히, 또 빠르게 지나는 것 같다. 몇 개월 전을 떠올리면 아득한데 어느덧 반년이라니... 2. 마침 한 해의 반이 꺾이는 지점에, 올해의 첫 열대야가 찾아왔다. 열대야는 그냥 더운 거랑도 느낌이 좀 다르다. 타는 듯이 태양이 작열할 때는 그림자에 들어가면 시원하고, 또 해가 지면 선선한 바람이 분다. 그렇지만 오늘 같은 날은 그림자 밑에서도 숨이 턱턱 막히고, 밤이 돼도 전혀 시원하지가 않다. 이렇게 젖은 물속에 있는 것 같은 기분이 드는 날이면, 대학교 2학년 때가 떠오른다. 3. 나의 대학교 2학.......",
-            "links": [
-              "https://blog.naver.com/tmdejr1267/223917176636"
-            ],
-            "post_url": "https://blog.naver.com/tmdejr1267/223917176636"
           }
         ]
       },
@@ -2247,6 +2247,24 @@
           {
             "date": "2026-07-14",
             "time": "00:00",
+            "text": "[케이티] 주요사항보고서(자기주식처분결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260714000371"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260714000371"
+          },
+          {
+            "date": "2026-07-14",
+            "time": "00:00",
+            "text": "[케이티] 주요사항보고서(자기주식취득결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260714000368"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260714000368"
+          },
+          {
+            "date": "2026-07-14",
+            "time": "00:00",
             "text": "[에이플러스에셋] 주요사항보고서(자기주식취득신탁계약체결결정)\n공시유형: 주요사항보고",
             "links": [
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260714000127"
@@ -2261,6 +2279,60 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260713000496"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260713000496"
+          },
+          {
+            "date": "2026-07-14",
+            "time": "00:00",
+            "text": "[케이알엠] [첨부정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260714000328"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260714000328"
+          },
+          {
+            "date": "2026-07-14",
+            "time": "00:00",
+            "text": "[LB세미콘] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260714000321"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260714000321"
+          },
+          {
+            "date": "2026-07-14",
+            "time": "00:00",
+            "text": "[프로이천] 주요사항보고서(자기주식처분결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260714000318"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260714000318"
+          },
+          {
+            "date": "2026-07-14",
+            "time": "00:00",
+            "text": "[손오공] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260714000284"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260714000284"
+          },
+          {
+            "date": "2026-07-14",
+            "time": "00:00",
+            "text": "[뉴인텍] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260714000280"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260714000280"
+          },
+          {
+            "date": "2026-07-14",
+            "time": "00:00",
+            "text": "[교보15호스팩] [기재정정]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260714000267"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260714000267"
           },
           {
             "date": "2026-07-14",
@@ -2515,60 +2587,6 @@
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260713000352"
           },
           {
-            "date": "2026-07-13",
-            "time": "00:00",
-            "text": "[다보링크] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260713000277"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260713000277"
-          },
-          {
-            "date": "2026-07-13",
-            "time": "00:00",
-            "text": "[웹스] 주요사항보고서(자기주식취득신탁계약체결결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260713000268"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260713000268"
-          },
-          {
-            "date": "2026-07-13",
-            "time": "00:00",
-            "text": "[휴림에이텍] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260713000145"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260713000145"
-          },
-          {
-            "date": "2026-07-13",
-            "time": "00:00",
-            "text": "[이브이첨단소재] 주요사항보고서(감자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260713000111"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260713000111"
-          },
-          {
-            "date": "2026-07-13",
-            "time": "00:00",
-            "text": "[유진테크놀로지] 주요사항보고서(무상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260713000108"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260713000108"
-          },
-          {
-            "date": "2026-07-13",
-            "time": "00:00",
-            "text": "[위드텍] 주요사항보고서(자기주식취득결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260713000105"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260713000105"
-          },
-          {
             "date": "2026-07-10",
             "time": "00:00",
             "text": "[신한지주] 주요사항보고서(자기주식취득신탁계약해지결정)\n공시유형: 주요사항보고",
@@ -2585,24 +2603,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000623"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000623"
-          },
-          {
-            "date": "2026-07-10",
-            "time": "00:00",
-            "text": "[깨끗한나라] 주요사항보고서(자본으로인정되는채무증권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000622"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000622"
-          },
-          {
-            "date": "2026-07-10",
-            "time": "00:00",
-            "text": "[플레이그램] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000579"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000579"
           }
         ]
       }
