@@ -1,6 +1,6 @@
 {
   "2026-07-17": {
-    "fetched_at": "2026-07-17T13:10:30+09:00",
+    "fetched_at": "2026-07-17T16:20:11+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -401,13 +401,6 @@
         "posts": [
           {
             "date": "2026-07-16",
-            "time": "11:32",
-            "text": "파마리서치 2Q Preview 톤들이 나쁘지 않네요.",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/4280"
-          },
-          {
-            "date": "2026-07-16",
             "time": "11:33",
             "text": "[파마리서치] 26.07.07 업데이트 (수출데이터, 인바운드, 트렌드 ..)\n\n제 자료도 참고하시면 좋을 것 같네유 \n\nhttps://blog.naver.com/spartan_research/224338936056",
             "links": [
@@ -479,6 +472,13 @@
             "text": "☑️ 미국정부, 한국의 초과이익분 미국 배분 요구\n\n한국 하청업체, 노조를 넘어 미 정부 또한 이익분에 대한 배분을 주장하기 시작",
             "links": [],
             "post_url": "https://t.me/SpartanResearch/4303"
+          },
+          {
+            "date": "2026-07-17",
+            "time": "15:00",
+            "text": "제일 비싼 제헌절이다",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/4306"
           }
         ]
       },
@@ -489,13 +489,6 @@
         "category": "매매 신호/트레이딩",
         "channel_url": "https://t.me/d_ticker",
         "posts": [
-          {
-            "date": "2026-07-15",
-            "time": "16:45",
-            "text": "ASML, 2Q26 실적\n\n2Q FY26 Results\n= 매출 €9.33B (est. €8.88B) \n= GPM 54.0% (est. 51.9%)\n= EPS €7.59 (est. €6.90)\n\n3Q FY26 Guidance\n= 매출 €11~12B (est. €10.4B)\n= GPM 55~57% (est. 52.6%)\n\nFY26 Guidance [Raised]\n= 매출 €36B~€40B → €43B~€45B (est. €39.5B)\n= GPM 51~53% → 54~56% (est. 52.6%)\n\nCapa Guidance('26~'28)\n= Low-NA EUV 65대 → 85대(+30%) → 110대(+30%)\n= DUV 130대 → 169대(+30%) → 220대(+30%)\n\n+5%",
-            "links": [],
-            "post_url": "https://t.me/d_ticker/3498"
-          },
           {
             "date": "2026-07-15",
             "time": "17:03",
@@ -650,6 +643,13 @@
             "text": "테스트 장비 공급 부족으로 인해 급격히 테스트 장비 투자를 늘리고 있다.",
             "links": [],
             "post_url": "https://t.me/d_ticker/3517"
+          },
+          {
+            "date": "2026-07-17",
+            "time": "16:01",
+            "text": "17일 아시아장 마감...반도체 종목 대참사\n\n키옥시아 -16.1%\n도쿄일렉트론 -8.2%\nTSMC -7.3%\nASE -10.0%\n\n금일 키옥시아는 미국 위성 통신 기업인 비아샛과 특허 침해 소송전에서 패소해 $229M 배상 판결까지 겹친 상황",
+            "links": [],
+            "post_url": "https://t.me/d_ticker/3518"
           }
         ]
       },
@@ -668,25 +668,6 @@
         "category": "국내 시장/종목 분석",
         "channel_url": "https://t.me/Yeouido_Lab",
         "posts": [
-          {
-            "date": "2026-07-16",
-            "time": "15:18",
-            "text": "전닉이랑 관계없는 종목들이 박살나는 와중에 이 대책만 바라봐야하는 내 심정도 참 답답하다...\n\n[속보]오늘 오후 3시 F4회의→'삼전닉스 레버리지' 대책 발표\nhttps://n.news.naver.com/article/079/0004169144?sid=101",
-            "links": [
-              "https://n.news.naver.com/article/079/0004169144?sid=101"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/36410"
-          },
-          {
-            "date": "2026-07-16",
-            "time": "15:32",
-            "text": "2026.07.16 15:31:56\n기업명: 알테오젠(시가총액: 14조 8,166억) A196170\n보고서명: 기타주요경영사항              (유가증권시장 이전상장 추진 잠정 유보)\n\n제목 : 유가증권시장 이전상장 추진 잠정 유보\n\n* 주요 내용  \n당사는 지난 2025년 12월 8일 개최된 임시주주총회에서 결의된 코스닥시장 조건부 상장폐지 및 유가증권시장 이전상장과 관련하여, 최근 자본시장 환경 변화, 정부 및 한국거래소의 코스닥시장 활성화 정책 추진 등을 종합적으로 검토한 결과 유가증권시장 이전상장 예비심사청구를 현시점에서 잠정 유보하기로 하였습니다. \n \n이에 따라 당사는 코스닥시장 상장을 잠정 유지할 예정이며, 이는 회사의 기업가치 제고 및 주주이익 극대화에 보다 부합한다고 판단한 데 따른 것입니다. \n \n다만, 본 결정은 유가증권시장 이전상장을 전면 철회하는 것은 아니며, 향후 기업가치 및 주주이익 제고 가능성 등을 종합적으로 고려하여 이전상장 절차의 추진 여부 및 시기를 검토할 계획입니다. \n \n향후 이전상장 절차와 관련하여 구체적인 사항이 확정되 \n는 경우, 관련 법령 및 규정에 따라 공시하겠습니다.\n\n* 기타 사항  \n※ 관련 공시 - 2025.11.06. 주주총회소집결의(임시주주총회) - 2025.11.06. 상장폐지승인을위한의안상정결정 - 2025.12.08. 임시주주총회결과\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260716900549\n회사정보: https://finance.naver.com/item/main.nhn?code=196170",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260716900549",
-              "https://finance.naver.com/item/main.nhn?code=196170"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/36411"
-          },
           {
             "date": "2026-07-16",
             "time": "15:32",
@@ -820,6 +801,24 @@
               "https://wallstreetcn.com/articles/3777147"
             ],
             "post_url": "https://t.me/Yeouido_Lab/36433"
+          },
+          {
+            "date": "2026-07-17",
+            "time": "13:50",
+            "text": "샘 올트먼 “앞으로 12개월이 오픈AI 역사상 최고의 1년이 될 것”\n\n지난 12개월은 우리가 보낸 최고의 12개월은 아니었습니다. 그 책임은 대부분 제게 있습니다. 하지만 이제 우리는 지금까지 중 최고의 12개월을 맞이하게 될 것입니다. 우리 팀은 놀라운 일을 해내고 있으며, 여러분을 위해 준비하고 있는 결과물에 분명 매우 만족하게 될 것이라고 생각합니다.\n\n저는 여러 이유로 이 사실이 기쁩니다. 하지만 무엇보다도 저는 우리의 사용자들이 성공하는 것을 중요하게 생각합니다. AI는 더 많은 사람들에게 더 큰 자유, 더 큰 주도권, 그리고 더 큰 부를 제공하는 것이어야 합니다. 우리는 올바른 일을 하고 싶지만, 사람들이 두려움을 느껴서 우리의 방식을 따르게 만들고 싶지는 않습니다.\n\nhttps://t.me/Samsung_Global_AI_SW",
+            "links": [
+              "https://t.me/Samsung_Global_AI_SW"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/36434"
+          },
+          {
+            "date": "2026-07-17",
+            "time": "16:08",
+            "text": "조졌는데 이거\n\n‘삼전닉스’는 월요일이 두렵다… 日 반도체 대장 ‘키옥시아’ 하한가\nhttps://n.news.naver.com/article/005/0001861619?cds=news_media_pc",
+            "links": [
+              "https://n.news.naver.com/article/005/0001861619?cds=news_media_pc"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/36435"
           }
         ]
       },
