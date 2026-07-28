@@ -1,6 +1,6 @@
 {
   "2026-07-28": {
-    "fetched_at": "2026-07-28T20:21:40+09:00",
+    "fetched_at": "2026-07-29T00:23:37+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -9,15 +9,6 @@
         "category": "증권사 리포트",
         "channel_url": "https://t.me/bumgore",
         "posts": [
-          {
-            "date": "2026-07-25",
-            "time": "10:17",
-            "text": "https://n.news.naver.com/mnews/article/015/0005313730?sid=101",
-            "links": [
-              "https://n.news.naver.com/mnews/article/015/0005313730?sid=101"
-            ],
-            "post_url": "https://t.me/bumgore/54683"
-          },
           {
             "date": "2026-07-25",
             "time": "11:23",
@@ -355,8 +346,7 @@
             "text": "💻 AI 투자에 길어지는 반도체 장비 납기… 공급 병목 재현되나\n\nhttps://biz.chosun.com/it-science/ict/2026/07/28/O4PFGB4RSNEW7LWLFHEA2UMA5A/?utm_source=naver&utm_medium=original&utm_campaign=biz\n\n📌 전공정 장비 리드타임 확대\nAI 반도체와 첨단 팹 투자가 동시에 늘며 장비 확보 경쟁이 심화\n\n증착·식각·계측 장비 납기는 기존보다 1.5~2배 증가\n\n국내 일부 장비도 납기가 3~4개월에서 6~8개월로 확대\n\n📌 EUV 공급 제약 장기화\nASML의 2027년 EUV 생산 물량은 대부분 예약된 것으로 파악\n\n초정밀 광학계 생산 확대에 시간이 필요해 단기 증산은 제한적\n\n첨단 공정 장비 부족은 2027~2028년까지 이어질 가능성\n\n📌 HBM 후공정 장비 수요 증가\nHBM3E 12단과 HBM4 양산 준비로 TC 본더 발주가 확대\n\n국내 장비업체들이 생산능력을 늘리고 있지만 공급은 여전히 빠듯한 상황\n\n첨단 패키징 투자가 후공정 장비 수요를 지속적으로 견인\n\n📌 일시적 공급난보다 구조적 병목\n팬데믹 당시와 달리 현재는 AI 설비투자 증가가 수요 확대의 원인\n\n반도체 업체들은 납기 증가를 고려해 장비 발주 시점을 앞당기는 추세\n\n장비 리드타임이 향후 팹 투자 일정과 생산능력 확대의 주요 변수\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
             "links": [
               "https://biz.chosun.com/it-science/ict/2026/07/28/O4PFGB4RSNEW7LWLFHEA2UMA5A/?utm_source=naver&amp;utm_medium=original&amp;utm_campaign=biz",
-              "https://telegram.me/growth_semi",
-              "https://biz.chosun.com/it-science/ict/2026/07/28/O4PFGB4RSNEW7LWLFHEA2UMA5A/"
+              "https://telegram.me/growth_semi"
             ],
             "post_url": "https://t.me/growthresearch/28294"
           },
@@ -593,49 +583,6 @@
         "posts": [
           {
             "date": "2026-07-27",
-            "time": "07:39",
-            "text": "[공시] 엔비디아, 네이버 유상증자 참여\n\n엔비디아는 당사 보통주를 대상으로 하는 약 10억 달러 규모의 제3자배정 유상증자에 참여할 예정\n\n 당사는 데이터센터 부지 확보, 구축 및 운영을 주도하며, 엔비디아는 GPU 공급의 주체로 참여\n\nhttps://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260727800006",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260727800006"
-            ],
-            "post_url": "https://t.me/d_ticker/3574"
-          },
-          {
-            "date": "2026-07-27",
-            "time": "08:03",
-            "text": "현재 웨이퍼 한 장당 3만 달러 수준인 TSMC의 2나노 가격은 2027년 3만 3000달러를 넘어설 것으로 보인다.\n\n반면 삼성전자의 2나노 웨이퍼 단가는 약 2만 달러로 TSMC의 3분의 2 수준으로 알려졌다. \n\n여기에 최근 삼성전자가 2나노 공정 수율을 60% 이상으로 끌어올리며 기술적 안정성까지 입증하자, 원가 부담이 커진 퀄컴·메타·아마존 등 미국 팹리스(반도체 설계 전문) 기업들의 공급망 다변화 대상이 됐다.\n\nhttps://n.news.naver.com/article/011/0004645405?ntype=RANKING&type=journalists",
-            "links": [
-              "https://n.news.naver.com/article/011/0004645405?ntype=RANKING&amp;type=journalists"
-            ],
-            "post_url": "https://t.me/d_ticker/3575"
-          },
-          {
-            "date": "2026-07-27",
-            "time": "09:43",
-            "text": "두산에너빌리티, 중국 라이양 원전 5∙6호기 핵심소재 공급 계약 체결\n\n이번 계약을 통해 두산에너빌리티는 라이양 5∙6호기에 적용되는 증기발생기용 채널헤드(Channel Head) 4개와 튜브시트(Tube sheet) 4개 등 총 8개의 초대형 단조품을 2029년까지 순차적으로 공급할 예정이다.\n\nhttps://stock.mk.co.kr/news/view/1127260",
-            "links": [
-              "https://stock.mk.co.kr/news/view/1127260"
-            ],
-            "post_url": "https://t.me/d_ticker/3576"
-          },
-          {
-            "date": "2026-07-27",
-            "time": "10:09",
-            "text": "SK하이닉스, 키옥시아 엑시트로 40조원 영업외이익 전망\n\n2Q26 영업외이익 41.6조원으로 추정됨. 지난 2018년 동사는 베인컴패니와 키옥시아 (전 도시바메모리)에 3.9조원의 전략적 투자 단행 (SPC1 + SPC2). 그 중 SPC1 매각을 지난 6월 완료했으며, 그 과정에서 40조원에 육박하는 누적 이익이 인식됐을 것으로 추정. 여전히 동사는 SPC2 (전환사채)를 보유중이며, 이는 전환 시 14%대의 지분으로 변환될 수 있음\n\n(26.07.27 메리츠증권 김선우)",
-            "links": [],
-            "post_url": "https://t.me/d_ticker/3577"
-          },
-          {
-            "date": "2026-07-27",
-            "time": "10:18",
-            "text": "[단독] 엔비디아, 오픈AI에 $250B 금융 보증 선다\n\n- 엔비디아가 오픈AI 대신해 재무적 보증 설 예정\n- 규모는 $250B. 오하이오 데센($500B 이상)에 투입\n- 이번 보증은 데이터센터 임대 및 건설에만 쓰이고\n- 칩 구매 비용은 별도로 파이낸싱해야 하는 상황\n- 엔비디아는 칩 구매 자금인 $350B 별도 지원도 논의\n\nWSJ",
-            "links": [
-              "https://www.wsj.com/tech/ai/nvidia-in-talks-with-openai-to-guarantee-250-billion-financing-for-data-center-3dd6eae3?mod=tech_lead_pos1"
-            ],
-            "post_url": "https://t.me/d_ticker/3578"
-          },
-          {
-            "date": "2026-07-27",
             "time": "14:28",
             "text": "LG이노텍 2Q26 잠정실적\n\n- 매출 5조 5272억 (est. 5조 566억), YoY 41%\n- 영익 2458억 (est. 2054억), YoY 2057%\n\nhttps://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260727800269",
             "links": [
@@ -756,6 +703,43 @@
             "text": "TSMC 일본팹(JASM) 지역(Kikuyo) 지진은  진도 5+",
             "links": [],
             "post_url": "https://t.me/d_ticker/3593"
+          },
+          {
+            "date": "2026-07-28",
+            "time": "21:36",
+            "text": "메타, 데이터센터 자금 조달 비용 급등\n\n- 텍사스 엘파소 건설 중인 데이터센터\n- 관련 채권 $12.55B 규모 월요일 발행\n- 채권 일드는 US10Y보다 2.875%p 높은\n- 7.5% 수준. 만기는 2048년 \n- 올해 AI 채권 발행액은 7월 초 $270B\n- 2025년 한 해 발행된 규모의 약 2배\n- 고금리에도 더 많은 신규 채권 예상\n\nWSJ",
+            "links": [
+              "https://www.wsj.com/finance/the-price-to-finance-the-ai-data-center-boom-is-rising-just-ask-meta-7894d503"
+            ],
+            "post_url": "https://t.me/d_ticker/3594"
+          },
+          {
+            "date": "2026-07-28",
+            "time": "22:07",
+            "text": "키엔스 2Q26\n\n1Q FY27\n= 매출 ¥347B (est. ¥313B)\n= OPM 54.0% (est. 50.4%)\n= EPS ¥574 (est. ¥463)\n\n가이던스 제시 X\n\n중국 포함 아시아 시장 매출 YoY 34% (Prior. 17%) 기록. 공장자동화(FA) 기기 판매 확대. 해외영업 인력 약 9400명으로 국내 영업인력의 2.9배 많은 규모\n\nAfter +7.8%",
+            "links": [],
+            "post_url": "https://t.me/d_ticker/3595"
+          },
+          {
+            "date": "2026-07-28",
+            "time": "22:18",
+            "text": "앰코 2Q26\n\n2Q FY26\n= 매출 $1.90B (est. $1.82B)\n= GPM 16.8% (est. 15.2%)\n= OPM 10.5% (est. 8.4%)\n= EPS $0.70 (est. $0.48)\n\n3Q FY26 Guidance\n= 매출 $1.95B~$2.05B (est. $2.12B)\n= GPM 18.5~19.5% (est. 17.3%)\n= OPEX $140M (est. $114M)\n= EPS $0.72~$0.82 (est. $0.80)\n\nFY26 Guidance\n= CAPEX $2.5B~$3.0B 유지 (est. $2.72B)\n\nPre -12%",
+            "links": [],
+            "post_url": "https://t.me/d_ticker/3596"
+          },
+          {
+            "date": "2026-07-28",
+            "time": "22:28",
+            "text": "앰코 Q&A\n\n시스템 인 패키지(SiP)\n한국 SiP 생산 라인으로 베트남으로 이관 중. 이 과정에서 시차 발생해 특정 애플리케이션의 품질 인증(퀄)이 4Q 및 1H27까지 지연될 수 있음\n\n메모리 물량\n메모리 고객이 수익성이 높은 HBM 및 서버용 DRAM/NAND 생산에 설비를 집중 배치하면서 모바일용 LPDDR 등 당사에 할당될 공급량이 대폭 축소됐음\n\n메모리 영향\n$200 이하 보급형 스마트폰의 제조원가(BOM) 중 메모리 비중이 최대 43%까지 치솟음. 부품 원가 상승분을 소비자 가격에 전가($30~$150)함에 따라 전세계 스마트폰 출하량이 감소. 이에 당사의 안드로이드향 매출이 QoQ 20% 감소\n\n첨단 패키징\n연간 CAPEX의 30~35%를 첨단 패키징에 배분할 예정(전망 유지). 2.5D 패키징은 11개 고객사 대상으로 진행, 고밀도 팬아웃(HDFO)은 10개 진행 중. 연내 첨단 패키징 기반 신제품 4개 출시 예정. 데이터센터용 CPU 건이 가장 큰 규모. 팬아웃 브릿지 등 차세대 기술은 2028년 본격화\n\n엔비디아 파트너십\n엔비디아와 협약으로 인한 R&D 비용의 급증은 없음. R&D 지출은 기존과 동일하게 CAPEX의 3~5% 수준 유지. 엔비디아가 제공하는 선급금은 2027년에 수령해 미국 내 서비스 제공 진척에 따라 상환하는 방식. 엔비디아와 계약은 5~10년 사이 예상\n\n마진 개선\n2분기 GPM 개선 폭은 QoQ 2.5%p. 가동률 증가 영향이 2/3, 제품 믹스 개선이 1/3 기여. 3분기 마진 개선은 AI 컴퓨팅향 매출 가속화에 따른 제품 믹스 개선이 주된 동력이 될 것. 27~28년 애리조나 신공장 가동에 따른 초기 고정비(감가상각비 등) 부담이 마진에 반영돼 일시적인 마진 압박 요인으로 작용할 것",
+            "links": [],
+            "post_url": "https://t.me/d_ticker/3597"
+          },
+          {
+            "date": "2026-07-28",
+            "time": "22:41",
+            "text": "코닝 2Q26\n\n2Q FY26\n= 매출 $4.74B (est. $4.63B)\n= GPM 39.6% (est. 38.3%)\n= OPM 20.9% (est. 20.6%) \n= EPS $0.78 (est. $0.75)\n= OCF $1.72B (est. $0.88B)\n\nSales by Segment\n= 광학 $2.07B, YoY 32%\n= 유리 $1.46B, YoY 1%\n= 차량 $0.47B, YoY 2%\n= 태양광 $0.44B, YoY 90%\n= 생명과학 $0.29B, YoY -15%\n\n3Q FY26 Guidance\n= 매출 $4.9B~$5.0B (est. $5.0B)\n= EPS $0.85~$0.89 (est. $0.85)\n\n-16%",
+            "links": [],
+            "post_url": "https://t.me/d_ticker/3598"
           }
         ]
       },
@@ -774,16 +758,6 @@
         "category": "국내 시장/종목 분석",
         "channel_url": "https://t.me/Yeouido_Lab",
         "posts": [
-          {
-            "date": "2026-07-27",
-            "time": "15:37",
-            "text": "2026.07.27 15:30:07\n기업명: 두산에너빌리티(시가총액: 45조 3,517억) A034020\n보고서명: 연결재무제표기준영업(잠정)실적(공정공시)\n\n매출액 : 47,248억(예상치 : 46,880억+/ 1%)\n영업익 : 3,143억(예상치 : 2,642억/ +19%)\n순이익 : 1,576억(예상치 : 1,297억+/ 22%)\n\n**최근 실적 추이**\n2026.2Q 47,248억/ 3,143억/ 1,576억\n2026.1Q 42,611억/ 2,335억/ 602억\n2025.4Q 48,599억/ 2,121억/ 525억\n2025.3Q 38,804억/ 1,371억/ -240억\n2025.2Q 45,690억/ 2,711억/ 1,978억\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260727800357\n회사정보: https://finance.naver.com/item/main.nhn?code=034020",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260727800357",
-              "https://finance.naver.com/item/main.nhn?code=034020"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/36764"
-          },
           {
             "date": "2026-07-27",
             "time": "18:56",
@@ -885,6 +859,13 @@
               "https://finance.naver.com/item/main.nhn?code=210980"
             ],
             "post_url": "https://t.me/Yeouido_Lab/36785"
+          },
+          {
+            "date": "2026-07-28",
+            "time": "21:40",
+            "text": "모건스탠리 \"AI 인프라주 매수 기회… 컴퓨팅 수요 공급 초과 지속\"\n\n1. 주가 조정 배경 및 장기 펀더멘털\n\n기술적 요인에 따른 하락: 최근 AI 인프라 종목의 약세는 기업의 실적이나 기본 체력(펀더멘털) 훼손이 아닌 기술적 수급 요인에 의해 발생했습니다.\n\n장기 성장 동력 유효: AI 기술의 발전, 기업들의 AI 도입 확대, 지속적인 설비투자(CAPEX) 증가는 컴퓨팅 리소스 수요를 계속해서 견인할 것입니다.\n\n저가 매수 매력 증가: 모건스탠리가 선호하는 AI 인프라 종목들은 최근 1개월간 글로벌 증시 대비 약 7%p 하회(언더퍼폼)했으나, 장기적인 구조적 성장 가능성은 여전히 견고합니다.\n\n\n2. 시장의 주요 우려에 대한 반박\n\n기업의 AI 지출 축소 우려 해소: 토큰 사용 제한 등으로 기업들이 AI 지출을 줄일 것이라는 우려를 일축했습니다. 현재 기업의 AI 비용은 AI를 통해 얻는 생산성 향상 이익에 비하면 매우 작은 수준입니다.\n\n중국 AI 모델 발전의 영향: 중국의 대형언어모델(LLM) 개발 및 AI 모델의 효율성 제고는 연산 수요를 줄이기보다, AI 적용 범위를 넓히고 전체 도입률을 높여 연산 수요를 오히려 증가시킬 것입니다.\n\n\n3. 과제 및 제약 요인 (일시적 걸림돌)\n주요 병목 요인: 노동력 부족, 전력 공급 부족, 신규 데이터센터 건설에 대한 정치적 반대 등이 도전 과제로 존재합니다.\n\n전력 부족 규모: 신규 전력 솔루션이 도입되기 전인 2028년까지 미국 데이터센터 산업의 전력 부족량이 최대 38기가와트(GW)에 달할 것으로 전망됩니다.\n\n모건스탠리의 시각: 이러한 문제들은 구조적 장벽이라기보다는 일시적인 ‘속도 조절 요인(Speed bumps)’에 불과하다고 평가했습니다.",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/36786"
           }
         ]
       },
@@ -3200,6 +3181,15 @@
         "category": "공시",
         "posts": [
           {
+            "date": "2026-07-29",
+            "time": "00:00",
+            "text": "[모아데이타] [기재정정]주요사항보고서(자기전환사채만기전취득결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260728000502"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260728000502"
+          },
+          {
             "date": "2026-07-28",
             "time": "00:00",
             "text": "[SK디앤디] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
@@ -3504,15 +3494,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260727000338"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260727000338"
-          },
-          {
-            "date": "2026-07-27",
-            "time": "00:00",
-            "text": "[한화플러스제5호스팩] 주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260727000299"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260727000299"
           },
           {
             "date": "2026-07-24",
