@@ -1,6 +1,6 @@
 {
   "2026-07-29": {
-    "fetched_at": "2026-07-29T20:28:55+09:00",
+    "fetched_at": "2026-07-30T00:09:55+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -410,13 +410,6 @@
         "posts": [
           {
             "date": "2026-07-28",
-            "time": "15:00",
-            "text": "저가 매수의 관점보다 시장 반등이 나올 때 베타 크게 먹을 가능성이 있기에 반등 나올 때 담아야할 종목 정도",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/4496"
-          },
-          {
-            "date": "2026-07-28",
             "time": "16:14",
             "text": "https://pjs4791d-dev.github.io/earnings-calendar/\n\n증권사 리포트 조회 기능을 추가했습니다. \n\n리서치하면서 불편하다고 느꼈던 경험이나 필요한 기능이 있으실 경우 개인 텔레로 건의해주시면 참고해보겠습니다!",
             "links": [
@@ -550,6 +543,15 @@
               "https://pjs4791d-dev.github.io/earnings-calendar/kospi-panic.html"
             ],
             "post_url": "https://t.me/SpartanResearch/4515"
+          },
+          {
+            "date": "2026-07-29",
+            "time": "21:22",
+            "text": "TRUMP TO FOX: WE'LL BE HITTING IRAN HARD\n(@WalterBloomberg)",
+            "links": [
+              "https://t.me/WalterBloomberg"
+            ],
+            "post_url": "https://t.me/SpartanResearch/4517"
           }
         ]
       },
@@ -3195,6 +3197,24 @@
         "category": "공시",
         "posts": [
           {
+            "date": "2026-07-30",
+            "time": "00:00",
+            "text": "[진원생명과학] [기재정정]주요사항보고서(자기전환사채매도결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260729000534"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260729000534"
+          },
+          {
+            "date": "2026-07-30",
+            "time": "00:00",
+            "text": "[에이전트AI] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260729000536"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260729000536"
+          },
+          {
             "date": "2026-07-29",
             "time": "00:00",
             "text": "[풀무원] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
@@ -3447,15 +3467,6 @@
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260729000001"
           },
           {
-            "date": "2026-07-29",
-            "time": "00:00",
-            "text": "[모아데이타] [기재정정]주요사항보고서(자기전환사채만기전취득결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260728000502"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260728000502"
-          },
-          {
             "date": "2026-07-28",
             "time": "00:00",
             "text": "[SK디앤디] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
@@ -3544,15 +3555,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260727000227"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260727000227"
-          },
-          {
-            "date": "2026-07-27",
-            "time": "00:00",
-            "text": "[iM금융지주] 주요사항보고서(자기주식취득신탁계약체결결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260727000211"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260727000211"
           }
         ]
       }
