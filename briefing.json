@@ -1,6 +1,6 @@
 {
   "2026-07-31": {
-    "fetched_at": "2026-07-31T16:52:41+09:00",
+    "fetched_at": "2026-07-31T20:31:19+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -111,16 +111,6 @@
         "category": "매크로/트레이딩",
         "channel_url": "https://t.me/survival_DoPB",
         "posts": [
-          {
-            "date": "2026-07-24",
-            "time": "08:51",
-            "text": "AMD: \"Advancing AI 2026\"\n\n에이전트 AI 시대를 위한 풀스택 컴퓨트 제공\n\n시장 전망: AI 수요 폭발에 힘입어 2030년 AMD의 전체 유효 시장(TAM)이 약 2조 달러 규모로 성장할 것으로 전망\n\n\n주요 신제품 및 기술 발표\n1. AMD Helios™ (최초의 랙스케일 AI 솔루션)\n\n구성: 72개의 Instinct MI455X GPU + 18개의 6세대 EPYC \"Venice\" CPU + Pensando 초고속 네트워크 + ROCm 소프트웨어 통합.\n성능: 경쟁사(NVIDIA Vera Rubin NVL72) 대비 달러당 추론 토큰 처리량 최대 30% 우수.\n배포: 기가와트(GW) 규모의 데이터센터에 즉시 투입 가능한 생산 단계 진입.\n\n\n2. 6세대 AMD EPYC™ 서버 CPU (\"Venice\")\n에이전틱 AI(Agentic AI) 및 클라우드·기업용 워크로드에 최적화.\n업계 최고 수준의 코어/스레드 밀도(최대 512스레드)를 제공하여 와트당/달러당/랙당 가장 많은 AI 에이전트를 구동.\n\n\n3. AMD Instinct™ MI400 시리즈 GPU\nMI455X: 이전 세대(MI355X) 대비 토큰 처리량 34배 향상.\nMI430X: 과학 계산 및 주권 AI(Sovereign AI)를 위한 모델로, 최대 288 TFLOPS의 FP64 연산 성능 제공.\nMI350P: 기존 인프라 교체용 GPU로, 경쟁사 대비 달러당 초당 토큰 생성량 최대 4.2배 우수.\n\n\n4. 피지컬 AI 및 엣지/임베디드 솔루션\nAMD Kria™ AI 솔루션: 로봇의 인지·추론·의사결정을 단일 플랫폼에 통합한 Kria AI SOM 및 로보틱스 개발자 플랫폼 출시.\nAMD Ryzen™ AI Embedded X100: 로봇 및 임베디드 AI용 신형 프로세서.\nAMD Ryzen™ AI Halo: Ryzen AI Max PRO 400 시리즈 기반의 온디바이스 AI 개발 플랫폼.\n\n\n 글로벌 빅테크 파트너십\n\nAnthropic: 최대 2GW 규모의 Helios 랙스케일 솔루션(MI455X) 도입 계약. Claude AI를 활용해 AMD의 ROCm 소프트웨어 및 GPU 최적화를 가속화하는 다년간의 엔지니어링 협업 진행.\n\nOpenAI: Triton 프레임워크와 ROCm을 연동해 GPT 워크로드를 Helios 시스템에 최적화. 2026년 4분기부터 Helios 랙을 본격 가동.\n\nMeta: 기가와트 규모의 배포를 위해 6세대 EPYC CPU 및 Helios 랙 검증 진행 중.\n\nCerebras: 초저지연 AI 연산 기술과 Helios 랙 인프라를 결합해 추론 경제성 극대화.\n\nAT&T & Cisco: AT&T는 통신 전용 모델(OTel 2.0) 학습에 AMD GPU 적용. Cisco는 AMD AI 엔진과 자사 네트워크/보안 시스템을 결합해 기업용 에이전틱 AI 지원.\n\n\n소프트웨어 혁신: ROCm.ai\nAI 기반 개발 플랫폼: 개발자가 코드 작성 에이전트(Claude, Codex, Cursor 등)를 통해 ROCm 환경에서 GPU 소프트웨어를 빠르게 최적화할 수 있도록 지원.\n생태계 최적화: PyTorch, Hugging Face, vLLM, SGLang 등 대표적인 오픈소스 프레임워크가 MI455X GPU에 이미 최적화 완료.\n\n\n 장기 로드맵 (2027 ~ 2030년)\n2027년: 차세대 Instinct MI500 GPU 및 이를 탑재한 Helios 500 (EPYC \"Verano\" CPU 조합) 출시.\n2028년: 'Zen 7' 아키텍처 기반 EPYC CPU(\"Florence\", \"Ferrara\", \"Fidenza\") 출시. Instinct MI600 GPU 및 Helios 600 솔루션 선보일 예정.\n2030년: 'Zen 8' 아키텍처 기반 차세대 EPYC CPU(\"Ravenna\") 출시 예정.\n\nhttps://ir.amd.com/news-events/press-releases/detail/1294/aai-2026-amd-delivers-full-stack-compute-for-the-agentic-ai-era",
-            "links": [
-              "http://ROCm.ai/",
-              "https://ir.amd.com/news-events/press-releases/detail/1294/aai-2026-amd-delivers-full-stack-compute-for-the-agentic-ai-era"
-            ],
-            "post_url": "https://t.me/survival_DoPB/13744"
-          },
           {
             "date": "2026-07-24",
             "time": "08:51",
@@ -247,6 +237,13 @@
               "https://finance.naver.com/item/main.nhn?code=000660"
             ],
             "post_url": "https://t.me/survival_DoPB/13763"
+          },
+          {
+            "date": "2026-07-31",
+            "time": "18:41",
+            "text": "KIOXIA, 2027년까지 NAND 공급 부족 예상 - 니케이\n\n일본의 NAND 플래시 및 SSD 제조사인 키옥시아(Kioxia, 구 도시바 메모리)는 AI 데이터센터 수요가 공급을 지속적으로 초과하고 있다고 밝혔다.\n\n4~6월 SSD 및 스토리지 매출은 전년 동기 대비 5배 이상 증가해 1조 1747억 엔을 기록했으며, 이는 전 회계연도 전체 부문 매출과 거의 맞먹는 수준이다. NAND 판매 가격은 전분기 대비 70% 상승했으며, 출하량도 증가했다.\n\n키옥시아는 7~9월 순이익을 1조 2700억 엔으로 전망했으나, 이는 작년 수준의 약 31배에 달하지만 컨센서스인 1조 3431억 엔에는 미치지 못한다. 4~6월 순이익 8422억 엔도 시장 기대치를 밑돌았다.\n\n회사는 최대 8000억 엔 규모의 자사주 매입을 승인했으며, 이는 발행 주식의 5.5%에 해당하는 최대 3000만 주를 대상으로 한다. 동시에 10월 1일부터 3:1 주식 분할을 실시한다. 대차대조표도 순현금 상태로 전환됐다.",
+            "links": [],
+            "post_url": "https://t.me/survival_DoPB/13764"
           }
         ]
       },
@@ -257,66 +254,6 @@
         "category": "산업/기술 분석",
         "channel_url": "https://t.me/growthresearch",
         "posts": [
-          {
-            "date": "2026-07-31",
-            "time": "10:04",
-            "text": "💻 지앤비에스 에코 반도체·태양광 독점적 수혜, 영업이익 3배 성장과 PER 4배\n\n🔥SK하이닉스향 스크러버 장비에서 독점적 지위🔥를 가지고 있는 지앤비에스 에코에도 주목해 볼 만 합니다.\n\n반도체 공정이 점차 미세화되고, SK하이닉스 증설도 '27년 이후까지 꾸준히 지속될 것으로 보이면서 \n\n현재도 90% 이상의 가동률을 보이는 가운데 수요가 기존 예상보다도 빠르게 강해져 SK하이닉스 전용 라인까지 구축 계획 중인 만큼 실적은 더 크고 빠르게 성장할 가능성이 높습니다.\n\n현재 2026(E) 당기순이익 233억 원, 시가총액은 1,286억 원, 26F PER은 5배 수준으로 저평가 매력도 높습니다.\n\n\n저희가 어제 지앤비에스 에코 탐방보고서를 발간드렸으니,\n꼭 한 번씩 읽어보셔서 투자에 도움 받아가시기 바랍니다.\n\n🔥 지앤비에스 에코 탐방보고서(7/30) 다시보기\nhttps://contents.premium.naver.com/growthresearch/growth/contents/260729201018196ti\n\n📌 1) 성장 구조: 반도체·태양광 동반 성장\n신규 팹 증가는 설치 수요를, 공정 고도화는 팹당 장비 대수를, 가동 강도 상승은 교체·유지보수 수요를 확대\n\nSK하이닉스 증설과 글로벌 태양광 셀 투자가 실적 성장 견인\n\n📌 2) 반도체: 증설 수혜 본격화\n플라즈마 스크러버 최다 납품 레퍼런스와 높은 고객사 진입장벽 보유\n\n2026년 SK하이닉스향 공급량은 평년 대비 2배 이상 증가 전망\n\nM15X에 이어 용인 Y1·M17 증설로 2027년 이후 성장 지속\n\n📌 3) 태양광: 글로벌 투자 핵심 수혜\n특히 중국·인도 태양광 스크러버 점유율은 각각 약 80%, 95%\n\n인도 셀 생산능력 확대로 대용량 스크러버 수주 증가 기대\n\n이외 미국, 유럽 등 주요 시장에서도 경쟁력 확대\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
-            "links": [
-              "https://contents.premium.naver.com/growthresearch/growth/contents/260729201018196ti",
-              "https://telegram.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/28387"
-          },
-          {
-            "date": "2026-07-31",
-            "time": "10:15",
-            "text": "✅ 일본은행, 오늘 금리동결 유력…엔화 방어용 매파 메시지 주목\n\nhttps://www.news1.kr/world/international-economy/6245019\n\n📌 BOJ, 기준금리 1% 동결 유력\n지난 6월 금리 인상 이후 이번 회의에서는 현행 1% 유지 전망\n\n일부 심의위원이 1.25% 인상 소수의견을 낼 가능성도 거론\n\n시장 관심은 실제 동결 여부보다 추가 인상 의지의 강도에 집중\n\n📌 성장률 상향·물가 전망 하향 가능성\n중동 분쟁 완화와 경기 부담 감소를 반영해 성장률 전망 상향 예상\n\n정부 보조금과 국제유가 하락 영향으로 물가 전망은 소폭 하향 가능\n\n성장세 개선과 수입물가 상승이 향후 추가 긴축 근거로 작용할 전망\n\n📌 연말까지 1.25%로 추가 인상 전망\n시장에서는 6개월에 한 번 정도의 금리 인상을 기본 시나리오로 제시\n\n전문가 다수는 BOJ가 연말까지 기준금리를 1.25%로 올릴 것으로 전망\n\n경기 회복과 엔화 약세가 이어질 경우 인상 속도가 빨라질 가능성\n\n📌 엔화 방어 위한 매파 발언 주목\n일본 정부의 엔화 매수 개입 이후 달러·엔 환율이 한때 157엔대로 하락\n\n우에다 총재가 엔화 약세를 막기 위해 강한 긴축 메시지를 낼지 관심\n\n낮은 근원물가와 지진에 따른 경기 불확실성은 긴축 강도를 제한할 요인\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
-            "links": [
-              "https://www.news1.kr/world/international-economy/6245019",
-              "https://telegram.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/28389"
-          },
-          {
-            "date": "2026-07-31",
-            "time": "10:26",
-            "text": "✅ 이 대통령 \"핵심광물 넘어 첨단·방산 시너지 확신\"…칠레 차관 \"대규모 경제사절단 韓 파견\"\n\nhttps://www.newsis.com/view/NISX20260731_0003730838\n\n📌 한·칠레 협력, 광물에서 첨단산업으로 확대\n리튬·구리 강국 칠레와 배터리·반도체·AI 강국 한국의 협력 강화\n\n기존 농산물·광산물 중심 교역에서 첨단 제조와 방산 분야로 범위 확대\n\n한·칠레 FTA 체결 20여 년 만에 전략적 산업 파트너로 관계 전환\n\n📌 핵심광물 공급망 협력 강화\nLS와 칠레 국영기업 코델코의 합작사업을 대표 협력 모델로 제시\n\n구리 제련 과정에서 금·은 등 귀금속을 회수해 부가가치 확대\n\nAI 데이터센터와 전력망 투자 증가에 맞춰 구리 분야 협력 확대 추진\n\n📌 방산·AI·친환경 분야 협력 논의\n한화는 잠수함·호위함과 장갑차의 공동설계·생산·수출 협력 제안\n\n네이버는 AI 인프라부터 데이터까지 연결하는 풀스택 AI 생태계 구축 제안\n\n칠레의 재생에너지와 한국의 기술력을 결합한 지속가능 산업 협력 추진\n\n📌 9월 칠레 경제사절단 방한 예정\n칠레 정부가 기업·경제단체·유관기관으로 구성된 대규모 사절단 파견\n\n무역·투자·혁신·기술과 신규 공급망 협력 방안을 국내 기업과 논의\n\nK-푸드·K-뷰티 등 소비재 기업의 중남미 시장 진출 기회도 확대\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
-            "links": [
-              "https://www.newsis.com/view/NISX20260731_0003730838",
-              "https://telegram.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/28390"
-          },
-          {
-            "date": "2026-07-31",
-            "time": "10:39",
-            "text": "✅ 7.8조 KDDX 사업 본궤도…한화오션, 2032년 선도함 전력화 시동\n\nhttps://www.fnnews.com/news/202607311001172493\n\n📌 한화오션, 7.8조원 KDDX 본계약\n방위사업청과 상세설계·선도함 건조 사업 본계약 체결\n\n7000t급 국산 이지스급 구축함 6척을 국내 기술로 건조\n\n2032년 선도함을 시작으로 2036년까지 순차 전력화 예정\n\n📌 상세설계와 건조 실행 단계 돌입\n입찰과 협상을 마치고 설계·생산·품질관리 절차 본격화\n\n전투체계·레이더·무장체계 등 핵심 국산 장비 9종 탑재\n\n복잡한 장비를 통합하는 설계 역량과 체계통합 능력이 관건\n\n📌 미래 전장 대응 기술 적용\n유·무인 복합전투체계와 다층 방어·사이버 방호체계 반영\n\n감시·정찰 임무를 무인체계와 분담해 작전 효율성 향상\n\n자동화 기술을 적용해 함정 운용 인력과 장병 부담 축소\n\n📌 해양방산 성장과 수출 기반 확보\n전투체계·레이더·통신·추진 분야 국내 기업의 참여 확대\n\n핵심 장비 국산화를 통해 국내 방산 공급망 경쟁력 강화\n\n국내 운용 실적을 바탕으로 향후 함정 수출 경쟁력 확보 기대\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
-            "links": [
-              "https://www.fnnews.com/news/202607311001172493",
-              "https://telegram.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/28391"
-          },
-          {
-            "date": "2026-07-31",
-            "time": "10:55",
-            "text": "✅ 머스크, 테슬라 중국 사업 분리 추진… 스페이스X 합병 및 양안 갈등 대비\n\nhttps://www.fnnews.com/news/202607311018066423\n\n📌 테슬라, 미국·중국 사업 분리 검토\n지정학적 충돌에도 미국 법인이 독립적으로 운영되도록 양국 사업 간 방화벽 구축 추진\n\n중국 사업부의 분사·매각·폐쇄 등 다양한 시나리오를 자문단과 검토\n\n상하이 공장 수출법인 분리와 IT·업무 시스템 독립 운영 방안도 논의\n\n📌 스페이스X 합병 대비 성격\n스페이스X는 미 국방부 핵심 사업자로 정부 계약과 안보 규제를 적용받는 기업\n\n중국 생산기반을 둔 테슬라와 합병할 경우 이해충돌과 수출통제 문제가 발생할 가능성\n\n중국 공급망과 미국 국방사업의 연결고리를 차단하려는 목적\n\n📌 양안 갈등과 공급망 위험 대응\n대만해협 충돌 시 TSMC 반도체와 중국산 LFP 배터리 공급 차질 우려\n\n테슬라는 2027년까지 미국 공장에서 중국산 부품 사용 중단 추진\n\n기존 중국 공급망을 멕시코와 미국 등으로 이전하는 작업도 진행\n\n📌 중국 정부 승인이 관건\n사업 분리와 합병에 중국 당국 승인이 필요해 난항 예상\n\n중국은 상하이 공장 기술·희토류 공급망과 운전자 데이터 유출 우려\n\n안보 규제나 승인 거부 시 합병·사업 분리 계획 차질 가능\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
-            "links": [
-              "https://www.fnnews.com/news/202607311018066423",
-              "https://telegram.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/28392"
-          },
-          {
-            "date": "2026-07-31",
-            "time": "11:04",
-            "text": "✅ 배터리 3사 다시 질주하나…시장 침체 뚫고 흑자전환 성공\n\nhttps://view.asiae.co.kr/article/2026073018461596636\n\n📌 배터리 3사, 2분기 동반 흑자전환\nLG에너지솔루션·삼성SDI·SK온이 모두 영업이익을 내며 실적 반등\n\n전기차 회복은 더뎠지만 ESS와 AI 데이터센터 수요가 실적 개선 견인\n\n미국 AMPC와 고객사 보상금 등 일회성 효과도 수익성에 기여\n\n📌 LG엔솔·삼성SDI 실적 개선\nLG엔솔은 매출 7조 5,602억원, 영업이익 1,133억원으로 두 분기 만에 흑자\n\n북미 ESS 확대와 원통형 배터리 판매, 유럽 공장 가동률 개선이 성장 동력\n\n삼성SDI는 매출 3조 7,688억원, 영업이익 2,038억원으로 7분기 만에 흑자\n\n📌 SK온 흑자전환과 소재업계 회복\nSK온은 영업이익 8,218억원을 기록하며 흑자전환에 성공\n\n아시아 판매 확대와 고객 보상금, IRA 세액공제가 실적 개선을 견인\n\n엔켐·엘앤에프 등 소재기업도 출하량과 공장 가동률 회복 흐름\n\n📌 하반기 회복 지속 여부에 주목\nESS와 AI 데이터센터 수요 확대가 셀·소재업계의 새로운 성장축으로 부상\n\n실적 개선이 이어지려면 실제 출하 증가와 공장 가동률 회복이 필요\n\n기업별 제품 경쟁력과 시장 점유율에 따라 향후 실적 격차가 커질 전망\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
-            "links": [
-              "https://view.asiae.co.kr/article/2026073018461596636",
-              "https://telegram.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/28393"
-          },
           {
             "date": "2026-07-31",
             "time": "11:13",
@@ -457,6 +394,68 @@
               "https://telegram.me/growthresearch"
             ],
             "post_url": "https://t.me/growthresearch/28407"
+          },
+          {
+            "date": "2026-07-31",
+            "time": "17:03",
+            "text": "💻 태성, 천안 신공장 준공…생산능력 6~7배 확대\n\nhttps://www.viva100.com/article/20260731500657\n\n📌 천안 신공장 본격 가동\n태성이 충남 천안 신공장 준공을 마치고 생산 체제에 돌입\n\n연면적 약 1만 7,000평 규모로 본사와 핵심 생산거점 역할 수행\n\n고객 수요 증가에 대응할 수 있는 생산 기반 확보\n\n📌 생산능력 6~7배 확대\n신공장 준공으로 기존 대비 생산능력이 약 6~7배 증가\n\n대규모 수주 대응력과 납기 경쟁력 강화 기대\n\n생산 인프라 확대로 외형 성장 기반을 마련\n\n📌 글라스기판 장비 집중\n차세대 반도체 패키징용 글라스기판 공정장비 생산 확대\n\n고성능 반도체 패키징 투자 증가에 따른 장비 수요 대응\n\n신공장이 관련 장비 양산의 핵심 전초기지 역할\n\n📌 복합동박 사업도 확대\n이차전지용 복합동박 장비를 미래 성장사업으로 육성\n\n반도체와 이차전지 장비를 양축으로 사업 포트폴리오 다변화\n\n실제 실적 기여는 신규 수주와 공장 가동률 상승 속도가 관건\n\n💻반도체 소부장💻 [그로쓰리서치]\nhttps://telegram.me/growth_semi",
+            "links": [
+              "https://www.viva100.com/article/20260731500657",
+              "https://telegram.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/28408"
+          },
+          {
+            "date": "2026-07-31",
+            "time": "17:25",
+            "text": "✅ 효성중공업, 2분기 영업익 역대 최대…수주 목표 12조로 상향\n\nhttps://www.mt.co.kr/industry/2026/07/31/2026073116310699564\n\n📌 2분기 영업이익 역대 최대\n매출은 1조 6,870억원으로 전년 동기 대비 10.6% 증가\n\n영업이익은 2,643억원으로 60.9% 늘며 분기 최대 기록\n\n상반기 누적 영업이익도 4,166억원으로 56.2% 확대\n\n📌 미국 전력기기 매출이 성장 견인\n수익성이 높은 미국 시장 매출 확대가 실적 개선을 주도\n\n미국향 고수익 수주잔고 비중도 지속적으로 증가\n\n초고압차단기 현지 공장 가동 시 공급망 강화 효과 기대\n\n📌 상반기 수주 7.5조원 확보\n2분기 신규 수주는 3조 3,242억원으로 전년 동기 대비 51% 증가\n\n상반기 누적 수주는 7조 4,981억원으로 지난해 연간 실적에 근접\n\n수주잔고는 17조 5,000억원으로 전년 동기 대비 63% 확대\n\n📌 연간 수주 목표 12조원으로 상향\n기존 연간 수주 목표 8조 4,000억원에서 12조원으로 대폭 조정\n\n북미 전력 인프라 투자 확대에 따른 추가 수주 기대\n\n고수익 수주잔고 증가로 중장기 이익률 개선 가능성\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
+            "links": [
+              "https://www.mt.co.kr/industry/2026/07/31/2026073116310699564",
+              "https://telegram.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/28409"
+          },
+          {
+            "date": "2026-07-31",
+            "time": "17:40",
+            "text": "💻 두산, SK실트론 2.3조에 인수…최태원 지분은 제외\n\nhttps://www.sedaily.com/article/20074469?ref=naver\n\n📌 두산, SK실트론 인수 확정\n두산이 SK실트론 지분 70.6%를 약 2조 3,000억원에 인수\n\n우선협상대상자 선정 7개월 만에 양측 이사회 승인 완료\n\n최태원 회장 개인 지분 29.4%는 이번 거래에서 제외\n\n📌 반도체 밸류체인 완성\nSK실트론은 12인치 웨이퍼 기준 세계 3위 업체\n\n두산테스나·엔지온에 이어 전공정 소재 사업까지 확보\n\n웨이퍼·CCL·후공정 테스트로 반도체 포트폴리오 확대\n\n📌 SK그룹은 재편 자금 확보\nSK는 지분 매각으로 약 2조 3,000억원의 현금 확보\n\n사업 포트폴리오 조정과 재무구조 개선에 활용 가능\n\n최태원 회장 잔여 지분 처리 여부는 향후 관건\n\n📌 실적 연동 이익배분 구조\n기본 거래금액 외에 실트론 실적과 연동한 수익배분 조항 마련\n\n실적 개선 시 SK가 추가 수익을 확보하는 구조\n\n향후 실적에 따라 최종 거래총액이 늘어날 가능성\n\n💻반도체 소부장💻 [그로쓰리서치]\nhttps://telegram.me/growth_semi",
+            "links": [
+              "https://www.sedaily.com/article/20074469?ref=naver",
+              "https://telegram.me/growth_semi",
+              "https://www.sedaily.com/article/20074469"
+            ],
+            "post_url": "https://t.me/growthresearch/28410"
+          },
+          {
+            "date": "2026-07-31",
+            "time": "17:53",
+            "text": "💻 메모리값 급등에 상반기 스마트폰 칩 출하 15%↓… AI용은 24%↑\n\nhttps://biz.chosun.com/it-science/ict/2026/07/31/SKZEWMCF7RFOVA2IWUFEI2LJA4/?utm_source=naver&utm_medium=original&utm_campaign=biz\n\n📌 스마트폰 SoC 출하 15% 감소\n상반기 글로벌 스마트폰용 SoC 출하량은 전년 동기 대비 15% 감소\n\n메모리 가격 급등과 보수적인 재고 운영이 시장 위축의 주요 원인\n\n스마트폰 교체 주기 장기화도 출하 감소에 영향\n\n📌 미디어텍·퀄컴 부진\n미디어텍과 퀄컴 출하량은 각각 전년 동기 대비 25% 이상 감소\n\n미디어텍은 보급형 5G 시장 위축, 퀄컴은 갤럭시 S26 내 엑시노스 병행 탑재가 부담\n\n반면 애플·삼성전자·구글·유니SOC는 출하량이 증가\n\n📌 AI 스마트폰용 칩은 성장\n생성형 AI 기능 지원 SoC 출하량은 상반기 24% 증가\n\nAI 기능 수요와 프리미엄 스마트폰 판매가 성장세를 견인\n\n전체 시장 위축 속에서도 고성능 칩 수요는 상대적으로 견조\n\n📌 보급형 시장 부담 지속\n2분기 스마트폰용 메모리 가격은 전년 동기 대비 300% 이상 상승\n\n올해 연간 SoC 출하량은 14%, 보급형 제품은 30% 이상 감소 전망\n\n메모리 공급 정상화가 2027년 하반기까지 지연될 가능성이 관건\n\n💻반도체 소부장💻 [그로쓰리서치]\nhttps://telegram.me/growth_semi",
+            "links": [
+              "https://biz.chosun.com/it-science/ict/2026/07/31/SKZEWMCF7RFOVA2IWUFEI2LJA4/?utm_source=naver&amp;utm_medium=original&amp;utm_campaign=biz",
+              "https://telegram.me/growth_semi",
+              "https://biz.chosun.com/it-science/ict/2026/07/31/SKZEWMCF7RFOVA2IWUFEI2LJA4/"
+            ],
+            "post_url": "https://t.me/growthresearch/28411"
+          },
+          {
+            "date": "2026-07-31",
+            "time": "18:01",
+            "text": "✅ 중복상장 개선 방안, 내달 3일부터 시행…물적분할 시 주주동의 의무·‘3%룰’ 준용\n\nhttps://biz.heraldcorp.com/article/10827447?ref=naver\n\n📌 중복상장 개선안 8월 3일 시행\n금융위가 한국거래소 상장·공시규정 개정안을 최종 승인\n\n모회사 주주 보호와 기업 자금조달 간 균형을 반영\n\n자회사 해외 상장에도 동일한 절차 적용\n\n📌 물적분할 자회사는 주주동의 의무\n물적분할 자회사 상장 시 모회사 주주동의를 반드시 확보\n\n일반 자회사는 동의 시 요건 충족으로 추정하고 미동의 시 엄격 심사\n\n저비중 자회사는 주주동의 의무에서 제외\n\n📌 표결에는 3%룰 준용\n지분 3% 초과 주주의 의결권을 최대 3%로 제한\n\n참여 주식 과반과 발행주식 총수 4분의 1 이상 찬성이 필요\n\n지배주주 단독 의사로 동의를 확보하기 어렵게 설계\n\n📌 모회사 이사회 책임 강화\n주주 영향평가·보호방안·소통·이사회 결의·공시 등 5대 의무 부과\n\n특별위원회는 독립이사 위원장과 독립위원 3분의 2 이상을 모두 충족\n\n개별 이사 의견 공개는 제외하고 전체 의결 결과만 공시\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
+            "links": [
+              "https://biz.heraldcorp.com/article/10827447?ref=naver",
+              "https://telegram.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/28412"
+          },
+          {
+            "date": "2026-07-31",
+            "time": "18:21",
+            "text": "✅\"삼성전자·SK하이닉스 끝장났다?\" 5년 치 물량 싹 쓸어간 ‘AI 공룡’들의 미친 폭주!\n\nhttps://www.youtube.com/watch?v=kXRavk95FdU\n\n📌삼성·하이닉스, 5년 LTA 본격화\n삼성은 전체 캐파의 60~70%를 장기계약으로 묶고, 하이닉스도 5년 계약과 선수금 구조를 확대\n\n물량뿐 아니라 하한가격까지 설정하며 다운사이클에도 수익성을 지키는 구조로 전환\n\n📌빅테크는 메모리 가격 상승도 감수\n마이크로소프트·메타·아마존 모두 AI 인프라 투자를 확대하며 수요가 공급을 웃도는 상황이 지속\n\n아마존은 메모리 비용 상승을 반영해 연간 CAPEX를 2,000억 달러에서 2,200억 달러로 상향\n\n📌메모리 수요가 몇 년치 선예약되는 시장\n아마존은 2027년 신규 용량 대부분과 2028년 상당 부분까지 이미 예약됐다고 설명\n\n앞으로는 가격 상승폭과 LTA 계약 규모·선수금·예약 물량이 메모리 실적의 핵심 지표가 될 전망\n\n자세한 내용은 영상을 통해 확인하시기 바랍니다!\n\n✅독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
+            "links": [
+              "https://www.youtube.com/watch?v=kXRavk95FdU",
+              "https://telegram.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/28413"
           }
         ]
       },
@@ -467,22 +466,6 @@
         "category": "매크로/크립토",
         "channel_url": "https://t.me/SpartanResearch",
         "posts": [
-          {
-            "date": "2026-07-31",
-            "time": "09:00",
-            "text": "살다가 이런걸 또 다보네",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/4564"
-          },
-          {
-            "date": "2026-07-31",
-            "time": "09:43",
-            "text": "✅ [단독] SK하이닉스, 노조에 성과급 절반 이상 주식 지급 제안…“적자 땐 임금 조정” 제안도\n\nhttps://n.news.naver.com/mnews/article/016/0002677762?sid=001",
-            "links": [
-              "https://n.news.naver.com/mnews/article/016/0002677762?sid=001"
-            ],
-            "post_url": "https://t.me/SpartanResearch/4565"
-          },
           {
             "date": "2026-07-31",
             "time": "09:52",
@@ -613,6 +596,16 @@
             "text": "외인이 코스피를 5조 이상 순매수 한 날은 오늘로 역사상 단 하루임 \n\n3조 이상 매수한 날은 6일, 2조 이상 매수한 날은 12일 \n\n2조 이상 순매수한 날 이후 KOSPI 퍼포먼스는 다음과 같았음 \n\n• D+1 +0.56%\n• D+7 +3.74%\n• D+30 +14.21%\n\n모두가 경험해보지 못한 시장 국면이라 의미가 있을까 싶지만 참고차 정리해봄",
             "links": [],
             "post_url": "https://t.me/SpartanResearch/4585"
+          },
+          {
+            "date": "2026-07-31",
+            "time": "17:16",
+            "text": "📌 삼성전자(시가총액: 1,534조 6,481억) #A005930\n📁 임원ㆍ주요주주특정증권등소유상황보고서\n2026.07.31 17:02:55 (현재가 : 262,500원, +26.81%)\n\n보고자 : 노태문(68년생)/등기임원/대표사장\n보고전 : 0.00%\n보고후 : 0.00%\n변동률 : 0.0%\n\n날짜/사유/변동/주식종류/비고\n2026-07-30/ 장내매수(+)/ 3,045주/ 보통주/-\n\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000755\n회사정보: https://finance.naver.com/item/main.nhn?code=005930",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000755",
+              "https://finance.naver.com/item/main.nhn?code=005930"
+            ],
+            "post_url": "https://t.me/SpartanResearch/4586"
           }
         ]
       },
@@ -623,27 +616,6 @@
         "category": "매매 신호/트레이딩",
         "channel_url": "https://t.me/d_ticker",
         "posts": [
-          {
-            "date": "2026-07-30",
-            "time": "08:20",
-            "text": "마이크로소프트도 CAPEX 관련해서 중요한 발언을 했는데요\n\nCAPEX의 2/3를 투입하는 반도체 등 단기 자산은 수요 변화 시 투자 속도를 즉각 줄일 수 있는 구조라고 설명했습니다.\n\n나머지 토지 및 건축물 등 장기자산은 완공 시기를 유연하게 조절할 수 있어, 데이터센터 공급 과잉이 이뤄지면 투자를 줄일 수 있다는 의중을 드러냈습니다.\n\n결국 ‘CAPEX 유연함‘을 명분으로 언제든 수요 하락에 맞춰 공급을 줄이겠다는 의미입니다.",
-            "links": [],
-            "post_url": "https://t.me/d_ticker/3625"
-          },
-          {
-            "date": "2026-07-30",
-            "time": "09:10",
-            "text": "삼성전자 2Q 현금흐름\n\n-OCF 105조 (est. 56조)\n-CAPEX 14조 (est. 19조)\n-FCF 91조 (est. 35조)\n-순현금 168조 (1Q. 119조)\n\n2분기에 주주환원 자사주매입 5.6조 + 배당금 6.2조 = 총 11.8조 집행",
-            "links": [],
-            "post_url": "https://t.me/d_ticker/3626"
-          },
-          {
-            "date": "2026-07-30",
-            "time": "09:14",
-            "text": "2분기 삼성전자 비메모리 매출 추정\n\n- 매출 8.1조 QoQ 11% / YoY 29%\n- 파운드리 HBM 베이스다이 수요↑\n- 2나노 HPC향 과제 등 수주 확대 지속\n\n*AI를 통해 그래프보고 추정한 값",
-            "links": [],
-            "post_url": "https://t.me/d_ticker/3627"
-          },
           {
             "date": "2026-07-30",
             "time": "09:36",
@@ -762,6 +734,29 @@
             "text": "키옥시아 2Q26\n\n1Q FY27\n= USD/JPY : 160 (Prev. 155)\n= 매출 ¥1.767B (est. ¥1.840B)\n= OPM 75.0% (est. 74.3%)\n= EPS ¥1540 (est. ¥1770)\n\n2Q FY27 Guidance\n= 매출 ¥2.390B (est. ¥2.464B)\n= OPM 79.5% (est. 78.7%)\n= EPS ¥2167 (est. ¥2550)\n\nAfter +8%",
             "links": [],
             "post_url": "https://t.me/d_ticker/3645"
+          },
+          {
+            "date": "2026-07-31",
+            "time": "17:33",
+            "text": "두산이 SK실트론을 2조 3000억에 인수합니다\n\nhttps://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731801321",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731801321"
+            ],
+            "post_url": "https://t.me/d_ticker/3646"
+          },
+          {
+            "date": "2026-07-31",
+            "time": "17:59",
+            "text": "SK는 초과이익 공유분에 대해 지급받을 수 있는 조건도 걸었습니다\n\n- EBITDA ‘27 8900억, ‘28 1조 … ‘34 1조 7000억 기준 초과 시 초과분의 40%에 주식 지분율 적용란 금액을 지급\n\n- ’26.06~‘29.06 동안 특정 고객에 대한 특정 품목의 퀄 통과 시 품목별 250억 원에 지분율 적용힌 금액 지급\n\n- SK실트론 USA 등 미국 자회가 처분대금에 지분율 적용한 금액 지급",
+            "links": [],
+            "post_url": "https://t.me/d_ticker/3647"
+          },
+          {
+            "date": "2026-07-31",
+            "time": "18:01",
+            "text": "SK는 나머지 최태원의 실트론 지분 29.39% 매각을 위해 두산과 별도 협상도 하겠다고 증권 보고서에 명시했습니다\n\n위자료 마련해야죠…",
+            "links": [],
+            "post_url": "https://t.me/d_ticker/3648"
           }
         ]
       },
@@ -780,29 +775,6 @@
         "category": "국내 시장/종목 분석",
         "channel_url": "https://t.me/Yeouido_Lab",
         "posts": [
-          {
-            "date": "2026-07-31",
-            "time": "14:33",
-            "text": "안녕하세요. 당사의 파트너사 다이이찌산쿄(Daiichi-Sanko)가 조금 전 분기 실적발표를 했고, ALT-B4의 파트너 제품 엔허투(Enhertu)의 매출이 기대 이상 달성했다고 밝혔습니다.\n\n▶️ Enhertu는 지난 분기(4~6월) JPY 219.2bn(약 2조원) 판매되어 전년 동기 대비 42% 성장했고, 허가 암종에서 점유율 확대에 기인한다고 설명했습니다.\n\n한편, 주요 R&D 파이프라인에 Enhertu의 피하주사(subcutaneous injection) 임상1상을 미국, 유럽, 일본, 아시아지역에서 진행 중이라고 밝혔습니다.\n\nEnhertu는 전세계에서 가장 많이 판매되는 ADC치료제로, GlobalData에 따르면 2032년 $16.2bn(약 24조원)의 매출로 성장할 것으로 전망되는 블록버스터 제품입니다.",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/36946"
-          },
-          {
-            "date": "2026-07-31",
-            "time": "14:37",
-            "text": "요즘 시장은 패닉이라 달팽이나 들으면서 힐링하시죠\n\nhttps://www.youtube.com/watch?v=gsLeCGz5j7s&list=RDgsLeCGz5j7s&start_radio=1",
-            "links": [
-              "https://www.youtube.com/watch?v=gsLeCGz5j7s&amp;list=RDgsLeCGz5j7s&amp;start_radio=1"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/36949"
-          },
-          {
-            "date": "2026-07-31",
-            "time": "14:48",
-            "text": "이 짤은 오늘을 위해 존재했던거 아닐까",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/36950"
-          },
           {
             "date": "2026-07-31",
             "time": "14:53",
@@ -912,8 +884,7 @@
             "time": "16:34",
             "text": "[MDGL] MASH 시장은 연간 200억 달러 규모로 성장할 가능성\nhttps://m.blog.naver.com/studying-investor/224363958509\n\n마드리갈 역시 \"F4 대상 임상 진행\" + \"siRNA/GLP-1 계열 병용\" 전임상 스터디 진행의 투 트랙으로 미래 전략을 가져가고 있음.\n​\n여러 기업 CEO들과 업계 KOL들이 계속해서 말하는 부분은 \"GLP-1과 FGF21/THR-beta/siRNA\" 등 다양한 콤비 전략으로 개발 방향이 변화하게 될 것이라는 점.\n​\n디앤디파마텍의 경우, 자보페그듀타이드 단일 약물로도 체중/혈당/지방/콜레스테롤/MASH해소/간섬유화 개선 모든 영역에서 Best-in-class 수치를 2상 완료 데이터로 증명했기 때문에 시장에서는 여러 니즈가 있을 것 같다. 어떻게 콤비를 하더라도 GLP-1 계열은 꼭 필요하다는 생각..(가져다주는 이점이 너무 많다..)\n​\n올릭스의 경우에도, MARC1 억제 기전으로 GLP-1 콤비 옵션으로서 기능할 수 있을 것 같다. 릴리는 터제파타이드로 MASH 시장을 먼저 진입하고, siRNA 콤비 옵션으로 시장점유율 확대를 노릴 계획일 것으로 보인다.",
             "links": [
-              "https://m.blog.naver.com/studying-investor/224363958509",
-              "https://m.blog.naver.com/studying-investor/224363958509**"
+              "https://m.blog.naver.com/studying-investor/224363958509"
             ],
             "post_url": "https://t.me/Yeouido_Lab/36964"
           },
@@ -923,6 +894,35 @@
             "text": "공부는 성적 올리는 주체가 나라서 따라잡을 수 없어보이지만\n주가는 올리는 주체가 내가 아니라서 포모를 느낄 수 밖에 없지않을까.",
             "links": [],
             "post_url": "https://t.me/Yeouido_Lab/36967"
+          },
+          {
+            "date": "2026-07-31",
+            "time": "17:32",
+            "text": "2026.07.31 17:31:18\n기업명: SK(시가총액: 40조 3,840억) A034730\n보고서명: 타법인주식및출자증권처분결정\n\n처분회사 : SK실트론㈜ (SK Siltron Co., Ltd.)(대한민국)\n주요사업 : 전자산업용 규소박판 제조업\n\n처분금액 : 23,000억\n자본대비 : 2.68%\n- 처분 후 지분율 : 0\n\n예정일자 : 2027-01-31\n처분목적 : 재무 건전성 제고 및 미래 성장동력 확보를 위한 재원 확보\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731801321\n회사정보: https://finance.naver.com/item/main.nhn?code=034730",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731801321",
+              "https://finance.naver.com/item/main.nhn?code=034730"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/36968"
+          },
+          {
+            "date": "2026-07-31",
+            "time": "17:43",
+            "text": "📌 삼성전자(시가총액: 1,534조 6,481억) #A005930\n📁 임원ㆍ주요주주특정증권등소유상황보고서\n2026.07.31 17:02:55 (현재가 : 262,500원, +26.81%)\n\n보고자 : 노태문(68년생)/등기임원/대표사장\n보고전 : 0.00%\n보고후 : 0.00%\n변동률 : 0.0%\n\n날짜/사유/변동/주식종류/비고\n2026-07-30/ 장내매수(+)/ 3,045주/ 보통주/-\n\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000755\n회사정보: https://finance.naver.com/item/main.nhn?code=005930",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000755",
+              "https://finance.naver.com/item/main.nhn?code=005930"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/36969"
+          },
+          {
+            "date": "2026-07-31",
+            "time": "18:16",
+            "text": "🧬 미국인 11%가 GLP-1 복용 중 — 비만율은 사상 최고치서 하락세, 갤럽 조사\n\n💊 핵심 수치\n미국 성인 11%가 체중감량 목적 GLP-1 약제 복용 중(갤럽) — 2024년 대비 +3%p로 사상 최고치\n\n같은 기간 미국 비만율은 2026년 36.4%로 하락 — 2022년 기록한 사상 최고치 39.9%에서 낮아진 수치(2022년은 위고비 최초 승인 이듬해)\n\n당뇨병 유병률은 최근 수년간 큰 변화 없이 횡보\n\n💊 처방 vs 비승인 조제약 — 비용이 갈림길\nGLP-1 사용자의 \n68%는 오젬픽·마운자로·젭바운드 등 노보노디스크·릴리의 정품 브랜드 약을 복용,\n\n9%는 FDA 미승인 커스텀 조제약(compounded drug) 복용\n\nFDA는 지난 6월 조제 GLP-1이 환자에게 위험할 수 있다는 경고를 발표했음에도\n\n정품에서 조제약으로 전환한 환자 비중이 35%에 달함\n\n전환 사유는 정품 가격 부담(66%)과 보험 커버리지 문제(34%)가 대부분\n\n💊 인지도 확산\nGLP-1이 체중감량 치료에 쓰인다는 사실을 아는 응답자 비율, 2024년 80%에서 2026년 91%로 상승\n\n💊 시장 경쟁 구도\n노보노디스크는 2021년 위고비로 시장을 최초 선점했으나 릴리와의 경쟁 심화로 올해 매출 감소 전망(당초 최대 -13% 가이던스)\n\n반면 릴리는 2025년 시총 1조 달러를 최초 돌파, 2026년 1분기 매출 +56% YoY 성장하며 연간 매출 가이던스를 20억 달러 상향\n\n🧬바이오섹터 분석🧬 [그로쓰리서치]\nhttps://telegram.me/growthbio",
+            "links": [
+              "https://telegram.me/growthbio"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/36970"
           }
         ]
       },
@@ -2861,6 +2861,24 @@
         "posts": [
           {
             "date": "2026-07-31",
+            "time": "18:30",
+            "text": "[그래도 조심.]\n\n변한 건 없다. 단지 미국쪽 메모리 주가가 급반등 했고, 우리나라도 따라 갔을 뿐. 다행인 것은 업황은 여전하다는 것이고, 의심 하던 것들이 어느정도 드러났다는 점. 다만, 시장에서 우려하는 환경 역시 여전하다. (금리, 이란 쪽 문제 등) 그래봤자 한국 시장은 월요일 종가도 못 왔다. 주변 사람들 계좌 역시 복구는 커녕 오히려 허탈하고 어이 없다는 반응이 훨씬 크다. 아직 변동성은 끝나지 않았을수도. 결국 불확실성들이 해소되는 과정에서 손바뀜을 해야 할 것. 외인 형님들도 좀 사주고, 가장 우선적인것은 투자 심리가 개선되어야 한다. 불안하면 또 언제든 쏠림이 나온다. 오늘은 전자 닉스만 갔지만 순환매도 돌 가능성도 있어보인.......",
+            "links": [
+              "https://blog.naver.com/luy1978/224364116137"
+            ],
+            "post_url": "https://blog.naver.com/luy1978/224364116137"
+          },
+          {
+            "date": "2026-07-31",
+            "time": "17:49",
+            "text": "[삼성전자 노태문 대표 매수]\n\n형도 구하러 왔구나?",
+            "links": [
+              "https://blog.naver.com/luy1978/224364079077"
+            ],
+            "post_url": "https://blog.naver.com/luy1978/224364079077"
+          },
+          {
+            "date": "2026-07-31",
             "time": "15:29",
             "text": "[홀짝 게임]\n\n하루에 자산이 60프로도 날아감. 설마 전자닉스가 상한가 가겠어? 갔음. 어제 주가로 가려면 이제 거의 200프로 올라야 됨. 오르거나 내리거나. 내일 어떻게 될지 모르니 들고 갈수 있겠나. 도박장이 따로 없음. 도박장에서 돈 버는 건 도박장 운영업체 뿐.",
             "links": [
@@ -3254,15 +3272,6 @@
               "https://blog.naver.com/luy1978/224318648110"
             ],
             "post_url": "https://blog.naver.com/luy1978/224318648110"
-          },
-          {
-            "date": "2026-06-17",
-            "time": "12:39",
-            "text": "[2027년 HBM4 공급 계약이 시작되며 가격 상승 전망. (DS증권)]\n\n(DS 증권 의견) 1Q26 HBM의 웨이퍼 당 매출이 DDR5 64GB RDIMM에 역전되었지만 2Q26부터 2027년 HBM4 공급 계약이 시작되며 가격 상승 전망. 공급업체들은 HBM 가격 협상 결과에 따라 HBM과 범용 DRAM 간 생산 비중을 조정해 HBM의 수익성을 보전하는 방향으로 갈 것 2026년에는 AI ASIC의 메모리 용량 확대가 수요 성장의 핵심 동력 (칩당 HBM 용량 기존 96GB/192GB → 216GB/288GB 수준으로 증가) 2027년에는 NVIDIA Rubin Ultra 플랫폼이 GPU당 HBM 용량을 384GB까지 확대",
-            "links": [
-              "https://blog.naver.com/luy1978/224318642984"
-            ],
-            "post_url": "https://blog.naver.com/luy1978/224318642984"
           }
         ]
       },
@@ -3272,6 +3281,24 @@
         "url": "https://dart.fss.or.kr",
         "category": "공시",
         "posts": [
+          {
+            "date": "2026-07-31",
+            "time": "00:00",
+            "text": "[두산] 주요사항보고서(타법인주식및출자증권양수결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000787"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000787"
+          },
+          {
+            "date": "2026-07-31",
+            "time": "00:00",
+            "text": "[KG스틸] [기재정정]주요사항보고서(타법인주식및출자증권양수결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000759"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000759"
+          },
           {
             "date": "2026-07-31",
             "time": "00:00",
@@ -3343,6 +3370,69 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000274"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000274"
+          },
+          {
+            "date": "2026-07-31",
+            "time": "00:00",
+            "text": "[디와이디] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000791"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000791"
+          },
+          {
+            "date": "2026-07-31",
+            "time": "00:00",
+            "text": "[한울앤제주] [기재정정]주요사항보고서(타법인주식및출자증권양수결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000789"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000789"
+          },
+          {
+            "date": "2026-07-31",
+            "time": "00:00",
+            "text": "[셀피글로벌] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000765"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000765"
+          },
+          {
+            "date": "2026-07-31",
+            "time": "00:00",
+            "text": "[에치에프알] 주요사항보고서(자기주식처분결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000762"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000762"
+          },
+          {
+            "date": "2026-07-31",
+            "time": "00:00",
+            "text": "[피플바이오] [기재정정]주요사항보고서(유형자산양수결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000775"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000775"
+          },
+          {
+            "date": "2026-07-31",
+            "time": "00:00",
+            "text": "[토비스] [기재정정]주요사항보고서(자기주식취득결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000756"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000756"
+          },
+          {
+            "date": "2026-07-31",
+            "time": "00:00",
+            "text": "[아이텍] 주요사항보고서(자기전환사채만기전취득결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000723"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000723"
           },
           {
             "date": "2026-07-31",
@@ -3462,69 +3552,6 @@
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000445"
           },
           {
-            "date": "2026-07-31",
-            "time": "00:00",
-            "text": "[노머스] 주요사항보고서(자기주식취득신탁계약해지결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000440"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000440"
-          },
-          {
-            "date": "2026-07-31",
-            "time": "00:00",
-            "text": "[한주에이알티] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000458"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000458"
-          },
-          {
-            "date": "2026-07-31",
-            "time": "00:00",
-            "text": "[진시스템] [기재정정]주요사항보고서(타법인주식및출자증권양수결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000448"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000448"
-          },
-          {
-            "date": "2026-07-31",
-            "time": "00:00",
-            "text": "[이노진] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000380"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000380"
-          },
-          {
-            "date": "2026-07-31",
-            "time": "00:00",
-            "text": "[세진티에스] 주요사항보고서(자기주식취득신탁계약해지결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000286"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000286"
-          },
-          {
-            "date": "2026-07-31",
-            "time": "00:00",
-            "text": "[광진실업] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000310"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000310"
-          },
-          {
-            "date": "2026-07-31",
-            "time": "00:00",
-            "text": "[광진실업] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000299"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000299"
-          },
-          {
             "date": "2026-07-30",
             "time": "00:00",
             "text": "[DL이앤씨] 주요사항보고서(자기주식취득신탁계약체결결정)\n공시유형: 주요사항보고",
@@ -3613,24 +3640,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260729000354"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260729000354"
-          },
-          {
-            "date": "2026-07-29",
-            "time": "00:00",
-            "text": "[삼성FN리츠] [기재정정]주요사항보고서(유형자산양수결정)\n공시유형: 주요사항보고  ·  정",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260729000303"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260729000303"
-          },
-          {
-            "date": "2026-07-29",
-            "time": "00:00",
-            "text": "[LG전자] 주요사항보고서(자기주식취득신탁계약해지결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260729000310"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260729000310"
           }
         ]
       }
