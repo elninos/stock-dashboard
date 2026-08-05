@@ -1,6 +1,6 @@
 {
   "2026-08-05": {
-    "fetched_at": "2026-08-05T20:23:26+09:00",
+    "fetched_at": "2026-08-06T00:17:16+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -83,39 +83,6 @@
         "category": "매크로/트레이딩",
         "channel_url": "https://t.me/survival_DoPB",
         "posts": [
-          {
-            "date": "2026-07-29",
-            "time": "07:46",
-            "text": "2026.07.29 07:43:54\n기업명: SK하이닉스(시가총액: 1,104조 6,887억) A000660\n보고서명: 연결재무제표기준영업(잠정)실적(공정공시)\n\n매출액 : 793,187억(예상치 : 835,194억/ -5%)\n영업익 : 605,426억(예상치 : 636,668억/ -5%)\n순이익 : 938,202억(예상치 : 513,232억+/ 83%)\n\n**최근 실적 추이**\n2026.2Q 793,187억/ 605,426억/ 938,202억\n2026.1Q 525,763억/ 376,103억/ 403,459억\n2025.4Q 328,267억/ 191,696억/ 152,460억\n2025.3Q 244,489억/ 113,834억/ 125,975억\n2025.2Q 222,320억/ 92,129억/ 69,962억\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260729800013\n회사정보: https://finance.naver.com/item/main.nhn?code=000660",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260729800013",
-              "https://finance.naver.com/item/main.nhn?code=000660"
-            ],
-            "post_url": "https://t.me/survival_DoPB/13763"
-          },
-          {
-            "date": "2026-07-31",
-            "time": "18:41",
-            "text": "KIOXIA, 2027년까지 NAND 공급 부족 예상 - 니케이\n\n일본의 NAND 플래시 및 SSD 제조사인 키옥시아(Kioxia, 구 도시바 메모리)는 AI 데이터센터 수요가 공급을 지속적으로 초과하고 있다고 밝혔다.\n\n4~6월 SSD 및 스토리지 매출은 전년 동기 대비 5배 이상 증가해 1조 1747억 엔을 기록했으며, 이는 전 회계연도 전체 부문 매출과 거의 맞먹는 수준이다. NAND 판매 가격은 전분기 대비 70% 상승했으며, 출하량도 증가했다.\n\n키옥시아는 7~9월 순이익을 1조 2700억 엔으로 전망했으나, 이는 작년 수준의 약 31배에 달하지만 컨센서스인 1조 3431억 엔에는 미치지 못한다. 4~6월 순이익 8422억 엔도 시장 기대치를 밑돌았다.\n\n회사는 최대 8000억 엔 규모의 자사주 매입을 승인했으며, 이는 발행 주식의 5.5%에 해당하는 최대 3000만 주를 대상으로 한다. 동시에 10월 1일부터 3:1 주식 분할을 실시한다. 대차대조표도 순현금 상태로 전환됐다.",
-            "links": [],
-            "post_url": "https://t.me/survival_DoPB/13764"
-          },
-          {
-            "date": "2026-08-03",
-            "time": "08:39",
-            "text": "『글로벌 주식전략; 시추에이션 어웨어니스와 LTCM 의 공통점』\n글로벌전략 김성환 ☎ 02-3772-2637\n \n- SA와 LTCM, 특정 플레이어의 유동성 위기가 주가 급락을 야기했다는 공통점\n- 청산 이슈 해소, 거의 다 왔음을 의미 하나 급반등을 위해선 상승 트리거 필요\n\n※ 원문 확인: http://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353053\n위 내용은 2026년 08월 03일 08시 14분 현재 조사분석자료 공표 승인이 이뤄진 내용입니다. \n제공해 드린 조사분석자료는 당사 고객에 한하여 배포되는 자료로 어떠한 경우에도 당사의 허락 없이 복사, 대여, 재배포 될 수 없습니다.",
-            "links": [
-              "http://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353053"
-            ],
-            "post_url": "https://t.me/survival_DoPB/13765"
-          },
-          {
-            "date": "2026-08-03",
-            "time": "08:42",
-            "text": "JP모건 하이퍼스케일러 회사채 신용 스프레드 지수",
-            "links": [],
-            "post_url": "https://t.me/survival_DoPB/13766"
-          },
           {
             "date": "2026-08-03",
             "time": "08:45",
@@ -220,6 +187,41 @@
             "text": "#마크미너비니 \n\nS&P500 숏 청산",
             "links": [],
             "post_url": "https://t.me/survival_DoPB/13781"
+          },
+          {
+            "date": "2026-08-05",
+            "time": "22:52",
+            "text": "🤩모건 스탠리: 잠재적 중국 금지 보고서의 영향  > 뉴스 개요: 로이터는 트럼프 행정부와 FCC가 새로운 중국 데이터 센터 부품에 대한 제한을 준비 중이라고 보도했으며, 광 트랜시버가 구체적으로 타겟으로 삼아졌고 잠재적 규정이 올해 발효될 수 있다고 전했습니다.  > 비중국 공급업체에 긍정적: 이 잠재적 금지는 비중국 광 부품 공급망에 긍정적인 신호로 여겨지며, 마진 상한에 대한 단기 우려를 완화합니다.  > 주요 수혜자:  Coherent Corp (COHR)는…",
+            "links": [],
+            "post_url": "https://t.me/survival_DoPB/13782"
+          },
+          {
+            "date": "2026-08-05",
+            "time": "22:55",
+            "text": "🤩AP: 이란, 오만 협상가들 호르무즈 해협 협정 초안에 동의, 이란 최고지도자 승인 대기 중 - $QQQ $SPY $USO \n\n두 지역 관료가 수요일 AP 통신에 밝힌 바에 따르면, 이란과 오만 협상가들은 호르무즈 해협에서의 선박 통행 분쟁에 대한 임시 해결책으로 의도된 초안 협정에 동의했다; 이 초안은 이란 최고지도자의 최종 승인을 기다리고 있다. 관료들은 이 잠재적 합의가 6월에 도달한 미국-이란 협정과 연계되어 있으며, 이는 결국 유지되지 않았던 해협 재개방과 사건 종식을 위한 것이었고, 테헤란의 핵 프로그램에 대한 최종 합의를 향한 미국-이란 회담 재개를 위한 길을 닦을 것이라고 말했다.",
+            "links": [],
+            "post_url": "https://t.me/survival_DoPB/13783"
+          },
+          {
+            "date": "2026-08-05",
+            "time": "22:55",
+            "text": "2. AI 클러스터 가동 지연(Cluster Turn-Up Delays):\nAI 슈퍼클러스터에서는 광트랜시버 한 배치만 부족해도 수십억 달러 규모의 GPU 자원이 놀게 된다. 광트랜시버 수입이 제한될 경우 차세대 800G 및 1.6T 클러스터의 상용 가동이 여러 분기 지연될 위험이 있다.",
+            "links": [],
+            "post_url": "https://t.me/survival_DoPB/13784"
+          },
+          {
+            "date": "2026-08-05",
+            "time": "23:12",
+            "text": "U.S. 🇺🇸 REPORTEDLY REMOVES IRAN-RELATED SANCTIONS FROM THE TREASURY DEPARTMENT’S WEBSITE",
+            "links": [],
+            "post_url": "https://t.me/survival_DoPB/13785"
+          },
+          {
+            "date": "2026-08-05",
+            "time": "23:13",
+            "text": "U.S. 🇺🇸 REPORTEDLY REMOVES IRAN-RELATED SANCTIONS FROM THE TREASURY DEPARTMENT’S WEBSITE",
+            "links": [],
+            "post_url": "https://t.me/survival_DoPB/13786"
           }
         ]
       },
@@ -698,33 +700,6 @@
         "posts": [
           {
             "date": "2026-08-05",
-            "time": "10:05",
-            "text": "[단독] 알테오젠 전태연 대표 “ALT-B4, 임상·상업화로 검증완료…연내 좋은 소식 더 있을 것”\n\n- ALT-B4 추가 기술수출…“SC제형 전환 분야 표준 기술로 자리 잡아”\n- “글로벌 제약사 니즈 충족…여러 기업과 논의 중”\nhttps://www.thebionews.net/news/articleView.html?idxno=26946&sicode=01",
-            "links": [
-              "https://www.thebionews.net/news/articleView.html?idxno=26946&amp;sicode=01"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37054"
-          },
-          {
-            "date": "2026-08-05",
-            "time": "11:09",
-            "text": "https://blog.naver.com/8740best/224367695617",
-            "links": [
-              "https://blog.naver.com/8740best/224367695617"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37055"
-          },
-          {
-            "date": "2026-08-05",
-            "time": "11:19",
-            "text": "[이그전] '경기사이클'은 여전히 확장하고 있음이 확인됐다\n\n안녕하세요. KB증권 자산배분 이은택입니다.\n\n1) 경기사이클을 읽을 때 가장 중요한 지표가 ISM제조업지수입니다. 그런데 이 지표가 서프라이즈로 발표되었습니다.\n\n2) 이 지표는 여러 장점이 있지만, 무엇보다 주식시장 (특히 한국증시)의 설명력과 예측력이 뛰어납니다.\n\n3) 경기사이클과 증시를 함께 그린 차트를 보면, 이번 조정은 매우 이례적이었다는 것을 알 수 있습니다.\n\n- URL: https://m.blog.naver.com/egzion/224368602653",
-            "links": [
-              "https://m.blog.naver.com/egzion/224368602653"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37056"
-          },
-          {
-            "date": "2026-08-05",
             "time": "12:42",
             "text": "1) 8월초는 골고루 '순환매 반등장세'가 나오는 중이고\n\n2) '8월 주도섹터'에 대한 힌트는 아직은 모르겠고 \n\n3) '스토리'가 붙으면서 연속성있게 올라오는곳이 주도섹터가 될테고\n\n4) 차트들은 사실 다 비슷하고, '스토리'가 새로 나올곳이 어디일지?? 신선한게 아직 없음. \n\n\n*8월은 물려있는거 골고루 반등이후.... 나올 주도섹터 찾기가 숙제다 싶습니다. \n\n아직은 물려있는거 반등장세라 요즘은 딱히 할것도 없네여.",
             "links": [],
@@ -855,6 +830,22 @@
               "https://finance.naver.com/item/main.nhn?code=000660"
             ],
             "post_url": "https://t.me/Yeouido_Lab/37073"
+          },
+          {
+            "date": "2026-08-05",
+            "time": "20:35",
+            "text": "$LLY  - ELI LILLY RAISES FY OUTLOOK AFTER STRONG Q2 BEAT  RESULTS  🔸 ADJ. EPS: $8.38 VS. $6.01 EST. ✅ 🔸 REVENUE: $22.97B VS. $20.73B EST. ✅ 🔸 EPS: $7.94 🔸 MOUNJARO REVENUE: $9.94B (+91% YOY) 🔸 ZEPBOUND REVENUE: $4.93B VS. $4.64B EST. ✅ (+44% U.S. YOY)  GUIDANCE…",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/37076"
+          },
+          {
+            "date": "2026-08-05",
+            "time": "22:36",
+            "text": "Samsung, SK Hynix signal stronger shareholder returns\n\nhttps://www.reuters.com/world/asia-pacific/samsung-sk-hynix-pledge-stronger-shareholder-returns-2026-08-05/",
+            "links": [
+              "https://www.reuters.com/world/asia-pacific/samsung-sk-hynix-pledge-stronger-shareholder-returns-2026-08-05/"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37077"
           }
         ]
       },
@@ -3243,6 +3234,15 @@
         "category": "공시",
         "posts": [
           {
+            "date": "2026-08-06",
+            "time": "00:00",
+            "text": "[바이오솔루션] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260805000524"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260805000524"
+          },
+          {
             "date": "2026-08-05",
             "time": "00:00",
             "text": "[BYC] 주요사항보고서(자기주식취득신탁계약체결결정)\n공시유형: 주요사항보고",
@@ -3502,15 +3502,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260804000510"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260804000510"
-          },
-          {
-            "date": "2026-08-04",
-            "time": "00:00",
-            "text": "[사토시홀딩스] 주요사항보고서(자기전환사채매도결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260804000512"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260804000512"
           },
           {
             "date": "2026-08-03",
