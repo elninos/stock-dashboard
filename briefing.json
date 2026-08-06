@@ -1,6 +1,6 @@
 {
   "2026-08-06": {
-    "fetched_at": "2026-08-06T20:26:40+09:00",
+    "fetched_at": "2026-08-07T00:16:52+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -9,13 +9,6 @@
         "category": "증권사 리포트",
         "channel_url": "https://t.me/bumgore",
         "posts": [
-          {
-            "date": "2026-08-04",
-            "time": "08:20",
-            "text": "S-Oil  🛢⚡️           골드만\n\n\n투자의견: Buy (Conviction List) 유지\n\nS-Oil은 GS 아시아 커버리지 내 정유 플레이 중 하나. 정제마진(특히 경유/제트유) 강세 전망, capex 완료 임박에 따른 FCF 반전 가능성, 매력적인 밸류에이션을 근거로 Buy(CL) 유지.\n\n\n정제마진 강세 배경 🌍\n\n러시아·중동 지역 정제설비 가동중단 약 650만 b/d 규모\n\n러시아의 경유·휘발유 수출금지 조치가 2027년 1월까지 연장될 것으로 예상\n\n글로벌 중간유분(middle distillate) 공급의 상당 부분이 시장에서 사라진 상태로, 현재의 타이트한 수급이 빠르게 해소되기 어려운 구조\n\n2028년까지 글로벌 정제능력 증설이 제한적이고, 제품 재고도 낮은 수준에서 2027년 진입 예상 → 정유업종에 대해 구조적으로 긍정적 시각 유지\n\n리스크/리워드가 매력적인 3가지 근거 💡\n\n강한 중간유분 노출도 — 제품 수율의 56%가 중간유분으로, GS가 가장 긍정적으로 보는 부문에 집중\n\n70억달러 규모 샤힌(Shaheen) 프로젝트 — 2027년 초 상업가동 개시 예정, 의미있는 FCF 반전 견인 가능(2027E FCF 수익률 19%)\n\n현재 주가는 2027E 경유/제트유 크랙마진을 중기 사이클 평균 이하로, 샤힌 프로젝트의 화학 스프레드도 장기 저조 상태로 가정한 수준을 반영 중 — 사실상 신규 화학 프로젝트에 마이너스 IRR을 가정한 셈이라 보수적으로 저평가된 상태\n\n\n하방 리스크 ⚠️\n\n①예상보다 약한 정제마진 ②샤힌 프로젝트 건설·램프업 지연 ③장기간 저조한 화학마진 지속 ④예상보다 강한 원화 강세(달러 대비)\n\n\n16만3천원     컨빅션 바이",
-            "links": [],
-            "post_url": "https://t.me/bumgore/54754"
-          },
           {
             "date": "2026-08-05",
             "time": "08:01",
@@ -73,6 +66,15 @@
               "https://t.me/bumgore/40511"
             ],
             "post_url": "https://t.me/bumgore/54773"
+          },
+          {
+            "date": "2026-08-06",
+            "time": "21:27",
+            "text": "Samsung, SK Hynix shareholders call for bigger payouts from AI cash mountain\n\nhttps://www.reuters.com/world/asia-pacific/samsung-sk-hynix-shareholders-call-bigger-payouts-ai-cash-mountain-2026-08-06/?taid=6a745c51423cf600011d04f1&utm_campaign=trueAnthem:+Trending+Content&utm_medium=trueAnthem&utm_source=twitter",
+            "links": [
+              "https://www.reuters.com/world/asia-pacific/samsung-sk-hynix-shareholders-call-bigger-payouts-ai-cash-mountain-2026-08-06/?taid=6a745c51423cf600011d04f1&amp;utm_campaign=trueAnthem:+Trending+Content&amp;utm_medium=trueAnthem&amp;utm_source=twitter"
+            ],
+            "post_url": "https://t.me/bumgore/54775"
           }
         ]
       },
@@ -234,26 +236,6 @@
         "posts": [
           {
             "date": "2026-08-06",
-            "time": "10:00",
-            "text": "🧬 “빅파마 들러리 탈출”…K-바이오 ‘글로벌 직판’ 통했다\n\nhttps://biz.heraldcorp.com/article/10832519\n\n💊 셀트리온·SK바이오팜 직판 결실\n셀트리온 상반기 매출 2조5,387억원, 영업이익 7,737억원 기록\n\nSK바이오팜은 세노바메이트 미국 직판으로 2분기 영업이익 971억원 달성\n\n💊 약국·DTC로 판매 채널 확대\n셀트리온은 유럽 유통사 인수로 약국 직판망 강화\n\n세노바메이트 6월 처방은 4만9,155건으로 증가\n\n💊 휴젤, 미국 직판 전환 본격화\n파트너 유통과 현지 법인 직판을 병행하는 하이브리드 모델 구축\n\n1분기 북남미 매출은 420% 이상 증가\n\n2028년 미국 점유율 10%, 연매출 9,000억원 목표\n\n💊 직판망이 밸류에이션 프리미엄\n유통 마진을 줄이고 제품 개발·가격 결정권을 강화\n\n기술이전과 M&A 협상력까지 높여 직판 기업과 후발사 간 격차 확대\n\n🧬 바이오섹터 분석 🧬 [그로쓰리서치]\nhttps://telegram.me/growthbio",
-            "links": [
-              "https://biz.heraldcorp.com/article/10832519",
-              "https://telegram.me/growthbio"
-            ],
-            "post_url": "https://t.me/growthresearch/28556"
-          },
-          {
-            "date": "2026-08-06",
-            "time": "10:26",
-            "text": "🧬[지투지바이오] 장기지속형이 필요한 이유\n\n비만치료제 시장의 경쟁이 체중 감량 효과를 넘어 주 1회에서 월 1회로 투여주기를 늘리는 방향으로 이동하고 있습니다.\n\n지투지바이오는 고함량 미립구 플랫폼과 도네페질 인체 임상 경험, 삼성과의 계약을 확보했지만 이제는 비만치료제 경쟁력과 상업생산 능력을 실제 결과로 증명해야 합니다.\n\n💊 월 1회 비만치료제에서 고함량과 초기방출 제어가 중요한 이유는?\n\n💊 InnoLAMP의 막유화·연속용매제거 기술은 기존 미립구 공정과 무엇이 다른가?\n\n💊 GB-7001의 동물 데이터 기반 인체 PK 시뮬레이션은 어디까지 의미가 있을까?\n\n💊 GB-5001 도네페질 임상은 지투지바이오 플랫폼의 인체 적용 가능성을 증명했을까?\n\n💊 삼성 계약 이후 글로벌 추가 계약과 제2공장 상업생산까지 이어질 수 있을까?\n\n자세한 내용은 네이버 프리미엄 콘텐츠에서 확인해주세요!\nhttps://contents.premium.naver.com/growthresearch/growthbio/contents/260806102333450tt\n\n🧬 바이오섹터 분석 🧬 [그로쓰리서치]\nhttps://telegram.me/growthbio",
-            "links": [
-              "https://contents.premium.naver.com/growthresearch/growthbio/contents/260806102333450tt",
-              "https://telegram.me/growthbio"
-            ],
-            "post_url": "https://t.me/growthresearch/28557"
-          },
-          {
-            "date": "2026-08-06",
             "time": "10:52",
             "text": "✅ 한화오션·선익시스템 등 슈퍼 을 기업 선정…200억원 규모 7년 이상 지원\n\nhttps://news.tf.co.kr/read/economy/2351148.htm\n\n📌 5개 기업에 7년 이상 대형 R&D 지원\n글로벌 공급망 재편 속 흔들리지 않는 기업들을 제3기 ‘슈퍼 을’ 기업으로 선정\n\n기업별 과제당 최대 200억원, 7년 이상 장기 R&D 지원\n\n정부는 2030년까지 총 15개의 글로벌 소부장 핵심기업을 확보할 계획\n\n📌 OLED·반도체·전고체·방산 핵심기술 집중\n선익시스템: AI 기반 OLED 자율 증착장비\n이오테크닉스: 초고속 레이저 열처리장비 개발 추진\n에코프로비엠: 전고체전지용 황화물계 고체전해질\n한화오션: 잠수함용 연료전지 핵심장비 개발\n두산전자사업: 위성통신용 저손실 소재와 안테나 모듈 국산화\n\n📌 유리기판·EUV 펠리클에도 910억원 투입\n차세대 유리 패키지 기판과 EUV 펠리클 등 5개 소부장 협력모델을 신규 승인\n\n향후 5년 간 총 910억 원의 R&D와 규제특례, 금융·세제, 실증평가를 패키지로 지원\n\n첨단 패키징과 EUV 공정 관련 국내 소부장 밸류체인의 기술 자립도 상승 기대\n\n📌 정부 지원이 상용화 속도 높일 촉매\n장기 연구비와 실증·인허가 지원이 결합돼 사업화 가능성을 높이는 구조\n\n수혜 기업별 국산화 성과, 양산 전환 여부 등이 향후 주가 촉매로 작용 가능\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
             "links": [
@@ -365,6 +347,25 @@
             "text": "✅ 주가에 고민이 많은 상장사 IR 담당자분들께 ✅  🔥위 사진은 이번에 완공한 그로쓰리서치 세미나실입니다. (여의도에 위치해있습니다)  120석 규모로, 대규모 IR 진행 시 활용하실 수 있습니다🔥  그로쓰리서치가 귀사의 IR/PR을 서포트합니다.  IR 담당자로 계시면서, 이런 고민 한 번쯤 해보셨을 겁니다.  📌 \"우리 회사, 좋은 회사인데 왜 시장은 몰라줄까?\"  요즘 코스닥, 정말 쉽지 않으시죠? 😥  상장폐지 규제까지 강해지면서 (올해 코스닥…",
             "links": [],
             "post_url": "https://t.me/growthresearch/28575"
+          },
+          {
+            "date": "2026-08-06",
+            "time": "22:04",
+            "text": "🧬화이자, 경구 소분자 GLP-1 PF-08642534(YP05002) 신규 Phase 1 임상 등록\n\n7월 28일에 등록된 부분 링크 전달드립니다.\nhttps://clinicaltrials.gov/study/NCT07731139\n\n💊임상시험 개요\n・NCT07731139로 등록된 신규 Phase 1 임상시험\n\n・120명 참가자 모집 예정\n\n・완료 예정 시점: 2027년 4월\n\n💊자산 정보\n・PF-08642534(화이자 코드명) = YP05002(야오유파마/Yaoyou Pharma 원 코드명)\n\n・푸싱제약(Fosun Pharma) 자회사 야오유파마로부터 인라이선스한 경구 소분자(small-molecule) GLP-1 작용제\n\n🧬 바이오섹터 분석 🧬 [그로쓰리서치]\nhttps://telegram.me/growthbio",
+            "links": [
+              "https://clinicaltrials.gov/study/NCT07731139",
+              "https://telegram.me/growthbio"
+            ],
+            "post_url": "https://t.me/growthresearch/28577"
+          },
+          {
+            "date": "2026-08-06",
+            "time": "22:13",
+            "text": "💻 TSMC, 애플 A20 프로 재고 10억 달러 적체 — DRAM 부족이 최선단 파운드리까지 발목\n\n📌요약\n・TSMC가 2nm 공정으로 생산 완료한 애플 A20 프로 프로세서 약 10억 달러 규모를 보유 중이나, 후공정(패키징) 단계로 넘어가지 못하는 상황\n\n・원인은 로직칩 자체의 수율 문제가 아니라 DRAM 공급 부족\n\n・AI 데이터센터용 HBM 생산에 메모리 캐파가 대거 재배분되며 범용 모바일 DRAM 공급이 타이트해지고 가격이 급등한 여파\n\n📌 기존 리서치와의 연결고리\n・앞서 다뤘던 도이치뱅크 DRAM 수급모델과 정확히 일치 — HBM 트레이드 레이쇼 상승으로 표준 DRAM용 캐파 비중이 2025년 82%→2030년 65%까지 축소되는 구조적 흐름\n\n・BofA 리포트에서 확인한 DDR4-DDR5 프리미엄 소멸 현상(레거시 캐파의 첨단공정 전환으로 범용 DRAM 공급이 오히려 더 타이트해짐)과도 같은 맥락\n\n・UBS의 하이퍼스케일러 메모리 지출 전망(2027년 캐펙스의 73%가 메모리)에서 예견됐던 \"비AI용 메모리 시장 공급 부족 심화\"가 애플이라는 최상위 소비자 브랜드에서까지 현실화된 사례\n\n📌 iPhone 18 사이클 영향도 추정\n시점 리스크\n・A20 프로가 완제품 상태로 대기 중이라는 것은 SiP(시스템인패키지)나 최종 조립 단계에서 DRAM 부재로 병목이 걸린 상황\n\n・다만 아직 칩 완성 후 패키징 대기 단계라는 점에서, 애플의 통상 신제품 출시 리드타임(6개월 이상)을 감안하면 즉각적 출시 지연보다는 초기 물량 제약 가능성이 더 높음\n\n가격 영향\n・애플은 통상 부품 원가 상승을 자체 마진으로 흡수하는 경향 — 제품가 인상보다는 마진 압박으로 반영될 가능성이 상대적으로 높음\n\n・다만 부족 상황이 심화되면 저장용량 옵션별 가격 재조정, 또는 고용량 Pro 라인업 등 특정 모델의 출시 지연 형태로 나타날 수 있음\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
+            "links": [
+              "https://telegram.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/28578"
           }
         ]
       },
@@ -684,31 +685,6 @@
         "channel_url": "https://t.me/Yeouido_Lab",
         "posts": [
           {
-            "date": "2026-08-05",
-            "time": "20:35",
-            "text": "$LLY  - ELI LILLY RAISES FY OUTLOOK AFTER STRONG Q2 BEAT  RESULTS  🔸 ADJ. EPS: $8.38 VS. $6.01 EST. ✅ 🔸 REVENUE: $22.97B VS. $20.73B EST. ✅ 🔸 EPS: $7.94 🔸 MOUNJARO REVENUE: $9.94B (+91% YOY) 🔸 ZEPBOUND REVENUE: $4.93B VS. $4.64B EST. ✅ (+44% U.S. YOY)  GUIDANCE…",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/37076"
-          },
-          {
-            "date": "2026-08-05",
-            "time": "22:36",
-            "text": "Samsung, SK Hynix signal stronger shareholder returns\n\nhttps://www.reuters.com/world/asia-pacific/samsung-sk-hynix-pledge-stronger-shareholder-returns-2026-08-05/",
-            "links": [
-              "https://www.reuters.com/world/asia-pacific/samsung-sk-hynix-pledge-stronger-shareholder-returns-2026-08-05/"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37077"
-          },
-          {
-            "date": "2026-08-06",
-            "time": "06:09",
-            "text": "#뉴스케일파워 #SMR #TVA #루마니아원전 #실적\n\n<뉴스케일파워, 2026년 2분기 실적 발표>\n\n- 전략적 파트너 ENTRA1은 TVA와 미국 내 대규모 원전 배치를 위한 최종 전력구매계약 협의를 진행 중이며, 루마니아 도이체슈티에서는 뉴스케일 모듈 6기를 배치하는 RoPower 프로젝트의 주주 승인 조건 충족을 추진\n\n- 뉴스케일은 SMR 핵심 안전계통인 고집적보호시스템 최종 설계를 위해 Paragon과 계약을 체결했으며, 60개 이상의 공급망 파트너와 30건 이상의 계약을 확보했다고 밝힘\n\n- 2분기 말 현금·현금성자산과 장단기 투자자산은 총 19억달러로 집계돼 단기 상용화 준비를 지원할 유동성을 확보\n\n- 전년 동기 대비 매출은 800만달러, 매출원가는 600만달러 감소했으며 연구개발비는 660만달러, 판매관리비는 440만달러, 기타비용은 800만달러 증가한 반면 투자수익은 850만달러 증가\n\nhttps://www.nuscalepower.com/press-releases/2026/nuscale-power-reports-second-quarter-2026-results",
-            "links": [
-              "https://www.nuscalepower.com/press-releases/2026/nuscale-power-reports-second-quarter-2026-results"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37078"
-          },
-          {
             "date": "2026-08-06",
             "time": "08:11",
             "text": "『알테오젠 (196170.KQ) - 벌써 계약 3건, 하반기 몇 발 더 남았다』\n기업분석부 엄민용, 이호철 ☎️ 02-3772-1546\n\n▶️ 신한생각: 하반기 복수 L/O, 임상 결과 및 마일스톤 등 성과 지속        \n코스닥 바이오텍 중 최초로 한 해 글로벌 제약사 L/O 3건 체결 신기록. 하반기 복수의 파트너사 추가 체결 가능. 올해 빅파마 딜 성공은 알테오젠이 유일. 최근 이어지는 임상 및 개발 불확실성 이어지는 상황에서 가장 안정적으로 계약과 매출 고속 성장 중. 업종 내 코스닥 Top-pick 유지\n\n▶️ 매년 7-8조원 매출 일으키는 블록버스터 제품이 알테오젠 SC 선택\n8월 5일 5,200억원 규모 계약으로 GSK, 바이오젠 합산 최초 한 해 3건, 누적 1.8조원 달성. 공개된 총 계약 규모만 11조원 달성. 지난 12월 옵션 계약사로 추정되며 비공개 물질은 연매출 약 7-8조원의 블록버스터로, 경쟁 영역에서 글로벌 점유율 1위 제품. 할로자임과 경쟁약물일 가능성 높아 비공개 진행 판단. 임상 리스크 없고 빠른 개발과 출시 가능하다는 장점\n\n키트루다SC 전환율은 4월 J-code 등록 이후 3개월만에 9%까지 가파른 상승. 2분기 매출 4.63억달러(약 6,621억원) 달성(QoQ +262%). 상반기 누적 매출만 5.9억달러(약 8,437억원)에 이르며, 7월 전환율도 최소 10%로 시작해 12월 15% 초과 전망. 이는 글로벌 전환율 컨센서스 2배 이상 빠른 속도. 올해 누적 매출액 약 3-4조원(전환율 7-9% 가정) 추정. 알테오젠이 인식할 판매 마일스톤 4-5% 가정 시 연내 2,000억원 수령 충분히 가능\n\n▶️ Valuation & Risk: 지속적인 L/O 및 임상 성과, 마일스톤으로 우뚝\n코스닥 잔류로 코스닥 승강제 윤곽 시 최대 수혜주 전망. 국민성장펀드 및 하반기 대형 계약 포함한 신규 L/O 다수 체결 목표. 다이이찌 산쿄 엔허투SC(ADC), AZ 임핀지SC∙릴베고스토미그SC(이중항체) 1상 중. 사노피 듀피젠트 고용량SC(25년 매출 25조원) 1상 종료 및 하반기 바로 3상 개시. GSK, 바이오젠 및 산도즈 하반기 1상 착수 등 가장 큰 폭의 성장 전망\n\n※ 원문 확인: http://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353133\n\n위 내용은 2026년 8월 6일 7시 58분 현재 조사분석자료 공표 승인이 이뤄진 내용입니다. 제공해 드린 조사분석자료는 당사 고객에 한하여 배포되는 자료로 어떠한 경우에도 당사의 허락 없이 복사, 대여, 재배포 될 수 없습니다.",
@@ -806,6 +782,38 @@
             "text": "https://news.bizwatch.co.kr/article/industry/2026/08/06/0014?_gl=1*1frb8w9*_gcl_au*MTE2NTM5NDY3My4xNzg0NzYzODk1",
             "links": [],
             "post_url": "https://t.me/Yeouido_Lab/37093"
+          },
+          {
+            "date": "2026-08-06",
+            "time": "22:34",
+            "text": "UBS 알테오젠 sell -> neutral 투자의견 상향",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/37094"
+          },
+          {
+            "date": "2026-08-06",
+            "time": "22:34",
+            "text": "UBS 알테오젠 sell -> neutral 투자의견 상향",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/37095"
+          },
+          {
+            "date": "2026-08-06",
+            "time": "22:59",
+            "text": "https://n.news.naver.com/mnews/article/015/0005318266",
+            "links": [
+              "https://n.news.naver.com/mnews/article/015/0005318266"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37096"
+          },
+          {
+            "date": "2026-08-06",
+            "time": "23:24",
+            "text": "산업장관 \"영업이익 N% 성과급 반대…주총 결의 의무화 추진\"(종합)\nhttps://www.yna.co.kr/view/AKR20260806068451003?section=economy/all&site=topnews02",
+            "links": [
+              "https://www.yna.co.kr/view/AKR20260806068451003?section=economy/all&amp;site=topnews02"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37098"
           }
         ]
       },
@@ -3194,6 +3202,24 @@
         "category": "공시",
         "posts": [
           {
+            "date": "2026-08-07",
+            "time": "00:00",
+            "text": "[벡트] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260806000547"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260806000547"
+          },
+          {
+            "date": "2026-08-07",
+            "time": "00:00",
+            "text": "[큐로홀딩스] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260806000551"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260806000551"
+          },
+          {
             "date": "2026-08-06",
             "time": "00:00",
             "text": "[TP] 주요사항보고서(자기주식취득신탁계약체결결정)\n공시유형: 주요사항보고",
@@ -3381,24 +3407,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260806000214"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260806000214"
-          },
-          {
-            "date": "2026-08-06",
-            "time": "00:00",
-            "text": "[유티아이] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260806000192"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260806000192"
-          },
-          {
-            "date": "2026-08-06",
-            "time": "00:00",
-            "text": "[바이오솔루션] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260805000524"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260805000524"
           },
           {
             "date": "2026-08-05",
