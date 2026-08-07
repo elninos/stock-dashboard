@@ -1,6 +1,6 @@
 {
   "2026-08-07": {
-    "fetched_at": "2026-08-07T20:49:08+09:00",
+    "fetched_at": "2026-08-07T23:14:25+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -409,6 +409,16 @@
               "https://youtu.be/keG-YhRAlXU?si=GZRO1B6JKW6vY6TK"
             ],
             "post_url": "https://t.me/growthresearch/28617"
+          },
+          {
+            "date": "2026-08-07",
+            "time": "21:47",
+            "text": "✅ 삼성전자, 휴머노이드 로봇에 꽂히다\n\nhttps://n.news.naver.com/mnews/article/024/0000107411\n\n📌 노태문 직속 'RX 사업추진실' 출범\nDX부문장 직속 조직을 신설해 로봇 R&D부터 사업화까지 통합 추진\n\n미래로봇추진단을 흡수하고 휴머노이드 전략·AI·SW·HW 개발을 일원화\n\n구미에 데이터 팩토리와 휴머노이드 생산라인을 구축해 제조 기반 확보\n\n📌 제조 현장부터 B2B·B2C까지 단계적 확장\n2030년까지 생산공장을 AI 자율공장으로 전환하며 휴머노이드 도입 확대\n\n공장 내 검증을 거쳐 산업용 로봇→B2B→소비자 시장으로 확장 전략\n\n스마트 안경을 통해 1인칭(Egocentric) 데이터를 확보, 피지컬 AI 학습 기반 구축\n\n📌 삼성 계열사 총동원한 수직계열화\n삼성SDI(전고체 배터리), 삼성디스플레이(OLED), 삼성 파운드리(AI칩) 등 그룹 역량 결집\n\n레인보우로보틱스를 중심으로 로봇 손 등 핵심 부품 내재화 추진\n\n계열사 생산현장에서 축적되는 제조 데이터가 AI 성능 고도화의 핵심 경쟁력\n\n📌 글로벌 휴머노이드 경쟁 본격화\n글로벌 로봇 시장은 2026년 1,243억달러→2035년 4,162억달러로 3배 이상 성장 전망\n\n중국은 휴머노이드 모델 400종 이상과 출하량 확대, 미국 빅테크도 투자 경쟁 심화\n\n삼성은 조직 개편과 인재 영입, M&A를 기반으로 피지컬 AI 생태계 구축에 속도\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
+            "links": [
+              "https://n.news.naver.com/mnews/article/024/0000107411",
+              "https://telegram.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/28618"
           }
         ]
       },
@@ -419,20 +429,6 @@
         "category": "매크로/크립토",
         "channel_url": "https://t.me/SpartanResearch",
         "posts": [
-          {
-            "date": "2026-08-07",
-            "time": "09:03",
-            "text": "한화솔루션은 금일 신주상장예정일 거래일 기준 D-2로 권리매도가능일",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/4666"
-          },
-          {
-            "date": "2026-08-07",
-            "time": "09:15",
-            "text": "한화솔루션은 금일 신주상장예정일 거래일 기준 D-2로 권리매도가능일",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/4667"
-          },
           {
             "date": "2026-08-07",
             "time": "09:35",
@@ -553,6 +549,20 @@
             "text": "3분기 발표 때가 아닌 3분기 중",
             "links": [],
             "post_url": "https://t.me/SpartanResearch/4686"
+          },
+          {
+            "date": "2026-08-07",
+            "time": "21:38",
+            "text": "미국 7월 고용보고서\n\n비농업 부문 고용: -2.3만 명 (예상 +8.0만 명)\n\n 실업률: 4.1% (예상 4.2%)\n\n시간당 평균 임금 (전월 대비): 0.1% (예상 0.3%) \n\n시간당 평균 임금 (전년 대비): 3.2% (예상 3.5%)\n\n경제활동참여율: 61.4% (예상 61.6%) \n\n민간 부문 고용: +3.0만 명 (예상 +8.2만 명)\n\n주당 평균 노동시간: 34.3시간 (예상 34.3시간)\n\n5월 및 6월 고용 수치: 합산 -10.3만 명 하향 조정",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/4687"
+          },
+          {
+            "date": "2026-08-07",
+            "time": "21:38",
+            "text": "코스피 야간선물은 슈팅",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/4688"
           }
         ]
       },
@@ -563,13 +573,6 @@
         "category": "매매 신호/트레이딩",
         "channel_url": "https://t.me/d_ticker",
         "posts": [
-          {
-            "date": "2026-07-30",
-            "time": "11:52",
-            "text": "삼성전기 2Q26\n\n매출 3.46조 (est. 3.32조)\n영업이익 4403억 (est. 4139억)\nOPM 12.7% (est. 12.5%)",
-            "links": [],
-            "post_url": "https://t.me/d_ticker/3634"
-          },
           {
             "date": "2026-07-30",
             "time": "12:14",
@@ -708,6 +711,15 @@
             "text": "- 법인세 (중간예납 ~8/31)\n- 국내 투자 (메가프로젝트 등)\n- 주가 부양 (주주환원)\n\n전닉의 3가지 우선순위 중에서 주가 부양이 점점 멀어지는 건 기분 탓일까요?",
             "links": [],
             "post_url": "https://t.me/d_ticker/3653"
+          },
+          {
+            "date": "2026-08-07",
+            "time": "22:58",
+            "text": "SK하이닉스, 중국 공장 투자 유치 검토\n\n- 중국 충칭에는 후공정 팹 2기 위치\n- 이 공장에 대한 투자 유치를 검토 중\n- 지분 일부를 매각하는 옵션 등 고려\n- 해당 시설의 가치는 $3.0B 전망\n\nBloomberg",
+            "links": [
+              "https://www.bloomberg.com/news/articles/2026-08-07/sk-hynix-is-said-to-mull-options-for-3-billion-chongqing-assets"
+            ],
+            "post_url": "https://t.me/d_ticker/3654"
           }
         ]
       },
@@ -726,20 +738,6 @@
         "category": "국내 시장/종목 분석",
         "channel_url": "https://t.me/Yeouido_Lab",
         "posts": [
-          {
-            "date": "2026-08-06",
-            "time": "16:34",
-            "text": "https://news.bizwatch.co.kr/article/industry/2026/08/06/0014?_gl=1*1frb8w9*_gcl_au*MTE2NTM5NDY3My4xNzg0NzYzODk1",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/37093"
-          },
-          {
-            "date": "2026-08-06",
-            "time": "22:34",
-            "text": "UBS 알테오젠 sell -> neutral 투자의견 상향",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/37094"
-          },
           {
             "date": "2026-08-06",
             "time": "22:34",
@@ -881,6 +879,15 @@
               "http://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353202"
             ],
             "post_url": "https://t.me/Yeouido_Lab/37115"
+          },
+          {
+            "date": "2026-08-07",
+            "time": "21:56",
+            "text": ">>모건스탠리 Shawn Kim “매도에서 매수로 전환”: 메모리 업황 조정 “막바지에 가까워졌음”, SK하이닉스 EPS 13% 상향\n\n•보고서에서 메모리 반도체 업종의 가장 극심한 조정이 막바지에 가까워졌으며, 현재 밸류에이션이 매우 매력적이라고 지적했음. 삼성전자와 SK하이닉스에 대한 장기 강세 입장과 목표주가를 유지했으며, 두 회사의 주가가 현재 수준에서 60% 이상 상승할 여지가 있을 것으로 전망\n\n•AI 수요의 구조적 확대, 기업들의 자본수익률 전환 및 장기계약이 업종 펀더멘털을 뒷받침할 것으로 전망했음. Kim은 7월에 메모리가 단기적인 조정을 받을 가능성이 있다고 경고한 바 있음\n\n>大摩Shawn Kim“空转多”：存储行情修正“接近尾声”，SK海力士EPS上调13% https://wallstreetcn.com/articles/3778927#from=ios",
+            "links": [
+              "https://wallstreetcn.com/articles/3778927#from=ios"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37116"
           }
         ]
       },
@@ -2820,7 +2827,7 @@
           {
             "date": "2026-08-07",
             "time": "20:47",
-            "text": "[산업부장관, 성과급 반대  개정안 추친]\n\nhttps://youtu.be/3J46-5muQIM?si=YDI4iZr8I2UdxMik",
+            "text": "[산업부장관, 성과급 반대  개정안 추친]\n\n회사의 주인은 주주, 투자자 주주와 투자자의 이익에 반하는 성과급 배분은 월권. 거액의 성과급 지급시 주총 의결하는 자본시장법과 상법개정을 논의중 https://youtu.be/3J46-5muQIM?si=YDI4iZr8I2UdxMik",
             "links": [
               "https://blog.naver.com/luy1978/224371451854"
             ],
