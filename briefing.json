@@ -1,6 +1,6 @@
 {
   "2026-08-07": {
-    "fetched_at": "2026-08-07T10:38:56+09:00",
+    "fetched_at": "2026-08-07T12:52:15+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -250,37 +250,6 @@
         "posts": [
           {
             "date": "2026-08-07",
-            "time": "07:39",
-            "text": "💻 먼저 맺은 LTA, 손해로 돌아올까… SK하이닉스, HBM 선점의 기회비용\n\nhttps://biz.chosun.com/it-science/ict/2026/08/06/LGIVXZMYVNBUXF54ASGSP43JOU/\n\n📌 엔비디아 선점 위해 ‘가격보다 물량’ 선택\nHBM 시장 초기 SK하이닉스는 엔비디아와 LTA를 확대하며 안정적인 물량 확보와 투자 가시성을 우선\n\n엔비디아 핵심 HBM 공급사로 자리 잡으며 HBM 시장 주도권을 확보했고, AI 메모리 성장의 최대 수혜 기업으로 부상\n\n당시 추격자였던 SK하이닉스 입장에서는 높은 가격보다 엔비디아 공급망을 선점하는 것이 합리적인 전략\n\n📌 범용 D램 급등이 만든 HBM3E의 기회비용\n올해 범용 D램 가격이 급등한 반면 HBM3E는 단가 조정과 HBM4 전환 공백으로 ASP 상승이 상대적으로 제한\n\n선제적으로 체결한 LTA와 HBM3E 생산 비중이 높아지면서 범용 D램 가격 급등을 생산 믹스에 즉각 반영하기 어려운 구조\n\n2분기 D램 점유율은 삼성전자 39%, SK하이닉스 26%, 마이크론 25%로 SK하이닉스와 마이크론 격차가 1%p까지 축소\n\n📌 HBM4부터는 ‘엔비디아 독점’보다 고객 다변화\nAMD뿐 아니라 메타·구글 등 빅테크의 HBM4 수요가 확대되며 고객 기반이 빠르게 넓어지는 상황\n\n향후 핵심은 엔비디아 공급을 유지하면서 HBM3E 생산능력을 HBM4·범용 D램 등 고수익 제품으로 얼마나 빠르게 전환하느냐\n\nHBM 시장 경쟁력의 기준도 단순 물량 선점에서 고객·제품별 생산능력 배분의 유연성으로 이동\n\n📌 LTA도 진화…수익성 방어와 업사이드 동시 확보\nSK하이닉스는 현재 LTA가 과거의 단순 고정가격 계약이 아니라 고객·제품별로 계약 기간과 가격 산정 방식을 차별화한 구조라고 설명\n\n장기계약으로 실적 하방을 확보하면서 시장 가격 상승과 추가 수요를 반영할 수 있는 유연성을 강화\n\n삼성전자 역시 공급자 우위 시장 전환 이후 5년 롤링 방식 LTA 확대에 나서면서, 향후 메모리 경쟁의 핵심은 ‘LTA 여부’보다 계약 조건과 생산 믹스 최적화가 될 전망\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
-            "links": [
-              "https://biz.chosun.com/it-science/ict/2026/08/06/LGIVXZMYVNBUXF54ASGSP43JOU/",
-              "https://telegram.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/28581"
-          },
-          {
-            "date": "2026-08-07",
-            "time": "07:54",
-            "text": "💻 LTA에 대한 궁금증, 한 번에 정리했습니다\n\n엔비디아가 메모리 스펙을 낮춘다는 얘기가 나오지만, \n\n결국 지금 시장의 핵심 화두는 AI 인프라 공급 부족입니다.\n\n수요자 입장에서는 필요한 부품과 생산능력을 안정적으로 확보하기 위해 LTA(장기공급계약)​를 적극적으로 도입하고 있습니다.\n\n인프라 공급 부족이 이어지는 한 LTA에 대한 논의도 계속될 가능성이 높습니다. \n\n이에 대해 공부해보고자, 저희가 LTA 산업보고서를 작성해봤습니다.\n\n이번 산업보고서에서는\n✔️ LTA가 확산되는 배경과 산업별 현황\n✔️ 계약기간·물량·가격·선수금 등 핵심 계약 구조\n✔️ 수요자와 공급자에게 LTA가 갖는 의미\n✔️ LTA가 사이클을 완전히 없애지 못하는 이유와 한계\n를 약 10페이지 분량으로 정리했습니다.\n\n복잡할 수 있는 내용을 최대한 쉽게 풀어낸 만큼, LTA의 구조와 투자 시사점을 이해하는 데 도움이 될 보고서입니다.\n\n관심 있으신 분들은 한 번씩 읽어보시기 바랍니다.\n\n🔥 LTA 산업보고서 다시보기\nhttps://contents.premium.naver.com/growthresearch/growth/contents/260802184142541jl\n\n🔥 LTA 보고서 핵심 포인트\n\n📌 1. 장기계약이 사이클 산업의 판을 바꾼다\n메모리에서 MLCC·패키지 기판·전력기기·테스트 소켓으로의 적용 범위 확대\n\n장기 계약기간·Take-or-Pay·가격 하한·선수금이 결합된 계약 구조 정착\n\n사이클 산업의 수주형 사업모델 전환 가능성 부각\n\n📌 2. 빅테크와 공급사의 이해관계가 맞아떨어졌다\n핵심 부품과 생산능력을 선점하려는 빅테크의 공급 안정성 확보\n\n구매약정을 기반으로 한 공급자의 증설 위험 및 투자 부담 완화\n\n장기 물량·가동률·가격 하방 확보를 통한 실적 가시성 개선\n\n📌 3. LTA는 방패일 뿐, 사이클을 없애지는 못한다\n다운사이클 제거보다 가격 및 실적 충격 완화 기능\n\n수요 둔화 시 계약조건 변경·재협상·해지 가능성\n\nISC와 삼성전자의 LTA 기반 매출 안정성 및 이익 변동성 개선 기대\n\nLTA 효과를 과도하게 반영한 밸류에이션 부여 경계\n\n최근 급락으로 LTA가 과도하게 반영되지 않는 밸류에이션으로 손익비 측면에서 매력적\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
-            "links": [
-              "https://contents.premium.naver.com/growthresearch/growth/contents/260802184142541jl",
-              "https://telegram.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/28584"
-          },
-          {
-            "date": "2026-08-07",
-            "time": "08:33",
-            "text": "✅[ETF보고서] ‘삼전닉스’가 주춤하는 사이, 다시 찾아온 바이오의 시대\n\n🔥그로쓰리서치 바이오 액티브 ETF\n\n[네이버프리미엄콘텐츠]\nhttps://contents.premium.naver.com/growthresearch/growth\n\n[공식 홈페이지]\nhttps://www.growthresearch.co.kr/report/1210/1126\n\n📌성적은 좋았지만 주가는 부진했던 바이오\n올해 상반기 국내 바이오 기업의 기술수출은 공개된 계약만 8건, 총규모는 약 13조4,500억 원을 기록\n\n반도체로 투자자금이 몰리면서 KRX 헬스케어지수는 연초 대비 13.7% 하락하는 등 실적과 주가가 엇갈림\n\n📌반도체 쏠림이 풀리며 바이오로 자금 이동\n삼성전자와 SK하이닉스에 차익실현 매물이 나오자 코스닥은 제약·바이오와 로봇을 중심으로 강한 반등\n\n일부 반도체 종목에 집중됐던 단기 자금이 분산되면서 바이오가 다시 주도 섹터 후보로 부각\n\n📌종목 선택이 어려운 바이오, 액티브 ETF로 접근\n바이오는 임상 결과와 기술수출 계약에 따라 기업가치가 크게 달라져 개인이 다음 주도주를 고르기 어려운 산업\n\n전문 운용역이 임상 일정과 학회 발표, 글로벌 제약사와의 계약 가능성을 판단해 종목을 교체하는 액티브 ETF가 유리\n\n📌관련 ETF\n📈 HANARO 바이오코리아액티브\n에이비엘바이오·리가켐바이오 등 임상 결과와 기술수출 소식에 민감한 중소형 신약 개발사 중심의 ETF\n\n📈 TIME K바이오액티브\n코스닥 바이오 기업 비중이 높아 임상 성공 시 상승 탄력이 크지만 변동성도 상대적으로 높은 ETF\n\n📈 TIGER 바이오TOP10\n셀트리온·삼성바이오로직스 등 매출과 이익을 내는 대형 바이오 기업을 중심으로 투자하는 ETF\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
-            "links": [
-              "https://contents.premium.naver.com/growthresearch/growth",
-              "https://www.growthresearch.co.kr/report/1210/1126",
-              "https://telegram.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/28586"
-          },
-          {
-            "date": "2026-08-07",
             "time": "08:59",
             "text": "🧬수젠텍, 현장진단 플랫폼 캐나다 보건부 승인…글로벌 사업 확장한다\n\nhttps://www.hankyung.com/article/202608079798i\n\n💊 캐나다 보건부 의료기기 허가\n수젠텍의 정량면역분석 현장진단(POCT) 플랫폼 ‘INCLIX F-100’과 관련 시약이 캐나다 보건부 승인 획득\n\n인허가 기준이 높은 북미 시장에서 현장진단 플랫폼의 기술력과 제품 경쟁력을 확인\n\n이번 허가는 글로벌 파트너사 RBM의 ‘RAMP®’ 브랜드로 진행\n\n💊 RBM 유통망 활용해 글로벌 공급\nRBM은 30년 이상 형광면역분석 분야에서 사업을 이어온 캐나다 신속 면역진단 전문기업\n\n수젠텍은 RBM의 글로벌 유통망을 활용해 ‘RAMP® Xpress’ 제품 공급을 확대할 계획\n\n자체적으로 해외 유통망을 구축하기보다 기존 글로벌 브랜드와 판매망을 활용하는 구조\n\n💊 정밀도 높인 현장진단 플랫폼\n다양한 검체 처리가 가능하며 시분해형광(TRF)과 형광면역분석(FIA) 기술을 적용\n\n현장에서 빠르게 검사하면서도 대형 수탁기관 수준의 높은 정밀도 구현을 목표\n\nPOCT 시장에서 검사 편의성과 정량 분석 성능을 동시에 확보한 것이 특징\n\n💊 단순 공급 넘어 공동 R&D 확대\n수젠텍과 RBM은 제품 공급을 넘어 차세대 POCT 솔루션 공동 개발까지 협력 확대\n\n글로벌 시장에 맞춘 고성능 분석 시스템과 사용자 편의성을 높인 제품군 개발 추진\n\n캐나다 승인을 시작으로 글로벌 유통 확대와 차세대 제품 개발을 동시에 진행할 계획\n\n🧬 바이오섹터 분석 🧬 [그로쓰리서치]\nhttps://telegram.me/growthbio",
             "links": [
@@ -344,6 +313,35 @@
             "text": "✅ 혜인 탐방다녀왔습니다! 혜인 +21.76% 급등 중  오늘 혜인 주가가 강하게 움직이고 있네요.  📌 사실 저희가 최근에 혜인도 직접 탐방을 다녀왔습니다.  이번에 처음 말씀드리는 종목인데요.  📌 혜인은 현재 PER 5배 수준으로 밸류에이션 부담이 낮은 가운데, 캐터필러 비상발전기 관련 국내 핵심 파트너라는 점을 눈여겨보고 있습니다.  최근 캐터필러 컨콜에서도 디젤 발전기가 2028년까지 사실상 솔드아웃됐다는 얘기가 나올 정도로 수요가 강한 상황입니다.…",
             "links": [],
             "post_url": "https://t.me/growthresearch/28602"
+          },
+          {
+            "date": "2026-08-07",
+            "time": "11:12",
+            "text": "💻 삼성전자, 美 FMS 전시 부스에 2000명 몰려…차세대 AI 메모리 호평\n\nhttps://n.news.naver.com/mnews/article/277/0005800061\n\n📌 FMS 2026 최대 부스, 글로벌 관심 집중\n미국 FMS 2026에서 약 20평 규모의 행사장 내 최대 전시 부스를 운영\n\n3일간 누적 관람객 2,000명 이상이 방문하며 AI 메모리 기술에 높은 관심\n\nD램·낸드·스토리지 등 약 30종의 제품을 전시하며 AI 인프라 전반의 솔루션 경쟁력 강조\n\n📌 HBM 다음 승부수 ‘zHBM’ 최초 공개\n삼성전자는 업계 최초로 차세대 3D 메모리 아키텍처 ‘zHBM’ 실물 모형을 공개\n\n기존 HBM 이후의 AI 메모리 구조 혁신을 선점하려는 중장기 기술 로드맵을 구체화\n\n글로벌 빅테크 관계자들의 관심이 집중됐다는 점에서 향후 고객사 협업 및 기술 채택 여부가 핵심 관전 포인트\n\n📌 낸드도 3D 구조 혁신…‘zNAND-O’ 동시 부각\n차세대 낸드 아키텍처 ‘zNAND-O’ 역시 최초 공개하며 AI 스토리지 경쟁력 강화\n\nAI 서버 확대에 따라 고대역폭 D램뿐 아니라 고성능·저지연 스토리지 수요까지 동반 증가하는 흐름에 대응\n\n삼성전자가 D램-HBM-낸드-스토리지를 아우르는 종합 AI 메모리 포트폴리오를 강조했다는 점에 주목\n\n📌 “삼성이 돌아왔다”…기술 리더십 회복이 주가 촉매\n현장에서는 “삼성이 돌아왔다는 확신을 얻었다”는 평가까지 등장\n\n향후 핵심은 zHBM·zNAND-O의 양산 로드맵과 실제 빅테크 고객 채택 여부\n\nHBM 경쟁력 회복에 차세대 메모리 기술 선점까지 가시화될 경우 삼성전자 메모리 사업 재평가의 촉매로 작용 가능\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
+            "links": [
+              "https://n.news.naver.com/mnews/article/277/0005800061",
+              "https://telegram.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/28603"
+          },
+          {
+            "date": "2026-08-07",
+            "time": "12:36",
+            "text": "🧬 바이오솔루션, 국립호남권생물자원관과 MOU… 차세대 해양 바이오 소재 공동개발\n\nhttps://n.news.naver.com/article/008/0005396857?sid=101\n\n💊 해양·섬 생물자원 기반 신규 원료 확보\n국립호남권생물자원관과 MOU 체결, 섬·연안 야생생물을 활용한 차세대 바이오 소재 공동개발 추진\n\n재생·안티에이징 시장 확대에 대응해 해양 생물 유래 신규 원료 플랫폼 확장 및 사업화 추진\n\n💊 PDRN·펩타이드 등 차세대 소재 발굴\n해조류·해양 미생물 유래 PDRN, 기능성 펩타이드, 효소, 다당류 등을 공동 연구\n\n항산화·항염, 피부 재생, 피부 장벽 개선, 상처 회복 효능을 평가하고 탈모·항노화 소재까지 개발 검토\n\n💊 연구부터 특허·사업화까지 협력\n생물자원 확보·활용 기술 산업화, 공동 연구 및 기술정보 교류, 공동 특허 등 협력 체계 구축\n\n바이오솔루션의 세포·조직 기반 R&D 역량과 자원관의 생물자원 발굴·정제 기술을 결합해 상업화 속도 제고\n\n💊 첨단 바이오 원료 사업 확대 기대\n바이오솔루션은 줄기세포 치료제, 인체조직모형, 첨단 바이오 원료를 개발하는 기업으로, \n\n이번 협약을 통해 화장품 원료와 재생의료 소재까지 사업 영역 확대를 추진\n\n🧬 바이오섹터 분석 🧬 [그로쓰리서치]\nhttps://telegram.me/growthbio",
+            "links": [
+              "https://n.news.naver.com/article/008/0005396857?sid=101",
+              "https://telegram.me/growthbio"
+            ],
+            "post_url": "https://t.me/growthresearch/28604"
+          },
+          {
+            "date": "2026-08-07",
+            "time": "12:40",
+            "text": "💻 구글, Gemini 경쟁력 약화 속 클라우드(GCP)가 최대 수혜 [SemiAnalysis] \n\n📌 DeepMind 리더십 대개편…Gemini 경쟁력 흔들\n공동창업자 데미스 허사비스가 일선 경영에서 물러나고, 전 CTO 코레이 카부크추오글루가 조직을 이끌 예정\n\n제프 딘, 산제이 게마와트, 퀙 르, 오리올 비냘스 등 핵심 AI 인력이 신설 연구소로 이탈\n\n보고서는 Gemini 3 Pro 이후 모델 경쟁력이 급격히 약화됐으며, 최상위 AI 모델 경쟁에서 사실상 밀려났다고 평가\n\n📌 AI 투자 무게중심은 Gemini가 아닌 GCP\n내부 연산 자원이 Gemini보다 Google Cloud(GCP) 고객 공급으로 이동하는 구조가 강화\n\nAnthropic 등 외부 AI 기업에 대규모 TPU 공급 계약을 확대하며 클라우드 매출 성장 가속\n\nTPU 시스템 판매와 AI 인프라 서비스가 새로운 성장축으로 부상\n\n📌 GCP 고성장 전망…2027년 실적 레버리지 확대\n보고서는 2Q26 GCP 매출 성장률을 82%, 2027년에는 100% 이상 성장 가능성을 제시\n\n2027년 AI 인프라(IaaS/TaaS) ARR 730억달러 이상, TPU 시스템 판매 1200억달러를 전망\n\nTPU 수주잔고는 1500억달러 이상, 추가 2500억달러 규모 계약 가능성도 제시하며 2027년 EPS 약 3달러 기여를 예상\n\n📌 시사점은 'AI 모델'보다 'AI 인프라'\n보고서는 Google이 AGI 선도보다 AI 인프라 사업 수익성을 우선하는 전략으로 선회했다고 분석\n\nAI 모델 경쟁력 둔화에도 TPU와 클라우드 인프라 수요 확대는 지속될 가능성이 높다는 평가\n\nAI 생태계의 수혜가 모델 기업보다 인프라 공급 기업으로 이동하고 있다는 점이 핵심 투자 포인트\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
+            "links": [
+              "https://telegram.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/28605"
           }
         ]
       },
@@ -478,6 +476,15 @@
               "https://finance.naver.com/item/main.nhn?code=196170"
             ],
             "post_url": "https://t.me/SpartanResearch/4671"
+          },
+          {
+            "date": "2026-08-07",
+            "time": "10:53",
+            "text": "기업명: 씨에스윈드(112610)\n공시명: 연결재무제표기준영업(잠정)실적(공정공시)              \n------------------------------\n\n💰 실적 수치:\n  • 매출액: 6,864억 (예상: 7,347억, -6.6%) [QoQ: -3.5%, YoY: 5.6%]\n  • 영업이익: 860억 (예상: 787억, +9.3%) [QoQ: 15.8%, YoY: 45.2%]\n  • 순이익: 611억 (예상: 470억, +30.0%) [QoQ: 39.2%, YoY: 56.9%]\n\n⭐ 핵심 지표:\n  • 영업이익: QoQ +15.8%\n  • 영업이익: YoY +45.2%\n\n------------------------------\n매출액: 6,864억(예상치: 7,347억, -6.6%)  | QoQ -3.5% | YoY 5.6%\n영업익: 860억(예상치: 787억, 9.3%) | QoQ 15.8% | YoY 45.2%\n순이익: 611억(예상치: 470억, 30.0%)  | QoQ 39.2% | YoY 56.9%\n\n✦최근 실적 추이\n   분 기    | 매출액 | 영업이익 | 순이익 | EPS\n2026.2Q | 6,864억 | 860억 | 611억 | 1,448원\n2026.1Q | 7,111억 | 742억 | 438억 | 1,020원\n2025.4Q | 7,827억 | 701억 | -1,522억 | -3,657원\n2025.3Q | 5,970억 | 656억 | 579억 | 1,325원\n2025.2Q | 6,500억 | 592억 | 389억 | 903원\n\n공시링크: http://dart.fss.or.kr/api/link.jsp?rcpNo=20260807800159",
+            "links": [
+              "http://dart.fss.or.kr/api/link.jsp?rcpNo=20260807800159"
+            ],
+            "post_url": "https://t.me/SpartanResearch/4672"
           }
         ]
       },
@@ -649,22 +656,6 @@
         "posts": [
           {
             "date": "2026-08-06",
-            "time": "14:47",
-            "text": "#방산 #LIG디펜스앤에어로스페이스 260806\n\n5분기 연속 셀온\n\n그와중에 천궁 매출 관련\n\"조기납품 기저효과로 해외매출 비중 감소\"\n\n1Q26 실적 발표 전까진 \"진행률\" 운운하면서 기대감 컨트롤하지 않으셨었는지?\n그리고 1Q 실적발표에선 \"조기인도 효과 있었다\"\n그리고 2Q 실적장표로 \"조기납품 기저효과\"\n\n이러시면 투자자가 회사를 어떻게 믿나요?",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/37083"
-          },
-          {
-            "date": "2026-08-06",
-            "time": "14:59",
-            "text": "와 진짜 너무 덥던데\n\n[속보] 서울 영등포구 40도 찍었다...금요일 폭염 '절정'\nhttps://www.chosun.com/national/transport-environment/2026/08/06/L2XGKW3NOJF3BLSMYXN4JDD2PU/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
-            "links": [
-              "https://www.chosun.com/national/transport-environment/2026/08/06/L2XGKW3NOJF3BLSMYXN4JDD2PU/?utm_source=naver&amp;utm_medium=referral&amp;utm_campaign=naver-news"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37085"
-          },
-          {
-            "date": "2026-08-06",
             "time": "15:50",
             "text": "[단독] 머스크, 태양광 내재화 박차…폴리실리콘 분야 진출까지 모색 - DIGITIMES\n(by https://t.me/TNBfolio)\n- Elon Musk가 Tesla 및 SpaceX를 통해 장기 목표 200GW 규모의 미국 태양광 통합 생산 생태계 구축을 추진한다.\n- Tesla는 텍사스에 셀과 모듈부터 잉곳 성장 및 웨이퍼 슬라이싱을 포함하는 100GW 규모의 태양광 제조 허브 조성을 계획하고 있다.\n- SpaceX는 스타링크 및 우주 AI 연산 인프라 지원을 목적으로 HJT 기술 기반의 10GW 태양광 셀 공장을 건설 중이다.\n- Musk는 인플레이션감축법 수혜와 비중국 공급망 확보를 위해 OCI 등의 동남아산 폴리실리콘 조달을 추진하고 있다.\n- 업계에서는 장비 계약 현황을 바탕으로 Musk가 향후 자체적인 폴리실리콘 생산 진출까지 고려하는 것으로 보고 있다.\nhttps://www.digitimes.com/news/a20260806PD221/elon-musk-solar-manufacturing-polysilicon-supply-chain-spacex.html",
             "links": [
@@ -797,6 +788,24 @@
               "https://finance.naver.com/item/main.nhn?code=141080"
             ],
             "post_url": "https://t.me/Yeouido_Lab/37104"
+          },
+          {
+            "date": "2026-08-07",
+            "time": "11:55",
+            "text": "https://blog.naver.com/8740best/224367695617",
+            "links": [
+              "https://blog.naver.com/8740best/224367695617"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37105"
+          },
+          {
+            "date": "2026-08-07",
+            "time": "11:56",
+            "text": "https://n.news.naver.com/article/023/0003991796?cds=news_my",
+            "links": [
+              "https://n.news.naver.com/article/023/0003991796?cds=news_my"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37106"
           }
         ]
       },
@@ -3187,6 +3196,24 @@
           {
             "date": "2026-08-07",
             "time": "00:00",
+            "text": "[현대지에프홀딩스] 주요사항보고서(자기주식취득결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000241"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000241"
+          },
+          {
+            "date": "2026-08-07",
+            "time": "00:00",
+            "text": "[애드포러스] 주요사항보고서(자기주식취득신탁계약체결결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000220"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000220"
+          },
+          {
+            "date": "2026-08-07",
+            "time": "00:00",
             "text": "[HLB테라퓨틱스] 주요사항보고서(자기전환사채만기전취득결정)\n공시유형: 주요사항보고",
             "links": [
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000005"
@@ -3383,15 +3410,6 @@
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260806000420"
           },
           {
-            "date": "2026-08-06",
-            "time": "00:00",
-            "text": "[현대무벡스] 주요사항보고서(자기주식처분결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260806000400"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260806000400"
-          },
-          {
             "date": "2026-08-05",
             "time": "00:00",
             "text": "[BYC] 주요사항보고서(자기주식취득신탁계약체결결정)\n공시유형: 주요사항보고",
@@ -3534,15 +3552,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260803000003"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260803000003"
-          },
-          {
-            "date": "2026-08-03",
-            "time": "00:00",
-            "text": "[SK] 주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260803000002"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260803000002"
           }
         ]
       }
