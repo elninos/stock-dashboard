@@ -1,6 +1,6 @@
 {
   "2026-08-10": {
-    "fetched_at": "2026-08-10T20:50:45+09:00",
+    "fetched_at": "2026-08-10T23:21:00+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -243,16 +243,6 @@
         "posts": [
           {
             "date": "2026-08-10",
-            "time": "10:59",
-            "text": "💻 한미반도체, 美 현지법인 설립…AI 반도체 수요 대응\n\n한미반도체가 지분 100%를 출자해 미국 현지법인 ‘HANMI USA’를 신설했습니다.\n\n출자금은 150만 달러, 약 21억 원 규모입니다.\n\n📌 美 반도체 투자 확대 선제 대응\nTC본딩은 HBM 외에도, HBF, 칩렛 등 반도체를 물리적-전기적 연결하는 영역에 필요합니다.\n\nAI 패키징 시장 성장으로 관련 장비 수요가 증가함에 따라,\n인텔 등 미국 현지 AI 반도체 시장애 대응이 필요합니다.\n\n이번 법인 설립을 통해 현지 고객사 대상 기술지원도 강화할 수 있을 것으로 보입니다.\n\n📌 TC 본더의 독주는 끝나지 않는다\n저희가 오늘 발간드린 HBF 산업보고서 이전에 한미반도체 탐방보고서도 발간했습니다.\n\n관련 내용을 쉽고 자세하게 적어두었으니, 많은 관심 부탁드립니다.\n\n🔥 한미반도체 탐방보고서 다시보기(2026.07.02)\nhttps://contents.premium.naver.com/growthresearch/growth/contents/260701171117281cw\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
-            "links": [
-              "https://contents.premium.naver.com/growthresearch/growth/contents/260701171117281cw",
-              "https://telegram.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/28664"
-          },
-          {
-            "date": "2026-08-10",
             "time": "11:30",
             "text": "🧬[알지노믹스] Circular RNA와 in vivo CAR-T\n\n💊 핵심은 RZ-001과 RNA Editing\n알지노믹스의 메인은 TSR 기반 RNA editing과 RZ-001\n\n💊 두 번째 플랫폼, Circular RNA\n기존 리보자임 기술에서 확장된 scarless Circular RNA 생산 플랫폼 보유\n\n💊 in vivo CAR-T와의 접점\nCircular RNA는 선형 mRNA보다 긴 발현이 가능해 RNA 기반 in vivo CAR-T의 핵심 모달리티로 주목\n\n💊 생산에서 전달로 진전\n2026년 연구를 통해 Circular RNA를 비장 면역세포와 T세포에 전달하는 초기 데이터 확보\n\n💊 글로벌 빅파마가 주목하는 시장\nBMS·Lilly 등은 Circular RNA와 in vivo CAR-T 플랫폼 확보에 대규모 투자 진행\n\n💊 핵심 변화: “제조기술”에서 “면역세포 재프로그래밍 플랫폼”으로\n\n알지노믹스의 Circular RNA 플랫폼과 in vivo CAR-T 확장 가능성을 중심으로 정리하였습니다.\n\n자세한 내용은 네이버 프리미엄 콘텐츠에서 확인해주세요!\nhttps://contents.premium.naver.com/growthresearch/growthbio/contents/260810105544019es\n\n🧬 바이오섹터 분석 🧬 [그로쓰리서치]\nhttps://telegram.me/growthbio",
             "links": [
@@ -437,6 +427,15 @@
               "https://telegram.me/growthbio"
             ],
             "post_url": "https://t.me/growthresearch/28684"
+          },
+          {
+            "date": "2026-08-10",
+            "time": "20:57",
+            "text": "💻 BofA: 메모리 2027년까지 슈퍼사이클 지속 전망\n\n📌 2026년 메모리 시장 폭발적 성장\nBofA는 2026년 글로벌 DRAM 매출이 전년 대비 328%, NAND 매출은 341% 증가할 것으로 전망\n\nDRAM ASP는 242%, NAND ASP는 267% 상승하며 가격이 시장 성장을 주도할 것으로 예상\n\n메모리 업체들의 CapEx도 DRAM 68%, NAND 57% 증가하며 공급 대응을 위한 투자 확대 전망\n\n📌 2027년에도 슈퍼사이클 지속\n2026년 폭발적인 성장 이후에도 2027년 DRAM 매출은 48%, NAND 매출은 31% 추가 성장 전망\n\nDRAM과 NAND ASP 역시 각각 24%, 10% 상승하며 가격 강세가 이어질 것으로 예상\n\n공급능력 증가에도 수요와 가격 상승이 이어지며 BofA는 메모리 슈퍼사이클이 2027년까지 지속될 것으로 전망\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
+            "links": [
+              "https://telegram.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/28685"
           }
         ]
       },
@@ -447,33 +446,6 @@
         "category": "매크로/크립토",
         "channel_url": "https://t.me/SpartanResearch",
         "posts": [
-          {
-            "date": "2026-08-09",
-            "time": "21:33",
-            "text": "받) SK하이닉스, 8월 말 100조 주주환원책 발표  금융 출입 기자들 정보에 의하여 9월 말 발표하기로 했던 하이닉스의 추가 주주환원책이 8월 안으로 한 달 당겨질 가능성이 높다고 (26일 유력)  추가 주주환원책 규모가 100조 수준으로 크기 때문에 이번 분기별 배당은 금액을 낮춰서 집행 규모를 조절, 주가 대비 분기 배당금 375원에 대한 시장의 실망 반응을 예상했지만 곧 이어질 주주환원책 금액이 상당해 전체적인 균형을 맞췄다는 설  특별 환원 재원을…",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/4692"
-          },
-          {
-            "date": "2026-08-09",
-            "time": "21:38",
-            "text": "규제 첫 관문 넘은 SK…‘재생에너지 합작사’ 속도전\n\nhttps://www.sedaily.com/article/20077345?ref=naver",
-            "links": [
-              "https://www.sedaily.com/article/20077345?ref=naver",
-              "https://www.sedaily.com/article/20077345"
-            ],
-            "post_url": "https://t.me/SpartanResearch/4693"
-          },
-          {
-            "date": "2026-08-10",
-            "time": "10:18",
-            "text": "[SK증권 반도체 한동희, 손 건]\n\nSK하이닉스(주), 4조 규모 중국 충칭공장 지분매각 추진 보도에 조회공시 요구\n\n▶️ 조회공시 개요\n\n조회공시요구내용: 4조 규모 중국 충칭공장 SK하이닉스 지분매각 추진 보도\n공시시한: 2026-08-10 18:00\n\n▶️ URL: https://buly.kr/6XovWkb\n\nSK증권 리서치 IT팀 채널 :\nhttps://t.me/skitteam",
-            "links": [
-              "https://buly.kr/6XovWkb",
-              "https://t.me/skitteam"
-            ],
-            "post_url": "https://t.me/SpartanResearch/4694"
-          },
           {
             "date": "2026-08-10",
             "time": "10:56",
@@ -598,6 +570,13 @@
             "text": "내일 CPI 개인적 모델 예상치 공유\n\nHL CPI YoY 3.3 / MoM 0.1\n\nCr CPI YoY 2.5 / MoM 0.2\n\n-\n\n컨센 \n\nHL CPI YoY 3.4 / MoM 0.1\n\nCr CPI YoY 2.5 / MoM 0.2\n\n언제나 모델은 정확도가 떨어질 수 있으며, 월드컵 효과가 드러난 고용과 물가에 미친 영향이 일치할지가 관심.",
             "links": [],
             "post_url": "https://t.me/SpartanResearch/4712"
+          },
+          {
+            "date": "2026-08-10",
+            "time": "22:52",
+            "text": "1) VKOSPI 하락에 따른 메모리 펀딩숏 커버 가능성 \n\n2) KOSDAQ ADR의 과열권 근접 \n\n3) 광 - 메모리 롱-숏 언와인딩의 조짐",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/4715"
           }
         ]
       },
@@ -608,13 +587,6 @@
         "category": "매매 신호/트레이딩",
         "channel_url": "https://t.me/d_ticker",
         "posts": [
-          {
-            "date": "2026-07-30",
-            "time": "14:59",
-            "text": "삼성전기 2Q 컨콜 핵심\n\n- 빅테크 10여 곳 MLCC LTA 체결\n- 27년 고용량 MLCC(1005 47㎌) 수요 7배↑\n- 2Q 산업·전장용 MLCC 출하량 DD% 성장률\n- 3Q 전기차(EV)향 MLCC 출하량 DD% 수준 전망\n- FC-BGA도 탑클래스 반도체사와 LTA 협의 중\n- 2Q 빅테크 DC 네트워크용 FC-BGA 공급 시작\n- 하반기에 주요 신제품용 FC-BGA 양산 예정\n- 로보택시용 고부가 카메라모듈 라인업 확대\n- 휴머노이드용 카메라 연내 초도 양산 예정\n- 유리기판 샘플 일부 고객과 평가 단계 중",
-            "links": [],
-            "post_url": "https://t.me/d_ticker/3637"
-          },
           {
             "date": "2026-07-30",
             "time": "21:41",
@@ -758,6 +730,15 @@
             "text": "이젠 주간 상승률에 시가총액 $10B 미만 US 소형주도 포함하겠습니다 (바이오는 제외)",
             "links": [],
             "post_url": "https://t.me/d_ticker/3657"
+          },
+          {
+            "date": "2026-08-10",
+            "time": "22:54",
+            "text": "인텔, $15B 유상증자 결정\n\n- 기본 공모 규모 $15B\n- 주관사에 최대 $2.25B 추가 매입 옵션\n- 최대 조달 $17.25B\n\nhttps://www.intc.com/news-events/press-releases/detail/1778/intel-announces-proposed-15-billion-common-stock-offering",
+            "links": [
+              "https://www.intc.com/news-events/press-releases/detail/1778/intel-announces-proposed-15-billion-common-stock-offering"
+            ],
+            "post_url": "https://t.me/d_ticker/3658"
           }
         ]
       },
@@ -776,13 +757,6 @@
         "category": "국내 시장/종목 분석",
         "channel_url": "https://t.me/Yeouido_Lab",
         "posts": [
-          {
-            "date": "2026-08-09",
-            "time": "15:50",
-            "text": "버크셔 해서웨이의 막대한 현금 보유액이 4년 만에 처음으로 감소\n\n이는 마침내 주식 순매수자로 돌아섰음을 의미합니다.",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/37122"
-          },
           {
             "date": "2026-08-09",
             "time": "20:39",
@@ -915,6 +889,15 @@
             "text": "안녕하세요 디앤디파마텍입니다.\n당사 MASH 치료제 자보페그두타이드의 멕시코 특허 등록이 결정되어 이와 관련한 내용 공유 드립니다.\n\n디앤디파마텍 MASH 치료제 ‘자보페그두타이드(DD01)’, 멕시코 특허 등록 결정\n\n▶️미국, 일본, 중국 등 주요국 이어 라틴아메리카 시장 특허 권리 확보\n▶️글로벌 파트너링 진행 과정에서 가치 극대화를 위한 주요국 특허권 강화 추진 중\n▶️성공적인 美 임상 2상 결과 바탕으로 글로벌 기술이전(L/O) 논의 지속\n\n[2026-08-10] GLP-1 계열 신약 개발 전문기업 디앤디파마텍(347850, 대표이사 이슬기)이 자체 개발 중인 MASH(대사이상 관련 지방간염) 치료제 ‘자보페그두타이드(DD01)’의 멕시코 특허 등록 결정을 통보 받았다고 밝혔다.\n\n이번에 등록 결정된 특허는 자보페그두타이드의 핵심 구조인 GLP-1/글루카곤 이중 수용체 작용제 펩타이드 및 이의 화학적 변형 제형에 관한 물질 특허로, 2019년 국내 최초 출원 이후 미국, 중국, 일본 등 주요국에서 순차적으로 등록을 완료해 온 바 있다. 회사는 라틴아메리카 지역 최대 제약 시장 중 하나이자 글로벌 제약사들의 주요 거점국인 멕시코 특허청(IMPI)의 이번 승인을 통해 중남미 권역에서도 지식재산권 진입장벽을 구축하게 됐다고 설명했다.\n\n한편 디앤디파마텍은 지난 5월 자보페그두타이드 미국 임상 2상 48주 결과를 발표하여 뛰어난 섬유화 개선 효과와 안전성을 입증한 바 있으며, 검증된 기술적 우위를 바탕으로 현재 글로벌 빅파마들과의 기술이전 계약 체결을 위한 논의를 다각도로 진행 중이다.\n\n디앤디파마텍 이슬기 대표는 “이번 멕시코 특허 확보는 자보페그두타이드의 독창적인 기술 권리를 다양한 국가로 넓혀 나가는 중요한 과정”이라며, “파트너링 논의가 본격화됨에 따라 회사는 주요국 특허 권리를 선제적으로 강화하고 있으며, 이를 통해 가치를 극대화하여 긍정적인 기술이전 성과를 도출할 수 있도록 전사적 역량을 집중하고 있다”고 밝혔다.",
             "links": [],
             "post_url": "https://t.me/Yeouido_Lab/37141"
+          },
+          {
+            "date": "2026-08-10",
+            "time": "21:38",
+            "text": "[하나증권 IT 김민경]\n\n삼성전기 (009150.KS/매수): [NDR 후기] 수급 불안을 먹고 자라는 중\n\n자료: https://cutt.ly/ryawmyLr\n\n■ 목표주가 300만원 유지\n\n삼성전기에 대한 투자의견 BUY, 목표주가 300만원을 유지\n\n금번 NDR에서 투자자들의 관심은 MLCC 관련 LTA 체결 동향, 가격 추이 및 Capa 운영 계획과 FCBGA 관련 가격 인상 추이, 증설 및 선수금 수령 계획 등에 집중\n\nAI 서버 중심으로 MLCC와 FCBGA 수요가 지속 증가하고 있는 반면 Capa Loss 증가로 인해 공급 확대는 제한적인 상황이 지속. 투자자들의 눈높이가 높아졌음에도 불구하고 과거 사이클 대비 가격 흡수력이 높은 AI 데이터센터 고객사의 등장으로 인해 시장 기대치를 상회하는 수익성을 기록할 가능성이 매우 높아지고 있음\n\n■ MLCC: 상단이 막힌 공급, 상단이 뚫린 수익성\n\n[1]LTA 관련 삼성전기는 10건의 계약을 체결했으며 추가로 10개 이상의 고객사와 협상을 진행중. 다만 전체 MLCC 매출 내 장기공급계약 비중은 제한적인 수준에서 유지하며 가격 상승에 대한 상방은 열어둘 것으로 예상. 동일 제품군임에도 불구하고 단기간 내 ASP가 빠르게 상승하고 있어 고객사의 수급 우려는 더욱 커지고 있는 것으로 파악\n\n[2] 가격정책의 경우 6월과 8월에 각각 유통채널향 물량에 대해 각각 10%, 30% 수준의 가격 인상을 단행한 바 있음. MLCC 수급 상황이 더욱 타이트해지며 유통채널 외 물량에 대해서도 가격 협상 가능성이 높은 상황\n\n[3]높은 수요에 대응하기 위해 삼성전기는 필리핀 신규 생산시설의 가동 시기를 27년 하반기에서 27년 상반기로 앞당겼음. 다만, 인력 등의 이슈로 단기간 내 대규모 증설은 제한적인 상황으로 연간 20%내외의 생산능력 확대가 예상. 하반기 IT 성수기 진입을 앞두고 Murata와 Taiyo yuden의 2분기 BB ratio는 각각 1.47, 1.72로 역대 최고 수준을 기록했으며 27년까지 공급 증가는 제한적인 상황으로 우호적인 영업환경이 지속\n\n■ FCBGA: 예약제로만 운영합니다\n\n26년 하반기부터 FCBGA는 완전 가동상태에 돌입할 예정이며 제한된 Capa에도 불구하고 믹스 개선 및 가격 인상이 실적 성장을 견인할 것으로 예상. 26년 상반기 스위치 제품 양산을 시작한데 이어 하반기에도 가속기 및 서버 CPU향 FCBGA 공급 확대에 따라 26년 하반기 서버/네트워크 매출 비중은 60%를 상회할 전망\n\n삼성전기는 기판 스펙 업그레이드와 수요 증가에 대응해 국내외 사이트에 증설을 준비하고 있음. 여타 대형 기판 업체와 같이 고객사 선수금 수령을 통해 증설 자금의 상당 부분을 지원받을 것으로 추정. 신규 생산시설의 가동 시점은 28년 상반기이며 27년에는 보완투자를 통해 소폭의 생산능력 확대가 이루어질 전망\n\n\n(컴플라이언스 승인을 득함)",
+            "links": [
+              "https://cutt.ly/ryawmyLr"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37142"
           }
         ]
       },
