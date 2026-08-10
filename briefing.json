@@ -1,6 +1,6 @@
 {
   "2026-08-10": {
-    "fetched_at": "2026-08-10T19:20:27+09:00",
+    "fetched_at": "2026-08-10T20:50:45+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -738,7 +738,8 @@
             "time": "22:58",
             "text": "SK하이닉스, 중국 공장 투자 유치 검토\n\n- 중국 충칭에는 후공정 팹 2기 위치\n- 이 공장에 대한 투자 유치를 검토 중\n- 지분 일부를 매각하는 옵션 등 고려\n- 해당 시설의 가치는 $3.0B 전망\n\nBloomberg",
             "links": [
-              "https://www.bloomberg.com/news/articles/2026-08-07/sk-hynix-is-said-to-mull-options-for-3-billion-chongqing-assets"
+              "https://www.bloomberg.com/news/articles/2026-08-07/sk-hynix-is-said-to-mull-options-for-3-billion-chongqing-assets",
+              "https://www.bloomberg.com/news/articles/2026-08-07/sk-hynix-is-said-to-mull-options-for-3-billion-chongqing-assets?utm_source=aim&amp;utm_medium=telegram&amp;utm_campaign=ai_ua"
             ],
             "post_url": "https://t.me/d_ticker/3654"
           },
