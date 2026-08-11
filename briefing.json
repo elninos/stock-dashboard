@@ -1,6 +1,6 @@
 {
   "2026-08-11": {
-    "fetched_at": "2026-08-11T12:05:37+09:00",
+    "fetched_at": "2026-08-11T14:55:07+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -248,35 +248,6 @@
         "posts": [
           {
             "date": "2026-08-10",
-            "time": "17:07",
-            "text": "✅ [단독]KDX·NXT컨소 '조각투자 장외거래소' 본인가 접수…이르면 연내 출범\n\nhttps://www.newsis.com/view/NISX20260810_0003743318\n\n📌 장외거래소 출범 ‘마지막 관문’ 진입\nKDX와 NXT컨소시엄이 10일 금융위에 조각투자 장외거래소 본인가 신청\n\n서류 검토→현장실사→외부평가→증선위·금융위 의결을 거쳐 최종 인가 결정\n\n예비인가 사업자 선정 이후 약 6개월 만에 본인가 단계 진입, 이르면 연내 거래소 출범 전망\n\n📌 KDX·NXT, 인프라 구축 본격화\nKDX는 지난 4월 법인 설립 후 인프라 구축 및 약 40명 규모 인력 채용 완료\n\nNXT컨소시엄도 '넥스체인지' 법인 설립과 인력 채용 진행 중\n\n개장 초기 시장 선점을 위한 상품 라인업 확보가 양 거래소의 핵심 경쟁 요소\n\n📌 초기엔 부동산·음원, 내년부터 STO 확장 기대\n초기 거래 대상은 부동산·음원 등을 신탁해 발행한 기존 전자등록 수익증권으로 제한\n\n2027년 2월 토큰증권법 시행 후 분산원장 기반 수익증권·투자계약증권까지 확대 가능\n\nSTO 발행시장 제도화에 이어 유통 인프라까지 구축되면 관련 시장 확장성 커질 전망\n\n📌 8월 STO 하위법규가 핵심 변수\n업계는 이달 발표 예정인 STO 하위법규에 주목\n\n기존 조각투자 장외거래소가 STO까지 수용할지, 별도 STO 장외거래소 인가가 필요할지가 핵심\n\n규제 구조가 확정되면 거래소뿐 아니라 발행·유통·플랫폼 등 STO 밸류체인 전반의 사업 구체화 기대\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
-            "links": [
-              "https://www.newsis.com/view/NISX20260810_0003743318",
-              "https://telegram.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/28678"
-          },
-          {
-            "date": "2026-08-10",
-            "time": "17:16",
-            "text": "🚨 이란 외무장관, \"호르무즈 해협을 통과하는 선박에 요금을 부과할 의도가 없다\"\n\n📌 이란 외무장관 발언\n\n현재 단계에서는 호르무즈 해협을 통과하는 선박에 요금을 부과할 의도가 없다\n\n현재 워싱턴과의 협상은 없으며, 중개자를 통해 메시지를 교환 중\n\n호르무즈 해협의 통과 지도에 대해 오만과 합의했다\n\n오만과의 호르무즈 협정에는 해상 서비스 요금 포함되어 있다\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
-            "links": [
-              "https://telegram.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/28679"
-          },
-          {
-            "date": "2026-08-10",
-            "time": "17:45",
-            "text": "✅ [단독] 한화·LIG 손잡고 'AI 軍참모' 만든다\n\nhttps://www.hankyung.com/article/2026081050041\n\n📌 지휘망과 타격망 강자, ‘한국형 팔란티어’로 결집\n한화시스템·LIG D&A·ETRI가 육군 차세대 지휘통제체계용 ‘대대급 AI 참모’ 공동 개발\n\n한화시스템의 전장 정보수집·지휘통제와 LIG D&A의 교전통제 기술을 하나의 AI 플랫폼으로 통합\n\n개발 완료 시 차세대 지상지휘통제체계(KCCS-A)의 핵심 두뇌로 적용 전망\n\n📌 99억원 투입, 내년 8월 시제품 가시화\n사업 기간은 2023년 10월~2027년 8월, 총사업비 약 99억원\n\n상세설계검토(CDR)를 마치고 지난달 통합 검증 돌입, 연말까지 세부 과제 통합 예정\n\n2027년 8월 이후 시제품 생산 계획으로 국방 AI 상용화 단계 진입 기대\n\n📌 전황 분석부터 타격 순서·무기 할당까지 AI가 지원\n한화시스템은 위성·SAR·광학·적외선·통신망 등 이종 전장 데이터를 AI 학습용으로 전처리\n\nETRI가 시공간적 전장 상황을 분석하고, LIG D&A가 결과 시각화 및 공격 순서·최적 무기 할당 담당\n\n총 12~13개 AI 모델을 결합하고 sLLM·국산 NPU를 적용해 태블릿·AR 글라스에서도 구동 가능하도록 설계\n\n📌 국방 AI 플랫폼 선점 경쟁 본격화\n한화시스템은 AKJCCS 등 통신·지휘통제체계, LIG 측은 천궁 등 유도무기 교전통제 분야에서 경쟁력 보유\n\nKAIST·와이즈넛·텔레픽스·코난테크놀로지 등 연구기관·AI 기업까지 참여하며 국방 AI 생태계 확대\n\n향후 드론·유무인 복합체계 확산과 맞물려 AI 기반 지휘·교전 플랫폼이 차세대 방산의 신규 성장축으로 부상 가능\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
-            "links": [
-              "https://www.hankyung.com/article/2026081050041",
-              "https://telegram.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/28680"
-          },
-          {
-            "date": "2026-08-10",
             "time": "17:54",
             "text": "🚨 [속보]강훈식 \"연내 메가특구특별법 제정 추진…인허가·환경영향평가 단축\"\n\nhttps://www.newsis.com/view/NISX20260810_0003743440\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
             "links": [
@@ -406,6 +377,36 @@
               "http://www.growthresearch.co.kr/membership/1430/1128"
             ],
             "post_url": "https://t.me/growthresearch/28697"
+          },
+          {
+            "date": "2026-08-11",
+            "time": "12:31",
+            "text": "✅ 태성, 한국세라믹기술원에 TGV 산에칭 장비 공급\n\nhttps://view.asiae.co.kr/article/2026081110485528474\n\n📌 한국세라믹기술원에 TGV 장비 공급\n차세대 반도체 패키징용 산에칭 장비 납품\n\n글래스기판 관통홀의 형상과 크기를 정밀 구현\n\nAI·HPC용 첨단 패키징 핵심 공정으로 부각\n\n📌 글래스기판 장비 사업화 단계 진입\n기존 연구개발 중심에서 실제 공급 단계로 전환\n\nTGV 산에칭 외 식각·세정·도금 장비 기술도 확보\n\n글래스기판 공정 전반으로 장비 라인업 확대\n\n📌 PCB 습식공정 기술이 경쟁력\n기존 PCB 장비에서 축적한 습식·자동화 기술 활용\n\n크랙과 파손을 줄이면서 균일한 식각 품질 구현\n\n후속 금속화·도금 품질과 직결되는 핵심 장비\n\n📌 국내외 양산 적용이 다음 촉매\n천안 신공장 중심의 양산 대응 체계 구축 완료\n\n국내외 고객사와 추가 양산 적용 협의 진행\n\n글래스기판 장비가 신규 성장축으로 부상 기대\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://view.asiae.co.kr/article/2026081110485528474",
+              "https://t.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/28698"
+          },
+          {
+            "date": "2026-08-11",
+            "time": "13:37",
+            "text": "✅ 지앤비에스 에코(7/30 탐방보고서) +14% 상승 중\n\n지앤비에스에코가 금일 +14% 상승 중입니다.\n\n저희가 7월 30일 탐방보고서를 통해 전달드렸던 종목인데요.\n\n올해 영업이익 3배 성장의 퀀텀점프가 예상되고\n내년 이후에도 반도체, 태양광 증설에 따라 실적이 기대되는 상황에서\n\n밸류에이션 매력도가 높다고 보고 있습니다.\n\n발행한 리포트도 한 번씩 참고해보시면 좋을 것 같습니다.\n\n🔥 지앤비에스 에코 탐방보고서(26.07.30.)\nhttps://contents.premium.naver.com/growthresearch/growth/contents/260729201018196ti\n\n📌 1. 반도체·태양광 증설이 동시에 여는 성장 사이클\nSK하이닉스 M15X·용인 클러스터 투자에 따른 반도체용 플라즈마 스크러버 공급 확대\n\n인도의 태양광 셀 공급 부족과 자국 생산 확대 정책에 힘입은 대용량 스크러버 수요 증가\n\n신규 팹 증설뿐 아니라 공정 고도화와 유지보수·장비 교체가 더해지는 구조적 성장 구간 진입\n\n📌 2. 글로벌 레퍼런스로 구축한 플라즈마 스크러버 경쟁력\n4세대 플라즈마 스크러버 분야의 글로벌 최다 납품 레퍼런스와 높은 가스 처리 효율 보유\n\n반도체에서는 SK하이닉스 증설 수혜가 집중되는 가운데 일본·유럽·중국 고객사 확대\n\n태양광에서는 중국 약 80%, 인도 약 95%의 점유율을 기반으로 글로벌 셀 증설 수혜 기대\n\n📌 3. 장비 믹스 개선이 이끄는 실적 레벨업\n26년 매출 1,440억 원, 영업이익 260억 원으로 전년 대비 각각 57%, 233% 성장 전망\n\n1분기에 연간 영업이익 컨센서스의 35%를 달성한 가운데,\n\n수주 일정상 상저하고 흐름을 고려하면 전망치 상회 가능성 존재\n\n고마진 장비 매출 증가와 저마진 유류 매출 비중 하락으로 영업이익률 개선 전망\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
+            "links": [
+              "https://contents.premium.naver.com/growthresearch/growth/contents/260729201018196ti",
+              "https://telegram.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/28699"
+          },
+          {
+            "date": "2026-08-11",
+            "time": "14:12",
+            "text": "✅ 전기차 부진 GM, 삼성SDI 합작 공장 손 뗀다\n\nhttps://zdnet.co.kr/view/?no=20260811133656\n\n📌 GM 지분 49.99% 전량 인수\n삼성SDI가 시너지셀즈의 GM 보유 지분 전부 인수\n\n인디애나 뉴칼라일 공장은 연산 27GWh 규모\n\n총 투자액은 35억달러, 양산 목표는 내년\n\n📌 북미 EV 부진에 합작 구조 재편\nGM의 2분기 미국 전기차 판매는 전년 대비 33% 감소\n\n지난해 4분기 EV 사업 관련 60억달러 손상차손 반영\n\n고가 전기차 판매 부진이 배터리 투자전략에도 영향\n\n📌 북미 첫 단독 생산거점 확보\n삼성SDI는 이번 인수로 미국 내 첫 단독 배터리 공장 보유\n\n차세대 EV용 각형 배터리와 ESS 배터리 생산 예정\n\nEV와 ESS를 함께 대응해 공장 활용도 제고 가능\n\n📌 GM과 기술협력은 계속\n양사는 차세대 각형 배터리 공동 선행개발 협약 체결\n\n고에너지밀도·급속충전 기술을 적용한 제품 개발 추진\n\n향후 GM 차세대 전기차 탑재 가능성이 핵심 촉매\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
+            "links": [
+              "https://zdnet.co.kr/view/?no=20260811133656",
+              "https://telegram.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/28700"
           }
         ]
       },
@@ -416,39 +417,6 @@
         "category": "매크로/크립토",
         "channel_url": "https://t.me/SpartanResearch",
         "posts": [
-          {
-            "date": "2026-08-10",
-            "time": "16:14",
-            "text": "2026.08.10 16:03:40\n기업명: 롯데관광개발(시가총액: 1조 556억) A032350\n보고서명: 주식등의대량보유상황보고서(약식)\n\n대표보고 : 브이아이피자산운용/대한민국\n보유목적 : 단순투자\n\n보고전 : 7.99%\n보고후 : 12.19%\n보고사유 : 1% 이상 변동\n\n* (주)브이아이피자산운용\n2026-08-03/장내매수(+)/보통주/ 70,320주/-\n2026-08-04/장내매수(+)/보통주/ 151,468주/-\n2026-08-05/장내매수(+)/보통주/ 185,017주/-\n2026-08-06/장내매수(+)/보통주/ 21,519주/-\n2026-08-07/장내매수(+)/보통주/ 26,713주/-\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000500\n회사정보: https://finance.naver.com/item/main.nhn?code=032350",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000500",
-              "https://finance.naver.com/item/main.nhn?code=032350"
-            ],
-            "post_url": "https://t.me/SpartanResearch/4706"
-          },
-          {
-            "date": "2026-08-10",
-            "time": "18:23",
-            "text": "✅ [속보] 靑 \"충청권 246조원·영남권 107조원 투자 프로젝트 올해 착수\"\n\nhttps://www.ajunews.com/view/20260810180010007",
-            "links": [
-              "https://www.ajunews.com/view/20260810180010007"
-            ],
-            "post_url": "https://t.me/SpartanResearch/4707"
-          },
-          {
-            "date": "2026-08-10",
-            "time": "18:23",
-            "text": "올해 처음으로 100일선 하회한 VKOSPI 지수\n\n* VKOSPI 지수 약 8% 하락\n- VKOSPI 지수는 전일대비 약 8% 하락한 69.55를 기록하며, 올해 처음으로 100일 이동평균선(72.0)을 하회. 이는 지난해 12월 26일 이후 처음.\n- 고점대비 약 29% 하락했음에도 지난해 12월 12일 저점 대비 약 178%나 상승하였고, 장기평균 20 대비 약 3.5배 높은 수준을 기록 중.",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/4708"
-          },
-          {
-            "date": "2026-08-10",
-            "time": "18:24",
-            "text": "최근 메모리의 펀딩숏은 명확해보이는데,  특히, Long AI S/W + 사이버보안 vs H/W(e.x Memory)와 같은,\n\n메모리에 대한 약세론은 LTA에 의한 실적을 보기전에 GPM이 피크에 다다랐을 가능성에 대한 우려가 담겨있을 것이므로, 최근 내러티브는 주주환원 가능성에 의거하기 시작.\n\n그러나, AI H/W 내에서도 최근 강세를 보이는 CPO 관련주들 중 LITE 실적발표 역시 GPM 가속 모멘텀의 우려를 등에 업고 있는 상황임. 따라서, LITE 실적발표에서 차분기 GPM에 대해 Ceiling 가시성이 보인다면, 메모리를 펀딩 숏으로 유지할 가능성은 다소 줄어들 가능성이 있음을 대비해둘 필요성도 있음.",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/4709"
-          },
           {
             "date": "2026-08-10",
             "time": "18:24",
@@ -541,6 +509,32 @@
             "text": "1,2번 중 1번을 테스트해보는 구간",
             "links": [],
             "post_url": "https://t.me/SpartanResearch/4726"
+          },
+          {
+            "date": "2026-08-11",
+            "time": "12:49",
+            "text": "금일 VKOSPI가 삼성전자·SK하이닉스 레버리지 상품 상장일인 5월 27일 수준을 상장 이후 처음으로 밑돌기 시작했다",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/4727"
+          },
+          {
+            "date": "2026-08-11",
+            "time": "12:51",
+            "text": "외국인들이 국장을 던지는 비밀 \n\n#메르 \n\n이 글 참고 \n\nhttps://blog.naver.com/ranto28/224371367594",
+            "links": [
+              "https://blog.naver.com/ranto28/224371367594"
+            ],
+            "post_url": "https://t.me/SpartanResearch/4728"
+          },
+          {
+            "date": "2026-08-11",
+            "time": "13:38",
+            "text": "2026.08.11 13:38:48\n기업명: 신세계(시가총액: 4조 850억) A004170\n보고서명: 연결재무제표기준영업(잠정)실적(공정공시)\n\n매출액 : 17,804억(예상치 : 17,922억/ -1%)\n영업익 : 1,671억(예상치 : 1,521억/ +10%)\n순이익 : 901억(예상치 : 746억+/ 21%)\n\n**최근 실적 추이**\n2026.2Q 17,804억/ 1,671억/ 901억\n2026.1Q 18,471억/ 1,978억/ 1,454억\n2025.4Q 19,337억/ 1,725억/ -691억\n2025.3Q 16,361억/ 998억/ 483억\n2025.2Q 16,938억/ 753억/ 83억\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811800241\n회사정보: https://finance.naver.com/item/main.nhn?code=004170",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811800241",
+              "https://finance.naver.com/item/main.nhn?code=004170"
+            ],
+            "post_url": "https://t.me/SpartanResearch/4730"
           }
         ]
       },
@@ -551,13 +545,6 @@
         "category": "매매 신호/트레이딩",
         "channel_url": "https://t.me/d_ticker",
         "posts": [
-          {
-            "date": "2026-07-31",
-            "time": "15:32",
-            "text": "SK하이닉스 31일 +29.95% 상한가 마감",
-            "links": [],
-            "post_url": "https://t.me/d_ticker/3643"
-          },
           {
             "date": "2026-07-31",
             "time": "15:36",
@@ -710,6 +697,15 @@
               "https://t.me/yieldnspread/6440"
             ],
             "post_url": "https://t.me/d_ticker/3663"
+          },
+          {
+            "date": "2026-08-11",
+            "time": "13:33",
+            "text": "삼성SDI, GM과 합작투자계약 종료 결정\n\n당사는 SDI-GM Synergy Cells Holdings LLC.에 대한 GM의 지분 49.99%를 인수하여 단독법인(가칭: Samsung SDI Synergy Cells Holdings LLC.)으로 운영할 계획입니다.\n\n당사는 향후 단독법인 운영을 통해, ESS 및 전기차용 배터리 등 다양한 어플리케이션 시장 수요에 대응할 계획입니다.\n\nhttps://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811800246",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811800246"
+            ],
+            "post_url": "https://t.me/d_ticker/3664"
           }
         ]
       },
@@ -728,31 +724,6 @@
         "category": "국내 시장/종목 분석",
         "channel_url": "https://t.me/Yeouido_Lab",
         "posts": [
-          {
-            "date": "2026-08-10",
-            "time": "09:10",
-            "text": "1. 노보노디스크의 CFO 카르스텐 뭉크 크누드센은 피어스(Fierce)와의 인터뷰에서 회사의 변화하는 상황 속에서 길을 찾는 것은 \"많은 압박감\"을 수반하며 올바른 결정을 내려야 할 책임감이 따른다고 말했음\n\n2. 경구용 위고비의 판매가 호조를 보인 가운데, 향후 성장을 견인할 주요 요인 중 하나는 카그리세마(CagriSema)가 될 것으로 예상했음\n\n3. 최근 카그리세마에 대한 엇갈린 데이터가 나왔음에도 불구하고, 크누드센은 FDA 승인 결정을 앞두고 해당 치료법의 전망에 대해 \"여전히 낙관적\"이라고 강조함\n\n4. 비록 결과가 릴리의 터제파타이드와 일치하지는 않았지만,  HbA1c 수치가 1.9%포인트 감소한 것은 \"실제로 매우 좋은 혈당 강하 효과\"를 나타내는 것이며, 환자들의 체중이 15.2% 감소한 것은 \"매우 긍정적인 결과\"라고 말했음\n\n5. 그래서 크누드센은 카그리세마가 앞으로 오랫동안 경쟁력 있는 당뇨병 치료제로 남을 것이라고 했음\n\n6. 노보노디스크가 카그리세마를 밀고 있다면, 단일챔버 이슈까지 해결한 지투지바이오가 1개월 제형의 적임자라고 생각함\n\n7. 최근 뉴스 기사에서도, 긍정적인 협의점을 찾았다는 등의 언급이 이어지고 여러 물질을 테스트중인 걸로 알고 있음\n\nhttps://www.fiercebiotech.com/biotech/its-been-rollercoaster-novo-nordisks-cfo-reflects-pressure-drive-growth",
-            "links": [
-              "https://www.fiercebiotech.com/biotech/its-been-rollercoaster-novo-nordisks-cfo-reflects-pressure-drive-growth"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37130"
-          },
-          {
-            "date": "2026-08-10",
-            "time": "09:32",
-            "text": "https://blog.naver.com/8740best/224371512274\n\n한국바이오 투자하시면서 오름테라퓨틱에 안설레일래야 안설레일수가 없습니다.\n\n제가 아침 부터 밤까지 수년간 바이오를 해왔지만\n\n오름테라퓨틱은 매일매일 설레이는 회사입니다.",
-            "links": [
-              "https://blog.naver.com/8740best/224371512274"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37131"
-          },
-          {
-            "date": "2026-08-10",
-            "time": "09:37",
-            "text": "XBI vs. 코스닥 바이오\n10년 흐름과 괴리",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/37132"
-          },
           {
             "date": "2026-08-10",
             "time": "09:40",
@@ -887,6 +858,35 @@
             "text": "낸드 가격이 8월초 예상과 달리 반등이 나옴. 메모리 가격 피크 시기가 뒤로 밀릴 수 있는 근거나 나옴",
             "links": [],
             "post_url": "https://t.me/Yeouido_Lab/37149"
+          },
+          {
+            "date": "2026-08-11",
+            "time": "13:32",
+            "text": "2026.08.11 13:28:46\n기업명: 삼성SDI(시가총액: 37조 5,931억) A006400\n보고서명: 투자판단관련주요경영사항\n\n제목 : 제너럴모터스(GM)社와의 합작투자계약 종료 결정\n\n* 주요내용 \n1. 당사는 GM(General Motors)社와의 합작법인(JV)인 SDI-GM Synergy Cells Holdings LLC.에 대한 합작투자계약을 종료하기로 결정하였습니다. \n \n2. 당사는 SDI-GM Synergy Cells Holdings LLC.에 대한 GM의 지분 49.99%를 인수하여 단독법인(가칭: Samsung SDI Synergy Cells Holdings LLC.)으로 운영할 계획입니다. \n \n3. 당사는 향후 단독법인 운영을 통해, ESS 및 전기차용 배터리 등 다양한 어플리케이션 시장 수요에 대응할 계획입니다. \n \n4. 단독법인 전환에 따라 기존 투자계획이 변경될 예정이나, 현재 구체적인 투자 계획이 확정되지 않았습니다. 향후 수시공시 규정에 따라 관련 공시를 이행할 예정입니다.\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811800246\n회사정보: https://finance.naver.com/item/main.nhn?code=006400",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811800246",
+              "https://finance.naver.com/item/main.nhn?code=006400"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37150"
+          },
+          {
+            "date": "2026-08-11",
+            "time": "13:38",
+            "text": "누가 기지개켜자마자 뚝배기 때리냐 ㅜㅜ\n\n'코스닥 대장' 알테오젠 질주하자…잠자던 바이오 투심도 '기지개'\nhttps://www.ebn.co.kr/news/articleView.html?idxno=1719918",
+            "links": [
+              "https://www.ebn.co.kr/news/articleView.html?idxno=1719918"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37151"
+          },
+          {
+            "date": "2026-08-11",
+            "time": "14:32",
+            "text": "2026.08.11 13:28:46\n기업명: 삼성SDI(시가총액: 37조 5,931억) A006400\n보고서명: 투자판단관련주요경영사항\n\n제목 : 제너럴모터스(GM)社와의 합작투자계약 종료 결정\n\n* 주요내용 \n1. 당사는 GM(General Motors)社와의 합작법인(JV)인 SDI-GM Synergy Cells Holdings LLC.에 대한 합작투자계약을 종료하기로 결정하였습니다. \n \n2. 당사는 SDI-GM Synergy Cells Holdings LLC.에 대한 GM의 지분 49.99%를 인수하여 단독법인(가칭: Samsung SDI Synergy Cells Holdings LLC.)으로 운영할 계획입니다. \n \n3. 당사는 향후 단독법인 운영을 통해, ESS 및 전기차용 배터리 등 다양한 어플리케이션 시장 수요에 대응할 계획입니다. \n \n4. 단독법인 전환에 따라 기존 투자계획이 변경될 예정이나, 현재 구체적인 투자 계획이 확정되지 않았습니다. 향후 수시공시 규정에 따라 관련 공시를 이행할 예정입니다.\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811800246\n회사정보: https://finance.naver.com/item/main.nhn?code=006400",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811800246",
+              "https://finance.naver.com/item/main.nhn?code=006400"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37152"
           }
         ]
       },
@@ -3277,6 +3277,51 @@
           {
             "date": "2026-08-11",
             "time": "00:00",
+            "text": "[와이솔] 주요사항보고서(자기주식취득신탁계약해지결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811000362"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811000362"
+          },
+          {
+            "date": "2026-08-11",
+            "time": "00:00",
+            "text": "[판타지오] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811000366"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811000366"
+          },
+          {
+            "date": "2026-08-11",
+            "time": "00:00",
+            "text": "[대륙제관] 주요사항보고서(자기주식취득신탁계약해지결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811000358"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811000358"
+          },
+          {
+            "date": "2026-08-11",
+            "time": "00:00",
+            "text": "[제이케이시냅스] 주요사항보고서(자기전환사채매도결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811000312"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811000312"
+          },
+          {
+            "date": "2026-08-11",
+            "time": "00:00",
+            "text": "[휴엠앤씨] 주요사항보고서(자기주식취득신탁계약해지결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811000291"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811000291"
+          },
+          {
+            "date": "2026-08-11",
+            "time": "00:00",
             "text": "[그래피] [첨부정정]주요사항보고서(타법인주식및출자증권양수결정)\n공시유형: 주요사항보고",
             "links": [
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811000164"
@@ -3500,24 +3545,6 @@
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000244"
           },
           {
-            "date": "2026-08-10",
-            "time": "00:00",
-            "text": "[시선AI] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000220"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260810000220"
-          },
-          {
-            "date": "2026-08-10",
-            "time": "00:00",
-            "text": "[엠엑스로보틱스] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000794"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000794"
-          },
-          {
             "date": "2026-08-07",
             "time": "00:00",
             "text": "[삼부토건] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
@@ -3606,33 +3633,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000704"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000704"
-          },
-          {
-            "date": "2026-08-07",
-            "time": "00:00",
-            "text": "[셀피글로벌] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000778"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000778"
-          },
-          {
-            "date": "2026-08-07",
-            "time": "00:00",
-            "text": "[이노진] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000763"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000763"
-          },
-          {
-            "date": "2026-08-07",
-            "time": "00:00",
-            "text": "[비트플래닛] [기재정정]주요사항보고서(유형자산양수결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000771"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000771"
           }
         ]
       }
