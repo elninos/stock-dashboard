@@ -1,6 +1,6 @@
 {
   "2026-08-13": {
-    "fetched_at": "2026-08-13T19:11:34+09:00",
+    "fetched_at": "2026-08-13T20:50:57+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -218,35 +218,6 @@
         "posts": [
           {
             "date": "2026-08-13",
-            "time": "10:14",
-            "text": "✅ 지슨, 2분기 흑자전환 성공...보안시장 법제화로 성장 가속\n\nhttps://m.newspim.com/news/view/20260813000273\n\n📌 2분기 매출 82% 성장·흑자전환\n2분기 매출 49억원으로 전년 대비 82% 증가\n\n영업이익 4.6억원으로 전년 -11.4억원에서 흑자전환\n\n상반기 매출 73.6억원(+50.8%), 영업손실도 -14.3억원으로 적자폭 50% 축소\n\n📌 무선백도어 ‘Alpha-H’ 매출 7배 급증\nAlpha-H 상반기 매출 전년 동기 대비 약 7배 성장\n\n상반기 매출만으로 지난해 연간 무선백도어 보안 매출의 2배 돌파\n\n금융권 도입 확대에 이어 반도체 등 신규 산업군으로 고객 기반 확장\n\n📌 불법촬영 탐지 시장 점유율 51% 1위\n‘Alpha-C’ 공공·교육·민간 등 130여 개 기관·시설에 공급\n\n교육기관만 50여 곳 도입, 조달청 우수·혁신제품 지정으로 수의계약 가능\n\n2021년~2026년 6월 공공 조달시장 누적 점유율 51.31%로 1위\n\n📌 법 개정으로 2,900억원 의무화 시장 열린다\n공중화장실법 개정안 8월 11일 공포, 2027년 2월 12일부터 시행\n\n회사 추산 의무화 대상 약 26.4만 칸, 판매 기준 시장 규모 약 2,900억원\n\n학교·상업시설·문화·의료시설까지 포함한 잠재 시장은 약 233만 칸, 2조5,600억원 규모\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
-            "links": [
-              "https://m.newspim.com/news/view/20260813000273",
-              "https://telegram.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/28769"
-          },
-          {
-            "date": "2026-08-13",
-            "time": "10:25",
-            "text": "✅ 선익시스템, 한국거래소 '코스닥 라이징스타' 신규 선정\n\nhttps://www.newsis.com/view/NISX20260813_0003747050\n\n📌 2026년 코스닥 라이징스타 선정\n한국거래소가 성장성·시장지배력·기술력을 종합 평가\n\n총 18개사 중 신규 선정기업 8곳에 포함\n\nOLED 증착장비 경쟁력과 성장 잠재력 인정\n\n📌 IR·기업분석 지원 수혜\n한국거래소 기업분석보고서 발간 지원 대상\n\n거래소 주관 IR 사업 참여 우선권도 확보\n\n기관투자자 접근성과 시장 인지도 개선 기대\n\n📌 대형 OLED·OLEDoS로 사업 확장\nOLED 핵심 공정인 증착장비 분야에 장기간 기술 축적\n\n대형 OLED와 OLEDoS 등 차세대 디스플레이로 적용 확대\n\n📌 페로브스카이트까지 증착 기술 확장\n차세대 디스플레이 외 태양전지 분야까지 사업 영역 확대\n\n증착 기술 기반 신규 응용처 확보 전략\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
-            "links": [
-              "https://www.newsis.com/view/NISX20260813_0003747050",
-              "https://telegram.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/28770"
-          },
-          {
-            "date": "2026-08-13",
-            "time": "10:56",
-            "text": "💻 HBM 수급 전망 업데이트: 공급 부족은 지속, 강도는 완화\n\n📌 J.P. Morgan HBM S-D 전망 변화\nJ.P. Morgan이 5월 대비 8월 HBM 수급 전망을 업데이트\n\n전 구간에서 공급 부족(Shortage) 전망은 유지\n\n다만 기존 예상 대비 공급 부족 폭은 상당히 축소\n\n📌 연도별 변화\n2026E: -20% → -15% (+5%p)\n\n2027E: -26% → -14% (+12%p)\n\n2028E: -36% → -22% (+14%p)\n\n특히 2027~28년의 수급 타이트니스 전망이 기존 대비 크게 완화\n\n📌 어떻게 해석할까?\n음수(-)는 수요 대비 공급이 부족한 Shortage 구간을 의미\n\n따라서 전망치가 상향됐다고 해서 HBM이 공급 과잉으로 전환됐다는 의미는 아님\n\n오히려 “공급 부족은 지속되지만, 기존에 예상했던 것만큼 심하지는 않다”​는 방향의 수정\n\n📌 공급 부족 완화의 가능한 배경\nHBM 생산능력(Capacity) 증설\n\n선단공정 및 HBM 수율 개선\n\n업체들의 HBM 공급 확대 속도 상향\n\n일부 수요 전망 조정 등이 반영됐을 가능성\n\n📌 투자 관점 핵심 포인트\n2026~28년 모두 Shortage 전망이라는 점에서 HBM의 구조적 수급 타이트니스 자체는 유효\n\n다만 2027E -26% → -14%, 2028E -36% → -22%로 수정된 것은 향후 공급 증가 속도를 이전보다 높게 보고 있다는 신호\n\nHBM 투자 포인트가 단순한 “극심한 공급 부족”​에서 향후에는 수요 성장률·공급 증가율·업체별 수율 및 제품 믹스로 이동할 가능성\n\n특히 2028E에도 -22%로 공급 부족이 예상된다는 점은 중장기 AI/HBM 수요 강도를 보여주는 대목\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
-            "links": [
-              "https://telegram.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/28771"
-          },
-          {
-            "date": "2026-08-13",
             "time": "12:03",
             "text": "🔥그로쓰리서치 멤버십🔥 \n\n그로쓰리서치는 직접 발로 뛰며 얻은 정보와 분석을 회원분들께 전달해드립니다.\n\n📌멤버십에서는 어떤 자료를 제공하나요?\n📌주식초보자도 도움 되나요?\n📌멤버십은 어떻게 이용하나요?\n\n궁금하신 내용은 아래 카카오톡 채널로 문의주시면 자세히 안내드리겠습니다.\n\n👇그로쓰리서치 소개👇\nhttps://contents.premium.naver.com/growthresearch/growth/contents/260708175005761lt\n\n👇멤버십 가입 링크👇\nhttps://contents.premium.naver.com/growthresearch/growth/subscriptions\n\n👇멤버십 상담👇\nhttp://pf.kakao.com/_gBRMxj\n\n※그로쓰리서치 멤버십 월 30개 이상 콘텐츠 제공",
             "links": [
@@ -405,6 +376,25 @@
               "https://telegram.me/growthresearch"
             ],
             "post_url": "https://t.me/growthresearch/28791"
+          },
+          {
+            "date": "2026-08-13",
+            "time": "19:25",
+            "text": "✅ 미국 BESS, 최근 3년 연평균 70% 성장\n\n📌 미국 배터리 저장용량 급증\n미국 EIA에 따르면 유틸리티급 배터리 저장 설비는 최근 3년간 연평균 70% 성장\n\n2025년 말 43.6GW → 2026년 6월 51.8GW\n\n2026년 상반기에만 8.3GW 신규 가동\n\n📌 2028년까지 추가 54GW 계획\n운영사들이 EIA에 보고한 신규 가동 계획\n\n2026년 하반기: +14GW\n2027년: +26GW\n2028년: +14GW\n\n총 54GW로, 계획대로 진행될 경우 현재 51.8GW에서 약 106GW 규모로 두 배 이상 확대\n\n📌 태양광 확대와 BESS가 함께 성장\nEIA에 따르면 대형 배터리 저장 설비는 태양광 발전소와 연계되는 사례가 많음\n\n전력가격이 낮을 때 충전하고 가격이 높을 때 방전해 전력 수급을 조절하는 역할\n\n2026년 미국 신규 유틸리티급 발전설비 계획에서도 태양광 51%에 이어 배터리 저장이 28%로 두 번째로 큰 비중\n\n📌 체크포인트\n장시간 전력을 공급할 수 있는 장주기 에너지저장장치에 대한 투자도 확대되는 흐름\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
+            "links": [
+              "https://telegram.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/28792"
+          },
+          {
+            "date": "2026-08-13",
+            "time": "19:30",
+            "text": "✅ 그로쓰리서치 영문 홈페이지 오픈 안내\n\n⚡️ 영문 홈페이지 바로가기\nhttp://www.growthresearchen.com/\n\n앞서 말씀드린 바와 같이, 그로쓰리서치의 리포트는 현재 미국·캐나다 헤지펀드 등 글로벌 투자자들에게도 읽히고 있습니다.\n\n이에 따라 해외 투자자들의 수요에 맞춰 영문 리포트 발행을 진행하고 있으며,\n\n보다 적극적인 대응을 위해 영문 홈페이지를 새롭게 개설했습니다.\n\n해당 홈페이지에는 지금까지 발간한 영문 리포트들이 업로드되어 있으며, 향후 발간되는 영문 리포트도 지속적으로 업데이트될 예정입니다.\n\n많은 관심 부탁드립니다!\n\n————\n\n✅ Growth Research English Website Now Open\n\n⚡️ ENGLISH WEBSITE NOW LIVE\nhttp://www.growthresearchen.com/\n\nAs previously mentioned, Growth Research reports are now being read by hedge funds and other institutional investors in the U.S. and Canada.\n\nIn response to growing demand from global investors, we have been publishing English-language reports.\n\nTo further strengthen our engagement with overseas investors, we have also launched a dedicated English website.\n\nThe website currently includes the English reports we have published to date, and we will continue to update it with new English reports going forward.\n\nWe would appreciate your continued interest and support.\n\n✅ Korean Independent Research: Growth Research\nhttps://t.me/growthresearch",
+            "links": [
+              "http://www.growthresearchen.com/",
+              "https://t.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/28793"
           }
         ]
       },
