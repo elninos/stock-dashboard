@@ -1,6 +1,6 @@
 {
   "2026-08-14": {
-    "fetched_at": "2026-08-14T19:07:10+09:00",
+    "fetched_at": "2026-08-14T20:47:58+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -691,15 +691,6 @@
         "posts": [
           {
             "date": "2026-08-13",
-            "time": "13:02",
-            "text": "https://n.news.naver.com/mnews/article/374/0000527269?sid=101",
-            "links": [
-              "https://n.news.naver.com/mnews/article/374/0000527269?sid=101"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37177"
-          },
-          {
-            "date": "2026-08-13",
             "time": "13:31",
             "text": "https://www.thebionews.net/news/articleView.html?idxno=27189",
             "links": [
@@ -855,6 +846,13 @@
             "text": "쇼크 한번은 참아도 이연벙 당하면 ...",
             "links": [],
             "post_url": "https://t.me/Yeouido_Lab/37197"
+          },
+          {
+            "date": "2026-08-14",
+            "time": "20:06",
+            "text": "Peter Diamandis :\n“에이전틱 AI 시대의 속도를 제한하는 병목은 연산(compute)이 아니라 메모리(memory)다.”\n\nElon Musk 답글 :\n\"이를 아는 사람이 거의 없다.\"",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/37198"
           }
         ]
       },
