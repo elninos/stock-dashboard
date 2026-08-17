@@ -1,6 +1,6 @@
 {
   "2026-08-17": {
-    "fetched_at": "2026-08-17T22:41:44+09:00",
+    "fetched_at": "2026-08-18T08:10:58+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -74,13 +74,6 @@
         "category": "매크로/트레이딩",
         "channel_url": "https://t.me/survival_DoPB",
         "posts": [
-          {
-            "date": "2026-08-05",
-            "time": "22:55",
-            "text": "2. AI 클러스터 가동 지연(Cluster Turn-Up Delays):\nAI 슈퍼클러스터에서는 광트랜시버 한 배치만 부족해도 수십억 달러 규모의 GPU 자원이 놀게 된다. 광트랜시버 수입이 제한될 경우 차세대 800G 및 1.6T 클러스터의 상용 가동이 여러 분기 지연될 위험이 있다.",
-            "links": [],
-            "post_url": "https://t.me/survival_DoPB/13784"
-          },
           {
             "date": "2026-08-05",
             "time": "23:12",
@@ -213,6 +206,13 @@
             "text": "🤩COHERENT $COHR 2026년 4분기 실적 하이라이트\n\n🔹 매출: $2.1B (예상 $1.99B) 🟢; 전년 동기 대비 +34%\n🔹 조정 EPS: $1.74 (예상 $1.61) 🟢\n🔹 매출총이익률: 40.2%; 전년 동기 대비 +215 bps\n🔹 영업이익: $446M (예상 $427M) 🟢; 전년 동기 대비 +62.1%\n\n1분기 가이던스:\n🔹 매출: $2.2B-$2.4B (예상 $2.14B) 🟢\n🔹 EPS: $1.85-$2.05 (예상 $1.77) 🟢\n🔹 총 영업비용: $400M-$420M\n🔹 매출총이익률: 39.5% ~ 41.5%\n🔹 세율: 18% ~ 20%\n\n세그먼트 순매출:\n🔹 데이터센터 & 통신: $1.6B\n🔹 산업: $430.5M\n\n기타 4분기 지표:\n🔹 순이익: $351M (예상 $323M) 🟢; 전년 동기 대비 +82.7%\n🔹 영업이익률: 21.8%; 전년 동기 대비 +381 bps\n\n코멘트:\n🔸 “우리는 뛰어난 고객 수요, 생산 능력 확대, 그리고 여러 새로운 성장 플랫폼의 본격 가동으로 2027 회계연도를 시작합니다.”\n\n🔸 “제조 능력 확대를 위한 투자 우선순위화”",
             "links": [],
             "post_url": "https://t.me/survival_DoPB/13803"
+          },
+          {
+            "date": "2026-08-18",
+            "time": "07:57",
+            "text": "CPO 지연설 부인 — 오히려 고객이 물량을 당기고 있음\n\n• Q (Joseph Cardoso, JPMorgan): 시장에서 CPO 지연 및 NPO로의 전환 가능성이 제기되는데 실제 상황은?\n\n• A (Jim): “Absolutely no push-out of CPO demand.” CPO 수요가 연기된 사례는 전혀 없으며 오히려 수요가 증가하고 고객들이 일정을 앞당기고 있음(pulled in). 최근 3~6개월간 CPO뿐 아니라 NPO 고객 engagement도 크게 증가. \n\n• 거의 모든 주요 고객과 CPO/NPO 프로젝트를 진행 중이며, Coherent 입장에서 CPO와 NPO의 content opportunity는 거의 동일함. 12월 분기부터 CPO 관련 매출이 발생할 예정.",
+            "links": [],
+            "post_url": "https://t.me/survival_DoPB/13804"
           }
         ]
       },
@@ -223,53 +223,6 @@
         "category": "산업/기술 분석",
         "channel_url": "https://t.me/growthresearch",
         "posts": [
-          {
-            "date": "2026-08-16",
-            "time": "12:29",
-            "text": "💻 인텔, 메모리 시장 재진입 움직임 — ZAM·XBM 두 갈래 전략\n\n인텔이 차세대 메모리 아키텍처인 \n\nZAM(Z-Angle Memory)과 \n\nXBM(Cross-Batch Memory)을 통해 \n\nHBM 대안 기술을 병행 개발 중\n\n두 프로젝트를 함께 보면 인텔이 최소 2개의 HBM 대체 경로를 동시에 추진\n\n📌 ZAM — 적층·본딩 방식의 혁신\n • 8개 D램 다이와 로직 컨트롤러로 구성된 저전력 적층 D램 아키텍처, HBM 대비 전력·발열·비용 절감이 목표\n\n • 9층 스택(D램 8층 + 로직 컨트롤러)에 초박막 실리콘 기판 적용, TSV와 하이브리드 본딩으로 스택 연결\n\n • 스택당 약 5.3TB/s 대역폭, 10GB 용량(패키지당 30GB) 목표 — HBM4 대비 최대 2배 대역폭\n\n • 2028~2030년 상용화 목표, 근시일 내에는 HBM4·HBM4E가 시장 주도\n\n • 소프트뱅크 자회사 SAIMEMORY와 공동 개발, 2029년 상용화 목표로 VLSI Symposium 2026 공개 예정\n\n📌 XBM — 인터페이스·다이 구조 자체를 변경\n • DRAM 셀을 백엔드 공정으로 이전하는 박막 트랜지스터 방식, HBM의 고비용 실리콘 인터포저 대신 32GT/s급 UCIe 시리얼 링크로 대체\n\n • 다이당 용량 약 0.5GB~5GB, 스택 8층~16층까지 확장 가능, 전체 패키지 크기는 HBM4 수준 유지 설계\n\n • 고단 적층 수율 저하 대응을 위해 BISR(내장 자가복구), 예비 채널, 이중화 메모리 배열 등 탑재\n\n • 2030년 이후 상용화 목표, ZAM보다 늦은 타임라인\n\nXBM은 아직 발표·테이프아웃·고객사가 전무한 특허 단계 기술\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
-            "links": [
-              "https://telegram.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/28840"
-          },
-          {
-            "date": "2026-08-16",
-            "time": "12:40",
-            "text": "🧬 비만 치료제, “만능 처방”에서 “정밀 의료”로\n\n비만 치료 패러다임이 하나의 약으로 모두를 치료하는 방식에서\n\n비만 표현형과 동반질환 여부에 따라 치료 전략을 달리하는 정밀 의료로 서서히 이동할 전망\n\n💊 동반질환별 약물 효과 비교(임상시험 기준)\n• 티르제파타이드는 근육량을 제외한 대부분의 항목에서 유익한 효과를 보이며, 가장 폭넓은 동반질환 커버리지를 나타냄\n\n• 세마글루타이드와 레트라트루타이드는 고혈압·근육량에서 혼합 효과(mixed effects)를 보이나, 나머지 항목은 대부분 유익한 효과임\n\n• 리라글루타이드는 골관절염·근육량에서 혼합 효과, 심부전에서는 무효과(no effect)로 나타나 상대적으로 제한적인 프로파일을 보임\n\n• 날트렉손-부프로피온은 고혈압에서 유일하게 부작용 우세(predominantly adverse) 신호가 확인됨\n\n• 서보두타이드, 마즈두타이드, 아미크레틴은 상당수 항목이 아직 미확인(unknown)으로 남아있어, 임상 데이터 축적이 더 필요한 단계임\n\n💊 투자 시사점\n• 동반질환 커버리지가 넓을수록 처방 확장성과 시장 침투력이 커지는 구조임\n\n• 티르제파타이드·세마글루타이드 계열의 압도적 데이터 우위가 확인됨\n\n🧬바이오섹터 분석🧬[그로쓰리서치]\nhttps://t.me/growthbio",
-            "links": [
-              "https://t.me/growthbio"
-            ],
-            "post_url": "https://t.me/growthresearch/28841"
-          },
-          {
-            "date": "2026-08-16",
-            "time": "13:35",
-            "text": "💻  CPO 공급망 정리: 핵심 FAU 공급업체는 아시아 중심 [BofA]\n\nCPO의 핵심 부품 중 하나인 FAU(Fiber Array Unit) 공급망이 \n\n중국·일본·대만 등 아시아 업체 중심으로 형성​돼 있다는 점이 눈에 띔\n\n📌 주요 공급망\n• Optical Engine: Nvidia, Broadcom, Marvell / Foundry: TSMC\n\n• V-groove: TFC, Senko, Orbray, Corning, Focuslight\n\n• Optical Fiber: Corning, Fujikura, YOFC\n\n• Micro Lens: TFC, Coherent, Focuslight, Largan, Himax\n\n• FAU Assembly: TFC, Senko, FOCI, Coherent, Corning / Largan(potential)\n\n• ELS Laser: Lumentum, Coherent, Broadcom, Furukawa, Yuanjie, DS Precision\n\n• ELS Module: TFC, Lumentum, Coherent, Innolight, Eoptolink, DS Precision\n\n• Shuffle Box: Corning, Browave, Senko, Molex, TFC\n\n• Assembly/Test: Fabrinet, Hon Hai/FII, ASE/SPIL, USI\n\n📌 체크포인트\n\n✔️ 1. TFC의 높은 공급망 노출도\nV-groove, Micro lens, FAU assembly, ELS module, Shuffle box까지 포함\n\nCPO 공급망 내 가장 다양한 영역에 이름을 올린 업체 중 하나\n\n✔️2. Corning·Senko·Coherent도 다중 영역 공급\n단일 부품이 아니라 FAU 및 주변 광학부품 전반에 포진\n\nCPO 시장 확대 시 공급망 내 영향력 확대 가능\n\n✔️3. Largan의 FAU 진입 가능성\n현재 Micro lens 주요 공급업체\n\nBofA 자료에서는 FAU assembly의 potential supplier로도 언급\n\n기존 정밀 렌즈 기술의 CPO 영역 확장 가능성에 주목\n\n✔️4. 핵심은 아시아 광학부품 공급망\nCPO는 Nvidia·Broadcom 등 광학 엔진 업체뿐 아니라\n\nFAU, 렌즈, 광섬유, ELS, 커넥터 등 정밀 광부품 공급망의 중요도가 함께 상승하는 구조\n\n특히 FAU 관련 핵심 업체들이 아시아에 다수 위치한다는 점이 투자 관점에서 중요한 포인트\n\n→ 향후 800G → 1.6T → CPO 전환 과정에서 어떤 업체가 실제 양산 공급망에 들어가는지가 핵심 관전 포인트.\n\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
-            "links": [
-              "https://telegram.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/28842"
-          },
-          {
-            "date": "2026-08-16",
-            "time": "14:23",
-            "text": "🖥 8월 2주차, 한 주간 반도체 소부장 섹터 핵심 정리\n\n📌 삼성전기, 유리기판 신뢰성 평가 병목…양산 일정 2028년 이후로 지연 가능성\n\n📌 삼성전자, HBM4 수율 80% 돌파…기술 추격에서 본격적인 물량 확대 국면으로 전환\n\n📌 HPSP·예스티, 고압수소어닐링 특허분쟁 지속…삼성 납품 장비 영상 공개 놓고 공방\n\n📌 SK하이닉스, 中 충칭 후공정 공장 지분 매각 검토…AI·HBM 중심 자산 재편 가능성\n\n📌 엠케이전자, 본딩와이어·솔더볼 3,476억원 담합 혐의…법인·임직원 5명 기소\n\n🔎 이번 주 포커스: 엠케이전자, SoCAMM2 성장 스토리와 3,476억원 담합 리스크의 충돌\n\n• 엠케이전자는 본딩와이어와 솔더볼을 주력으로 공급하는 반도체 후공정 소재 기업으로, 매출 대부분이 본딩와이어에서 발생\n\n• 검찰은 2020년부터 약 5년 8개월간 본딩와이어 3,069억원, 솔더볼 407억원 규모의 가격 담합이 이뤄진 것으로 판단\n\n• 금 등 원자재 가격 급등과 경쟁 심화로 수익성이 압박받는 가운데 경쟁사와 가격 인상·가격 인하 공동 대응에 나선 혐의\n\n• 공정거래법상 가격담합을 전제범죄로 범죄수익을 추징보전한 첫 사례로, 향후 과징금·손해배상 등 추가 리스크 확인 필요\n\n• 반면 SoCAMM2 확산과 LPDDR5X 고적층 전환으로 본딩와이어 수요가 다시 증가하며 2026년 반기 실적은 큰 폭으로 개선\n\n• 성장 스토리는 단기 실적으로 확인되는 반면 법적 리스크는 중장기적으로 현실화될 수 있어 두 시간축의 충돌이 향후 핵심 변수\n\n🔥 한 주 동안의 반도체 소부장 흐름과 함께 SoCAMM2 수혜 기대 속에서 불거진 엠케이전자의 3,476억원 담합 리스크를 자세히 정리해드립니다!\nhttps://contents.premium.naver.com/growthresearch/growth/contents/260816141944284ur\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
-            "links": [
-              "https://contents.premium.naver.com/growthresearch/growth/contents/260816141944284ur",
-              "https://telegram.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/28843"
-          },
-          {
-            "date": "2026-08-16",
-            "time": "15:40",
-            "text": "✅ ‘3대 메가 프로젝트’ 전력수요 잠정치 20일 공개한다\n\nhttps://www.hani.co.kr/arti/society/environment/1273073.html\n\n3대 메가 프로젝트로 국내에 추가되는 전력수요를\n정부 차원에서 발표한다는 데에 유의미한 이벤트\n\n📌 신규 전력수요 24.7GW 추가 변수\n정부가 6월 발표한 3대 메가프로젝트 예상 신규 수요는 24.7GW\n\n대형 원전 18기 발전량에 맞먹는 규모\n\n기존 2040년 최대전력 전망 131.8~138.2GW 재검토\n\n📌 8월 20일 신규 수요 잠정치 공개\n12차 전기본 수요소위가 재산정한 2040년 전망 제시 예정\n\n다만 24.7GW 전체가 아닌 구체화된 일부 수요만 우선 반영 전망\n\n향후 프로젝트 진척에 따라 전력수요 전망 추가 상향 가능\n\n📌 재생에너지·전력망 투자 확대 불가피\n늘어나는 전력 수요에 맞춰 재생에너지 보급 전망도 함께 제시\n\nAI·산업단지 등 대규모 전력 소비처 확대가 공급설비 투자 자극\n\n발전·송전·변전 인프라 전반의 증설 필요성 확대\n\n📌 9~10월 전원 믹스 논의 본격화\n신규 원전과 석탄발전 폐지 로드맵 논의 예정\n\n전력시장 개편과 송·변전 계획도 후속 토론회에서 다룰 예정\n\n전력기기·원전·재생에너지 관련 정책 방향이 핵심 촉매\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
-            "links": [
-              "https://www.hani.co.kr/arti/society/environment/1273073.html",
-              "https://telegram.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/28844"
-          },
           {
             "date": "2026-08-16",
             "time": "16:06",
@@ -412,6 +365,56 @@
               "https://telegram.me/growthbio"
             ],
             "post_url": "https://t.me/growthresearch/28860"
+          },
+          {
+            "date": "2026-08-18",
+            "time": "07:14",
+            "text": "✅ 테슬라 – 운전대 없는 ‘사이버캡’, 8월 오스틴 공개 운행 준비\n\n📌 8월 사이버캡 실제 서비스 투입\n테슬라는 이르면 8월 텍사스 오스틴에서 사이버캡 공개 운행을 시작할 계획\n\n직원 대상 공공도로 탑승을 먼저 진행한 뒤 수일 내 로보택시 서비스에 편입하는 방식\n\n📌 운전대·페달 없는 전용 로보택시\n사이버캡은 운전대와 브레이크·가속 페달이 없는 완전자율주행 전용 차량\n\n기존 차량 기반 서비스에서 전용 로보택시 플랫폼으로 전환하는 핵심 모델\n\n📌 상용화 대비 현장 준비 본격화\n최근 수주간 시범주행과 사유지 직원 탑승 테스트 진행\n\n오스틴 현지 응급대응 인력을 대상으로 관련 교육도 실시\n\n📌 하반기 생산량 확대 예정\n양산형 사이버캡은 지난 6월부터 공공도로 테스트 진행\n\n올해 후반 생산량 확대가 예정\n\n✅ 독립리서치 그로쓰리서치\n https://t.me/growthresearch⁠",
+            "links": [
+              "https://t.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/28861"
+          },
+          {
+            "date": "2026-08-18",
+            "time": "07:31",
+            "text": "💻 반도체 환호에 묻힌 소부장 비명… “中, 원자재 문턱 높이고 있다”\n\nhttps://n.news.naver.com/mnews/article/023/0003993469\n\n📌 국산화했지만 원료는 여전히 중국산\n・솔브레인은 고순도 불산 국산화에 성공했지만 원료인 무수불산의 97%를 중국에서 수입\n\n・2019년 일본 의존도를 낮췄지만 핵심 원료 단계에서는 중국 의존으로 전환된 구조\n\n・실리콘·형석 등 주요 원료 역시 저렴한 가격과 대체 수입처 부족으로 중국 의존도가 오히려 확대\n\n📌 텅스텐 수출 통제, 원가 부담 현실화\n・반도체 배선 소재인 텅스텐은 대중 의존도가 90% 이상이며 현재 대체 소재가 없는 상황\n\n・중국은 지난해 2월부터 텅스텐 수출허가제를 시행, 허가에 수개월이 걸리면서 물량 확보 부담 확대\n\n・중국산 텅스텐 정광 1차 가공품 수출가격은 1년 새 7배 이상 상승, 중국 내수 가격은 수출가의 절반 수준\n\n📌 갈륨→희토류까지 넓어지는 中 수출통제\n・중국은 갈륨·게르마늄을 시작으로 흑연·안티모니·텅스텐·희토류까지 수출 통제 범위를 확대\n\n・이트륨은 식각장비 내부 코팅, 디스프로슘은 첨단 로직 박막 증착·차세대 소자 제조에 필요한 핵심 소재\n\n・중국이 한국 반도체의 핵심 원료 공급자인 동시에 CXMT 등을 앞세운 경쟁자라는 점이 공급망 리스크\n\n📌 BGF에코머티리얼즈·후성, 탈중국의 핵심은 가격\n・BGF에코머티리얼즈는 1,500억원을 투자한 연산 5만t 무수불산 공장을 10월 준공 예정, 국내 수요의 약 절반 대체 가능\n\n・후성도 연 9,000t 생산능력을 보유하고 있지만 중국산 저가 공세로 최소 가동률만 유지\n\n・국산 무수불산은 중국산보다 30~50% 이상 비쌀 전망으로, 공급망 안정화를 위한 추가 비용을 누가 부담할지가 핵심 과제\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
+            "links": [
+              "https://n.news.naver.com/mnews/article/023/0003993469",
+              "https://telegram.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/28862"
+          },
+          {
+            "date": "2026-08-18",
+            "time": "07:41",
+            "text": "✅ [단독]삼성전자, 美 기업용 AI 플랫폼 '엑스팬더'에 투자\n\nhttps://thetracker.co.kr/ViewM.aspx?No=4189039\n\n📌 삼성넥스트, 엑스팬더 시드 투자 참여\n・삼성전자 투자 자회사 삼성넥스트가 미국 AI 플랫폼 엑스팬더(Xpander) 시드 라운드에 투자\n\n・전체 투자 유치액은 750만달러(약 106억원), 삼성넥스트의 개별 투자금액은 비공개\n\n📌 모델·클라우드 가리지 않는 AI 에이전트 플랫폼\n・엑스팬더는 기업이 AI 에이전트를 구축·실행·배포·관리할 수 있는 벤더 중립형 플랫폼 제공\n\n・특정 AI 모델·클라우드·프레임워크에 종속되지 않는 것이 특징\n\n📌 AWS 출신 엔지니어들이 2024년 설립\n・AWS 수석 엔지니어 출신 데이비드 트와이저 CEO 등 3명이 공동 창업\n\n・현재 소매·제조·금융·기술·정부 등 글로벌 기업 고객 대상으로 서비스 제공\n\n📌 삼성, 기업용 AI 에이전트 생태계 투자 확대\n・이번 라운드는 피코 벤처 파트너스가 주도했으며 이머지 벤처스·시드일도 참여\n\n・삼성넥스트가 기업용 AI 에이전트 구축·운영 인프라 영역에 투자 포트폴리오 확대\n\n✅ 독립리서치 그로쓰리서치\n https://t.me/growthresearch⁠",
+            "links": [
+              "https://thetracker.co.kr/ViewM.aspx?No=4189039",
+              "https://t.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/28863"
+          },
+          {
+            "date": "2026-08-18",
+            "time": "07:58",
+            "text": "💻 TSMC 애리조나 상반기 이익 663% 급증, 해외 최대 수익 거점 부상\n\nhttps://www.trendforce.com/news/2026/08/17/news-tsmc-arizona-profit-soars-663-yoy-in-1h26-u-s-earnings-pull-back-8-2-qoq-in-2q-as-depreciation-bites/\n\n📌 애리조나 이익 전년比 663% 급증\n상반기 순이익 360.7억대만달러로 전년 대비 662.8% 증가\n\n난징을 제치고 TSMC 해외 자회사 중 최대 이익 기록\n\n해외 4개 생산법인 전체 이익의 60% 이상을 애리조나가 기여\n\n📌 2분기는 감가상각 부담 시작\n2분기 이익 172.6억대만달러로 전분기 대비 8.2% 감소\n\n전년 대비로는 여전히 307.8% 증가한 높은 수준\n\n후속 팹 건설이 빨라지며 감가상각비가 수익성 변수로 부각\n\n📌 해외 증설로 마진 3~4%p 희석 전망\nTSMC는 해외 팹 확대가 초기 총마진을 2~3%p 낮출 것으로 전망\n\n본격 가동 단계에서는 희석 폭이 3~4%p까지 확대 가능\n\n미국 생산 확대에 따른 비용 부담과 고객 프리미엄이 향후 관건\n\n📌 미국 투자 총 2,650억달러\n애리조나 1공장은 4nm 양산 중, 2공장은 2027년 하반기 3nm 가동 예정\n\n미국 총 투자계획은 2,650억달러까지 확대\n\n장기적으로 애리조나에 팹 10기와 첨단패키징 시설 2곳 구축 계획\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
+            "links": [
+              "https://www.trendforce.com/news/2026/08/17/news-tsmc-arizona-profit-soars-663-yoy-in-1h26-u-s-earnings-pull-back-8-2-qoq-in-2q-as-depreciation-bites/",
+              "https://t.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/28864"
+          },
+          {
+            "date": "2026-08-18",
+            "time": "08:01",
+            "text": "💻 [단독]美 “대미투자 1호, 메모리 달라”…호남 투자 발표 뒤 압박\n\nhttps://www.joongang.co.kr/article/25454013\n\n📌 에너지 대신 메모리 투자 요구 부상\n・정부는 대미투자 1호 사업으로 에너지 분야를 우선 검토했으나, 미국이 현지 메모리 생산시설 투자를 강하게 요구\n\n・지난 13일 청와대 비공개 통상회의에서도 미국의 메모리 투자 요구가 핵심 논점으로 다뤄짐\n\n📌 호남 800조 투자 직후 추가 美 투자 압박\n・정부는 지난 6월 말 삼성전자·SK하이닉스의 호남권 800조원대 투자 계획 발표\n\n・이후 하워드 러트닉 美 상무장관이 삼성전자·SK하이닉스를 직접 거론하며 미국 내 생산시설 건설을 공개 요구\n\n・정부 내부에선 미국 추가 투자 시 국내 반도체 클러스터 투자 여력이 분산될 수 있다는 우려 제기\n\n📌 투자 지연 시 관세 재인상 카드까지 거론\n・대미투자 1호 사업 선정이 늦어지면서 미국 측이 한국산 자동차 등에 대한 관세 재인상 가능성을 다시 언급한 것으로 전해짐\n\n・정부는 기존 에너지 분야 투자를 우선 발표하고, 메모리 투자 요구는 추가 협의하는 방안도 검토\n\n📌 메모리, 한·미 통상협상의 핵심 변수로\n・미·중 AI 패권 경쟁 속에서 메모리 반도체가 미국의 공급망 전략 핵심 자산으로 부상\n\n・삼성전자·SK하이닉스 입장에서는 국내 대규모 증설과 미국 추가 투자 사이 자본배분 부담이 커질 수 있는 상황\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://www.joongang.co.kr/article/25454013",
+              "https://t.me/growthresearch",
+              "https://share.google/dsy3e9USl9gxKTll0"
+            ],
+            "post_url": "https://t.me/growthresearch/28865"
           }
         ]
       },
@@ -422,30 +425,6 @@
         "category": "매크로/크립토",
         "channel_url": "https://t.me/SpartanResearch",
         "posts": [
-          {
-            "date": "2026-08-14",
-            "time": "11:18",
-            "text": "⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️ 미국 재무장관 스콧 베센트가 현지시간 13일 밤 미국이 이란을 상대로 “전례 없는” 조치를 시행할 것이라고 밝힘.  베센트 장관은 인터뷰에서 “전례 없는 경제적 고립 조치와 호르무즈 해협에 대한 지속적인 봉쇄를 결합해 이란 항구로 들어오고 나가는 모든 통로를 차단할 것입니다. 다음 주 발표될 추가 조치를 주목해 주십시오”라고 밝힘.",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/4814"
-          },
-          {
-            "date": "2026-08-14",
-            "time": "12:31",
-            "text": "진짜 '유가 위기': 글로벌 정유센터 대규모 셧다운. 월가는 '정제유 퍼펙트 스톰' 경고\n\n• 호르무즈 위기 5개월째 지속. 정제유 시장에서 진정한 충격 발생\n\n• 미국의 디젤 크랙 스프레드 장중 배럴당 97달러 돌파. 역사적 최고치 근접\n\n• 세계 4대 정유센터 3곳이 가동 중단. 중동 수출 급감 & 러시아 판매 금지. 미국이 글로벌 공급을 혼자 지탱했으나 재고 여전히 부족\n\n• BofA는 공급이 실질적으로 회복되지 않으면 디젤 시장이 내년 상당 기간 긴장, 변동성 및 높은 가격 유지할 것으로 경고\n\n真正的“油价危机”：全球炼油中心大面积停摆，华尔街警告“成品油完美风暴”\n霍尔木兹危机持续五个月，真正的震荡正在成品油市场引爆：美国柴油裂解价差盘中突破97美元/桶逼近历史极值，全球四大炼油中心三个陷入停摆，中东出口骤降、俄罗斯禁售，美国被迫独撑全球供应却库存告急。美银警告，除非供应出现实质性复苏，柴油市场将在明年相当长时间内维持紧张、波动和高价格状态。\n\n https://wallstreetcn.com/articles/3779415#from=android",
-            "links": [
-              "https://wallstreetcn.com/articles/3779415#from=android",
-              "https://wallstreetcn.com/articles/3779415"
-            ],
-            "post_url": "https://t.me/SpartanResearch/4815"
-          },
-          {
-            "date": "2026-08-14",
-            "time": "16:10",
-            "text": "ETF 개인순매수/순매도 TOP10\n\n출처: KOSCOM, 타임폴리오자산운용\n기준: 2026년 8월 14일 장마감 기준",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/4816"
-          },
           {
             "date": "2026-08-15",
             "time": "10:06",
@@ -540,6 +519,29 @@
             "text": "8/19 유니트리(688836) 과창판 상장 확정\n\n宇树科技: 8月19日在科创板上市。",
             "links": [],
             "post_url": "https://t.me/SpartanResearch/4833"
+          },
+          {
+            "date": "2026-08-17",
+            "time": "23:43",
+            "text": "⚡️⚡️⚡️ 이란과 미국이 60일 기간 연장에 합의한 것으로 알려짐.",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/4834"
+          },
+          {
+            "date": "2026-08-17",
+            "time": "23:58",
+            "text": "Hyperliquid 전닉 급등 중",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/4835"
+          },
+          {
+            "date": "2026-08-18",
+            "time": "07:08",
+            "text": "美국채 매도세에 30년물 금리 5.31%…2007년 이후 최고치\n\nhttps://n.news.naver.com/article/001/0016255211?sid=104",
+            "links": [
+              "https://n.news.naver.com/article/001/0016255211?sid=104"
+            ],
+            "post_url": "https://t.me/SpartanResearch/4836"
           }
         ]
       },
@@ -738,15 +740,6 @@
         "posts": [
           {
             "date": "2026-08-14",
-            "time": "08:19",
-            "text": "SC플랫폼 누적 계약 12조…곳간에 쌓이는 현금\nhttps://dealsite.co.kr/articles/167123\n\n알테오젠이 피하주사 제형 변경 플랫폼 ‘하이브로자임(ALT-B4)’의 기술수출을 통한 성과를 빠르게 축적하고 있다. 해당 플랫폼을 완성한 이후 7년 동안 누적 계약금만 12조원 이상이며 고객사로부터 수취한 현금은 2000억~2500억원 규모가 될 것으로 예상된다. 특히 올해 해당 플랫폼을 적용한 첫 제품인 ‘키트루다 큐렉스’의 판매 마일스톤과 기타 물질의 개발 마일스톤까지 추가되면 알테오젠의 현금 곳간은 더욱 풍족해질 것으로 전망된다.",
-            "links": [
-              "https://dealsite.co.kr/articles/167123"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37184"
-          },
-          {
-            "date": "2026-08-14",
             "time": "09:18",
             "text": "https://www.thebell.co.kr/front/newsview.asp?click=F&key=202608070316244390109260\n\n#오름테라퓨틱\n\nOrm6151 DAC 전세계 최초 임상 1상 약물, BMS가 잘 개발해 주고 있습니다.",
             "links": [
@@ -907,6 +900,15 @@
               "https://finance.yahoo.com/healthcare/articles/enhertu-demonstrated-statistically-significant-clinically-063000549.html"
             ],
             "post_url": "https://t.me/Yeouido_Lab/37204"
+          },
+          {
+            "date": "2026-08-18",
+            "time": "07:59",
+            "text": "무디스 韓성장률 3.5%로 '깜짝' 상향…\"대체 메모리기업 제한적\"\n- 5월 전망치보다 1.0%p 올려 - \"칩 사이클 적어도 2027년 중반까지\"\n- \"기술혁신을 위한 일관된 정책 노력\"…메가 프로젝트에도 주목\n\n무디스는 한국 신용등급 정기 검토를 마치고서 최근 내놓은 보고서에서 한국의 국내총생산(GDP)이 올해 3.5%, 내년에 2.7% 성장할 것이라고 관측했다.\n\n무디스는 올해 2월 발표한 한국 국가신용등급 보고서에서는 올해 성장률을 1.8%로 내다봤다. 반년 만에 약 두배로 올린 것이다.\n\n반도체 슈퍼사이클과 수출 호조 등을 근거로 더 긍정적인 판단을 내렸다.\n\n무디스는 특히 \"칩 수요는 이어지고 있으며 한국의 고급 메모리 공급업체를 현실적으로 대체할만한 기업은 제한돼 있다\"면서 반도체 사이클이 적어도 2027년 중반까지는 강하게 유지될 것이라고 관측했다.\n\n특히 올해 1∼7월 상품 수출이 작년 같은 기간에 비해 51%나 증가했고 이는 \"매우 강력한 반도체 성장의 뒷받침을 받았다\"고 풀이했다.\n\nhttps://n.news.naver.com/article/001/0016255232?sid=101",
+            "links": [
+              "https://n.news.naver.com/article/001/0016255232?sid=101"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37205"
           }
         ]
       },
@@ -3256,6 +3258,42 @@
         "category": "공시",
         "posts": [
           {
+            "date": "2026-08-18",
+            "time": "00:00",
+            "text": "[DH오토넥스] [기재정정]주요사항보고서(타법인주식및출자증권양도결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004306"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004306"
+          },
+          {
+            "date": "2026-08-18",
+            "time": "00:00",
+            "text": "[KS인더스트리] 주요사항보고서(자기전환사채만기전취득결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000002"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000002"
+          },
+          {
+            "date": "2026-08-18",
+            "time": "00:00",
+            "text": "[동구바이오제약] [기재정정]주요사항보고서(영업정지)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004305"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004305"
+          },
+          {
+            "date": "2026-08-18",
+            "time": "00:00",
+            "text": "[동구바이오제약] [기재정정]주요사항보고서(영업정지)\n공시유형: 주요사항보고  ·  정",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004262"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004262"
+          },
+          {
             "date": "2026-08-14",
             "time": "00:00",
             "text": "[KG케미칼] 주요사항보고서(자기주식처분결정)\n공시유형: 주요사항보고",
@@ -3490,33 +3528,6 @@
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000799"
           },
           {
-            "date": "2026-08-14",
-            "time": "00:00",
-            "text": "[피엔티] 주요사항보고서(자기주식취득결정)\n공시유형: 주요사항보고  ·  정",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000792"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000792"
-          },
-          {
-            "date": "2026-08-14",
-            "time": "00:00",
-            "text": "[디앤씨미디어] 주요사항보고서(자기주식취득신탁계약해지결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000540"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000540"
-          },
-          {
-            "date": "2026-08-14",
-            "time": "00:00",
-            "text": "[제이아이테크] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000465"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000465"
-          },
-          {
             "date": "2026-08-13",
             "time": "00:00",
             "text": "[사조씨푸드] [첨부정정]주요사항보고서(유형자산양수결정)\n공시유형: 주요사항보고",
@@ -3605,15 +3616,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260812000765"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260812000765"
-          },
-          {
-            "date": "2026-08-12",
-            "time": "00:00",
-            "text": "[사조씨푸드] 주요사항보고서(유형자산양수결정)\n공시유형: 주요사항보고  ·  정",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260812000702"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260812000702"
           }
         ]
       }
