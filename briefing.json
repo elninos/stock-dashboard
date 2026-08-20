@@ -1,6 +1,6 @@
 {
   "2026-08-20": {
-    "fetched_at": "2026-08-20T14:34:48+09:00",
+    "fetched_at": "2026-08-20T16:44:27+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -253,26 +253,6 @@
         "posts": [
           {
             "date": "2026-08-20",
-            "time": "09:25",
-            "text": "🧬 이엔셀, 피부·두피 항노화 재생의료 사업 진출\n\nhttps://www.hankyung.com/article/202608201184i\n\n💊  벤자민피부과와 재생의료 사업 협력\n이엔셀이 벤자민피부과와 SVF 기반 항노화 재생의료 및 스킨부스터 사업 MOU 체결\n\nSVF 추출·시술 프로토콜, 세포 뱅킹, 한국·일본 재생의료 협력 및 스킨부스터 공동개발 추진\n\n💊 SVF 세포 뱅킹 사업 구축\nSVF는 지방조직에서 확보하는 비배양 세포 혼합물\n\n양사는 SVF 추출·가공, 품질평가, 동결보관·해동 기준을 마련하고 환자별 세포를 장기간 보관하는 뱅킹 체계 구축 계획\n\n💊  일본 재생의료 시장 진출 추진\n2026년 6월 10일 기준 일본의 유효 재생의료 치료계획 6,734건 중 미용·항노화 분야는 1,454건으로 22%\n\n이엔셀은 일본 후생노동성의 특정세포가공물 제조시설 인증을 획득한 하남 GMP 제2공장을 활용해 일본 의료기관 대상 SVF 세포가공물 공급 추진\n\n💊  스킨부스터로 사업 영역 확대\n이엔셀의 세포 처리·품질관리 및 바이오 소재 역량을 기반으로 피부·두피용 스킨부스터 제품군 개발\n\n벤자민피부과는 임상현장 사용성 평가와 피드백을 제공할 예정\n\n💊  사업 확장의 의미\n기존 세포·유전자치료제 CDMO에서 축적한 제조·품질관리 역량을 피부·두피·항노화 재생의료 분야로 확장\n\n향후 SVF 가공·뱅킹, 국내외 의료기관 공급과 스킨부스터·바이오 소재 개발을 신규 사업축으로 추진\n\n🧬바이오섹터 분석🧬 [그로쓰리서치]\nhttps://t.me/growthbio",
-            "links": [
-              "https://www.hankyung.com/article/202608201184i",
-              "https://t.me/growthbio"
-            ],
-            "post_url": "https://t.me/growthresearch/28967"
-          },
-          {
-            "date": "2026-08-20",
-            "time": "09:27",
-            "text": "💻 태성, 올해 누적 수주 1,800억원 확보…PCB 장비 성장 지속\n\nhttps://www.newsis.com/view/NISX20260820_0003755165\n\n📌 누적 수주 1,800억원 확보\n태성은 올해 국내외 주요 고객사의 신규·추가 발주를 기반으로 누적 수주 약 1,800억원 확보\n\n현재 협의 중인 추가 장비 공급이 확정될 경우 8월 말 누적 수주액 2,000억원 돌파 기대\n\n📌 올해·내년 실적 성장 기반\n장비 수주는 제작·납품 이후 매출로 인식되는 구조\n\n현재 확보한 수주 물량이 올해뿐 아니라 2027년 실적에도 반영될 전망\n\n📌 천안 신공장으로 생산능력 확대\n최근 천안 신공장 완공과 본사 이전을 마치고 본격 생산체제 돌입\n\n확대된 생산능력을 기반으로 기존 수주 물량의 생산·납품과 추가 고객사 수요에 대응\n\n📌 유리기판 장비 신규 성장축\n유리기판 제조에 적용되는 자동화 공정장비 기술 확보\n\n한국세라믹기술원 및 국내외 고객사와 기술개발·실제 공정 적용 협력 진행 중\n\n회사 측은 국내외 고객사와 구체적인 협의를 진행하고 있으며 연내 유리기판 장비 수주 가시화를 예상\n\n📌 체크포인트\n현재 성장은 PCB 자동화 장비 수주 확대가 핵심\n\n향후 유리기판 장비가 실제 수주와 매출로 연결될 경우 기존 PCB 장비와 함께 추가 성장축으로 작용할 가능성\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
-            "links": [
-              "https://www.newsis.com/view/NISX20260820_0003755165",
-              "https://telegram.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/28968"
-          },
-          {
-            "date": "2026-08-20",
             "time": "09:32",
             "text": "✅씨이랩, 신규 GPU 운용 진단 솔루션 'AstraMon' 공개\n\nhttps://view.asiae.co.kr/article/2026082008172305100\n\n📌 신규 GPU 진단 솔루션 공개\n씨이랩은 GPU 운영 상태를 진단하는 신규 솔루션 ‘AstraMon’을 최초 공개\n\n유휴 GPU와 대기 전력, 불필요하게 돌아가는 프로세스 등을 데이터로 확인해 비용 낭비를 진단\n\nGPU를 많이 확보하는 것에서 나아가 이미 구축된 GPU를 얼마나 효율적으로 쓰느냐를 공략하는 제품\n\n📌 진단부터 최적화까지 연결\nAstraMon으로 GPU 인프라의 비효율을 먼저 찾아낸 뒤 AstraGo를 통해 자원 배분과 활용을 최적화\n\n‘AstraMon으로 측정 → AstraGo로 최적화’하는 2단계 사업 구조를 구축\n\nAstraMon이 신규 고객을 확보하는 입구가 되고 이후 AstraGo 판매까지 연결할 수 있다는 점이 핵심\n\n📌 GPU가 늘어날수록 커지는 운영 시장\nAI 데이터센터 확대로 GPU 설치 대수가 늘어나면서 운영 비용과 자원 활용률 관리도 중요해지는 상황\n\n씨이랩은 GPU 인프라 구축뿐 아니라 구축 이후 운영 단계에서 반복적으로 발생하는 소프트웨어 수요까지 공략\n\n향후 AstraMon이 실제 고객사 도입으로 이어지고 AstraGo와 함께 소프트웨어 매출을 키우는지가 관전 포인트\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
             "links": [
@@ -434,6 +414,27 @@
               "https://telegram.me/growthresearch"
             ],
             "post_url": "https://t.me/growthresearch/28986"
+          },
+          {
+            "date": "2026-08-20",
+            "time": "16:29",
+            "text": "💻 AMD, 아시아 최초 AI 기술센터 韓 설립…\"한국서 성공사례 만들어 글로벌로\"\n\nhttps://www.mt.co.kr/tech/2026/08/20/2026082015381945231\n\n📌 엔비디아 의존 낮추는 ‘다이아몬드 전략’\nAMD CPU·GPU와 국산 NPU를 연결하는 이기종 AI 아키텍처 개발\n\n출연연·공공기관에서 먼저 실증 후 글로벌 표준 아키텍처로 확장\n\nAMD가 미국 외 특정 국가 NPU와 이기종 실증에 나서는 첫 사례\n\n📌 연내 아시아 최초 AI CoE 설립\nAMD가 한국에 아시아 최초 AI 기술센터 구축\n\n상주 엔지니어·PM을 배치하고 2027년 말까지 인력 확대\n\n초기에는 GPUaaS 형태로 컴퓨팅 자원 지원\n\n📌 2027년 ‘헬리오스’ 1세트 배치 검토\n조건 충족 시 차세대 AI 통합 플랫폼 Helios를 국내 배치\n\n학습 중심에서 추론 중심으로 이동하는 AI 시장 변화 대응\n\nGPU·NPU·CPU를 혼합하는 개방형 인프라 확대가 핵심\n\n📌 ROCm·공공 AI 실증까지 연계\n올해 국가과학AI연구소 등과 AMD GPU·ROCm 효용성 검증\n\n내년부터 국가 과학 AI 과제 지원 추진\n\n국산 NPU의 공공 레퍼런스 확보와 글로벌 판로 확대 기대\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
+            "links": [
+              "https://www.mt.co.kr/tech/2026/08/20/2026082015381945231",
+              "https://telegram.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/28987"
+          },
+          {
+            "date": "2026-08-20",
+            "time": "16:43",
+            "text": "✅ 삼성디스플, 美 코닝 투자로 20조 넘는 ‘초대박’\n\nhttps://www.sedaily.com/article/20081431?ref=naver\n\n📌 코닝 지분가치 6개월 만에 3배\n삼성디스플레이 보유 코닝 지분 7.9%, 6,800만주\n\n6월 말 공정가치 26조7,747억원으로 지난해 말 8조5,435억원 대비 급증\n\n2021년 취득원가 3조3,835억원 대비 약 8배 수준\n\n📌 AI 광통신 수혜가 지분가치 견인\n코닝은 메타·엔비디아·아마존과 대형 광섬유·케이블 계약 체결\n\nAI 데이터센터 광통신망 핵심 공급사로 재평가\n\n코닝 주가 급등이 삼성디스플레이의 투자여력 확대 요인\n\n📌 A7 공장 5년 만에 건설 재개\n삼성디스플레이는 아산 2단지 A7 공장 건설 재개 확정\n\nIT OLED·폴더블·XR 수요 확대에 대응한 생산기반 확충\n\n8.6세대 IT OLED 라인 이후 추가 CAPEX 필요성 확대\n\n📌 코닝 지분 현금화 가능성 주목\n삼성디스플레이는 코닝에 일부 지분을 매각할 수 있는 풋옵션 보유\n\n2040년까지 충청권에 67조 원 투자 계획 제시\n\n지분 매각 여부와 A7 투자 규모가 향후 핵심 촉매\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
+            "links": [
+              "https://www.sedaily.com/article/20081431?ref=naver",
+              "https://telegram.me/growthresearch",
+              "https://www.sedaily.com/article/20081431"
+            ],
+            "post_url": "https://t.me/growthresearch/28988"
           }
         ]
       },
@@ -760,13 +761,6 @@
         "posts": [
           {
             "date": "2026-08-19",
-            "time": "21:06",
-            "text": "제목 : 모더나와 머크, mRNA 항암제 후기 임상 성공에 급등                                                                                     *연합인포맥스*\n시킹 알파는 모더나(NAS: MRNA)와 머크(NYS: MRK)의 주가가 후기 임상 결과가 발표되며 급등하고 있다고 보도했다.   “모더나와 머크가 합작하여 개발하고 있는 mRNA 항암제 intismeran이 피부암의 일종인 흑색종에 대한 후기 임상 시험에서 성공적인 결과를거뒀다”고 언급했다.   “흑색종을 완전히 절제한 환자 1,100명 이상을 대상으로 진행한 임상 3상 INTerpath-001 시험은 intismeran을 머크의 대표적인 의약품인 Keytruda와 함께 사용하여 그 효과를 파악하기 위해 진행되었다”고 전했다.   “INTerpath-001 시험에서 intismeran은 재발이 없는 생존율의 주 목표를 달성했으며, 원격전이가 없는 생존율의 2차 목표 또한 달성한 것으로 나타났다”고 정리했다.   이는 모더나 주가가 프리마켓에서 61.5%, 머크 주가가 7.3% 급등하는 것으로 나타나고 있다.",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/37256"
-          },
-          {
-            "date": "2026-08-19",
             "time": "21:42",
             "text": "미 재무부, 장기 명목국채 바이백 규모 확대 발표\n2026년 8월 19일\n유동성 지원 목적의 바이백 확대 — 2026년 9월 9일부터 시행\n미국 재무부는 장기 명목 이표채에 대한 유동성 지원 바이백(liquidity support buyback) 규모를 최소 두 배 이상 확대한다고 발표했습니다.\n대상은 10년~20년 구간 및 20년~30년 구간의 장기 국채입니다. 현재 회당 최대 20억 달러인 바이백 규모를 회당 최소 40억 달러로 확대합니다.\n이번 변경은 2026년 9월 9일부터 시행되며, 이번 분기 국채 차환(refunding) 기간이 끝나는 2026년 11월 4일까지 유지됩니다. 이후 바이백 규모에 관한 추가 정보는 11월 4일 예정된 다음 분기 차환계획 발표에서 공개할 예정입니다.\n재무부는 이번 바이백 규모 확대가 장기 명목국채 시장에 더 강한 유동성 지원을 제공하기 위한 것이라고 설명했습니다. 시장 참가자들의 강한 요청이 지속적으로 있었으며, 실제로 재무부가 장기물 바이백 과정에서 매도 제안(offers)을 상당한 규모로 받고 있다는 점도 확대 결정의 배경이라고 밝혔습니다.\n업데이트된 잠정 국채 바이백 일정은 추후 발표될 예정입니다.",
             "links": [],
@@ -884,6 +878,16 @@
               "https://www.hani.co.kr/arti/society/environment/1273774.html"
             ],
             "post_url": "https://t.me/Yeouido_Lab/37276"
+          },
+          {
+            "date": "2026-08-20",
+            "time": "15:36",
+            "text": "일론 머스크 \"mRNA 기술이 질병 치료를 소프트웨어 문제로 전환할 것\" - 야후 파이낸스\n(by https://t.me/TNBfolio)\n- 일론 머스크는 인공 RNA 기술이 발전하면서 질병 치료가 생물학적 영역에서 프로그래밍 가능한 소프트웨어 문제로 진화하고 있다고 평가했다.\n- Moderna와 Merck는 흑색종 환자를 대상으로 진행한 맞춤형 mRNA 암 백신과 Keytruda 병용 임상 3상 시험에서 긍정적인 결과를 확보했다.\n- 이번 임상 성공 소식에 힘입어 암 백신 개발에 성공한 Moderna의 주가는 177% 폭등했다.\n- 일론 머스크는 인공지능과 Tesla의 Optimus 휴머노이드 로봇 기술을 결합해 인류에게 보편적이고 우수한 의료 서비스를 제공하겠다는 구상을 강조했다.\n- 유사한 mRNA 항암 치료제를 개발 중인 BioNTech와 Arcturus Therapeutics 등 관련 기업들의 주가도 시장에서 동반 급등세를 기록했다.\nhttps://finance.yahoo.com/healthcare/articles/elon-musk-says-mrna-tremendous-031829506.html",
+            "links": [
+              "https://t.me/TNBfolio",
+              "https://finance.yahoo.com/healthcare/articles/elon-musk-says-mrna-tremendous-031829506.html"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37277"
           }
         ]
       },
@@ -3205,11 +3209,101 @@
           {
             "date": "2026-08-20",
             "time": "00:00",
+            "text": "[PKC] [기재정정]주요사항보고서(유형자산양수결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000285"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000285"
+          },
+          {
+            "date": "2026-08-20",
+            "time": "00:00",
             "text": "[아이에스동서] 주요사항보고서(자기주식취득신탁계약체결결정)\n공시유형: 주요사항보고",
             "links": [
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000015"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000015"
+          },
+          {
+            "date": "2026-08-20",
+            "time": "00:00",
+            "text": "[엑시온그룹] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000363"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000363"
+          },
+          {
+            "date": "2026-08-20",
+            "time": "00:00",
+            "text": "[젬백스] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000369"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000369"
+          },
+          {
+            "date": "2026-08-20",
+            "time": "00:00",
+            "text": "[아이엠티] 주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000313"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000313"
+          },
+          {
+            "date": "2026-08-20",
+            "time": "00:00",
+            "text": "[더코디] [기재정정]주요사항보고서(자기전환사채매도결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000337"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000337"
+          },
+          {
+            "date": "2026-08-20",
+            "time": "00:00",
+            "text": "[한국첨단소재] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000303"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000303"
+          },
+          {
+            "date": "2026-08-20",
+            "time": "00:00",
+            "text": "[모아라이프플러스] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000310"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000310"
+          },
+          {
+            "date": "2026-08-20",
+            "time": "00:00",
+            "text": "[알파AI] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000287"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000287"
+          },
+          {
+            "date": "2026-08-20",
+            "time": "00:00",
+            "text": "[알파AI] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000280"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000280"
+          },
+          {
+            "date": "2026-08-20",
+            "time": "00:00",
+            "text": "[한국정보인증] 주요사항보고서(자기주식취득신탁계약체결결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000244"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000244"
           },
           {
             "date": "2026-08-20",
@@ -3374,87 +3468,6 @@
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000318"
           },
           {
-            "date": "2026-08-19",
-            "time": "00:00",
-            "text": "[애드바이오텍] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000258"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000258"
-          },
-          {
-            "date": "2026-08-19",
-            "time": "00:00",
-            "text": "[애드바이오텍] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000256"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000256"
-          },
-          {
-            "date": "2026-08-19",
-            "time": "00:00",
-            "text": "[씨엑스아이] [기재정정]주요사항보고서(타법인주식및출자증권양수결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000245"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000245"
-          },
-          {
-            "date": "2026-08-19",
-            "time": "00:00",
-            "text": "[에스에스알] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000244"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000244"
-          },
-          {
-            "date": "2026-08-19",
-            "time": "00:00",
-            "text": "[린드먼아시아] 주요사항보고서(자기주식취득신탁계약체결결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000226"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000226"
-          },
-          {
-            "date": "2026-08-19",
-            "time": "00:00",
-            "text": "[헝셩그룹] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000182"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000182"
-          },
-          {
-            "date": "2026-08-19",
-            "time": "00:00",
-            "text": "[한국유니온제약] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000133"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000133"
-          },
-          {
-            "date": "2026-08-19",
-            "time": "00:00",
-            "text": "[이씨에스] 주요사항보고서(자기주식취득신탁계약체결결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000069"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000069"
-          },
-          {
-            "date": "2026-08-19",
-            "time": "00:00",
-            "text": "[에스에스알] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고  ·  정",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000327"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000327"
-          },
-          {
             "date": "2026-08-18",
             "time": "00:00",
             "text": "[한국전자홀딩스] [기재정정]주요사항보고서(자기주식처분결정)\n공시유형: 주요사항보고",
@@ -3552,15 +3565,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002685"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002685"
-          },
-          {
-            "date": "2026-08-14",
-            "time": "00:00",
-            "text": "[한국카본] 주요사항보고서(회사합병결정)\n공시유형: 주요사항보고  ·  정",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002642"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002642"
           }
         ]
       }
