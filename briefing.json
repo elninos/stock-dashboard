@@ -1,6 +1,6 @@
 {
   "2026-08-21": {
-    "fetched_at": "2026-08-21T16:46:57+09:00",
+    "fetched_at": "2026-08-21T18:40:31+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -239,16 +239,6 @@
         "posts": [
           {
             "date": "2026-08-21",
-            "time": "09:07",
-            "text": "💻 [속보]반도체 수출 '역대 최대'…이달 20일까지 198.8% 늘어\n\nhttps://view.asiae.co.kr/article/2026082109030269827\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
-            "links": [
-              "https://view.asiae.co.kr/article/2026082109030269827",
-              "https://telegram.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/29008"
-          },
-          {
-            "date": "2026-08-21",
             "time": "09:14",
             "text": "🧬 노보노디스크 경구 위고비 저용량 3상 착수, 복용 유연성·가격 경쟁력 강화\n\n💊 25mg보다 낮은 유지용량 탐색\n신규 OASIS-5 3상은 8월 12일 시작\n\n현재 장기 유지용량 25mg보다 낮은 용량의 효능 평가\n\n최저 유효용량을 찾아 환자별 치료 옵션 확대 목표\n\n💊 450명·60주 임상 진행\n비만 또는 과체중 성인 450명 모집\n\n60주간 위약 대비 체중감량 효과를 평가\n\n허리둘레·대사 개선·부작용도 함께 확인\n\n💊 저용량 전략은 비용·부작용 대응 카드\nGLP-1은 높은 약가와 부작용 때문에 자발적 저용량 사용 사례 존재\n\n낮은 용량에서도 충분한 효과가 확인되면 치료 지속성 개선 가능\n\n약물 사용량 감소에 따른 원가·공급 측면 이점도 기대\n\n💊 릴리와 경구 비만약 경쟁 방어\n경구 위고비 2분기 매출은 32.2억덴마크크로네, 약 5억달러\n\n릴리 Foundayo 등장으로 경구 비만약 경쟁 본격화\n\n저용량 데이터 확보가 위고비 브랜드의 시장 세분화 전략에 핵심\n\n🧬바이오섹터 분석🧬 [그로쓰리서치]\nhttps://t.me/growthbio",
             "links": [
@@ -429,6 +419,16 @@
               "https://telegram.me/growth_semi"
             ],
             "post_url": "https://t.me/growthresearch/29027"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "16:53",
+            "text": "✅ 메모리 공급난에 스마트폰 출하 14% 급감… 삼성, 애플 제치고 1위 탈환 전망\n\nhttps://biz.chosun.com/it-science/ict/2026/08/21/X6OGORVCU5FHZG4XGCB3EWZSBY/\n\n📌 글로벌 스마트폰 시장 위축\n카운터포인트리서치는 2026년 글로벌 스마트폰 출하량이 YoY -14.3% 감소할 것으로 전망\n\nAI 데이터센터 수요 증가로 메모리 업체들이 HBM·서버용 DRAM 생산에 집중하면서 스마트폰용 메모리 공급이 줄어든 영향\n\n📌 중저가 스마트폰 타격 확대\n메모리 공급 부족으로 제조원가와 판매가격 상승 가능성 확대\n\n가격 민감도가 높은 중저가 제품과 중국 스마트폰 업체들이 상대적으로 큰 영향을 받을 것으로 분석\n\n📌 삼성전자, 출하량 +0.8% 전망\n시장 전체가 역성장하는 가운데 삼성전자 출하량은 YoY +0.8% 증가 예상\n\n자체 부품 생산 능력과 폭넓은 제품군, 안정적인 통신사·유통망이 공급난 대응에 유리한 요소로 평가\n\n📌 애플 제치고 연간 1위 탈환 가능성\n2025년 글로벌 점유율은 애플 20%, 삼성전자 19%\n\n2026년 1분기는 양사 모두 21%로 접전\n\n전망대로라면 삼성전자가 지난해 애플에 내준 연간 출하량 1위를 1년 만에 되찾을 가능성\n\n📌 체크포인트\n애플은 원가 상승 대응 여력은 있으나 출하량 확대는 제한적일 것으로 전망\n\n글로벌 스마트폰 시장은 2027년까지 감소세가 이어지고 2028년부터 회복할 것으로 관측\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
+            "links": [
+              "https://biz.chosun.com/it-science/ict/2026/08/21/X6OGORVCU5FHZG4XGCB3EWZSBY/",
+              "https://telegram.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/29028"
           }
         ]
       },
@@ -607,24 +607,6 @@
         "channel_url": "https://t.me/d_ticker",
         "posts": [
           {
-            "date": "2026-08-17",
-            "time": "00:14",
-            "text": "33주차 글로벌 증시 주간 상승률 - Dean's Ticker\n\nUS\n+48%｜네비우스｜네오클라우드\n+35%｜샌디스크｜낸드플래시\n+31%｜에버퓨어｜수처리 필터 \n+28%｜슈퍼마이크로｜서버 제조\n+20%｜시게이트｜하드디스크\n+19%｜마라톤 페트롤리엄｜정유\n+17%｜오스카 헬스｜의료보험 플랫폼\n+17%｜웨스턴 디지털｜하드디스크\n+16%｜코어위브｜네오클라우드\n+15%｜몽고DB｜데이터베이스 SW\n+15%｜HF 싱클레어｜정유\n+15%｜MP 머리티얼즈｜희토류\n+15%｜필립스 66｜정유\n+15%｜발레로 에너지｜정유\n+14%｜디디 글로벌｜차량 공유\n+14%｜루브릭｜사이버보안\n+13%｜아카아미｜엣지 네트워크 센터\n+13%｜테크닙 FMC｜해양 유전 장비\n+13%｜달링 인그리디언츠｜바이오디젤\n+12%｜폼팩터｜프로브카드\n\nUS(<$10B)\n+159%｜레어 엘리먼트 리소시스｜희토류\n+117%｜퀀텀｜데이터레이크 SW\n+63%｜ERock｜분산형 발전소\n+58%｜스탠다드 뉴클리어｜소형원자로모듈(SMR)\n+55%｜보우먼 컨설팅｜전력망 엔지니어링\n+54%｜샤론AI｜AI 인프라 호스팅\n+50%｜넷리스트｜메모리 모듈\n+49%｜체인스 디지털｜온체인 금융 인프라\n+49%｜NIQ｜소비자 데이터 분석\n+49%｜바렉스 이머징｜X선 장비 부품\n\nEurope\n+35%｜오토스토어 홀딩스｜큐브형 창고\n+29%｜바자즈 모빌리티｜이륜차\n+21%｜AP 묄러-머스크｜해상 운송\n+21%｜AT&S｜반도체 기판\n+19%｜DFDS｜해상 운송\n+18%｜TKMS｜잠수함\n+17%｜인트럼｜신용관리서비스\n+16%｜TKH그룹｜공장자동화(머신비전)\n+15%｜베스타스 윈드｜풍력 터빈\n+15%｜바니제이｜TV 프로그램 제작\n+14%｜아디엔｜결제 플랫폼\n+14%｜오카도｜식료품 물류\n+13%｜OHB｜위성 제조\n+13%｜노키아｜통신장비\n+13%｜엠브레이서｜게임 개발\n+13%｜아스비스 엔터프라이즈｜서버 유통\n+13%｜시페프｜팜유\n+13%｜빈코리온｜방위용 전력제어 장치\n+13%｜벨 푸드 그룹｜편의식품\n+12%｜실트로닉｜실리콘 웨이퍼\n\nJapan\n+25%｜리크루트 홀딩스｜채용 플랫폼\n+24%｜넥슨｜게임 개발\n+22%｜프리｜기업용 회계 SW\n+22%｜세이코 그룹｜시계\n+20%｜머니포워드｜기업용 회계 SW\n+19%｜마츠다 산업｜반도체 소재(금속)\n+17%｜DIC｜반도체 소재(폴리머)\n+16%｜시스멕스｜체외진단 기기\n+15%｜아이치 파이낸셜｜지방은행\n+15%｜시티즌｜시계\n+15%｜어드반티스트｜반도체 테스트 장비\n+14%｜메이덴샤｜전력기기\n+14%｜타이오유덴｜MLCC\n+13%｜무라타｜MLCC\n+13%｜세이코 기켄｜광커넥터 제조장비\n+13%｜SUMCO｜실리콘 웨이퍼\n+13%｜코쿠사이 일렉트릭｜반도체 증착 장비\n+13%｜JAC 리크루트먼트｜인력 채용\n+13%｜오사카 소다｜크로마토그래피\n+13%｜트라이얼 홀딩스｜무인매장\n\nKorea\n+79%｜NHN｜인터넷\n+46%｜티씨케이｜반도체 공정 부품\n+39%｜주성엔지니어링｜반도체 장비\n+39%｜태성｜PCB 제조장비\n+32%｜원익IPS｜반도체 장비\n+32%｜두산테스나｜OSAT\n+28%｜한국콜마｜화장품\n+27%｜일진전기｜전력기기\n+26%｜메지온｜바이오\n+26%｜티에스이｜프로브카드\n+25%｜이오테크닉스｜반도체 레이저 장비\n+24%｜두산퓨얼셀｜연료전지\n+24%｜DN오토모티브｜공작기계\n+24%｜한화생명｜보험\n+23%｜ISC｜반도체 테스트 소켓\n+23%｜SK스퀘어｜지주\n+23%｜비에이치아이｜보일러\n+22%｜DB하이텍｜전력반도체\n+22%｜로보티즈｜로봇\n+22%｜하나마이크론｜OSAT\n\n※10B 미만 US에 바이오 종목 제외",
-            "links": [
-              "https://t.me/d_ticker"
-            ],
-            "post_url": "https://t.me/d_ticker/3668"
-          },
-          {
-            "date": "2026-08-18",
-            "time": "22:58",
-            "text": "젠슨 황이 투자 힌트를 줬습니다\n\n“AI 팩토리 다음 병목은 부지·전력·건물(LPS)다”\n\n지금부터는 LPS를 선제 확보하겠다는 전략인데요.\n\n첫 사례로 오하이오 PORTS-Pike 캠퍼스에 LPS 용량을 확보하는 것이라고 합니다.\n\n이 캠퍼스에는 초기 4.25GW 전력망을 구축, 추가로 3.75GW를 확보할 예정입니다.\n\n결과적으로 2030년까지 약 12GW, 옵션 포함 시 최대 16GW에 달합니다.\n\n해당 캠퍼스는 소프트뱅크 자회사 SB에너지와 공동 구축하며, 오픈AI가 임차인으로 들어옵니다.\n\n이렇게 LPS를 확보한 캠퍼스는 $600B의 컴퓨트 매출 기회를 제공합니다.\n\nhttps://x.com/JensenHuang/status/2089331487342829862",
-            "links": [
-              "https://x.com/JensenHuang/status/2089331487342829862"
-            ],
-            "post_url": "https://t.me/d_ticker/3670"
-          },
-          {
             "date": "2026-08-19",
             "time": "15:51",
             "text": "SK하이닉스가 40조 자사주취득 결정했습니다\n\n8월 20일부터 11월 19일까지 3개월에 걸쳐 진행합니다.",
@@ -742,8 +724,7 @@
             "time": "13:47",
             "text": "브로드컴 $100B 이상 조달\n\n- 아폴로 등 복수 PE들 특수목적법인(SPV) 설립\n- SPV의 회사채 발행으로 $100B 자금조달 추진\n- 이후 SPV는 브로드컴 칩 구매하고 인프라 구축\n- 앤스로픽이 이 인프라 장기 사용하는 고객으로\n- 고객은 대규모 CAPEX 쓰는 대신 월세내는 셈\n- SPV는 고객 사용료로 현금흐름 확보 가능\n- 브로드컴은 고객의 AI 칩 채택 상승하며 수혜\n- 돈없는 고객 때문에 발생하는 병목 뚫겠다는 구상\n\nhttps://www.bloomberg.com/news/articles/2026-08-20/broadcom-seeks-more-than-60-billion-in-latest-ai-debt-deal",
             "links": [
-              "https://www.bloomberg.com/news/articles/2026-08-20/broadcom-seeks-more-than-60-billion-in-latest-ai-debt-deal",
-              "https://www.bloomberg.com/news/articles/2026-08-20/broadcom-seeks-more-than-60-billion-in-latest-ai-debt-deal?utm_campaign=article_email&amp;utm_content=article-17651&amp;utm_medium=email&amp;utm_source=sg"
+              "https://www.bloomberg.com/news/articles/2026-08-20/broadcom-seeks-more-than-60-billion-in-latest-ai-debt-deal"
             ],
             "post_url": "https://t.me/d_ticker/3686"
           },
@@ -762,6 +743,22 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000464"
             ],
             "post_url": "https://t.me/d_ticker/3688"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "17:12",
+            "text": "삼성전자 26년 주주환원 90-110조\n\n2026년 주주환원까지 포함하면 2024년부터 2026년까지 3개년의 주주환원 규모는 총 120조~140조원 예상\n\nhttps://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821800763",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821800763"
+            ],
+            "post_url": "https://t.me/d_ticker/3689"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "17:21",
+            "text": "주주환원이지만 주주우선은 아니네요. FCF에 임직원 성과급 차감됩니다.\n\n또 LTA 선수금도 잉여현금에 포함 안되는데 이는 선수금은 곧 CAPEX에만 쓰인다고 봐야 겠습니다\n\n\n\n\n* 3년간 총 FCF 산정시 보증금 성격의 메모리 제품 LTA(장기공급계약) '선수금' 및 임직원 성과급 주식보상 관련 지출액은 차감",
+            "links": [],
+            "post_url": "https://t.me/d_ticker/3690"
           }
         ]
       },
@@ -780,20 +777,6 @@
         "category": "국내 시장/종목 분석",
         "channel_url": "https://t.me/Yeouido_Lab",
         "posts": [
-          {
-            "date": "2026-08-21",
-            "time": "10:55",
-            "text": "2026.08.21 10:52:37 기업명: 디앤디파마텍(시가총액: 2조 3,790억) A347850 보고서명: 투자판단관련주요경영사항(임상시험결과)              (대사이상지방간염 (MASH) 치료제 DD01의 미국 임상 제2상 임상시험결과보고서(CSR) 수령)  * 임상명칭 : 과체중/비만을 동반한 대사이상지방간질환 (MASLD)/대사이상지방간염 (MASH) 환자를 대상으로 48주요법 기간동안 투여하는 DD01의 유효성, 안전성 및 내약성을…",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/37291"
-          },
-          {
-            "date": "2026-08-21",
-            "time": "10:57",
-            "text": "유효성 결과: 시험약 투여 전 (Baseline) 대비 간 지방이 30% 이상 감소한 피험자의 비율은 DD01 투여군에서 75.8%, 위약 투여군에서 11.8%로 나타났으며, 그 차이는 통계적으로 유의하였음.\n(p<0.0001).",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/37292"
-          },
           {
             "date": "2026-08-21",
             "time": "11:00",
@@ -938,6 +921,23 @@
             "text": "마감 시황. '주주 환원' 아니면 '금리'만 보는 증시\n\n코스피 지수는 주주 환원 기대감으로 상승. \n시장 전체로는 금리, 유가 의식해 매물\n수급 쏠림이 심해지며 하락 종목수가 많았음\n\n미국 국채 금리가 오른 점은 부담으로 작용\n베센트의 바이백 규모 증가 언급에도 금리 상승\n현재 40억 달러는 장기 부채 대비 극히 미미한 수준\n바이백 늘려도 근본적 해결은 불가능한 것\n부채 증가와 이를 유발하는 중동 사태 지속 등\n다만 재무부가 연이은 카드를 낼 것이라는 분석\n엔화 개입, 바이백 증액 등 일련의 과정 주목\n이 후 추가 개입 가능성도 높다는 분석\n일단 금리 자체가 오른 점은 부담\n\n유가 상승 역시 하락 종목수 증가 요인\n미국의 압박이 군사력에서 경제로 전환\n좋게 보면 전쟁 가능성 낮아진 점\n그러나 중동 사태 및 해협 봉쇄 장기화 의미\n긴장감 이어지며 유가 추가 상승 우려 부각\n\n주주 환원 효과는 코스피 지수 상승 요인\n주요 IB들도 SK하이닉스 주가 긍정적 영향 분석\nJP모건, 바클레이즈 등 대규모 환원이라는 평가\n매일 1조원씩 거래일 기준 20일간 이어지는 것\n언론들 삼성전자 주주환원 100조원 이상 발표 전망\n2시경 삼성전자 4시 주주환원 발표설 돌았음\n최소 110조원 이상이 될 것이라는 내용\n삼성전자 상승폭 확대하며 지수 더 올리기도\n반면 자사주 매입 종료 즈음 밀어내는 시도도\n전일과 비슷하게 막판 매물 변동성도 나타남 \n\n삼성전자, SK하이닉스 외 지분 관련주들 강세\n금융, 통신, 대북 경협주들 매수 유입\n반면 소부장 등은 삼전-닉스에 수급 넘기며 약세\n전일 급등했던 알테오젠 등 제약주도 부진\n\n외국인 전기전자, 운송장비 순매수\n금융, 증권, 기계, 금속, 화학, IT  서비스 등 순매도\n코스닥은 대부분 업종 순매도\n기관 전기전자, 금융, 유통, 화학, 제약 등 순매수\n코스닥 IT서비스, 유통 외 대부분 순매도\n\n금리, 유가 등 외부 변수와 주주환원 내부 변수 충돌\n유가와 금리는 어느 정도 적응이 된 악재들\n유가는 전쟁 초 100달러 대비 낮은 수준 유지\n미국내 원유 재고가 늘어나고 있는 점도\n해협 개방 때 유조선 대거 복귀해 국가별 비축도 증가\n금리는 추가 상승시 심리적, 실질적 부담은 있음\n1년물 4.8%, 30년물 5.4% 넘기면 매물 가능성\n다만 금리 역시 어느 정도 적응이 된 사안\n이미 작년 이 후 금리 레벨 자체가 높은 상태\n심리적 저항대 돌파시 한차례 충격 가능성은 염두\n\n오늘 하락으로 양시장은 과열권에서 벗어남\n코스닥은 오히려 상승 종목 비율 마이너스로 전환\n다만 증시 자금이 풍부하지 않아 차별화 장세 전망\n개별 업종은 순환매. 실적, 이슈 기반 업종은 추세\n구분되는 움직임 나타날 것으로 판단\n정책, 투자, 실적 이슈 뚜렷한 수급 붙는 업종에 집중",
             "links": [],
             "post_url": "https://t.me/Yeouido_Lab/37313"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "17:18",
+            "text": "2026.08.21 17:09:54\n기업명: 삼성전자(시가총액: 1,645조 7,274억) A005930\n보고서명: 수시공시의무관련사항(공정공시)\n\n제목 : 2026년 주주환원 예상 규모 및 시행 방안\n\n* 주요내용 \n□ 2024~2026년 주주환원정책 및 실적 \n \n\n(2024년 1월 31일 공시 내용) \n\n- 2024년부터 2026년까지 3년간 발생하는 \n\n 총 Free Cash Flow의 50%를 주주환원 \n\n·매년 9.8조원 정규배당 \n\n·3년간 총 Free Cash Flow의 50% 중에서 \n\n 정규배당 이후에도 잔여재원 발생시 추가로 환원 \n\n 매년 연간 Free Cash Flow를 산정하여 \n\n 의미 있는 규모의 잔여재원이 발생하는 경우, \n\n 일부 조기 환원 여부 검토 \n\n- 주주환원정책 대상 기간 종료 이전이라도 \n\n M&A 추진, 현금규모 등을 감안하여 탄력적으로 \n\n 신규 주주환원 정책 발표 및 시행 가능 \n \n\n(2024 ~ 2025년 주주환원 실적) \n\n- 위 정책에 따라 2024년부터 2025년까지 29.3조원 \n\n 시행 \n\n·현금배당 20.9조원, 자사주 매입/소각 8.4조원 \n \n□ 2026년 주주환원 예상 규모 및 시행 방안 \n\n- 2026년 경영실적 및 투자 등에 따라 변동 \n\n 가능하나, 2026년 주주환원 잔여 재원(3년간 총 \n\n FCF 50%에서 2024~2025년에 시행한 29.3조원 \n\n 차감)은 약 90~110조원 규모로 예상 \n \n\n* 3년간 총 FCF 산정시 \n\n 보증금 성격의 메모리 제품 LTA(장기공급계약) \n\n '선수금' 및 임직원 성과급 주식보상 관련 \n\n 지출액은 차감 \n \n\n- 2026년 3분기에는 정규 분기배당을 포함해 \n\n 30조원 내외 규모의 현금배당을 시행할 계획으로 \n\n 2026년 10월말 개최될 이사회에서 구체적인 \n\n 내용을 확정할 예정 \n \n\n- 2026년 결산 후 2027년 1월말 개최 예정인 \n\n 이사회에서 나머지 주주환원의 규모 및 구체적인 \n\n 시행 방안을 최종 결정하여 별도 발표할 계획 \n\n·나머지 주주환원은 현금배당과 자기주식 \n\n 매입/소각을 종합적으로 고려하여 시행 예정 \n \n※ 본 공시에 포함된 2026년 주주환원 예상 규모 등은 \n\n 당사의 현재 기준 재무적 예상치, 경영 환경 및 \n\n 사업 계획을 바탕으로 산출된 '예측 정보'를 \n\n 포함하고 있습니다. \n\n 동 예측 정보는 향후 국내외 거시경제 환경의 \n\n 변화, 실제 영업 실적, 투자 집행, 현금흐름에 \n\n 따라 그 규모 등이 본 공시의 예측치와 실질적으로 \n\n 다를 수 있습니다.\n\n* 기타 중요사항\n-\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821800763\n회사정보: https://finance.naver.com/item/main.nhn?code=005930",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821800763",
+              "https://finance.naver.com/item/main.nhn?code=005930"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37314"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "17:30",
+            "text": "삼성전자/SK하이닉스 주주환원정책 비교",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/37315"
           }
         ]
       },
@@ -3259,6 +3259,60 @@
           {
             "date": "2026-08-21",
             "time": "00:00",
+            "text": "[한화갤러리아] [기재정정]주요사항보고서(유형자산양수결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000667"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000667"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "00:00",
+            "text": "[KR모터스] 주요사항보고서(자기전환사채만기전취득결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000665"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000665"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "00:00",
+            "text": "[KR모터스] 주요사항보고서(자기전환사채만기전취득결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000663"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000663"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "00:00",
+            "text": "[삼성전자] 주요사항보고서(자기주식취득결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000616"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000616"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "00:00",
+            "text": "[에어부산] 주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000564"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000564"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "00:00",
+            "text": "[진에어] 주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000552"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000552"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "00:00",
             "text": "[삼성SDI] 주요사항보고서(타법인주식및출자증권양도결정)\n공시유형: 주요사항보고",
             "links": [
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000464"
@@ -3291,6 +3345,87 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000047"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000047"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "00:00",
+            "text": "[노브랜드] 주요사항보고서(자기주식처분결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000668"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000668"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "00:00",
+            "text": "[서울전자통신] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000627"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000627"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "00:00",
+            "text": "[핑거] 주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000597"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000597"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "00:00",
+            "text": "[핑거] 주요사항보고서(타법인주식및출자증권양수결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000646"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000646"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "00:00",
+            "text": "[엑시온그룹] [기재정정]주요사항보고서(자기전환사채매도결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000654"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000654"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "00:00",
+            "text": "[에코글로우] 주요사항보고서(자기전환사채매도결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000611"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000611"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "00:00",
+            "text": "[KX] [기재정정]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000580"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000580"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "00:00",
+            "text": "[애드바이오텍] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000578"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000578"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "00:00",
+            "text": "[애드바이오텍] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000575"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000575"
           },
           {
             "date": "2026-08-21",
@@ -3392,42 +3527,6 @@
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000008"
           },
           {
-            "date": "2026-08-21",
-            "time": "00:00",
-            "text": "[HLB테라퓨틱스] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000007"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000007"
-          },
-          {
-            "date": "2026-08-21",
-            "time": "00:00",
-            "text": "[HLB테라퓨틱스] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000006"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000006"
-          },
-          {
-            "date": "2026-08-21",
-            "time": "00:00",
-            "text": "[엔투텍] 주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000442"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000442"
-          },
-          {
-            "date": "2026-08-21",
-            "time": "00:00",
-            "text": "[엔투텍] 주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000443"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000443"
-          },
-          {
             "date": "2026-08-20",
             "time": "00:00",
             "text": "[동방] 주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
@@ -3462,51 +3561,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000015"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000015"
-          },
-          {
-            "date": "2026-08-20",
-            "time": "00:00",
-            "text": "[넥스턴앤롤코리아] 주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000411"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000411"
-          },
-          {
-            "date": "2026-08-20",
-            "time": "00:00",
-            "text": "[넥스턴앤롤코리아] 주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000407"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000407"
-          },
-          {
-            "date": "2026-08-20",
-            "time": "00:00",
-            "text": "[뉴보텍] 주요사항보고서(자기주식취득신탁계약해지결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000420"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000420"
-          },
-          {
-            "date": "2026-08-20",
-            "time": "00:00",
-            "text": "[넥스턴앤롤코리아] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000403"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000403"
-          },
-          {
-            "date": "2026-08-20",
-            "time": "00:00",
-            "text": "[이엠앤아이] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000381"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000381"
           },
           {
             "date": "2026-08-19",
@@ -3561,60 +3615,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000254"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000254"
-          },
-          {
-            "date": "2026-08-19",
-            "time": "00:00",
-            "text": "[코아스] 주요사항보고서(자기전환사채만기전취득결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000187"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000187"
-          },
-          {
-            "date": "2026-08-18",
-            "time": "00:00",
-            "text": "[한국전자홀딩스] [기재정정]주요사항보고서(자기주식처분결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000202"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000202"
-          },
-          {
-            "date": "2026-08-18",
-            "time": "00:00",
-            "text": "[한국카본] [첨부정정]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000021"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000021"
-          },
-          {
-            "date": "2026-08-18",
-            "time": "00:00",
-            "text": "[한국카본] [첨부정정]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000020"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000020"
-          },
-          {
-            "date": "2026-08-18",
-            "time": "00:00",
-            "text": "[한국카본] [첨부정정]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000019"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000019"
-          },
-          {
-            "date": "2026-08-18",
-            "time": "00:00",
-            "text": "[한국카본] [첨부정정]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000018"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000018"
           }
         ]
       }
