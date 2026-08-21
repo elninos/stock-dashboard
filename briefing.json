@@ -1,6 +1,6 @@
 {
   "2026-08-21": {
-    "fetched_at": "2026-08-21T12:53:05+09:00",
+    "fetched_at": "2026-08-21T14:36:05+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -239,16 +239,6 @@
         "posts": [
           {
             "date": "2026-08-21",
-            "time": "08:42",
-            "text": "✅ 대주전자재료, 북미 우주항공기업 협력 확대…음극재·CNT 샘플 공급\n\nhttps://www.edaily.co.kr/News/Read?newsId=02633846645549616&mediaCodeNo=257\n\n📌 우주항공 고객사 양산 라인 진입 가시화\n대주전자재료, 태양전지 페이스트 업체 중 유일하게 고객사 텍사스 공장 초청받아 상용 공급 협의\n\n현지 R&D 협의 후 태양전지 약 10만장 제조·테스트 가능한 규모의 페이스트 공급\n\n고객사 양산 로드맵 공유받고 소재 검증 및 공급 준비 단계 진입 \n\n📌 10GW×2개 공장, 2030년 100GW 확대 계획\n고객사는 텍사스에 각각 10GW 규모 태양전지 공장 2개 동 건설 중\n\n2026년 9월 장비 입고 시작, 2027년 1분기 초 양산 목표\n\n텍사스 공장을 마더 팩토리로 활용해 2030년까지 발전 용량 100GW 이상 확대 계획 \n\n📌 실리콘 음극재·SWCNT까지 공급 영역 확장\n우주 데이터센터 백업 전원용 배터리 적용을 위한 실리콘 음극재 샘플 공급 및 개발 협력 착수\n\n고객사는 실리콘 음극재를 20~30% 첨가하는 방안 추진\n\n대주전자재료는 팽창 문제를 보완하는 단일벽 CNT(SWCNT)까지 패키지 형태로 샘플 공급 중 \n\n📌 중국·대만 공급망 배제 시 메인 벤더 가능성\n미국 수퍼 301조 영향으로 중국산 소재의 가격 경쟁력 약화\n\n고객사는 지정학적 리스크를 고려해 대만산 페이스트도 배제하기로 한 것으로 전해짐\n\n기존 포르쉐 타이칸·파나소닉향 실리콘 음극재 양산 경험까지 감안하면 우주항공향 공급 확대가 핵심 주가 촉매 \n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://www.edaily.co.kr/News/Read?newsId=02633846645549616&amp;mediaCodeNo=257",
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/29004"
-          },
-          {
-            "date": "2026-08-21",
             "time": "08:54",
             "text": "💻 엔비디아, '中 맞춤형 AI 칩' 출시설에…\"계획 없다\"\n\nhttps://www.news1.kr/world/northeast-asia/6265105\n\n📌 “중국 전용 LPU 로드맵 없다”\n엔비디아가 중국 맞춤형 LPU 개발·출시설을 공식 부인\n\n현재 중국에 LPU를 판매하지 않고 제품 로드맵에도 없다고 설명\n\n그록 기술 기반 연내 출하설과 선을 그은 것\n\n📌 추론용 LPU 기대감은 일단 제동\nLPU는 LLM 추론을 고속 처리하는 전용 프로세서\n\n엔비디아는 지난해 12월 Groq와 추론 기술 비독점 라이선스 체결\n\n다만 해당 기술의 중국 전용 제품화는 현재 부인한 상황\n\n📌 H200 중국 판매와는 별개\n중국이 최근 H200의 제한적 본토 반입을 허용한 것으로 전해짐\n\n바이트댄스·텐센트는 각각 약 1만개를 공급받은 것으로 보도\n\n미국 수출 허가와 중국의 자국산 우선 정책이 동시에 변수\n\n📌 차세대 CPU ‘Vera’로 우회 공략\n엔비디아는 중국 AI칩 시장에서 화웨이에 점유율을 상당 부분 내준 상황\n\nGPU보다 수출통제 부담이 낮은 Vera CPU 판매 확대를 추진\n\n중국 사업 회복은 H200 반입 확대와 Vera 채택 여부가 핵심\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
             "links": [
@@ -389,6 +379,55 @@
               "https://t.me/growthbio"
             ],
             "post_url": "https://t.me/growthresearch/29019"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "13:21",
+            "text": "🧬 중국 바이오, 美 규제 압박에도 기술이전 급증...올해 글로벌 딜 가치 3분의 2 차지 전망\n\n💊 상반기 라이선스아웃 153조 원\n2026년 상반기 중국 바이오의 해외 기술이전은 81건\n\n총 계약가치는 1,100억달러(약 153조 원)로 2025년 연간의 약 80% 수준\n\n미국 기업이 여전히 가장 주요한 인수·도입 주체\n\n💊 중국 자산 비중 5년 만에 5%→67%+\nEvaluate는 올해 전체 라이선스 딜 가치 중 중국 자산 비중을 3분의 2 이상으로 전망\n\n2025년 약 50%, 5년 전 5% 미만에서 급증\n\n정치적 리스크보다 혁신 자산의 가격·개발속도가 수요를 견인\n\n💊 임상비용 44% 낮아 서구권 유입 지속\n비소세포폐암 임상 비용은 환자당 미국 29.6만달러\n\n중국은 약 16.5만달러로 44% 저렴\n\n빠른 임상 속도와 낮은 비용이 중국 신약의 경쟁력\n\n💊 플랫폼 딜·계약금도 대형화\n플랫폼 계약 규모는 단일 자산 라이선스 대비 약 3배 수준\n\n평균 계약금은 2022년 5,200만달러→2026년 초 1.72억달러\n\n美 규제 강화에도 딜 자체보다 실사 강화·공급망 이원화로 대응하는 흐름\n\n🧬바이오섹터 분석🧬 [그로쓰리서치]\nhttps://t.me/growthbio",
+            "links": [
+              "https://t.me/growthbio"
+            ],
+            "post_url": "https://t.me/growthresearch/29020"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "13:40",
+            "text": "✅ '화장품산업육성법' 국회 통과…연구개발부터 수출까지 전주기 지원\n\nhttps://www.korea.kr/news/policyNewsView.do?newsId=148970423\n\n📌 K-뷰티 산업 지원 법적 기반 마련\n화장품산업 육성 및 지원에 관한 법률 제정안 국회 본회의 통과\n\n기존 안전·품질 중심 화장품법에서 산업 육성 정책까지 지원 범위 확대\n\n제조·브랜드뿐 아니라 연구개발·원료·용기·유통까지 지원 가능\n\n📌 지난해 수출 114억달러 ‘역대 최대’\n한국 화장품 수출액은 지난해 114억달러로 세계 2위 수준\n\n국내 중소기업 수출 품목 가운데 화장품이 1위 차지\n\n정부 지원 확대가 중소·중견 K-뷰티 기업의 해외 성장에 우호적\n\n📌 R&D·AI·해외진출 집중 지원\n연구개발과 데이터·AI·디지털 기술 기반 산업 혁신 지원\n\n전문인력 양성·원료·용기 육성·유통구조 개선도 추진\n\n해외시장 진출 사업에서 중소·중견기업 우대 가능\n\n📌 ‘혁신형 화장품기업’ 인증제 도입\nR&D 투자·해외진출 역량을 갖춘 기업을 혁신형 화장품기업으로 인증\n\n인증기업은 정부·지자체 지원사업과 R&D 사업에서 우대\n\n공포 후 1년 뒤 시행 예정으로 향후 세부 지원책 발표가 핵심\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
+            "links": [
+              "https://www.korea.kr/news/policyNewsView.do?newsId=148970423",
+              "https://telegram.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/29021"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "13:58",
+            "text": "💻 삼성전자, AI 반도체 ‘배선 저항’ 45% 낮췄다…미세화 한계 돌파 기술 개발\n\nhttps://www.dt.co.kr/article/12079400\n\n📌 루테늄 선저항 45% 낮춰\n삼성전자 종합기술원이 탄소 기반 촉진제를 활용한 배선 기술 개발\n\n나노미터급 루테늄 배선에서 기존 대비 선저항 약 45% 절감\n\n연구 결과는 세계적 학술지 ‘사이언스’ 본지에 게재\n\n📌 결정 배열 99% 이상 정렬\n미량의 탄소 촉진제로 금속 결정 방향과 결정립계를 제어\n\n루테늄 결정의 99% 이상을 동일 방향으로 배열하는 데 성공\n\n비정질 절연막 위에서도 고배향 박막 구현\n\n📌 초미세 배선 병목 해결 가능성\n배선 미세화 시 결정립계 충돌로 저항·발열·전력손실 증가\n\n이번 기술은 소재 교체보다 결정구조 제어로 저항을 낮춘 방식\n\n신호 지연 감소와 전력효율 개선에 직접 기여 가능\n\n📌 AI·HPC 첨단공정 적용 기대\n향후 실제 공정 적용 시 AI 가속기·HPC용 로직 반도체 성능 개선 기대\n\n트랜지스터 미세화뿐 아니라 배선 기술이 첨단공정 경쟁력 핵심으로 부상\n\n삼성전자의 차세대 로직 공정 원천기술 확보 측면에서 주목\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
+            "links": [
+              "https://www.dt.co.kr/article/12079400",
+              "https://telegram.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/29022"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "14:30",
+            "text": "✅ \"삼성전자 성과급 무효, 주총서 결정해야\"…주주·노조 공동 대응\n\nhttps://www.news1.kr/finance/general-stock/6265634\n\n📌 성과급 배분 방식 문제 제기\n대한민국 주주운동본부와 삼성전자 동행노조가 공동 선언 5개 항 발표\n\n특정 사업부 실적이 아닌 전 부문 공통 성과 기준 적용 요구\n\n📌 특별경영성과급 협약 무효 주장\n지난 5월 27일 합의된 DS부문 영업이익 연동 특별경영성과급 협약은 무효라는 입장\n\n기본급 인상·근로시간·복리후생 등 기본협약은 유지 요구\n\n📌 영업이익 연동 성과급은 이익처분\n주주운동본부는 영업이익과 연동된 성과급을 회사 이익 배분으로 보고 주주총회 승인이 필요하다고 주장\n\n성과급 재원·규모뿐 아니라 주주환원 규모도 주총에서 최종 결정하는 방안 제안\n\n📌 법적 대응 가능성\n삼성전자 이사회와 대표이사에 공동 선언 전달 후 14일 이내 서면 회신 요청 예정\n\n요구가 받아들여지지 않을 경우 협약 무효확인 소송·지급금지 가처분·이사 충실의무 관련 법적 조치 등을 공동 검토\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
+            "links": [
+              "https://www.news1.kr/finance/general-stock/6265634",
+              "https://telegram.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/29023"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "14:30",
+            "text": "🧬 [속보] 올릭스, 한소와 공동연구·염기서열 이전 계약\n\nhttps://www.cbci.co.kr/news/articleView.html?idxno=600022\n\n💊 2개 타깃 염기서열 글로벌 이전\n올릭스가 中 한소제약과 공동연구 및 염기서열 이전 계약 체결\n\n2개 타깃 개발후보물질 관련 올리고뉴클레오티드 서열이 대상\n\n한소는 전 세계에서 개발·제조·상업화에 해당 서열 활용\n\n💊 계약 규모는 지난해 매출 10% 이상\n선급금·개발 및 상업화 마일스톤·서브라이선스 수익·로열티 포함\n\n세부 계약금액과 마일스톤은 상대방 요청으로 비공개\n\n총 계약금액은 2025년 연결 매출 147억원의 10% 이상\n\n💊 수령 마일스톤 반환 의무 없어\n선급금을 포함한 단계별 마일스톤은 반환 의무가 없는 구조\n\n향후 임상·허가·상업화 진전에 따라 추가 수익 발생 가능\n\n서브라이선스와 판매 로열티까지 장기 수익원 확보\n\n💊 규제기관 허가가 선행 조건\n이번 계약은 의약품 규제기관 허가 완료 후 이행되는 조건부 계약\n\n개발 중단·허가 실패 또는 상대방 의사에 따라 계약 종료 가능\n\n계약 종료 시 올릭스의 위약금 지급 의무는 없음\n\n🧬바이오섹터 분석🧬 [그로쓰리서치]\nhttps://t.me/growthbio",
+            "links": [
+              "https://www.cbci.co.kr/news/articleView.html?idxno=600022",
+              "https://t.me/growthbio"
+            ],
+            "post_url": "https://t.me/growthresearch/29024"
           }
         ]
       },
@@ -399,22 +438,6 @@
         "category": "매크로/크립토",
         "channel_url": "https://t.me/SpartanResearch",
         "posts": [
-          {
-            "date": "2026-08-18",
-            "time": "22:28",
-            "text": "버터대디 님 \n\nhttps://contents.premium.naver.com/butterdaddy/butterdaddy123/contents/260818202317123tw",
-            "links": [
-              "https://contents.premium.naver.com/butterdaddy/butterdaddy123/contents/260818202317123tw"
-            ],
-            "post_url": "https://t.me/SpartanResearch/4840"
-          },
-          {
-            "date": "2026-08-18",
-            "time": "22:43",
-            "text": ">>트럼프: 현재와 앞으로 이란과 어떠한 회담도 진행하지 않을 것 (신화통신) \n\n•트럼프 대통령은 18일 소셜미디어를 통해 현재와 앞으로 이란과 어떠한 회담이나 대화도 진행하지 않을 것이라고 밝혔음\n\n•또한 미국의 대이란 해상 봉쇄는 여전히 전면적으로 유효, 호르무즈 해협은 개방돼 정상적으로 운영되고 있고 모든 기뢰는 제거되거나 폭파돼었음",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/4841"
-          },
           {
             "date": "2026-08-18",
             "time": "23:30",
@@ -538,6 +561,26 @@
             "text": "트럼프 대통령이 그의 행정부가 “암호화폐에 대한 전쟁을 끝냈다”고 말했습니다.\n\n또한 미국이 비트코인과 암호화폐를 \"상당한 양\" 축적하는 것에 대해 \"논의했다\"고 밝혔습니다.",
             "links": [],
             "post_url": "https://t.me/SpartanResearch/4859"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "13:11",
+            "text": "2026.08.21 13:11:31\n기업명: 알테오젠(시가총액: 16조 8,529억) A196170\n보고서명: 신규시설투자등\n\n*투자구분 및 목적\n- 공장신설\n- 바이오의약품 사업 확대 및 글로벌 시장 대응을 위한 생산역량 확보 목적\n\n투자금액 : 2,532억\n자본대비 : 55.7%\n\n투자시작 : 2026-08-21\n투자종료 : 2028-09-30\n투자기간 : 2.1년\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821900238\n회사정보: https://finance.naver.com/item/main.nhn?code=196170",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821900238",
+              "https://finance.naver.com/item/main.nhn?code=196170"
+            ],
+            "post_url": "https://t.me/SpartanResearch/4860"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "14:16",
+            "text": "2026.08.21 14:16:01\n기업명: 올릭스(시가총액: 2조 410억) A226950\n보고서명: 투자판단관련주요경영사항              (Hansoh와의 공동연구 및 염기서열 이전 계약 체결)\n\n제목 : Hansoh와의 공동연구 및 염기서열 이전 계약 체결\n\n* 주요내용 \n※ 투자유의사항 \n동 계약은 의약품규제기관의 허가가 완료되어야 이행되는 조건부 계약으로서, 본 계약을 통한 수익 인식은 임상시험과 품목허가 등의 성공 여부에 따라 달라질 수 있습니다. 계약 조건에 따라, 규제기관에 의한 연구,개발의 중단, 품목허가 실패 등 발생시 계약이 해지될 수 있습니다. \n \n1) 계약상대방 : \n\n- Hansoh Bio LLC (미국) \n\n- Hansoh (Shanghai) Healthtech CO., LTD. (중국) \n\n- Jiangsu Hansoh Pharmaceutical Group Company Limited (중국, 이하 한소) \n \n2) 계약의 내용 \n\n- 올릭스가 소유하거나 관리하는 권리의 범위 내에서, 한소는 라이선스 제품의 개발, 제조 및 상업화와 관련하여 염기서열(Base sequence)을 사용하는 계약 \n\n- 상기 염기서열(Base sequence)은 두 개의 타겟에 대한 개발 후보 물질과 관련하여 식별된 올리고뉴클레오티드(Oligonucleotide) 서열을 의미 \n \n3) 계약체결일 : 2026년 8월 21일 \n \n4) 계약기간 : 본 계약에 따른 모든 지급 의무가 만료되거나 완전히 이행될 때까지 \n \n5) 계약지역 : 전 세계 \n \n6) 계약금액 \n\n- Upfront Fee : 인보이스 발행 후 30영업일 이내 수령 \n\n- Development/Commercial Milestone (임상 및 허가, 상업화 등에 따른 단계별로 수령하는 마일스톤) : 인보이스 발행 후 30일 이내 수령 \n\n- Sublicense Income \n\n- Royalties \n\n=> 상기 금액은 계약 상대방의 요청에 따라 공시유보\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821900292\n회사정보: https://finance.naver.com/item/main.nhn?code=226950",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821900292",
+              "https://finance.naver.com/item/main.nhn?code=226950"
+            ],
+            "post_url": "https://t.me/SpartanResearch/4861"
           }
         ]
       },
@@ -548,25 +591,6 @@
         "category": "매매 신호/트레이딩",
         "channel_url": "https://t.me/d_ticker",
         "posts": [
-          {
-            "date": "2026-08-11",
-            "time": "16:48",
-            "text": "인텔, 주식 공모 규모를 200억 달러로 확대, 주당 가격 95달러로 결정\n\n인텔은 보통주 210,526,315주의 인수 공모 가격을 주당 95달러로 책정했습니다. 인텔은 인수자에게 공모가에 최대 31,578,947주의 보통주를 추가로 매입할 수 있는 30일 옵션을 부여하고 인수 할인을 줄였습니다. 이 공모는 이전에 발표된 공모 규모인 150억 달러에서 200억 달러로 확대\n\nhttps://www.intc.com/news-events/press-releases",
-            "links": [
-              "https://www.intc.com/news-events/press-releases"
-            ],
-            "post_url": "https://t.me/d_ticker/3665"
-          },
-          {
-            "date": "2026-08-11",
-            "time": "16:58",
-            "text": "[단독] 엔비디아, 루빈 울트라 메모리 용량 축소 검토\n\n- 최근 루빈 울트라 GPU 3가지 버전 테스트\n- 일부는 메모리 용량 축소 버전으로\n- 메모리 확보 못할 가능성 대비한다고\n- 아직 루빈 울트라 사양 확정된 거 아님\n- 내년 말까지 루빈 울트라 출시 계획 없음\n- 루빈 울트라 판매 가격도 안 정해짐\n- 아직 메모리 공급 조정 시간 충분\n\n별 내용 없는 기사입니다\n\nThe Information",
-            "links": [
-              "https://www.theinformation.com/articles/nvidia-weighs-radical-idea-less-rubin-ultra-chip-memory?utm_campaign=Editorial&amp;amp;utm_content=Article&amp;amp;utm_medium=organic_social&amp;amp;utm_source=bluesky%2Cthreads%2Ctwitter&amp;amp;rc=3nnj10",
-              "https://www.theinformation.com/articles/nvidia-weighs-radical-idea-less-rubin-ultra-chip-memory?utm_campaign=Editorial&amp;utm_content=Article&amp;utm_medium=organic_social&amp;utm_source=bluesky%2Cthreads%2Ctwitter&amp;rc=3nnj10"
-            ],
-            "post_url": "https://t.me/d_ticker/3666"
-          },
           {
             "date": "2026-08-14",
             "time": "09:17",
@@ -706,6 +730,23 @@
               "https://www.chosun.com/economy/industry-company/2026/08/21/MR3WT5TL4RF3ZOZHAMUMKYZQC4/"
             ],
             "post_url": "https://t.me/d_ticker/3685"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "13:47",
+            "text": "브로드컴 $100B 이상 조달\n\n- 아폴로 등 복수 PE들 특수목적법인(SPV) 설립\n- SPV의 회사채 발행으로 $100B 자금조달 추진\n- 이후 SPV는 브로드컴 칩 구매하고 인프라 구축\n- 앤스로픽이 이 인프라 장기 사용하는 고객으로\n- 고객은 대규모 CAPEX 쓰는 대신 월세내는 셈\n- SPV는 고객 사용료로 현금흐름 확보 가능\n- 브로드컴은 고객의 AI 칩 채택 상승하며 수혜\n- 돈없는 고객 때문에 발생하는 병목 뚫겠다는 구상\n\nhttps://www.bloomberg.com/news/articles/2026-08-20/broadcom-seeks-more-than-60-billion-in-latest-ai-debt-deal",
+            "links": [
+              "https://www.bloomberg.com/news/articles/2026-08-20/broadcom-seeks-more-than-60-billion-in-latest-ai-debt-deal",
+              "https://www.bloomberg.com/news/articles/2026-08-20/broadcom-seeks-more-than-60-billion-in-latest-ai-debt-deal?utm_campaign=article_email&amp;utm_content=article-17651&amp;utm_medium=email&amp;utm_source=sg"
+            ],
+            "post_url": "https://t.me/d_ticker/3686"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "13:53",
+            "text": "AI 수요 → 자금조달 → 부지·전력·쉘 구축 → 컴퓨트/네트워크 설치 → AI 인프라 가동(매출화)\n\nAI 인프라가 실제 매출로 이어지는 과정을 5단계로 나누면, 브로드컴이 PE들과 추진하는 SPV 구조는 이 가운데 자금조달 병목을 제거하겠다는 방안입니다\n\n여기서 아폴로·블랙스톤 등 PE들이 단순히 돈을 빌려주는 데 그치지 않는데, 이들은 데이터센터 개발사, 토지/전력 인프라 등 다양한 대체투자자산 포트폴리오와 생태계를 자체적으로 갖고 있어 다음 과정인 부지·전력·쉘(LPS) 병목도 함께 잡을 수 있습니다\n\n정리하면 브로드컴, 엔비디아가 최근 PE들과 손잡고 파이낸싱 하는 배경에는 LPS 병목 해결도 있다는 점이 핵심입니다",
+            "links": [],
+            "post_url": "https://t.me/d_ticker/3687"
           }
         ]
       },
@@ -724,74 +765,6 @@
         "category": "국내 시장/종목 분석",
         "channel_url": "https://t.me/Yeouido_Lab",
         "posts": [
-          {
-            "date": "2026-08-20",
-            "time": "18:47",
-            "text": "이슬기 디앤디파마텍 대표 “한국형 빅바이오텍 신화 쓴다” < 인터뷰 < 기사본문 - 인사이트코리아\n\nQ. DD01 임상 2상에서 유의미한 결과를 확보했다. 연내 대형 LO를 위해 남은 기간 무엇을 준비하나\nA. 글로벌 제약사의 LO 검토 관점에서 기준을 충족하는 객관적이고 종합적인 데이터 패키지를 구성하는 데 역량을 집중하고 있다. EASL 2026에서 독립된 복수의 병리학자 판독으로 통계적으로 유의미한 조직생검 결과를 공개했고, Qfibrosis를 활용해 신뢰도를 높였다. 유효성에 더해 안전성까지 확보되어 잠재적 Best in class 약물로 보고 있다.\n\nQ. MASH 시장은 마드리갈, 노보, 릴리 등 경쟁이 본격화 중이다. DD01의 차별점은 무엇인가.\nA. 레즈디프라, 세마글루타이드, 터제파타이드는 체중감소가 우선이고 그 부수적 효과로 mash가 해소. 하지만 DD01 은 글루카곤 활성화로 간 지방을 직접 개선. 실제 임상에서는 12주 만에 전체 투약군의 약 절반의 mash가 정상화되었다. 빠른 기전이 파트너링에서 독보적 차별성으로 주목받을 것으로 본다. \n\nQ. 경구 GLP-1 시장이 형성중인데, 오럴링크의 강점은 무엇인가?\nA. 경구비만약 시장은 위고비필, 릴리의 파운다요를 중심으로 재편중. 초기 처방은 펩타이드 형식의 위고비필이 앞선다. 이는 펩타이드의 안전성과 효능이 검증되어 있기 때문. 오럴링크는 펩타이드에 비타민의 일종인 비오틴을 결합해 동물실험 기준 흡수율을 기존 10배 이상 끌어올렸다는 점에서 원가경쟁력과 차별성을 확보.\n\nQ. UCN2 는 어디까지 자체 개발하나?\nA. 연내 유의미한 전임상 결과를 공유할 수 있을 것으로 본다. 전임상 결과가 나오거나 초기임상에서 효과가 확인되는 시점에 글로벌 제약사와 LO 논의가 있을 것.\n\nQ. 연내흑자가 확보되면 재원분배 계획은?\nA. TLY012 개발속도 향상과 오럴링크를 활용한 초기단계 프로그램에 투자할 계획이다. \n\nQ. 연내 LO와 흑자전환이 이루어진 뒤 회사의 목표는?\nA.  내년 임상에 들어가는 TLY012는 이미 미국에서 만성췌장염, 전신경화증 희귀의약품으로 지정. 특히 만성췌장염은 지정사례가 단 3건이 불과할 만큼 독점적 가치가 있음. 간경화증에서 유효성이 확인되면 다양한 섬유화 질환으로 적응증 확장이 가능하다. 나아가 하이브리드 모델의 성공으로 한국형 빅바이오텍의 이정표가 되는 것이 회사의 목표.",
-            "links": [
-              "https://www.insightkorea.co.kr/news/articleView.html?idxno=252852"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37278"
-          },
-          {
-            "date": "2026-08-20",
-            "time": "18:48",
-            "text": "얼마까지 보고오셨어요...?\n\n삼성전자, 메모리 호황에 150조원 푼다…사상 최대 주주환원\nhttps://n.news.naver.com/mnews/article/015/0005322843",
-            "links": [
-              "https://n.news.naver.com/mnews/article/015/0005322843"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37279"
-          },
-          {
-            "date": "2026-08-21",
-            "time": "08:31",
-            "text": "Citadel: AI 지출\n\n상위 1% 기업의 직원 1인당 AI 지출은 7월에 전월 대비 약 50% 증가했습니다.\n\n상위 10% 기업의 직원 1인당 AI 지출은 7월에 전월 대비 25% 증가했습니다.\n\n토큰 가격은 계속 낮아지고 있지만, AI 관련 지출은 오히려 증가하고 있습니다.\n\nhttps://x.com/pequityresearch/status/2090516215135412278?s=46",
-            "links": [
-              "https://x.com/pequityresearch/status/2090516215135412278?s=46"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37281"
-          },
-          {
-            "date": "2026-08-21",
-            "time": "08:37",
-            "text": "[SK증권 반도체 한동희, 손 건]\n\n닛케이 \"삼성전자, $72B(100조원) 규모 주주환원 프로그램 임박\"\n\n▶️ 주주환원 프로그램 개요\n\n- 삼성전자, 8월 21일(금) 이사회 개최 후 100조원(약 $72B) 규모 주주환원 프로그램 발표 전망\n- 국내 사상 최대 규모 주주환원 전망\n- SK하이닉스의 40조원 자사주 매입 계획에 이어, AI 수요發 현금창출력을 활용한 대규모 환원 확산\n\n▶️ 배경\n\n- 그간 임직원 평균 약 6억원 상당 성과급 지급에는 합의했으나 자사주 매입·배당 확대는 없었던 데 대한 투자자 압박\n- AI 관련 투자 우려로 눌려있던 주가 부양 목적도 반영된 것으로 관측\n\n▶️ URL: https://buly.kr/4bkehNm\n\n* SK증권 리서치 IT팀 채널 :\nhttps://t.me/skitteam",
-            "links": [
-              "https://buly.kr/4bkehNm",
-              "https://t.me/skitteam"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37283"
-          },
-          {
-            "date": "2026-08-21",
-            "time": "09:00",
-            "text": "SK하이닉스                골드만\n\n\nBuy           TP 350만 원\n\n\n🎯 헤드라인: 40조 원 자사주 매입·소각 발표 — \"앞으로 더 온다\"\n\n40조 원 규모 자사주 매입·소각 발표 —  매입은 8월 20일부터 개시, 3개월 내 집행(일별 매입 물량은 미정). 회사 측 발표 사유: 현 주가가 기업가치를 제대로 반영하지 못하고 있어 효율적 자본배분과 주주가치 제고 차원의 결정.\n\n\n💰 주주환원 정책 업데이트\n\n3년 누적 FCF의 \"50%\" → \"최소 50%\"로 목표 상향, 자사주 매입 + 배당 병행 집행. 고정배당·특별배당을 포함한 배당 확대도 검토 중이며, 상세 계획은 3분기 실적 콜(10월 말 예상)에서 공개 예정.\n\n\n✅ 골드만이 보는 시사점\n\n① 시장은 8월 말~9월 초 발표를 예상했기에 이번 발표는 예상보다 다소 빠름. ② 일회성 이벤트가 아니라 바이백·배당 추가 환원이 이어질 것임을 시사한 점이 또 다른 긍정 포인트. ③ 2,400만 주 소각은 최근 ADR 상장 시 발행한 1,770만 주의 희석을 충분히 상쇄하고도 남음. ④ 환원 목표 상향은 메모리 업사이클과 그에 따른 현금창출력에 대한 강한 자신감의 방증.\n\n\n🔢 골드만 추정치\n\n2025~27E 누적 FCF 약 252조 원 전망, 이 중 약 55%(약 140조 원)가 주주환원된다고 가정. 이번 40조 바이백 + 누적 배당 약 30조 원(현 모델링)을 제하면 정책 기간 내 약 70조 원의 추가 바이백·소각 여지. \n\n현 시총 기준 주주환원 수익률은 2026E 약 3.5%, 2027E 약 8% 수준. 바이백·소각 및 추가 바이백에 따른 주식 수 감소를 반영해 2026E/27E/28E EPS를 각각 +4%/+10%/+10% 상향(27E EPS 44.7만 → 49.2만 원).\n\n\n💡 밸류에이션·리스크\n\nTP 350만 원은 2026~27E 평균 EPS에 P/E 9.0배 적용. 현재 P/E는 2026E 3.8배 / 2027E 3.0배. \n\n리스크: 메모리 수급 악화·기술 전환 지연, 스마트폰/PC/서버 수요 부진, 삼성의 HBM 사업 진전, AI capex 둔화에 따른 HBM 수요 감소.",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/37284"
-          },
-          {
-            "date": "2026-08-21",
-            "time": "10:06",
-            "text": ">>마이크론 CEO: AI가 메모리 반도체 사이클을 완전히 재편\n\n•마이크론 CEO 산제이 메흐로트라는 AI가 메모리 반도체를 높은 경기순환성을 가진 범용 부품에서 AI 인프라에 필수적인 전략적 부품으로 바꿨다고 평가\n\n•현재 데이터센터 고객들의 구매 의향은 마이크론이 실제로 공급을 약속할 수 있는 물량의 약 150% 수준으로, 수요가 공급을 약 50% 초과하고 있음.\n\n•마이크론의 생산능력을 확대하고 있지만 여전히 시장 수요를 충족하지 못하고 있음\n\n•메모리 조달 방식도 기존의 ‘가격 비교·입찰’ 중심에서 고객과 함께 제품을 설계하는 공동 설계 방식으로 전환되고 있음\n\n>美光CEO：AI彻底重写存储芯片周期逻辑，客户需求超出公司供给约50% https://wallstreetcn.com/articles/3779960#from=ios",
-            "links": [
-              "https://wallstreetcn.com/articles/3779960#from=ios",
-              "https://wallstreetcn.com/articles/3779960"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37287"
-          },
-          {
-            "date": "2026-08-21",
-            "time": "10:35",
-            "text": "코스닥은 여기 치이고 저기 치이고 사주는 사람은 없고...",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/37288"
-          },
-          {
-            "date": "2026-08-21",
-            "time": "10:49",
-            "text": "📌 삼성전자우 특별배당 시 연환산 수익률\n현재가 204,000원, 8월 21일 매수 → 연말 배당 권리 확보일인 12월 28일까지 129일 보유 가정\n• 특별배당 15,000원 → 배당수익률 7.35% → 연환산 약 20.8%\n• 특별배당 17,500원 → 배당수익률 8.58% → 연환산 약 24.3%\n• 특별배당 20,000원 → 배당수익률 9.80% → 연환산 약 27.7%\n\n※ 특별배당 기준일을 12월 31일로 가정한 단순 연환산이며, 배당 권리 확정 이후 실제 배당금 수령일까지의 기간은 계산에서 제외. 주가 변동·배당락·세금도 제외한 단순 계산.",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/37289"
-          },
           {
             "date": "2026-08-21",
             "time": "10:55",
@@ -855,6 +828,104 @@
               "https://n.news.naver.com/article/009/0005723836?type=editn&amp;cds=news_edit"
             ],
             "post_url": "https://t.me/Yeouido_Lab/37298"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "12:54",
+            "text": "mRNA 암백신에 들썩이는 K바이오…새로운 '기회의 문' 열릴까\n\nhttps://n.news.naver.com/mnews/article/277/0005805632?sid=101\n\n기회의 문은 개뿔, 다 물렸슈...",
+            "links": [
+              "https://n.news.naver.com/mnews/article/277/0005805632?sid=101"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37299"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "12:57",
+            "text": "메르님 모더나 이슈 해설\n\nhttps://blog.naver.com/ranto28/224384480633",
+            "links": [
+              "https://blog.naver.com/ranto28/224384480633"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37300"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "13:13",
+            "text": "2026.08.21 13:11:31\n기업명: 알테오젠(시가총액: 16조 8,529억) A196170\n보고서명: 신규시설투자등\n\n*투자구분 및 목적\n- 공장신설\n- 바이오의약품 사업 확대 및 글로벌 시장 대응을 위한 생산역량 확보 목적\n\n투자금액 : 2,532억\n자본대비 : 55.7%\n\n투자시작 : 2026-08-21\n투자종료 : 2028-09-30\n투자기간 : 2.1년\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821900238\n회사정보: https://finance.naver.com/item/main.nhn?code=196170",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821900238",
+              "https://finance.naver.com/item/main.nhn?code=196170"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37301"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "13:13",
+            "text": "2026.08.21 13:11:31 기업명: 알테오젠(시가총액: 16조 8,529억) A196170 보고서명: 신규시설투자등  *투자구분 및 목적 - 공장신설 - 바이오의약품 사업 확대 및 글로벌 시장 대응을 위한 생산역량 확보 목적  투자금액 : 2,532억 자본대비 : 55.7%  투자시작 : 2026-08-21 투자종료 : 2028-09-30 투자기간 : 2.1년  공시링크: https://dart.fss.or.kr/dsaf001/main.do?r…",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/37302"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "13:16",
+            "text": "안녕하세요. 알테오젠이 바이오의약품 DS(원료의약품) 및 DP(완제의약품) 생산시설을 구축한다고 조금 전 공시했습니다.\n\n▶️ 2028년 완공을 목표로 3년에 걸쳐 2,532억원을 투자할 계획이며, 이 바이오 plant에서는 당사의 ALT-B4(성분명: 베라히알루로니다제 알파), ALT-L9(아일리아 바이오시밀러) 등 제품을 생산할 예정입니다. \n\n▶️ 당사는 지금까지 국내외 여러 CMO를 통해 제품을 생산해왔으나, 회사의 중장기 성장전략과 바이오의약품 사업 확대를 위해 자체 생산시설 구축을 결정했습니다. \n\n공시는 하단 링크를 통해 확인해주시기 바랍니다.\n\nhttps://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821900238",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821900238"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37303"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "13:54",
+            "text": "잘생긴 형님 누가 해설 좀",
+            "links": [
+              "https://blog.naver.com/alteking/224385555167"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37304"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "14:00",
+            "text": "향후 5년간 예상 매출 성장률:\nSpaceX: +2,090%\nNvidia: +288%\nSamsung: +244%\nAlphabet: +140%\nMicrosoft: +136%\nMeta: +133%\nTesla: +119%\nAmazon: +81%\nApple: +54%\n(애널리스트 평균 추정치 기준)\n\n일론 머스크\n\"지금은 말도 안 되는 소리처럼 들리겠지만, SpaceX와 Tesla 모두 이 추정치를 넘어설 것이라 생각합니다.\"",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/37305"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "14:05",
+            "text": "8월 1~20일 MLCC 수출단가:  삼성전기의 대리점향 30% 가격 인상 통보 이후 반등",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/37306"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "14:13",
+            "text": "제목 : 美 재무장관 “美 국채 바이백 규모 40억달러 웃돌 수 있어”                                                                            *연합인포맥스*\nCNBC는 “20일(목) 스콧 베선트 미 재무장관은 국채 바이백 가속화 규모가 당초 발표한 40억 달러를 넘어설 수 있다고 밝혔다”고 보도했다.   “베선트 장관은 최근 금리가 급등하고 있는 장기채에 대해 재무부가 시장을 조성할 것이라고 발언했다”고 전했다.   이어 베선트 장관은 “바이백 규모를 확대할 것이며, 규모는 40억 달러를 넘을 수도 있다”고 덧붙였다.   한편 매체는 “19일 미 재무부는 기존에 예정됐던 20억 달러 규모의 장기채 바이백을 두 배로 확대하겠다고 발표했고, 이에 따라 국채 금리는 급락한 바 있다”고 설명했다.",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/37307"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "14:17",
+            "text": "2026.08.21 14:16:01\n기업명: 올릭스(시가총액: 2조 410억) A226950\n보고서명: 투자판단관련주요경영사항              (Hansoh와의 공동연구 및 염기서열 이전 계약 체결)\n\n제목 : Hansoh와의 공동연구 및 염기서열 이전 계약 체결\n\n* 주요내용 \n※ 투자유의사항 \n동 계약은 의약품규제기관의 허가가 완료되어야 이행되는 조건부 계약으로서, 본 계약을 통한 수익 인식은 임상시험과 품목허가 등의 성공 여부에 따라 달라질 수 있습니다. 계약 조건에 따라, 규제기관에 의한 연구,개발의 중단, 품목허가 실패 등 발생시 계약이 해지될 수 있습니다. \n \n1) 계약상대방 : \n\n- Hansoh Bio LLC (미국) \n\n- Hansoh (Shanghai) Healthtech CO., LTD. (중국) \n\n- Jiangsu Hansoh Pharmaceutical Group Company Limited (중국, 이하 한소) \n \n2) 계약의 내용 \n\n- 올릭스가 소유하거나 관리하는 권리의 범위 내에서, 한소는 라이선스 제품의 개발, 제조 및 상업화와 관련하여 염기서열(Base sequence)을 사용하는 계약 \n\n- 상기 염기서열(Base sequence)은 두 개의 타겟에 대한 개발 후보 물질과 관련하여 식별된 올리고뉴클레오티드(Oligonucleotide) 서열을 의미 \n \n3) 계약체결일 : 2026년 8월 21일 \n \n4) 계약기간 : 본 계약에 따른 모든 지급 의무가 만료되거나 완전히 이행될 때까지 \n \n5) 계약지역 : 전 세계 \n \n6) 계약금액 \n\n- Upfront Fee : 인보이스 발행 후 30영업일 이내 수령 \n\n- Development/Commercial Milestone (임상 및 허가, 상업화 등에 따른 단계별로 수령하는 마일스톤) : 인보이스 발행 후 30일 이내 수령 \n\n- Sublicense Income \n\n- Royalties \n\n=> 상기 금액은 계약 상대방의 요청에 따라 공시유보\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821900292\n회사정보: https://finance.naver.com/item/main.nhn?code=226950",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821900292",
+              "https://finance.naver.com/item/main.nhn?code=226950"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37308"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "14:25",
+            "text": "한소제약 시총 대충 원화로 35조",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/37309"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "14:34",
+            "text": "제목 : 美 재무장관 “재정적자, 정점 지났을 가능성 매우 높아”                                                                               *연합인포맥스*\nCNBC는 “20일(목) 스콧 베선트 미 재무장관은 도널드 트럼프 대통령 재임 기간 동안 미국의 재정적자가 이미 정점을 지났을 가능성이 매우높다고 언급했다”고 보도했다.   국채 바이백 확대를 발표한 다음날 베선트 장관은 “우리는 재정 문제에 극도로 집중할 것이다”고 전했다.   매체는 “지난주 미 재무부가 발표한 자료에 따르면 7월 미국의 월간 재정적자는 4,320억달러를 넘어 5년래 최고 수준을 기록했다. 이에 따라 이번 회계연도 누적 재정적자는 약 1.8조 달러로 확대돼 전년 동기 수준을 웃돌았다”고 설명했다.   이어 “재무부는 이번주 이러한 재정적자를 충당하기 위해 발행된 미 부채가 사상 처음으로 40조 달러를 넘어섰다고 발표했다. 미국의 국가부채는 지난 10년간 두 배 이상 증가했으며, 이에 따라 미국의 재정 건전성에 대한 우려도 커지고 있다”고 덧붙였다.   한편 베선트 장관은 “본인을 포함해 트럼프 대통령, 러셀 보우트 백악관 예산관리국(OMB) 국장 등 연방정부 주요 관계자들이 재정 건전화 조치를 추진하고 있다. 이를 통해 수천억 달러 규모의 재정을 아낄 수 있다”고 주장했다.   매체는 “미 정부는 광범위하고 높은 수준의 관세를 교역국에 부과하는 정책이 세수를 확대하고 국가부채를 줄이는 데 기여할 수 있다고 강조해 왔다. 하지만 연방대법원이 관세에 대해 상당수 무효화하는 판결을 내리면서 타격을 입었다”고 밝혔다.   그럼에도 불구하고 베선트 장관은 “법적 문제 이후 관세가 다시 부과된 만큼 올해 관세 수입이 ‘25년과 비슷한 수준을 기록할 것으로 예상한다. 또 이번에는 해당 관세 수입을 기업들에 환급할 필요가 없을 것이다”고 언급했다.",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/37312"
           }
         ]
       },
@@ -873,22 +944,6 @@
         "category": "매크로 분석",
         "channel_url": "https://t.me/kkkontemp",
         "posts": [
-          {
-            "date": "2026-08-12",
-            "time": "06:26",
-            "text": "반도체 투자 안전지대 진입중\n\n차트: SMH 반도체 ETF 변동성 지수",
-            "links": [],
-            "post_url": "https://t.me/kkkontemp/2579"
-          },
-          {
-            "date": "2026-08-12",
-            "time": "15:38",
-            "text": "https://www.citadelsecurities.com/news-and-insights/global-market-intelligence/august-checklist/",
-            "links": [
-              "https://www.citadelsecurities.com/news-and-insights/global-market-intelligence/august-checklist/"
-            ],
-            "post_url": "https://t.me/kkkontemp/2580"
-          },
           {
             "date": "2026-08-13",
             "time": "07:57",
@@ -955,6 +1010,22 @@
             "text": "전반적 한국 증시 관점 \n\n1. 주주환원 이벤트화의 한계: 주주환원은 한국 증시 리레이팅의 핵심 동력이지만 (물론 추가적으로 지배구조 개선과 미래 성장 투자가 함께 이루어져야 찐 리레이팅) 단기 일회성 이벤트로만 소비되는 한계\n\n2. 수급왜곡과 펀더멘털의 괴리: 사소한 악재에도 외국인 HFT(고빈도 알고리즘) 수급이 가격을 크게 흔들며, 펀더멘털 대비 과도한 밸류에이션 할인이 지속되는 구간. 맞대응할 수 있는 주체가 없는건 아쉬움\n\n3. 보수적 시각이 지배적: 이메일 인박스에는 '단기 박스권 대응'과 '보수적 시각'이 주를 이루고 있음 \n\n4. 우호적 매크로: 약달러, 글로벌 유동성 고점 경신, 유동성 프록시 (금·은·비트코인) 강세, 미 실질금리 완화 등 EM 증시에 우호적인 매크로 환경에도 불구하고, 국장 투자심리는 이를 반영하지 못하는 디커플링 국면",
             "links": [],
             "post_url": "https://t.me/kkkontemp/2598"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "13:27",
+            "text": "현재 매크로 자산군 전반(금, 은, 비트코인, 구리, 유가)에서 동시다발적인 베어마켓 시그널이 관측되고 있음. 이와 함께 장기물 중심의 채권 금리 하락, 글로벌 유동성 축소, 미국 금융조건 지수(FCI)의 소폭 타이트닝이 진행 중.  매크로 환경의 기저에서 명확한 위험 회피(Risk-off) 또는 성장 둔화의 역학이 작동하고 있음에도 불구하고, 주식 시장만큼은 견조한 주당순이익(EPS) 성장세를 바탕으로 강력한 불 모멘텀을 유지하는 디커플링이 지속되고 있음.…",
+            "links": [
+              "https://t.me/kkkontemp/2456"
+            ],
+            "post_url": "https://t.me/kkkontemp/2599"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "13:28",
+            "text": "달러원 모건스탠리: 외환(FX) 파급 기제는 명확합니다. 삼성전자는 상당한 규모의 해외 달러(USD) 자산을 보유하고 있습니다. 자사주 매입, 배당금 지급, 임원·직원 주식 보상 등 원화 기준 지급금을 마련하기 위해, 삼성전자는 이미 보유 중인 원화를 사용하거나 달러를 매도하여 원화를 매수하게 됩니다. 어느 쪽이든 시장은 이를 대규모의 구조적인 원화(KRW) 수요 유입으로 가격에 반영하고 있습니다.",
+            "links": [],
+            "post_url": "https://t.me/kkkontemp/2600"
           }
         ]
       },
@@ -3176,6 +3247,15 @@
           {
             "date": "2026-08-21",
             "time": "00:00",
+            "text": "[KC그린홀딩스] [기재정정]주요사항보고서(채권은행등의관리절차개시)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000302"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000302"
+          },
+          {
+            "date": "2026-08-21",
+            "time": "00:00",
             "text": "[카카오] 주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
             "links": [
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000052"
@@ -3523,15 +3603,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004306"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004306"
-          },
-          {
-            "date": "2026-08-14",
-            "time": "00:00",
-            "text": "[KG케미칼] 주요사항보고서(자기주식처분결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003888"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003888"
           }
         ]
       }
