@@ -1,6 +1,6 @@
 {
   "2026-08-24": {
-    "fetched_at": "2026-08-24T20:32:22+09:00",
+    "fetched_at": "2026-08-24T22:54:12+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -416,13 +416,6 @@
         "channel_url": "https://t.me/SpartanResearch",
         "posts": [
           {
-            "date": "2026-08-19",
-            "time": "18:31",
-            "text": "* SK하이닉스, 익일 (20일) 자사주 매입 신청 65만주\n\n- 금일 종가 150만원 기준, 자사주 매입 규모 9,750억원 수준\n\n- 주가 상승 시 규모는 조단위로 증가\n\n(KIND 공시)",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/4856"
-          },
-          {
             "date": "2026-08-20",
             "time": "11:08",
             "text": "✅ [단독]삼성전자, 사상 최대 주주환원 100조 시대 공식화..\"내년에 더\"\n\nhttps://www.mt.co.kr/industry/2026/08/20/2026082009501899910\n\n📌 8월 중 이사회 개최 예정\n삼성전자는 8월 중 이사회를 열고 특별현금배당 등 주주환원 방안을 의결할 예정\n\n기사에 따르면 전체 환원 규모는 100조원을 넘는 수준으로 검토\n\n국내 기업 기준 사상 최대 규모의 주주환원 정책이 될 전망\n\n📌 핵심 기준은 FCF의 50%\n주주환원 재원으로 잉여현금흐름(FCF)의 50%를 활용할 계획\n\n시설투자·R&D 등 현금 지출을 제외한 FCF를 기준으로 환원 규모 결정\n\n내년 실적과 현금흐름이 확대될 경우 주주환원 절대금액 역시 증가 가능\n\n📌 현금배당 중심 전망\n구체적인 주주환원 방식은 자사주 소각보다 현금배당 중심이 될 전망\n\n삼성생명·삼성화재의 삼성전자 지분율과 금산법 규제를 고려하면 자사주 소각보다 배당 방식이 지배구조 측면에서 유리\n\n📌 추가 주주환원도 지속 검토\n삼성전자는 이번 발표 이후에도 현금흐름과 실적 변화를 바탕으로 추가적인 주주환원을 검토할 계획\n\n지난 7월 실적발표에서도 특별배당을 포함한 주주환원 정책을 이사회와 경영진이 논의 중이라고 공식 언급\n\n📌 체크포인트\n현재 기사 기준 100조원대 주주환원은 아직 이사회 의결 전 단계\n\n향후 실제 발표에서 확인해야 할 핵심은\n① 총 환원 규모 ② 특별배당 규모 ③ FCF 50% 적용 기간 ④ 추가 환원 정책\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
@@ -574,6 +567,13 @@
             "text": "8/26 16:00 제12차 전력수급기본계획 수립을 위한 제6차 대국민 정책토론회(재생에너지 보급 전망)를 개최\n    \n - 제12차 전기본 총괄위원회와 분과회의 논의 결과를 토대로 태양광, 풍력 등 재생에너지 원별 보급 전망 잠정안을 공개하며, 재생에너지가 국가 탄소중립 및 온실가스 감축목표 이행의 핵심 수단임을 강조함.\n    \n - RE100 이행 요구 증가와 첨단산업의 무탄소 전력 수요 확대로 국가 산업 경쟁력과 연계되는 재생에너지 적기 공급의 중요성이 부각",
             "links": [],
             "post_url": "https://t.me/SpartanResearch/4876"
+          },
+          {
+            "date": "2026-08-24",
+            "time": "20:59",
+            "text": "소식통에 따르면 BESSENT가 국채 재무일반계정(TGA) 약 1조 달러를 활용해 채권 매입 자금을 마련할 수 있을 것이라고 함.",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/4877"
           }
         ]
       },
@@ -770,42 +770,6 @@
         "posts": [
           {
             "date": "2026-08-24",
-            "time": "10:15",
-            "text": "2026.08.24 10:12:07\n기업명: 엘에스일렉트릭(시가총액: 28조 4,550억) A010120\n보고서명: 단일판매ㆍ공급계약체결\n\n계약상대 : LS ELECTRIC AMERICA Inc. \n계약내용 : ( 기타 판매ㆍ공급계약 ) Big Tech Data Center 전력설비 공급 PJT \n공급지역 : 미국 \n계약금액 : 2,309억\n\n계약시작 : 2026-06-08\n계약종료 : 2027-01-30\n계약기간 : 7개월\n매출대비 : 4.65%\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260824800095\n최근계약 : https://www.awakeplus.co.kr/board/contract/010120\n회사정보: https://finance.naver.com/item/main.nhn?code=010120",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260824800095",
-              "https://www.awakeplus.co.kr/board/contract/010120",
-              "https://finance.naver.com/item/main.nhn?code=010120"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37338"
-          },
-          {
-            "date": "2026-08-24",
-            "time": "10:42",
-            "text": "'금산법 10%룰' 묶인 삼성전자 주주환원…우선주 소각 늘리나\nhttps://news.einfomax.co.kr/news/articleView.html?idxno=4431396",
-            "links": [
-              "https://news.einfomax.co.kr/news/articleView.html?idxno=4431396"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37340"
-          },
-          {
-            "date": "2026-08-24",
-            "time": "10:56",
-            "text": "기술이전도 단순히 기술이전했다는 사실만으로 기업가치가 리레이팅되는 시기는 지나가고 있다. 최근 계약금과 로열티 조건이 시장의 기대를 크게 뛰어넘지 못했던 만큼, 경제적 권리와 파트너의 개발 의지가 뒷받침되지 않는 기술이전은 단기 모멘텀이 그칠 가능성이 높다.\n<키움증권 허혜민 연구원>\n\nㅇ 기술이전의 결과로 안정적인 현금흐름을 창출할 수 있는가? \nㅇ 기업가치의 중장기 향상에 기여할 수 있는가?\n\nhttps://blog.naver.com/nukestrat/224387553969",
-            "links": [
-              "https://blog.naver.com/nukestrat/224387553969"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37341"
-          },
-          {
-            "date": "2026-08-24",
-            "time": "11:05",
-            "text": "삼성전자로 대가리가 터진 놈",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/37342"
-          },
-          {
-            "date": "2026-08-24",
             "time": "11:12",
             "text": "오름테라퓨틱, 글로벌 1위 DAC…빅파마 진입으로 가치 부각\nhttps://www.hankyung.com/article/202608247657i",
             "links": [
@@ -908,6 +872,33 @@
               "https://hankyung.com/article/2026082496041"
             ],
             "post_url": "https://t.me/Yeouido_Lab/37358"
+          },
+          {
+            "date": "2026-08-24",
+            "time": "20:43",
+            "text": "⚡️⚡️⚡️ 미국 재무부, 채권 시장에 1조 달러 규모 자금 투입 가능성 시사 \n\n미국 재무부가 보유한 약 1조 달러의 현금을 활용해 채권 매입을 확대할 수 있으며, 이는 장기 금리를 낮추는 데 큰 동력이 될 수 있다는 분석임.\n\n미 재무부는 최근 만기가 긴 증권에 대한 최소 매입 규모를 40억 달러로 두 배 늘린 바 있으며, 베센트(Bessent)는 이보다 더 큰 규모의 매입도 가능하다고 시사했음. \n\n기존 재무부 현금을 사용하면 프로그램의 시장 영향력을 강화하는 동시에 연방준비제도(Fed)의 개입 필요성을 줄일 수 있을 것으로 보임.",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/37359"
+          },
+          {
+            "date": "2026-08-24",
+            "time": "21:17",
+            "text": "TGA 가동. 금리 하락폭 확대\n\n=========================\n\n~ The Treasury could use its near $1 trillion General Account to help fund its recently announced plans to increase purchases of government bonds, according to two senior Treasury officials\n\nhttps://www.google.com/amp/s/www.cnbc.com/amp/2026/08/24/bessent-1-trillion-treasury-general-account-bond-buybacks.html",
+            "links": [
+              "https://www.google.com/amp/s/www.cnbc.com/amp/2026/08/24/bessent-1-trillion-treasury-general-account-bond-buybacks.html",
+              "https://google.com/amp/s/www.cnbc.com/amp/2026/08/24/bessent-1-trillion-treasury-general-account-bond-buybacks.html"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37360"
+          },
+          {
+            "date": "2026-08-24",
+            "time": "21:54",
+            "text": "안녕하세요. 당사의 파트너제품인 GSK의 Jemperli가 직장암 치료에 대해 미국 FDA로부터 priority review(우선 검토)를 받으며 적응증 확대에 나섰습니다.\n \n• 미국 FDA는 이전에 치료받지 않은 2기 및 3기 dMMR/MSI-H 국소 진행성 직장암 환자에서 우선 검토를 위해 Jemperli(성분명: dostarlimab)에 대한 sBLA(추가 생물학적 제제 허가 신청)을 승인했습니다.\n\n• 해당 sBLA는 미국 National Priority Voucher program(국가 우선 바우처 프로그램)을 통해 신속 심사를 받아 승인결정일을 2027년 2월로 단축했습니다.\n\n자세한 내용은 아래 링크의 PR 참조해주시기 바랍니다.\nhttps://www.gsk.com/en-gb/media/press-releases/jemperli-dostarlimab-accepted-for-priority-review-by-the-us-fda/#",
+            "links": [
+              "https://www.gsk.com/en-gb/media/press-releases/jemperli-dostarlimab-accepted-for-priority-review-by-the-us-fda/#",
+              "https://gsk.com/en-gb/media/press-releases/jemperli-dostarlimab-accepted-for-priority-review-by-the-us-fda"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37361"
           }
         ]
       },
