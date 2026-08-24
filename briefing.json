@@ -1,6 +1,6 @@
 {
   "2026-08-24": {
-    "fetched_at": "2026-08-24T18:52:24+09:00",
+    "fetched_at": "2026-08-24T20:32:22+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -770,15 +770,6 @@
         "posts": [
           {
             "date": "2026-08-24",
-            "time": "09:19",
-            "text": "https://blog.naver.com/nukestrat/224386400748\n\n꽤 많은 품을 들여서 직접 분석해봤습니다. 허혜민 연구원님께서 올 4월에 발간한 '가치의 귀환' 이라는 리포트에서 디앤디파마텍의 DD01 파이프라인 가치를 임상 결과 발표 이전 1.8조, 성공한다면 5.2조 원으로 추정한 적이 있습니다. 그 리포트를 제가 직접 스프레드시트에 여러 가정사항들을 포함하여 재구성하였습니다. 제가 직접 구현해본 케이스에서도 선급금 포함 약 5.６조 정도의 가치로 추산됩니다. 시간이 지나면서 가정사항들이 변화한다면 지금 구축해놓은 이 모델에 대입하여 가치 추산이 가능하지 않을까 생각합니다．",
-            "links": [
-              "https://blog.naver.com/nukestrat/224386400748"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37337"
-          },
-          {
-            "date": "2026-08-24",
             "time": "10:15",
             "text": "2026.08.24 10:12:07\n기업명: 엘에스일렉트릭(시가총액: 28조 4,550억) A010120\n보고서명: 단일판매ㆍ공급계약체결\n\n계약상대 : LS ELECTRIC AMERICA Inc. \n계약내용 : ( 기타 판매ㆍ공급계약 ) Big Tech Data Center 전력설비 공급 PJT \n공급지역 : 미국 \n계약금액 : 2,309억\n\n계약시작 : 2026-06-08\n계약종료 : 2027-01-30\n계약기간 : 7개월\n매출대비 : 4.65%\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260824800095\n최근계약 : https://www.awakeplus.co.kr/board/contract/010120\n회사정보: https://finance.naver.com/item/main.nhn?code=010120",
             "links": [
@@ -907,6 +898,16 @@
               "https://www.hankyung.com/article/2026082496041"
             ],
             "post_url": "https://t.me/Yeouido_Lab/37357"
+          },
+          {
+            "date": "2026-08-24",
+            "time": "20:03",
+            "text": "한국전력은 최근 웨스팅하우스 지분을 인수하자는 미국 측 제안을 받아 검토하고 있다. 한미 양국이 공동출자한 특수목적법인 등을 통해 웨스팅하우스 지분을 인수하고, 이 투자기구가 미국 내 원전 건설을 주도하는 방식이 거론되는 것으로 알려졌다. 정부는 우선 한전을 인수 주체로 내세우되 대미투자펀드를 투자 재원으로 활용하는 방안도 고민 중인 것으로 알려졌다. \n\nhttps://www.hankyung.com/article/2026082496041",
+            "links": [
+              "https://www.hankyung.com/article/2026082496041",
+              "https://hankyung.com/article/2026082496041"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37358"
           }
         ]
       },
