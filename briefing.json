@@ -1,6 +1,6 @@
 {
   "2026-08-25": {
-    "fetched_at": "2026-08-25T11:18:56+09:00",
+    "fetched_at": "2026-08-25T12:51:32+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -246,27 +246,6 @@
         "posts": [
           {
             "date": "2026-08-24",
-            "time": "15:36",
-            "text": "✅[탐방노트] 인스피언\n\n📍 SAP 연계 컨설팅 기반의 높은 진입장벽\nSAP와 기업의 내부·외부 시스템을 연결하는 인터페이스 구축·운영 사업을 약 25년간 수행\n\n회사 추정 국내 SAP 연계 컨설팅 시장점유율은 약 70%로, 삼성전자·SK하이닉스·HD현대중공업 등 주요 고객 프로젝트를 지원\n\n비상주 개발자가 여러 프로젝트를 동시에 수행해 인력 기반 사업임에도 약 25% 수준의 높은 영업이익률을 확보\n\n📍 SAP 보안 솔루션의 반복 매출 확대\n개인정보 암복호화·접근제어·분리보관 및 파기 솔루션을 자체 개발해 기존 SAP 고객을 대상으로 추가 판매\n\n암복호화 제품은 대량 데이터 처리 성능을 기반으로 회사 추정 시장점유율 60% 이상을 확보했으며, 접근제어 제품도 직접 경쟁 제품이 제한적\n\n암호화 대상 확대와 해외 법인 추가, SAP 클라우드 전환 및 버전 변경에 따라 라이선스·업데이트 매출이 반복되는 구조\n\n📍 EDI SaaS와 해외 진출이 핵심 성장 동력\n기업 간 주문·물류·통관 데이터를 전자적으로 연결하고 지역·산업별 글로벌 EDI 표준을 하나의 SaaS에서 지원\n\nEDI SaaS 매출은 2025년 약 20억원에서 2026년 약 48억원으로 증가하고 손익분기점을 돌파하는 것이 회사 목표\n\n인도 소프트링크의 전 세계 50개국 약 5,000개 고객사를 대상으로 해외 화물 신고 서비스를 공급할 기반을 확보했으며, 회사는 2026년 매출 15~20% 성장과 영업이익 약 55억원을 목표로 제시\n\n✅ 탐방노트 보러가기\n[네이버프리미엄콘텐츠]\nhttps://contents.premium.naver.com/growthresearch/growth/contents/260824145414595vr\n\n[홈페이지]\nhttps://www.growthresearch.co.kr/membership/1430/1148",
-            "links": [
-              "https://contents.premium.naver.com/growthresearch/growth/contents/260824145414595vr",
-              "https://www.growthresearch.co.kr/membership/1430/1148"
-            ],
-            "post_url": "https://t.me/growthresearch/29094"
-          },
-          {
-            "date": "2026-08-24",
-            "time": "16:09",
-            "text": "💻 [단독] 케이씨텍, 앱솔릭스에 유리기판용 CMP 장비·슬러리 공급\n\nhttps://www.thelec.kr/news/articleView.html?idxno=61274\n\n📌 유리기판 CMP 시장 첫 진입\n케이씨텍이 SKC 자회사 앱솔릭스에 CMP 장비·슬러리 단독 공급\n\n이르면 올해 4분기부터 공급 시작 예정\n\n유리기판용 CMP 장비 가격은 대당 70억~80억원 수준\n\n📌 고사양화로 CMP 공정 신규 채택\n앱솔릭스는 제품 사양 상향 과정에서 CMP 공정을 추가\n\n미세배선·TGV 공정에서 요구되는 평탄도 수준이 높아진 영향\n\nCMP 적용으로 유리·구리 단차를 줄여 수율 개선 가능\n\n📌 장비+슬러리 동시 공급 구조\n장비는 라인 구축 시 대규모 매출 발생\n\n슬러리는 생산량에 따라 반복적으로 소모되는 소재\n\n앱솔릭스 양산 확대 시 지속적인 슬러리 매출 증가 기대\n\n📌 첨단 패키징으로 사업영역 확대\n기존 삼성전자·SK하이닉스 전공정 CMP에서 유리기판까지 확장\n\n510×515㎜ 패널용 CMP 장비도 자체 개발 완료\n\n브로드컴·대만 파워텍 싱가포르 합작사에도 장비 공급 타진 중\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
-            "links": [
-              "https://www.thelec.kr/news/articleView.html?idxno=61274",
-              "https://telegram.me/growth_semi",
-              "https://thelec.kr/news/articleView.html?idxno=61274"
-            ],
-            "post_url": "https://t.me/growthresearch/29095"
-          },
-          {
-            "date": "2026-08-24",
             "time": "16:26",
             "text": "✅ 中 TV 세계 1위 굳히기…상반기 삼성·LG보다 41만 대 앞섰다\n\nhttps://www.news1.kr/industry/general-industry/6267547\n\n📌 중국 TV, 5개 분기 연속 한국 앞서\n상반기 TCL·하이센스 합산 출하량 2,931만 대\n\n삼성전자·LG전자 합산 2,890만 대보다 41만 대 많아\n\n지난해 2분기부터 5개 분기 연속 중국 2사가 우위\n\n📌 개별 기업 1위는 삼성전자\n삼성전자 1,760만 대로 글로벌 1위 유지\n\nTCL 1,508만 대, 하이센스 1,423만 대, LG전자 1,130만 대 순\n\n다만 2분기 한·중 2강 격차는 1분기 8만 대에서 33만 대로 확대\n\n📌 공급망·원가 경쟁력이 성장 동력\nTCL은 대규모 조달을 바탕으로 제품 고급화와 가격 경쟁력 확보\n\n하이센스는 100인치 이상 TV 시장을 기반으로 RGB 미니 LED 제품군 확대\n\n중국 업체들이 공급망 통합과 원가 절감으로 미니 LED 대중화를 주도\n\n📌 삼성·LG, 프리미엄 제품으로 대응\n삼성전자와 LG전자는 미니 LED·RGB TV 제품군 확대\n\n삼성전자의 상반기 미니 LED TV 출하량은 전년 대비 200% 이상 증가\n\nLG전자도 OLED 중심 제품군에 RGB 기반 LCD TV를 추가\n\n📌 미니 LED 시장 고성장 전망\n올해 글로벌 미니 LED TV 출하량은 2,490만 대로 전년 대비 87% 증가 전망\n\n전체 TV 시장 내 비중은 12.8%까지 확대 예상\n\n반면 올해 세계 TV 출하량은 1억9,465만 대로 전년 대비 0.8% 감소 전망\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
             "links": [
@@ -387,6 +366,28 @@
               "https://telegram.me/growthresearch"
             ],
             "post_url": "https://t.me/growthresearch/29112"
+          },
+          {
+            "date": "2026-08-25",
+            "time": "12:05",
+            "text": "🧬 디앤디파마텍, ‘ObesityWeek’서 UCN2 타깃 비만 신약 ‘DD18’ 전임상 발표\n\nhttps://www.yakup.com/news/index.html?mode=view&cat=12&nid=331509\n\n💊 11월 ObesityWeek서 DD18 데이터 공개\n디앤디파마텍이 CRFR2 선택적 UCN2 유사체 DD18 전임상 결과 최초 발표\n\n세계 최대 비만 학회 ObesityWeek 2026에서 11월 14일 데이터 공개\n\n글로벌 제약사 대상 기술가치 검증 및 파트너링 기회 확대\n\n💊 ‘체중감량의 질’이 핵심 차별화\nDD18은 체지방 감소와 근육·제지방 보존을 동시에 목표\n\n기존 GLP-1 계열의 제지방 감소 한계를 보완하는 비인크레틴 접근\n\nCRFR2 선택성과 장기 지속성을 갖도록 자체 설계\n\n💊 UCN2 글로벌 관심 급상승\n최근 UCN2 계열에서 대규모 글로벌 기술이전 계약이 성사\n\n차세대 비만치료제 신규 타깃으로 글로벌 빅파마 관심 확대\n\n디앤디파마텍은 약 2년 전부터 선제적으로 DD18 개발 진행\n\n💊 2027년 임상 진입·사업화 추진\n긍정적 전임상 결과를 기반으로 후속 개발 가속\n\n2027년 중 DD18 임상 개발 본격 진입 목표\n\n학회 발표 이후 글로벌 파트너사와 기술이전·사업화 논의도 병행\n\n🧬바이오섹터 분석🧬 [그로쓰리서치]\nhttps://telegram.me/growthbio",
+            "links": [
+              "https://www.yakup.com/news/index.html?mode=view&amp;cat=12&amp;nid=331509",
+              "https://telegram.me/growthbio",
+              "https://yakup.com/news/index.html?cat=12&amp;mode=view&amp;nid=331509"
+            ],
+            "post_url": "https://t.me/growthresearch/29114"
+          },
+          {
+            "date": "2026-08-25",
+            "time": "12:37",
+            "text": "✅ 한화에어로스페이스, 美 LNG 사업법인 설립\n\nhttps://www.thelec.kr/news/articleView.html?idxno=61315\n\n📌 미국에 ‘한화호라이즌 USA’ 설립\n한화에어로스페이스가 미국 LNG 사업 전담법인 신설\n\nLNG 조달·트레이딩·물류 최적화를 총괄\n\n한화해운 제임스 사가르 CEO가 대표를 겸직\n\n📌 2029년 여수 LNG 발전소에 연료 공급\n한화에너지 여수 LNG 발전소는 2029년 상업운전 예정\n\n한화호라이즌 USA가 발전소 연료 공급 역할 담당\n\n향후 국내외 발전사·에너지 기업으로 판매처 확대 계획\n\n📌 벤처글로벌과 LNG 물량 확보\n미국 LNG 생산기업 벤처글로벌과 구매 계약 체결\n\n한국남부발전과는 조달 경쟁력·공급망 다변화 MOU 체결\n\n미국산 LNG 기반 안정적 공급망 구축 추진\n\n📌 운송→공급→발전으로 사업 확장\n한화는 LNG 운송부터 공급·발전까지 사업영역 연결\n\n중장기적으로 아시아 등 글로벌 LNG 트레이딩 시장 진출 추진\n\n단순 조달을 넘어 에너지 밸류체인 확대가 핵심\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
+            "links": [
+              "https://www.thelec.kr/news/articleView.html?idxno=61315",
+              "https://telegram.me/growthresearch",
+              "https://thelec.kr/news/articleView.html?idxno=61315"
+            ],
+            "post_url": "https://t.me/growthresearch/29115"
           }
         ]
       },
@@ -724,8 +725,7 @@
             "time": "08:27",
             "text": "엔비디아, 그록 3 LPU 본격 양산 돌입 발표\n\n- 삼성파운드리 4나노로 생산하는 그록\n- 세계 최고 수준의 생산 속도로 양산 중\n- 베라루빈 플랫폼부터 본격 도입\n- 네비우스는 그록 기반 추론 인프라 제공\n\nhttps://nvidianews.nvidia.com/news/nvidia-groq-3-lpx-now-in-full-production-with-world-class-speed-for-agentic-ai",
             "links": [
-              "https://nvidianews.nvidia.com/news/nvidia-groq-3-lpx-now-in-full-production-with-world-class-speed-for-agentic-ai",
-              "https://nvidianews.nvidia.com/news/nvidia-groq-3-lpx-now-in-full-production-with-world-class-speed-for-agentic-ai?ncid=so-link-957748"
+              "https://nvidianews.nvidia.com/news/nvidia-groq-3-lpx-now-in-full-production-with-world-class-speed-for-agentic-ai"
             ],
             "post_url": "https://t.me/d_ticker/3697"
           },
@@ -884,6 +884,31 @@
               "https://blog.naver.com/dogdum/224388873919"
             ],
             "post_url": "https://t.me/Yeouido_Lab/37373"
+          },
+          {
+            "date": "2026-08-25",
+            "time": "12:04",
+            "text": "오늘 한미약품의 빅딜을 보면서, 몇 가지 생각이 들었습니다. \n\n사실 한미약품 다음 타자로 타석에는 여러 기업들이 기술이전을 앞두고 있는데요. 오늘 한미약품이 총계약규모 약 3조, 선급금 약 2,600억 정도의 딜을 클로징했습니다. \n\n단일 파이프라인으로는 사상 최대였고, 주가는 상한가로 호응했습니다. 전임상 데이터만으로 이 정도 딜을 냈다는 것이 정말 믿기지 않을 정도고, 향후 디앤디파마텍이 보유한 UCN2 파이프라인의 가치를 산정함에 있어서 좋은 레퍼런스가 될 듯 합니다.\n\n저는 아직도 DD01 생각을 하는데요. \n\n과연 DD01이 오늘 한미 딜 규모를 넘길 수 있을까? 라는 생각을 하면서 작년에 나왔던 FGF21 계열 파이프라인 메인 딜 세 개를 분석해봤습니다. \n\n딜의 형태와 구조는 다르지만, 분명히 이 딜에서 크게 벗어나지는 않을 것이라고 확신하거든요.\n\n모두 성투하시기 바랍니다 :)\n\nhttps://m.blog.naver.com/nukestrat/224388768140",
+            "links": [
+              "https://m.blog.naver.com/nukestrat/224388768140"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37374"
+          },
+          {
+            "date": "2026-08-25",
+            "time": "12:04",
+            "text": "오늘 한미약품의 빅딜을 보면서, 몇 가지 생각이 들었습니다.   사실 한미약품 다음 타자로 타석에는 여러 기업들이 기술이전을 앞두고 있는데요. 오늘 한미약품이 총계약규모 약 3조, 선급금 약 2,600억 정도의 딜을 클로징했습니다.   단일 파이프라인으로는 사상 최대였고, 주가는 상한가로 호응했습니다. 전임상 데이터만으로 이 정도 딜을 냈다는 것이 정말 믿기지 않을 정도고, 향후 디앤디파마텍이 보유한 UCN2 파이프라인의 가치를 산정함에 있어서 좋은 레퍼런스가…",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/37375"
+          },
+          {
+            "date": "2026-08-25",
+            "time": "12:15",
+            "text": "https://n.news.naver.com/article/003/0014146292?sid=102",
+            "links": [
+              "https://n.news.naver.com/article/003/0014146292?sid=102"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37376"
           }
         ]
       },
