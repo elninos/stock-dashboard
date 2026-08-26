@@ -1,6 +1,6 @@
 {
   "2026-08-26": {
-    "fetched_at": "2026-08-26T11:25:35+09:00",
+    "fetched_at": "2026-08-26T12:55:55+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -246,37 +246,6 @@
         "posts": [
           {
             "date": "2026-08-25",
-            "time": "12:55",
-            "text": "✅ K-뷰티 수출, 인허가 순서 잘못 짜면 비용 2배\n\nhttps://www.yakup.com/news/index.html?mode=view&cat=12&nid=331492\n\n📌 수출 200개국 확대, 규제가 새 진입장벽\nK-뷰티 수출국이 200여개국으로 늘며 국가별 인허가 대응 중요성 상승\n\n중국 비중은 낮아지고 미국·일본·홍콩 및 10~20위권 국가 성장 확대\n\n제품 기획 단계부터 여러 국가의 규제 교집합을 반영하는 전략 필요\n\n📌 미국은 선케어·여드름 제품 OTC 적용\n미국은 자외선차단제·여드름·비듬샴푸 등을 일반의약품으로 분류\n\nMoCRA 시설등록·안전성 입증과 OTC 규정을 동시에 충족해야 수출 가능\n\n캘리포니아 PFAS·포장재 EPR 등 주별 규제까지 추가 대응 필요\n\n📌 EU 선등록이 글로벌 확장 효율 높인다\nEU는 RP 지정·PIF·CPSR·CPNP 등록 등 체계적인 자료 구축 요구\n\nEU 기준 자료를 활용하면 영국·대만·미국·아세안 진출 비용과 시간 절감 가능\n\n규제 대응 역량이 높은 ODM·원료·선케어 업체의 경쟁우위 확대 가능\n\n📌 인도네시아 할랄 의무화도 본격화\n인도네시아는 10월 18일부터 화장품 할랄 인증 전면 의무화\n\n말레이시아·중동 등 이슬람권으로 유사 인증 확대 가능성도 부각\n\n식약처는 국가별 할랄 원료 DB 구축과 11개국 규제협의체 G4RAS 출범 추진\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://www.yakup.com/news/index.html?mode=view&amp;cat=12&amp;nid=331492",
-              "https://t.me/growthresearch",
-              "https://yakup.com/news/index.html?cat=12&amp;mode=view&amp;nid=331492"
-            ],
-            "post_url": "https://t.me/growthresearch/29116"
-          },
-          {
-            "date": "2026-08-25",
-            "time": "14:25",
-            "text": "💻 HBM 가격, 2027년 큰 폭의 상승 전망\n\n📌 2026년 DRAM 가격 상승 지속\nTrendForce는 2026년 2분기 범용 DRAM 가격이 전분기 대비 58~63%, HBM을 포함한 혼합 DRAM 가격은 53~58% 상승한 것으로 추정\n\n3분기에는 각각 13~18%, 8~13% 상승하며 가격 오름폭은 둔화될 전망\n\n📌 2027년 HBM ASP 50% 이상 상승 가능성\n2027년 HBM 평균판매가격(ASP)이 전년 대비 50% 이상 상승할 것으로 전망\n\nAI ASIC 확대와 엔비디아 Rubin Ultra 출시를 기반으로 HBM 비트 출하량도 50~60% 증가할 것으로 예상\n\n가격과 출하량이 동시에 증가하는 구간에 진입할 가능성\n\n📌 UBS는 HBM ASP +79% 전망\nUBS는 HBM 공급업체들이 범용 DRAM 대비 가격 프리미엄을 다시 확대하면서 2027년 HBM ASP가 전년 대비 약 79% 상승할 것으로 전망\n\n이는 기존 전망치인 67%보다 12%p 높아진 수치\n\n📌 Rubin Ultra 사양 조정 가능성\nTrendForce는 2027년까지 DRAM 공급 부족과 HBM4E 인증 일정의 불확실성이 이어질 것으로 분석\n\n엔비디아가 Rubin Ultra의 HBM 적층 수와 용량을 낮춘 복수의 사양을 검토 중인 것으로 파악\n\nHBM 탑재량 조정은 단기 수요 변수가 될 수 있지만, 동시에 고사양 HBM 공급 부족이 지속되고 있다는 신호\n\n📌 핵심 포인트\n2027년 HBM 시장은 출하량 증가뿐 아니라 ASP 상승이 매출 성장을 함께 견인할 가능성\n\nHBM4·HBM4E 공급능력과 고객사 인증 속도에 따라 메모리 업체별 실적 차별화가 확대될 전망\n\n반도체 소부장에서는 HBM 생산능력 확대에 필요한 TSV·본딩·검사·패키징 장비와 소재 수요 증가 전망\n\n다만 Rubin Ultra의 최종 HBM 사양과 실제 공급계약 가격이 확정되지 않은 만큼, 50~79% 상승 전망은 시나리오별 추정치로 접근할 필요\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
-            "links": [
-              "https://telegram.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/29117"
-          },
-          {
-            "date": "2026-08-25",
-            "time": "14:58",
-            "text": "✅ 품귀 우려에도…아이폰18 한국 1차 출시 확정\n\nhttps://www.etnews.com/20260825000268\n\n📌 한국 1차 출시국 유지\n애플이 한국을 아이폰18 프로 시리즈 1차 출시국으로 확정\n\nSK텔레콤·KT·LG유플러스는 온·오프라인 판매 시스템과 프로모션 준비에 착수\n\n📌 9월 프로·폴더블 우선 공개\n아이폰18 프로·프로맥스와 첫 폴더블 아이폰은 9월 9일 공개 예상\n\n공개 이후 예약판매를 거쳐 1주일~10일 뒤 판매가 시작될 전망\n\n📌 초도 물량 부족 가능성\nD램 등 부품 부족으로 하반기 신제품 출하량은 전작보다 감소 예상\n\n국내 초도 물량이 제한될 경우 인기 색상·고용량 모델을 중심으로 품귀 가능성\n\n일부 제품의 수령 대기 기간은 2주~한 달까지 이어질 수 있다는 관측\n\n📌 아이폰 출시 일정 이원화\n프로·프로맥스와 폴더블 제품은 올해 하반기 우선 출시\n\n일반형 아이폰18·아이폰18 에어·아이폰18e는 2027년 상반기 출시가 유력\n\n올해 아이폰18 신제품 출하량은 일반형 출시 지연으로 전작보다 감소할 전망\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
-            "links": [
-              "https://www.etnews.com/20260825000268",
-              "https://telegram.me/growthresearch",
-              "https://etnews.com/20260825000268"
-            ],
-            "post_url": "https://t.me/growthresearch/29118"
-          },
-          {
-            "date": "2026-08-25",
             "time": "15:28",
             "text": "✅ '백색 황금' 꿈이 현실로..포스코, 서울 절반 크기 염호에 세운 공장서 리튬 뽑아냈다[르포]\n\nhttps://www.fnnews.com/news/202608251419212747\n\n📌 해발 4,000m서 상업생산 체계 구축\n옴브레 무에르토 염호의 염수리튬 1공장은 안정적인 생산 단계 진입\n\n탄산리튬을 생산하는 2공장도 오는 10월 준공을 앞두고 막바지 시운전 진행\n\n📌 리튬 자원 1,500만t 확보\n2018년 옴브레 무에르토 염호 광권을 약 2억8,000만달러에 인수\n\n지난 4월 인근 광권을 추가 확보하며 현지 염수리튬 자원량을 총 1,500만t까지 확대\n\n확보한 염호 면적은 287㎢로 서울시의 약 절반, 여의도의 99배 규모\n\n📌 연간 10만t·42년 생산 기반\n현재 확보한 자원만으로 연간 10만t 규모의 리튬을 약 42년간 생산 가능\n\n기존 생산시설 인근에 광권을 추가 확보해 향후 폰드와 공장 증설 공간도 마련\n\n📌 생산 효율·기술 경쟁력 확보\n염수를 폰드에서 농축한 뒤 불순물을 제거해 고순도 리튬으로 정제\n\n1공장 운영 과정에서 고순도·고수율과 낮은 제조원가를 위한 공정 노하우 축적\n\n📌 후속 공장 안정화 기간 단축 기대\n1공장을 사계절 가동하며 확보한 노하우를 2공장에 적용\n\n향후 3·4공장으로 증설할수록 폰드 운영과 생산 안정화 기간이 단축될 전망\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
             "links": [
@@ -423,9 +392,39 @@
             "links": [
               "https://www.mk.co.kr/news/it/12136363",
               "https://telegram.me/growthresearch",
-              "https://mk.co.kr/news/it/12136363"
+              "https://share.google/uNJyrG7e3rJsbVYQI"
             ],
             "post_url": "https://t.me/growthresearch/29137"
+          },
+          {
+            "date": "2026-08-26",
+            "time": "11:29",
+            "text": "✅\"중국 넘어 美·유럽 홀렸다\"…K뷰티株 신고가 '10조 대어'도 온다\n\nhttps://www.news1.kr/finance/general-stock/6269238\n\n📌 주요 화장품주 신고가 행진\n한국콜마는 이달 57.6% 상승하며 사상 최고가 경신\n\n실리콘투는 52.9%, 에이피알은 30% 이상 상승하며 같은 기간 코스피 상승률 2.2%를 크게 상회\n\n에이피알 시가총액은 16조원을 돌파\n\n📌 북미·유럽 중심으로 수출 다변화\n과거 중국 소비에 의존했던 화장품주 랠리와 달리 최근 성장은 북미·유럽 등 선진시장이 주도\n\n8월 1~20일 화장품 수출액은 7억1,400만달러로 전년 동기 대비 71.8% 증가\n\n미국·캐나다 수출은 182.7%, 유럽은 108.4% 급증\n\n📌 해외 매출이 실적 성장 견인\n에이피알의 2분기 해외 매출은 7,042억원으로 전년 동기 대비 178% 증가하며 전체 매출의 약 92% 차지\n\n북미·유럽 합산 매출 비중은 68%이며, 북미 매출은 3,763억원으로 264.6% 증가\n\n한국콜마도 2분기 매출 8,613억원, 영업이익 1,103억원으로 각각 17.9%, 50.2% 성장\n\n📌 해외 성장성이 주가 차별화 요인\n같은 화장품 업종에서도 해외 시장에서 얼마나 빠르게 성장하는지가 주가를 가르는 핵심 요인으로 부상\n\n중국 의존도가 높았던 아모레퍼시픽과 LG생활건강은 과거 최고가를 크게 밑도는 흐름\n\n📌 K뷰티 IPO 대어 출격 준비\n구다이글로벌은 조선미녀·스킨1004·티르티르 등을 기반으로 내년 초 코스피 상장을 추진\n\n무신사와 구다이글로벌은 9월 상장 예비심사를 청구할 예정이며, 시장에서는 각각 10조원 안팎의 기업가치가 거론\n\n상장 화장품 기업의 주가 상승은 비교기업 밸류에이션을 높여 신규 IPO 기업의 몸값 산정에도 긍정적으로 작용할 가능성\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
+            "links": [
+              "https://www.news1.kr/finance/general-stock/6269238",
+              "https://telegram.me/growthresearch",
+              "https://news1.kr/finance/general-stock/6269238"
+            ],
+            "post_url": "https://t.me/growthresearch/29138"
+          },
+          {
+            "date": "2026-08-26",
+            "time": "12:01",
+            "text": "✅ 그로쓰리서치 영문 홈페이지 오픈 안내\n\n⚡️ 영문 홈페이지 바로가기\nhttp://www.growthresearchen.com/\n\n앞서 말씀드린 바와 같이, 그로쓰리서치의 리포트는 현재 미국·캐나다 헤지펀드 등 글로벌 투자자들에게도 읽히고 있습니다.\n\n이에 따라 해외 투자자들의 수요에 맞춰 영문 리포트 발행을 진행하고 있으며,\n\n보다 적극적인 대응을 위해 영문 홈페이지를 새롭게 개설했습니다.\n\n해당 홈페이지에는 지금까지 발간한 영문 리포트들이 업로드되어 있으며, 향후 발간되는 영문 리포트도 지속적으로 업데이트될 예정입니다.\n\n많은 관심 부탁드립니다!\n\n————\n\n✅ Growth Research English Website Now Open\n\n⚡️ ENGLISH WEBSITE NOW LIVE\nhttp://www.growthresearchen.com/\n\nAs previously mentioned, Growth Research reports are now being read by hedge funds and other institutional investors in the U.S. and Canada.\n\nIn response to growing demand from global investors, we have been publishing English-language reports.\n\nTo further strengthen our engagement with overseas investors, we have also launched a dedicated English website.\n\nThe website currently includes the English reports we have published to date, and we will continue to update it with new English reports going forward.\n\nWe would appreciate your continued interest and support.\n\n✅ Korean Independent Research: Growth Research\nhttps://t.me/growthresearch",
+            "links": [
+              "http://www.growthresearchen.com/",
+              "https://t.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/29139"
+          },
+          {
+            "date": "2026-08-26",
+            "time": "12:20",
+            "text": "✅ 미국 소비, 소득보다 지출이 빠른 흐름 24개월 지속\n\n📌 역대 최장 격차 기록\n미국의 실질 가처분소득 증가율이 실질 소비지출 증가율을 24개월 연속 하회\n\n1960년대 이후 가장 긴 기간으로, 1970년대 후반의 이전 기록인 약 23개월을 넘어섬\n\n📌 저축으로 소비 여력 보완\n미국 개인저축률은 1월 이후 1.7%p 하락한 2.7% 기록\n\n2008년 금융위기 이후 네 번째로 낮은 수준까지 하락\n\n📌 신용카드 부채 급증\n2026년 2분기 미국 신용카드 부채는 전분기 대비 210억달러 증가한 1조2,600억달러 기록\n\n역대 두 번째로 높은 수준으로, 소비자들이 소득과 지출의 격차를 부채로 보완하고 있음을 시사\n\n📌 시사점\n현재 미국 소비는 실질소득 증가보다 저축 감소와 신용카드 부채 확대에 의존하는 구조\n\n낮은 저축률과 높은 부채가 지속될수록 향후 소비 여력과 소비경기 지속 가능성을 점검할 필요\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
+            "links": [
+              "https://telegram.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/29140"
           }
         ]
       },
@@ -724,8 +723,7 @@
             "time": "08:27",
             "text": "엔비디아, 그록 3 LPU 본격 양산 돌입 발표\n\n- 삼성파운드리 4나노로 생산하는 그록\n- 세계 최고 수준의 생산 속도로 양산 중\n- 베라루빈 플랫폼부터 본격 도입\n- 네비우스는 그록 기반 추론 인프라 제공\n\nhttps://nvidianews.nvidia.com/news/nvidia-groq-3-lpx-now-in-full-production-with-world-class-speed-for-agentic-ai",
             "links": [
-              "https://nvidianews.nvidia.com/news/nvidia-groq-3-lpx-now-in-full-production-with-world-class-speed-for-agentic-ai",
-              "https://ift.tt/B7UepED"
+              "https://nvidianews.nvidia.com/news/nvidia-groq-3-lpx-now-in-full-production-with-world-class-speed-for-agentic-ai"
             ],
             "post_url": "https://t.me/d_ticker/3697"
           },
@@ -933,6 +931,16 @@
             "text": "SK이노베이션-SKIET 합병 컨퍼런스콜\n\n▶ Analyst Comment: \n\n합병 비율은 (1 : 0.117454)이나, SK이노베이션 주주의 손실은 크지 않음:\n\n1) 신규교부비율은 2.6%에 불과: \nSK이노 (21조) vs SKIET (1.3조의 46.65%) \n* 개념적으로는 0.6조원(skiet 소액주주)/22조원(SK이노+SKIET 소액주주분) = 2.6% 희석\n\n2) 기타 비용발생: SKIET PRS (3,000억원)에 대한 보상금은 미정이나, 약 1,300~1,400억원\n* SKIET 주가 28,600원 이하 시, 차액 현금 지급 조항 존재\n* 1,300~1,400억원 = (28,600원-15,700원) x 1,049만주\n\n▶ 배경: \n- SKIET 분리막 실적/성장성 둔화를 인정 (가동률 20%), 사업/재무 리스크 선제적으로 완화하기 위함. \n- 3자 매각이나 자금대여보다는 합병이 실효성 있다고다고 판단함\n\n▶ 시너지: \n- 분리막 생산체계 안정화, R&D 통합에 따른 연구개선 \n- 신용도 안정화 및 관리비용 통합으로 고정비/운영비 절감, \n- 연결기준 부채는 유지 vs. 금융비용 절감\n*skiet로 인한 ski 그룹 신용도 훼손이 가장 큰 우려로 보였음",
             "links": [],
             "post_url": "https://t.me/Yeouido_Lab/37387"
+          },
+          {
+            "date": "2026-08-26",
+            "time": "12:37",
+            "text": "2026.08.26 11:01:57\n기업명: 에스케이바이오팜(시가총액: 6조 8,524억) A326030\n보고서명: 투자판단관련주요경영사항              (뇌전증 신약 후보 물질 Opakalim 등에 대한 라이선스 인 계약)\n\n제목 : 뇌전증 신약 후보 물질 Opakalim(BHV-7000), 기타 칼륨채널(Kv7) 활성화제 화합물 및 Kv7 Discovery Platform에 대한 라이선스(Licensing-in) 계약\n\n* 주요내용 \n※ 투자유의사항 \n동 계약은 조건부 계약으로서, 본 계약을 통한 비용 인식은 임상시험과 품목허가 등의 성공 여부에 따라 달라질 수 있습니다. 계약 조건에 따라, 규제기관에 의한 연구·개발의 중단, 품목허가 실패 등 발생시 계약이 해지될 수 있습니다. \n \n \n1) 계약상대방: Biohaven Bioscience Ireland Limited (아일랜드) \n \n2) 계약의 내용: 칼륨채널(Kv7) 활성화 기전을 가진 뇌전증 신약 후보물질 Opakalim(BHV-7000), 기타 칼륨채널(Kv7) 활성화제 화합물 및 Kv7 Discovery Platform에 대한 독점적 라이선스 취득 (Worldwide) \n \n3) 계약체결일: 2026년 08월 26일 \n \n4) 기술의 내용 \n\n① 기술의 특징 : 칼륨채널(Kv7) 활성화 기전의 부분발작 적응증으로 개발 중인 뇌전증 신약 후보물질 \n\n② 임상시험 등록번호 및 진행경과 \n\n - RISE2 : NCT06132893 (임상2/3상 진행 중) \n\n - RISE3 : NCT06309966 (임상2/3상 진행 중) \n \n5) 계약기간: 제품 출시 후 10년, 특허 만료, 허가독점권 만료 중 가장 나중에 도래하는 시점까지 \n \n6) 계약규모: 최대 1,099,564,500,000원 \n\n      (USD 795,000,000) \n \n\n① 계약금: 553,240,000,000원 (USD 400,000,000) \n\n - 거래종결시(Deal Closing) USD 350,000,000 지급 예정 \n\n - 거래종결일(Deal Closing)로부터 1년 후 \n\n  USD 50,000,000 지급 예정 \n \n\n② 마일스톤 기술료: 개발/허가에 따른 단계별 마일스톤 최대 546,324,500,000원 (USD 395,000,000) \n\n - Opakalim(BHV-7000): USD 335,000,000 \n\n - 기타 칼륨채널(Kv7) 활성화제 화합물: USD 60,000,000 \n \n\n③ 경상기술료(로열티): 제품 판매 순매출액 구간에 따라 경상기술료 지불\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260826800139\n회사정보: https://finance.naver.com/item/main.nhn?code=326030",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260826800139",
+              "https://finance.naver.com/item/main.nhn?code=326030"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37388"
           }
         ]
       },
