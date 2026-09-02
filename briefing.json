@@ -1,6 +1,6 @@
 {
   "2026-09-02": {
-    "fetched_at": "2026-09-02T21:00:51+09:00",
+    "fetched_at": "2026-09-03T02:04:02+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -450,15 +450,6 @@
         "posts": [
           {
             "date": "2026-08-31",
-            "time": "07:42",
-            "text": "✅ [속보]미군, 한달여 만에 이란 공습…호르무즈 기뢰 발사대 타격\n\nhttps://n.news.naver.com/mnews/article/028/0002820861",
-            "links": [
-              "https://n.news.naver.com/mnews/article/028/0002820861"
-            ],
-            "post_url": "https://t.me/SpartanResearch/4935"
-          },
-          {
-            "date": "2026-08-31",
             "time": "13:23",
             "text": "안녕하세요 이번 주 바바리안 위클리에서는 Salesforce 와 Docusign 을 다루었습니다\n\nSalesforce 실적 자체는 인상적이지 않았지만 시장은 AI 수익화를 높이 평가했습니다\n\nAI 프론티어 모델의 상향 평준화와 토큰 가격 하락 속에 AI 수익화하는 플랫폼과 소프트웨어로 시장의 시선이 옮겨가고 있습니다.\n\n이러한 맥락 속에서 다시 보기 시작해야할 종목으로 \n\n코로나 시기에 사랑받았던 DocuSign 을 다시 보았습니다\n\n자세한 내용은 아래 링크의 글을 참고해주세요! 감사합니다\n\nhttps://contents.premium.naver.com/barbarian/stockideas/contents/260831131015214xr",
             "links": [
@@ -780,16 +771,6 @@
         "posts": [
           {
             "date": "2026-09-02",
-            "time": "12:37",
-            "text": "델 컨콜: “부족한 것은 D램, D램, D램!”, AI 누적 주문 1000억달러 육박. 연간 가이던스 대폭 상향\n\n• 델 2027회계연도 2분기 실적은 예상 크게 상회. 막대한 수요에 직면한 델 고위 관계자는 공급망이 '화력 풀가동' 상태라고 언급\n\n• 핵심 병목 현상은 'DRAM 및 NAND'와 다양한 첨단/성숙 공정 부품\n\n• 연간 매출 가이던스를 250억달러 늘린 1920억달러로 대폭 상향 조정. “2030년 AI가 데이터센터 수요의 75% 차지할 것”이라는 거대한 전망 제시\n\n戴尔电话会：“缺的就是DRAM、DRAM、DRAM！” ，AI积压订单逼近千亿，全年指引大幅上调\n戴尔2027财年Q2业绩远超预期，面对庞大需求，戴尔高管直言供应链正“火力全开”，核心瓶颈在于“DRAM与NAND”及各类先进/成熟制程元件。公司将全年营收指引大幅上调250亿美元至1920亿美元，并抛出“2030年AI将占数据中心75%需求”的宏大预测，尽显万亿市场野心。\n\n https://wallstreetcn.com/articles/3780870#from=android",
-            "links": [
-              "https://wallstreetcn.com/articles/3780870#from=android",
-              "https://wallstreetcn.com/articles/3780870"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37490"
-          },
-          {
-            "date": "2026-09-02",
             "time": "13:23",
             "text": "[메리츠증권 전기전자/IT부품 양승수]\n\n▶ Panasonic reportedly raises CCL and PP prices again as IC substrate costs jump 30%\n\n- Panasonic은 2026년 들어 두 번째로 PCB 소재 가격을 인상했으며, 인상 대상은 CCL, PP 및 IC 기판 소재 등으로 확대\n\n- 일부 제품 가격은 최대 30% 인상되며, 신규 가격은 9월 1일 출하분부터 적용\n\n- 일반 PCB 및 IC 기판용 LEXCM GX 제품은 CCL과 PP 가격이 30% 인상\n\n- 초저손실·고속 PCB 소재인 MEGTRON과 XPEDION 가격은 15% 인상\n\n- CEM-3 소재 가격은 30%, FCCL 소재 가격은 15% 인상될 예정\n\n- Panasonic은 앞서 2026년 5월에도 일반 PCB, 초저손실·고속 PCB, CEM-3, FCCL 소재 가격을 애플리케이션별로 15~30% 인상\n\n- 이번 2차 가격 인상은 주요 원재료 비용 상승이 지속되고, 부자재·에너지·물류 비용도 높은 수준을 유지한 영향\n\n- 회사는 생산 효율 개선과 운영 슬림화를 통해 원가 부담을 흡수해왔으나, 원재료 인플레이션이 내부적으로 상쇄하기 어려운 수준에 도달했다고 설명\n\n- Panasonic은 앞서 중국과 태국 증설 계획을 발표했으며, Guangzhou 공장에는 약 75억엔을 투자해 AI 서버용 CCL 라인을 확대할 계획\n\n- Guangzhou 공장은 2027년 4월 생산을 시작하고, 같은 해 말 양산에 들어갈 예정\n\n- 태국 신공장에는 약 170억엔을 투자하고 있으며, 이르면 2027년 11월 생산을 시작할 계획\n\n- Panasonic은 FY2029까지 생산능력을 두 배로 확대하고, FY2030 AI 서버 관련 매출을 1,000억엔까지 높이는 것을 목표\n\nhttps://buly.kr/2JqsMvq (Digitimes)\n\n*본 내용은 당사의 코멘트 없이 국내외 언론사 뉴스 및 전자공시자료 등을 인용한 것으로 별도의 승인 절차 없이 제공합니다.",
             "links": [
@@ -884,6 +865,13 @@
               "https://blog.naver.com/innocent_man/224398541872"
             ],
             "post_url": "https://t.me/Yeouido_Lab/37509"
+          },
+          {
+            "date": "2026-09-02",
+            "time": "21:25",
+            "text": "후..일단 내일은 생존인가",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/37510"
           }
         ]
       },
