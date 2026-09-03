@@ -1,6 +1,6 @@
 {
   "2026-09-03": {
-    "fetched_at": "2026-09-03T21:00:14+09:00",
+    "fetched_at": "2026-09-04T01:58:24+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -433,47 +433,6 @@
         "posts": [
           {
             "date": "2026-09-03",
-            "time": "09:08",
-            "text": "트럼프 \"韓日, 알래스카로 간다\"…LNG 프로젝트서 또 거론\nhttps://www.yna.co.kr/view/AKR20260903008400071?input=1195m",
-            "links": [
-              "https://www.yna.co.kr/view/AKR20260903008400071?input=1195m",
-              "https://yna.co.kr/view/AKR20260903008400071?input=1195m"
-            ],
-            "post_url": "https://t.me/SpartanResearch/4958"
-          },
-          {
-            "date": "2026-09-03",
-            "time": "09:08",
-            "text": "트럼프 \"韓日, 알래스카로 간다\"…LNG 프로젝트서 또 거론 https://www.yna.co.kr/view/AKR20260903008400071?input=1195m",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/4959"
-          },
-          {
-            "date": "2026-09-03",
-            "time": "09:11",
-            "text": "휩쏘에 돈 녹는 장 같아서 하루하루 급등락에 매매에 참여하기보단 돈을 지켜야 할 때",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/4960"
-          },
-          {
-            "date": "2026-09-03",
-            "time": "09:18",
-            "text": "폴더블폰 쪽은 어제 해당 뉴스 나오고 강세. 아래 일정들 남아있음 \n\n26.09.07(월) 화웨이, 신형 '3단 폴더블폰' 출시\n\n26.09.10(목) 02:00 아이폰18 프로·울트라 공개\n\nhttps://www.thelec.kr/news/articleView.html?idxno=61687",
-            "links": [
-              "https://www.thelec.kr/news/articleView.html?idxno=61687",
-              "https://thelec.kr/news/articleView.html?idxno=61687"
-            ],
-            "post_url": "https://t.me/SpartanResearch/4961"
-          },
-          {
-            "date": "2026-09-03",
-            "time": "09:20",
-            "text": "폴더블폰 쪽은 어제 해당 뉴스 나오고 강세. 아래 일정들 남아있음   26.09.07(월) 화웨이, 신형 '3단 폴더블폰' 출시  26.09.10(목) 02:00 아이폰18 프로·울트라 공개  https://www.thelec.kr/news/articleView.html?idxno=61687",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/4962"
-          },
-          {
-            "date": "2026-09-03",
             "time": "09:31",
             "text": "매슈 휘태커 주NATO 미국 대사, \"러시아는 현재 우크라이나에서 교착 상태에 빠져 있으며 전선에서 어떠한 진전도 이룰 수 없다\"며, 이에 따라 단기적으로 NATO에 대한 위협은 낮다고 밝힘.",
             "links": [],
@@ -576,6 +535,37 @@
               "https://x.com/financialjuice/status/2095443043784560799"
             ],
             "post_url": "https://t.me/SpartanResearch/4977"
+          },
+          {
+            "date": "2026-09-03",
+            "time": "21:44",
+            "text": "❗ 월러 연준 이사: 최근 데이터에서 마침내 디스인플레이션(물가 상승률 둔화)의 징후가 보이기 시작함",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/4978"
+          },
+          {
+            "date": "2026-09-03",
+            "time": "22:56",
+            "text": "써클 100불 직전\n\n물렸던 사람들 성불하길",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/4979"
+          },
+          {
+            "date": "2026-09-04",
+            "time": "00:04",
+            "text": "DOWNDETECTOR: 미국 내 OpenAI, Claude, Grok, Cursor 사용자들에게 서비스 장애 발생 보고됨",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/4980"
+          },
+          {
+            "date": "2026-09-04",
+            "time": "00:08",
+            "text": "3일 아침 기사\n\n2일(현지시간) NBC 방송에 따르면 이란 해킹 그룹 APT 이란(APT IRAN)은 텔레그램 성명을 통해 미국 인프라에 대한 대규모 사이버 공격을 예고했다.\n\n이들은 성명에서 \"곧 미국은 에너지·수도·통신 산업에서 예상치 못한 치명적 사건들을 목격하게 될 것\"이라고 위협했다.\n\nhttps://m.ytn.co.kr/news_view.php?s_mcd=0104&key=202609030852020196&pos=#return",
+            "links": [
+              "https://m.ytn.co.kr/news_view.php?s_mcd=0104&amp;key=202609030852020196&amp;pos=#return",
+              "https://m.ytn.co.kr/news_view.php?key=202609030852020196&amp;pos=&amp;s_mcd=0104"
+            ],
+            "post_url": "https://t.me/SpartanResearch/4982"
           }
         ]
       },
@@ -586,32 +576,6 @@
         "category": "매매 신호/트레이딩",
         "channel_url": "https://t.me/d_ticker",
         "posts": [
-          {
-            "date": "2026-09-01",
-            "time": "10:14",
-            "text": "삼성전기, AI MLCC 1.7조 계약 발표\n\n- 27.01~12 1년간 AI MLCC 공급\n- 계약액은 1조 722억\n- 매출 대비 9.5% 규모\n- 글로벌 대형기업 대상",
-            "links": [],
-            "post_url": "https://t.me/d_ticker/3755"
-          },
-          {
-            "date": "2026-09-01",
-            "time": "12:55",
-            "text": "[속보] 국정원 “김주애, 후계자 내정 단계로 보여”\n\n국가정보원은 김정은 북한 국무위원장의 딸 주애가 사실상 후계자 내정 단계로 보인다고 국회에 보고했습니다.\n\n국정원은 \"북한 주민들에게 (주애를) 지도자로서 각인시키기 위한 목적이 있는 것 아닌가 보고 있다\"고 보고했다고, 윤 의원은 밝혔습니다.\n\nhttps://news.kbs.co.kr/news/view.do?ncd=8651524",
-            "links": [
-              "https://news.kbs.co.kr/news/view.do?ncd=8651524"
-            ],
-            "post_url": "https://t.me/d_ticker/3756"
-          },
-          {
-            "date": "2026-09-01",
-            "time": "14:36",
-            "text": "1일 업계와 정부·여권에 따르면 리처드 브레킨리지 미 해군성 조선 담당 수석보좌관을 위시한 방문단이 한화오션, HD현대중공업, SK오션플랜트 등 조선업체 사업장을 둘러봤다.\n\nhttps://n.news.naver.com/mnews/article/014/0005569322?rc=N&ntype=RANKING&sid=001",
-            "links": [
-              "https://n.news.naver.com/mnews/article/014/0005569322?rc=N&amp;ntype=RANKING&amp;sid=001",
-              "https://n.news.naver.com/mnews/article/014/0005569322?ntype=RANKING&amp;rc=N&amp;sid=001"
-            ],
-            "post_url": "https://t.me/d_ticker/3757"
-          },
           {
             "date": "2026-09-01",
             "time": "14:56",
@@ -749,6 +713,29 @@
               "https://n.news.naver.com/mnews/article/023/0003996421"
             ],
             "post_url": "https://t.me/d_ticker/3774"
+          },
+          {
+            "date": "2026-09-03",
+            "time": "22:08",
+            "text": "「월가보다 먼저 움직이는 미국주식 투자법 」\n\n책이 나왔다고 합니다.\n\nhttps://vo.la/gLuKdAK",
+            "links": [
+              "https://vo.la/gLuKdAK"
+            ],
+            "post_url": "https://t.me/d_ticker/3775"
+          },
+          {
+            "date": "2026-09-03",
+            "time": "23:21",
+            "text": "아간 Argan $AGX\n\n✅미국 발전소 엔지니어링 업체. 데이터센터 전력 병목으로 가스복합화력발전소 수요가 늘면서 해당 시장을 중심으로 EPC 사업 확대. 여기에 데이터센터 냉각 계통에 필요한 열팽창 탱크 및 에너지저장탱크도 공급하며 쉘 내외 AI 시장에 모두 노출돼 있음 \n\n2Q FY27 Results\n- 매출 $384M (est. $301M)\n- GPM 19.3% (est. 18.4%)\n- OPM 14.8% (est. 14.0%)\n- EPS $3.75 (est. $2.66)\n\nGuidance\n- 향후 7~15개월 내 복합화력발전소 신규수주 전망. 당사 인력 규모 감안할 때 상시 10~12개 대형 발전소 프로젝트를 동시 수행 가능한 역량 있음 \n\n- 데이터센터 냉각 계통용 열팽창 및 에너지저장탱크 수주 대응하기 위해 짓고 있는 노스캐롤라이나 신공장은 3Q26 내 완공 예정. 이 캐파로 분기당 $10M 이상 매출 증분 기대\n\n- 광통신망 엔지니어링 전문기업 '발코어' 인수에 따른 관련 부문의 FY27 매출은 FY26 대비 2배 증가할 것으로 전망.",
+            "links": [],
+            "post_url": "https://t.me/d_ticker/3776"
+          },
+          {
+            "date": "2026-09-03",
+            "time": "23:39",
+            "text": "어닝 시즌도 끝나고 단기 반등도 마무리되고, 매크로 리스크는 부각되고 중간선거 앞두고 증시도 정체되는 상황입니다\n\n무리하지 않고 쉬어가도 되는 장 분위기 속에 다음 사이클 앞두고 펀더멘털 전망이 좋은 종목을 더 열심히 찾아야 할 때라고 생각합니다\n\n#Opinion",
+            "links": [],
+            "post_url": "https://t.me/d_ticker/3777"
           }
         ]
       },
@@ -767,13 +754,6 @@
         "category": "국내 시장/종목 분석",
         "channel_url": "https://t.me/Yeouido_Lab",
         "posts": [
-          {
-            "date": "2026-09-03",
-            "time": "10:43",
-            "text": "오늘 알테 꼬라지 보니 어제 접길 잘했네 ㅋㅋ",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/37531"
-          },
           {
             "date": "2026-09-03",
             "time": "11:03",
@@ -924,6 +904,15 @@
               "https://t.me/marketfeed/1030765"
             ],
             "post_url": "https://t.me/Yeouido_Lab/37551"
+          },
+          {
+            "date": "2026-09-03",
+            "time": "21:10",
+            "text": "시진핑, 9/23~9/25일 미국 방문 예정.\n\nhttps://x.com/truthtrumppost/status/2095433399586451820?s=46",
+            "links": [
+              "https://x.com/truthtrumppost/status/2095433399586451820?s=46"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37552"
           }
         ]
       },
