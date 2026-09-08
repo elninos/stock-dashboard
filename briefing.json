@@ -1,6 +1,6 @@
 {
   "2026-09-08": {
-    "fetched_at": "2026-09-08T21:02:28+09:00",
+    "fetched_at": "2026-09-09T02:09:13+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -252,17 +252,6 @@
         "posts": [
           {
             "date": "2026-09-08",
-            "time": "09:06",
-            "text": "💻 [단독] 린트너 CEO “삼성 IFA 복귀시키고 싶다…中 커질수록 韓 기업 더 노출돼야”\n\nhttps://www.ddaily.co.kr/page/view/2026090714364712613\n\n📌 IFA “삼성 내년 본 전시장 복귀 설득”\n삼성전자는 올해 IFA 본 전시장 대신 별도 공간에서 행사 진행\n\nIFA CEO는 내년 삼성의 전시장 복귀를 직접 설득하겠다는 입장\n\n현재 방식은 이동 불편과 현장 노출 측면에서 아쉽다고 평가\n\n📌 중국 업체, 글로벌 전시 존재감 확대\nIFA CEO는 중국 기업들이 기술력·제품 경쟁력과 함께 전시 영향력도 빠르게 키우고 있다고 평가\n\n로보락 등 중국 업체는 인플루언서·판매자 체험을 통해 현장 노출을 구매 전환으로 연결\n\n한국 기업이 전시 무대에서 물러날수록 중국 업체에 유리하다는 판단\n\n📌 AWE 불참은 “큰 실수” 평가\n삼성전자의 중국 AWE 불참을 두고 IFA CEO는 “큰 실수”라고 평가\n\n중국 시장에서는 전시장이 제품 체험·추천·커뮤니티 확산의 핵심 채널로 작동\n\n디지털 시대에도 오프라인 접점의 마케팅 가치가 여전히 크다는 시각\n\n📌 비용보다 ‘브랜드 존재감’이 핵심\n전시 축소는 비용 절감보다 효율화·콘셉트 변화일 수 있다는 설명\n\nIFA는 작은 부스라도 브랜드 자신감을 유지할 수 있는 새로운 참가 방식 제안 계획\n\n중국 경쟁 심화 속 삼성의 글로벌 오프라인 마케팅 전략 변화가 관건\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
-            "links": [
-              "https://www.ddaily.co.kr/page/view/2026090714364712613",
-              "https://t.me/growth_semi",
-              "https://ddaily.co.kr/page/view/2026090714364712613"
-            ],
-            "post_url": "https://t.me/growthresearch/29468"
-          },
-          {
-            "date": "2026-09-08",
             "time": "09:25",
             "text": "💻BMO Capital: 엔비디아 데이터센터 매출, 2028년 5,590억달러 전망\n\n📌 데이터센터 매출 폭발적 성장\n엔비디아 데이터센터 매출은 2025년 1,150억달러에서 2026년 1,940억달러, 2027년 3,690억달러까지 증가할 전망\n\n2028년에는 5,590억달러로 전년 대비 52% 성장하며 불과 3년 만에 약 5배 규모로 확대될 것으로 예상\n\n📌 AI 인프라 투자 확대가 성장 견인\n빅테크의 AI 데이터센터 투자가 이어지면서 GPU를 비롯한 엔비디아 AI 인프라 수요도 지속적으로 증가할 전망\n\n특히 2026년 이후에도 높은 성장률이 이어질 것으로 예상된다는 점에서 AI 투자 사이클 장기화에 무게\n\n📌 전체 매출 1조달러 가능성\n현재 데이터센터와 나머지 사업 매출 비중이 비슷하게 유지된다고 가정하면 2028년 전체 매출은 1조달러를 넘어설 수 있다는 계산\n\n결국 시장에서는 AI 데이터센터 투자가 향후 몇 년간 엔비디아의 폭발적인 실적 성장을 계속 이끌 것으로 전망\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
             "links": [
@@ -461,6 +450,15 @@
               "https://telegram.me/growthresearch"
             ],
             "post_url": "https://t.me/growthresearch/29489"
+          },
+          {
+            "date": "2026-09-08",
+            "time": "22:07",
+            "text": "🧬 Structure Therapeutics - 경구용 아밀린 비만치료제 첫 임상 데이터 공개\n\n핵심은 ① 경구용 Amylin 초기 PoC 확인 + ② Aleniglipron 72주 감량 지속.\n\n💊 ACCG-2671: 경구용 Amylin/DACRA 초기 데이터\n\nPhase 1/2a SAD, 비비만 건강인 31명 대상.\n\n• 반감기 약 6일 → 주 1회 경구 투여 가능성\n• 단회 10mg 투여 시 Day 24 체중 -3.3%\n• 골흡수 바이오마커 CTX-1 Day 2 약 -60%\n• SAE 및 약물유발 간손상 없음\n• 1/2mg에서는 오심·구토 없음\n\n다만 고용량에서 GI AE 증가.\n\n• 5mg: 오심 4/5, 구토 3/5\n• 10mg: GI AE 6/6\n\n현재 비만 환자 대상 12주 MAD 진행 중.\nDaily/Weekly dosing 모두 평가하며, 주사형 GLP-1 병용 cohort도 포함.\n\n→ Topline 1H27 예정\n\n포인트: 단회 투여만으로 -3.3% 감량 + 약 6일 반감기 확인. \n\n경구용 small molecule amylin agonist의 첫 임상 데이터.\n\n💊 Aleniglipron: 72주 체중감량 지속\n\nACCESS OLE 72주 결과.\n\n• 기존 45mg arm → -11.6%\n• 기존 90mg arm → -14.4%\n• 기존 120mg arm → -16.2%\n• 상위 2개 dose에서 체중감량 plateau 미관찰\n• 90/120mg cohort의 1/3 이상이 >20% 감량\n\n특히 최종 180mg dose 도달 시점이 약 Week 60으로, 72주 시점 최고 용량 노출 기간은 제한적 수준.\n\n💊 Tolerability 개선\n\nPlacebo→Aleniglipron crossover군은 시작 용량을 기존 5mg에서 2.5mg으로 낮추고 4주마다 증량.\n\n그 결과:\n\n• GI tolerability 개선\n• OLE에서 AE로 인한 중단율 <5%\n• DILI 없음\n\n💊 Phase 3 진행 상황\n\nAleniglipron은 현재 Phase 3 ACCOMPLISH 프로그램 진행 중.\n\n• ACCOMPLISH-1: 최대 3,600명\n• ACCOMPLISH-2: 최대 1,100명\n• 유지용량: 45/90/180mg\n• 2.5mg 시작 후 4주 간격 증량\n\n→ Phase 3 topline 2H28 예정\n\n💊 향후 Catalyst\n\nQ4 2026\n① 44주 Body Composition 데이터\n② T2DM + 비만/과체중 Phase 2\n③ 주사 GLP-1 → 경구 Aleniglipron 전환 SWITCH 데이터\n\n1H27\n④ ACCG-2671 12주 MAD topline\n\n2H28\n⑤ Aleniglipron Phase 3 topline\n\n💊 투자포인트\nAleniglipron에서 72주 -16.2%, plateau 없는 감량 지속 + 중단율 <5% 확인.\n\n신규 경구 Amylin ACCG-2671은 단회 투여만으로 -3.3% 및 약 6일 반감기 확인.\n\n다만 ACCG-2671은 아직 n=31 SAD의 초기 임상 단계이며, 5~10mg에서 GI AE 증가 확인.\n\n결국 핵심 다음 검증 구간은 비만 환자 대상 12주 MAD 데이터(1H27).\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
+            "links": [
+              "https://telegram.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/29490"
           }
         ]
       },
@@ -471,13 +469,6 @@
         "category": "매크로/크립토",
         "channel_url": "https://t.me/SpartanResearch",
         "posts": [
-          {
-            "date": "2026-09-06",
-            "time": "23:33",
-            "text": "#### 4. 이 게임은 한 번으로 끝나지 않을 가능성\n\n만약 이번 Astra 출시가 Anthropic IPO에 일정 부분 부담으로 작용했다면 Anthropic 역시 향후 OpenAI IPO를 앞두고 강한 모델을 공개할 유인이 생김. 이후에는 다시 OpenAI가 Anthropic의 중요한 자금조달이나 모델 발표에 대응할 수 있음.\n\n여기에 중요한 특징이 하나 있는데, 프런티어 모델 발표는 일반적인 신제품 발표보다 대중의 서프라이즈 효과가 큼. Astra 공개처럼 예상보다 큰 능력 향상이 확인될 경우 시장의 AI 발전 속도에 대한 기대 자체를 다시 끌어올릴 수 있음.\n\n그렇다면 이제 관건은 엔트로픽이 9월 말 S-1 공개 전에 또 무엇을 내놓느냐일 것. \n\n\n#### 5. 지난 금요일 미장의 상대강도가 의미 있는 이유\n\n9월 4일 미국 고용은 +16.2만 명으로 컨센서스 +5.6만 명을 크게 웃돌았고, 금리인상 확률이 뛰면서 나스닥은 -0.29%, S&P500은 -0.38% 하락했음. 그런데 같은 날 반도체 지수는 오히려 +3.4% 상승함.\n\n특히 MU +6.1% SKHY  +8.1% `SNDK +11.9%`였고, 메모리 ETF도 강하게 상승함. 이건 중요한 가격 신호인데, 금리 상승이라는 성장주 할인율 악재를 무시하고 AI HW, 그중에서도 메모리에 돈이 들어왔다는 뜻이기 때문.\n\n또한 Barron's가 금요일 Micron 강세의 배경 중 하나로 Astra 공개가 OpenAI의 막대한 AI 투자에 대한 우려를 완화하고 AI 인프라 투자 기대를 다시 자극했다고 짚었는데, 새로 등장한 프론티어 모델에 대한 놀라움이 반영되며 시장도 어느 정도 `강력한 신모델 등장 → AI Capex 정당성 상승`이라는 HW 진영의 내러티브를 다시 Buying 해주는 흐름이 시작됐다고 볼 수 있음. \n\n\n#### 6. 그렇다면 Anthropic의 다음 모델은 훨씬 큰 이벤트가 될 수 있음\n\n현재 시장은 GPT-6 Astra를 통해 프런티어 모델의 성능 개선이 여전히 빠르게 진행되고 있다는 점을 한 차례 확인한 상황임. 이런 가운데 Anthropic이 9월 말 S-1 공개 전에 시장 예상치를 크게 상회하는 차세대 모델을 추가로 공개할 경우, 그 의미는 단순히 Anthropic의 기술 경쟁력 회복에 그치지 않을 가능성이 높음.\n\n시장에서는 이를 통해 프런티어 모델의 발전 속도가 아직 둔화되지 않았고, OpenAI와 Anthropic 모두 현재 공개된 모델 이상의 기술적 여력을 내부적으로 보유하고 있을 가능성을 재평가할 수 있음. 동시에 양사 간 모델 출시 경쟁이 다시 빨라질 수 있다는 기대도 강화될 수 있음.\n\n이 경우 AI Capex에 대한 시장의 질문 역시 달라질 가능성이 있음. 기존에는 막대한 GPU 및 데이터센터 투자에 대해 “현재 수요가 이 정도 Capex를 정당화할 수 있는가”가 핵심 논점이었다면, 향후에는 “경쟁사가 몇 달 뒤 어느 수준의 모델을 내놓을지 알 수 없는 상황에서 선두 기업이 Compute 투자를 줄일 수 있는가”가 더 중요한 질문이 될 수 있음.",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/4999"
-          },
           {
             "date": "2026-09-06",
             "time": "23:33",
@@ -613,6 +604,13 @@
               "https://x.com/dtzy_88/status/2096898220949708909"
             ],
             "post_url": "https://t.me/SpartanResearch/5019"
+          },
+          {
+            "date": "2026-09-08",
+            "time": "21:04",
+            "text": "⚡️⚡️⚡️⚡️⚡️⚡️\n팔란티어가 네비우스를 우선 협력 소버린 AI 인프라 파트너로 선정.\n\n팔란티어와 네비우스는 네비우스의 컴퓨팅 및 추론 인프라를 팔란티어의 엔터프라이즈 환경에 직접 통합하는 파트너십 추진.\n\n대상 팔란티어 고객은 데이터·컴퓨팅·모델에 대한 통제권을 유지하면서 네비우스 인프라에서 오픈 모델을 실행하고 맞춤화할 수 있게 될 예정.\n\n양사는 전력 공급이 이미 확보된 지역에 모듈형 데이터센터를 구축하는 방식을 포함해 신규 AI 인프라 용량을 더욱 빠르게 확보하는 방안도 추진.",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/5020"
           }
         ]
       },
@@ -623,22 +621,6 @@
         "category": "매매 신호/트레이딩",
         "channel_url": "https://t.me/d_ticker",
         "posts": [
-          {
-            "date": "2026-09-04",
-            "time": "16:56",
-            "text": "시에나가 수주잔고가 터지고, 가격인상률도 올라갔는데 주가가 하락한 것은 긴 리드타임에 따른 실행력(execution) 리스크 때문입니다.\n\n3Q 수주잔고가 한 분기 만에 $7.7B→$8.5B로 늘어나고 연말에는 $10B를 넘어설 수 있다고 합니다. 여기에 가격 인상 전망이 높은 한자릿수(HSD)% → 높은 두자릿수(HDD)%~20% 초반으로 급증했습니다\n\n이 물량의 대부분이 FY27 납품분임에도 공급 제약 때문에 연내 전량 공급하기 어렵다고 밝혔습니다.\n\n이는 광학 부품의 병목 때문이라고 합니다. 고객 수주를 받는 즉시 시에나는 광섬유 라인을 설치하고 있지만, 필요한 광학 부품을 충분히 확보하지 못하면서 수주→매출 인식 속도가 지연되고 있다는 설명입니다\n\n다행인 점은 FY27 매출 가이던스가 전망치의 바닥(floor) 수준이라며, 병목만 해결되면 매출이 더 높아질 수 있다고 합니다. \n\nAI 밸류체인 기업의 납기와 실행능력이 리스크로 부각되고 있는 상황입니다",
-            "links": [],
-            "post_url": "https://t.me/d_ticker/3782"
-          },
-          {
-            "date": "2026-09-04",
-            "time": "17:18",
-            "text": "SK하이닉스 솔리다임 IPO 해명 공시\n\n\"당사의 해외 종속회사인 솔리다임은 경쟁력 강화를 위하여 다양한 방안을 검토하고 있으나, 현재까지 확정된 사항은 없습니다.\"\n\nhttps://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260904800642",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260904800642"
-            ],
-            "post_url": "https://t.me/d_ticker/3783"
-          },
           {
             "date": "2026-09-06",
             "time": "09:45",
@@ -794,6 +776,22 @@
             "text": "GE에어로스페이스, 터빈 블레이드 업체 인수\n\n- 콘솔리데이티드 프리시젼 프로덕트(CPP)\n- $11.75B 인수(현금 $7.0B, 나머지 차입)\n- CPP는 터빈 블레이드 및 베인 등 주조품 업체\n- 엔진 수요 강한데 주조품 병목 있다고 판단\n- 인수 후 엔진 생산 늘리고 A/S 부품 공급 확대\n- 인수액은 CPP의 27E EBITDA의 18배 멀티플\n- 2027년 하반기 인수 완료 예정",
             "links": [],
             "post_url": "https://t.me/d_ticker/3803"
+          },
+          {
+            "date": "2026-09-08",
+            "time": "21:55",
+            "text": "사이버보안 투자가 필수로 떠올랐다는 구글\n\n구글 위험정보그룹(GTIG) 2Q26 조사에 따르면 한 해커가 피해 기업의 클라우드를 공격한 뒤 6시간 안에 AI 멀티에이전트 공격 시스템 구축하고 수천 개의 제3자 계정정보를 탈취했다고 함\n\n이처럼 AI 에이전트가 취약점 탐색→공격→오류수정→계정탈취까지 일련의 공격 과정을 연속적으로 자동 수행하는 방향으로 발전했음. 이 과정이 과거 며칠씩 걸렸다면 이제는 수 시간밖에 걸리지 않는다는 점도 중요\n\n사람이 직접 관제하는 보안관제센터(SOC)가 AI 기반 공격을 대응하는 동안 공격자가 이미 다음 단계에 도달할 정도로 빨라졌다는 설명. 또 AI 개발 생태계에 필요한 호출 기능(API)과 AI 자산(모델 가중치)이 오히려 공격 경로를 늘리고 있다고 함 \n\n이에 구글은 AI 기반 자동 탐지가 선택사항이 아니라 필수 인프라가 돼야 한다고 강조 \n\n특히 공격자들이 이제는 기업 클라우드 계정을 탈취하고 GPU 인스턴스(가상서버)를 강제로 켜 기업 예산으로 AI 연산을 수행하는 LLM재킹 사례가 관측되고 있다고 함. 향후 클라우드 보안은 데이터 보호뿐 아니라 GPU 사용량 관측, API 호출 모니터링까지 보안 영역이 확대될 것이라고 함 \n\nGoogle Cloud Blog",
+            "links": [
+              "https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai?hl=en"
+            ],
+            "post_url": "https://t.me/d_ticker/3804"
+          },
+          {
+            "date": "2026-09-08",
+            "time": "22:26",
+            "text": "퀄컴, 아마존 '커스텀 칩'  수주\n\n- 퀄컴×아마존 AI 추론용 칩 공동 개발\n- 단발성이 아닌 다세대에 걸친 파트너십\n- 1.6Tbps급 광통신 제품(DSP 등)도 같이 개발\n\nPre +7%",
+            "links": [],
+            "post_url": "https://t.me/d_ticker/3805"
           }
         ]
       },
@@ -812,40 +810,6 @@
         "category": "국내 시장/종목 분석",
         "channel_url": "https://t.me/Yeouido_Lab",
         "posts": [
-          {
-            "date": "2026-09-07",
-            "time": "20:40",
-            "text": "호옹이... 정말 이렇게 가는건가\n\nhttps://n.news.naver.com/article/018/0006365091",
-            "links": [
-              "https://n.news.naver.com/article/018/0006365091"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37597"
-          },
-          {
-            "date": "2026-09-08",
-            "time": "07:55",
-            "text": "‘대미투자 1호’ 텍사스 가스발전소… 2호는 원전 8기 검토\nhttps://n.news.naver.com/article/020/0003746415?sid=101",
-            "links": [
-              "https://n.news.naver.com/article/020/0003746415?sid=101"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37598"
-          },
-          {
-            "date": "2026-09-08",
-            "time": "07:56",
-            "text": "[단독] 릴리, K뷰티 기업 연이어 만났다... 지분 투자·공동개발 추진 관측\nhttps://n.news.naver.com/article/366/0001190901?sid=101",
-            "links": [
-              "https://n.news.naver.com/article/366/0001190901?sid=101"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37599"
-          },
-          {
-            "date": "2026-09-08",
-            "time": "09:11",
-            "text": "원전 테마 – #두산에너빌리티 #한전기술\n\n이번 원전 테마의 핵심은 미국 원전 8기 + 웨스팅하우스 지분 협상 + APR1400 미국 진출 가능성.\n\n웨스팅하우스와 한국의 이해관계가 묶이고 APR1400까지 미국에 들어간다면, 단순 EPC 참여를 넘어 국내 원전 밸류체인의 미국 직접 진출 논리로 확장될 수 있습니다.\n\n두산에너빌리티는 가장 안정적인 중심주입니다. AP1000이어도 핵심 기자재 공급이 가능하고, APR1400이 포함되면 주기기 공급 범위가 더 커집니다. 여기에 Encinal·xAI 프로젝트의 가스터빈과 복합화력까지 연결돼 원전 + 가스터빈 두 축을 모두 보유하고 있습니다.\n\n한전기술은 APR1400 채택 여부가 핵심입니다. AP1000 중심이면 수혜가 제한적이지만, APR1400이 미국 원전 8기에 포함되면 설계·엔지니어링 수혜가 크게 올라갑니다. APR1400 관련 구체적인 문구가 확인되면 이벤트 베타는 한전기술이 강할 가능성이 있습니다.",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/37600"
-          },
           {
             "date": "2026-09-08",
             "time": "10:04",
@@ -956,6 +920,42 @@
             "text": "샤갈............",
             "links": [],
             "post_url": "https://t.me/Yeouido_Lab/37616"
+          },
+          {
+            "date": "2026-09-08",
+            "time": "21:33",
+            "text": "📝. 캐나다, 미국산 우유·철강·골프채 등에 20% 보복 관세 발효\nCANADA'S 20% TARIFFS ON US GOODS LIKE MILK, STEEL AND GOLF CLUBS TAKE EFFECT\n\n코멘트:\n미국과 캐나다 간 무역 갈등이 심화되면서 북미 경제 통합의 취약성이 드러나고 있다. 보복 관세는 양국 경제에 부정적 영향을 미칠 뿐만 아니라 글로벌 공급망에도 불확실성을 가중시킬 전망이다.\n\n#무역분쟁 #보복관세 #캐나다 #미국 #철강\n\nGemini 기반 추가 조사🔍\n\n(Insight: @hyperspect | Source: @marketfeed)\nDisclaimer: 면책고지, 모든 메세지는 벡터 기반 분산 표상형으로 작성 등의 사유로 착오가 발생할 수 있음. 모든 투자 책임은 투자자 본인에게 일체 귀속됨.",
+            "links": [
+              "https://www.google.com/search?q=%EC%BA%90%EB%82%98%EB%8B%A4%2C%20%EB%AF%B8%EA%B5%AD%EC%82%B0%20%EC%9A%B0%EC%9C%A0%C2%B7%EC%B2%A0%EA%B0%95%C2%B7%EA%B3%A8%ED%94%84%EC%B1%84%20%EB%93%B1%EC%97%90%2020%25%20%EB%B3%B4%EB%B3%B5%20%EA%B4%80%EC%84%B8%20%EB%B0%9C%ED%9A%A8&amp;amp;udm=50",
+              "https://t.me/hyperspect",
+              "https://t.me/marketfeed/1033601"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37617"
+          },
+          {
+            "date": "2026-09-08",
+            "time": "22:26",
+            "text": "#Holtec #IPO #SMR #Palisades #미국\n\n<Holtec, 美 IPO서 최대 102억달러 기업가치 목표>\n\n- Holtec은 미국 IPO에서 주당 15~18달러에 5,000만주를 공모해 최대 9억달러를 조달하고 기업가치 최대 102억달러를 목표\n\n- 회사는 원자로 부품·열교환 기술, 사용후핵연료 저장, 원전 해체 사업을 영위하며 Palisades 부지에 자체 SMR 2기 배치도 추진 중\n\n- 2026년 상반기 매출은 2.70억달러로 전년 2.87억달러 대비 감소했지만 순이익은 1.39억달러에서 2.06억달러로 증가\n\n- Palisades 800MW 원전 재가동도 추진 중이며 상장 완료 시 Nasdaq 및 Nasdaq Texas에서 ‘HNUC’ 티커로 거래될 예정\n\nhttps://www.reuters.com/business/energy/holtec-nuclear-targets-102-billion-valuation-us-ipo-2026-09-08/",
+            "links": [
+              "https://www.reuters.com/business/energy/holtec-nuclear-targets-102-billion-valuation-us-ipo-2026-09-08/"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37618"
+          },
+          {
+            "date": "2026-09-08",
+            "time": "23:49",
+            "text": "#미국 #원전재가동 #NRC #DuaneArnold #Crane\n\n<美, 폐쇄 원전 재가동 환경심사 진전…Palisades 기준 전국 확산>\n\n- 미국 규제당국이 아이오와 Duane Arnold와 펜실베이니아 Christopher M. Crane 원전 재가동에 대해 환경상 중대한 영향이 없다는 예비 검토 결과를 제시\n\n- 두 원전 심사는 Michigan Palisades 재가동 과정에서 구축된 기술·환경 검토 절차를 활용하며 폐쇄 원전 재가동 심사의 사실상 표준 프레임워크로 확산 중\n\n- NRC와 PNNL은 재가동 준비 단계의 설비 복구·연료 장전 영향과 잔여 허가기간 동안의 운영 영향을 분리해 평가하고 수자원·지하수·생태·폐기물 이슈까지 검토\n\n- Palisades는 올해 재가동을 목표로 하며 성공 시 미국 최초의 폐쇄·해체 단계 원전 상업운전 재개 사례가 될 전망, 이후 Duane Arnold·Crane 심사에도 선례로 작용 가능\n\nhttps://interestingengineering.com/energy/us-resurrecting-shuttered-nuclear-power-plants",
+            "links": [
+              "https://interestingengineering.com/energy/us-resurrecting-shuttered-nuclear-power-plants"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37619"
+          },
+          {
+            "date": "2026-09-08",
+            "time": "23:55",
+            "text": "장기적으로 답은 원전",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/37620"
           }
         ]
       },
@@ -3331,6 +3331,15 @@
         "category": "공시",
         "posts": [
           {
+            "date": "2026-09-09",
+            "time": "00:00",
+            "text": "[HLB펩] 주요사항보고서(자기전환사채만기전취득결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260908000431"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260908000431"
+          },
+          {
             "date": "2026-09-08",
             "time": "00:00",
             "text": "[삼부토건] [기재정정]주요사항보고서(영업정지)\n공시유형: 주요사항보고",
@@ -3572,15 +3581,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000195"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000195"
-          },
-          {
-            "date": "2026-09-07",
-            "time": "00:00",
-            "text": "[엔젠바이오] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000199"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000199"
           },
           {
             "date": "2026-09-04",
