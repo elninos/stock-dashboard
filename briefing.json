@@ -1,6 +1,6 @@
 {
   "2026-09-09": {
-    "fetched_at": "2026-09-09T21:13:43+09:00",
+    "fetched_at": "2026-09-10T02:04:31+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -458,40 +458,6 @@
         "posts": [
           {
             "date": "2026-09-07",
-            "time": "17:24",
-            "text": "✅ (설명자료)대미투자 관련, 제1호 프로젝트는 확정된 바가 없습니다\n\nhttps://www.korea.kr/briefing/actuallyView.do?newsId=148971388",
-            "links": [
-              "https://www.korea.kr/briefing/actuallyView.do?newsId=148971388",
-              "https://korea.kr/briefing/actuallyView.do?newsId=148971388"
-            ],
-            "post_url": "https://t.me/SpartanResearch/5006"
-          },
-          {
-            "date": "2026-09-07",
-            "time": "17:55",
-            "text": "토큰이 녹는다고 하네요\nhttps://youtu.be/zpGx_Db4FGo?si=cyExAMJSeQ4NHo5A",
-            "links": [
-              "https://youtu.be/zpGx_Db4FGo?si=cyExAMJSeQ4NHo5A",
-              "https://youtu.be/zpGx_Db4FGo"
-            ],
-            "post_url": "https://t.me/SpartanResearch/5007"
-          },
-          {
-            "date": "2026-09-07",
-            "time": "18:03",
-            "text": "출처: 화수분 전략   토큰 비용 지수(Token Expenditure Index)는 8월 16일부터 반등 중  토큰을 처리하는데 있어서 상대적으로 고가의 AI 모델로 이동하고 있음을 의미",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/5008"
-          },
-          {
-            "date": "2026-09-07",
-            "time": "18:13",
-            "text": "코스피가 박스권에 갇히며 닉스가 박스 상단을 돌파를 시도한 날은 총 4거래일",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/5009"
-          },
-          {
-            "date": "2026-09-07",
             "time": "18:19",
             "text": "LLM Token Expenditure Index는 '단순 가격'이 아니라, 각 AI 모델의 '가격과 점유율'을 가중평균해 산출한다. 예를 들어 'A모델이 10달러'이고 'B모델이 1달러'인데, 각 모델의 점유율이 20%, 80%라면, 종합지수는 2.8달러가 된다. \n\n(10달러×20%)+(1달러×80%)=2.8달러\n\n이 지표는 '클로즈드 모델 지수'와 '오픈 모델 지수'로 나뉘어 발표된다. '클로즈드 지수'는 OpenAI·Anthropic·Google 같은 폐쇄형 모델, '오픈 지수'는 DeepSeek·Qwen·Llama 같은 오픈형 모델을 포함한다.\n\n따라서 최근 토큰 지수가 하락한다는 것은 두 가지를 의미한다. ① 모델 가격이 내려가고 있다. ② 수요가 저렴한 모델로 이동하고 있다.\n\n이는 'AI Capex나 수요가 감소한다'는 뜻이 아니다. 가격이 내려가도, 그래서 전체 토큰 사용량이 더 빠르게 늘어난다면 (제번스의 역설) AI 지출/투자는 계속 증가할 수 있기 때문이다.\n\n출처: 이그전",
             "links": [],
@@ -589,6 +555,30 @@
             "text": "흠.. 고민이 많이 되는",
             "links": [],
             "post_url": "https://t.me/SpartanResearch/5026"
+          },
+          {
+            "date": "2026-09-09",
+            "time": "22:49",
+            "text": "#SKHY 신고가 돌파 자리",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/5027"
+          },
+          {
+            "date": "2026-09-09",
+            "time": "23:35",
+            "text": "현재 OpenAI 의 수학 난제보다 더 충격적이게도 앤트로픽이 모든 암에 치료제를 발견했다는 찌라시가 돌고 있습니다. \n\n정말 건강까지도 다 정복할수 있는 시대가 오는걸까요? 😲",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/5029"
+          },
+          {
+            "date": "2026-09-10",
+            "time": "00:15",
+            "text": ">>미국 부채 관리: 장기 국채 환매 규모 두 배 이상 확대, 60억 달러로\n\n•미국 재무부는 확대된 국채 환매 프로그램의 첫 거래에서 최대 60억 달러 규모의 장기 국채를 매입할 예정이라고 밝혔음. 이는 최근 차입 비용 상승을 억제하려는 베선트 재무장관의 의지를 보여주는 조치\n\n•이번 거래의 최대 규모는 당초 투자자들에게 전달했던 20억 달러의 3배이며, 재무부는 8월 19일 돌발 발표에서 이러한 환매 규모를 “최소 두 배”로 확대하겠다고 밝힌 바 있음.\n\n•국채 환매 계획 발표 후 미국 30년물 국채 금리는 5.24%에 근접한 수준에서 5.2931%까지 급등해 장중 최고치를 경신, 20년물은 약 5bp, 10년물은 4.5bp 상승해 4.8346%로 장중 최고치를 기록했음. 2년물은 4.41% 부근에서 안정적. 30년물 TIPS 금리도 단기 약 4bp 상승\n\n>美国财政部周四将购买至多60亿美元长端债券 https://wallstreetcn.com/articles/3781432#from=ios",
+            "links": [
+              "https://wallstreetcn.com/articles/3781432#from=ios",
+              "https://wallstreetcn.com/articles/3781432"
+            ],
+            "post_url": "https://t.me/SpartanResearch/5030"
           }
         ]
       },
@@ -796,15 +786,6 @@
         "posts": [
           {
             "date": "2026-09-08",
-            "time": "22:26",
-            "text": "#Holtec #IPO #SMR #Palisades #미국\n\n<Holtec, 美 IPO서 최대 102억달러 기업가치 목표>\n\n- Holtec은 미국 IPO에서 주당 15~18달러에 5,000만주를 공모해 최대 9억달러를 조달하고 기업가치 최대 102억달러를 목표\n\n- 회사는 원자로 부품·열교환 기술, 사용후핵연료 저장, 원전 해체 사업을 영위하며 Palisades 부지에 자체 SMR 2기 배치도 추진 중\n\n- 2026년 상반기 매출은 2.70억달러로 전년 2.87억달러 대비 감소했지만 순이익은 1.39억달러에서 2.06억달러로 증가\n\n- Palisades 800MW 원전 재가동도 추진 중이며 상장 완료 시 Nasdaq 및 Nasdaq Texas에서 ‘HNUC’ 티커로 거래될 예정\n\nhttps://www.reuters.com/business/energy/holtec-nuclear-targets-102-billion-valuation-us-ipo-2026-09-08/",
-            "links": [
-              "https://www.reuters.com/business/energy/holtec-nuclear-targets-102-billion-valuation-us-ipo-2026-09-08/"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37618"
-          },
-          {
-            "date": "2026-09-08",
             "time": "23:49",
             "text": "#미국 #원전재가동 #NRC #DuaneArnold #Crane\n\n<美, 폐쇄 원전 재가동 환경심사 진전…Palisades 기준 전국 확산>\n\n- 미국 규제당국이 아이오와 Duane Arnold와 펜실베이니아 Christopher M. Crane 원전 재가동에 대해 환경상 중대한 영향이 없다는 예비 검토 결과를 제시\n\n- 두 원전 심사는 Michigan Palisades 재가동 과정에서 구축된 기술·환경 검토 절차를 활용하며 폐쇄 원전 재가동 심사의 사실상 표준 프레임워크로 확산 중\n\n- NRC와 PNNL은 재가동 준비 단계의 설비 복구·연료 장전 영향과 잔여 허가기간 동안의 운영 영향을 분리해 평가하고 수자원·지하수·생태·폐기물 이슈까지 검토\n\n- Palisades는 올해 재가동을 목표로 하며 성공 시 미국 최초의 폐쇄·해체 단계 원전 상업운전 재개 사례가 될 전망, 이후 Duane Arnold·Crane 심사에도 선례로 작용 가능\n\nhttps://interestingengineering.com/energy/us-resurrecting-shuttered-nuclear-power-plants",
             "links": [
@@ -962,6 +943,13 @@
             "text": "메타(META)  장전 +5%\n\n\"muse의 초기 사용량이 저희 예상치를 훌쩍 뛰어넘었습니다. 오늘 muse 사용자분들은 기존 테스트 집단보다 10배나 더 많이 이용하고 있네요. 마음껏 즐겨주세요!\"",
             "links": [],
             "post_url": "https://t.me/Yeouido_Lab/37639"
+          },
+          {
+            "date": "2026-09-09",
+            "time": "22:12",
+            "text": "JP모건) 어드밴테스트 (6857); 실적 추정치 대폭 상향: SoC 시장은 GPU 중심에서 ASIC 및 CPU로 추가 확대 전망. TP 51,000엔(기존 41,000엔).\n\n저희는 최근 동향을 감안해 실적 추정치를 수정합니다. 비중확대(Overweight) 투자의견을 유지하며 2027년 12월 말 기준 목표주가를 51,000엔으로 상향합니다(기존에는 2026년 말까지 41,000엔). 저희는 SoC 테스터 수요가 GPU 중심에서 ASIC 및 CPU로 확대되고, 중기적으로는 CPO로까지 확대될 것으로 예상합니다. 반도체 칩이 복잡해지고 부가가치가 높아지면서 테스터 수요는 더욱 증가했으며, 시장은 저희 예상보다 빠르게 확대되고 있습니다. 저희는 이전에 어드밴테스트의 영업이익이 FY2025~28년 동안 +28%의 견조한 연평균 성장률(CAGR)로 성장할 것으로 예상했으나, 이제 전망치를 +47%로 대폭 상향합니다. 저희가 추정하는 SoC 테스터 ASP 상승(FY2025~28년 +5% CAGR, 다만 추가적인 상방 여지가 여전히 있다고 봅니다)에 더해, 생산능력 확대의 가속화와 ASIC 및 CPU의 추가적인 TAM 성장도 반영했습니다.\n\n실적 추정치: 저희는 영업이익이 FY2026에 전년 대비 86% 증가한 9,280억엔(기존 추정치: 7,780억엔), FY2027에 47% 증가한 1조 3,673억엔(9,527억엔), FY2028에 16% 증가한 1조 5,791억엔(1조 393억엔)을 기록할 것으로 전망합니다. GPU 테스트 시간(공정 수를 포함한 총 테스트 시간)은 칩 출하 직전까지 변동될 수 있으나, 저희는 이전 세대 대비 증가율 추정치를 +30%에서 +5%로 하향합니다. 다만 저희는 (1) 예상을 상회하는 ASIC 및 CPU 수요 성장(FY2026 실적 기여도는 GPU > ASIC > CPU 순으로 예상), (2) SoC 테스터의 ASP 상승(시스템 믹스 변화를 반영해 FY2026 블렌디드 ASP 추정치를 전년 대비 +5%에서 +10%로 상향), (3) 생산능력 확대 가속화에 따른 출하 증가를 반영해 실적 추정치를 대폭 상향합니다.\n\n생산능력 확대의 가속화: SoC 테스터 생산능력은 2025년 3월 기준 연간 3,000대였습니다. 어드밴테스트는 이전에 FY2026 말까지 연간 5,000대, 2028년 말~2029년에 연간 10,000대로 생산능력을 확대하는 것을 목표로 했습니다. 그러나 GPU와 ASIC, CPU의 견조한 수요에 대응하기 위해 회사는 FY2026 말 목표인 연간 5,000대에 조만간 도달할 계획입니다. 저희는 연간 10,000대라는 마일스톤 역시 앞당겨져 FY2028 중반경에 달성될 것으로 예상합니다.",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/37640"
           }
         ]
       },
@@ -3337,6 +3325,33 @@
         "category": "공시",
         "posts": [
           {
+            "date": "2026-09-10",
+            "time": "00:00",
+            "text": "[엠젠솔루션] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000543"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000543"
+          },
+          {
+            "date": "2026-09-10",
+            "time": "00:00",
+            "text": "[엠젠솔루션] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000544"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000544"
+          },
+          {
+            "date": "2026-09-10",
+            "time": "00:00",
+            "text": "[본느] [첨부정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000542"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000542"
+          },
+          {
             "date": "2026-09-09",
             "time": "00:00",
             "text": "[우성] [첨부정정]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
@@ -3551,33 +3566,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000158"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000158"
-          },
-          {
-            "date": "2026-09-09",
-            "time": "00:00",
-            "text": "[쎄노텍] 주요사항보고서(자기주식취득결정)\n공시유형: 주요사항보고  ·  정",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000132"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000132"
-          },
-          {
-            "date": "2026-09-09",
-            "time": "00:00",
-            "text": "[티피씨글로벌] 주요사항보고서(자기주식취득신탁계약해지결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000110"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000110"
-          },
-          {
-            "date": "2026-09-09",
-            "time": "00:00",
-            "text": "[이노테나] [기재정정]주요사항보고서(자기주식취득신탁계약체결결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000085"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000085"
           },
           {
             "date": "2026-09-08",
