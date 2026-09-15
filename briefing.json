@@ -1,6 +1,6 @@
 {
   "2026-09-15": {
-    "fetched_at": "2026-09-15T21:32:29+09:00",
+    "fetched_at": "2026-09-16T02:33:54+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -413,15 +413,6 @@
         "posts": [
           {
             "date": "2026-09-13",
-            "time": "11:40",
-            "text": "다리오 아모데이의 프런티어 AI 속도 조절론에 주요 AI 기업 수장들의 동의\n\n: 다리오 아모데이가 재귀적 자기개선, RSI 가속과 최근 에이전트 정렬 사고를 근거로 프런티어 AI의 개발 속도를 조절해야 한다고 주장한 가운데, 샘 올트먼과 일론 머스크도 공개적으로 동의\n\n: 샘 올트먼은 “프런티어의 속도를 조절해야 한다는 다리오의 의견에 동의한다”며, 최근 몇 주간 오픈AI 내부에서도 이를 핵심 주제로 논의해 왔다고 언급\n\n: 특히 앤스로픽이 제안한 직원 수준의 접근 권한을 가진 독립 외부 평가기관 도입에 오픈AI도 동참하겠다고 밝힘. 구체적인 내용은 조만간 추가 공개할 예정\n\n: 일론 머스크 역시 다리오의 글을 인용해 “다리오가 맞다”라며 지지 의사를 표명\n\n: 데미스 하사비스는 세부 사항은 추가 논의가 필요하지만 아모데이가 제시한 방향이 현 시점에서 올바른 접근이라고 평가. 최근 구글 딥마인드가 제안한 프런티어 AI 업계 공동 표준기구 설립도 같은 문제의식에서 나온 것이라고 설명\n\n: 주요 프런티어 AI 기업 수장들이 잇따라 개발 속도와 안전 기준의 균형 필요성에 공감하면서, 개별 기업 차원의 안전론에서 업계 공동 기준과 독립적 외부 검증 체계 구축 논의로 빠르게 확산되는 모습\n\nhttps://t.me/Samsung_Global_AI_SW",
-            "links": [
-              "https://t.me/Samsung_Global_AI_SW"
-            ],
-            "post_url": "https://t.me/SpartanResearch/5038"
-          },
-          {
-            "date": "2026-09-13",
             "time": "16:57",
             "text": "모디와 시진핑, 푸틴에게 우크라이나 분쟁 중재 의사 전달\n\n크렘린궁 드미트리 페스코프 대변인, \"양자 회담 중 모디와 시진핑은 우크라이나 사태 해결에 깊은 관심을 보였으며, 해결책 마련을 돕기 위해 적극적으로 중재 의사를 밝혔다\"고 발표함",
             "links": [],
@@ -548,6 +539,29 @@
               "https://globenewswire.com/news-release/2026/09/14/3361592/0/en/ascendis-to-regain-rights-to-transcon-technology-in-metabolic-and-cardiovascular-diseases.html"
             ],
             "post_url": "https://t.me/SpartanResearch/5061"
+          },
+          {
+            "date": "2026-09-15",
+            "time": "22:43",
+            "text": "공화당, 민주당의 CLARITY 법안 수정안 거부: Punchbowl",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/5062"
+          },
+          {
+            "date": "2026-09-16",
+            "time": "00:15",
+            "text": "[ 속보 ] 페이팔 마피아 중 한명인 데이비드 삭스가 이번에 블룸버그 인터뷰를 통해서 \n\nOpenAI와 앤트로픽은 현재 대중들에게 공개 안된 2세대 더 진보된 AI가 있다고 밝혔습니다. \n\n원본링크",
+            "links": [
+              "https://www.youtube.com/watch?v=_WuZZNEJRmw"
+            ],
+            "post_url": "https://t.me/SpartanResearch/5063"
+          },
+          {
+            "date": "2026-09-16",
+            "time": "00:16",
+            "text": "일론 머스크 7월 인터뷰 中  출처: The Economist, BZCF",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/5064"
           }
         ]
       },
@@ -558,22 +572,6 @@
         "category": "매매 신호/트레이딩",
         "channel_url": "https://t.me/d_ticker",
         "posts": [
-          {
-            "date": "2026-09-11",
-            "time": "18:02",
-            "text": "“AI 다음 유스케이스는 사이버보안”\n\n젠슨 황이 10일 GS 컨퍼런스에서 사이버보안 섹터의 센티멘트에 영향을 줄만한 발언을 했습니다. 한 마디로 <AI가 사이버공격을 고도화하는 동시에 이를 막기 위한 보안 AI 시장도 함께 크고 있다>는 것입니다.\n\n최근 공격자들이 AI 모델을 통해 코드를 생성해 기업 SW 시스템의 취약점을 더 빠르게 찾아 침투하는 사례가 늘어나는 가운데 방어하는 쪽도 AI를 적극 활용하고 있어 사이버보안 업계에서의 AI 사용사례가 늘어난다는 얘기입니다\n\n구체적으로 설명하면\n\n공격 탐지 → 취약점 탐색 → 공격 시뮬레이션 → 패치 → 재검증\n\n사람이 하면 오래 걸리는 위 보안 업데이트 패치 과정을 AI가 대신 하게 되면 24시간 상시 추론을 통해 더 실시간으로 반영이 가능하다고 합니다\n\n이처럼 취약점을 막고 패치하는 '블루팀'뿐만 아니라 공격자 관점에서 해킹을 시뮬레이션하는 '레드팀' 솔루션에도 AI를 적용할 수 있고 사람이 하는 것보다 더 효과적이라고 합니다\n\n실제 엔비디아는 자사 AI 모델 '니모트론'을 크라우드스트라이크(CRWD)의 레드팀·블루팀 시스템에 활용하는 협업​을 진행하고 있는 상황입니다",
-            "links": [],
-            "post_url": "https://t.me/d_ticker/3818"
-          },
-          {
-            "date": "2026-09-12",
-            "time": "17:19",
-            "text": "인텔 자회사 ‘알테라’ IPO 준비\n\n- FPGA(프로그래머블 칩) 전문 알테라\n- 인텔이 2015년 $16.7B에 인수한 이후\n- 11년 만 $2B 이상 공모로 재상장 준비\n- 알테라 26년 매출 성장률 20%, 영익은 2배\n- 최대주주는 실버레이크(PE)로 지분 51% 보유\n- 25년 인텔로부터 해당 지분 매입\n- 인텔은 당시 재무 개선을 위해 매각\n- 알테라 기업가치(EV) 48% 할인해 팔어\n- 인텔은 인수 이후 상업적 시너지 창출 실패\n- 알테라의 FPGA가 로봇 등 엣지 디바이스에 쓰여\n- 인텔의 핵심 시장(데센)과 달라 분사가 낫다고 판단\n\nReuters",
-            "links": [
-              "https://www.reuters.com/world/silver-lake-intel-backed-altera-prepares-ipo-that-could-raise-over-2-billion-2026-09-10/"
-            ],
-            "post_url": "https://t.me/d_ticker/3819"
-          },
           {
             "date": "2026-09-13",
             "time": "12:57",
@@ -721,6 +719,24 @@
               "https://sedaily.com/article/20091221"
             ],
             "post_url": "https://t.me/d_ticker/3838"
+          },
+          {
+            "date": "2026-09-15",
+            "time": "22:12",
+            "text": "미 상원, 금일 클래러티 법안 표결 진행 예정\n\n- 민주당 상원의원들은 트럼프 대통령과 일가가 재임 기간 동안 사익 추구를 막기 위한 강력한 윤리적 안전장치가 포함되지 않는 한 법안 통과에 반대하는 입장\n\nhttps://apnews.com/article/senate-crypto-bill-midterms-trump-ethics-e3caf262dc138147941787299e5f0a66?utm_source=copy&utm_medium=share",
+            "links": [
+              "https://apnews.com/article/senate-crypto-bill-midterms-trump-ethics-e3caf262dc138147941787299e5f0a66?utm_source=copy&amp;utm_medium=share"
+            ],
+            "post_url": "https://t.me/d_ticker/3839"
+          },
+          {
+            "date": "2026-09-15",
+            "time": "22:27",
+            "text": "마이크론, 서버당 범용 DRAM 탑재량 2배 높인다\n\n- 세계 최초 서버용 512GB DDR5 모듈(RDIMM) 시연\n- 기존에는 서버당 D램 콘텐츠 6TB 불과(24개 슬롯)\n- 이번 신제품으로 서버당 콘텐츠 최대 12TB 가능\n- AMD, 인텔 모두 이 서버용 모듈을 적극 검증하고 있어\n\nAI 서버 대당 D램 콘텐츠 증가는 메모리 기업의 ASP를 늘리는 요인\n\nPress",
+            "links": [
+              "https://investors.micron.com/news/press-release/2026/Micron-Advances-Memory-Innovation-With-the-Worlds-First-Ultra-Dense-Module-for-Next-Generation-Servers/default.aspx"
+            ],
+            "post_url": "https://t.me/d_ticker/3840"
           }
         ]
       },
@@ -3279,7 +3295,368 @@
         "name": "DART 공시",
         "url": "https://dart.fss.or.kr",
         "category": "공시",
-        "posts": []
+        "posts": [
+          {
+            "date": "2026-09-15",
+            "time": "00:00",
+            "text": "[제주항공] 주요사항보고서(자본으로인정되는채무증권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000434"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000434"
+          },
+          {
+            "date": "2026-09-15",
+            "time": "00:00",
+            "text": "[보령] [기재정정]주요사항보고서(자기주식처분결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000321"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000321"
+          },
+          {
+            "date": "2026-09-15",
+            "time": "00:00",
+            "text": "[보령] 주요사항보고서(회사분할결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000070"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000070"
+          },
+          {
+            "date": "2026-09-15",
+            "time": "00:00",
+            "text": "[금호석유화학] 주요사항보고서(자기주식취득신탁계약해지결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000068"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000068"
+          },
+          {
+            "date": "2026-09-15",
+            "time": "00:00",
+            "text": "[비케이홀딩스] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000428"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000428"
+          },
+          {
+            "date": "2026-09-15",
+            "time": "00:00",
+            "text": "[화일약품] 주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000382"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000382"
+          },
+          {
+            "date": "2026-09-15",
+            "time": "00:00",
+            "text": "[화일약품] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000380"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000380"
+          },
+          {
+            "date": "2026-09-15",
+            "time": "00:00",
+            "text": "[광진실업] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000331"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000331"
+          },
+          {
+            "date": "2026-09-15",
+            "time": "00:00",
+            "text": "[SKAI] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000284"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000284"
+          },
+          {
+            "date": "2026-09-15",
+            "time": "00:00",
+            "text": "[사토시홀딩스] 주요사항보고서(자기전환사채만기전취득결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000305"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000305"
+          },
+          {
+            "date": "2026-09-15",
+            "time": "00:00",
+            "text": "[이렘] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000300"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000300"
+          },
+          {
+            "date": "2026-09-15",
+            "time": "00:00",
+            "text": "[바른손이앤에이] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000281"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000281"
+          },
+          {
+            "date": "2026-09-15",
+            "time": "00:00",
+            "text": "[미투온] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000295"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000295"
+          },
+          {
+            "date": "2026-09-15",
+            "time": "00:00",
+            "text": "[오성첨단소재] 주요사항보고서(타법인주식및출자증권양도결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000276"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000276"
+          },
+          {
+            "date": "2026-09-15",
+            "time": "00:00",
+            "text": "[다보링크] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000270"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000270"
+          },
+          {
+            "date": "2026-09-15",
+            "time": "00:00",
+            "text": "[사토시홀딩스] 주요사항보고서(자기전환사채만기전취득결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000265"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000265"
+          },
+          {
+            "date": "2026-09-15",
+            "time": "00:00",
+            "text": "[사토시홀딩스] 주요사항보고서(자기전환사채만기전취득결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000258"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000258"
+          },
+          {
+            "date": "2026-09-15",
+            "time": "00:00",
+            "text": "[엔비알모션] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000257"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000257"
+          },
+          {
+            "date": "2026-09-15",
+            "time": "00:00",
+            "text": "[바이오인프라] [첨부정정]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000230"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000230"
+          },
+          {
+            "date": "2026-09-15",
+            "time": "00:00",
+            "text": "[원익IPS] 주요사항보고서(자기주식처분결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000194"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000194"
+          },
+          {
+            "date": "2026-09-15",
+            "time": "00:00",
+            "text": "[젠큐릭스] 주요사항보고서(영업정지)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000165"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000165"
+          },
+          {
+            "date": "2026-09-15",
+            "time": "00:00",
+            "text": "[E8] 주요사항보고서(타법인주식및출자증권양수결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000001"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260915000001"
+          },
+          {
+            "date": "2026-09-15",
+            "time": "00:00",
+            "text": "[베노티앤알] [기재정정]주요사항보고서(감자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000433"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000433"
+          },
+          {
+            "date": "2026-09-15",
+            "time": "00:00",
+            "text": "[E8] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000432"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000432"
+          },
+          {
+            "date": "2026-09-14",
+            "time": "00:00",
+            "text": "[제이알글로벌리츠] [기재정정]주요사항보고서(회생절차개시신청)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000405"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000405"
+          },
+          {
+            "date": "2026-09-14",
+            "time": "00:00",
+            "text": "[SYTS] 주요사항보고서(자기주식취득신탁계약해지결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000363"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000363"
+          },
+          {
+            "date": "2026-09-14",
+            "time": "00:00",
+            "text": "[HLB글로벌] 주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000322"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000322"
+          },
+          {
+            "date": "2026-09-14",
+            "time": "00:00",
+            "text": "[프리티] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000303"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000303"
+          },
+          {
+            "date": "2026-09-14",
+            "time": "00:00",
+            "text": "[우성머티리얼스] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000081"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000081"
+          },
+          {
+            "date": "2026-09-11",
+            "time": "00:00",
+            "text": "[금호전기] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000574"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000574"
+          },
+          {
+            "date": "2026-09-11",
+            "time": "00:00",
+            "text": "[에이프로젠바이오로직스] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000555"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000555"
+          },
+          {
+            "date": "2026-09-11",
+            "time": "00:00",
+            "text": "[에이프로젠] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000497"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000497"
+          },
+          {
+            "date": "2026-09-11",
+            "time": "00:00",
+            "text": "[에넥스] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000504"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000504"
+          },
+          {
+            "date": "2026-09-11",
+            "time": "00:00",
+            "text": "[계룡건설산업] [기재정정]주요사항보고서(영업정지)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000364"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000364"
+          },
+          {
+            "date": "2026-09-11",
+            "time": "00:00",
+            "text": "[금양] [기재정정]주요사항보고서(회사분할결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000113"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000113"
+          },
+          {
+            "date": "2026-09-10",
+            "time": "00:00",
+            "text": "[우성머티리얼스] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고  ·  정",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260910000580"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260910000580"
+          },
+          {
+            "date": "2026-09-10",
+            "time": "00:00",
+            "text": "[MDS스피어] 주요사항보고서(자기전환사채만기전취득결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260910000568"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260910000568"
+          },
+          {
+            "date": "2026-09-10",
+            "time": "00:00",
+            "text": "[제주은행] [기재정정]주요사항보고서(상각형조건부자본증권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260910000464"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260910000464"
+          },
+          {
+            "date": "2026-09-10",
+            "time": "00:00",
+            "text": "[삼부토건] [기재정정]주요사항보고서(영업정지)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260910000397"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260910000397"
+          },
+          {
+            "date": "2026-09-10",
+            "time": "00:00",
+            "text": "[시프트업] 주요사항보고서(자기주식취득신탁계약해지결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260910000386"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260910000386"
+          }
+        ]
       }
     ]
   },
