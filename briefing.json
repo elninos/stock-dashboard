@@ -1,6 +1,6 @@
 {
   "2026-09-17": {
-    "fetched_at": "2026-09-17T21:29:46+09:00",
+    "fetched_at": "2026-09-18T02:32:51+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -252,15 +252,6 @@
         "posts": [
           {
             "date": "2026-09-17",
-            "time": "09:59",
-            "text": "✅트렌드포스: 글로벌 데이터센터 전력 수요, 2027년 200GW 돌파 전망\n\n📌 데이터센터 전력 수요 급증\n글로벌 데이터센터 전력 수요는 2024년 100.5GW에서 2027년 211.1GW까지 증가할 전망\n\n불과 3년 만에 전력 수요가 2배 이상 커지는 가파른 성장세\n\n연간 증가율도 2024년 15.2%에서 2026년 31.0%, 2027년 31.1%까지 확대될 것으로 예상\n\n📌 AI 서버가 성장의 핵심\n전체 전력 수요 가운데 AI 서버가 차지하는 비중이 빠르게 확대되는 모습\n\n반면 일반 서버 전력 수요는 상대적으로 완만하게 증가하면서 데이터센터 전력 증가의 중심이 AI로 이동\n\nAI 서버가 빠르게 늘어날수록 같은 데이터센터에서도 필요한 전력량이 크게 증가하는 구조\n\n📌 전력 인프라 투자 확대 불가피\n데이터센터 전력 수요가 2027년 200GW를 넘어서면서 안정적인 전력 확보가 AI 인프라 확대의 핵심 과제로 부상\n\n발전설비부터 변압기·배전·전력관리 장비까지 데이터센터 전력 인프라 전반의 증설 필요성도 커질 전망\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/29711"
-          },
-          {
-            "date": "2026-09-17",
             "time": "10:03",
             "text": "💻 엔비디아(NVDA) GPU, 10월 1일부터 온디맨드 가격 인상 — 네뷰스(NBIS) 기준\n\n📌 가격 인상 내역\nH100: 시간당 $3.85 → $4.50 (+17%)\nH200: 시간당 $4.50 → $5.40 (+20%)\nB200: 시간당 $7.15 → $8.50 (+19%)\nB300: 시간당 $7.85 → $9.50 (+21%)\n\n📌 주목할 점\n구세대인 H100(HBM 80GB)까지 두 자릿수 인상률을 적용한 것이 특징 — 최근 1년간 업계 전반의 온디맨드 가격 흐름은 신세대(B200·B300)가 크게 뛰고 \n\nH100·H200 등 주력 모델은 좁은 밴드 안에서 유지되는 패턴이었음\n\n이번 인상은 이러한 흐름과 다소 배치되며, GPU 클라우드 전반의 수급 타이트닝 신호로 해석될 여지가 있음\n\n네뷰스(NBIS)는 신경망 학습·추론용 GPU 클라우드 사업자로, 가격 정책 변화는 엔비디아(NVDA) GPU 수요 강도를 가늠하는 지표 중 하나\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
             "links": [
@@ -412,6 +403,15 @@
               "https://youtu.be/fyMmZY_gNK8"
             ],
             "post_url": "https://t.me/growthresearch/29730"
+          },
+          {
+            "date": "2026-09-17",
+            "time": "23:43",
+            "text": "✅ 테슬라, 포럼모빌리티와 파트너십 — 캘리포니아 전기트럭 충전 인프라 확대\n\n📌 파트너십 개요\n・테슬라, 포럼모빌리티(Forum Mobility)와 협력해 캘리포니아 內 신규 전기트럭 디포(depot) 3곳에서 공공 메가차징(Megacharging) 사이트 운영\n\n・대형 상용차向 충전용량 30MW 추가 확보\n\n・포럼모빌리티는 이미 테슬라 세미(Semi) 330대 이상에 대한 플릿 인수(offtake) 계약을 체결한 상태\n\n📌 신규 충전 디포 위치\n・Francis(온타리오, 캘리포니아)\n\n・Adeline\n\n・Coliseum(오클랜드, 캘리포니아)\n・북부·남부 캘리포니아에 걸쳐 위치\n\n📌 충전 인프라 사양\n・최신 고출력 충전 솔루션인 MCS(메가와트충전시스템) 대응 풀스루(pull-through) 차선 구비\n\n・기존 CCS(콤보충전시스템) 포트도 함께 지원\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://t.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/29731"
           }
         ]
       },
@@ -766,44 +766,6 @@
         "posts": [
           {
             "date": "2026-09-16",
-            "time": "12:28",
-            "text": "래리핑크의 논리 \n\n1. 지금은 전력, 반도체, 메모리가 부족해서 AI 구축 비용이 비싸다.\n2. 비싼 비용을 감당할 수 있는 건 자금력이 큰 대기업들이다.\n3. 데이터센터와 전력 등 인프라를 빨리 늘려야 비용이 내려가고, 작은 기업과 일반인도 AI를 더 쉽게 이용할 수 있다. \n4. 그런데 AI에 대한 우려와 반발로 건설을 늦추면, 공급 부족이 오래가면서 대기업에 유리한 구조도 유지된다. \n\n지금 속도 조절론이 결국 사다리 걷어차기가 될 수 있다는 논지. \n\nhttps://www.youtube.com/watch?v=gW00dJGI0as",
-            "links": [
-              "https://www.youtube.com/watch?v=gW00dJGI0as",
-              "https://youtube.com/watch?v=gW00dJGI0as"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37753"
-          },
-          {
-            "date": "2026-09-16",
-            "time": "13:16",
-            "text": "日 무라타, AI용 MLCC 생산능력 20% 확충...2년간 7500억원 투입\n2026.09.16 | 전자신문\n\n핵심\n일본 무라타제작소가 범용 MLCC 제품군을 단종하고 고부가가치 AI용 MLCC 시장 공략에 집중하기로 했다. 2027년까지 2년간 약 800억엔(7500억원)을 투입해 생산능력을 20% 이상 끌어올리고, 2028년 이후에도 신공장 건설을 검토 중이다\n\n주요 내용\n• 2027년까지 2년간 약 800억엔(7500억원) 투입, 생산능력 20% 이상 확대\n• 9개 MLCC 시리즈 일부 품번 단종, 최종주문 2028년 3월·출하 2029년 3월까지\n• 삼성전기도 AI 서버용 MLCC 장기공급계약 3조3200억원 체결, 점유율 40% 이상 확보\n• AI 서버는 랙당 최대 60만개 MLCC 탑재, 일반 서버 대비 탑재량 10배 이상\n• 골드만삭스, 글로벌 AI 서버용 MLCC 시장 2024년 14억달러→2030년 58억달러(연평균 34%) 전망\n\n시장 포인트\nAI 서버용 MLCC는 고온·고전압 환경에서 24시간 가동을 견뎌야 해 제조 난도가 높고 공급업체가 제한적이다. 무라타의 증설과 삼성전기의 수주 확대가 맞물리며 고신뢰성 MLCC를 둘러싼 공급 경쟁과 가격 협상력이 향후 관전 포인트로 부상할 수 있음\n\n관련 산업\n전자부품 · AI 서버\n\n관련 기업\n무라타제작소 · 삼성전기\n\n🔗 원문\nhttps://n.news.naver.com/mnews/article/030/0003467268?sid=105\n\n#MLCC #무라타 #삼성전기 #AI서버 #적층세라믹콘덴서",
-            "links": [
-              "https://n.news.naver.com/mnews/article/030/0003467268?sid=105"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37754"
-          },
-          {
-            "date": "2026-09-16",
-            "time": "14:13",
-            "text": "[단독] 정부, 국회 대미투자 22일 보고...17일 일정 취소\nhttps://v.daum.net/v/20260916135752432?from=newsbot&botref=KN&botevent=e",
-            "links": [
-              "https://v.daum.net/v/20260916135752432?from=newsbot&amp;botref=KN&amp;botevent=e",
-              "https://v.daum.net/v/20260916135752432?botevent=e&amp;botref=KN&amp;from=newsbot"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37755"
-          },
-          {
-            "date": "2026-09-16",
-            "time": "14:18",
-            "text": "마운자로 등장에 위고비 40% 인하…이번엔 국산 ‘에페’가 가격 흔드나\nhttps://n.news.naver.com/mnews/article/020/0003748538",
-            "links": [
-              "https://n.news.naver.com/mnews/article/020/0003748538"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37756"
-          },
-          {
-            "date": "2026-09-16",
             "time": "14:31",
             "text": "[단독] 알테오젠 비만 신약 나온다…\"월 1회 투여 기술 완성\"\nhttps://n.news.naver.com/mnews/article/215/0001266178?rc=N&ntype=RANKING&sid=101",
             "links": [
@@ -929,6 +891,29 @@
             "text": "※ 2026년 KTOP 30 지수 구성종목 정기변경\n- 편입 : 알테오젠(196170)\n- 편출 : 넷마블(251270)",
             "links": [],
             "post_url": "https://t.me/Yeouido_Lab/37772"
+          },
+          {
+            "date": "2026-09-17",
+            "time": "21:36",
+            "text": "사우디아라비아, 모든 인도적 요구 사항을 논의하기 위한 2주간의 휴전을 위해 오만에 안사르 알라(Ansar Allah)와의 중재 요청, 이번 주말까지 합의 발표 목표",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/37773"
+          },
+          {
+            "date": "2026-09-17",
+            "time": "21:38",
+            "text": "유가, 금리 비교적 큰 폭 하락",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/37774"
+          },
+          {
+            "date": "2026-09-18",
+            "time": "00:33",
+            "text": "JUST IN: 🇺🇸 US HOUSE PASSES BILL TO PROTECT AMERICANS FROM HIGHER ELECTRIC BILLS CAUSED BY AI DATA CENTERS. ...",
+            "links": [
+              "https://x.com/WatcherGuru/status/2100608560769929507"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37776"
           }
         ]
       },
@@ -2845,6 +2830,15 @@
         "category": "투자철학/산업·종목 분석",
         "posts": [
           {
+            "date": "2026-09-17",
+            "time": "21:46",
+            "text": "[쉽지 않은 시장]\n\n쉽지 않은 시장이다. 25년 봄부터 시작된 시장의 랠리는 엄청난 변동성과 함께 올해 6월을 기점으로 사그라들었다. 7월의 폭락과 8월의 일부 회복을 거치고 지금의 상황까지 왔다. 거래대금이 처참하게 줄어들었고, 매크로 이슈가 밸류를 지배하고 있다. 어디서 많이 보던 그림인 것 같다. '마이너스 5년' 이라는 용어를 올해 초부터 혼자 생각했고, 최근엔 지인들에게도 이야기하고 있다. 20~21년 상반기까지의 유동성 폭발적인 시장, 이후 인플레이션과 금리 등 매크로 이슈. 얼추 비슷한 상황인듯하다. 그리고 22년을 맞이했었다. 그때와 100% 동일하지는 않겠지만, 22년을 보낸 후 교훈은 '조심해서 나쁠 것은 없다'였다.......",
+            "links": [
+              "https://blog.naver.com/luy1978/224415341285"
+            ],
+            "post_url": "https://blog.naver.com/luy1978/224415341285"
+          },
+          {
             "date": "2026-09-13",
             "time": "18:40",
             "text": "[세상에 완벽한 준비라는 건..]\n\n우연히 보게 된 드라마. 직장 생활하면 할수록, 나이를 먹게 될수록 더 공감할 수밖에 없게 됨. 몇 년이라도 서두르면 될까. 서두른다고 다 되는 것도 아니지만 그래도 대비라도 해야 되지 않을까 싶다. 나는 항상 미래가 걱정이었다. 지방에서 올라와서 1년마다 자취 방을 옮겼으니 삶 자체가 불안정했고 미래는 보이지 않았다. 첫 직장을 퇴사 후 겨우 합격한 회사. 입사 4년 반 차에 대리 승진을 하면서 팀장을 달았었다. 하지만 마음이 조금 불편했던 건 그 자리가 40대 중반의 팀장님이 나간 자리였기 때문. 송별회 때 그 선배님의 씁쓸한 표정이 기억난다. 아마도 그때부터 였을 것 같다. 뭔가 준비를 해야 된다는 걸 깨닫게 된 게. 그리고.......",
@@ -3266,15 +3260,6 @@
               "https://blog.naver.com/luy1978/224334350296"
             ],
             "post_url": "https://blog.naver.com/luy1978/224334350296"
-          },
-          {
-            "date": "2026-07-02",
-            "time": "13:52",
-            "text": "[김록호 하나증권 리서치센터 팀장  방송]\n\nhttps://www.youtube.com/watch?v=z2jhIh3qT_8",
-            "links": [
-              "https://blog.naver.com/luy1978/224334130266"
-            ],
-            "post_url": "https://blog.naver.com/luy1978/224334130266"
           }
         ]
       },
@@ -3284,6 +3269,33 @@
         "url": "https://dart.fss.or.kr",
         "category": "공시",
         "posts": [
+          {
+            "date": "2026-09-18",
+            "time": "00:00",
+            "text": "[젠큐릭스] [기재정정]주요사항보고서(영업정지)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260917000376"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260917000376"
+          },
+          {
+            "date": "2026-09-18",
+            "time": "00:00",
+            "text": "[인산가] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260917000375"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260917000375"
+          },
+          {
+            "date": "2026-09-18",
+            "time": "00:00",
+            "text": "[삼보산업] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260917000373"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260917000373"
+          },
           {
             "date": "2026-09-17",
             "time": "00:00",
@@ -3499,33 +3511,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260917000158"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260917000158"
-          },
-          {
-            "date": "2026-09-17",
-            "time": "00:00",
-            "text": "[루멘스바이오스] [기재정정]주요사항보고서(감자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260917000130"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260917000130"
-          },
-          {
-            "date": "2026-09-17",
-            "time": "00:00",
-            "text": "[루멘스바이오스] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260917000124"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260917000124"
-          },
-          {
-            "date": "2026-09-17",
-            "time": "00:00",
-            "text": "[손오공] 주요사항보고서(자기전환사채만기전취득결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260917000081"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260917000081"
           },
           {
             "date": "2026-09-16",
