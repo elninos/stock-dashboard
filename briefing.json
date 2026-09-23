@@ -1,6 +1,6 @@
 {
   "2026-09-23": {
-    "fetched_at": "2026-09-23T21:39:16+09:00",
+    "fetched_at": "2026-09-24T02:46:08+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -834,25 +834,6 @@
         "posts": [
           {
             "date": "2026-09-22",
-            "time": "13:31",
-            "text": "[속보]정부 “텍사스 가스발전, 투자는 전액 한국…지분 한미 5대5”\nhttps://n.news.naver.com/article/016/0002700908",
-            "links": [
-              "https://n.news.naver.com/article/016/0002700908"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37829"
-          },
-          {
-            "date": "2026-09-22",
-            "time": "13:33",
-            "text": "[SK증권 반도체 한동희, 손 건]\n\nSK하이닉스 ADR, 美 반도체지수 조기편입…SOXL에도 담겼다\n\n▶️ 지수 편입 현황\n• SKHY(SK하이닉스 ADR), NYSE 반도체지수(ICESEMI) 추종 SOXX 구성종목에 신규 편입\n• 9/18 기준 보유물량 816만7,602주(약 15.3억달러), 비중 3.32%(30개 종목 중 13위, TSMC 3.05% 상회)\n• 3배 레버리지 SOXL도 9/21 기준 237만6,150주(약 4.45억달러, 비중 2.06%) 편입 완료\n\n▶️ 이례적 조기 편입 배경\n• ICESEMI 방법론상 신규상장 종목은 상장일로부터 최소 3개월 거래기간 필요, 7/10 상장 SKHY는 원칙상 이번 심사 대상 아님\n• 당초 증권가는 내년 9월 정기변경(늦어도 올해 12월 분기 리밸런싱) 편입 예상했으나 약 1년 앞당겨짐\n• MVIS 반도체지수(SMH 등 추종)도 신규상장 특례 적용해 약 4.8% 비중 편입\n\n▶️ 유입 자금 규모\n• MVIS 계열 유입분 약 34억달러 + SOXX·SOXL 편입분 약 20억달러 = 9월 리밸런싱 총 유입 50억달러 이상 추산\n\n▶️ 국내 서학개미 간접투자 확대\n• SOXL 국내 투자자 보관금액 56.3억달러(해외주식 전체 4위)\n• 최근 1개월 매수결제금액 35.35억달러로 해외주식 전체 1위(2위 마이크론 3.56억달러 대비 약 10배)\n\n▶️ 향후 관전포인트\n• 12월 나스닥100 정기변경 여부 주목, QQQ 등 대형 패시브펀드 편입시 추가 대규모 자금유입 기대\n\n▶️ URL: https://buly.kr/15RgkK6\n\n* SK증권 리서치 IT팀 채널 : \nhttps://t.me/skitteam",
-            "links": [
-              "https://buly.kr/15RgkK6",
-              "https://t.me/skitteam"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37830"
-          },
-          {
-            "date": "2026-09-22",
             "time": "14:40",
             "text": "다음주까지 자유롭게 받으실 예정입니당 0명예정이라고",
             "links": [
@@ -1010,6 +991,20 @@
               "https://kr.investing.com/news/company-news/article-93CH-2103790"
             ],
             "post_url": "https://t.me/Yeouido_Lab/37848"
+          },
+          {
+            "date": "2026-09-23",
+            "time": "22:49",
+            "text": "할로자임은 지구 생긴이래 최고가네 ㅋㅋㅋ",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/37849"
+          },
+          {
+            "date": "2026-09-23",
+            "time": "22:49",
+            "text": "할로자임은 지구 생긴이래 최고가네 ㅋㅋㅋ",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/37850"
           }
         ]
       },
@@ -3378,368 +3373,7 @@
         "name": "DART 공시",
         "url": "https://dart.fss.or.kr",
         "category": "공시",
-        "posts": [
-          {
-            "date": "2026-09-23",
-            "time": "00:00",
-            "text": "[에이프로젠바이오로직스] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000418"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000418"
-          },
-          {
-            "date": "2026-09-23",
-            "time": "00:00",
-            "text": "[케이쓰리아이] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000638"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000638"
-          },
-          {
-            "date": "2026-09-23",
-            "time": "00:00",
-            "text": "[케이쓰리아이] 주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000637"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000637"
-          },
-          {
-            "date": "2026-09-23",
-            "time": "00:00",
-            "text": "[스코넥] 주요사항보고서(회생절차개시신청)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000634"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000634"
-          },
-          {
-            "date": "2026-09-23",
-            "time": "00:00",
-            "text": "[모아데이타] [기재정정]주요사항보고서(자기전환사채만기전취득결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000603"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000603"
-          },
-          {
-            "date": "2026-09-23",
-            "time": "00:00",
-            "text": "[한독크린텍] [기재정정]주요사항보고서(유형자산양수결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000602"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000602"
-          },
-          {
-            "date": "2026-09-23",
-            "time": "00:00",
-            "text": "[휴림로봇] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000576"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000576"
-          },
-          {
-            "date": "2026-09-23",
-            "time": "00:00",
-            "text": "[이렘] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000500"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000500"
-          },
-          {
-            "date": "2026-09-23",
-            "time": "00:00",
-            "text": "[하이퍼코퍼레이션] 주요사항보고서(자기전환사채만기전취득결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000488"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000488"
-          },
-          {
-            "date": "2026-09-23",
-            "time": "00:00",
-            "text": "[비케이홀딩스] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000543"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000543"
-          },
-          {
-            "date": "2026-09-23",
-            "time": "00:00",
-            "text": "[비케이홀딩스] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000531"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000531"
-          },
-          {
-            "date": "2026-09-23",
-            "time": "00:00",
-            "text": "[인콘] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000435"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000435"
-          },
-          {
-            "date": "2026-09-23",
-            "time": "00:00",
-            "text": "[더코디] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000410"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000410"
-          },
-          {
-            "date": "2026-09-23",
-            "time": "00:00",
-            "text": "[더코디] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000390"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000390"
-          },
-          {
-            "date": "2026-09-23",
-            "time": "00:00",
-            "text": "[GMI벤처] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000362"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000362"
-          },
-          {
-            "date": "2026-09-23",
-            "time": "00:00",
-            "text": "[에스에스알] 주요사항보고서(자기주식취득신탁계약해지결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000281"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000281"
-          },
-          {
-            "date": "2026-09-23",
-            "time": "00:00",
-            "text": "[루멘스바이오스] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000238"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000238"
-          },
-          {
-            "date": "2026-09-23",
-            "time": "00:00",
-            "text": "[특수건설] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000131"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000131"
-          },
-          {
-            "date": "2026-09-23",
-            "time": "00:00",
-            "text": "[젠큐릭스] [기재정정]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260922000545"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260922000545"
-          },
-          {
-            "date": "2026-09-22",
-            "time": "00:00",
-            "text": "[한세엠케이] 주요사항보고서(자기주식처분결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260922000489"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260922000489"
-          },
-          {
-            "date": "2026-09-22",
-            "time": "00:00",
-            "text": "[KSS해운] 주요사항보고서(자기주식취득결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260922000457"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260922000457"
-          },
-          {
-            "date": "2026-09-22",
-            "time": "00:00",
-            "text": "[프리티] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260922000386"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260922000386"
-          },
-          {
-            "date": "2026-09-22",
-            "time": "00:00",
-            "text": "[케이티앤지] 주요사항보고서(자기주식취득결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260922000256"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260922000256"
-          },
-          {
-            "date": "2026-09-22",
-            "time": "00:00",
-            "text": "[우성머티리얼스] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260922000245"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260922000245"
-          },
-          {
-            "date": "2026-09-22",
-            "time": "00:00",
-            "text": "[GS건설] [기재정정]주요사항보고서(영업정지)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260922000001"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260922000001"
-          },
-          {
-            "date": "2026-09-22",
-            "time": "00:00",
-            "text": "[코람코라이프인프라리츠] 주요사항보고서(자기전환사채만기전취득결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000433"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000433"
-          },
-          {
-            "date": "2026-09-22",
-            "time": "00:00",
-            "text": "[코람코라이프인프라리츠] 주요사항보고서(자기전환사채만기전취득결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000432"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000432"
-          },
-          {
-            "date": "2026-09-22",
-            "time": "00:00",
-            "text": "[코람코라이프인프라리츠] 주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000428"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000428"
-          },
-          {
-            "date": "2026-09-22",
-            "time": "00:00",
-            "text": "[코람코라이프인프라리츠] 주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000425"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000425"
-          },
-          {
-            "date": "2026-09-22",
-            "time": "00:00",
-            "text": "[셀리드] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260922000533"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260922000533"
-          },
-          {
-            "date": "2026-09-22",
-            "time": "00:00",
-            "text": "[유진기업] [첨부정정]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260922000492"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260922000492"
-          },
-          {
-            "date": "2026-09-21",
-            "time": "00:00",
-            "text": "[코아스] [기재정정]주요사항보고서(자기전환사채매도결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000375"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000375"
-          },
-          {
-            "date": "2026-09-21",
-            "time": "00:00",
-            "text": "[코아스] [기재정정]주요사항보고서(자기신주인수권부사채매도결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000363"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000363"
-          },
-          {
-            "date": "2026-09-21",
-            "time": "00:00",
-            "text": "[메리츠금융지주] 주요사항보고서(자본으로인정되는채무증권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000379"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000379"
-          },
-          {
-            "date": "2026-09-21",
-            "time": "00:00",
-            "text": "[코아스] [기재정정]주요사항보고서(자기신주인수권부사채만기전취득결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000361"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000361"
-          },
-          {
-            "date": "2026-09-21",
-            "time": "00:00",
-            "text": "[코아스] [기재정정]주요사항보고서(자기전환사채만기전취득결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000355"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000355"
-          },
-          {
-            "date": "2026-09-21",
-            "time": "00:00",
-            "text": "[에이프로젠] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000320"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000320"
-          },
-          {
-            "date": "2026-09-21",
-            "time": "00:00",
-            "text": "[우성머티리얼스] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고  ·  정",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000303"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000303"
-          },
-          {
-            "date": "2026-09-21",
-            "time": "00:00",
-            "text": "[아센디오] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000240"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000240"
-          },
-          {
-            "date": "2026-09-21",
-            "time": "00:00",
-            "text": "[기업은행] [기재정정]주요사항보고서(상각형조건부자본증권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000105"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000105"
-          }
-        ]
+        "posts": []
       }
     ]
   },
