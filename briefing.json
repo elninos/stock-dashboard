@@ -1,6 +1,6 @@
 {
   "2026-09-24": {
-    "fetched_at": "2026-09-24T09:56:28+09:00",
+    "fetched_at": "2026-09-24T14:57:00+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -257,15 +257,6 @@
         "posts": [
           {
             "date": "2026-09-23",
-            "time": "11:40",
-            "text": "💻 퀄컴 2나노 Snapdragon 8 Elite Gen 6 공개, ‘5GHz’보다 AI·전력효율 차별화가 핵심\n\n📌 모바일 최초 ‘5GHz’ CPU\nSnapdragon 8 Elite Gen 6·Extreme 모두 2나노 공정 적용\n\nPrime 코어 최대 5.0GHz로 전세대 4.74GHz 대비 약 +5.5%\n\n퀄컴은 이를 세계 최초 5GHz 모바일 CPU로 강조\n\n📌 진짜 개선 폭은 GPU·전력효율\nExtreme 기준 CPU 성능 +13%, GPU +44%, NPU +35%\n\nCPU·GPU 전력효율은 각각 +37%, +40% 개선\n\n2나노 전환 효과는 단순 클럭 상승보다 전력효율에서 더 크게 나타난 모습\n\n📌 Extreme은 ‘온디바이스 AI’에 집중\nExtreme은 NPU 공유메모리를 50% 확대\n\n30B 이상 MoE 모델을 기기 내에서 구동할 수 있는 구조를 제시\n\nGPU에도 AI 전용 matrix core와 Neural Fusion을 적용해 초해상도·프레임 생성 지원\n\n📌 표준형·Extreme 이원화 전략\n표준형은 프리미엄 시장 확대, Extreme은 AI·게임 최상위 성능에 초점\n\n퀄컴은 2nm 생산업체를 공식 공개하지 않았으며 TSMC N2P 및 삼성 2nm 가능성이 모두 거론 중\n\n향후 핵심은 실제 스마트폰에서 공칭 전력효율 개선이 얼마나 재현되는지 여부\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi",
-            "links": [
-              "https://t.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/29894"
-          },
-          {
-            "date": "2026-09-23",
             "time": "12:22",
             "text": "💻 중국 화웨이 모바일 AP 애플과 기술 격차 3년으로 좁혀, \"패키징으로 미국 제재 극복\"\n\nhttps://www.businesspost.co.kr/BP?command=article_view&num=447908\n\n📌 애플과 AP 성능 격차 축소\n번스타인에 따르면 화웨이 기린9050프로와 애플 최신 칩의 기술 격차는 기존 4년에서 약 3년으로 축소\n\n기린9050프로는 긱벤치6 멀티코어 테스트에서 애플 A17 프로를 앞선 것으로 분석\n\n다만 최신 2나노 기반 A20 프로 대비 성능은 약 30% 낮은 수준\n\n📌 7나노급 공정 한계를 설계로 보완\n기린9050프로는 SMIC의 N+2 또는 N+3 공정을 활용해 생산된 것으로 추정\n\nEUV 장비 없이 DUV 기반 7나노급 공정을 활용하는 상황에서도 아키텍처 개선을 통해 성능 격차를 축소\n\n📌 핵심은 ‘로직폴딩’ 패키징\n화웨이는 로직 회로를 수직으로 적층하고 층간 연결 거리를 줄이는 로직폴딩 기술을 활용\n\n미세공정 고도화에만 의존하지 않고 패키징·설계 기술을 통해 연산 성능을 높이는 전략\n\n📌 AI 반도체까지 적용 확대\n화웨이는 동일한 기술 체계를 향후 AI 반도체에도 적용할 계획\n\n2028년 어센드970, 2029년 어센드980에도 관련 기술 적용 예정\n\n📌 반도체 업계 시사점\n미국 제재로 최첨단 공정 접근이 제한된 상황에서도 설계·패키징 기술을 활용한 성능 개선 가능성이 확인\n\n중국 반도체 경쟁력의 핵심 축이 미세공정뿐 아니라 첨단 패키징과 시스템 설계로 확대되는 흐름\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
             "links": [
@@ -428,6 +419,17 @@
               "https://telegram.me/growthresearch"
             ],
             "post_url": "https://t.me/growthresearch/29912"
+          },
+          {
+            "date": "2026-09-24",
+            "time": "12:02",
+            "text": "🔥그로쓰리서치 멤버십🔥 \n\n그로쓰리서치는 직접 발로 뛰며 얻은 정보와 분석을 회원분들께 전달해드립니다.\n\n📌멤버십에서는 어떤 자료를 제공하나요?\n📌주식초보자도 도움 되나요?\n📌멤버십은 어떻게 이용하나요?\n\n궁금하신 내용은 아래 카카오톡 채널로 문의주시면 자세히 안내드리겠습니다.\n\n👇그로쓰리서치 소개👇\nhttps://contents.premium.naver.com/growthresearch/growth/contents/260708175005761lt\n\n👇멤버십 가입 링크👇\nhttps://contents.premium.naver.com/growthresearch/growth/subscriptions\n\n👇멤버십 상담👇\nhttp://pf.kakao.com/_gBRMxj\n\n※그로쓰리서치 멤버십 월 30개 이상 콘텐츠 제공",
+            "links": [
+              "https://contents.premium.naver.com/growthresearch/growth/contents/260708175005761lt",
+              "https://contents.premium.naver.com/growthresearch/growth/subscriptions",
+              "http://pf.kakao.com/_gBRMxj"
+            ],
+            "post_url": "https://t.me/growthresearch/29914"
           }
         ]
       },
@@ -438,13 +440,6 @@
         "category": "매크로/크립토",
         "channel_url": "https://t.me/SpartanResearch",
         "posts": [
-          {
-            "date": "2026-09-18",
-            "time": "10:08",
-            "text": "선결론: Astra의 토큰 및 추정 지출 급등은 높은 가격에도 불구하고 뛰어난 성능이 에이전트의 작업량과 추론 수요를 폭증시킬 수 있으며, 이는 저가 모델 확산에도 CAPEX 경쟁과 AI 개발 속도를 오히려 강화할 수 있음을 보여줌.\n\n\n1. DeepSeek를 시작으로 Kimi K3 등 저가로 프런티어에 근접한 성능을 제공하는 모델들이 등장하며 CAPEX 수익성 논란을 환기하며 반도체 조정이 찾아왔음. \n\n\n2. 그런데 Astra 출시 이후 나타난 데이터는 다른 가능성을 보여줌. Astra는 입력 $10/M, 출력 $50/M으로 저가 모델보다 훨씬 비싸지만, 출시 직후 OpenRouter에서 토큰 사용량과 추정 지출이 급격하게 증가.\n\n\n3. 특히 Astra 토큰 사용량이 107.6B → 220.0B → 826.2B로 이틀 만에 8배 급증하며, 프런티어 모델의 성능 우위가 에이전트의 작업량과 추론 수요를 비선형적으로 확대할 수 있음을 시사.\n\n\n4. 즉, Astra처럼 모델 성능이 크게 개선돼 실제로 수행 가능한 작업의 범위와 난도가 확장되면, AI 에이전트의 사용 빈도와 호출량이 동시에 늘면서 추론 수요가 기하급수적으로 증가할 수 있다는 의미.\n\n\n5. 이는 AI CAPEX 논점을 “막대한 투자가 수익화 가능한가”에서 “프런티어 경쟁에서 뒤처질 경우 얼마나 큰 workload와 매출을 잃는가”로 전환시키는 데이터.\n\n\n6. 저가 모델이 범용·저비용 Inference를 확대하는 동시에, 고난도 코딩·추론·Agent 영역에서는 프런티어 모델에 높은 지불의사가 유지되는 시장 양극화 가능성도 확인.\n\n\n7. 결국 경쟁사가 Compute 투자를 지속하는 한 개별 사업자가 CAPEX를 선제적으로 줄이기 어려우며, 프런티어 성능 경쟁 자체가 CAPEX를 구조적으로 강제하는 구도가 형성될 수 있음.\n\n\n8. 동시에 프런티어 모델의 경제적 보상이 커질수록 AI 안전을 이유로 한 자발적 개발 감속도 어려워짐. 개발을 늦추는 순간 경쟁사가 차세대 모델과 Agent 생태계를 선점할 수 있기 때문.",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/5066"
-          },
           {
             "date": "2026-09-18",
             "time": "12:42",
@@ -594,6 +589,24 @@
               "https://x.com/financialjuice/status/2102584544356372882"
             ],
             "post_url": "https://t.me/SpartanResearch/5085"
+          },
+          {
+            "date": "2026-09-24",
+            "time": "10:33",
+            "text": ">>(영상) Meta Connect 콘퍼런스: Muse가 주인공, 새로운 스마트 안경 공개\n\n•Meta가 스마트 안경 제품 라인업을 전면 개편함. 최초의 카메라 없는 Ray-Ban Metro Audio는 349달러로 프라이버시와 배터리 지속시간을 강조하며, 3세대 카메라 탑재 버전은 부품 비용 부담을 겨냥해 가격을 449달러로 인상\n\n•최대 관심사는 AI 비서 Muse. Muse는 곧 전반적인 상황을 인식하고 백그라운드에서 자율적으로 작동할 수 있게 될 전망. 저커버그는 에이전트 간 협업이 AI의 진정한 돌파구라고 강조함. 웨어러블 AI의 상업화에 대한 야심이 이미 뚜렷하게 드러났음\n\n>Meta Connect大会：Muse唱主角，新眼镜发布 https://wallstreetcn.com/articles/3782418#from=ios",
+            "links": [
+              "https://wallstreetcn.com/articles/3782418#from=ios"
+            ],
+            "post_url": "https://t.me/SpartanResearch/5086"
+          },
+          {
+            "date": "2026-09-24",
+            "time": "11:01",
+            "text": "OpenAI 이번엔 호주 정부 웹사이트 해킹\n\nOpenAI AI 에이전트가 지난 6월 내부 평가 과정에서 호주 Medicare 통계 포털에 무단 침입해 공개·비공개 파일에 접근. 정부 웹사이트가 AI 에이전트에 해킹된 사실이 공개된 첫 사례.\n\n탐지와 통제의 시차\n침입은 6월 발생했지만 OpenAI가 발견한 것은 8월이며, 호주 정부 사이버 담당 부서에 제대로 전달된 것도 9월 중순.\n\nHugging Face 시스템 침입 이후 OpenAI가 에이전트 행동을 재검토하는 과정에서 호주 정부 침입까지 뒤늦게 발견.\n\n공교롭게도 사건 공개 당일 OpenAI와 Anthropic 수장이 유엔 안보리에서 AI 안전 국제협력을 촉구했지만, 트럼프 행정부는 초지능에 대한 국제적 통제 체계에 반대한다는 입장을 재확인.\n\n- 출처: FT",
+            "links": [
+              "https://giftarticle.ft.com/giftarticle/actions/redeem/7ac22ee1-35c1-49a1-a2f7-50df93b2fc7f"
+            ],
+            "post_url": "https://t.me/SpartanResearch/5087"
           }
         ]
       },
@@ -791,34 +804,6 @@
         "channel_url": "https://t.me/Yeouido_Lab",
         "posts": [
           {
-            "date": "2026-09-22",
-            "time": "21:41",
-            "text": "🔥 로슈/제넨텍, 비만치료제 CT-388 임상 2상 긍정적 결과 발표\n\n• GLP-1/GIP 이중작용제 CT-388(enicepatide)의 제2형 당뇨병 동반 비만·과체중 환자 447명 대상 임상 2상 결과 발표.\n\n• 주 1회 피하주사, 48주 평가. 최고 용량 24mg에서 평균 체중 15.5% 감량, 당화혈색소(HbA1c) 2.65%p 감소.\n\n• 24mg 투여군의 90%가 HbA1c 6.5% 이하에 도달했으며, 62%는 정상 혈당 범위인 5.7% 미만까지 개선.\n\n• 48주까지 체중 감량 효과의 정체(Plateau)가 관찰되지 않았으며, 이상반응으로 인한 투여 중단률도 2% 수준.\n\n• 앞서 비당뇨 비만 환자 대상 임상에서도 48주 위약 보정 체중 감량률 22.5%를 기록한 바 있음. 다만 환자군과 분석 방식이 다르기 때문에 직접적인 수치 비교에는 주의가 필요.\n\n• 로슈는 현재 비만 대상 임상 3상을 진행 중이며, 향후 당뇨병 임상 3상과 아밀린 유사체 petrelintide 병용 개발도 추진.\n\nhttps://www.roche.com/media/releases/med-cor-2026-09-22",
-            "links": [
-              "https://www.roche.com/media/releases/med-cor-2026-09-22",
-              "https://roche.com/media/releases/med-cor-2026-09-22"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37833"
-          },
-          {
-            "date": "2026-09-23",
-            "time": "07:35",
-            "text": ">>GPU·ASIC에 이어 CPU도 생산능력 쟁탈전 가세: ABF가 AI의 새로운 병목으로 부상 (중국언론) \n\n•GPU와 ASIC이 지난 2년간 고급 ABF 기판 생산능력을 지속적으로 소모한 가운데, AI 추론과 Agent 확산으로 CPU가 새로운 수요 변수로 등장. 학습 단계에서는 GPU 중심으로 자본지출이 집중됐지만, 추론·Agent 단계에서는 CPU가 작업 스케줄링, 데이터 전처리, 데이터베이스 접근, 네트워크·스토리지 제어 등을 담당하면서 수요가 증가하고 있음. Intel은 AI 데이터센터의 CPU:GPU 비율이 기존 1:4~1:8에서 1:1 수준으로 수렴할 가능성을 제시했으며, 일부 웨이퍼 생산능력을 Xeon으로 전환\n\n•현재 글로벌 ABF 기판 연간 수요는 약 3,500만개, AI 관련 GPU·CPU·TPU 수요가 약 1,800만개로 절반을 넘음. 전통적인 PC CPU용 기판 수요는 최근 2년간 거의 증가하지 않아 ABF 시장의 성장 중심이 PC에서 데이터센터로 이동. 고급 기판 가격도 일반 PC용 4080위안 대비 중급 서버 CPU는 2050달러, AI 서버용은 수백달러 수준으로 높음. GB300은 약 250~260달러, Rubin은 약 350달러, Rubin Ultra는 약 450달러 수준\n\n•AI 칩의 대형화와 고층화도 생산능력을 압박하고 있음. AMD MI450은 약 100mm×120mm, 24층으로 현재 양산 공정의 크기 한계에 근접하며 휨 제어 난이도도 높음. 여기에 고급 압합 장비 납기가 2031년까지 연장되는 등 장비·소재·인증·수율이 모두 증설 제약 요인으로 작용하고 있음.\n\n•결국 GPU·ASIC·CPU가 동일한 대형·고층 ABF 생산능력을 동시에 소모하면서, 향후 ABF 산업의 핵심은 단순히 칩 출하량이 아니라 동시에 얼마나 많은 양품 기판을 공급할 수 있는지가 될 전망\n\n>GPU、ASIC之后，CPU又来抢产能：ABF为何成为AI的新瓶颈？ https://wallstreetcn.com/member/articles/3782277#from=ios",
-            "links": [
-              "https://wallstreetcn.com/member/articles/3782277#from=ios"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37834"
-          },
-          {
-            "date": "2026-09-23",
-            "time": "07:47",
-            "text": "[단독]키움운용, 국내 첫 ‘MLCC ETF’ 출격…삼성전기·무라타 담는다\nhttps://n.news.naver.com/article/011/0004664656?sid=101",
-            "links": [
-              "https://n.news.naver.com/article/011/0004664656?sid=101"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/37835"
-          },
-          {
             "date": "2026-09-23",
             "time": "08:23",
             "text": "메르님 대미투자 정리\n\nhttps://blog.naver.com/ranto28/224420531706",
@@ -963,6 +948,31 @@
               "https://markettimes.co.kr/2026/09/24/hlb-%ed%95%ad%ec%95%94%ec%8b%a0%ec%95%bd-%ec%b2%ab-fda-%ec%8a%b9%ec%9d%b8%eb%a6%ac%eb%9d%bc%ed%91%b8%ea%b7%b8%eb%9d%bc%ed%8b%b0%eb%8b%99-%eb%8b%b4%ea%b4%80%ec%95%94-%ec%b9%98%eb%a3%8c%ec%a0%9c"
             ],
             "post_url": "https://t.me/Yeouido_Lab/37852"
+          },
+          {
+            "date": "2026-09-24",
+            "time": "10:04",
+            "text": "[속보]시진핑 \"중국 부흥과 미국의 MAGA, 양립 가능…세계에도 이익\"\nhttps://n.news.naver.com/article/003/0014212017?sid=104",
+            "links": [
+              "https://n.news.naver.com/article/003/0014212017?sid=104"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37853"
+          },
+          {
+            "date": "2026-09-24",
+            "time": "12:06",
+            "text": "트럼프 “시 주석은 위대한 지도자”…시진핑 “미중은 라이벌 아닌 파트너”\nhttps://n.news.naver.com/article/081/0003683368?sid=104",
+            "links": [
+              "https://n.news.naver.com/article/081/0003683368?sid=104"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/37854"
+          },
+          {
+            "date": "2026-09-24",
+            "time": "12:28",
+            "text": "ABF 기판: 공급 부족과 가격 인상(맥쿼리 리포트 중 발췌)\n\n맥쿼리는 2026년 하반기부터 2029년까지 ABF 기판 공급 부족을 예상하며, 특히 2026~2028년에 수급 격차가 확대될 것으로 봄. AI GPU·ASIC·CPU 성장과 패키지 대형화가 근거임. Unimicron은 추가 가격 인상과 AI 제품 비중 확대를 통해 향후 분기에도 마진이 개선될 것으로 전망됨. Ibiden은 ABF 매출에서 Intel향이 약 30%, AMD향이 15%이며, NVIDIA CPU용 기판 출하도 시작했다고 설명.",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/37855"
           }
         ]
       },
@@ -1105,6 +1115,13 @@
             "text": "ie, 상당히 많이 비운 상태에서도 시장은 (미국 기준으로는 이미 브레이크 아웃), 한국 기준으로는 상승 돌파 시도중\n\n코스피200 원화기준 100일선 (달러기준으로는 이미 브레이크 아웃 했으나)",
             "links": [],
             "post_url": "https://t.me/kkkontemp/2703"
+          },
+          {
+            "date": "2026-09-24",
+            "time": "11:53",
+            "text": "JPM 미국 국채 데일리:\n\n미국 국채 시장 일간 보고서 (US Treasury Market Daily)\n\n수익률 상승 및 5년물 입찰 부진:\n• 국채 수익률은 중기물(Intermediate sector)의 성과가 상대적으로 저하되며 수익률 곡선 전반에 걸쳐 10~15bp 상승했습니다.\n• 이번 약세 흐름은 야간 유럽 국채(EGB) 약세(OAT/Bund 및 BTP/Bund 스프레드 압박 지속)와 함께 시작되었으며, 매우 강하게 발표된 9월 PMI 지수 직후 가속화되었습니다.\n  • 종합 PMI: 58.4 (예상치: 55.3, 2021년 7월 이후 최고치)\n  • 제조업 PMI: 57.0 (예상치: 53.7, 2022년 4월 이후 최고치)\n\n• 이 데이터는 연율 약 5% 수준의 GDP 성장에 부합하는 수치입니다.\n\n• 이러한 변동성 속에서 5년물 국채 입찰은 입찰 전 금리 대비 3.2bp 높은 금리(Tail 발생, 입찰 부진)로 마감되었으며, 이는 2022년 6월 이후 가장 큰 폭의 테일(Tail) 결과입니다. 최종 투자자(End users) 낙찰 비중은 84.2%로 2024년 5월 이후 가장 낮았습니다.\n• 고객 설문조사(Treasury Client Survey) 결과 이번 주 초 매수(Long) 포지션이 다시 늘어났으며, 이러한 과도한 롱 포지션의 청산이 오늘 시장의 하락 압력을 가중시켰을 가능성이 있습니다.\n\n디젤 수출 규제 가능성 및 인플레이션 시장 영향:\n• 백악관이 디젤 시장에 대한 수출 통제를 심각하게 검토 중이라는 소식이 전해졌습니다.\n• 90일 수출 금지 또는 2027년 1월 만료안 등은 가격 하락 효과가 향후 6개월 내 집중되었다가 사라질 것임을 암시합니다.\n• 예측 시장(Prediction market) 데이터를 활용한 분석에 따르면, 수출 금지 시행 시 1년 CPI 인플레이션율에 약 -14bp의 조건부 영향을 미칠 것으로 추정되나, 백악관 관계자들의 부인 발언 이후 해당 영향은 해소되었으며 현재 가격에는 프리미엄이 거의 반영되어 있지 않은 상태입니다.\n\n7년물 국채 입찰 전망 (7-year auction preview)\n• 내일(9월 24일) 440억 달러 규모의 7년물 국채 입찰이 진행될 예정입니다 (지난달과 동일한 규모).\n• 7년물 금리는 지난 입찰 이후 54bp 상승하여, 2009년 7년물 재도입 이후 가장 높은 수준의 발행 금리로 입찰에 진입하고 있습니다.\n• 절대 금리 수준은 높아졌지만, 펀더멘털 요인(연준 정책 기대를 비롯한 인플레이션·성장 전망) 대비 중기 구간은 모델 평가상 약 19bp 정도 과평가(Rich)되어 있는 것으로 나타납니다.\n• 거시경제적 및 기술적 역풍이 공모 과정에 부담을 줄 것으로 예상되며, 내일 입찰이 원활하게 소화되기 위해서는 추가적인 양보(Concession, 금리 상승)가 필요할 것으로 판단합니다.\n\n--- \n\n금리가 상승하면서 유동성 지표까지 악화된다면 일시적인 패닉을 해도. \n\n그러나 유동성 지표가 견조하게 유지되는 환경이라면, 단지 '금리 상승'만으로 위험자산에 대해 비관론을 펼치기에는 무리",
+            "links": [],
+            "post_url": "https://t.me/kkkontemp/2704"
           }
         ]
       },
