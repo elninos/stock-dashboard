@@ -1,6 +1,6 @@
 {
   "2026-09-25": {
-    "fetched_at": "2026-09-25T21:38:51+09:00",
+    "fetched_at": "2026-09-26T02:50:40+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -437,22 +437,6 @@
         "posts": [
           {
             "date": "2026-09-18",
-            "time": "12:42",
-            "text": ">>방금, Gemini 4 Pro가 유출되어 공개 테스트에 등장! Astra와 Fable을 압도 \n(중국언론) \n\n•구글이 플래그십 모델 Gemini 4 Pro를 ‘gemini-3.8-flash’라는 이름으로 위장해 AI 아레나에 조용히 테스트용으로 공개한 것으로 보임. 벤치마크 결과 코딩, 에이전트, 추론 등 여러 능력에서 OpenAI의 Astra와 Anthropic의 Fable 5.1을 전면적으로 앞선 것으로 나타났으며, ‘현존 최강’으로 평가할 만한 수준임. 실제 테스트에서도 4 Pro는 UI 디자인, SVG/3D 생성 및 게임 개발 등에서 뛰어난 성능을 보였음. 구글이 이미 RSI(재귀적 자기개선) 폐쇄 루프를 구현해 Gemini 4의 사전학습을 앞당겨 완료했다는 이야기도 나옴\n\n>刚刚，Gemini 4 Pro偷跑上线！碾压Astra和Fable https://wallstreetcn.com/articles/3782055#from=ios",
-            "links": [
-              "https://wallstreetcn.com/articles/3782055#from=ios"
-            ],
-            "post_url": "https://t.me/SpartanResearch/5068"
-          },
-          {
-            "date": "2026-09-18",
-            "time": "13:35",
-            "text": "독립 보안 연구팀 Hacktron AI가 Anthropic의 Claude를 이용해 OpenAI의 내부 시스템에 침투했습니다.\n\n연구진은 지난 7월 OpenAI가 사용하는 외부 커뮤니티 서비스 Discourse의 취약점을 발견했습니다. 처음에는 Claude Opus 4.8을 이용해 공격을 시도했지만 실패했는데, Anthropic이 Claude Opus 5를 공개한 뒤 새 모델을 사용하자 취약점을 실제로 공략하는 코드 생성에 성공했습니다.\n\n이 코드를 이용해 Discourse 서버에 접근한 뒤 사용자 인증 토큰을 확보했고, 그중에는 OpenAI 직원들의 계정 토큰도 포함돼 있었습니다. 일부 토큰은 ChatGPT뿐 아니라 OpenAI의 GitHub에도 사용할 수 있었습니다.\n\n연구진은 이를 통해 OpenAI의 비공개 소프트웨어 저장소인 ‘Monorepo’에 접근해 내부 코드를 읽고 변경을 제안할 수 있는 수준까지 들어갔습니다. 이 저장소에는 OpenAI 모델을 효율적으로 작동시키는 핵심 알고리즘 관련 코드가 있었지만, 모델 자체의 핵심 자산인 weights(가중치)는 포함되지 않았습니다.\n\n다만 이들은 실제 악성 해커가 아니라 버그를 찾는 보안 연구자들이었기 때문에, 민감한 시스템에 접근할 수 있다는 사실을 확인한 시점에서 공격을 중단하고 OpenAI에 취약점을 신고했습니다. OpenAI는 이를 인정하고 6,500달러의 버그 바운티를 지급했습니다.\n\nWSJ가 강조하는 포인트는 AI 모델의 사이버 공격 능력이 빠르게 향상되고 있다는 것입니다. 이전에는 숙련된 해커가 해야 했던 취약점 탐색·공격 코드 작성 같은 작업을 최신 프런티어 모델이 상당 부분 자동화하면서, AI가 공격자의 능력을 크게 확대할 수 있다는 우려가 커지고 있다는 내용입니다.",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/5069"
-          },
-          {
-            "date": "2026-09-18",
             "time": "15:34",
             "text": "https://youtube.com/shorts/iMmIDELOINo?si=NVZBnlbFSjpfqysX",
             "links": [
@@ -602,6 +586,23 @@
               "https://giftarticle.ft.com/giftarticle/actions/redeem/7ac22ee1-35c1-49a1-a2f7-50df93b2fc7f"
             ],
             "post_url": "https://t.me/SpartanResearch/5087"
+          },
+          {
+            "date": "2026-09-25",
+            "time": "22:20",
+            "text": "Insightful한 영상. 비단 영상 업계를 넘어.. \n\nhttps://www.youtube.com/watch?v=tRsuIO8V55U",
+            "links": [
+              "https://www.youtube.com/watch?v=tRsuIO8V55U",
+              "https://youtube.com/watch?v=tRsuIO8V55U"
+            ],
+            "post_url": "https://t.me/SpartanResearch/5088"
+          },
+          {
+            "date": "2026-09-25",
+            "time": "23:28",
+            "text": "빌 게이츠, AI가 '10억 명의 사망자'를 초래할 수 있다고 경고\n\n빌 게이츠는 AI가 이미 잠재적으로 10억 명의 사망자를 발생시킬 수 있는 사건을 일으킬 만큼 강력하며, 특히 악의적인 행위자들이 고도화된 도구를 악용할 경우 더욱 위험하다고 경고함.\n\n게이츠는 AI가 역사적인 평등화 도구가 될 수도 있지만, 주요한 해악의 원천이 될 수도 있다고 언급하며 현재의 궤적이 상당한 위험을 내포하고 있다고 경고함.\n\n그는 기술을 통제하기가 더 어려워지기 전에 정부와 정당들이 AI 안전장치 마련을 위해 협력할 것을 촉구함.",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/5089"
           }
         ]
       },
