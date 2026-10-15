@@ -1,6 +1,6 @@
 {
   "2026-10-15": {
-    "fetched_at": "2026-10-15T21:31:55+09:00",
+    "fetched_at": "2026-10-16T02:40:33+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -123,13 +123,6 @@
         "category": "매크로/트레이딩",
         "channel_url": "https://t.me/survival_DoPB",
         "posts": [
-          {
-            "date": "2026-09-11",
-            "time": "11:02",
-            "text": "🤩S&P 500 내 Forward P/E 40배 이상인 기업 = 27개 뿐...  \n\n• 2021년 투기 국면 80~90개\n\n• 2020년 코로나 저점 약 27개\n\n• 2022년 Bear Market 저점 약 27개\n\n특이한 점은 2020·2022년에는 주가(P)가 폭락하면서 40배 이상 종목 수가 감소했지만, 지금은 S&P 500이 ATH에서 불과 약 3% 아래인데도 27개밖에 없다는 점임.",
-            "links": [],
-            "post_url": "https://t.me/survival_DoPB/13828"
-          },
           {
             "date": "2026-09-11",
             "time": "13:04",
@@ -259,6 +252,13 @@
             "text": "지금은 시장의 '신뢰 부족' 문제가 더 크지만\n\n2028년 기준 코스피 PBR 1배, 삼성전자 PBR 0.99배라는 수치는 이미 한국 기업들의 감익과 메모리 반도체 빅사이클의 하강 국면(다운사이클)을 반영하는 가격\n\n투자자들은 과거의 학습효과로 매도에 나서고 있지만, 과연 한국의 기업인들 그리고 정책 결정자들에게는 학습효과가 없는 것일까\n\n그것이야말로 우리 증시와 기업 가치에 대한 한계를 정할것",
             "links": [],
             "post_url": "https://t.me/survival_DoPB/13847"
+          },
+          {
+            "date": "2026-10-16",
+            "time": "00:13",
+            "text": "*NVIDIA CEO 젠슨 황: \n\n우리는 코어위브를 뒷받침할 필요가 없습니다. \n\n왜냐하면 그들의 자본 비용이 매일 감소하고 강점이 매일 증가하고 있기 때문입니다.",
+            "links": [],
+            "post_url": "https://t.me/survival_DoPB/13848"
           }
         ]
       },
@@ -269,15 +269,6 @@
         "category": "산업/기술 분석",
         "channel_url": "https://t.me/growthresearch",
         "posts": [
-          {
-            "date": "2026-10-15",
-            "time": "09:22",
-            "text": "✅Bloomberg: AI 클라우드, 기존 클라우드 수익성 추월 전망\n\nAI 인프라에 막대한 투자가 이어지는 가운데, \n2030년에는 일부 AI 클라우드 기업의 투하자본수익률(ROIC)이 기존 클라우드 기업을 넘어설 것으로 전망됩니다.\n\n특히 SpaceX의 AI 사업 ROIC는 2026년 -4%에서 2030년 25.5%까지 상승할 것으로 예상되며, \n\nAI 인프라 투자가 본격적인 수익 창출 단계로 전환될 가능성을 보여줍니다.\n\n📌 기존 클라우드, 안정적인 수익성 유지\nAWS의 ROIC는 2026년 약 24%에서 2030년 약 16.5%로 하락할 전망\n\n반면 구글 클라우드(GCP)는 같은 기간 약 14~14.5% 수준을 유지하며 안정적인 수익성 예상\n\n📌 SpaceX, AI 사업 수익성 급상승 전망\nSpaceX의 AI 사업 ROIC는 2026년 -4%에서 2027년 12%, 2028년 16%, 2030년 25.5%까지 상승 전망\n\n2028년부터 AWS와 GCP의 수익성을 넘어설 것으로 예상되며, 2030년에는 비교 기업 중 가장 높은 ROIC 기록 전망\n\n📌 네오클라우드도 수익성 개선\nCoreWeave의 ROIC는 2026년 약 2%에서 2030년 약 6.8%로 점진적인 상승 전망\n\nNebius 역시 2026년 -6%에서 2028년 약 4%로 흑자 전환하고, 2030년에는 약 8.8%까지 개선 예상\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/30407"
-          },
           {
             "date": "2026-10-15",
             "time": "09:56",
@@ -461,6 +452,15 @@
               "https://youtube.com/watch?v=EYm3dPQTfO8"
             ],
             "post_url": "https://t.me/growthresearch/30426"
+          },
+          {
+            "date": "2026-10-15",
+            "time": "22:28",
+            "text": "💻 인텔 CEO 립부 탄: 중국 AI 모델 빠르게 확산...미국 기업들도 도입 확대\n\n인텔 CEO 립부 탄까지 딥시크·키미·GLM 등 중국 AI 모델의 가격 경쟁력과 빠른 확산을 인정하면서, 중국 AI가 저비용·오픈소스를 무기로 글로벌 AI 시장에서 영향력을 키우고 있습니다.\n\n📌 인텔 CEO도 중국 AI 모델 경쟁력 인정\n인텔 CEO 립부 탄은 딥시크·키미·GLM 등 중국 AI 모델이 충분한 성능과 낮은 비용을 바탕으로 빠르게 확산되고 있다고 평가\n\n최고 성능보다는 실제 업무에 필요한 성능을 합리적인 가격에 제공하는 것이 강점\n\n오픈소스 AI 확대가 효율성을 높이고 AI 활용 저변을 넓힐 것으로 전망\n\n📌 딥시크, 토큰 비용 최대 16~32배 차이\n10월 기준 딥시크 V4.1 Flash의 비혼잡 시간대 API 가격은 입력 100만 토큰당 0.15달러, 출력 0.60달러\n\n동일한 입력·출력 각 100만 토큰 기준 딥시크 0.75달러, GPT-6.1 Sol 12달러, Claude Opus 5.5는 24달러\n\n다만 딥시크는 혼잡 시간대 가격이 2배이며, 중국 모델 전체가 동일한 가격 우위를 가진 것은 아님\n\n📌 OpenRouter에서 중국 모델 사용량 급증\n9월 7~13일 중국 AI 모델 사용량은 약 61.2조 토큰으로 미국 모델 21.8조 토큰의 약 2.8배\n\n해당 플랫폼에서 중국 모델이 20주 연속 미국 모델 사용량을 앞선 것으로 집계\n\n다만 OpenRouter 플랫폼 내부 통계로, 글로벌 AI 시장 전체 점유율을 의미하지는 않음\n\n📌 미국 기업까지 중국 오픈모델 활용\n도어대시·에어비앤비 등 미국 기업들도 일부 일반 업무에 중국 오픈웨이트 AI 모델 활용\n\n기업 입장에서는 모든 작업에 최고가 모델을 사용할 필요가 없어 비용 대비 성능이 중요한 선택 기준으로 부상\n\n결국 AI 경쟁이 최고 성능 모델 확보에서 추론 비용·오픈모델 활용·실제 서비스 경제성으로 확대되는 흐름\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
+            "links": [
+              "https://telegram.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/30427"
           }
         ]
       },
@@ -471,13 +471,6 @@
         "category": "매크로/크립토",
         "channel_url": "https://t.me/SpartanResearch",
         "posts": [
-          {
-            "date": "2026-10-15",
-            "time": "09:00",
-            "text": "시장에 ‘단기금리 상승 + 장기금리 하락’이 동시에 나타날 때",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/5305"
-          },
           {
             "date": "2026-10-15",
             "time": "09:20",
@@ -587,6 +580,13 @@
             "text": "1. 조정 시작 뒤 신용÷예탁금이 먼저 오름. 지수가 빠지는 초반엔 빚 비중이 오히려 커짐 \n\n2. 조정이 깊어지거나 길어지면 반대매매 및 상환으로 비율이 꺾임\n\n3. 현재 지수는 하락 중이나 신용÷예탁금이 먼저 오르는 중.",
             "links": [],
             "post_url": "https://t.me/SpartanResearch/5325"
+          },
+          {
+            "date": "2026-10-15",
+            "time": "21:33",
+            "text": "ㅈ망\n\nPPI MoM 1.3%/0.6%(컨센)\nPPI YoY 6.3%/5.3%(컨센)",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/5326"
           }
         ]
       },
@@ -779,13 +779,6 @@
           {
             "date": "2026-10-15",
             "time": "13:14",
-            "text": "US Considering Using ‘Mother Of All Bombs’ Against Iran, Sources Say - CNN",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/38176"
-          },
-          {
-            "date": "2026-10-15",
-            "time": "13:14",
             "text": "한국을 상대로 사용했는데 이미?",
             "links": [],
             "post_url": "https://t.me/Yeouido_Lab/38177"
@@ -906,6 +899,13 @@
             "text": "ㅈ망\n\nPPI MoM 1.3%/0.6%(컨센)\nPPI YoY 6.3%/5.3%(컨센)",
             "links": [],
             "post_url": "https://t.me/Yeouido_Lab/38195"
+          },
+          {
+            "date": "2026-10-15",
+            "time": "21:56",
+            "text": "BLS는 상품 PPI 상승분의 80% 이상이 에너지 때문이라고 설명\n\n향후 유가가 안정된다면 이번 상승이 피크일 수도 있다고 시장은 받아들이는 것인지\n\n일단 미친듯한 컨센 상회에도 시장은 크게 반응을 나타내지는 않는데 \n일단 본장에서의 반응을 지켜볼 필요\n\n\n결국 유가 안정이 관건",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/38196"
           }
         ]
       },
@@ -3302,6 +3302,24 @@
         "category": "공시",
         "posts": [
           {
+            "date": "2026-10-16",
+            "time": "00:00",
+            "text": "[우리산업] 주요사항보고서(타법인주식및출자증권양수결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261015000444"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261015000444"
+          },
+          {
+            "date": "2026-10-16",
+            "time": "00:00",
+            "text": "[모아데이타] [기재정정]주요사항보고서(자기전환사채만기전취득결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261015000442"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261015000442"
+          },
+          {
             "date": "2026-10-15",
             "time": "00:00",
             "text": "[KG스틸] 주요사항보고서(자기주식처분결정)\n공시유형: 주요사항보고",
@@ -3534,24 +3552,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261015000184"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261015000184"
-          },
-          {
-            "date": "2026-10-15",
-            "time": "00:00",
-            "text": "[큐로홀딩스] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261015000163"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261015000163"
-          },
-          {
-            "date": "2026-10-15",
-            "time": "00:00",
-            "text": "[진시스템] 주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261015000167"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261015000167"
           },
           {
             "date": "2026-10-14",
