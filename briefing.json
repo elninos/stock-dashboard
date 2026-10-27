@@ -1,6 +1,6 @@
 {
   "2026-10-27": {
-    "fetched_at": "2026-10-27T15:05:16+09:00",
+    "fetched_at": "2026-10-27T22:03:46+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -109,13 +109,6 @@
         "category": "매크로/트레이딩",
         "channel_url": "https://t.me/survival_DoPB",
         "posts": [
-          {
-            "date": "2026-09-23",
-            "time": "07:19",
-            "text": "미 10년물과 WTI의 3개월 rolling correlation이 65%로 35년 최고 수준까지 상승",
-            "links": [],
-            "post_url": "https://t.me/survival_DoPB/13839"
-          },
           {
             "date": "2026-09-23",
             "time": "07:20",
@@ -249,6 +242,13 @@
             "text": "앤트로픽 현금성 자산. 아마존, 메타, 마이크로소프트 보다 많음 (2Q26 기준)",
             "links": [],
             "post_url": "https://t.me/survival_DoPB/13858"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "19:45",
+            "text": "이란의 최고지도자가 전쟁을 끝내기 위해 수용 가능한 조건에 대한 제안을 촉구했습니다.",
+            "links": [],
+            "post_url": "https://t.me/survival_DoPB/13859"
           }
         ]
       },
@@ -259,77 +259,6 @@
         "category": "산업/기술 분석",
         "channel_url": "https://t.me/growthresearch",
         "posts": [
-          {
-            "date": "2026-10-26",
-            "time": "17:50",
-            "text": "🎬 AI 데이터센터가 키우는 ESS 시장, 진짜 수혜주는 따로 있다! [ESS 산업보고서]\n\nhttps://youtu.be/q6sBR8ftMjg\n\n📌 AI·재생에너지 확대로 ESS 시장 고성장\n재생에너지의 발전량 변동과 AI 데이터센터의 전력 수요 증가로 ESS 도입 확대\n\n2025년 글로벌 ESS 신규 설치 규모는 108GW로 전년 대비 40% 증가\n\n📌 북미 공급망 재편, 국내 배터리 기업에 기회\n미국의 중국산 배터리 관련 규제 강화로 가격뿐 아니라 공급망 적격성도 중요해지는 상황\n\nLG에너지솔루션·삼성SDI·SK온은 기존 전기차 생산설비를 ESS용 LFP 배터리 생산으로 전환하며 공급 확대 추진\n\n📌 배터리 제조사보다 부품·모듈 업체에 주목\n국내 배터리 제조사의 ESS 생산 확대는 모듈·팩·냉각부품 등 밸류체인 전반의 수혜로 연결 가능\n\n특히 ESS 매출 증가와 함께 실제 영업이익 개선이 나타나는 기업에 주목할 필요\n\n📌주목할 기업은?\n\n📍 세방전지\n안정적인 납축전지 본업에 북미 ESS 모듈·팩 신사업이 추가되는 구조\n\n📍 신성에스티\n미국 히트싱크 생산능력 확대와 고부가 제품 비중 증가에 따른 수익성 개선 기대\n\n📍 한중엔시에스\n삼성SDI향 ESS 수냉식 냉각시스템 공급과 북미 생산 확대 수혜 기대\n\nESS 시장의 성장 배경부터 국내 배터리 밸류체인의 핵심 수혜 기업까지 영상에서 쉽게 정리했습니다!\n\n많은 시청 부탁드립니다‼️\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
-            "links": [
-              "https://youtu.be/q6sBR8ftMjg",
-              "https://telegram.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/30737"
-          },
-          {
-            "date": "2026-10-26",
-            "time": "18:21",
-            "text": "✍️그로쓰리서치 구독자분들께 드리는 글✍️\n\n주식시장에서 정보의 속도와 분석의 깊이는 점점 더 중요해지고 있습니다.\n\n저희는 이러한 변화에 대응하기 위해 \n\n엔비디아 GPU 인프라를 내부에서 지속적으로 확충하고 있습니다.\n\n🔥또한 현재 AI팀을 새로 꾸려 AI에이전트 기반의 실시간 시장 분석 시스템을 구축하고 있습니다🔥.\n\n➡️채널이 하나씩 만들어질때마다 구독자분들께 전달드리도록 하겠습니다.\n\n현재 운영하는 채널 리스트\n✅그로쓰리서치 메인채널 텔레그램\nhttps://t.me/growthresearch\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://t.me/growth_semi\n\n🧬바이오섹터 분석🧬 채널\nhttps://t.me/growthbio\n\n🔥특징주 텔레그램 채널🔥 \nhttps://t.me/rocket_news1\n\n📈IPO 채널📈[그로쓰리서치]\nhttps://t.me/growth_IPO\n\n현재 AI팀에서는 국내외 주요 뉴스와 기업 공시, 산업별 이슈를 자동으로 수집하고 분석해 \n\n시장에서 주목해야 할 정보를 신속하게 전달하는 것을 구축하고 있습니다.\n\n📌앞으로 AI 에이전트의 역할을 확대해 \n- 실시간 IPO 수요예측 분석 및 일정 체크 (개발 완료)\n- 실시간 미국증시 주요 이슈 분석\n- 국내 주식 공시 분석\n- 산업 이슈 추적\n\n핵심 정보 요약까지 하나의 유기적인 리서치 시스템으로 연결해 나갈 계획입니다.\n\n저희 그로쓰리서치는 AI에이전트를 단순한 업무 보조 도구가 아닌, 리서치 경쟁력을 높이는 핵심 인프라로 바라보고 있습니다.\n\n지속적인 GPU 투자와 AI 시스템 개발을 통해 구독자 여러분께 더 높은 수준의 리서치 서비스를 제공하겠습니다.\n\n🔥기대해주셔도 좋습니다. 감사합니다.🔥",
-            "links": [
-              "https://t.me/growthresearch",
-              "https://t.me/growth_semi",
-              "https://t.me/growthbio",
-              "https://t.me/rocket_news1",
-              "https://t.me/growth_IPO"
-            ],
-            "post_url": "https://t.me/growthresearch/30738"
-          },
-          {
-            "date": "2026-10-26",
-            "time": "19:06",
-            "text": "📔강스템바이오텍 (217730)\n· 시가총액 : 1,808억원\n\n📍투자판단관련주요경영사항(임상시험결과) (퓨어스템-오에이 키트 주(FURESTEMOA Kit Inj.)(OSCA) 제1/2a상 임상시험 결과보고서(CSR) 수령)\n· 공시 시간 : 2026-10-26 19:04\n\n📍핵심 내용\n· 발표 내용: 퓨어스템-오에이 키트 주(FURESTEM-OA Kit Inj.)(OSCA) 제1/2a상 임상시험 결과보고서(CSR) 수령\n\n· 임상 명칭\n무릎 골관절염 환자에서 퓨어스템-오에이 키트 주(FURESTEM-OA Kit Inj.) 투여 시의 안전성 및 탐색적인 유효성 평가를 위한, 단회 투여, 단계적 용량증량 및 적정용량 탐색, 제1/2a상 임상시험\n\n· 시험 단계: 국내 임상 제1/2a상\n\n· 심사·승인 기관: 식품의약품안전처(MFDS)\n\n· 임상 국가: 대한민국\n\n· 대상 질환: 무릎 골관절염(Knee Osteoarthritis)\n\n· 신청일: 2024-12-10\n\n· 승인일: 2025-01-24\n\n· 시험 목적\n1. 제1상 임상시험 1) 1차 목적 : 무릎 골관절염 환자에서 퓨어스템-오에이 키트 주(FURESTEM-OA Kit Inj.) 투여 시의 안전성 및 내약성 평가 2) 2차 목적 : 무릎 골관절염 환자에서 퓨어스템-오에이 키트 주(FURESTEM-OA Kit Inj.) 투여 후 탐색적 유효성 평가\n\n2. 제2a상 임상시험 1) 1차 목적 : 2a 상 임상시험에서의 권장용량 (Recommended Phase 2 Dose, RP2D) 확인 2) 2차 목적 : 무릎 골관절염 환자에서 퓨어스템-오에이 키트 주 (FURESTEM-OA Kit Inj.) 투여 후 탐색적 유효성 평가\n\n· 시험 방법\n1. 시험대상자수 : ① 제1상 임상시험 : 총 12~18명 - 코호트 1(저용량군) : 3명 또는 6명 - 코호트 2(중용량군) : 3명 또는 6명 - 코호트 3(고용량군) : 6명 ② 제2a상 임상시험 : 총 108명 - 시험군 1(중용량군) : 36명 - 시험군 2(고용량군) : 36명 - 위약군 : 36명\n\n2. 실시방법 : 단계적 용량증량-용량확대, 제1/2a상 임상시험 ① 제1상 : 공개, 용량증량 ② 제2a상 : 위약 대조, 무작위배정, 평행, 단일 눈가림\n\n· 1차 지표\n* 본 임상은 1/2a임상으로 1차 지표가 아닌 평가변수로 작성하였습니다.\n\n1. 안전성 평가변수\n\n1) 내약성 ① DLT 확인 및 MTD 결정(제1상 임상시험에 해당) ② 약물이상반응으로 인한 중도탈락 ③ RP2D 확인(제2a상 임상시험에 해당)\n\n2) 안전성 ① 이상사례 ② 실험실적 검사 ③ 활력징후 ④ 항체 검사: PRA(panel reactive antibody) 검사, CD4, CD8\n\n2. 유효성 평가변수 (단, 제2a상 임상시험의 경우 1주 시점은 평가하지 않는다.)\n\n1) 통증(pain) 및 기능(function) 평가 - 베이스라인 대비 임상시험용 의약품 투여 후 1주, 4주, 8주, 12주, 16주, 20주 및 24주 시점의 Knee Injury and Osteoarthritis Outcome Score (KOOS) 변화율 및 변화량 - 베이스라인 대비 임상시험용 의약품 투여 후 1주, 4주, 8주, 12주, 16주, 20주 및 24주 시점의 Western Ontario and McMaster Universities osteoarthritis index (WOMAC) 점수 변화율 및 변화량 - 베이스라인 대비 임상시험용 의약품 투여 후 1주, 4주, 8주, 12주, 16주, 20주 및 24주 시점의 100-mm VAS 점수 변화…\n(일부 생략·원문 확인)\n\n· 예정 기간: 2a임상 첫번째 환자 등록 : 2025-03-17 2a임상 마지막 환자 관찰 종료 : 2026-04-20\n\n· 목표 대상자: 108명 (제 2a상) (실제 모집된 대상자수 : 113명)\n\n· 임상 결과\n1. 안전성 평가변수\n\n1) 내약성 ① DLT 확인 및 MTD 결정 - 용량제한독성(DLT) 확인 및 최대내약용량(MTD) 결정을 목적으로 코호트 1, 2 및",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026900773",
-              "https://t.me/growth_dart"
-            ],
-            "post_url": "https://t.me/growthresearch/30739"
-          },
-          {
-            "date": "2026-10-26",
-            "time": "19:09",
-            "text": "🧬강스템바이오텍(217730), 퓨어스템-오에이 키트 주 1/2a상 CSR 수령\n\n💊임상 개요\n• 대상: 무릎 골관절염 환자, 국내 1/2a상 (식약처 승인 2025-01-24)\n\n• 1상: 공개·용량증량 (저/중/고용량 코호트 총 12명)\n\n• 2a상: 위약 대조·무작위·단일 눈가림, 목표 108명 → 실제 113명 모집\n\n• 2a상 투여 용량: 중용량 5.0x10^7 cells / 고용량 1.0x10^8 cells\n\n💊안전성 결과\n• 1상 전 용량군 DLT 미관찰, CTCAE grade 3 이상 약물이상반응 없음 → MTD는 최고 용량보다 높은 것으로 확인\n\n• 1/2a상 모두 약물이상반응으로 인한 중도탈락 0건\n\n• TEAE 발생률: 중용량 57.89% / 고용량 52.63% / 위약 35.14%, 군 간 차이 유의하지 않음(p=0.1197)\n\n• ADR 발생률: 중용량 7.89% / 고용량 21.05% / 위약 0%, 군 간 차이 유의(p=0.0062)\n\n• SAE 3명(2.65%), 군 간 차이 유의하지 않음 / 중대한 약물이상반응(SADR) 전 군 0건\n\n• 실험실 검사·활력징후 임상적으로 유의한 이상 소견 없음\n\n💊체크 포인트\n• 이번 공시는 안전성 위주로 공개됐고, KOOS·WOMAC·VAS 등 유효성 지표 수치는 미기재 → 원문 확인 필요\n\n• 고용량군 ADR이 위약 대비 유의하게 높게 나온 만큼 RP2D 선정 근거가 후속 설계의 핵심\n\n• 향후 국내 파트너사 유영제약과 후속 국내 임상 설계 및 식약처 협의에 활용 예정\n\n🧬바이오섹터 분석🧬[그로쓰리서치] https://t.me/growthbio",
-            "links": [
-              "https://t.me/growthbio"
-            ],
-            "post_url": "https://t.me/growthresearch/30740"
-          },
-          {
-            "date": "2026-10-27",
-            "time": "08:06",
-            "text": "✅AI 투자 수익성 논란…2031년 매출 3조 달러 필요?\n\n빅테크의 막대한 AI 투자가 정당화되려면 2031년 수조 달러 규모의 매출이 필요하다는 분석이 나왔습니다.\n\n현재 클라우드 사업의 영업이익률은 30~35% 수준으로, 향후 AI 투자 수익성이 핵심 변수로 떠오르고 있습니다.\n\n📌 AI 투자 수익률 15% 달성 조건\n2031년 투자자본수익률(ROIC) 15% 달성을 위해 영업이익 1조 260억 달러 필요\n\n영업이익률 30% 가정 시 매출 3조 4,200억 달러가 필요한 것으로 추정\n\n📌 수익률 높이려면 매출도 급증\nROIC 10% 달성에는 영업이익 6,840억 달러 필요\n\nROIC 20% 달성에는 영업이익 1조 3,680억 달러 필요\n\n📌 AI 투자 회수 능력이 관건\n영업이익률 35% 가정 시 ROIC 15%에 필요한 매출은 2조 9,310억 달러\n\n영업이익률이 25%로 낮아지면 필요 매출은 4조 1,040억 달러까지 증가\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/30741"
-          },
-          {
-            "date": "2026-10-27",
-            "time": "08:20",
-            "text": "💻 ABF 증설에 밀리는 BT 기판…심텍, SOCAMM 성장 수혜 기대[DigiTimes]\n\nhttps://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&id=0000772520_Z8D4KUFO399ZPELHMC3UF\n\nABF 증설 집중 → BT 공급 증가 제한 → SOCAMM 수요 확대 → 심텍의 성장 기회\n\n📌 핵심 요약\n• 삼성전기(SEMCO) 등 주요 패키징 기판 업체들이 대면적·고다층 ABF 기판에 설비투자를 집중\n\n• 상대적으로 메모리용 BT 기판의 증설은 제한적 → 공급 부족 및 수급 타이트화 가능성 확대\n\n• 저전력 메모리 모듈 SOCAMM 수요 증가가 BT 기판 시장의 새로운 성장 동력으로 부상\n\n• 국내 반도체 패키징 기판 업체 심텍(Simmtech)이 이러한 산업 구조 변화의 수혜 후보로 부각\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
-            "links": [
-              "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&amp;id=0000772520_Z8D4KUFO399ZPELHMC3UF",
-              "https://telegram.me/growth_semi",
-              "https://digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&amp;id=0000772520_Z8D4KUFO399ZPELHMC3UF"
-            ],
-            "post_url": "https://t.me/growthresearch/30742"
-          },
-          {
-            "date": "2026-10-27",
-            "time": "08:30",
-            "text": "💻 [TrendForce] GPU 제외 IT 핵심 부품 공급난 심화…DRAM·HDD·ABF 수급 비상\n\n트렌드포스(10/26)에 따르면 주요 IT 부품 7개 중 6개가 공급 부족 상태. \n\n특히 DRAM·HDD·ABF 기판의 공급 부족이 가장 심각한 것으로 나타남.\n\n📌 주요 부품별 공급 현황\n(현재 리드타임 → 적정 리드타임)\n\n🔴 심각한 공급 부족 (Very Tight)\nDRAM: 20주 → 8주 (2.5배)\n\nHDD: 50주 → 16주 (3.1배)\n\nABF 기판: 48~56주 → 12주 (4.0~4.7배)\n\n🔴 공급 제한 (Tight)\nCPU: 25~30주 → 16~20주\n\nNAND(eSSD): 16주 → 8주 (2배)\n\nMLCC: 35주 → 12주 (2.9배)\n\n🟢 수급 균형 (Balanced)\nGPU: 30~40주 → 30~40주\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
-            "links": [
-              "https://telegram.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/30743"
-          },
           {
             "date": "2026-10-27",
             "time": "08:43",
@@ -434,6 +363,67 @@
               "https://t.me/growthresearch"
             ],
             "post_url": "https://t.me/growthresearch/30757"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "15:08",
+            "text": "💻SK하이닉스 3분기 실적 프리뷰: 영업이익률 78%, 사상 최대 실적 전망[트렌드포스]\n\nhttps://www.trendforce.com/news/2026/10/26/news-sk-hynix-3q-earnings-preview-record-profit-at-78-operating-margin-hbm4-ltas-solidigm-in-focus/\n\n📌 실적 컨센서스 (10월 28일 발표)\nSK하이닉스(000660) 3분기 매출 98.23조 원(전년 대비 +301.8%), 영업이익 76.96조 원(전년 대비 +576.1%) 전망\n영업이익률 78.4%로 사상 최고 수준\n\n4분기 영업이익 컨센서스는 87.27조 원으로 추가 성장 예상\n\n앞서 삼성전자(005930)는 3분기 영업이익 107.4조 원(전년 대비 +782.5%)을 제시\n\n📌 증권사 추정치 편차\nSK증권 79조 원, 메리츠증권 80.1조 원, DS투자증권 70.1조 원\n\n최고치와 최저치 차이가 10조 원에 달해, 실제 발표치에 따라 주가 반응이 크게 갈릴 수 있음\n\n📌 메모리 가격\n2분기 DRAM 평균판매가격(ASP) +30%, NAND +50%대 중반 상승에 이어\n\n3분기 DRAM ASP +21%(전 분기 대비) 전망 → DRAM 부문 영업이익률 83% 수준\n\n3분기 NAND ASP는 +17%(전 분기 대비) 전망\n\n📌 HBM4: 출하는 아쉽고 가격은 강함\n엔비디아(NVDA) 베라 루빈향 HBM4 매출이 3분기부터 반영되기 시작\n\n다만 루빈 출시 지연과 양산 칩 성능 튜닝이 길어지면서, HBM4 출하가 2개 분기 연속 기대치에 못 미쳤을 가능성이 제기됨\n\nJP모간은 HBM4 ASP가 2025년 대비 2027년 121% 상승할 것으로 추정. 출하 부진을 가격이 상당 부분 메워 주는 구조\n\n📌 장기공급계약(LTA) 확산\nSK하이닉스: 7월 실적 발표 때 주요 고객 포함 약 10곳과 다년 계약 체결 공개\n\n삼성전자: 메모리 생산능력의 60~70%를 장기 계약에 배정할 계획으로 알려짐\n\n미국 빅테크도 물량 확보 경쟁: HP·델은 마이크론(MU)과 공급 계약을 2031년까지 연장했고, 알파벳은 2035년까지 이어지는 계약을 추진 중\n\n메모리가 사이클 산업에서 '장기 계약 기반 인프라 산업'으로 성격이 바뀌는 신호. 실적 가시성이 높아지면 밸류에이션 재평가 근거가 될 수 있음\n\n📌 솔리다임 IPO 보류: 미국 NAND 증설 자금은 어디서?\n미국 자회사 솔리다임의 IPO를 보류하면서 미국 NAND 증설 재원이 쟁점으로 부상\n\n거론되는 선택지: 내부 현금, 차입, 합작법인(JV), 장기 계약과 연계한 고객 선급금\n\n메모리 팹 하나에 수십조 원이 드는 만큼 JV가 유력한 대안. 솔리다임 스토리지 수요가 큰 \n\n클라우드 기업(CSP)이 파트너로 참여해 장기 물량을 확보하는 구조가 거론됨\n\n📌 컨퍼런스콜 체크포인트\nHBM4 출하 정상화 시점과 엔비디아 루빈 일정\n\n4분기 이후 DRAM·NAND 가격 가이던스\n\nLTA 고객 수와 계약 기간 업데이트\n\n솔리다임 증설 재원 방안 (JV 파트너 언급 여부)\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
+            "links": [
+              "https://www.trendforce.com/news/2026/10/26/news-sk-hynix-3q-earnings-preview-record-profit-at-78-operating-margin-hbm4-ltas-solidigm-in-focus/",
+              "https://telegram.me/growth_semi",
+              "https://trendforce.com/news/2026/10/26/news-sk-hynix-3q-earnings-preview-record-profit-at-78-operating-margin-hbm4-ltas-solidigm-in-focus"
+            ],
+            "post_url": "https://t.me/growthresearch/30758"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "16:15",
+            "text": "✅ AI전환으로 선박 SW경쟁력 속도내는 HD현대..SDV센터 신설\n\nhttps://www.mt.co.kr/industry/2026/10/27/2026102714221116062\n\nHD현대가 AI 기반 선박 기술 개발을 위해 소프트웨어 중심 선박(SDV) 전담 조직을 신설했습니다.\n\n중국 조선사들의 추격 속에서 선박 건조 기술을 넘어 AI·소프트웨어로 경쟁력을 확보한다는 전략입니다.\n\n📌 HD현대, SDV센터 신설\nAI 전환을 담당하는 AIX추진실 산하에 SDV센터 신설\n\n박사급 연구원 약 50명으로 구성된 전문 연구 조직 운영\n\n선박 설계·건조·운항 전반에 AI 기술 적용 추진\n\n📌 소프트웨어로 선박 성능 개선\nSDV는 자동차처럼 소프트웨어로 선박의 기능과 성능을 개선하는 기술\n\n선박 설계 데이터와 실제 운항 데이터를 연결해 성능 차이 분석\n\n분석 결과를 제어 기술에 반영해 운항 효율과 관리 수준 개선\n\n📌 중국 조선사와 기술 경쟁 본격화\n중국 조선사들이 생산능력을 앞세워 글로벌 시장 점유율 확대\n\nHD현대는 분산된 선박 데이터를 통합해 AI 활용 기반 구축 추진\n\n건조 기술에 AI·소프트웨어 경쟁력을 더해 차별화에 나설 계획\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://www.mt.co.kr/industry/2026/10/27/2026102714221116062",
+              "https://t.me/growthresearch",
+              "https://mt.co.kr/industry/2026/10/27/2026102714221116062"
+            ],
+            "post_url": "https://t.me/growthresearch/30759"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "16:27",
+            "text": "✅문체부 \"올해 방한 관광객 역대 최다 2천300만명 예상\"\n\nhttps://www.yna.co.kr/view/AKR20261027150600030?input=1195m\n\n올해 한국을 찾은 외국인 관광객이 지난해 연간 기록을 두 달 앞당겨 넘어섰습니다.\n\n정부는 연말까지 2,300만 명 방문을 전망하며, 쇼핑·숙박·의료 등 관광 소비 확대가 기대됩니다.\n\n📌 방한 관광객 역대 최고 기록\n10월 26일까지 누적 방한객은 약 1,891만 명으로 잠정 집계\n\n27일에는 지난해 연간 최고 기록인 1,894만 명을 넘어선 것으로 추산\n\n11월 셋째 주에는 사상 첫 누적 2,000만 명 돌파 전망\n\n📌 연간 관광객 2,300만 명 기대\n정부는 현재 성장세가 이어지면 연말 2,300만 명 달성 가능하다고 전망\n\n11월 한 달 방한객은 약 194만 명으로 예상\n\n향후 외국인 관광객 3,000만 명을 목표로 관광 정책 확대 추진\n\n📌 쇼핑·숙박·의료 산업 수혜 기대\n올해 1~9월 외국인 관광 소비 비중은 쇼핑 37.0%, 숙박 19.6%, 의료·웰니스 16.6% 순\n\n지역 방문 횟수도 6,472만 회로 전년 대비 19.7% 증가\n\n외국인 관광객 증가에 따라 백화점·호텔·의료관광 등 관련 산업 수혜 기대\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://www.yna.co.kr/view/AKR20261027150600030?input=1195m",
+              "https://t.me/growthresearch",
+              "https://yna.co.kr/view/AKR20261027150600030?input=1195m"
+            ],
+            "post_url": "https://t.me/growthresearch/30760"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "16:40",
+            "text": "🧬 비만치료제 ‘관리급여’ 편입 검토…정부, 오남용 관리 고삐\n\nhttps://n.news.naver.com/mnews/article/011/0004675648\n\n💊 비만치료제 관리급여 편입 추진\n복지부, 위고비·마운자로 등 비만치료제 관리급여 편입 검토\n\n관리급여 적용 시 환자 본인부담률 95%, 건강보험 체계 내 가격·진료 기준 관리\n\n제약사 급여 신청 진행 중이나 적용 약제·범위·시기는 미확정\n\n💊 GLP-1 처방 급증 속 오남용 우려 확대\n동일 성분 중복 처방 경고에도 처방 유지된 사례 7만18건\n\n올해 1~8월 3만8,466건으로 지난해 연간 대비 23.4% 증가\n\nDUR 경고 무시 비율 약 97%, 임부금기 경고 후 처방 유지 비율 32.8%\n\n위고비·마운자로 등 서로 다른 성분 간 중복 처방은 경고 사각지대\n\n💊 처방 규제 강화 및 의료기관 현장조사\n식약처, 비만치료제의 오남용 우려 의약품 지정 추진\n\n복지부, 의료계와 처방 가이드라인 및 자율 개선 대책 협의\n\n처방 상위 20개 의료기관 대상 불법 원내 판매 여부 현장조사 착수\n\n💊 비만치료제 시장, 처방 관리 강화가 변수\n국내 건강검진 수검자 중 BMI 25 이상 약 40%, BMI 30 이상 7.7%\n\n관리급여 도입 시 비급여 중심 시장의 가격·처방 구조 변화 가능성\n\n고도비만 환자 대상 건강보험 급여 확대 여부도 주요 관전 포인트\n\n향후 규제 적용 범위에 따라 위고비·마운자로 국내 판매 전략 영향 가능\n\n🧬바이오섹터 분석🧬 [그로쓰리서치]\nhttps://t.me/growthbio",
+            "links": [
+              "https://n.news.naver.com/mnews/article/011/0004675648",
+              "https://t.me/growthbio"
+            ],
+            "post_url": "https://t.me/growthresearch/30761"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "17:43",
+            "text": "✅코어위브, AI 데이터센터 투자 2,600억 달러 필요…자금 조달 가능할까\n\nAI 네오클라우드 기업 코어위브가 2030년까지 8GW의 전력 용량을 확보하려면 약 2,600억 달러의 추가 투자가 필요하다는 분석이 나왔습니다.\n\nAI 데이터센터 확장에 막대한 자금이 필요한 만큼 향후 자금 조달 능력이 핵심 변수로 떠오르고 있습니다.\n\n📌 2030년까지 2,600억 달러 투자 필요\n전력 용량 1MW당 투자비 4,000만 달러를 적용한 추정치\n\n2026~2030년 추가 설비투자 규모는 총 2,600억 달러로 예상\n\n2030년 목표 전력 용량은 기존 1.5GW에서 8GW로 확대\n\n📌 2028년까지 4.2GW 확보 목표\n2026년 하반기 3.5억W, 2027년 11.5억W, 2028년 이후 12억W 추가 확보 계획\n\n2028년 이후 구간에 480억 달러를 투자해 전력 용량 4.2GW 달성 전망\n\n2026년 하반기부터 4.2GW 확보까지 필요한 추가 투자액은 총 1,080억 달러\n\n📌 추가 확장에 1,520억 달러 필요\n4.2GW에서 8GW로 확대하려면 전력 용량 3.8GW 추가 확보 필요\n\n이를 위해 약 1,520억 달러의 추가 설비투자가 필요할 것으로 추정\n\n대규모 투자 계획의 실현 여부는 자금 조달과 전력 인프라 확보가 관건\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://t.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/30762"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "18:22",
+            "text": "🔥 그로쓰리서치 10월 콥데이, 성황리에 마무리했습니다!🔥\n\n이번 10월 콥데이에는 😳약 80명의 기관투자자분들께서 함께해 주셨습니다! \n\n특히 이번에는 준비된 좌석이 빈자리 하나 없이 꽉 찰 정도로 많은 분들이 찾아주셨는데요.\n\n뜨거운 관심을 보여주신 모든 참석자분들께 진심으로 감사드립니다. ☺️\n\n📈 좋은 기업과 투자자를 연결하는 그로쓰리서치!\n\n앞으로도 꾸준히 콥데이를 개최하며, 좋은 기업들을 더 많은 기관투자자분들께 소개해 드릴 수 있는 자리를 만들어가겠습니다.\n\n기업의 성장 스토리를 투자자분들께 알리고 싶거나, 콥데이와 관련해 궁금한 점이 있는 기업 IR·PR 담당자분들께서는 편하게 연락 주세요! 😊\n\n더 많은 기업과 투자자가 만날 수 있도록 그로쓰리서치가 함께하겠습니다.\n\n📩 그로쓰리서치 문의\nofficial@growthresearch.co.kr\n\n앞으로도 많은 관심 부탁드립니다!\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://t.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/30763"
           }
         ]
       },
@@ -444,20 +434,6 @@
         "category": "매크로/크립토",
         "channel_url": "https://t.me/SpartanResearch",
         "posts": [
-          {
-            "date": "2026-10-23",
-            "time": "17:20",
-            "text": "안녕하세요. 지투지바이오입니다.\n\n금일 지투지바이오 오송 본사에서 진행된 ‘2026 청송학술제’ 현장 사진을 공유드립니다.\n\n약 45명이 참석한 이번 행사에서 지투지바이오는 미립구 생산시설을 공개하고, 미립구의 제조 및 생산 과정을 소개했습니다.\n\n참석자들과 장기지속형 제제 기술에 대해 다양한 의견을 나누고, 바이오 연구 생태계 활성화와 발전 방향을 함께 모색하는 뜻깊은 자리였습니다.\n\n감사합니다.",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/5436"
-          },
-          {
-            "date": "2026-10-24",
-            "time": "12:40",
-            "text": "$CRWD +8.25%",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/5443"
-          },
           {
             "date": "2026-10-26",
             "time": "09:30",
@@ -556,6 +532,33 @@
               "https://www.awakeplus.co.kr/disclosure/272210"
             ],
             "post_url": "https://t.me/SpartanResearch/5460"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "15:36",
+            "text": "2026.10.27 15:34:52\n기업명: LG이노텍(시가총액: 8조 8,633억) A011070\n보고서명: 연결재무제표기준영업(잠정)실적(공정공시)\n\n매출액 : 63,671억(예상치 : 60,360억+/ 5%)\n영업익 : 948억(예상치 : 1,953억/ -51%)\n순이익 : 952억(예상치 : 1,475억/ -35%)\n\n**최근 실적 추이**\n2026.3Q 63,671억/ 948억/ 952억\n2026.2Q 55,272억/ 2,458억/ 1,697억\n2026.1Q 55,348억/ 2,953억/ 2,291억\n2025.4Q 76,098억/ 3,248억/ 1,359억\n2025.3Q 53,694억/ 2,037억/ 1,284억\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027800388\n종목공시 : https://www.awakeplus.co.kr/disclosure/011070",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027800388",
+              "https://www.awakeplus.co.kr/disclosure/011070"
+            ],
+            "post_url": "https://t.me/SpartanResearch/5461"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "16:52",
+            "text": "국장에 일주일만에 신고가 출현. 안랩",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/5463"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "18:18",
+            "text": "[단독] 삼전닉스, 역대급 환원…주주에 '210조+α' 푼다\nhttps://www.hankyung.com/article/2026102787811",
+            "links": [
+              "https://www.hankyung.com/article/2026102787811",
+              "https://hankyung.com/article/2026102787811"
+            ],
+            "post_url": "https://t.me/SpartanResearch/5464"
           }
         ]
       },
@@ -746,61 +749,6 @@
         "posts": [
           {
             "date": "2026-10-27",
-            "time": "08:53",
-            "text": "에테르 누님 대체 뭐하시고 다니시는거에요...?",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/38409"
-          },
-          {
-            "date": "2026-10-27",
-            "time": "08:54",
-            "text": "일론 머스크\n\n“나는 내년에 20GW를 달성할 가능성이 극히 낮다고 말했다.\n\n다만 그 가능성이 0%는 아니라는 뜻이다.\n\n불과 몇 달 전까지만 해도 그 가능성은 0%였다.\n\n현재 20GW 달성 가능성은 시간이 지날수록 높아지고 있다.”",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/38410"
-          },
-          {
-            "date": "2026-10-27",
-            "time": "09:56",
-            "text": "주식이 오늘은 제법 오르는데 생각보다 기뻐하는 분위기가 아닌거같은기분",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/38411"
-          },
-          {
-            "date": "2026-10-27",
-            "time": "10:05",
-            "text": "화이자가 다음주(11/4) 컨콜을 앞두고 미래 비만시장에 대한 기고문 형식의 글을 올렸네요.\n\n지난주 '제약바이오 국제포럼'에서 발표한 이슬기 대표님의 내용과 일맥상통하는 부분이 많습니다.\n\n아래는 세줄 요약\n\n① 비만치료제의 패러다임 변화\n- 화이자는 단순 체중 감량률 경쟁을 넘어 체지방 감소, 근육량 보존, 대사질환 개선 등 체중 감량의 질(Quality of Weight Loss)을 강조.\n\n② 장기 유지요법과 개인 맞춤형 치료\n- 비만을 지속적인 관리가 필요한 만성질환으로 인식하고, 감량 이후 체중 유지와 부작용 최소화, 환자별 저용량 장기투여 및 맞춤형 치료의 중요성을 강조.\n\n③ GLP-1 이후 차세대 시장\n- 단일 GLP-1 중심에서 벗어나 새로운 작용 기전 및 병용요법 등 다양한 치료 전략으로 확장될 것으로 전망.\n\n\nhttps://www.pfizer.com/news/articles/looking_beyond_weight_loss_the_future_of_obesity_care",
-            "links": [
-              "https://www.pfizer.com/news/articles/looking_beyond_weight_loss_the_future_of_obesity_care",
-              "https://pfizer.com/news/articles/looking_beyond_weight_loss_the_future_of_obesity_care"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/38413"
-          },
-          {
-            "date": "2026-10-27",
-            "time": "10:18",
-            "text": "코스피 매수 사이드카! 스피드카 왔구나",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/38414"
-          },
-          {
-            "date": "2026-10-27",
-            "time": "10:33",
-            "text": "2026.10.27 10:32:25\n기업명: RFHIC(시가총액: 1조 3,342억) A218410\n보고서명: 연결재무제표기준영업(잠정)실적(공정공시)\n\n매출액 : 711억(예상치 : 733억/ -3%)\n영업익 : 217억(예상치 : 158억/ +37%)\n순이익 : 148억(예상치 : 147억+/ 1%)\n\n**최근 실적 추이**\n2026.3Q 711억/ 217억/ 148억\n2026.2Q 515억/ 112억/ 121억\n2026.1Q 431억/ 77억/ 87억\n2025.4Q 688억/ 115억/ 156억\n2025.3Q 405억/ 74억/ 71억\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027900110\n종목공시 : https://www.awakeplus.co.kr/disclosure/218410",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027900110",
-              "https://www.awakeplus.co.kr/disclosure/218410"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/38415"
-          },
-          {
-            "date": "2026-10-27",
-            "time": "11:29",
-            "text": "유가 하락\n금리 하락",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/38416"
-          },
-          {
-            "date": "2026-10-27",
             "time": "11:48",
             "text": "[MASH 시장] Madrigal 의 자료들을 훑어보다가 알게 된 흥미로운 숫자들\n\n- 전체 MASH 유병인구 (추정) : 1,490만 명\n- F2~F3 잠재인구 : 약 720만 명\n- Madrigal 이 추정하여 공시한 전문의에 의해 관리받는 MASH 환자 수 : 46만 명 (25년 말)\n- Madrigal 에서 공식적으로 발표한 투약환자 : 50,000명\n\n잠재인구 대비 투약침투율은 매우 낮은 편. 현재 시장이 확장되면서 두자릿수 CAGR 로 성장하고 있는 상황.\n\n마드리갈의 순매출을 기준으로 역산하면, 투약환자 1명 당 연간 약 30,000 불 정도의 매출이 발생.\n\n현재 미국의 전문의 관리환자 수는 두자릿수 속도로 성장중이며, Madrigal 은 이러한 추세가 지속될 것으로 예상.",
             "links": [],
@@ -863,6 +811,95 @@
             "text": "😉 주식은 긍정적인 맘으로",
             "links": [],
             "post_url": "https://t.me/Yeouido_Lab/38428"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "15:36",
+            "text": "2026.10.27 15:35:19\n기업명: JB금융지주(시가총액: 4조 5,325억) A175330\n보고서명: 연결재무제표기준영업(잠정)실적(공정공시)\n\n매출액 : 12,703억(예상치 : -)\n영업익 : 2,910억(예상치 : 2,966억/ -2%)\n순이익 : 2,100억(예상치 : 2,117억/ -1%)\n\n**최근 실적 추이**\n2026.3Q 12,703억/ 2,910억/ 2,100억\n2026.2Q 12,645억/ 3,056억/ 2,265억\n2026.1Q 12,150억/ 2,213억/ 1,723억\n2025.4Q 11,966억/ 1,869억/ 1,362억\n2025.3Q 11,241억/ 2,811억/ 2,132억\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027800377\n종목공시 : https://www.awakeplus.co.kr/disclosure/175330",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027800377",
+              "https://www.awakeplus.co.kr/disclosure/175330"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/38430"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "16:07",
+            "text": "2026.10.27 16:06:59\n기업명: 한미약품(시가총액: 4조 4,710억) A128940\n보고서명: 연결재무제표기준영업(잠정)실적(공정공시)\n\n매출액 : 3,774억(예상치 : 4,107억/ -8%)\n영업익 : 378억(예상치 : 661억/ -43%)\n순이익 : 122억(예상치 : 309억/ -61%)\n\n**최근 실적 추이**\n2026.3Q 3,774억/ 378억/ 122억\n2026.2Q 4,672억/ 1,311억/ 841억\n2026.1Q 3,929억/ 536억/ 511억\n2025.4Q 4,330억/ 833억/ 541억\n2025.3Q 3,623억/ 551억/ 454억\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027800461\n종목공시 : https://www.awakeplus.co.kr/disclosure/128940",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027800461",
+              "https://www.awakeplus.co.kr/disclosure/128940"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/38431"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "16:24",
+            "text": "https://n.news.naver.com/article/003/0014282103?sid=105",
+            "links": [
+              "https://n.news.naver.com/article/003/0014282103?sid=105"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/38432"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "16:31",
+            "text": "https://www.news1.kr/industry/distribution/6332431\n\n바쁜 와중에 오늘 들은 가장 충격적인 소식을 공유합니다.... 안돼 내 필스너",
+            "links": [
+              "https://www.news1.kr/industry/distribution/6332431",
+              "https://news1.kr/industry/distribution/6332431"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/38433"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "16:56",
+            "text": "中 빅테크 알리바바·텐센트·바이트댄스, 삼전닉스에 D램 장기계약 ‘SOS’\n\n통상 3~5년 LTA 넘어 2035년까지 초장기 계약 요청\n美 빅테크 선점 속 中도 가세…서버용 메모리 확보전\n\n미국 빅테크에 이어 중국의 알리바바와 텐센트, 바이트댄스 등 대형 클라우드 서비스 제공업체(CSP)들이 삼성전자와 SK하이닉스에 서버용 메모리 장기공급계약(LTA)을 요청하고 나섰다. \n\n통상 3~5년인 장기공급 기간을 넘어 일부 고객은 2035년까지 10년간 메모리를 공급하는 초장기 계약을 요구한 것으로 파악됐다.\n\n\n27일 업계에 따르면 알리바바·텐센트·바이트댄스 등 중화권 CSP는 국내 메모리 업체들과 서버용 D램 장기공급계약을 타진 중이다. 미국 빅테크들이 이미 LTA를 통해 메모리 물량을 확보한 가운데, 중국 CSP들도 사업을 확대하며 메모리 장기계약에 나선 것으로 풀이된다.\n\n요청 품목은 서버용 DDR(더블데이터레이트)과 저전력 DDR인 LPDDR이다. DDR은 서버의 중앙처리장치(CPU)가 데이터를 빠르게 읽고 쓸 수 있도록 돕는 주기억장치다. LPDDR은 전력 소모를 줄인 메모리로 주로 스마트폰 등에 쓰인다. 인공지능(AI) 서버의 전력 효율을 높일 수 있는 데다 메모리 공급난까지 겹치면서 서버 업체들이 LPDDR까지 확보에 나선 것으로 전해진다. 가격 부담을 감수하더라도 메모리 물량을 먼저 확보하는 것이 AI 시장 주도권을 잡는 데 중요하다는 판단에서다.\n\n중국에도 창신메모리(CXMT)와 양쯔메모리(YMTC) 등 메모리 업체가 있지만, 서버용 고성능 메모리의 제품 경쟁력과 양산 규모는 국내 업체에 미치지 못한다는 평가다. 중화권 CSP들이 필요한 물량을 자국 내서 조달하기 어려운 점도 한국 업체와의 장기 계약을 추진하는 배경 중 하나로 꼽힌다.\n\n미국 빅테크가 먼저 장기계약으로 물량을 선점한 점도 중국 CSP들의 움직임을 서두르게 한 요인으로 보인다. 삼성전자는 글로벌 5대 데이터센터 고객과 계약을 마쳤고, 대형 고객 5곳과 추가 협상을 진행 중이라고 밝힌 바 있다. \n\n업계에서는 이들 고객을 아마존웹서비스(AWS)·마이크로소프트·구글클라우드·메타·오라클로 보고 있다. SK하이닉스도 핵심 고객을 포함한 10여 곳과 LTA 협상을 마무리했다고 밝혔다. 중국 CSP들의 요청은 이 같은 기존 계약과 별도 물량인 것으로 전해진다.\n\nAI 열풍에 메모리 확보 경쟁이 치열해지면서 메모리 업체와 고객사 간 장기계약도 확대되는 추세다. 계약 기간과 물량이 늘고, 공급 안정성을 높이기 위한 선수금 지급도 확대되고 있다. 삼성전자와 SK하이닉스의 내년 메모리 생산 예정 물량 가운데 70~80%가 글로벌 빅테크와 맺은 5년 장기공급계약 물량일 것이라는 게 업계 추정이다.\n\nhttps://www.mk.co.kr/news/business/12187030",
+            "links": [
+              "https://www.mk.co.kr/news/business/12187030",
+              "https://mk.co.kr/news/business/12187030"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/38434"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "17:30",
+            "text": "[단독] 삼전닉스, 역대급 주주환원…210조 이상 푼다\nhttps://www.hankyung.com/article/202610278090i",
+            "links": [
+              "https://www.hankyung.com/article/202610278090i",
+              "https://hankyung.com/article/202610278090i"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/38435"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "17:49",
+            "text": "2026.10.27 17:48:59\n기업명: 큐리옥스바이오시스템즈(시가총액: 1조 714억) A445680\n보고서명: 연결재무제표기준영업(잠정)실적(공정공시)\n\n매출액 : 15억(예상치 : -)\n영업익 : -40억(예상치 : -)\n순이익 : -53억(예상치 : -)\n\n**최근 실적 추이**\n2026.3Q 15억/ -40억/ -53억\n2026.2Q 12억/ -45억/ -48억\n2026.1Q 13억/ -33억/ -26억\n2025.4Q 18억/ -27억/ -23억\n2025.3Q 14억/ -27억/ -30억\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027900676\n종목공시 : https://www.awakeplus.co.kr/disclosure/445680",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027900676",
+              "https://www.awakeplus.co.kr/disclosure/445680"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/38436"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "18:00",
+            "text": "2026.10.27 17:59:51\n기업명: 한미사이언스(시가총액: 2조 8,451억) A008930\n보고서명: 연결재무제표기준영업(잠정)실적(공정공시)\n\n매출액 : 3,629억(예상치 : -)\n영업익 : 192억(예상치 : -)\n순이익 : 156억(예상치 : -)\n\n**최근 실적 추이**\n2026.3Q 3,629억/ 192억/ 156억\n2026.2Q 3,679억/ 591억/ 437억\n2026.1Q 3,756억/ 336억/ 423억\n2025.4Q 2,857억/ 377억/ 331억\n2025.3Q 3,621억/ 393억/ 319억\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027800677\n종목공시 : https://www.awakeplus.co.kr/disclosure/008930",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027800677",
+              "https://www.awakeplus.co.kr/disclosure/008930"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/38437"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "20:54",
+            "text": "ABF기판 수급불균형 26년 하반기 10%, 27년 21%, 28년 42%로 벌어질 전망\n - ai인프라의 가장 큰 병목은 전력이 아니라 패키지기판\nhttps://finance.technews.tw/2026/10/27/taiwan-pcb-output-value-breaks-trillion-mark-faces-ai-challenges/",
+            "links": [
+              "https://finance.technews.tw/2026/10/27/taiwan-pcb-output-value-breaks-trillion-mark-faces-ai-challenges/",
+              "https://finance.technews.tw/2026/10/27/taiwan-pcb-output-value-breaks-trillion-mark-faces-ai-challenges"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/38438"
           }
         ]
       },
@@ -2793,6 +2830,15 @@
         "category": "투자철학/산업·종목 분석",
         "posts": [
           {
+            "date": "2026-10-27",
+            "time": "21:53",
+            "text": "[경험(시장은 반복, 반복)]\n\n현재의 경험이 매우 중요함. 미래의 투자 전반적인 부분에 영향을 미치기 때문. 상승장, 하락장, 박스권, 다양한 주도 섹터들이 돌고 도는 게 주식 시장임. 죽어 가던 산업도 갑작스러운 구조적인 변화로 인해서 대규모로 턴하는 것은 비일비재. 예로 들면 반도체 섹터는 원인은 다르지만 상승장과 하락장을 몇 번이나 반복했다. 그래서 되도록 많은 섹터를 공부하고 경험해 봐야 함. 시장 분위기도 마찬가지. 올해는 좀 유난스럽기는 하지만 항상 있어왔던 하반기 국장의 전형적인 모습으로 판단된다. 상승장의 해에도 하반기는 안 좋은 적도 많았음. 현재 지수가 어디로 갈지는 아무도 모른다. 2천에서 9천 갈 때도, 거기서 5천까지 빠지는 것.......",
+            "links": [
+              "https://blog.naver.com/luy1978/224455888046"
+            ],
+            "post_url": "https://blog.naver.com/luy1978/224455888046"
+          },
+          {
             "date": "2026-10-23",
             "time": "20:03",
             "text": "[요즘..]\n\n이 난리통에도 루틴대로.. 시간아 흘러라",
@@ -3205,15 +3251,6 @@
               "https://blog.naver.com/luy1978/224346605800"
             ],
             "post_url": "https://blog.naver.com/luy1978/224346605800"
-          },
-          {
-            "date": "2026-07-11",
-            "time": "21:49",
-            "text": "[뭐가 맞는지는 모르겠다]\n\n반도체 섹터에 여러 이슈가 발생하는 중. 주가가 많이 오를수록 발생하는 것은 강한 실현 욕구, 너무 많이 올랐다는 불안감, 여기서 얼마나 더 오르면 얼마나 오르겠어라는 회의감. 이 상황에서 외부 변수로 인해 주가가 스크래치가 나면 위 감정은 더 소용돌이 치는 듯. AI섹터가 단기적으로 30% 하락, 시장도 대략 20% 넘게 폭락. 불과 2주만에.. 정신없이 내려 꽂았음. 그나마 반등이 될라나 아닐라나.. 특히 조정이 클수록 생각이 많아진다. 솔직히 나도 이젠 모르겠다. 아무도 가보지 않은 구간에서 안다고 하면 그게 이상 할 듯 하다. 주변에 레이더를 돌려보니, 6월에 너도 나도 반도체 이야기만 나왔고, 타종목 밀고 실제 2배짜리 올라탔.......",
-            "links": [
-              "https://blog.naver.com/luy1978/224343653719"
-            ],
-            "post_url": "https://blog.naver.com/luy1978/224343653719"
           }
         ]
       },
@@ -3223,6 +3260,60 @@
         "url": "https://dart.fss.or.kr",
         "category": "공시",
         "posts": [
+          {
+            "date": "2026-10-27",
+            "time": "00:00",
+            "text": "[대구백화점] [기재정정]주요사항보고서(유형자산양도결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000386"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000386"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "00:00",
+            "text": "[대동] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000375"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000375"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "00:00",
+            "text": "[이연제약] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000356"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000356"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "00:00",
+            "text": "[우성] [기재정정]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000321"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000321"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "00:00",
+            "text": "[애경케미칼] [첨부정정]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000301"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000301"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "00:00",
+            "text": "[HD현대] 주요사항보고서(교환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000277"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000277"
+          },
           {
             "date": "2026-10-27",
             "time": "00:00",
@@ -3253,7 +3344,7 @@
           {
             "date": "2026-10-27",
             "time": "00:00",
-            "text": "[대구백화점] [기재정정]주요사항보고서(유형자산양도결정)\n공시유형: 주요사항보고",
+            "text": "[대구백화점] [기재정정]주요사항보고서(유형자산양도결정)\n공시유형: 주요사항보고  ·  정",
             "links": [
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000001"
             ],
@@ -3262,79 +3353,187 @@
           {
             "date": "2026-10-27",
             "time": "00:00",
-            "text": "[그린플러스] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "text": "[리메드] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
             "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000191"
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000389"
             ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000191"
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000389"
           },
           {
             "date": "2026-10-27",
             "time": "00:00",
-            "text": "[그린플러스] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "text": "[애드바이오텍] [첨부정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
             "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000190"
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000383"
             ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000190"
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000383"
           },
           {
             "date": "2026-10-27",
             "time": "00:00",
-            "text": "[APS] [첨부정정]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
+            "text": "[애드바이오텍] [첨부정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
             "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000159"
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000381"
             ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000159"
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000381"
           },
           {
             "date": "2026-10-27",
             "time": "00:00",
-            "text": "[삼일] 주요사항보고서(자기주식취득결정)\n공시유형: 주요사항보고",
+            "text": "[한화플러스제5호스팩] [기재정정]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
             "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000118"
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000380"
             ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000118"
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000380"
           },
           {
             "date": "2026-10-27",
             "time": "00:00",
-            "text": "[그린플러스] 주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고  ·  정",
+            "text": "[메쥬] [기재정정]주요사항보고서(유형자산양수결정)\n공시유형: 주요사항보고",
             "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000394"
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000377"
             ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000394"
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000377"
           },
           {
             "date": "2026-10-27",
             "time": "00:00",
-            "text": "[그린플러스] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고  ·  정",
+            "text": "[비케이홀딩스] 주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
             "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000393"
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000379"
             ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000393"
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000379"
           },
           {
             "date": "2026-10-27",
             "time": "00:00",
-            "text": "[모아데이타] 주요사항보고서(자기전환사채만기전취득결정)\n공시유형: 주요사항보고",
+            "text": "[휴온스글로벌] 주요사항보고서(유형자산양수결정)\n공시유형: 주요사항보고",
             "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000395"
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000361"
             ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000395"
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000361"
           },
           {
             "date": "2026-10-27",
             "time": "00:00",
-            "text": "[모아데이타] [기재정정]주요사항보고서(자기전환사채만기전취득결정)\n공시유형: 주요사항보고",
+            "text": "[핑거] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
             "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000388"
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000343"
             ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000388"
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000343"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "00:00",
+            "text": "[다보링크] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000362"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000362"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "00:00",
+            "text": "[핑거] 주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000338"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000338"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "00:00",
+            "text": "[한울앤제주] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000337"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000337"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "00:00",
+            "text": "[광진실업] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000318"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000318"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "00:00",
+            "text": "[아이윈] [첨부정정]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000306"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000306"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "00:00",
+            "text": "[모아라이프플러스] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000271"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000271"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "00:00",
+            "text": "[SKAI] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000281"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000281"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "00:00",
+            "text": "[서울전자통신] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000273"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000273"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "00:00",
+            "text": "[제주반도체] 주요사항보고서(자기주식처분결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000242"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000242"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "00:00",
+            "text": "[케이쓰리아이] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000274"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000274"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "00:00",
+            "text": "[아이에이] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000237"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000237"
+          },
+          {
+            "date": "2026-10-27",
+            "time": "00:00",
+            "text": "[아이에이] [첨부정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고  ·  정",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000240"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000240"
           },
           {
             "date": "2026-10-26",
             "time": "00:00",
-            "text": "[애경케미칼] 주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
+            "text": "[애경케미칼] 주요사항보고서(회사합병결정)\n공시유형: 주요사항보고  ·  정",
             "links": [
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000318"
             ],
@@ -3395,114 +3594,6 @@
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261023000493"
           },
           {
-            "date": "2026-10-26",
-            "time": "00:00",
-            "text": "[아이윈] 주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000365"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000365"
-          },
-          {
-            "date": "2026-10-26",
-            "time": "00:00",
-            "text": "[에이전트AI] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000355"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000355"
-          },
-          {
-            "date": "2026-10-26",
-            "time": "00:00",
-            "text": "[메카로] 주요사항보고서(자기주식처분결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000356"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000356"
-          },
-          {
-            "date": "2026-10-26",
-            "time": "00:00",
-            "text": "[제넥신] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000363"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000363"
-          },
-          {
-            "date": "2026-10-26",
-            "time": "00:00",
-            "text": "[알티캐스트] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000327"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000327"
-          },
-          {
-            "date": "2026-10-26",
-            "time": "00:00",
-            "text": "[에이루트] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000266"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000266"
-          },
-          {
-            "date": "2026-10-26",
-            "time": "00:00",
-            "text": "[브이티] 주요사항보고서(유형자산양수결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000286"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000286"
-          },
-          {
-            "date": "2026-10-26",
-            "time": "00:00",
-            "text": "[APS] 주요사항보고서(회사합병결정)\n공시유형: 주요사항보고  ·  정",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000284"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000284"
-          },
-          {
-            "date": "2026-10-26",
-            "time": "00:00",
-            "text": "[풍전약품] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000213"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000213"
-          },
-          {
-            "date": "2026-10-26",
-            "time": "00:00",
-            "text": "[MSDI] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000212"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000212"
-          },
-          {
-            "date": "2026-10-26",
-            "time": "00:00",
-            "text": "[에이루트] 주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000222"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000222"
-          },
-          {
-            "date": "2026-10-26",
-            "time": "00:00",
-            "text": "[IBKS제24호스팩] [기재정정]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000203"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000203"
-          },
-          {
             "date": "2026-10-23",
             "time": "00:00",
             "text": "[진원생명과학] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
@@ -3528,60 +3619,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261023000244"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261023000244"
-          },
-          {
-            "date": "2026-10-23",
-            "time": "00:00",
-            "text": "[주성코퍼레이션] [첨부정정]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261023000121"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261023000121"
-          },
-          {
-            "date": "2026-10-23",
-            "time": "00:00",
-            "text": "[주성코퍼레이션] [첨부정정]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261023000115"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261023000115"
-          },
-          {
-            "date": "2026-10-23",
-            "time": "00:00",
-            "text": "[우성] [첨부정정]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261023000112"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261023000112"
-          },
-          {
-            "date": "2026-10-23",
-            "time": "00:00",
-            "text": "[하나금융지주] [기재정정]주요사항보고서(상각형조건부자본증권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261023000011"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261023000011"
-          },
-          {
-            "date": "2026-10-23",
-            "time": "00:00",
-            "text": "[우성] [기재정정]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고  ·  정",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000513"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000513"
-          },
-          {
-            "date": "2026-10-23",
-            "time": "00:00",
-            "text": "[KR모터스] 주요사항보고서(자기전환사채만기전취득결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000510"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000510"
           }
         ]
       }
