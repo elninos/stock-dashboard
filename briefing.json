@@ -1,6 +1,6 @@
 {
   "2026-11-10": {
-    "fetched_at": "2026-11-10T17:06:49+09:00",
+    "fetched_at": "2026-11-11T01:53:32+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -106,6 +106,13 @@
             "text": "한국콜마 3분기 리뷰                   제이피모건\n\nOverweight 유지, Dec-27 TP 18만 → 15만 원\n\n\n🎯 헤드라인: 국내는 탄탄, 발목은 자회사\n\n3Q26 영업이익 820억 원 — JPMe -15%/컨센 -11% 미스. 원인은 ① HK이노엔의 부진한 3Q(JPMe -23% 미스) ② 해외 전 공장의 적자 확대. 반면 국내 공장은 OPM 14.5%(JPMe 15.0%)로 견조 — 선케어·스킨케어가 모두 유의미하게 기여했고, 회사는 국내 사업과 선케어 성장에 자신감 유지.\n\n📊 부문별\n\n매출은 추정 부합 — 본사 +35% YoY, 중국 -4%, 북미 +51%, 연우 +35%, HK이노엔 보합. 선케어/스킨케어 믹스 32%/48%. 연우는 매출·이익 모두 대체로 인라인.\n\n📅 4Q26 전망\n\n국내는 매출 +35%+ YoY에 마진 개선 지속. 중국은 매출 보합 + 적자 지속, 북미(미국·캐나다)는 QoQ 보합 매출 + 영업적자 지속. JPM 추정 4Q 매출/영업이익 7,720억/840억 원.\n\n⚖️ 투자 논리\n\n해외 자회사 부진 + HK이노엔 추정 변경 반영해 2027년 OP -9% 하향. 그럼에도 OW 유지 — K-뷰티 시장 통합(consolidation) 국면에서 미국·유럽 성장 시장의 점유율 상승 브랜드들에 대한 높은 매출 익스포저, 그리고 마진 기여도 높은 선케어·스킨케어 중심 포지션이 향후 영업 레버리지로 이어진다는 판단. K-뷰티 내 최선호. TP 15만 원 = 화장품 사업 P/E 16배(코스맥스 타깃 대비 소폭 프리미엄) + HK이노엔 지분가치 5,310억(기존 6,340억에서 하향).",
             "links": [],
             "post_url": "https://t.me/bumgore/55201"
+          },
+          {
+            "date": "2026-11-10",
+            "time": "20:54",
+            "text": "1조 2174억 📉",
+            "links": [],
+            "post_url": "https://t.me/bumgore/55204"
           }
         ]
       },
@@ -265,37 +272,6 @@
         "posts": [
           {
             "date": "2026-11-10",
-            "time": "07:43",
-            "text": "✅ ‘32조 승부수’ 머스크, 스페이스X 자체 발전소 텍사스에 짓는다\n\nhttps://www.dt.co.kr/article/12094131?\n\n📌 32조원 투입, AI 인프라 직접 구축\n• 스페이스X, 미국 텍사스주 스타베이스에 240억달러(약 32.3조원) 규모 가스 화력발전소 및 슈퍼컴퓨팅 시설 건설 추진\n\n• 약 180만㎡ 부지에 발전·컴퓨팅 시설을 직접 소유하고 운영할 계획으로, 투자금은 초기 추정치\n\n• AI 연산 수요 증가에 대응해 전력 생산부터 데이터센터 운영까지 자체 인프라 확보 추진\n\n📌 748MW 자체 발전소로 전력망 병목 돌파\n• 천연가스 터빈 35기, 총 748MW 규모 발전시설 구축을 위한 환경당국 허가 신청\n\n• 자체 발전을 통해 텍사스 전력망 연결에 소요되는 수년간의 대기 기간을 단축하는 전략\n\n• AI 데이터센터 확대에 따라 가스터빈·발전설비 등 분산형 전력 인프라 수요 증가 가능성\n\n📌 AI 컴퓨팅 넘어 에너지 수직계열화\n• 스페이스X는 현재 구글·앤트로픽 등에 컴퓨팅 용량을 임대하며 AI 인프라 사업 확대\n\n• 텍사스·플로리다에서 천연가스 운송용 자체 파이프라인 건설을 추진하고 가스 트레이더도 직접 채용\n\n• 테슬라와 함께 추진하는 휴스턴 외곽 반도체 공장에도 자체 가스발전소 구축 계획\n\n📌 12월 세제 혜택 심의, 정책 변수 주목\n• 스페이스X가 재산세 감면을 신청한 가운데 12월 9일 세금 감면안 및 경제개발 협약 심의 예정\n\n• 텍사스 주지사 당선인의 데이터센터 신규 건설 억제 정책이 사업 추진 변수로 부상\n\n• 대규모 자체 발전 프로젝트 확산 여부에 따라 가스터빈·발전기·가스 인프라 관련 기업의 수주 기회 확대 가능성\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch⁠",
-            "links": [
-              "https://www.dt.co.kr/article/12094131",
-              "https://t.me/growthresearch",
-              "https://dt.co.kr/article/12094131"
-            ],
-            "post_url": "https://t.me/growthresearch/31080"
-          },
-          {
-            "date": "2026-11-10",
-            "time": "08:33",
-            "text": "✅ [속보] 젠슨 황과 통화한 트럼프…“스파이인 줄 몰랐다더라, 믿는다”\n\nhttps://m.kyeonggi.com/article/20261110580010\n\n📌 트럼프 직접 통화, 젠슨 황에 공개 신뢰 표명\n• 트럼프 대통령, 9일(현지시간) 젠슨 황 엔비디아 CEO와 직접 통화해 중국 스파이 의혹 관련 사실관계 확인\n\n• 황 CEO는 상대 여성이 스파이라는 사실을 전혀 몰랐다고 답변했으며, 트럼프는 황 CEO의 해명을 믿는다며 공개적으로 지지\n\n• 트럼프는 다음 주 미중 정상회담에서도 해당 의혹을 먼저 거론하지 않을 방침\n\n📌 중국 정보기관 연계 의혹, 엔비디아 이사회 독립 조사\n• 미국 정보당국은 황 CEO와 관계를 맺은 중국 국적 사업가 앨리스 황이 중국 정보기관과 연계됐을 가능성을 의심\n\n• 앨리스 황은 엔비디아 AI 반도체 구매 기업인 싱가포르 메가스피드의 전직 임원\n\n• 엔비디아 이사회는 외부 법률 전문가를 통한 독립 조사 착수, 현재까지 국가안보 및 기업 기밀 유출을 확인할 근거는 없다는 입장\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch⁠",
-            "links": [
-              "https://m.kyeonggi.com/article/20261110580010",
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/31081"
-          },
-          {
-            "date": "2026-11-10",
-            "time": "08:55",
-            "text": "🧬 일라이 릴리, '파운다요' 수면무호흡증 3상서 AHI 43.8% 감소\n\nhttps://thepharmanews.net/article/illai-rilli-paundayo-sumyeonmuhoheupjeung-3sangseo-ahi-43-8-gamso\n\n일라이 릴리의 경구용 GLP-1 비만 치료제 파운다요(오포글리프론)가 폐쇄성 수면무호흡증(OSA) 임상 3상에서 1차 평가변수를 충족했습니다.\n\n💊 경구용 GLP-1, 수면무호흡증 임상 3상 성공\n중등도~중증 수면무호흡증 환자 712명 대상 52주 임상 3상 ATTAIN-OSA 진행\n\nPAP 미사용군에서 무호흡저호흡지수(AHI) 43.8% 감소, 위약군은 6.3% 감소\n\nPAP 사용군에서도 AHI 27.5% 감소, 위약군은 3.0% 감소하며 두 연구 모두 1차 평가변수 충족\n\n💊 수면무호흡 개선에 체중·심혈관 지표까지\nPAP 미사용군에서 47.2%가 AHI 50% 이상 감소, 31.5%는 관해 또는 경증 수준으로 개선\n\n체중은 PAP 미사용군 11.5%, 사용군 11.2% 감소\n\n수면 중 저산소 부담은 각각 55.9%·45.8% 감소, 혈압과 염증 지표도 개선\n\n💊 비만 치료제, 동반질환 시장으로 확장\n릴리의 주사제 젭바운드는 이미 중등도~중증 OSA 치료제로 FDA 허가 확보\n\n파운다요는 2026년 4월 체중 관리 적응증 FDA 승인, 9월 제2형 당뇨병 적응증 허가 신청\n\n이번 임상 성공으로 경구용 GLP-1의 수면무호흡증 적응증 추가 가능성 부각\n\n🧬바이오섹터 분석🧬[그로쓰리서치]\nhttps://t.me/growthbio",
-            "links": [
-              "https://thepharmanews.net/article/illai-rilli-paundayo-sumyeonmuhoheupjeung-3sangseo-ahi-43-8-gamso",
-              "https://t.me/growthbio"
-            ],
-            "post_url": "https://t.me/growthresearch/31082"
-          },
-          {
-            "date": "2026-11-10",
             "time": "09:05",
             "text": "🧬 중국 CDMO 기업 우시(WuXi AppTec), 美 국방부 군사기업 블랙리스트 제외 결정\n\n💊 미국 국방부가 중국 바이오 CRO/CDMO 기업 우시앱텍(WuXi AppTec)을 \n\n중국 군사기업 명단(Section 1260H List)에서 제외하기로 결정\n\n💊 국내 CDMO 업계 \n중국 업체 규제 리스크 완화로 생물보안법 수혜 가능성 악영향\n\n🧬바이오섹터 분석🧬[그로쓰리서치]\nhttps://t.me/growthbio",
             "links": [
@@ -441,6 +417,46 @@
               "https://zdnet.co.kr/view?no=20261110104822"
             ],
             "post_url": "https://t.me/growthresearch/31099"
+          },
+          {
+            "date": "2026-11-10",
+            "time": "17:15",
+            "text": "💻엔비디아 NVHBM, HBM 설계 주도권을 가져가다\n\n📌핵심 내용\n엔비디아(NVDA)가 커스텀 HBM인 NVHBM의 공통 제조 사양을 삼성전자, SK하이닉스, 마이크론 3사에 요구\n\n베이스다이는 TSMC(TSM) 3nm 공정, 코어다이는 1c D램(10나노급 6세대)으로 통일\n\n공정과 설계를 하나로 맞추면서 엔비디아는 공급사 3곳을 각각 검증할 필요 없이 한 번의 퀄 테스트로 끝낼 수 있음\n\n삼성전자 파운드리 사업부도 내부 검토 끝에 수용. 삼성이 HBM 베이스다이를 TSMC에 맡기는 것은 처음\n\n일부 보도에서는 HBM4E 대비 대역폭 최대 +30%, 전력 -15% 효과를 언급하지만 아직 확인되지 않은 수치\n\n📌구조 변화: 메모리 컨트롤러가 베이스다이로 이동\n지금까지 GPU 안에 있던 메모리 컨트롤러를 HBM 베이스다이에 넣는 구조\n\n그만큼 GPU 쪽 PHY가 좁아지고, 남는 면적을 연산 다이에 쓸 수 있음\n\n베이스다이 설계는 엔비디아 IP, 생산은 TSMC가 맡음\n\n메모리 3사에 남는 것은 코어 D램과 적층(스태킹)\n\n📌메모리 3사는 파트너가 됐나\n커스텀 HBM에서 메모리 업체가 차별화할 핵심 수단이던 로직 다이를 고객사가 표준화한 셈\n\n삼성전자의 턴키 전략(메모리·파운드리·패키징 일괄)은 엔비디아향에서는 힘을 잃음\n\n베이스다이가 같아지면 공급사끼리 비교하고 교체하기 쉬워져 엔비디아의 가격 협상력이 커짐\n\n대신 삼성전자는 표준 HBM4/HBM4E에는 자체 4nm 베이스다이를 계속 쓰고, AMD 등 다른 고객사용 커스텀 HBM도 턴키로 유지\n\nNVHBM 베이스다이도 TSMC 생산능력이 부족할 경우에 대비해 자체 2nm 대체 생산을 검증 중\n\n📌HBM4 실적: 세대교체 본격화\n삼성전자: 3분기 HBM4 매출이 전 분기 대비 3배 이상 증가, 전체 HBM 매출 중 HBM4 비중은 60% 수준\n\n4분기에는 HBM4가 출하량과 매출 모두에서 HBM3E를 처음 넘어설 전망\n\nHBM4 수율이 계획보다 좋게 나와 목표치를 상향 조정\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
+            "links": [
+              "https://telegram.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/31100"
+          },
+          {
+            "date": "2026-11-10",
+            "time": "17:44",
+            "text": "🧬 알테오젠 부담 덜었다…할로자임 피하주사 특허 미국서 또 제동\n\nhttps://biz.chosun.com/science-chosun/bio/2026/11/10/EBGMPDET6ZD57JCLBVLAN7PTYI/\n\nMSD가 할로자임과의 피하주사(SC) 제형 특허 분쟁에서 또다시 유리한 결정을 확보했습니다.\n\n미국 특허심판원(PTAB)이 할로자임의 특허 청구항 30개 모두의 특허성을 부정하면서, 알테오젠의 ALT-B4가 적용된 키트루다 큐렉스의 미국 특허 부담이 줄어들 가능성이 커졌습니다.\n\n💊 MSD, 할로자임 특허 30개 청구항 전부 무효 판단\n미국 PTAB가 할로자임의 미국 특허 제12,037,618호에 대한 등록 후 무효심판(PGR) 결정\n\n심판 대상 30개 청구항 전부 특허성 부정, 할로자임은 앞서 10개 청구항 포기\n\n핵심은 PH20 효소의 309번 아미노산 변형 기술에 대한 특허 보호 범위\n\n💊 특허 범위 대비 실험 근거 부족이 결정적\n할로자임은 PH20과 아미노산 서열 91% 이상 유사한 변이체까지 폭넓게 권리 주장\n\nPTAB는 여러 아미노산을 변형한 경우까지 뒷받침할 실험 자료와 설명이 부족하다고 판단\n\n기존 기술로 쉽게 발명할 수 있다는 자명성 주장은 받아들이지 않았지만, 명세서의 뒷받침 부족으로 특허성 부정\n\n💊 14건 중 12건 전부 특허성 부정, 남은 2건 주목\nMSD가 제기한 PGR 14건 중 12건에서 심판 대상 청구항 전부 특허성 부정\n\n앞서 PH20의 307번·317번 아미노산 변형 관련 특허에서도 MSD에 유리한 결정\n\n남은 2건은 11월 19일 전후 결과 예상, 심판 기한 연장 가능성 존재\n\n💊 미국 부담 완화 기대, 유럽 분쟁은 별도 변수\n알테오젠의 ALT-B4 기술이 적용된 키트루다 큐렉스의 미국 특허 리스크 완화 가능성\n\n반면 네덜란드 법원은 지난달 별도 유럽 특허를 근거로 유럽 8개국 제조·판매 금지 조치 결정\n\n🧬바이오섹터 분석🧬[그로쓰리서치]\nhttps://t.me/growthbio",
+            "links": [
+              "https://biz.chosun.com/science-chosun/bio/2026/11/10/EBGMPDET6ZD57JCLBVLAN7PTYI/",
+              "https://t.me/growthbio",
+              "https://biz.chosun.com/science-chosun/bio/2026/11/10/EBGMPDET6ZD57JCLBVLAN7PTYI"
+            ],
+            "post_url": "https://t.me/growthresearch/31101"
+          },
+          {
+            "date": "2026-11-10",
+            "time": "18:12",
+            "text": "🎬 중간선거 민주당이 이겼는데 2차전지가 멈춘 이유ㅣ중간선거 이후 반도체·2차전지 투자 기준\n\nhttps://www.youtube.com/watch?v=wccQGx-wdsU\n\n📌 1. 엔비디아 급락과 AI 메모리 수요\n필라델피아 반도체 지수 6.86% 상승, 엔비디아 4.27% 하락\n\n엔비디아 경영진 관련 불확실성과 빅테크 AI 투자 수요를 구분해 판단\n\nAMD·맞춤형 AI 반도체로 수요가 이동해도 삼성전자·SK하이닉스의 HBM 공급 기회 지속 가능\n\n📌 2. 민주당 승리 이후 2차전지 투자 기준\n민주당 하원 예상 의석 255석, 대통령 거부권을 넘기 위한 290석에 미달\n\n추가 보조금 확대에는 공화당 협조가 필요하며, 기존 AMPC 축소·폐지 위험 완화에 주목\n\n미국 현지 생산능력·AMPC 수령·북미 ESS 수주가 기업별 실적 판단 기준\n\n📌 3. AI 전력 인프라와 반등 지속 조건\nAI 데이터센터 증설로 ESS·변압기·송전망 수요 확대 가능성\n\nLG에너지솔루션·삼성SDI·한화솔루션·OCI홀딩스·씨에스윈드를 관련 기업으로 제시\n\n미국 CPI·국채금리 안정, 국내 외국인 현물·선물 동반 순매수 전환 여부 확인\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://www.youtube.com/watch?v=wccQGx-wdsU",
+              "https://t.me/growthresearch",
+              "https://youtube.com/watch?v=wccQGx-wdsU"
+            ],
+            "post_url": "https://t.me/growthresearch/31102"
+          },
+          {
+            "date": "2026-11-10",
+            "time": "21:21",
+            "text": "💻앤트로픽(ANT), 기업가치 1.4조 달러 IPO 추진... 프런티어 AI 연구소 최초 상장, 사상 최대 공모 규모\n\n📌 공모 개요\n완전희석 기준 기업가치 약 1.4조 달러. 공모가 상단 기준 시가총액은 약 1조 달러\n\n공모가 희망 범위 주당 70~78달러, 나스닥 글로벌 셀렉트 마켓 상장 예정, 티커 ANT\n\n기본 공모 최대 644억 달러(신주 8.01억 주 + 기존 주주 구주 2,360만 주)\n\n여기에 260억 달러 규모 사모 배정을 더해 총 최대 904억 달러 조달. 초과배정옵션(그린슈)까지 포함하면 약 1,000억 달러로\n\n스페이스X(기본 750억 달러, 그린슈 포함 862억 달러)를 넘어서는 사상 최대 규모\n\n사모 배정 참여사: AMD, 브로드컴, 구글, 마이크론, 마이크로소프트, 엔비디아, TSMC\n\n공모가 확정은 11월 18일(수) 예정. 골드만삭스와 모건스탠리가 대표 주관, 20개 은행 참여\n\n📌 실적: 매출은 폭증, 이익은 다시 적자\n3분기 매출 약 170억 달러(전년 동기 14억 달러, 약 12배)\n\n영업비용 175억 달러(+292% YoY)\n\n2분기 영업이익 9.74억 달러로 첫 흑자 전환했지만, 3분기에 영업손실 5.67억 달러로 다시 적자\n단기 약정 컴퓨팅 비용 50억 달러, 기부 매칭 프로그램 관련 비현금 비용 20억 달러가 주요 원인\n\n신규 모델 가격 인하와 일부 고객 할인으로 3분기 매출 증가분이 약 6억 달러 줄어듦. 가격 경쟁 압력이 실적에 반영되기 시작\n\n앤트로픽 자체 코드베이스 기여의 90% 이상을 클로드가 작성\n\n📌 인프라 약정 8,950억 달러\n총 약정액 8,950억 달러, 대부분이 컴퓨팅 파워와 칩\n\n이 중 2027년 9월까지 1년 안에 지급할 금액만 약 700억 달러. S&P500 기업 약 3분의 2의 개별 시가총액보다 큰 규모\n\n컴퓨팅을 사들이는 상대가 앤트로픽 지분을 보유한 기업이거나 같은 투자자의 지원을 받는 기업인 경우가 많아, 순환 거래 구조라는 지적도 있음\n\n📌 지배구조와 리스크 공시\n공익법인(PBC) 구조이며, 장기공익신탁(LTBT)이 이사회 과반을 선임·해임할 권한 보유\n\n공동창업자 7명은 각각 약 1.4% 지분 보유. 개인 지분의 80%를 기부하겠다고 약속\n\n증권신고서에 AI가 안전장치 없이 개발되면 인류에 \"파국적이거나 실존적인 위험\"을 초래할 수 있다고 명시\n\n다리오 아모데이 CEO는 안전을 위해 주요 AI 연구소들이 개발 속도를 조절해야 한다고 주장해 옴\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
+            "links": [
+              "https://telegram.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/31103"
           }
         ]
       },
@@ -451,46 +467,6 @@
         "category": "매크로/크립토",
         "channel_url": "https://t.me/SpartanResearch",
         "posts": [
-          {
-            "date": "2026-11-06",
-            "time": "14:01",
-            "text": "2026.11.06 14:01:06\n기업명: 한국타이어앤테크놀로지(시가총액: 7조 7,670억) A161390\n보고서명: 연결재무제표기준영업(잠정)실적(공정공시)\n\n매출액 : 54,650억(예상치 : 57,753억/ -5%)\n영업익 : 5,988억(예상치 : 5,526억/ +8%)\n순이익 : 2,242억(예상치 : 3,226억/ -31%)\n\n**최근 실적 추이**\n2026.3Q 54,650억/ 5,988억/ 2,242억\n2026.2Q 56,825억/ 5,591억/ 3,172억\n2026.1Q 53,139억/ 5,070억/ 3,724억\n2025.4Q 54,562억/ 5,468억/ 911억\n2025.3Q 54,127억/ 5,860억/ 3,896억\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106800449\n종목공시 : https://www.awakeplus.co.kr/disclosure/161390",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106800449",
-              "https://www.awakeplus.co.kr/disclosure/161390"
-            ],
-            "post_url": "https://t.me/SpartanResearch/5601"
-          },
-          {
-            "date": "2026-11-08",
-            "time": "19:25",
-            "text": "반도체 하락목표가는? \n\n 일전에 대표 반도체 etf인 soxx가 c파 하락이 나올것 같다고 했었죠. 현재 큰 폭락이 나오고는 있어서 c파일 가능성이 높다고 봅니다. 이말은 하락목표가도 구할수 있다는거죠.\n C파는 a만큼 내리거나(1대1) a파의 1.618배만큼 내린다는 규칙이 있습니다.\n 이 경우 아래까지 하락할수 있습니다.\n\n1:1=135달러 부근\n1.618=95달러 부근 \n\n 제가 vix 30앞에서 원칙을 어기고 1차 매수를 했던 이유도 이 1대1부근 자리에 있었기 때문입니다.\n 자 그러면 왜 1차만 매수를 했을까요? 1 .618구간인 95달러까지 내려가게 되면 3배를 추종하는 soxl은 여기서 90프로가 하락을 해야하기 때문에 무려 4달러(?) 부근까지 하락할수가 있습니다. 현 구간에서 90프로 하락이기 도 하고, vix 기준으로도 아직 하락범위가 남았기 때문에 원칙대로 하기로 한겁니다.(4차매수까지 있습니다.)\n\n보수적으로 봐야하면서도 용기를 내야하는 그런 자리이기 때문에 1차매수는 진행한거고, 현재 구간매수가 무서우신 분들은 soxl 100달러 위에서 산 사람들을 생각하길 바랍니다. 그 분들른 이미 -60프로 이상입니다....... 지금은 1차매수는 해야 하는 구간이라고 생각합니다.",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/5602"
-          },
-          {
-            "date": "2026-11-09",
-            "time": "07:02",
-            "text": "폴리티코에 따르면 러시아 크렘린궁이 11월 10~11일 아랍에미리트 아부다비에서 열리는 미국 중재 우크라이나 평화 협상을 위해 고위급 대표단을 구성.\n\n크렘린궁은 이번 협상을 매우 중요하게 여기고 있으며, 핵심 외교·군사 인사들을 대거 파견할 예정.\n\n러시아 대표단에는 블라디미르 메딘스키 대통령 보좌관, 세르게이 랴브코프 외무차관, 미하일 갈루진 외무차관과 함께 이고리 코스튜코프, 유리 지갈로프스키 등 총참모부 고위급 인사들이 포함.\n\n유리 우샤코프 대통령 보좌관이 협상 과정을 총괄하며, 푸틴 대통령은 금요일 국가안보회의에서 이번 회담을 직접 논의. 이처럼 고위급 인사들로 구성된 대표단은 러시아가 이번 협상에 특별한 중요성을 부여하고 있다는 점을 보여주는 것으로 평가.\n\n다만 관측통들은 러시아가 현재까지 기존 협상 입장을 변경할 조짐을 보이지 않고 있다고 지적.\n\n이러한 상황에서 아부다비 협상은 상당한 난항이 예상되는 가운데, 트럼프 대통령은 우크라이나뿐 아니라 유럽 전체에 영향을 미칠 수 있는 “매우 중대한” 합의 가능성을 언급.",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/5605"
-          },
-          {
-            "date": "2026-11-09",
-            "time": "07:05",
-            "text": "트럼프 대통령 \"이란과 강한 합의하면 재공격은 매우 가능성 낮다\"\n\n[공부의여신 네트워크] 트럼프 대통령이 현지시간 8일 일요일 CNN의 짐 슈토 기자와 약 20분간 전화 인터뷰를 하고, 이란 핵 프로그램과 호르무즈 해협 재개방 협상이 진전되는 한 미국이 이란과 다시 전쟁에 나설 필요는 \"매우 가능성이 낮다(highly unlikely)\"고 같은 인터뷰에서 다섯 차례 반복했습니다.\n\n트럼프 대통령은 \"그들이 매우 강력한 합의에 서명하느냐에 달려 있다\"며 \"대답은, 그럴 필요는 매우 가능성이 낮다는 것이다. 그들은 실패하고 있는 나라다. 올해 물가 상승률이 301%라는 것이 나왔다\"고 했습니다. \"필요하다면 하겠지만, 우리는 그들을 정말 세게 쳤다. 내가 그렇게 세게 쳤다. 얼마나 세게 쳤는지 여러분은 모른다\"고 했고, \"그래서 내가 그럴 필요는 매우 가능성이 낮다\"며 \"그들은 재정적으로 시들어가고 있다. 우리는 군사적으로 타격을 가했다. 우리는 그들을 끝낼 수도 있다\"고 했습니다.\n\n【항공모함 3척과 다리 38개】\n\n트럼프 대통령은 명령을 내리면 타격할 준비가 돼 있다고 했습니다. \"우리는 준비돼 있다. 여기에 항공모함 3척이 있다. 다른 한 척이 방금 도착했다. 우리는 3척을 갖고 있다. 완전히 무장한 상태다\"고 했습니다.\n\n이어 미국이 이란 안에서 발전소와 다리 등 기반 시설 목표를 정해 두었다고 밝혔습니다. \"우리는 말 그대로 한 시간 만에 무너뜨릴 수 있는 다리 38개를 목표로 잡고 있다\"며 \"전부 내려앉을 것\"이라고 했습니다. 다만 \"그렇게 하고 싶지는 않다. 본질적으로 다시 짓는 데 10년이 걸리기 때문\"이라며 \"나는 다리를 무너뜨리는 것을 좋아하지 않는다. 가장 짓기 어려운 것이 다리다. 몇 년이 걸린다. 나는 훌륭한 건축업자\"라고 했습니다.\n\n【방공망과 미사일·드론】\n\n트럼프 대통령은 이란의 방공망이 파괴돼 새로운 공격은 \"막을 수 없다\"고 했습니다. \"그들이 대공 장비가 없기 때문에 막을 수 없다. 대공이 모두 사라졌다\"고 했고, 이란이 유지하는 능력은 미사일이 약 10%, 드론이 약 15% 수준이라며 \"공장 상당수가 사라졌기 때문\"이라고 했습니다. 미사일과 드론 잔존 비율, 물가 상승률 301%는 대통령이 인터뷰에서 밝힌 수치이며 CNN이 따로 확인했다고 쓰지는 않았습니다.\n\n트럼프 대통령은 새로운 군사 행동에 대해 \"대개는 필요하지 않을 것\"이라며 \"그들은 합의를 너무나 원하고 있다\"고 다시 말했습니다.",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/5606"
-          },
-          {
-            "date": "2026-11-09",
-            "time": "19:22",
-            "text": "JUST IN: 🇺🇸 COINBASE OFFICIALLY RECEIVES FULL US FEDERAL APPROVAL TO OPERATE AS A NATIONAL TRUST BANK. ...",
-            "links": [
-              "https://x.com/WatcherGuru/status/2119732829668205009"
-            ],
-            "post_url": "https://t.me/SpartanResearch/5608"
-          },
           {
             "date": "2026-11-09",
             "time": "20:28",
@@ -565,6 +541,63 @@
             "text": "[소프트뱅크 실적 리뷰]    한 줄 요약: AI에 빚내서 크게 투자했는데, 번 돈으로 이자를 못 내고 담보로 맡긴 주식 값은 떨어지는 중. 당장 터질 일은 아니지만 2028년이 고비   1. 예상보다 훨씬 큰 적자  - 7~9월 순손실 1조 1,153억 엔. 작년 같은 분기는 2.5조 엔 흑자였고, 시장은 본전 근처(+2,330억~−1,130억 엔)를 예상했음  - 이유 ①: 미국 AI 데이터센터용 발전 장비 조달 계획을 바꾸면서 5,972억 엔 손실.…",
             "links": [],
             "post_url": "https://t.me/SpartanResearch/5622"
+          },
+          {
+            "date": "2026-11-10",
+            "time": "17:08",
+            "text": "[소프트뱅크 실적 리뷰]    한 줄 요약: AI에 빚내서 크게 투자했는데, 번 돈으로 이자를 못 내고 담보로 맡긴 주식 값은 떨어지는 중. 당장 터질 일은 아니지만 2028년이 고비   1. 예상보다 훨씬 큰 적자  - 7~9월 순손실 1조 1,153억 엔. 작년 같은 분기는 2.5조 엔 흑자였고, 시장은 본전 근처(+2,330억~−1,130억 엔)를 예상했음  - 이유 ①: 미국 AI 데이터센터용 발전 장비 조달 계획을 바꾸면서 5,972억 엔 손실.…",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/5623"
+          },
+          {
+            "date": "2026-11-10",
+            "time": "22:34",
+            "text": "RUBIO ON IRAN: TOLD ECONOMIC CAMPAIGN WORKING SO WELL THERE'S NOT NEED FOR MAJOR COMBAT OPERATIONS ...",
+            "links": [
+              "https://x.com/DeItaone/status/2120147703283798381"
+            ],
+            "post_url": "https://t.me/SpartanResearch/5624"
+          },
+          {
+            "date": "2026-11-10",
+            "time": "22:34",
+            "text": "RUBIO SAYS COMBAT OPERATIONS AGAINST IRAN ARE NOT NEEDED NOW ...",
+            "links": [
+              "https://x.com/FirstSquawk/status/2120147781897818525"
+            ],
+            "post_url": "https://t.me/SpartanResearch/5625"
+          },
+          {
+            "date": "2026-11-10",
+            "time": "22:34",
+            "text": "US SECRETARY OF STATE RUBIO: TALKS IN ABU DHABI ON RUSSIA-UKRAINE WERE VERY PRODUCTIVE. ...",
+            "links": [
+              "https://x.com/financialjuice/status/2120148013725167778"
+            ],
+            "post_url": "https://t.me/SpartanResearch/5626"
+          },
+          {
+            "date": "2026-11-10",
+            "time": "22:38",
+            "text": "컨센 상회한 CPI 발표 후 12월 FOMC 금리 인상 확률 98.8%로 급등",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/5627"
+          },
+          {
+            "date": "2026-11-10",
+            "time": "22:42",
+            "text": "반등 조건은 2가지. 유가가 급락해서 인플레가 잡히거나, CDS가 급락해 AI 투자 회수 의구심이 잡히거나. 국장은 여기서 한 단계 더 나아가 외국인 수급까지 복귀해야함.",
+            "links": [],
+            "post_url": "https://t.me/SpartanResearch/5628"
+          },
+          {
+            "date": "2026-11-10",
+            "time": "22:53",
+            "text": "GOLDMAN SACHS WARNS FED RATE HIKES COULD EXTEND INTO 2027\n\nGOLDMAN SACHS ASSET MANAGEMENT SAYS HOTTER-THAN-EXPECTED US INFLATION COULD FORCE THE FED INTO A MORE AGGRESSIVE TIGHTENING CYCLE.\n\nLINDSAY ROSNER, HEAD OF MULTI-SECTOR FIXED INCOME INVESTING, SAYS A DECEMBER RATE HIKE REMAINS THE FIRM'S BASE CASE, DESPITE GROWING AI-RELATED MARKET CONCERNS.\n\nPERSISTENT INFLATION COULD PUSH ADDITIONAL RATE HIKES INTO 2027, KEEPING BORROWING COSTS ELEVATED FOR LONGER. ...",
+            "links": [
+              "https://x.com/DeItaone/status/2120152549147763193"
+            ],
+            "post_url": "https://t.me/SpartanResearch/5629"
           }
         ]
       },
@@ -575,42 +608,6 @@
         "category": "매매 신호/트레이딩",
         "channel_url": "https://t.me/d_ticker",
         "posts": [
-          {
-            "date": "2026-11-07",
-            "time": "08:03",
-            "text": "TSMC, 메모리 칩 생산 검토 중\n\n- 엔비디아 요청에 따라 3D DRAM 생산 계획을 수립하기 시작했다고 두 명의 소식통이 밝혀\n\n- 3D DRAM은 메모리 셀을 수직으로 쌓아 올려 용량을 늘리는 기술\n\n- TSMC가 언제 생산을 시작할지, 제조 시설을 어떻게 확보할 지는 알려지지 않았지만 새로운 공장을 건설하는 방안을 채택할 수 있다고 함\n\n- 또는 마이크로소프트 기존 공장을 인수해 메모리 생산 시설로 전환하는 방안도 검토한다고 함\n\n- TSMC가 메모리 제조 사업에 진출할 경우 세계 반도체 산업에서 악명 높게 경기 변동에 민감한 분야가 더 취약해질 수 있음",
-            "links": [
-              "https://www.theinformation.com/articles/tsmc-weighs-making-advanced-memory-chips-capture-ai-spending?rc=3nnj10",
-              "https://theinformation.com/articles/tsmc-weighs-making-advanced-memory-chips-capture-ai-spending?rc=3nnj10"
-            ],
-            "post_url": "https://t.me/d_ticker/4093"
-          },
-          {
-            "date": "2026-11-07",
-            "time": "09:02",
-            "text": "TSMC가 DRAM을 어떻게 만들 수 있는지 의문이 있겠지만\n\nThe Information 기사에 보면 3D DRAM 담당자가 첨단패키징(AVP) 총괄 부사장이라고 합니다\n\n셀 어레이를 새긴 웨이퍼 1개, 로직 기반의 주변회로(페리)를 새긴 웨이퍼 1개를 각각 만들어 웨이퍼 본딩으로 붙이겠다는 건데요. 이는 TSMC가 SoIC(시스템 온 집적회로)라는 AVP 기술로 이미 실현하고 있는 것입니다\n\nTSMC 입장에서는 DRAM 셀 트랜지스터와 커패시터를 구현하는 제조 기술만 있으면 된다는 건데요. 여기에 수율 노하우까지 있어야 하지만, DRAM 공정보다 미세한 로직을 하고 있기에 단순 논리로 보면 수율 개선은 문제 없을 걸로 보입니다.",
-            "links": [],
-            "post_url": "https://t.me/d_ticker/4094"
-          },
-          {
-            "date": "2026-11-07",
-            "time": "09:11",
-            "text": "마이크로소프트, 오라클 구형 AI인프라 임대 계약 종료\n\n- 마소는 2023년 브라우저 빙의 검색 엔진을 구동하기 위해 당시 오라클의 AI 서버를 임대하는 계약을 체결한 바 있음\n\n- 하지만 이 서버는 구형 GPU인 H100 서버이므로 현재 마소의 요구사양에 맞지 않아 효용성이 떨어졌다고. 이에 마소는 계약 을 취소한다고 함 \n\n- 여기서 시사하는 바는 구형 GPU의 내용 연수가 늘고, 구형 GPU가 필요한 연산 영역이 있다 하더라도 AI 애플리케이션의 성능이 발달하면서 요구사양을 충족시키지 못해 계약 사례가 나올 수 있다는 점(부정적)",
-            "links": [
-              "https://www.bloomberg.com/news/articles/2026-11-06/microsoft-is-winding-down-oracle-deal-to-rent-ai-cloud-capacity",
-              "https://bloomberg.com/news/articles/2026-11-06/microsoft-is-winding-down-oracle-deal-to-rent-ai-cloud-capacity"
-            ],
-            "post_url": "https://t.me/d_ticker/4095"
-          },
-          {
-            "date": "2026-11-07",
-            "time": "09:12",
-            "text": "앤스로픽 10월 성장 또 꺾였다.  - WSJ가 금일 앤스로픽 10월 말 연환산(런레이트) 매출이 $80B를 넘었다고 단독 보도  - 앤스로픽은 상장보고서(S-1)에서 런레이트 계산법을 공개했는데, 소비형 매출에 13을 곱하고 월 구독료에 12를 곱해 더한 값임  - 만일 10월 동안 3분기 매출 성장률 Qoq 47%를 월 단위로 치환하면 14%인데, 이 성장속도를 10월에도 동일하게 적용하면 $87B~$88B가 나옴  - 결론적으로 앤스로픽 10월 $80B…",
-            "links": [
-              "https://bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout"
-            ],
-            "post_url": "https://t.me/d_ticker/4096"
-          },
           {
             "date": "2026-11-08",
             "time": "09:48",
@@ -730,6 +727,34 @@
             "text": "SK하이닉스 DRAM 영업이익률 60% → 32% 반토막 전망\n\n- 모건스탠리 숀킴이 10일에 발간한 메모리 리포트에 따르면 SK하이닉스의 29~35년 D램 영업이익률(OPM) 가정을 60% → 32%로 낮췄음\n\n- 삼성전자도 29~35년 같은 기간 DRAM OPM 전망을 60% → 39% 하향했음\n\n치킨게임이 시작된다",
             "links": [],
             "post_url": "https://t.me/d_ticker/4113"
+          },
+          {
+            "date": "2026-11-10",
+            "time": "21:29",
+            "text": "앤스로픽 기업가치 35% 낮추며 IPO 공모한다\n\n- 금일 SEC에 S-1/A-2 파일 제출\n- IPO 공모가 주당 $70~$78 측정\n- 공모로 최대 $64.4B 조달 계획\n- 사모 배정까지 합치면 $90.4B\n- 8억 140만 주 공모, 구주매출 2360만 주\n- 공모주 최대 20%는 개인투자자 배정\n- 기업가치 초기 최대 $1.5T 평가 이후 $1.1T 하향\n- 최종 기업가치는 $0.97B, 최대치 기준 35% 낮아",
+            "links": [],
+            "post_url": "https://t.me/d_ticker/4114"
+          },
+          {
+            "date": "2026-11-10",
+            "time": "22:10",
+            "text": "앤스로픽 ARR이 결국 정체됐네요\n\n- 오늘 보고된 SEC 상장보고서 수정본에 따르면 10월 런레이트(ARR/연환산매출)는 $81B로 9월보다 $10B가 늘었음\n\n- 10월 런레이트는 전월 대비(MoM) 14% 성장률을 기록. 이는 3Q26 월환산 성장률 13.6%와 거의 같음\n\n- 런레이트 성장은 늘어나지도 줄어들지도 않고 정체된 셈. 시가총액 중간값을 런레이트로 나누면 약 12배 멀티플",
+            "links": [],
+            "post_url": "https://t.me/d_ticker/4115"
+          },
+          {
+            "date": "2026-11-10",
+            "time": "23:11",
+            "text": "가스터빈 생산예약 축소…GE버노바 주가 폭락\n\n- 소프트뱅크 그룹과 자체 비전펀드2가 공동 출자한 미국 데이터센터 전담 특수목적법인 SB7이 미국 오하이오주 데이터센터 프로젝트 'PORTS-Pike'에 전력설비 구매 계약에 지난 9월까지 1.5조엔을 지출했음\n\n- SB7은 이번 3분기 실적을 통해 해당 프로젝트에 공급할 전력설비의 생산슬롯을 줄이도록 계약을 변경하며 이에 따른 선급금 손실 4570억엔을 계상했음. 이미 낸 1.5조엔 가운데 40%를 날린 셈\n\n- 이 부지에는 약 9.2GW 규모의 가스터빈 발전소를 짓기로 했음. 터빈은 GE버노바에 주문했다고. 이번 취소로 GE버노바가 타격을 입음. 물론 생산슬롯 예약금이 있어(관행상 전체 계약액의 20%) 방어 장치는 있음\n\n- GE버노바 경영진은 10월 28일 어닝콜에서 \"고객의 생산슬롯 취소는 없다\"고 했지만, 이번 소프트뱅크 사례처럼 생산슬롯 규모를 축소하는 사례는 있는 것으로 보임\n\n$GEV Pre -9%",
+            "links": [],
+            "post_url": "https://t.me/d_ticker/4116"
+          },
+          {
+            "date": "2026-11-10",
+            "time": "23:24",
+            "text": "가스터빈 사태, 블룸에너지에 미치는 영향은?\n\n- 슬롯이 가득차있다가 몇 군데가 빠지게 되면 터빈이 빨리 만들어지는 것은 아님\n\n- 고객 주문부터 납품까지의 시간인 리드타임은 제작시간과 대기시간의 합임\n\n- 이번 소프트뱅크 슬롯 축소 사태로 대기시간이 짧아지게 됨. 즉, 리드타임이 어느정도 짧아짐\n\n- 취소된 슬롯용으로 투입될 예정이었던 주조/단조품을 다음 고객에 넘기면 그 고객은 부품조달 기간을 줄일 수 있고 리드타임을 줄일 수 있기도 함\n\n- 모델링 결과 슬롯 용량에서 1GW가 빠질 때마다 리드타임이 0.5~0.6개월 짧아지는 것으로 추정됨. 가스터빈 리드타임이 36~48개월 정도라서 이 정도 단축이 미치는 영향은 제한적\n\n- 블룸에너지는 리드타임이 3개월 정도로 알려져 있음. 발전원 가운데 리드타임이 짧다는 이유로 엄청난 프리미엄을 받아왔는데, 가스터빈 리드타임이 줄어들며 프리미엄 축소 여력이 생김. 하지만 제일 큰 문제는 가스터빈 생산예약 축소가 '데이터센터 전력 수요 둔화'로 해석되는 게 더 큰 타격을 입힐 것으로 보임\n\n※클로드 챗봇과 아이디어를 디벨롭한 결과물입니다",
+            "links": [],
+            "post_url": "https://t.me/d_ticker/4117"
           }
         ]
       },
@@ -748,57 +773,6 @@
         "category": "국내 시장/종목 분석",
         "channel_url": "https://t.me/Yeouido_Lab",
         "posts": [
-          {
-            "date": "2026-11-09",
-            "time": "17:03",
-            "text": "소프트뱅크, 미국 내 네오클라우드 사업 재검토. 다른 지역으로 전환할 가능성\n\n据报道，软银可能重新考虑其在美国的NeoCloud（新云）业务，并转向其他地区。\n\n\nhttps://wallstreetcn.com/livenews/3196774?ivk=1#from=android",
-            "links": [
-              "https://wallstreetcn.com/livenews/3196774?ivk=1#from=android",
-              "https://wallstreetcn.com/livenews/3196774?ivk=1"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/38804"
-          },
-          {
-            "date": "2026-11-09",
-            "time": "18:39",
-            "text": "2026.11.09 18:36:28\n기업명: 인제니아테라퓨틱스(시가총액: 9,884억) A950260\n보고서명: 투자판단관련주요경영사항              (IGT-302 연구개발 협약 관련 녹내장 적응증 옵션 미행사 공문 수령)\n\n제목 : IGT-302 연구개발 협약 관련 녹내장 적응증 옵션 미행사 공문 수령\n\n* 주요내용 \n1) 당사는 파트너사인 MSD(Merck&co., Inc.)로부터 'IGT-302'의 녹내장 적응증 연구개발 협약 관련 옵션 미행사에 대한 공문을 수령하였으며, 본 공시는 녹내장 적응증에 대한 옵션 행사 종료 건 입니다. \n \n2) 당사는 상기 연구협약에 따라 Eyebio로부터 공동연구개발비 미화 3,000,000달러(약 3,975,550,000원)를 2023년, 2024년 각 6번에 걸쳐서 기수령하였으며, 해당 금액에 대한 반환 의무는 없습니다.\n\n공시링크: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900837\n종목공시 : https://www.awakeplus.co.kr/disclosure/950260",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900837",
-              "https://www.awakeplus.co.kr/disclosure/950260"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/38805"
-          },
-          {
-            "date": "2026-11-09",
-            "time": "20:28",
-            "text": "⚡️⚡️⚡️ 미국과 이란, 호르무즈 해협 재개설을 위한 80억 달러 규모의 거래 검토 중\n\nIsrael Hayom에 따르면, 트럼프 대통령은 월요일 카타르 총리를 만나 동결된 자금 80억 달러를 해제해 주는 대가로 호르무즈 해협을 재개설하자는 이란 측의 제안을 논의할 예정임.\n\n보도된 거래가 성사될 경우 이란의 걸프만 해상 선박 공격이 중단되고 미국의 제재가 해제될 수 있으나, 이란의 핵 프로그램 문제는 해결되지 않을 전망임.\n\nJD 밴스 부통령은 행정부 고위 관리들의 반대에도 불구하고 이번 합의를 추진하고 있는 것으로 알려짐.",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/38806"
-          },
-          {
-            "date": "2026-11-09",
-            "time": "23:55",
-            "text": "태양광 급락.. 이게 맞긴하죠...\n블루웨이브 플레이가 더 갈진 모르겠지만\n명확한 지원책이 나오거나 해야",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/38807"
-          },
-          {
-            "date": "2026-11-10",
-            "time": "07:30",
-            "text": "[X-energy, Long Mott(FOAK) 건설허가]\n\n• X-energy와 Dow는 11/9 NRC의 텍사스 Long Mott 프로젝트 건설허가 승인 발표. Dow Seadrift 산업단지에 Xe-100 4기, 총 320MW를 설치해 전력과 산업용 증기 공급 추진\n\n• 건설허가 승인에 따라 Xe-100 설계 확정·표준화, 장기 납기 기자재·자재 공급망 구축, NRC 제출을 위한 운전허가 신청 준비 진행\n\n• Dow는 2027년 예비 투자결정 검토 예정. 본격적인 건설은 Dow의 최종투자결정(FID) 이후 착수하며, 최초 공급은 2030년대 초 목표\n\n(회사 발표) https://x-energy.com/news/dow-x-energy-proposed-smr-project-receives-historic-construction-permit-for-nuclear-powered-industrial-site/⁠",
-            "links": [
-              "https://x-energy.com/news/dow-x-energy-proposed-smr-project-receives-historic-construction-permit-for-nuclear-powered-industrial-site/",
-              "https://x-energy.com/news/dow-x-energy-proposed-smr-project-receives-historic-construction-permit-for-nuclear-powered-industrial-site"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/38808"
-          },
-          {
-            "date": "2026-11-10",
-            "time": "08:11",
-            "text": "Merck/한미약품 efinopegdutide MASH 2b상 Lancet 게재",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/38809"
-          },
           {
             "date": "2026-11-10",
             "time": "08:11",
@@ -895,6 +869,57 @@
               "https://wallstreetcn.com/articles/3785634"
             ],
             "post_url": "https://t.me/Yeouido_Lab/38824"
+          },
+          {
+            "date": "2026-11-10",
+            "time": "17:25",
+            "text": "안녕하세요, 한미 IR그룹입니다.\n\n파트너사 MSD가 에피노페그듀타이드의 MASH 임상 2b상 결과를 발표하고, 해당 연구 결과를 저명한 의학 저널 'The Lancet'에 게재하였습니다.\n\n✅ 주요 결과*\n\n▪️ 52주차 MASH 해소율: 4mg 56%, 7mg 63%, 10mg 61% vs. 위약 13%\n▪️ 간 섬유화 1단계 이상 개선율: 4mg 43%, 7mg 52%, 10mg 34% vs. 위약 21%\n▪️ 안전성 프로파일은 세마글루타이드와 전반적으로 유사했으며, 주요 이상반응은 오심·설사·구토 등 위장관계 이상반응이었습니다.\n\n📌 The Lancet 논문 바로가기\n\n* 본 연구의 주요 유효성 분석은 mITT 기준으로 진행됐으며, 52주차 조직검사(biopsy) 결과가 누락된 환자는 개선이 없는 환자(non-responder)로 처리하는 보수적인 방식(missing as failure)을 적용했습니다.",
+            "links": [
+              "https://doi.org/10.1016/S0140-6736(26)02043-X"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/38825"
+          },
+          {
+            "date": "2026-11-10",
+            "time": "18:07",
+            "text": "아니 우리 스피드카가...\n\n증시 사이드카 사라지나…금융위 \"효용성 살펴보는 중\"\nhttps://n.news.naver.com/article/119/0003153456",
+            "links": [
+              "https://n.news.naver.com/article/119/0003153456"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/38826"
+          },
+          {
+            "date": "2026-11-10",
+            "time": "20:52",
+            "text": "1T 타겟이라는 뉴스에 떡락중인 앤트로픽",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/38827"
+          },
+          {
+            "date": "2026-11-10",
+            "time": "22:09",
+            "text": "월러 연준 이사 \"12월 금리인상 지지\"…CPI 따라 50bp 인상도 고려\"\n\nhttps://www.mt.co.kr/world/2026/11/10/2026111020560586546",
+            "links": [
+              "https://www.mt.co.kr/world/2026/11/10/2026111020560586546",
+              "https://mt.co.kr/world/2026/11/10/2026111020560586546"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/38828"
+          },
+          {
+            "date": "2026-11-10",
+            "time": "22:31",
+            "text": "📊 경제지표 속보  11.10 22:30\n\n⭐⭐⭐ 🇺🇸 소비자물가지수 (전월비) (CPI (MoM)  (Oct))\n실제 0.4%  예상 0.3%  🔺 예상 상회 (+0.1%p)  (이전 0.6%)\n\n⭐⭐⭐ 🇺🇸 근원 소비자물가지수 (전월비) (Core CPI (MoM)  (Oct))\n실제 0.3%  예상 0.2%  🔺 예상 상회 (+0.1%p)  (이전 0.3%)\n\n📌 Bilanx Research\n📎 주식소리통 NEO",
+            "links": [
+              "https://t.me/davidstocknew"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/38829"
+          },
+          {
+            "date": "2026-11-10",
+            "time": "22:34",
+            "text": "CPI발표 후 낙폭 확대",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/38830"
           }
         ]
       },
@@ -3267,6 +3292,33 @@
         "category": "공시",
         "posts": [
           {
+            "date": "2026-11-11",
+            "time": "00:00",
+            "text": "[신테카바이오] [기재정정]주요사항보고서(자기전환사채만기전취득결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000459"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000459"
+          },
+          {
+            "date": "2026-11-10",
+            "time": "00:00",
+            "text": "[대구백화점] [기재정정]주요사항보고서(유형자산양도결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000448"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000448"
+          },
+          {
+            "date": "2026-11-10",
+            "time": "00:00",
+            "text": "[SK] [기재정정]주요사항보고서(주식교환ㆍ이전결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000447"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000447"
+          },
+          {
             "date": "2026-11-10",
             "time": "00:00",
             "text": "[대한조선] 주요사항보고서(자기주식취득신탁계약체결결정)\n공시유형: 주요사항보고",
@@ -3301,6 +3353,33 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000002"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000002"
+          },
+          {
+            "date": "2026-11-10",
+            "time": "00:00",
+            "text": "[아이엘] 주요사항보고서(자기전환사채매도결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000445"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000445"
+          },
+          {
+            "date": "2026-11-10",
+            "time": "00:00",
+            "text": "[더코디] [기재정정]주요사항보고서(자기전환사채매도결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000431"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000431"
+          },
+          {
+            "date": "2026-11-10",
+            "time": "00:00",
+            "text": "[유니크] 주요사항보고서(자기주식처분결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000413"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000413"
           },
           {
             "date": "2026-11-10",
@@ -3447,42 +3526,6 @@
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000209"
           },
           {
-            "date": "2026-11-10",
-            "time": "00:00",
-            "text": "[오로스테크놀로지] 주요사항보고서(자기주식취득신탁계약체결결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000195"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000195"
-          },
-          {
-            "date": "2026-11-10",
-            "time": "00:00",
-            "text": "[상지건설] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000186"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000186"
-          },
-          {
-            "date": "2026-11-10",
-            "time": "00:00",
-            "text": "[그리드위즈] 주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000178"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000178"
-          },
-          {
-            "date": "2026-11-10",
-            "time": "00:00",
-            "text": "[핑거스토리] 주요사항보고서(무상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000174"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000174"
-          },
-          {
             "date": "2026-11-09",
             "time": "00:00",
             "text": "[체시스] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
@@ -3607,24 +3650,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106000001"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106000001"
-          },
-          {
-            "date": "2026-11-06",
-            "time": "00:00",
-            "text": "[대구백화점] [기재정정]주요사항보고서(유형자산양도결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000575"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000575"
-          },
-          {
-            "date": "2026-11-05",
-            "time": "00:00",
-            "text": "[삼부토건] 주요사항보고서(회사분할결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000565"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000565"
           }
         ]
       }
