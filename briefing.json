@@ -1,6 +1,6 @@
 {
   "2026-11-16": {
-    "fetched_at": "2026-11-16T16:46:04+09:00",
+    "fetched_at": "2026-11-17T04:25:19+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -9,20 +9,6 @@
         "category": "증권사 리포트",
         "channel_url": "https://t.me/bumgore",
         "posts": [
-          {
-            "date": "2026-11-10",
-            "time": "20:54",
-            "text": "1조 2174억 📉",
-            "links": [],
-            "post_url": "https://t.me/bumgore/55204"
-          },
-          {
-            "date": "2026-11-11",
-            "time": "07:57",
-            "text": "현대차/기아                제이피모건\n\n EU 현지화 규제·배터리 전략 점검\n\nOverweight 유지, 기아 27/28E OP -24% 대폭 하향\n\n\n🇪🇺 EU 현지화 규제: 타격보다는 적응 가능\n\nEU가 EV·핵심 부품의 현지화 요건 강화로 이동 중이나, 현대차그룹은 적응 가능하다는 판단 — ① 제안된 프레임워크상 한국이 EU FTA 요건을 충족하면 한국산 배터리·소재가 EU 원산지로 동등 인정 ② 그게 안 되더라도 배터리·주요 부품 대부분에 현지 소싱 대안 존재. 수요 회복 시 한국 배터리사들의 유휴 유럽 공장 주문을 늘리고, EU가 지정한 현지화 대상 9개+ 부품을 현지 조달하는 경로.\n\n🔋 핵심 논점: \"중국 배터리를 배제하지 말라\"\n\n경쟁력 유지엔 소싱 유연성이 관건 — 규제 불확실성 속에서 중국 공급사를 원천 배제하지 말아야 한다는 제언. 또 하나의 의문부호는 HMG의 고전압 미드니켈 전략 — 배터리 시스템 비용 ~30% 절감 목표에 대해 JPM은 미드니켈 화학으로 셀 비용 ~15% 절감이 현실적이고, 고전압 접근은 기술·실행 난이도를 더한다며 반신반의. 중국 배터리가 여전히 현저히 싸기 때문에 공급사·화학조성 양쪽의 유연성이 비용 통제의 핵심.\n\n🇺🇸 미국: HEV 선호 지속이 버팀목, 리스크는 로보택시\n\nHMG의 HEV는 연비 + 강한 토크 + ICE와 유사한 주행감으로 '효율 이상'을 원하는 소비자에 소구. 반면 미국 EV 침투율은 보조금 시기에조차 가격·충전 우려로 정체. 핵심 리스크는 자율주행·로보택시가 EV의 매력을 ICE/HEV 위로 끌어올리는 시나리오 — HMG는 2028년 L2++ 출시 목표지만 현재까지의 진전으로는 실행 우려를 해소하기에 불충분.\n\n📊 추정치\n\n3Q 실적 반영해 2027/28E OP — 현대차 ~-3%, 기아 ~-24% 하향. 기아의 큰 폭 하향은 상승하는 EV 믹스가 마진을 더 무겁게 누르기 때문. 그럼에도 OW 유지 — ① HEV 믹스 개선 ② 로보틱스 기회 ③ 자율주행 이니셔티브의 3축.",
-            "links": [],
-            "post_url": "https://t.me/bumgore/55205"
-          },
           {
             "date": "2026-11-11",
             "time": "08:18",
@@ -113,6 +99,20 @@
             "text": "현대해상 3분기 리뷰 \n\nNeutral 유지, Dec-27 TP 4.6만 → 4.2만 원\n\n\n🎯 헤드라인: 보험은 좋았는데 투자가 깎아먹은 분기\n\n3Q26 순이익 1,660억 원(-9.6% YoY) — JPMe 2,030억/컨센 2,160억 모두 하회. 미스의 주범은 금리 급등 속 대체·구조화 자산 평가손실. 주가는 최근 1개월 -24%(vs KOSPI -12%)로 이미 미스를 상당 부분 선반영. FY27E P/E 3배, P/B 0.4배는 매력적 레벨이나, 부동산·인프라·대체자산 5조 원+ 익스포저가 이익 리스크로 남아 Neutral 유지.\n\n📊 이익·투자 포트폴리오 해부\n\n보험손익은 +63% YoY의 2,630억으로 호조 — 그러나 투자손실 -280억이 전체를 끌어내림. AUM 44.5조 중 인프라 2.4조 + 부동산 관련 1.4조 + PE 1.1조로 대체투자 비중이 큼. 3Q에만 대체투자 평가손 668억 — 금리가 더 오르면 이 북에서 평가손이 계속 나올 수 있는 구조로, 새 TP에 이 리스크를 일부 반영.\n\n🛡 자본·언더라이팅\n\n핵심자본비율 81%(해약환급금준비금 100% 인정 시 93%) — 2027년 90-100% 관리 목표(규제 권고 최저 80% 상회). 금리 민감도는 제한적(+50bp → K-ICS +0.2%p). CSM 잔액은 9M26 10.2조(+14% YTD) — 보수적 계리가정 전환에도 성장, 초기 사고연도 손해율 개선 조짐과 함께 부채 안정성 개선.\n\n💰 배당: 사실상 제로 리스크\n\n해약환급금준비금 회계 완화 없이는 배당 재개 어려움 — 9월 말 배분가능이익이 -0.9조(마이너스). FY26E DPS 컨센의 '제로 또는 근접' 하향 가능성 경고. 연말 배당 시즌을 앞두고 2군 손보 중에선 FY26E 수익률 5%의 DB손보 선호(현대해상은 무배당).",
             "links": [],
             "post_url": "https://t.me/bumgore/55221"
+          },
+          {
+            "date": "2026-11-16",
+            "time": "20:22",
+            "text": "1조 4495억 📈",
+            "links": [],
+            "post_url": "https://t.me/bumgore/55224"
+          },
+          {
+            "date": "2026-11-16",
+            "time": "20:36",
+            "text": "아폴로\n\nAI는 경제를 더 역동적으로 만들고 있으며, AI의 일자리 창출 효과는 노동 대체 효과보다 훨씬 크다.\n\nAI가 미국의 새로운 스타트업 붐을 일으키고 있다.\n\n신규 법인 설립이 폭발적으로 증가 중.\n\nAI 산업은 계속 채용을 늘리고 있다.",
+            "links": [],
+            "post_url": "https://t.me/bumgore/55225"
           }
         ]
       },
@@ -262,46 +262,6 @@
         "posts": [
           {
             "date": "2026-11-16",
-            "time": "08:15",
-            "text": "📹 [산업보고서 LIVE] 동성화인텍•한국카본, 다시 LNG 슈퍼사이클을 기대하는 이유\n\nhttps://www.youtube.com/live/0SeyFVremfs?si=gXkymLml0E2R1ttz\n\n잠시 후 8시 30분부터 오늘 발간한 조선 기자재(LNG 보냉재) 산업보고서 LIVE를 진행합니다.\n\n미국을 중심으로 LNG 투자가 역대 최대 수준으로 단행되나 이에 필요한 LNG선은 아직 부족한 상황입니다.\n\n수혜는 오롯이 LNG 보냉재로 직결될 전망이고,\n\n이익 개선과 저평가 매력이 동시에 부각되는 상황인 만큼 주목이 필요합니다.\n\nLIVE에서 자세한 내용을 전달드리겠습니다. 많은 시청 바랍니다!\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://www.youtube.com/live/0SeyFVremfs?si=gXkymLml0E2R1ttz",
-              "https://t.me/growthresearch",
-              "https://youtube.com/live/0SeyFVremfs?si=gXkymLml0E2R1ttz"
-            ],
-            "post_url": "https://t.me/growthresearch/31252"
-          },
-          {
-            "date": "2026-11-16",
-            "time": "08:43",
-            "text": "🧬 일라이릴리(LLY) 젭바운드, 청소년 비만 임상서 BMI 18.5% 감소... 노보노디스크가 선점한 청소년 시장 추격\n\n💊 임상 개요\n대상: 비만 또는 과체중이면서 당뇨 전 단계, 수면무호흡증 등 동반 질환이 있는 12~18세 청소년 160명\n\n평균 체중: 약 109kg(240파운드)\n\n투여 기간: 1년 6개월\n\n30개 이상 의료기관에서 약 3년에 걸쳐 진행\n\n결과는 ObesityWeek에서 발표됐고, 미국의사협회지(JAMA)에 게재\n\n💊 핵심 결과\n체질량지수(BMI) 평균 약 18.5% 감소\n\n체중은 평균 약 18kg(40파운드) 감소\n\n이상반응은 성인과 비슷한 수준으로, 구역·구토 등 위장관계 부작용이 가장 흔했음\n\n교신저자인 미네소타대 애런 켈리 교수는 젭바운드의 청소년 적응증 확대 승인 가능성이 \"매우 높다\"고 평가\n\n💊 왜 의미가 있나\n미국 질병통제예방센터(CDC)에 따르면 미국 아동·청소년 5명 중 1명 이상이 비만이며, 비율은 계속 상승 중\n\n일라이릴리는 성인 비만 시장은 주도하고 있지만, 청소년 시장에서는 후발주자\n\n노보노디스크(NVO)의 위고비와 삭센다는 이미 미국과 유럽에서 12세 이상 청소년 적응증을 확보\n\n의료진과 부모 모두 청소년 비만 치료 선택지 확대를 요구하는 상황이라, 승인 시 처방 확대 여지가 큼\n\n제2형 당뇨병이 있는 청소년이나 비만 기준에 미치지 않는 청소년에게는 결과를 일반화하기 어렵다고 연구진이 직접 언급\n\n160명 규모로 성인 3상 대비 표본이 작음\n\n성장기 청소년에 대한 장기 투약의 안전성, 투약 중단 후 체중 재증가 여부는 계속 확인이 필요한 부분\n\n🧬바이오섹터 분석🧬[그로쓰리서치]\nhttps://t.me/growthbio",
-            "links": [
-              "https://t.me/growthbio"
-            ],
-            "post_url": "https://t.me/growthresearch/31254"
-          },
-          {
-            "date": "2026-11-16",
-            "time": "09:26",
-            "text": "💻 베센트 美 재무장관, 엔비디아(NVDA)의 중국 우회 수출 의혹 강력 비판\n\n📍 스콧 베센트(Scott Bessent) 미 재무장관 주요 발언\n\n📌 싱가포르 페이퍼컴퍼니를 통한 중국 우회 수출 의혹\n- \"엔비디아가 싱가포르 등에 있는 페이퍼컴퍼니들의 위험 신호를 의도적으로 무시했는지 살펴봐야 한다.\"\n\n- \"엔비디아의 중국 매출은 급감한 반면, 싱가포르 매출은 급증했다.\"\n\n- \"싱가포르에서 판매된 칩 중 실제 싱가포르에 남은 물량은 1%에 불과하다는 보도를 봤다.\"\n\n📌 경영진 교체 및 조직 쇄신 필요성 언급\n- \"이사회가 새로운 리더를 찾는 과정에서 외부 인사를 영입해야 한다고 생각한다.\"\n\n- \"회사 내부에서 벌어진 일들을 고려하면 대대적인 조직 쇄신이 필요하다.\"\n\n📌 혁신 역량과 규제 준수 의무는 별개\n- \"엔비디아는 훌륭한 기업이고 젠슨 황은 뛰어난 혁신가다. 그러나 이것이 규제 준수 의무를 면제해 주지는 않는다.\"\n\n- \"은행에서 이와 같은 규제 위반이 발생했다면 통화감독청(OCC)이 즉시 개입해 상당수 경영진을 교체했을 것이다.\"\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
-            "links": [
-              "https://telegram.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/31255"
-          },
-          {
-            "date": "2026-11-16",
-            "time": "09:55",
-            "text": "💻 세미파이브, 3분기 신규 수주 1784억원 '역대 최대'…전년比 437%↑\n\nhttps://www.inews24.com/view/2026110\n\n📌 3분기 신규 수주 437% 급증\n신규 수주액 1,784억 원(YoY +437%, QoQ +182%)\n\n수주잔고 2,455억 원(QoQ +75%)으로 역대 최대\n\nASIC 개발 부문 수주액 1,369억 원(YoY +705%) 기록\n\n📌 북미 AI 반도체 수주 확대\n북미 고성능컴퓨팅(HPC) 분야 대형 프로젝트 확보\n\n한국·일본의 소버린 AI 시장으로 사업 영역 확장\n\n4nm 공정 기반 AI 추론용 반도체 개발 수요 증가\n\n📌 첨단 공정 중심으로 사업 고도화\n4nm 설계·양산 경험을 기반으로 반도체 설계부터 생산까지 턴키 사업 확대\n\n기존 성숙 공정 소형 반도체에서 첨단 공정 AI·HPC 반도체로 양산 제품군 확장\n\n삼성전자 파운드리 2·3nm 공정 기반 반도체 설계자산(IP) 확대 추진\n\n📌 매출 성장과 수익성 개선\n3분기 누적 매출액 1,461억 원(YoY +62%)\n\n3분기 제품 매출 120억 원(QoQ +167%)\n\n누적 매출총이익률 28%(YoY +11%p)\n\n누적 영업이익률 -14%(YoY +25%p)로 적자 폭 축소\n\n📌 향후 체크포인트\n역대 최대 수주잔고의 실제 매출 전환 속도\n\n첨단 공정 기반 AI 반도체 양산 물량 확대\n\n회사는 4분기부터 수주잔고 매출 반영과 양산 증가에 따른 수익성 개선 기대\n\n영업적자가 지속되는 만큼 향후 흑자전환 여부 주목\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
-            "links": [
-              "https://www.inews24.com/view/2026110",
-              "https://telegram.me/growth_semi",
-              "http://inews24.com/view/2026110"
-            ],
-            "post_url": "https://t.me/growthresearch/31256"
-          },
-          {
-            "date": "2026-11-16",
             "time": "10:19",
             "text": "🧬 [알지노믹스] Lilly가 고른 국내 RNA 편집 플랫폼, 간암 반응률은 표준치료의 1.7배\n\nRNA 편집은 아직 허가 제품이 없는데도 빅파마가 전임상 단계에서 조 단위로 사들이는 분야입니다.\n\n국내에도 그 계약을 이미 한 건 받아둔 회사가 있습니다.\n\n💊 Lilly 계약 \n2025년 5월 유전성 난청 RNA 편집 치료제로 최대 13억 달러(약 1조 9,000억원) 규모 계약\n\n후보물질 설계는 알지노믹스, 개발·상업화는 Lilly가 맡는 플랫폼 기술이전 구조로 표적이 늘 때마다 마일스톤 반복 수령\n\n2026년 연구비 3회 수령, 샌디에이고 Lilly Gateway Labs 입주까지 진행 중\n\n💊 간암 데이터 \n주력 RZ-001은 암세포에 많은 hTERT RNA를 자살유전자 RNA로 바꾸는 방식\n\n2026년 4월 AACR 공개 반응률 mRECIST 61.5%·완전관해 23%, 같은 기준 표준치료는 35%·12%\n\nFDA 희귀의약품·패스트트랙에 이어 2026년 5월 RMAT 지정\n\n💊 투자 관점 \n플랫폼 자체가 거래 대상인 분야에서 빅파마 레퍼런스를 확보한 상태\n\n원형 RNA 기반 체내 CAR-T라는 두 번째 플랫폼도 개발 중 — BMS가 같은 기술로 Orbital을 15억 달러에 인수\n\n다만 선급금은 미공개이고 후보물질 도출 단계라, 가치 확인 시점은 마일스톤 수령에 달린 것으로 보임\n\n왜 Lilly가 이 회사를 골랐는지, 네프콘 본문에서 기전부터 정리했습니다.\nhttps://contents.premium.naver.com/growthresearch/growthbio/contents/261116093038979hz\n\n🧬바이오섹터 분석🧬[그로쓰리서치] \nhttps://t.me/growthbio",
             "links": [
@@ -418,6 +378,58 @@
               "https://t.me/growthresearch"
             ],
             "post_url": "https://t.me/growthresearch/31272"
+          },
+          {
+            "date": "2026-11-16",
+            "time": "17:03",
+            "text": "✅ 대주전자재료, 3분기 매출 1100억…분기 사상 최대\n\nhttps://www.edaily.co.kr/News/Read?newsId=02879846645646376&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article\n\n📌 3분기 매출 1,100억원, 역대 최대 실적 경신\n- 3분기 매출 1,100억원(+73.2% YoY), 분기 사상 최대\n\n- 누적 매출 3,015억원으로 지난해 연간 매출 2,546억원 돌파\n\n- 영업이익 51억원, 은 가격·환율 변동에 따른 일시적 원가 부담 반영\n\n📌 주력 소재 3종 동반 성장, 출하량 역대 최대\n- 태양전지용 전극 페이스트 분기 최대 매출 기록\n\n- 실리콘 음극재·MLCC 전극 페이스트 역대 최대 출하량 달성\n\n- 자동차 조명용 형광체도 전분기 대비 회복세 전환\n\n📌 4분기 원가 부담 완화로 수익성 회복 기대\n- 고가에 매입한 은 분말과 판가 하락 간 시차로 3분기 이익 감소\n\n- 은 가격·환율 안정에 따른 원가율 정상화 기대\n\n- MLCC 출하 확대와 외형 성장으로 영업이익 개선 전망\n\n📌 미국 탈중국 정책, 차세대 태양전지 수혜 기대\n- AI 데이터센터 전력 수요 증가로 태양광 발전 중요성 확대\n\n- 미국의 중국산 소재 공급망 배제로 비중국 공급사 경쟁력 부각\n\n- 지상용·우주용 태양전지 전극 페이스트 양산 역량 확보\n\n- 차세대 태양전지 협력 확대가 중장기 성장동력으로 부상\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://www.edaily.co.kr/News/Read?newsId=02879846645646376&amp;mediaCodeNo=257&amp;utm_source=naver&amp;utm_medium=referral&amp;utm_campaign=news_syndication&amp;utm_content=original_article",
+              "https://t.me/growthresearch?utm_source=chatgpt.com",
+              "https://edaily.co.kr/News/Read?mediaCodeNo=257&amp;newsId=02879846645646376"
+            ],
+            "post_url": "https://t.me/growthresearch/31273"
+          },
+          {
+            "date": "2026-11-16",
+            "time": "17:35",
+            "text": "🔥 그로쓰리서치 신규 콘텐츠 「마감쓰」 오픈! 🔥\n⠀\n오늘처럼 시장이 어려운 장세 속에서 오늘 하루도 고생 많으셨습니다.\n\n시장이 좋을 때보다 어려울 때, 시장의 흐름을 되짚고 다음 기회를 준비하는 과정이 더욱 중요하다고 생각합니다.\n⠀\n이러한 취지에서 그로쓰리서치 네프콘에 \n💥새로운 장마감 시황 콘텐츠 「마감쓰」를 오픈했습니다!\n⠀\n앞으로 매일 오후 5시경, \n국내 증시를 움직인 핵심 이슈와 주요 뉴스, 업종·종목별 흐름을 정리해 전달할 예정입니다.\n\n추가로 장전 시황 브리핑 콘텐츠 💥「개장쓰」도 꾸준히 업로드할 예정이니 많은 관심 부탁드립니다!\n⠀\n📌 매일 오후 5시, 오늘의 증시 10분 컷\n・코스피·코스닥 등 국내 주요 지수 및 수급 동향 정리\n\n・당일 증시를 움직인 핵심 뉴스와 주요 이슈 분석\n\n・주도 업종 및 주요 종목의 상승·하락 배경 점검\n\n・단순 시황 정리를 넘어 다음 거래일 투자 전략에 필요한 Implication 제공\n⠀\n📈 오늘의 하락이 아쉽더라도, 내일의 기회까지 놓칠 필요는 없습니다.\n\n장 마감 후 10분, 오늘의 시장을 복기하고 내일의 투자 전략을 준비해 보세요!\n⠀\n🔥 그로쓰리서치 | 장마감 시황 「마감쓰」\nhttps://contents.premium.naver.com/growthresearch/growth/contents?categoryId=1a1e2abd739000eg1\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
+            "links": [
+              "https://contents.premium.naver.com/growthresearch/growth/contents?categoryId=1a1e2abd739000eg1",
+              "https://telegram.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/31274"
+          },
+          {
+            "date": "2026-11-16",
+            "time": "17:40",
+            "text": "✅ [11/16 마감쓰] \"깐부 치킨 가지 말껄\"\n\n오늘은 엔비디아발 악재 및 메모리 담합 이슈로 \n반도체가 직격탄을 맞으면서 국내 증시가 크게 흔들렸습니다.\n\n그 와중에 음식료·화장품 등 일부 업종은 오히려 상승했는데요. \n\n시장에서 어떤 일들이 있었는지 살펴보겠습니다.\n\n📌 매크로 및 섹터 이슈\n엔비디아 경영 불확실성과 AI 업계 자금지원 축소 우려에 🔽아시아 반도체주 동반 급락\n\n미국 10월 PPI +6.5%(YoY), 연준의 AI 인프라 부채 위험 경고로 성장주 부담 확대\n\n코스닥 정책 기대감 약화와 반도체 투자심리 악화로 소부장 중심 매도세 집중\n\n🔼음식료(+2.3%)·화장품(+2.2%)·운송(+1.6%) 등 내수·방어주 중심 상승\n\n중국 10월 산업생산 +4.8%, 소매판매 +0.4%로 예상 하회하며 경기 둔화 우려 지속\n\n📌 주요 기업 이슈\n\n📍삼성전자·SK하이닉스 \n美 법원, D램 가격 담합 집단소송 기각 신청 거부로 법적 불확실성 확대\n\n📍삼성SDI \n美 주피터파워와 16GWh 규모 LFP ESS 공급 계약 체결, 수조 원대 수주 확보\n\n📍HLB테라퓨틱스 \n신경영양성각막염 치료제 미국 임상 3상 유효성 입증 실패로 하한가\n\n📍대한전선 \n싱가포르 전력청으로부터 2,718억원 규모 400kV 초고압 전력망 프로젝트 수주\n\n📍삼양식품·빙그레 \n해외 매출 성장과 실적 개선 기대에 시장 급락 속 강세\n\n📍미래에셋벤처투자 \n스페이스X 스타십 회수 성공 소식에 관련 투자 이력 부각되며 +17.1%\n\n📍지슨·카티스·세코닉스 \n수능 앞두고 AI 스마트안경 부정행위 방지 관련주 동반 상한가\n\n🔥 오늘 시장의 주요 이슈와 투자 관점에서 짚어볼 내용은 「마감쓰」에서 확인해 보세요!\n\n뉴스 정리와 함께 내일 투자 판단에 필요한 Implication까지 확인해 보세요!\n\n🔥 그로쓰리서치 | 장마감 시황 「마감쓰」 보러가기\nhttps://naver.me/FjmQjcav\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://naver.me/FjmQjcav",
+              "https://t.me/growthresearch"
+            ],
+            "post_url": "https://t.me/growthresearch/31275"
+          },
+          {
+            "date": "2026-11-16",
+            "time": "18:00",
+            "text": "💻 젠슨 황 복귀, 현실적으로 쉽지 않은 이유\n\nhttps://wallstreetcn.com/articles/3786008\n\n📌 미국 정부의 압박\n트럼프 대통령은 젠슨 황에 우호적인 입장을 유지\n\n반면 베센트 재무장관은 외부 인사 출신의 새로운 CEO 선임을 공개적으로 요구\n\n엔비디아의 첨단 반도체 수출통제 준수 여부에 대해 이사회와 외부 법률자문단에 10일 이내 답변 요구\n\n미 의회에서도 젠슨 황에 대한 비공개 청문 절차 추진\n\n📌 이사회 차원의 복귀 부담\n현재 CFO인 콜레트 크레스가 임시 CEO 수행 중\n\n로펌 Wachtell을 통한 독립조사 진행\n\nArm CEO 르네 하스가 차기 CEO 후보로 거론\n\n조사 종료 전 복귀를 허용할 경우 이사회가 법적·지배구조상 책임을 부담할 가능성\n\n젠슨 황의 지분율은 약 3.6%로, 이사회 결정을 독자적으로 뒤집기 어려운 구조\n\n📌 핵심 리스크는 사생활보다 수출통제 문제\n직속 부하 직원과의 부적절한 관계 및 이해상충 문제 제기\n\n여기에 중국 관련 사업 및 첨단 AI 칩 우회 수출 의혹까지 중첩\n\n공매도 기관 Culper Research는 엔비디아 FY2026 컴퓨팅 매출의 20% 이상이 관련 지역 중개업체 또는 재수출 경로와 연관됐을 가능성을 주장\n\n다만 해당 수치는 공매도 기관의 추정이며, 위법 행위가 확정된 것은 아님\n\n📌 '젠슨 황 복귀 운동'의 이해관계\n복귀 청원 서명 16만 명 돌파\n\n일론 머스크, Garry Tan 등 실리콘밸리 주요 인사들이 복귀 지지\n\n주요 지지 투자자인 Altimeter Capital과 Atreides는 엔비디아 주식 및 네오클라우드 기업에 투자\n\n네오클라우드 기업들은 엔비디아의 주요 GPU 고객이자 자금 지원 대상\n\n새로운 경영진이 AI 인프라 투자와 네오클라우드 지원을 축소할 경우 관련 투자자들에게 불리할 수 있다는 분석\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
+            "links": [
+              "https://wallstreetcn.com/articles/3786008",
+              "https://telegram.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/31276"
+          },
+          {
+            "date": "2026-11-16",
+            "time": "18:00",
+            "text": "🎬 AI 반도체 생태계 흔들리나? 젠슨 황 스캔들 파장과 미국 데이터센터 규제 진실, 내년 증시 전망! 박시동 경제 평론가, 이정민 앵커\n\nhttps://www.youtube.com/watch?v=HVSrlRfKTSQ\n\n엔비디아 리더십 논란과 데이터센터 투자 위축 우려 속, \n2027년 증시 반등의 핵심 조건을 짚어봤습니다.\n\n📌 엔비디아 위기, AI 상승세 꺾을까?\n\n📌 데이터센터 투자, 2028년까지 성장 지속 가능성\n\n📌 코스피 9,000선의 열쇠는 금리와 반도체\n\n📌 다음 주도주는? ESS·국내 데이터센터 주목\n\nAI 투자 지속 가능성과 향후 2년 실적이 주가에 덜 반영된 유망 섹터를 중심으로 투자 전략을 정리했습니다.\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://www.youtube.com/watch?v=HVSrlRfKTSQ&amp;amp;utm_source=chatgpt.com",
+              "https://t.me/growthresearch?utm_source=chatgpt.com",
+              "https://youtube.com/watch?v=HVSrlRfKTSQ"
+            ],
+            "post_url": "https://t.me/growthresearch/31277"
           }
         ]
       },
@@ -428,38 +440,6 @@
         "category": "매크로/크립토",
         "channel_url": "https://t.me/SpartanResearch",
         "posts": [
-          {
-            "date": "2026-11-12",
-            "time": "21:25",
-            "text": "$NBIS 컨콜 시작 전이나 프리장 -8%대 급락 중(21:25 기준)",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/5644"
-          },
-          {
-            "date": "2026-11-12",
-            "time": "22:05",
-            "text": "$NBIS CEO 서한 中\n\n\"연말까지 MS 계약 물량의 절반 조금 넘게 공급하고, 남은 물량은 2027년 2분기로 미뤘다.\"\n\n\"3분기 말 DataOne이 정식 전력으로 넘어가기 전에 임시 발전기 일부를 먼저 철수했고, 그 때문에 남은 일정이 다시 짜였다. MS도 일정 계획에 함께했다.\"",
-            "links": [],
-            "post_url": "https://t.me/SpartanResearch/5645"
-          },
-          {
-            "date": "2026-11-12",
-            "time": "22:08",
-            "text": "11월 6일 기사 리마인드 \n\n지연이 현실로 \n\nhttps://n.news.naver.com/article/001/0016427692?sid=104",
-            "links": [
-              "https://n.news.naver.com/article/001/0016427692?sid=104"
-            ],
-            "post_url": "https://t.me/SpartanResearch/5646"
-          },
-          {
-            "date": "2026-11-12",
-            "time": "22:17",
-            "text": "TRUMP: WE DON’T NEED A DEAL WITH IRAN. ...",
-            "links": [
-              "https://x.com/financialjuice/status/2120866291669938207"
-            ],
-            "post_url": "https://t.me/SpartanResearch/5647"
-          },
           {
             "date": "2026-11-12",
             "time": "22:59",
@@ -556,6 +536,33 @@
             "text": "엔비디아, AI 기업 지원 자금 삭감 예정; '무제한 ATM' 시대 종말의 위기\n\n젠슨 황 CEO는 퇴임에 앞서 엔비디아가 AI 경제를 지원하는 방식을 재편하기 시작했습니다.\n\n황 CEO가 승인했던 일부 투자 건에 대해 신중한 입장을 보였던 것으로 알려진 새로운 재무 책임자가 부임하면서, 엔비디아의 자금 지원에 의존해 온 스타트업들은 지원 축소를 예상하고 있습니다.\n\n지난달 베를린에서 열린 AI 컨퍼런스에서 황 CEO는 엔비디아가 '무제한 ATM'처럼 행동하던 시대는 끝났다고 선언했습니다.\n\n엔비디아 칩을 구매하고 고객에게 컴퓨터를 임대해주는 여러 신흥 클라우드 서비스 제공업체들이 불안해하고 있는 것으로 전해졌습니다.\n\nUBS의 팀 아쿠리 애널리스트는 엔비디아의 자금 지원 중단으로 시장에서 약 500억 달러 이상의 자금이 사라질 수 있다고 추산했습니다.",
             "links": [],
             "post_url": "https://t.me/SpartanResearch/5664"
+          },
+          {
+            "date": "2026-11-16",
+            "time": "21:25",
+            "text": ">>SemiAnalysis, AI 컴퓨팅 수요 전망 대폭 하향…2028년 자본지출 전망 30% 가까이 하향\n\n•SemiAnalysis는 2028년 글로벌 AI 가속기 자본지출 전망을 28% 하향했으며, 2030년 전망은 40% 낮췄음\n\n•2026~2030년 AI 가속기용 실리콘 웨이퍼 출하 면적 누적 전망도 17% 하향했고, 2028년 HBM 수요 전망은 30%, 2030년 전력 수요 전망은 34% 각각 하향. Nvidia가 가장 큰 영향을 받을 것으로 예상되며, 글로벌 실리콘 웨이퍼 출하량 감소분의 66%를 차지하고, 2030년 컴퓨팅 매출 기준 출하 전망은 66% 하향\n\n>SemiAnalysis大幅下修AI算力预测：2028年资本开支预测下调近三成，五年硅片出货面积下调17%，英伟达受冲击最严重   https://wallstreetcn.com/articles/3786019#from=ios",
+            "links": [
+              "https://wallstreetcn.com/articles/3786019#from=ios"
+            ],
+            "post_url": "https://t.me/SpartanResearch/5665"
+          },
+          {
+            "date": "2026-11-16",
+            "time": "23:36",
+            "text": "TRUMP: HAVING NVIDIA'S HUANG GO BACK NOT BAD IDEA\n(@WalterBloomberg)",
+            "links": [
+              "https://t.me/WalterBloomberg"
+            ],
+            "post_url": "https://t.me/SpartanResearch/5668"
+          },
+          {
+            "date": "2026-11-16",
+            "time": "23:36",
+            "text": "TRUMP: IF I MEET KIM JONG UN , IT WILL BE IN CHINA\n(@WalterBloomberg)",
+            "links": [
+              "https://t.me/WalterBloomberg"
+            ],
+            "post_url": "https://t.me/SpartanResearch/5669"
           }
         ]
       },
@@ -566,56 +573,6 @@
         "category": "매매 신호/트레이딩",
         "channel_url": "https://t.me/d_ticker",
         "posts": [
-          {
-            "date": "2026-11-13",
-            "time": "23:32",
-            "text": "10월 PPI 상승률 상위순\n\n- 연료 소매 +22%\n- 금속 도매 +9%\n- 우유 +8%\n- TV 광고 +5%\n- 건축용 판지 +5%\n- 가구 소매 +4%\n- 식품·주류 도매 +4%\n- 건강·미용·안경 소매 +4%\n- 차량 렌털·숙박 예약대행 +4%\n\n10월 PPI를 보니 중간선거 여당이 왜 졌는지 이해가 되는...",
-            "links": [],
-            "post_url": "https://t.me/d_ticker/4148"
-          },
-          {
-            "date": "2026-11-14",
-            "time": "00:14",
-            "text": "오픈AI, 에이전트 자동쇼핑 출시\n\n- 오늘 〈챗GPT 월렛〉이라는 새로운 기능 발표. 이 기능은 AI 에이전트인 dots가 사용자를 대신해 쇼핑할 수 있도록 지원. 아메리칸익스프레스(AXP), 마스터카드(MA), 비자(V)가 dots에 연결됨. 사용자는 카드 정보를 입력해두면 에이전트가 구매하려는 상품에 대해 최종 승인하는 구조. 오픈AI는 초기에 거래 수수료를 받지 않을 것이라고 함. 대신 가맹점 및 판매자들과 관계를 돈독히 해 플랫폼 입지를 키운다는 구상\n\n메타 뮤즈처럼 하겠다는 것. B2C AI 비즈니스 본격화",
-            "links": [
-              "https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html"
-            ],
-            "post_url": "https://t.me/d_ticker/4149"
-          },
-          {
-            "date": "2026-11-14",
-            "time": "07:39",
-            "text": "엔비디아 이사회, Arm CEO에 접촉\n\n- 파이낸셜타임스(FT)에 따르면 엔비디아 이사회가 Arm CEO인 르네 하스에 접촉했다고 함. 하스는 월스트리트 애널리스트 사이에서도 거론되는 후보 중 한명. 그는 7년 간 2006년부터 7년 간 엔비디아에서 컴퓨팅 제품 사업부 부사장까지 오른 이후 2013년 Arm에 합류했음. 이사회는 CEO 선임을 위해 전문 헤드헌팅 서비스 업체를 선정하는 중이며 아직 어떤 후보와도 공식적으로 접촉한 건 아니라는 입장. \"개별 후보에 대한 추측도 시기상조\"라고 밝혀",
-            "links": [
-              "https://www.reuters.com/business/media-telecom/arms-haas-approached-by-nvidia-board-part-ceo-search-ft-reports-2026-11-13/"
-            ],
-            "post_url": "https://t.me/d_ticker/4150"
-          },
-          {
-            "date": "2026-11-14",
-            "time": "16:16",
-            "text": "미국 4시간 항공운항 중단 사태\n\n- 연방항공국(FAA)은 미국 동부시간 오후 4시 직전 항공교통무선 문제가 터져 4시간 동안 관제가 작동하지 못해 8600편 항공편이 취소됐다고 밝혔음. 당국에 따르면 이번 장애는 L3해리스(LHX)의 항공통신 네트워크 인프라가 노후된 영향이라고 함",
-            "links": [
-              "https://www.wsj.com/us-news/faa-temporarily-halts-flights-across-u-s-b9b06e59"
-            ],
-            "post_url": "https://t.me/d_ticker/4151"
-          },
-          {
-            "date": "2026-11-14",
-            "time": "16:23",
-            "text": "데이터센터 대출에 손을 떼는 사모시장\n\n- 세계 최대 사모펀드 중 하나인 블랙스톤(BX)의 지원을 받는 데이터센터 개발사 QTS는 $800M 규모 조달 과정에서 $300M만 조달한 것으로 알려져\n\n- QTS는 이전보다 높은 이자율을 지급하라는 사모 투자자들의 요구에 반발함에 따라 투자자들이 계획된 사모채권 발행 규모를 약 60% 축소했다고 함",
-            "links": [
-              "https://www.bloomberg.com/news/articles/2026-11-13/blackstone-s-qts-is-cutting-ai-debt-sale-by-more-than-half"
-            ],
-            "post_url": "https://t.me/d_ticker/4152"
-          },
-          {
-            "date": "2026-11-14",
-            "time": "16:59",
-            "text": "앤스로픽＋오픈AI 월별 런레이트 추이\n\n- 9월 MoM + 7%\n- 8월 MoM +19%\n- 7월 MoM +4%\n- 6월 MoM +22%\n- 5월 MoM +33%\n\n7월부터 본격적으로 성장세가 꺾이기 시작. 주황색은 앤스로픽, 푸른색은 오픈AI\n\n*앤스로픽은 공시, 오픈AI는 언론 보도 및 IB 추정치 합산. 자체 에이전트로 생성한 결과물이라서 틀린 부분이 있을 수 있음",
-            "links": [],
-            "post_url": "https://t.me/d_ticker/4153"
-          },
           {
             "date": "2026-11-14",
             "time": "21:19",
@@ -738,6 +695,56 @@
             "text": "앤스로픽이 상장할 경우 단숨에 Top 10으로 진입\n\n- 이번 주 목요일 IPO 공모 마치고 첫 거래 예정",
             "links": [],
             "post_url": "https://t.me/d_ticker/4168"
+          },
+          {
+            "date": "2026-11-16",
+            "time": "22:55",
+            "text": "고려아연, 미국 폐금속회수 기업 인수합병\n\n- 고려아연이 미국 자회사 '페달포인트 리사이클'과 미국의 비상장 기업인 '솔라사이클'을 합병해 신규 합작법인 '주피터'를 설립하기로 함. 두 기업은 데이터센터나 에너지 인프라 장비에서 나오는 폐금속을 회수해 가공하는 리사이클링 전문기업. 고려아연이 주피터 지분 70%, 솔라사이클이 30% 비율로 출자한다고. 고려아연은 2029년 가동할 미국 테네시주 금속 제련소에 필요한 원재료 공급망을 주피터와 함께 구축해간다는 구상",
+            "links": [
+              "https://www.bloomberg.com/news/articles/2026-11-16/korea-zinc-010130-ks-solarcycle-form-us-critical-minerals-recycling-venture"
+            ],
+            "post_url": "https://t.me/d_ticker/4169"
+          },
+          {
+            "date": "2026-11-16",
+            "time": "23:05",
+            "text": "네오클라우드의 선급금 비중은 25%?\n\n- 네오클라우드 Corvex(MOVE)가 자사 B200 기반 AI 컴퓨트 인프라를 한 고객과 $103M 공급 계약(3년치)을 맺었는데 선급금으로 $26M을 받았다고 공시했음. Corvex는 고객에게 제공할 B200 인프라를 구축하기 위해 $78M의 CAPEX가 필요하다고 했고 여기서 1/3 수준을 선급금으로 확보한 셈\n\n- 코어위브, 네비우스가 구체적인 선급금 비중을 공개하지 않았지만 피어그룹을 통해 대략 25% 수준이 아닐까라고 역추론이 가능해졌음. 다만 나머지 75%는 자금조달이 필요한 만큼 신용에서 자유로울 수는 없을 것으로 보임",
+            "links": [],
+            "post_url": "https://t.me/d_ticker/4170"
+          },
+          {
+            "date": "2026-11-16",
+            "time": "23:16",
+            "text": "미국 AI 기술에 대한 원격 접근 관련 규정 발표\n\n- 상무부 산업안보국(BIS)은 금일 성명에서 AI 컴퓨팅 역량에 대한 원격 접근을 규율하는 보호 조치를 취하는 잠정 규정을 발표. 중국 등 제3국은 미국산 AI 칩으로 구성된 데이터센터에 원격 접근하는 데 제약이 걸릴 예정",
+            "links": [
+              "https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology"
+            ],
+            "post_url": "https://t.me/d_ticker/4171"
+          },
+          {
+            "date": "2026-11-16",
+            "time": "23:48",
+            "text": "마벨, 업계 최초 HBM급 CXL 메모리 공개\n\n- 최근 KV캐시 요구량이 급증하면서 GPU 장착형 HBM과 서버 내 D램의 용량 확장 한계가 드러나고 있음. 마벨은 GPU 서버 밖에 별도로 메모리 풀(또는 메모리 랙)을 설치하고, GPU가 CXL이라는 원격 통신 규격으로 외부에 있는 메모리 풀에 접근하는 구조를 그리고 있음\n\n- 마벨은 16일 미국 메모리 모듈 업체인 펭귄솔루션즈(SK하이닉스가 지분 소유)와 업계 최초의 광통신 기반의 ‘메모리 어플라이언스’를 공개. 이는 최대 16TB의 DDR5와 576GB의 HBM3E를 탑재하고, 멀리 떨어진 GPU가 원격 접근할 수 있도록 CXL 3세대 규격의 포토닉 NIC(네트워크인터페이스카드)도 적용함\n\n- 이번 CXL 제품은 업계 최초로 광통신을 적용한 사례. 펭귄솔루션스는 \"HBM급 어플라이언스\"라고 설명. 외부에 떨어져 있는 메모리 풀에도 GPU 옆 HBM에 버금가는 고대역·저지연을 구현한 것으로 볼 수 있음",
+            "links": [
+              "https://investor.marvell.com/news-events/press-releases/detail/1044/marvell-and-penguin-solutions-collaborate-to-address-data-center-ai-memory-and-accelerate-inference-at-scale"
+            ],
+            "post_url": "https://t.me/d_ticker/4172"
+          },
+          {
+            "date": "2026-11-16",
+            "time": "23:58",
+            "text": "마벨이 제시한 CXL 메모리 확장 솔루션은 수명을 다해 퇴역하는 서버의 구형 DDR4를 폐기하지 않고 재활용하는 데 큰 의미가 있습니다(자료에서는 최대 DDR5/HBM3E를 쓴다고 하지만 DDR4 재활용 사례를 언급하고 있음)\n\n마벨은 자사의 CXL 컨트롤러(Structera X)를 활용하면, GPU 옆의 비싼 HBM에만 전적으로 의존하지 않고도 기존 DDR4를 묶어 서버의 메모리 용량을 경제적으로 확장할 수 있다고 봅니다\n\n즉각적인 초고속 연산은 HBM이 맡되, 재사용되는 KV-캐시 같은 데이터는 구형 DDR4 기반의 메모리 풀로 넘겨 전체 인프라 효율을 높이는 방식입니다\n\n이러면 메모리 업체 입장에서는 고부가 제품으로 내세운 HBM의 가격 전가력이 구형 제품의 영향력 확대로 이전만 못할 수도 있고요. 반대로 말하면 DDR4 같은 구형 제품의 가격도 올라가면서 포트폴리오 전반의 수익성이 개선된다는 의미로 해석될 수도 있습니다\n\n#Opinion",
+            "links": [],
+            "post_url": "https://t.me/d_ticker/4173"
+          },
+          {
+            "date": "2026-11-17",
+            "time": "00:09",
+            "text": "세미애널러시스 2028년 HBM 수요 30% 하향\n\n세미애널러시스가 기관용 리포트를 통해 AI 가속기와 HBM 전망치를 낮췄다고 합니다. 원래 유료 리포트인데 X에서 퍼지고 있네요\n\n정리하면 AI 가속기 전망 기준\n- 2026년 $392B 전망 동일\n- 2027년 $770B → $627B 하향(-19%)\n- 2028년 $1054B → $758B 하향(-28%)\n\n여기에 2028년 HBM 수요 30% 하향이라고 합니다.\n\n하향 조정 이유로는 3분기 AI 프론티어 랩의 ARR(연환산매출) 성장세가 둔화됨에 따라 컴퓨팅 비용을 감당할 수 있는 수준으로 낮추는 게 원인이라고 하고요. 또 하이퍼스케일러들이 확약이 없는 AI CAPEX에서 발을 빼고 있고, 미국 중간선거 결과로 5.8GW 규모의 미국 데이터센터 공급이 지연된 영향이라고 합니다.\n\nSource : X, ImNotHarsh",
+            "links": [
+              "https://x.com/imnotharsh/status/2122300247212786027"
+            ],
+            "post_url": "https://t.me/d_ticker/4174"
           }
         ]
       },
@@ -756,48 +763,6 @@
         "category": "국내 시장/종목 분석",
         "channel_url": "https://t.me/Yeouido_Lab",
         "posts": [
-          {
-            "date": "2026-11-13",
-            "time": "18:31",
-            "text": "리가켐바이오가 항체약물접합체(ADC) 기술수출(L/O) 파트너사의 임상 성과를 바탕으로, 올해와 내년 복수의 추가 기술수출 가능성을 공개했습니다.\n\n리가켐바이오의 파트너사인 익수다와 시스톤이 글로벌 제약사를 대상으로 후속 기술이전(서브 라이선싱)을 추진하는 가운데, 회사는 자체 ADC 후보물질과 플랫폼 기술이전도 병행하고 있습니다.\n\n특히 익수다의 인간 상피세포 성장인자 수용체2(HER2) 표적 ADC 후보물질인 ‘LCB14(이하 개발코드명)’와 CD19 표적 ADC 후보물질인 ‘LCB73’은 초기 임상에서 유효성을 확인하면서 글로벌 제약사와의 협상이 진행 중인 만큼 관심이 쏠립니다.\n\n리가켐바이오는 13일 오후 올해 3분기 실적 발표 콘퍼런스콜에서 연구개발(R&D) 및 사업화 전략을 공개했습니다. 이동건 리가켐바이오 전략기획팀장은 이날 콘퍼런스콜을 통해 “올해와 내년에 걸쳐 추가 파트너십이 여러 건 확인될 것으로 예상한다”고 밝혔습니다.\n\n이 팀장은 “글로벌 톱티어 투자은행(IB)와의 계약을 통해 기술이전 논의가 가속화되고 있다”며 “익수다의 임상 결과를 보고 IB 측에서 먼저 제안한 건”이라고 말했습니다.\n\n익수다의 HER2 타깃 ADC와 CD19 타깃 ADC 모두 기존에 다수의 글로벌 제약사와 논의 중인 가운데 글로벌 IB가 가세하면서 협상이 진전되고 있다는 게 이 팀장의 설명입니다. 서브 라이선스의 경우 파트너사가 확보한 계약금과 개발 마일스톤(단계별 기술료), 로열티(경상 기술료)를 약정 비율에 따라 배분받는 구조인 만큼, 추가 수익을 기대할 수 있습니다.\n\nhttps://www.thebionews.net/news/articleView.html?idxno=30254",
-            "links": [
-              "https://www.thebionews.net/news/articleView.html?idxno=30254",
-              "https://thebionews.net/news/articleView.html?idxno=30254"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/38913"
-          },
-          {
-            "date": "2026-11-13",
-            "time": "18:41",
-            "text": "📢 [DART 공시]\n\n한미사이언스 (008930 | 코스피 | 시총 3조 5,016억)\n📄 임원ㆍ주요주주특정증권등소유상황보고서\n\n보고자 : 신동국(기타비상무이사·등기임원, 10%이상주주)\n보고전 : 28.15% (19,254,570주)\n보고후 : 30.18% (20,637,402주)\n증감 : 1,382,832주 (2.03%p)\n\n▶ 2026-11-10/장외매수(+)/보통주/ 1,382,832주/@50,141원/거래상대방: 코리아밸류업사모투자합자회사 외 2인\n\n🔗 https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001678  |  2026.11.13",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001678"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/38915"
-          },
-          {
-            "date": "2026-11-13",
-            "time": "18:44",
-            "text": "📢 [DART 공시]  한미사이언스 (008930 | 코스피 | 시총 3조 5,016억) 📄 임원ㆍ주요주주특정증권등소유상황보고서  보고자 : 신동국(기타비상무이사·등기임원, 10%이상주주) 보고전 : 28.15% (19,254,570주) 보고후 : 30.18% (20,637,402주) 증감 : 1,382,832주 (2.03%p)  ▶ 2026-11-10/장외매수(+)/보통주/ 1,382,832주/@50,141원/거래상대방: 코리아밸류업사모투자합자회사 외…",
-            "links": [
-              "https://n.news.naver.com/mnews/article/005/0001884846?sid=101"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/38916"
-          },
-          {
-            "date": "2026-11-13",
-            "time": "22:31",
-            "text": "❗ 미국 PPI 전월 대비 0.3% 발표 (예상 0.4%, 이전 1.3%) $거시경제($MACRO)",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/38917"
-          },
-          {
-            "date": "2026-11-13",
-            "time": "22:31",
-            "text": "‼ 속보: 미국 PPI 전년 대비 6.5% (예상 6.6%, 이전 6.3%) $거시경제($MACRO)",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/38918"
-          },
           {
             "date": "2026-11-14",
             "time": "21:05",
@@ -912,6 +877,29 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116001194"
             ],
             "post_url": "https://t.me/Yeouido_Lab/38933"
+          },
+          {
+            "date": "2026-11-16",
+            "time": "18:41",
+            "text": "오늘날의 나스닥과 1995년~2000년의 나스닥을 비교해 보면 놀라울 정도로 겹치는 부분이 있습니다. \n1998년에는 급격한 조정이 발생하여 모두를 흔들었고, 이는 최종 상승세의 발판이 되었습니다. \n로드맵은 2026년 하반기에 저점을 형성한 후 2028년까지 마지막 상승세를 이어가는 것입니다.",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/38934"
+          },
+          {
+            "date": "2026-11-16",
+            "time": "21:12",
+            "text": ">>SemiAnalysis, AI 컴퓨팅 수요 전망 대폭 하향…2028년 자본지출 전망 30% 가까이 하향\n\n•SemiAnalysis는 2028년 글로벌 AI 가속기 자본지출 전망을 28% 하향했으며, 2030년 전망은 40% 낮췄음\n\n•2026~2030년 AI 가속기용 실리콘 웨이퍼 출하 면적 누적 전망도 17% 하향했고, 2028년 HBM 수요 전망은 30%, 2030년 전력 수요 전망은 34% 각각 하향. Nvidia가 가장 큰 영향을 받을 것으로 예상되며, 글로벌 실리콘 웨이퍼 출하량 감소분의 66%를 차지하고, 2030년 컴퓨팅 매출 기준 출하 전망은 66% 하향\n\n>SemiAnalysis大幅下修AI算力预测：2028年资本开支预测下调近三成，五年硅片出货面积下调17%，英伟达受冲击最严重   https://wallstreetcn.com/articles/3786019#from=ios",
+            "links": [
+              "https://wallstreetcn.com/articles/3786019#from=ios"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/38935"
+          },
+          {
+            "date": "2026-11-16",
+            "time": "21:59",
+            "text": "* 전망을 하향 조정한 세 가지 이유\n\n\n1) AI 생태계 전체의 토큰 매출 전망 재조정\n\n- 최첨단 AI 모델 개발사들의 3분기 순증 ARR 증가세가 둔화. 매출로 전체 컴퓨팅 비용을 계속 감당할 수 있는 수준에 맞춰 신규 컴퓨팅 공급 전망을 낮춤. SemiAnalysis는 여전히 이들 개발사의 매출을 시장 컨센서스보다 낙관적으로 보고 있으며, 최첨단 AI를 도입해 높은 투자수익률을 거둘 수 있는 분야도 많다고 본다. \n\n2) 자본시장의 자금 공급 위축\n\n- 채권·대출 투자자와 지분 투자자 모두 AI 인프라 구축에 자금을 대는 데 소극적. 특히 하이퍼스케일러가 임차인으로 확보되지 않은 프로젝트에서 이런 경향이 두드러진다. 그 결과 데이터센터 부지 확보와 전력 인프라 및 건물 개발이 줄어들고, 컴퓨팅 장비를 설치·가동하는 데 쓸 수 있는 전력도 감소한다.\n\n3) 미국 중간선거 결과\n\n- 당초 2027년 하반기부터 2028년 상반기 사이에 구축될 예정이던 미국 내 5.8GW 규모의 데이터센터 공급이 지연됐다. 인허가 등 규제 절차의 지연도 2028년 데이터센터 총용량 전망을 낮추고 있다. 다만 이보다 앞의 두 요인이 전망 하향에 더 큰 영향을 미쳤다고  봄",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/38938"
           }
         ]
       },
@@ -3259,6 +3247,15 @@
           {
             "date": "2026-11-16",
             "time": "00:00",
+            "text": "[한세엠케이] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116002004"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116002004"
+          },
+          {
+            "date": "2026-11-16",
+            "time": "00:00",
             "text": "[에어부산] [기재정정]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
             "links": [
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116001097"
@@ -3318,6 +3315,114 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000179"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000179"
+          },
+          {
+            "date": "2026-11-16",
+            "time": "00:00",
+            "text": "[진시스템] 주요사항보고서(자기주식처분결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116002217"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116002217"
+          },
+          {
+            "date": "2026-11-16",
+            "time": "00:00",
+            "text": "[지엔코] 주요사항보고서(자기전환사채만기전취득결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116002241"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116002241"
+          },
+          {
+            "date": "2026-11-16",
+            "time": "00:00",
+            "text": "[핑거] 주요사항보고서(소송등의제기)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116002205"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116002205"
+          },
+          {
+            "date": "2026-11-16",
+            "time": "00:00",
+            "text": "[진시스템] 주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116002211"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116002211"
+          },
+          {
+            "date": "2026-11-16",
+            "time": "00:00",
+            "text": "[진시스템] 주요사항보고서(영업양수결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116002208"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116002208"
+          },
+          {
+            "date": "2026-11-16",
+            "time": "00:00",
+            "text": "[비츠로시스] [기재정정]주요사항보고서(자기전환사채매도결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116002104"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116002104"
+          },
+          {
+            "date": "2026-11-16",
+            "time": "00:00",
+            "text": "[진시스템] 주요사항보고서(자본으로인정되는채무증권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116002216"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116002216"
+          },
+          {
+            "date": "2026-11-16",
+            "time": "00:00",
+            "text": "[비츠로시스] [기재정정]주요사항보고서(자기전환사채매도결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116002080"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116002080"
+          },
+          {
+            "date": "2026-11-16",
+            "time": "00:00",
+            "text": "[지엔코] [기재정정]주요사항보고서(전환사채매수선택권행사자지정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116002204"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116002204"
+          },
+          {
+            "date": "2026-11-16",
+            "time": "00:00",
+            "text": "[엠게임] 주요사항보고서(유형자산양수결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116001834"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116001834"
+          },
+          {
+            "date": "2026-11-16",
+            "time": "00:00",
+            "text": "[진영] 주요사항보고서(자기전환사채만기전취득결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116001699"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116001699"
+          },
+          {
+            "date": "2026-11-16",
+            "time": "00:00",
+            "text": "[진바이오텍] 주요사항보고서(자기주식취득결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116001646"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116001646"
           },
           {
             "date": "2026-11-16",
@@ -3392,24 +3497,6 @@
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000574"
           },
           {
-            "date": "2026-11-16",
-            "time": "00:00",
-            "text": "[와이즈넛] 주요사항보고서(자기주식취득신탁계약체결결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000520"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000520"
-          },
-          {
-            "date": "2026-11-16",
-            "time": "00:00",
-            "text": "[인스웨이브] 주요사항보고서(자기주식취득결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000437"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000437"
-          },
-          {
             "date": "2026-11-13",
             "time": "00:00",
             "text": "[우성머티리얼스] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
@@ -3473,96 +3560,6 @@
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113000007"
           },
           {
-            "date": "2026-11-13",
-            "time": "00:00",
-            "text": "[앱튼] 주요사항보고서(감자결정)\n공시유형: 주요사항보고  ·  정",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001675"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001675"
-          },
-          {
-            "date": "2026-11-13",
-            "time": "00:00",
-            "text": "[모아데이타] [기재정정]주요사항보고서(자기전환사채매도결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001618"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001618"
-          },
-          {
-            "date": "2026-11-13",
-            "time": "00:00",
-            "text": "[삼영이엔씨] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001610"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001610"
-          },
-          {
-            "date": "2026-11-13",
-            "time": "00:00",
-            "text": "[삼영이엔씨] [기재정정]주요사항보고서(감자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001589"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001589"
-          },
-          {
-            "date": "2026-11-13",
-            "time": "00:00",
-            "text": "[DSC인베스트먼트] [기재정정]주요사항보고서(유형자산양수결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001398"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001398"
-          },
-          {
-            "date": "2026-11-13",
-            "time": "00:00",
-            "text": "[시선AI] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001480"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001480"
-          },
-          {
-            "date": "2026-11-13",
-            "time": "00:00",
-            "text": "[셀루메드] [기재정정]주요사항보고서(감자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001192"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001192"
-          },
-          {
-            "date": "2026-11-13",
-            "time": "00:00",
-            "text": "[모아라이프플러스] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001253"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001253"
-          },
-          {
-            "date": "2026-11-13",
-            "time": "00:00",
-            "text": "[보로노이] 주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001035"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001035"
-          },
-          {
-            "date": "2026-11-13",
-            "time": "00:00",
-            "text": "[파이온엑스] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001053"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001053"
-          },
-          {
             "date": "2026-11-12",
             "time": "00:00",
             "text": "[한화] 주요사항보고서(자기주식취득결정)\n공시유형: 주요사항보고",
@@ -3606,15 +3603,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112000083"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112000083"
-          },
-          {
-            "date": "2026-11-12",
-            "time": "00:00",
-            "text": "[SNT에너지] 주요사항보고서(자기주식취득신탁계약체결결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112000034"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112000034"
           }
         ]
       }
