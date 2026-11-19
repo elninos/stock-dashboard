@@ -1,6 +1,6 @@
 {
   "2026-11-19": {
-    "fetched_at": "2026-11-19T12:53:34+09:00",
+    "fetched_at": "2026-11-19T17:31:48+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -117,13 +117,6 @@
         "channel_url": "https://t.me/survival_DoPB",
         "posts": [
           {
-            "date": "2026-11-02",
-            "time": "21:12",
-            "text": "Marvell and Lumentum to Combine, Creating a Category Leader in AI Connectivity",
-            "links": [],
-            "post_url": "https://t.me/survival_DoPB/13873"
-          },
-          {
             "date": "2026-11-04",
             "time": "09:33",
             "text": "예측시장 Kalshi에서 거래된 \n‘민주당이 의회를 장악할 확률'\n(출처 - Bloomberg)\n\n하원: 민주당 97%, 공화당 3%\n상원: 민주당 88%, 공화당 13%\n\nhttps://www.bloomberg.com/graphics/2026-us-election-results/?utm_source=chatgpt.com",
@@ -229,6 +222,13 @@
             "text": "🤩중국의 군대가 미국의 규제에도 불구하고 AI 무기를 위해 𝗡𝗩𝗜𝗗𝗜𝗔 𝗖𝗛𝗜𝗣𝗦를 찾고 있다, 위원회 발표\n\n베이징은 미국의 수출 통제를 우회하여 군사용으로 첨단 칩을 확보하려고 시도하고 있으며, 이는 미중 경제안보검토위원회의 설명에 따른 것이다.\n\n연례 보고서에 따르면 중국의 AI 프로세서는 여전히 Nvidia와 AMD의 선도적인 칩에 뒤처져 있다.\n\n👉 𝗞𝗲𝘆 𝗛𝗶𝗴𝗵𝗹𝗶𝗴𝗵𝘁𝘀\n\n➤ 𝗠𝗜𝗟𝗜𝗧𝗔𝗥𝗬 𝗔𝗜: 인민해방군은 그 전략을 “지능화 전쟁”이라고 부른다. 이는 AI를 무기, 지휘 시스템 및 군사 물류에 통합하는 것을 목표로 한다.\n\n➤ 𝗖𝗛𝗜𝗣 𝗚𝗔𝗣: 위원회는 화웨이의 Ascend와 Cambrian의 Siyuan을 국내 프로세서로 지목했으며, 이들은 Nvidia와 AMD의 더 첨단 제품에 비해 여전히 뒤처져 있다.\n\n➤ 𝗡𝗩𝗜𝗗𝗜𝗔’𝗦 𝗖𝗛𝗜𝗡𝗔 𝗕𝗨𝗦𝗜𝗡𝗘𝗦𝗦: Nvidia는 수출 통제가 중국의 AI 데이터센터 시장에서 자신을 효과적으로 배제했다고 밝혔다. 별도로 로이터는 제한된 Nvidia 칩을 사용하는 𝗺𝗼𝗿𝗲 𝘁𝗵𝗮𝗻 $𝟯 𝗯𝗶𝗹𝗹𝗶𝗼𝗻 규모의 중국 컴퓨팅 프로젝트를 확인했다.\n\n➤ 𝗘𝗫𝗣𝗢𝗥𝗧 𝗖𝗨𝗥𝗕𝗦: 워싱턴은 월요일 중국의 Nvidia를 포함한 기업들의 첨단 칩 접근을 더욱 제한할 것이라고 밝혔다.\n\n➤ 𝗔𝗜 𝗗𝗜𝗦𝗖𝗟𝗢𝗦𝗨𝗥𝗘: 로이터는 트럼프 행정부가 중국 AI 모델에 대한 의존을 억제하기 위해 미국 기업들이 중국 AI 모델 사용을 공개적으로 공개하도록 요구하는 방안을 검토 중이라고 보도했다.\n\n👉 𝗘𝘅𝗽𝗲𝗿𝘁 𝗦𝘁𝗮𝘁𝗲𝗺𝗲𝗻𝘁𝘀:\n\n“중국은 지능화 추진의 기반이 되는 가장 첨단 반도체를 얻기 위해 미국 수출 통제를 회피하려고 시도하고 있다.”\n\n𝗨.𝗦.-𝗖𝗵𝗶𝗻𝗮 𝗘𝗰𝗼𝗻𝗼𝗺𝗶𝗰 𝗮𝗻𝗱 𝗦𝗲𝗰𝘂𝗿𝗶𝘁𝘆 𝗥𝗲𝘃𝗶𝗲𝘄 𝗖𝗼𝗺𝗺𝗶𝘀𝘀𝗶𝗼𝗻, 연례 보고서\n\n출처: Reuters",
             "links": [],
             "post_url": "https://t.me/survival_DoPB/13892"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "13:37",
+            "text": "JPM: TIG 컨퍼런스 피드백 - 비관론의 '3가지 진영(3 camps)'\n지난 3일간 JP모건(JPM)의 TIG(기술·혁신·성장) 컨퍼런스에 참석하면서 느낀 점은, ('공동부유' 정책 시기 열렸던 중국 서밋을 제외하면) 투자자 심리가 이토록 비관적이었던 컨퍼런스는 경험해 본 적이 없다는 것입니다. 또한 투자자들과 기업들이 내놓는 목소리 간의 간극이 이 정도로 컸던 적도 없었습니다. 현장에는 크게 3가지의 비관론 진영이 존재했습니다.\n(i) 주가 모멘텀 진영: 호재에도 주가가 반응하지 않는 현상을 우려하는 쪽,\n(ii) 펀더멘털 진영: 2028년 설비투자(CapEx)에 대한 가시성이 확보되지 않으면 AI 관련주가 더 오르기 어렵다고 보는 쪽,\n(iii) 사이버 보안 진영: 이를 거대하고 점차 커지고 있으며 예측하기 어려운 '알려진 미지의 변수(known unknown)'로 바라보는 쪽입니다.\n\n그렇다면 강세론자(매수 관점 투자자)는… 전혀 없었을까요? 물론 있긴 했습니다… 뭐, 소수이긴 하지만요. 대체로 긍정적인 시각을 유지한 테크 기업들을 제외하면, 강세 쪽으로 기운 투자자들은 주로 장기 투자 성향(투자 기간의 여유)을 지닌 이들이었습니다. 이들은 AI 최종 수요, AI 설비투자, 그리고 테크 공급망의 주당순이익(EPS) 성장세가 모두 여전히 견조하며, 시스템 전반의 재고 누적도 발생하지 않고 있다고 주장했습니다. JP모건의 테크 리서치 총괄인 고쿨 하리하란(Gokul Hariharan) 역시 이 진영에 속하며, 엔비디아(Nvidia) 실적 발표 이후의 견해를 아래에 공유했습니다. 아마도 시사하는 바가 가장 큰 대목은, 연말을 앞두고 자본 보존이 최우선 순위로 자리 잡으면서 단기 과매도에 따른 기술적 반등을 노리고 전술적 매매에 나서겠다고 말한 사람이 단 한 명도 없었다는 점입니다.",
+            "links": [],
+            "post_url": "https://t.me/survival_DoPB/13893"
           }
         ]
       },
@@ -358,6 +358,69 @@
               "http://pf.kakao.com/_gBRMxj"
             ],
             "post_url": "https://t.me/growthresearch/31372"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "13:57",
+            "text": "💻 인텔 파운드리, 2.5차원 패키징 'EMIB' 첫 외부 고객사로 MS 확보\n\nhttps://zdnet.co.kr/view/?no=20261119100612\n\n인텔 파운드리가 2.5D 첨단 패키징 기술인 EMIB의 첫 외부 고객사로 마이크로소프트(MS)를 확보했습니다.\n\n그동안 자체 반도체에 적용해 온 EMIB 기술을 글로벌 빅테크의 자체 설계 반도체로 확대한다는 점이 주목됩니다.\n\nTSMC 중심의 첨단 패키징 시장에서 인텔이 본격적으로 외부 고객사를 확보하기 시작했다는 점에서 의미가 있습니다.\n\n📌 인텔 EMIB, 첫 외부 고객사 확보\nMS 자체 설계 반도체인 애저 실리콘에 인텔 EMIB 기술 적용\n\n기존 인텔 자체 제품 중심에서 외부 고객사로 사업 확대\n\n글로벌 빅테크 레퍼런스 확보를 통한 추가 고객사 유치 기대\n\n📌 EMIB, 실리콘 브리지 기반 첨단 패키징 기술\n대면적 실리콘 인터포저 대신 기판 내부에 소형 실리콘 브리지를 삽입해 칩과 칩을 연결\n\n고밀도 연결과 패키징 비용 절감이 강점\n\n2017년부터 FPGA·CPU·GPU 등에 적용하며 양산 경험 축적\n\n📌 패키징 넘어 18A 파운드리·서버 CPU까지 협력 확대\nMS는 이미 1.8나노급 인텔 18A 공정 고객사로 확보된 상태\n\n향후 고성능 파생 공정인 18A-P를 통한 애저 실리콘 생산 가능성도 존재\n\n2027년 출시 예정인 차세대 제온 CPU 다이아몬드래피즈 장기공급계약 체결\n\nCXL 기반 메모리 효율 개선 및 데이터 처리 기술 협력도 추진\n\n📌 TSMC 중심 첨단 패키징 공급망 다변화 주목\n빅테크의 자체 AI 반도체 개발 확대로 첨단 패키징 수요 증가\n\n인텔의 외부 고객사 확보를 계기로 EMIB 생태계 확대 기대\n\n향후 인텔의 추가 고객사 확보와 EMIB 관련 기판·소재·장비 업체의 공급 확대에 주목\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
+            "links": [
+              "https://zdnet.co.kr/view/?no=20261119100612",
+              "https://telegram.me/growth_semi",
+              "https://zdnet.co.kr/view?no=20261119100612"
+            ],
+            "post_url": "https://t.me/growthresearch/31373"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "14:01",
+            "text": "💻트럼프 \"블랙웰 중국 판매, 2~3년 뒤에나\"… 엔비디아 중국 매출 사실상 제로 구간 진입\n\n📌트럼프 발언 핵심\n트럼프 대통령, APEC 정상회의 참석차 방문한 중국 선전에서 폭스뉴스 인터뷰\n\n“2~3년 뒤에는 블랙웰 판매를 허용하겠다. 그때는 블랙웰을 대체할 다른 제품이 나와 있을 것”\n\n\"지금까지 허용한 건 구형, 반쯤 단종된 제품뿐. H200도 많이 팔리지 않았고 이제 구형. 블랙웰은 매우 최신이지만 1년 뒤면 구형이 될 것\"\n\n사실상 임기 내(2029년 1월 종료) 블랙웰 중국 판매 불허 시그널로 해석 가능\n\n📌규제 환경: 수출통제 강화 흐름 가속\n이번 주 트럼프 행정부, 중국 기업의 AI 칩·서버 원격 접근 차단 목적으로 여러 국가 대상 프로세서 수출 심사 강화\n\n짐 뱅크스(공화)·엘리자베스 워런(민주) 상원의원의 AI Overwatch Act: 블랙웰 대중 판매 최소 18개월 금지 → 12월 통과가 통상적인 연례 국방수권법(NDAA) 최종 협상 단계 진입\n\n젠슨 황 CEO 퇴진으로 수출통제 완화를 주장해온 핵심 인물이 빠지면서 엔비디아의 의회 영향력 약화 → 법안에 힘이 실리는 구도\n\n📌엔비디아 실적 콜 (화요일)\n콜레트 크레스 임시 CEO: 베라 루빈(Vera Rubin) 출시가 회사 역사상 가장 빠른 램프업\n\n직전 분기 중국향 라이선스 Hopper 제품 매출 24억 달러 (작년 H200 대중 판매 승인 이후)\n\n다만 현재 중국향 Hopper 출하 중단, 사유는 미공개 → 중국 매출 공백 구간 진입\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
+            "links": [
+              "https://telegram.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/31374"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "14:49",
+            "text": "💻 젠슨 황 이후 AI 칩 다변화 속도…오픈AI, AMD 인프라 457MW 확보\n\nMicrosoft | 제러미 윈터 부사장 인터뷰 내용\n\n📌 빅테크, 엔비디아 밖으로 선택지 넓힌다\n\n• MS\n엔비디아와 협력을 이어가면서 \nAMD·자체 칩 마이아도 병행\n\n• 오픈AI\n클라우드 업체 텐서웨이브의 AMD 기반 AI 인프라 \n457MW를 6년간 이용하는 계약 체결\n\n📌 삼성전자·SK하이닉스, 엔비디아 외 공급 기회 확대\nAMD·빅테크 자체 칩 개발 및 활용이 늘수록 \n\n📈 HBM 공급처가 넓어지고 엔비디아 의존도는 낮아질 수 있음.\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
+            "links": [
+              "https://biz.sbs.co.kr/article/20000347567?division=NAVER",
+              "https://telegram.me/growth_semi"
+            ],
+            "post_url": "https://t.me/growthresearch/31375"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "15:20",
+            "text": "✅ \"목록에 없는 API까지\"…ICTK, 위드네트웍스와 HW 인증 접목 추진\n\nhttps://zdnet.co.kr/view/?no=20261119150336\n\n금융당국이 580여개 금융회사를 대상으로 외부접점 전수점검에 나선 가운데, 아이씨티케이가 최근 인수한 위드네트웍스와 통합 보안 솔루션 구축을 추진합니다.\n\n📌 금융권 보안 규제 강화, 신규 사업 기회 확대\n최근 한 달여간 금융회사 37곳에서 침해사고 40건, 정보유출 약 47.3만건 발생\n\n금융위, 580여개 금융회사 대상 외부접점 전수점검 추진\n\n인증·접근통제 취약점 개선 및 미등록 시스템 연내 전수조사\n\n📌 위드네트웍스 인수, 소프트웨어 보안 경쟁력 확보\n아이씨티케이는 지난 10월 위드네트웍스 지분 61.35% 인수\n\n위드네트웍스는 약 5,000개 고객 환경에서 보안 솔루션 운영 경험 보유\n\n매출액 2024년 343억원 → 2025년 371억원\n\n📌 PUF·PQC 보안칩 적용, 인수 시너지 구체화\n위드네트웍스의 Wi-Fi 7 장비에 PUF·PQC 결합 보안칩 탑재 추진\n\n이후 AI 기반 보안 플랫폼까지 하드웨어 인증체계 연동 계획\n\n금융권 보안 강화 흐름과 맞물려 기존 고객망을 활용한 양자보안칩 및 통합 보안 솔루션 공급 확대 기대\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://zdnet.co.kr/view/?no=20261119150336",
+              "https://t.me/growthresearch",
+              "https://zdnet.co.kr/view?no=20261119150336"
+            ],
+            "post_url": "https://t.me/growthresearch/31376"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "15:24",
+            "text": "✅ 애플, 아이맥 OLED 탑재 백지화 검토\n\nhttps://www.thelec.kr/news/articleView.html?idxno=65641\n\n애플이 삼성디스플레이와 OLED 아이맥 개발 일정 연기 및 프로젝트 중단 가능성을 논의 중인 것으로 알려졌습니다.\n\n기존 OLED 아이패드 프로의 판매 부진에 더해 최근 메모리 반도체 가격까지 상승하면서 IT 제품의 OLED 전환에 따른 원가 부담이 커지고 있는 상황입니다.\n\n📌 애플, OLED 아이맥 개발 백지화까지 검토\n당초 2029~2030년 OLED 아이맥 출시를 목표로 개발 추진\n\n높은 OLED 패널 가격과 상대적으로 적은 아이맥 판매량이 부담\n\n존 터너스 CEO 취임 이후 고가 OLED 적용에 따른 사업성 재검토 가능성\n\n📌 OLED 아이패드 판매 부진, 패널 출하량 18% 감소 전망\n아이패드 프로용 OLED 패널 출하량 2025년 600만장 → 2026년 490만장 전망\n삼성디스플레이 210만장 → 150만장\nLG디스플레이 390만장 → 340만장\n\n투스택 탠덤 OLED 적용에 따른 완제품 가격 상승이 판매 부진 요인\n\n📌 삼성·LG디스플레이 차세대 OLED 개발 전략 차질 우려\n삼성디스플레이는 기존 QD-OLED 생산라인을 활용해 5스택·220PPI급 아이맥용 패널 개발\n\nLG디스플레이는 첫 OLED 아이맥용 패널 개발을 중단한 것으로 알려짐\n\n2030년 애플 IT 제품을 겨냥한 LG디스플레이의 차세대 OLED 기술 FLiPP 개발 전략에도 영향 가능성\n\n📌 애플, OLED 대신 LCD 유지 가능성 부각\n최근 BOE 등 LCD 공급업체에 2029년 전후 출시를 목표로 패널 개발 RFI 발송\n\n당초 OLED 아이맥 출시 예정 시점과 LCD 신제품 개발 일정이 겹치는 상황\n\n향후 애플의 IT용 OLED 전환 속도와 관련 소재·장비 투자 일정에 주목할 필요\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://www.thelec.kr/news/articleView.html?idxno=65641",
+              "https://t.me/growthresearch",
+              "https://thelec.kr/news/articleView.html?idxno=65641"
+            ],
+            "post_url": "https://t.me/growthresearch/31377"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "16:10",
+            "text": "🧬 \"에페 말고도 많다\" 한미약품, 근육 지키는 감량 '인크레틴 승부수'\n\nhttps://www.greened.kr/news/articleView.html?idxno=355041\n\n한미약품이 미국비만학회(ObesityWeek 2026)에서 차세대 비만치료제 파이프라인의 연구 성과 5건을 공개했습니다.\n\n💊 HM500197, 근육 증가형 비만치료제 가능성 확인\n근육 성장을 억제하는 마이오스타틴(MSTN)을 선택적으로 차단하는 장기지속형 펩타이드\n\n동물실험에서 HM500197 단독 투여 시 제지방량 최대 15.1% 증가\n\n티르제파타이드 병용 시 체중·체지방 감소 효과를 유지하면서 제지방 손실 억제\n\n액티빈 A·B 등 다른 신호에 대한 영향을 최소화한 선택적 억제 기전\n\n💊 릴리·리제네론도 근육 보존형 비만치료제 개발 경쟁\n리제네론의 트레보그루맙·세마글루타이드 병용 연구에서 제지방 손실 약 50% 보전\n\n릴리의 507명 대상 임상 2상에서 세마글루타이드 단독군 대비 비마그루맙 병용군의 제지방 감소폭 축소\n\n48주차 체중 감량도 병용군 17.8kg vs 단독군 14.2kg으로 병용군 우위\n\n글로벌 빅파마들의 근육 보존형 치료제 개발 확대 속 한미약품 HM500197의 후속 임상에 주목\n\n💊 HM15275, 삼중작용제로 비만 합병증까지 공략\nGLP-1·GIP·글루카곤 삼중작용제로 현재 미국 임상 2상 진행 중\n\n이상지질혈증 동물실험에서 LDL 콜레스테롤 수치 티르제파타이드 대비 50.3% 낮게 나타남\n\n비만 관련 대장암 동물실험에서 평균 용종 수 HM15275 4.9개 vs 세마글루타이드 11.5개\n\n체중 감량을 넘어 대사질환 및 비만 관련 합병증 개선 가능성 확인\n\n💊 제넨텍 23억달러 기술이전에 이은 후속 파이프라인 주목\nHM17321: UCN2/CRF2 표적 비만치료제, 지난 8월 제넨텍에 최대 23.05억달러 규모 기술이전\nHM500197: 마이오스타틴 선택적 억제를 통한 근육 증가\nHM15275: 삼중작용 기반 고도비만 및 대사질환 치료\n\n🧬바이오섹터 분석🧬[그로쓰리서치]\nhttps://t.me/growthbio",
+            "links": [
+              "https://www.greened.kr/news/articleView.html?idxno=355041",
+              "https://t.me/growthbio",
+              "https://greened.kr/news/articleView.html?idxno=355041"
+            ],
+            "post_url": "https://t.me/growthresearch/31378"
           }
         ]
       },
@@ -682,58 +745,6 @@
         "posts": [
           {
             "date": "2026-11-18",
-            "time": "11:26",
-            "text": "올해 5월과 6월에 KOSPI는 두 번의 하락 추세 RSI 다이버전스를 보였습니다. 흥미롭게도, 지금은 상승 다이버전스를 나타내고 있습니다.",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/38959"
-          },
-          {
-            "date": "2026-11-18",
-            "time": "13:50",
-            "text": "​(위) 코스피 12MF PER 밴드\n(아래) 반도체 제외 코스피 일드갭\n \n​반도체 슈퍼 사이클에 따른 이익 급증으로 코스피 전체 12MF PER 배수는 저점을 판단하는 도구로써 유용성을 잃고 있습니다.\n\n​그래서 반도체 착시를 덜어내고 채권 대비 투자매력을 비교할 수 있는 '반도체 제외 일드갭'을 대안으로 주목하고 있습니다.\n\n현재 일드갭은 고환율과 금리 부담에 따른 주가 조정으로 평균을 크게 벗어난(+2표준편차) 수준에 도달해 있습니다.\n\n​그동안 해당 지점은 유의미한 저점 국면으로 작용했습니다. 18년 1차 무역분쟁, 20년 코로나, 23년 미국 금리 인상, 24년 비상 계엄 등입니다.\n\n돈을 쥐고 있는 국내 주체가 주식만 보는 게 아니라 채권 대비 성과를 비교하고 있다는 측면에서 주식 기대수익률이 급증한 현재는 저가 매수를 할 유인이 충분합니다. 특히 향후 금리가 낮아지면 채권 대비 주식 매력은 더 부각될 수 있습니다.\n\n​다만 앤트로픽 상장, 미중러 3자회담, 11월 금통위, 12월 FOMC 등 국내외 변수가 지나고 나서야 자금이 본격적으로 움직일 것으로 봅니다. \n\n증시가 바닥권을 통과하는 과정에서 주요 변수를 소화하고 환율과 금리 움직임이 바뀐다면 과도하게 벌어진 일드갭은 다시 평균으로 수렴할 것입니다. 지금은 기간조정이나 연말 전 저가 매수가 가능한 환경이 조성될 수 있습니다.",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/38960"
-          },
-          {
-            "date": "2026-11-18",
-            "time": "14:22",
-            "text": "[속보] 식약처 \"비만약 반복 반입 안돼\"…해외 원정 처방 제동\nhttps://n.news.naver.com/mnews/article/654/0000211978?rc=N&ntype=RANKING&sid=001\n\n식약처는 치료용 의약품의 국내 휴대 반입 허용으로 비만치료제 '마운자로' 등의 해외 원정 처방이 급증할 수 있다는 우려와 관련해 \"반복 반입은 자가 치료 목적에 부합하지 않는다\"고 18일 밝혔다.\n\n식약처는 휴대 반입량이 6병 또는 3개월 복용량을 초과하거나 의약품을 반복해서 들여올 경우 관련 법령에 따라 통관이 보류될 수 있다고 설명했다.\n\n관세청은 출입국 빈도와 최근 검사 이력, 해외 결제 이력 등을 종합적으로 고려해 반복 반입 여부를 판단할 예정이다.",
-            "links": [
-              "https://n.news.naver.com/mnews/article/654/0000211978?rc=N&amp;ntype=RANKING&amp;sid=001",
-              "https://n.news.naver.com/mnews/article/654/0000211978?ntype=RANKING&amp;rc=N&amp;sid=001"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/38961"
-          },
-          {
-            "date": "2026-11-18",
-            "time": "14:35",
-            "text": "주식 투자자가 마지막까지 AI에게 버틸 수 있는 이유는 바로 이렇게 연상할 수 있는 병맛 아닐까\n\n[특징주] 수능 필기구 '흑색 연필'만 허용…모나미 6%↑\nhttps://www.newspim.com/news/view/20261118000888",
-            "links": [
-              "https://www.newspim.com/news/view/20261118000888",
-              "https://newspim.com/news/view/20261118000888"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/38962"
-          },
-          {
-            "date": "2026-11-18",
-            "time": "14:37",
-            "text": "주식 투자자가 마지막까지 AI에게 버틸 수 있는 이유는 바로 이렇게 연상할 수 있는 병맛 아닐까  [특징주] 수능 필기구 '흑색 연필'만 허용…모나미 6%↑ https://www.newspim.com/news/view/20261118000888",
-            "links": [
-              "https://n.news.naver.com/mnews/article/021/0002833679"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/38963"
-          },
-          {
-            "date": "2026-11-18",
-            "time": "16:29",
-            "text": "앞으로 우리 기업은 중국기업과 합작하지 않고 중국에 독자적으로 진출할 수 있게 됐다. 우리 여행사가 중국 현지서 거주하는 중국인과 외국인을 대상으로 한국행 여행상품을 팔 수도 있다. K 영화·온라인 게임도 비차별 원칙을 적용한다. 사실상 한한령의 해제다.\n\nhttps://v.daum.net/v/20261118160640161",
-            "links": [
-              "https://v.daum.net/v/20261118160640161"
-            ],
-            "post_url": "https://t.me/Yeouido_Lab/38964"
-          },
-          {
-            "date": "2026-11-18",
             "time": "17:24",
             "text": "음악은?? 영화. 게임 등에 \"등\" 취급 당한건가?\n\n그런데 영화는 애초에 중국 따위가 무슨 의미가 있나. 어차피 불법복제시장인데. 그리고 게임은 미안하지만 이미 중국에 10년전에 따임.",
             "links": [],
@@ -830,6 +841,56 @@
               "https://n.news.naver.com/mnews/article/057/0001978904?ntype=RANKING&amp;rc=N&amp;sid=001"
             ],
             "post_url": "https://t.me/Yeouido_Lab/38979"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "12:59",
+            "text": "알테오젠의 파트너사인 다국적 제약사 MSD(미국 머크)가 미국 할로자임테라퓨틱스와의 피하주사(SC) 제형 관련 특허 분쟁에서 추가로 유리한 결정을 확보했습니다.\n\n미국 특허심판원(PTAB)이 할로자임의 '엠다제(MDASE)' 관련 특허 중 최종 결정이 남아 있던 2건에 대해서도 심판 대상 청구항 전부의 특허성을 부정했습니다. 이에 따라 MSD가 제기해 심리가 개시된 등록 후 무효심판(PGR) 14건 모두에서 MSD에 유리한 결과가 나왔습니다.\n\n미국 특허청(USPTO) 산하 PTAB의 18일(현지시간) 최종 심결문에 따르면, 이번에 결론이 나온 특허는 할로자임의 미국 등록 특허 제12,077,791호(이하 791호 특허)와 제12,195,773호(이하 773호 특허)입니다. 사건번호는 각각 PGR2025-00050과 PGR2025-00053으로, 두 사건 모두 심판 대상 청구항 전부의 특허성이 부정됐습니다.\n\n이번 특허 분쟁은 알테오젠의 기술이 적용된 MSD의 SC 제형 면역항암제인 '키트루다 큐렉스(KEYTRUDA QLEX, 성분 펨브롤리주맙·베라히알루로니다제 알파)'와 관련됐습니다. 키트루다 큐렉스에는 알테오젠이 개발한 재조합 인간 히알루로니다제인 'ALT-B4(성분 베라히알루로니다제 알파)'가 적용됐습니다. 이번 결정으로 해당 제품을 둘러싼 미국 내 특허 분쟁에서 MSD가 유리한 판단을 추가로 확보했습니다.\n\nhttps://www.thebionews.net/news/articleView.html?idxno=30460",
+            "links": [
+              "https://www.thebionews.net/news/articleView.html?idxno=30460",
+              "https://thebionews.net/news/articleView.html?idxno=30460"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/38980"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "15:21",
+            "text": "◼️대만에서 새로운 공매도 규제가 금요일부터 시행될 것이라고 규제 당국이 밝혔다.\n\n[출처] First Squawk",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/38981"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "15:22",
+            "text": "대만은 4%만 빠져도 난리인데\n한국은 사이드카도 안 걸렸는데 뭔 호들갑이냐고 오히려 욕 먹을 듯",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/38982"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "15:23",
+            "text": "공매도 금지 자체는 실효성을 떠나 너무 논란이 많고\n\n그럼 만지작 만지작 만지작 만지작 만지작 만지작 만지작 만지작 만지작 만지작 만지작 만지작 이라도 해주시면 좋겠다.\n\n이제 만지작도 본지 꽤 오래 됐네...",
+            "links": [],
+            "post_url": "https://t.me/Yeouido_Lab/38983"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "16:11",
+            "text": "[파이프라인 줌인] \"에페 말고도 많다\" 한미약품, 근육 지키는 감량 '인크레틴 승부수'\nhttps://www.greened.kr/news/articleView.html?idxno=355041\n\n시장 검증 마친 HM17321·개발 단계 앞선 HM15275\n\n한미약품 비만 파이프라인 강점은 다채로운 기전과 개발 단계에 있다. HM17321은 투자 관점에서 가치를 검증한 비만 파이프라인이다. 지난 8월 임상 1상 단계에서 글로벌 제약사 제넨텍 대상으로 최대 23억500만달러 규모 기술이전 계약이 체결됐다. HM17321와 같이 UCN2/CRF2를 표적으로 하는 디앤디파마텍 파이프라인 'DD18'이 이달 처음 전임상 결과를 공개한 점을 들어 DD18보다 검증된 후보물질로 보는 시각도 존재한다.  \n\nHM17321보다 임상 개발 단계가 앞서 있는 HM15275는 GLP-1·GIP·글루카곤 삼중작용제로, 글로벌 고도비만 환자를 대상으로 한다. 식욕과 음식 섭취를 줄이고 인슐린 분비·감수성을 높이는 GLP-1에, 약리 효과를 높이는 GIP를 보완했다. 여기에 더해 글루카곤은 에너지 소비와 지방 분해, 지방산 산화를 촉진해 체중 감소를 돕는다. 세 기전을 최적화해 강력한 체중 감량과 혈당·지질 등 대사 개선을 동시에 노린다는 포석이다.",
+            "links": [
+              "https://www.greened.kr/news/articleView.html?idxno=355041",
+              "https://greened.kr/news/articleView.html?idxno=355041"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/38984"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "17:27",
+            "text": "• 대만 금융감독관리위원회(FSC)의 증시 안정화 조치 확대\n\n• 조건부 공매도 금지령 재가동 (약 4년 만의 부활): 개별 종목 당일 하락률 3.5% 이상 시, 다음 거래일 전일 종가 이하 공매도 금지 (신용대주 및 대차 공매도 모두 적용, 현물 매도는 제외)\n\n• 일일 대차거래 공매도 한도 추가 축소: 직전 30거래일 평균 거래량 대비 상한선을 3% → 1%로 하향 (지난 9일 30%→3% 축소에 이은 추가 조치로, 기존 한도의 1/30 수준)\n\n• 이번 조치로도 투자심리가 회복되지 않을 경우, 금감위의 다음 단계는 ① 전 종목 전일 종가 이하 공매도 전면 금지 → ② 가격 불문 공매도 전면 금지 순으로 확대될 전망. 규제 수위가 높아질수록 증시 거래대금(유동성)이 더욱 위축될 가능성\n\nhttps://money.udn.com/money/story/5613/9889141?dark_mode=1",
+            "links": [
+              "https://money.udn.com/money/story/5613/9889141?dark_mode=1"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/38985"
           }
         ]
       },
@@ -848,13 +909,6 @@
         "category": "매크로 분석",
         "channel_url": "https://t.me/kkkontemp",
         "posts": [
-          {
-            "date": "2026-11-12",
-            "time": "07:34",
-            "text": "이 정도면 정치적인 개입이 있다고 의심해볼 수 있지 않을까 싶은",
-            "links": [],
-            "post_url": "https://t.me/kkkontemp/2826"
-          },
           {
             "date": "2026-11-12",
             "time": "07:37",
@@ -963,9 +1017,16 @@
           {
             "date": "2026-11-19",
             "time": "11:50",
-            "text": "여기를 간건 아닌데, 다른데 가도 숨막힐 정도로 비관적",
+            "text": "여기를 간건 아닌데, 다른데 가도 숨이 막힐 정도로 비관적",
             "links": [],
             "post_url": "https://t.me/kkkontemp/2845"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "16:28",
+            "text": "대만 빠졌는데 한국 왜 오르냐는 질문들이 있었는데, 대만은 개인들 신용 이제서야 터졌..",
+            "links": [],
+            "post_url": "https://t.me/kkkontemp/2846"
           }
         ]
       },
@@ -3196,7 +3257,187 @@
           {
             "date": "2026-11-19",
             "time": "00:00",
+            "text": "[강원랜드] 주요사항보고서(자기주식취득결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000369"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000369"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "00:00",
+            "text": "[롯데손해보험] 주요사항보고서(감자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000310"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000310"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "00:00",
+            "text": "[케이티스카이라이프] 주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000322"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000322"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "00:00",
+            "text": "[엘앤에프] 주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000285"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000285"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "00:00",
+            "text": "[에넥스] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000305"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000305"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "00:00",
+            "text": "[엘앤에프] 주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000274"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000274"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "00:00",
+            "text": "[엘앤에프] 주요사항보고서(자본으로인정되는채무증권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000288"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000288"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "00:00",
+            "text": "[신풍] 주요사항보고서(자기주식취득신탁계약체결결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000123"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000123"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "00:00",
+            "text": "[서남] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000342"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000342"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "00:00",
             "text": "[메디콕스] [기재정정]주요사항보고서(유형자산양도결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000327"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000327"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "00:00",
+            "text": "[광진실업] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000297"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000297"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "00:00",
+            "text": "[광진실업] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000286"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000286"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "00:00",
+            "text": "[파이온엑스] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000271"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000271"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "00:00",
+            "text": "[파이온엑스] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000263"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000263"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "00:00",
+            "text": "[신테카바이오] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000228"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000228"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "00:00",
+            "text": "[다보링크] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000213"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000213"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "00:00",
+            "text": "[타임X AI] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000223"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000223"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "00:00",
+            "text": "[파라택시스이더리움] 주요사항보고서(자기주식취득신탁계약체결결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000183"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000183"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "00:00",
+            "text": "[드림씨아이에스] 주요사항보고서(자기주식취득결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000157"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000157"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "00:00",
+            "text": "[제일엠앤에스] 주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000154"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000154"
+          },
+          {
+            "date": "2026-11-19",
+            "time": "00:00",
+            "text": "[메디콕스] [기재정정]주요사항보고서(유형자산양도결정)\n공시유형: 주요사항보고  ·  정",
             "links": [
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000098"
             ],
@@ -3311,114 +3552,6 @@
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000325"
           },
           {
-            "date": "2026-11-18",
-            "time": "00:00",
-            "text": "[에이루트] 주요사항보고서(자기전환사채만기전취득결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000247"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000247"
-          },
-          {
-            "date": "2026-11-18",
-            "time": "00:00",
-            "text": "[쏠리드] 주요사항보고서(자기주식취득신탁계약해지결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000286"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000286"
-          },
-          {
-            "date": "2026-11-18",
-            "time": "00:00",
-            "text": "[썸에이지] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000239"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000239"
-          },
-          {
-            "date": "2026-11-18",
-            "time": "00:00",
-            "text": "[나래나노텍] 주요사항보고서(자기주식취득결정)\n공시유형: 주요사항보고  ·  정",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000226"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000226"
-          },
-          {
-            "date": "2026-11-18",
-            "time": "00:00",
-            "text": "[KS인더스트리] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000231"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000231"
-          },
-          {
-            "date": "2026-11-18",
-            "time": "00:00",
-            "text": "[셀리드] 주요사항보고서(소송등의제기)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000212"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000212"
-          },
-          {
-            "date": "2026-11-18",
-            "time": "00:00",
-            "text": "[오성첨단소재] [기재정정]주요사항보고서(타법인주식및출자증권양도결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000215"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000215"
-          },
-          {
-            "date": "2026-11-18",
-            "time": "00:00",
-            "text": "[애드바이오텍] [첨부정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000202"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000202"
-          },
-          {
-            "date": "2026-11-18",
-            "time": "00:00",
-            "text": "[애드바이오텍] [첨부정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000200"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000200"
-          },
-          {
-            "date": "2026-11-18",
-            "time": "00:00",
-            "text": "[엑스페릭스] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000201"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000201"
-          },
-          {
-            "date": "2026-11-18",
-            "time": "00:00",
-            "text": "[MSDI] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000167"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000167"
-          },
-          {
-            "date": "2026-11-18",
-            "time": "00:00",
-            "text": "[노브랜드] 주요사항보고서(자기주식처분결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000148"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000148"
-          },
-          {
             "date": "2026-11-17",
             "time": "00:00",
             "text": "[이연제약] 주요사항보고서(자기전환사채만기전취득결정)\n공시유형: 주요사항보고",
@@ -3480,78 +3613,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116001097"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116001097"
-          },
-          {
-            "date": "2026-11-16",
-            "time": "00:00",
-            "text": "[진에어] [기재정정]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000892"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000892"
-          },
-          {
-            "date": "2026-11-16",
-            "time": "00:00",
-            "text": "[동아지질] 주요사항보고서(자기주식취득신탁계약체결결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000736"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000736"
-          },
-          {
-            "date": "2026-11-16",
-            "time": "00:00",
-            "text": "[기업은행] [첨부정정]주요사항보고서(상각형조건부자본증권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000750"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000750"
-          },
-          {
-            "date": "2026-11-16",
-            "time": "00:00",
-            "text": "[기업은행] [기재정정]주요사항보고서(상각형조건부자본증권발행결정)\n공시유형: 주요사항보고  ·  정",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000455"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000455"
-          },
-          {
-            "date": "2026-11-16",
-            "time": "00:00",
-            "text": "[동아지질] 주요사항보고서(자기주식취득신탁계약해지결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000244"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000244"
-          },
-          {
-            "date": "2026-11-16",
-            "time": "00:00",
-            "text": "[코람코더원리츠] 주요사항보고서(해산사유발생)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000179"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000179"
-          },
-          {
-            "date": "2026-11-13",
-            "time": "00:00",
-            "text": "[우성머티리얼스] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001593"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001593"
-          },
-          {
-            "date": "2026-11-13",
-            "time": "00:00",
-            "text": "[다스코] 주요사항보고서(자기신주인수권부사채만기전취득결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001541"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001541"
           }
         ]
       }
