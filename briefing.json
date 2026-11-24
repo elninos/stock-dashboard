@@ -1,6 +1,6 @@
 {
   "2026-11-24": {
-    "fetched_at": "2026-11-24T15:32:33+09:00",
+    "fetched_at": "2026-11-24T19:44:57+09:00",
     "sources": [
       {
         "type": "telegram",
@@ -9,13 +9,6 @@
         "category": "증권사 리포트",
         "channel_url": "https://t.me/bumgore",
         "posts": [
-          {
-            "date": "2026-11-21",
-            "time": "11:58",
-            "text": "FT\n\n이 칩 거인(엔비디아)의 현재 위치와, 서브프라임 모기지 버블 당시 보험사 AIG가 맡았던 역할 사이에는 섬뜩할 만큼 닮은 미시적 평행선들이 있다\n\n\nAI 회의론 중 가장 센 비유의 등장 — AIG는 2008년 위기 때 시스템 전체의 신용 리스크를 CDS 보증 형태로 한 몸에 떠안았다가, 그 보증이 실제로 호출되자 시스템 붕괴의 진앙이 된 회사. 엔비디아에 이 비유를 붙이는 논리는 — 고객(네오클라우드·AI 랩)에 대한 지분 투자·매출채권·공급 보증·파이낸싱 지원이 사실상 생태계 전체의 신용·수요 리스크를 엔비디아 대차대조표로 흡수하는 구조라는 것",
-            "links": [],
-            "post_url": "https://t.me/bumgore/55270"
-          },
           {
             "date": "2026-11-22",
             "time": "09:05",
@@ -233,52 +226,6 @@
         "channel_url": "https://t.me/growthresearch",
         "posts": [
           {
-            "date": "2026-11-23",
-            "time": "18:33",
-            "text": "✅ [탐방노트] KSS해운, VLGC 선대 절반 8,264억원 장기계약 갱신...2029년 친환경 VLGC 3척 추가\n\n📌 장기계약 갱신 | 2026년 1월 VLGC 7척 총 8,264억원 장기대선계약 갱신, 2030년까지 실적 가시성 확대\n\n📌 친환경 선대 확대 | 약 5,048억원 투자해 LPG 이중연료 VLGC 3척 신조, 2029년까지 순차 인도·장기계약 기반\n\n📌 체크 포인트 | VLAC의 LPG 시장 유입 시 운임 하락 압력 가능성, 변동금리 비중 약 83%로 이자비용 부담\n\n🔥 노트 전문 보기\nhttps://contents.premium.naver.com/growthresearch/growth/contents/261123091450471bq",
-            "links": [
-              "https://contents.premium.naver.com/growthresearch/growth/contents/261123091450471bq"
-            ],
-            "post_url": "https://t.me/growthresearch/31453"
-          },
-          {
-            "date": "2026-11-23",
-            "time": "21:10",
-            "text": "🚨 ARM($ARM), 르네 하스 CEO 2033년까지 임기 연장 발표\n\n📌 핵심 내용\n2033년까지 Arm CEO 계약 연장\n\n12월 1일부터 소프트뱅크그룹 부회장 겸직\n\n젠슨 황의 뒤를 이을 엔비디아 CEO 후보로 거론됐다는 보도가 나온 뒤 발표\n\n📌 하스 CEO 발언\n\"Arm의 미래에 대해 지금보다 더 확신한 적은 없다\"\n\n\"Arm이 가진 잠재력을 온전히 실현하는 데 앞으로도 오랫동안 전념하겠다\"\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
-            "links": [
-              "https://t.me/growthresearch"
-            ],
-            "post_url": "https://t.me/growthresearch/31456"
-          },
-          {
-            "date": "2026-11-23",
-            "time": "23:03",
-            "text": "💻엔비디아(NVDA), 젠슨 황 CEO 11일 만에 복귀… 이사회 만장일치 복직 결정\n\nhttps://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director\n\n📌복직 결정 핵심\n• 11/23(현지) 이사회 만장일치로 젠슨 황을 사장·CEO·이사로 즉시 복직\n\n• 이사회는 황 CEO와 수차례 면담한 뒤 솔직성과 리더십 역량을 확인했다고 밝힘\n\n• 미국 정부 고위급 의견을 들었고, 이를 근거로 ”국가안보 리스크 없음“을 확신한다고 명시\n\n• 하비 존스 의장은 계속 의장직을 맡음. 콜레트 크레스는 임시 CEO에서 물러나 CFO 업무로 복귀\n\n📌사태 타임라인\n• 10/29: 싱가포르 데이터센터 업체 메가스피드(Megaspeed)의 전 임원이 중국 정보기관과 연계됐다는 의혹 보도\n\n• 11/8: 이사회가 사외이사만으로 구성된 독립 조사위원회를 꾸리고 외부 로펌 선임\n\n• 11/12: 황 CEO 자진 사임, 크레스 CFO가 임시 CEO 선임\n\n• 11/17: 3분기 실적 발표 때 이사회는 ”복직 의사 없음“이라고 밝힘. 매출 1,158억 달러, 순이익 653억 달러로 모두 전년 대비 약 2배\n\n• 11/23: 입장을 바꿔 복직 결정. 사임 이후 실리콘밸리의 복귀 요구가 이어졌고, 주가는 의혹 이후 16% 넘게 빠졌었음\n\n📌지배구조 보완 조치\n• 사외이사로만 구성된 국가안보·수출통제위원회 신설, 무역 컴플라이언스와 안보 리스크 감독\n\n• 최고준법책임자(CCO) 직책 신설 후 채용 착수, 지명·지배구조위원회에 직접 보고\n\n• 독립 조사위원회 조사는 끝까지 진행. 정부 조사와 질의에도 계속 협조\n\n📌투자 포인트\n• 창업자 공백 리스크가 사라지면서 Vera Rubin 램프업과 하이퍼스케일러 협상 같은 핵심 일정의 리더십 연속성이 확보됨\n\n• 미국 정부가 사실상 ”안보 리스크 없음“이라고 확인해 준 점이 가장 중요한 변수. 앞으로 대중국 수출통제 협상에서 황 CEO의 역할이 다시 커질지 주목\n\n• 남은 리스크: 독립 조사 결론, 법무부의 메가스피드 형사 수사, 의회 비공개 질의\n\n• 국내 공급망: SK하이닉스, 삼성전자 등 HBM 밸류체인은 엔비디아 리더십 불확실성이 해소되면서 투자심리 회복 기대\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
-            "links": [
-              "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
-              "https://telegram.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/31458"
-          },
-          {
-            "date": "2026-11-24",
-            "time": "00:03",
-            "text": "💻트럼프 대통령, 젠슨 황 복귀 공개 지지… ”미국 정부, 불법행위 증거 없음“\n\n📌트럼프 트루스소셜 발언 핵심\n• 엔비디아(NVDA) 이사회의 젠슨 황 CEO 복직 결정을 ”옳고 적절한 결정“이라고 평가\n\n• 회사뿐 아니라 미국 경제의 성공을 위해서도 젠슨의 리더십이 필요하다고 언급\n\n• 미국 정부는 황 CEO 복귀가 국가안보 리스크라고 볼 이유가 없다는 입장\n\n• 법무장관이 ”미국 정부는 황 CEO의 불법행위 증거를 갖고 있지 않다“고 확인했다고 전함\n\n• 젠슨을 ”위대한 애국자이자 국보(National Treasure)“라고 지칭\n\n📌단서 조항: 수출통제 조사는 계속\n• 엔비디아는 미국 수출통제 준수 여부에 대한 내부 조사를 철저히 계속해야 한다고 명시\n\n• 국가안보를 지킬 법적 의무와 ”애국적 의무“를 이행하라는 주문\n\n• 개인(젠슨 황) 리스크는 정리했지만, 회사(수출통제 컴플라이언스) 리스크는 열어둔 구조\n\n💻반도체 소부장💻[그로쓰리서치]\nhttps://telegram.me/growth_semi",
-            "links": [
-              "https://telegram.me/growth_semi"
-            ],
-            "post_url": "https://t.me/growthresearch/31459"
-          },
-          {
-            "date": "2026-11-24",
-            "time": "08:33",
-            "text": "✅ [11/24 모닝쓰] \"Make Ai Great Again\"\n\n젠슨 황의 엔비디아 CEO 복귀 소식에\n간밤 미국 증시가 폭등했습니다.\n\n엔비디아 +31.5%, 나스닥 +6.5%를 기록하며 \n지난주 급락분을 상당 부분 만회했는데요.\n\n아직 악재는 남아 있지만, AI 투자 생태계의 핵심 인물이 \n돌아왔다는 사실만으로도 시장은 일단 안도하는 모습입니다.\n\n오늘 국내 증시는 한결 편안하게 지켜볼 수 있을 것 같습니다.\n\n📌 매크로 이벤트\n젠슨 황 CEO 복귀에 📈 S&P 500·나스닥 2025년 4월 이후 최대 상승\n\n美 11월 종합 PMI 54.6으로 4개월 만의 최저\n\n유로존 PMI 51.7, 독일은 56개월 만의 최고치 기록한 반면\n프랑스는 위축 심화\n\n중동 원유 수출 회복에 🛢브렌트유 -6.3%·WTI -4.4% 급락\n\n📌 주요 기업 실적 및 이슈\n📍엔비디아(NVDA)\n트럼프 대통령 지원 속 젠슨 황 CEO 복귀 확정, 🔼 주가 +31.5%\n\n📍크라우드스트라이크·지스케일러\n439억 달러 규모 주식교환 인수 확정\n\n📍마이크론·SK하이닉스 ADR\nAI 반도체 투자심리 회복에 각각 +19.0%, +20.0% 급등\n\n📍제이콥스(J)\n데이터센터 설계 수요로 수주잔고 287억 달러(+24.2%) 기록\n\n📍카이메라(KYMR)\n경구용 아토피 신약 임상 2b상 성공, \n피부 중증도 72% 개선에 주가 +30.4%\n\n🔥 그로쓰리서치 | 장전 시황 「모닝쓰」 보러가기\nhttps://naver.me/GArcQAAa",
-            "links": [
-              "https://naver.me/GArcQAAa"
-            ],
-            "post_url": "https://t.me/growthresearch/31460"
-          },
-          {
             "date": "2026-11-24",
             "time": "09:15",
             "text": "✅ 젠슨 황, 복귀 첫날 본사 찾아 직원에 사과…\"더 나은 CEO 되겠다\"\n\nhttps://www.thelec.kr/news/articleView.html?idxno=65803\n\n\"이 모든 일 겪게 해 미안…두 번째 기회 줘 감사\"\n\n직원들 3개 층 난간에 서서 \"젠슨\" 연호\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
@@ -411,6 +358,57 @@
               "https://businesspost.co.kr/BP?command=article_view&amp;num=452776"
             ],
             "post_url": "https://t.me/growthresearch/31474"
+          },
+          {
+            "date": "2026-11-24",
+            "time": "15:54",
+            "text": "✅ [단독] 中 BOE, 비전옥스 인수 추진\n\nhttps://www.thelec.kr/news/articleView.html?idxno=65798\n\n당초 OLED 생산라인 1곳 인수를 검토했으나, \n최근 비전옥스 회사 전체로 인수 범위 확대 및 실사 진행\n\n지난주 BOE와 허페이시 정부 고위 관계자 회동. 12월 중 구체적인 인수 범위 결정 전망\n\n📌 비전옥스 OLED 생산거점 및 보유 지분\n쿤산 5.5세대: 96%\n\n구안 6세대: 79.38%\n\n허페이 V3(6세대): 18.18%\n\n허페이 V5(8.6세대 IT용, 구축 중): 37.73%\n\n허페이 V3·V5는 지방정부 측이 과반 지분을 보유하고 있어, BOE가 비전옥스 경영권을 확보하더라도 별도 인수 협상 필요.\n\n📌 비전옥스 재무 상황\n2021~2025년 5년 연속 순손실\n\n2025년 순손실: 약 4,810억원\n\n2026년 1~9월 순손실: 약 4,860억원\n\n9월 말 총부채: 약 8.2조원\n\n1년 내 상환 도래 금융부채 등: 약 3.7조원\n\n쿤산·허페이 지방정부 측을 통한 자금 조달 및 경영권 이전 계획 잇따라 무산\n\n향후 한 달 내 46억위안(약 1조원) 규모의 자금 확보 여부가 경영권 방어의 핵심 변수.\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://www.thelec.kr/news/articleView.html?idxno=65798",
+              "https://t.me/growthresearch?utm_source=chatgpt.com",
+              "https://thelec.kr/news/articleView.html?idxno=65798"
+            ],
+            "post_url": "https://t.me/growthresearch/31475"
+          },
+          {
+            "date": "2026-11-24",
+            "time": "17:20",
+            "text": "✅삼성重, 올해 척당 최고가 수주 1·2위 차지…상선은 TOP 10 절반 휩쓸어\n\nhttps://www.straightnews.co.kr/news/articleView.html?idxno=316104\n\n📌 FLNG 수주로 전체 선종 1·2위 석권\n\n• 1위: 삼성중공업 북미 FLNG 4조 3,301억 원\n• 2위: 삼성중공업 아프리카 FLNG 1조 9,046억 원\n• 3위: 한화오션 KDDX 8,380억 원\n• 4위: 한화오션 해상풍력발전기 설치선 7,687억 원\n• 5위: HD현대중공업 쇄빙선 5,148억 원\n\n아프리카 FLNG의 전체 공사금액은 약 3조 7,000억 원\n\n기존 예비 작업 계약을 제외한 올해 신규 공시 금액만 집계에 반영\n\n📌 고가 상선 수주 TOP 10 중 절반 차지\n\n🚢 삼성중공업: 5건\n\n🚢 HD현대중공업: 2건\n\n🚢 한화오션: 2건\n\n🚢 HD현대삼호: 1건\n\n상선 최고가는 HD현대중공업의 LNG운반선(3,922억 원)이며, 삼성중공업이 3,855억 원으로 2위 기록\n\n📌 고부가가치 LNG 선박 중심의 선별 수주\n일반 상선 수주금액 상위 10개 계약 모두 LNG운반선으로 구성\n\n척당 수주금액은 약 3,748억~3,922억 원 수준에 형성\n\n📌 삼성중공업, 외형보다 질적 성장에 집중\n해양생산설비부터 일반 상선까지 고부가가치 제품군 수주에서 두각\n\n삼성중공업은 기술 경쟁력을 확보한 LNG운반선과 FLNG를 중심으로 질적 성장 기반을 강화할 방침\n\n✅ 독립리서치 그로쓰리서치\nhttps://telegram.me/growthresearch",
+            "links": [
+              "https://www.straightnews.co.kr/news/articleView.html?idxno=316104",
+              "https://telegram.me/growthresearch",
+              "https://straightnews.co.kr/news/articleView.html?idxno=316104"
+            ],
+            "post_url": "https://t.me/growthresearch/31477"
+          },
+          {
+            "date": "2026-11-24",
+            "time": "17:34",
+            "text": "✅ [11/24 마감쓰] \"젠슨황의 깐부는 정의선 회장님이었습니다.\"\n\n젠슨 황의 엔비디아 CEO 복귀 소식에 국내 증시가 폭등했습니다.\n\n코스피는 +6.3% 급등하며 외국인도 다시 순매수로 돌아섰는데요\n\n특히 현대차그룹이 삼성전자·SK하이닉스보다 \n더 크게 상승하며 오늘 시장의 주인공이 됐습니다.\n\n📌 매크로 및 섹터 이슈\n젠슨 황 복귀에 🔼 코스피 +6.3%\n개장 6분 만에 매수 사이드카 발동\n\n외국인 7,256억원 순매수로, 🤑 26개 섹터 전부 상승\n\n🔼 자동차(+11.4%) 상승률 1위, \n엔비디아 협력 기대에 현대차그룹 급등\n\n반도체 섹터 +6.6% 반등\n\n전자부품·방산·전력기기 등 낙폭과대 업종 강세\n\n📌  주요 기업 이슈\n\n📍현대차·현대모비스·현대오토에버\n엔비디아와 🤖 협력 기대에 각각 +11.1%, +14.5%, +29.9%\n\n📍삼성E&A\n삼성전기 세종사업장 AI 기판 공장 증설 공사 7,103억원 수주\n\n📍HD현대·제일기획\n정기선 회장 150억원 규모 지분 매입 계획, \n제일기획은 자사주 1,000억원 소각 추진\n\n📍한미약품\n국산 GLP-1 비만약 '에페', 출시 2주 만에 초도 물량 100억원 완판\n\n🔥 그로쓰리서치 | 마감 시황 「마감쓰」 보러가기\nhttps://naver.me/FKG3UQzL",
+            "links": [
+              "https://naver.me/FKG3UQzL"
+            ],
+            "post_url": "https://t.me/growthresearch/31478"
+          },
+          {
+            "date": "2026-11-24",
+            "time": "17:58",
+            "text": "🎬 엔비디아 젠슨황 복귀! 반도체 들썩! 삼성전자, SK하이닉스 불안한 윗꼬리... 이 반등, 진짜야!?\n\nhttps://youtu.be/8gNHcCaQAeE?si=Mn_KxxlVHbEGZ2dW\n\n📌 증시 바닥 판단, 외국인 수급이 핵심\n-코스닥은 기술적 바닥 접근, 코스피는 추가 하락 가능성\n\n-증안펀드보다 외국인 매수세 지속 여부가 중요\n\n📌 젠슨 황 복귀, AI 투자심리 회복\n-엔비디아 경영 불확실성 완화로 반도체주 급반등\n\n-델·HP 실적에서 GPU 서버 수요 및 CPU 가격 상승 확인\n\n📌 추가 금리 인상에도 2027년 반전 기대\n-12월 금리 인상 확률 95%, 1월 추가 인상 확률 62%\n\n-유가 하락으로 이르면 2027년 4월 금리 인하 기대\n\n📌 단기 반등 경계, 중장기 기술주 저평가 주목\n-기존 지지선 회복 및 VIX 20 이하 안정화 필요\n\n-SK하이닉스·마이크론의 중장기 밸류에이션 회복 기대\n\n✅ 독립리서치 그로쓰리서치\nhttps://t.me/growthresearch",
+            "links": [
+              "https://youtu.be/8gNHcCaQAeE?si=Mn_KxxlVHbEGZ2dW",
+              "https://t.me/growthresearch?utm_source=chatgpt.com",
+              "https://youtu.be/8gNHcCaQAeE"
+            ],
+            "post_url": "https://t.me/growthresearch/31480"
+          },
+          {
+            "date": "2026-11-24",
+            "time": "18:31",
+            "text": "✅ [탐방노트] 한솔아이원스, 3분기 매출 650억원 분기 최대…910억원 투자로 식각 부품 생산능력 확대\n\n📌 고객 주도 증설 | 어플라이드 머티어리얼즈 수요에 발안·안성 증설, 식각 부품 생산능력 2.5배 증설\n\n📌 중장기 외형 성장 | 2026년 매출 2,300~2,400억원, 2027년 3,000억원, 2028년 3,500억원 수준 전망\n\n📌 ASML 공급 확대 | EUV 부품 재생 아시아 최초 인증, 일부 부품 30~40배 증산 요청\n\n🔥 노트 전문 보기\nhttps://contents.premium.naver.com/growthresearch/growth/contents/261124090603319lk",
+            "links": [
+              "https://contents.premium.naver.com/growthresearch/growth/contents/261124090603319lk"
+            ],
+            "post_url": "https://t.me/growthresearch/31481"
           }
         ]
       },
@@ -754,13 +752,6 @@
         "posts": [
           {
             "date": "2026-11-23",
-            "time": "09:04",
-            "text": "일단 시작은 올레드 디스플레이",
-            "links": [],
-            "post_url": "https://t.me/Yeouido_Lab/39044"
-          },
-          {
-            "date": "2026-11-23",
             "time": "09:21",
             "text": "https://n.news.naver.com/article/366/0001206534?cds=news_edit",
             "links": [
@@ -910,6 +901,15 @@
               "http://ClinicalTrials.gov/"
             ],
             "post_url": "https://t.me/Yeouido_Lab/39064"
+          },
+          {
+            "date": "2026-11-24",
+            "time": "15:46",
+            "text": "비만약 에페 2주 만에 완판, 가격 경쟁력 통했다\n원문",
+            "links": [
+              "https://n.news.naver.com/mnews/article/015/0005357565"
+            ],
+            "post_url": "https://t.me/Yeouido_Lab/39065"
           }
         ]
       },
@@ -3283,6 +3283,24 @@
           {
             "date": "2026-11-24",
             "time": "00:00",
+            "text": "[SK이노베이션] [기재정정]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000487"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000487"
+          },
+          {
+            "date": "2026-11-24",
+            "time": "00:00",
+            "text": "[SK아이이테크놀로지] [기재정정]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000508"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000508"
+          },
+          {
+            "date": "2026-11-24",
+            "time": "00:00",
             "text": "[신흥] 주요사항보고서(자기주식처분결정)\n공시유형: 주요사항보고",
             "links": [
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000139"
@@ -3297,6 +3315,150 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000020"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000020"
+          },
+          {
+            "date": "2026-11-24",
+            "time": "00:00",
+            "text": "[브이티] [기재정정]주요사항보고서(유형자산양수결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000525"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000525"
+          },
+          {
+            "date": "2026-11-24",
+            "time": "00:00",
+            "text": "[에이프로] [첨부정정]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000502"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000502"
+          },
+          {
+            "date": "2026-11-24",
+            "time": "00:00",
+            "text": "[퀀텀레일] [기재정정]주요사항보고서(감자결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000495"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000495"
+          },
+          {
+            "date": "2026-11-24",
+            "time": "00:00",
+            "text": "[지노믹트리] 주요사항보고서(자기주식처분결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000500"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000500"
+          },
+          {
+            "date": "2026-11-24",
+            "time": "00:00",
+            "text": "[셀리드] [기재정정]주요사항보고서(소송등의제기)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000474"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000474"
+          },
+          {
+            "date": "2026-11-24",
+            "time": "00:00",
+            "text": "[미래에셋비전스팩7호] [기재정정]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000455"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000455"
+          },
+          {
+            "date": "2026-11-24",
+            "time": "00:00",
+            "text": "[인텔리안테크] 주요사항보고서(자기주식취득신탁계약체결결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000415"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000415"
+          },
+          {
+            "date": "2026-11-24",
+            "time": "00:00",
+            "text": "[한울앤제주] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000400"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000400"
+          },
+          {
+            "date": "2026-11-24",
+            "time": "00:00",
+            "text": "[한울앤제주] 주요사항보고서(자기전환사채만기전취득결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000395"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000395"
+          },
+          {
+            "date": "2026-11-24",
+            "time": "00:00",
+            "text": "[이렘] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000442"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000442"
+          },
+          {
+            "date": "2026-11-24",
+            "time": "00:00",
+            "text": "[폴레드] 주요사항보고서(자기주식취득신탁계약체결결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000406"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000406"
+          },
+          {
+            "date": "2026-11-24",
+            "time": "00:00",
+            "text": "[손오공] 주요사항보고서(영업정지)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000434"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000434"
+          },
+          {
+            "date": "2026-11-24",
+            "time": "00:00",
+            "text": "[텔콘RF제약] 주요사항보고서(자기전환사채매도결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000408"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000408"
+          },
+          {
+            "date": "2026-11-24",
+            "time": "00:00",
+            "text": "[케이엔제이] 주요사항보고서(자기주식취득신탁계약체결결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000382"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000382"
+          },
+          {
+            "date": "2026-11-24",
+            "time": "00:00",
+            "text": "[HPSP] 주요사항보고서(자기주식취득결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000377"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000377"
+          },
+          {
+            "date": "2026-11-24",
+            "time": "00:00",
+            "text": "[HPSP] [기재정정]주요사항보고서(자기주식처분결정)\n공시유형: 주요사항보고",
+            "links": [
+              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000355"
+            ],
+            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000355"
           },
           {
             "date": "2026-11-24",
@@ -3335,60 +3497,6 @@
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000227"
           },
           {
-            "date": "2026-11-24",
-            "time": "00:00",
-            "text": "[애니플러스] 주요사항보고서(자기주식취득신탁계약체결결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000204"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000204"
-          },
-          {
-            "date": "2026-11-24",
-            "time": "00:00",
-            "text": "[케이엔제이] 주요사항보고서(자기주식취득신탁계약해지결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000193"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000193"
-          },
-          {
-            "date": "2026-11-24",
-            "time": "00:00",
-            "text": "[앱코] 주요사항보고서(자기주식취득신탁계약체결결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000181"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000181"
-          },
-          {
-            "date": "2026-11-24",
-            "time": "00:00",
-            "text": "[엑셀세라퓨틱스] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고  ·  정",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000172"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000172"
-          },
-          {
-            "date": "2026-11-24",
-            "time": "00:00",
-            "text": "[아리바이오LAB] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000146"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000146"
-          },
-          {
-            "date": "2026-11-24",
-            "time": "00:00",
-            "text": "[엑세스바이오] 주요사항보고서(자기주식취득신탁계약체결결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000108"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000108"
-          },
-          {
             "date": "2026-11-23",
             "time": "00:00",
             "text": "[한화솔루션] [첨부추가]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
@@ -3409,7 +3517,7 @@
           {
             "date": "2026-11-23",
             "time": "00:00",
-            "text": "[SK이노베이션] [기재정정]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
+            "text": "[SK이노베이션] [기재정정]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고  ·  정",
             "links": [
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000308"
             ],
@@ -3427,7 +3535,7 @@
           {
             "date": "2026-11-23",
             "time": "00:00",
-            "text": "[SK아이이테크놀로지] [기재정정]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
+            "text": "[SK아이이테크놀로지] [기재정정]주요사항보고서(회사합병결정)\n공시유형: 주요사항보고  ·  정",
             "links": [
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000288"
             ],
@@ -3450,96 +3558,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000047"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000047"
-          },
-          {
-            "date": "2026-11-23",
-            "time": "00:00",
-            "text": "[아티스트컴퍼니] [기재정정]주요사항보고서(영업양도결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000407"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000407"
-          },
-          {
-            "date": "2026-11-23",
-            "time": "00:00",
-            "text": "[티엘비] 주요사항보고서(자기주식처분결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000379"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000379"
-          },
-          {
-            "date": "2026-11-23",
-            "time": "00:00",
-            "text": "[에이프로] 주요사항보고서(회사합병결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000392"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000392"
-          },
-          {
-            "date": "2026-11-23",
-            "time": "00:00",
-            "text": "[아바코] [첨부추가]주요사항보고서(자기주식취득신탁계약해지결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000156"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000156"
-          },
-          {
-            "date": "2026-11-23",
-            "time": "00:00",
-            "text": "[애드바이오텍] [기재정정]주요사항보고서(타법인주식및출자증권양수결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000370"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000370"
-          },
-          {
-            "date": "2026-11-23",
-            "time": "00:00",
-            "text": "[엔젠바이오] [기재정정]주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000390"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000390"
-          },
-          {
-            "date": "2026-11-23",
-            "time": "00:00",
-            "text": "[헥토파이낸셜] 주요사항보고서(자기주식취득결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000385"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000385"
-          },
-          {
-            "date": "2026-11-23",
-            "time": "00:00",
-            "text": "[코오롱생명과학] [기재정정]주요사항보고서(전환사채권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000337"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000337"
-          },
-          {
-            "date": "2026-11-23",
-            "time": "00:00",
-            "text": "[벡트로보틱스] 주요사항보고서(유상증자결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000342"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000342"
-          },
-          {
-            "date": "2026-11-23",
-            "time": "00:00",
-            "text": "[헥토이노베이션] 주요사항보고서(자기주식취득결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000313"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000313"
           },
           {
             "date": "2026-11-20",
@@ -3621,24 +3639,6 @@
               "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000274"
             ],
             "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000274"
-          },
-          {
-            "date": "2026-11-19",
-            "time": "00:00",
-            "text": "[엘앤에프] 주요사항보고서(자본으로인정되는채무증권발행결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000288"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000288"
-          },
-          {
-            "date": "2026-11-19",
-            "time": "00:00",
-            "text": "[신풍] 주요사항보고서(자기주식취득신탁계약체결결정)\n공시유형: 주요사항보고",
-            "links": [
-              "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000123"
-            ],
-            "post_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000123"
           }
         ]
       }
